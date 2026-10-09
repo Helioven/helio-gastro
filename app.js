@@ -334,6 +334,62 @@ function filter(event,restoring=false){
  draw();compare();
  if(!restoring){saveSearch();el('results-section').scrollIntoView({behavior:'auto',block:'start'});el('results-heading').focus({preventScroll:true});}
 }
+const QUICK_DISHES=[
+ {name:'Flamenquín',icon:'🥩'}, {name:'Croquetas',icon:'🍘'},
+ {name:'Salmorejo',icon:'🥣'}, {name:'Rabo de toro',icon:'🍲'},
+ {name:'Mazamorra',icon:'🥣'}, {name:'Carrillada',icon:'🍖'},
+ {name:'Berenjenas',icon:'🍆'}, {name:'Pisto',icon:'🍳'}
+];
+function recommendationEntries(term){
+ const matches=state.places.filter(p=>p.dishes.some(d=>clean(d).includes(term))||dishPrices(p).some(d=>clean(d.dish).includes(term)));
+ const priced=matches.flatMap(p=>relevantPrices(p,term).map(item=>({p,item,portion:portionOf(item),variant:variantOf(item)})));
+ return {matches,priced};
+}
+function renderRecommendations(){
+ const deck=el('recommendation-dishes');deck.replaceChildren();
+ for(const dish of QUICK_DISHES){
+  const term=clean(dish.name),data=recommendationEntries(term);
+  const btn=document.createElement('button');btn.type='button';btn.className='recommendation-tile';
+  const label=document.createElement('strong');label.textContent=dish.icon+' '+dish.name;
+  const count=document.createElement('span');count.textContent=data.matches.length+' locales registrados · '+new Set(data.priced.map(x=>x.p.id)).size+' con precio';
+  btn.append(label,count);btn.addEventListener('click',()=>showRecommendations(dish.name));deck.append(btn);
+ }
+}
+function showRecommendations(dishName){
+ const term=clean(dishName),data=recommendationEntries(term),panel=el('recommendation-results');
+ panel.replaceChildren();
+ el('recommendation-title').textContent='Opciones de '+dishName.toLowerCase();
+ const intro=document.createElement('p');intro.className='note';
+ intro.textContent=data.matches.length+' locales en nuestra base; '+new Set(data.priced.map(x=>x.p.id)).size+' con precios publicados. No es un ranking de calidad ni una lista completa de Córdoba.';
+ panel.append(intro);
+ const groups=new Map();
+ for(const entry of data.priced){
+  const key=entry.variant+'|'+entry.portion;
+  if(!groups.has(key))groups.set(key,[]);
+  groups.get(key).push(entry);
+ }
+ if(groups.size){
+  const heading=document.createElement('h3');heading.textContent='Precios documentados por variante y formato';panel.append(heading);
+  for(const entries of groups.values()){
+   const groupHeading=document.createElement('h4');groupHeading.textContent=variantLabel(entries[0].item)+' · '+PORTIONS[entries[0].portion];panel.append(groupHeading);
+   for(const entry of entries.sort((a,b)=>a.item.eur-b.item.eur)){
+    const row=document.createElement('div');row.className='recommendation-row';
+    const name=document.createElement('span');name.textContent=entry.p.name+' · '+entry.item.dish;
+    const price=document.createElement('strong');price.textContent=fmt(entry.item.eur);
+    const more=document.createElement('button');more.type='button';more.textContent='Ver ficha';more.addEventListener('click',()=>showPlace(entry.p));
+    row.append(name,price,more);panel.append(row);
+   }
+  }
+ }
+ const known=new Set(data.priced.map(x=>x.p.id)),unknown=data.matches.filter(p=>!known.has(p.id));
+ if(unknown.length){
+  const heading=document.createElement('h3');heading.textContent='También ofrecen el plato · precio pendiente';panel.append(heading);
+  for(const p of unknown){const row=document.createElement('div');row.className='recommendation-row';const name=document.createElement('span');name.textContent=p.name;const btn=document.createElement('button');btn.type='button';btn.textContent='Ver ficha';btn.addEventListener('click',()=>showPlace(p));row.append(name,btn);panel.append(row)}
+ }
+ el('recommendation-output').hidden=false;
+ el('recommendation-output').scrollIntoView({behavior:'auto',block:'start'});
+}
+
 async function init(){
  el('filters').addEventListener('submit',filter);
  el('close-detail').addEventListener('click',()=>{el('detail-section').hidden=true;el('results-heading').focus();});
@@ -356,6 +412,7 @@ async function init(){
   state.places=data.filter(validPlace);
   state.favorites=new Set([...loadFavorites()].filter(id=>state.places.some(p=>p.id===id)));
   renderFavorites();
+  renderRecommendations();
   const areas=[...new Set(state.places.map(p=>p.area))].sort((a,b)=>a.localeCompare(b,'es'));
   for(const area of areas){const opt=document.createElement('option');opt.value=area;opt.textContent=area;el('area').append(opt)}
   // Los resultados y el comparador permanecen ocultos hasta enviar el formulario.
