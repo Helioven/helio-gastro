@@ -192,7 +192,7 @@ function draw(){
   return rank[groupFor(x)]-rank[groupFor(y)];
  });
  for(const p of ordered){
-  const group=groupFor(p);
+  const group=state.appliedTerm?groupFor(p):'all';
   if(group!==previousGroup){
    const heading=document.createElement('h3');heading.className='result-group-title';
    heading.textContent=!state.appliedTerm?'Establecimientos encontrados':group==='verified'?'✓ Con precio documentado'+(state.appliedBudget!==null?' dentro del presupuesto':''):
