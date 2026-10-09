@@ -8,6 +8,9 @@ function validPlace(p){
  &&Array.isArray(p.dishes)&&Array.isArray(p.sources)&&['confirmed','estimated','unknown'].includes(p.priceStatus)
  &&(p.mealCostEur===null||Number.isFinite(p.mealCostEur));
 }
+function dishPrices(p){return(Array.isArray(p.dishPrices)?p.dishPrices:[]).filter(d=>typeof d.dish==='string'&&Number.isFinite(d.eur)&&d.eur>=0)}
+function relevantPrices(p,term){return dishPrices(p).filter(d=>!term||clean(d.dish).includes(term))}
+function lowestPrice(p,scope,term){if(scope==='meal')return Number.isFinite(p.mealCostEur)?p.mealCostEur:null;const arr=relevantPrices(p,term);return arr.length?Math.min(...arr.map(x=>x.eur)):null}
 function showEmpty(message){const node=document.createElement('div');node.className='empty';node.textContent=message;el('results').replaceChildren(node)}
 function draw(){
  const list=el('results');list.replaceChildren();
@@ -56,25 +59,44 @@ function compare(){
  el('compare-count').textContent=items.length+' / 3';
  if(!items.length){panel.className='empty';panel.textContent='Selecciona establecimientos de los resultados para compararlos aquí.';return}
  panel.className='';
- for(const p of items){const line=document.createElement('p');line.textContent=p.name+' — '+fmt(p.mealCostEur)+' · '+(p.priceStatus==='confirmed'?'Confirmado':p.priceStatus==='estimated'?'Estimado':'Sin precio')+' · '+p.sources.length+' fuentes';panel.append(line)}
+ const term=clean(el('dish').value.trim());
+ for(const p of items){
+  const box=document.createElement('div');box.className='compare-place';
+  const title=document.createElement('h3');title.textContent=p.name;box.append(title);
+  const cost=document.createElement('p');cost.textContent='Comida completa por persona: '+fmt(p.mealCostEur)+' · '+(p.priceStatus==='unknown'?'No verificada':p.priceStatus==='estimated'?'Estimada':'Confirmada');box.append(cost);
+  const prices=relevantPrices(p,term);
+  const label=document.createElement('p');label.textContent=prices.length?'Platos con precio publicado:':'Sin precios de platos coincidentes documentados.';box.append(label);
+  const ul=document.createElement('ul');for(const item of prices){const li=document.createElement('li');li.textContent=item.dish+' — '+fmt(item.eur);ul.append(li)}
+  box.append(ul);
+  const foot=document.createElement('p');foot.textContent=p.sources.length+' fuente(s) · Revisado '+(p.checkedAt||'sin fecha');box.append(foot);
+  panel.append(box);
+ }
 }
 function filter(event){
  if(event)event.preventDefault();
- const dish=clean(el('dish').value.trim()),max=el('budget').value?Number(el('budget').value):null,area=el('area').value,kind=el('price-kind').value;
- state.filtered=state.places.filter(p=>
-  (!dish||clean(p.name+' '+p.dishes.join(' ')).includes(dish))&&
-  (!area||p.area===area)&&
-  (!kind||p.priceStatus===kind||(kind==='estimated'&&p.priceStatus==='confirmed'))&&
-  (!max||(typeof p.mealCostEur==='number'&&p.mealCostEur<=max))
- );
+ const dish=clean(el('dish').value.trim()),max=el('budget').value?Number(el('budget').value):null;
+ const area=el('area').value,kind=el('price-kind').value,scope=el('price-scope').value;
+ state.filtered=state.places.filter(p=>{
+  if(dish&&!clean(p.name+' '+p.dishes.join(' ')+' '+dishPrices(p).map(d=>d.dish).join(' ')).includes(dish))return false;
+  if(area&&p.area!==area)return false;
+  const price=lowestPrice(p,scope,dish);
+  if(max!==null&&(price===null||price>max))return false;
+  if(kind==='confirmed')return scope==='dish'?relevantPrices(p,dish).length>0:p.priceStatus==='confirmed';
+  if(kind==='estimated')return scope==='dish'?relevantPrices(p,dish).length>0:['confirmed','estimated'].includes(p.priceStatus);
+  return true;
+ });
  const sort=el('sort').value;
- if(sort==='price')state.filtered.sort((a,b)=>(a.mealCostEur??Infinity)-(b.mealCostEur??Infinity));
- if(sort==='verified')state.filtered.sort((a,b)=>(a.priceStatus==='confirmed'?0:1)-(b.priceStatus==='confirmed'?0:1));
- if(sort==='name')state.filtered.sort((a,b)=>a.name.localeCompare(b.name,'es'));
+ if(sort==='price')state.filtered.sort((x,y)=>(lowestPrice(x,scope,dish)??Infinity)-(lowestPrice(y,scope,dish)??Infinity));
+ if(sort==='verified')state.filtered.sort((x,y)=>dishPrices(y).length-dishPrices(x).length);
+ if(sort==='name')state.filtered.sort((x,y)=>x.name.localeCompare(y.name,'es'));
+ el('budget-explain').textContent=scope==='dish'?
+  'Presupuesto aplicado al plato más económico con precio publicado. No incluye bebida, guarnición ni otros platos.':
+  'Presupuesto aplicado al coste total por persona. Locales sin coste total documentado quedan excluidos.';
  draw();compare();
 }
 async function init(){
  el('filters').addEventListener('submit',filter);
+ for(const id of ['budget','price-scope','price-kind','sort','area'])el(id).addEventListener('change',filter);
  try{
   const res=await fetch('./data/places.json',{cache:'no-store'});
   if(!res.ok)throw Error('HTTP '+res.status);
