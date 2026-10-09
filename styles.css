@@ -55,3 +55,6 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 
 /* 2.2: resultados resumidos y fichas a demanda */
 #detail-section[hidden]{display:none!important}.detail-button{background:#255b7e;color:#fff;border:1px solid #7396b2;border-radius:9px;padding:9px 12px;cursor:pointer;min-height:40px;margin:7px 8px 6px 0}#detail-content h3{font-size:16px;color:#ffdc9e;margin:22px 0 7px}#detail-content li{padding:4px 0}#detail-content a{color:#a8e0ff}.detail-source{display:block;margin:8px 0}.result-main-price{color:#ffe1af!important;font-size:15px!important;font-weight:750}.result-pending{color:#b8cfde!important;font-size:13px!important}
+
+/* 2.3: carta agrupada por plato y formato */
+.menu-groups{display:grid;gap:10px;margin-top:10px}.menu-dish{border:1px solid #4c718f;border-radius:11px;background:#173753;padding:12px 14px}.menu-dish h4{margin:0 0 7px;font-size:15px;color:#f8e0b7}.menu-price-row{display:flex;justify-content:space-between;gap:20px;border-top:1px solid #416481;padding:7px 0;color:#d3e6f1;font-size:13px}.menu-price-row strong{color:#ffe0a9;white-space:nowrap}.menu-unpriced-title{font-size:14px;color:#abc6d9;margin:22px 0 7px}.menu-unpriced{color:#aec8d8;font-size:13px;padding-left:20px}
