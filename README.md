@@ -17,6 +17,7 @@ Aplicación estática y mobile-first de búsqueda gastronómica en Córdoba. Pro
   "area": "Barrio o zona",
   "dishes": ["Plato verificado"],
   "mealCostEur": null,
+  "dishPrices": [{"dish": "Flamenquín (ración)", "eur": 12.50}],
   "priceStatus": "unknown",
   "checkedAt": "YYYY-MM-DD",
   "sources": [{"label":"Carta oficial","url":"https://sitio-real.com/carta"}]
@@ -42,3 +43,14 @@ Settings → Pages → Deploy from a branch → `main` → `/(root)`.
 | HG-007 | Móvil 360 px | Sin desbordamiento horizontal |
 
 Siguiente etapa: investigar 20–30 lugares reales, verificar carta y fecha, separar costes confirmados y estimados, registrar evidencias y pulir accesibilidad.
+
+## Primera tanda documental (9 de octubre de 2026)
+Cuatro locales del centro: Taberna La Montillana, Taberna Salinas, Bodegas Mezquita Céspedes y Taberna El Poema (Alonso de Burgos).
+
+Se registran **seis precios de platos publicados por los propios locales** en Montillana y Bodegas Mezquita. No se ha confirmado un coste total comparable por persona en ninguno de los cuatro locales: por eso `mealCostEur` permanece en `null` y el filtro de presupuesto excluye correctamente esas fichas cuando se fija un máximo. Por defecto se muestran sin límite de presupuesto para poder explorarlas. Las otras dos tabernas tienen carta o información oficial de platos sin precios comprobables.
+
+### QA adicional
+- HG-008: buscar «flamenquín» muestra locales con ese plato documentado.
+- HG-009: mostrar precio de plato y distinguirlo claramente del coste de comida.
+- HG-010: con presupuesto de 15 €, excluir fichas con `mealCostEur=null`.
+- HG-011: enlaces externos con `https`, `noopener` y `noreferrer`.
