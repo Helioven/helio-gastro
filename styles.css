@@ -42,3 +42,7 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 .coverage-summary{background:#23445d;border-left:3px solid #f3c47e;padding:11px 12px;margin-bottom:11px;border-radius:7px;color:#ecf4f9;font-size:13px;line-height:1.5}
 .show-offering{background:#265a78;color:#fff0d4;border:1px solid #b1a07b;border-radius:10px;padding:10px 13px;min-height:43px;margin:0 0 13px;cursor:pointer;font-weight:700}
 .coverage-summary[hidden],.show-offering[hidden]{display:none!important}
+
+/* 1.8: Agrupacion por verificabilidad y plato protagonista */
+.result-group-title{font-size:15px;color:#ffddac;border-bottom:1px solid #557792;padding:13px 0 8px;margin:10px 0 7px}
+.matching-dishes{background:rgba(255,205,133,.08);padding:9px 11px;border-left:3px solid #ffd090;border-radius:6px;font-weight:650;color:#ffe6ba!important}
