@@ -4,26 +4,6 @@
     "name": "Taberna La Montillana",
     "area": "Centro · Plaza de San Miguel",
     "address": "Calle San Álvaro, 5, Córdoba",
-    "dishes": [
-      "Flamenquín cordobés",
-      "Salmorejo cordobés",
-      "Croquetas de jamón ibérico",
-      "Rabo de toro"
-    ],
-    "dishPrices": [
-      {
-        "dish": "Flamenquín cordobés (media ración)",
-        "eur": 8.5
-      },
-      {
-        "dish": "Flamenquín cordobés (ración)",
-        "eur": 12.5
-      },
-      {
-        "dish": "Salmorejo cordobés (media ración)",
-        "eur": 6.9
-      }
-    ],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -32,6 +12,31 @@
         "label": "Carta oficial con precios",
         "url": "https://tabernalamontillana.com/carta/"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Flamenquín cordobés",
+          "Salmorejo cordobés",
+          "Croquetas de jamón ibérico",
+          "Rabo de toro"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Flamenquín cordobés (media ración)",
+            "eur": 8.5
+          },
+          {
+            "dish": "Flamenquín cordobés (ración)",
+            "eur": 12.5
+          },
+          {
+            "dish": "Salmorejo cordobés (media ración)",
+            "eur": 6.9
+          }
+        ]
+      }
     ]
   },
   {
@@ -39,14 +44,6 @@
     "name": "Taberna Salinas",
     "area": "Centro · Corredera",
     "address": "Calle Tundidores, 3, Córdoba",
-    "dishes": [
-      "Flamenquín de jamón",
-      "Rabo de toro",
-      "Salmorejo cordobés",
-      "Berenjenas fritas sin miel",
-      "Carrillada ibérica"
-    ],
-    "dishPrices": [],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -55,6 +52,19 @@
         "label": "Carta oficial sin precios",
         "url": "https://www.tabernasalinas.com/la-carta/"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Flamenquín de jamón",
+          "Rabo de toro",
+          "Salmorejo cordobés",
+          "Berenjenas fritas sin miel",
+          "Carrillada ibérica"
+        ],
+        "dishPrices": []
+      }
     ]
   },
   {
@@ -62,26 +72,6 @@
     "name": "Bodegas Mezquita Céspedes",
     "area": "Judería · Mezquita",
     "address": "Calle Céspedes, 12, Córdoba",
-    "dishes": [
-      "Flamenquín cordobés",
-      "Salmorejo cordobés",
-      "Rabo de toro",
-      "Mazamorra cordobesa"
-    ],
-    "dishPrices": [
-      {
-        "dish": "Flamenquín cordobés con patatas",
-        "eur": 17.95
-      },
-      {
-        "dish": "Salmorejo cordobés (tapa)",
-        "eur": 5.75
-      },
-      {
-        "dish": "Salmorejo cordobés (media)",
-        "eur": 9.4
-      }
-    ],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -98,6 +88,31 @@
         "label": "Menús y condiciones",
         "url": "https://www.bodegasmezquita.com/nuestros-menus/"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Flamenquín cordobés",
+          "Salmorejo cordobés",
+          "Rabo de toro",
+          "Mazamorra cordobesa"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Flamenquín cordobés con patatas",
+            "eur": 17.95
+          },
+          {
+            "dish": "Salmorejo cordobés (tapa)",
+            "eur": 5.75
+          },
+          {
+            "dish": "Salmorejo cordobés (media)",
+            "eur": 9.4
+          }
+        ]
+      }
     ]
   },
   {
@@ -105,12 +120,6 @@
     "name": "Taberna El Poema · Alonso de Burgos",
     "area": "Centro · San Hipólito",
     "address": "Calle Alonso de Burgos, 2, Córdoba",
-    "dishes": [
-      "Salmorejo cordobés",
-      "Rabo de toro",
-      "Cocina cordobesa"
-    ],
-    "dishPrices": [],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -119,6 +128,17 @@
         "label": "Web oficial y locales",
         "url": "https://tabernaelpoema.com/"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Salmorejo cordobés",
+          "Rabo de toro",
+          "Cocina cordobesa"
+        ],
+        "dishPrices": []
+      }
     ]
   },
   {
@@ -126,31 +146,6 @@
     "name": "Taberna Rafaé",
     "area": "Judería · Deanes",
     "address": "Calle Deanes, 2, Córdoba",
-    "dishes": [
-      "Flamenquín casero cordobés de jamón",
-      "Flamenquín de rabo de toro",
-      "Rabo de toro",
-      "Tortilla de patatas",
-      "Venado en salsa"
-    ],
-    "dishPrices": [
-      {
-        "dish": "Flamenquín casero cordobés de jamón (ración)",
-        "eur": 11.9
-      },
-      {
-        "dish": "Flamenquín casero de rabo de toro (ración)",
-        "eur": 15
-      },
-      {
-        "dish": "Tortilla de patatas al momento (ración)",
-        "eur": 10.3
-      },
-      {
-        "dish": "Venado en salsa cordobesa (media ración)",
-        "eur": 8.7
-      }
-    ],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -163,6 +158,36 @@
         "label": "Dirección y contacto",
         "url": "https://tabernarafae.com/contacto/"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Flamenquín casero cordobés de jamón",
+          "Flamenquín de rabo de toro",
+          "Rabo de toro",
+          "Tortilla de patatas",
+          "Venado en salsa"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Flamenquín casero cordobés de jamón (ración)",
+            "eur": 11.9
+          },
+          {
+            "dish": "Flamenquín casero de rabo de toro (ración)",
+            "eur": 15
+          },
+          {
+            "dish": "Tortilla de patatas al momento (ración)",
+            "eur": 10.3
+          },
+          {
+            "dish": "Venado en salsa cordobesa (media ración)",
+            "eur": 8.7
+          }
+        ]
+      }
     ]
   },
   {
@@ -170,23 +195,6 @@
     "name": "Taberna La Manuela",
     "area": "Judería · Mezquita",
     "address": "Calle Cardenal González, 69, Córdoba",
-    "dishes": [
-      "Flamenquín cordobés",
-      "Flamenquín de rabo de toro",
-      "Salmorejo cordobés",
-      "Mazamorra",
-      "Rabo de toro"
-    ],
-    "dishPrices": [
-      {
-        "dish": "Flamenquín cordobés troceado con patatas (ración)",
-        "eur": 12.5
-      },
-      {
-        "dish": "Flamenquín de rabo de toro troceado (ración)",
-        "eur": 18.5
-      }
-    ],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -195,6 +203,28 @@
         "label": "Carta y dirección oficiales",
         "url": "https://tabernalamanuelacordoba.es/"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Flamenquín cordobés",
+          "Flamenquín de rabo de toro",
+          "Salmorejo cordobés",
+          "Mazamorra",
+          "Rabo de toro"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Flamenquín cordobés troceado con patatas (ración)",
+            "eur": 12.5
+          },
+          {
+            "dish": "Flamenquín de rabo de toro troceado (ración)",
+            "eur": 18.5
+          }
+        ]
+      }
     ]
   },
   {
@@ -202,38 +232,6 @@
     "name": "Taberna Góngora",
     "area": "Centro · Conde de Torres Cabrera",
     "address": "Calle Conde de Torres Cabrera, 4, Córdoba",
-    "dishes": [
-      "Rabo de toro",
-      "Boquerones al limón",
-      "Croquetas de rabo de toro",
-      "Berenjenas con miel de caña"
-    ],
-    "dishPrices": [
-      {
-        "dish": "Rabo de toro (media ración)",
-        "eur": 11
-      },
-      {
-        "dish": "Rabo de toro (ración)",
-        "eur": 21
-      },
-      {
-        "dish": "Boquerones al limón (media ración)",
-        "eur": 8
-      },
-      {
-        "dish": "Boquerones al limón (ración)",
-        "eur": 15
-      },
-      {
-        "dish": "Croquetas de rabo de toro (media ración)",
-        "eur": 7.5
-      },
-      {
-        "dish": "Croquetas de rabo de toro (ración)",
-        "eur": 14.5
-      }
-    ],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -246,6 +244,43 @@
         "label": "Dirección y presentación oficial",
         "url": "https://tabernagongora.com/"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Rabo de toro",
+          "Boquerones al limón",
+          "Croquetas de rabo de toro",
+          "Berenjenas con miel de caña"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Rabo de toro (media ración)",
+            "eur": 11
+          },
+          {
+            "dish": "Rabo de toro (ración)",
+            "eur": 21
+          },
+          {
+            "dish": "Boquerones al limón (media ración)",
+            "eur": 8
+          },
+          {
+            "dish": "Boquerones al limón (ración)",
+            "eur": 15
+          },
+          {
+            "dish": "Croquetas de rabo de toro (media ración)",
+            "eur": 7.5
+          },
+          {
+            "dish": "Croquetas de rabo de toro (ración)",
+            "eur": 14.5
+          }
+        ]
+      }
     ]
   },
   {
@@ -253,18 +288,6 @@
     "name": "Taberna San Miguel · El Pisto",
     "area": "Centro · Plaza San Miguel",
     "address": "Plaza de San Miguel, 1, Córdoba",
-    "dishes": [
-      "Salmorejo cordobés",
-      "Mazamorra",
-      "Flamenquín casero de jamón",
-      "Carrillada ibérica al vino viejo",
-      "Estofado de rabo de toro",
-      "Croquetas caseras de rabo de toro",
-      "Berenjenas fritas con miel de caña",
-      "Pisto casero con huevo",
-      "Cochifrito"
-    ],
-    "dishPrices": [],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -277,6 +300,23 @@
         "label": "Dirección y web oficial",
         "url": "https://tabernacordoba.es/"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Salmorejo cordobés",
+          "Mazamorra",
+          "Flamenquín casero de jamón",
+          "Carrillada ibérica al vino viejo",
+          "Estofado de rabo de toro",
+          "Croquetas caseras de rabo de toro",
+          "Berenjenas fritas con miel de caña",
+          "Pisto casero con huevo",
+          "Cochifrito"
+        ],
+        "dishPrices": []
+      }
     ]
   },
   {
@@ -284,19 +324,6 @@
     "name": "Taberna Sociedad de Plateros · San Francisco",
     "area": "Centro · San Francisco",
     "address": "Calle San Francisco, 6, Córdoba",
-    "dishes": [
-      "Flamenquín casero",
-      "Salmorejo cordobés",
-      "Carrillada en salsa",
-      "Rabo de toro",
-      "Codillo de cerdo",
-      "Berenjenas fritas con miel",
-      "Pisto con huevo",
-      "Croquetas de jamón",
-      "Croquetas de rabo de toro",
-      "Carne con tomate"
-    ],
-    "dishPrices": [],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -309,6 +336,24 @@
         "label": "Web oficial y dirección",
         "url": "https://tabernaplateros.com/"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Flamenquín casero",
+          "Salmorejo cordobés",
+          "Carrillada en salsa",
+          "Rabo de toro",
+          "Codillo de cerdo",
+          "Berenjenas fritas con miel",
+          "Pisto con huevo",
+          "Croquetas de jamón",
+          "Croquetas de rabo de toro",
+          "Carne con tomate"
+        ],
+        "dishPrices": []
+      }
     ]
   },
   {
@@ -316,14 +361,6 @@
     "name": "Sociedad Plateros · María Auxiliadora",
     "area": "Centro · María Auxiliadora",
     "address": "Calle María Auxiliadora, 25, Córdoba",
-    "dishes": [
-      "Flamenquín de lomo y jamón",
-      "Salmorejo cordobés",
-      "Rabo de toro al oloroso Montilla-Moriles",
-      "Berenjenas fritas",
-      "Bacalao"
-    ],
-    "dishPrices": [],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -336,6 +373,19 @@
         "label": "Información del establecimiento",
         "url": "https://www.sociedadplateros.com/Paseo-del-Palacio-de-Viana-a-Plateros-de-Maria-Auxiliadora.html"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Flamenquín de lomo y jamón",
+          "Salmorejo cordobés",
+          "Rabo de toro al oloroso Montilla-Moriles",
+          "Berenjenas fritas",
+          "Bacalao"
+        ],
+        "dishPrices": []
+      }
     ]
   },
   {
@@ -343,15 +393,6 @@
     "name": "Taberna El Nº 10",
     "area": "Judería · Cardenal Salazar",
     "address": "Calle Romero, 10, Córdoba",
-    "dishes": [
-      "Flamenquín cordobés",
-      "Salmorejo cordobés",
-      "Mazamorra cordobesa",
-      "Croquetas caseras de puchero y jamón ibérico",
-      "Rabo de toro estofado",
-      "Berenjenas rebozadas con miel de caña"
-    ],
-    "dishPrices": [],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -368,6 +409,20 @@
         "label": "Dirección y contacto oficial",
         "url": "https://tabernaelnumero10cordoba.com/taberna/"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Flamenquín cordobés",
+          "Salmorejo cordobés",
+          "Mazamorra cordobesa",
+          "Croquetas caseras de puchero y jamón ibérico",
+          "Rabo de toro estofado",
+          "Berenjenas rebozadas con miel de caña"
+        ],
+        "dishPrices": []
+      }
     ]
   },
   {
@@ -375,15 +430,6 @@
     "name": "La Cazuela de la Espartería",
     "area": "Centro · Corredera",
     "address": "Calle Rodríguez Marín, 16, Córdoba",
-    "dishes": [
-      "Salmorejo cordobés",
-      "Flamenquín",
-      "Rabo de toro",
-      "Croquetas de salmón",
-      "Berenjenas cazuela",
-      "Chipirones con huevo frito"
-    ],
-    "dishPrices": [],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -396,6 +442,20 @@
         "label": "Web oficial y ubicación",
         "url": "https://lacazueladelaesparteria.es/"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Salmorejo cordobés",
+          "Flamenquín",
+          "Rabo de toro",
+          "Croquetas de salmón",
+          "Berenjenas cazuela",
+          "Chipirones con huevo frito"
+        ],
+        "dishPrices": []
+      }
     ]
   },
   {
@@ -403,68 +463,6 @@
     "name": "Taberna La Viuda",
     "area": "Alcázar Viejo · San Basilio",
     "address": "Calle San Basilio, 52, Córdoba",
-    "dishes": [
-      "Salmorejo cordobés",
-      "Mazamorra de almendra y avellanas",
-      "Croquetas de jamón y caldo de cocido",
-      "Croquetas de boniato",
-      "Flamenquín cordobés",
-      "Flamenquín de rabo de toro",
-      "Rabo de toro cordobés",
-      "Berenjenas fritas"
-    ],
-    "dishPrices": [
-      {
-        "dish": "Croquetas de jamón y caldo de cocido (unidad)",
-        "eur": 1.5,
-        "portion": "unidad"
-      },
-      {
-        "dish": "Salmorejo cordobés (tapa)",
-        "eur": 5,
-        "portion": "tapa"
-      },
-      {
-        "dish": "Salmorejo cordobés (media ración)",
-        "eur": 7,
-        "portion": "media"
-      },
-      {
-        "dish": "Salmorejo cordobés (ración)",
-        "eur": 10,
-        "portion": "racion"
-      },
-      {
-        "dish": "Mazamorra cordobesa (tapa)",
-        "eur": 7,
-        "portion": "tapa"
-      },
-      {
-        "dish": "Mazamorra cordobesa (media ración)",
-        "eur": 9,
-        "portion": "media"
-      },
-      {
-        "dish": "Mazamorra cordobesa (ración)",
-        "eur": 12,
-        "portion": "racion"
-      },
-      {
-        "dish": "Flamenquín cordobés (ración)",
-        "eur": 15,
-        "portion": "racion"
-      },
-      {
-        "dish": "Flamenquín de rabo de toro (ración)",
-        "eur": 18,
-        "portion": "racion"
-      },
-      {
-        "dish": "Rabo de toro cordobés (ración)",
-        "eur": 25,
-        "portion": "racion"
-      }
-    ],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -477,6 +475,73 @@
         "label": "Web oficial y ubicación",
         "url": "https://gruporosalescordoba.com/taberna-la-viuda/"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Salmorejo cordobés",
+          "Mazamorra de almendra y avellanas",
+          "Croquetas de jamón y caldo de cocido",
+          "Croquetas de boniato",
+          "Flamenquín cordobés",
+          "Flamenquín de rabo de toro",
+          "Rabo de toro cordobés",
+          "Berenjenas fritas"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Croquetas de jamón y caldo de cocido (unidad)",
+            "eur": 1.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Salmorejo cordobés (tapa)",
+            "eur": 5,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Salmorejo cordobés (media ración)",
+            "eur": 7,
+            "portion": "media"
+          },
+          {
+            "dish": "Salmorejo cordobés (ración)",
+            "eur": 10,
+            "portion": "racion"
+          },
+          {
+            "dish": "Mazamorra cordobesa (tapa)",
+            "eur": 7,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Mazamorra cordobesa (media ración)",
+            "eur": 9,
+            "portion": "media"
+          },
+          {
+            "dish": "Mazamorra cordobesa (ración)",
+            "eur": 12,
+            "portion": "racion"
+          },
+          {
+            "dish": "Flamenquín cordobés (ración)",
+            "eur": 15,
+            "portion": "racion"
+          },
+          {
+            "dish": "Flamenquín de rabo de toro (ración)",
+            "eur": 18,
+            "portion": "racion"
+          },
+          {
+            "dish": "Rabo de toro cordobés (ración)",
+            "eur": 25,
+            "portion": "racion"
+          }
+        ]
+      }
     ]
   },
   {
@@ -484,14 +549,6 @@
     "name": "La Taberna del Río",
     "area": "Ribera · Guadalquivir",
     "address": "Calle Enrique Romero de Torres, 7, Córdoba",
-    "dishes": [
-      "Salmorejo cordobés",
-      "Berenjenas fritas con miel",
-      "Flamenquín tradicional cordobés",
-      "Rabo de toro guisado",
-      "Huevos rotos"
-    ],
-    "dishPrices": [],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -509,6 +566,19 @@
         "label": "Menús para grupos 2026, con condiciones",
         "url": "https://www.latabernadelrio.com/wp-content/uploads/2026/01/Menus-2026.pdf"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Salmorejo cordobés",
+          "Berenjenas fritas con miel",
+          "Flamenquín tradicional cordobés",
+          "Rabo de toro guisado",
+          "Huevos rotos"
+        ],
+        "dishPrices": []
+      }
     ]
   },
   {
@@ -516,13 +586,6 @@
     "name": "Restaurante Puerta Sevilla",
     "area": "Alcázar Viejo · San Basilio",
     "address": "Calle Postrera, 51, Córdoba",
-    "dishes": [
-      "Salmorejo cordobés",
-      "Berenjenas fritas con miel de caña",
-      "Solomillo ibérico con migas camperas",
-      "Bacalao confitado sobre pisto"
-    ],
-    "dishPrices": [],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -535,6 +598,18 @@
         "label": "Platos del menú degustación",
         "url": "https://tienda.gruporosalescordoba.com/restaurante-puerta-sevilla-experiencia-cordoba-bajo-la-luz-de-la-historia/"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Salmorejo cordobés",
+          "Berenjenas fritas con miel de caña",
+          "Solomillo ibérico con migas camperas",
+          "Bacalao confitado sobre pisto"
+        ],
+        "dishPrices": []
+      }
     ]
   },
   {
@@ -542,15 +617,6 @@
     "name": "La Posada del Caballo Andaluz",
     "area": "Alcázar Viejo · San Basilio",
     "address": "Calle San Basilio, 16, Córdoba",
-    "dishes": [
-      "Salmorejo cordobés",
-      "Mazamorra cordobesa",
-      "Berenjenas fritas con miel de caña",
-      "Rabo de toro cordobés",
-      "Bacalao frito",
-      "Torrijas caseras"
-    ],
-    "dishPrices": [],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -563,6 +629,20 @@
         "label": "Menú degustación y platos",
         "url": "https://tienda.gruporosalescordoba.com/la-posada-del-caballo-andaluz-experiencia-cena-y-espectaculo-flamenco/"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Salmorejo cordobés",
+          "Mazamorra cordobesa",
+          "Berenjenas fritas con miel de caña",
+          "Rabo de toro cordobés",
+          "Bacalao frito",
+          "Torrijas caseras"
+        ],
+        "dishPrices": []
+      }
     ]
   },
   {
@@ -570,10 +650,6 @@
     "name": "Bodegas Campos",
     "area": "Centro · Lineros",
     "address": "Calle Lineros, 32, Córdoba",
-    "dishes": [
-      "Menú degustación Tradición"
-    ],
-    "dishPrices": [],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -595,6 +671,15 @@
         "includes": "Bebidas durante el almuerzo; oferta sujeta a cambios estacionales",
         "sourceUrl": "https://tienda.bodegascampos.com/inicio/7-menu-tradicion.html"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Menú degustación Tradición"
+        ],
+        "dishPrices": []
+      }
     ]
   },
   {
@@ -602,12 +687,6 @@
     "name": "Casa Pepe de la Judería",
     "area": "Judería · Romero",
     "address": "Calle Romero, 1, Córdoba",
-    "dishes": [
-      "Salmorejo con jamón ibérico",
-      "Jamón ibérico de bellota",
-      "Queso curado de oveja"
-    ],
-    "dishPrices": [],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -620,6 +699,17 @@
         "label": "Web oficial y dirección",
         "url": "https://restaurantecasapepedelajuderia.com/"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Salmorejo con jamón ibérico",
+          "Jamón ibérico de bellota",
+          "Queso curado de oveja"
+        ],
+        "dishPrices": []
+      }
     ]
   },
   {
@@ -627,10 +717,6 @@
     "name": "Restaurante Casa Rubio",
     "area": "Judería · Puerta de Almodóvar",
     "address": "Calle Puerta de Almodóvar, 5, Córdoba",
-    "dishes": [
-      "Carta de temporada; cocina tradicional y de mercado"
-    ],
-    "dishPrices": [],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -643,6 +729,15 @@
         "label": "Web oficial y dirección",
         "url": "https://restaurantecasarubiocordoba.com/"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Carta de temporada; cocina tradicional y de mercado"
+        ],
+        "dishPrices": []
+      }
     ]
   },
   {
@@ -650,16 +745,6 @@
     "name": "Restaurante El Churrasco",
     "area": "Judería · Romero",
     "address": "Calle Romero, 16, Córdoba",
-    "dishes": [
-      "Salmorejo cordobés",
-      "Berenjenas fritas",
-      "Rabo de toro",
-      "Tortilla de patatas",
-      "Churrasco cordobés",
-      "Chuletón de vacuno",
-      "Flamenquín cordobés"
-    ],
-    "dishPrices": [],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -672,6 +757,21 @@
         "label": "Dirección y contacto oficiales",
         "url": "https://elchurrasco.com/contacto/"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Salmorejo cordobés",
+          "Berenjenas fritas",
+          "Rabo de toro",
+          "Tortilla de patatas",
+          "Churrasco cordobés",
+          "Chuletón de vacuno",
+          "Flamenquín cordobés"
+        ],
+        "dishPrices": []
+      }
     ]
   },
   {
@@ -679,57 +779,6 @@
     "name": "Restaurante El Caballo Rojo",
     "area": "Judería · Mezquita",
     "address": "Calle Cardenal Herrero, 28, Córdoba",
-    "dishes": [
-      "Flamenquín cordobés",
-      "Rabo de toro",
-      "Croquetas de puchero",
-      "Cochifrito con salsa brava",
-      "Berenjenas de la abuela con miel de caña",
-      "Salmorejo con mojama",
-      "Mazamorra cordobesa"
-    ],
-    "dishPrices": [
-      {
-        "dish": "Flamenquín cordobés (ración)",
-        "eur": 12,
-        "portion": "racion"
-      },
-      {
-        "dish": "Rabo de toro (ración)",
-        "eur": 23,
-        "portion": "racion"
-      },
-      {
-        "dish": "Croquetas de puchero (media ración)",
-        "eur": 8,
-        "portion": "media"
-      },
-      {
-        "dish": "Croquetas de puchero (ración)",
-        "eur": 14,
-        "portion": "racion"
-      },
-      {
-        "dish": "Cochifrito con salsa brava (media ración)",
-        "eur": 9,
-        "portion": "media"
-      },
-      {
-        "dish": "Cochifrito con salsa brava (ración)",
-        "eur": 15,
-        "portion": "racion"
-      },
-      {
-        "dish": "Berenjenas de la abuela con miel de caña (media ración)",
-        "eur": 7,
-        "portion": "media"
-      },
-      {
-        "dish": "Berenjenas de la abuela con miel de caña (ración)",
-        "eur": 12,
-        "portion": "racion"
-      }
-    ],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -742,6 +791,62 @@
         "label": "Dirección legal oficial",
         "url": "https://www.elcaballorojo.com/legal/aviso-legal/"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Flamenquín cordobés",
+          "Rabo de toro",
+          "Croquetas de puchero",
+          "Cochifrito con salsa brava",
+          "Berenjenas de la abuela con miel de caña",
+          "Salmorejo con mojama",
+          "Mazamorra cordobesa"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Flamenquín cordobés (ración)",
+            "eur": 12,
+            "portion": "racion"
+          },
+          {
+            "dish": "Rabo de toro (ración)",
+            "eur": 23,
+            "portion": "racion"
+          },
+          {
+            "dish": "Croquetas de puchero (media ración)",
+            "eur": 8,
+            "portion": "media"
+          },
+          {
+            "dish": "Croquetas de puchero (ración)",
+            "eur": 14,
+            "portion": "racion"
+          },
+          {
+            "dish": "Cochifrito con salsa brava (media ración)",
+            "eur": 9,
+            "portion": "media"
+          },
+          {
+            "dish": "Cochifrito con salsa brava (ración)",
+            "eur": 15,
+            "portion": "racion"
+          },
+          {
+            "dish": "Berenjenas de la abuela con miel de caña (media ración)",
+            "eur": 7,
+            "portion": "media"
+          },
+          {
+            "dish": "Berenjenas de la abuela con miel de caña (ración)",
+            "eur": 12,
+            "portion": "racion"
+          }
+        ]
+      }
     ]
   },
   {
@@ -749,14 +854,6 @@
     "name": "Taberna Rincón de las Beatillas",
     "area": "Santa Marina · Beatillas",
     "address": "Plaza de las Beatillas, 1, Córdoba",
-    "dishes": [
-      "Rabo de toro estofado",
-      "Codillo de cerdo asado",
-      "Croquetas de jamón",
-      "Mazamorra cordobesa",
-      "Croquetas de espinacas y piñones"
-    ],
-    "dishPrices": [],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -769,6 +866,19 @@
         "label": "Menús oficiales para grupos (precios y condiciones sujetos a consulta)",
         "url": "https://tabernabeatillas.com/nuestros-menus/"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Rabo de toro estofado",
+          "Codillo de cerdo asado",
+          "Croquetas de jamón",
+          "Mazamorra cordobesa",
+          "Croquetas de espinacas y piñones"
+        ],
+        "dishPrices": []
+      }
     ]
   },
   {
@@ -776,127 +886,6 @@
     "name": "Taberna Ágora Casa Bravo 1919",
     "area": "Judería · Puerta de Almodóvar",
     "address": "Calle Puerta de Almodóvar, 1, Córdoba",
-    "dishes": [
-      "Flamenquín cordobés de lomo y jamón",
-      "Flamenquín de roquefort",
-      "Rabo de toro",
-      "Carrillada de cerdo en salsa",
-      "Salmorejo cordobés con dados de jamón",
-      "Mazamorra",
-      "Croquetas caseras de puchero",
-      "Croquetas de chipirones",
-      "Croquetas caseras de jamón serrano",
-      "Pisto cordobés con huevos fritos",
-      "Cochifrito del Valle de los Pedroches",
-      "Berenjenas con miel de caña"
-    ],
-    "dishPrices": [
-      {
-        "dish": "Flamenquín cordobés de lomo y jamón (ración)",
-        "eur": 12.95,
-        "portion": "racion"
-      },
-      {
-        "dish": "Flamenquín de roquefort (ración)",
-        "eur": 12.95,
-        "portion": "racion"
-      },
-      {
-        "dish": "Rabo de toro (ración)",
-        "eur": 19.95,
-        "portion": "racion"
-      },
-      {
-        "dish": "Carrillada de cerdo en salsa (ración)",
-        "eur": 15.95,
-        "portion": "racion"
-      },
-      {
-        "dish": "Salmorejo cordobés con dados de jamón (tapa)",
-        "eur": 4.95,
-        "portion": "tapa"
-      },
-      {
-        "dish": "Salmorejo cordobés con dados de jamón (media ración)",
-        "eur": 7.95,
-        "portion": "media"
-      },
-      {
-        "dish": "Salmorejo cordobés con dados de jamón (ración)",
-        "eur": 9.95,
-        "portion": "racion"
-      },
-      {
-        "dish": "Mazamorra (tapa)",
-        "eur": 4.95,
-        "portion": "tapa"
-      },
-      {
-        "dish": "Mazamorra (media ración)",
-        "eur": 7.95,
-        "portion": "media"
-      },
-      {
-        "dish": "Mazamorra (ración)",
-        "eur": 9.95,
-        "portion": "racion"
-      },
-      {
-        "dish": "Croquetas caseras de puchero (media ración)",
-        "eur": 7.95,
-        "portion": "media"
-      },
-      {
-        "dish": "Croquetas caseras de puchero (ración)",
-        "eur": 10.95,
-        "portion": "racion"
-      },
-      {
-        "dish": "Croquetas de chipirones (media ración)",
-        "eur": 8.95,
-        "portion": "media"
-      },
-      {
-        "dish": "Croquetas de chipirones (ración)",
-        "eur": 12.95,
-        "portion": "racion"
-      },
-      {
-        "dish": "Croquetas caseras de jamón serrano (media ración)",
-        "eur": 7.95,
-        "portion": "media"
-      },
-      {
-        "dish": "Croquetas caseras de jamón serrano (ración)",
-        "eur": 10.95,
-        "portion": "racion"
-      },
-      {
-        "dish": "Pisto cordobés con huevos fritos (media ración)",
-        "eur": 8.95,
-        "portion": "media"
-      },
-      {
-        "dish": "Pisto cordobés con huevos fritos (ración)",
-        "eur": 10.95,
-        "portion": "racion"
-      },
-      {
-        "dish": "Cochifrito del Valle de los Pedroches (ración)",
-        "eur": 16.95,
-        "portion": "racion"
-      },
-      {
-        "dish": "Berenjenas con miel de caña (media ración)",
-        "eur": 7.95,
-        "portion": "media"
-      },
-      {
-        "dish": "Berenjenas con miel de caña (ración)",
-        "eur": 9.95,
-        "portion": "racion"
-      }
-    ],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -905,6 +894,132 @@
         "label": "Carta oficial con formatos e importes",
         "url": "https://casabravo1919.es/carta/"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Flamenquín cordobés de lomo y jamón",
+          "Flamenquín de roquefort",
+          "Rabo de toro",
+          "Carrillada de cerdo en salsa",
+          "Salmorejo cordobés con dados de jamón",
+          "Mazamorra",
+          "Croquetas caseras de puchero",
+          "Croquetas de chipirones",
+          "Croquetas caseras de jamón serrano",
+          "Pisto cordobés con huevos fritos",
+          "Cochifrito del Valle de los Pedroches",
+          "Berenjenas con miel de caña"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Flamenquín cordobés de lomo y jamón (ración)",
+            "eur": 12.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Flamenquín de roquefort (ración)",
+            "eur": 12.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Rabo de toro (ración)",
+            "eur": 19.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Carrillada de cerdo en salsa (ración)",
+            "eur": 15.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Salmorejo cordobés con dados de jamón (tapa)",
+            "eur": 4.95,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Salmorejo cordobés con dados de jamón (media ración)",
+            "eur": 7.95,
+            "portion": "media"
+          },
+          {
+            "dish": "Salmorejo cordobés con dados de jamón (ración)",
+            "eur": 9.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Mazamorra (tapa)",
+            "eur": 4.95,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Mazamorra (media ración)",
+            "eur": 7.95,
+            "portion": "media"
+          },
+          {
+            "dish": "Mazamorra (ración)",
+            "eur": 9.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Croquetas caseras de puchero (media ración)",
+            "eur": 7.95,
+            "portion": "media"
+          },
+          {
+            "dish": "Croquetas caseras de puchero (ración)",
+            "eur": 10.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Croquetas de chipirones (media ración)",
+            "eur": 8.95,
+            "portion": "media"
+          },
+          {
+            "dish": "Croquetas de chipirones (ración)",
+            "eur": 12.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Croquetas caseras de jamón serrano (media ración)",
+            "eur": 7.95,
+            "portion": "media"
+          },
+          {
+            "dish": "Croquetas caseras de jamón serrano (ración)",
+            "eur": 10.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Pisto cordobés con huevos fritos (media ración)",
+            "eur": 8.95,
+            "portion": "media"
+          },
+          {
+            "dish": "Pisto cordobés con huevos fritos (ración)",
+            "eur": 10.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Cochifrito del Valle de los Pedroches (ración)",
+            "eur": 16.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Berenjenas con miel de caña (media ración)",
+            "eur": 7.95,
+            "portion": "media"
+          },
+          {
+            "dish": "Berenjenas con miel de caña (ración)",
+            "eur": 9.95,
+            "portion": "racion"
+          }
+        ]
+      }
     ]
   },
   {
@@ -912,12 +1027,6 @@
     "name": "Taberna El Abuelo",
     "area": "Centro · Cruz Conde",
     "address": "Calle Cruz Conde, 3, Córdoba",
-    "dishes": [
-      "Frituras tradicionales",
-      "Casquería",
-      "Cocina tradicional cordobesa"
-    ],
-    "dishPrices": [],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -930,6 +1039,17 @@
         "label": "Historia y especialidades",
         "url": "https://www.eldiadecordoba.es/cordoba/antonio-perez-taberna-el-abuelo-cordoba_0_2005200002.html"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Frituras tradicionales",
+          "Casquería",
+          "Cocina tradicional cordobesa"
+        ],
+        "dishPrices": []
+      }
     ]
   },
   {
@@ -937,14 +1057,6 @@
     "name": "Bar Moriles · Ciudad Jardín",
     "area": "Ciudad Jardín · Antonio Maura",
     "address": "Calle Antonio Maura, 21, Córdoba",
-    "dishes": [
-      "Flamenquín cordobés",
-      "Salmorejo cordobés",
-      "Croquetas caseras",
-      "Montaditos variados",
-      "Ensaladilla rusa"
-    ],
-    "dishPrices": [],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -957,6 +1069,19 @@
         "label": "Ficha con información sobre desayunos",
         "url": "https://www.tripadvisor.es/Restaurant_Review-g187430-d2145657-Reviews-Bar_Moriles-Cordoba_Province_of_Cordoba_Andalucia.html"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Flamenquín cordobés",
+          "Salmorejo cordobés",
+          "Croquetas caseras",
+          "Montaditos variados",
+          "Ensaladilla rusa"
+        ],
+        "dishPrices": []
+      }
     ]
   },
   {
@@ -964,11 +1089,6 @@
     "name": "Moriles Ribera",
     "area": "Ribera · Guadalquivir",
     "address": "Paseo de la Ribera, 6, Córdoba",
-    "dishes": [
-      "Cocina tradicional cordobesa y andaluza",
-      "Tapas y platos tradicionales"
-    ],
-    "dishPrices": [],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -977,6 +1097,16 @@
         "label": "Web oficial, sede y dirección",
         "url": "https://www.morilesribera.com/"
       }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Cocina tradicional cordobesa y andaluza",
+          "Tapas y platos tradicionales"
+        ],
+        "dishPrices": []
+      }
     ]
   },
   {
@@ -984,12 +1114,6 @@
     "name": "Moriles Casa Fina",
     "area": "Ribera · Plaza del Potro",
     "address": "Paseo de la Ribera, 12, Córdoba",
-    "dishes": [
-      "Tapas tradicionales cordobesas",
-      "Montaditos clásicos",
-      "Salazones y conservas"
-    ],
-    "dishPrices": [],
     "mealCostEur": null,
     "priceStatus": "unknown",
     "checkedAt": "2026-10-09",
@@ -997,6 +1121,17 @@
       {
         "label": "Web oficial, sede y dirección",
         "url": "https://morilescasafina.com/"
+      }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Tapas tradicionales cordobesas",
+          "Montaditos clásicos",
+          "Salazones y conservas"
+        ],
+        "dishPrices": []
       }
     ]
   }
