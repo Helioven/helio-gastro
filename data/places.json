@@ -1134,5 +1134,102 @@
         "dishPrices": []
       }
     ]
+  },
+  {
+    "id": "churros-bar-marta",
+    "name": "Churros Bar Marta",
+    "area": "Centro · Cruz Conde",
+    "address": "Calle Cruz Conde, 32, Córdoba",
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Ficha de Churros Bar Marta y horario publicado",
+        "url": "https://www.tripadvisor.es/Restaurant_Review-g187430-d7784826-Reviews-Churros_Bar_Marta-Cordoba_Province_of_Cordoba_Andalucia.html"
+      },
+      {
+        "label": "Opiniones con especialidades de desayuno",
+        "url": "https://churros-bar-marta.foodplacee.com/"
+      }
+    ],
+    "menus": [
+      {
+        "service": "desayuno",
+        "dishes": [
+          "Churros",
+          "Chocolate con churros",
+          "Café",
+          "Tostadas con tomate y jamón"
+        ],
+        "dishPrices": []
+      }
+    ],
+    "openingHoursNote": "Horario general publicado: lunes a sábado, 08:00–20:45; domingo cerrado. Horario de churros y cocina no confirmado. Verificar antes de ir."
+  },
+  {
+    "id": "cafeteria-don-pepe-centro",
+    "name": "Cafetería Don Pepe · Centro",
+    "area": "Centro · Diego de León",
+    "address": "Calle Diego de León, 6, Córdoba",
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Ficha y dirección de Don Pepe Centro",
+        "url": "https://www.tripadvisor.es/Restaurant_Review-g187430-d10023567-Reviews-Cafeteria_Don_Pepe-Cordoba_Province_of_Cordoba_Andalucia.html"
+      },
+      {
+        "label": "Información orientativa del establecimiento",
+        "url": "https://carta.menu/restaurants/cordoba-4/cafeteria-don-pepe-2"
+      }
+    ],
+    "menus": [
+      {
+        "service": "desayuno",
+        "dishes": [
+          "Churros",
+          "Chocolate con churros",
+          "Tostadas de jamón",
+          "Café"
+        ],
+        "dishPrices": []
+      }
+    ],
+    "openingHoursNote": "Horario general orientativo según directorios: 06:30–14:00. No confirma la disponibilidad de churros todo ese periodo."
+  },
+  {
+    "id": "cafeteria-don-pepe-ciudad-jardin",
+    "name": "Cafetería Bar Don Pepe · Ciudad Jardín",
+    "area": "Ciudad Jardín · Antonio Maura",
+    "address": "Calle Antonio Maura, 35, Córdoba",
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Ficha y dirección de Don Pepe Ciudad Jardín",
+        "url": "https://www.tripadvisor.es/Restaurant_Review-g187430-d11772613-Reviews-Cafeteria_Bar_Don_Pepe-Cordoba_Province_of_Cordoba_Andalucia.html"
+      },
+      {
+        "label": "Opiniones y especialidades",
+        "url": "https://wanderlog.com/es/place/details/1402518/cafeter%C3%ADa-don-pepe"
+      }
+    ],
+    "menus": [
+      {
+        "service": "desayuno",
+        "dishes": [
+          "Tostadas de jamón",
+          "Tostadas con tomate",
+          "Churros",
+          "Chocolate con churros",
+          "Café"
+        ],
+        "dishPrices": []
+      }
+    ],
+    "openingHoursNote": "Horario general publicado con información discrepante entre fuentes. Confirmar antes de ir; horario concreto de desayunos no verificado."
   }
 ]
