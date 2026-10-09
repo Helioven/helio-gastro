@@ -130,3 +130,9 @@ El filtro «Solo precios documentados» se mantiene estricto, pero el resultado 
 - Si el usuario no había buscado, sigue arrancando con los resultados ocultos.
 - La selección se valida contra los locales disponibles. Si localStorage está bloqueado, funciona sin persistencia.
 - QA: sin búsqueda previa, inicio limpio; con flamenquín/ración/20€ y 3 comparados, tras recarga permanecen filtros, resultados y comparación; cambiar filtros sin pulsar Buscar no ejecuta búsqueda; no más de 3 comparados.
+
+## Versión 2.5 — recomendaciones directas
+- Ocho platos con acceso directo desde portada, sin configurar filtros.
+- Los precios de cada plato se presentan agrupados por variante y formato; los locales sin precio documentado se muestran aparte.
+- No hay valoración de calidad ni promesa sobre tamaños equivalentes. Se mantiene la búsqueda manual y persistencia del comparador.
+- Pruebas: flamenquines tradicional/rabo separados, croquetas por unidad y media ración, consulta rápida y apertura de ficha.
