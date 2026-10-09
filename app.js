@@ -37,6 +37,11 @@ function draw(){
     }
     card.append(dishes);
   }
+  if(el('budget').value && lowestPrice(p,el('price-scope').value,clean(el('dish').value.trim()))===null){
+    const warning=document.createElement('p');warning.className='price-unknown';
+    warning.textContent='⚠ Precio desconocido. No podemos confirmar que se ajuste a tu presupuesto.';
+    card.append(warning);
+  }
   const sources=document.createElement('p');sources.textContent='Fuentes documentadas: '+p.sources.length+' · Última comprobación: '+(p.checkedAt||'pendiente');card.append(sources);
   for(const source of p.sources){
    if(source.url && /^https:\/\//.test(source.url)){
@@ -75,12 +80,12 @@ function compare(){
 function filter(event){
  if(event)event.preventDefault();
  const dish=clean(el('dish').value.trim()),max=el('budget').value?Number(el('budget').value):null;
- const area=el('area').value,kind=el('price-kind').value,scope=el('price-scope').value;
+ const area=el('area').value,kind=el('price-kind').value,scope=el('price-scope').value,includeUnknown=el('include-unknown').checked;
  state.filtered=state.places.filter(p=>{
   if(dish&&!clean(p.name+' '+p.dishes.join(' ')+' '+dishPrices(p).map(d=>d.dish).join(' ')).includes(dish))return false;
   if(area&&p.area!==area)return false;
   const price=lowestPrice(p,scope,dish);
-  if(max!==null&&(price===null||price>max))return false;
+  if(max!==null&&(price>max||(price===null&&!includeUnknown)))return false;
   if(kind==='confirmed')return scope==='dish'?relevantPrices(p,dish).length>0:p.priceStatus==='confirmed';
   if(kind==='estimated')return scope==='dish'?relevantPrices(p,dish).length>0:['confirmed','estimated'].includes(p.priceStatus);
   return true;
@@ -90,13 +95,13 @@ function filter(event){
  if(sort==='verified')state.filtered.sort((x,y)=>dishPrices(y).length-dishPrices(x).length);
  if(sort==='name')state.filtered.sort((x,y)=>x.name.localeCompare(y.name,'es'));
  el('budget-explain').textContent=scope==='dish'?
-  'Presupuesto aplicado al plato más económico con precio publicado. No incluye bebida, guarnición ni otros platos.':
-  'Presupuesto aplicado al coste total por persona. Locales sin coste total documentado quedan excluidos.';
+  'Presupuesto aplicado al plato más económico coincidente y documentado. Los precios desconocidos no garantizan cumplirlo.':
+  'Presupuesto aplicado al coste total por persona. Los locales sin coste documentado pueden mostrarse, pero no se consideran dentro del límite.';
  draw();compare();
 }
 async function init(){
  el('filters').addEventListener('submit',filter);
- for(const id of ['budget','price-scope','price-kind','sort','area'])el(id).addEventListener('change',filter);
+ for(const id of ['budget','price-scope','price-kind','sort','area','include-unknown'])el(id).addEventListener('change',filter);
  try{
   const res=await fetch('./data/places.json',{cache:'no-store'});
   if(!res.ok)throw Error('HTTP '+res.status);
