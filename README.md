@@ -116,3 +116,10 @@ El filtro «Solo precios documentados» se mantiene estricto, pero el resultado 
 - No se inventan importes ni se deducen formatos no registrados.
 - Para evitar duplicados, se relaciona el nombre de la especialidad con la denominación publicada de su precio; se mantiene el nombre original si difiere.
 - Casos QA: La Viuda agrupa tres precios del salmorejo y de la mazamorra; Salinas lista especialidades sin precios; La Taberna del Río conserva condiciones del menú de grupo; búsqueda y comparador sin cambios.
+
+## 2.4: tabernas favoritas
+- Guardar/quitar favoritos en resultados, en la ficha o desde la lista personal.
+- Persistencia localStorage (`helio-gastro-favorites-v1`) y limpieza de identificadores que ya no estén en la base.
+- Favoritos accesibles sin ejecutar una búsqueda: abrir ficha directamente desde la lista.
+- Sin cuentas ni servidor; datos propios de cada navegador. Puede no persistir en navegación privada o si el almacenamiento está bloqueado.
+- QA: marcar La Viuda, recargar, abrir ficha, quitar, comprobar que se actualizan todos los botones y que la búsqueda sigue siendo manual.
