@@ -1,1 +1,124 @@
-[]
+[
+  {
+    "id": "la-montillana",
+    "name": "Taberna La Montillana",
+    "area": "Centro · Plaza de San Miguel",
+    "address": "Calle San Álvaro, 5, Córdoba",
+    "dishes": [
+      "Flamenquín cordobés",
+      "Salmorejo cordobés",
+      "Croquetas de jamón ibérico",
+      "Rabo de toro"
+    ],
+    "dishPrices": [
+      {
+        "dish": "Flamenquín cordobés (media ración)",
+        "eur": 8.5
+      },
+      {
+        "dish": "Flamenquín cordobés (ración)",
+        "eur": 12.5
+      },
+      {
+        "dish": "Salmorejo cordobés (media ración)",
+        "eur": 6.9
+      }
+    ],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Carta oficial con precios",
+        "url": "https://tabernalamontillana.com/carta/"
+      }
+    ]
+  },
+  {
+    "id": "taberna-salinas",
+    "name": "Taberna Salinas",
+    "area": "Centro · Corredera",
+    "address": "Calle Tundidores, 3, Córdoba",
+    "dishes": [
+      "Flamenquín de jamón",
+      "Rabo de toro",
+      "Salmorejo cordobés",
+      "Berenjenas fritas sin miel",
+      "Carrillada ibérica"
+    ],
+    "dishPrices": [],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Carta oficial sin precios",
+        "url": "https://www.tabernasalinas.com/la-carta/"
+      }
+    ]
+  },
+  {
+    "id": "bodegas-mezquita-cespedes",
+    "name": "Bodegas Mezquita Céspedes",
+    "area": "Judería · Mezquita",
+    "address": "Calle Céspedes, 12, Córdoba",
+    "dishes": [
+      "Flamenquín cordobés",
+      "Salmorejo cordobés",
+      "Rabo de toro",
+      "Mazamorra cordobesa"
+    ],
+    "dishPrices": [
+      {
+        "dish": "Flamenquín cordobés con patatas",
+        "eur": 17.95
+      },
+      {
+        "dish": "Salmorejo cordobés (tapa)",
+        "eur": 5.75
+      },
+      {
+        "dish": "Salmorejo cordobés (media)",
+        "eur": 9.4
+      }
+    ],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Carta oficial con precios",
+        "url": "https://www.bodegasmezquita.com/nuestra-carta/"
+      },
+      {
+        "label": "Ubicación del local",
+        "url": "https://www.bodegasmezquita.com/cespedes/"
+      },
+      {
+        "label": "Menús y condiciones",
+        "url": "https://www.bodegasmezquita.com/nuestros-menus/"
+      }
+    ]
+  },
+  {
+    "id": "taberna-el-poema-alonso",
+    "name": "Taberna El Poema · Alonso de Burgos",
+    "area": "Centro · San Hipólito",
+    "address": "Calle Alonso de Burgos, 2, Córdoba",
+    "dishes": [
+      "Salmorejo cordobés",
+      "Rabo de toro",
+      "Cocina cordobesa"
+    ],
+    "dishPrices": [],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Web oficial y locales",
+        "url": "https://tabernaelpoema.com/"
+      }
+    ]
+  }
+]
