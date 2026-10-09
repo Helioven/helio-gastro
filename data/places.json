@@ -564,5 +564,440 @@
         "url": "https://tienda.gruporosalescordoba.com/la-posada-del-caballo-andaluz-experiencia-cena-y-espectaculo-flamenco/"
       }
     ]
+  },
+  {
+    "id": "bodegas-campos",
+    "name": "Bodegas Campos",
+    "area": "Centro · Lineros",
+    "address": "Calle Lineros, 32, Córdoba",
+    "dishes": [
+      "Menú degustación Tradición"
+    ],
+    "dishPrices": [],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Menús oficiales",
+        "url": "https://bodegascampos.com/nuestros-menus/"
+      },
+      {
+        "label": "Menú degustación Tradición (66 €/persona, mínimo 2, máximo 4)",
+        "url": "https://tienda.bodegascampos.com/inicio/7-menu-tradicion.html"
+      }
+    ],
+    "groupMenus": [
+      {
+        "name": "Menú degustación Tradición (reserva previa; máximo 4 personas)",
+        "eurPerPerson": 66,
+        "minPeople": 2,
+        "includes": "Bebidas durante el almuerzo; oferta sujeta a cambios estacionales",
+        "sourceUrl": "https://tienda.bodegascampos.com/inicio/7-menu-tradicion.html"
+      }
+    ]
+  },
+  {
+    "id": "casa-pepe-juderia",
+    "name": "Casa Pepe de la Judería",
+    "area": "Judería · Romero",
+    "address": "Calle Romero, 1, Córdoba",
+    "dishes": [
+      "Salmorejo con jamón ibérico",
+      "Jamón ibérico de bellota",
+      "Queso curado de oveja"
+    ],
+    "dishPrices": [],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Carta oficial PDF (consultar precio y formato)",
+        "url": "https://restaurantecasapepedelajuderia.com/wp-content/uploads/2025/02/AF-CARTA-COMIDA-CASA-PEPE-A32mm-sangrado-2.pdf"
+      },
+      {
+        "label": "Web oficial y dirección",
+        "url": "https://restaurantecasapepedelajuderia.com/"
+      }
+    ]
+  },
+  {
+    "id": "casa-rubio",
+    "name": "Restaurante Casa Rubio",
+    "area": "Judería · Puerta de Almodóvar",
+    "address": "Calle Puerta de Almodóvar, 5, Córdoba",
+    "dishes": [
+      "Carta de temporada; cocina tradicional y de mercado"
+    ],
+    "dishPrices": [],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Carta oficial PDF (precios pendientes de transcripción fiable)",
+        "url": "https://restaurantecasarubiocordoba.com/wp-content/uploads/2025/04/CARTA-CASA-RUBIO.pdf"
+      },
+      {
+        "label": "Web oficial y dirección",
+        "url": "https://restaurantecasarubiocordoba.com/"
+      }
+    ]
+  },
+  {
+    "id": "el-churrasco",
+    "name": "Restaurante El Churrasco",
+    "area": "Judería · Romero",
+    "address": "Calle Romero, 16, Córdoba",
+    "dishes": [
+      "Salmorejo cordobés",
+      "Berenjenas fritas",
+      "Rabo de toro",
+      "Tortilla de patatas",
+      "Churrasco cordobés",
+      "Chuletón de vacuno",
+      "Flamenquín cordobés"
+    ],
+    "dishPrices": [],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Carta y especialidades oficiales",
+        "url": "https://elchurrasco.com/cartas/"
+      },
+      {
+        "label": "Dirección y contacto oficiales",
+        "url": "https://elchurrasco.com/contacto/"
+      }
+    ]
+  },
+  {
+    "id": "el-caballo-rojo",
+    "name": "Restaurante El Caballo Rojo",
+    "area": "Judería · Mezquita",
+    "address": "Calle Cardenal Herrero, 28, Córdoba",
+    "dishes": [
+      "Flamenquín cordobés",
+      "Rabo de toro",
+      "Croquetas de puchero",
+      "Cochifrito con salsa brava",
+      "Berenjenas de la abuela con miel de caña",
+      "Salmorejo con mojama",
+      "Mazamorra cordobesa"
+    ],
+    "dishPrices": [
+      {
+        "dish": "Flamenquín cordobés (ración)",
+        "eur": 12,
+        "portion": "racion"
+      },
+      {
+        "dish": "Rabo de toro (ración)",
+        "eur": 23,
+        "portion": "racion"
+      },
+      {
+        "dish": "Croquetas de puchero (media ración)",
+        "eur": 8,
+        "portion": "media"
+      },
+      {
+        "dish": "Croquetas de puchero (ración)",
+        "eur": 14,
+        "portion": "racion"
+      },
+      {
+        "dish": "Cochifrito con salsa brava (media ración)",
+        "eur": 9,
+        "portion": "media"
+      },
+      {
+        "dish": "Cochifrito con salsa brava (ración)",
+        "eur": 15,
+        "portion": "racion"
+      },
+      {
+        "dish": "Berenjenas de la abuela con miel de caña (media ración)",
+        "eur": 7,
+        "portion": "media"
+      },
+      {
+        "dish": "Berenjenas de la abuela con miel de caña (ración)",
+        "eur": 12,
+        "portion": "racion"
+      }
+    ],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Carta oficial para tapear con precios",
+        "url": "https://www.elcaballorojo.com/carta-tapear/"
+      },
+      {
+        "label": "Dirección legal oficial",
+        "url": "https://www.elcaballorojo.com/legal/aviso-legal/"
+      }
+    ]
+  },
+  {
+    "id": "rincon-beatillas",
+    "name": "Taberna Rincón de las Beatillas",
+    "area": "Santa Marina · Beatillas",
+    "address": "Plaza de las Beatillas, 1, Córdoba",
+    "dishes": [
+      "Rabo de toro estofado",
+      "Codillo de cerdo asado",
+      "Croquetas de jamón",
+      "Mazamorra cordobesa",
+      "Croquetas de espinacas y piñones"
+    ],
+    "dishPrices": [],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Carta oficial de platos",
+        "url": "https://tabernabeatillas.com/carta/"
+      },
+      {
+        "label": "Menús oficiales para grupos (precios y condiciones sujetos a consulta)",
+        "url": "https://tabernabeatillas.com/nuestros-menus/"
+      }
+    ]
+  },
+  {
+    "id": "casa-bravo-1919",
+    "name": "Taberna Ágora Casa Bravo 1919",
+    "area": "Judería · Puerta de Almodóvar",
+    "address": "Calle Puerta de Almodóvar, 1, Córdoba",
+    "dishes": [
+      "Flamenquín cordobés de lomo y jamón",
+      "Flamenquín de roquefort",
+      "Rabo de toro",
+      "Carrillada de cerdo en salsa",
+      "Salmorejo cordobés con dados de jamón",
+      "Mazamorra",
+      "Croquetas caseras de puchero",
+      "Croquetas de chipirones",
+      "Croquetas caseras de jamón serrano",
+      "Pisto cordobés con huevos fritos",
+      "Cochifrito del Valle de los Pedroches",
+      "Berenjenas con miel de caña"
+    ],
+    "dishPrices": [
+      {
+        "dish": "Flamenquín cordobés de lomo y jamón (ración)",
+        "eur": 12.95,
+        "portion": "racion"
+      },
+      {
+        "dish": "Flamenquín de roquefort (ración)",
+        "eur": 12.95,
+        "portion": "racion"
+      },
+      {
+        "dish": "Rabo de toro (ración)",
+        "eur": 19.95,
+        "portion": "racion"
+      },
+      {
+        "dish": "Carrillada de cerdo en salsa (ración)",
+        "eur": 15.95,
+        "portion": "racion"
+      },
+      {
+        "dish": "Salmorejo cordobés con dados de jamón (tapa)",
+        "eur": 4.95,
+        "portion": "tapa"
+      },
+      {
+        "dish": "Salmorejo cordobés con dados de jamón (media ración)",
+        "eur": 7.95,
+        "portion": "media"
+      },
+      {
+        "dish": "Salmorejo cordobés con dados de jamón (ración)",
+        "eur": 9.95,
+        "portion": "racion"
+      },
+      {
+        "dish": "Mazamorra (tapa)",
+        "eur": 4.95,
+        "portion": "tapa"
+      },
+      {
+        "dish": "Mazamorra (media ración)",
+        "eur": 7.95,
+        "portion": "media"
+      },
+      {
+        "dish": "Mazamorra (ración)",
+        "eur": 9.95,
+        "portion": "racion"
+      },
+      {
+        "dish": "Croquetas caseras de puchero (media ración)",
+        "eur": 7.95,
+        "portion": "media"
+      },
+      {
+        "dish": "Croquetas caseras de puchero (ración)",
+        "eur": 10.95,
+        "portion": "racion"
+      },
+      {
+        "dish": "Croquetas de chipirones (media ración)",
+        "eur": 8.95,
+        "portion": "media"
+      },
+      {
+        "dish": "Croquetas de chipirones (ración)",
+        "eur": 12.95,
+        "portion": "racion"
+      },
+      {
+        "dish": "Croquetas caseras de jamón serrano (media ración)",
+        "eur": 7.95,
+        "portion": "media"
+      },
+      {
+        "dish": "Croquetas caseras de jamón serrano (ración)",
+        "eur": 10.95,
+        "portion": "racion"
+      },
+      {
+        "dish": "Pisto cordobés con huevos fritos (media ración)",
+        "eur": 8.95,
+        "portion": "media"
+      },
+      {
+        "dish": "Pisto cordobés con huevos fritos (ración)",
+        "eur": 10.95,
+        "portion": "racion"
+      },
+      {
+        "dish": "Cochifrito del Valle de los Pedroches (ración)",
+        "eur": 16.95,
+        "portion": "racion"
+      },
+      {
+        "dish": "Berenjenas con miel de caña (media ración)",
+        "eur": 7.95,
+        "portion": "media"
+      },
+      {
+        "dish": "Berenjenas con miel de caña (ración)",
+        "eur": 9.95,
+        "portion": "racion"
+      }
+    ],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Carta oficial con formatos e importes",
+        "url": "https://casabravo1919.es/carta/"
+      }
+    ]
+  },
+  {
+    "id": "taberna-el-abuelo",
+    "name": "Taberna El Abuelo",
+    "area": "Centro · Cruz Conde",
+    "address": "Calle Cruz Conde, 3, Córdoba",
+    "dishes": [
+      "Frituras tradicionales",
+      "Casquería",
+      "Cocina tradicional cordobesa"
+    ],
+    "dishPrices": [],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Ficha de Turismo de Córdoba",
+        "url": "https://www.turismodecordoba.org/el-abuelo"
+      },
+      {
+        "label": "Historia y especialidades",
+        "url": "https://www.eldiadecordoba.es/cordoba/antonio-perez-taberna-el-abuelo-cordoba_0_2005200002.html"
+      }
+    ]
+  },
+  {
+    "id": "bar-moriles-original",
+    "name": "Bar Moriles · Ciudad Jardín",
+    "area": "Ciudad Jardín · Antonio Maura",
+    "address": "Calle Antonio Maura, 21, Córdoba",
+    "dishes": [
+      "Flamenquín cordobés",
+      "Salmorejo cordobés",
+      "Croquetas caseras",
+      "Montaditos variados",
+      "Ensaladilla rusa"
+    ],
+    "dishPrices": [],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Ficha del restaurante con dirección y especialidades",
+        "url": "https://restaurantedecordoba.com/restaurante/bar-moriles"
+      },
+      {
+        "label": "Ficha con información sobre desayunos",
+        "url": "https://www.tripadvisor.es/Restaurant_Review-g187430-d2145657-Reviews-Bar_Moriles-Cordoba_Province_of_Cordoba_Andalucia.html"
+      }
+    ]
+  },
+  {
+    "id": "moriles-ribera",
+    "name": "Moriles Ribera",
+    "area": "Ribera · Guadalquivir",
+    "address": "Paseo de la Ribera, 6, Córdoba",
+    "dishes": [
+      "Cocina tradicional cordobesa y andaluza",
+      "Tapas y platos tradicionales"
+    ],
+    "dishPrices": [],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Web oficial, sede y dirección",
+        "url": "https://www.morilesribera.com/"
+      }
+    ]
+  },
+  {
+    "id": "moriles-casa-fina",
+    "name": "Moriles Casa Fina",
+    "area": "Ribera · Plaza del Potro",
+    "address": "Paseo de la Ribera, 12, Córdoba",
+    "dishes": [
+      "Tapas tradicionales cordobesas",
+      "Montaditos clásicos",
+      "Salazones y conservas"
+    ],
+    "dishPrices": [],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Web oficial, sede y dirección",
+        "url": "https://morilescasafina.com/"
+      }
+    ]
   }
 ]
