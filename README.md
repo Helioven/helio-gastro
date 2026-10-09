@@ -96,3 +96,10 @@ El filtro «Solo precios documentados» se mantiene estricto, pero el resultado 
 - La Taberna del Río: menú Lares 2026, 36 € por persona para un **mínimo de ocho personas**; se almacena como `groupMenus`, nunca como `mealCostEur` para un comensal individual.
 - Otras dos incorporaciones: platos publicados por los establecimientos, sin precio confirmado para esas especialidades.
 - QA HG-028: croqueta de La Viuda no equiparada a ración de Góngora; HG-029: menú de grupo no entra en comparador individual; HG-030: al buscar una especialidad siguen apareciendo locales sin precio cuando está permitida la opción; HG-031: búsqueda permanece oculta hasta pulsar Buscar.
+
+## Versión 2.0: formatos de ración y comparador
+- Filtra por unidad, tapa, media ración, ración completa o formato sin especificar.
+- La inferencia del formato solo se hace desde campos explícitos o palabras inequívocas del nombre del plato; si faltan, no suponemos que sea ración.
+- El presupuesto, la ordenación y el comparador usan el formato elegido. Sin filtro de formato se muestran precios, pero no se consideran cantidades equivalentes.
+- Los menús para grupos siguen fuera del coste de comida individual.
+- QA: croquetas La Viuda 1,50 € por unidad vs Góngora 7,50 € media / 14,50 € ración; flamenquín Montillana 8,50 € media / 12,50 € ración; preservar botón Buscar.
