@@ -33,7 +33,7 @@ function draw(){
   if(group!==previousGroup){
    const heading=document.createElement('h3');heading.className='result-group-title';
    heading.textContent=group==='verified'?'✓ Con precio documentado'+(state.appliedBudget!==null?' dentro del presupuesto':''):
-     group==='unknown'?'? Ofrecen el plato · Precio sin verificar':'Precio superior al presupuesto';
+     group==='unknown'?'También ofrecen el plato · Precio pendiente de confirmar':'Precio superior al presupuesto';
    list.append(heading);previousGroup=group;
   }
   const card=document.createElement('article');card.className='place';
@@ -64,6 +64,11 @@ function draw(){
       dishes.append(li);
     }
     card.append(dishes);
+    if(shown.some(item=>item.portion==='unidad')){
+      const caution=document.createElement('p');
+      caution.className='note';caution.textContent='Ojo: el precio por unidad no equivale a una ración. Revisa la cantidad antes de comparar.';
+      card.append(caution);
+    }
   } else if(term && dishPrices(p).length){
     const notice=document.createElement('p');
     notice.className='note';notice.textContent='Hay precios de otros platos, pero ninguno verificado para esta búsqueda.';
@@ -73,6 +78,11 @@ function draw(){
     const warning=document.createElement('p');warning.className='price-unknown';
     warning.textContent='⚠ Precio desconocido. No podemos confirmar que se ajuste a tu presupuesto.';
     card.append(warning);
+  }
+  if(Array.isArray(p.groupMenus)&&p.groupMenus.length){
+    const group=document.createElement('p');group.className='note';
+    group.textContent='Menú para grupos (NO comida individual): '+p.groupMenus.map(m=>m.name+' · '+fmt(m.eurPerPerson)+'/persona · mínimo '+m.minPeople+' personas').join('; ');
+    card.append(group);
   }
   const sources=document.createElement('p');sources.textContent='Fuentes documentadas: '+p.sources.length+' · Fecha de consulta: '+(p.checkedAt||'pendiente');card.append(sources);
   for(const source of p.sources){
@@ -105,6 +115,9 @@ function compare(){
   const label=document.createElement('p');label.textContent=prices.length?'Platos con precio publicado:':'Sin precios de platos coincidentes documentados.';box.append(label);
   const ul=document.createElement('ul');for(const item of prices){const li=document.createElement('li');li.textContent=item.dish+' — '+fmt(item.eur);ul.append(li)}
   box.append(ul);
+  if(prices.some(item=>item.portion==='unidad')){
+    const note=document.createElement('p');note.textContent='Precio por unidad: no comparable directamente con una ración.';box.append(note);
+  }
   const foot=document.createElement('p');foot.textContent=p.sources.length+' fuente(s) · Revisado '+(p.checkedAt||'sin fecha');box.append(foot);
   panel.append(box);
  }
