@@ -109,3 +109,11 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 .quick-nav span{color:#ffdaa1;font-variant-numeric:tabular-nums}
 #recommendations-section,#search-section,#favorite-section,#compare-section{scroll-margin-top:85px}
 @media(max-width:560px){.quick-nav{margin:8px -2px 0;padding:7px 5px;gap:5px}.quick-nav a{padding:8px 9px;font-size:12px;min-height:42px}}
+
+/* 3.0: Selector de momento gastronómico y avisos de disponibilidad prudentes */
+.service-selector{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:14px 0}
+.service-selector button{border:1px solid #688ca8;border-radius:12px;min-height:55px;background:#193b57;color:#f1f8ff;font-weight:800;cursor:pointer;padding:9px}
+.service-selector button[aria-pressed='true']{border:2px solid #ffd08d;color:#ffdfa7;background:#285574}
+.service-intro,.service-notice{font-size:13px;color:#b9d4e4;background:rgba(54,102,135,.12);padding:10px;border-left:3px solid #ffd08d;border-radius:6px}
+#service-section{scroll-margin-top:85px}
+@media(max-width:590px){.service-selector{grid-template-columns:repeat(2,minmax(0,1fr))}}
