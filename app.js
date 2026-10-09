@@ -24,7 +24,60 @@ function lowestPrice(p,scope,term,portion=''){
  if(scope==='meal')return Number.isFinite(p.mealCostEur)?p.mealCostEur:null;
  const arr=relevantPrices(p,term,portion);return arr.length?Math.min(...arr.map(x=>x.eur)):null;
 }
-function priceDescriptor(item){return item.dish+' — '+fmt(item.eur)+' · '+PORTIONS[portionOf(item)]}
+function variantOf(item){
+ const s=clean(item.dish);
+ if(s.includes('flamenquin')){
+  if(s.includes('rabo de toro'))return 'flamenquin-rabo';
+  if(s.includes('jamon')||s.includes('cordobes'))return 'flamenquin-tradicional';
+  return 'flamenquin-otra';
+ }
+ if(s.includes('croqueta')){
+  if(s.includes('rabo de toro'))return 'croquetas-rabo';
+  if(s.includes('jamon')&&s.includes('cocido'))return 'croquetas-jamon-cocido';
+  if(s.includes('jamon')&&s.includes('puchero'))return 'croquetas-jamon-puchero';
+  if(s.includes('jamon'))return 'croquetas-jamon';
+  if(s.includes('salmon'))return 'croquetas-salmon';
+  if(s.includes('boniato'))return 'croquetas-boniato';
+  return 'croquetas-otras';
+ }
+ return 'other:'+s.replace(/\s*\((?:media racion|racion|tapa|unidad|media)\)/g,'').trim();
+}
+const VARIANT_NAMES={
+ 'flamenquin-rabo':'Flamenquín de rabo de toro',
+ 'flamenquin-tradicional':'Flamenquín tradicional / jamón',
+ 'flamenquin-otra':'Otro flamenquín',
+ 'croquetas-rabo':'Croquetas de rabo de toro',
+ 'croquetas-jamon-cocido':'Croquetas de jamón y cocido',
+ 'croquetas-jamon-puchero':'Croquetas de jamón y puchero',
+ 'croquetas-jamon':'Croquetas de jamón',
+ 'croquetas-salmon':'Croquetas de salmón',
+ 'croquetas-boniato':'Croquetas de boniato',
+ 'croquetas-otras':'Otras croquetas'
+};
+function variantLabel(item){const key=variantOf(item);return VARIANT_NAMES[key]||'Variante sin categorizar'}
+function priceDescriptor(item){
+ const format=portionOf(item);
+ const dishHasFormat=/\b(media(?:\s+racion)?|racion|tapa|unidad)\b/.test(clean(item.dish));
+ return item.dish+' — '+fmt(item.eur)+(dishHasFormat?'':' · '+PORTIONS[format]);
+}
+function comparableHighlights(items,term,portion){
+ if(!term||!portion)return new Set();
+ const groups=new Map();
+ for(const p of items){
+  for(const item of relevantPrices(p,term,portion)){
+   const key=variantOf(item)+'|'+portion;
+   if(!groups.has(key))groups.set(key,[]);
+   groups.get(key).push({id:p.id,price:item.eur,dish:item.dish});
+  }
+ }
+ const highlights=new Set();
+ for(const group of groups.values()){
+  if(new Set(group.map(x=>x.id)).size<2)continue;
+  const cheapest=Math.min(...group.map(x=>x.price));
+  for(const x of group)if(x.price===cheapest)highlights.add(x.id+'|'+x.dish+'|'+x.price);
+ }
+ return highlights;
+}
 function showEmpty(message){const node=document.createElement('div');node.className='empty';node.textContent=message;el('results').replaceChildren(node)}
 function groupFor(p) {
  const price=lowestPrice(p,state.appliedScope,state.appliedTerm,state.appliedPortion);
@@ -121,13 +174,25 @@ function compare(){
  if(!items.length){panel.className='empty';panel.textContent='Selecciona establecimientos de los resultados para compararlos aquí.';return}
  panel.className='';
  const term=state.appliedTerm;
+ const pricesOnly=state.appliedScope==='dish'&&!!state.appliedPortion;
+ const highlights=pricesOnly?comparableHighlights(items,term,state.appliedPortion):new Set();
+ const advisory=document.createElement('p');advisory.className='note';
+ advisory.textContent=pricesOnly?'Se comparan solo variantes coincidentes y el mismo formato declarado. «Menor precio» requiere al menos dos locales con esa variante. La cantidad real puede variar.':'Selecciona un plato y un formato concreto para identificar precios comparables entre variantes equivalentes.';
+ panel.append(advisory);
  for(const p of items){
   const box=document.createElement('div');box.className='compare-place';
   const title=document.createElement('h3');title.textContent=p.name;box.append(title);
   const cost=document.createElement('p');cost.textContent='Comida completa por persona: '+fmt(p.mealCostEur)+' · '+(p.priceStatus==='unknown'?'Coste desconocido':p.priceStatus==='estimated'?'Coste estimado':'Coste confirmado');box.append(cost);
   const prices=relevantPrices(p,term,state.appliedScope==='dish'?state.appliedPortion:'');
   const label=document.createElement('p');label.textContent=prices.length?'Platos con precio publicado:':'Sin precios de platos coincidentes documentados.';box.append(label);
-  const ul=document.createElement('ul');for(const item of prices){const li=document.createElement('li');li.textContent=priceDescriptor(item);ul.append(li)}
+  const ul=document.createElement('ul');
+  for(const item of prices){
+   const li=document.createElement('li');
+   const winning=highlights.has(p.id+'|'+item.dish+'|'+item.eur);
+   li.textContent=priceDescriptor(item)+' · '+variantLabel(item)+(winning?' · ★ Menor precio comparable':'');
+   if(winning)li.className='best-comparable';
+   ul.append(li);
+  }
   box.append(ul);
   if(!state.appliedPortion&&new Set(prices.map(portionOf)).size>1){
    const caution=document.createElement('p');caution.className='note';
