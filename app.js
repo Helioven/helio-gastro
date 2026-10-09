@@ -147,7 +147,7 @@ function draw(){
 }
 function showPlace(p){
  const panel=el('detail-content');panel.replaceChildren();
- const title=document.createElement('h2');title.id='detail-title';title.textContent=p.name;panel.append(title);
+ const title=document.createElement('h2');title.id='detail-title';title.tabIndex=-1;title.textContent=p.name;panel.append(title);
  const address=document.createElement('p');address.textContent='📍 '+p.address;panel.append(address);
  const map=document.createElement('a');map.href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(p.address);map.target='_blank';map.rel='noopener noreferrer';map.textContent='Abrir dirección en Google Maps ↗';panel.append(map);
  const heading=document.createElement('h3');heading.textContent='Especialidades registradas';panel.append(heading);
@@ -216,6 +216,7 @@ function filter(event){
  state.appliedTerm=dish;state.appliedBudget=max;state.appliedScope=el('price-scope').value;state.appliedPortion=state.appliedScope==='dish'?el('portion').value:'';state.searched=true;
  el('results-section').hidden=false;
  el('compare-section').hidden=false;
+ el('detail-section').hidden=true;
  const area=el('area').value,kind=el('price-kind').value,scope=el('price-scope').value,includeUnknown=el('include-unknown').checked;
  state.filtered=state.places.filter(p=>{
   if(dish&&!clean(p.name+' '+p.dishes.join(' ')+' '+dishPrices(p).map(d=>d.dish).join(' ')).includes(dish))return false;
