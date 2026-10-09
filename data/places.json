@@ -397,5 +397,172 @@
         "url": "https://lacazueladelaesparteria.es/"
       }
     ]
+  },
+  {
+    "id": "taberna-la-viuda",
+    "name": "Taberna La Viuda",
+    "area": "Alcázar Viejo · San Basilio",
+    "address": "Calle San Basilio, 52, Córdoba",
+    "dishes": [
+      "Salmorejo cordobés",
+      "Mazamorra de almendra y avellanas",
+      "Croquetas de jamón y caldo de cocido",
+      "Croquetas de boniato",
+      "Flamenquín cordobés",
+      "Flamenquín de rabo de toro",
+      "Rabo de toro cordobés",
+      "Berenjenas fritas"
+    ],
+    "dishPrices": [
+      {
+        "dish": "Croquetas de jamón y caldo de cocido (unidad)",
+        "eur": 1.5,
+        "portion": "unidad"
+      },
+      {
+        "dish": "Salmorejo cordobés (tapa)",
+        "eur": 5,
+        "portion": "tapa"
+      },
+      {
+        "dish": "Salmorejo cordobés (media ración)",
+        "eur": 7,
+        "portion": "media"
+      },
+      {
+        "dish": "Salmorejo cordobés (ración)",
+        "eur": 10,
+        "portion": "racion"
+      },
+      {
+        "dish": "Mazamorra cordobesa (tapa)",
+        "eur": 7,
+        "portion": "tapa"
+      },
+      {
+        "dish": "Mazamorra cordobesa (media ración)",
+        "eur": 9,
+        "portion": "media"
+      },
+      {
+        "dish": "Mazamorra cordobesa (ración)",
+        "eur": 12,
+        "portion": "racion"
+      },
+      {
+        "dish": "Flamenquín cordobés (ración)",
+        "eur": 15,
+        "portion": "racion"
+      },
+      {
+        "dish": "Flamenquín de rabo de toro (ración)",
+        "eur": 18,
+        "portion": "racion"
+      },
+      {
+        "dish": "Rabo de toro cordobés (ración)",
+        "eur": 25,
+        "portion": "racion"
+      }
+    ],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Carta oficial de La Viuda",
+        "url": "https://gruporosalescordoba.com/taberna-la-viuda/carta/"
+      },
+      {
+        "label": "Web oficial y ubicación",
+        "url": "https://gruporosalescordoba.com/taberna-la-viuda/"
+      }
+    ]
+  },
+  {
+    "id": "la-taberna-del-rio",
+    "name": "La Taberna del Río",
+    "area": "Ribera · Guadalquivir",
+    "address": "Calle Enrique Romero de Torres, 7, Córdoba",
+    "dishes": [
+      "Salmorejo cordobés",
+      "Berenjenas fritas con miel",
+      "Flamenquín tradicional cordobés",
+      "Rabo de toro guisado",
+      "Huevos rotos"
+    ],
+    "dishPrices": [],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "groupMenus": [
+      {
+        "name": "Menú Lares 2026 (grupo mínimo 8 personas)",
+        "eurPerPerson": 36,
+        "minPeople": 8,
+        "includes": "Platos para compartir cada cuatro; surtido de postres y bebida durante el menú",
+        "sourceUrl": "https://www.latabernadelrio.com/wp-content/uploads/2026/01/Menus-2026.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Menús para grupos 2026, con condiciones",
+        "url": "https://www.latabernadelrio.com/wp-content/uploads/2026/01/Menus-2026.pdf"
+      }
+    ]
+  },
+  {
+    "id": "restaurante-puerta-sevilla",
+    "name": "Restaurante Puerta Sevilla",
+    "area": "Alcázar Viejo · San Basilio",
+    "address": "Calle Postrera, 51, Córdoba",
+    "dishes": [
+      "Salmorejo cordobés",
+      "Berenjenas fritas con miel de caña",
+      "Solomillo ibérico con migas camperas",
+      "Bacalao confitado sobre pisto"
+    ],
+    "dishPrices": [],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Web y cocina oficial",
+        "url": "https://gruporosalescordoba.com/restaurante-puerta-sevilla/"
+      },
+      {
+        "label": "Platos del menú degustación",
+        "url": "https://tienda.gruporosalescordoba.com/restaurante-puerta-sevilla-experiencia-cordoba-bajo-la-luz-de-la-historia/"
+      }
+    ]
+  },
+  {
+    "id": "posada-caballo-andaluz",
+    "name": "La Posada del Caballo Andaluz",
+    "area": "Alcázar Viejo · San Basilio",
+    "address": "Calle San Basilio, 16, Córdoba",
+    "dishes": [
+      "Salmorejo cordobés",
+      "Mazamorra cordobesa",
+      "Berenjenas fritas con miel de caña",
+      "Rabo de toro cordobés",
+      "Bacalao frito",
+      "Torrijas caseras"
+    ],
+    "dishPrices": [],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Web oficial y cocina tradicional",
+        "url": "https://gruporosalescordoba.com/la-posada-del-caballo-andaluz/"
+      },
+      {
+        "label": "Menú degustación y platos",
+        "url": "https://tienda.gruporosalescordoba.com/la-posada-del-caballo-andaluz-experiencia-cena-y-espectaculo-flamenco/"
+      }
+    ]
   }
 ]
