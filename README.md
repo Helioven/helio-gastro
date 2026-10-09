@@ -187,3 +187,9 @@ El filtro «Solo precios documentados» se mantiene estricto, pero el resultado 
 - Cambio de servicio limpia la búsqueda y selección activa para evitar comparaciones cruzadas; conserva favoritos y base de datos. La última búsqueda y modo se restauran tras F5.
 - Los filtros de formatos se adaptan al momento gastronómico; no se inventan horarios, teléfonos, aperturas en tiempo real ni precios de desayunos.
 - QA: Comer > Flamenquín y precio Rafaé; Desayunar > Churros sin locales falsamente disponibles; Merendar sin datos; Cenar > croquetas como catálogo general con advertencia; F5 restaura el modo y búsqueda.
+
+## 3.0.1 — Iconos de platos y estados vacíos
+- Restaura iconos específicos por especialidad en comidas y cenas, extendiéndolos a desayunos y meriendas.
+- En desayunos y meriendas sin carta verificada las tarjetas indican «Pendiente de incorporar cartas verificadas» en vez de sugerir una búsqueda fallida con cero locales.
+- Al abrir una sugerencia o buscar sin cobertura se explica que falta documentación, no que el restaurante esté cerrado.
+- No añade horarios, desayunos ni precios no verificados. Conserva 27 establecimientos, búsqueda, mapas, favoritos y comparador.

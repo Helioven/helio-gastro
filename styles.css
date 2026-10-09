@@ -117,3 +117,6 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 .service-intro,.service-notice{font-size:13px;color:#b9d4e4;background:rgba(54,102,135,.12);padding:10px;border-left:3px solid #ffd08d;border-radius:6px}
 #service-section{scroll-margin-top:85px}
 @media(max-width:590px){.service-selector{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* 3.0.1: etiquetas de cobertura sin datos verificables */
+.recommendation-tile span{line-height:1.45}
