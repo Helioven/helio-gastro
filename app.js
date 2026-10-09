@@ -40,7 +40,7 @@ function variantOf(item){
   if(s.includes('boniato'))return 'croquetas-boniato';
   return 'croquetas-otras';
  }
- return 'other:'+s.replace(/\\s*\\((?:media racion|racion|tapa|unidad|media)\\)/g,'').trim();
+ return 'other:'+s.replace(/\s*\((?:media racion|racion|tapa|unidad|media)\)/g,'').trim();
 }
 const VARIANT_NAMES={
  'flamenquin-rabo':'Flamenquín de rabo de toro',
@@ -57,7 +57,7 @@ const VARIANT_NAMES={
 function variantLabel(item){const key=variantOf(item);return VARIANT_NAMES[key]||'Variante sin categorizar'}
 function priceDescriptor(item){
  const format=portionOf(item);
- const dishHasFormat=/\\b(media(?:\\s+racion)?|racion|tapa|unidad)\\b/.test(clean(item.dish));
+ const dishHasFormat=/\b(media(?:\s+racion)?|racion|tapa|unidad)\b/.test(clean(item.dish));
  return item.dish+' — '+fmt(item.eur)+(dishHasFormat?'':' · '+PORTIONS[format]);
 }
 function comparableHighlights(items,term,portion){
