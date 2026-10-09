@@ -78,3 +78,14 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 
 /* 2.5.1: limpiar búsqueda de forma explícita */
 .search-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px}.search-actions .primary{flex:1 1 220px}.clear-search-button{border:1px solid #86a5bf;background:#173753;color:#e3f4fc;border-radius:10px;padding:12px 15px;min-height:44px;cursor:pointer;font-weight:700}
+
+/* 2.5.2: recomendaciones en diálogo modal, sin alargar la portada */
+#recommendation-dialog{width:min(850px,calc(100vw - 26px));max-height:min(88vh,950px);overflow-y:auto;box-sizing:border-box;margin:auto;padding:20px;border:1px solid #7296b2;border-radius:16px;background:#122c45;color:#f0f7fc;box-shadow:0 16px 80px #0009}
+#recommendation-dialog::backdrop{background:rgba(3,12,24,.82)}
+#recommendation-dialog:not([open]){display:none}
+.recommendation-dialog-head{display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:1px solid #50718e;padding-bottom:10px}
+.recommendation-dialog-head h2{font-size:20px;margin:0;color:#ffdfae}
+.recommendation-dialog-head button{flex-shrink:0}
+#recommendation-dialog h3{font-size:17px;color:#ffdfae;margin:17px 0 8px}
+#recommendation-dialog h4{font-size:13px;color:#c6e2f2;margin:14px 0 6px}
+@media(max-width:530px){#recommendation-dialog{padding:13px;max-height:92dvh}.recommendation-dialog-head h2{font-size:17px}}

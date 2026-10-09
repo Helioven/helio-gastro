@@ -355,6 +355,10 @@ function renderRecommendations(){
   btn.append(label,count);btn.addEventListener('click',()=>showRecommendations(dish.name));deck.append(btn);
  }
 }
+function openRecommendationPlace(p){
+ el('recommendation-dialog').close();
+ showPlace(p);
+}
 function showRecommendations(dishName){
  const term=clean(dishName),data=recommendationEntries(term),panel=el('recommendation-results');
  panel.replaceChildren();
@@ -376,7 +380,7 @@ function showRecommendations(dishName){
     const row=document.createElement('div');row.className='recommendation-row';
     const name=document.createElement('span');name.textContent=entry.p.name+' · '+entry.item.dish;
     const price=document.createElement('strong');price.textContent=fmt(entry.item.eur);
-    const more=document.createElement('button');more.type='button';more.textContent='Ver ficha';more.addEventListener('click',()=>showPlace(entry.p));
+    const more=document.createElement('button');more.type='button';more.textContent='Ver ficha';more.addEventListener('click',()=>openRecommendationPlace(entry.p));
     row.append(name,price,more);panel.append(row);
    }
   }
@@ -384,10 +388,9 @@ function showRecommendations(dishName){
  const known=new Set(data.priced.map(x=>x.p.id)),unknown=data.matches.filter(p=>!known.has(p.id));
  if(unknown.length){
   const heading=document.createElement('h3');heading.textContent='También ofrecen el plato · precio pendiente';panel.append(heading);
-  for(const p of unknown){const row=document.createElement('div');row.className='recommendation-row';const name=document.createElement('span');name.textContent=p.name;const btn=document.createElement('button');btn.type='button';btn.textContent='Ver ficha';btn.addEventListener('click',()=>showPlace(p));row.append(name,btn);panel.append(row)}
+  for(const p of unknown){const row=document.createElement('div');row.className='recommendation-row';const name=document.createElement('span');name.textContent=p.name;const btn=document.createElement('button');btn.type='button';btn.textContent='Ver ficha';btn.addEventListener('click',()=>openRecommendationPlace(p));row.append(name,btn);panel.append(row)}
  }
- el('recommendation-output').hidden=false;
- el('recommendation-output').scrollIntoView({behavior:'auto',block:'start'});
+ el('recommendation-dialog').showModal();
 }
 
 function clearSearch(){
@@ -412,6 +415,7 @@ function clearSearch(){
 }
 async function init(){
  el('filters').addEventListener('submit',filter);
+ el('close-recommendations').addEventListener('click',()=>el('recommendation-dialog').close());
  el('clear-search').addEventListener('click',clearSearch);
  el('close-detail').addEventListener('click',()=>{el('detail-section').hidden=true;el('results-heading').focus();});
  el('price-scope').addEventListener('change',()=>{el('portion').disabled=el('price-scope').value==='meal';});
