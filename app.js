@@ -114,49 +114,27 @@ function draw(){
   } else {
    const dishes=document.createElement('p');dishes.textContent='Especialidades: '+p.dishes.join(', ');card.append(dishes);
   }
-  const price=document.createElement('p');
-  const status=p.priceStatus==='confirmed'?'Coste completo confirmado':p.priceStatus==='estimated'?'Coste completo estimado':'Coste completo desconocido';
-  price.textContent='Comida completa por persona: '+fmt(p.mealCostEur)+' · '+status;card.append(price);
-  const term=state.appliedTerm;
-  const shown=relevantPrices(p,term,state.appliedScope==='dish'?state.appliedPortion:'');
-  if(shown.length) {
-    const priceHeading=document.createElement('p');
-    priceHeading.textContent=term?'Platos coincidentes con precio publicado:':'Precios publicados de platos (NO coste total):';
-    card.append(priceHeading);
-    const dishes=document.createElement('ul');dishes.className='dish-prices';
-    for (const item of shown) {
-      if(typeof item.dish!=='string'||!Number.isFinite(item.eur)) continue;
-      const li=document.createElement('li');
-      li.textContent=priceDescriptor(item);
-      dishes.append(li);
-    }
-    card.append(dishes);
-    if(shown.some(item=>item.portion==='unidad')){
-      const caution=document.createElement('p');
-      caution.className='note';caution.textContent='Ojo: el precio por unidad no equivale a una ración. Revisa la cantidad antes de comparar.';
-      card.append(caution);
-    }
-  } else if((term||state.appliedPortion) && dishPrices(p).length){
-    const notice=document.createElement('p');
-    notice.className='note';notice.textContent='No hay precio publicado para el plato y formato elegidos.';
-    card.append(notice);
+  const chosen=relevantPrices(p,state.appliedTerm,state.appliedScope==='dish'?state.appliedPortion:'');
+  const cost=lowestPrice(p,state.appliedScope,state.appliedTerm,state.appliedPortion);
+  if(chosen.length){
+   const cheapest=[...chosen].sort((a,b)=>a.eur-b.eur)[0];
+   const main=document.createElement('p');main.className='result-main-price';
+   main.textContent='Desde '+fmt(cheapest.eur)+' · '+(state.appliedPortion?PORTIONS[state.appliedPortion]:'Precio de plato publicado');
+   card.append(main);
+  }else{
+   const pending=document.createElement('p');pending.className='result-pending';
+   pending.textContent='Precio del plato'+(state.appliedPortion?' en este formato':'')+' pendiente de confirmar';
+   card.append(pending);
   }
-  if(state.appliedBudget && lowestPrice(p,state.appliedScope,state.appliedTerm,state.appliedPortion)===null){
-    const warning=document.createElement('p');warning.className='price-unknown';
-    warning.textContent='⚠ Precio desconocido. No podemos confirmar que se ajuste a tu presupuesto.';
-    card.append(warning);
+  if(state.appliedBudget!==null&&cost===null){
+   const warning=document.createElement('p');warning.className='note';
+   warning.textContent='No podemos confirmar que cumpla el presupuesto indicado.';card.append(warning);
   }
-  if(Array.isArray(p.groupMenus)&&p.groupMenus.length){
-    const group=document.createElement('p');group.className='note';
-    group.textContent='Menú para grupos (NO comida individual): '+p.groupMenus.map(m=>m.name+' · '+fmt(m.eurPerPerson)+'/persona · mínimo '+m.minPeople+' personas').join('; ');
-    card.append(group);
+  if(state.appliedScope==='meal'&&Number.isFinite(p.mealCostEur)){
+   const meal=document.createElement('p');meal.textContent='Coste de comida por persona: '+fmt(p.mealCostEur);card.append(meal);
   }
-  const sources=document.createElement('p');sources.textContent='Fuentes documentadas: '+p.sources.length+' · Fecha de consulta: '+(p.checkedAt||'pendiente');card.append(sources);
-  for(const source of p.sources){
-   if(source.url && /^https:\/\//.test(source.url)){
-    const link=document.createElement('a');link.href=source.url;link.target='_blank';link.rel='noopener noreferrer';link.textContent=(source.label||'Ver fuente')+' ↗';card.append(link);
-   }
-  }
+  const detailButton=document.createElement('button');detailButton.type='button';detailButton.className='detail-button';
+  detailButton.textContent='Ver ficha completa';detailButton.addEventListener('click',()=>showPlace(p));card.append(detailButton);
   const button=document.createElement('button');button.type='button';button.textContent=state.selected.has(p.id)?'✓ Quitar del comparador':'+ Comparar';
   button.setAttribute('aria-pressed',String(state.selected.has(p.id)));
   button.addEventListener('click',()=>{
@@ -166,6 +144,27 @@ function draw(){
    draw();compare();
   });card.append(button);list.append(card);
  }
+}
+function showPlace(p){
+ const panel=el('detail-content');panel.replaceChildren();
+ const title=document.createElement('h2');title.id='detail-title';title.tabIndex=-1;title.textContent=p.name;panel.append(title);
+ const address=document.createElement('p');address.textContent='📍 '+p.address;panel.append(address);
+ const map=document.createElement('a');map.href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(p.address);map.target='_blank';map.rel='noopener noreferrer';map.textContent='Abrir dirección en Google Maps ↗';panel.append(map);
+ const heading=document.createElement('h3');heading.textContent='Especialidades registradas';panel.append(heading);
+ const dishes=document.createElement('ul');for(const dish of p.dishes){const item=document.createElement('li');item.textContent=dish;dishes.append(item)}panel.append(dishes);
+ const pricing=document.createElement('h3');pricing.textContent='Precios publicados en carta';panel.append(pricing);
+ const prices=dishPrices(p);
+ if(prices.length){const list=document.createElement('ul');for(const price of prices){const item=document.createElement('li');item.textContent=priceDescriptor(price);list.append(item)}panel.append(list)}
+ else{const msg=document.createElement('p');msg.textContent='Todavía no tenemos precios de platos contrastados para esta taberna.';panel.append(msg)}
+ if(Number.isFinite(p.mealCostEur)){const total=document.createElement('p');total.textContent='Comida completa por persona: '+fmt(p.mealCostEur);panel.append(total)}
+ else{const caveat=document.createElement('p');caveat.className='note';caveat.textContent='El coste total de comer aquí no está documentado. Los precios de platos no incluyen necesariamente bebida ni extras.';panel.append(caveat)}
+ if(Array.isArray(p.groupMenus)&&p.groupMenus.length){const label=document.createElement('h3');label.textContent='Menús para grupos';panel.append(label);for(const m of p.groupMenus){const text=document.createElement('p');text.textContent=m.name+' · '+fmt(m.eurPerPerson)+'/persona · mínimo '+m.minPeople+' comensales';panel.append(text)}}
+ const sources=document.createElement('h3');sources.textContent='Fuentes y fecha';panel.append(sources);
+ const checked=document.createElement('p');checked.textContent='Última consulta: '+(p.checkedAt||'Sin fecha registrada');panel.append(checked);
+ for(const source of p.sources){if(!/^https:\/\//.test(source.url))continue;const a=document.createElement('a');a.href=source.url;a.textContent=source.label+' ↗';a.target='_blank';a.rel='noopener noreferrer';a.className='detail-source';panel.append(a)}
+ el('detail-section').hidden=false;
+ el('detail-section').scrollIntoView({behavior:'auto',block:'start'});
+ el('detail-title').focus({preventScroll:true});
 }
 function compare(){
  const panel=el('compare-output');panel.replaceChildren();
@@ -182,7 +181,7 @@ function compare(){
  for(const p of items){
   const box=document.createElement('div');box.className='compare-place';
   const title=document.createElement('h3');title.textContent=p.name;box.append(title);
-  const cost=document.createElement('p');cost.textContent='Comida completa por persona: '+fmt(p.mealCostEur)+' · '+(p.priceStatus==='unknown'?'Coste desconocido':p.priceStatus==='estimated'?'Coste estimado':'Coste confirmado');box.append(cost);
+  if(Number.isFinite(p.mealCostEur)){const cost=document.createElement('p');cost.textContent='Comida completa: '+fmt(p.mealCostEur);box.append(cost);}
   const prices=relevantPrices(p,term,state.appliedScope==='dish'?state.appliedPortion:'');
   const label=document.createElement('p');label.textContent=prices.length?'Platos con precio publicado:':'Sin precios de platos coincidentes documentados.';box.append(label);
   const ul=document.createElement('ul');
@@ -217,6 +216,7 @@ function filter(event){
  state.appliedTerm=dish;state.appliedBudget=max;state.appliedScope=el('price-scope').value;state.appliedPortion=state.appliedScope==='dish'?el('portion').value:'';state.searched=true;
  el('results-section').hidden=false;
  el('compare-section').hidden=false;
+ el('detail-section').hidden=true;
  const area=el('area').value,kind=el('price-kind').value,scope=el('price-scope').value,includeUnknown=el('include-unknown').checked;
  state.filtered=state.places.filter(p=>{
   if(dish&&!clean(p.name+' '+p.dishes.join(' ')+' '+dishPrices(p).map(d=>d.dish).join(' ')).includes(dish))return false;
@@ -247,6 +247,7 @@ function filter(event){
 }
 async function init(){
  el('filters').addEventListener('submit',filter);
+ el('close-detail').addEventListener('click',()=>{el('detail-section').hidden=true;el('results-heading').focus();});
  el('price-scope').addEventListener('change',()=>{el('portion').disabled=el('price-scope').value==='meal';});
  el('show-offering').addEventListener('click',()=>{
   el('budget').value='';

@@ -52,3 +52,6 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 
 /* 2.1: precio comparable verificado solo en variante y formato exactos */
 .best-comparable{color:#ffdc9c;font-weight:800;background:rgba(255,205,120,.09);border-radius:6px;padding:5px 7px;margin:4px 0}
+
+/* 2.2: resultados resumidos y fichas a demanda */
+#detail-section[hidden]{display:none!important}.detail-button{background:#255b7e;color:#fff;border:1px solid #7396b2;border-radius:9px;padding:9px 12px;cursor:pointer;min-height:40px;margin:7px 8px 6px 0}#detail-content h3{font-size:16px;color:#ffdc9e;margin:22px 0 7px}#detail-content li{padding:4px 0}#detail-content a{color:#a8e0ff}.detail-source{display:block;margin:8px 0}.result-main-price{color:#ffe1af!important;font-size:15px!important;font-weight:750}.result-pending{color:#b8cfde!important;font-size:13px!important}
