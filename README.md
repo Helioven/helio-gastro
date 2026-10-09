@@ -74,3 +74,11 @@ Se registran **seis precios de platos publicados por los propios locales** en Mo
 - Accesos rápidos a 10 especialidades (flamenquín, salmorejo, rabo de toro, mazamorra, carrillada, berenjenas, croquetas, pisto, cochifrito, codillo). Las sugerencias preparan el campo pero **no ejecutan búsquedas**: solo lo hace el botón Buscar.
 
 QA: HG-017 selección de plato típico sin auto-búsqueda; HG-018 consulta de mazamorra; HG-019 cambio de filtros sin revelar resultados; HG-020 precios nulos en nuevas fichas.
+
+## Versión 1.7 — cobertura de platos frente a precios
+El filtro «Solo precios documentados» se mantiene estricto, pero el resultado explica cuántos locales en **nuestra base parcial** tienen el plato registrado y cuántos cuentan con un precio. Un botón voluntario «Ver todos los locales que ofrecen este plato» retira los filtros monetarios y vuelve a buscar. Nunca se atribuye un precio desconocido ni se hace pasar el registro como un censo completo de Córdoba.
+
+- HG-021: croquetas: aparecen al menos 4 locales documentados sin filtros de precio.
+- HG-022: codillo: aparece Plateros San Francisco sin precios.
+- HG-023: «Solo precios documentados» muestra solo platos con precio conocido.
+- HG-024: botón Ver todos elimina filtros monetarios únicamente después de clic; no hay autobúsqueda al cargar.

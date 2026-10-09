@@ -37,3 +37,8 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 
 /* 1.6: accesos rápidos para platos típicos, sin ejecutar búsqueda */
 .dish-suggestions{display:grid;gap:7px;margin:-3px 0 2px}.dish-suggestions-label{font-size:10px;letter-spacing:1.3px;color:#ffd99d;font-weight:800}.dish-suggestions-list{display:flex;flex-wrap:wrap;gap:7px}.dish-suggestions-list button{padding:7px 11px;border-radius:999px;min-height:36px;border:1px solid #6086a2;background:#193a55;color:#eaf6ff;font:inherit;font-size:12px;cursor:pointer}.dish-suggestions-list button:hover{background:#286084}.dish-suggestions small{font-size:11px;color:#a8c4da}
+
+/* 1.7: aclarar cobertura de datos frente a filtros de precio */
+.coverage-summary{background:#23445d;border-left:3px solid #f3c47e;padding:11px 12px;margin-bottom:11px;border-radius:7px;color:#ecf4f9;font-size:13px;line-height:1.5}
+.show-offering{background:#265a78;color:#fff0d4;border:1px solid #b1a07b;border-radius:10px;padding:10px 13px;min-height:43px;margin:0 0 13px;cursor:pointer;font-weight:700}
+.coverage-summary[hidden],.show-offering[hidden]{display:none!important}

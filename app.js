@@ -83,6 +83,11 @@ function compare(){
   panel.append(box);
  }
 }
+function getDishCoverage(term, area) {
+ const matches=state.places.filter(p=>(!term||clean(p.name+' '+p.dishes.join(' ')+' '+dishPrices(p).map(d=>d.dish).join(' ')).includes(term))&&(!area||p.area===area));
+ const priced=matches.filter(p=>relevantPrices(p,term).length>0);
+ return {total:matches.length, priced:priced.length, unpriced:matches.length-priced.length};
+}
 function filter(event){
  if(event)event.preventDefault();
  const dish=clean(el('dish').value.trim()),max=el('budget').value?Number(el('budget').value):null;
@@ -106,12 +111,25 @@ function filter(event){
  el('budget-explain').textContent=scope==='dish'?
   'Presupuesto aplicado al plato más económico coincidente y documentado. Los precios desconocidos no garantizan cumplirlo.':
   'Presupuesto aplicado al coste total por persona. Los locales sin coste documentado pueden mostrarse, pero no se consideran dentro del límite.';
+ const coverage=getDishCoverage(dish,area);
+ const coverageBox=el('coverage-summary'), more=el('show-offering');
+ coverageBox.hidden=!dish;
+ more.hidden=!dish || !(coverage.unpriced>0 && (max!==null || kind!==''));
+ if(dish){
+  coverageBox.textContent='En nuestra base actual: '+coverage.total+' local(es) con «'+el('dish').value.trim()+'» registrado(s); '+coverage.priced+' con precio de ese plato documentado y '+coverage.unpriced+' sin precio. Esto NO representa todos los bares de Córdoba.';
+ }
  draw();compare();
  el('results-section').scrollIntoView({behavior:'auto',block:'start'});
  el('results-heading').focus({preventScroll:true});
 }
 async function init(){
  el('filters').addEventListener('submit',filter);
+ el('show-offering').addEventListener('click',()=>{
+  el('budget').value='';
+  el('price-kind').value='';
+  el('include-unknown').checked=true;
+  el('filters').requestSubmit();
+ });
  document.querySelectorAll('[data-dish]').forEach(button=>button.addEventListener('click',()=>{
   el('dish').value=button.dataset.dish;
   el('dish').focus();
