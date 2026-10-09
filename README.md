@@ -109,3 +109,10 @@ El filtro «Solo precios documentados» se mantiene estricto, pero el resultado 
 - La ficha incorpora dirección, enlace a mapas, todas las especialidades, precios de carta, condiciones de menú de grupo cuando existan, fuentes y fecha de consulta.
 - No se muestra «No disponible» repetidamente en resultados y comparador. Si el coste de una comida es desconocido, se explica una sola vez en la ficha.
 - QA: verificar La Viuda (precios), Salinas (sin precios), La Taberna del Río (menú 8+), enlaces seguros, botón cerrar y búsqueda manual.
+
+## Versión 2.3 — Cartas agrupadas
+- Una sección por plato con sus importes separados por unidad/tapa/media/ración.
+- Las especialidades registradas sin precio pasan a una sola sección discreta final.
+- No se inventan importes ni se deducen formatos no registrados.
+- Para evitar duplicados, se relaciona el nombre de la especialidad con la denominación publicada de su precio; se mantiene el nombre original si difiere.
+- Casos QA: La Viuda agrupa tres precios del salmorejo y de la mazamorra; Salinas lista especialidades sin precios; La Taberna del Río conserva condiciones del menú de grupo; búsqueda y comparador sin cambios.
