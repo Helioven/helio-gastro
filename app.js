@@ -145,17 +145,53 @@ function draw(){
   });card.append(button);list.append(card);
  }
 }
+function menuDishName(item){
+ return item.dish.replace(/\s*\((?:media(?:\s+ración)?|ración|tapa|unidad|media)\)\s*$/i,'').trim();
+}
+function menuGroups(p){
+ const groups=[];
+ for(const item of dishPrices(p)){
+  const label=menuDishName(item),key=clean(label);
+  let group=groups.find(g=>g.key===key);
+  if(!group){group={key,label,prices:[]};groups.push(group)}
+  group.prices.push(item);
+ }
+ const unpriced=p.dishes.filter(d=>{
+  const key=clean(d);
+  return !groups.some(g=>g.key===key||g.key.startsWith(key+' ')||key.startsWith(g.key+' '));
+ });
+ return {groups,unpriced};
+}
 function showPlace(p){
  const panel=el('detail-content');panel.replaceChildren();
  const title=document.createElement('h2');title.id='detail-title';title.tabIndex=-1;title.textContent=p.name;panel.append(title);
  const address=document.createElement('p');address.textContent='📍 '+p.address;panel.append(address);
  const map=document.createElement('a');map.href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(p.address);map.target='_blank';map.rel='noopener noreferrer';map.textContent='Abrir dirección en Google Maps ↗';panel.append(map);
- const heading=document.createElement('h3');heading.textContent='Especialidades registradas';panel.append(heading);
- const dishes=document.createElement('ul');for(const dish of p.dishes){const item=document.createElement('li');item.textContent=dish;dishes.append(item)}panel.append(dishes);
- const pricing=document.createElement('h3');pricing.textContent='Precios publicados en carta';panel.append(pricing);
- const prices=dishPrices(p);
- if(prices.length){const list=document.createElement('ul');for(const price of prices){const item=document.createElement('li');item.textContent=priceDescriptor(price);list.append(item)}panel.append(list)}
- else{const msg=document.createElement('p');msg.textContent='Todavía no tenemos precios de platos contrastados para esta taberna.';panel.append(msg)}
+ const menu=menuGroups(p);
+ const heading=document.createElement('h3');heading.textContent='Carta y especialidades';panel.append(heading);
+ if(menu.groups.length){
+  const list=document.createElement('div');list.className='menu-groups';
+  for(const group of menu.groups){
+   const entry=document.createElement('section');entry.className='menu-dish';
+   const name=document.createElement('h4');name.textContent=group.label;entry.append(name);
+   for(const price of group.prices){
+    const row=document.createElement('div');row.className='menu-price-row';
+    const portion=document.createElement('span');portion.textContent=PORTIONS[portionOf(price)];
+    const amount=document.createElement('strong');amount.textContent=fmt(price.eur);
+    row.append(portion,amount);entry.append(row);
+   }
+   list.append(entry);
+  }
+  panel.append(list);
+ }
+ if(menu.unpriced.length){
+  const label=document.createElement('h4');label.className='menu-unpriced-title';label.textContent='Otras especialidades · precios pendientes';panel.append(label);
+  const unpriced=document.createElement('ul');unpriced.className='menu-unpriced';
+  for(const dish of menu.unpriced){const li=document.createElement('li');li.textContent=dish;unpriced.append(li)}
+  panel.append(unpriced);
+ }else if(!menu.groups.length){
+  const msg=document.createElement('p');msg.className='note';msg.textContent='Aún no tenemos especialidades registradas para este local.';panel.append(msg);
+ }
  if(Number.isFinite(p.mealCostEur)){const total=document.createElement('p');total.textContent='Comida completa por persona: '+fmt(p.mealCostEur);panel.append(total)}
  else{const caveat=document.createElement('p');caveat.className='note';caveat.textContent='El coste total de comer aquí no está documentado. Los precios de platos no incluyen necesariamente bebida ni extras.';panel.append(caveat)}
  if(Array.isArray(p.groupMenus)&&p.groupMenus.length){const label=document.createElement('h3');label.textContent='Menús para grupos';panel.append(label);for(const m of p.groupMenus){const text=document.createElement('p');text.textContent=m.name+' · '+fmt(m.eurPerPerson)+'/persona · mínimo '+m.minPeople+' comensales';panel.append(text)}}
