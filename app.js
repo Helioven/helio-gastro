@@ -12,15 +12,41 @@ function dishPrices(p){return(Array.isArray(p.dishPrices)?p.dishPrices:[]).filte
 function relevantPrices(p,term){return dishPrices(p).filter(d=>!term||clean(d.dish).includes(term))}
 function lowestPrice(p,scope,term){if(scope==='meal')return Number.isFinite(p.mealCostEur)?p.mealCostEur:null;const arr=relevantPrices(p,term);return arr.length?Math.min(...arr.map(x=>x.eur)):null}
 function showEmpty(message){const node=document.createElement('div');node.className='empty';node.textContent=message;el('results').replaceChildren(node)}
+function groupFor(p) {
+ const price=lowestPrice(p,state.appliedScope,state.appliedTerm);
+ if(price===null)return 'unknown';
+ if(state.appliedBudget!==null && price>state.appliedBudget)return 'over';
+ return 'verified';
+}
 function draw(){
  const list=el('results');list.replaceChildren();
  el('count').textContent=state.filtered.length+' '+(state.filtered.length===1?'lugar':'lugares');
  if(!state.places.length){showEmpty('Todavía no hemos incorporado establecimientos verificados. Empezaremos por una selección pequeña y documentada de Córdoba.');return}
  if(!state.filtered.length){showEmpty('No hay establecimientos que cumplan estos filtros. Prueba con otra especialidad o presupuesto.');return}
- for(const p of state.filtered){
+ let previousGroup='';
+ const ordered=[...state.filtered].sort((x,y)=>{
+  const rank={verified:0,unknown:1,over:2};
+  return rank[groupFor(x)]-rank[groupFor(y)];
+ });
+ for(const p of ordered){
+  const group=groupFor(p);
+  if(group!==previousGroup){
+   const heading=document.createElement('h3');heading.className='result-group-title';
+   heading.textContent=group==='verified'?'✓ Con precio documentado'+(state.appliedBudget!==null?' dentro del presupuesto':''):
+     group==='unknown'?'? Ofrecen el plato · Precio sin verificar':'Precio superior al presupuesto';
+   list.append(heading);previousGroup=group;
+  }
   const card=document.createElement('article');card.className='place';
   const title=document.createElement('h3');title.textContent=p.name;card.append(title);
-  const details=document.createElement('p');details.textContent='📍 '+p.area+' · '+p.dishes.join(', ');card.append(details);
+  const details=document.createElement('p');details.textContent='📍 '+p.area;card.append(details);
+  if(state.appliedTerm){
+   const matches=p.dishes.filter(d=>clean(d).includes(state.appliedTerm));
+   const matched=document.createElement('p');matched.className='matching-dishes';
+   matched.textContent=matches.length?'🍴 Plato encontrado: '+matches.join(' · '):'Coincidencia con el nombre del local';
+   card.append(matched);
+  } else {
+   const dishes=document.createElement('p');dishes.textContent='Especialidades: '+p.dishes.join(', ');card.append(dishes);
+  }
   const price=document.createElement('p');
   const status=p.priceStatus==='confirmed'?'Coste completo confirmado':p.priceStatus==='estimated'?'Coste completo estimado':'Coste completo desconocido';
   price.textContent='Comida completa por persona: '+fmt(p.mealCostEur)+' · '+status;card.append(price);
