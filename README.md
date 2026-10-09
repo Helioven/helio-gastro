@@ -136,3 +136,9 @@ El filtro «Solo precios documentados» se mantiene estricto, pero el resultado 
 - Los precios de cada plato se presentan agrupados por variante y formato; los locales sin precio documentado se muestran aparte.
 - No hay valoración de calidad ni promesa sobre tamaños equivalentes. Se mantiene la búsqueda manual y persistencia del comparador.
 - Pruebas: flamenquines tradicional/rabo separados, croquetas por unidad y media ración, consulta rápida y apertura de ficha.
+
+## 2.5.2 — Modal de recomendaciones
+- Pulsar un plato abre un cuadro modal desplazable sin alargar la página principal.
+- Se cierra por botón o Esc; al abrir una ficha se cierra antes el modal y se muestra la ficha correspondiente.
+- Conserva el estado de filtros, favoritos y comparador y usa el diálogo nativo accesible del navegador.
+- QA: abrir flamenquín, desplazar contenido, cerrar con Esc y botón, abrir ficha, comprobar la persistencia tras F5.
