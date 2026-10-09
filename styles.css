@@ -20,3 +20,8 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 .info{color:#cfdfeb;font-size:14px}.info b{color:#ffe0ab}footer{text-align:center;font-size:12px;color:#8fadc4;margin-top:25px}
 @media(max-width:560px){.shell{padding:15px 11px 45px}.hero{padding:25px 17px;margin-top:18px}.panel{padding:15px 13px;border-radius:16px}.two{grid-template-columns:1fr}.brand h1{font-size:20px}.eyebrow{font-size:10px}.version{font-size:10px}h2{font-size:19px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+/* Comparador Helio Gastro 1.1 */
+.dish-prices{padding-left:20px;color:#ffddae;font-size:13px;line-height:1.6}
+.compare-place{padding:13px;border:1px solid #527b9a;background:#143451;border-radius:12px;margin-bottom:10px}
+.compare-place h3{margin:0 0 6px}.compare-place p{font-size:13px;color:#d2e5f1;margin:4px 0}.compare-place ul{padding-left:20px;font-size:13px;color:#ffddae}
+#budget-explain{border-left:3px solid #e9b878;padding:7px 10px;background:#213b53}
