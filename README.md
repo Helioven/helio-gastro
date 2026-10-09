@@ -200,3 +200,9 @@ El filtro «Solo precios documentados» se mantiene estricto, pero el resultado 
 - Horarios generales consultados y consignados como NOTA orientativa de cada local; NO deben usarse para afirmar disponibilidad de churros, cocina o servicio a una hora concreta. Si las fuentes discrepan se indica expresamente.
 - Atención: existen dos establecimientos llamados Don Pepe en la ciudad, no se mezclan sus direcciones ni sus fuentes.
 - Casos QA: Desayunar > Churros muestra 3 locales; Desayunar > Tostadas muestra los 3; Comer > Flamenquín mantiene datos antiguos; buscar Don Pepe por nombre en desayuno devuelve 2; Marta 1; F5 conserva búsqueda y modo.
+
+## 3.1.1 — Mensajes de desayuno basados en los datos
+- Los avisos de selección de servicio, buscador y recomendaciones ahora cuentan los locales que realmente tienen carta específica.
+- Diferencia especialidad documentada de precios y horarios confirmados, y deja de afirmar cero locales cuando existen tres.
+- Se conservan las dos ubicaciones contrastadas de Don Pepe por separado. No se presupone franquicia o relación societaria ni se agregan locales sin dirección contrastada.
+- Regresión: desayunar > churros/tostadas muestra tres; merendar sin datos sigue explicando que faltan cartas; se conservan búsqueda y comparador.

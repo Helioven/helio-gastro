@@ -42,11 +42,14 @@ function updateMealMode(mode,{reset=true}={}){
  portion.disabled=el('price-scope').value==='meal';
  el('dish').placeholder=cfg.placeholder;
  el('budget-label').textContent=mode==='desayuno'?'Presupuesto de desayuno':mode==='merienda'?'Presupuesto de merienda':'Presupuesto máximo';
- el('service-intro').textContent=(mode==='desayuno'||mode==='merienda')
-  ?'Estamos preparando cartas específicas. Todavía no hay '+cfg.label.toLowerCase()+'s verificados en la base: no mostraremos locales como disponibles sin pruebas.'
+ const documented=state.places.filter(p=>p.menus.some(m=>m.service===mode)).length;
+ const serviceMessage=documented
+  ?'Tenemos '+documented+' locales con especialidades registradas para este servicio. Los precios y horarios concretos siguen pendientes de confirmar.'
+  :'Estamos preparando cartas de '+cfg.label.toLowerCase()+'. Todavía no hay locales con especialidades documentadas para este servicio.';
+ el('service-intro').textContent=(mode==='desayuno'||mode==='merienda')?serviceMessage
   :'Puedes explorar las cartas generales existentes; el servicio de '+cfg.label.toLowerCase()+' y su horario siguen pendientes de verificar.';
- el('service-results-note').textContent=mode==='desayuno'||mode==='merienda'
-  ?'Solo se muestran cartas documentadas para este servicio. Actualmente no hay registros confirmados.'
+ el('service-results-note').textContent=(mode==='desayuno'||mode==='merienda')
+  ?serviceMessage
   :'Se muestran cartas generales para explorar opciones. No confirman que el local sirva este plato a la hora elegida.';
  const dishSuggestions=el('dish-suggestions-list');dishSuggestions.replaceChildren();
  for(const dish of cfg.dishes){const btn=document.createElement('button');btn.type='button';btn.textContent=dish;btn.addEventListener('click',()=>{el('dish').value=dish;el('dish').focus()});dishSuggestions.append(btn)}
@@ -507,7 +510,11 @@ function showRecommendations(dishName){
  const term=clean(dishName),data=recommendationEntries(term),panel=el('recommendation-results');
  panel.replaceChildren();
  el('recommendation-title').textContent='Opciones de '+dishName.toLowerCase();
- const context=document.createElement('p');context.className='service-notice';context.textContent=(state.mode==='desayuno'||state.mode==='merienda')?'Solo figuran cartas verificadas para este servicio; actualmente no hay registros confirmados.':'Los platos proceden de cartas generales. No se ha confirmado que estén disponibles específicamente para '+MODE_CONFIG[state.mode].label.toLowerCase()+' ni a una hora determinada.';panel.append(context);
+ const context=document.createElement('p');context.className='service-notice';context.textContent=(state.mode==='desayuno'||state.mode==='merienda')
+  ?(data.matches.length
+    ?'Hay '+data.matches.length+' locales con esta especialidad registrada para el servicio. Precios y horarios concretos pendientes de confirmar.'
+    :'Todavía no tenemos esta especialidad documentada para el servicio seleccionado.')
+  :'Los platos proceden de cartas generales. No se ha confirmado que estén disponibles específicamente para '+MODE_CONFIG[state.mode].label.toLowerCase()+' ni a una hora determinada.';panel.append(context);
  const intro=document.createElement('p');intro.className='note';
  intro.textContent=(state.mode==='desayuno'||state.mode==='merienda')&&!data.matches.length
   ?'Todavía no disponemos de cartas verificadas para este servicio. No significa que las cafeterías o restaurantes estén cerrados o no lo sirvan.'
