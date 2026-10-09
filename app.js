@@ -152,7 +152,7 @@ function renderFavorites(){
  }
 }
 const SEARCH_KEY='helio-gastro-search-v1';
-const SEARCH_FIELDS=['dish','budget','price-scope','portion','area','include-unknown','price-kind','sort'];
+const SEARCH_FIELDS=['place-name','dish','budget','price-scope','portion','area','include-unknown','price-kind','sort'];
 function saveSearch(){
  if(!state.searched)return;
  const form={};
@@ -165,7 +165,7 @@ function restoreSearch(){
  if(!snapshot||typeof snapshot!=='object'||!snapshot.form||typeof snapshot.form!=='object')return false;
  for(const id of SEARCH_FIELDS){
   const node=el(id),saved=snapshot.form[id];
-  if(id==='dish'){node.value=typeof saved==='string'?saved.slice(0,120):'';continue}
+  if(id==='dish'||id==='place-name'){node.value=typeof saved==='string'?saved.slice(0,120):'';continue}
   if(node.type==='checkbox'){if(typeof saved==='boolean')node.checked=saved;continue}
   if(typeof saved==='string'&&[...node.options].some(opt=>opt.value===saved))node.value=saved;
  }
@@ -192,10 +192,10 @@ function draw(){
   return rank[groupFor(x)]-rank[groupFor(y)];
  });
  for(const p of ordered){
-  const group=groupFor(p);
+  const group=state.appliedTerm?groupFor(p):'all';
   if(group!==previousGroup){
    const heading=document.createElement('h3');heading.className='result-group-title';
-   heading.textContent=group==='verified'?'✓ Con precio documentado'+(state.appliedBudget!==null?' dentro del presupuesto':''):
+   heading.textContent=!state.appliedTerm?'Establecimientos encontrados':group==='verified'?'✓ Con precio documentado'+(state.appliedBudget!==null?' dentro del presupuesto':''):
      group==='unknown'?'También ofrecen el plato · Precio pendiente de confirmar':'Precio superior al presupuesto';
    list.append(heading);previousGroup=group;
   }
@@ -212,7 +212,11 @@ function draw(){
   }
   const chosen=relevantPrices(p,state.appliedTerm,state.appliedScope==='dish'?state.appliedPortion:'');
   const cost=lowestPrice(p,state.appliedScope,state.appliedTerm,state.appliedPortion);
-  if(chosen.length){
+  if(!state.appliedTerm){
+   const summary=document.createElement('p');summary.className='result-pending';
+   summary.textContent=dishPrices(p).length?dishPrices(p).length+' precio(s) de carta documentado(s) · Ver ficha para detalles':'Consulta especialidades y fuentes en la ficha';
+   card.append(summary);
+  }else if(chosen.length){
    const cheapest=[...chosen].sort((a,b)=>a.eur-b.eur)[0];
    const main=document.createElement('p');main.className='result-main-price';
    main.textContent='Desde '+fmt(cheapest.eur)+' · '+(state.appliedPortion?PORTIONS[state.appliedPortion]:'Precio de plato publicado');
@@ -339,14 +343,14 @@ function compare(){
   panel.append(box);
  }
 }
-function getDishCoverage(term, area) {
- const matches=state.places.filter(p=>(!term||clean(p.name+' '+p.dishes.join(' ')+' '+dishPrices(p).map(d=>d.dish).join(' ')).includes(term))&&(!area||p.area===area));
+function getDishCoverage(term, area, nameQuery='') {
+ const matches=state.places.filter(p=>(!nameQuery||clean(p.name).includes(nameQuery))&&(!term||clean(p.dishes.join(' ')+' '+dishPrices(p).map(d=>d.dish).join(' ')).includes(term))&&(!area||p.area===area));
  const priced=matches.filter(p=>relevantPrices(p,term).length>0);
  return {total:matches.length, priced:priced.length, unpriced:matches.length-priced.length};
 }
 function filter(event,restoring=false){
  if(event)event.preventDefault();
- const dish=clean(el('dish').value.trim()),max=el('budget').value?Number(el('budget').value):null;
+ const dish=clean(el('dish').value.trim()),nameQuery=clean(el('place-name').value.trim()),max=el('budget').value?Number(el('budget').value):null;
  state.appliedTerm=dish;state.appliedBudget=max;state.appliedScope=el('price-scope').value;state.appliedPortion=state.appliedScope==='dish'?el('portion').value:'';state.searched=true;
  el('results-section').hidden=false;
  el('compare-section').hidden=false;
@@ -354,7 +358,8 @@ function filter(event,restoring=false){
  state.currentDetailId=null;
  const area=el('area').value,kind=el('price-kind').value,scope=el('price-scope').value,includeUnknown=el('include-unknown').checked;
  state.filtered=state.places.filter(p=>{
-  if(dish&&!clean(p.name+' '+p.dishes.join(' ')+' '+dishPrices(p).map(d=>d.dish).join(' ')).includes(dish))return false;
+  if(nameQuery&&!clean(p.name).includes(nameQuery))return false;
+  if(dish&&!clean(p.dishes.join(' ')+' '+dishPrices(p).map(d=>d.dish).join(' ')).includes(dish))return false;
   if(area&&p.area!==area)return false;
   const price=lowestPrice(p,scope,dish,state.appliedPortion);
   if(max!==null&&(price>max||(price===null&&!includeUnknown)))return false;
@@ -369,7 +374,7 @@ function filter(event,restoring=false){
  el('budget-explain').textContent=scope==='dish'?
   'El presupuesto usa exclusivamente el formato seleccionado: unidad, tapa, media o ración. Si no hay precio de ese formato, se indica como desconocido.':
   'Presupuesto aplicado al coste total por persona. Los locales sin coste documentado pueden mostrarse, pero no se consideran dentro del límite.';
- const coverage=getDishCoverage(dish,area);
+ const coverage=getDishCoverage(dish,area,nameQuery);
  const coverageBox=el('coverage-summary'), more=el('show-offering');
  coverageBox.hidden=!dish;
  more.hidden=!dish || !(coverage.unpriced>0 && (max!==null || kind!==''));
