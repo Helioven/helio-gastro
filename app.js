@@ -1,6 +1,59 @@
 'use strict';
-const state={places:[],filtered:[],selected:new Set(),favorites:new Set(),searched:false,appliedTerm:'',appliedScope:'dish',appliedPortion:'',appliedBudget:null,currentDetailId:null};
+const state={places:[],filtered:[],selected:new Set(),favorites:new Set(),searched:false,appliedTerm:'',appliedScope:'dish',appliedPortion:'',appliedBudget:null,currentDetailId:null,mode:'comida'};
 const el=id=>document.getElementById(id);
+const MODE_CONFIG={
+ desayuno:{label:'Desayunar',emoji:'☕',budgets:[3,5,7,10],dishes:['Tostadas','Churros','Molletes','Café'],portions:[['unidad','Unidad'],['media-tostada','Media tostada'],['tostada-entera','Tostada entera'],['combinado','Desayuno combinado']],placeholder:'Tostadas, churros, molletes…'},
+ comida:{label:'Comer',emoji:'🍽️',budgets:[10,15,20,30,50],dishes:['Flamenquín','Salmorejo','Rabo de toro','Croquetas','Mazamorra','Carrillada','Berenjenas','Pisto'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']],placeholder:'Flamenquín, salmorejo, carrillada…'},
+ merienda:{label:'Merendar',emoji:'🥐',budgets:[3,5,8,12],dishes:['Churros','Chocolate','Pasteles','Tartas'],portions:[['unidad','Unidad'],['racion','Ración'],['combinado','Merienda combinada']],placeholder:'Churros con chocolate, pasteles…'},
+ cena:{label:'Cenar',emoji:'🌙',budgets:[10,15,20,30,50],dishes:['Tapas','Flamenquín','Croquetas','Tortilla','Rabo de toro','Salmorejo'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']],placeholder:'Tapas, tortilla, croquetas…'}
+};
+const MODE_KEY='helio-gastro-meal-mode-v1';
+function serviceMenus(p){
+ const specific=p.menus.filter(m=>m.service===state.mode);
+ // La carta general sirve solo para explorar platos, no confirma el servicio ni horario.
+ return specific.length?specific:(state.mode==='comida'||state.mode==='cena'?p.menus.filter(m=>m.service==='general'):[]);
+}
+function serviceDishes(p){return serviceMenus(p).flatMap(m=>m.dishes)}
+function servicePrices(p){return serviceMenus(p).flatMap(m=>m.dishPrices)}
+function serviceKnown(p){return p.menus.some(m=>m.service===state.mode)}
+function updateMealMode(mode,{reset=true}={}){
+ if(!Object.hasOwn(MODE_CONFIG,mode))return;
+ state.mode=mode;
+ try{localStorage.setItem(MODE_KEY,mode)}catch{}
+ const cfg=MODE_CONFIG[mode];
+ for(const btn of document.querySelectorAll('[data-service]')){
+  btn.setAttribute('aria-pressed',String(btn.dataset.service===mode));
+ }
+ const budget=el('budget'),oldBudget=reset?'':budget.value;budget.replaceChildren();
+ const unlimited=document.createElement('option');unlimited.value='';unlimited.textContent='Sin límite';budget.append(unlimited);
+ for(const value of cfg.budgets){const opt=document.createElement('option');opt.value=String(value);opt.textContent=value+' €';budget.append(opt)}
+ budget.value=cfg.budgets.some(n=>String(n)===oldBudget)?oldBudget:'';
+ const portion=el('portion'),oldPortion=reset?'':portion.value;portion.replaceChildren();
+ const any=document.createElement('option');any.value='';any.textContent='Cualquier formato';portion.append(any);
+ for(const [value,label] of cfg.portions){const opt=document.createElement('option');opt.value=value;opt.textContent=label;portion.append(opt)}
+ portion.value=cfg.portions.some(([v])=>v===oldPortion)?oldPortion:'';
+ portion.disabled=el('price-scope').value==='meal';
+ el('dish').placeholder=cfg.placeholder;
+ el('budget-label').textContent=mode==='desayuno'?'Presupuesto de desayuno':mode==='merienda'?'Presupuesto de merienda':'Presupuesto máximo';
+ el('service-intro').textContent=(mode==='desayuno'||mode==='merienda')
+  ?'Estamos preparando cartas específicas. Todavía no hay '+cfg.label.toLowerCase()+'s verificados en la base: no mostraremos locales como disponibles sin pruebas.'
+  :'Puedes explorar las cartas generales existentes; el servicio de '+cfg.label.toLowerCase()+' y su horario siguen pendientes de verificar.';
+ el('service-results-note').textContent=mode==='desayuno'||mode==='merienda'
+  ?'Solo se muestran cartas documentadas para este servicio. Actualmente no hay registros confirmados.'
+  :'Se muestran cartas generales para explorar opciones. No confirman que el local sirva este plato a la hora elegida.';
+ const dishSuggestions=el('dish-suggestions-list');dishSuggestions.replaceChildren();
+ for(const dish of cfg.dishes){const btn=document.createElement('button');btn.type='button';btn.textContent=dish;btn.addEventListener('click',()=>{el('dish').value=dish;el('dish').focus()});dishSuggestions.append(btn)}
+ renderRecommendations();
+ if(reset){
+  el('dish').value='';el('place-name').value='';
+  state.searched=false;state.filtered=[];state.selected.clear();state.currentDetailId=null;
+  el('results-section').hidden=true;el('compare-section').hidden=true;el('detail-section').hidden=true;
+  el('coverage-summary').hidden=true;el('show-offering').hidden=true;
+  updateQuickNav();
+  try{localStorage.removeItem(SEARCH_KEY)}catch{}
+ }
+}
+
 const fmt=n=>typeof n==='number'?new Intl.NumberFormat('es-ES',{style:'currency',currency:'EUR'}).format(n):'No disponible';
 const clean=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 const SERVICE_TYPES={
@@ -31,7 +84,7 @@ function validPlace(p){
  &&(p.mealCostEur===null||Number.isFinite(p.mealCostEur));
 }
 function dishPrices(p){return(Array.isArray(p.dishPrices)?p.dishPrices:[]).filter(d=>typeof d.dish==='string'&&Number.isFinite(d.eur)&&d.eur>=0)}
-const PORTIONS={unidad:'Unidad',tapa:'Tapa',media:'Media ración',racion:'Ración completa',desconocida:'Formato sin especificar'};
+const PORTIONS={unidad:'Unidad',tapa:'Tapa',media:'Media ración',racion:'Ración completa','media-tostada':'Media tostada','tostada-entera':'Tostada entera',combinado:'Combinado',desconocida:'Formato sin especificar'};
 function portionOf(item){
  if(PORTIONS[item.portion])return item.portion;
  const name=clean(item.dish);
@@ -179,12 +232,13 @@ function saveSearch(){
  if(!state.searched)return;
  const form={};
  for(const id of SEARCH_FIELDS){const node=el(id);form[id]=node.type==='checkbox'?node.checked:node.value}
- try{localStorage.setItem(SEARCH_KEY,JSON.stringify({form,selected:[...state.selected]}))}catch{}
+ try{localStorage.setItem(SEARCH_KEY,JSON.stringify({form,selected:[...state.selected],mode:state.mode}))}catch{}
 }
 function restoreSearch(){
  let snapshot;
  try{snapshot=JSON.parse(localStorage.getItem(SEARCH_KEY)||'null')}catch{return false}
  if(!snapshot||typeof snapshot!=='object'||!snapshot.form||typeof snapshot.form!=='object')return false;
+ if(typeof snapshot.mode==='string'&&Object.hasOwn(MODE_CONFIG,snapshot.mode))updateMealMode(snapshot.mode,{reset:false});
  for(const id of SEARCH_FIELDS){
   const node=el(id),saved=snapshot.form[id];
   if(id==='dish'||id==='place-name'){node.value=typeof saved==='string'?saved.slice(0,120):'';continue}
@@ -207,7 +261,7 @@ function draw(){
  const list=el('results');list.replaceChildren();
  el('count').textContent=state.filtered.length+' '+(state.filtered.length===1?'lugar':'lugares');
  if(!state.places.length){showEmpty('Todavía no hemos incorporado establecimientos verificados. Empezaremos por una selección pequeña y documentada de Córdoba.');return}
- if(!state.filtered.length){showEmpty('No hay establecimientos que cumplan estos filtros. Prueba con otra especialidad o presupuesto.');return}
+ if(!state.filtered.length){showEmpty('No hay cartas verificadas para este servicio y estos filtros. No significa que los locales estén cerrados; faltan datos específicos.');return}
  let previousGroup='';
  const ordered=[...state.filtered].sort((x,y)=>{
   const rank={verified:0,unknown:1,over:2};
@@ -224,6 +278,7 @@ function draw(){
   const card=document.createElement('article');card.className='place';
   const title=document.createElement('h3');title.textContent=p.name;card.append(title);
   const details=document.createElement('p');details.textContent='📍 '+p.area;card.append(details);
+  const serviceNote=document.createElement('p');serviceNote.className='service-notice';serviceNote.textContent=serviceKnown(p)?'Carta específica registrada · horario pendiente de confirmar':'Carta general · servicio y horarios sin verificar';card.append(serviceNote);
   if(state.appliedTerm){
    const matches=p.dishes.filter(d=>clean(d).includes(state.appliedTerm));
    const matched=document.createElement('p');matched.className='matching-dishes';
@@ -366,8 +421,8 @@ function compare(){
  }
 }
 function getDishCoverage(term, area, nameQuery='') {
- const matches=state.places.filter(p=>(!nameQuery||clean(p.name).includes(nameQuery))&&(!term||clean(p.dishes.join(' ')+' '+dishPrices(p).map(d=>d.dish).join(' ')).includes(term))&&(!area||p.area===area));
- const priced=matches.filter(p=>relevantPrices(p,term).length>0);
+ const matches=state.places.filter(p=>serviceMenus(p).length>0&&(!nameQuery||clean(p.name).includes(nameQuery))&&(!term||clean(serviceDishes(p).join(' ')+' '+servicePrices(p).map(d=>d.dish).join(' ')).includes(term))&&(!area||p.area===area));
+ const priced=matches.filter(p=>servicePrices(p).some(d=>!term||clean(d.dish).includes(term)));
  return {total:matches.length, priced:priced.length, unpriced:matches.length-priced.length};
 }
 function filter(event,restoring=false){
@@ -380,8 +435,9 @@ function filter(event,restoring=false){
  state.currentDetailId=null;
  const area=el('area').value,kind=el('price-kind').value,scope=el('price-scope').value,includeUnknown=el('include-unknown').checked;
  state.filtered=state.places.filter(p=>{
+  if(!serviceMenus(p).length)return false;
   if(nameQuery&&!clean(p.name).includes(nameQuery))return false;
-  if(dish&&!clean(p.dishes.join(' ')+' '+dishPrices(p).map(d=>d.dish).join(' ')).includes(dish))return false;
+  if(dish&&!clean(serviceDishes(p).join(' ')+' '+servicePrices(p).map(d=>d.dish).join(' ')).includes(dish))return false;
   if(area&&p.area!==area)return false;
   const price=lowestPrice(p,scope,dish,state.appliedPortion);
   if(max!==null&&(price>max||(price===null&&!includeUnknown)))return false;
@@ -413,13 +469,14 @@ const QUICK_DISHES=[
  {name:'Berenjenas',icon:'🍆'}, {name:'Pisto',icon:'🍳'}
 ];
 function recommendationEntries(term){
- const matches=state.places.filter(p=>p.dishes.some(d=>clean(d).includes(term))||dishPrices(p).some(d=>clean(d.dish).includes(term)));
- const priced=matches.flatMap(p=>relevantPrices(p,term).map(item=>({p,item,portion:portionOf(item),variant:variantOf(item)})));
+ const matches=state.places.filter(p=>serviceDishes(p).some(d=>clean(d).includes(term))||servicePrices(p).some(d=>clean(d.dish).includes(term)));
+ const priced=matches.flatMap(p=>servicePrices(p).filter(item=>clean(item.dish).includes(term)).map(item=>({p,item,portion:portionOf(item),variant:variantOf(item)})));
  return {matches,priced};
 }
 function renderRecommendations(){
  const deck=el('recommendation-dishes');deck.replaceChildren();
- for(const dish of QUICK_DISHES){
+ for(const name of MODE_CONFIG[state.mode].dishes){
+  const dish={name,icon:state.mode==='desayuno'?'☕':state.mode==='merienda'?'🥐':state.mode==='cena'?'🌙':'🍴'};
   const term=clean(dish.name),data=recommendationEntries(term);
   const btn=document.createElement('button');btn.type='button';btn.className='recommendation-tile';
   const label=document.createElement('strong');label.textContent=dish.icon+' '+dish.name;
@@ -435,6 +492,7 @@ function showRecommendations(dishName){
  const term=clean(dishName),data=recommendationEntries(term),panel=el('recommendation-results');
  panel.replaceChildren();
  el('recommendation-title').textContent='Opciones de '+dishName.toLowerCase();
+ const context=document.createElement('p');context.className='service-notice';context.textContent=(state.mode==='desayuno'||state.mode==='merienda')?'Solo figuran cartas verificadas para este servicio; actualmente no hay registros confirmados.':'Los platos proceden de cartas generales. No se ha confirmado que estén disponibles específicamente para '+MODE_CONFIG[state.mode].label.toLowerCase()+' ni a una hora determinada.';panel.append(context);
  const intro=document.createElement('p');intro.className='note';
  intro.textContent=data.matches.length+' locales en nuestra base; '+new Set(data.priced.map(x=>x.p.id)).size+' con precios publicados. No es un ranking de calidad ni una lista completa de Córdoba.';
  panel.append(intro);
@@ -467,6 +525,7 @@ function showRecommendations(dishName){
 
 function clearSearch(){
  el('filters').reset();
+ updateMealMode(state.mode,{reset:false});
  el('portion').disabled=false;
  state.filtered=[];
  state.selected.clear();
@@ -487,6 +546,7 @@ function clearSearch(){
  el('dish').focus();
 }
 async function init(){
+ document.querySelectorAll('[data-service]').forEach(btn=>btn.addEventListener('click',()=>updateMealMode(btn.dataset.service)));
  el('filters').addEventListener('submit',filter);
  el('close-recommendations').addEventListener('click',()=>el('recommendation-dialog').close());
  el('close-map').addEventListener('click',closeMap);
@@ -513,7 +573,7 @@ async function init(){
   state.places=data.map(normalizePlace).filter(validPlace);
   state.favorites=new Set([...loadFavorites()].filter(id=>state.places.some(p=>p.id===id)));
   renderFavorites();
-  renderRecommendations();
+  updateMealMode((()=>{try{return localStorage.getItem(MODE_KEY)||'comida'}catch{return 'comida'}})(),{reset:false});
   updateQuickNav();
   const areas=[...new Set(state.places.map(p=>p.area))].sort((a,b)=>a.localeCompare(b,'es'));
   for(const area of areas){const opt=document.createElement('option');opt.value=area;opt.textContent=area;el('area').append(opt)}

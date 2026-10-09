@@ -179,3 +179,11 @@ El filtro «Solo precios documentados» se mantiene estricto, pero el resultado 
 - Los formatos actuales (unidad, tapa, media, ración y desconocida) siguen asociados a cada precio; formatos futuros como media tostada, tostada entera, pieza o desayuno combinado requieren reglas explícitas antes de activar la interfaz 3.0.
 - Los horarios de servicio NO se han inferido ni registrado; exigir fuente específica antes de afirmar disponibilidad por franja.
 - Regresión: las 27 fichas, precios, recomendaciones, búsqueda por nombre, favoritos, rutas y comparador deben seguir igual que en 2.8.1.
+
+## 3.0 — Elección de momento gastronómico
+- Nueva portada con Desayunar, Comer, Merendar y Cenar. Cada elección actualiza propuestas y escalas de presupuesto: desayuno 3–10 €, merienda 3–12 €, comidas/cenas 10–50 €.
+- Carta específica por servicio solo cuando existe. Sin datos de desayuno/merienda confirmados, devuelve resultados vacíos con explicación: no se adjudican servicios a locales sin respaldo.
+- La carta general anterior permanece accesible como catálogo exploratorio al elegir comida o cena, con aviso claro de que el servicio y sus horarios no están verificados.
+- Cambio de servicio limpia la búsqueda y selección activa para evitar comparaciones cruzadas; conserva favoritos y base de datos. La última búsqueda y modo se restauran tras F5.
+- Los filtros de formatos se adaptan al momento gastronómico; no se inventan horarios, teléfonos, aperturas en tiempo real ni precios de desayunos.
+- QA: Comer > Flamenquín y precio Rafaé; Desayunar > Churros sin locales falsamente disponibles; Merendar sin datos; Cenar > croquetas como catálogo general con advertencia; F5 restaura el modo y búsqueda.
