@@ -31,3 +31,6 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 
 /* 1.4: focus visible after explicit search */
 #results-heading:focus{outline:none}#results-section{scroll-margin-top:12px}
+
+/* 1.5: puerta de búsqueda real; la vista no enseña resultados hasta ejecutar la búsqueda */
+#results-section[hidden],#compare-section[hidden]{display:none!important}

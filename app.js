@@ -87,6 +87,8 @@ function filter(event){
  if(event)event.preventDefault();
  const dish=clean(el('dish').value.trim()),max=el('budget').value?Number(el('budget').value):null;
  state.appliedTerm=dish;state.appliedBudget=max;state.appliedScope=el('price-scope').value;state.searched=true;
+ el('results-section').hidden=false;
+ el('compare-section').hidden=false;
  const area=el('area').value,kind=el('price-kind').value,scope=el('price-scope').value,includeUnknown=el('include-unknown').checked;
  state.filtered=state.places.filter(p=>{
   if(dish&&!clean(p.name+' '+p.dishes.join(' ')+' '+dishPrices(p).map(d=>d.dish).join(' ')).includes(dish))return false;
@@ -117,8 +119,14 @@ async function init(){
   state.places=data.filter(validPlace);
   const areas=[...new Set(state.places.map(p=>p.area))].sort((a,b)=>a.localeCompare(b,'es'));
   for(const area of areas){const opt=document.createElement('option');opt.value=area;opt.textContent=area;el('area').append(opt)}
-  el('count').textContent=state.places.length+' disponibles';
-  showEmpty('Elige qué te apetece y pulsa «Buscar establecimientos» para obtener resultados.');
- }catch(e){showEmpty('No se ha podido cargar la base de datos. Inténtalo de nuevo más tarde.');el('count').textContent='Sin datos'}
+  // Los resultados y el comparador permanecen ocultos hasta enviar el formulario.
+  el('results-section').hidden=true;
+  el('compare-section').hidden=true;
+ }catch(e){
+  // Fallo de carga: informar al usuario sin mostrar resultados ficticios.
+  el('results-section').hidden=false;
+  el('count').textContent='Sin datos';
+  showEmpty('No se ha podido cargar la base de datos. Inténtalo de nuevo más tarde.');
+ }
 }
 init();
