@@ -337,5 +337,65 @@
         "url": "https://www.sociedadplateros.com/Paseo-del-Palacio-de-Viana-a-Plateros-de-Maria-Auxiliadora.html"
       }
     ]
+  },
+  {
+    "id": "taberna-el-numero-10",
+    "name": "Taberna El Nº 10",
+    "area": "Judería · Cardenal Salazar",
+    "address": "Calle Romero, 10, Córdoba",
+    "dishes": [
+      "Flamenquín cordobés",
+      "Salmorejo cordobés",
+      "Mazamorra cordobesa",
+      "Croquetas caseras de puchero y jamón ibérico",
+      "Rabo de toro estofado",
+      "Berenjenas rebozadas con miel de caña"
+    ],
+    "dishPrices": [],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Cocina y especialidades oficiales",
+        "url": "https://tabernaelnumero10cordoba.com/cocina/"
+      },
+      {
+        "label": "Carta oficial PDF (precios pendientes de extracción)",
+        "url": "https://tabernaelnumero10cordoba.com/wp-content/uploads/2025/09/carta-taberna-n10.pdf"
+      },
+      {
+        "label": "Dirección y contacto oficial",
+        "url": "https://tabernaelnumero10cordoba.com/taberna/"
+      }
+    ]
+  },
+  {
+    "id": "la-cazuela-esparteria",
+    "name": "La Cazuela de la Espartería",
+    "area": "Centro · Corredera",
+    "address": "Calle Rodríguez Marín, 16, Córdoba",
+    "dishes": [
+      "Salmorejo cordobés",
+      "Flamenquín",
+      "Rabo de toro",
+      "Croquetas de salmón",
+      "Berenjenas cazuela",
+      "Chipirones con huevo frito"
+    ],
+    "dishPrices": [],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Carta y cocina tradicional oficiales",
+        "url": "https://lacazueladelaesparteria.es/restaurantes-cordoba/"
+      },
+      {
+        "label": "Web oficial y ubicación",
+        "url": "https://lacazueladelaesparteria.es/"
+      }
+    ]
   }
 ]

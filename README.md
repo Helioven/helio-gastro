@@ -82,3 +82,10 @@ El filtro «Solo precios documentados» se mantiene estricto, pero el resultado 
 - HG-022: codillo: aparece Plateros San Francisco sin precios.
 - HG-023: «Solo precios documentados» muestra solo platos con precio conocido.
 - HG-024: botón Ver todos elimina filtros monetarios únicamente después de clic; no hay autobúsqueda al cargar.
+
+## Versión 1.8: resultados agrupados y 12 locales
+- Dos incorporaciones con webs y platos documentados: Taberna El Nº 10 (Romero 10) y La Cazuela de la Espartería (Rodríguez Marín 16).
+- 12 establecimientos en total. Los dos nuevos **no tienen precios transcritos/confirmados**; no se infieren desde cartas PDF antiguas.
+- Fichas destacan el plato que coincide en vez de mostrar todas las especialidades antes de la información esencial.
+- Resultados agrupados en precio documentado o precio sin verificar; la agrupación solo habla del plato o coste seleccionado por el usuario.
+- QA HG-025: comprobar croquetas sin exigir precios; HG-026: comprobar flamenquín con un presupuesto; HG-027: comprobar que no aparece una lista genérica en las búsquedas específicas.
