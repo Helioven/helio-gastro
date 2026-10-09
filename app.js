@@ -7,6 +7,13 @@ const MODE_CONFIG={
  merienda:{label:'Merendar',emoji:'🥐',budgets:[3,5,8,12],dishes:['Churros','Chocolate','Pasteles','Tartas'],portions:[['unidad','Unidad'],['racion','Ración'],['combinado','Merienda combinada']],placeholder:'Churros con chocolate, pasteles…'},
  cena:{label:'Cenar',emoji:'🌙',budgets:[10,15,20,30,50],dishes:['Tapas','Flamenquín','Croquetas','Tortilla','Rabo de toro','Salmorejo'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']],placeholder:'Tapas, tortilla, croquetas…'}
 };
+const DISH_ICONS={
+ flamenquin:'🥩',salmorejo:'🥣','rabo de toro':'🍲',croquetas:'🍘',
+ mazamorra:'🥣',carrillada:'🍖',berenjenas:'🍆',pisto:'🍳',
+ tostadas:'🥖',churros:'🍩',molletes:'🥪',cafe:'☕',
+ chocolate:'🍫',pasteles:'🧁',tartas:'🍰',tapas:'🍢',tortilla:'🍳'
+};
+function dishIcon(name){return DISH_ICONS[clean(name)]||'🍴'}
 const MODE_KEY='helio-gastro-meal-mode-v1';
 function serviceMenus(p){
  const specific=p.menus.filter(m=>m.service===state.mode);
@@ -261,7 +268,7 @@ function draw(){
  const list=el('results');list.replaceChildren();
  el('count').textContent=state.filtered.length+' '+(state.filtered.length===1?'lugar':'lugares');
  if(!state.places.length){showEmpty('Todavía no hemos incorporado establecimientos verificados. Empezaremos por una selección pequeña y documentada de Córdoba.');return}
- if(!state.filtered.length){showEmpty('No hay cartas verificadas para este servicio y estos filtros. No significa que los locales estén cerrados; faltan datos específicos.');return}
+ if(!state.filtered.length){showEmpty((state.mode==='desayuno'||state.mode==='merienda')?'Todavía no tenemos cartas verificadas para este servicio. Estamos preparando el catálogo; no significa que los locales no lo ofrezcan.':'No hay establecimientos que coincidan con los filtros seleccionados. Los horarios y servicios de las cartas generales siguen sin verificar.');return}
  let previousGroup='';
  const ordered=[...state.filtered].sort((x,y)=>{
   const rank={verified:0,unknown:1,over:2};
@@ -476,11 +483,14 @@ function recommendationEntries(term){
 function renderRecommendations(){
  const deck=el('recommendation-dishes');deck.replaceChildren();
  for(const name of MODE_CONFIG[state.mode].dishes){
-  const dish={name,icon:state.mode==='desayuno'?'☕':state.mode==='merienda'?'🥐':state.mode==='cena'?'🌙':'🍴'};
+  const dish={name,icon:dishIcon(name)};
   const term=clean(dish.name),data=recommendationEntries(term);
   const btn=document.createElement('button');btn.type='button';btn.className='recommendation-tile';
   const label=document.createElement('strong');label.textContent=dish.icon+' '+dish.name;
-  const count=document.createElement('span');count.textContent=data.matches.length+' locales registrados · '+new Set(data.priced.map(x=>x.p.id)).size+' con precio';
+  const count=document.createElement('span');
+  count.textContent=state.mode==='desayuno'||state.mode==='merienda'
+   ?(data.matches.length?data.matches.length+' locales verificados · '+new Set(data.priced.map(x=>x.p.id)).size+' con precio':'⏳ Pendiente de incorporar cartas verificadas')
+   :data.matches.length+' locales registrados · '+new Set(data.priced.map(x=>x.p.id)).size+' con precio';
   btn.append(label,count);btn.addEventListener('click',()=>showRecommendations(dish.name));deck.append(btn);
  }
 }
@@ -494,7 +504,9 @@ function showRecommendations(dishName){
  el('recommendation-title').textContent='Opciones de '+dishName.toLowerCase();
  const context=document.createElement('p');context.className='service-notice';context.textContent=(state.mode==='desayuno'||state.mode==='merienda')?'Solo figuran cartas verificadas para este servicio; actualmente no hay registros confirmados.':'Los platos proceden de cartas generales. No se ha confirmado que estén disponibles específicamente para '+MODE_CONFIG[state.mode].label.toLowerCase()+' ni a una hora determinada.';panel.append(context);
  const intro=document.createElement('p');intro.className='note';
- intro.textContent=data.matches.length+' locales en nuestra base; '+new Set(data.priced.map(x=>x.p.id)).size+' con precios publicados. No es un ranking de calidad ni una lista completa de Córdoba.';
+ intro.textContent=(state.mode==='desayuno'||state.mode==='merienda')&&!data.matches.length
+  ?'Todavía no disponemos de cartas verificadas para este servicio. No significa que las cafeterías o restaurantes estén cerrados o no lo sirvan.'
+  :data.matches.length+' locales en nuestra base; '+new Set(data.priced.map(x=>x.p.id)).size+' con precios publicados. No es un ranking de calidad ni una lista completa de Córdoba.';
  panel.append(intro);
  const groups=new Map();
  for(const entry of data.priced){
