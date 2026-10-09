@@ -175,6 +175,12 @@ function restoreSearch(){
  filter(null,true);
  return true;
 }
+function updateQuickNav(){
+ const link=el('nav-compare');
+ link.hidden=!state.searched;
+ el('nav-compare-count').textContent=String(state.selected.size);
+}
+
 function draw(){
  const list=el('results');list.replaceChildren();
  el('count').textContent=state.filtered.length+' '+(state.filtered.length===1?'lugar':'lugares');
@@ -231,7 +237,7 @@ function draw(){
    if(state.selected.has(p.id))state.selected.delete(p.id);
    else if(state.selected.size<3)state.selected.add(p.id);
    else {el('compare-output').textContent='Puedes comparar hasta tres sitios. Quita uno antes de añadir otro.';return}
-   draw();compare();saveSearch();
+   draw();compare();saveSearch();updateQuickNav();
   });card.append(button,favoriteButton(p));list.append(card);
  }
 }
@@ -370,7 +376,7 @@ function filter(event,restoring=false){
  if(dish){
   coverageBox.textContent='En nuestra base actual: '+coverage.total+' local(es) con «'+el('dish').value.trim()+'» registrado(s); '+coverage.priced+' con precio de ese plato documentado y '+coverage.unpriced+' sin precio. Esto NO representa todos los bares de Córdoba.';
  }
- draw();compare();
+ draw();compare();updateQuickNav();
  if(!restoring){saveSearch();el('results-section').scrollIntoView({behavior:'auto',block:'start'});el('results-heading').focus({preventScroll:true});}
 }
 const QUICK_DISHES=[
@@ -438,6 +444,7 @@ function clearSearch(){
  state.filtered=[];
  state.selected.clear();
  state.searched=false;
+ updateQuickNav();
  state.appliedTerm='';
  state.appliedScope='dish';
  state.appliedPortion='';
@@ -480,6 +487,7 @@ async function init(){
   state.favorites=new Set([...loadFavorites()].filter(id=>state.places.some(p=>p.id===id)));
   renderFavorites();
   renderRecommendations();
+  updateQuickNav();
   const areas=[...new Set(state.places.map(p=>p.area))].sort((a,b)=>a.localeCompare(b,'es'));
   for(const area of areas){const opt=document.createElement('option');opt.value=area;opt.textContent=area;el('area').append(opt)}
   // Los resultados y el comparador permanecen ocultos hasta enviar el formulario.
