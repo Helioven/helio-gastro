@@ -58,3 +58,6 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 
 /* 2.3: carta agrupada por plato y formato */
 .menu-groups{display:grid;gap:10px;margin-top:10px}.menu-dish{border:1px solid #4c718f;border-radius:11px;background:#173753;padding:12px 14px}.menu-dish h4{margin:0 0 7px;font-size:15px;color:#f8e0b7}.menu-price-row{display:flex;justify-content:space-between;gap:20px;border-top:1px solid #416481;padding:7px 0;color:#d3e6f1;font-size:13px}.menu-price-row strong{color:#ffe0a9;white-space:nowrap}.menu-unpriced-title{font-size:14px;color:#abc6d9;margin:22px 0 7px}.menu-unpriced{color:#aec8d8;font-size:13px;padding-left:20px}
+
+/* 2.4 Favoritos */
+.favorite-entry{display:flex;align-items:center;flex-wrap:wrap;gap:10px;border:1px solid #537795;border-radius:11px;padding:11px;margin:9px 0;background:#173753}.favorite-entry strong{flex:1 1 180px}.favorite-entry button,.fav-button{background:#255b7e;border:1px solid #7098b6;border-radius:9px;color:white;padding:8px 11px;min-height:39px;cursor:pointer}.fav-button[aria-pressed='true']{border-color:#f4bd74;color:#ffdfa8}
