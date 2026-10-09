@@ -61,3 +61,17 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 
 /* 2.4 Favoritos */
 .favorite-entry{display:flex;align-items:center;flex-wrap:wrap;gap:10px;border:1px solid #537795;border-radius:11px;padding:11px;margin:9px 0;background:#173753}.favorite-entry strong{flex:1 1 180px}.favorite-entry button,.fav-button{background:#255b7e;border:1px solid #7098b6;border-radius:9px;color:white;padding:8px 11px;min-height:39px;cursor:pointer}.fav-button[aria-pressed='true']{border-color:#f4bd74;color:#ffdfa8}
+
+.recommendation-dishes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.recommendation-tile{display:flex;flex-direction:column;align-items:flex-start;gap:5px;border:1px solid #6085a3;background:#173956;color:white;border-radius:12px;padding:12px;text-align:left;cursor:pointer;min-height:74px}
+.recommendation-tile strong{font-size:14px}
+.recommendation-tile span{font-size:11px;color:#b8d3e7}
+.recommendation-row{border:1px solid #4f7595;border-radius:10px;background:#173753;padding:11px;display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:7px 0}
+.recommendation-row span{flex:1 1 170px;font-size:13px}
+.recommendation-row strong{color:#ffdcaa}
+.recommendation-row button{background:#265b7b;color:white;border:1px solid #7398b6;border-radius:8px;padding:8px 10px;min-height:39px;cursor:pointer}
+#recommendation-output{margin-top:18px}
+#recommendation-output[hidden]{display:none!important}
+#recommendation-output h3{color:#ffe0af;font-size:17px;margin:17px 0 7px}
+#recommendation-output h4{font-size:13px;color:#c6e2f2;margin:14px 0 6px}
+@media(max-width:360px){.recommendation-dishes{grid-template-columns:1fr}}
