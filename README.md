@@ -155,3 +155,11 @@ El filtro «Solo precios documentados» se mantiene estricto, pero el resultado 
 - Anclas accesibles, desplazamiento con margen para la barra fija y disposición desplazable en móvil.
 - No altera datos, filtros, almacenamiento ni modal de recomendaciones y mapas.
 - QA: Platos > Buscar > Favoritos; seleccionar 2 locales y pulsar Comparar 2; F5 debe mantener comparador; Limpiar búsqueda oculta Comparar.
+
+## 2.8 — Ampliación documentada de clásicos cordobeses
+- 27 establecimientos, frente a 16: Bodegas Campos, Casa Pepe, Casa Rubio, El Churrasco, El Caballo Rojo, Beatillas, Casa Bravo, El Abuelo, Bar Moriles (Antonio Maura), Moriles Ribera y Moriles Casa Fina.
+- 29 precios de plato añadidos donde existe carta oficial con formato explícito (El Caballo Rojo y Casa Bravo). Sin importes de plato inventados para otros locales.
+- Bodegas Campos: menú degustación Tradición 66 € por persona, con reserva previa y entre 2 y 4 personas (no se confunde con coste habitual de comida).
+- Casa Pepe y Casa Rubio: enlace a carta PDF oficial pero sin transcribir importes de formatos inciertos. Los Moriles se documentan como establecimientos diferentes.
+- QA recomendado: flamenquín 12,95 € Casa Bravo frente a 12 € Caballo Rojo, croquetas por media y ración, carrillada en Casa Bravo, 27 locales y dirección/mapas de las tres sedes Moriles.
+- Los precios proceden de fuentes consultadas el 09/10/2026 y deben confirmarse antes de desplazarse.
