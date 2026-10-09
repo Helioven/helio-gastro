@@ -34,3 +34,6 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 
 /* 1.5: puerta de búsqueda real; la vista no enseña resultados hasta ejecutar la búsqueda */
 #results-section[hidden],#compare-section[hidden]{display:none!important}
+
+/* 1.6: accesos rápidos para platos típicos, sin ejecutar búsqueda */
+.dish-suggestions{display:grid;gap:7px;margin:-3px 0 2px}.dish-suggestions-label{font-size:10px;letter-spacing:1.3px;color:#ffd99d;font-weight:800}.dish-suggestions-list{display:flex;flex-wrap:wrap;gap:7px}.dish-suggestions-list button{padding:7px 11px;border-radius:999px;min-height:36px;border:1px solid #6086a2;background:#193a55;color:#eaf6ff;font:inherit;font-size:12px;cursor:pointer}.dish-suggestions-list button:hover{background:#286084}.dish-suggestions small{font-size:11px;color:#a8c4da}
