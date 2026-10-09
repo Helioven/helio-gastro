@@ -67,3 +67,10 @@ Se registran **seis precios de platos publicados por los propios locales** en Mo
 - HG-013: buscar 'rabo de toro' muestra precios de rabo donde estén documentados.
 - HG-014: los tres locales nuevos tienen dirección, fuentes HTTPS y fecha de consulta.
 - HG-015: el filtro de comida completa nunca usa el precio de una media ración como si fuera el coste total.
+
+## Versión 1.6 — Tabernas y platos típicos
+- 10 locales documentados, incluidos San Miguel · El Pisto (Plaza San Miguel, 1), Plateros San Francisco (San Francisco, 6) y Sociedad Plateros María Auxiliadora (María Auxiliadora, 25).
+- Los tres locales añadidos tienen especialidades y enlaces oficiales, **sin precios actuales comprobados**. No se usan cartas de 2020 para imputar precios actuales.
+- Accesos rápidos a 10 especialidades (flamenquín, salmorejo, rabo de toro, mazamorra, carrillada, berenjenas, croquetas, pisto, cochifrito, codillo). Las sugerencias preparan el campo pero **no ejecutan búsquedas**: solo lo hace el botón Buscar.
+
+QA: HG-017 selección de plato típico sin auto-búsqueda; HG-018 consulta de mazamorra; HG-019 cambio de filtros sin revelar resultados; HG-020 precios nulos en nuevas fichas.

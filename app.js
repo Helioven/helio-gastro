@@ -112,6 +112,11 @@ function filter(event){
 }
 async function init(){
  el('filters').addEventListener('submit',filter);
+ document.querySelectorAll('[data-dish]').forEach(button=>button.addEventListener('click',()=>{
+  el('dish').value=button.dataset.dish;
+  el('dish').focus();
+  // Elegir un plato solo prepara el formulario, nunca ejecuta una búsqueda.
+ }));
  try{
   const res=await fetch('./data/places.json',{cache:'no-store'});
   if(!res.ok)throw Error('HTTP '+res.status);

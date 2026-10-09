@@ -247,5 +247,95 @@
         "url": "https://tabernagongora.com/"
       }
     ]
+  },
+  {
+    "id": "taberna-san-miguel-el-pisto",
+    "name": "Taberna San Miguel · El Pisto",
+    "area": "Centro · Plaza San Miguel",
+    "address": "Plaza de San Miguel, 1, Córdoba",
+    "dishes": [
+      "Salmorejo cordobés",
+      "Mazamorra",
+      "Flamenquín casero de jamón",
+      "Carrillada ibérica al vino viejo",
+      "Estofado de rabo de toro",
+      "Croquetas caseras de rabo de toro",
+      "Berenjenas fritas con miel de caña",
+      "Pisto casero con huevo",
+      "Cochifrito"
+    ],
+    "dishPrices": [],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Carta general oficial sin importes visibles",
+        "url": "https://tabernacordoba.es/carta-general/"
+      },
+      {
+        "label": "Dirección y web oficial",
+        "url": "https://tabernacordoba.es/"
+      }
+    ]
+  },
+  {
+    "id": "taberna-plateros-san-francisco",
+    "name": "Taberna Sociedad de Plateros · San Francisco",
+    "area": "Centro · San Francisco",
+    "address": "Calle San Francisco, 6, Córdoba",
+    "dishes": [
+      "Flamenquín casero",
+      "Salmorejo cordobés",
+      "Carrillada en salsa",
+      "Rabo de toro",
+      "Codillo de cerdo",
+      "Berenjenas fritas con miel",
+      "Pisto con huevo",
+      "Croquetas de jamón",
+      "Croquetas de rabo de toro",
+      "Carne con tomate"
+    ],
+    "dishPrices": [],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Carta oficial de platos sin precios visibles",
+        "url": "https://tabernaplateros.com/nuestra-carta/"
+      },
+      {
+        "label": "Web oficial y dirección",
+        "url": "https://tabernaplateros.com/"
+      }
+    ]
+  },
+  {
+    "id": "sociedad-plateros-maria-auxiliadora",
+    "name": "Sociedad Plateros · María Auxiliadora",
+    "area": "Centro · María Auxiliadora",
+    "address": "Calle María Auxiliadora, 25, Córdoba",
+    "dishes": [
+      "Flamenquín de lomo y jamón",
+      "Salmorejo cordobés",
+      "Rabo de toro al oloroso Montilla-Moriles",
+      "Berenjenas fritas",
+      "Bacalao"
+    ],
+    "dishPrices": [],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Turismo de Córdoba: especialidades y dirección",
+        "url": "https://www.turismodecordoba.org/sociedad-de-plateros-maria-auxiliadora"
+      },
+      {
+        "label": "Información del establecimiento",
+        "url": "https://www.sociedadplateros.com/Paseo-del-Palacio-de-Viana-a-Plateros-de-Maria-Auxiliadora.html"
+      }
+    ]
   }
 ]
