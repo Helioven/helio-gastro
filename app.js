@@ -351,6 +351,11 @@ function showPlace(p,scroll=true){
  const panel=el('detail-content');panel.replaceChildren();
  const title=document.createElement('h2');title.id='detail-title';title.tabIndex=-1;title.textContent=p.name;panel.append(title,favoriteButton(p));
  const address=document.createElement('p');address.textContent='📍 '+p.address;panel.append(address);
+ if(p.openingHoursNote){
+  const hours=document.createElement('p');hours.className='service-notice';
+  hours.textContent='🕒 '+p.openingHoursNote;panel.append(hours);
+ }
+
  panel.append(mapButton(p));
  const map=document.createElement('a');map.href=placeMapUrl(p);map.target='_blank';map.rel='noopener noreferrer';map.textContent='Abrir en Google Maps ↗';panel.append(map);
  const menu=menuGroups(p);
