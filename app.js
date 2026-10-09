@@ -1,5 +1,5 @@
 'use strict';
-const state={places:[],filtered:[],selected:new Set(),searched:false,appliedTerm:''};
+const state={places:[],filtered:[],selected:new Set(),searched:false,appliedTerm:'',appliedScope:'dish',appliedPortion:'',appliedBudget:null};
 const el=id=>document.getElementById(id);
 const fmt=n=>typeof n==='number'?new Intl.NumberFormat('es-ES',{style:'currency',currency:'EUR'}).format(n):'No disponible';
 const clean=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
@@ -9,11 +9,25 @@ function validPlace(p){
  &&(p.mealCostEur===null||Number.isFinite(p.mealCostEur));
 }
 function dishPrices(p){return(Array.isArray(p.dishPrices)?p.dishPrices:[]).filter(d=>typeof d.dish==='string'&&Number.isFinite(d.eur)&&d.eur>=0)}
-function relevantPrices(p,term){return dishPrices(p).filter(d=>!term||clean(d.dish).includes(term))}
-function lowestPrice(p,scope,term){if(scope==='meal')return Number.isFinite(p.mealCostEur)?p.mealCostEur:null;const arr=relevantPrices(p,term);return arr.length?Math.min(...arr.map(x=>x.eur)):null}
+const PORTIONS={unidad:'Unidad',tapa:'Tapa',media:'Media ración',racion:'Ración completa',desconocida:'Formato sin especificar'};
+function portionOf(item){
+ if(PORTIONS[item.portion])return item.portion;
+ const name=clean(item.dish);
+ if(/\bmedia(?:\s+racion)?\b/.test(name))return 'media';
+ if(/\btapa\b/.test(name))return 'tapa';
+ if(/\bunidad\b/.test(name))return 'unidad';
+ if(/\bracion\b/.test(name))return 'racion';
+ return 'desconocida';
+}
+function relevantPrices(p,term,portion=''){return dishPrices(p).filter(d=>(!term||clean(d.dish).includes(term))&&(!portion||portionOf(d)===portion))}
+function lowestPrice(p,scope,term,portion=''){
+ if(scope==='meal')return Number.isFinite(p.mealCostEur)?p.mealCostEur:null;
+ const arr=relevantPrices(p,term,portion);return arr.length?Math.min(...arr.map(x=>x.eur)):null;
+}
+function priceDescriptor(item){return item.dish+' — '+fmt(item.eur)+' · '+PORTIONS[portionOf(item)]}
 function showEmpty(message){const node=document.createElement('div');node.className='empty';node.textContent=message;el('results').replaceChildren(node)}
 function groupFor(p) {
- const price=lowestPrice(p,state.appliedScope,state.appliedTerm);
+ const price=lowestPrice(p,state.appliedScope,state.appliedTerm,state.appliedPortion);
  if(price===null)return 'unknown';
  if(state.appliedBudget!==null && price>state.appliedBudget)return 'over';
  return 'verified';
@@ -51,7 +65,7 @@ function draw(){
   const status=p.priceStatus==='confirmed'?'Coste completo confirmado':p.priceStatus==='estimated'?'Coste completo estimado':'Coste completo desconocido';
   price.textContent='Comida completa por persona: '+fmt(p.mealCostEur)+' · '+status;card.append(price);
   const term=state.appliedTerm;
-  const shown=term?relevantPrices(p,term):dishPrices(p);
+  const shown=relevantPrices(p,term,state.appliedScope==='dish'?state.appliedPortion:'');
   if(shown.length) {
     const priceHeading=document.createElement('p');
     priceHeading.textContent=term?'Platos coincidentes con precio publicado:':'Precios publicados de platos (NO coste total):';
@@ -60,7 +74,7 @@ function draw(){
     for (const item of shown) {
       if(typeof item.dish!=='string'||!Number.isFinite(item.eur)) continue;
       const li=document.createElement('li');
-      li.textContent=item.dish+' — '+fmt(item.eur);
+      li.textContent=priceDescriptor(item);
       dishes.append(li);
     }
     card.append(dishes);
@@ -69,12 +83,12 @@ function draw(){
       caution.className='note';caution.textContent='Ojo: el precio por unidad no equivale a una ración. Revisa la cantidad antes de comparar.';
       card.append(caution);
     }
-  } else if(term && dishPrices(p).length){
+  } else if((term||state.appliedPortion) && dishPrices(p).length){
     const notice=document.createElement('p');
-    notice.className='note';notice.textContent='Hay precios de otros platos, pero ninguno verificado para esta búsqueda.';
+    notice.className='note';notice.textContent='No hay precio publicado para el plato y formato elegidos.';
     card.append(notice);
   }
-  if(state.appliedBudget && lowestPrice(p,state.appliedScope,state.appliedTerm)===null){
+  if(state.appliedBudget && lowestPrice(p,state.appliedScope,state.appliedTerm,state.appliedPortion)===null){
     const warning=document.createElement('p');warning.className='price-unknown';
     warning.textContent='⚠ Precio desconocido. No podemos confirmar que se ajuste a tu presupuesto.';
     card.append(warning);
@@ -111,10 +125,15 @@ function compare(){
   const box=document.createElement('div');box.className='compare-place';
   const title=document.createElement('h3');title.textContent=p.name;box.append(title);
   const cost=document.createElement('p');cost.textContent='Comida completa por persona: '+fmt(p.mealCostEur)+' · '+(p.priceStatus==='unknown'?'Coste desconocido':p.priceStatus==='estimated'?'Coste estimado':'Coste confirmado');box.append(cost);
-  const prices=relevantPrices(p,term);
+  const prices=relevantPrices(p,term,state.appliedScope==='dish'?state.appliedPortion:'');
   const label=document.createElement('p');label.textContent=prices.length?'Platos con precio publicado:':'Sin precios de platos coincidentes documentados.';box.append(label);
-  const ul=document.createElement('ul');for(const item of prices){const li=document.createElement('li');li.textContent=item.dish+' — '+fmt(item.eur);ul.append(li)}
+  const ul=document.createElement('ul');for(const item of prices){const li=document.createElement('li');li.textContent=priceDescriptor(item);ul.append(li)}
   box.append(ul);
+  if(!state.appliedPortion&&new Set(prices.map(portionOf)).size>1){
+   const caution=document.createElement('p');caution.className='note';
+   caution.textContent='Formatos diferentes: no comparamos cantidades ni asumimos tamaños equivalentes.';
+   box.append(caution);
+  }
   if(prices.some(item=>item.portion==='unidad')){
     const note=document.createElement('p');note.textContent='Precio por unidad: no comparable directamente con una ración.';box.append(note);
   }
@@ -130,25 +149,25 @@ function getDishCoverage(term, area) {
 function filter(event){
  if(event)event.preventDefault();
  const dish=clean(el('dish').value.trim()),max=el('budget').value?Number(el('budget').value):null;
- state.appliedTerm=dish;state.appliedBudget=max;state.appliedScope=el('price-scope').value;state.searched=true;
+ state.appliedTerm=dish;state.appliedBudget=max;state.appliedScope=el('price-scope').value;state.appliedPortion=state.appliedScope==='dish'?el('portion').value:'';state.searched=true;
  el('results-section').hidden=false;
  el('compare-section').hidden=false;
  const area=el('area').value,kind=el('price-kind').value,scope=el('price-scope').value,includeUnknown=el('include-unknown').checked;
  state.filtered=state.places.filter(p=>{
   if(dish&&!clean(p.name+' '+p.dishes.join(' ')+' '+dishPrices(p).map(d=>d.dish).join(' ')).includes(dish))return false;
   if(area&&p.area!==area)return false;
-  const price=lowestPrice(p,scope,dish);
+  const price=lowestPrice(p,scope,dish,state.appliedPortion);
   if(max!==null&&(price>max||(price===null&&!includeUnknown)))return false;
-  if(kind==='confirmed')return scope==='dish'?relevantPrices(p,dish).length>0:p.priceStatus==='confirmed';
-  if(kind==='estimated')return scope==='dish'?relevantPrices(p,dish).length>0:['confirmed','estimated'].includes(p.priceStatus);
+  if(kind==='confirmed')return scope==='dish'?relevantPrices(p,dish,state.appliedPortion).length>0:p.priceStatus==='confirmed';
+  if(kind==='estimated')return scope==='dish'?relevantPrices(p,dish,state.appliedPortion).length>0:['confirmed','estimated'].includes(p.priceStatus);
   return true;
  });
  const sort=el('sort').value;
- if(sort==='price')state.filtered.sort((x,y)=>(lowestPrice(x,scope,dish)??Infinity)-(lowestPrice(y,scope,dish)??Infinity));
+ if(sort==='price')state.filtered.sort((x,y)=>(lowestPrice(x,scope,dish,state.appliedPortion)??Infinity)-(lowestPrice(y,scope,dish,state.appliedPortion)??Infinity));
  if(sort==='verified')state.filtered.sort((x,y)=>dishPrices(y).length-dishPrices(x).length);
  if(sort==='name')state.filtered.sort((x,y)=>x.name.localeCompare(y.name,'es'));
  el('budget-explain').textContent=scope==='dish'?
-  'Presupuesto aplicado al plato más económico coincidente y documentado. Los precios desconocidos no garantizan cumplirlo.':
+  'El presupuesto usa exclusivamente el formato seleccionado: unidad, tapa, media o ración. Si no hay precio de ese formato, se indica como desconocido.':
   'Presupuesto aplicado al coste total por persona. Los locales sin coste documentado pueden mostrarse, pero no se consideran dentro del límite.';
  const coverage=getDishCoverage(dish,area);
  const coverageBox=el('coverage-summary'), more=el('show-offering');
@@ -163,6 +182,7 @@ function filter(event){
 }
 async function init(){
  el('filters').addEventListener('submit',filter);
+ el('price-scope').addEventListener('change',()=>{el('portion').disabled=el('price-scope').value==='meal';});
  el('show-offering').addEventListener('click',()=>{
   el('budget').value='';
   el('price-kind').value='';
