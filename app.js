@@ -114,6 +114,30 @@ function renderFavorites(){
   row.append(name,open,favoriteButton(p));list.append(row);
  }
 }
+const SEARCH_KEY='helio-gastro-search-v1';
+const SEARCH_FIELDS=['dish','budget','price-scope','portion','area','include-unknown','price-kind','sort'];
+function saveSearch(){
+ if(!state.searched)return;
+ const form={};
+ for(const id of SEARCH_FIELDS){const node=el(id);form[id]=node.type==='checkbox'?node.checked:node.value}
+ try{localStorage.setItem(SEARCH_KEY,JSON.stringify({form,selected:[...state.selected]}))}catch{}
+}
+function restoreSearch(){
+ let snapshot;
+ try{snapshot=JSON.parse(localStorage.getItem(SEARCH_KEY)||'null')}catch{return false}
+ if(!snapshot||typeof snapshot!=='object'||!snapshot.form||typeof snapshot.form!=='object')return false;
+ for(const id of SEARCH_FIELDS){
+  const node=el(id),saved=snapshot.form[id];
+  if(id==='dish'){node.value=typeof saved==='string'?saved.slice(0,120):'';continue}
+  if(node.type==='checkbox'){if(typeof saved==='boolean')node.checked=saved;continue}
+  if(typeof saved==='string'&&[...node.options].some(opt=>opt.value===saved))node.value=saved;
+ }
+ el('portion').disabled=el('price-scope').value==='meal';
+ state.selected=new Set((Array.isArray(snapshot.selected)?snapshot.selected:[])
+  .filter(id=>typeof id==='string'&&state.places.some(p=>p.id===id)).slice(0,3));
+ filter(null,true);
+ return true;
+}
 function draw(){
  const list=el('results');list.replaceChildren();
  el('count').textContent=state.filtered.length+' '+(state.filtered.length===1?'lugar':'lugares');
@@ -170,7 +194,7 @@ function draw(){
    if(state.selected.has(p.id))state.selected.delete(p.id);
    else if(state.selected.size<3)state.selected.add(p.id);
    else {el('compare-output').textContent='Puedes comparar hasta tres sitios. Quita uno antes de añadir otro.';return}
-   draw();compare();
+   draw();compare();saveSearch();
   });card.append(button,favoriteButton(p));list.append(card);
  }
 }
@@ -275,7 +299,7 @@ function getDishCoverage(term, area) {
  const priced=matches.filter(p=>relevantPrices(p,term).length>0);
  return {total:matches.length, priced:priced.length, unpriced:matches.length-priced.length};
 }
-function filter(event){
+function filter(event,restoring=false){
  if(event)event.preventDefault();
  const dish=clean(el('dish').value.trim()),max=el('budget').value?Number(el('budget').value):null;
  state.appliedTerm=dish;state.appliedBudget=max;state.appliedScope=el('price-scope').value;state.appliedPortion=state.appliedScope==='dish'?el('portion').value:'';state.searched=true;
@@ -308,8 +332,7 @@ function filter(event){
   coverageBox.textContent='En nuestra base actual: '+coverage.total+' local(es) con «'+el('dish').value.trim()+'» registrado(s); '+coverage.priced+' con precio de ese plato documentado y '+coverage.unpriced+' sin precio. Esto NO representa todos los bares de Córdoba.';
  }
  draw();compare();
- el('results-section').scrollIntoView({behavior:'auto',block:'start'});
- el('results-heading').focus({preventScroll:true});
+ if(!restoring){saveSearch();el('results-section').scrollIntoView({behavior:'auto',block:'start'});el('results-heading').focus({preventScroll:true});}
 }
 async function init(){
  el('filters').addEventListener('submit',filter);
@@ -338,6 +361,7 @@ async function init(){
   // Los resultados y el comparador permanecen ocultos hasta enviar el formulario.
   el('results-section').hidden=true;
   el('compare-section').hidden=true;
+  restoreSearch();
  }catch(e){
   // Fallo de carga: informar al usuario sin mostrar resultados ficticios.
   el('results-section').hidden=false;
