@@ -1,5 +1,5 @@
 'use strict';
-const state={places:[],filtered:[],selected:new Set(),searched:false,appliedTerm:'',appliedScope:'dish',appliedPortion:'',appliedBudget:null};
+const state={places:[],filtered:[],selected:new Set(),favorites:new Set(),searched:false,appliedTerm:'',appliedScope:'dish',appliedPortion:'',appliedBudget:null,currentDetailId:null};
 const el=id=>document.getElementById(id);
 const fmt=n=>typeof n==='number'?new Intl.NumberFormat('es-ES',{style:'currency',currency:'EUR'}).format(n):'No disponible';
 const clean=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
@@ -85,6 +85,35 @@ function groupFor(p) {
  if(state.appliedBudget!==null && price>state.appliedBudget)return 'over';
  return 'verified';
 }
+const FAV_KEY='helio-gastro-favorites-v1';
+function loadFavorites(){
+ try{const saved=JSON.parse(localStorage.getItem(FAV_KEY)||'[]');return new Set(Array.isArray(saved)?saved.filter(id=>typeof id==='string'):[])}catch{return new Set()}
+}
+function toggleFavorite(id){
+ if(state.favorites.has(id))state.favorites.delete(id);else state.favorites.add(id);
+ try{localStorage.setItem(FAV_KEY,JSON.stringify([...state.favorites]))}catch{el('favorite-notice').textContent='No se han podido guardar favoritos en este navegador.'}
+ renderFavorites();if(state.searched)draw();
+ if(state.currentDetailId===id&&!el('detail-section').hidden){const place=state.places.find(p=>p.id===id);if(place)showPlace(place,false)}
+}
+function favoriteButton(p){
+ const btn=document.createElement('button');btn.type='button';btn.className='fav-button';
+ btn.textContent=(state.favorites.has(p.id)?'★ Guardado':'☆ Guardar');
+ btn.setAttribute('aria-pressed',String(state.favorites.has(p.id)));
+ btn.addEventListener('click',()=>toggleFavorite(p.id));
+ return btn;
+}
+function renderFavorites(){
+ const list=el('favorite-list');list.replaceChildren();
+ const selected=state.places.filter(p=>state.favorites.has(p.id));
+ el('favorite-count').textContent=selected.length+' favoritos';
+ if(!selected.length){const msg=document.createElement('p');msg.className='note';msg.textContent='Aún no tienes tabernas guardadas. Marca ☆ en los resultados o fichas.';list.append(msg);return}
+ for(const p of selected){
+  const row=document.createElement('div');row.className='favorite-entry';
+  const name=document.createElement('strong');name.textContent=p.name;
+  const open=document.createElement('button');open.type='button';open.textContent='Ver ficha';open.addEventListener('click',()=>showPlace(p));
+  row.append(name,open,favoriteButton(p));list.append(row);
+ }
+}
 function draw(){
  const list=el('results');list.replaceChildren();
  el('count').textContent=state.filtered.length+' '+(state.filtered.length===1?'lugar':'lugares');
@@ -142,7 +171,7 @@ function draw(){
    else if(state.selected.size<3)state.selected.add(p.id);
    else {el('compare-output').textContent='Puedes comparar hasta tres sitios. Quita uno antes de añadir otro.';return}
    draw();compare();
-  });card.append(button);list.append(card);
+  });card.append(button,favoriteButton(p));list.append(card);
  }
 }
 function menuDishName(item){
@@ -162,9 +191,10 @@ function menuGroups(p){
  });
  return {groups,unpriced};
 }
-function showPlace(p){
+function showPlace(p,scroll=true){
+ state.currentDetailId=p.id;
  const panel=el('detail-content');panel.replaceChildren();
- const title=document.createElement('h2');title.id='detail-title';title.tabIndex=-1;title.textContent=p.name;panel.append(title);
+ const title=document.createElement('h2');title.id='detail-title';title.tabIndex=-1;title.textContent=p.name;panel.append(title,favoriteButton(p));
  const address=document.createElement('p');address.textContent='📍 '+p.address;panel.append(address);
  const map=document.createElement('a');map.href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(p.address);map.target='_blank';map.rel='noopener noreferrer';map.textContent='Abrir dirección en Google Maps ↗';panel.append(map);
  const menu=menuGroups(p);
@@ -199,8 +229,7 @@ function showPlace(p){
  const checked=document.createElement('p');checked.textContent='Última consulta: '+(p.checkedAt||'Sin fecha registrada');panel.append(checked);
  for(const source of p.sources){if(!/^https:\/\//.test(source.url))continue;const a=document.createElement('a');a.href=source.url;a.textContent=source.label+' ↗';a.target='_blank';a.rel='noopener noreferrer';a.className='detail-source';panel.append(a)}
  el('detail-section').hidden=false;
- el('detail-section').scrollIntoView({behavior:'auto',block:'start'});
- el('detail-title').focus({preventScroll:true});
+ if(scroll){el('detail-section').scrollIntoView({behavior:'auto',block:'start'});el('detail-title').focus({preventScroll:true})}
 }
 function compare(){
  const panel=el('compare-output');panel.replaceChildren();
@@ -253,6 +282,7 @@ function filter(event){
  el('results-section').hidden=false;
  el('compare-section').hidden=false;
  el('detail-section').hidden=true;
+ state.currentDetailId=null;
  const area=el('area').value,kind=el('price-kind').value,scope=el('price-scope').value,includeUnknown=el('include-unknown').checked;
  state.filtered=state.places.filter(p=>{
   if(dish&&!clean(p.name+' '+p.dishes.join(' ')+' '+dishPrices(p).map(d=>d.dish).join(' ')).includes(dish))return false;
@@ -301,6 +331,8 @@ async function init(){
   if(!res.ok)throw Error('HTTP '+res.status);
   const data=await res.json();if(!Array.isArray(data))throw Error('Formato inválido');
   state.places=data.filter(validPlace);
+  state.favorites=new Set([...loadFavorites()].filter(id=>state.places.some(p=>p.id===id)));
+  renderFavorites();
   const areas=[...new Set(state.places.map(p=>p.area))].sort((a,b)=>a.localeCompare(b,'es'));
   for(const area of areas){const opt=document.createElement('option');opt.value=area;opt.textContent=area;el('area').append(opt)}
   // Los resultados y el comparador permanecen ocultos hasta enviar el formulario.
