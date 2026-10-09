@@ -193,3 +193,10 @@ El filtro «Solo precios documentados» se mantiene estricto, pero el resultado 
 - En desayunos y meriendas sin carta verificada las tarjetas indican «Pendiente de incorporar cartas verificadas» en vez de sugerir una búsqueda fallida con cero locales.
 - Al abrir una sugerencia o buscar sin cobertura se explica que falta documentación, no que el restaurante esté cerrado.
 - No añade horarios, desayunos ni precios no verificados. Conserva 27 establecimientos, búsqueda, mapas, favoritos y comparador.
+
+## 3.1 — Primeros desayunos documentados de Córdoba
+- Churros Bar Marta (Cruz Conde, 32), Cafetería Don Pepe Centro (Diego de León, 6), Cafetería Bar Don Pepe Ciudad Jardín (Antonio Maura, 35), cada establecimiento independiente.
+- 30 locales en total; tres cartas `service: desayuno` con churros, chocolate, café o tostadas respaldados por sus fichas/reseñas. Precios no confirmados; se dejan vacíos en vez de estimar.
+- Horarios generales consultados y consignados como NOTA orientativa de cada local; NO deben usarse para afirmar disponibilidad de churros, cocina o servicio a una hora concreta. Si las fuentes discrepan se indica expresamente.
+- Atención: existen dos establecimientos llamados Don Pepe en la ciudad, no se mezclan sus direcciones ni sus fuentes.
+- Casos QA: Desayunar > Churros muestra 3 locales; Desayunar > Tostadas muestra los 3; Comer > Flamenquín mantiene datos antiguos; buscar Don Pepe por nombre en desayuno devuelve 2; Marta 1; F5 conserva búsqueda y modo.
