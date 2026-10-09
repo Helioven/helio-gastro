@@ -84,7 +84,7 @@ function validPlace(p){
  &&(p.mealCostEur===null||Number.isFinite(p.mealCostEur));
 }
 function dishPrices(p){return(Array.isArray(p.dishPrices)?p.dishPrices:[]).filter(d=>typeof d.dish==='string'&&Number.isFinite(d.eur)&&d.eur>=0)}
-const PORTIONS={unidad:'Unidad',tapa:'Tapa',media:'Media ración',racion:'Ración completa',desconocida:'Formato sin especificar'};
+const PORTIONS={unidad:'Unidad',tapa:'Tapa',media:'Media ración',racion:'Ración completa','media-tostada':'Media tostada','tostada-entera':'Tostada entera',combinado:'Combinado',desconocida:'Formato sin especificar'};
 function portionOf(item){
  if(PORTIONS[item.portion])return item.portion;
  const name=clean(item.dish);
@@ -421,8 +421,8 @@ function compare(){
  }
 }
 function getDishCoverage(term, area, nameQuery='') {
- const matches=state.places.filter(p=>(!nameQuery||clean(p.name).includes(nameQuery))&&(!term||clean(p.dishes.join(' ')+' '+dishPrices(p).map(d=>d.dish).join(' ')).includes(term))&&(!area||p.area===area));
- const priced=matches.filter(p=>relevantPrices(p,term).length>0);
+ const matches=state.places.filter(p=>serviceMenus(p).length>0&&(!nameQuery||clean(p.name).includes(nameQuery))&&(!term||clean(serviceDishes(p).join(' ')+' '+servicePrices(p).map(d=>d.dish).join(' ')).includes(term))&&(!area||p.area===area));
+ const priced=matches.filter(p=>servicePrices(p).some(d=>!term||clean(d.dish).includes(term)));
  return {total:matches.length, priced:priced.length, unpriced:matches.length-priced.length};
 }
 function filter(event,restoring=false){
@@ -492,6 +492,7 @@ function showRecommendations(dishName){
  const term=clean(dishName),data=recommendationEntries(term),panel=el('recommendation-results');
  panel.replaceChildren();
  el('recommendation-title').textContent='Opciones de '+dishName.toLowerCase();
+ const context=document.createElement('p');context.className='service-notice';context.textContent=(state.mode==='desayuno'||state.mode==='merienda')?'Solo figuran cartas verificadas para este servicio; actualmente no hay registros confirmados.':'Los platos proceden de cartas generales. No se ha confirmado que estén disponibles específicamente para '+MODE_CONFIG[state.mode].label.toLowerCase()+' ni a una hora determinada.';panel.append(context);
  const intro=document.createElement('p');intro.className='note';
  intro.textContent=data.matches.length+' locales en nuestra base; '+new Set(data.priced.map(x=>x.p.id)).size+' con precios publicados. No es un ranking de calidad ni una lista completa de Córdoba.';
  panel.append(intro);
