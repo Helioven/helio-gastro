@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#10243c"><meta name="description" content="Helio Gastro: cocina cordobesa con precios y fuentes transparentes.">
-<title>Helio Gastro · Córdoba</title><link rel="stylesheet" href="./styles.css?v=2.9"><link rel="manifest" href="./manifest.webmanifest"></head>
+<title>Helio Gastro · Córdoba</title><link rel="stylesheet" href="./styles.css?v=3.0"><link rel="manifest" href="./manifest.webmanifest"></head>
 <body><main class="shell">
-<header><div class="brand"><span class="logo">🍽️</span><div><div class="eyebrow">HELIO SOFTWARE STUDIOS</div><h1>HELIO <strong>GASTRO</strong></h1></div></div><span class="version">Piloto 2.9</span></header>
+<header><div class="brand"><span class="logo">🍽️</span><div><div class="eyebrow">HELIO SOFTWARE STUDIOS</div><h1>HELIO <strong>GASTRO</strong></h1></div></div><span class="version">Piloto 3.0</span></header>
 <nav id="quick-nav" class="quick-nav" aria-label="Navegación rápida">
  <a href="#recommendations-section">🍴 Platos</a>
  <a href="#search-section">🔎 Buscar</a>
@@ -11,6 +11,7 @@
  <a id="nav-compare" href="#compare-section" hidden>⚖️ Comparar <span id="nav-compare-count">0</span></a>
 </nav>
 <section class="hero"><p class="eyebrow">CÓRDOBA · DÓNDE COMER BIEN</p><h2>Encuentra algo rico.<br><em>Sin sorpresas en la cuenta.</em></h2><p>Platos que te apetecen, presupuestos realistas y fuentes que puedes comprobar.</p></section>
+<section id="service-section" class="panel" aria-labelledby="service-heading"><h2 id="service-heading">¿Qué plan tienes?</h2><p class="note">Elige un momento del día para adaptar platos y presupuesto. Los horarios todavía requieren verificación.</p><div class="service-selector" role="group" aria-label="Momento gastronómico"><button type="button" data-service="desayuno" aria-pressed="false">☕ Desayunar</button><button type="button" data-service="comida" aria-pressed="true">🍽️ Comer</button><button type="button" data-service="merienda" aria-pressed="false">🥐 Merendar</button><button type="button" data-service="cena" aria-pressed="false">🌙 Cenar</button></div><p id="service-intro" class="service-intro" role="status"></p></section>
 <section id="recommendations-section" class="panel" aria-labelledby="recommendations-heading">
 <div class="section-title"><h2 id="recommendations-heading">🍴 ¿Qué te apetece hoy?</h2><span class="chip">Acceso directo</span></div>
 <p class="note">Elige un plato y descubre directamente opciones documentadas de nuestra base, separadas por variante y formato. Más barato no significa mejor.</p>
@@ -23,7 +24,7 @@
 <label>Plato o especialidad<input id="dish" type="search" placeholder="Escribe o elige un plato cordobés…" autocomplete="off"></label>
 <div class="dish-suggestions" role="group" aria-label="Especialidades cordobesas para buscar">
   <span class="dish-suggestions-label">PRUEBA UN PLATO TÍPICO</span>
-  <div class="dish-suggestions-list">
+  <div id="dish-suggestions-list" class="dish-suggestions-list">
     <button type="button" data-dish="Flamenquín">Flamenquín</button>
     <button type="button" data-dish="Salmorejo">Salmorejo</button>
     <button type="button" data-dish="Rabo de toro">Rabo de toro</button>
@@ -37,17 +38,17 @@
   </div>
   <small>Elige un plato y pulsa «Buscar establecimientos» para consultar resultados.</small>
 </div>
-<div class="two"><label>Aplicar presupuesto a<select id="price-scope"><option value="dish" selected>Un plato de la carta</option><option value="meal">Comida total por persona</option></select></label><label>Presupuesto máximo<select id="budget"><option value="" selected>Sin límite (mostrar fichas)</option><option value="10">10 €</option><option value="15">15 €</option><option value="20">20 €</option><option value="30">30 €</option><option value="50">50 €</option></select></label><label>Zona<select id="area"><option value="">Toda Córdoba</option></select></label></div>
+<div class="two"><label>Aplicar presupuesto a<select id="price-scope"><option value="dish" selected>Un plato de la carta</option><option value="meal">Comida total por persona</option></select></label><label><span id="budget-label">Presupuesto máximo</span><select id="budget"><option value="" selected>Sin límite (mostrar fichas)</option><option value="10">10 €</option><option value="15">15 €</option><option value="20">20 €</option><option value="30">30 €</option><option value="50">50 €</option></select></label><label>Zona<select id="area"><option value="">Toda Córdoba</option></select></label></div>
 <label>Formato del plato<select id="portion"><option value="">Cualquier formato (sin equivalencia de tamaños)</option><option value="unidad">Unidad</option><option value="tapa">Tapa</option><option value="media">Media ración</option><option value="racion">Ración completa</option><option value="desconocida">Formato no especificado</option></select></label>
 <label class="include-unknown"><input id="include-unknown" type="checkbox" checked><span>Mostrar también establecimientos sin precio documentado <small>(se identificarán claramente como precio desconocido)</small></span></label>
 <p id="budget-explain" class="note">Límite aplicado al precio de un plato, no a una comida completa.</p><div class="two"><label>Tipo de precio<select id="price-kind"><option value="">Todos los precios</option><option value="confirmed">Solo precios documentados</option><option value="estimated">Documentados o estimados</option></select></label><label>Ordenar<select id="sort"><option value="name">Nombre</option><option value="price">Menor coste</option><option value="verified">Verificados primero</option></select></label></div>
 <div class="search-actions"><button id="search-button" class="primary" type="submit">Buscar establecimientos →</button><button id="clear-search" type="button" class="clear-search-button">Limpiar búsqueda</button></div></form></section>
 <section id="favorite-section" class="panel" aria-labelledby="favorite-heading"><div class="section-title"><h2 id="favorite-heading">★ Mis tabernas favoritas</h2><span id="favorite-count" class="chip">0 favoritos</span></div><p id="favorite-notice" class="note">Guardadas solo en este navegador. Puedes consultarlas sin volver a buscar.</p><div id="favorite-list"></div></section>
-<section id="results-section" class="panel" aria-label="Resultados" hidden><div class="section-title"><h2 id="results-heading" tabindex="-1">Resultados</h2><span id="count" class="chip">0 lugares</span></div><p class="note">El límite solo se puede comprobar cuando existe un precio documentado. Las fichas sin precio se muestran como desconocidas, no como ofertas dentro del presupuesto.</p><div id="coverage-summary" class="coverage-summary" role="status" aria-live="polite" hidden></div><button id="show-offering" type="button" class="show-offering" hidden>Ver todos los locales que ofrecen este plato →</button><div id="results" aria-live="polite"></div></section>
+<section id="results-section" class="panel" aria-label="Resultados" hidden><p id="service-results-note" class="note"></p><div class="section-title"><h2 id="results-heading" tabindex="-1">Resultados</h2><span id="count" class="chip">0 lugares</span></div><p class="note">El límite solo se puede comprobar cuando existe un precio documentado. Las fichas sin precio se muestran como desconocidas, no como ofertas dentro del presupuesto.</p><div id="coverage-summary" class="coverage-summary" role="status" aria-live="polite" hidden></div><button id="show-offering" type="button" class="show-offering" hidden>Ver todos los locales que ofrecen este plato →</button><div id="results" aria-live="polite"></div></section>
 <section id="detail-section" class="panel" aria-label="Ficha del establecimiento" hidden><div class="section-title"><span class="eyebrow">FICHA DEL LOCAL</span><button id="close-detail" type="button" class="detail-button">Cerrar ficha ×</button></div><div id="detail-content"></div></section>
 <section id="compare-section" class="panel" aria-labelledby="compare-title" hidden><div class="section-title"><h2 id="compare-title">Comparador</h2><span class="chip" id="compare-count">0 / 3</span></div><p class="note">Elige hasta tres establecimientos. Para comparar precios, selecciona un mismo formato en el buscador. Las cantidades reales pueden variar entre locales.</p><div id="compare-output" class="empty" aria-live="polite">Todavía no hay establecimientos seleccionados.</div></section>
 <section class="panel info"><h2>🔍 Nuestro criterio</h2><p><b>Confirmado</b> significa coste publicado y verificable, con fuente y fecha. <b>Estimado</b> indica una orientación, nunca el precio de una carta.</p><p>No inventamos reseñas, puntuaciones ni disponibilidad. Si no sabemos algo, lo indicamos.</p></section>
-<footer>Helio Gastro 2.9 · Córdoba · Proyecto piloto para portfolio QA<br>Sin publicidad ni afiliación. Datos pendientes de verificación.</footer>
+<footer>Helio Gastro 3.0 · Córdoba · Proyecto piloto para portfolio QA<br>Sin publicidad ni afiliación. Datos pendientes de verificación.</footer>
 </main>
 <dialog id="recommendation-dialog" aria-labelledby="recommendation-title" aria-describedby="recommendation-description">
  <div class="recommendation-dialog-head">
@@ -64,4 +65,4 @@
  <iframe id="map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa del establecimiento"></iframe>
  <a id="open-external-map" class="map-route-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/">Abrir en Google Maps ↗</a>
  </dialog>
-<script src="./app.js?v=2.9" defer></script></body></html>
+<script src="./app.js?v=3.0" defer></script></body></html>
