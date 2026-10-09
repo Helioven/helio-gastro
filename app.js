@@ -390,8 +390,29 @@ function showRecommendations(dishName){
  el('recommendation-output').scrollIntoView({behavior:'auto',block:'start'});
 }
 
+function clearSearch(){
+ el('filters').reset();
+ el('portion').disabled=false;
+ state.filtered=[];
+ state.selected.clear();
+ state.searched=false;
+ state.appliedTerm='';
+ state.appliedScope='dish';
+ state.appliedPortion='';
+ state.appliedBudget=null;
+ state.currentDetailId=null;
+ el('results-section').hidden=true;
+ el('compare-section').hidden=true;
+ el('detail-section').hidden=true;
+ el('coverage-summary').hidden=true;
+ el('show-offering').hidden=true;
+ el('budget-explain').textContent='Límite aplicado al precio de un plato, no a una comida completa.';
+ try{localStorage.removeItem(SEARCH_KEY)}catch{}
+ el('dish').focus();
+}
 async function init(){
  el('filters').addEventListener('submit',filter);
+ el('clear-search').addEventListener('click',clearSearch);
  el('close-detail').addEventListener('click',()=>{el('detail-section').hidden=true;el('results-heading').focus();});
  el('price-scope').addEventListener('change',()=>{el('portion').disabled=el('price-scope').value==='meal';});
  el('show-offering').addEventListener('click',()=>{
