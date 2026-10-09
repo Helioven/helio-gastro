@@ -28,3 +28,6 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 
 /* Helio Gastro 1.2 — opciones de precio sin inventar importes */
 .include-unknown{display:flex;align-items:flex-start;gap:10px;background:#193951;border:1px solid #52738c;border-radius:11px;padding:11px 13px;color:#f9e2c0;font-size:13px}.include-unknown input{width:19px;height:19px;min-width:19px;margin:2px 0 0;accent-color:#ffcc84}.include-unknown small{display:block;color:#bed5e4;font-size:11px;font-weight:400}.price-unknown{background:#3d3440;color:#ffe4c5!important;border-left:3px solid #f0b679;border-radius:5px;padding:8px 10px}
+
+/* 1.4: focus visible after explicit search */
+#results-heading:focus{outline:none}#results-section{scroll-margin-top:12px}
