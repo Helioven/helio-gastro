@@ -89,3 +89,14 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 #recommendation-dialog h3{font-size:17px;color:#ffdfae;margin:17px 0 8px}
 #recommendation-dialog h4{font-size:13px;color:#c6e2f2;margin:14px 0 6px}
 @media(max-width:530px){#recommendation-dialog{padding:13px;max-height:92dvh}.recommendation-dialog-head h2{font-size:17px}}
+
+/* 2.6 mapas bajo demanda y rutas externas */
+.map-button{background:#235a78;color:#e7f7ff;border:1px solid #77a1b8;border-radius:9px;min-height:39px;padding:8px 11px;cursor:pointer;margin:5px 7px 5px 0}
+.map-route-link{display:inline-block;background:#254b69;color:#dff3ff;border:1px solid #739bb5;border-radius:9px;padding:11px 13px;min-height:18px;margin:8px 5px 12px 0;font-weight:700}
+#map-dialog{box-sizing:border-box;width:min(780px,calc(100vw - 24px));max-height:92dvh;margin:auto;overflow:auto;background:#122c45;color:#eaf5fc;border:1px solid #749bb5;border-radius:16px;padding:18px;box-shadow:0 18px 80px #0009}
+#map-dialog:not([open]){display:none}
+#map-dialog::backdrop{background:rgba(3,12,24,.82)}
+.map-dialog-head{display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid #547693;padding-bottom:10px}
+.map-dialog-head h2{font-size:19px;margin:0;color:#ffdcac}
+#map-frame{display:block;width:100%;height:min(54vh,420px);border:1px solid #7295ad;border-radius:11px;background:#e8edf2;margin:14px 0}
+@media(max-width:530px){#map-dialog{padding:12px}#map-frame{height:50dvh}}

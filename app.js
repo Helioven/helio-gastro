@@ -78,6 +78,43 @@ function comparableHighlights(items,term,portion){
  }
  return highlights;
 }
+function placeMapUrl(p){
+ return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(p.name+', '+p.address);
+}
+function routeMapUrl(places){
+ const addresses=places.map(p=>p.name+', '+p.address);
+ if(addresses.length<2)return null;
+ const origin=encodeURIComponent(addresses[0]),destination=encodeURIComponent(addresses[addresses.length-1]);
+ const waypoints=addresses.slice(1,-1).map(encodeURIComponent).join('%7C');
+ return 'https://www.google.com/maps/dir/?api=1&origin='+origin+'&destination='+destination+(waypoints?'&waypoints='+waypoints:'')+'&travelmode=walking';
+}
+function mapButton(p){
+ const button=document.createElement('button');button.type='button';button.className='map-button';
+ button.textContent='📍 Ver mapa';button.addEventListener('click',()=>showMap(p));return button;
+}
+function showMap(p){
+ const dialog=el('map-dialog'),frame=el('map-frame');
+ el('map-title').textContent=p.name;
+ el('map-address').textContent=p.address;
+ el('open-external-map').href=placeMapUrl(p);
+ // El mapa se carga solo cuando el usuario solicita verlo.
+ frame.title='Mapa de '+p.name;
+ frame.src='https://maps.google.com/maps?q='+encodeURIComponent(p.name+', '+p.address)+'&output=embed';
+ if(!dialog.open)dialog.showModal();
+}
+function closeMap(){
+ el('map-dialog').close();
+ el('map-frame').removeAttribute('src');
+}
+function routeButton(places){
+ const href=routeMapUrl(places);
+ if(!href)return null;
+ const link=document.createElement('a');link.className='map-route-link';link.href=href;
+ link.target='_blank';link.rel='noopener noreferrer';
+ link.textContent='🚶 Ruta a pie entre '+places.length+' tabernas ↗';
+ return link;
+}
+
 function showEmpty(message){const node=document.createElement('div');node.className='empty';node.textContent=message;el('results').replaceChildren(node)}
 function groupFor(p) {
  const price=lowestPrice(p,state.appliedScope,state.appliedTerm,state.appliedPortion);
@@ -111,7 +148,7 @@ function renderFavorites(){
   const row=document.createElement('div');row.className='favorite-entry';
   const name=document.createElement('strong');name.textContent=p.name;
   const open=document.createElement('button');open.type='button';open.textContent='Ver ficha';open.addEventListener('click',()=>showPlace(p));
-  row.append(name,open,favoriteButton(p));list.append(row);
+  row.append(name,open,mapButton(p),favoriteButton(p));list.append(row);
  }
 }
 const SEARCH_KEY='helio-gastro-search-v1';
@@ -187,7 +224,7 @@ function draw(){
    const meal=document.createElement('p');meal.textContent='Coste de comida por persona: '+fmt(p.mealCostEur);card.append(meal);
   }
   const detailButton=document.createElement('button');detailButton.type='button';detailButton.className='detail-button';
-  detailButton.textContent='Ver ficha completa';detailButton.addEventListener('click',()=>showPlace(p));card.append(detailButton);
+  detailButton.textContent='Ver ficha completa';detailButton.addEventListener('click',()=>showPlace(p));card.append(detailButton,mapButton(p));
   const button=document.createElement('button');button.type='button';button.textContent=state.selected.has(p.id)?'✓ Quitar del comparador':'+ Comparar';
   button.setAttribute('aria-pressed',String(state.selected.has(p.id)));
   button.addEventListener('click',()=>{
@@ -220,7 +257,8 @@ function showPlace(p,scroll=true){
  const panel=el('detail-content');panel.replaceChildren();
  const title=document.createElement('h2');title.id='detail-title';title.tabIndex=-1;title.textContent=p.name;panel.append(title,favoriteButton(p));
  const address=document.createElement('p');address.textContent='📍 '+p.address;panel.append(address);
- const map=document.createElement('a');map.href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(p.address);map.target='_blank';map.rel='noopener noreferrer';map.textContent='Abrir dirección en Google Maps ↗';panel.append(map);
+ panel.append(mapButton(p));
+ const map=document.createElement('a');map.href=placeMapUrl(p);map.target='_blank';map.rel='noopener noreferrer';map.textContent='Abrir en Google Maps ↗';panel.append(map);
  const menu=menuGroups(p);
  const heading=document.createElement('h3');heading.textContent='Carta y especialidades';panel.append(heading);
  if(menu.groups.length){
@@ -267,9 +305,10 @@ function compare(){
  const advisory=document.createElement('p');advisory.className='note';
  advisory.textContent=pricesOnly?'Se comparan solo variantes coincidentes y el mismo formato declarado. «Menor precio» requiere al menos dos locales con esa variante. La cantidad real puede variar.':'Selecciona un plato y un formato concreto para identificar precios comparables entre variantes equivalentes.';
  panel.append(advisory);
+ const route=routeButton(items);if(route)panel.append(route);
  for(const p of items){
   const box=document.createElement('div');box.className='compare-place';
-  const title=document.createElement('h3');title.textContent=p.name;box.append(title);
+  const title=document.createElement('h3');title.textContent=p.name;box.append(title,mapButton(p));
   if(Number.isFinite(p.mealCostEur)){const cost=document.createElement('p');cost.textContent='Comida completa: '+fmt(p.mealCostEur);box.append(cost);}
   const prices=relevantPrices(p,term,state.appliedScope==='dish'?state.appliedPortion:'');
   const label=document.createElement('p');label.textContent=prices.length?'Platos con precio publicado:':'Sin precios de platos coincidentes documentados.';box.append(label);
@@ -381,14 +420,14 @@ function showRecommendations(dishName){
     const name=document.createElement('span');name.textContent=entry.p.name+' · '+entry.item.dish;
     const price=document.createElement('strong');price.textContent=fmt(entry.item.eur);
     const more=document.createElement('button');more.type='button';more.textContent='Ver ficha';more.addEventListener('click',()=>openRecommendationPlace(entry.p));
-    row.append(name,price,more);panel.append(row);
+    const map=mapButton(entry.p);row.append(name,price,more,map);panel.append(row);
    }
   }
  }
  const known=new Set(data.priced.map(x=>x.p.id)),unknown=data.matches.filter(p=>!known.has(p.id));
  if(unknown.length){
   const heading=document.createElement('h3');heading.textContent='También ofrecen el plato · precio pendiente';panel.append(heading);
-  for(const p of unknown){const row=document.createElement('div');row.className='recommendation-row';const name=document.createElement('span');name.textContent=p.name;const btn=document.createElement('button');btn.type='button';btn.textContent='Ver ficha';btn.addEventListener('click',()=>openRecommendationPlace(p));row.append(name,btn);panel.append(row)}
+  for(const p of unknown){const row=document.createElement('div');row.className='recommendation-row';const name=document.createElement('span');name.textContent=p.name;const btn=document.createElement('button');btn.type='button';btn.textContent='Ver ficha';btn.addEventListener('click',()=>openRecommendationPlace(p));row.append(name,btn,mapButton(p));panel.append(row)}
  }
  el('recommendation-dialog').showModal();
 }
@@ -416,6 +455,9 @@ function clearSearch(){
 async function init(){
  el('filters').addEventListener('submit',filter);
  el('close-recommendations').addEventListener('click',()=>el('recommendation-dialog').close());
+ el('close-map').addEventListener('click',closeMap);
+ el('map-dialog').addEventListener('close',()=>el('map-frame').removeAttribute('src'));
+ el('map-dialog').addEventListener('click',event=>{if(event.target===el('map-dialog'))closeMap()});
  el('clear-search').addEventListener('click',clearSearch);
  el('close-detail').addEventListener('click',()=>{el('detail-section').hidden=true;el('results-heading').focus();});
  el('price-scope').addEventListener('change',()=>{el('portion').disabled=el('price-scope').value==='meal';});
