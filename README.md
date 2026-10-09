@@ -123,3 +123,10 @@ El filtro «Solo precios documentados» se mantiene estricto, pero el resultado 
 - Favoritos accesibles sin ejecutar una búsqueda: abrir ficha directamente desde la lista.
 - Sin cuentas ni servidor; datos propios de cada navegador. Puede no persistir en navegación privada o si el almacenamiento está bloqueado.
 - QA: marcar La Viuda, recargar, abrir ficha, quitar, comprobar que se actualizan todos los botones y que la búsqueda sigue siendo manual.
+
+## 2.4.1 — Restauración de búsqueda y comparador
+- Guarda la última búsqueda ejecutada, sus filtros y hasta tres ID seleccionados para comparar en localStorage.
+- Al recargar, restaura resultados desde los datos actuales sin desplazar automáticamente el scroll ni simular un clic del usuario.
+- Si el usuario no había buscado, sigue arrancando con los resultados ocultos.
+- La selección se valida contra los locales disponibles. Si localStorage está bloqueado, funciona sin persistencia.
+- QA: sin búsqueda previa, inicio limpio; con flamenquín/ración/20€ y 3 comparados, tras recarga permanecen filtros, resultados y comparación; cambiar filtros sin pulsar Buscar no ejecuta búsqueda; no más de 3 comparados.
