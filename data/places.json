@@ -120,5 +120,132 @@
         "url": "https://tabernaelpoema.com/"
       }
     ]
+  },
+  {
+    "id": "taberna-rafae",
+    "name": "Taberna Rafaé",
+    "area": "Judería · Deanes",
+    "address": "Calle Deanes, 2, Córdoba",
+    "dishes": [
+      "Flamenquín casero cordobés de jamón",
+      "Flamenquín de rabo de toro",
+      "Rabo de toro",
+      "Tortilla de patatas",
+      "Venado en salsa"
+    ],
+    "dishPrices": [
+      {
+        "dish": "Flamenquín casero cordobés de jamón (ración)",
+        "eur": 11.9
+      },
+      {
+        "dish": "Flamenquín casero de rabo de toro (ración)",
+        "eur": 15
+      },
+      {
+        "dish": "Tortilla de patatas al momento (ración)",
+        "eur": 10.3
+      },
+      {
+        "dish": "Venado en salsa cordobesa (media ración)",
+        "eur": 8.7
+      }
+    ],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Carta oficial con precios",
+        "url": "https://tabernarafae.com/carta/"
+      },
+      {
+        "label": "Dirección y contacto",
+        "url": "https://tabernarafae.com/contacto/"
+      }
+    ]
+  },
+  {
+    "id": "taberna-la-manuela",
+    "name": "Taberna La Manuela",
+    "area": "Judería · Mezquita",
+    "address": "Calle Cardenal González, 69, Córdoba",
+    "dishes": [
+      "Flamenquín cordobés",
+      "Flamenquín de rabo de toro",
+      "Salmorejo cordobés",
+      "Mazamorra",
+      "Rabo de toro"
+    ],
+    "dishPrices": [
+      {
+        "dish": "Flamenquín cordobés troceado con patatas (ración)",
+        "eur": 12.5
+      },
+      {
+        "dish": "Flamenquín de rabo de toro troceado (ración)",
+        "eur": 18.5
+      }
+    ],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Carta y dirección oficiales",
+        "url": "https://tabernalamanuelacordoba.es/"
+      }
+    ]
+  },
+  {
+    "id": "taberna-gongora",
+    "name": "Taberna Góngora",
+    "area": "Centro · Conde de Torres Cabrera",
+    "address": "Calle Conde de Torres Cabrera, 4, Córdoba",
+    "dishes": [
+      "Rabo de toro",
+      "Boquerones al limón",
+      "Croquetas de rabo de toro",
+      "Berenjenas con miel de caña"
+    ],
+    "dishPrices": [
+      {
+        "dish": "Rabo de toro (media ración)",
+        "eur": 11
+      },
+      {
+        "dish": "Rabo de toro (ración)",
+        "eur": 21
+      },
+      {
+        "dish": "Boquerones al limón (media ración)",
+        "eur": 8
+      },
+      {
+        "dish": "Boquerones al limón (ración)",
+        "eur": 15
+      },
+      {
+        "dish": "Croquetas de rabo de toro (media ración)",
+        "eur": 7.5
+      },
+      {
+        "dish": "Croquetas de rabo de toro (ración)",
+        "eur": 14.5
+      }
+    ],
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-09",
+    "sources": [
+      {
+        "label": "Carta oficial con precios",
+        "url": "https://tabernagongora.com/carta/"
+      },
+      {
+        "label": "Dirección y presentación oficial",
+        "url": "https://tabernagongora.com/"
+      }
+    ]
   }
 ]
