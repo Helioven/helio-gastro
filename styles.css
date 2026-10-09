@@ -46,3 +46,6 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 /* 1.8: Agrupacion por verificabilidad y plato protagonista */
 .result-group-title{font-size:15px;color:#ffddac;border-bottom:1px solid #557792;padding:13px 0 8px;margin:10px 0 7px}
 .matching-dishes{background:rgba(255,205,133,.08);padding:9px 11px;border-left:3px solid #ffd090;border-radius:6px;font-weight:650;color:#ffe6ba!important}
+
+/* 2.0: filtro de formato de ración */
+#portion:disabled{opacity:.45;cursor:not-allowed}
