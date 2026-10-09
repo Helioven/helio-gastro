@@ -19,8 +19,21 @@ function draw(){
   const title=document.createElement('h3');title.textContent=p.name;card.append(title);
   const details=document.createElement('p');details.textContent='📍 '+p.area+' · '+p.dishes.join(', ');card.append(details);
   const price=document.createElement('p');
-  const status=p.priceStatus==='confirmed'?'Precio publicado y contrastado':p.priceStatus==='estimated'?'Estimación — no confirmado':'Precio sin verificar';
+  const status=p.priceStatus==='confirmed'?'Coste total publicado y contrastado':p.priceStatus==='estimated'?'Estimación — no confirmado':'Precio sin verificar';
   price.textContent='Coste orientativo por persona: '+fmt(p.mealCostEur)+' · '+status;card.append(price);
+  if (Array.isArray(p.dishPrices) && p.dishPrices.length) {
+    const priceHeading=document.createElement('p');
+    priceHeading.textContent='Precios publicados en carta (platos, NO coste total):';
+    card.append(priceHeading);
+    const dishes=document.createElement('ul');dishes.className='dish-prices';
+    for (const item of p.dishPrices) {
+      if(typeof item.dish!=='string'||!Number.isFinite(item.eur)) continue;
+      const li=document.createElement('li');
+      li.textContent=item.dish+' — '+fmt(item.eur);
+      dishes.append(li);
+    }
+    card.append(dishes);
+  }
   const sources=document.createElement('p');sources.textContent='Fuentes documentadas: '+p.sources.length+' · Última comprobación: '+(p.checkedAt||'pendiente');card.append(sources);
   for(const source of p.sources){
    if(source.url && /^https:\/\//.test(source.url)){
