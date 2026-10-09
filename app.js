@@ -1,5 +1,5 @@
 'use strict';
-const state={places:[],filtered:[],selected:new Set(),favorites:new Set(),searched:false,appliedTerm:'',appliedScope:'dish',appliedPortion:'',appliedBudget:null};
+const state={places:[],filtered:[],selected:new Set(),favorites:new Set(),searched:false,appliedTerm:'',appliedScope:'dish',appliedPortion:'',appliedBudget:null,currentDetailId:null};
 const el=id=>document.getElementById(id);
 const fmt=n=>typeof n==='number'?new Intl.NumberFormat('es-ES',{style:'currency',currency:'EUR'}).format(n):'No disponible';
 const clean=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
@@ -93,6 +93,7 @@ function toggleFavorite(id){
  if(state.favorites.has(id))state.favorites.delete(id);else state.favorites.add(id);
  try{localStorage.setItem(FAV_KEY,JSON.stringify([...state.favorites]))}catch{el('favorite-notice').textContent='No se han podido guardar favoritos en este navegador.'}
  renderFavorites();if(state.searched)draw();
+ if(state.currentDetailId===id&&!el('detail-section').hidden){const place=state.places.find(p=>p.id===id);if(place)showPlace(place,false)}
 }
 function favoriteButton(p){
  const btn=document.createElement('button');btn.type='button';btn.className='fav-button';
@@ -190,7 +191,8 @@ function menuGroups(p){
  });
  return {groups,unpriced};
 }
-function showPlace(p){
+function showPlace(p,scroll=true){
+ state.currentDetailId=p.id;
  const panel=el('detail-content');panel.replaceChildren();
  const title=document.createElement('h2');title.id='detail-title';title.tabIndex=-1;title.textContent=p.name;panel.append(title,favoriteButton(p));
  const address=document.createElement('p');address.textContent='📍 '+p.address;panel.append(address);
@@ -227,8 +229,7 @@ function showPlace(p){
  const checked=document.createElement('p');checked.textContent='Última consulta: '+(p.checkedAt||'Sin fecha registrada');panel.append(checked);
  for(const source of p.sources){if(!/^https:\/\//.test(source.url))continue;const a=document.createElement('a');a.href=source.url;a.textContent=source.label+' ↗';a.target='_blank';a.rel='noopener noreferrer';a.className='detail-source';panel.append(a)}
  el('detail-section').hidden=false;
- el('detail-section').scrollIntoView({behavior:'auto',block:'start'});
- el('detail-title').focus({preventScroll:true});
+ if(scroll){el('detail-section').scrollIntoView({behavior:'auto',block:'start'});el('detail-title').focus({preventScroll:true})}
 }
 function compare(){
  const panel=el('compare-output');panel.replaceChildren();
@@ -281,6 +282,7 @@ function filter(event){
  el('results-section').hidden=false;
  el('compare-section').hidden=false;
  el('detail-section').hidden=true;
+ state.currentDetailId=null;
  const area=el('area').value,kind=el('price-kind').value,scope=el('price-scope').value,includeUnknown=el('include-unknown').checked;
  state.filtered=state.places.filter(p=>{
   if(dish&&!clean(p.name+' '+p.dishes.join(' ')+' '+dishPrices(p).map(d=>d.dish).join(' ')).includes(dish))return false;
