@@ -3,9 +3,31 @@ const state={places:[],filtered:[],selected:new Set(),favorites:new Set(),search
 const el=id=>document.getElementById(id);
 const fmt=n=>typeof n==='number'?new Intl.NumberFormat('es-ES',{style:'currency',currency:'EUR'}).format(n):'No disponible';
 const clean=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+const SERVICE_TYPES={
+ general:'Carta general (horario sin verificar)',
+ desayuno:'Desayuno',
+ comida:'Comida',
+ merienda:'Merienda',
+ cena:'Cena'
+};
+function normalizePlace(raw){
+ if(!raw||typeof raw!=='object')return raw;
+ // Conversión de la antigua carta plana para consumidores existentes.
+ const menus=Array.isArray(raw.menus)?raw.menus:
+  [{service:'general',dishes:raw.dishes,dishPrices:raw.dishPrices}];
+ const safeMenus=menus.filter(m=>m&&Object.hasOwn(SERVICE_TYPES,m.service)
+  &&Array.isArray(m.dishes)&&Array.isArray(m.dishPrices)
+  &&m.dishes.every(d=>typeof d==='string')
+  &&m.dishPrices.every(item=>item&&typeof item.dish==='string'
+   &&Number.isFinite(item.eur)&&item.eur>=0));
+ const allDishes=[...new Set(safeMenus.flatMap(m=>m.dishes))];
+ const allPrices=safeMenus.flatMap(m=>m.dishPrices.map(price=>({...price,service:m.service})));
+ return {...raw,menus:safeMenus,dishes:allDishes,dishPrices:allPrices};
+}
+
 function validPlace(p){
  return p&&typeof p.id==='string'&&typeof p.name==='string'&&typeof p.area==='string'
- &&Array.isArray(p.dishes)&&Array.isArray(p.sources)&&['confirmed','estimated','unknown'].includes(p.priceStatus)
+ &&Array.isArray(p.dishes)&&p.menus.length>0&&Array.isArray(p.sources)&&['confirmed','estimated','unknown'].includes(p.priceStatus)
  &&(p.mealCostEur===null||Number.isFinite(p.mealCostEur));
 }
 function dishPrices(p){return(Array.isArray(p.dishPrices)?p.dishPrices:[]).filter(d=>typeof d.dish==='string'&&Number.isFinite(d.eur)&&d.eur>=0)}
@@ -488,7 +510,7 @@ async function init(){
   const res=await fetch('./data/places.json',{cache:'no-store'});
   if(!res.ok)throw Error('HTTP '+res.status);
   const data=await res.json();if(!Array.isArray(data))throw Error('Formato inválido');
-  state.places=data.filter(validPlace);
+  state.places=data.map(normalizePlace).filter(validPlace);
   state.favorites=new Set([...loadFavorites()].filter(id=>state.places.some(p=>p.id===id)));
   renderFavorites();
   renderRecommendations();
