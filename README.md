@@ -54,3 +54,16 @@ Se registran **seis precios de platos publicados por los propios locales** en Mo
 - HG-009: mostrar precio de plato y distinguirlo claramente del coste de comida.
 - HG-010: con presupuesto de 15 €, excluir fichas con `mealCostEur=null`.
 - HG-011: enlaces externos con `https`, `noopener` y `noreferrer`.
+
+## Versión 1.3 — funcionalidad y fuentes
+- Siete establecimientos del centro de Córdoba y 18 precios de platos documentados.
+- Al buscar una especialidad, el listado de precios de cada ficha destaca solo los platos coincidentes.
+- Se separa explícitamente **comida completa por persona (desconocida)** de **precio de platos publicado en carta**.
+- Tres fichas adicionales: Taberna Rafaé (Deanes 2), La Manuela (Cardenal González 69) y Góngora (Conde de Torres Cabrera 4).
+- Las fuentes se consultaron el 9 de octubre de 2026. Los precios son publicaciones de las propias cartas, no presupuestos garantizados. Las raciones y medias raciones no se equiparan entre sí.
+
+### Pruebas QA 1.3
+- HG-012: buscar 'flamenquín' no debe mostrar precios de salmorejo dentro de la ficha.
+- HG-013: buscar 'rabo de toro' muestra precios de rabo donde estén documentados.
+- HG-014: los tres locales nuevos tienen dirección, fuentes HTTPS y fecha de consulta.
+- HG-015: el filtro de comida completa nunca usa el precio de una media ración como si fuera el coste total.
