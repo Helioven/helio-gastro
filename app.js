@@ -1,5 +1,5 @@
 'use strict';
-const state={places:[],filtered:[],selected:new Set()};
+const state={places:[],filtered:[],selected:new Set(),searched:false,appliedTerm:''};
 const el=id=>document.getElementById(id);
 const fmt=n=>typeof n==='number'?new Intl.NumberFormat('es-ES',{style:'currency',currency:'EUR'}).format(n):'No disponible';
 const clean=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
@@ -24,7 +24,7 @@ function draw(){
   const price=document.createElement('p');
   const status=p.priceStatus==='confirmed'?'Coste completo confirmado':p.priceStatus==='estimated'?'Coste completo estimado':'Coste completo desconocido';
   price.textContent='Comida completa por persona: '+fmt(p.mealCostEur)+' · '+status;card.append(price);
-  const term=clean(el('dish').value.trim());
+  const term=state.appliedTerm;
   const shown=term?relevantPrices(p,term):dishPrices(p);
   if(shown.length) {
     const priceHeading=document.createElement('p');
@@ -43,7 +43,7 @@ function draw(){
     notice.className='note';notice.textContent='Hay precios de otros platos, pero ninguno verificado para esta búsqueda.';
     card.append(notice);
   }
-  if(el('budget').value && lowestPrice(p,el('price-scope').value,clean(el('dish').value.trim()))===null){
+  if(state.appliedBudget && lowestPrice(p,state.appliedScope,state.appliedTerm)===null){
     const warning=document.createElement('p');warning.className='price-unknown';
     warning.textContent='⚠ Precio desconocido. No podemos confirmar que se ajuste a tu presupuesto.';
     card.append(warning);
@@ -70,7 +70,7 @@ function compare(){
  el('compare-count').textContent=items.length+' / 3';
  if(!items.length){panel.className='empty';panel.textContent='Selecciona establecimientos de los resultados para compararlos aquí.';return}
  panel.className='';
- const term=clean(el('dish').value.trim());
+ const term=state.appliedTerm;
  for(const p of items){
   const box=document.createElement('div');box.className='compare-place';
   const title=document.createElement('h3');title.textContent=p.name;box.append(title);
@@ -86,6 +86,7 @@ function compare(){
 function filter(event){
  if(event)event.preventDefault();
  const dish=clean(el('dish').value.trim()),max=el('budget').value?Number(el('budget').value):null;
+ state.appliedTerm=dish;state.appliedBudget=max;state.appliedScope=el('price-scope').value;state.searched=true;
  const area=el('area').value,kind=el('price-kind').value,scope=el('price-scope').value,includeUnknown=el('include-unknown').checked;
  state.filtered=state.places.filter(p=>{
   if(dish&&!clean(p.name+' '+p.dishes.join(' ')+' '+dishPrices(p).map(d=>d.dish).join(' ')).includes(dish))return false;
@@ -104,10 +105,11 @@ function filter(event){
   'Presupuesto aplicado al plato más económico coincidente y documentado. Los precios desconocidos no garantizan cumplirlo.':
   'Presupuesto aplicado al coste total por persona. Los locales sin coste documentado pueden mostrarse, pero no se consideran dentro del límite.';
  draw();compare();
+ el('results-section').scrollIntoView({behavior:'auto',block:'start'});
+ el('results-heading').focus({preventScroll:true});
 }
 async function init(){
  el('filters').addEventListener('submit',filter);
- for(const id of ['budget','price-scope','price-kind','sort','area','include-unknown'])el(id).addEventListener('change',filter);
  try{
   const res=await fetch('./data/places.json',{cache:'no-store'});
   if(!res.ok)throw Error('HTTP '+res.status);
@@ -115,7 +117,8 @@ async function init(){
   state.places=data.filter(validPlace);
   const areas=[...new Set(state.places.map(p=>p.area))].sort((a,b)=>a.localeCompare(b,'es'));
   for(const area of areas){const opt=document.createElement('option');opt.value=area;opt.textContent=area;el('area').append(opt)}
-  filter();
+  el('count').textContent=state.places.length+' disponibles';
+  showEmpty('Elige qué te apetece y pulsa «Buscar establecimientos» para obtener resultados.');
  }catch(e){showEmpty('No se ha podido cargar la base de datos. Inténtalo de nuevo más tarde.');el('count').textContent='Sin datos'}
 }
 init();
