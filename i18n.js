@@ -62,7 +62,7 @@ window.GASTRO_I18N = Object.freeze({
   let language='es';
   const normalize=s=>s.trim().replace(/\s+/g,' ');
   function translateText(node){
-    if(!node || !node.parentElement || node.parentElement.closest('script,style,textarea,option[data-keep-original]'))return;
+    if(!node || !node.parentElement || node.parentElement.closest('script,style,textarea,option[data-keep-original],#language-select'))return;
     if(!originalNodes.has(node))originalNodes.set(node,node.nodeValue);
     const original=originalNodes.get(node);
     const match=original.match(/^(\s*)([\s\S]*?)(\s*)$/);
@@ -86,7 +86,7 @@ window.GASTRO_I18N = Object.freeze({
         if(!originals){originals={};originalAttributes.set(element,originals);}
         if(!(attr in originals))originals[attr]=element.getAttribute(attr);
         const source=originals[attr];
-        const translated=language==='en'?(translations[source]||source):source;
+        const translated=language==='en'?translateValue(source):source;
         if(element.getAttribute(attr)!==translated)element.setAttribute(attr,translated);
       }
     }
@@ -110,7 +110,11 @@ window.GASTRO_I18N = Object.freeze({
         if(record.type==='characterData'){
           const node=record.target;
           const previous=originalNodes.get(node);
-          if(language==='en' && previous!==undefined && node.nodeValue===translateValue(normalize(previous)))continue;
+          if(previous!==undefined){
+            const match=previous.match(/^(\\s*)([\\s\\S]*?)(\\s*)$/);
+            const expected=language==='en'?match[1]+translateValue(normalize(match[2]))+match[3]:previous;
+            if(node.nodeValue===expected)continue;
+          }
           originalNodes.delete(node);
           translateText(node);
         }else{
