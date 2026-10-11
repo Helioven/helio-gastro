@@ -536,9 +536,19 @@ const QUICK_DISHES=[
  {name:'Mazamorra',icon:'🥣'}, {name:'Carrillada',icon:'🍖'},
  {name:'Berenjenas',icon:'🍆'}, {name:'Pisto',icon:'🍳'}
 ];
+function recommendationDishMatches(dish,term){
+ const value=clean(dish);
+ // Las categorías de acceso rápido admiten singular/plural, pero no coincidencias
+ // semánticamente erróneas: un brownie no es chocolate a la taza.
+ if(state.mode==='merienda'&&term==='chocolate')return /\bchocolate\s+(?:a\s+la\s+taza|caliente|con\s+churros)\b/.test(value)||/\bchurros\s+con\s+chocolate\b/.test(value);
+ if(term==='tostadas')return /\btostad(?:a|as)\b/.test(value);
+ if(term==='pasteles')return /\bpastel(?:es)?\b/.test(value);
+ if(term==='tartas')return /\btarta(?:s)?\b/.test(value);
+ return value.includes(term);
+}
 function recommendationEntries(term){
- const matches=state.places.filter(p=>serviceDishes(p).some(d=>clean(d).includes(term))||servicePrices(p).some(d=>clean(d.dish).includes(term)));
- const priced=matches.flatMap(p=>servicePrices(p).filter(item=>clean(item.dish).includes(term)).map(item=>({p,item,portion:portionOf(item),variant:variantOf(item)})));
+ const matches=state.places.filter(p=>serviceDishes(p).some(d=>recommendationDishMatches(d,term))||servicePrices(p).some(d=>recommendationDishMatches(d.dish,term)));
+ const priced=matches.flatMap(p=>servicePrices(p).filter(item=>recommendationDishMatches(item.dish,term)).map(item=>({p,item,portion:portionOf(item),variant:variantOf(item)})));
  return {matches,priced};
 }
 function renderRecommendations(){
