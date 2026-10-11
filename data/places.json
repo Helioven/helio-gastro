@@ -1254,6 +1254,7 @@
       {
         "service": "desayuno",
         "dishes": [
+          "Tostadas",
           "Tostada clásica",
           "Tostada especial",
           "Café solo",
@@ -1367,6 +1368,7 @@
       {
         "service": "desayuno",
         "dishes": [
+          "Tostadas",
           "Café 100% natural",
           "Tostada con aceite y tomate",
           "Tostada con jamón ibérico",
@@ -1421,6 +1423,7 @@
       {
         "service": "desayuno",
         "dishes": [
+          "Tostadas",
           "Media tostada básica",
           "Tostada entera básica",
           "Media tostada mixta",
