@@ -136,3 +136,7 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 .dish-explanation{display:block;font-size:.85rem;line-height:1.4;color:#b8d3e7;margin:5px 0 6px;font-weight:400}
 .dish-explanation[hidden],.portion-help[hidden]{display:none!important}
 .portion-help{display:block;margin-top:8px;font-size:.8rem;line-height:1.5;color:#b8d3e7}
+
+.recommendation-variant-heading{display:flex;align-items:center;flex-wrap:wrap;gap:6px}
+.portion-tag{display:inline-block;padding:3px 9px;border:1px solid #557f9c;border-radius:999px;font-size:.82em;font-weight:500;color:#d8eafa}
+#recommendation-price-notice{font-size:.82rem;margin:10px 0}
