@@ -542,7 +542,7 @@ function recommendationDishMatches(dish,term){
  // semánticamente erróneas: un brownie no es chocolate a la taza.
  if(state.mode==='merienda'&&term==='chocolate')return /\bchocolate\s+(?:a\s+la\s+taza|caliente|con\s+churros)\b/.test(value)||/\bchurros\s+con\s+chocolate\b/.test(value);
  if(term==='tostadas')return /\btostad(?:a|as)\b/.test(value);
- if(term==='pasteles')return /\bpastel(?:es)?\b/.test(value);
+ if(term==='pasteles')return /\b(?:pastel(?:es)?|milhoja(?:s)?|tartaleta(?:s)?|berlina(?:s)?|palmera(?:s)?|croissant(?:s)?|napolitana(?:s)?|magdalena(?:s)?|donut(?:s)?|hojaldre(?:s)?|bollo(?:s)?|bolleria|semifrio(?:s)?|bizcocho(?:s)?)\b/.test(value);
  if(term==='tartas')return /\btarta(?:s)?\b/.test(value);
  return value.includes(term);
 }
