@@ -2,7 +2,7 @@
 const state={places:[],filtered:[],selected:new Set(),favorites:new Set(),searched:false,appliedTerm:'',appliedScope:'dish',appliedPortion:'',appliedBudget:null,currentDetailId:null,mode:'comida'};
 const el=id=>document.getElementById(id);
 const MODE_CONFIG={
- desayuno:{label:'Desayunar',emoji:'☕',budgets:[3,5,7,10],dishes:['Tostadas','Churros','Molletes','Café'],portions:[['unidad','Unidad'],['media-tostada','Media tostada'],['tostada-entera','Tostada entera'],['combinado','Desayuno combinado']],placeholder:'Tostadas, churros, molletes…'},
+ desayuno:{label:'Desayunar',emoji:'☕',budgets:[3,5,7,10],dishes:['Tostadas','Churros','Molletes','Café','Bollería'],portions:[['unidad','Unidad'],['media-tostada','Media tostada'],['tostada-entera','Tostada entera'],['combinado','Desayuno combinado']],placeholder:'Tostadas, churros, molletes…'},
  comida:{label:'Comer',emoji:'🍽️',budgets:[10,15,20,30,50],dishes:['Flamenquín','Salmorejo','Rabo de toro','Croquetas','Mazamorra','Carrillada','Berenjenas','Pisto'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']],placeholder:'Flamenquín, salmorejo, carrillada…'},
  merienda:{label:'Merendar',emoji:'🥐',budgets:[3,5,8,12],dishes:['Churros','Chocolate','Pasteles','Tartas'],portions:[['unidad','Unidad'],['racion','Ración'],['combinado','Merienda combinada']],placeholder:'Churros con chocolate, pasteles…'},
  cena:{label:'Cenar',emoji:'🌙',budgets:[10,15,20,30,50],dishes:['Tapas','Flamenquín','Croquetas','Tortilla','Rabo de toro','Salmorejo'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']],placeholder:'Tapas, tortilla, croquetas…'}
@@ -542,6 +542,7 @@ function recommendationDishMatches(dish,term){
  // semánticamente erróneas: un brownie no es chocolate a la taza.
  if(state.mode==='merienda'&&term==='chocolate')return /\bchocolate\s+(?:a\s+la\s+taza|caliente|con\s+churros)\b/.test(value)||/\bchurros\s+con\s+chocolate\b/.test(value);
  if(term==='tostadas')return /\btostad(?:a|as)\b/.test(value);
+ if(term==='bolleria')return /\b(?:bolleria|croissant(?:s)?|napolitana(?:s)?|magdalena(?:s)?|donut(?:s)?|palmera(?:s)?|berlina(?:s)?|bollo(?:s)?|hojaldre(?:s)?)\b/.test(value);
  if(term==='pasteles')return /\b(?:pastel(?:es)?|milhoja(?:s)?|tartaleta(?:s)?|berlina(?:s)?|palmera(?:s)?|croissant(?:s)?|napolitana(?:s)?|magdalena(?:s)?|donut(?:s)?|hojaldre(?:s)?|bollo(?:s)?|bolleria|semifrio(?:s)?|bizcocho(?:s)?)\b/.test(value);
  if(term==='tartas')return /\btarta(?:s)?\b/.test(value);
  return value.includes(term);
