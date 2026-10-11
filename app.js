@@ -592,16 +592,27 @@ function showRecommendations(dishName){
   groups.get(key).push(entry);
  }
  if(groups.size){
-  const heading=document.createElement('h3');heading.textContent='Precios documentados por variante y formato';panel.append(heading);
-  for(const entries of groups.values()){
-   const groupHeading=document.createElement('h4');groupHeading.className='recommendation-variant-heading';groupHeading.textContent=variantLabel(entries[0].item)+' · ';const portionTag=document.createElement('span');portionTag.className='portion-tag';portionTag.textContent=localizedPortion(entries[0].portion);groupHeading.append(portionTag);panel.append(groupHeading);
-   for(const entry of entries.sort((a,b)=>a.item.eur-b.item.eur)){
-    const row=document.createElement('div');row.className='recommendation-row';
-    const name=document.createElement('span');name.textContent=entry.p.name+' · '+entry.item.dish;
+  const heading=document.createElement('h3');heading.textContent='Precios documentados por establecimiento';panel.append(heading);
+  const byPlace=new Map();
+  for(const entry of data.priced){
+   if(!byPlace.has(entry.p.id))byPlace.set(entry.p.id,{place:entry.p,items:[]});
+   byPlace.get(entry.p.id).items.push(entry);
+  }
+  for(const {place,items} of byPlace.values()){
+   const card=document.createElement('section');card.className='recommendation-place';
+   const title=document.createElement('h4');title.textContent=place.name;card.append(title);
+   const list=document.createElement('ul');list.className='recommendation-place-items';
+   for(const entry of items.sort((a,b)=>a.item.eur-b.item.eur)){
+    const line=document.createElement('li');
+    const label=document.createElement('span');label.textContent=entry.item.dish;
+    const format=document.createElement('small');format.className='portion-tag';format.textContent=localizedPortion(entry.portion);
     const price=document.createElement('strong');price.textContent=fmt(entry.item.eur);
-    const more=document.createElement('button');more.type='button';more.textContent='Ver ficha';more.addEventListener('click',()=>openRecommendationPlace(entry.p));
-    const map=mapButton(entry.p);row.append(name,price,more,map);panel.append(row);
+    line.append(label,format,price);list.append(line);
    }
+   card.append(list);
+   const actions=document.createElement('div');actions.className='recommendation-place-actions';
+   const more=document.createElement('button');more.type='button';more.textContent='Ver ficha';more.addEventListener('click',()=>openRecommendationPlace(place));
+   actions.append(more,mapButton(place));card.append(actions);panel.append(card);
   }
  }
  const known=new Set(data.priced.map(x=>x.p.id)),unknown=data.matches.filter(p=>!known.has(p.id));
