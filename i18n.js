@@ -101,6 +101,7 @@ window.GASTRO_I18N = Object.freeze({
     const select=document.getElementById('language-select');
     if(select && select.value!==language)select.value=language;
     translateElement(document.body);
+    if(typeof window.HelioGastroRefreshExplanations==='function')window.HelioGastroRefreshExplanations();
     try{localStorage.setItem(KEY,language)}catch(e){}
   }
   function init(){
