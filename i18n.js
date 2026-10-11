@@ -67,6 +67,9 @@ window.GASTRO_I18N = Object.freeze({
     [/^Estamos preparando cartas de (.+)\. Todavía no hay locales con especialidades documentadas para este servicio\.$/,m=>'We are preparing '+({'desayunar':'breakfast','merendar':'afternoon snack'}[m[1]]||m[1])+' menus. No places have documented specialities for this service yet.']
   );
   Object.assign(translations,{
+    'Se muestran cartas generales para explorar opciones. No confirman que el local sirva este plato a la hora elegida.':'General menus are shown to help you explore options. They do not confirm that the restaurant serves this dish at the selected time.',
+  });
+  Object.assign(translations,{
     'El presupuesto usa exclusivamente el formato seleccionado: unidad, tapa, media o ración. Si no hay precio de ese formato, se indica como desconocido.':'The budget applies only to the selected portion size: single item, tapa, half or full portion. If no price is available for that size, it is marked as unknown.',
     'Presupuesto aplicado al coste total por persona. Los locales sin coste documentado pueden mostrarse, pero no se consideran dentro del límite.':'Budget applied to the total cost per person. Places without a documented total may still appear, but they are not counted as within budget.'
   });
