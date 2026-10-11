@@ -34,11 +34,11 @@ window.GASTRO_I18N = Object.freeze({
 
   // Parameterized UI messages; never translate verified restaurant names or prices.
   const dynamicRules=[
-    [/^(\\d+) favoritos$/,m=>m[1]+' favourites'],
-    [/^(\\d+) (lugar|lugares)$/,m=>m[1]+(m[1]==='1'?' place':' places')],
-    [/^(\\d+) locales registrados · (\\d+) con precio$/,m=>m[1]+' places listed · '+m[2]+' with prices'],
-    [/^(\\d+) locales verificados · (\\d+) con precio$/,m=>m[1]+' verified places · '+m[2]+' with prices'],
-    [/^(\\d+) precio\\(s\\) de carta documentado\\(s\\) · Ver ficha para detalles$/,m=>m[1]+' documented menu prices · View details'],
+    [/^(\d+) favoritos$/,m=>m[1]+' favourites'],
+    [/^(\d+) (lugar|lugares)$/,m=>m[1]+(m[1]==='1'?' place':' places')],
+    [/^(\d+) locales registrados · (\d+) con precio$/,m=>m[1]+' places listed · '+m[2]+' with prices'],
+    [/^(\d+) locales verificados · (\d+) con precio$/,m=>m[1]+' verified places · '+m[2]+' with prices'],
+    [/^(\d+) precio\(s\) de carta documentado\(s\) · Ver ficha para detalles$/,m=>m[1]+' documented menu prices · View details'],
     [/^Desde (.+) · (.+)$/,m=>'From '+m[1]+' · '+translateValue(m[2])],
     [/^Especialidades: (.+)$/,m=>'Specialities: '+m[1]],
     [/^🍴 Plato encontrado: (.+)$/,m=>'🍴 Dish found: '+m[1]],
@@ -48,13 +48,13 @@ window.GASTRO_I18N = Object.freeze({
     [/^Última consulta: (.+)$/,m=>'Last checked: '+m[1]],
     [/^Opciones de (.+)$/,m=>'Options for '+m[1]],
     [/^Precio del plato( en este formato)? pendiente de confirmar$/,m=>'Dish price'+(m[1]?' for this portion':'')+' awaiting confirmation'],
-    [/^En nuestra base actual: (\\d+) local\\(es\\) con «(.+)» registrado\\(s\\); (\\d+) con precio de ese plato documentado y (\\d+) sin precio\\. Esto NO representa todos los bares de Córdoba\\.$/,m=>'In our current database: '+m[1]+' places list “'+m[2]+'”; '+m[3]+' have a documented price and '+m[4]+' do not. This is NOT a complete list of Córdoba venues.'],
-    [/^(\\d+) locales en nuestra base; (\\d+) con precios publicados\\. No es un ranking de calidad ni una lista completa de Córdoba\\.$/,m=>m[1]+' places in our database; '+m[2]+' with published prices. This is not a quality ranking or a complete list of Córdoba.'],
-    [/^(\\d+) fuente\\(s\\) · Revisado (.+)$/,m=>m[1]+' sources · Checked '+m[2]]
+    [/^En nuestra base actual: (\d+) local\(es\) con «(.+)» registrado\(s\); (\d+) con precio de ese plato documentado y (\d+) sin precio\. Esto NO representa todos los bares de Córdoba\.$/,m=>'In our current database: '+m[1]+' places list “'+m[2]+'”; '+m[3]+' have a documented price and '+m[4]+' do not. This is NOT a complete list of Córdoba venues.'],
+    [/^(\d+) locales en nuestra base; (\d+) con precios publicados\. No es un ranking de calidad ni una lista completa de Córdoba\.$/,m=>m[1]+' places in our database; '+m[2]+' with published prices. This is not a quality ranking or a complete list of Córdoba.'],
+    [/^(\d+) fuente\(s\) · Revisado (.+)$/,m=>m[1]+' sources · Checked '+m[2]]
   ];
   dynamicRules.unshift(
-    [/^(\\d+) locales registrados · (\\d+) con precio$/,m=>m[1]+' places listed · '+m[2]+' with prices'],
-    [/^(\\d+) locales verificados · (\\d+) con precio$/,m=>m[1]+' verified places · '+m[2]+' with prices']
+    [/^(\d+) locales registrados · (\d+) con precio$/,m=>m[1]+' places listed · '+m[2]+' with prices'],
+    [/^(\d+) locales verificados · (\d+) con precio$/,m=>m[1]+' verified places · '+m[2]+' with prices']
   );
   function translateValue(value){
     if(Object.prototype.hasOwnProperty.call(translations,value))return translations[value];
