@@ -152,7 +152,7 @@ const VARIANT_NAMES={
 function localizedPortion(value){
  const es=PORTIONS[value]||value;
  const en={'unidad':'Single item','tapa':'Tapa (small serving)','media':'Half portion','racion':'Full portion','media-tostada':'Half toast','tostada-entera':'Full toast','combinado':'Combo','desconocida':'Portion not specified'};
- return window.HelioGastroLanguage?.get()==='en'?(en[value]||es):es;
+ return es; // Translation is applied by the language layer, enabling reliable EN → ES.
 }
 function variantLabel(item){const key=variantOf(item);return VARIANT_NAMES[key]||'Variante sin categorizar'}
 function priceDescriptor(item){
