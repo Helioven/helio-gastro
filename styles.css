@@ -132,3 +132,7 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 .header-controls .version{position:static;display:inline-flex;white-space:nowrap}
 .header-controls .language-label{line-height:1.4}
 @media(max-width:500px){.header-controls{max-width:none;min-width:112px;gap:7px}}
+
+.dish-explanation{display:block;font-size:.85rem;line-height:1.4;color:#b8d3e7;margin:5px 0 6px;font-weight:400}
+.dish-explanation[hidden],.portion-help[hidden]{display:none!important}
+.portion-help{display:block;margin-top:8px;font-size:.8rem;line-height:1.5;color:#b8d3e7}
