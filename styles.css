@@ -151,3 +151,16 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 .recommendation-place-items li span:first-child{flex:1 1 190px}
 .recommendation-place-items li strong{margin-left:auto;white-space:nowrap}
 .recommendation-place-actions{display:flex;justify-content:flex-end;gap:8px;flex-wrap:wrap;margin-top:12px}
+
+/* Venue-grouped recommendations: spacious, readable rows and stable actions. */
+#recommendation-results .recommendation-place{display:block;border:1px solid #527c98;border-radius:12px;padding:16px;margin:16px 0;background:#193b55}
+#recommendation-results .recommendation-place h4{font-size:1.05rem;margin:0 0 12px;line-height:1.4}
+#recommendation-results .recommendation-place-items{display:block;list-style:none!important;margin:0;padding:0}
+#recommendation-results .recommendation-place-items li{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:6px 14px;list-style:none!important;margin:0;padding:12px 0;border-top:1px solid rgba(160,195,215,.25)}
+#recommendation-results .recommendation-place-items li::marker{content:""}
+#recommendation-results .recommendation-place-items li span:first-child{grid-column:1;grid-row:1;min-width:0;flex:none}
+#recommendation-results .recommendation-place-items li .portion-tag{grid-column:1;grid-row:2;justify-self:start;width:max-content;max-width:100%;white-space:normal}
+#recommendation-results .recommendation-place-items li strong{grid-column:2;grid-row:1 / span 2;justify-self:end;margin:0;white-space:nowrap;font-size:1.02rem}
+#recommendation-results .recommendation-place-actions{display:flex;justify-content:flex-start;align-items:center;gap:10px;flex-wrap:wrap;margin-top:14px}
+#recommendation-results .recommendation-place-actions button{padding:9px 13px;border-radius:8px}
+@media(max-width:480px){#recommendation-results .recommendation-place{padding:12px}#recommendation-results .recommendation-place-items li{gap:5px 9px}#recommendation-results .recommendation-place-items li strong{font-size:.95rem}}
