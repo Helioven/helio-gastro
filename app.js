@@ -7,6 +7,15 @@ const MODE_CONFIG={
  merienda:{label:'Merendar',emoji:'🥐',budgets:[3,5,8,12],dishes:['Churros','Chocolate','Pasteles','Tartas'],portions:[['unidad','Unidad'],['racion','Ración'],['combinado','Merienda combinada']],placeholder:'Churros con chocolate, pasteles…'},
  cena:{label:'Cenar',emoji:'🌙',budgets:[10,15,20,30,50],dishes:['Tapas','Flamenquín','Croquetas','Tortilla','Rabo de toro','Salmorejo'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']],placeholder:'Tapas, tortilla, croquetas…'}
 };
+
+// Explanations are general cultural guidance, not claims about individual menus.
+const DISH_EXPLANATIONS_EN={"Flamenquín":"Breaded rolled meat, a Córdoba speciality; fillings vary.","Salmorejo":"Thick chilled tomato and bread soup, traditionally served with toppings.","Rabo de toro":"Slow-braised oxtail stew.","Croquetas":"Crisp, breaded croquettes with a creamy filling.","Mazamorra":"Chilled almond and bread cream, a traditional Córdoba dish.","Carrillada":"Slow-cooked pork or beef cheeks.","Berenjenas":"Aubergine dishes; preparation varies by restaurant.","Pisto":"Spanish vegetable stew, usually made with seasonal vegetables.","Tostadas":"Toasted bread served with a choice of toppings.","Churros":"Fried dough pastries, often served with hot chocolate.","Molletes":"Soft bread rolls, often toasted for breakfast.","Café":"Coffee.","Chocolate":"Hot chocolate, often served with churros.","Pasteles":"Cakes and pastries.","Tartas":"Cakes and desserts.","Tapas":"Small portions of food served as snacks or shared dishes.","Tortilla":"Spanish potato omelette; ingredients can vary."};
+function dishExplanation(name){return DISH_EXPLANATIONS_EN[name]||'';}
+function refreshDishExplanations(){
+ const english=window.HelioGastroLanguage?.get()==='en';
+ document.querySelectorAll('[data-dish-explanation]').forEach(node=>{node.hidden=!english;});
+ const help=el('portion-help');if(help)help.hidden=!english;
+}
 const DISH_ICONS={
  flamenquin:'🥩',salmorejo:'🥣','rabo de toro':'🍲',croquetas:'🍘',
  mazamorra:'🥣',carrillada:'🍖',berenjenas:'🍆',pisto:'🍳',
@@ -499,7 +508,8 @@ function renderRecommendations(){
   count.textContent=state.mode==='desayuno'||state.mode==='merienda'
    ?(data.matches.length?data.matches.length+' locales verificados · '+new Set(data.priced.map(x=>x.p.id)).size+' con precio':'⏳ Pendiente de incorporar cartas verificadas')
    :data.matches.length+' locales registrados · '+new Set(data.priced.map(x=>x.p.id)).size+' con precio';
-  btn.append(label,count);btn.addEventListener('click',()=>showRecommendations(dish.name));deck.append(btn);
+  const description=document.createElement('small');description.className='dish-explanation';description.dataset.dishExplanation='';description.textContent=dishExplanation(dish.name);description.hidden=window.HelioGastroLanguage?.get()!=='en';
+  btn.append(label,description,count);btn.addEventListener('click',()=>showRecommendations(dish.name));deck.append(btn);
  }
 }
 function openRecommendationPlace(p){
@@ -510,6 +520,7 @@ function showRecommendations(dishName){
  const term=clean(dishName),data=recommendationEntries(term),panel=el('recommendation-results');
  panel.replaceChildren();
  el('recommendation-title').textContent='Opciones de '+dishName.toLowerCase();
+ const description=document.createElement('p');description.className='dish-explanation';description.dataset.dishExplanation='';description.textContent=dishExplanation(dishName);description.hidden=window.HelioGastroLanguage?.get()!=='en';panel.append(description);
  const context=document.createElement('p');context.className='service-notice';context.textContent=(state.mode==='desayuno'||state.mode==='merienda')
   ?(data.matches.length
     ?'Hay '+data.matches.length+' locales con esta especialidad registrada para el servicio. Precios y horarios concretos pendientes de confirmar.'
@@ -613,3 +624,5 @@ async function init(){
  }
 }
 init();
+
+window.HelioGastroRefreshExplanations=refreshDishExplanations;
