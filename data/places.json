@@ -1476,6 +1476,61 @@
     ],
     "menus": [
       {
+        "service": "desayuno",
+        "dishes": [
+          "Bollería",
+          "Croissant",
+          "Palmera de chocolate",
+          "Berlina de nata",
+          "Magdalena",
+          "Napolitana",
+          "Donut",
+          "Bollo de leche"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Croissant",
+            "eur": 2.3,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bollería mini",
+            "eur": 1.45,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Palmera de chocolate",
+            "eur": 2.55,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Berlina de nata",
+            "eur": 2.85,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Magdalena",
+            "eur": 1.45,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Napolitana",
+            "eur": 2.65,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Donut azúcar o chocolate",
+            "eur": 1.85,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bollo de leche",
+            "eur": 2.3,
+            "portion": "unidad"
+          }
+        ]
+      },
+      {
         "service": "merienda",
         "dishes": [
           "Pasteles",
