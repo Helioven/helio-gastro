@@ -142,3 +142,12 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 #recommendation-price-notice{font-size:.82rem;margin:10px 0}
 
 .detail-dish-explanation{font-size:.8rem;margin:5px 0 8px;color:#b8d3e7;line-height:1.45}.menu-unpriced li .detail-dish-explanation{margin:3px 0 7px}
+
+/* Group documented specialty prices by establishment. */
+.recommendation-place{border:1px solid #527c98;border-radius:12px;padding:14px;margin:12px 0;background:rgba(255,255,255,.035)}
+.recommendation-place h4{margin:0 0 10px}
+.recommendation-place-items{list-style:none;padding:0;margin:0}
+.recommendation-place-items li{display:flex;align-items:center;flex-wrap:wrap;gap:8px;padding:9px 0;border-top:1px solid rgba(160,195,215,.2)}
+.recommendation-place-items li span:first-child{flex:1 1 190px}
+.recommendation-place-items li strong{margin-left:auto;white-space:nowrap}
+.recommendation-place-actions{display:flex;justify-content:flex-end;gap:8px;flex-wrap:wrap;margin-top:12px}
