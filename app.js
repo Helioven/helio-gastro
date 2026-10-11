@@ -595,9 +595,11 @@ function showRecommendations(dishName){
  panel.replaceChildren();
  el('recommendation-title').textContent='Opciones de '+dishName.toLowerCase();
  const description=document.createElement('p');description.className='dish-explanation';description.dataset.dishExplanation='';description.textContent=dishExplanation(dishName);description.hidden=window.HelioGastroLanguage?.get()!=='en';panel.append(description);
- const context=document.createElement('p');context.className='service-notice';context.textContent=(state.mode==='desayuno'||state.mode==='merienda')
+ const context=document.createElement('p');context.className='service-notice';
+ const pricedPlaceCount=new Set(data.priced.map(x=>x.p.id)).size;
+ context.textContent=(state.mode==='desayuno'||state.mode==='merienda')
   ?(data.matches.length
-    ?'Hay '+data.matches.length+' locales con esta especialidad registrada para el servicio. Precios y horarios concretos pendientes de confirmar.'
+    ?'Hay '+data.matches.length+' '+(data.matches.length===1?'local':'locales')+' con esta especialidad registrada para el servicio. '+(pricedPlaceCount?pricedPlaceCount+' '+(pricedPlaceCount===1?'local tiene':'locales tienen')+' precios documentados; ':'Precios pendientes de confirmar; ')+'horarios concretos pendientes de verificar.'
     :'Todavía no tenemos esta especialidad documentada para el servicio seleccionado.')
   :'Los platos proceden de cartas generales. No se ha confirmado que estén disponibles específicamente para '+MODE_CONFIG[state.mode].label.toLowerCase()+' ni a una hora determinada.';panel.append(context);
  const intro=document.createElement('p');intro.className='note';
