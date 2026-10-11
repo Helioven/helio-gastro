@@ -1459,5 +1459,223 @@
         ]
       }
     ]
+  },
+  {
+    "id": "pastelerias-roldan-centro",
+    "name": "Pastelerías Roldán - Centro",
+    "area": "Centro · Concepción",
+    "address": "Calle Concepción, 18, Córdoba",
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-11",
+    "sources": [
+      {
+        "label": "Carta oficial Pastelería Centro; precios de barra y mesa, disponibilidad variable",
+        "url": "https://pasteleriasroldan.com/carta-centro/carta-pasteleria-centro/"
+      }
+    ],
+    "menus": [
+      {
+        "service": "merienda",
+        "dishes": [
+          "Pasteles",
+          "Bollería",
+          "Milhoja de merengue",
+          "Milhoja de chocolate",
+          "Palmera de chocolate",
+          "Croissant",
+          "Tartaleta de fresas",
+          "Porción de pastelón",
+          "Gofre de chocolate"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Milhoja de merengue",
+            "eur": 2.55,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Milhoja de chocolate",
+            "eur": 2.55,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Palmera de chocolate",
+            "eur": 2.55,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Croissant",
+            "eur": 2.3,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tartaleta de fresas",
+            "eur": 3.9,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Porción de pastelón",
+            "eur": 2.9,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Gofre de chocolate",
+            "eur": 4.6,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bollería mini",
+            "eur": 1.45,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Berlina de nata",
+            "eur": 2.85,
+            "portion": "unidad"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "la-tarterie-centro",
+    "name": "La Tarterie",
+    "area": "Centro · Claudio Marcelo",
+    "address": "Calle Claudio Marcelo, 13, Córdoba",
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-11",
+    "sources": [
+      {
+        "label": "Carta de reparto en Glovo: precios NO verificados para consumo en local",
+        "url": "https://glovoapp.com/es/es/cordoba/stores/la-tarterie-cordoba"
+      }
+    ],
+    "menus": [
+      {
+        "service": "merienda",
+        "dishes": [
+          "Tartas",
+          "New York Cheesecake",
+          "Tarta de zanahoria",
+          "Tarta de chocolate y dulce de leche",
+          "Tarta de limón y merengue suizo",
+          "Café solo"
+        ],
+        "dishPrices": []
+      }
+    ]
+  },
+  {
+    "id": "la-bandera-cafe",
+    "name": "La Bandera",
+    "area": "Norte Sierra · Al-Nasir",
+    "address": "Avenida Al-Nasir, 3-1, Córdoba",
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-11",
+    "sources": [
+      {
+        "label": "Carta oficial con precios de churros, chocolate y tostadas",
+        "url": "https://labanderacafe.com/carta"
+      }
+    ],
+    "menus": [
+      {
+        "service": "desayuno",
+        "dishes": [
+          "Churros",
+          "Jeringos",
+          "Chocolate caliente",
+          "Tostadas",
+          "Café solo",
+          "Café con leche"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Churros (unidad)",
+            "eur": 0.8,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Media ración de churros",
+            "eur": 1.6,
+            "portion": "media"
+          },
+          {
+            "dish": "Ración de churros",
+            "eur": 2,
+            "portion": "racion"
+          },
+          {
+            "dish": "Chocolate caliente",
+            "eur": 2,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Café solo",
+            "eur": 1.6,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Café con leche",
+            "eur": 1.6,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Media tostada de aceite y tomate",
+            "eur": 1.9,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada entera de aceite y tomate",
+            "eur": 2.2,
+            "portion": "tostada-entera"
+          }
+        ]
+      },
+      {
+        "service": "merienda",
+        "dishes": [
+          "Churros",
+          "Chocolate caliente",
+          "Café solo",
+          "Café con leche"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Churros (unidad)",
+            "eur": 0.8,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Media ración de churros",
+            "eur": 1.6,
+            "portion": "media"
+          },
+          {
+            "dish": "Ración de churros",
+            "eur": 2,
+            "portion": "racion"
+          },
+          {
+            "dish": "Chocolate caliente",
+            "eur": 2,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Café solo",
+            "eur": 1.6,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Café con leche",
+            "eur": 1.6,
+            "portion": "unidad"
+          }
+        ]
+      }
+    ]
   }
 ]
