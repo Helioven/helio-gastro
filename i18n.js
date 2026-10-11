@@ -61,6 +61,11 @@ window.GASTRO_I18N = Object.freeze({
     [/^(\d+) locales registrados · (\d+) con precio$/,m=>m[1]+' places listed · '+m[2]+' with prices'],
     [/^(\d+) locales verificados · (\d+) con precio$/,m=>m[1]+' verified places · '+m[2]+' with prices']
   );
+  dynamicRules.unshift(
+    [/^Tenemos (\d+) locales con especialidades registradas para este servicio\. Los precios y horarios concretos siguen pendientes de confirmar\.$/,m=>'We have '+m[1]+' places with specialities recorded for this service. Exact prices and opening hours still need confirmation.'],
+    [/^Puedes explorar las cartas generales existentes; el servicio de (comer|cenar) y su horario siguen pendientes de verificar\.$/,m=>'You can explore the available general menus; '+(m[1]==='comer'?'lunch':'dinner')+' service and opening hours are still unverified.'],
+    [/^Estamos preparando cartas de (.+)\. Todavía no hay locales con especialidades documentadas para este servicio\.$/,m=>'We are preparing '+({'desayunar':'breakfast','merendar':'afternoon snack'}[m[1]]||m[1])+' menus. No places have documented specialities for this service yet.']
+  );
   function translateValue(value){
     if(Object.prototype.hasOwnProperty.call(translations,value))return translations[value];
     for(const [pattern,render] of dynamicRules){const match=value.match(pattern);if(match)return render(match);}
