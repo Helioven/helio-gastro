@@ -148,11 +148,17 @@ const VARIANT_NAMES={
  'croquetas-boniato':'Croquetas de boniato',
  'croquetas-otras':'Otras croquetas'
 };
+
+function localizedPortion(value){
+ const es=PORTIONS[value]||value;
+ const en={'unidad':'Single item','tapa':'Tapa (small serving)','media':'Half portion','racion':'Full portion','media-tostada':'Half toast','tostada-entera':'Full toast','combinado':'Combo','desconocida':'Portion not specified'};
+ return window.HelioGastroLanguage?.get()==='en'?(en[value]||es):es;
+}
 function variantLabel(item){const key=variantOf(item);return VARIANT_NAMES[key]||'Variante sin categorizar'}
 function priceDescriptor(item){
  const format=portionOf(item);
  const dishHasFormat=/\b(media(?:\s+racion)?|racion|tapa|unidad)\b/.test(clean(item.dish));
- return item.dish+' — '+fmt(item.eur)+(dishHasFormat?'':' · '+PORTIONS[format]);
+ return item.dish+' — '+fmt(item.eur)+(dishHasFormat?'':' · '+localizedPortion(format));
 }
 function comparableHighlights(items,term,portion){
  if(!term||!portion)return new Set();
@@ -315,7 +321,7 @@ function draw(){
   }else if(chosen.length){
    const cheapest=[...chosen].sort((a,b)=>a.eur-b.eur)[0];
    const main=document.createElement('p');main.className='result-main-price';
-   main.textContent='Desde '+fmt(cheapest.eur)+' · '+(state.appliedPortion?PORTIONS[state.appliedPortion]:'Precio de plato publicado');
+   main.textContent='Desde '+fmt(cheapest.eur)+' · '+(state.appliedPortion?localizedPortion(state.appliedPortion):'Precio de plato publicado');
    card.append(main);
   }else{
    const pending=document.createElement('p');pending.className='result-pending';
@@ -379,7 +385,7 @@ function showPlace(p,scroll=true){
    const name=document.createElement('h4');name.textContent=group.label;entry.append(name);
    for(const price of group.prices){
     const row=document.createElement('div');row.className='menu-price-row';
-    const portion=document.createElement('span');portion.textContent=PORTIONS[portionOf(price)];
+    const portion=document.createElement('span');portion.textContent=localizedPortion(portionOf(price));
     const amount=document.createElement('strong');amount.textContent=fmt(price.eur);
     row.append(portion,amount);entry.append(row);
    }
@@ -540,7 +546,7 @@ function showRecommendations(dishName){
  if(groups.size){
   const heading=document.createElement('h3');heading.textContent='Precios documentados por variante y formato';panel.append(heading);
   for(const entries of groups.values()){
-   const groupHeading=document.createElement('h4');groupHeading.textContent=variantLabel(entries[0].item)+' · '+PORTIONS[entries[0].portion];panel.append(groupHeading);
+   const groupHeading=document.createElement('h4');groupHeading.className='recommendation-variant-heading';groupHeading.textContent=variantLabel(entries[0].item)+' · ';const portionTag=document.createElement('span');portionTag.className='portion-tag';portionTag.textContent=localizedPortion(entries[0].portion);groupHeading.append(portionTag);panel.append(groupHeading);
    for(const entry of entries.sort((a,b)=>a.item.eur-b.item.eur)){
     const row=document.createElement('div');row.className='recommendation-row';
     const name=document.createElement('span');name.textContent=entry.p.name+' · '+entry.item.dish;
