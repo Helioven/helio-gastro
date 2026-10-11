@@ -9,7 +9,7 @@ const MODE_CONFIG={
 };
 
 // Explanations are general cultural guidance, not claims about individual menus.
-const DISH_EXPLANATIONS_EN={"Flamenquín":"Breaded rolled meat, a Córdoba speciality; fillings vary.","Salmorejo":"Thick chilled tomato and bread soup, traditionally served with toppings.","Rabo de toro":"Slow-braised oxtail stew.","Croquetas":"Crisp, breaded croquettes with a creamy filling.","Mazamorra":"Chilled almond and bread cream, a traditional Córdoba dish.","Carrillada":"Slow-cooked pork or beef cheeks.","Berenjenas":"Aubergine dishes; preparation varies by restaurant.","Pisto":"Spanish vegetable stew, usually made with seasonal vegetables.","Tostadas":"Toasted bread served with a choice of toppings.","Churros":"Fried dough pastries, often served with hot chocolate.","Molletes":"Soft bread rolls, often toasted for breakfast.","Café":"Coffee.","Chocolate":"Hot chocolate, often served with churros.","Pasteles":"Cakes and pastries.","Tartas":"Cakes and desserts.","Tapas":"Small portions of food served as snacks or shared dishes.","Tortilla":"Spanish potato omelette; ingredients can vary."};
+const DISH_EXPLANATIONS_EN={"Flamenquín":"Breaded rolled meat, a Córdoba speciality; fillings vary.","Salmorejo":"Thick chilled tomato and bread soup, traditionally served with toppings.","Rabo de toro":"Slow-braised oxtail stew.","Croquetas":"Crisp, breaded croquettes with a creamy filling.","Mazamorra":"Chilled almond and bread cream, a traditional Córdoba dish.","Carrillada":"Slow-cooked pork or beef cheeks.","Berenjenas":"Aubergine dishes; preparation varies by restaurant.","Pisto":"Spanish vegetable stew, usually made with seasonal vegetables.","Bollería":"Sweet baked goods and breakfast pastries, such as croissants, muffins and filled pastries.","Tostadas":"Toasted bread served with a choice of toppings.","Churros":"Fried dough pastries, often served with hot chocolate.","Molletes":"Soft bread rolls, often toasted for breakfast.","Café":"Coffee.","Chocolate":"Hot chocolate, often served with churros.","Pasteles":"Cakes and pastries.","Tartas":"Cakes and desserts.","Tapas":"Small portions of food served as snacks or shared dishes.","Tortilla":"Spanish potato omelette; ingredients can vary."};
 function dishExplanation(name){return DISH_EXPLANATIONS_EN[name]||'';}
 
 function detailDishExplanation(name){
@@ -31,6 +31,18 @@ function detailDishExplanation(name){
   [/codillo/,'Pork knuckle.'],
   [/carne con tomate/,'Meat cooked in tomato sauce.'],
   [/tortilla/,'Spanish omelette.'],
+  [/bolleria mini/,'Mini-sized assorted breakfast pastries.'],
+  [/magdalena/,'Traditional Spanish sponge cake, usually served at breakfast.'],
+  [/donut/,'Ring-shaped sweet doughnut, plain or chocolate-coated.'],
+  [/croissant|croisan/,'Flaky, buttery crescent-shaped pastry.'],
+  [/bollo de leche/,'Soft, lightly sweetened milk bread roll.'],
+  [/palmera/,'Crisp, palm-shaped puff pastry, sometimes coated in chocolate.'],
+  [/napolitana/,'Rectangular puff pastry, usually filled with chocolate or cream.'],
+  [/berlina/,'Soft filled doughnut, often with whipped cream or custard.'],
+  [/milhoja/,'Layered puff pastry with a sweet filling.'],
+  [/tartaleta/,'Small sweet tart with a pastry base and filling.'],
+  [/pastelon/,'Slice of a traditional layered pastry cake.'],
+  [/gofre/,'Waffle, often served with a sweet topping.'],
   [/churros/,'Fried dough pastries.'],
   [/mollete/,'Soft bread roll.'],
   [/tostada/,'Toasted bread.'],
@@ -606,6 +618,8 @@ function showRecommendations(dishName){
    for(const entry of items.sort((a,b)=>a.item.eur-b.item.eur)){
     const line=document.createElement('li');
     const label=document.createElement('span');label.textContent=entry.item.dish;
+    const explanation=detailDishExplanation(entry.item.dish);
+    if(explanation){const info=document.createElement('small');info.className='dish-explanation detail-dish-explanation';info.dataset.dishExplanation='';info.textContent=explanation;info.hidden=window.HelioGastroLanguage?.get()!=='en';label.append(document.createElement('br'),info);}
     const format=document.createElement('small');format.className='portion-tag';format.textContent=localizedPortion(entry.portion);
     const price=document.createElement('strong');price.textContent=fmt(entry.item.eur);
     line.append(label,format,price);list.append(line);
