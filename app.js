@@ -53,7 +53,11 @@ function detailDishExplanation(name){
   [/churros/,'Fried dough pastries.'],
   [/mollete/,'Soft bread roll.'],
   [/tostada/,'Toasted bread.'],
-  [/cafe/,'Coffee.']
+  [/cafe con leche/,'Espresso-style coffee served with milk.'],
+  [/cafe solo/,'A small, strong black coffee, similar to espresso.'],
+  [/cafe cortado/,'Espresso with a small splash of milk.'],
+  [/cafe americano/,'Espresso diluted with hot water.'],
+  [/cafe/,'Coffee; preparation depends on the menu.']
  ];
  const found=special.find(([pattern])=>pattern.test(normalized));
  return found?found[1]:'';
