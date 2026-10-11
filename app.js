@@ -50,6 +50,7 @@ function detailDishExplanation(name){
   [/tartaleta/,'Small sweet tart with a pastry base and filling.'],
   [/pastelon/,'Slice of a traditional layered pastry cake.'],
   [/gofre/,'Waffle, often served with a sweet topping.'],
+  [/chocolate (?:caliente|a la taza)/,'Traditional Spanish hot chocolate, usually thick and served warm; often enjoyed with churros.'],
   [/churros/,'Fried dough pastries.'],
   [/mollete/,'Soft bread roll.'],
   [/tostada/,'Toasted bread.'],
