@@ -67,6 +67,9 @@ window.GASTRO_I18N = Object.freeze({
     [/^Estamos preparando cartas de (.+)\. Todavía no hay locales con especialidades documentadas para este servicio\.$/,m=>'We are preparing '+({'desayunar':'breakfast','merendar':'afternoon snack'}[m[1]]||m[1])+' menus. No places have documented specialities for this service yet.']
   );
   Object.assign(translations,{
+    'También ofrecen el plato · Precio pendiente de confirmar':'Also serves this dish · Price awaiting confirmation'
+  });
+  Object.assign(translations,{
     'Se muestran cartas generales para explorar opciones. No confirman que el local sirva este plato a la hora elegida.':'General menus are shown to help you explore options. They do not confirm that the restaurant serves this dish at the selected time.',
   });
   Object.assign(translations,{
