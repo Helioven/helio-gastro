@@ -34,8 +34,8 @@ window.GASTRO_I18N = Object.freeze({
 
   // Parameterized UI messages; never translate verified restaurant names or prices.
   const dynamicRules=[
-    [/^Hay (\\d+) (local|locales) con esta especialidad registrada para el servicio\\. (\\d+) (local tiene|locales tienen) precios documentados; horarios concretos pendientes de verificar\\.$/,m=>'We have '+m[1]+(m[1]==='1'?' place':' places')+' listing this speciality for this service. '+m[3]+(m[3]==='1'?' place has':' places have')+' documented prices; exact opening hours remain unverified.'],
-    [/^Hay (\\d+) (local|locales) con esta especialidad registrada para el servicio\\. Precios pendientes de confirmar; horarios concretos pendientes de verificar\\.$/,m=>'We have '+m[1]+(m[1]==='1'?' place':' places')+' listing this speciality for this service. Prices and exact opening hours are not yet verified.'],
+    [/^Hay (\d+) (local|locales) con esta especialidad registrada para el servicio\. (\d+) (local tiene|locales tienen) precios documentados; horarios concretos pendientes de verificar\.$/,m=>'We have '+m[1]+(m[1]==='1'?' place':' places')+' listing this speciality for this service. '+m[3]+(m[3]==='1'?' place has':' places have')+' documented prices; exact opening hours remain unverified.'],
+    [/^Hay (\d+) (local|locales) con esta especialidad registrada para el servicio\. Precios pendientes de confirmar; horarios concretos pendientes de verificar\.$/,m=>'We have '+m[1]+(m[1]==='1'?' place':' places')+' listing this speciality for this service. Prices and exact opening hours are not yet verified.'],
 
     [/^(\d+) favoritos$/,m=>m[1]+' favourites'],
     [/^(\d+) (lugar|lugares)$/,m=>m[1]+(m[1]==='1'?' place':' places')],
