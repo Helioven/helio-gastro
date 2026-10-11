@@ -31,6 +31,32 @@ window.GASTRO_I18N = Object.freeze({
   const KEY='helio-gastro-language-v1';
   const translations={"Piloto 3.1.1":"Pilot 3.1.1","Navegación rápida":"Quick navigation","🍴 Platos":"🍴 Dishes","🔎 Buscar":"🔎 Search","★ Favoritos":"★ Favourites","⚖️ Comparar":"⚖️ Compare","CÓRDOBA · DÓNDE COMER BIEN":"CÓRDOBA · WHERE TO EAT WELL","Encuentra algo rico.":"Find something delicious.","Sin sorpresas en la cuenta.":"No surprises on the bill.","Platos que te apetecen, presupuestos realistas y fuentes que puedes comprobar.":"Dishes you crave, realistic budgets and sources you can verify.","¿Qué plan tienes?":"What are you in the mood for?","Elige un momento del día para adaptar platos y presupuesto. Los horarios todavía requieren verificación.":"Choose a time of day to tailor dishes and budgets. Opening hours still need verification.","Momento gastronómico":"Meal occasion","☕ Desayunar":"☕ Breakfast","🍽️ Comer":"🍽️ Lunch","🥐 Merendar":"🥐 Afternoon snack","🌙 Cenar":"🌙 Dinner","🍴 ¿Qué te apetece hoy?":"🍴 What would you like today?","Acceso directo":"Quick access","Elige un plato y descubre directamente opciones documentadas de nuestra base, separadas por variante y formato. Más barato no significa mejor.":"Choose a dish to explore documented options, grouped by variation and portion. Cheaper does not mean better.","¿Qué te apetece?":"What would you like?","Nombre del establecimiento":"Establishment name","Plato o especialidad":"Dish or speciality","Especialidades cordobesas para buscar":"Córdoba specialities to search","PRUEBA UN PLATO TÍPICO":"TRY A LOCAL SPECIALITY","Elige un plato y pulsa «Buscar establecimientos» para consultar resultados.":"Choose a dish and select Find places to see results.","Aplicar presupuesto a":"Apply budget to","Un plato de la carta":"One menu dish","Comida total por persona":"Total meal per person","Presupuesto máximo":"Maximum budget","Sin límite (mostrar fichas)":"No limit (show listings)","Zona":"Area","Toda Córdoba":"All of Córdoba","Formato del plato":"Dish portion size","Cualquier formato (sin equivalencia de tamaños)":"Any portion (sizes may differ)","Unidad":"Single item","Tapa":"Tapas portion","Media ración":"Half portion","Ración completa":"Full portion","Formato no especificado":"Portion not specified","Mostrar también establecimientos sin precio documentado":"Also show places without documented prices","(se identificarán claramente como precio desconocido)":"(clearly marked as price unknown)","Límite aplicado al precio de un plato, no a una comida completa.":"Limit applies to one dish, not a full meal.","Tipo de precio":"Price type","Todos los precios":"All prices","Solo precios documentados":"Documented prices only","Documentados o estimados":"Documented or estimated","Ordenar":"Sort by","Nombre":"Name","Menor coste":"Lowest price","Verificados primero":"Verified first","Buscar establecimientos →":"Find places →","Limpiar búsqueda":"Clear search","★ Mis tabernas favoritas":"★ My favourite taverns","Guardadas solo en este navegador. Puedes consultarlas sin volver a buscar.":"Saved only in this browser. You can view them without searching again.","Resultados":"Results","El límite solo se puede comprobar cuando existe un precio documentado. Las fichas sin precio se muestran como desconocidas, no como ofertas dentro del presupuesto.":"A budget limit can only be checked against documented prices. Listings without prices are marked unknown, not within budget.","Ver todos los locales que ofrecen este plato →":"See all places serving this dish →","Ficha del establecimiento":"Establishment details","FICHA DEL LOCAL":"ESTABLISHMENT DETAILS","Cerrar ficha ×":"Close details ×","Comparador":"Comparison","Elige hasta tres establecimientos. Para comparar precios, selecciona un mismo formato en el buscador. Las cantidades reales pueden variar entre locales.":"Choose up to three places. For price comparisons, select the same portion type in search. Actual quantities may vary.","Todavía no hay establecimientos seleccionados.":"No places selected yet.","🔍 Nuestro criterio":"🔍 Our methodology","Confirmado":"Confirmed","Estimado":"Estimated","significa coste publicado y verificable, con fuente y fecha.":"means a published, verifiable price with a source and date.","indica una orientación, nunca el precio de una carta.":"is a guide, never a published menu price.","No inventamos reseñas, puntuaciones ni disponibilidad. Si no sabemos algo, lo indicamos.":"We never invent reviews, ratings or availability. If we don't know, we say so.","Sin publicidad ni afiliación. Datos pendientes de verificación.":"No advertising or affiliate links. Data awaiting verification.","Recomendaciones":"Recommendations","Cerrar recomendaciones":"Close recommendations","Cerrar ×":"Close ×","Comparación informativa por variante y formato. Un precio menor no implica mejor calidad ni la misma cantidad.":"Informational comparison by variation and portion. A lower price does not imply better quality or the same quantity.","Ubicación":"Location","Mapa de Google Maps cargado al abrir esta ventana. Confirma la dirección antes de desplazarte.":"Google Maps loads when you open this window. Check the address before travelling.","Mapa del establecimiento":"Establishment map","Abrir en Google Maps ↗":"Open in Google Maps ↗","Escribe o elige un plato cordobés…":"Type or choose a Córdoba dish…"};
   Object.assign(translations,extraTranslations);
+
+  // Parameterized UI messages; never translate verified restaurant names or prices.
+  const dynamicRules=[
+    [/^(\\d+) favoritos$/,m=>m[1]+' favourites'],
+    [/^(\\d+) (lugar|lugares)$/,m=>m[1]+(m[1]==='1'?' place':' places')],
+    [/^(\\d+) locales registrados · (\\d+) con precio$/,m=>m[1]+' places listed · '+m[2]+' with prices'],
+    [/^(\\d+) locales verificados · (\\d+) con precio$/,m=>m[1]+' verified places · '+m[2]+' with prices'],
+    [/^(\\d+) precio\\(s\\) de carta documentado\\(s\\) · Ver ficha para detalles$/,m=>m[1]+' documented menu prices · View details'],
+    [/^Desde (.+) · (.+)$/,m=>'From '+m[1]+' · '+translateValue(m[2])],
+    [/^Especialidades: (.+)$/,m=>'Specialities: '+m[1]],
+    [/^🍴 Plato encontrado: (.+)$/,m=>'🍴 Dish found: '+m[1]],
+    [/^Coste de comida por persona: (.+)$/,m=>'Meal cost per person: '+m[1]],
+    [/^Comida completa por persona: (.+)$/,m=>'Full meal per person: '+m[1]],
+    [/^Comida completa: (.+)$/,m=>'Full meal: '+m[1]],
+    [/^Última consulta: (.+)$/,m=>'Last checked: '+m[1]],
+    [/^Opciones de (.+)$/,m=>'Options for '+m[1]],
+    [/^Precio del plato( en este formato)? pendiente de confirmar$/,m=>'Dish price'+(m[1]?' for this portion':'')+' awaiting confirmation'],
+    [/^En nuestra base actual: (\\d+) local\\(es\\) con «(.+)» registrado\\(s\\); (\\d+) con precio de ese plato documentado y (\\d+) sin precio\\. Esto NO representa todos los bares de Córdoba\\.$/,m=>'In our current database: '+m[1]+' places list “'+m[2]+'”; '+m[3]+' have a documented price and '+m[4]+' do not. This is NOT a complete list of Córdoba venues.'],
+    [/^(\\d+) locales en nuestra base; (\\d+) con precios publicados\\. No es un ranking de calidad ni una lista completa de Córdoba\\.$/,m=>m[1]+' places in our database; '+m[2]+' with published prices. This is not a quality ranking or a complete list of Córdoba.'],
+    [/^(\\d+) fuente\\(s\\) · Revisado (.+)$/,m=>m[1]+' sources · Checked '+m[2]]
+  ];
+  function translateValue(value){
+    if(Object.prototype.hasOwnProperty.call(translations,value))return translations[value];
+    for(const [pattern,render] of dynamicRules){const match=value.match(pattern);if(match)return render(match);}
+    return value;
+  }
   const originalNodes=new WeakMap();
   const originalAttributes=new WeakMap();
   let language='es';
@@ -41,8 +67,8 @@ window.GASTRO_I18N = Object.freeze({
     const original=originalNodes.get(node);
     const match=original.match(/^(\s*)([\s\S]*?)(\s*)$/);
     const key=normalize(match[2]);
-    if(language==='en' && Object.prototype.hasOwnProperty.call(translations,key)){
-      const next=match[1]+translations[key]+match[3];
+    if(language==='en'){
+      const next=match[1]+translateValue(key)+match[3];
       if(node.nodeValue!==next)node.nodeValue=next;
     }else if(language==='es' && node.nodeValue!==original)node.nodeValue=original;
   }
@@ -84,7 +110,7 @@ window.GASTRO_I18N = Object.freeze({
         if(record.type==='characterData'){
           const node=record.target;
           const previous=originalNodes.get(node);
-          if(language==='en' && previous!==undefined && node.nodeValue===translations[normalize(previous)])continue;
+          if(language==='en' && previous!==undefined && node.nodeValue===translateValue(normalize(previous)))continue;
           originalNodes.delete(node);
           translateText(node);
         }else{
