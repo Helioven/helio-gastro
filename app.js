@@ -11,6 +11,44 @@ const MODE_CONFIG={
 // Explanations are general cultural guidance, not claims about individual menus.
 const DISH_EXPLANATIONS_EN={"Flamenquín":"Breaded rolled meat, a Córdoba speciality; fillings vary.","Salmorejo":"Thick chilled tomato and bread soup, traditionally served with toppings.","Rabo de toro":"Slow-braised oxtail stew.","Croquetas":"Crisp, breaded croquettes with a creamy filling.","Mazamorra":"Chilled almond and bread cream, a traditional Córdoba dish.","Carrillada":"Slow-cooked pork or beef cheeks.","Berenjenas":"Aubergine dishes; preparation varies by restaurant.","Pisto":"Spanish vegetable stew, usually made with seasonal vegetables.","Tostadas":"Toasted bread served with a choice of toppings.","Churros":"Fried dough pastries, often served with hot chocolate.","Molletes":"Soft bread rolls, often toasted for breakfast.","Café":"Coffee.","Chocolate":"Hot chocolate, often served with churros.","Pasteles":"Cakes and pastries.","Tartas":"Cakes and desserts.","Tapas":"Small portions of food served as snacks or shared dishes.","Tortilla":"Spanish potato omelette; ingredients can vary."};
 function dishExplanation(name){return DISH_EXPLANATIONS_EN[name]||'';}
+
+function detailDishExplanation(name){
+ const normalized=clean(name);
+ const special=[
+  [/berenjenas.*miel/,'Fried aubergines with honey.'],
+  [/carrillada.*salsa/,'Slow-cooked cheeks served in sauce.'],
+  [/croquetas.*rabo/,'Croquettes made with oxtail.'],
+  [/croquetas.*jamon/,'Croquettes with ham.'],
+  [/flamenquin.*rabo/,'Breaded rolled meat with oxtail filling.'],
+  [/flamenquin/,'Breaded rolled meat, a Córdoba speciality; fillings vary.'],
+  [/salmorejo/,'Thick chilled tomato and bread soup.'],
+  [/rabo de toro/,'Slow-braised oxtail stew.'],
+  [/carrillada/,'Slow-cooked pork or beef cheeks.'],
+  [/berenjenas/,'Aubergine dish; preparation varies.'],
+  [/croquetas/,'Crisp breaded croquettes with a creamy filling.'],
+  [/mazamorra/,'Chilled almond and bread cream.'],
+  [/pisto/,'Spanish vegetable stew.'],
+  [/codillo/,'Pork knuckle.'],
+  [/carne con tomate/,'Meat cooked in tomato sauce.'],
+  [/tortilla/,'Spanish omelette.'],
+  [/churros/,'Fried dough pastries.'],
+  [/mollete/,'Soft bread roll.'],
+  [/tostada/,'Toasted bread.'],
+  [/cafe/,'Coffee.']
+ ];
+ const found=special.find(([pattern])=>pattern.test(normalized));
+ return found?found[1]:'';
+}
+function appendDetailExplanation(container,name){
+ const explanation=detailDishExplanation(name);
+ if(!explanation)return;
+ const node=document.createElement('small');
+ node.className='dish-explanation detail-dish-explanation';
+ node.dataset.dishExplanation='';
+ node.textContent=explanation;
+ node.hidden=window.HelioGastroLanguage?.get()!=='en';
+ container.append(node);
+}
 function refreshDishExplanations(){
  const english=window.HelioGastroLanguage?.get()==='en';
  document.querySelectorAll('[data-dish-explanation]').forEach(node=>{node.hidden=!english;});
@@ -382,7 +420,7 @@ function showPlace(p,scroll=true){
   const list=document.createElement('div');list.className='menu-groups';
   for(const group of menu.groups){
    const entry=document.createElement('section');entry.className='menu-dish';
-   const name=document.createElement('h4');name.textContent=group.label;entry.append(name);
+   const name=document.createElement('h4');name.textContent=group.label;entry.append(name);appendDetailExplanation(entry,group.label);
    for(const price of group.prices){
     const row=document.createElement('div');row.className='menu-price-row';
     const portion=document.createElement('span');portion.textContent=localizedPortion(portionOf(price));
@@ -396,7 +434,7 @@ function showPlace(p,scroll=true){
  if(menu.unpriced.length){
   const label=document.createElement('h4');label.className='menu-unpriced-title';label.textContent='Otras especialidades · precios pendientes';panel.append(label);
   const unpriced=document.createElement('ul');unpriced.className='menu-unpriced';
-  for(const dish of menu.unpriced){const li=document.createElement('li');li.textContent=dish;unpriced.append(li)}
+  for(const dish of menu.unpriced){const li=document.createElement('li');const name=document.createElement('span');name.textContent=dish;li.append(name);appendDetailExplanation(li,dish);unpriced.append(li)}
   panel.append(unpriced);
  }else if(!menu.groups.length){
   const msg=document.createElement('p');msg.className='note';msg.textContent='Aún no tenemos especialidades registradas para este local.';panel.append(msg);
