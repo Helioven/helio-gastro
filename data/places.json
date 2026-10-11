@@ -1231,5 +1231,233 @@
       }
     ],
     "openingHoursNote": "Horario general publicado con información discrepante entre fuentes. Confirmar antes de ir; horario concreto de desayunos no verificado."
+  },
+  {
+    "id": "la-piscatoria",
+    "name": "La Piscatoria",
+    "area": "Centro · Judería",
+    "address": "Calle Cardenal González, 6, Córdoba",
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-11",
+    "sources": [
+      {
+        "label": "Carta oficial de comida y dulces",
+        "url": "https://lapiscatoriacordoba.com/carta"
+      },
+      {
+        "label": "Carta oficial de bebidas y cafés",
+        "url": "https://lapiscatoriacordoba.com/bebidas"
+      }
+    ],
+    "menus": [
+      {
+        "service": "desayuno",
+        "dishes": [
+          "Tostadas",
+          "Tostada clásica",
+          "Tostada especial",
+          "Café solo",
+          "Café con leche",
+          "Croissant de york y queso"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Tostada clásica",
+            "eur": 2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Tostada especial",
+            "eur": 3,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Café solo",
+            "eur": 2.2,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Café con leche",
+            "eur": 2.2,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Croissant de york y queso",
+            "eur": 4.5,
+            "portion": "unidad"
+          }
+        ]
+      },
+      {
+        "service": "merienda",
+        "dishes": [
+          "Tartas",
+          "Tarta de queso",
+          "Brownie de chocolate con helado",
+          "Bollería",
+          "Cookies rellenas",
+          "Café solo",
+          "Gofres",
+          "Tortitas"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Tartas (porción)",
+            "eur": 5.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tarta de queso",
+            "eur": 5.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Brownie de chocolate con helado",
+            "eur": 5.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bollería",
+            "eur": 3,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Cookies rellenas",
+            "eur": 4,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Café solo",
+            "eur": 2.2,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Gofres",
+            "eur": 6,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tortitas",
+            "eur": 7.5,
+            "portion": "unidad"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dtapas-covap-cordoba",
+    "name": "D'Tapas COVAP Córdoba",
+    "area": "Centro · Cruz Conde",
+    "address": "Calle Cruz Conde, 12, Córdoba",
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-11",
+    "sources": [
+      {
+        "label": "Carta oficial de desayunos COVAP",
+        "url": "https://www.ibericoscovap.com/es/dtapas-covap-cordoba-carta/"
+      },
+      {
+        "label": "Presentación oficial COVAP",
+        "url": "https://www.covap.es/te-interesa/actualidad/noticias/covap-inaugura-dtapas-un-nuevo-concepto-gastronomico-que-traslada-al-cliente-la-esencia-de-sus-productos/"
+      }
+    ],
+    "menus": [
+      {
+        "service": "desayuno",
+        "dishes": [
+          "Tostadas",
+          "Café 100% natural",
+          "Tostada con aceite y tomate",
+          "Tostada con jamón ibérico",
+          "Tostada con mantequilla",
+          "Zumo de naranja natural"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Café 100% natural",
+            "eur": 1.7,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tostada con aceite y tomate",
+            "eur": 2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Tostada con jamón ibérico",
+            "eur": 3.2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Tostada con mantequilla",
+            "eur": 2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Zumo de naranja natural",
+            "eur": 3.1,
+            "portion": "unidad"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cafeteria-bar-la-jineta",
+    "name": "Cafetería Bar La Jineta",
+    "area": "Calle Los Olivos",
+    "address": "Calle Los Olivos, 1, Córdoba",
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-11",
+    "sources": [
+      {
+        "label": "Carta publicada por el establecimiento en Queresto",
+        "url": "https://queresto.com/barlajineta"
+      }
+    ],
+    "menus": [
+      {
+        "service": "desayuno",
+        "dishes": [
+          "Tostadas",
+          "Media tostada básica",
+          "Tostada entera básica",
+          "Media tostada mixta",
+          "Tostada entera mixta",
+          "Café"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Media tostada básica sin café",
+            "eur": 1.1,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada entera básica sin café",
+            "eur": 2,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Media tostada mixta sin café",
+            "eur": 1.4,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada entera mixta sin café",
+            "eur": 2.6,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Café",
+            "eur": 1.3,
+            "portion": "unidad"
+          }
+        ]
+      }
+    ]
   }
 ]

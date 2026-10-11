@@ -120,3 +120,25 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 
 /* 3.0.1: etiquetas de cobertura sin datos verificables */
 .recommendation-tile span{line-height:1.45}
+
+/* Language control */
+.header-controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+.language-label{font-size:12px;color:var(--muted);display:block}
+#language-select{width:auto;min-width:110px;height:38px;padding:5px 8px;font-size:14px}
+@media(max-width:500px){header{align-items:flex-start}.header-controls{max-width:150px;gap:4px}.language-label{font-size:10px}#language-select{min-width:100px}}
+
+/* Keep version and language control separated */
+.header-controls{display:grid;grid-template-columns:minmax(110px,auto);justify-items:end;align-items:center;gap:8px}
+.header-controls .version{position:static;display:inline-flex;white-space:nowrap}
+.header-controls .language-label{line-height:1.4}
+@media(max-width:500px){.header-controls{max-width:none;min-width:112px;gap:7px}}
+
+.dish-explanation{display:block;font-size:.85rem;line-height:1.4;color:#b8d3e7;margin:5px 0 6px;font-weight:400}
+.dish-explanation[hidden],.portion-help[hidden]{display:none!important}
+.portion-help{display:block;margin-top:8px;font-size:.8rem;line-height:1.5;color:#b8d3e7}
+
+.recommendation-variant-heading{display:flex;align-items:center;flex-wrap:wrap;gap:6px}
+.portion-tag{display:inline-block;padding:3px 9px;border:1px solid #557f9c;border-radius:999px;font-size:.82em;font-weight:500;color:#d8eafa}
+#recommendation-price-notice{font-size:.82rem;margin:10px 0}
+
+.detail-dish-explanation{font-size:.8rem;margin:5px 0 8px;color:#b8d3e7;line-height:1.45}.menu-unpriced li .detail-dish-explanation{margin:3px 0 7px}

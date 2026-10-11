@@ -7,6 +7,53 @@ const MODE_CONFIG={
  merienda:{label:'Merendar',emoji:'🥐',budgets:[3,5,8,12],dishes:['Churros','Chocolate','Pasteles','Tartas'],portions:[['unidad','Unidad'],['racion','Ración'],['combinado','Merienda combinada']],placeholder:'Churros con chocolate, pasteles…'},
  cena:{label:'Cenar',emoji:'🌙',budgets:[10,15,20,30,50],dishes:['Tapas','Flamenquín','Croquetas','Tortilla','Rabo de toro','Salmorejo'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']],placeholder:'Tapas, tortilla, croquetas…'}
 };
+
+// Explanations are general cultural guidance, not claims about individual menus.
+const DISH_EXPLANATIONS_EN={"Flamenquín":"Breaded rolled meat, a Córdoba speciality; fillings vary.","Salmorejo":"Thick chilled tomato and bread soup, traditionally served with toppings.","Rabo de toro":"Slow-braised oxtail stew.","Croquetas":"Crisp, breaded croquettes with a creamy filling.","Mazamorra":"Chilled almond and bread cream, a traditional Córdoba dish.","Carrillada":"Slow-cooked pork or beef cheeks.","Berenjenas":"Aubergine dishes; preparation varies by restaurant.","Pisto":"Spanish vegetable stew, usually made with seasonal vegetables.","Tostadas":"Toasted bread served with a choice of toppings.","Churros":"Fried dough pastries, often served with hot chocolate.","Molletes":"Soft bread rolls, often toasted for breakfast.","Café":"Coffee.","Chocolate":"Hot chocolate, often served with churros.","Pasteles":"Cakes and pastries.","Tartas":"Cakes and desserts.","Tapas":"Small portions of food served as snacks or shared dishes.","Tortilla":"Spanish potato omelette; ingredients can vary."};
+function dishExplanation(name){return DISH_EXPLANATIONS_EN[name]||'';}
+
+function detailDishExplanation(name){
+ const normalized=clean(name);
+ const special=[
+  [/berenjenas.*miel/,'Fried aubergines with honey.'],
+  [/carrillada.*salsa/,'Slow-cooked cheeks served in sauce.'],
+  [/croquetas.*rabo/,'Croquettes made with oxtail.'],
+  [/croquetas.*jamon/,'Croquettes with ham.'],
+  [/flamenquin.*rabo/,'Breaded rolled meat with oxtail filling.'],
+  [/flamenquin/,'Breaded rolled meat, a Córdoba speciality; fillings vary.'],
+  [/salmorejo/,'Thick chilled tomato and bread soup.'],
+  [/rabo de toro/,'Slow-braised oxtail stew.'],
+  [/carrillada/,'Slow-cooked pork or beef cheeks.'],
+  [/berenjenas/,'Aubergine dish; preparation varies.'],
+  [/croquetas/,'Crisp breaded croquettes with a creamy filling.'],
+  [/mazamorra/,'Chilled almond and bread cream.'],
+  [/pisto/,'Spanish vegetable stew.'],
+  [/codillo/,'Pork knuckle.'],
+  [/carne con tomate/,'Meat cooked in tomato sauce.'],
+  [/tortilla/,'Spanish omelette.'],
+  [/churros/,'Fried dough pastries.'],
+  [/mollete/,'Soft bread roll.'],
+  [/tostada/,'Toasted bread.'],
+  [/cafe/,'Coffee.']
+ ];
+ const found=special.find(([pattern])=>pattern.test(normalized));
+ return found?found[1]:'';
+}
+function appendDetailExplanation(container,name){
+ const explanation=detailDishExplanation(name);
+ if(!explanation)return;
+ const node=document.createElement('small');
+ node.className='dish-explanation detail-dish-explanation';
+ node.dataset.dishExplanation='';
+ node.textContent=explanation;
+ node.hidden=window.HelioGastroLanguage?.get()!=='en';
+ container.append(node);
+}
+function refreshDishExplanations(){
+ const english=window.HelioGastroLanguage?.get()==='en';
+ document.querySelectorAll('[data-dish-explanation]').forEach(node=>{node.hidden=!english;});
+ const help=el('portion-help');if(help)help.hidden=!english;
+}
 const DISH_ICONS={
  flamenquin:'🥩',salmorejo:'🥣','rabo de toro':'🍲',croquetas:'🍘',
  mazamorra:'🥣',carrillada:'🍖',berenjenas:'🍆',pisto:'🍳',
@@ -139,11 +186,17 @@ const VARIANT_NAMES={
  'croquetas-boniato':'Croquetas de boniato',
  'croquetas-otras':'Otras croquetas'
 };
+
+function localizedPortion(value){
+ const es=PORTIONS[value]||value;
+ const en={'unidad':'Single item','tapa':'Tapa (small serving)','media':'Half portion','racion':'Full portion','media-tostada':'Half toast','tostada-entera':'Full toast','combinado':'Combo','desconocida':'Portion not specified'};
+ return es; // Translation is applied by the language layer, enabling reliable EN → ES.
+}
 function variantLabel(item){const key=variantOf(item);return VARIANT_NAMES[key]||'Variante sin categorizar'}
 function priceDescriptor(item){
  const format=portionOf(item);
  const dishHasFormat=/\b(media(?:\s+racion)?|racion|tapa|unidad)\b/.test(clean(item.dish));
- return item.dish+' — '+fmt(item.eur)+(dishHasFormat?'':' · '+PORTIONS[format]);
+ return item.dish+' — '+fmt(item.eur)+(dishHasFormat?'':' · '+localizedPortion(format));
 }
 function comparableHighlights(items,term,portion){
  if(!term||!portion)return new Set();
@@ -306,7 +359,7 @@ function draw(){
   }else if(chosen.length){
    const cheapest=[...chosen].sort((a,b)=>a.eur-b.eur)[0];
    const main=document.createElement('p');main.className='result-main-price';
-   main.textContent='Desde '+fmt(cheapest.eur)+' · '+(state.appliedPortion?PORTIONS[state.appliedPortion]:'Precio de plato publicado');
+   main.textContent='Desde '+fmt(cheapest.eur)+' · '+(state.appliedPortion?localizedPortion(state.appliedPortion):'Precio de plato publicado');
    card.append(main);
   }else{
    const pending=document.createElement('p');pending.className='result-pending';
@@ -367,10 +420,10 @@ function showPlace(p,scroll=true){
   const list=document.createElement('div');list.className='menu-groups';
   for(const group of menu.groups){
    const entry=document.createElement('section');entry.className='menu-dish';
-   const name=document.createElement('h4');name.textContent=group.label;entry.append(name);
+   const name=document.createElement('h4');name.textContent=group.label;entry.append(name);appendDetailExplanation(entry,group.label);
    for(const price of group.prices){
     const row=document.createElement('div');row.className='menu-price-row';
-    const portion=document.createElement('span');portion.textContent=PORTIONS[portionOf(price)];
+    const portion=document.createElement('span');portion.textContent=localizedPortion(portionOf(price));
     const amount=document.createElement('strong');amount.textContent=fmt(price.eur);
     row.append(portion,amount);entry.append(row);
    }
@@ -381,7 +434,7 @@ function showPlace(p,scroll=true){
  if(menu.unpriced.length){
   const label=document.createElement('h4');label.className='menu-unpriced-title';label.textContent='Otras especialidades · precios pendientes';panel.append(label);
   const unpriced=document.createElement('ul');unpriced.className='menu-unpriced';
-  for(const dish of menu.unpriced){const li=document.createElement('li');li.textContent=dish;unpriced.append(li)}
+  for(const dish of menu.unpriced){const li=document.createElement('li');const name=document.createElement('span');name.textContent=dish;li.append(name);appendDetailExplanation(li,dish);unpriced.append(li)}
   panel.append(unpriced);
  }else if(!menu.groups.length){
   const msg=document.createElement('p');msg.className='note';msg.textContent='Aún no tenemos especialidades registradas para este local.';panel.append(msg);
@@ -483,9 +536,19 @@ const QUICK_DISHES=[
  {name:'Mazamorra',icon:'🥣'}, {name:'Carrillada',icon:'🍖'},
  {name:'Berenjenas',icon:'🍆'}, {name:'Pisto',icon:'🍳'}
 ];
+function recommendationDishMatches(dish,term){
+ const value=clean(dish);
+ // Las categorías de acceso rápido admiten singular/plural, pero no coincidencias
+ // semánticamente erróneas: un brownie no es chocolate a la taza.
+ if(state.mode==='merienda'&&term==='chocolate')return /\bchocolate\s+(?:a\s+la\s+taza|caliente|con\s+churros)\b/.test(value)||/\bchurros\s+con\s+chocolate\b/.test(value);
+ if(term==='tostadas')return /\btostad(?:a|as)\b/.test(value);
+ if(term==='pasteles')return /\bpastel(?:es)?\b/.test(value);
+ if(term==='tartas')return /\btarta(?:s)?\b/.test(value);
+ return value.includes(term);
+}
 function recommendationEntries(term){
- const matches=state.places.filter(p=>serviceDishes(p).some(d=>clean(d).includes(term))||servicePrices(p).some(d=>clean(d.dish).includes(term)));
- const priced=matches.flatMap(p=>servicePrices(p).filter(item=>clean(item.dish).includes(term)).map(item=>({p,item,portion:portionOf(item),variant:variantOf(item)})));
+ const matches=state.places.filter(p=>serviceDishes(p).some(d=>recommendationDishMatches(d,term))||servicePrices(p).some(d=>recommendationDishMatches(d.dish,term)));
+ const priced=matches.flatMap(p=>servicePrices(p).filter(item=>recommendationDishMatches(item.dish,term)).map(item=>({p,item,portion:portionOf(item),variant:variantOf(item)})));
  return {matches,priced};
 }
 function renderRecommendations(){
@@ -499,7 +562,8 @@ function renderRecommendations(){
   count.textContent=state.mode==='desayuno'||state.mode==='merienda'
    ?(data.matches.length?data.matches.length+' locales verificados · '+new Set(data.priced.map(x=>x.p.id)).size+' con precio':'⏳ Pendiente de incorporar cartas verificadas')
    :data.matches.length+' locales registrados · '+new Set(data.priced.map(x=>x.p.id)).size+' con precio';
-  btn.append(label,count);btn.addEventListener('click',()=>showRecommendations(dish.name));deck.append(btn);
+  const description=document.createElement('small');description.className='dish-explanation';description.dataset.dishExplanation='';description.textContent=dishExplanation(dish.name);description.hidden=window.HelioGastroLanguage?.get()!=='en';
+  btn.append(label,description,count);btn.addEventListener('click',()=>showRecommendations(dish.name));deck.append(btn);
  }
 }
 function openRecommendationPlace(p){
@@ -510,6 +574,7 @@ function showRecommendations(dishName){
  const term=clean(dishName),data=recommendationEntries(term),panel=el('recommendation-results');
  panel.replaceChildren();
  el('recommendation-title').textContent='Opciones de '+dishName.toLowerCase();
+ const description=document.createElement('p');description.className='dish-explanation';description.dataset.dishExplanation='';description.textContent=dishExplanation(dishName);description.hidden=window.HelioGastroLanguage?.get()!=='en';panel.append(description);
  const context=document.createElement('p');context.className='service-notice';context.textContent=(state.mode==='desayuno'||state.mode==='merienda')
   ?(data.matches.length
     ?'Hay '+data.matches.length+' locales con esta especialidad registrada para el servicio. Precios y horarios concretos pendientes de confirmar.'
@@ -529,7 +594,7 @@ function showRecommendations(dishName){
  if(groups.size){
   const heading=document.createElement('h3');heading.textContent='Precios documentados por variante y formato';panel.append(heading);
   for(const entries of groups.values()){
-   const groupHeading=document.createElement('h4');groupHeading.textContent=variantLabel(entries[0].item)+' · '+PORTIONS[entries[0].portion];panel.append(groupHeading);
+   const groupHeading=document.createElement('h4');groupHeading.className='recommendation-variant-heading';groupHeading.textContent=variantLabel(entries[0].item)+' · ';const portionTag=document.createElement('span');portionTag.className='portion-tag';portionTag.textContent=localizedPortion(entries[0].portion);groupHeading.append(portionTag);panel.append(groupHeading);
    for(const entry of entries.sort((a,b)=>a.item.eur-b.item.eur)){
     const row=document.createElement('div');row.className='recommendation-row';
     const name=document.createElement('span');name.textContent=entry.p.name+' · '+entry.item.dish;
@@ -613,3 +678,5 @@ async function init(){
  }
 }
 init();
+
+window.HelioGastroRefreshExplanations=refreshDishExplanations;
