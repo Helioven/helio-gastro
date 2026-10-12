@@ -688,11 +688,11 @@
     "area": "Judería · Romero",
     "address": "Calle Romero, 1, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
+    "priceStatus": "confirmed",
     "checkedAt": "2026-10-09",
     "sources": [
       {
-        "label": "Carta oficial PDF (consultar precio y formato)",
+        "label": "Carta oficial de restaurante, barra y postres (PDF aportado; mayo 2026)",
         "url": "https://restaurantecasapepedelajuderia.com/wp-content/uploads/2025/02/AF-CARTA-COMIDA-CASA-PEPE-A32mm-sangrado-2.pdf"
       },
       {
@@ -704,13 +704,950 @@
       {
         "service": "general",
         "dishes": [
+          "Jamón ibérico de bellota cortado al momento",
+          "Queso curado de oveja de Córdoba",
+          "Turrón de foie, hojaldre y membrillo",
           "Salmorejo con jamón ibérico",
-          "Jamón ibérico de bellota",
-          "Queso curado de oveja"
+          "Mazamorra con dulce de pera y almendras",
+          "Ensaladilla de atún, mayonesa de AOVE y gamba blanca",
+          "Tosta de anchoa del Cantábrico con mantequilla ahumada de tomate",
+          "Flamenquín de lomo con jamón ibérico",
+          "Croquetas cremosas de puchero con jamón",
+          "Las berenjenas de Pepe con miel de caña",
+          "Puerros a la parrilla, burrata, pistacho y vinagre de Montilla-Moriles",
+          "Arroz meloso de vegetales de la huerta y choco",
+          "Alcachofas, carpaccio de gamba blanca y bechamel de jamón ibérico",
+          "Gazpacho de tomates asados, tartar de pescado del día, hinojo y manzana",
+          "Bacalao confitado en aceite y menestra de verduras",
+          "Pulpo asado, aguacate a la parrilla y sopa de maíz",
+          "Atún rojo tarantelo en ceviche andaluz y verduras asadas",
+          "Tartar de atún rojo con ajoblanco de almendra",
+          "Solomillo de vaca, foie a la plancha y salsa de vino tinto",
+          "Chuletón o lomo bajo nacional con más de 60 días de maduración",
+          "Mollejas de ternera a la parrilla y crema de apionabo",
+          "Rabo de toro estofado y parmentier de AOVE",
+          "Carrillada de ternera a baja temperatura y salsa Stroganoff",
+          "Presa ibérica de bellota marinada, jugo de ibérico y patata con trufa",
+          "Pluma ibérica de bellota de Los Pedroches con cebollitas glaseadas",
+          "Paletilla de cordero lechal asada con cuscús especiado",
+          "Jamón ibérico de bellota 100 % cortado al momento",
+          "Boquerones en vinagre, enteros, dos lomos",
+          "Gilda de anchoa, pulpo y atún rojo",
+          "Vaso de gazpacho de tomate",
+          "Pisto de verduras con tomate y cocochas de bacalao",
+          "Albóndigas de vaca vieja y parmentier",
+          "Rabo de toro estofado con cremoso de patata",
+          "Cochifrito y mayonesa de ajos asados con patatas",
+          "Presa ibérica de bellota a la parrilla con pimientos del Padrón",
+          "Milhojas caramelizadas con chantilly y helado de canela",
+          "Flan de vainilla y helado de galleta",
+          "Tarta de quesos con sorbete de frambuesa",
+          "Tarta de chocolate cremosa, helado de avellana y toffee de PX",
+          "Tarta de manzana y helado de vainilla",
+          "Pastel cordobés con helado de avellana",
+          "Degustación de helados caseros"
         ],
-        "dishPrices": []
+        "dishPrices": [
+          {
+            "dish": "Jamón ibérico de bellota cortado al momento",
+            "eur": 25,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Jamón ibérico de bellota cortado al momento",
+            "eur": 34,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Queso curado de oveja de Córdoba",
+            "eur": 17,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Queso curado de oveja de Córdoba",
+            "eur": 24,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Turrón de foie, hojaldre y membrillo",
+            "eur": 26,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Salmorejo con jamón ibérico",
+            "eur": 13,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Salmorejo con jamón ibérico",
+            "eur": 16,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Mazamorra con dulce de pera y almendras",
+            "eur": 13.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Mazamorra con dulce de pera y almendras",
+            "eur": 17.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Ensaladilla de atún, mayonesa de AOVE y gamba blanca",
+            "eur": 16,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Ensaladilla de atún, mayonesa de AOVE y gamba blanca",
+            "eur": 21,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Tosta de anchoa del Cantábrico con mantequilla ahumada de tomate",
+            "eur": 5.8,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Flamenquín de lomo con jamón ibérico",
+            "eur": 21,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Croquetas cremosas de puchero con jamón",
+            "eur": 13,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Croquetas cremosas de puchero con jamón",
+            "eur": 17,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Las berenjenas de Pepe con miel de caña",
+            "eur": 13,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Las berenjenas de Pepe con miel de caña",
+            "eur": 17.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Puerros a la parrilla, burrata, pistacho y vinagre de Montilla-Moriles",
+            "eur": 23,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Arroz meloso de vegetales de la huerta y choco",
+            "eur": 23,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Alcachofas, carpaccio de gamba blanca y bechamel de jamón ibérico",
+            "eur": 24,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Gazpacho de tomates asados, tartar de pescado del día, hinojo y manzana",
+            "eur": 23,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Bacalao confitado en aceite y menestra de verduras",
+            "eur": 31,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Pulpo asado, aguacate a la parrilla y sopa de maíz",
+            "eur": 31,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Atún rojo tarantelo en ceviche andaluz y verduras asadas",
+            "eur": 32,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Tartar de atún rojo con ajoblanco de almendra",
+            "eur": 32,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Solomillo de vaca, foie a la plancha y salsa de vino tinto",
+            "eur": 36,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Chuletón o lomo bajo nacional con más de 60 días de maduración",
+            "eur": 87,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Mollejas de ternera a la parrilla y crema de apionabo",
+            "eur": 28,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Rabo de toro estofado y parmentier de AOVE",
+            "eur": 23,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Rabo de toro estofado y parmentier de AOVE",
+            "eur": 30,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Carrillada de ternera a baja temperatura y salsa Stroganoff",
+            "eur": 27,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Presa ibérica de bellota marinada, jugo de ibérico y patata con trufa",
+            "eur": 29.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Pluma ibérica de bellota de Los Pedroches con cebollitas glaseadas",
+            "eur": 32,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Paletilla de cordero lechal asada con cuscús especiado",
+            "eur": 45,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Jamón ibérico de bellota 100 % cortado al momento",
+            "eur": 23,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Queso curado de oveja de Córdoba",
+            "eur": 8,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Queso curado de oveja de Córdoba",
+            "eur": 15,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Salmorejo con jamón ibérico",
+            "eur": 6,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Salmorejo con jamón ibérico",
+            "eur": 12,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Mazamorra con dulce de pera y almendras",
+            "eur": 6.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Mazamorra con dulce de pera y almendras",
+            "eur": 13,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Ensaladilla de atún, mayonesa de AOVE y gamba blanca",
+            "eur": 8,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Ensaladilla de atún, mayonesa de AOVE y gamba blanca",
+            "eur": 16,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Tosta de anchoa del Cantábrico con mantequilla ahumada de tomate",
+            "eur": 5.2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Boquerones en vinagre, enteros, dos lomos",
+            "eur": 12,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Gilda de anchoa, pulpo y atún rojo",
+            "eur": 7,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Croquetas cremosas de puchero con jamón",
+            "eur": 6.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Croquetas cremosas de puchero con jamón",
+            "eur": 12,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Las berenjenas de Pepe con miel de caña",
+            "eur": 6.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Las berenjenas de Pepe con miel de caña",
+            "eur": 12,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Vaso de gazpacho de tomate",
+            "eur": 5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Pisto de verduras con tomate y cocochas de bacalao",
+            "eur": 18,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Albóndigas de vaca vieja y parmentier",
+            "eur": 17,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Rabo de toro estofado con cremoso de patata",
+            "eur": 21,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Cochifrito y mayonesa de ajos asados con patatas",
+            "eur": 18,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Presa ibérica de bellota a la parrilla con pimientos del Padrón",
+            "eur": 26,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Flamenquín de lomo con jamón ibérico",
+            "eur": 19,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Milhojas caramelizadas con chantilly y helado de canela",
+            "eur": 8.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Flan de vainilla y helado de galleta",
+            "eur": 8.7,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Tarta de quesos con sorbete de frambuesa",
+            "eur": 8.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Tarta de chocolate cremosa, helado de avellana y toffee de PX",
+            "eur": 8.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Tarta de manzana y helado de vainilla",
+            "eur": 8,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Pastel cordobés con helado de avellana",
+            "eur": 8,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Degustación de helados caseros",
+            "eur": 9,
+            "portion": "desconocida"
+          }
+        ]
       }
-    ]
+    ],
+    "menuSections": [
+      {
+        "title": "Carta de restaurante",
+        "note": "Pan y picos: 3,20 € por persona (IVA incluido).",
+        "items": [
+          {
+            "name": "Jamón ibérico de bellota cortado al momento",
+            "en": "Acorn-fed Iberian ham sliced to order.",
+            "prices": [
+              {
+                "label": "60 g",
+                "eur": 25
+              },
+              {
+                "label": "100 g",
+                "eur": 34
+              }
+            ]
+          },
+          {
+            "name": "Queso curado de oveja de Córdoba",
+            "en": "Mature sheep’s cheese from Córdoba.",
+            "prices": [
+              {
+                "label": "100 g",
+                "eur": 17
+              },
+              {
+                "label": "160 g",
+                "eur": 24
+              }
+            ]
+          },
+          {
+            "name": "Turrón de foie, hojaldre y membrillo",
+            "en": "Foie gras mi-cuit and soft nougat in puff pastry with quince jelly.",
+            "prices": [
+              {
+                "label": "Plato",
+                "eur": 26
+              }
+            ]
+          },
+          {
+            "name": "Salmorejo con jamón ibérico",
+            "en": "Chilled Cordoban tomato and bread cream with Iberian ham.",
+            "prices": [
+              {
+                "label": "Formato 1",
+                "eur": 13
+              },
+              {
+                "label": "Formato 2",
+                "eur": 16
+              }
+            ]
+          },
+          {
+            "name": "Mazamorra con dulce de pera y almendras",
+            "en": "Chilled almond cream with pear jam and almonds.",
+            "prices": [
+              {
+                "label": "Formato 1",
+                "eur": 13.5
+              },
+              {
+                "label": "Formato 2",
+                "eur": 17.5
+              }
+            ]
+          },
+          {
+            "name": "Ensaladilla de atún, mayonesa de AOVE y gamba blanca",
+            "en": "Potato salad with tuna, extra virgin olive oil mayonnaise and shrimp.",
+            "prices": [
+              {
+                "label": "Formato 1",
+                "eur": 16
+              },
+              {
+                "label": "Formato 2",
+                "eur": 21
+              }
+            ]
+          },
+          {
+            "name": "Tosta de anchoa del Cantábrico con mantequilla ahumada de tomate",
+            "en": "Cantabrian anchovy on toasted bread with smoked tomato butter.",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 5.8
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín de lomo con jamón ibérico",
+            "en": "Breaded pork loin and Iberian ham roll.",
+            "prices": [
+              {
+                "label": "Plato",
+                "eur": 21
+              }
+            ]
+          },
+          {
+            "name": "Croquetas cremosas de puchero con jamón",
+            "en": "Creamy stew and cured ham croquettes.",
+            "prices": [
+              {
+                "label": "6 unidades",
+                "eur": 13
+              },
+              {
+                "label": "9 unidades",
+                "eur": 17
+              }
+            ]
+          },
+          {
+            "name": "Las berenjenas de Pepe con miel de caña",
+            "en": "Fried aubergines with cane syrup.",
+            "prices": [
+              {
+                "label": "Formato 1",
+                "eur": 13
+              },
+              {
+                "label": "Formato 2",
+                "eur": 17.5
+              }
+            ]
+          },
+          {
+            "name": "Puerros a la parrilla, burrata, pistacho y vinagre de Montilla-Moriles",
+            "en": "Grilled leeks with burrata, pistachio and Montilla-Moriles vinegar.",
+            "prices": [
+              {
+                "label": "Plato",
+                "eur": 23
+              }
+            ]
+          },
+          {
+            "name": "Arroz meloso de vegetales de la huerta y choco",
+            "en": "Creamy rice with seasonal vegetables and cuttlefish.",
+            "prices": [
+              {
+                "label": "Plato",
+                "eur": 23
+              }
+            ]
+          },
+          {
+            "name": "Alcachofas, carpaccio de gamba blanca y bechamel de jamón ibérico",
+            "en": "Artichokes with shrimp carpaccio and Iberian ham béchamel.",
+            "prices": [
+              {
+                "label": "Plato",
+                "eur": 24
+              }
+            ]
+          },
+          {
+            "name": "Gazpacho de tomates asados, tartar de pescado del día, hinojo y manzana",
+            "en": "Roasted tomato gazpacho with fish tartare, fennel, apple and basil oil.",
+            "prices": [
+              {
+                "label": "Plato",
+                "eur": 23
+              }
+            ]
+          },
+          {
+            "name": "Bacalao confitado en aceite y menestra de verduras",
+            "en": "Confit cod with seasonal vegetables in browned butter.",
+            "prices": [
+              {
+                "label": "Plato",
+                "eur": 31
+              }
+            ]
+          },
+          {
+            "name": "Pulpo asado, aguacate a la parrilla y sopa de maíz",
+            "en": "Roast octopus, grilled avocado and sweetcorn soup.",
+            "prices": [
+              {
+                "label": "Plato",
+                "eur": 31
+              }
+            ]
+          },
+          {
+            "name": "Atún rojo tarantelo en ceviche andaluz y verduras asadas",
+            "en": "Andalusian-style marinated bluefin tuna with roasted vegetables.",
+            "prices": [
+              {
+                "label": "Plato",
+                "eur": 32
+              }
+            ]
+          },
+          {
+            "name": "Tartar de atún rojo con ajoblanco de almendra",
+            "en": "Bluefin tuna tartare with chilled almond and garlic soup.",
+            "prices": [
+              {
+                "label": "Plato",
+                "eur": 32
+              }
+            ]
+          },
+          {
+            "name": "Solomillo de vaca, foie a la plancha y salsa de vino tinto",
+            "en": "Beef sirloin with grilled foie gras and red wine sauce.",
+            "prices": [
+              {
+                "label": "Plato",
+                "eur": 36
+              }
+            ]
+          },
+          {
+            "name": "Chuletón o lomo bajo nacional con más de 60 días de maduración",
+            "en": "Dry-aged Spanish rib steak or sirloin.",
+            "prices": [
+              {
+                "label": "Precio por kg",
+                "eur": 87
+              }
+            ]
+          },
+          {
+            "name": "Mollejas de ternera a la parrilla y crema de apionabo",
+            "en": "Grilled beef sweetbreads with celeriac cream.",
+            "prices": [
+              {
+                "label": "Plato",
+                "eur": 28
+              }
+            ]
+          },
+          {
+            "name": "Rabo de toro estofado y parmentier de AOVE",
+            "en": "Stewed oxtail with olive-oil potato purée.",
+            "prices": [
+              {
+                "label": "Formato 1",
+                "eur": 23
+              },
+              {
+                "label": "Formato 2",
+                "eur": 30
+              }
+            ]
+          },
+          {
+            "name": "Carrillada de ternera a baja temperatura y salsa Stroganoff",
+            "en": "Slow-cooked beef cheeks with Stroganoff sauce.",
+            "prices": [
+              {
+                "label": "Plato",
+                "eur": 27
+              }
+            ]
+          },
+          {
+            "name": "Presa ibérica de bellota marinada, jugo de ibérico y patata con trufa",
+            "en": "Marinated acorn-fed Iberian pork with potato and truffle.",
+            "prices": [
+              {
+                "label": "Plato",
+                "eur": 29.5
+              }
+            ]
+          },
+          {
+            "name": "Pluma ibérica de bellota de Los Pedroches con cebollitas glaseadas",
+            "en": "Grilled acorn-fed Iberian pork with glazed baby onions.",
+            "prices": [
+              {
+                "label": "Plato",
+                "eur": 32
+              }
+            ]
+          },
+          {
+            "name": "Paletilla de cordero lechal asada con cuscús especiado",
+            "en": "Roast suckling lamb shoulder with spiced couscous.",
+            "prices": [
+              {
+                "label": "Plato",
+                "eur": 45
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Carta de barra",
+        "note": "Pan y picos: 2,80 € por persona (IVA incluido).",
+        "items": [
+          {
+            "name": "Jamón ibérico de bellota 100 % cortado al momento",
+            "en": "Acorn-fed Iberian ham sliced to order.",
+            "prices": [
+              {
+                "label": "60 g",
+                "eur": 23
+              }
+            ]
+          },
+          {
+            "name": "Queso curado de oveja de Córdoba",
+            "en": "Mature sheep’s cheese from Córdoba.",
+            "prices": [
+              {
+                "label": "50 g · tapa",
+                "eur": 8
+              },
+              {
+                "label": "100 g · media",
+                "eur": 15
+              }
+            ]
+          },
+          {
+            "name": "Salmorejo con jamón ibérico",
+            "en": "Chilled Cordoban tomato and bread cream with Iberian ham.",
+            "prices": [
+              {
+                "label": "Tapa",
+                "eur": 6
+              },
+              {
+                "label": "Media",
+                "eur": 12
+              }
+            ]
+          },
+          {
+            "name": "Mazamorra con dulce de pera y almendras",
+            "en": "Chilled almond cream with pear jam and almonds.",
+            "prices": [
+              {
+                "label": "Tapa",
+                "eur": 6.5
+              },
+              {
+                "label": "Media",
+                "eur": 13
+              }
+            ]
+          },
+          {
+            "name": "Ensaladilla de atún, mayonesa de AOVE y gamba blanca",
+            "en": "Potato salad with tuna, olive-oil mayonnaise and shrimp.",
+            "prices": [
+              {
+                "label": "100 g · tapa",
+                "eur": 8
+              },
+              {
+                "label": "200 g · media",
+                "eur": 16
+              }
+            ]
+          },
+          {
+            "name": "Tosta de anchoa del Cantábrico con mantequilla ahumada de tomate",
+            "en": "Cantabrian anchovy toast with smoked tomato butter.",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 5.2
+              }
+            ]
+          },
+          {
+            "name": "Boquerones en vinagre, enteros, dos lomos",
+            "en": "Vinegar-marinated anchovies.",
+            "prices": [
+              {
+                "label": "3 unidades",
+                "eur": 12
+              }
+            ]
+          },
+          {
+            "name": "Gilda de anchoa, pulpo y atún rojo",
+            "en": "Skewer with anchovy, octopus and bluefin tuna.",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 7
+              }
+            ]
+          },
+          {
+            "name": "Croquetas cremosas de puchero con jamón",
+            "en": "Creamy stew and ham croquettes.",
+            "prices": [
+              {
+                "label": "3 unidades · tapa",
+                "eur": 6.5
+              },
+              {
+                "label": "6 unidades · media",
+                "eur": 12
+              }
+            ]
+          },
+          {
+            "name": "Las berenjenas de Pepe con miel de caña",
+            "en": "Fried aubergines with cane syrup.",
+            "prices": [
+              {
+                "label": "Tapa",
+                "eur": 6.5
+              },
+              {
+                "label": "Media",
+                "eur": 12
+              }
+            ]
+          },
+          {
+            "name": "Vaso de gazpacho de tomate",
+            "en": "Glass of chilled tomato gazpacho.",
+            "prices": [
+              {
+                "label": "Vaso",
+                "eur": 5
+              }
+            ]
+          },
+          {
+            "name": "Pisto de verduras con tomate y cocochas de bacalao",
+            "en": "Vegetable ratatouille with Andalusian-style cod cheeks.",
+            "prices": [
+              {
+                "label": "4 unidades",
+                "eur": 18
+              }
+            ]
+          },
+          {
+            "name": "Albóndigas de vaca vieja y parmentier",
+            "en": "Aged-beef meatballs with potato purée.",
+            "prices": [
+              {
+                "label": "4 unidades",
+                "eur": 17
+              }
+            ]
+          },
+          {
+            "name": "Rabo de toro estofado con cremoso de patata",
+            "en": "Stewed oxtail with creamy potato.",
+            "prices": [
+              {
+                "label": "Plato",
+                "eur": 21
+              }
+            ]
+          },
+          {
+            "name": "Cochifrito y mayonesa de ajos asados con patatas",
+            "en": "Crispy fried suckling pig with roasted garlic mayonnaise and potatoes.",
+            "prices": [
+              {
+                "label": "Plato",
+                "eur": 18
+              }
+            ]
+          },
+          {
+            "name": "Presa ibérica de bellota a la parrilla con pimientos del Padrón",
+            "en": "Grilled acorn-fed Iberian pork with Padrón peppers.",
+            "prices": [
+              {
+                "label": "180 g",
+                "eur": 26
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín de lomo con jamón ibérico",
+            "en": "Breaded pork loin and Iberian ham roll.",
+            "prices": [
+              {
+                "label": "340 g",
+                "eur": 19
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Postres",
+        "note": "Postres de la carta de restaurante.",
+        "items": [
+          {
+            "name": "Milhojas caramelizadas con chantilly y helado de canela",
+            "en": "Caramelised mille-feuille with cream and cinnamon ice cream.",
+            "prices": [
+              {
+                "label": "Postre",
+                "eur": 8.5
+              }
+            ]
+          },
+          {
+            "name": "Flan de vainilla y helado de galleta",
+            "en": "Vanilla custard with biscuit ice cream.",
+            "prices": [
+              {
+                "label": "Postre",
+                "eur": 8.7
+              }
+            ]
+          },
+          {
+            "name": "Tarta de quesos con sorbete de frambuesa",
+            "en": "Cheesecake with raspberry sorbet.",
+            "prices": [
+              {
+                "label": "Postre",
+                "eur": 8.5
+              }
+            ]
+          },
+          {
+            "name": "Tarta de chocolate cremosa, helado de avellana y toffee de PX",
+            "en": "Creamy chocolate cake with hazelnut ice cream and Pedro Ximénez toffee.",
+            "prices": [
+              {
+                "label": "Postre",
+                "eur": 8.5
+              }
+            ]
+          },
+          {
+            "name": "Tarta de manzana y helado de vainilla",
+            "en": "Apple tart with vanilla ice cream.",
+            "prices": [
+              {
+                "label": "Postre",
+                "eur": 8
+              }
+            ]
+          },
+          {
+            "name": "Pastel cordobés con helado de avellana",
+            "en": "Cordoban pumpkin-preserve pastry with hazelnut ice cream.",
+            "prices": [
+              {
+                "label": "Postre",
+                "eur": 8
+              }
+            ]
+          },
+          {
+            "name": "Degustación de helados caseros",
+            "en": "Selection of homemade ice creams.",
+            "prices": [
+              {
+                "label": "Postre",
+                "eur": 9
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "menuSourceNote": "Precios transcritos del PDF aportado (Casa_Pepe-carta_web-20260515.pdf). Verificar vigencia directamente con el local."
   },
   {
     "id": "casa-rubio",
