@@ -15,6 +15,37 @@ function dishExplanation(name){return DISH_EXPLANATIONS_EN[name]||'';}
 function detailDishExplanation(name){
  const normalized=clean(name);
  const special=[
+  [/cochifrito.*salsa brava/,'Crisp-fried pork served with brava sauce.'],
+  [/cochifrito/,'Traditional fried pork dish; preparation varies.'],
+  [/venado/,'Venison dish.'],
+  [/boquerones/,'Anchovies, often served fried.'],
+  [/bacalao/,'Cod dish; preparation varies.'],
+  [/chipirones/,'Small squid dish.'],
+  [/huevos rotos/,'Fried eggs served over potatoes.'],
+  [/solomillo/,'Pork tenderloin dish.'],
+  [/torrijas/,'Traditional Spanish bread dessert.'],
+  [/jamon iberico/,'Iberian cured ham.'],
+  [/queso curado/,'Aged cheese.'],
+  [/churrasco/,'Grilled meat dish.'],
+  [/chuleton/,'Large beef steak.'],
+  [/montaditos/,'Small sandwiches.'],
+  [/ensaladilla/,'Spanish-style potato salad.'],
+  [/salazones|conservas/,'Salt-cured and preserved foods.'],
+  [/casqueria/,'Traditional offal dishes.'],
+  [/frituras/,'Assorted fried dishes.'],
+  [/cocina cordobesa|cocina tradicional|carta de temporada|tapas y platos tradicionales|tapas tradicionales/,'Traditional regional dishes; selection varies.'],
+  [/menu degustacion/,'Tasting menu.'],
+  [/tarta de queso|cheesecake/,'Cheesecake.'],
+  [/brownie/,'Chocolate brownie.'],
+  [/cookies/,'Sweet cookies.'],
+  [/tortitas/,'Pancakes.'],
+  [/tarta de zanahoria/,'Carrot cake.'],
+  [/tarta de chocolate/,'Chocolate cake.'],
+  [/tarta de limon/,'Lemon cake.'],
+  [/tartas/,'Assorted cakes.'],
+  [/pasteles/,'Assorted sweet pastries.'],
+  [/zumo de naranja/,'Fresh orange juice.'],
+  [/jeringos/,'Andalusian-style fried dough pastries.'],
   [/berenjenas.*miel/,'Fried aubergines with honey.'],
   [/carrillada.*salsa/,'Slow-cooked cheeks served in sauce.'],
   [/croquetas.*rabo/,'Croquettes made with oxtail.'],
@@ -127,8 +158,9 @@ function updateMealMode(mode,{reset=true}={}){
  renderRecommendations();
  if(reset){
   el('dish').value='';el('place-name').value='';
-  state.searched=false;state.filtered=[];state.selected.clear();state.currentDetailId=null;
-  el('results-section').hidden=true;el('compare-section').hidden=true;el('detail-section').hidden=true;
+  state.searched=state.selected.size>0;state.filtered=[];state.currentDetailId=null;
+  el('results-section').hidden=true;el('compare-section').hidden=state.selected.size===0;el('detail-section').hidden=true;
+   if(state.selected.size)compare();
   el('coverage-summary').hidden=true;el('show-offering').hidden=true;
   updateQuickNav();
   try{localStorage.removeItem(SEARCH_KEY)}catch{}
@@ -658,8 +690,7 @@ function clearSearch(){
  updateMealMode(state.mode,{reset:false});
  el('portion').disabled=false;
  state.filtered=[];
- state.selected.clear();
- state.searched=false;
+ state.searched=state.selected.size>0;
  updateQuickNav();
  state.appliedTerm='';
  state.appliedScope='dish';
@@ -667,12 +698,13 @@ function clearSearch(){
  state.appliedBudget=null;
  state.currentDetailId=null;
  el('results-section').hidden=true;
- el('compare-section').hidden=true;
+ el('compare-section').hidden=state.selected.size===0;
  el('detail-section').hidden=true;
  el('coverage-summary').hidden=true;
  el('show-offering').hidden=true;
  el('budget-explain').textContent='Límite aplicado al precio de un plato, no a una comida completa.';
- try{localStorage.removeItem(SEARCH_KEY)}catch{}
+ compare();
+ if(state.selected.size)saveSearch();else try{localStorage.removeItem(SEARCH_KEY)}catch{}
  el('dish').focus();
 }
 async function init(){
