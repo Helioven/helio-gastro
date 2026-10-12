@@ -72,6 +72,15 @@ window.GASTRO_I18N = Object.freeze({
     [/^Estamos preparando cartas de (.+)\. Todavía no hay locales con especialidades documentadas para este servicio\.$/,m=>'We are preparing '+({'desayunar':'breakfast','merendar':'afternoon snack'}[m[1]]||m[1])+' menus. No places have documented specialities for this service yet.']
   );
   Object.assign(translations,{
+    'No hay precios documentados para este plato en el servicio seleccionado.':'No documented prices for this dish in the selected meal service.',
+    'No hay precios documentados para el servicio seleccionado.':'No documented prices for the selected meal service.',
+    'Selecciona un plato y un formato concreto para identificar precios comparables entre variantes equivalentes.':'Select a dish and portion size to compare equivalent variants.',
+    'Se comparan solo variantes coincidentes y el mismo formato declarado. «Menor precio» requiere al menos dos locales con esa variante. La cantidad real puede variar.':'Only matching variants with the same declared portion size are compared. A lowest price requires at least two venues. Actual quantities may differ.',
+    'Formatos diferentes: no comparamos cantidades ni asumimos tamaños equivalentes.':'Different portion sizes: quantities are not assumed to be equivalent.',
+    'Precio por unidad: no comparable directamente con una ración.':'Price per item: not directly comparable with a full portion.'
+  });
+  dynamicRules.push([/^Precios publicados para «(.+)»\. Los formatos pueden ser distintos y no deben compararse como cantidades equivalentes\.$/,m=>'Published prices for “'+m[1]+'”. Portion sizes may differ and should not be treated as equivalent.']);
+  Object.assign(translations,{
     'También ofrecen el plato · Precio pendiente de confirmar':'Also serves this dish · Price awaiting confirmation'
   });
   Object.assign(translations,{
