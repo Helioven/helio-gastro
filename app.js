@@ -66,6 +66,8 @@ function detailDishExplanation(name){
   [/tostada.*(?:aceite|tomate)/,'Toast served with olive oil or tomato.'],
   [/tostada.*(?:mantequilla y mermelada)/,'Toast with butter and jam.'],
   [/tostada.*(?:mantequilla|pate)/,'Toast with butter or pâté.'],
+  [/tostada.*jamon york/,'Toast with cooked ham.'],
+  [/tostada.*pavo/,'Toast with turkey.'],
   [/tostada.*(?:jamon|serrano)/,'Toast with Spanish cured ham.'],
   [/tostada.*(?:york|pavo)/,'Toast with cooked ham or turkey.'],
   [/tostada/,'Toasted bread with a choice of toppings.'],
