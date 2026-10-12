@@ -475,6 +475,7 @@ function menuGroups(p){
  const unpriced=p.dishes.filter(d=>{
   if(d.includes('(disponibilidad en merienda por confirmar)'))return false;
   const key=clean(d);
+  if(p.id==='cafeteria-bar-la-jineta'&&/^tostada(?:s|\s)/.test(key)&&groups.some(g=>g.key.startsWith('tostada ')))return false;
   // A priced variant may have a different descriptive suffix or prefix.
   // Only collapse clear word-boundary matches; never infer a price for a distinct dish.
   return !groups.some(g=>g.key===key||g.key.startsWith(key+' ')||key.startsWith(g.key+' ')||
