@@ -503,7 +503,6 @@ function showPlace(p,scroll=true){
   hours.textContent='🕒 '+p.openingHoursNote;panel.append(hours);
  }
 
- if(Array.isArray(p.menuNotes)&&p.menuNotes.length){const notes=document.createElement('ul');notes.className='menu-notes';for(const note of p.menuNotes){const li=document.createElement('li');li.textContent=note;notes.append(li)}panel.append(notes)}
  panel.append(mapButton(p));
  const map=document.createElement('a');map.href=placeMapUrl(p);map.target='_blank';map.rel='noopener noreferrer';map.textContent='Abrir en Google Maps ↗';panel.append(map);
  const menu=menuGroups(p);
@@ -522,6 +521,10 @@ function showPlace(p,scroll=true){
    list.append(entry);
   }
   panel.append(list);
+ }
+ if(p.id==='la-piscatoria'&&Array.isArray(p.menuNotes)&&p.menuNotes.length){
+  const note=document.createElement('p');note.className='note';note.textContent=p.menuNotes[0];
+  note.dataset.piscatoriaBreadNote='';panel.append(note);
  }
  if(menu.unpriced.length){
   const label=document.createElement('h4');label.className='menu-unpriced-title';label.textContent='Otras especialidades · precios pendientes';panel.append(label);
