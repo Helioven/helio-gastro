@@ -23,7 +23,28 @@ function piscatoriaSweetExplanation(name){
  if(n.includes('pizzella de york y queso'))return 'Pizzella with cooked ham and cheese.';
  return '';
 }
+function piscatoriaSavouryExplanation(name){
+ const n=clean(name);
+ const items=[
+  [/^gilda$/,'Traditional Spanish skewer with olives, anchovy and pickled pepper.'],
+  [/^cana de lomo$/,'Cured pork loin.'],
+  [/^queso$/,'Cheese, available as a half or full portion.'],
+  [/^mejillones en escabeche$/,'Mussels in a tangy vinegar-based marinade.'],
+  [/^patatas fritas chips$/,'Crisp potato chips.'],
+  [/^empanada criolla de ternera$/,'Argentinian-style pastry filled with beef.'],
+  [/^tacos de salchichon/,'Pieces of cured sausage with fried almonds.'],
+  [/^sandwich bikini de york y queso$/,'Toasted sandwich with cooked ham and cheese.'],
+  [/^sandwich o croissant a tu gusto$/,'Choice of a sandwich or croissant with a filling of your choice.'],
+  [/^bocadillo serranito$/,'Spanish bread roll with a traditional serranito filling; exact ingredients not specified.'],
+  [/^bocadillo de tortilla de patatas$/,'Bread roll filled with Spanish potato omelette.'],
+  [/^bocadillo de bacon y queso$/,'Bread roll with bacon and cheese.'],
+  [/^bocadillo de pollo y queso$/,'Bread roll with chicken and cheese.'],
+  [/^bocadillo de jamon y brie$/,'Bread roll with ham and Brie cheese.']
+ ];
+ return items.find(([re])=>re.test(n))?.[1]||'';
+}
 function detailDishExplanation(name,placeId=''){
+ if(placeId==='la-piscatoria'){const description=piscatoriaSavouryExplanation(name);if(description)return description;}
  if(placeId==='la-piscatoria'){const description=piscatoriaSweetExplanation(name);if(description)return description;}
  if(placeId==='la-piscatoria'&&/tostada/i.test(name)){
   const n=clean(name);
@@ -529,6 +550,7 @@ function showPlace(p,scroll=true){
     const portion=document.createElement('span');portion.textContent=p.id==='cafeteria-bar-la-jineta'&&/tostada/i.test(price.dish)?(portionOf(price)==='media-tostada'?'Media tostada':'Tostada entera')+(clean(price.dish).includes('sin cafe')?' · Sin café':' · Con café'):localizedPortion(portionOf(price));
     const amount=document.createElement('strong');amount.textContent=fmt(price.eur);
     if(p.id==='la-piscatoria'&&group.prices.length===1&&portionOf(price)==='unidad')portion.textContent='';
+    if(p.id==='la-piscatoria'&&!portion.textContent)row.classList.add('price-only-row');
     row.append(portion,amount);entry.append(row);
    }
    list.append(entry);
