@@ -442,7 +442,14 @@ function draw(){
  }
 }
 function menuDishName(item){
- return item.dish.replace(/\s*\((?:media(?:\s+ración)?|ración|tapa|unidad|media)\)\s*$/i,'').trim();
+ const name=item.dish.replace(/\s*\((?:media(?:\s+ración)?|ración|tapa|unidad|media)\)\s*$/i,'').trim();
+ // Portion prefixes describe a serving size, not a separate dish.
+ // Only normalize prefixes when the explicit portion agrees.
+ if(portionOf(item)==='media'&&/^media ración de /i.test(name))return name.replace(/^media ración de /i,'');
+ if(portionOf(item)==='racion'&&/^ración de /i.test(name))return name.replace(/^ración de /i,'');
+ if(portionOf(item)==='media-tostada'&&/^media tostada de /i.test(name))return name.replace(/^media tostada de /i,'Tostada de ');
+ if(portionOf(item)==='tostada-entera'&&/^tostada entera de /i.test(name))return name.replace(/^tostada entera de /i,'Tostada de ');
+ return name;
 }
 function menuGroups(p){
  const groups=[];
