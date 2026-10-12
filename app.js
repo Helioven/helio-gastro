@@ -62,6 +62,8 @@ function detailDishExplanation(name){
   [/codillo/,'Pork knuckle.'],
   [/carne con tomate/,'Meat cooked in tomato sauce.'],
   [/tortilla/,'Spanish omelette.'],
+  [/tostada.*basica sin cafe/,'Basic toast; coffee not included.'],
+  [/tostada.*mixta sin cafe/,'Mixed toast; coffee not included.'],
   [/tostada.*jamon york y queso/,'Toast with cooked ham and cheese.'],
   [/tostada.*pavo y queso/,'Toast with turkey and cheese.'],
   [/tostada.*crema de york/,'Toast with cooked ham spread.'],
