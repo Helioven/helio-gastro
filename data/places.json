@@ -1423,11 +1423,10 @@
       {
         "service": "desayuno",
         "dishes": [
-          "Tostadas",
-          "Media tostada básica",
-          "Tostada entera básica",
-          "Media tostada mixta",
-          "Tostada entera mixta",
+          "Tostada básica",
+          "Tostada de untar",
+          "Tostada mixta",
+          "Tostada gratinada",
           "Café"
         ],
         "dishPrices": [
@@ -1442,6 +1441,36 @@
             "portion": "tostada-entera"
           },
           {
+            "dish": "Media tostada básica con café",
+            "eur": 2,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada entera básica con café",
+            "eur": 3.3,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Media tostada untar sin café",
+            "eur": 1.2,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada entera untar sin café",
+            "eur": 2.1,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Media tostada untar con café",
+            "eur": 2.2,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada entera untar con café",
+            "eur": 3.5,
+            "portion": "tostada-entera"
+          },
+          {
             "dish": "Media tostada mixta sin café",
             "eur": 1.4,
             "portion": "media-tostada"
@@ -1449,6 +1478,36 @@
           {
             "dish": "Tostada entera mixta sin café",
             "eur": 2.6,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Media tostada mixta con café",
+            "eur": 2.4,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada entera mixta con café",
+            "eur": 3.7,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Media tostada gratinada sin café",
+            "eur": 1.5,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada entera gratinada sin café",
+            "eur": 2.8,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Media tostada gratinada con café",
+            "eur": 2.6,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada entera gratinada con café",
+            "eur": 3.9,
             "portion": "tostada-entera"
           },
           {
