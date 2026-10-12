@@ -89,7 +89,7 @@ window.GASTRO_I18N = Object.freeze({
   let language='es';
   const normalize=s=>s.trim().replace(/\s+/g,' ');
   function translateText(node){
-    if(!node || !node.parentElement || node.parentElement.closest('script,style,textarea,option[data-keep-original],#language-select'))return;
+    if(!node || !node.parentElement || node.parentElement.closest('script,style,textarea,option[data-keep-original],#language-select,[data-keep-dish-spanish]'))return;
     if(!originalNodes.has(node))originalNodes.set(node,node.nodeValue);
     const original=originalNodes.get(node);
     const match=original.match(/^(\s*)([\s\S]*?)(\s*)$/);
