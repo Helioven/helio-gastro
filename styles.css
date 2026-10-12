@@ -172,3 +172,7 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 #recommendation-results .recommendation-place-actions{display:flex;justify-content:flex-start;align-items:center;gap:10px;flex-wrap:wrap;margin-top:14px}
 #recommendation-results .recommendation-place-actions button{padding:9px 13px;border-radius:8px}
 @media(max-width:480px){#recommendation-results .recommendation-place{padding:12px}#recommendation-results .recommendation-place-items li{gap:5px 9px}#recommendation-results .recommendation-place-items li strong{font-size:.95rem}}
+
+/* A single documented price needs no empty format column. */
+.menu-price-row.price-only-row{justify-content:flex-end;padding:3px 0}
+.menu-price-row.price-only-row span:empty{display:none}
