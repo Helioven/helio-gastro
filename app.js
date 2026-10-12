@@ -454,7 +454,11 @@ function menuGroups(p){
  }
  const unpriced=p.dishes.filter(d=>{
   const key=clean(d);
-  return !groups.some(g=>g.key===key||g.key.startsWith(key+' ')||key.startsWith(g.key+' '));
+  // A priced variant may have a different descriptive suffix or prefix.
+  // Only collapse clear word-boundary matches; never infer a price for a distinct dish.
+  return !groups.some(g=>g.key===key||g.key.startsWith(key+' ')||key.startsWith(g.key+' ')||
+   g.key.startsWith(key+' con ')||g.key.startsWith(key+' de ')||
+   g.key.endsWith(' '+key));
  });
  return {groups,unpriced};
 }
