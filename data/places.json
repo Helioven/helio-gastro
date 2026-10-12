@@ -734,10 +734,49 @@
       {
         "service": "general",
         "dishes": [
-          "Carta de temporada; cocina tradicional y de mercado"
+          "Jamón 100 % ibérico de campo cortado al momento",
+          "Queso curado de oveja de Fuente Obejuna",
+          "Mixto de jamón ibérico y queso de oveja",
+          "Salmorejo cordobés con jamón y huevo",
+          "Mazamorra con manzana verde y pasas al PX",
+          "Vaso de gazpacho de tomate",
+          "Tosta de anchoa del Cantábrico con mantequilla de oveja",
+          "Tosta de sardina con salmorejo",
+          "Ensaladilla de atún con carpaccio de pulpo y pimentón",
+          "Boquerones en vinagre con cebolleta y aceitunas pasificadas",
+          "Bravas de Rubio con espuma de alioli",
+          "Berenjenas abueneladas con miel de caña",
+          "Croquetas de puchero y jamón ibérico",
+          "Flamenquín cordobés con polvo de parmesano y patatas",
+          "Tomate de temporada, cebolleta y lomitos de atún",
+          "Ensalada de hortalizas de temporada",
+          "Ensalada de salmón ahumado, aguacate y vinagreta de lima",
+          "Puerros confitados y asados, carbonara, parmesano y torreznos fritos",
+          "Alcachofas con bechamel de foie y jamón ibérico",
+          "Atún rojo de almadraba con verduras de temporada salteadas",
+          "Bacalao premium con salsa de tomate y judías salteadas",
+          "Chipirones fritos con mahonesa cítrica",
+          "Bacalao frito",
+          "Rosada frita al limón",
+          "Cordero sefardí con cuscús de verduras",
+          "Solomillo 100 % ibérico de bellota a la plancha con salsa verde",
+          "Pluma ibérica 100 % de bellota con pimientos de piquillo confitados",
+          "Lomo de vaca dry aged",
+          "Albóndigas de vaca en salsa con patatas",
+          "Rabo de toro estofado con patatas",
+          "Torrija de pan brioche con helado de leche merengada",
+          "Tarta de queso casera con queso azul",
+          "Brownie con helado de vainilla",
+          "Tocino de cielo y helado de sorbete de limón",
+          "Pastel cordobés",
+          "Helado de turrón"
         ],
         "dishPrices": []
       }
+    ],
+    "menuPriceNotice": "Los precios de los platos no se muestran de forma legible en la carta oficial consultada. Por causas ajenas a Helio Gastro, no podemos indicar importes fiables. Recomendamos contactar con el establecimiento antes de acudir para confirmar precios y disponibilidad.",
+    "menuNotes": [
+      "Cesta de pan y picos: 2,40 € (IVA incluido), según carta oficial consultada."
     ]
   },
   {
