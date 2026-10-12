@@ -515,7 +515,7 @@ function compare(){
  const pricesOnly=state.appliedScope==='dish'&&!!state.appliedPortion;
  const highlights=pricesOnly?comparableHighlights(items,term,state.appliedPortion):new Set();
  const advisory=document.createElement('p');advisory.className='note';
- advisory.textContent=pricesOnly?'Se comparan solo variantes coincidentes y el mismo formato declarado. «Menor precio» requiere al menos dos locales con esa variante. La cantidad real puede variar.':'Selecciona un plato y un formato concreto para identificar precios comparables entre variantes equivalentes.';
+ advisory.textContent=pricesOnly?'Se comparan solo variantes coincidentes y el mismo formato declarado. «Menor precio» requiere al menos dos locales con esa variante. La cantidad real puede variar.':term?'Precios publicados para «'+(el('dish').value.trim()&&clean(el('dish').value.trim())===term?el('dish').value.trim():term)+'». Los formatos pueden ser distintos y no deben compararse como cantidades equivalentes.':'Selecciona un plato y un formato concreto para identificar precios comparables entre variantes equivalentes.';
  panel.append(advisory);
  const route=routeButton(items);if(route)panel.append(route);
  for(const p of items){
@@ -624,7 +624,7 @@ function renderRecommendations(){
   btn.append(label,description,count);btn.addEventListener('click',()=>showRecommendations(dish.name));deck.append(btn);
  }
 }
-function recommendationCompareButton(p){
+function recommendationCompareButton(p,dishName){
  const button=document.createElement('button');
  button.type='button';
  button.dataset.comparePlaceId=p.id;
@@ -635,6 +635,10 @@ function recommendationCompareButton(p){
  };
  refresh();
  button.addEventListener('click',()=>{
+  // Use the same dish context as the quick recommendation when comparing prices.
+  state.appliedTerm=clean(dishName);
+  state.appliedScope='dish';
+  state.appliedPortion='';
   if(state.selected.has(p.id))state.selected.delete(p.id);
   else if(state.selected.size<3)state.selected.add(p.id);
   else {window.alert('Puedes comparar hasta tres sitios. Quita uno antes de añadir otro.');return}
@@ -700,13 +704,13 @@ function showRecommendations(dishName){
    card.append(list);
    const actions=document.createElement('div');actions.className='recommendation-place-actions';
    const more=document.createElement('button');more.type='button';more.textContent='Ver ficha';more.addEventListener('click',()=>openRecommendationPlace(place));
-   actions.append(more,mapButton(place),recommendationCompareButton(place));card.append(actions);panel.append(card);
+   actions.append(more,mapButton(place),recommendationCompareButton(place,dishName));card.append(actions);panel.append(card);
   }
  }
  const known=new Set(data.priced.map(x=>x.p.id)),unknown=data.matches.filter(p=>!known.has(p.id));
  if(unknown.length){
   const heading=document.createElement('h3');heading.textContent='También ofrecen el plato · precio pendiente';panel.append(heading);
-  for(const p of unknown){const row=document.createElement('div');row.className='recommendation-row';const name=document.createElement('span');name.textContent=p.name;const btn=document.createElement('button');btn.type='button';btn.textContent='Ver ficha';btn.addEventListener('click',()=>openRecommendationPlace(p));row.append(name,btn,mapButton(p),recommendationCompareButton(p));panel.append(row)}
+  for(const p of unknown){const row=document.createElement('div');row.className='recommendation-row';const name=document.createElement('span');name.textContent=p.name;const btn=document.createElement('button');btn.type='button';btn.textContent='Ver ficha';btn.addEventListener('click',()=>openRecommendationPlace(p));row.append(name,btn,mapButton(p),recommendationCompareButton(p,dishName));panel.append(row)}
  }
  el('recommendation-dialog').showModal();
 }
