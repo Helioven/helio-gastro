@@ -3,9 +3,9 @@ const state={places:[],filtered:[],selected:new Set(),favorites:new Set(),search
 const el=id=>document.getElementById(id);
 const MODE_CONFIG={
  desayuno:{label:'Desayunar',emoji:'☕',budgets:[3,5,7,10],dishes:['Tostadas','Churros','Molletes','Café','Bollería'],portions:[['unidad','Unidad'],['media-tostada','Media tostada'],['tostada-entera','Tostada entera'],['combinado','Desayuno combinado']],placeholder:'Tostadas, churros, molletes…'},
- comida:{label:'Comer',emoji:'🍽️',budgets:[10,15,20,30,50],dishes:['Flamenquín','Salmorejo','Rabo de toro','Croquetas','Mazamorra','Carrillada','Berenjenas','Pisto'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']],placeholder:'Flamenquín, salmorejo, carrillada…'},
+ comida:{label:'Comer',emoji:'🍽️',budgets:[10,15,20,30,50],dishes:['Flamenquín','Salmorejo','Rabo de toro','Croquetas','Mazamorra','Carrillada','Berenjenas','Pisto','Pescados y mariscos','Carnes y asados','Bocadillos y sándwiches','Guisos y cocina tradicional','Verduras y ensaladas','Tapas y raciones','Postres y dulces'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']],placeholder:'Flamenquín, salmorejo, carrillada…'},
  merienda:{label:'Merendar',emoji:'🥐',budgets:[3,5,8,12],dishes:['Churros','Chocolate','Pasteles','Tartas','Tostadas','Bollería','Café'],portions:[['unidad','Unidad'],['racion','Ración'],['combinado','Merienda combinada']],placeholder:'Churros con chocolate, pasteles…'},
- cena:{label:'Cenar',emoji:'🌙',budgets:[10,15,20,30,50],dishes:['Tapas','Flamenquín','Croquetas','Tortilla','Rabo de toro','Salmorejo'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']],placeholder:'Tapas, tortilla, croquetas…'}
+ cena:{label:'Cenar',emoji:'🌙',budgets:[10,15,20,30,50],dishes:['Tapas','Flamenquín','Croquetas','Tortilla','Rabo de toro','Salmorejo','Pescados y mariscos','Carnes y asados','Bocadillos y sándwiches','Guisos y cocina tradicional','Verduras y ensaladas','Tapas y raciones','Postres y dulces'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']],placeholder:'Tapas, tortilla, croquetas…'}
 };
 
 // Explanations are general cultural guidance, not claims about individual menus.
@@ -538,6 +538,8 @@ function showPlace(p,scroll=true){
 
  panel.append(mapButton(p));
  const map=document.createElement('a');map.href=placeMapUrl(p);map.target='_blank';map.rel='noopener noreferrer';map.textContent='Abrir en Google Maps ↗';panel.append(map);
+ if(p.menuPriceNotice){const notice=document.createElement('p');notice.className='service-notice';notice.textContent=p.menuPriceNotice;panel.append(notice);}
+ if(p.id==='casa-rubio'&&p.menuNotes?.length){const note=document.createElement('p');note.className='note';note.textContent=p.menuNotes[0];panel.append(note);}
  const menu=menuGroups(p);
  const heading=document.createElement('h3');heading.textContent='Carta y especialidades';panel.append(heading);
  if(menu.groups.length){
@@ -665,7 +667,17 @@ const QUICK_DISHES=[
  {name:'Mazamorra',icon:'🥣'}, {name:'Carrillada',icon:'🍖'},
  {name:'Berenjenas',icon:'🍆'}, {name:'Pisto',icon:'🍳'}
 ];
+const FOOD_CATEGORY_PATTERNS={
+ 'pescados y mariscos':/atun|bacalao|chipiron|rosada|sardina|anchoa|boqueron|salmon|merluza|gamba|langostino|pulpo|calamar|mejillon|pez espada|rape|lubina|dorada/,
+ 'carnes y asados':/solomillo|pluma iberica|cordero|lomo de vaca|chuleton|entrecot|costilla|asado|cochinillo|secreto iberico|presa iberica|codillo|parrilla/,
+ 'bocadillos y sandwiches':/bocadillo|sandwich|serranito|montadito|mollete|bikini/,
+ 'guisos y cocina tradicional':/rabo de toro|carrillad|estofad|guiso|cocido|potaje|lenteja|puchero|alb[oó]ndiga|caldereta/,
+ 'verduras y ensaladas':/ensalada|tomate|berenjena|alcachofa|puerro|verdura|hortaliza|pisto|gazpacho/,
+ 'tapas y raciones':/croqueta|bravas|gilda|tortilla|flamenquin|salmorejo|mazamorra|ensaladilla|empanada|tapa|racion|patatas chips/,
+ 'postres y dulces':/tarta|brownie|torrija|pastel|helado|tocino de cielo|flan|gofre|tortita|cookie|dulce|bolleria/
+};
 function recommendationDishMatches(dish,term){
+ if(FOOD_CATEGORY_PATTERNS[term])return FOOD_CATEGORY_PATTERNS[term].test(clean(dish));
  const value=clean(dish);
  // Las categorías de acceso rápido admiten singular/plural, pero no coincidencias
  // semánticamente erróneas: un brownie no es chocolate a la taza.
