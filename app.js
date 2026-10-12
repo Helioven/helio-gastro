@@ -418,7 +418,7 @@ function menuGroups(p){
   const label=menuDishName(item),key=clean(label);
   let group=groups.find(g=>g.key===key);
   if(!group){group={key,label,prices:[]};groups.push(group)}
-  group.prices.push(item);
+  if(!group.prices.some(price=>price.dish===item.dish&&price.eur===item.eur&&portionOf(price)===portionOf(item)))group.prices.push(item);
  }
  const unpriced=p.dishes.filter(d=>{
   const key=clean(d);
@@ -444,7 +444,7 @@ function showPlace(p,scroll=true){
   const list=document.createElement('div');list.className='menu-groups';
   for(const group of menu.groups){
    const entry=document.createElement('section');entry.className='menu-dish';
-   const name=document.createElement('h4');name.textContent=group.label;entry.append(name);appendDetailExplanation(entry,group.label);
+   const name=document.createElement('h4');name.dataset.keepDishSpanish='';name.textContent=group.label;entry.append(name);appendDetailExplanation(entry,group.label);
    for(const price of group.prices){
     const row=document.createElement('div');row.className='menu-price-row';
     const portion=document.createElement('span');portion.textContent=localizedPortion(portionOf(price));
@@ -458,7 +458,7 @@ function showPlace(p,scroll=true){
  if(menu.unpriced.length){
   const label=document.createElement('h4');label.className='menu-unpriced-title';label.textContent='Otras especialidades · precios pendientes';panel.append(label);
   const unpriced=document.createElement('ul');unpriced.className='menu-unpriced';
-  for(const dish of menu.unpriced){const li=document.createElement('li');const name=document.createElement('span');name.textContent=dish;li.append(name);appendDetailExplanation(li,dish);unpriced.append(li)}
+  for(const dish of menu.unpriced){const li=document.createElement('li');const name=document.createElement('span');name.dataset.keepDishSpanish='';name.textContent=dish;li.append(name);appendDetailExplanation(li,dish);unpriced.append(li)}
   panel.append(unpriced);
  }else if(!menu.groups.length){
   const msg=document.createElement('p');msg.className='note';msg.textContent='Aún no tenemos especialidades registradas para este local.';panel.append(msg);
