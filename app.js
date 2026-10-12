@@ -624,6 +624,32 @@ function renderRecommendations(){
   btn.append(label,description,count);btn.addEventListener('click',()=>showRecommendations(dish.name));deck.append(btn);
  }
 }
+function recommendationCompareButton(p){
+ const button=document.createElement('button');
+ button.type='button';
+ button.dataset.comparePlaceId=p.id;
+ const refresh=()=>{
+  const selected=state.selected.has(p.id);
+  button.textContent=selected?'✓ Quitar del comparador':'+ Comparar';
+  button.setAttribute('aria-pressed',String(selected));
+ };
+ refresh();
+ button.addEventListener('click',()=>{
+  if(state.selected.has(p.id))state.selected.delete(p.id);
+  else if(state.selected.size<3)state.selected.add(p.id);
+  else {window.alert('Puedes comparar hasta tres sitios. Quita uno antes de añadir otro.');return}
+  state.searched=state.searched||state.selected.size>0;
+  el('compare-section').hidden=state.selected.size===0;
+  compare();updateQuickNav();saveSearch();
+  document.querySelectorAll('#recommendation-results [data-compare-place-id]').forEach(node=>{
+   const selected=state.selected.has(node.dataset.comparePlaceId);
+   node.textContent=selected?'✓ Quitar del comparador':'+ Comparar';
+   node.setAttribute('aria-pressed',String(selected));
+  });
+  if(!el('results-section').hidden)draw();
+ });
+ return button;
+}
 function openRecommendationPlace(p){
  el('recommendation-dialog').close();
  showPlace(p);
@@ -674,13 +700,13 @@ function showRecommendations(dishName){
    card.append(list);
    const actions=document.createElement('div');actions.className='recommendation-place-actions';
    const more=document.createElement('button');more.type='button';more.textContent='Ver ficha';more.addEventListener('click',()=>openRecommendationPlace(place));
-   actions.append(more,mapButton(place));card.append(actions);panel.append(card);
+   actions.append(more,mapButton(place),recommendationCompareButton(place));card.append(actions);panel.append(card);
   }
  }
  const known=new Set(data.priced.map(x=>x.p.id)),unknown=data.matches.filter(p=>!known.has(p.id));
  if(unknown.length){
   const heading=document.createElement('h3');heading.textContent='También ofrecen el plato · precio pendiente';panel.append(heading);
-  for(const p of unknown){const row=document.createElement('div');row.className='recommendation-row';const name=document.createElement('span');name.textContent=p.name;const btn=document.createElement('button');btn.type='button';btn.textContent='Ver ficha';btn.addEventListener('click',()=>openRecommendationPlace(p));row.append(name,btn,mapButton(p));panel.append(row)}
+  for(const p of unknown){const row=document.createElement('div');row.className='recommendation-row';const name=document.createElement('span');name.textContent=p.name;const btn=document.createElement('button');btn.type='button';btn.textContent='Ver ficha';btn.addEventListener('click',()=>openRecommendationPlace(p));row.append(name,btn,mapButton(p),recommendationCompareButton(p));panel.append(row)}
  }
  el('recommendation-dialog').showModal();
 }
