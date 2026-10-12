@@ -1254,23 +1254,43 @@
       {
         "service": "desayuno",
         "dishes": [
-          "Tostadas",
           "Tostada clásica",
           "Tostada especial",
+          "Tostada gratinada",
           "Café solo",
           "Café con leche",
           "Croissant de york y queso"
         ],
         "dishPrices": [
           {
-            "dish": "Tostada clásica",
+            "dish": "Media tostada clásica",
             "eur": 2,
-            "portion": "desconocida"
+            "portion": "media-tostada"
           },
           {
-            "dish": "Tostada especial",
+            "dish": "Tostada entera clásica",
             "eur": 3,
-            "portion": "desconocida"
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Media tostada especial",
+            "eur": 3,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada entera especial",
+            "eur": 4.5,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Media tostada gratinada",
+            "eur": 3,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada entera gratinada",
+            "eur": 4.5,
+            "portion": "tostada-entera"
           },
           {
             "dish": "Café solo",
@@ -1292,16 +1312,47 @@
       {
         "service": "merienda",
         "dishes": [
-          "Tartas",
-          "Tarta de queso",
-          "Brownie de chocolate con helado",
           "Bollería",
+          "Dulces por porción",
           "Cookies rellenas",
-          "Café solo",
+          "Brownie de chocolate con helado",
+          "Pastel cordobés (porción)",
+          "Tartas (porción)",
+          "Tarta de queso",
           "Gofres",
-          "Tortitas"
+          "Tortitas",
+          "Bowl de yogur griego",
+          "Copa de helado",
+          "Pizzella de cuatro quesos",
+          "Pizzella de york y queso",
+          "Café solo"
         ],
         "dishPrices": [
+          {
+            "dish": "Bollería",
+            "eur": 3,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Dulces por porción",
+            "eur": 3,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Cookies rellenas",
+            "eur": 4,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Brownie de chocolate con helado",
+            "eur": 5.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Pastel cordobés (porción)",
+            "eur": 4,
+            "portion": "unidad"
+          },
           {
             "dish": "Tartas (porción)",
             "eur": 5.5,
@@ -1313,26 +1364,6 @@
             "portion": "unidad"
           },
           {
-            "dish": "Brownie de chocolate con helado",
-            "eur": 5.5,
-            "portion": "unidad"
-          },
-          {
-            "dish": "Bollería",
-            "eur": 3,
-            "portion": "unidad"
-          },
-          {
-            "dish": "Cookies rellenas",
-            "eur": 4,
-            "portion": "unidad"
-          },
-          {
-            "dish": "Café solo",
-            "eur": 2.2,
-            "portion": "unidad"
-          },
-          {
             "dish": "Gofres",
             "eur": 6,
             "portion": "unidad"
@@ -1341,9 +1372,41 @@
             "dish": "Tortitas",
             "eur": 7.5,
             "portion": "unidad"
+          },
+          {
+            "dish": "Bowl de yogur griego",
+            "eur": 10,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Copa de helado",
+            "eur": 4.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Pizzella de cuatro quesos",
+            "eur": 6,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Pizzella de york y queso",
+            "eur": 6,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Café solo",
+            "eur": 2.2,
+            "portion": "unidad"
           }
         ]
       }
+    ],
+    "menuNotes": [
+      "Tostadas: elegir pan de chapata, lino, bollo o sin gluten. Extra clásico +0,50 €; extra especial +2 €.",
+      "Tostada clásica: aceite, mantequilla, mermelada, tomate, paté, crema de queso, crema de york, zurrapa o sobrasada.",
+      "Tostada especial: jamón serrano, york, queso, aguacate, salmón o atún.",
+      "Tostada gratinada: queso, york, bacon, atún o tomate.",
+      "La carta ofrece sándwiches, croissants, tapas y bocadillos; horario de servicio no documentado."
     ]
   },
   {
