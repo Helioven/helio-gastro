@@ -43,7 +43,50 @@ function piscatoriaSavouryExplanation(name){
  ];
  return items.find(([re])=>re.test(n))?.[1]||'';
 }
+function casaRubioExplanation(name){
+ const n=clean(name);
+ const rules=[
+ [/^jamon 100/,'100% Iberian field-raised cured ham, sliced to order.'],
+ [/^queso curado/,'Mature sheep’s cheese from Fuente Obejuna, Córdoba.'],
+ [/^mixto de jamon/,'Platter of Iberian cured ham and sheep’s cheese.'],
+ [/^salmorejo/,'Chilled Cordoban tomato-and-bread cream with ham and egg.'],
+ [/^mazamorra/,'Chilled almond cream with green apple and raisins soaked in Pedro Ximénez wine.'],
+ [/^vaso de gazpacho/,'300 ml glass of chilled tomato gazpacho.'],
+ [/^tosta de anchoa/,'Cantabrian anchovy on crisp bread with sheep’s milk butter.'],
+ [/^tosta de sardina/,'Sardine on crisp bread with salmorejo.'],
+ [/^ensaladilla/,'Potato and tuna salad with octopus carpaccio and paprika.'],
+ [/^boquerones en vinagre/,'Vinegar-marinated anchovies with spring onion and dried olives.'],
+ [/^bravas/,'Spiced potatoes topped with aioli foam.'],
+ [/^berenjenas/,'Battered aubergines with sugar-cane syrup.'],
+ [/^croquetas/,'Creamy stew-meat and Iberian ham croquettes; menu lists portions of 3, 6 or 9.'],
+ [/^flamenquin/,'Cordoban breaded pork-and-ham roll with Parmesan powder and potatoes.'],
+ [/^tomate de temporada/,'Seasonal tomato with spring onion and tuna loin.'],
+ [/^ensalada de hortalizas/,'Seasonal vegetable salad.'],
+ [/^ensalada de salmon/,'Smoked salmon and avocado salad with lime vinaigrette.'],
+ [/^puerros/,'Confit and roasted leeks with carbonara, Parmesan and crispy pork crackling.'],
+ [/^alcachofas/,'Two artichokes with foie-gras béchamel and Iberian ham.'],
+ [/^atun rojo/,'Bluefin tuna with sautéed seasonal vegetables.'],
+ [/^bacalao premium/,'Premium cod with tomato sauce and sautéed green beans.'],
+ [/^chipirones/,'Fried baby squid with citrus mayonnaise.'],
+ [/^bacalao frito/,'Fried cod.'],
+ [/^rosada/,'Fried pink cusk-eel with lemon.'],
+ [/^cordero sefardi/,'Sephardic-style lamb with vegetable couscous.'],
+ [/^solomillo/,'Grilled acorn-fed Iberian pork tenderloin with green sauce.'],
+ [/^pluma iberica/,'Acorn-fed Iberian pork pluma with confit piquillo peppers.'],
+ [/^lomo de vaca/,'Dry-aged beef loin, 300 g.'],
+ [/^albondigas/,'Beef meatballs in sauce with potatoes; menu lists 3 or 5 pieces.'],
+ [/^rabo de toro/,'Slow-braised oxtail with potatoes.'],
+ [/^torrija/,'Brioche French toast with meringue-milk ice cream.'],
+ [/^tarta de queso/,'Creamy homemade cheesecake with blue cheese.'],
+ [/^brownie/,'Chocolate brownie with vanilla ice cream.'],
+ [/^tocino de cielo/,'Caramelised egg-yolk custard with lemon sorbet.'],
+ [/^pastel cordobes/,'Traditional Cordoban pastry filled with sweet pumpkin preserve.'],
+ [/^helado de turron/,'Spanish nougat ice cream.']
+ ];
+ return rules.find(([re])=>re.test(n))?.[1]||'';
+}
 function detailDishExplanation(name,placeId=''){
+ if(placeId==='casa-rubio'){const description=casaRubioExplanation(name);if(description)return description;}
  if(placeId==='la-piscatoria'){const description=piscatoriaSavouryExplanation(name);if(description)return description;}
  if(placeId==='la-piscatoria'){const description=piscatoriaSweetExplanation(name);if(description)return description;}
  if(placeId==='la-piscatoria'&&/tostada/i.test(name)){
@@ -564,8 +607,8 @@ function showPlace(p,scroll=true){
  }
  if(menu.unpriced.length){
   const label=document.createElement('h4');label.className='menu-unpriced-title';label.textContent='Otras especialidades · precios pendientes';panel.append(label);
-  const unpriced=document.createElement('ul');unpriced.className='menu-unpriced';
-  for(const dish of menu.unpriced){const li=document.createElement('li');const name=document.createElement('span');name.dataset.keepDishSpanish='';name.textContent=dish;li.append(name);appendDetailExplanation(li,dish,p.id);unpriced.append(li)}
+  const unpriced=document.createElement(p.id==='casa-rubio'?'div':'ul');unpriced.className=p.id==='casa-rubio'?'menu-groups':'menu-unpriced';
+  for(const dish of menu.unpriced){const li=document.createElement(p.id==='casa-rubio'?'section':'li');if(p.id==='casa-rubio')li.className='menu-dish';const name=document.createElement(p.id==='casa-rubio'?'h4':'span');name.dataset.keepDishSpanish='';name.textContent=dish;li.append(name);appendDetailExplanation(li,dish,p.id);unpriced.append(li)}
   panel.append(unpriced);
  }else if(!menu.groups.length){
   const msg=document.createElement('p');msg.className='note';msg.textContent='Aún no tenemos especialidades registradas para este local.';panel.append(msg);
