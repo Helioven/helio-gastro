@@ -465,7 +465,9 @@ function menuDishName(item){
 function menuGroups(p){
  const groups=[];
  for(const item of dishPrices(p)){
-  const label=menuDishName(item),key=clean(label);
+  let label=menuDishName(item);
+  if(p.id==='cafeteria-bar-la-jineta'&&/tostada/i.test(item.dish))label='Tostada '+(clean(item.dish).match(/\b(basica|untar|mixta|gratinada)\b/)||[])[1];
+  const key=clean(label);
   let group=groups.find(g=>g.key===key);
   if(!group){group={key,label,prices:[]};groups.push(group)}
   if(!group.prices.some(price=>price.dish===item.dish&&price.eur===item.eur&&portionOf(price)===portionOf(item)))group.prices.push(item);
@@ -503,7 +505,7 @@ function showPlace(p,scroll=true){
    const name=document.createElement('h4');name.dataset.keepDishSpanish='';name.textContent=group.label;entry.append(name);appendDetailExplanation(entry,group.label);
    for(const price of group.prices){
     const row=document.createElement('div');row.className='menu-price-row';
-    const portion=document.createElement('span');portion.textContent=localizedPortion(portionOf(price));
+    const portion=document.createElement('span');portion.textContent=p.id==='cafeteria-bar-la-jineta'&&/tostada/i.test(price.dish)?(portionOf(price)==='media-tostada'?'Media tostada':'Tostada entera')+(clean(price.dish).includes('sin cafe')?' · Sin café':' · Con café'):localizedPortion(portionOf(price));
     const amount=document.createElement('strong');amount.textContent=fmt(price.eur);
     row.append(portion,amount);entry.append(row);
    }
