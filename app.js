@@ -460,6 +460,7 @@ function menuGroups(p){
   if(!group.prices.some(price=>price.dish===item.dish&&price.eur===item.eur&&portionOf(price)===portionOf(item)))group.prices.push(item);
  }
  const unpriced=p.dishes.filter(d=>{
+  if(d.includes('(disponibilidad en merienda por confirmar)'))return false;
   const key=clean(d);
   // A priced variant may have a different descriptive suffix or prefix.
   // Only collapse clear word-boundary matches; never infer a price for a distinct dish.
