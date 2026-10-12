@@ -631,8 +631,8 @@ function showRecommendations(dishName){
    const list=document.createElement('ul');list.className='recommendation-place-items';
    for(const entry of items.sort((a,b)=>a.item.eur-b.item.eur)){
     const line=document.createElement('li');
-    const label=document.createElement('span');label.textContent=entry.item.dish;
-    const explanation=detailDishExplanation(entry.item.dish);
+    const label=document.createElement('span');label.dataset.keepDishSpanish='';label.textContent=entry.item.dish;
+    const explanation=detailDishExplanation(entry.item.dish)||(clean(entry.item.dish)==='pasteles'?dishExplanation('Pasteles'):'');
     if(explanation){const info=document.createElement('small');info.className='dish-explanation detail-dish-explanation';info.dataset.dishExplanation='';info.textContent=explanation;info.hidden=window.HelioGastroLanguage?.get()!=='en';label.append(document.createElement('br'),info);}
     const format=document.createElement('small');format.className='portion-tag';format.textContent=localizedPortion(entry.portion);
     const price=document.createElement('strong');price.textContent=fmt(entry.item.eur);
