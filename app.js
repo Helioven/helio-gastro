@@ -12,7 +12,19 @@ const MODE_CONFIG={
 const DISH_EXPLANATIONS_EN={"Flamenquín":"Breaded rolled meat, a Córdoba speciality; fillings vary.","Salmorejo":"Thick chilled tomato and bread soup, traditionally served with toppings.","Rabo de toro":"Slow-braised oxtail stew.","Croquetas":"Crisp, breaded croquettes with a creamy filling.","Mazamorra":"Chilled almond and bread cream, a traditional Córdoba dish.","Carrillada":"Slow-cooked pork or beef cheeks.","Berenjenas":"Aubergine dishes; preparation varies by restaurant.","Pisto":"Spanish vegetable stew, usually made with seasonal vegetables.","Bollería":"Sweet baked goods and breakfast pastries, such as croissants, muffins and filled pastries.","Tostadas":"Toasted bread, usually served with olive oil, tomato, butter or ham.","Churros":"Fried dough pastries, often served with hot chocolate.","Molletes":"Soft Andalusian bread rolls, commonly toasted with olive oil and tomato.","Café":"Coffee drinks, such as espresso and café con leche (coffee with milk).","Chocolate":"Thick Spanish-style hot chocolate, often served as a dip for churros.","Pasteles":"Individual sweet pastries, such as custard slices, cream-filled pastries and fruit tartlets.","Tartas":"Slices of cakes and cheesecakes; flavours and serving sizes vary.","Tapas":"Small portions of food served as snacks or shared dishes.","Tortilla":"Spanish potato omelette; ingredients can vary."};
 function dishExplanation(name){return DISH_EXPLANATIONS_EN[name]||'';}
 
+function piscatoriaSweetExplanation(name){
+ const n=clean(name);
+ if(n==='bolleria')return 'Choose from croissant, chocolate napolitana, chocolate horseshoe pastry or puff-pastry palmier; selection may vary.';
+ if(n==='dulces por porcion')return 'Choose from mille-feuille, ensaimada, tocino de cielo or cream-filled choux pastry; selection may vary.';
+ if(n.includes('pastel cordobes'))return 'Cordoban pastry: classic, nuts and raisins, pistachio or Lotus varieties.';
+ if(n.includes('bowl de yogur griego'))return 'Greek yoghurt with a choice of seasonal fruit, granola, honey, flax or chia seeds, pumpkin seeds, walnuts or peanut butter.';
+ if(n.includes('copa de helado'))return 'Two scoops with a choice of vanilla or chocolate ice cream and listed toppings.';
+ if(n.includes('pizzella de cuatro quesos'))return 'Four-cheese pizzella.';
+ if(n.includes('pizzella de york y queso'))return 'Pizzella with cooked ham and cheese.';
+ return '';
+}
 function detailDishExplanation(name,placeId=''){
+ if(placeId==='la-piscatoria'){const description=piscatoriaSweetExplanation(name);if(description)return description;}
  if(placeId==='la-piscatoria'&&/tostada/i.test(name)){
   const n=clean(name);
   if(n.includes('clasica'))return 'Choose olive oil, butter, jam, tomato, pâté, cream cheese, cooked ham spread, pork spread or sobrasada.';
@@ -516,15 +528,15 @@ function showPlace(p,scroll=true){
     const row=document.createElement('div');row.className='menu-price-row';
     const portion=document.createElement('span');portion.textContent=p.id==='cafeteria-bar-la-jineta'&&/tostada/i.test(price.dish)?(portionOf(price)==='media-tostada'?'Media tostada':'Tostada entera')+(clean(price.dish).includes('sin cafe')?' · Sin café':' · Con café'):localizedPortion(portionOf(price));
     const amount=document.createElement('strong');amount.textContent=fmt(price.eur);
+    if(p.id==='la-piscatoria'&&group.prices.length===1&&portionOf(price)==='unidad')portion.textContent='';
     row.append(portion,amount);entry.append(row);
    }
    list.append(entry);
+   if(p.id==='la-piscatoria'&&clean(group.label)==='tostada gratinada'&&Array.isArray(p.menuNotes)&&p.menuNotes.length){
+    const note=document.createElement('p');note.className='note';note.textContent=p.menuNotes[0];note.dataset.piscatoriaBreadNote='';list.append(note);
+   }
   }
   panel.append(list);
- }
- if(p.id==='la-piscatoria'&&Array.isArray(p.menuNotes)&&p.menuNotes.length){
-  const note=document.createElement('p');note.className='note';note.textContent=p.menuNotes[0];
-  note.dataset.piscatoriaBreadNote='';panel.append(note);
  }
  if(menu.unpriced.length){
   const label=document.createElement('h4');label.className='menu-unpriced-title';label.textContent='Otras especialidades · precios pendientes';panel.append(label);
