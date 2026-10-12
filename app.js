@@ -428,6 +428,7 @@ function menuGroups(p){
 }
 function showPlace(p,scroll=true){
  state.currentDetailId=p.id;
+ el('detail-sticky-name').textContent=p.name;
  const panel=el('detail-content');panel.replaceChildren();
  const title=document.createElement('h2');title.id='detail-title';title.tabIndex=-1;title.textContent=p.name;panel.append(title,favoriteButton(p));
  const address=document.createElement('p');address.textContent='📍 '+p.address;panel.append(address);
