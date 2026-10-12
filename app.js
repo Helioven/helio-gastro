@@ -523,7 +523,7 @@ function compare(){
   const title=document.createElement('h3');title.textContent=p.name;box.append(title,mapButton(p));
   if(Number.isFinite(p.mealCostEur)){const cost=document.createElement('p');cost.textContent='Comida completa: '+fmt(p.mealCostEur);box.append(cost);}
   const prices=relevantPrices(p,term,state.appliedScope==='dish'?state.appliedPortion:'');
-  const label=document.createElement('p');label.textContent=prices.length?'Platos con precio publicado:':'Sin precios de platos coincidentes documentados.';box.append(label);
+  const label=document.createElement('p');label.textContent=prices.length?'Platos con precio publicado:':term?'No hay precios documentados para este plato en el servicio seleccionado.':'No hay precios documentados para el servicio seleccionado.';box.append(label);
   const ul=document.createElement('ul');
   for(const item of prices){
    const li=document.createElement('li');
