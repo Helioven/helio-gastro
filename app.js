@@ -12,7 +12,8 @@ const MODE_CONFIG={
 const DISH_EXPLANATIONS_EN={"Flamenquín":"Breaded rolled meat, a Córdoba speciality; fillings vary.","Salmorejo":"Thick chilled tomato and bread soup, traditionally served with toppings.","Rabo de toro":"Slow-braised oxtail stew.","Croquetas":"Crisp, breaded croquettes with a creamy filling.","Mazamorra":"Chilled almond and bread cream, a traditional Córdoba dish.","Carrillada":"Slow-cooked pork or beef cheeks.","Berenjenas":"Aubergine dishes; preparation varies by restaurant.","Pisto":"Spanish vegetable stew, usually made with seasonal vegetables.","Bollería":"Sweet baked goods and breakfast pastries, such as croissants, muffins and filled pastries.","Tostadas":"Toasted bread, usually served with olive oil, tomato, butter or ham.","Churros":"Fried dough pastries, often served with hot chocolate.","Molletes":"Soft Andalusian bread rolls, commonly toasted with olive oil and tomato.","Café":"Coffee drinks, such as espresso and café con leche (coffee with milk).","Chocolate":"Thick Spanish-style hot chocolate, often served as a dip for churros.","Pasteles":"Individual sweet pastries, such as custard slices, cream-filled pastries and fruit tartlets.","Tartas":"Slices of cakes and cheesecakes; flavours and serving sizes vary.","Tapas":"Small portions of food served as snacks or shared dishes.","Tortilla":"Spanish potato omelette; ingredients can vary."};
 function dishExplanation(name){return DISH_EXPLANATIONS_EN[name]||'';}
 
-function detailDishExplanation(name){
+function detailDishExplanation(name,placeId=''){
+ if(placeId==='la-piscatoria'&&/tostada/i.test(name))return 'Toast; toppings and serving size not specified in the recorded menu.';
  const normalized=clean(name);
  const special=[
   [/cochifrito.*salsa brava/,'Crisp-fried pork served with brava sauce.'],
@@ -105,8 +106,8 @@ function detailDishExplanation(name){
  const found=special.find(([pattern])=>pattern.test(normalized));
  return found?found[1]:'';
 }
-function appendDetailExplanation(container,name){
- const explanation=detailDishExplanation(name);
+function appendDetailExplanation(container,name,placeId=''){
+ const explanation=detailDishExplanation(name,placeId);
  if(!explanation)return;
  const node=document.createElement('small');
  node.className='dish-explanation detail-dish-explanation';
@@ -476,6 +477,7 @@ function menuGroups(p){
   if(d.includes('(disponibilidad en merienda por confirmar)'))return false;
   const key=clean(d);
   if(p.id==='cafeteria-bar-la-jineta'&&/^tostada(?:s|\s)/.test(key)&&groups.some(g=>g.key.startsWith('tostada ')))return false;
+  if(p.id==='la-piscatoria'&&key==='tostadas'&&groups.some(g=>g.key.startsWith('tostada ')))return false;
   // A priced variant may have a different descriptive suffix or prefix.
   // Only collapse clear word-boundary matches; never infer a price for a distinct dish.
   return !groups.some(g=>g.key===key||g.key.startsWith(key+' ')||key.startsWith(g.key+' ')||
@@ -503,7 +505,7 @@ function showPlace(p,scroll=true){
   const list=document.createElement('div');list.className='menu-groups';
   for(const group of menu.groups){
    const entry=document.createElement('section');entry.className='menu-dish';
-   const name=document.createElement('h4');name.dataset.keepDishSpanish='';name.textContent=group.label;entry.append(name);appendDetailExplanation(entry,group.label);
+   const name=document.createElement('h4');name.dataset.keepDishSpanish='';name.textContent=group.label;entry.append(name);appendDetailExplanation(entry,group.label,p.id);
    for(const price of group.prices){
     const row=document.createElement('div');row.className='menu-price-row';
     const portion=document.createElement('span');portion.textContent=p.id==='cafeteria-bar-la-jineta'&&/tostada/i.test(price.dish)?(portionOf(price)==='media-tostada'?'Media tostada':'Tostada entera')+(clean(price.dish).includes('sin cafe')?' · Sin café':' · Con café'):localizedPortion(portionOf(price));
@@ -517,7 +519,7 @@ function showPlace(p,scroll=true){
  if(menu.unpriced.length){
   const label=document.createElement('h4');label.className='menu-unpriced-title';label.textContent='Otras especialidades · precios pendientes';panel.append(label);
   const unpriced=document.createElement('ul');unpriced.className='menu-unpriced';
-  for(const dish of menu.unpriced){const li=document.createElement('li');const name=document.createElement('span');name.dataset.keepDishSpanish='';name.textContent=dish;li.append(name);appendDetailExplanation(li,dish);unpriced.append(li)}
+  for(const dish of menu.unpriced){const li=document.createElement('li');const name=document.createElement('span');name.dataset.keepDishSpanish='';name.textContent=dish;li.append(name);appendDetailExplanation(li,dish,p.id);unpriced.append(li)}
   panel.append(unpriced);
  }else if(!menu.groups.length){
   const msg=document.createElement('p');msg.className='note';msg.textContent='Aún no tenemos especialidades registradas para este local.';panel.append(msg);
