@@ -13,7 +13,12 @@ const DISH_EXPLANATIONS_EN={"Flamenquín":"Breaded rolled meat, a Córdoba speci
 function dishExplanation(name){return DISH_EXPLANATIONS_EN[name]||'';}
 
 function detailDishExplanation(name,placeId=''){
- if(placeId==='la-piscatoria'&&/tostada/i.test(name))return 'Toast; toppings and serving size not specified in the recorded menu.';
+ if(placeId==='la-piscatoria'&&/tostada/i.test(name)){
+  const n=clean(name);
+  if(n.includes('clasica'))return 'Choose olive oil, butter, jam, tomato, pâté, cream cheese, cooked ham spread, pork spread or sobrasada.';
+  if(n.includes('especial'))return 'Choose Serrano ham, cooked ham, cheese, avocado, salmon or tuna.';
+  if(n.includes('gratinada'))return 'Gratinated toast: choose cheese, cooked ham, bacon, tuna or tomato.';
+ }
  const normalized=clean(name);
  const special=[
   [/cochifrito.*salsa brava/,'Crisp-fried pork served with brava sauce.'],
@@ -468,6 +473,7 @@ function menuGroups(p){
  for(const item of dishPrices(p)){
   let label=menuDishName(item);
   if(p.id==='cafeteria-bar-la-jineta'&&/tostada/i.test(item.dish))label='Tostada '+(clean(item.dish).match(/\b(basica|untar|mixta|gratinada)\b/)||[])[1];
+  if(p.id==='la-piscatoria'&&/tostada/i.test(item.dish))label='Tostada '+(clean(item.dish).match(/\b(clasica|especial|gratinada)\b/)||[])[1];
   const key=clean(label);
   let group=groups.find(g=>g.key===key);
   if(!group){group={key,label,prices:[]};groups.push(group)}
@@ -497,6 +503,7 @@ function showPlace(p,scroll=true){
   hours.textContent='🕒 '+p.openingHoursNote;panel.append(hours);
  }
 
+ if(Array.isArray(p.menuNotes)&&p.menuNotes.length){const notes=document.createElement('ul');notes.className='menu-notes';for(const note of p.menuNotes){const li=document.createElement('li');li.textContent=note;notes.append(li)}panel.append(notes)}
  panel.append(mapButton(p));
  const map=document.createElement('a');map.href=placeMapUrl(p);map.target='_blank';map.rel='noopener noreferrer';map.textContent='Abrir en Google Maps ↗';panel.append(map);
  const menu=menuGroups(p);
