@@ -1399,6 +1399,127 @@
             "portion": "unidad"
           }
         ]
+      },
+      {
+        "service": "general",
+        "dishes": [
+          "Pincho de tortilla",
+          "Gilda",
+          "Caña de lomo",
+          "Jamón ibérico 50% cebo",
+          "Queso (media)",
+          "Queso (ración)",
+          "Mejillones en escabeche (media)",
+          "Mejillones en escabeche (ración)",
+          "Patatas fritas chips",
+          "Empanada criolla de ternera",
+          "Tacos de salchichón con almendras fritas",
+          "Sándwich bikini de york y queso",
+          "Croissant de york y queso",
+          "Sándwich o croissant a tu gusto",
+          "Bocadillo serranito",
+          "Bocadillo de tortilla de patatas",
+          "Bocadillo de bacon y queso",
+          "Bocadillo de pollo y queso",
+          "Bocadillo de jamón y brie"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Pincho de tortilla",
+            "eur": 4,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Gilda",
+            "eur": 3,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Caña de lomo",
+            "eur": 14,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Jamón ibérico 50% cebo",
+            "eur": 14,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Queso (media)",
+            "eur": 7,
+            "portion": "media"
+          },
+          {
+            "dish": "Queso (ración)",
+            "eur": 12,
+            "portion": "racion"
+          },
+          {
+            "dish": "Mejillones en escabeche (media)",
+            "eur": 7,
+            "portion": "media"
+          },
+          {
+            "dish": "Mejillones en escabeche (ración)",
+            "eur": 12,
+            "portion": "racion"
+          },
+          {
+            "dish": "Patatas fritas chips",
+            "eur": 2,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Empanada criolla de ternera",
+            "eur": 4,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tacos de salchichón con almendras fritas",
+            "eur": 12,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Sándwich bikini de york y queso",
+            "eur": 4.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Croissant de york y queso",
+            "eur": 4.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Sándwich o croissant a tu gusto",
+            "eur": 6.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bocadillo serranito",
+            "eur": 6,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bocadillo de tortilla de patatas",
+            "eur": 6,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bocadillo de bacon y queso",
+            "eur": 6,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bocadillo de pollo y queso",
+            "eur": 6,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bocadillo de jamón y brie",
+            "eur": 6,
+            "portion": "unidad"
+          }
+        ]
       }
     ],
     "menuNotes": [
