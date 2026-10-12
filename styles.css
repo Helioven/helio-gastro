@@ -80,15 +80,17 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 .search-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px}.search-actions .primary{flex:1 1 220px}.clear-search-button{border:1px solid #86a5bf;background:#173753;color:#e3f4fc;border-radius:10px;padding:12px 15px;min-height:44px;cursor:pointer;font-weight:700}
 
 /* 2.5.2: recomendaciones en diálogo modal, sin alargar la portada */
-#recommendation-dialog{width:min(850px,calc(100vw - 26px));max-height:min(88vh,950px);overflow-y:auto;box-sizing:border-box;margin:auto;padding:20px;border:1px solid #7296b2;border-radius:16px;background:#122c45;color:#f0f7fc;box-shadow:0 16px 80px #0009}
+#recommendation-dialog{width:min(850px,calc(100vw - 26px));height:min(88dvh,950px);max-height:88dvh;overflow:hidden;box-sizing:border-box;margin:auto;padding:0;border:1px solid #7296b2;border-radius:16px;background:#122c45;color:#f0f7fc;box-shadow:0 16px 80px #0009;flex-direction:column}
 #recommendation-dialog::backdrop{background:rgba(3,12,24,.82)}
 #recommendation-dialog:not([open]){display:none}
-.recommendation-dialog-head{position:sticky;top:-20px;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:1px solid #50718e;padding:12px 0 10px;background:#122c45}
+#recommendation-dialog[open]{display:flex}
+.recommendation-dialog-body{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:20px;scrollbar-gutter:stable}
+.recommendation-dialog-head{flex:0 0 auto;display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:1px solid #50718e;padding:16px 20px 12px;background:#122c45}
 .recommendation-dialog-head h2{font-size:20px;margin:0;color:#ffdfae}
 .recommendation-dialog-head button{flex-shrink:0}
 #recommendation-dialog h3{font-size:17px;color:#ffdfae;margin:17px 0 8px}
 #recommendation-dialog h4{font-size:13px;color:#c6e2f2;margin:14px 0 6px}
-@media(max-width:530px){#recommendation-dialog{padding:13px;max-height:92dvh}.recommendation-dialog-head{top:-13px}.recommendation-dialog-head h2{font-size:17px}}
+@media(max-width:530px){#recommendation-dialog{height:92dvh;max-height:92dvh}.recommendation-dialog-head{padding:13px}.recommendation-dialog-body{padding:13px}.recommendation-dialog-head h2{font-size:17px}}
 
 /* 2.6 mapas bajo demanda y rutas externas */
 .map-button{background:#235a78;color:#e7f7ff;border:1px solid #77a1b8;border-radius:9px;min-height:39px;padding:8px 11px;cursor:pointer;margin:5px 7px 5px 0}
