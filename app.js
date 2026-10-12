@@ -568,6 +568,28 @@ function menuGroups(p){
  });
  return {groups,unpriced};
 }
+function renderVenueMenuSections(panel,p){
+ const note=document.createElement('p');note.className='service-notice';
+ note.textContent=p.menuSourceNote||'';panel.append(note);
+ for(const section of p.menuSections){
+  const heading=document.createElement('h3');heading.textContent=section.title;panel.append(heading);
+  const list=document.createElement('div');list.className='menu-groups';
+  for(const dish of section.items){
+   const entry=document.createElement('section');entry.className='menu-dish';
+   const title=document.createElement('h4');title.dataset.keepDishSpanish='';title.textContent=dish.name;entry.append(title);
+   if(dish.en){const description=document.createElement('small');description.className='dish-explanation detail-dish-explanation';description.dataset.dishExplanation='';description.textContent=dish.en;description.hidden=window.HelioGastroLanguage?.get()!=='en';entry.append(description);}
+   for(const price of dish.prices){
+    const row=document.createElement('div');row.className='menu-price-row';
+    const label=document.createElement('span');label.textContent=price.label;
+    const amount=document.createElement('strong');amount.textContent=fmt(price.eur);
+    row.append(label,amount);entry.append(row);
+   }
+   list.append(entry);
+  }
+  panel.append(list);
+  if(section.note){const foot=document.createElement('p');foot.className='note';foot.textContent=section.note;panel.append(foot);}
+ }
+}
 function showPlace(p,scroll=true){
  state.currentDetailId=p.id;
  el('detail-sticky-name').textContent=p.name;
@@ -583,6 +605,8 @@ function showPlace(p,scroll=true){
  const map=document.createElement('a');map.href=placeMapUrl(p);map.target='_blank';map.rel='noopener noreferrer';map.textContent='Abrir en Google Maps ↗';panel.append(map);
  if(p.menuPriceNotice){const notice=document.createElement('p');notice.className='service-notice';notice.textContent=p.menuPriceNotice;panel.append(notice);}
  if(p.id==='casa-rubio'&&p.menuNotes?.length){const note=document.createElement('p');note.className='note';note.textContent=p.menuNotes[0];panel.append(note);}
+ if(Array.isArray(p.menuSections)&&p.menuSections.length)renderVenueMenuSections(panel,p);
+ else {
  const menu=menuGroups(p);
  const heading=document.createElement('h3');heading.textContent='Carta y especialidades';panel.append(heading);
  if(menu.groups.length){
@@ -612,6 +636,7 @@ function showPlace(p,scroll=true){
   panel.append(unpriced);
  }else if(!menu.groups.length){
   const msg=document.createElement('p');msg.className='note';msg.textContent='Aún no tenemos especialidades registradas para este local.';panel.append(msg);
+ }
  }
  if(Number.isFinite(p.mealCostEur)){const total=document.createElement('p');total.textContent='Comida completa por persona: '+fmt(p.mealCostEur);panel.append(total)}
  else{const caveat=document.createElement('p');caveat.className='note';caveat.textContent='El coste total de comer aquí no está documentado. Los precios de platos no incluyen necesariamente bebida ni extras.';panel.append(caveat)}
