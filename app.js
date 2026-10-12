@@ -611,7 +611,7 @@ function filter(event,restoring=false){
  const area=el('area').value,kind=el('price-kind').value,scope=el('price-scope').value,includeUnknown=el('include-unknown').checked;
  state.filtered=state.places.filter(p=>{
   if(!serviceMenus(p).length)return false;
-  if(nameQuery&&!clean(p.name).includes(nameQuery))return false;
+  if(nameQuery&&!clean(p.name).includes(nameQuery)&&!(p.id==='la-piscatoria'&&['picastoria','piscatoria','la picastoria'].includes(nameQuery)))return false;
   if(dish&&!clean(serviceDishes(p).join(' ')+' '+servicePrices(p).map(d=>d.dish).join(' ')).includes(dish))return false;
   if(area&&p.area!==area)return false;
   const price=lowestPrice(p,scope,dish,state.appliedPortion);
