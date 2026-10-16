@@ -1905,8 +1905,8 @@
     "area": "Centro · María Auxiliadora",
     "address": "Calle María Auxiliadora, 25, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "priceStatus": "confirmed",
+    "checkedAt": "2026-10-16",
     "sources": [
       {
         "label": "Turismo de Córdoba: especialidades y dirección",
@@ -1915,21 +1915,1204 @@
       {
         "label": "Información del establecimiento",
         "url": "https://www.sociedadplateros.com/Paseo-del-Palacio-de-Viana-a-Plateros-de-Maria-Auxiliadora.html"
+      },
+      {
+        "label": "Carta del restaurante transcrita por el usuario, con precios publicados",
+        "url": "https://restaurantecordoba.com/"
       }
     ],
     "menus": [
       {
-        "service": "general",
+        "service": "Fríos Varios",
         "dishes": [
-          "Flamenquín de lomo y jamón",
+          "Jamón ibérico",
+          "Queso puro de oveja",
           "Salmorejo cordobés",
-          "Rabo de toro al oloroso Montilla-Moriles",
+          "Salpicón de marisco",
+          "Ensalada mixta",
+          "Ensaladilla rusa",
+          "Ensalada de col",
+          "Cogollos al ajillo",
+          "Patatas a la brava",
           "Berenjenas fritas",
-          "Bacalao"
+          "Croquetas caseras",
+          "Alcachofas a la montillana",
+          "Revuelto de papas y chorizo",
+          "Huevos de campo con papas y ajos fritos",
+          "Olivas chupadeos con aliño casero",
+          "Pieza de pan"
         ],
-        "dishPrices": []
+        "dishPrices": [
+          {
+            "dish": "Jamón ibérico",
+            "eur": 22.9,
+            "portion": "precio publicado"
+          },
+          {
+            "dish": "Queso puro de oveja",
+            "eur": 16.5,
+            "portion": "precio publicado"
+          },
+          {
+            "dish": "Salmorejo cordobés",
+            "eur": 10.9,
+            "portion": "ración"
+          },
+          {
+            "dish": "Salpicón de marisco",
+            "eur": 13.5,
+            "portion": "ración"
+          },
+          {
+            "dish": "Ensalada mixta",
+            "eur": 10.9,
+            "portion": "ración"
+          },
+          {
+            "dish": "Ensaladilla rusa",
+            "eur": 10.2,
+            "portion": "ración"
+          },
+          {
+            "dish": "Ensalada de col",
+            "eur": 7.2,
+            "portion": "ración"
+          },
+          {
+            "dish": "Cogollos al ajillo",
+            "eur": 9.5,
+            "portion": "ración"
+          },
+          {
+            "dish": "Patatas a la brava",
+            "eur": 10.5,
+            "portion": "ración"
+          },
+          {
+            "dish": "Berenjenas fritas",
+            "eur": 10.9,
+            "portion": "ración"
+          },
+          {
+            "dish": "Croquetas caseras",
+            "eur": 12.2,
+            "portion": "ración"
+          },
+          {
+            "dish": "Alcachofas a la montillana",
+            "eur": 13.5,
+            "portion": "ración"
+          },
+          {
+            "dish": "Revuelto de papas y chorizo",
+            "eur": 11.2,
+            "portion": "ración"
+          },
+          {
+            "dish": "Huevos de campo con papas y ajos fritos",
+            "eur": 10.9,
+            "portion": "ración"
+          },
+          {
+            "dish": "Olivas chupadeos con aliño casero",
+            "eur": 2,
+            "portion": "precio publicado"
+          },
+          {
+            "dish": "Pieza de pan",
+            "eur": 1,
+            "portion": "precio publicado"
+          }
+        ]
+      },
+      {
+        "service": "Pescados",
+        "dishes": [
+          "Ensalada de bacalao con naranja",
+          "Buñuelos de bacalao",
+          "Potaje de garbanzos, bacalao y chorizo",
+          "Croquetas de bacalao",
+          "Bacalao frito",
+          "Bacalao de la Posada",
+          "Perol de arroz con bacalao y chorizo",
+          "Lasaña de berenjenas y bacalao",
+          "Revuelto de bacalao dorado",
+          "Lomo de bacalao encebollado",
+          "Lomo de bacalao con almendras y langostinos",
+          "Calamares fritos",
+          "Bienmesabe en adobo (cazón)",
+          "Chanquetes",
+          "Mero frito al limón",
+          "Boquerones fritos",
+          "Tortillitas de camarón",
+          "Gambas rebozadas",
+          "Rosada a la plancha",
+          "Calamares a la plancha"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Ensalada de bacalao con naranja",
+            "eur": 13.5,
+            "portion": "ración"
+          },
+          {
+            "dish": "Buñuelos de bacalao",
+            "eur": 10.9,
+            "portion": "ración"
+          },
+          {
+            "dish": "Potaje de garbanzos, bacalao y chorizo",
+            "eur": 12.5,
+            "portion": "ración"
+          },
+          {
+            "dish": "Croquetas de bacalao",
+            "eur": 12.2,
+            "portion": "ración"
+          },
+          {
+            "dish": "Bacalao frito",
+            "eur": 15.2,
+            "portion": "ración"
+          },
+          {
+            "dish": "Bacalao de la Posada",
+            "eur": 12.5,
+            "portion": "ración"
+          },
+          {
+            "dish": "Perol de arroz con bacalao y chorizo",
+            "eur": 13.2,
+            "portion": "ración"
+          },
+          {
+            "dish": "Lasaña de berenjenas y bacalao",
+            "eur": 13.5,
+            "portion": "ración"
+          },
+          {
+            "dish": "Revuelto de bacalao dorado",
+            "eur": 12.9,
+            "portion": "ración"
+          },
+          {
+            "dish": "Lomo de bacalao encebollado",
+            "eur": 17.9,
+            "portion": "ración"
+          },
+          {
+            "dish": "Lomo de bacalao con almendras y langostinos",
+            "eur": 17.9,
+            "portion": "ración"
+          },
+          {
+            "dish": "Calamares fritos",
+            "eur": 13.2,
+            "portion": "ración"
+          },
+          {
+            "dish": "Bienmesabe en adobo (cazón)",
+            "eur": 13.2,
+            "portion": "ración"
+          },
+          {
+            "dish": "Chanquetes",
+            "eur": 13.2,
+            "portion": "ración"
+          },
+          {
+            "dish": "Mero frito al limón",
+            "eur": 13.2,
+            "portion": "ración"
+          },
+          {
+            "dish": "Boquerones fritos",
+            "eur": 13.2,
+            "portion": "ración"
+          },
+          {
+            "dish": "Tortillitas de camarón",
+            "eur": 10.9,
+            "portion": "ración"
+          },
+          {
+            "dish": "Gambas rebozadas",
+            "eur": 13.2,
+            "portion": "ración"
+          },
+          {
+            "dish": "Rosada a la plancha",
+            "eur": 15.2,
+            "portion": "ración"
+          },
+          {
+            "dish": "Calamares a la plancha",
+            "eur": 15.2,
+            "portion": "ración"
+          }
+        ]
+      },
+      {
+        "service": "Carnes",
+        "dishes": [
+          "Croquetas de rabo de toro",
+          "Flamenquín de lomo y jamón",
+          "Callos a la cordobesa",
+          "Ciervo estofado",
+          "Frito de pollo al limón",
+          "Pechuga de pollo a la plancha",
+          "Puntas de solomillo a la plancha",
+          "Puntas de solomillo a la montillana",
+          "Medallón de lomo de cerdo a la pimienta verde suave",
+          "Chuletitas de cordero del Valle de los Pedroches",
+          "Rabo de toro cordobés al oloroso",
+          "Churrasco cordobés al horno en su jugo",
+          "Carrillada ibérica con setas y tomillo al oloroso"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Croquetas de rabo de toro",
+            "eur": 13.5,
+            "portion": "ración"
+          },
+          {
+            "dish": "Flamenquín de lomo y jamón",
+            "eur": 13.2,
+            "portion": "ración"
+          },
+          {
+            "dish": "Callos a la cordobesa",
+            "eur": 13.2,
+            "portion": "ración"
+          },
+          {
+            "dish": "Ciervo estofado",
+            "eur": 13.2,
+            "portion": "ración"
+          },
+          {
+            "dish": "Frito de pollo al limón",
+            "eur": 11.2,
+            "portion": "ración"
+          },
+          {
+            "dish": "Pechuga de pollo a la plancha",
+            "eur": 10.9,
+            "portion": "ración"
+          },
+          {
+            "dish": "Puntas de solomillo a la plancha",
+            "eur": 13.9,
+            "portion": "ración"
+          },
+          {
+            "dish": "Puntas de solomillo a la montillana",
+            "eur": 14.9,
+            "portion": "ración"
+          },
+          {
+            "dish": "Medallón de lomo de cerdo a la pimienta verde suave",
+            "eur": 14.9,
+            "portion": "ración"
+          },
+          {
+            "dish": "Chuletitas de cordero del Valle de los Pedroches",
+            "eur": 17.9,
+            "portion": "ración"
+          },
+          {
+            "dish": "Rabo de toro cordobés al oloroso",
+            "eur": 17.9,
+            "portion": "ración"
+          },
+          {
+            "dish": "Churrasco cordobés al horno en su jugo",
+            "eur": 16.9,
+            "portion": "ración"
+          },
+          {
+            "dish": "Carrillada ibérica con setas y tomillo al oloroso",
+            "eur": 15.9,
+            "portion": "ración"
+          }
+        ]
+      },
+      {
+        "service": "Para los peques",
+        "dishes": [
+          "Pechuga de pollo empanada",
+          "Arroz a la cubana con salchichas y huevo frito",
+          "Salchipapa",
+          "Espaguetis a la carbonara de pasta fresca",
+          "Espaguetis a la boloñesa de pasta fresca"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Pechuga de pollo empanada",
+            "eur": 8.9,
+            "portion": "plato"
+          },
+          {
+            "dish": "Arroz a la cubana con salchichas y huevo frito",
+            "eur": 8.9,
+            "portion": "plato"
+          },
+          {
+            "dish": "Salchipapa",
+            "eur": 7.9,
+            "portion": "plato"
+          },
+          {
+            "dish": "Espaguetis a la carbonara de pasta fresca",
+            "eur": 9.9,
+            "portion": "plato"
+          },
+          {
+            "dish": "Espaguetis a la boloñesa de pasta fresca",
+            "eur": 9.9,
+            "portion": "plato"
+          }
+        ]
+      },
+      {
+        "service": "Postres",
+        "dishes": [
+          "Natillas en tulipa",
+          "Flan casero",
+          "Pudding de la casa",
+          "Arroz con leche en tulipa",
+          "Profiteroles rellenos de nata y chocolate",
+          "Naranja a la antigua",
+          "Nueces con nata y chocolate",
+          "Pastel cordobés",
+          "Tarta de chocolate",
+          "Sorbete de limón con fruta macerada («helado»)"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Natillas en tulipa",
+            "eur": 4.9,
+            "portion": "plato"
+          },
+          {
+            "dish": "Flan casero",
+            "eur": 4.9,
+            "portion": "plato"
+          },
+          {
+            "dish": "Pudding de la casa",
+            "eur": 5.5,
+            "portion": "plato"
+          },
+          {
+            "dish": "Arroz con leche en tulipa",
+            "eur": 5,
+            "portion": "plato"
+          },
+          {
+            "dish": "Profiteroles rellenos de nata y chocolate",
+            "eur": 5.9,
+            "portion": "plato"
+          },
+          {
+            "dish": "Naranja a la antigua",
+            "eur": 4.5,
+            "portion": "plato"
+          },
+          {
+            "dish": "Nueces con nata y chocolate",
+            "eur": 5.9,
+            "portion": "plato"
+          },
+          {
+            "dish": "Pastel cordobés",
+            "eur": 4.5,
+            "portion": "plato"
+          },
+          {
+            "dish": "Tarta de chocolate",
+            "eur": 5.9,
+            "portion": "plato"
+          },
+          {
+            "dish": "Sorbete de limón con fruta macerada («helado»)",
+            "eur": 5.5,
+            "portion": "plato"
+          }
+        ]
       }
-    ]
+    ],
+    "menuSections": [
+      {
+        "title": "Fríos Varios",
+        "items": [
+          {
+            "name": "Jamón ibérico",
+            "description": "Jamón ibérico curado, presentado como de bellota en el texto asociado; categoría pendiente de confirmar.",
+            "en": "Cured Iberian ham; accompanying text describes it as acorn-fed, pending confirmation.",
+            "prices": [
+              {
+                "label": "precio publicado",
+                "eur": 22.9
+              }
+            ]
+          },
+          {
+            "name": "Queso puro de oveja",
+            "description": "Queso elaborado con leche de oveja.",
+            "en": "Sheep's milk cheese.",
+            "prices": [
+              {
+                "label": "precio publicado",
+                "eur": 16.5
+              }
+            ]
+          },
+          {
+            "name": "Salmorejo cordobés",
+            "description": "Crema fría cordobesa de tomate, pan, aceite de oliva y ajo.",
+            "en": "Traditional chilled Cordoban tomato, bread, olive oil and garlic cream.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 10.9
+              }
+            ]
+          },
+          {
+            "name": "Salpicón de marisco",
+            "description": "Ensalada fría de mariscos y verduras aliñadas.",
+            "en": "Chilled seafood salad with dressed vegetables.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.5
+              }
+            ]
+          },
+          {
+            "name": "Ensalada mixta",
+            "description": "Ensalada mixta; ingredientes concretos no detallados.",
+            "en": "Mixed salad; exact ingredients not specified.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 10.9
+              }
+            ]
+          },
+          {
+            "name": "Ensaladilla rusa",
+            "description": "Ensaladilla tradicional de patata y verduras con mayonesa.",
+            "en": "Traditional Spanish potato and vegetable salad with mayonnaise.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 10.2
+              }
+            ]
+          },
+          {
+            "name": "Ensalada de col",
+            "description": "Ensalada de col; aliño no especificado.",
+            "en": "Cabbage salad; dressing not specified.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 7.2
+              }
+            ]
+          },
+          {
+            "name": "Cogollos al ajillo",
+            "description": "Cogollos de lechuga con ajo.",
+            "en": "Baby lettuce hearts with garlic.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 9.5
+              }
+            ]
+          },
+          {
+            "name": "Patatas a la brava",
+            "description": "Patatas con salsa brava; receta de la salsa no detallada.",
+            "en": "Potatoes with brava sauce; exact sauce recipe not specified.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 10.5
+              }
+            ]
+          },
+          {
+            "name": "Berenjenas fritas",
+            "description": "Berenjenas fritas; la descripción asociada menciona miel de caña.",
+            "en": "Fried aubergines; accompanying text mentions cane syrup.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 10.9
+              }
+            ]
+          },
+          {
+            "name": "Croquetas caseras",
+            "description": "Croquetas caseras; relleno no especificado.",
+            "en": "Homemade croquettes; filling not specified.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.2
+              }
+            ]
+          },
+          {
+            "name": "Alcachofas a la montillana",
+            "description": "Alcachofas preparadas al estilo montillano; salsa no detallada.",
+            "en": "Artichokes prepared Montilla-style; sauce not specified.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.5
+              }
+            ]
+          },
+          {
+            "name": "Revuelto de papas y chorizo",
+            "description": "Revuelto de huevo con patatas y chorizo.",
+            "en": "Scrambled eggs with potatoes and chorizo.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 11.2
+              }
+            ]
+          },
+          {
+            "name": "Huevos de campo con papas y ajos fritos",
+            "description": "Huevos de campo acompañados de patatas y ajos fritos.",
+            "en": "Free-range eggs with potatoes and fried garlic.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 10.9
+              }
+            ]
+          },
+          {
+            "name": "Olivas chupadeos con aliño casero",
+            "description": "Aceitunas chupadeos con aliño de la casa.",
+            "en": "Chupadeos olives with house dressing.",
+            "prices": [
+              {
+                "label": "precio publicado",
+                "eur": 2
+              }
+            ]
+          },
+          {
+            "name": "Pieza de pan",
+            "description": "Pieza individual de pan.",
+            "en": "Individual bread roll.",
+            "prices": [
+              {
+                "label": "precio publicado",
+                "eur": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Pescados",
+        "items": [
+          {
+            "name": "Ensalada de bacalao con naranja",
+            "description": "Ensalada de bacalao y naranja.",
+            "en": "Salt cod and orange salad.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.5
+              }
+            ]
+          },
+          {
+            "name": "Buñuelos de bacalao",
+            "description": "Buñuelos fritos de bacalao.",
+            "en": "Fried salt cod fritters.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 10.9
+              }
+            ]
+          },
+          {
+            "name": "Potaje de garbanzos, bacalao y chorizo",
+            "description": "Guiso de garbanzos con bacalao y chorizo.",
+            "en": "Chickpea stew with salt cod and chorizo.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.5
+              }
+            ]
+          },
+          {
+            "name": "Croquetas de bacalao",
+            "description": "Croquetas con relleno de bacalao.",
+            "en": "Salt cod croquettes.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.2
+              }
+            ]
+          },
+          {
+            "name": "Bacalao frito",
+            "description": "Bacalao frito.",
+            "en": "Fried cod.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 15.2
+              }
+            ]
+          },
+          {
+            "name": "Bacalao de la Posada",
+            "description": "Bacalao preparado según la receta de la casa denominada «de la Posada».",
+            "en": "Cod prepared in the house's 'de la Posada' style; recipe not specified.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.5
+              }
+            ]
+          },
+          {
+            "name": "Perol de arroz con bacalao y chorizo",
+            "description": "Arroz de perol con bacalao y chorizo.",
+            "en": "Traditional pan-cooked rice with salt cod and chorizo.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.2
+              }
+            ]
+          },
+          {
+            "name": "Lasaña de berenjenas y bacalao",
+            "description": "Lasaña de berenjenas y bacalao gratinada con parmesano, según el texto asociado.",
+            "en": "Aubergine and cod lasagne topped with Parmesan, as described in the accompanying text.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.5
+              }
+            ]
+          },
+          {
+            "name": "Revuelto de bacalao dorado",
+            "description": "Revuelto de bacalao dorado; ingredientes adicionales no especificados.",
+            "en": "Golden salt cod scramble; additional ingredients not specified.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.9
+              }
+            ]
+          },
+          {
+            "name": "Lomo de bacalao encebollado",
+            "description": "Lomo de bacalao preparado con cebolla.",
+            "en": "Cod loin cooked with onions.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 17.9
+              }
+            ]
+          },
+          {
+            "name": "Lomo de bacalao con almendras y langostinos",
+            "description": "Lomo de bacalao acompañado de almendras y langostinos.",
+            "en": "Cod loin with almonds and king prawns.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 17.9
+              }
+            ]
+          },
+          {
+            "name": "Calamares fritos",
+            "description": "Calamares fritos.",
+            "en": "Fried squid.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.2
+              }
+            ]
+          },
+          {
+            "name": "Bienmesabe en adobo (cazón)",
+            "description": "Pescado en adobo identificado como cazón en el nombre; la imagen asociada menciona japuta.",
+            "en": "Marinated fried fish listed as dogfish; associated image mentions pomfret.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.2
+              }
+            ]
+          },
+          {
+            "name": "Chanquetes",
+            "description": "Pescaditos pequeños fritos, denominados chanquetes en la carta.",
+            "en": "Small fried fish, listed as chanquetes.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.2
+              }
+            ]
+          },
+          {
+            "name": "Mero frito al limón",
+            "description": "Mero frito con limón.",
+            "en": "Fried grouper with lemon.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.2
+              }
+            ]
+          },
+          {
+            "name": "Boquerones fritos",
+            "description": "Boquerones fritos.",
+            "en": "Fried anchovies.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.2
+              }
+            ]
+          },
+          {
+            "name": "Tortillitas de camarón",
+            "description": "Tortillitas finas fritas de camarones.",
+            "en": "Thin crispy shrimp fritters.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 10.9
+              }
+            ]
+          },
+          {
+            "name": "Gambas rebozadas",
+            "description": "Gambas rebozadas y fritas.",
+            "en": "Battered fried prawns.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.2
+              }
+            ]
+          },
+          {
+            "name": "Rosada a la plancha",
+            "description": "Rosada cocinada a la plancha.",
+            "en": "Griddled pink cusk-eel.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 15.2
+              }
+            ]
+          },
+          {
+            "name": "Calamares a la plancha",
+            "description": "Calamares cocinados a la plancha.",
+            "en": "Griddled squid.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 15.2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Carnes",
+        "items": [
+          {
+            "name": "Croquetas de rabo de toro",
+            "description": "Croquetas rellenas de rabo de toro guisado.",
+            "en": "Croquettes filled with braised oxtail.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.5
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín de lomo y jamón",
+            "description": "Rollo de lomo y jamón empanado y frito, especialidad cordobesa.",
+            "en": "Cordoban-style breaded and fried pork loin and cured ham roll.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.2
+              }
+            ]
+          },
+          {
+            "name": "Callos a la cordobesa",
+            "description": "Guiso tradicional de callos al estilo cordobés.",
+            "en": "Traditional Cordoban-style tripe stew.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.2
+              }
+            ]
+          },
+          {
+            "name": "Ciervo estofado",
+            "description": "Carne de ciervo cocinada en estofado.",
+            "en": "Slow-cooked venison stew.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.2
+              }
+            ]
+          },
+          {
+            "name": "Frito de pollo al limón",
+            "description": "Pollo frito con limón.",
+            "en": "Lemon-flavoured fried chicken.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 11.2
+              }
+            ]
+          },
+          {
+            "name": "Pechuga de pollo a la plancha",
+            "description": "Pechuga de pollo cocinada a la plancha.",
+            "en": "Griddled chicken breast.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 10.9
+              }
+            ]
+          },
+          {
+            "name": "Puntas de solomillo a la plancha",
+            "description": "Puntas de solomillo cocinadas a la plancha.",
+            "en": "Griddled tenderloin tips.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.9
+              }
+            ]
+          },
+          {
+            "name": "Puntas de solomillo a la montillana",
+            "description": "Puntas de solomillo al estilo montillano; salsa no especificada.",
+            "en": "Tenderloin tips prepared Montilla-style; sauce not specified.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 14.9
+              }
+            ]
+          },
+          {
+            "name": "Medallón de lomo de cerdo a la pimienta verde suave",
+            "description": "Medallón de lomo de cerdo con salsa suave de pimienta verde.",
+            "en": "Pork loin medallion with mild green peppercorn sauce.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 14.9
+              }
+            ]
+          },
+          {
+            "name": "Chuletitas de cordero del Valle de los Pedroches",
+            "description": "Chuletitas de cordero del Valle de los Pedroches.",
+            "en": "Lamb chops from the Los Pedroches valley.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 17.9
+              }
+            ]
+          },
+          {
+            "name": "Rabo de toro cordobés al oloroso",
+            "description": "Rabo de toro guisado al estilo cordobés con vino oloroso.",
+            "en": "Cordoban-style oxtail braised with oloroso sherry.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 17.9
+              }
+            ]
+          },
+          {
+            "name": "Churrasco cordobés al horno en su jugo",
+            "description": "Churrasco cordobés horneado en sus propios jugos.",
+            "en": "Oven-roasted Cordoban-style churrasco in its own juices.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 16.9
+              }
+            ]
+          },
+          {
+            "name": "Carrillada ibérica con setas y tomillo al oloroso",
+            "description": "Carrillada ibérica con setas, tomillo y vino oloroso.",
+            "en": "Iberian pork cheeks with mushrooms, thyme and oloroso sherry.",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 15.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Para los peques",
+        "items": [
+          {
+            "name": "Pechuga de pollo empanada",
+            "description": "Pechuga de pollo empanada.",
+            "en": "Breaded chicken breast.",
+            "prices": [
+              {
+                "label": "plato",
+                "eur": 8.9
+              }
+            ]
+          },
+          {
+            "name": "Arroz a la cubana con salchichas y huevo frito",
+            "description": "Arroz acompañado de salchichas y huevo frito.",
+            "en": "Cuban-style rice with sausages and a fried egg.",
+            "prices": [
+              {
+                "label": "plato",
+                "eur": 8.9
+              }
+            ]
+          },
+          {
+            "name": "Salchipapa",
+            "description": "Patatas fritas con salchichas.",
+            "en": "French fries with sausages.",
+            "prices": [
+              {
+                "label": "plato",
+                "eur": 7.9
+              }
+            ]
+          },
+          {
+            "name": "Espaguetis a la carbonara de pasta fresca",
+            "description": "Espaguetis de pasta fresca con salsa carbonara; receta no detallada.",
+            "en": "Fresh spaghetti with carbonara sauce; recipe not specified.",
+            "prices": [
+              {
+                "label": "plato",
+                "eur": 9.9
+              }
+            ]
+          },
+          {
+            "name": "Espaguetis a la boloñesa de pasta fresca",
+            "description": "Espaguetis de pasta fresca con salsa boloñesa.",
+            "en": "Fresh spaghetti with Bolognese sauce.",
+            "prices": [
+              {
+                "label": "plato",
+                "eur": 9.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Postres",
+        "items": [
+          {
+            "name": "Natillas en tulipa",
+            "description": "Natillas en tulipa; la imagen asociada menciona galleta y canela.",
+            "en": "Custard served in a pastry cup; accompanying image mentions biscuit and cinnamon.",
+            "prices": [
+              {
+                "label": "plato",
+                "eur": 4.9
+              }
+            ]
+          },
+          {
+            "name": "Flan casero",
+            "description": "Flan casero de huevo.",
+            "en": "Homemade egg flan.",
+            "prices": [
+              {
+                "label": "plato",
+                "eur": 4.9
+              }
+            ]
+          },
+          {
+            "name": "Pudding de la casa",
+            "description": "Pudin de la casa; receta no especificada.",
+            "en": "House pudding; recipe not specified.",
+            "prices": [
+              {
+                "label": "plato",
+                "eur": 5.5
+              }
+            ]
+          },
+          {
+            "name": "Arroz con leche en tulipa",
+            "description": "Arroz con leche servido en tulipa; la imagen menciona canela.",
+            "en": "Rice pudding in a pastry cup; accompanying image mentions cinnamon.",
+            "prices": [
+              {
+                "label": "plato",
+                "eur": 5
+              }
+            ]
+          },
+          {
+            "name": "Profiteroles rellenos de nata y chocolate",
+            "description": "Profiteroles rellenos de nata y chocolate.",
+            "en": "Profiteroles filled with cream and chocolate.",
+            "prices": [
+              {
+                "label": "plato",
+                "eur": 5.9
+              }
+            ]
+          },
+          {
+            "name": "Naranja a la antigua",
+            "description": "Naranja preparada con aceite y canela, según el texto asociado.",
+            "en": "Orange with olive oil and cinnamon, as described in the accompanying text.",
+            "prices": [
+              {
+                "label": "plato",
+                "eur": 4.5
+              }
+            ]
+          },
+          {
+            "name": "Nueces con nata y chocolate",
+            "description": "Nueces acompañadas de nata y chocolate.",
+            "en": "Walnuts with whipped cream and chocolate.",
+            "prices": [
+              {
+                "label": "plato",
+                "eur": 5.9
+              }
+            ]
+          },
+          {
+            "name": "Pastel cordobés",
+            "description": "Pastel cordobés tradicional de hojaldre y cabello de ángel; la imagen menciona canela.",
+            "en": "Traditional Cordoban puff pastry with sweet pumpkin preserve; accompanying image mentions cinnamon.",
+            "prices": [
+              {
+                "label": "plato",
+                "eur": 4.5
+              }
+            ]
+          },
+          {
+            "name": "Tarta de chocolate",
+            "description": "Tarta de chocolate; receta no especificada.",
+            "en": "Chocolate cake; recipe not specified.",
+            "prices": [
+              {
+                "label": "plato",
+                "eur": 5.9
+              }
+            ]
+          },
+          {
+            "name": "Sorbete de limón con fruta macerada («helado»)",
+            "description": "Sorbete de limón con fruta macerada; variedad de fruta no especificada.",
+            "en": "Lemon sorbet with macerated fruit; fruit varieties not specified.",
+            "prices": [
+              {
+                "label": "plato",
+                "eur": 5.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Extras y suplementos",
+        "note": "Conceptos adicionales; no son platos principales.",
+        "items": [
+          {
+            "name": "Suplemento kétchup o mayonesa (60 g)",
+            "description": "Suplemento de salsa de 60 gramos.",
+            "en": "60 g ketchup or mayonnaise supplement.",
+            "prices": [
+              {
+                "label": "suplemento",
+                "eur": 0.8
+              }
+            ]
+          },
+          {
+            "name": "Picos de pan",
+            "description": "Picos de pan para acompañar.",
+            "en": "Crunchy breadsticks served as an accompaniment.",
+            "prices": [
+              {
+                "label": "precio publicado",
+                "eur": 1
+              }
+            ]
+          },
+          {
+            "name": "Táper",
+            "description": "Envase para llevar comida; no es un plato.",
+            "en": "Takeaway container; not a dish.",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "menuSourceNote": "Cinco secciones gastronómicas, 64 referencias y 3 extras transcritos por el usuario de la web del establecimiento (16/10/2026). Bebidas excluidas deliberadamente. Precios publicados en la fuente facilitada, vigencia actual no verificada independientemente. Descripciones ES/EN editoriales, no certificación de alérgenos. Discrepancia en bienmesabe: cazón en nombre, japuta en imagen. Algunas menciones de ingredientes proceden de pies/nombres de imágenes. Jamón ibérico de bellota pendiente de confirmar."
   },
   {
     "id": "taberna-el-numero-10",
