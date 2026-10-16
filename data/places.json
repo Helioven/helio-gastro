@@ -10669,15 +10669,15 @@
     "area": "Judería · Cardenal Salazar",
     "address": "Calle Romero, 10, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "priceStatus": "published_official_menu",
+    "checkedAt": "2026-10-16",
     "sources": [
       {
         "label": "Cocina y especialidades oficiales",
         "url": "https://tabernaelnumero10cordoba.com/cocina/"
       },
       {
-        "label": "Carta oficial PDF (precios pendientes de extracción)",
+        "label": "Carta oficial PDF · 4 páginas (septiembre de 2025 en la URL; vigencia no garantizada)",
         "url": "https://tabernaelnumero10cordoba.com/wp-content/uploads/2025/09/carta-taberna-n10.pdf"
       },
       {
@@ -10687,18 +10687,768 @@
     ],
     "menus": [
       {
-        "service": "general",
+        "service": "Los clásicos de la casa",
         "dishes": [
-          "Flamenquín cordobés",
-          "Salmorejo cordobés",
-          "Mazamorra cordobesa",
-          "Croquetas caseras de puchero y jamón ibérico",
-          "Rabo de toro estofado",
-          "Berenjenas rebozadas con miel de caña"
+          "Salmorejo con jamón ibérico",
+          "Mazamorra, almendras fritas, pasas en oloroso y manzana ácida",
+          "Ensaladilla de gambas al ajillo (100 g / 200 g)",
+          "Oreja de cerdo frita y mayonesa de pimentón",
+          "Nuestras bravas, con salsa de tomate chipotle y espuma de alioli",
+          "Berenjenas rebozadas con miel de caña",
+          "Croquetas cremosas de puchero y jamón ibérico (3 uds. / 6 uds.)"
         ],
-        "dishPrices": []
+        "dishPrices": [
+          {
+            "dish": "Salmorejo con jamón ibérico",
+            "eur": 6.5,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Salmorejo con jamón ibérico",
+            "eur": 11.5,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Mazamorra, almendras fritas, pasas en oloroso y manzana ácida",
+            "eur": 6.8,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Mazamorra, almendras fritas, pasas en oloroso y manzana ácida",
+            "eur": 12.5,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Ensaladilla de gambas al ajillo (100 g / 200 g)",
+            "eur": 7.5,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Ensaladilla de gambas al ajillo (100 g / 200 g)",
+            "eur": 14,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Oreja de cerdo frita y mayonesa de pimentón",
+            "eur": 7.5,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Oreja de cerdo frita y mayonesa de pimentón",
+            "eur": 13.5,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Nuestras bravas, con salsa de tomate chipotle y espuma de alioli",
+            "eur": 6.5,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Nuestras bravas, con salsa de tomate chipotle y espuma de alioli",
+            "eur": 11,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Berenjenas rebozadas con miel de caña",
+            "eur": 6.8,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Berenjenas rebozadas con miel de caña",
+            "eur": 12,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Croquetas cremosas de puchero y jamón ibérico (3 uds. / 6 uds.)",
+            "eur": 6.5,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Croquetas cremosas de puchero y jamón ibérico (3 uds. / 6 uds.)",
+            "eur": 12,
+            "portion": "1/2 ración"
+          }
+        ]
+      },
+      {
+        "service": "Curaciones del valle y marinas",
+        "dishes": [
+          "Jamón ibérico cortado al momento (30 g / 60 g)",
+          "Caña de lomo ibérica de bellota (30 g / 60 g)",
+          "Morcilla achorizada (30 g / 60 g)",
+          "Cecina de León (30 g / 60 g)",
+          "Queso azul «Tormentoso» Calaveruela (50 g / 100 g)",
+          "Queso de leche cruda de oveja curado (50 g / 100 g)",
+          "Anchoa del Cantábrico en pan cristal y mantequilla de oveja",
+          "Sardina ahumada en tosta y salmorejo",
+          "Boquerones en vinagre y patatas chips (6 uds.)",
+          "Mojama de atún y almendras fritas (50 g)",
+          "Carpaccio de salmón curado en casa, salsa tártara y tostas de pan cristal (80 g)"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Jamón ibérico cortado al momento (30 g / 60 g)",
+            "eur": 8,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Jamón ibérico cortado al momento (30 g / 60 g)",
+            "eur": 15,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Caña de lomo ibérica de bellota (30 g / 60 g)",
+            "eur": 7.5,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Caña de lomo ibérica de bellota (30 g / 60 g)",
+            "eur": 14,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Morcilla achorizada (30 g / 60 g)",
+            "eur": 5,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Morcilla achorizada (30 g / 60 g)",
+            "eur": 9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Cecina de León (30 g / 60 g)",
+            "eur": 6,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Cecina de León (30 g / 60 g)",
+            "eur": 11,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Queso azul «Tormentoso» Calaveruela (50 g / 100 g)",
+            "eur": 7.4,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Queso azul «Tormentoso» Calaveruela (50 g / 100 g)",
+            "eur": 13.5,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Queso de leche cruda de oveja curado (50 g / 100 g)",
+            "eur": 7,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Queso de leche cruda de oveja curado (50 g / 100 g)",
+            "eur": 13,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Anchoa del Cantábrico en pan cristal y mantequilla de oveja",
+            "eur": 5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Sardina ahumada en tosta y salmorejo",
+            "eur": 6,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Boquerones en vinagre y patatas chips (6 uds.)",
+            "eur": 14.5,
+            "portion": "6 uds."
+          },
+          {
+            "dish": "Mojama de atún y almendras fritas (50 g)",
+            "eur": 13,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Carpaccio de salmón curado en casa, salsa tártara y tostas de pan cristal (80 g)",
+            "eur": 16,
+            "portion": "Ración"
+          }
+        ]
+      },
+      {
+        "service": "Picar y compartir",
+        "dishes": [
+          "Cogollos César",
+          "Espárragos a la plancha, pesto de pistacho y parmesano",
+          "Pimientos de Padrón fritos",
+          "Chipirones fritos y mayonesa de kimchie",
+          "Tortillita de camarones, guacamole y carpaccio de pulpo"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Cogollos César",
+            "eur": 15.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Espárragos a la plancha, pesto de pistacho y parmesano",
+            "eur": 16,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Pimientos de Padrón fritos",
+            "eur": 11,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Chipirones fritos y mayonesa de kimchie",
+            "eur": 8,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Chipirones fritos y mayonesa de kimchie",
+            "eur": 15,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Tortillita de camarones, guacamole y carpaccio de pulpo",
+            "eur": 8,
+            "portion": "Unidad"
+          }
+        ]
+      },
+      {
+        "service": "Para terminar",
+        "dishes": [
+          "Doble smash burger de ternera, bacon bits, cheddar y barbacoa, con patatas fritas",
+          "Presa ibérica de bellota con pimientos de Padrón (180 g)",
+          "Costillas glaseadas con barbacoa casera (500 g)",
+          "Alitas de pollo en dos frituras y barbacoa coreana (6 uds. / 12 uds.)",
+          "Lomo de vaca madurado durante 40 días a la plancha con patatas (300 g)",
+          "Sándwich de rabo de «toro» con su salsa, mantequilla de oveja y velo de papada",
+          "Rabo de «toro» estofado con patatas",
+          "Albóndigas de vaca en salsa y crema de boniato (3 uds. / 6 uds.)",
+          "Flamenquín de lomo y jamón ibérico"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Doble smash burger de ternera, bacon bits, cheddar y barbacoa, con patatas fritas",
+            "eur": 15,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Presa ibérica de bellota con pimientos de Padrón (180 g)",
+            "eur": 24,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Costillas glaseadas con barbacoa casera (500 g)",
+            "eur": 20,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Alitas de pollo en dos frituras y barbacoa coreana (6 uds. / 12 uds.)",
+            "eur": 8.5,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Alitas de pollo en dos frituras y barbacoa coreana (6 uds. / 12 uds.)",
+            "eur": 16,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Lomo de vaca madurado durante 40 días a la plancha con patatas (300 g)",
+            "eur": 28,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Sándwich de rabo de «toro» con su salsa, mantequilla de oveja y velo de papada",
+            "eur": 14,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Rabo de «toro» estofado con patatas",
+            "eur": 21,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Albóndigas de vaca en salsa y crema de boniato (3 uds. / 6 uds.)",
+            "eur": 8,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Albóndigas de vaca en salsa y crema de boniato (3 uds. / 6 uds.)",
+            "eur": 14.5,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Flamenquín de lomo y jamón ibérico",
+            "eur": 15.5,
+            "portion": "Ración"
+          }
+        ]
+      },
+      {
+        "service": "Postres",
+        "dishes": [
+          "Tarta de quesos con helado de pistacho",
+          "Brownie templado, helado de avellana y toffe de P.X.",
+          "Limón y chocolate blanco",
+          "Pastel cordobés",
+          "Torrija caramelizada y helado de vainilla"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Tarta de quesos con helado de pistacho",
+            "eur": 8,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Brownie templado, helado de avellana y toffe de P.X.",
+            "eur": 7.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Limón y chocolate blanco",
+            "eur": 7,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Pastel cordobés",
+            "eur": 7.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Torrija caramelizada y helado de vainilla",
+            "eur": 7.5,
+            "portion": "Ración"
+          }
+        ]
       }
-    ]
+    ],
+    "menuSections": [
+      {
+        "title": "Los clásicos de la casa",
+        "items": [
+          {
+            "name": "Salmorejo con jamón ibérico",
+            "prices": [
+              {
+                "eur": 6.5,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 11.5,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Mazamorra, almendras fritas, pasas en oloroso y manzana ácida",
+            "prices": [
+              {
+                "eur": 6.8,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 12.5,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Ensaladilla de gambas al ajillo (100 g / 200 g)",
+            "prices": [
+              {
+                "eur": 7.5,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 14,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Oreja de cerdo frita y mayonesa de pimentón",
+            "prices": [
+              {
+                "eur": 7.5,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 13.5,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Nuestras bravas, con salsa de tomate chipotle y espuma de alioli",
+            "prices": [
+              {
+                "eur": 6.5,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 11,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Berenjenas rebozadas con miel de caña",
+            "prices": [
+              {
+                "eur": 6.8,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 12,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Croquetas cremosas de puchero y jamón ibérico (3 uds. / 6 uds.)",
+            "prices": [
+              {
+                "eur": 6.5,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 12,
+                "portion": "1/2 ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Curaciones del valle y marinas",
+        "items": [
+          {
+            "name": "Jamón ibérico cortado al momento (30 g / 60 g)",
+            "prices": [
+              {
+                "eur": 8,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 15,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Caña de lomo ibérica de bellota (30 g / 60 g)",
+            "prices": [
+              {
+                "eur": 7.5,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 14,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Morcilla achorizada (30 g / 60 g)",
+            "prices": [
+              {
+                "eur": 5,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 9,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Cecina de León (30 g / 60 g)",
+            "prices": [
+              {
+                "eur": 6,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 11,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Queso azul «Tormentoso» Calaveruela (50 g / 100 g)",
+            "prices": [
+              {
+                "eur": 7.4,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 13.5,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Queso de leche cruda de oveja curado (50 g / 100 g)",
+            "prices": [
+              {
+                "eur": 7,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 13,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Anchoa del Cantábrico en pan cristal y mantequilla de oveja",
+            "prices": [
+              {
+                "eur": 5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Sardina ahumada en tosta y salmorejo",
+            "prices": [
+              {
+                "eur": 6,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Boquerones en vinagre y patatas chips (6 uds.)",
+            "prices": [
+              {
+                "eur": 14.5,
+                "portion": "6 uds."
+              }
+            ]
+          },
+          {
+            "name": "Mojama de atún y almendras fritas (50 g)",
+            "prices": [
+              {
+                "eur": 13,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Carpaccio de salmón curado en casa, salsa tártara y tostas de pan cristal (80 g)",
+            "prices": [
+              {
+                "eur": 16,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Picar y compartir",
+        "items": [
+          {
+            "name": "Cogollos César",
+            "prices": [
+              {
+                "eur": 15.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Espárragos a la plancha, pesto de pistacho y parmesano",
+            "prices": [
+              {
+                "eur": 16,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Pimientos de Padrón fritos",
+            "prices": [
+              {
+                "eur": 11,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Chipirones fritos y mayonesa de kimchie",
+            "prices": [
+              {
+                "eur": 8,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 15,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Tortillita de camarones, guacamole y carpaccio de pulpo",
+            "prices": [
+              {
+                "eur": 8,
+                "portion": "Unidad"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Para terminar",
+        "items": [
+          {
+            "name": "Doble smash burger de ternera, bacon bits, cheddar y barbacoa, con patatas fritas",
+            "prices": [
+              {
+                "eur": 15,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Presa ibérica de bellota con pimientos de Padrón (180 g)",
+            "prices": [
+              {
+                "eur": 24,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Costillas glaseadas con barbacoa casera (500 g)",
+            "prices": [
+              {
+                "eur": 20,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Alitas de pollo en dos frituras y barbacoa coreana (6 uds. / 12 uds.)",
+            "prices": [
+              {
+                "eur": 8.5,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 16,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Lomo de vaca madurado durante 40 días a la plancha con patatas (300 g)",
+            "prices": [
+              {
+                "eur": 28,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Sándwich de rabo de «toro» con su salsa, mantequilla de oveja y velo de papada",
+            "prices": [
+              {
+                "eur": 14,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Rabo de «toro» estofado con patatas",
+            "prices": [
+              {
+                "eur": 21,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Albóndigas de vaca en salsa y crema de boniato (3 uds. / 6 uds.)",
+            "prices": [
+              {
+                "eur": 8,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 14.5,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín de lomo y jamón ibérico",
+            "prices": [
+              {
+                "eur": 15.5,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Postres",
+        "items": [
+          {
+            "name": "Tarta de quesos con helado de pistacho",
+            "prices": [
+              {
+                "eur": 8,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Brownie templado, helado de avellana y toffe de P.X.",
+            "prices": [
+              {
+                "eur": 7.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Limón y chocolate blanco",
+            "prices": [
+              {
+                "eur": 7,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Pastel cordobés",
+            "prices": [
+              {
+                "eur": 7.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Torrija caramelizada y helado de vainilla",
+            "prices": [
+              {
+                "eur": 7.5,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "menuSourceNote": "Carta oficial PDF de cuatro páginas aportada por el usuario el 16/10/2026. Se transcriben platos y precios de las páginas 1–3, incluidas variantes de tapa, media ración y unidades. La página 4 contiene bebidas y suplementos (pan y picos por persona 1,80 €; botella de AOVE 25 ml 2,50 €), no integrados en el catálogo de comida. El PDF no declara fecha de vigencia; consultar con el establecimiento. No se usan imágenes aportadas por terceros."
   },
   {
     "id": "la-cazuela-esparteria",
