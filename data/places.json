@@ -2733,8 +2733,8 @@
     "area": "Judería · Deanes",
     "address": "Calle Deanes, 2, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "priceStatus": "published_official_menu",
+    "checkedAt": "2026-10-16",
     "sources": [
       {
         "label": "Carta oficial con precios",
@@ -2749,32 +2749,894 @@
       {
         "service": "general",
         "dishes": [
-          "Flamenquín casero cordobés de jamón",
-          "Flamenquín de rabo de toro",
-          "Rabo de toro",
-          "Tortilla de patatas",
-          "Venado en salsa"
+          "Jamón Ibérico Cortado a cuchillo (100 gr.)",
+          "Queso Curado de Oveja (140 gr.)",
+          "Mixto de Jamón Ibérico (60 gr.) y Queso Curado de Oveja (80 gr.)",
+          "Salmorejo Cordobés",
+          "Gazpacho con su Guarnición",
+          "Ensaladilla Rusa Tradicional",
+          "Mazamorra de Almendras",
+          "Ensalada Rafaé",
+          "Ensalada Mixta",
+          "Nuestra Ensalada de Tomate",
+          "Arroz Cordobés de Nuestro Rabo de Toro",
+          "Berenjenas Sefardíes",
+          "Croquetas de Nuestros Callos a la Cordobesa",
+          "Espinacas Esparragadas",
+          "Nuestras Patatas Bravas",
+          "Croquetas Caseras",
+          "Cochifrito",
+          "Setas con Chipirones",
+          "Alcachofas Confitadas en AOVE",
+          "Calamares",
+          "Japuta en Adobo Casero",
+          "Buñuelos de Bacalao",
+          "Revuelto Rafaé",
+          "Papas de la Casa",
+          "Tortilla de Patatas al Momento",
+          "Tortilla Ahumada",
+          "Flamenquín Casero Cordobés de Jamón",
+          "Flamenquín Casero de Nuestro Rabo de Toro",
+          "Rabo de Toro Tradicional Cordobés",
+          "Venado en Salsa Cordobesa",
+          "Albóndigas Caseras Mozárabes",
+          "Guiso de Callos a la Cordobesa",
+          "Lubina",
+          "Bacalao",
+          "Atún",
+          "Churrasco de Pollo",
+          "Mogote Ibérico",
+          "Solomillo Ternera"
         ],
         "dishPrices": [
           {
-            "dish": "Flamenquín casero cordobés de jamón (ración)",
-            "eur": 11.9
+            "dish": "Jamón Ibérico Cortado a cuchillo (100 gr.)",
+            "portion": "media ración",
+            "eur": 14.7
           },
           {
-            "dish": "Flamenquín casero de rabo de toro (ración)",
+            "dish": "Jamón Ibérico Cortado a cuchillo (100 gr.)",
+            "portion": "ración",
+            "eur": 21
+          },
+          {
+            "dish": "Queso Curado de Oveja (140 gr.)",
+            "portion": "media ración",
+            "eur": 9.7
+          },
+          {
+            "dish": "Queso Curado de Oveja (140 gr.)",
+            "portion": "ración",
+            "eur": 13.9
+          },
+          {
+            "dish": "Mixto de Jamón Ibérico (60 gr.) y Queso Curado de Oveja (80 gr.)",
+            "portion": "ración",
+            "eur": 18.5
+          },
+          {
+            "dish": "Salmorejo Cordobés",
+            "portion": "media ración",
+            "eur": 6.8
+          },
+          {
+            "dish": "Salmorejo Cordobés",
+            "portion": "ración",
+            "eur": 9.8
+          },
+          {
+            "dish": "Gazpacho con su Guarnición",
+            "portion": "ración",
+            "eur": 7.1
+          },
+          {
+            "dish": "Ensaladilla Rusa Tradicional",
+            "portion": "media ración",
+            "eur": 6.5
+          },
+          {
+            "dish": "Ensaladilla Rusa Tradicional",
+            "portion": "ración",
+            "eur": 9.3
+          },
+          {
+            "dish": "Mazamorra de Almendras",
+            "portion": "media ración",
+            "eur": 7
+          },
+          {
+            "dish": "Mazamorra de Almendras",
+            "portion": "ración",
+            "eur": 10
+          },
+          {
+            "dish": "Ensalada Rafaé",
+            "portion": "ración",
+            "eur": 13.5
+          },
+          {
+            "dish": "Ensalada Mixta",
+            "portion": "ración",
+            "eur": 10.5
+          },
+          {
+            "dish": "Nuestra Ensalada de Tomate",
+            "portion": "ración",
+            "eur": 12.5
+          },
+          {
+            "dish": "Arroz Cordobés de Nuestro Rabo de Toro",
+            "portion": "media ración",
+            "eur": 10.9
+          },
+          {
+            "dish": "Arroz Cordobés de Nuestro Rabo de Toro",
+            "portion": "ración",
+            "eur": 15.5
+          },
+          {
+            "dish": "Berenjenas Sefardíes",
+            "portion": "media ración",
+            "eur": 7.6
+          },
+          {
+            "dish": "Berenjenas Sefardíes",
+            "portion": "ración",
+            "eur": 10.9
+          },
+          {
+            "dish": "Croquetas de Nuestros Callos a la Cordobesa",
+            "portion": "media ración",
+            "eur": 8
+          },
+          {
+            "dish": "Croquetas de Nuestros Callos a la Cordobesa",
+            "portion": "ración",
+            "eur": 11.5
+          },
+          {
+            "dish": "Espinacas Esparragadas",
+            "portion": "media ración",
+            "eur": 6.8
+          },
+          {
+            "dish": "Espinacas Esparragadas",
+            "portion": "ración",
+            "eur": 9.8
+          },
+          {
+            "dish": "Nuestras Patatas Bravas",
+            "portion": "media ración",
+            "eur": 7
+          },
+          {
+            "dish": "Nuestras Patatas Bravas",
+            "portion": "ración",
+            "eur": 9.9
+          },
+          {
+            "dish": "Croquetas Caseras",
+            "portion": "media ración",
+            "eur": 7.6
+          },
+          {
+            "dish": "Croquetas Caseras",
+            "portion": "ración",
+            "eur": 10.9
+          },
+          {
+            "dish": "Cochifrito",
+            "portion": "media ración",
+            "eur": 9.4
+          },
+          {
+            "dish": "Cochifrito",
+            "portion": "ración",
+            "eur": 13.5
+          },
+          {
+            "dish": "Setas con Chipirones",
+            "portion": "ración",
             "eur": 15
           },
           {
-            "dish": "Tortilla de patatas al momento (ración)",
+            "dish": "Alcachofas Confitadas en AOVE",
+            "portion": "ración",
+            "eur": 16.5
+          },
+          {
+            "dish": "Calamares",
+            "portion": "media ración",
+            "eur": 9
+          },
+          {
+            "dish": "Calamares",
+            "portion": "ración",
+            "eur": 13
+          },
+          {
+            "dish": "Japuta en Adobo Casero",
+            "portion": "media ración",
+            "eur": 8.7
+          },
+          {
+            "dish": "Japuta en Adobo Casero",
+            "portion": "ración",
+            "eur": 12.5
+          },
+          {
+            "dish": "Buñuelos de Bacalao",
+            "portion": "media ración",
+            "eur": 8.7
+          },
+          {
+            "dish": "Buñuelos de Bacalao",
+            "portion": "ración",
+            "eur": 12.5
+          },
+          {
+            "dish": "Revuelto Rafaé",
+            "portion": "ración",
+            "eur": 12.9
+          },
+          {
+            "dish": "Papas de la Casa",
+            "portion": "ración",
+            "eur": 11.5
+          },
+          {
+            "dish": "Tortilla de Patatas al Momento",
+            "portion": "ración",
             "eur": 10.3
           },
           {
-            "dish": "Venado en salsa cordobesa (media ración)",
+            "dish": "Tortilla Ahumada",
+            "portion": "ración",
+            "eur": 15
+          },
+          {
+            "dish": "Flamenquín Casero Cordobés de Jamón",
+            "portion": "ración",
+            "eur": 11.9
+          },
+          {
+            "dish": "Flamenquín Casero de Nuestro Rabo de Toro",
+            "portion": "ración",
+            "eur": 15
+          },
+          {
+            "dish": "Rabo de Toro Tradicional Cordobés",
+            "portion": "media ración",
+            "eur": 18.1
+          },
+          {
+            "dish": "Rabo de Toro Tradicional Cordobés",
+            "portion": "ración",
+            "eur": 26
+          },
+          {
+            "dish": "Venado en Salsa Cordobesa",
+            "portion": "media ración",
             "eur": 8.7
+          },
+          {
+            "dish": "Venado en Salsa Cordobesa",
+            "portion": "ración",
+            "eur": 12.5
+          },
+          {
+            "dish": "Albóndigas Caseras Mozárabes",
+            "portion": "media ración",
+            "eur": 9.3
+          },
+          {
+            "dish": "Albóndigas Caseras Mozárabes",
+            "portion": "ración",
+            "eur": 13.5
+          },
+          {
+            "dish": "Guiso de Callos a la Cordobesa",
+            "portion": "media ración",
+            "eur": 8
+          },
+          {
+            "dish": "Guiso de Callos a la Cordobesa",
+            "portion": "ración",
+            "eur": 11.5
+          },
+          {
+            "dish": "Lubina",
+            "portion": "ración",
+            "eur": 21.5
+          },
+          {
+            "dish": "Bacalao",
+            "portion": "ración",
+            "eur": 16.5
+          },
+          {
+            "dish": "Atún",
+            "portion": "media ración",
+            "eur": 9.1
+          },
+          {
+            "dish": "Atún",
+            "portion": "ración",
+            "eur": 13
+          },
+          {
+            "dish": "Churrasco de Pollo",
+            "portion": "ración",
+            "eur": 12.5
+          },
+          {
+            "dish": "Mogote Ibérico",
+            "portion": "ración",
+            "eur": 17.9
+          },
+          {
+            "dish": "Solomillo Ternera",
+            "portion": "ración",
+            "eur": 25
           }
         ]
       }
-    ]
+    ],
+    "menuSections": [
+      {
+        "title": "Entrantes Fríos",
+        "titleEn": "Cold Starters",
+        "items": [
+          {
+            "name": "Jamón Ibérico Cortado a cuchillo (100 gr.)",
+            "description": "Jamón Ibérico Cortado a cuchillo (100 gr.)",
+            "en": "Hand-carved Iberian ham",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 14.7
+              },
+              {
+                "label": "ración",
+                "eur": 21
+              }
+            ]
+          },
+          {
+            "name": "Queso Curado de Oveja (140 gr.)",
+            "description": "Queso Curado de Oveja (140 gr.)",
+            "en": "Aged sheep's milk cheese",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 9.7
+              },
+              {
+                "label": "ración",
+                "eur": 13.9
+              }
+            ]
+          },
+          {
+            "name": "Mixto de Jamón Ibérico (60 gr.) y Queso Curado de Oveja (80 gr.)",
+            "description": "Mixto de Jamón Ibérico (60 gr.) y Queso Curado de Oveja (80 gr.)",
+            "en": "Iberian ham and aged sheep's cheese platter",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 18.5
+              }
+            ]
+          },
+          {
+            "name": "Salmorejo Cordobés",
+            "description": "Jamón ibérico, huevo duro y AOVE",
+            "en": "Cordoban salmorejo with Iberian ham, hard-boiled egg and extra virgin olive oil",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 6.8
+              },
+              {
+                "label": "ración",
+                "eur": 9.8
+              }
+            ]
+          },
+          {
+            "name": "Gazpacho con su Guarnición",
+            "description": "Tomate, cebolla, pepino, pimiento y picatostes",
+            "en": "Gazpacho with tomato, onion, cucumber, pepper and croutons",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 7.1
+              }
+            ]
+          },
+          {
+            "name": "Ensaladilla Rusa Tradicional",
+            "description": "Patata, zanahoria, tronco de atún, huevo duro, lechuga y mayonesa casera de AOVE",
+            "en": "Traditional Spanish potato salad with carrot, tuna, hard-boiled egg, lettuce and homemade extra virgin olive oil mayonnaise",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 6.5
+              },
+              {
+                "label": "ración",
+                "eur": 9.3
+              }
+            ]
+          },
+          {
+            "name": "Mazamorra de Almendras",
+            "description": "Remolacha y garrapiñado de coco",
+            "en": "Almond mazamorra with beetroot and caramelised coconut",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7
+              },
+              {
+                "label": "ración",
+                "eur": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Ensaladas",
+        "titleEn": "Salads",
+        "items": [
+          {
+            "name": "Ensalada Rafaé",
+            "description": "Mezcla de hojas, tomate, champiñón, espárragos, habitas y vinagreta de espárrago blanco",
+            "en": "Mixed leaves, tomato, mushrooms, asparagus, baby broad beans and white asparagus vinaigrette",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.5
+              }
+            ]
+          },
+          {
+            "name": "Ensalada Mixta",
+            "description": "Lechuga, tomate, cebolla, zanahoria, maíz, atún, huevo duro y AOVE",
+            "en": "Lettuce, tomato, onion, carrot, sweetcorn, tuna, hard-boiled egg and extra virgin olive oil",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 10.5
+              }
+            ]
+          },
+          {
+            "name": "Nuestra Ensalada de Tomate",
+            "description": "Tomate de la huerta, tronco de atún, ajo tierno y AOVE",
+            "en": "Garden tomato, tuna, young garlic and extra virgin olive oil",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Arroces",
+        "titleEn": "Rice Dishes",
+        "items": [
+          {
+            "name": "Arroz Cordobés de Nuestro Rabo de Toro",
+            "description": "Premiado por la Cofradía Gastronómica del Rabo de Toro Cordobés, según indica la carta",
+            "en": "Cordoban-style rice with the house oxtail",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 10.9
+              },
+              {
+                "label": "ración",
+                "eur": 15.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Entrantes Calientes",
+        "titleEn": "Hot Starters",
+        "items": [
+          {
+            "name": "Berenjenas Sefardíes",
+            "description": "Rebozadas en Orly, con miel de caña y sésamo",
+            "en": "Aubergines in Orly batter with cane syrup and sesame",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.6
+              },
+              {
+                "label": "ración",
+                "eur": 10.9
+              }
+            ]
+          },
+          {
+            "name": "Croquetas de Nuestros Callos a la Cordobesa",
+            "description": "Crema de sobrasada",
+            "en": "Cordoban-style tripe croquettes with sobrasada cream",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 8
+              },
+              {
+                "label": "ración",
+                "eur": 11.5
+              }
+            ]
+          },
+          {
+            "name": "Espinacas Esparragadas",
+            "description": "Garbanzos, vinagre y pan",
+            "en": "Andalusian-style spinach with chickpeas, vinegar and bread",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 6.8
+              },
+              {
+                "label": "ración",
+                "eur": 9.8
+              }
+            ]
+          },
+          {
+            "name": "Nuestras Patatas Bravas",
+            "description": "Mahonesa de kimchee",
+            "en": "Patatas bravas with kimchi mayonnaise",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7
+              },
+              {
+                "label": "ración",
+                "eur": 9.9
+              }
+            ]
+          },
+          {
+            "name": "Croquetas Caseras",
+            "description": "Puchero",
+            "en": "Homemade traditional stew croquettes",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.6
+              },
+              {
+                "label": "ración",
+                "eur": 10.9
+              }
+            ]
+          },
+          {
+            "name": "Cochifrito",
+            "description": "Lechón confitado a baja temperatura, troceado y frito",
+            "en": "Low-temperature confit suckling pig, cut into pieces and fried",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 9.4
+              },
+              {
+                "label": "ración",
+                "eur": 13.5
+              }
+            ]
+          },
+          {
+            "name": "Setas con Chipirones",
+            "description": "Alioli negro",
+            "en": "Mushrooms with baby squid and black aioli",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 15
+              }
+            ]
+          },
+          {
+            "name": "Alcachofas Confitadas en AOVE",
+            "description": "Crema de foie y crujiente de jamón",
+            "en": "Artichokes confited in extra virgin olive oil with foie gras cream and crispy ham",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 16.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Pescaitos Fritos",
+        "titleEn": "Fried Fish",
+        "items": [
+          {
+            "name": "Calamares",
+            "description": "Mahonesa de limón asado",
+            "en": "Fried squid with roasted lemon mayonnaise",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 9
+              },
+              {
+                "label": "ración",
+                "eur": 13
+              }
+            ]
+          },
+          {
+            "name": "Japuta en Adobo Casero",
+            "description": "Palometa",
+            "en": "House-marinated pomfret",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 8.7
+              },
+              {
+                "label": "ración",
+                "eur": 12.5
+              }
+            ]
+          },
+          {
+            "name": "Buñuelos de Bacalao",
+            "description": "Mermelada de pimientos",
+            "en": "Cod fritters with pepper jam",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 8.7
+              },
+              {
+                "label": "ración",
+                "eur": 12.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Huevos y Revueltos",
+        "titleEn": "Eggs and Scrambles",
+        "items": [
+          {
+            "name": "Revuelto Rafaé",
+            "description": "Huevo, ajo, espárragos, champiñón y jamón ibérico",
+            "en": "Scrambled eggs with garlic, asparagus, mushrooms and Iberian ham",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.9
+              }
+            ]
+          },
+          {
+            "name": "Papas de la Casa",
+            "description": "Patatas confitadas, huevo roto y tiras de jamón",
+            "en": "Confit potatoes with broken egg and ham strips",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 11.5
+              }
+            ]
+          },
+          {
+            "name": "Tortilla de Patatas al Momento",
+            "description": "Tortilla de Patatas al Momento",
+            "en": "Freshly made Spanish potato omelette",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 10.3
+              }
+            ]
+          },
+          {
+            "name": "Tortilla Ahumada",
+            "description": "Jamón ibérico cortado a cuchillo",
+            "en": "Smoked omelette with hand-carved Iberian ham",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 15
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Platos Tradicionales",
+        "titleEn": "Traditional Dishes",
+        "items": [
+          {
+            "name": "Flamenquín Casero Cordobés de Jamón",
+            "description": "Lomo relleno de jamón, empanado y frito",
+            "en": "Breaded and fried pork loin stuffed with ham",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 11.9
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín Casero de Nuestro Rabo de Toro",
+            "description": "Lomo relleno de nuestro rabo de toro, queso cheddar, empanado y frito",
+            "en": "Breaded and fried pork loin stuffed with house oxtail and cheddar cheese",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 15
+              }
+            ]
+          },
+          {
+            "name": "Rabo de Toro Tradicional Cordobés",
+            "description": "Premiado por la Cofradía Gastronómica del Rabo de Toro Cordobés, según indica la carta",
+            "en": "Traditional Cordoban oxtail stew",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 18.1
+              },
+              {
+                "label": "ración",
+                "eur": 26
+              }
+            ]
+          },
+          {
+            "name": "Venado en Salsa Cordobesa",
+            "description": "Guisado con hierbas aromáticas y vino Montilla-Moriles",
+            "en": "Venison stewed with aromatic herbs and Montilla-Moriles wine",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 8.7
+              },
+              {
+                "label": "ración",
+                "eur": 12.5
+              }
+            ]
+          },
+          {
+            "name": "Albóndigas Caseras Mozárabes",
+            "description": "Patatas",
+            "en": "Homemade Mozarabic-style meatballs with potatoes",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 9.3
+              },
+              {
+                "label": "ración",
+                "eur": 13.5
+              }
+            ]
+          },
+          {
+            "name": "Guiso de Callos a la Cordobesa",
+            "description": "Guiso de Callos a la Cordobesa",
+            "en": "Cordoban-style tripe stew",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 8
+              },
+              {
+                "label": "ración",
+                "eur": 11.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Pescados",
+        "titleEn": "Fish",
+        "items": [
+          {
+            "name": "Lubina",
+            "description": "Emulsión de espinacas, crujiente de jamón, cardos, garbanzos y vinagreta de naranja. La carta indica 1º Premio de Innovación Córdoba Gastronómica",
+            "en": "Sea bass with spinach emulsion, crispy ham, cardoons, chickpeas and orange vinaigrette",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 21.5
+              }
+            ]
+          },
+          {
+            "name": "Bacalao",
+            "description": "Confitado, roteña y parmentier de patata",
+            "en": "Confit cod with Rota-style sauce and potato parmentier",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 16.5
+              }
+            ]
+          },
+          {
+            "name": "Atún",
+            "description": "Encebollado y patatas panaderas",
+            "en": "Tuna with onions and sliced oven-baked potatoes",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 9.1
+              },
+              {
+                "label": "ración",
+                "eur": 13
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Carnes",
+        "titleEn": "Meat",
+        "items": [
+          {
+            "name": "Churrasco de Pollo",
+            "description": "Verdurita de temporada",
+            "en": "Grilled chicken with seasonal vegetables",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.5
+              }
+            ]
+          },
+          {
+            "name": "Mogote Ibérico",
+            "description": "Baja temperatura, patatas, pimientos y reducción de su jugo",
+            "en": "Slow-cooked Iberian pork neck with potatoes, peppers and a reduction of its juices",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 17.9
+              }
+            ]
+          },
+          {
+            "name": "Solomillo Ternera",
+            "description": "Ahumado, demi-glace, puré Robuchon, teja pistacho y verduritas",
+            "en": "Smoked veal tenderloin with demi-glace, Robuchon-style potato purée, pistachio crisp and vegetables",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 25
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "menuNotes": "Carta transcrita de las nueve secciones facilitadas por el usuario. No se añadieron postres ni bebidas. Premios citados según la carta, sin año o categoría adicionales. Gramajes conservados literalmente sin atribuirlos a un tamaño de ración. No se han inferido alérgenos."
   },
   {
     "id": "taberna-la-manuela",
