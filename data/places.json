@@ -15086,6 +15086,32 @@
             "portion": "Precio de carta; formato no indicado"
           }
         ]
+      },
+      {
+        "service": "Opciones sin gluten / para celíacos",
+        "dishes": [
+          "Salmorejo Cordobés",
+          "Croquetas de Jamón",
+          "Berenjenas fritas",
+          "Flamenquín de Jamón Ibérico con Patatas"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Salmorejo Cordobés",
+            "eur": 10.5,
+            "portion": "Formato no indicado"
+          },
+          {
+            "dish": "Croquetas de Jamón",
+            "eur": 15,
+            "portion": "Formato no indicado"
+          },
+          {
+            "dish": "Flamenquín de Jamón Ibérico con Patatas",
+            "eur": 18,
+            "portion": "Formato no indicado"
+          }
+        ]
       }
     ],
     "menuSections": [
@@ -15184,15 +15210,56 @@
             ]
           }
         ]
+      },
+      {
+        "title": "Opciones sin gluten / para celíacos",
+        "items": [
+          {
+            "name": "Salmorejo Cordobés",
+            "prices": [
+              {
+                "eur": 10.5,
+                "portion": "Formato no indicado"
+              }
+            ]
+          },
+          {
+            "name": "Croquetas de Jamón",
+            "prices": [
+              {
+                "eur": 15,
+                "portion": "Formato no indicado"
+              }
+            ]
+          },
+          {
+            "name": "Berenjenas fritas",
+            "prices": [],
+            "priceNote": "Consultar"
+          },
+          {
+            "name": "Flamenquín de Jamón Ibérico con Patatas",
+            "prices": [
+              {
+                "eur": 18,
+                "portion": "Formato no indicado"
+              }
+            ]
+          }
+        ]
       }
     ],
     "extras": [
       {
         "name": "Servicio de pan",
         "eur": 1.9
+      },
+      {
+        "name": "Servicio de pan sin gluten (sección opciones para celíacos)",
+        "eur": 2.5
       }
     ],
-    "menuSourceNote": "Transcripción parcial de la sección Entrantes facilitada por el usuario el 16/10/2026. Restantes secciones pendientes. Los marcadores 'svg' de la fuente copiada no identifican alérgenos y no se interpretan. Fecha y vigencia de precios no indicadas. Sin imágenes de terceros."
+    "menuSourceNote": "Transcripción parcial de la sección Entrantes facilitada por el usuario el 16/10/2026. Restantes secciones pendientes. Los marcadores 'svg' de la fuente copiada no identifican alérgenos y no se interpretan. Fecha y vigencia de precios no indicadas. Sin imágenes de terceros. Sección «Opciones sin gluten / para celíacos» facilitada por el usuario: cuatro platos y servicio de pan a 2,50 €. Precio de berenjenas: «Consultar». La clasificación es la publicada por la carta y no garantiza ausencia de contaminación cruzada; verificar con el establecimiento. Marcadores svg sin identificación de alérgenos."
   },
   {
     "id": "posada-caballo-andaluz",
