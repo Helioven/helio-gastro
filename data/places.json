@@ -20830,12 +20830,16 @@
     "area": "Judería · Mezquita-Catedral",
     "address": "Calle Céspedes, 11 y Calle Velázquez Bosco, 10–12, Córdoba (dos direcciones publicadas; verificar si son accesos o locales distintos)",
     "mealCostEur": null,
-    "priceStatus": "unknown",
+    "priceStatus": "published_menu_prices_unverified_current",
     "checkedAt": "2026-10-16",
     "sources": [
       {
         "label": "Información de establecimientos del grupo Ágora (captura aportada por el usuario)",
         "url": "https://casabravo1919.es/"
+      },
+      {
+        "label": "Carta individual de Ágora Mezquita y fotografías oficiales aportadas por el usuario",
+        "url": "https://www.agoramezquita.com/"
       }
     ],
     "groupName": "Grupo Ágora",
@@ -20847,12 +20851,1291 @@
     "groupProfile": "Cocina cordobesa de raíz con enfoque contemporáneo, en las inmediaciones de la Mezquita-Catedral.",
     "contactPhone": "957 491 263",
     "publishedHours": "Todos los días 12:30–00:00; cocina siempre abierta (según captura).",
-    "menuSourceNote": "No se ha aportado carta individual ni precios para este establecimiento. No se trasladan platos o precios de Casa Bravo.",
+    "menuSourceNote": "Carta individual facilitada por el usuario; sin menú del día mostrado. El cochifrito figuraba dos veces y se consolidó en un plato con dos fotos. Las fotografías de croquetas de jamón y puchero usan el mismo archivo en origen. Los ingredientes del potaje proceden de Casa Bravo y no están confirmados por separado para este local. Precios sin verificación independiente de vigencia.",
     "menus": [
       {
-        "service": "general",
-        "dishes": [],
-        "dishPrices": []
+        "service": "Entrantes",
+        "dishes": [
+          "Tabla mixta jamón y queso",
+          "Surtido de croquetas (4 de cada)",
+          "Queso curado",
+          "Jamón Ibérico de Cebo",
+          "Gazpacho andaluz",
+          "Croquetas de chipirones",
+          "Croquetas caseras de puchero",
+          "Boquerones en vinagre",
+          "Patatas bravas",
+          "Croquetas caseras de jamón serrano",
+          "Salmorejo cordobés con dados de jamón",
+          "Mazamorra"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Tabla mixta jamón y queso",
+            "eur": 19.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Surtido de croquetas (4 de cada)",
+            "eur": 12.95,
+            "portion": "ración (12 unidades)"
+          },
+          {
+            "dish": "Queso curado",
+            "eur": 13.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Queso curado",
+            "eur": 9.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Jamón Ibérico de Cebo",
+            "eur": 19.95,
+            "portion": "ración (100 g)"
+          },
+          {
+            "dish": "Jamón Ibérico de Cebo",
+            "eur": 14.95,
+            "portion": "media ración (60 g)"
+          },
+          {
+            "dish": "Gazpacho andaluz",
+            "eur": 6.95,
+            "portion": "con guarnición"
+          },
+          {
+            "dish": "Gazpacho andaluz",
+            "eur": 4.95,
+            "portion": "vaso"
+          },
+          {
+            "dish": "Croquetas de chipirones",
+            "eur": 12.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Croquetas de chipirones",
+            "eur": 8.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Croquetas caseras de puchero",
+            "eur": 10.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Croquetas caseras de puchero",
+            "eur": 7.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Boquerones en vinagre",
+            "eur": 11.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Boquerones en vinagre",
+            "eur": 8.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Patatas bravas",
+            "eur": 10.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Croquetas caseras de jamón serrano",
+            "eur": 10.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Croquetas caseras de jamón serrano",
+            "eur": 7.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Salmorejo cordobés con dados de jamón",
+            "eur": 9.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Salmorejo cordobés con dados de jamón",
+            "eur": 7.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Salmorejo cordobés con dados de jamón",
+            "eur": 4.95,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Mazamorra",
+            "eur": 9.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Mazamorra",
+            "eur": 7.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Mazamorra",
+            "eur": 4.95,
+            "portion": "tapa"
+          }
+        ]
+      },
+      {
+        "service": "Ensaladas",
+        "dishes": [
+          "Ensalada de la casa",
+          "Ensalada de rulo de queso de cabra",
+          "Ensalada de burrata con salsa pesto, tomate cherry y nueces"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Ensalada de la casa",
+            "eur": 11.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Ensalada de rulo de queso de cabra",
+            "eur": 12.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Ensalada de burrata con salsa pesto, tomate cherry y nueces",
+            "eur": 12.95,
+            "portion": "ración"
+          }
+        ]
+      },
+      {
+        "service": "Revueltos",
+        "dishes": [
+          "Revuelto de setas y gambas",
+          "Revuelto de patatas con huevo frito y jamón",
+          "Revuelto de patatas con huevo frito y chorizo picante",
+          "Revuelto de gulas, gambas y patatas"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Revuelto de setas y gambas",
+            "eur": 12.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Revuelto de patatas con huevo frito y jamón",
+            "eur": 13.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Revuelto de patatas con huevo frito y chorizo picante",
+            "eur": 12.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Revuelto de gulas, gambas y patatas",
+            "eur": 13.95,
+            "portion": "ración"
+          }
+        ]
+      },
+      {
+        "service": "Verduras",
+        "dishes": [
+          "Pisto cordobés con huevos fritos",
+          "Berenjenas con miel de caña"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Pisto cordobés con huevos fritos",
+            "eur": 10.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Pisto cordobés con huevos fritos",
+            "eur": 8.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Berenjenas con miel de caña",
+            "eur": 9.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Berenjenas con miel de caña",
+            "eur": 7.95,
+            "portion": "media ración"
+          }
+        ]
+      },
+      {
+        "service": "Pescados",
+        "dishes": [
+          "Boquerones fritos al limón",
+          "Salmón a la plancha con verduras",
+          "Calamar a la plancha",
+          "Choco frito",
+          "Calamares fritos",
+          "Chanquetes",
+          "Bacalao frito",
+          "Tartar de atún",
+          "Langostinos al pil pil",
+          "Gambas fritas",
+          "Tortilla de camarones"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Boquerones fritos al limón",
+            "eur": 11.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Boquerones fritos al limón",
+            "eur": 8.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Salmón a la plancha con verduras",
+            "eur": 18.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Calamar a la plancha",
+            "eur": 14.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Choco frito",
+            "eur": 13.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Choco frito",
+            "eur": 10.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Calamares fritos",
+            "eur": 13.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Calamares fritos",
+            "eur": 9.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Chanquetes",
+            "eur": 10.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Bacalao frito",
+            "eur": 13.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Bacalao frito",
+            "eur": 10.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Tartar de atún",
+            "eur": 16.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Langostinos al pil pil",
+            "eur": 12.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Gambas fritas",
+            "eur": 11.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Tortilla de camarones",
+            "eur": 12.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Tortilla de camarones",
+            "eur": 9.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Tortilla de camarones",
+            "eur": 4.95,
+            "portion": "tapa"
+          }
+        ]
+      },
+      {
+        "service": "Carnes",
+        "dishes": [
+          "Muslo de pollo a la parrilla",
+          "Cochifrito del Valle de los Pedroches",
+          "Flamenquín de roquefort",
+          "Flamenquín cordobés de lomo y jamón",
+          "Rabo de toro",
+          "Carrillada de cerdo en salsa",
+          "Hamburguesa ÁGORA",
+          "Hamburguesa de vaca Retinta",
+          "Timbal de rabo de toro deshuesado con salsa y patatas",
+          "Patata fritas",
+          "Solomillo de ternera",
+          "Solomillo de cerdo ibérico"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Muslo de pollo a la parrilla",
+            "eur": 11.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Cochifrito del Valle de los Pedroches",
+            "eur": 16.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Flamenquín de roquefort",
+            "eur": 12.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Flamenquín cordobés de lomo y jamón",
+            "eur": 12.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Rabo de toro",
+            "eur": 19.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Carrillada de cerdo en salsa",
+            "eur": 15.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Hamburguesa ÁGORA",
+            "eur": 12.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Hamburguesa de vaca Retinta",
+            "eur": 15.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Timbal de rabo de toro deshuesado con salsa y patatas",
+            "eur": 17.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Patata fritas",
+            "eur": 5.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Solomillo de ternera",
+            "eur": 25.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Solomillo de cerdo ibérico",
+            "eur": 18.95,
+            "portion": "ración"
+          }
+        ]
+      },
+      {
+        "service": "Menú Infantil",
+        "dishes": [
+          "Nuggets de pollo con patatas fritas",
+          "Pasta a la boloñesa",
+          "Pasta con salsa carbonara",
+          "Pechuga de pollo empanada con patatas fritas"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Nuggets de pollo con patatas fritas",
+            "eur": 10.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Pasta a la boloñesa",
+            "eur": 11.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Pasta con salsa carbonara",
+            "eur": 11.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Pechuga de pollo empanada con patatas fritas",
+            "eur": 10.95,
+            "portion": "ración"
+          }
+        ]
+      },
+      {
+        "service": "Postres",
+        "dishes": [
+          "Torrija Caramelizada con helado de vainilla",
+          "Tarta de queso casera",
+          "Pastel cordobés",
+          "Naranja con aceite de oliva y canela",
+          "Tarta casera 3 chocolates",
+          "Helado de vainilla con chocolate caliente"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Torrija Caramelizada con helado de vainilla",
+            "eur": 6.5,
+            "portion": "ración"
+          },
+          {
+            "dish": "Tarta de queso casera",
+            "eur": 6.5,
+            "portion": "ración"
+          },
+          {
+            "dish": "Pastel cordobés",
+            "eur": 6.5,
+            "portion": "ración"
+          },
+          {
+            "dish": "Naranja con aceite de oliva y canela",
+            "eur": 5.9,
+            "portion": "ración"
+          },
+          {
+            "dish": "Tarta casera 3 chocolates",
+            "eur": 6.5,
+            "portion": "ración"
+          },
+          {
+            "dish": "Helado de vainilla con chocolate caliente",
+            "eur": 5.9,
+            "portion": "ración"
+          }
+        ]
+      },
+      {
+        "service": "Potaje Flamenco",
+        "dishes": [
+          "Potaje flamenco"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Potaje flamenco",
+            "eur": 7.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Potaje flamenco",
+            "eur": 9.95,
+            "portion": "ración"
+          }
+        ]
+      }
+    ],
+    "menuSections": [
+      {
+        "title": "Entrantes",
+        "items": [
+          {
+            "name": "Tabla mixta jamón y queso",
+            "description": "Tabla mixta jamón y queso",
+            "en": "Mixed ham and cheese platter",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 19.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2025/03/tabla_mixta_2.png"
+          },
+          {
+            "name": "Surtido de croquetas (4 de cada)",
+            "description": "Surtido de croquetas (4 de cada)",
+            "en": "Assorted croquettes (four of each kind)",
+            "prices": [
+              {
+                "label": "ración (12 unidades)",
+                "eur": 12.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2025/03/surtido_croquetas_2.png"
+          },
+          {
+            "name": "Queso curado",
+            "description": "Queso curado",
+            "en": "Aged cheese",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.95
+              },
+              {
+                "label": "media ración",
+                "eur": 9.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2022/11/queso-400x400.jpg"
+          },
+          {
+            "name": "Jamón Ibérico de Cebo",
+            "description": "Jamón Ibérico de Cebo",
+            "en": "Grain-fed Iberian ham",
+            "prices": [
+              {
+                "label": "ración (100 g)",
+                "eur": 19.95
+              },
+              {
+                "label": "media ración (60 g)",
+                "eur": 14.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2022/11/jamon-400x400.jpg"
+          },
+          {
+            "name": "Gazpacho andaluz",
+            "description": "Gazpacho andaluz",
+            "en": "Andalusian gazpacho",
+            "prices": [
+              {
+                "label": "con guarnición",
+                "eur": 6.95
+              },
+              {
+                "label": "vaso",
+                "eur": 4.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2022/11/gazpacho-andaluz-400x400.jpg"
+          },
+          {
+            "name": "Croquetas de chipirones",
+            "description": "Croquetas de chipirones",
+            "en": "Baby squid croquettes",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.95
+              },
+              {
+                "label": "media ración",
+                "eur": 8.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2022/11/croquetas-chipirones-400x400.jpg"
+          },
+          {
+            "name": "Croquetas caseras de puchero",
+            "description": "Croquetas caseras de puchero",
+            "en": "Homemade stew croquettes",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 10.95
+              },
+              {
+                "label": "media ración",
+                "eur": 7.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/croquetas-caseras-de-puchero-400x400.jpg"
+          },
+          {
+            "name": "Boquerones en vinagre",
+            "description": "Boquerones en vinagre",
+            "en": "Vinegar-marinated anchovies",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 11.95
+              },
+              {
+                "label": "media ración",
+                "eur": 8.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/boquerones-en-vinagre-2-400x400.jpg"
+          },
+          {
+            "name": "Patatas bravas",
+            "description": "Patatas bravas",
+            "en": "Spicy potatoes",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 10.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2022/11/patatas-bravas-400x400.jpg"
+          },
+          {
+            "name": "Croquetas caseras de jamón serrano",
+            "description": "Croquetas caseras de jamón serrano",
+            "en": "Homemade Serrano ham croquettes",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 10.95
+              },
+              {
+                "label": "media ración",
+                "eur": 7.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/croquetas-caseras-de-puchero-400x400.jpg"
+          },
+          {
+            "name": "Salmorejo cordobés con dados de jamón",
+            "description": "Salmorejo cordobés con dados de jamón",
+            "en": "Cordoban salmorejo with diced ham",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 9.95
+              },
+              {
+                "label": "media ración",
+                "eur": 7.95
+              },
+              {
+                "label": "tapa",
+                "eur": 4.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/salmorejo-400x400.jpg"
+          },
+          {
+            "name": "Mazamorra",
+            "description": "Mazamorra",
+            "en": "Cordoban almond mazamorra",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 9.95
+              },
+              {
+                "label": "media ración",
+                "eur": 7.95
+              },
+              {
+                "label": "tapa",
+                "eur": 4.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/1-Mazamorra-con-mermelada-de-higos-y-virutas-de-mojama-400x400.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Ensaladas",
+        "items": [
+          {
+            "name": "Ensalada de la casa",
+            "description": "Ensalada de la casa",
+            "en": "House salad",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 11.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/ensalada_casa.png"
+          },
+          {
+            "name": "Ensalada de rulo de queso de cabra",
+            "description": "Ensalada de rulo de queso de cabra",
+            "en": "Goat's cheese salad",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2025/03/ensalada_rulo.png"
+          },
+          {
+            "name": "Ensalada de burrata con salsa pesto, tomate cherry y nueces",
+            "description": "Ensalada de burrata con salsa pesto, tomate cherry y nueces",
+            "en": "Burrata salad with pesto, cherry tomatoes and walnuts",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2021/06/ensalada-burrata-400x359.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Revueltos",
+        "items": [
+          {
+            "name": "Revuelto de setas y gambas",
+            "description": "Revuelto de setas y gambas",
+            "en": "Scrambled eggs with mushrooms and prawns",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2022/11/revueltos-setas-gambas-400x400.jpg"
+          },
+          {
+            "name": "Revuelto de patatas con huevo frito y jamón",
+            "description": "Revuelto de patatas con huevo frito y jamón",
+            "en": "Potatoes with fried egg and ham",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/2-Huevos-fritos-con-patatas-y-jamon-iberico-400x400.jpg"
+          },
+          {
+            "name": "Revuelto de patatas con huevo frito y chorizo picante",
+            "description": "Revuelto de patatas con huevo frito y chorizo picante",
+            "en": "Potatoes with fried egg and spicy chorizo",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2025/03/revuelto_chorizo.png"
+          },
+          {
+            "name": "Revuelto de gulas, gambas y patatas",
+            "description": "Revuelto de gulas, gambas y patatas",
+            "en": "Scrambled eggs with surimi eel strips, prawns and potatoes",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/revuelto-gulas-gambas-patatas-e1600419044100-400x400.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Verduras",
+        "items": [
+          {
+            "name": "Pisto cordobés con huevos fritos",
+            "description": "Pisto cordobés con huevos fritos",
+            "en": "Cordoban vegetable stew with fried eggs",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 10.95
+              },
+              {
+                "label": "media ración",
+                "eur": 8.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/pisto-huevos-fritos-400x400.jpg"
+          },
+          {
+            "name": "Berenjenas con miel de caña",
+            "description": "Berenjenas con miel de caña",
+            "en": "Aubergine sticks with sugarcane molasses",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 9.95
+              },
+              {
+                "label": "media ración",
+                "eur": 7.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/berengenas-con-miel-400x400.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Pescados",
+        "items": [
+          {
+            "name": "Boquerones fritos al limón",
+            "description": "Boquerones fritos al limón",
+            "en": "Fried anchovies with lemon",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 11.95
+              },
+              {
+                "label": "media ración",
+                "eur": 8.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2022/11/boquerones-fritos-400x400.jpg"
+          },
+          {
+            "name": "Salmón a la plancha con verduras",
+            "description": "Salmón a la plancha con verduras",
+            "en": "Grilled salmon with vegetables",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 18.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2022/11/salmon-plancha-400x400.jpg"
+          },
+          {
+            "name": "Calamar a la plancha",
+            "description": "Calamar a la plancha",
+            "en": "Grilled squid",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 14.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/Calamares-plancha2-400x400.jpg"
+          },
+          {
+            "name": "Choco frito",
+            "description": "Choco frito",
+            "en": "Fried cuttlefish",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.95
+              },
+              {
+                "label": "media ración",
+                "eur": 10.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/choco-400x400.jpg"
+          },
+          {
+            "name": "Calamares fritos",
+            "description": "Calamares fritos",
+            "en": "Fried squid",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.95
+              },
+              {
+                "label": "media ración",
+                "eur": 9.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2021/06/calamares-fritos-400x400.jpg"
+          },
+          {
+            "name": "Chanquetes",
+            "description": "Chanquetes",
+            "en": "Chanquetes (small fish)",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 10.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2024/04/Chanquetes-400x400.jpg"
+          },
+          {
+            "name": "Bacalao frito",
+            "description": "Bacalao frito",
+            "en": "Fried cod",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.95
+              },
+              {
+                "label": "media ración",
+                "eur": 10.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/bacalao-frito-400x400.jpg"
+          },
+          {
+            "name": "Tartar de atún",
+            "description": "Tartar de atún",
+            "en": "Tuna tartare",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 16.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/3-Tartar-de-atun-400x400.jpg"
+          },
+          {
+            "name": "Langostinos al pil pil",
+            "description": "Langostinos al pil pil",
+            "en": "King prawns in pil pil sauce",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2024/04/Gambas-pil-pil-2-400x400.jpg"
+          },
+          {
+            "name": "Gambas fritas",
+            "description": "Gambas fritas",
+            "en": "Fried prawns",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 11.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2024/04/Gambas-fritas-400x400.jpg"
+          },
+          {
+            "name": "Tortilla de camarones",
+            "description": "Tortilla de camarones",
+            "en": "Shrimp fritter",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.95
+              },
+              {
+                "label": "media ración",
+                "eur": 9.95
+              },
+              {
+                "label": "tapa",
+                "eur": 4.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/tortilla-camarones-400x400.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Carnes",
+        "items": [
+          {
+            "name": "Muslo de pollo a la parrilla",
+            "description": "Muslo de pollo a la parrilla",
+            "en": "Grilled chicken thigh",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 11.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/Muslo-de-pollo-deshuesado-a-la-parrilla-400x400.jpg"
+          },
+          {
+            "name": "Cochifrito del Valle de los Pedroches",
+            "description": "Cochifrito del Valle de los Pedroches",
+            "en": "Fried pork from Los Pedroches Valley",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 16.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2025/03/cochifrito.png",
+            "imageUrls": [
+              "https://www.agoramezquita.com/wp-content/uploads/2025/03/cochifrito.png",
+              "https://www.agoramezquita.com/wp-content/uploads/2024/04/Cochifrito-400x400.jpg"
+            ]
+          },
+          {
+            "name": "Flamenquín de roquefort",
+            "description": "Flamenquín de roquefort",
+            "en": "Roquefort cheese flamenquín",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/Flamenquin-Roquefort-lomo-y-jamon-400x400.jpg"
+          },
+          {
+            "name": "Flamenquín cordobés de lomo y jamón",
+            "description": "Flamenquín cordobés de lomo y jamón",
+            "en": "Cordoban pork loin and ham flamenquín",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/flamenquin-2-400x400.jpg"
+          },
+          {
+            "name": "Rabo de toro",
+            "description": "Rabo de toro",
+            "en": "Braised oxtail",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 19.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/rabo-de-toro-2-400x400.jpg"
+          },
+          {
+            "name": "Carrillada de cerdo en salsa",
+            "description": "Carrillada de cerdo en salsa",
+            "en": "Pork cheeks in sauce",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 15.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/4-Carrillada-de-cerdo-2-400x400.jpg"
+          },
+          {
+            "name": "Hamburguesa ÁGORA",
+            "description": "Ternera de 1ª picada, cheddar, bacon, tomate natural, mezclum, aros de cebolla en tempura y salsa burguer casera",
+            "en": "Minced first-grade beef, cheddar, bacon, fresh tomato, mixed salad leaves, tempura onion rings and homemade burger sauce",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/hamburguesa-2-400x400.jpg"
+          },
+          {
+            "name": "Hamburguesa de vaca Retinta",
+            "description": "Hamburguesa de vaca Retinta",
+            "en": "Retinta beef burger",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 15.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2024/04/Hamburguesa-de-vaca-Retinta-400x400.jpg"
+          },
+          {
+            "name": "Timbal de rabo de toro deshuesado con salsa y patatas",
+            "description": "Timbal de rabo de toro deshuesado con salsa y patatas",
+            "en": "Boneless oxtail timbale with sauce and potatoes",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 17.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2022/11/timbal-de-rabo-400x400.jpg"
+          },
+          {
+            "name": "Patata fritas",
+            "description": "Patata fritas",
+            "en": "French fries",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 5.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2022/11/patatas-fritas-400x400.jpg"
+          },
+          {
+            "name": "Solomillo de ternera",
+            "description": "Solomillo de ternera a la parrilla",
+            "en": "Grilled beef tenderloin",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 25.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/Solomillo-ternera-2-400x400.jpg"
+          },
+          {
+            "name": "Solomillo de cerdo ibérico",
+            "description": "Solomillo de cerdo ibérico",
+            "en": "Iberian pork tenderloin",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 18.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/4-Churrasco-iberico-2-400x400.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Menú Infantil",
+        "items": [
+          {
+            "name": "Nuggets de pollo con patatas fritas",
+            "description": "Nuggets de pollo con patatas fritas",
+            "en": "Chicken nuggets with French fries",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 10.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/nuggets-2-400x400.jpg"
+          },
+          {
+            "name": "Pasta a la boloñesa",
+            "description": "Pasta a la boloñesa",
+            "en": "Pasta with Bolognese sauce",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 11.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/2-Espaguetis-bolonesa-400x400.jpg"
+          },
+          {
+            "name": "Pasta con salsa carbonara",
+            "description": "Pasta con salsa carbonara",
+            "en": "Pasta with carbonara sauce",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 11.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/Pasta-carbonara-2-400x400.jpg"
+          },
+          {
+            "name": "Pechuga de pollo empanada con patatas fritas",
+            "description": "Pechuga de pollo empanada con patatas fritas",
+            "en": "Breaded chicken breast with French fries",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 10.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/pechuga-pollo-patatas-400x400.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Postres",
+        "items": [
+          {
+            "name": "Torrija Caramelizada con helado de vainilla",
+            "description": "Torrija Caramelizada con helado de vainilla",
+            "en": "Caramelised Spanish-style French toast with vanilla ice cream",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 6.5
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2022/11/Torrija-400x400.jpg"
+          },
+          {
+            "name": "Tarta de queso casera",
+            "description": "Tarta de queso casera",
+            "en": "Homemade cheesecake",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 6.5
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2022/11/tarta-queso-400x400.jpg"
+          },
+          {
+            "name": "Pastel cordobés",
+            "description": "Pastel cordobés",
+            "en": "Traditional Cordoban pastry",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 6.5
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/pastel-cordobes-2-400x400.jpg"
+          },
+          {
+            "name": "Naranja con aceite de oliva y canela",
+            "description": "Naranja con aceite de oliva y canela",
+            "en": "Orange with olive oil and cinnamon",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 5.9
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/naranja-aceite-oliva-y-canela-400x400.jpg"
+          },
+          {
+            "name": "Tarta casera 3 chocolates",
+            "description": "Tarta casera 3 chocolates",
+            "en": "Homemade three-chocolate cake",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 6.5
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2025/03/tarta_casera_chocolate.png"
+          },
+          {
+            "name": "Helado de vainilla con chocolate caliente",
+            "description": "Helado de vainilla con chocolate caliente",
+            "en": "Vanilla ice cream with hot chocolate",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 5.9
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2020/09/helado-vainilla-con-chocolate-caliente-2-400x400.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Potaje Flamenco",
+        "items": [
+          {
+            "name": "Potaje flamenco",
+            "description": "Potaje con espinacas, garbanzos, morcilla, chorizo y panceta (ingredientes de la carta de Casa Bravo, mismo grupo; no confirmados individualmente en Ágora Mezquita).",
+            "en": "Stew with spinach, chickpeas, blood sausage, chorizo and pork belly.",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.95
+              },
+              {
+                "label": "ración",
+                "eur": 9.95
+              }
+            ],
+            "imageUrl": "https://www.agoramezquita.com/wp-content/uploads/2025/03/potaje_flamenco-400x336.png"
+          }
+        ]
       }
     ]
   },
