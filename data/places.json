@@ -14223,36 +14223,783 @@
     "area": "Ribera · Guadalquivir",
     "address": "Calle Enrique Romero de Torres, 7, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "priceStatus": "confirmed_from_user_menu_pdf",
+    "checkedAt": "2026-10-16",
     "groupMenus": [
       {
-        "name": "Menú Lares 2026 (grupo mínimo 8 personas)",
+        "name": "Menú Lares 26",
         "eurPerPerson": 36,
         "minPeople": 8,
-        "includes": "Platos para compartir cada cuatro; surtido de postres y bebida durante el menú",
+        "shared": [
+          "Salmorejo cordobés, paletilla curada de cerdo ibérico y huevo campero",
+          "Berenjenas fritas, miel de Montoro y queso de cabra de Zuheros",
+          "Huevos rotos con patatas y paletilla de cerdo ibérico",
+          "Flamenquín tradicional cordobés con patatas fritas",
+          "Rabo de toro guisado tradicional con patatas fritas"
+        ],
+        "dessert": "Surtido de postres caseros",
+        "includes": "Mínimo 8 personas. Platos de compartir cada 4 personas. Bebida incluida: refresco, agua, cerveza de barril y vino de la casa, desde el primer plato hasta el comienzo del postre. Comunicar alergias o intolerancias al reservar o con un mínimo de 48 horas de antelación.",
+        "sourceUrl": "https://www.latabernadelrio.com/wp-content/uploads/2026/01/Menus-2026.pdf"
+      },
+      {
+        "name": "Menú Ceres 26",
+        "eurPerPerson": 38,
+        "minPeople": 8,
+        "shared": [
+          "Focaccia, zaloük de berenjena asada, alcachofa frita y panceta curada",
+          "Ensaladilla de atún y mahonesa de AOVE",
+          "Patatas bravas, mojo picón canario y chile de árbol molido",
+          "Calamares fritos",
+          "Carrillada de cerdo al oloroso, curry de jengibre, cúrcuma y salsa agria"
+        ],
+        "dessert": "Surtido de postres caseros",
+        "includes": "Mínimo 8 personas. Platos de compartir cada 4 personas. Bebida incluida: refresco, agua, cerveza de barril y vino de la casa, desde el primer plato hasta el comienzo del postre. Comunicar alergias o intolerancias al reservar o con un mínimo de 48 horas de antelación.",
+        "sourceUrl": "https://www.latabernadelrio.com/wp-content/uploads/2026/01/Menus-2026.pdf"
+      },
+      {
+        "name": "Menú Fonto 26",
+        "eurPerPerson": 42,
+        "minPeople": 8,
+        "shared": [
+          "Mazamorra de pistacho, mermelada de higo seco al PX y caramelo salado",
+          "Cogollos de lechuga «César cordobesa», vinagre de membrillo de Priego, queso de cabra payoya, pechuga asada y picatostes",
+          "Choco fresco frito"
+        ],
+        "choice": [
+          "Lubina a la brasa, bilbaína, habitas al aceite de oliva y emulsión de puerro",
+          "Rulo de pollo braseado, bastones de batata frita, parmentier y salsa huacatay"
+        ],
+        "dessert": "Surtido de postres caseros",
+        "includes": "Mínimo 8 personas. Platos de compartir cada 4 personas. Bebida incluida: refresco, agua, cerveza de barril y vino de la casa, desde el primer plato hasta el comienzo del postre. Comunicar alergias o intolerancias al reservar o con un mínimo de 48 horas de antelación.",
+        "sourceUrl": "https://www.latabernadelrio.com/wp-content/uploads/2026/01/Menus-2026.pdf"
+      },
+      {
+        "name": "Menú Liber 26",
+        "eurPerPerson": 48,
+        "minPeople": 8,
+        "shared": [
+          "Surtido ibérico de bellota (salchichón, chorizo y lomo curado)",
+          "Ensaladilla de atún y mahonesa de AOVE",
+          "Croquetas cremosas de puchero andaluz"
+        ],
+        "choice": [
+          "Salmón a la brasa, crema de curry y verduritas marinadas",
+          "Pluma ibérica a la brasa, patata parisine y chimichurri ahumado"
+        ],
+        "dessert": "Surtido de postres caseros",
+        "includes": "Mínimo 8 personas. Platos de compartir cada 4 personas. Bebida incluida: refresco, agua, cerveza de barril y vino de la casa, desde el primer plato hasta el comienzo del postre. Comunicar alergias o intolerancias al reservar o con un mínimo de 48 horas de antelación.",
+        "sourceUrl": "https://www.latabernadelrio.com/wp-content/uploads/2026/01/Menus-2026.pdf"
+      },
+      {
+        "name": "Menú Vesta 26",
+        "eurPerPerson": 50,
+        "minPeople": 8,
+        "shared": [
+          "Focaccia de pollo marinado con verduras y parmesano Reggiano D.O.P.",
+          "Cazuela de espárragos verdes a la brasa con gouda viejo y jamón ibérico",
+          "Huevos rotos con ajetes salteados y salchichón ibérico"
+        ],
+        "choice": [
+          "Merluza de pintxo al horno, alcachofas a la brasa, crema de patata y puerro",
+          "Costilla de ternera a baja temperatura, barbacoa bourbon de verduras a la brasa"
+        ],
+        "dessert": "Surtido de postres caseros",
+        "includes": "Mínimo 8 personas. Platos de compartir cada 4 personas. Bebida incluida: refresco, agua, cerveza de barril y vino de la casa, desde el primer plato hasta el comienzo del postre. Comunicar alergias o intolerancias al reservar o con un mínimo de 48 horas de antelación.",
+        "sourceUrl": "https://www.latabernadelrio.com/wp-content/uploads/2026/01/Menus-2026.pdf"
+      },
+      {
+        "name": "Menú Baco 26",
+        "eurPerPerson": 54,
+        "minPeople": 8,
+        "shared": [
+          "Salmorejo de remolacha con queso de cabra y brotes frescos",
+          "Patatas butter massala con cacahuete frito y crema agria",
+          "Habitas baby con calamaritos, huevos rotos y emulsión de cebolleta fresca"
+        ],
+        "choice": [
+          "Lenguado al horno, bearnesa y edamame",
+          "Carrillada de ternera, demiglace, patatas parissine con mantequilla y hierbas"
+        ],
+        "dessert": "Surtido de postres caseros",
+        "includes": "Mínimo 8 personas. Platos de compartir cada 4 personas. Bebida incluida: refresco, agua, cerveza de barril y vino de la casa, desde el primer plato hasta el comienzo del postre. Comunicar alergias o intolerancias al reservar o con un mínimo de 48 horas de antelación.",
         "sourceUrl": "https://www.latabernadelrio.com/wp-content/uploads/2026/01/Menus-2026.pdf"
       }
     ],
     "sources": [
       {
-        "label": "Menús para grupos 2026, con condiciones",
+        "label": "Carta general bilingüe con precios · PDF facilitado por el usuario",
+        "url": "https://www.latabernadelrio.com/"
+      },
+      {
+        "label": "Menús para grupos 2026 · PDF oficial",
         "url": "https://www.latabernadelrio.com/wp-content/uploads/2026/01/Menus-2026.pdf"
       }
     ],
     "menus": [
       {
-        "service": "general",
+        "service": "Abriendo boca",
         "dishes": [
-          "Salmorejo cordobés",
-          "Berenjenas fritas con miel",
-          "Flamenquín tradicional cordobés",
-          "Rabo de toro guisado",
-          "Huevos rotos"
+          "Tosta de anchoa del Cantábrico, paté de piparra y AOVE",
+          "Tabla charcutera de morcón ibérico, mortadela de Bolonia, sobrasada ibérica del Valle de los Pedroches y pan de aceite",
+          "Quesos afinados D.O.P. de España y palillos caseros de maíz",
+          "Boquerones en vinagre, crema de aguacate e hinojo encurtido",
+          "Ensaladilla de atún y mahonesa de AOVE",
+          "Ensalada de cherrys confitados, chermoula marroquí y caballa en AOVE",
+          "Cogollos de lechuga «César cordobesa», vinagre de membrillo de Priego, queso de cabra payoya, pechuga asada y picatostes",
+          "Tartar de salchichón ibérico, chips de patata, crema agria y lima, regañás de pan con tomate y orégano fresco"
         ],
-        "dishPrices": []
+        "dishPrices": [
+          {
+            "dish": "Tosta de anchoa del Cantábrico, paté de piparra y AOVE",
+            "eur": 4,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Tabla charcutera de morcón ibérico, mortadela de Bolonia, sobrasada ibérica del Valle de los Pedroches y pan de aceite",
+            "eur": 21,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Quesos afinados D.O.P. de España y palillos caseros de maíz",
+            "eur": 16,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Boquerones en vinagre, crema de aguacate e hinojo encurtido",
+            "eur": 16,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Ensaladilla de atún y mahonesa de AOVE",
+            "eur": 9.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Ensalada de cherrys confitados, chermoula marroquí y caballa en AOVE",
+            "eur": 13.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Cogollos de lechuga «César cordobesa», vinagre de membrillo de Priego, queso de cabra payoya, pechuga asada y picatostes",
+            "eur": 13.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Tartar de salchichón ibérico, chips de patata, crema agria y lima, regañás de pan con tomate y orégano fresco",
+            "eur": 13,
+            "portion": "Ración"
+          }
+        ]
+      },
+      {
+        "service": "Sabores Córdoba",
+        "dishes": [
+          "Salmorejo cordobés, paletilla curada de cerdo ibérico y huevo campero",
+          "Mazamorra de pistacho, mermelada de higo seco al PX y caramelo salado",
+          "Berenjenas fritas, miel de Montoro y queso de cabra de Zuheros",
+          "Huevos rotos con patatas y paletilla de cerdo ibérico",
+          "Flamenquín tradicional cordobés con patatas fritas",
+          "Rabo de toro guisado tradicional con patatas fritas"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Salmorejo cordobés, paletilla curada de cerdo ibérico y huevo campero",
+            "eur": 6.5,
+            "portion": "Formato 1 (sin tamaño indicado)"
+          },
+          {
+            "dish": "Salmorejo cordobés, paletilla curada de cerdo ibérico y huevo campero",
+            "eur": 9.9,
+            "portion": "Formato 2 (sin tamaño indicado)"
+          },
+          {
+            "dish": "Mazamorra de pistacho, mermelada de higo seco al PX y caramelo salado",
+            "eur": 9.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Berenjenas fritas, miel de Montoro y queso de cabra de Zuheros",
+            "eur": 11.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Huevos rotos con patatas y paletilla de cerdo ibérico",
+            "eur": 14.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Flamenquín tradicional cordobés con patatas fritas",
+            "eur": 14,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Rabo de toro guisado tradicional con patatas fritas",
+            "eur": 20.9,
+            "portion": "Ración"
+          }
+        ]
+      },
+      {
+        "service": "Puro Río",
+        "dishes": [
+          "Croquetas cremosas de puchero andaluz",
+          "Patatas bravas, mojo picón canario y chile de árbol molido",
+          "Hummus, queso cottage, bimi frito y salsa de cacahuete y coco",
+          "Focaccia, zaloük de berenjena asada, alcachofa frita y panceta curada",
+          "Provoletta a la brasa de queso artesano, shiitakes, pimiento confitado y tomillo",
+          "Brioche de rabo de toro estofado, mayonesa ahumada de soja y relish de pepinillo agridulce",
+          "Aburi de atún rojo, salmorejo escabechado, huevas de maruca y piparras",
+          "Sashimi semicurado de hamachi (pez limón), ají amarillo, pepino y lima",
+          "Gyozas de caldereta de cordero, salsa «Butter Massala», agria, cilantro y cacahuete",
+          "Risotto de rabo de toro, mantequilla casera y parmesano"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Croquetas cremosas de puchero andaluz",
+            "eur": 7,
+            "portion": "Formato 1 (sin tamaño indicado)"
+          },
+          {
+            "dish": "Croquetas cremosas de puchero andaluz",
+            "eur": 13,
+            "portion": "Formato 2 (sin tamaño indicado)"
+          },
+          {
+            "dish": "Patatas bravas, mojo picón canario y chile de árbol molido",
+            "eur": 9.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Hummus, queso cottage, bimi frito y salsa de cacahuete y coco",
+            "eur": 15,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Focaccia, zaloük de berenjena asada, alcachofa frita y panceta curada",
+            "eur": 12.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Provoletta a la brasa de queso artesano, shiitakes, pimiento confitado y tomillo",
+            "eur": 13,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Brioche de rabo de toro estofado, mayonesa ahumada de soja y relish de pepinillo agridulce",
+            "eur": 9.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Aburi de atún rojo, salmorejo escabechado, huevas de maruca y piparras",
+            "eur": 23,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Sashimi semicurado de hamachi (pez limón), ají amarillo, pepino y lima",
+            "eur": 18.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Gyozas de caldereta de cordero, salsa «Butter Massala», agria, cilantro y cacahuete",
+            "eur": 17.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Risotto de rabo de toro, mantequilla casera y parmesano",
+            "eur": 19.9,
+            "portion": "Ración"
+          }
+        ]
+      },
+      {
+        "service": "Pescados a la brasa",
+        "dishes": [
+          "Calamar de potera asado a la brasa, americana de vieiras secas y alioli de yema campera",
+          "Lubina a la brasa, bilbaína, habitas al aceite de oliva y emulsión de puerro",
+          "Salmón a la brasa, crema de curry y verduritas marinadas",
+          "Rodaballo a la brasa, alcachofas asadas, holandesa y aceite de ajo morado",
+          "Pulpo flor asado a la brasa, crema de patata, pimienta fresca y emulsión de puerro"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Calamar de potera asado a la brasa, americana de vieiras secas y alioli de yema campera",
+            "eur": 19,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Lubina a la brasa, bilbaína, habitas al aceite de oliva y emulsión de puerro",
+            "eur": 18.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Salmón a la brasa, crema de curry y verduritas marinadas",
+            "eur": 18,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Rodaballo a la brasa, alcachofas asadas, holandesa y aceite de ajo morado",
+            "eur": 24,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Pulpo flor asado a la brasa, crema de patata, pimienta fresca y emulsión de puerro",
+            "eur": 24,
+            "portion": "Ración"
+          }
+        ]
+      },
+      {
+        "service": "Carnes",
+        "dishes": [
+          "Rulo de pollo braseado, bastones de batata frita, parmentier y salsa huacatay",
+          "Tacos de mogote ibérico ahumado al carbón, marinado de achiote, guacamole y sofrito picante",
+          "Carrillada de cerdo al oloroso, curry de za’atar, cúrcuma y salsa agria",
+          "Pluma ibérica a la brasa, patata parisine y chimichurri ahumado",
+          "Entrecot de vaca madurada a la brasa, patatas fritas y pimientos del Padrón"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Rulo de pollo braseado, bastones de batata frita, parmentier y salsa huacatay",
+            "eur": 18,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Tacos de mogote ibérico ahumado al carbón, marinado de achiote, guacamole y sofrito picante",
+            "eur": 19.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Carrillada de cerdo al oloroso, curry de za’atar, cúrcuma y salsa agria",
+            "eur": 17.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Pluma ibérica a la brasa, patata parisine y chimichurri ahumado",
+            "eur": 23.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Entrecot de vaca madurada a la brasa, patatas fritas y pimientos del Padrón",
+            "eur": 29,
+            "portion": "Ración"
+          }
+        ]
+      },
+      {
+        "service": "Postres",
+        "dishes": [
+          "Tarta de la abuela de natillas tradicionales, ganache de cacao y cacahuete",
+          "Tarta de queso y yema tostada",
+          "«Lemon pie» sablée, crema de limón y merengue suizo",
+          "Bavaroise de mango, coco y pimienta de Jamaica, coulis de fresa y crumble de maíz (sin gluten ni lactosa)"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Tarta de la abuela de natillas tradicionales, ganache de cacao y cacahuete",
+            "eur": 6.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Tarta de queso y yema tostada",
+            "eur": 6.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "«Lemon pie» sablée, crema de limón y merengue suizo",
+            "eur": 7,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Bavaroise de mango, coco y pimienta de Jamaica, coulis de fresa y crumble de maíz (sin gluten ni lactosa)",
+            "eur": 6.9,
+            "portion": "Ración"
+          }
+        ]
       }
-    ]
+    ],
+    "menuSections": [
+      {
+        "title": "Abriendo boca",
+        "items": [
+          {
+            "name": "Tosta de anchoa del Cantábrico, paté de piparra y AOVE",
+            "prices": [
+              {
+                "eur": 4,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Tabla charcutera de morcón ibérico, mortadela de Bolonia, sobrasada ibérica del Valle de los Pedroches y pan de aceite",
+            "prices": [
+              {
+                "eur": 21,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Quesos afinados D.O.P. de España y palillos caseros de maíz",
+            "prices": [
+              {
+                "eur": 16,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Boquerones en vinagre, crema de aguacate e hinojo encurtido",
+            "prices": [
+              {
+                "eur": 16,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Ensaladilla de atún y mahonesa de AOVE",
+            "prices": [
+              {
+                "eur": 9.9,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Ensalada de cherrys confitados, chermoula marroquí y caballa en AOVE",
+            "prices": [
+              {
+                "eur": 13.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Cogollos de lechuga «César cordobesa», vinagre de membrillo de Priego, queso de cabra payoya, pechuga asada y picatostes",
+            "prices": [
+              {
+                "eur": 13.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Tartar de salchichón ibérico, chips de patata, crema agria y lima, regañás de pan con tomate y orégano fresco",
+            "prices": [
+              {
+                "eur": 13,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Sabores Córdoba",
+        "items": [
+          {
+            "name": "Salmorejo cordobés, paletilla curada de cerdo ibérico y huevo campero",
+            "prices": [
+              {
+                "eur": 6.5,
+                "portion": "Formato 1 (sin tamaño indicado)"
+              },
+              {
+                "eur": 9.9,
+                "portion": "Formato 2 (sin tamaño indicado)"
+              }
+            ]
+          },
+          {
+            "name": "Mazamorra de pistacho, mermelada de higo seco al PX y caramelo salado",
+            "prices": [
+              {
+                "eur": 9.9,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Berenjenas fritas, miel de Montoro y queso de cabra de Zuheros",
+            "prices": [
+              {
+                "eur": 11.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Huevos rotos con patatas y paletilla de cerdo ibérico",
+            "prices": [
+              {
+                "eur": 14.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín tradicional cordobés con patatas fritas",
+            "prices": [
+              {
+                "eur": 14,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Rabo de toro guisado tradicional con patatas fritas",
+            "prices": [
+              {
+                "eur": 20.9,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Puro Río",
+        "items": [
+          {
+            "name": "Croquetas cremosas de puchero andaluz",
+            "prices": [
+              {
+                "eur": 7,
+                "portion": "Formato 1 (sin tamaño indicado)"
+              },
+              {
+                "eur": 13,
+                "portion": "Formato 2 (sin tamaño indicado)"
+              }
+            ]
+          },
+          {
+            "name": "Patatas bravas, mojo picón canario y chile de árbol molido",
+            "prices": [
+              {
+                "eur": 9.9,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Hummus, queso cottage, bimi frito y salsa de cacahuete y coco",
+            "prices": [
+              {
+                "eur": 15,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Focaccia, zaloük de berenjena asada, alcachofa frita y panceta curada",
+            "prices": [
+              {
+                "eur": 12.9,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Provoletta a la brasa de queso artesano, shiitakes, pimiento confitado y tomillo",
+            "prices": [
+              {
+                "eur": 13,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Brioche de rabo de toro estofado, mayonesa ahumada de soja y relish de pepinillo agridulce",
+            "prices": [
+              {
+                "eur": 9.9,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Aburi de atún rojo, salmorejo escabechado, huevas de maruca y piparras",
+            "prices": [
+              {
+                "eur": 23,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Sashimi semicurado de hamachi (pez limón), ají amarillo, pepino y lima",
+            "prices": [
+              {
+                "eur": 18.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Gyozas de caldereta de cordero, salsa «Butter Massala», agria, cilantro y cacahuete",
+            "prices": [
+              {
+                "eur": 17.9,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Risotto de rabo de toro, mantequilla casera y parmesano",
+            "prices": [
+              {
+                "eur": 19.9,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Pescados a la brasa",
+        "items": [
+          {
+            "name": "Calamar de potera asado a la brasa, americana de vieiras secas y alioli de yema campera",
+            "prices": [
+              {
+                "eur": 19,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Lubina a la brasa, bilbaína, habitas al aceite de oliva y emulsión de puerro",
+            "prices": [
+              {
+                "eur": 18.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Salmón a la brasa, crema de curry y verduritas marinadas",
+            "prices": [
+              {
+                "eur": 18,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Rodaballo a la brasa, alcachofas asadas, holandesa y aceite de ajo morado",
+            "prices": [
+              {
+                "eur": 24,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Pulpo flor asado a la brasa, crema de patata, pimienta fresca y emulsión de puerro",
+            "prices": [
+              {
+                "eur": 24,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Carnes",
+        "items": [
+          {
+            "name": "Rulo de pollo braseado, bastones de batata frita, parmentier y salsa huacatay",
+            "prices": [
+              {
+                "eur": 18,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Tacos de mogote ibérico ahumado al carbón, marinado de achiote, guacamole y sofrito picante",
+            "prices": [
+              {
+                "eur": 19.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Carrillada de cerdo al oloroso, curry de za’atar, cúrcuma y salsa agria",
+            "prices": [
+              {
+                "eur": 17.9,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Pluma ibérica a la brasa, patata parisine y chimichurri ahumado",
+            "prices": [
+              {
+                "eur": 23.9,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Entrecot de vaca madurada a la brasa, patatas fritas y pimientos del Padrón",
+            "prices": [
+              {
+                "eur": 29,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Postres",
+        "items": [
+          {
+            "name": "Tarta de la abuela de natillas tradicionales, ganache de cacao y cacahuete",
+            "prices": [
+              {
+                "eur": 6.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Tarta de queso y yema tostada",
+            "prices": [
+              {
+                "eur": 6.9,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "«Lemon pie» sablée, crema de limón y merengue suizo",
+            "prices": [
+              {
+                "eur": 7,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Bavaroise de mango, coco y pimienta de Jamaica, coulis de fresa y crumble de maíz (sin gluten ni lactosa)",
+            "prices": [
+              {
+                "eur": 6.9,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "menuSourceNote": "Carta general bilingüe de 2 páginas «cartelones-taberna-del-rio.pdf», facilitada por el usuario 16/10/2026. El PDF no indica fecha de edición ni vigencia. Se transcriben importes de la versión española; cuando hay dos precios, el PDF no identifica tamaños y se registran como formato 1/2 sin inferir tapa/media. La marca (*) aparece en cuatro platos sin aclaración legible en el PDF. Menús grupales fechados 2026: seis opciones, mínimo 8 personas. Sin fotografías de terceros. Verificar vigencia con el restaurante."
   },
   {
     "id": "restaurante-puerta-sevilla",
