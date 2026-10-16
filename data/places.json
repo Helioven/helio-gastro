@@ -15642,8 +15642,8 @@
     "area": "Alcázar Viejo · San Basilio",
     "address": "Calle San Basilio, 16, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "priceStatus": "partial_user_supplied_menu",
+    "checkedAt": "2026-10-16",
     "sources": [
       {
         "label": "Web oficial y cocina tradicional",
@@ -15656,18 +15656,203 @@
     ],
     "menus": [
       {
-        "service": "general",
+        "service": "Entrantes fríos y ensaladas",
         "dishes": [
+          "Queso curado de oveja",
+          "Jamón ibérico de cebo",
+          "Jamón ibérico de bellota 100%",
+          "Surtido de embutidos ibéricos",
           "Salmorejo cordobés",
           "Mazamorra cordobesa",
-          "Berenjenas fritas con miel de caña",
-          "Rabo de toro cordobés",
-          "Bacalao frito",
-          "Torrijas caseras"
+          "Ensalada mixta con su «vinagreta clásica»",
+          "Ensalada de burrata"
         ],
-        "dishPrices": []
+        "dishPrices": [
+          {
+            "dish": "Queso curado de oveja",
+            "eur": 10.9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Queso curado de oveja",
+            "eur": 12.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Jamón ibérico de cebo",
+            "eur": 9.9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Jamón ibérico de cebo",
+            "eur": 12.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Jamón ibérico de bellota 100%",
+            "eur": 28,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Surtido de embutidos ibéricos",
+            "eur": 10.9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Surtido de embutidos ibéricos",
+            "eur": 14.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Salmorejo cordobés",
+            "eur": 8.9,
+            "portion": "Formato no indicado"
+          },
+          {
+            "dish": "Mazamorra cordobesa",
+            "eur": 9.9,
+            "portion": "Formato no indicado"
+          },
+          {
+            "dish": "Ensalada mixta con su «vinagreta clásica»",
+            "eur": 6.9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Ensalada mixta con su «vinagreta clásica»",
+            "eur": 9.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Ensalada de burrata",
+            "eur": 14.9,
+            "portion": "Formato no indicado"
+          }
+        ]
       }
-    ]
+    ],
+    "menuSections": [
+      {
+        "title": "Entrantes fríos y ensaladas",
+        "items": [
+          {
+            "name": "Queso curado de oveja",
+            "prices": [
+              {
+                "eur": 10.9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12.9,
+                "portion": "Ración"
+              }
+            ],
+            "description": "Servido con AOVE y avellanas cordobesas"
+          },
+          {
+            "name": "Jamón ibérico de cebo",
+            "prices": [
+              {
+                "eur": 9.9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12.9,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Jamón ibérico de bellota 100%",
+            "prices": [
+              {
+                "eur": 28,
+                "portion": "Ración"
+              }
+            ],
+            "description": "Cortado a cuchillo; D.O. Valle de los Pedroches"
+          },
+          {
+            "name": "Surtido de embutidos ibéricos",
+            "prices": [
+              {
+                "eur": 10.9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 14.9,
+                "portion": "Ración"
+              }
+            ],
+            "description": "Salchichón y chorizo ibéricos de bellota 100%, jamón ibérico y queso curado de oveja"
+          },
+          {
+            "name": "Salmorejo cordobés",
+            "prices": [
+              {
+                "eur": 8.9,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "Crema fría de tomate, pan, ajo y AOVE, con jamón ibérico y huevo duro"
+          },
+          {
+            "name": "Mazamorra cordobesa",
+            "prices": [
+              {
+                "eur": 9.9,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "Crema fría de pan, almendras, avellana cordobesa, ajo y AOVE, con manzana y uvas"
+          },
+          {
+            "name": "Ensalada mixta con su «vinagreta clásica»",
+            "prices": [
+              {
+                "eur": 6.9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 9.9,
+                "portion": "Ración"
+              }
+            ],
+            "description": "Lechuga, pimiento verde, huevo duro, atún, tomate, cebolla y olivas negras"
+          },
+          {
+            "name": "Ensalada de burrata",
+            "prices": [
+              {
+                "eur": 14.9,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "Rúcula fresca, burrata, jamón ibérico y vinagreta de higos"
+          }
+        ]
+      }
+    ],
+    "extras": [
+      {
+        "name": "Servicio de AOVE Las Arenosas (primera extracción en frío)",
+        "eur": 0.7
+      },
+      {
+        "name": "Servicio de pan",
+        "eur": 1
+      },
+      {
+        "name": "Mantequilla",
+        "eur": 1.5,
+        "portion": "2 unidades"
+      },
+      {
+        "name": "Salsa extra",
+        "eur": 1.5
+      }
+    ],
+    "menuSourceNote": "Transcripción parcial de la carta facilitada en texto por el usuario el 16/10/2026: Entrantes fríos y ensaladas, ocho platos y cuatro suplementos. Precios de carta no verificados en tiempo real; fecha de edición no indicada. Secciones restantes pendientes. Sin fotografías de terceros."
   },
   {
     "id": "bodegas-campos",
