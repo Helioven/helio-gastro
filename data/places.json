@@ -7482,12 +7482,12 @@
     "area": "Judería · Puerta de Almodóvar",
     "address": "Calle Puerta de Almodóvar, 5, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "priceStatus": "historical_pending_update",
+    "checkedAt": "2026-10-16",
     "sources": [
       {
-        "label": "Carta oficial PDF (precios pendientes de transcripción fiable)",
-        "url": "https://restaurantecasarubiocordoba.com/wp-content/uploads/2025/04/CARTA-CASA-RUBIO.pdf"
+        "label": "Carta oficial de octubre de 2025 (PDF aportado por el usuario)",
+        "url": "https://restaurantecasarubiocordoba.com/"
       },
       {
         "label": "Web oficial y dirección",
@@ -7498,50 +7498,899 @@
       {
         "service": "general",
         "dishes": [
-          "Jamón 100 % ibérico de campo cortado al momento",
-          "Queso curado de oveja de Fuente Obejuna",
-          "Mixto de jamón ibérico y queso de oveja",
+          "Jamón 100% ibérico cortado al momento (60/100 g)",
+          "Queso curado de oveja de Córdoba (100/150 g)",
+          "Mixto de jamón ibérico y queso de oveja (90/160 g)",
           "Salmorejo cordobés con jamón y huevo",
           "Mazamorra con manzana verde y pasas al PX",
-          "Vaso de gazpacho de tomate",
-          "Tosta de anchoa del Cantábrico con mantequilla de oveja",
-          "Tosta de sardina con salmorejo",
-          "Ensaladilla de atún con carpaccio de pulpo y pimentón",
-          "Boquerones en vinagre con cebolleta y aceitunas pasificadas",
-          "Bravas de Rubio con espuma de alioli",
-          "Berenjenas abueneladas con miel de caña",
-          "Croquetas de puchero y jamón ibérico",
+          "Nuestra ensaladilla de atún con carpaccio de pulpo y pimentón (200/300 g)",
+          "Las bravas de Rubio con espuma de alioli",
+          "Oreja frita en adobo y salsa brava (150 g)",
+          "Berenjenas abuñueladas con miel de caña",
+          "Croquetas de puchero y jamón ibérico (6/9 unidades)",
           "Flamenquín cordobés con polvo de parmesano y patatas",
-          "Tomate de temporada, cebolleta y lomitos de atún",
           "Ensalada de hortalizas de temporada",
           "Ensalada de salmón ahumado, aguacate y vinagreta de lima",
-          "Puerros confitados y asados, carbonara, parmesano y torreznos fritos",
-          "Alcachofas con bechamel de foie y jamón ibérico",
+          "Puerros confitados y asados, carbonara, parmesano y torreznos fritos (1/2 unidades)",
+          "Alcachofas con bechamel de foie y jamón ibérico (2 unidades)",
           "Atún rojo de almadraba con verduras de temporada salteadas",
           "Bacalao premium con salsa de tomate y judías salteadas",
-          "Chipirones fritos con mahonesa cítrica",
-          "Bacalao frito",
-          "Rosada frita al limón",
-          "Cordero sefardí con cuscús de verduras",
-          "Solomillo 100 % ibérico de bellota a la plancha con salsa verde",
-          "Pluma ibérica 100 % de bellota con pimientos de piquillo confitados",
-          "Lomo de vaca dry aged",
-          "Albóndigas de vaca en salsa con patatas",
-          "Rabo de toro estofado con patatas",
+          "Pisto de verduras con tomate y gamba cristal frita",
+          "Rosada al limón frita y ensalada de col (140/240 g)",
+          "Calamares fritos y mayonesa cítrica (120/220 g)",
+          "Rabo de toro estofado con patatas (240/360 g)",
+          "Albóndigas de vaca en salsa con parmentier de patata (3/5 unidades)",
+          "Jarrete de cordero al estilo sefardí y cuscús de verduras",
+          "Solomillo 100% ibérico de bellota con salsa verde (200 g)",
+          "Pluma ibérica 100% de bellota con pimientos de piquillo confitados (200 g)",
+          "Lomo de vaca dry aged (300 g)",
+          "Cochinillo asado en dos cocciones (para dos personas, en cuartos)",
+          "Secreto ibérico de bellota a la plancha, salsa de vino de Montilla y espárragos salteados (200 g)",
           "Torrija de pan brioche con helado de leche merengada",
-          "Tarta de queso casera con queso azul",
+          "Tarta de queso casera muy cremosa con queso azul",
           "Brownie con helado de vainilla",
-          "Tocino de cielo y helado de sorbete de limón",
-          "Pastel cordobés",
+          "Flan de vainilla con helado de galleta",
+          "Tocino de cielo y sorbete de limón",
+          "Pastel cordobés con helado de avellana",
           "Helado de turrón"
         ],
-        "dishPrices": []
+        "dishPrices": [
+          {
+            "dish": "Jamón 100% ibérico cortado al momento (60/100 g)",
+            "eur": 17,
+            "portion": "media",
+            "historical": true
+          },
+          {
+            "dish": "Jamón 100% ibérico cortado al momento (60/100 g)",
+            "eur": 28,
+            "portion": "ración",
+            "historical": true
+          },
+          {
+            "dish": "Queso curado de oveja de Córdoba (100/150 g)",
+            "eur": 14,
+            "portion": "media",
+            "historical": true
+          },
+          {
+            "dish": "Queso curado de oveja de Córdoba (100/150 g)",
+            "eur": 19.5,
+            "portion": "ración",
+            "historical": true
+          },
+          {
+            "dish": "Mixto de jamón ibérico y queso de oveja (90/160 g)",
+            "eur": 15,
+            "portion": "media",
+            "historical": true
+          },
+          {
+            "dish": "Mixto de jamón ibérico y queso de oveja (90/160 g)",
+            "eur": 23,
+            "portion": "ración",
+            "historical": true
+          },
+          {
+            "dish": "Salmorejo cordobés con jamón y huevo",
+            "eur": 12.5,
+            "portion": "precio único",
+            "historical": true
+          },
+          {
+            "dish": "Mazamorra con manzana verde y pasas al PX",
+            "eur": 13,
+            "portion": "precio único",
+            "historical": true
+          },
+          {
+            "dish": "Nuestra ensaladilla de atún con carpaccio de pulpo y pimentón (200/300 g)",
+            "eur": 13,
+            "portion": "media",
+            "historical": true
+          },
+          {
+            "dish": "Nuestra ensaladilla de atún con carpaccio de pulpo y pimentón (200/300 g)",
+            "eur": 19,
+            "portion": "ración",
+            "historical": true
+          },
+          {
+            "dish": "Las bravas de Rubio con espuma de alioli",
+            "eur": 11.5,
+            "portion": "media",
+            "historical": true
+          },
+          {
+            "dish": "Las bravas de Rubio con espuma de alioli",
+            "eur": 17,
+            "portion": "ración",
+            "historical": true
+          },
+          {
+            "dish": "Oreja frita en adobo y salsa brava (150 g)",
+            "eur": 13,
+            "portion": "precio único",
+            "historical": true
+          },
+          {
+            "dish": "Berenjenas abuñueladas con miel de caña",
+            "eur": 11,
+            "portion": "media",
+            "historical": true
+          },
+          {
+            "dish": "Berenjenas abuñueladas con miel de caña",
+            "eur": 17,
+            "portion": "ración",
+            "historical": true
+          },
+          {
+            "dish": "Croquetas de puchero y jamón ibérico (6/9 unidades)",
+            "eur": 11.5,
+            "portion": "media",
+            "historical": true
+          },
+          {
+            "dish": "Croquetas de puchero y jamón ibérico (6/9 unidades)",
+            "eur": 17,
+            "portion": "ración",
+            "historical": true
+          },
+          {
+            "dish": "Flamenquín cordobés con polvo de parmesano y patatas",
+            "eur": 18.5,
+            "portion": "precio único",
+            "historical": true
+          },
+          {
+            "dish": "Ensalada de hortalizas de temporada",
+            "eur": 13,
+            "portion": "precio único",
+            "historical": true
+          },
+          {
+            "dish": "Ensalada de salmón ahumado, aguacate y vinagreta de lima",
+            "eur": 18,
+            "portion": "precio único",
+            "historical": true
+          },
+          {
+            "dish": "Puerros confitados y asados, carbonara, parmesano y torreznos fritos (1/2 unidades)",
+            "eur": 9,
+            "portion": "media",
+            "historical": true
+          },
+          {
+            "dish": "Puerros confitados y asados, carbonara, parmesano y torreznos fritos (1/2 unidades)",
+            "eur": 17,
+            "portion": "ración",
+            "historical": true
+          },
+          {
+            "dish": "Alcachofas con bechamel de foie y jamón ibérico (2 unidades)",
+            "eur": 18,
+            "portion": "precio único",
+            "historical": true
+          },
+          {
+            "dish": "Atún rojo de almadraba con verduras de temporada salteadas",
+            "eur": 29,
+            "portion": "precio único",
+            "historical": true
+          },
+          {
+            "dish": "Bacalao premium con salsa de tomate y judías salteadas",
+            "eur": 24,
+            "portion": "precio único",
+            "historical": true
+          },
+          {
+            "dish": "Pisto de verduras con tomate y gamba cristal frita",
+            "eur": 15,
+            "portion": "media",
+            "historical": true
+          },
+          {
+            "dish": "Pisto de verduras con tomate y gamba cristal frita",
+            "eur": 19,
+            "portion": "ración",
+            "historical": true
+          },
+          {
+            "dish": "Rosada al limón frita y ensalada de col (140/240 g)",
+            "eur": 14,
+            "portion": "media",
+            "historical": true
+          },
+          {
+            "dish": "Rosada al limón frita y ensalada de col (140/240 g)",
+            "eur": 19,
+            "portion": "ración",
+            "historical": true
+          },
+          {
+            "dish": "Calamares fritos y mayonesa cítrica (120/220 g)",
+            "eur": 14,
+            "portion": "media",
+            "historical": true
+          },
+          {
+            "dish": "Calamares fritos y mayonesa cítrica (120/220 g)",
+            "eur": 19,
+            "portion": "ración",
+            "historical": true
+          },
+          {
+            "dish": "Rabo de toro estofado con patatas (240/360 g)",
+            "eur": 17,
+            "portion": "media",
+            "historical": true
+          },
+          {
+            "dish": "Rabo de toro estofado con patatas (240/360 g)",
+            "eur": 28,
+            "portion": "ración",
+            "historical": true
+          },
+          {
+            "dish": "Albóndigas de vaca en salsa con parmentier de patata (3/5 unidades)",
+            "eur": 8.5,
+            "portion": "media",
+            "historical": true
+          },
+          {
+            "dish": "Albóndigas de vaca en salsa con parmentier de patata (3/5 unidades)",
+            "eur": 15,
+            "portion": "ración",
+            "historical": true
+          },
+          {
+            "dish": "Jarrete de cordero al estilo sefardí y cuscús de verduras",
+            "eur": 28,
+            "portion": "precio único",
+            "historical": true
+          },
+          {
+            "dish": "Solomillo 100% ibérico de bellota con salsa verde (200 g)",
+            "eur": 24,
+            "portion": "precio único",
+            "historical": true
+          },
+          {
+            "dish": "Pluma ibérica 100% de bellota con pimientos de piquillo confitados (200 g)",
+            "eur": 26,
+            "portion": "precio único",
+            "historical": true
+          },
+          {
+            "dish": "Lomo de vaca dry aged (300 g)",
+            "eur": 29,
+            "portion": "precio único",
+            "historical": true
+          },
+          {
+            "dish": "Cochinillo asado en dos cocciones (para dos personas, en cuartos)",
+            "eur": 54,
+            "portion": "precio único",
+            "historical": true
+          },
+          {
+            "dish": "Secreto ibérico de bellota a la plancha, salsa de vino de Montilla y espárragos salteados (200 g)",
+            "eur": 24,
+            "portion": "precio único",
+            "historical": true
+          },
+          {
+            "dish": "Torrija de pan brioche con helado de leche merengada",
+            "eur": 7.5,
+            "portion": "precio único",
+            "historical": true
+          },
+          {
+            "dish": "Tarta de queso casera muy cremosa con queso azul",
+            "eur": 7.5,
+            "portion": "precio único",
+            "historical": true
+          },
+          {
+            "dish": "Brownie con helado de vainilla",
+            "eur": 7.5,
+            "portion": "precio único",
+            "historical": true
+          },
+          {
+            "dish": "Flan de vainilla con helado de galleta",
+            "eur": 8,
+            "portion": "precio único",
+            "historical": true
+          },
+          {
+            "dish": "Tocino de cielo y sorbete de limón",
+            "eur": 7,
+            "portion": "precio único",
+            "historical": true
+          },
+          {
+            "dish": "Pastel cordobés con helado de avellana",
+            "eur": 7,
+            "portion": "precio único",
+            "historical": true
+          },
+          {
+            "dish": "Helado de turrón",
+            "eur": 5.5,
+            "portion": "precio único",
+            "historical": true
+          },
+          {
+            "dish": "Cesta de pan y picos",
+            "eur": 2.6,
+            "portion": "precio único",
+            "historical": true
+          }
+        ]
       }
     ],
-    "menuPriceNotice": "Los precios de los platos no se muestran de forma legible en la carta oficial consultada. Por causas ajenas a Helio Gastro, no podemos indicar importes fiables. Recomendamos contactar con el establecimiento antes de acudir para confirmar precios y disponibilidad.",
+    "menuPriceNotice": "Información sobre la carta: La carta disponible corresponde a octubre de 2025. Los platos y precios mostrados proceden de esa publicación y podrían haber cambiado. Algunos platos pueden haber dejado de estar disponibles. Recomendamos consultar con Casa Rubio para confirmar la carta y los precios actuales.",
     "menuNotes": [
-      "Cesta de pan y picos: 2,40 € (IVA incluido), según carta oficial consultada."
-    ]
+      "Carta oficial de octubre de 2025. IVA del 10% incluido. Cesta de pan y picos 2,60 € (histórico). Alérgenos: consultar carta específica del restaurante."
+    ],
+    "menuSections": [
+      {
+        "title": "Los clásicos de la casa",
+        "items": [
+          {
+            "name": "Jamón 100% ibérico cortado al momento (60/100 g)",
+            "description": "Jamón 100% ibérico cortado al momento (60/100 g)",
+            "en": "Hand-cut 100% Iberian ham",
+            "prices": [
+              {
+                "label": "media",
+                "eur": 17
+              },
+              {
+                "label": "ración",
+                "eur": 28
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Queso curado de oveja de Córdoba (100/150 g)",
+            "description": "Queso curado de oveja de Córdoba (100/150 g)",
+            "en": "Aged sheep's cheese from Córdoba",
+            "prices": [
+              {
+                "label": "media",
+                "eur": 14
+              },
+              {
+                "label": "ración",
+                "eur": 19.5
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Mixto de jamón ibérico y queso de oveja (90/160 g)",
+            "description": "Mixto de jamón ibérico y queso de oveja (90/160 g)",
+            "en": "Iberian ham and sheep's cheese platter",
+            "prices": [
+              {
+                "label": "media",
+                "eur": 15
+              },
+              {
+                "label": "ración",
+                "eur": 23
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Salmorejo cordobés con jamón y huevo",
+            "description": "Salmorejo cordobés con jamón y huevo",
+            "en": "Cordoban salmorejo with ham and egg",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 12.5
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Mazamorra con manzana verde y pasas al PX",
+            "description": "Mazamorra con manzana verde y pasas al PX",
+            "en": "Almond mazamorra with green apple and Pedro Ximénez raisins",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 13
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Nuestra ensaladilla de atún con carpaccio de pulpo y pimentón (200/300 g)",
+            "description": "Nuestra ensaladilla de atún con carpaccio de pulpo y pimentón (200/300 g)",
+            "en": "Tuna salad with octopus carpaccio and paprika",
+            "prices": [
+              {
+                "label": "media",
+                "eur": 13
+              },
+              {
+                "label": "ración",
+                "eur": 19
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Las bravas de Rubio con espuma de alioli",
+            "description": "Las bravas de Rubio con espuma de alioli",
+            "en": "Rubio-style spicy potatoes with aioli foam",
+            "prices": [
+              {
+                "label": "media",
+                "eur": 11.5
+              },
+              {
+                "label": "ración",
+                "eur": 17
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Oreja frita en adobo y salsa brava (150 g)",
+            "description": "Oreja frita en adobo y salsa brava (150 g)",
+            "en": "Crispy marinated pork ear with brava sauce",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 13
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Berenjenas abuñueladas con miel de caña",
+            "description": "Berenjenas abuñueladas con miel de caña",
+            "en": "Aubergine fritters with cane syrup",
+            "prices": [
+              {
+                "label": "media",
+                "eur": 11
+              },
+              {
+                "label": "ración",
+                "eur": 17
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Croquetas de puchero y jamón ibérico (6/9 unidades)",
+            "description": "Croquetas de puchero y jamón ibérico (6/9 unidades)",
+            "en": "Stew and Iberian ham croquettes",
+            "prices": [
+              {
+                "label": "media",
+                "eur": 11.5
+              },
+              {
+                "label": "ración",
+                "eur": 17
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Flamenquín cordobés con polvo de parmesano y patatas",
+            "description": "Flamenquín cordobés con polvo de parmesano y patatas",
+            "en": "Cordoban flamenquín with Parmesan and potatoes",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 18.5
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          }
+        ]
+      },
+      {
+        "title": "De la huerta",
+        "items": [
+          {
+            "name": "Ensalada de hortalizas de temporada",
+            "description": "Ensalada de hortalizas de temporada",
+            "en": "Seasonal vegetable salad",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 13
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Ensalada de salmón ahumado, aguacate y vinagreta de lima",
+            "description": "Ensalada de salmón ahumado, aguacate y vinagreta de lima",
+            "en": "Smoked salmon salad with avocado and lime vinaigrette",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 18
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Puerros confitados y asados, carbonara, parmesano y torreznos fritos (1/2 unidades)",
+            "description": "Puerros confitados y asados, carbonara, parmesano y torreznos fritos (1/2 unidades)",
+            "en": "Confit and roasted leeks with carbonara, Parmesan and crispy pork",
+            "prices": [
+              {
+                "label": "media",
+                "eur": 9
+              },
+              {
+                "label": "ración",
+                "eur": 17
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Alcachofas con bechamel de foie y jamón ibérico (2 unidades)",
+            "description": "Alcachofas con bechamel de foie y jamón ibérico (2 unidades)",
+            "en": "Artichokes with foie béchamel and Iberian ham",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 18
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          }
+        ]
+      },
+      {
+        "title": "De la lonja",
+        "items": [
+          {
+            "name": "Atún rojo de almadraba con verduras de temporada salteadas",
+            "description": "Atún rojo de almadraba con verduras de temporada salteadas",
+            "en": "Bluefin tuna with sautéed seasonal vegetables",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 29
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Bacalao premium con salsa de tomate y judías salteadas",
+            "description": "Bacalao premium con salsa de tomate y judías salteadas",
+            "en": "Premium cod with tomato sauce and sautéed green beans",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 24
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Pisto de verduras con tomate y gamba cristal frita",
+            "description": "Pisto de verduras con tomate y gamba cristal frita",
+            "en": "Vegetable pisto with fried crystal shrimp",
+            "prices": [
+              {
+                "label": "media",
+                "eur": 15
+              },
+              {
+                "label": "ración",
+                "eur": 19
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Rosada al limón frita y ensalada de col (140/240 g)",
+            "description": "Rosada al limón frita y ensalada de col (140/240 g)",
+            "en": "Fried rosada with lemon and cabbage salad",
+            "prices": [
+              {
+                "label": "media",
+                "eur": 14
+              },
+              {
+                "label": "ración",
+                "eur": 19
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Calamares fritos y mayonesa cítrica (120/220 g)",
+            "description": "Calamares fritos y mayonesa cítrica (120/220 g)",
+            "en": "Fried squid with citrus mayonnaise",
+            "prices": [
+              {
+                "label": "media",
+                "eur": 14
+              },
+              {
+                "label": "ración",
+                "eur": 19
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          }
+        ]
+      },
+      {
+        "title": "De nuestra dehesa",
+        "items": [
+          {
+            "name": "Rabo de toro estofado con patatas (240/360 g)",
+            "description": "Rabo de toro estofado con patatas (240/360 g)",
+            "en": "Oxtail stew with potatoes",
+            "prices": [
+              {
+                "label": "media",
+                "eur": 17
+              },
+              {
+                "label": "ración",
+                "eur": 28
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Albóndigas de vaca en salsa con parmentier de patata (3/5 unidades)",
+            "description": "Albóndigas de vaca en salsa con parmentier de patata (3/5 unidades)",
+            "en": "Beef meatballs in sauce with mashed potato",
+            "prices": [
+              {
+                "label": "media",
+                "eur": 8.5
+              },
+              {
+                "label": "ración",
+                "eur": 15
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Jarrete de cordero al estilo sefardí y cuscús de verduras",
+            "description": "Jarrete de cordero al estilo sefardí y cuscús de verduras",
+            "en": "Sephardic-style lamb shank with vegetable couscous",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 28
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Solomillo 100% ibérico de bellota con salsa verde (200 g)",
+            "description": "Solomillo 100% ibérico de bellota con salsa verde (200 g)",
+            "en": "Acorn-fed Iberian pork tenderloin with green sauce",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 24
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Pluma ibérica 100% de bellota con pimientos de piquillo confitados (200 g)",
+            "description": "Pluma ibérica 100% de bellota con pimientos de piquillo confitados (200 g)",
+            "en": "Acorn-fed Iberian pluma with confit piquillo peppers",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 26
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Lomo de vaca dry aged (300 g)",
+            "description": "Lomo de vaca dry aged (300 g)",
+            "en": "Dry-aged beef loin",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 29
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Cochinillo asado en dos cocciones (para dos personas, en cuartos)",
+            "description": "Cochinillo asado en dos cocciones (para dos personas, en cuartos)",
+            "en": "Twice-cooked suckling pig for two",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 54
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Secreto ibérico de bellota a la plancha, salsa de vino de Montilla y espárragos salteados (200 g)",
+            "description": "Secreto ibérico de bellota a la plancha, salsa de vino de Montilla y espárragos salteados (200 g)",
+            "en": "Grilled Iberian secreto with Montilla wine sauce and sautéed asparagus",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 24
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          }
+        ]
+      },
+      {
+        "title": "Postres",
+        "items": [
+          {
+            "name": "Torrija de pan brioche con helado de leche merengada",
+            "description": "Torrija de pan brioche con helado de leche merengada",
+            "en": "Brioche French toast with meringue milk ice cream",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 7.5
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Tarta de queso casera muy cremosa con queso azul",
+            "description": "Tarta de queso casera muy cremosa con queso azul",
+            "en": "Creamy homemade blue cheese cheesecake",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 7.5
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Brownie con helado de vainilla",
+            "description": "Brownie con helado de vainilla",
+            "en": "Brownie with vanilla ice cream",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 7.5
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Flan de vainilla con helado de galleta",
+            "description": "Flan de vainilla con helado de galleta",
+            "en": "Vanilla flan with biscuit ice cream",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 8
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Tocino de cielo y sorbete de limón",
+            "description": "Tocino de cielo y sorbete de limón",
+            "en": "Tocino de cielo with lemon sorbet",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 7
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Pastel cordobés con helado de avellana",
+            "description": "Pastel cordobés con helado de avellana",
+            "en": "Cordoban pastry with hazelnut ice cream",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 7
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Helado de turrón",
+            "description": "Helado de turrón",
+            "en": "Nougat ice cream",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 5.5
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          }
+        ]
+      },
+      {
+        "title": "Acompañamientos",
+        "items": [
+          {
+            "name": "Cesta de pan y picos",
+            "description": "Cesta de pan y picos",
+            "en": "Bread and breadsticks basket",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 2.6
+              }
+            ],
+            "priceStatus": "historical_2025_10",
+            "availability": "unconfirmed"
+          }
+        ]
+      }
+    ],
+    "menuDate": "2025-10",
+    "menuDisclaimer": "Información sobre la carta: La carta disponible corresponde a octubre de 2025. Los platos y precios mostrados proceden de esa publicación y podrían haber cambiado. Algunos platos pueden haber dejado de estar disponibles. Recomendamos consultar con Casa Rubio para confirmar la carta y los precios actuales.",
+    "menuDisclaimerEn": "Menu notice: The available menu is dated October 2025. Dishes and prices come from that publication and may have changed. Some dishes may no longer be available. Please contact Casa Rubio to confirm current dishes and prices."
   },
   {
     "id": "el-churrasco",
