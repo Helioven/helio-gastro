@@ -6624,74 +6624,783 @@
     "area": "Judería · Mezquita",
     "address": "Calle Cardenal Herrero, 28, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "priceStatus": "pending_update",
+    "checkedAt": "2026-10-16",
     "sources": [
-      {
-        "label": "Carta oficial para tapear con precios",
-        "url": "https://www.elcaballorojo.com/carta-tapear/"
-      },
       {
         "label": "Dirección legal oficial",
         "url": "https://www.elcaballorojo.com/legal/aviso-legal/"
+      },
+      {
+        "label": "Carta oficial de bar, febrero de 2023 (PDF facilitado por el usuario)",
+        "url": "https://www.elcaballorojo.com/carta-tapear/"
+      },
+      {
+        "label": "Carta oficial de restaurante, febrero de 2023 (PDF facilitado por el usuario)",
+        "url": "https://www.elcaballorojo.com/"
       }
     ],
     "menus": [
       {
-        "service": "general",
+        "service": "bar",
         "dishes": [
-          "Flamenquín cordobés",
-          "Rabo de toro",
-          "Croquetas de puchero",
-          "Cochifrito con salsa brava",
+          "Anchoa del Cantábrico, brioche tostado, mantequilla de oveja y praliné de pistacho",
+          "Gilda El Caballo Rojo",
+          "Tortillitas de San José (10 unidades)",
+          "Jamón ibérico de bellota 100 %",
+          "Tabla de embutidos ibéricos de bellota de los Pedroches",
+          "Tabla de quesos artesanos cordobeses",
+          "Bollito de chipirones fritos con alioli y salsa harissa",
+          "Bikini de tartar de gamba blanca, crema de aguacate y huevas de arenque",
+          "Degustación de crema salmorejo, virutas de mojama, mixtura de algas y brotes de soja",
+          "Degustación de mazamorra cordobesa",
+          "Ensaladilla rusa de ventresca de atún",
           "Berenjenas de la abuela con miel de caña",
-          "Salmorejo con mojama",
-          "Mazamorra cordobesa"
+          "Croquetas de puchero",
+          "Patatas bravas con salsa habanero",
+          "Ensalada de lechugas vivas de temporada",
+          "Focaccia Almadraba (masa madre, salmorejo de asadillo, rúcula, atún ahumado y burrata)",
+          "Revuelto cremoso de setas y langostinos",
+          "Alcachofas a la montillana",
+          "Rosada frita con alioli de limón y ajo confitado",
+          "Manojito de boquerones fritos",
+          "Bacalao frito en tempura de espirulina",
+          "Cochifrito con salsa brava",
+          "Flamenquín cordobés",
+          "Guiso de morros y patas de ternera",
+          "Tuétano asado con tartar de vaca",
+          "Rabo de toro",
+          "Arroz de rabo de toro (mínimo dos personas; precio por persona)"
         ],
-        "dishPrices": [
+        "dishPrices": [],
+        "priceStatus": "pending_update",
+        "menuDate": "2023-02"
+      },
+      {
+        "service": "restaurante",
+        "dishes": [
+          "Anchoa del Cantábrico, brioche tostado, mantequilla de oveja y praliné de pistacho",
+          "Jamón ibérico de bellota 100 %",
+          "Tabla de embutidos de bellota de los Pedroches",
+          "Tabla de quesos artesanos",
+          "Ajo blanco malagueño de coco con salmón marinado",
+          "Crema de salmorejo con virutas de mojama, algas y germinados",
+          "Mazamorra cordobesa con sardina ahumada",
+          "Berenjenas de la abuela con miel de caña",
+          "Croquetas de puchero",
+          "Sopa de cocido en taza y croissant de pringá",
+          "Centros de alcauciles con habitas",
+          "Paletilla de cordero lechal a la miel",
+          "Perdiz roja encebollada a la antigua",
+          "Rape mozárabe",
+          "Lomo de bacalao a la canela",
+          "Trío de ensaladilla: ventresca de atún, huevo frito y gamba blanca",
+          "Revuelto cremoso de setas y langostinos",
+          "Alcachofas a la montillana",
+          "Ensalada sefardí al aceite de oliva virgen extra",
+          "Ensalada de lechugas vivas de temporada",
+          "Atún rojo salvaje en crudo con salsa de mango y chipotle y aliño de hierbas",
+          "Lubina frita con alioli de espirulina",
+          "Corvina con curry verde de espinacas y trompetas salteadas",
+          "Salmón fresco noruego en salsa thai-francesa",
+          "Chipirones a la plancha con crema de ajo negro y su tinta",
+          "Lenguado con refrito",
+          "Rabo de toro",
+          "Tuétano asado con tartar de vaca",
+          "Chuletitas de cordero lechal, reducción de su jugo, praliné de almendra y salsa de orejones",
+          "Confit de oca al Pedro Ximénez",
+          "Solomillo ibérico de bellota",
+          "Presa ibérica de bellota",
+          "Riñones de cordero lechal",
+          "Magret de pato",
+          "Entrecot de angus",
+          "Solomillo de ternera",
+          "Secreto de angus",
+          "Chuleta de vaca gallega (1 kg)"
+        ],
+        "dishPrices": [],
+        "priceStatus": "pending_update",
+        "menuDate": "2023-02"
+      }
+    ],
+    "menuSections": [
+      {
+        "title": "Bar · Carta histórica (febrero 2023)",
+        "titleEn": "Bar · Historical menu (February 2023)",
+        "items": [
           {
-            "dish": "Flamenquín cordobés (ración)",
-            "eur": 12,
-            "portion": "racion"
+            "name": "Anchoa del Cantábrico, brioche tostado, mantequilla de oveja y praliné de pistacho",
+            "description": "Anchoa del Cantábrico, brioche tostado, mantequilla de oveja y praliné de pistacho",
+            "en": "Anchoa del Cantábrico, brioche tostado, mantequilla de oveja y praliné de pistacho",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed",
+            "portionOptions": [
+              "unidad"
+            ]
           },
           {
-            "dish": "Rabo de toro (ración)",
-            "eur": 23,
-            "portion": "racion"
+            "name": "Gilda El Caballo Rojo",
+            "description": "Gilda El Caballo Rojo",
+            "en": "Gilda El Caballo Rojo",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
           },
           {
-            "dish": "Croquetas de puchero (media ración)",
-            "eur": 8,
-            "portion": "media"
+            "name": "Tortillitas de San José (10 unidades)",
+            "description": "Tortillitas de San José (10 unidades)",
+            "en": "Tortillitas de San José (10 unidades)",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
           },
           {
-            "dish": "Croquetas de puchero (ración)",
-            "eur": 14,
-            "portion": "racion"
+            "name": "Jamón ibérico de bellota 100 %",
+            "description": "Jamón ibérico de bellota 100 %",
+            "en": "Jamón ibérico de bellota 100 %",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed",
+            "portionOptions": [
+              "media",
+              "ración"
+            ]
           },
           {
-            "dish": "Cochifrito con salsa brava (media ración)",
-            "eur": 9,
-            "portion": "media"
+            "name": "Tabla de embutidos ibéricos de bellota de los Pedroches",
+            "description": "Tabla de embutidos ibéricos de bellota de los Pedroches",
+            "en": "Tabla de embutidos ibéricos de bellota de los Pedroches",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
           },
           {
-            "dish": "Cochifrito con salsa brava (ración)",
-            "eur": 15,
-            "portion": "racion"
+            "name": "Tabla de quesos artesanos cordobeses",
+            "description": "Tabla de quesos artesanos cordobeses",
+            "en": "Tabla de quesos artesanos cordobeses",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
           },
           {
-            "dish": "Berenjenas de la abuela con miel de caña (media ración)",
-            "eur": 7,
-            "portion": "media"
+            "name": "Bollito de chipirones fritos con alioli y salsa harissa",
+            "description": "Bollito de chipirones fritos con alioli y salsa harissa",
+            "en": "Bollito de chipirones fritos con alioli y salsa harissa",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
           },
           {
-            "dish": "Berenjenas de la abuela con miel de caña (ración)",
-            "eur": 12,
-            "portion": "racion"
+            "name": "Bikini de tartar de gamba blanca, crema de aguacate y huevas de arenque",
+            "description": "Bikini de tartar de gamba blanca, crema de aguacate y huevas de arenque",
+            "en": "Bikini de tartar de gamba blanca, crema de aguacate y huevas de arenque",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Degustación de crema salmorejo, virutas de mojama, mixtura de algas y brotes de soja",
+            "description": "Degustación de crema salmorejo, virutas de mojama, mixtura de algas y brotes de soja",
+            "en": "Degustación de crema salmorejo, virutas de mojama, mixtura de algas y brotes de soja",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Degustación de mazamorra cordobesa",
+            "description": "Degustación de mazamorra cordobesa",
+            "en": "Degustación de mazamorra cordobesa",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Ensaladilla rusa de ventresca de atún",
+            "description": "Ensaladilla rusa de ventresca de atún",
+            "en": "Ensaladilla rusa de ventresca de atún",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed",
+            "portionOptions": [
+              "media",
+              "ración"
+            ]
+          },
+          {
+            "name": "Berenjenas de la abuela con miel de caña",
+            "description": "Berenjenas de la abuela con miel de caña",
+            "en": "Berenjenas de la abuela con miel de caña",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed",
+            "portionOptions": [
+              "media",
+              "ración"
+            ]
+          },
+          {
+            "name": "Croquetas de puchero",
+            "description": "Croquetas de puchero",
+            "en": "Croquetas de puchero",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed",
+            "portionOptions": [
+              "media",
+              "ración"
+            ]
+          },
+          {
+            "name": "Patatas bravas con salsa habanero",
+            "description": "Patatas bravas con salsa habanero",
+            "en": "Patatas bravas con salsa habanero",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed",
+            "portionOptions": [
+              "media",
+              "ración"
+            ]
+          },
+          {
+            "name": "Ensalada de lechugas vivas de temporada",
+            "description": "Ensalada de lechugas vivas de temporada",
+            "en": "Ensalada de lechugas vivas de temporada",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Focaccia Almadraba (masa madre, salmorejo de asadillo, rúcula, atún ahumado y burrata)",
+            "description": "Focaccia Almadraba (masa madre, salmorejo de asadillo, rúcula, atún ahumado y burrata)",
+            "en": "Focaccia Almadraba (masa madre, salmorejo de asadillo, rúcula, atún ahumado y burrata)",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Revuelto cremoso de setas y langostinos",
+            "description": "Revuelto cremoso de setas y langostinos",
+            "en": "Revuelto cremoso de setas y langostinos",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Alcachofas a la montillana",
+            "description": "Alcachofas a la montillana",
+            "en": "Alcachofas a la montillana",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed",
+            "portionOptions": [
+              "media",
+              "ración"
+            ]
+          },
+          {
+            "name": "Rosada frita con alioli de limón y ajo confitado",
+            "description": "Rosada frita con alioli de limón y ajo confitado",
+            "en": "Rosada frita con alioli de limón y ajo confitado",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed",
+            "portionOptions": [
+              "media",
+              "ración"
+            ]
+          },
+          {
+            "name": "Manojito de boquerones fritos",
+            "description": "Manojito de boquerones fritos",
+            "en": "Manojito de boquerones fritos",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed",
+            "portionOptions": [
+              "media",
+              "ración"
+            ]
+          },
+          {
+            "name": "Bacalao frito en tempura de espirulina",
+            "description": "Bacalao frito en tempura de espirulina",
+            "en": "Bacalao frito en tempura de espirulina",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed",
+            "portionOptions": [
+              "media",
+              "ración"
+            ]
+          },
+          {
+            "name": "Cochifrito con salsa brava",
+            "description": "Cochifrito con salsa brava",
+            "en": "Cochifrito con salsa brava",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed",
+            "portionOptions": [
+              "media",
+              "ración"
+            ]
+          },
+          {
+            "name": "Flamenquín cordobés",
+            "description": "Flamenquín cordobés",
+            "en": "Flamenquín cordobés",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Guiso de morros y patas de ternera",
+            "description": "Guiso de morros y patas de ternera",
+            "en": "Guiso de morros y patas de ternera",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Tuétano asado con tartar de vaca",
+            "description": "Tuétano asado con tartar de vaca",
+            "en": "Tuétano asado con tartar de vaca",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Rabo de toro",
+            "description": "Rabo de toro",
+            "en": "Rabo de toro",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Arroz de rabo de toro (mínimo dos personas; precio por persona)",
+            "description": "Arroz de rabo de toro (mínimo dos personas; precio por persona)",
+            "en": "Arroz de rabo de toro (mínimo dos personas; precio por persona)",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed",
+            "portionOptions": [
+              "por persona"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Restaurante · Para comenzar",
+        "titleEn": "Restaurant · Para comenzar",
+        "items": [
+          {
+            "name": "Anchoa del Cantábrico, brioche tostado, mantequilla de oveja y praliné de pistacho",
+            "description": "Anchoa del Cantábrico, brioche tostado, mantequilla de oveja y praliné de pistacho",
+            "en": "Anchoa del Cantábrico, brioche tostado, mantequilla de oveja y praliné de pistacho",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Jamón ibérico de bellota 100 %",
+            "description": "Jamón ibérico de bellota 100 %",
+            "en": "Jamón ibérico de bellota 100 %",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Tabla de embutidos de bellota de los Pedroches",
+            "description": "Tabla de embutidos de bellota de los Pedroches",
+            "en": "Tabla de embutidos de bellota de los Pedroches",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Tabla de quesos artesanos",
+            "description": "Tabla de quesos artesanos",
+            "en": "Tabla de quesos artesanos",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Ajo blanco malagueño de coco con salmón marinado",
+            "description": "Ajo blanco malagueño de coco con salmón marinado",
+            "en": "Ajo blanco malagueño de coco con salmón marinado",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Crema de salmorejo con virutas de mojama, algas y germinados",
+            "description": "Crema de salmorejo con virutas de mojama, algas y germinados",
+            "en": "Crema de salmorejo con virutas de mojama, algas y germinados",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Mazamorra cordobesa con sardina ahumada",
+            "description": "Mazamorra cordobesa con sardina ahumada",
+            "en": "Mazamorra cordobesa con sardina ahumada",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Berenjenas de la abuela con miel de caña",
+            "description": "Berenjenas de la abuela con miel de caña",
+            "en": "Berenjenas de la abuela con miel de caña",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Croquetas de puchero",
+            "description": "Croquetas de puchero",
+            "en": "Croquetas de puchero",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Sopa de cocido en taza y croissant de pringá",
+            "description": "Sopa de cocido en taza y croissant de pringá",
+            "en": "Sopa de cocido en taza y croissant de pringá",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          }
+        ]
+      },
+      {
+        "title": "Restaurante · La antigua cocina mozárabe-magrebí",
+        "titleEn": "Restaurant · La antigua cocina mozárabe-magrebí",
+        "items": [
+          {
+            "name": "Centros de alcauciles con habitas",
+            "description": "Centros de alcauciles con habitas",
+            "en": "Centros de alcauciles con habitas",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Paletilla de cordero lechal a la miel",
+            "description": "Paletilla de cordero lechal a la miel",
+            "en": "Paletilla de cordero lechal a la miel",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Perdiz roja encebollada a la antigua",
+            "description": "Perdiz roja encebollada a la antigua",
+            "en": "Perdiz roja encebollada a la antigua",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Rape mozárabe",
+            "description": "Rape mozárabe",
+            "en": "Rape mozárabe",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Lomo de bacalao a la canela",
+            "description": "Lomo de bacalao a la canela",
+            "en": "Lomo de bacalao a la canela",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          }
+        ]
+      },
+      {
+        "title": "Restaurante · Para compartir",
+        "titleEn": "Restaurant · Para compartir",
+        "items": [
+          {
+            "name": "Trío de ensaladilla: ventresca de atún, huevo frito y gamba blanca",
+            "description": "Trío de ensaladilla: ventresca de atún, huevo frito y gamba blanca",
+            "en": "Trío de ensaladilla: ventresca de atún, huevo frito y gamba blanca",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Revuelto cremoso de setas y langostinos",
+            "description": "Revuelto cremoso de setas y langostinos",
+            "en": "Revuelto cremoso de setas y langostinos",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Alcachofas a la montillana",
+            "description": "Alcachofas a la montillana",
+            "en": "Alcachofas a la montillana",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Ensalada sefardí al aceite de oliva virgen extra",
+            "description": "Ensalada sefardí al aceite de oliva virgen extra",
+            "en": "Ensalada sefardí al aceite de oliva virgen extra",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Ensalada de lechugas vivas de temporada",
+            "description": "Ensalada de lechugas vivas de temporada",
+            "en": "Ensalada de lechugas vivas de temporada",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Atún rojo salvaje en crudo con salsa de mango y chipotle y aliño de hierbas",
+            "description": "Atún rojo salvaje en crudo con salsa de mango y chipotle y aliño de hierbas",
+            "en": "Atún rojo salvaje en crudo con salsa de mango y chipotle y aliño de hierbas",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          }
+        ]
+      },
+      {
+        "title": "Restaurante · Pescados",
+        "titleEn": "Restaurant · Pescados",
+        "items": [
+          {
+            "name": "Lubina frita con alioli de espirulina",
+            "description": "Lubina frita con alioli de espirulina",
+            "en": "Lubina frita con alioli de espirulina",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Corvina con curry verde de espinacas y trompetas salteadas",
+            "description": "Corvina con curry verde de espinacas y trompetas salteadas",
+            "en": "Corvina con curry verde de espinacas y trompetas salteadas",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Salmón fresco noruego en salsa thai-francesa",
+            "description": "Salmón fresco noruego en salsa thai-francesa",
+            "en": "Salmón fresco noruego en salsa thai-francesa",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Chipirones a la plancha con crema de ajo negro y su tinta",
+            "description": "Chipirones a la plancha con crema de ajo negro y su tinta",
+            "en": "Chipirones a la plancha con crema de ajo negro y su tinta",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Lenguado con refrito",
+            "description": "Lenguado con refrito",
+            "en": "Lenguado con refrito",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          }
+        ]
+      },
+      {
+        "title": "Restaurante · Carnes",
+        "titleEn": "Restaurant · Carnes",
+        "items": [
+          {
+            "name": "Rabo de toro",
+            "description": "Rabo de toro",
+            "en": "Rabo de toro",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Tuétano asado con tartar de vaca",
+            "description": "Tuétano asado con tartar de vaca",
+            "en": "Tuétano asado con tartar de vaca",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Chuletitas de cordero lechal, reducción de su jugo, praliné de almendra y salsa de orejones",
+            "description": "Chuletitas de cordero lechal, reducción de su jugo, praliné de almendra y salsa de orejones",
+            "en": "Chuletitas de cordero lechal, reducción de su jugo, praliné de almendra y salsa de orejones",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Confit de oca al Pedro Ximénez",
+            "description": "Confit de oca al Pedro Ximénez",
+            "en": "Confit de oca al Pedro Ximénez",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Solomillo ibérico de bellota",
+            "description": "Solomillo ibérico de bellota",
+            "en": "Solomillo ibérico de bellota",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Presa ibérica de bellota",
+            "description": "Presa ibérica de bellota",
+            "en": "Presa ibérica de bellota",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Riñones de cordero lechal",
+            "description": "Riñones de cordero lechal",
+            "en": "Riñones de cordero lechal",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Magret de pato",
+            "description": "Magret de pato",
+            "en": "Magret de pato",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          }
+        ]
+      },
+      {
+        "title": "Restaurante · Cortes de vacuno",
+        "titleEn": "Restaurant · Cortes de vacuno",
+        "items": [
+          {
+            "name": "Entrecot de angus",
+            "description": "Entrecot de angus",
+            "en": "Entrecot de angus",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Solomillo de ternera",
+            "description": "Solomillo de ternera",
+            "en": "Solomillo de ternera",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Secreto de angus",
+            "description": "Secreto de angus",
+            "en": "Secreto de angus",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Chuleta de vaca gallega (1 kg)",
+            "description": "Chuleta de vaca gallega (1 kg)",
+            "en": "Chuleta de vaca gallega (1 kg)",
+            "prices": [],
+            "priceStatus": "pending_update",
+            "historicalMenuDate": "2023-02",
+            "availability": "unconfirmed"
           }
         ]
       }
-    ]
+    ],
+    "menuDisclaimer": "Los platos mostrados proceden de las cartas oficiales de Bar y Restaurante publicadas en febrero de 2023, las únicas que hemos podido documentar. Los precios están pendientes de actualización y algunos platos podrían haber cambiado o dejado de estar disponibles. Recomendamos consultar directamente con el establecimiento antes de acudir.",
+    "menuDisclaimerEn": "The dishes listed come from the restaurant's official Bar and Restaurant menus dated February 2023, the only versions we could document. Prices require updating and some dishes may have changed or no longer be available. Please confirm directly with the restaurant before visiting.",
+    "menuSourceNote": "Transcripción de Carta-Bar-Febrero-2023.pdf (2 páginas) y Carta-Rte.-Febrero-2023.pdf (2 páginas), facilitados por el usuario. Los precios de 2023 no se muestran como actuales. No hay información de alérgenos en los documentos. Servicio de pan 1,80 € en la carta histórica del restaurante, precio no vigente."
   },
   {
     "id": "rincon-beatillas",
