@@ -13545,8 +13545,8 @@
     "area": "Alcázar Viejo · San Basilio",
     "address": "Calle San Basilio, 52, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "priceStatus": "historical_menu_2025_unverified_current",
+    "checkedAt": "2026-10-16",
     "sources": [
       {
         "label": "Carta oficial de La Viuda",
@@ -13559,71 +13559,663 @@
     ],
     "menus": [
       {
-        "service": "general",
+        "service": "Rodeado de Gitanillas",
         "dishes": [
-          "Salmorejo cordobés",
-          "Mazamorra de almendra y avellanas",
-          "Croquetas de jamón y caldo de cocido",
-          "Croquetas de boniato",
-          "Flamenquín cordobés",
-          "Flamenquín de rabo de toro",
-          "Rabo de toro cordobés",
-          "Berenjenas fritas"
+          "Potaje de la Viuda (receta centenaria)",
+          "Salchichón de ciervo (receta de cazadores cordobeses)",
+          "Boquerones en vinagre (estilo el Mítico Bar Mezquita)",
+          "Salmorejo cordobés (como el de mi madre)",
+          "Gazpacho rojo con guarnición de verduritas crujientes",
+          "Gazpacho blanco con uvas al sol y manzanas ácidas",
+          "Mazamorra de almendra y avellanas cordobesas",
+          "Queso «La Viuda» (receta propia)",
+          "Picadillo de tomate con mango de Torrox y helado de AOVE"
         ],
         "dishPrices": [
           {
-            "dish": "Croquetas de jamón y caldo de cocido (unidad)",
-            "eur": 1.5,
-            "portion": "unidad"
+            "dish": "Potaje de la Viuda (receta centenaria)",
+            "portion": "Media ración",
+            "eur": 7.5
           },
           {
-            "dish": "Salmorejo cordobés (tapa)",
-            "eur": 5,
-            "portion": "tapa"
+            "dish": "Potaje de la Viuda (receta centenaria)",
+            "portion": "Ración",
+            "eur": 13.5
           },
           {
-            "dish": "Salmorejo cordobés (media ración)",
-            "eur": 7,
-            "portion": "media"
+            "dish": "Salchichón de ciervo (receta de cazadores cordobeses)",
+            "portion": "Tapa",
+            "eur": 4
           },
           {
-            "dish": "Salmorejo cordobés (ración)",
-            "eur": 10,
-            "portion": "racion"
+            "dish": "Salchichón de ciervo (receta de cazadores cordobeses)",
+            "portion": "Media ración",
+            "eur": 7.5
           },
           {
-            "dish": "Mazamorra cordobesa (tapa)",
-            "eur": 7,
-            "portion": "tapa"
+            "dish": "Salchichón de ciervo (receta de cazadores cordobeses)",
+            "portion": "Ración",
+            "eur": 13
           },
           {
-            "dish": "Mazamorra cordobesa (media ración)",
-            "eur": 9,
-            "portion": "media"
+            "dish": "Boquerones en vinagre (estilo el Mítico Bar Mezquita)",
+            "portion": "Tapa",
+            "eur": 6
           },
           {
-            "dish": "Mazamorra cordobesa (ración)",
-            "eur": 12,
-            "portion": "racion"
+            "dish": "Boquerones en vinagre (estilo el Mítico Bar Mezquita)",
+            "portion": "Media ración",
+            "eur": 8
           },
           {
-            "dish": "Flamenquín cordobés (ración)",
-            "eur": 15,
-            "portion": "racion"
+            "dish": "Boquerones en vinagre (estilo el Mítico Bar Mezquita)",
+            "portion": "Ración",
+            "eur": 12
           },
           {
-            "dish": "Flamenquín de rabo de toro (ración)",
-            "eur": 18,
-            "portion": "racion"
+            "dish": "Salmorejo cordobés (como el de mi madre)",
+            "portion": "Tapa",
+            "eur": 4
           },
           {
-            "dish": "Rabo de toro cordobés (ración)",
-            "eur": 25,
-            "portion": "racion"
+            "dish": "Salmorejo cordobés (como el de mi madre)",
+            "portion": "Media ración",
+            "eur": 6
+          },
+          {
+            "dish": "Salmorejo cordobés (como el de mi madre)",
+            "portion": "Ración",
+            "eur": 9
+          },
+          {
+            "dish": "Gazpacho rojo con guarnición de verduritas crujientes",
+            "portion": "Ración",
+            "eur": 10
+          },
+          {
+            "dish": "Gazpacho blanco con uvas al sol y manzanas ácidas",
+            "portion": "Ración",
+            "eur": 10
+          },
+          {
+            "dish": "Mazamorra de almendra y avellanas cordobesas",
+            "portion": "Tapa",
+            "eur": 7
+          },
+          {
+            "dish": "Mazamorra de almendra y avellanas cordobesas",
+            "portion": "Media ración",
+            "eur": 9
+          },
+          {
+            "dish": "Mazamorra de almendra y avellanas cordobesas",
+            "portion": "Ración",
+            "eur": 12
+          },
+          {
+            "dish": "Queso «La Viuda» (receta propia)",
+            "portion": "Tapa",
+            "eur": 5
+          },
+          {
+            "dish": "Queso «La Viuda» (receta propia)",
+            "portion": "Media ración",
+            "eur": 7
+          },
+          {
+            "dish": "Queso «La Viuda» (receta propia)",
+            "portion": "Ración",
+            "eur": 11
+          },
+          {
+            "dish": "Picadillo de tomate con mango de Torrox y helado de AOVE",
+            "portion": "Media ración",
+            "eur": 7
+          },
+          {
+            "dish": "Picadillo de tomate con mango de Torrox y helado de AOVE",
+            "portion": "Ración",
+            "eur": 12
+          }
+        ]
+      },
+      {
+        "service": "Entre macetas y flores",
+        "dishes": [
+          "Berenjenas fritas de nuestra huerta",
+          "Croquetas de jamón y caldo de cocido (con mahonesa de hierbabuena)",
+          "Croquetas de boniato (elaborado al baño maría)",
+          "Flamenquín cordobés",
+          "Flamenquín de queso La Viuda",
+          "Flamenquín de rabo de toro con salsa de chocolate y jugo de rabo de toro",
+          "Japuta en adobo con especias de la India (cúrcuma y mano de Buda)",
+          "Bacalao frito con pisto casero al Palo Cortado"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Berenjenas fritas de nuestra huerta",
+            "portion": "Ración",
+            "eur": 10
+          },
+          {
+            "dish": "Croquetas de jamón y caldo de cocido (con mahonesa de hierbabuena)",
+            "portion": "Unidad",
+            "eur": 1.5
+          },
+          {
+            "dish": "Croquetas de boniato (elaborado al baño maría)",
+            "portion": "Unidad",
+            "eur": 1.5
+          },
+          {
+            "dish": "Flamenquín cordobés",
+            "portion": "Ración",
+            "eur": 15
+          },
+          {
+            "dish": "Flamenquín de queso La Viuda",
+            "portion": "Ración",
+            "eur": 16
+          },
+          {
+            "dish": "Flamenquín de rabo de toro con salsa de chocolate y jugo de rabo de toro",
+            "portion": "Ración",
+            "eur": 18
+          },
+          {
+            "dish": "Japuta en adobo con especias de la India (cúrcuma y mano de Buda)",
+            "portion": "Media ración",
+            "eur": 8
+          },
+          {
+            "dish": "Japuta en adobo con especias de la India (cúrcuma y mano de Buda)",
+            "portion": "Ración",
+            "eur": 12
+          },
+          {
+            "dish": "Bacalao frito con pisto casero al Palo Cortado",
+            "portion": "Ración",
+            "eur": 16
+          }
+        ]
+      },
+      {
+        "service": "Azahar y Jazmines",
+        "dishes": [
+          "Patatas fritas de churrería con sal del Himalaya",
+          "Huevos de campo estrellados con patatas pochas",
+          "Jamón, ajitos y perejil (complemento para los huevos estrellados)",
+          "Chorizo de matanza y pimientos de Padrón (complemento para los huevos estrellados)",
+          "Gula al ajillo con guindillas piparras (complemento para los huevos estrellados)",
+          "Revuelto de calabacín y ahumados con huevas de trucha (huevos ecológicos)"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Patatas fritas de churrería con sal del Himalaya",
+            "portion": "Ración",
+            "eur": 6
+          },
+          {
+            "dish": "Huevos de campo estrellados con patatas pochas",
+            "portion": "Ración",
+            "eur": 14
+          },
+          {
+            "dish": "Jamón, ajitos y perejil (complemento para los huevos estrellados)",
+            "portion": "Ración",
+            "eur": 4.5
+          },
+          {
+            "dish": "Chorizo de matanza y pimientos de Padrón (complemento para los huevos estrellados)",
+            "portion": "Ración",
+            "eur": 4.5
+          },
+          {
+            "dish": "Gula al ajillo con guindillas piparras (complemento para los huevos estrellados)",
+            "portion": "Ración",
+            "eur": 6
+          },
+          {
+            "dish": "Revuelto de calabacín y ahumados con huevas de trucha (huevos ecológicos)",
+            "portion": "Ración",
+            "eur": 14
+          }
+        ]
+      },
+      {
+        "service": "Rosas y Claveles",
+        "dishes": [
+          "Rabo de toro cordobés (receta del antiguo Bar Rosales)",
+          "Churrasco de bellota Pata Negra (solo temporada)",
+          "Presa ibérica marinada con soja, pimentón de la Vera y miel, parmentier de boniato y salsa de manteca colorá y ajo"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Rabo de toro cordobés (receta del antiguo Bar Rosales)",
+            "portion": "Ración",
+            "eur": 23
+          },
+          {
+            "dish": "Churrasco de bellota Pata Negra (solo temporada)",
+            "portion": "Ración",
+            "eur": 22
+          },
+          {
+            "dish": "Presa ibérica marinada con soja, pimentón de la Vera y miel, parmentier de boniato y salsa de manteca colorá y ajo",
+            "portion": "Ración",
+            "eur": 22
+          }
+        ]
+      },
+      {
+        "service": "Especialidades",
+        "dishes": [
+          "Ensaladilla estilo rusa con huevo frito",
+          "Timbal de patatas y huevos con tataki de atún",
+          "Huevo con patatas pochas, crema de bogavante y gambón",
+          "Pastel de tagarninas con gazpachuelo malagueño"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Ensaladilla estilo rusa con huevo frito",
+            "portion": "Media ración",
+            "eur": 8
+          },
+          {
+            "dish": "Ensaladilla estilo rusa con huevo frito",
+            "portion": "Ración",
+            "eur": 12
+          },
+          {
+            "dish": "Timbal de patatas y huevos con tataki de atún",
+            "portion": "Ración",
+            "eur": 14
+          },
+          {
+            "dish": "Huevo con patatas pochas, crema de bogavante y gambón",
+            "portion": "Ración",
+            "eur": 18
+          },
+          {
+            "dish": "Pastel de tagarninas con gazpachuelo malagueño",
+            "portion": "Ración",
+            "eur": 20
           }
         ]
       }
-    ]
+    ],
+    "menuSections": [
+      {
+        "title": "Rodeado de Gitanillas",
+        "items": [
+          {
+            "name": "Potaje de la Viuda (receta centenaria)",
+            "prices": [
+              {
+                "eur": 7.5,
+                "portion": "Media ración"
+              },
+              {
+                "eur": 13.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Salchichón de ciervo (receta de cazadores cordobeses)",
+            "prices": [
+              {
+                "eur": 4,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 7.5,
+                "portion": "Media ración"
+              },
+              {
+                "eur": 13,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Boquerones en vinagre (estilo el Mítico Bar Mezquita)",
+            "prices": [
+              {
+                "eur": 6,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 8,
+                "portion": "Media ración"
+              },
+              {
+                "eur": 12,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Salmorejo cordobés (como el de mi madre)",
+            "prices": [
+              {
+                "eur": 4,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 6,
+                "portion": "Media ración"
+              },
+              {
+                "eur": 9,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Gazpacho rojo con guarnición de verduritas crujientes",
+            "prices": [
+              {
+                "eur": 10,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Gazpacho blanco con uvas al sol y manzanas ácidas",
+            "prices": [
+              {
+                "eur": 10,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Mazamorra de almendra y avellanas cordobesas",
+            "prices": [
+              {
+                "eur": 7,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 9,
+                "portion": "Media ración"
+              },
+              {
+                "eur": 12,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Queso «La Viuda» (receta propia)",
+            "prices": [
+              {
+                "eur": 5,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 7,
+                "portion": "Media ración"
+              },
+              {
+                "eur": 11,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Picadillo de tomate con mango de Torrox y helado de AOVE",
+            "prices": [
+              {
+                "eur": 7,
+                "portion": "Media ración"
+              },
+              {
+                "eur": 12,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Entre macetas y flores",
+        "items": [
+          {
+            "name": "Berenjenas fritas de nuestra huerta",
+            "prices": [
+              {
+                "eur": 10,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Croquetas de jamón y caldo de cocido (con mahonesa de hierbabuena)",
+            "prices": [
+              {
+                "eur": 1.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Croquetas de boniato (elaborado al baño maría)",
+            "prices": [
+              {
+                "eur": 1.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín cordobés",
+            "prices": [
+              {
+                "eur": 15,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín de queso La Viuda",
+            "prices": [
+              {
+                "eur": 16,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín de rabo de toro con salsa de chocolate y jugo de rabo de toro",
+            "prices": [
+              {
+                "eur": 18,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Japuta en adobo con especias de la India (cúrcuma y mano de Buda)",
+            "prices": [
+              {
+                "eur": 8,
+                "portion": "Media ración"
+              },
+              {
+                "eur": 12,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Bacalao frito con pisto casero al Palo Cortado",
+            "prices": [
+              {
+                "eur": 16,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Azahar y Jazmines",
+        "items": [
+          {
+            "name": "Patatas fritas de churrería con sal del Himalaya",
+            "prices": [
+              {
+                "eur": 6,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Huevos de campo estrellados con patatas pochas",
+            "prices": [
+              {
+                "eur": 14,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Jamón, ajitos y perejil (complemento para los huevos estrellados)",
+            "prices": [
+              {
+                "eur": 4.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Chorizo de matanza y pimientos de Padrón (complemento para los huevos estrellados)",
+            "prices": [
+              {
+                "eur": 4.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Gula al ajillo con guindillas piparras (complemento para los huevos estrellados)",
+            "prices": [
+              {
+                "eur": 6,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Revuelto de calabacín y ahumados con huevas de trucha (huevos ecológicos)",
+            "prices": [
+              {
+                "eur": 14,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Rosas y Claveles",
+        "items": [
+          {
+            "name": "Rabo de toro cordobés (receta del antiguo Bar Rosales)",
+            "prices": [
+              {
+                "eur": 23,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Churrasco de bellota Pata Negra (solo temporada)",
+            "prices": [
+              {
+                "eur": 22,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Presa ibérica marinada con soja, pimentón de la Vera y miel, parmentier de boniato y salsa de manteca colorá y ajo",
+            "prices": [
+              {
+                "eur": 22,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Especialidades",
+        "items": [
+          {
+            "name": "Ensaladilla estilo rusa con huevo frito",
+            "prices": [
+              {
+                "eur": 8,
+                "portion": "Media ración"
+              },
+              {
+                "eur": 12,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Timbal de patatas y huevos con tataki de atún",
+            "prices": [
+              {
+                "eur": 14,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Huevo con patatas pochas, crema de bogavante y gambón",
+            "prices": [
+              {
+                "eur": 18,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Pastel de tagarninas con gazpachuelo malagueño",
+            "prices": [
+              {
+                "eur": 20,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "extras": [
+      {
+        "name": "Pan y palillos",
+        "eur": 1.8
+      },
+      {
+        "name": "Aceitunas",
+        "eur": 2
+      },
+      {
+        "name": "Pan extra",
+        "eur": 0.9
+      },
+      {
+        "name": "Envase desechable",
+        "eur": 0.5
+      }
+    ],
+    "menuSourceNote": "Carta PDF facilitada por el usuario el 16/10/2026, identificada por su nombre de archivo como 04/12/2025 (diciembre de 2025), de dos páginas. La propia carta menciona «desde 1920 a 2026», por lo que la fecha exacta de edición no queda totalmente determinada. Precios históricos: NO verificados como vigentes en octubre de 2026. IVA incluido. Los tres acompañamientos de huevos de campo estrellados son complementos de precio adicional, no platos independientes. Cerveza casera 3,80 €, excluida del catálogo de comida. No se utilizan fotografías de terceros."
   },
   {
     "id": "la-taberna-del-rio",
