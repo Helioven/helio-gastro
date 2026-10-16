@@ -25232,6 +25232,1919 @@
             "portion": "Unidad / formato de carta"
           }
         ]
+      },
+      {
+        "service": "Ibéricos, quesos y curados",
+        "dishes": [
+          "Jamón ibérico de bellota",
+          "Caña de lomo ibérico de bellota",
+          "Salchichón ibérico",
+          "Chorizo ibérico",
+          "Queso puro de oveja",
+          "Jamón serrano",
+          "Surtido ibérico con queso puro de oveja",
+          "Mixto jamón ibérico - queso puro de oveja",
+          "Mixto jamón serrano - queso puro de oveja",
+          "Queso provolone gratinado",
+          "Tabla de quesos",
+          "Queso asado a la miel de caña",
+          "Queso brie frito con confitura de tomate",
+          "Quesito de Zuheros (unidad)"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Jamón ibérico de bellota",
+            "eur": 24.95,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Jamón ibérico de bellota",
+            "eur": 17,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Jamón ibérico de bellota",
+            "eur": 7,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Caña de lomo ibérico de bellota",
+            "eur": 24.95,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Caña de lomo ibérico de bellota",
+            "eur": 17,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Caña de lomo ibérico de bellota",
+            "eur": 7,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Salchichón ibérico",
+            "eur": 17.95,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Salchichón ibérico",
+            "eur": 11.85,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Salchichón ibérico",
+            "eur": 5.5,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Chorizo ibérico",
+            "eur": 17.95,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Chorizo ibérico",
+            "eur": 11.85,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Chorizo ibérico",
+            "eur": 5.5,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Queso puro de oveja",
+            "eur": 15.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Queso puro de oveja",
+            "eur": 10.25,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Queso puro de oveja",
+            "eur": 4.9,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Jamón serrano",
+            "eur": 12.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Jamón serrano",
+            "eur": 8.1,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Jamón serrano",
+            "eur": 4,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Surtido ibérico con queso puro de oveja",
+            "eur": 28.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Mixto jamón ibérico - queso puro de oveja",
+            "eur": 26.25,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Mixto jamón ibérico - queso puro de oveja",
+            "eur": 18.95,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Mixto jamón serrano - queso puro de oveja",
+            "eur": 15.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Mixto jamón serrano - queso puro de oveja",
+            "eur": 11.1,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Queso provolone gratinado",
+            "eur": 8.7,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Tabla de quesos",
+            "eur": 17,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Tabla de quesos",
+            "eur": 11.5,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Queso asado a la miel de caña",
+            "eur": 10.35,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Queso asado a la miel de caña",
+            "eur": 7,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Queso asado a la miel de caña",
+            "eur": 3.95,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Queso brie frito con confitura de tomate",
+            "eur": 10.35,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Queso brie frito con confitura de tomate",
+            "eur": 7,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Queso brie frito con confitura de tomate",
+            "eur": 3.95,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Quesito de Zuheros (unidad)",
+            "eur": 3.7,
+            "portion": "Ración"
+          }
+        ]
+      },
+      {
+        "service": "Revueltos y verduras",
+        "dishes": [
+          "Boletus plancha con jamón",
+          "Parrillada de verduras",
+          "Huevos rotos con patatas, jamón y pimientos",
+          "Huevos rotos con patatas, jamón, pimientos y chorizo",
+          "Huevos rotos con patatas y gulas",
+          "Huevos rotos con patatas y chorizo criollo",
+          "Revuelto de ajetes con jamón",
+          "Revuelto de guisantes con jamón",
+          "Revuelto de espárragos con jamón",
+          "Revuelto de habitas baby",
+          "Revuelto tierra y mar",
+          "Revuelto Pata Negra",
+          "Alcachofas salteadas con jamón",
+          "Setas a la plancha",
+          "Berenjenas fritas",
+          "Berenjenas a la miel de caña",
+          "Berenjenas con salmorejo",
+          "Pimientos del padrón"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Boletus plancha con jamón",
+            "eur": 11.15,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Boletus plancha con jamón",
+            "eur": 7.1,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Parrillada de verduras",
+            "eur": 12.95,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Huevos rotos con patatas, jamón y pimientos",
+            "eur": 10.85,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Huevos rotos con patatas, jamón, pimientos y chorizo",
+            "eur": 11.65,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Huevos rotos con patatas y gulas",
+            "eur": 14.1,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Huevos rotos con patatas y chorizo criollo",
+            "eur": 10.85,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Revuelto de ajetes con jamón",
+            "eur": 11.1,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Revuelto de ajetes con jamón",
+            "eur": 7,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Revuelto de guisantes con jamón",
+            "eur": 11.1,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Revuelto de guisantes con jamón",
+            "eur": 7,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Revuelto de espárragos con jamón",
+            "eur": 11.1,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Revuelto de espárragos con jamón",
+            "eur": 7,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Revuelto de habitas baby",
+            "eur": 14.65,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Revuelto de habitas baby",
+            "eur": 10.85,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Revuelto tierra y mar",
+            "eur": 12.95,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Revuelto tierra y mar",
+            "eur": 7.6,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Revuelto Pata Negra",
+            "eur": 13.25,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Revuelto Pata Negra",
+            "eur": 9.5,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Alcachofas salteadas con jamón",
+            "eur": 11.1,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Alcachofas salteadas con jamón",
+            "eur": 7,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Setas a la plancha",
+            "eur": 8.35,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Setas a la plancha",
+            "eur": 6,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Berenjenas fritas",
+            "eur": 7.15,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Berenjenas fritas",
+            "eur": 5,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Berenjenas a la miel de caña",
+            "eur": 8.85,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Berenjenas a la miel de caña",
+            "eur": 6.6,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Berenjenas con salmorejo",
+            "eur": 9.1,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Berenjenas con salmorejo",
+            "eur": 7,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Pimientos del padrón",
+            "eur": 7.55,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Pimientos del padrón",
+            "eur": 5.55,
+            "portion": "1/2 ración"
+          }
+        ]
+      },
+      {
+        "service": "Tostas",
+        "dishes": [
+          "Lomo de ciervo con queso asado y cebolla caramelizada",
+          "Salmón",
+          "Salmón con roquefort",
+          "Anchoas con tomate",
+          "Anchoas con roquefort",
+          "Anchoas, queso de Zuheros y confitura de tomate",
+          "Gulas con huevo de codorniz",
+          "Surtido de tostas (7 unidades)"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Lomo de ciervo con queso asado y cebolla caramelizada",
+            "eur": 4.8,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Salmón",
+            "eur": 3.75,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Salmón con roquefort",
+            "eur": 3.75,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Anchoas con tomate",
+            "eur": 3.75,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Anchoas con roquefort",
+            "eur": 3.75,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Anchoas, queso de Zuheros y confitura de tomate",
+            "eur": 3.75,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Gulas con huevo de codorniz",
+            "eur": 3.75,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Surtido de tostas (7 unidades)",
+            "eur": 21,
+            "portion": "Unidad"
+          }
+        ]
+      },
+      {
+        "service": "Pescados",
+        "dishes": [
+          "Choco a la plancha",
+          "Choco frito",
+          "Ortiguillas fritas",
+          "Chanquetes con huevo frito",
+          "Chipirones fritos",
+          "Japuta en adobo",
+          "Rosada al limón",
+          "Bacalao rebozado",
+          "Bacalao frito",
+          "Boquerones fritos",
+          "Calamares fritos",
+          "Fritura variada (fuente)",
+          "Calamar plancha",
+          "Mero plancha",
+          "Pez espada plancha",
+          "Pulpo a la gallega",
+          "Pulpo a la brasa",
+          "Almejas a la marinera",
+          "Lomo de bacalao con pisto",
+          "Lomo de bacalao en salsa de gambas",
+          "Calamar fino (750 g aprox.)",
+          "Flamenquín de pez espada, gambas y gulas"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Choco a la plancha",
+            "eur": 13.15,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Choco frito",
+            "eur": 13.15,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Ortiguillas fritas",
+            "eur": 15,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Ortiguillas fritas",
+            "eur": 10,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Chanquetes con huevo frito",
+            "eur": 11.1,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Chipirones fritos",
+            "eur": 10.15,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Chipirones fritos",
+            "eur": 6,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Chipirones fritos",
+            "eur": 3,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Japuta en adobo",
+            "eur": 10.15,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Japuta en adobo",
+            "eur": 6,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Japuta en adobo",
+            "eur": 3,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Rosada al limón",
+            "eur": 10.15,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Rosada al limón",
+            "eur": 6,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Rosada al limón",
+            "eur": 3,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Bacalao rebozado",
+            "eur": 10.85,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Bacalao rebozado",
+            "eur": 7,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Bacalao rebozado",
+            "eur": 3.7,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Bacalao frito",
+            "eur": 10.6,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Bacalao frito",
+            "eur": 6.85,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Bacalao frito",
+            "eur": 3.6,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Boquerones fritos",
+            "eur": 10.15,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Boquerones fritos",
+            "eur": 6.8,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Boquerones fritos",
+            "eur": 3,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Calamares fritos",
+            "eur": 9.85,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Calamares fritos",
+            "eur": 5.9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Calamares fritos",
+            "eur": 2.95,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Fritura variada (fuente)",
+            "eur": 19.75,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Fritura variada (fuente)",
+            "eur": 11.5,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Calamar plancha",
+            "eur": 11.85,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Calamar plancha",
+            "eur": 7.5,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Mero plancha",
+            "eur": 11.85,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Mero plancha",
+            "eur": 7.5,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Pez espada plancha",
+            "eur": 13.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Pez espada plancha",
+            "eur": 8,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Pulpo a la gallega",
+            "eur": 16.7,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Pulpo a la gallega",
+            "eur": 9.35,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Pulpo a la brasa",
+            "eur": 17.95,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Almejas a la marinera",
+            "eur": 16.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Almejas a la marinera",
+            "eur": 9.95,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Lomo de bacalao con pisto",
+            "eur": 15.4,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Lomo de bacalao en salsa de gambas",
+            "eur": 16.4,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Calamar fino (750 g aprox.)",
+            "eur": 25.75,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Flamenquín de pez espada, gambas y gulas",
+            "eur": 10.9,
+            "portion": "Ración"
+          }
+        ]
+      },
+      {
+        "service": "Carnes",
+        "dishes": [
+          "Chorizo criollo a la brasa",
+          "Chorizo al vino",
+          "Chorizo frito",
+          "Morcilla frita",
+          "Pinchito de lomo de cerdo (unidad)",
+          "Pinchito de pollo (unidad)",
+          "Churrasco de pollo",
+          "Brocheta de solomillo ibérico, boletus y champiñones",
+          "Mollejas de cordero lechal",
+          "Riñones al Moriles",
+          "Lomo ibérico de orza",
+          "Carne con tomate",
+          "Callos de ternera",
+          "Ternera en salsa",
+          "Flamenquín a la española con queso",
+          "Cochifrito",
+          "Flamenquín de jamón serrano",
+          "Rabo de toro",
+          "Chuletitas de cordero lechal",
+          "Parrillada ibérica (2 personas)",
+          "Codillo asado",
+          "Entrecot de ternera",
+          "Solomillo de ternera",
+          "Churrasco ibérico",
+          "Presa ibérica",
+          "Secreto ibérico",
+          "Pluma ibérica",
+          "Abanico ibérico",
+          "Lagarto ibérico",
+          "Solomillo ibérico a la pimienta",
+          "Solomillo ibérico al queso azul del Valle de los Pedroches",
+          "Solomillo ibérico al Pedro Ximénez",
+          "Carrillada ibérica a la miel de caña",
+          "Magret de pato con salsa agridulce",
+          "Costillar de cerdo a la barbacoa",
+          "Flamenquito de jamón ibérico y queso puro de oveja",
+          "Tomahawk (corona de solomillo ibérico, 270 g aprox.)"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Chorizo criollo a la brasa",
+            "eur": 8.95,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Chorizo criollo a la brasa",
+            "eur": 6.5,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Chorizo criollo a la brasa",
+            "eur": 3.95,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Chorizo al vino",
+            "eur": 8.95,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Chorizo al vino",
+            "eur": 6.5,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Chorizo al vino",
+            "eur": 3.95,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Chorizo frito",
+            "eur": 8,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Chorizo frito",
+            "eur": 6,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Chorizo frito",
+            "eur": 3.6,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Morcilla frita",
+            "eur": 8,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Morcilla frita",
+            "eur": 6,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Morcilla frita",
+            "eur": 3.6,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Pinchito de lomo de cerdo (unidad)",
+            "eur": 2.75,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Pinchito de pollo (unidad)",
+            "eur": 3,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Churrasco de pollo",
+            "eur": 13.85,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Brocheta de solomillo ibérico, boletus y champiñones",
+            "eur": 5.6,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Mollejas de cordero lechal",
+            "eur": 21.95,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Mollejas de cordero lechal",
+            "eur": 15.65,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Riñones al Moriles",
+            "eur": 9.35,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Riñones al Moriles",
+            "eur": 6.95,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Riñones al Moriles",
+            "eur": 3.8,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Lomo ibérico de orza",
+            "eur": 16.15,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Lomo ibérico de orza",
+            "eur": 9.1,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Carne con tomate",
+            "eur": 9.35,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Carne con tomate",
+            "eur": 6.95,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Carne con tomate",
+            "eur": 3.8,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Callos de ternera",
+            "eur": 9.95,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Callos de ternera",
+            "eur": 7.75,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Callos de ternera",
+            "eur": 4,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Ternera en salsa",
+            "eur": 9.95,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Ternera en salsa",
+            "eur": 7.75,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Ternera en salsa",
+            "eur": 4,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Flamenquín a la española con queso",
+            "eur": 9.75,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Cochifrito",
+            "eur": 13,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Cochifrito",
+            "eur": 8.5,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Cochifrito",
+            "eur": 4.1,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Flamenquín de jamón serrano",
+            "eur": 10,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Rabo de toro",
+            "eur": 13.4,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Rabo de toro",
+            "eur": 9.95,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Chuletitas de cordero lechal",
+            "eur": 26,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Chuletitas de cordero lechal",
+            "eur": 15.65,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Parrillada ibérica (2 personas)",
+            "eur": 32.95,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Codillo asado",
+            "eur": 18.95,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Entrecot de ternera",
+            "eur": 26.95,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Solomillo de ternera",
+            "eur": 26.95,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Churrasco ibérico",
+            "eur": 15.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Presa ibérica",
+            "eur": 18.7,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Secreto ibérico",
+            "eur": 17.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Pluma ibérica",
+            "eur": 18.7,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Abanico ibérico",
+            "eur": 17.7,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Lagarto ibérico",
+            "eur": 15.15,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Solomillo ibérico a la pimienta",
+            "eur": 16.95,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Solomillo ibérico al queso azul del Valle de los Pedroches",
+            "eur": 16.95,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Solomillo ibérico al Pedro Ximénez",
+            "eur": 16.95,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Carrillada ibérica a la miel de caña",
+            "eur": 22.75,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Carrillada ibérica a la miel de caña",
+            "eur": 12.65,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Carrillada ibérica a la miel de caña",
+            "eur": 5.55,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Magret de pato con salsa agridulce",
+            "eur": 20,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Costillar de cerdo a la barbacoa",
+            "eur": 17.75,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Flamenquito de jamón ibérico y queso puro de oveja",
+            "eur": 5.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Tomahawk (corona de solomillo ibérico, 270 g aprox.)",
+            "eur": 14.65,
+            "portion": "Ración"
+          }
+        ]
+      },
+      {
+        "service": "Platos combinados",
+        "dishes": [
+          "Plato Moriles",
+          "Plato Pata Negra",
+          "Plato Currito",
+          "Plato nº 1 (filete, patatas, calamar plancha y ensalada)",
+          "Plato nº 2 (filete, patatas, dos huevos fritos y ensalada)",
+          "Plato nº 3 (filete, patatas, japuta y ensalada)",
+          "Plato nº 4 (tortilla de jamón, patatas, japuta y ensalada)",
+          "Plato nº 5 (tortilla de gambas, filete, patatas y ensalada)",
+          "Plato nº 6 (chorizo, dos huevos fritos, patatas y ensalada)",
+          "Plato nº 7 (pez espada, dos huevos fritos, patatas y ensalada)",
+          "Plato nº 8 (carne con tomate, dos huevos fritos, patatas y ensalada)",
+          "Plato nº 9 (loncha de jamón serrano con dos huevos fritos, patatas y ensalada)",
+          "Plato nº 10 (calamar plancha, dos huevos fritos, patatas y ensalada)",
+          "Plato nº 11 (dos pinchitos, calamar plancha, patatas y ensalada)",
+          "Plato nº 12 (flamenquín de jamón serrano, calamares fritos, patatas y ensalada)"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Plato Moriles",
+            "eur": 14.65,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Plato Pata Negra",
+            "eur": 11.15,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Plato Currito",
+            "eur": 15.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Plato nº 1 (filete, patatas, calamar plancha y ensalada)",
+            "eur": 9.75,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Plato nº 2 (filete, patatas, dos huevos fritos y ensalada)",
+            "eur": 8.35,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Plato nº 3 (filete, patatas, japuta y ensalada)",
+            "eur": 9.7,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Plato nº 4 (tortilla de jamón, patatas, japuta y ensalada)",
+            "eur": 9.75,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Plato nº 5 (tortilla de gambas, filete, patatas y ensalada)",
+            "eur": 9.75,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Plato nº 6 (chorizo, dos huevos fritos, patatas y ensalada)",
+            "eur": 9.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Plato nº 7 (pez espada, dos huevos fritos, patatas y ensalada)",
+            "eur": 12.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Plato nº 8 (carne con tomate, dos huevos fritos, patatas y ensalada)",
+            "eur": 9.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Plato nº 9 (loncha de jamón serrano con dos huevos fritos, patatas y ensalada)",
+            "eur": 12.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Plato nº 10 (calamar plancha, dos huevos fritos, patatas y ensalada)",
+            "eur": 9.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Plato nº 11 (dos pinchitos, calamar plancha, patatas y ensalada)",
+            "eur": 9.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Plato nº 12 (flamenquín de jamón serrano, calamares fritos, patatas y ensalada)",
+            "eur": 14.75,
+            "portion": "Unidad"
+          }
+        ]
+      },
+      {
+        "service": "Para los más chicos",
+        "dishes": [
+          "Huevos con patatas fritas",
+          "Espaguetis a la carbonara",
+          "Espaguetis a la boloñesa",
+          "San Jacobo",
+          "Flamenquín de jamón york",
+          "Nuggets de pollo",
+          "Pechuga de pollo empanada con patatas",
+          "Pechuga de pollo a la plancha con patatas"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Huevos con patatas fritas",
+            "eur": 5.1,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Espaguetis a la carbonara",
+            "eur": 6.6,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Espaguetis a la boloñesa",
+            "eur": 6.6,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "San Jacobo",
+            "eur": 6.6,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Flamenquín de jamón york",
+            "eur": 5.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Nuggets de pollo",
+            "eur": 7.3,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Pechuga de pollo empanada con patatas",
+            "eur": 7.3,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Pechuga de pollo a la plancha con patatas",
+            "eur": 7.3,
+            "portion": "Unidad"
+          }
+        ]
+      },
+      {
+        "service": "Nuestros guisos",
+        "dishes": [
+          "Carne con tomate",
+          "Ternera en salsa",
+          "Rabo de toro",
+          "Carrillada ibérica a la miel de caña"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Carne con tomate",
+            "eur": 9.35,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Carne con tomate",
+            "eur": 6.95,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Carne con tomate",
+            "eur": 3.8,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Ternera en salsa",
+            "eur": 9.95,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Ternera en salsa",
+            "eur": 7.75,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Ternera en salsa",
+            "eur": 4,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Rabo de toro",
+            "eur": 13.4,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Rabo de toro",
+            "eur": 9.95,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Carrillada ibérica a la miel de caña",
+            "eur": 22.75,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Carrillada ibérica a la miel de caña",
+            "eur": 12.65,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Carrillada ibérica a la miel de caña",
+            "eur": 5.55,
+            "portion": "Tapa"
+          }
+        ]
+      },
+      {
+        "service": "Bocadillos (carta general)",
+        "dishes": [
+          "Jamón ibérico",
+          "Caña de lomo ibérico",
+          "Jamón serrano",
+          "Queso puro de oveja",
+          "Jamón ibérico y queso",
+          "Jamón serrano y queso",
+          "Salchichón ibérico",
+          "Chorizo ibérico",
+          "Calamares fritos",
+          "Calamares fritos (salsa brava)",
+          "Vegetal de atún",
+          "Vegetal de salmón",
+          "Tortilla de patatas",
+          "Tortilla con salmorejo",
+          "Tortilla con pimientos",
+          "Tortilla con lomo",
+          "Tortilla francesa",
+          "Tortilla de gambas",
+          "Tortilla de atún",
+          "Tortilla de jamón",
+          "Tortilla de queso",
+          "Tortilla de chorizo",
+          "Hamburguesa original",
+          "Hamburguesa serranito",
+          "Hamburguesa buey",
+          "Chorizo frito",
+          "Carne con tomate",
+          "Ternera en salsa",
+          "Lomo de orza",
+          "Lomo",
+          "Lomo y queso",
+          "Lomo con pimientos",
+          "Bacon",
+          "Bacon y queso",
+          "Bacon y lomo",
+          "Bacon, lomo y queso",
+          "Serranito",
+          "Serranito con queso",
+          "Pepito de ternera",
+          "Pepito serranito",
+          "Pepito serranito con queso",
+          "Pechuga de pollo",
+          "Pechuga de pollo con queso",
+          "Pechuga de pollo serranito",
+          "Pechuga de pollo serranito con queso",
+          "Flamenquín de jamón serrano",
+          "Hamburguesa con queso",
+          "Hamburguesa serranito con queso"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Jamón ibérico",
+            "eur": 9,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Caña de lomo ibérico",
+            "eur": 9,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Jamón serrano",
+            "eur": 5.6,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Queso puro de oveja",
+            "eur": 5.8,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Jamón ibérico y queso",
+            "eur": 10,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Jamón serrano y queso",
+            "eur": 7,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Salchichón ibérico",
+            "eur": 6.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Chorizo ibérico",
+            "eur": 6.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Calamares fritos",
+            "eur": 4.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Calamares fritos (salsa brava)",
+            "eur": 4.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Vegetal de atún",
+            "eur": 5.8,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Vegetal de salmón",
+            "eur": 6.6,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Tortilla de patatas",
+            "eur": 4.35,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Tortilla con salmorejo",
+            "eur": 5.3,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Tortilla con pimientos",
+            "eur": 5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Tortilla con lomo",
+            "eur": 7.4,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Tortilla francesa",
+            "eur": 4,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Tortilla de gambas",
+            "eur": 6,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Tortilla de atún",
+            "eur": 6,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Tortilla de jamón",
+            "eur": 6,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Tortilla de queso",
+            "eur": 6,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Tortilla de chorizo",
+            "eur": 6,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Hamburguesa original",
+            "eur": 8.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Hamburguesa serranito",
+            "eur": 10,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Hamburguesa buey",
+            "eur": 10.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Chorizo frito",
+            "eur": 5.3,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Carne con tomate",
+            "eur": 5.85,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Ternera en salsa",
+            "eur": 6,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Lomo de orza",
+            "eur": 7.8,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Lomo",
+            "eur": 5.6,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Lomo y queso",
+            "eur": 7,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Lomo con pimientos",
+            "eur": 6,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Bacon",
+            "eur": 5.6,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Bacon y queso",
+            "eur": 7,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Bacon y lomo",
+            "eur": 7.4,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Bacon, lomo y queso",
+            "eur": 7.95,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Serranito",
+            "eur": 7.1,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Serranito con queso",
+            "eur": 7.1,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Pepito de ternera",
+            "eur": 6.3,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Pepito serranito",
+            "eur": 7.85,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Pepito serranito con queso",
+            "eur": 8.95,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Pechuga de pollo",
+            "eur": 6,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Pechuga de pollo con queso",
+            "eur": 7.3,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Pechuga de pollo serranito",
+            "eur": 7.8,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Pechuga de pollo serranito con queso",
+            "eur": 8.6,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Flamenquín de jamón serrano",
+            "eur": 9.35,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Hamburguesa con queso",
+            "eur": 9.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Hamburguesa serranito con queso",
+            "eur": 10.8,
+            "portion": "Unidad"
+          }
+        ]
+      },
+      {
+        "service": "Molletes (carta general)",
+        "dishes": [
+          "Jamón ibérico",
+          "Caña de lomo ibérico",
+          "Salchichón ibérico",
+          "Chorizo ibérico",
+          "Queso puro de oveja",
+          "Jamón serrano",
+          "Jamón serrano y queso de oveja",
+          "Salmón",
+          "Salmón al queso azul del Valle de los Pedroches",
+          "Jamón serrano al queso azul del Valle de los Pedroches",
+          "Anchoas con tomate",
+          "Anchoas con tomate al queso azul del Valle de los Pedroches",
+          "Anchoas, queso y confitura de tomate",
+          "Presa ibérica con salmorejo"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Jamón ibérico",
+            "eur": 9,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Caña de lomo ibérico",
+            "eur": 9,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Salchichón ibérico",
+            "eur": 6.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Chorizo ibérico",
+            "eur": 6.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Queso puro de oveja",
+            "eur": 5.8,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Jamón serrano",
+            "eur": 5.6,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Jamón serrano y queso de oveja",
+            "eur": 7,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Salmón",
+            "eur": 6.6,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Salmón al queso azul del Valle de los Pedroches",
+            "eur": 7.3,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Jamón serrano al queso azul del Valle de los Pedroches",
+            "eur": 7.3,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Anchoas con tomate",
+            "eur": 6.6,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Anchoas con tomate al queso azul del Valle de los Pedroches",
+            "eur": 7.3,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Anchoas, queso y confitura de tomate",
+            "eur": 7.4,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Presa ibérica con salmorejo",
+            "eur": 11.95,
+            "portion": "Unidad"
+          }
+        ]
+      },
+      {
+        "service": "Desayunos y meriendas · sándwiches",
+        "dishes": [
+          "Jamón york y queso",
+          "Americano (bacon, queso y huevo frito)",
+          "Club (pollo, queso, lechuga y salsa cocktail)",
+          "Noruego (salmón ahumado, tomate, lechuga y huevo cocido)",
+          "Vegetal de atún",
+          "Vegetal de jamón york",
+          "Vegetal de salmón"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Jamón york y queso",
+            "eur": 2.75,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Americano (bacon, queso y huevo frito)",
+            "eur": 3.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Club (pollo, queso, lechuga y salsa cocktail)",
+            "eur": 3.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Noruego (salmón ahumado, tomate, lechuga y huevo cocido)",
+            "eur": 3.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Vegetal de atún",
+            "eur": 3,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Vegetal de jamón york",
+            "eur": 2.95,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Vegetal de salmón",
+            "eur": 3,
+            "portion": "Unidad"
+          }
+        ]
+      },
+      {
+        "service": "Desayunos y meriendas · bocadillos",
+        "dishes": [
+          "Jamón ibérico",
+          "Jamón serrano",
+          "Queso oveja",
+          "Jamón serrano y queso",
+          "Salchichón ibérico",
+          "Chorizo ibérico",
+          "Caña de lomo ibérico",
+          "Tortilla francesa",
+          "Tortilla de patatas",
+          "Lomo de cerdo",
+          "Lomo de orza",
+          "Carne con tomate",
+          "Ternera en salsa",
+          "Pechuga de pollo",
+          "Pechuga de pollo y queso",
+          "Ternera",
+          "Bacon",
+          "Bacon con queso"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Jamón ibérico",
+            "eur": 5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Jamón serrano",
+            "eur": 4,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Queso oveja",
+            "eur": 4,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Jamón serrano y queso",
+            "eur": 4.75,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Salchichón ibérico",
+            "eur": 4.25,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Chorizo ibérico",
+            "eur": 4.25,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Caña de lomo ibérico",
+            "eur": 5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Tortilla francesa",
+            "eur": 2.95,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Tortilla de patatas",
+            "eur": 3.25,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Lomo de cerdo",
+            "eur": 3.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Lomo de orza",
+            "eur": 4,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Carne con tomate",
+            "eur": 4,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Ternera en salsa",
+            "eur": 4,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Pechuga de pollo",
+            "eur": 3.75,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Pechuga de pollo y queso",
+            "eur": 4.75,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Ternera",
+            "eur": 4.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Bacon",
+            "eur": 3.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Bacon con queso",
+            "eur": 4.5,
+            "portion": "Unidad"
+          }
+        ]
+      },
+      {
+        "service": "Desayunos y meriendas · croissants",
+        "dishes": [
+          "Solo",
+          "Mantequilla y mermelada",
+          "York y queso"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Solo",
+            "eur": 1.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Mantequilla y mermelada",
+            "eur": 2,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "York y queso",
+            "eur": 3.25,
+            "portion": "Unidad"
+          }
+        ]
+      },
+      {
+        "service": "Desayunos y meriendas · gofres",
+        "dishes": [
+          "Con nata, sirope de chocolate, fresa o caramelo",
+          "Con helado de vainilla o turrón"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Con nata, sirope de chocolate, fresa o caramelo",
+            "eur": 2.25,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Con helado de vainilla o turrón",
+            "eur": 3,
+            "portion": "Unidad"
+          }
+        ]
+      },
+      {
+        "service": "Desayunos y meriendas · tartas",
+        "dishes": [
+          "Tarta de queso con membrillo",
+          "Tarta tres chocolates",
+          "Tarta de chocolate",
+          "Sacher (sin gluten y sin lactosa)",
+          "Pastel cordobés",
+          "Gachas"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Tarta de queso con membrillo",
+            "eur": 3.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Tarta tres chocolates",
+            "eur": 3.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Tarta de chocolate",
+            "eur": 3.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Sacher (sin gluten y sin lactosa)",
+            "eur": 3.5,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Pastel cordobés",
+            "eur": 3,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Gachas",
+            "eur": 3,
+            "portion": "Unidad"
+          }
+        ]
+      },
+      {
+        "service": "Desayunos y meriendas · jeringos",
+        "dishes": [
+          "Media ración",
+          "Entera",
+          "Unidad"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Media ración",
+            "eur": 1.65,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Entera",
+            "eur": 3.15,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Unidad",
+            "eur": 0.65,
+            "portion": "Unidad"
+          }
+        ]
+      },
+      {
+        "service": "Menú del día",
+        "dishes": [
+          "Menú del día (primero, segundo, bebida, postre y pan)",
+          "Menú del día con segundo especial"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Menú del día (primero, segundo, bebida, postre y pan)",
+            "eur": 11.1,
+            "portion": "Unidad"
+          },
+          {
+            "dish": "Menú del día con segundo especial",
+            "eur": 14.25,
+            "portion": "Unidad"
+          }
+        ]
       }
     ],
     "menuSections": [
@@ -26105,6 +28018,2488 @@
             ]
           }
         ]
+      },
+      {
+        "title": "Ibéricos, quesos y curados",
+        "items": [
+          {
+            "name": "Jamón ibérico de bellota",
+            "prices": [
+              {
+                "eur": 24.95,
+                "portion": "Ración"
+              },
+              {
+                "eur": 17,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 7,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Caña de lomo ibérico de bellota",
+            "prices": [
+              {
+                "eur": 24.95,
+                "portion": "Ración"
+              },
+              {
+                "eur": 17,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 7,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Salchichón ibérico",
+            "prices": [
+              {
+                "eur": 17.95,
+                "portion": "Ración"
+              },
+              {
+                "eur": 11.85,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 5.5,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Chorizo ibérico",
+            "prices": [
+              {
+                "eur": 17.95,
+                "portion": "Ración"
+              },
+              {
+                "eur": 11.85,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 5.5,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Queso puro de oveja",
+            "prices": [
+              {
+                "eur": 15.9,
+                "portion": "Ración"
+              },
+              {
+                "eur": 10.25,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 4.9,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Jamón serrano",
+            "prices": [
+              {
+                "eur": 12.9,
+                "portion": "Ración"
+              },
+              {
+                "eur": 8.1,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 4,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Surtido ibérico con queso puro de oveja",
+            "prices": [
+              {
+                "eur": 28.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Mixto jamón ibérico - queso puro de oveja",
+            "prices": [
+              {
+                "eur": 26.25,
+                "portion": "Ración"
+              },
+              {
+                "eur": 18.95,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Mixto jamón serrano - queso puro de oveja",
+            "prices": [
+              {
+                "eur": 15.9,
+                "portion": "Ración"
+              },
+              {
+                "eur": 11.1,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Queso provolone gratinado",
+            "prices": [
+              {
+                "eur": 8.7,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Tabla de quesos",
+            "prices": [
+              {
+                "eur": 17,
+                "portion": "Ración"
+              },
+              {
+                "eur": 11.5,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Queso asado a la miel de caña",
+            "prices": [
+              {
+                "eur": 10.35,
+                "portion": "Ración"
+              },
+              {
+                "eur": 7,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 3.95,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Queso brie frito con confitura de tomate",
+            "prices": [
+              {
+                "eur": 10.35,
+                "portion": "Ración"
+              },
+              {
+                "eur": 7,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 3.95,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Quesito de Zuheros (unidad)",
+            "prices": [
+              {
+                "eur": 3.7,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Revueltos y verduras",
+        "items": [
+          {
+            "name": "Boletus plancha con jamón",
+            "prices": [
+              {
+                "eur": 11.15,
+                "portion": "Ración"
+              },
+              {
+                "eur": 7.1,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Parrillada de verduras",
+            "prices": [
+              {
+                "eur": 12.95,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Huevos rotos con patatas, jamón y pimientos",
+            "prices": [
+              {
+                "eur": 10.85,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Huevos rotos con patatas, jamón, pimientos y chorizo",
+            "prices": [
+              {
+                "eur": 11.65,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Huevos rotos con patatas y gulas",
+            "prices": [
+              {
+                "eur": 14.1,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Huevos rotos con patatas y chorizo criollo",
+            "prices": [
+              {
+                "eur": 10.85,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Revuelto de ajetes con jamón",
+            "prices": [
+              {
+                "eur": 11.1,
+                "portion": "Ración"
+              },
+              {
+                "eur": 7,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Revuelto de guisantes con jamón",
+            "prices": [
+              {
+                "eur": 11.1,
+                "portion": "Ración"
+              },
+              {
+                "eur": 7,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Revuelto de espárragos con jamón",
+            "prices": [
+              {
+                "eur": 11.1,
+                "portion": "Ración"
+              },
+              {
+                "eur": 7,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Revuelto de habitas baby",
+            "prices": [
+              {
+                "eur": 14.65,
+                "portion": "Ración"
+              },
+              {
+                "eur": 10.85,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Revuelto tierra y mar",
+            "prices": [
+              {
+                "eur": 12.95,
+                "portion": "Ración"
+              },
+              {
+                "eur": 7.6,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Revuelto Pata Negra",
+            "prices": [
+              {
+                "eur": 13.25,
+                "portion": "Ración"
+              },
+              {
+                "eur": 9.5,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Alcachofas salteadas con jamón",
+            "prices": [
+              {
+                "eur": 11.1,
+                "portion": "Ración"
+              },
+              {
+                "eur": 7,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Setas a la plancha",
+            "prices": [
+              {
+                "eur": 8.35,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Berenjenas fritas",
+            "prices": [
+              {
+                "eur": 7.15,
+                "portion": "Ración"
+              },
+              {
+                "eur": 5,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Berenjenas a la miel de caña",
+            "prices": [
+              {
+                "eur": 8.85,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6.6,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Berenjenas con salmorejo",
+            "prices": [
+              {
+                "eur": 9.1,
+                "portion": "Ración"
+              },
+              {
+                "eur": 7,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Pimientos del padrón",
+            "prices": [
+              {
+                "eur": 7.55,
+                "portion": "Ración"
+              },
+              {
+                "eur": 5.55,
+                "portion": "1/2 ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Tostas",
+        "items": [
+          {
+            "name": "Lomo de ciervo con queso asado y cebolla caramelizada",
+            "prices": [
+              {
+                "eur": 4.8,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Salmón",
+            "prices": [
+              {
+                "eur": 3.75,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Salmón con roquefort",
+            "prices": [
+              {
+                "eur": 3.75,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Anchoas con tomate",
+            "prices": [
+              {
+                "eur": 3.75,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Anchoas con roquefort",
+            "prices": [
+              {
+                "eur": 3.75,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Anchoas, queso de Zuheros y confitura de tomate",
+            "prices": [
+              {
+                "eur": 3.75,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Gulas con huevo de codorniz",
+            "prices": [
+              {
+                "eur": 3.75,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Surtido de tostas (7 unidades)",
+            "prices": [
+              {
+                "eur": 21,
+                "portion": "Unidad"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Pescados",
+        "items": [
+          {
+            "name": "Choco a la plancha",
+            "prices": [
+              {
+                "eur": 13.15,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Choco frito",
+            "prices": [
+              {
+                "eur": 13.15,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Ortiguillas fritas",
+            "prices": [
+              {
+                "eur": 15,
+                "portion": "Ración"
+              },
+              {
+                "eur": 10,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Chanquetes con huevo frito",
+            "prices": [
+              {
+                "eur": 11.1,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Chipirones fritos",
+            "prices": [
+              {
+                "eur": 10.15,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 3,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Japuta en adobo",
+            "prices": [
+              {
+                "eur": 10.15,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 3,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Rosada al limón",
+            "prices": [
+              {
+                "eur": 10.15,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 3,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Bacalao rebozado",
+            "prices": [
+              {
+                "eur": 10.85,
+                "portion": "Ración"
+              },
+              {
+                "eur": 7,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 3.7,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Bacalao frito",
+            "prices": [
+              {
+                "eur": 10.6,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6.85,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 3.6,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Boquerones fritos",
+            "prices": [
+              {
+                "eur": 10.15,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6.8,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 3,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Calamares fritos",
+            "prices": [
+              {
+                "eur": 9.85,
+                "portion": "Ración"
+              },
+              {
+                "eur": 5.9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 2.95,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Fritura variada (fuente)",
+            "prices": [
+              {
+                "eur": 19.75,
+                "portion": "Ración"
+              },
+              {
+                "eur": 11.5,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Calamar plancha",
+            "prices": [
+              {
+                "eur": 11.85,
+                "portion": "Ración"
+              },
+              {
+                "eur": 7.5,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Mero plancha",
+            "prices": [
+              {
+                "eur": 11.85,
+                "portion": "Ración"
+              },
+              {
+                "eur": 7.5,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Pez espada plancha",
+            "prices": [
+              {
+                "eur": 13.5,
+                "portion": "Ración"
+              },
+              {
+                "eur": 8,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Pulpo a la gallega",
+            "prices": [
+              {
+                "eur": 16.7,
+                "portion": "Ración"
+              },
+              {
+                "eur": 9.35,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Pulpo a la brasa",
+            "prices": [
+              {
+                "eur": 17.95,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Almejas a la marinera",
+            "prices": [
+              {
+                "eur": 16.5,
+                "portion": "Ración"
+              },
+              {
+                "eur": 9.95,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Lomo de bacalao con pisto",
+            "prices": [
+              {
+                "eur": 15.4,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Lomo de bacalao en salsa de gambas",
+            "prices": [
+              {
+                "eur": 16.4,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Calamar fino (750 g aprox.)",
+            "prices": [
+              {
+                "eur": 25.75,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín de pez espada, gambas y gulas",
+            "prices": [
+              {
+                "eur": 10.9,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Carnes",
+        "items": [
+          {
+            "name": "Chorizo criollo a la brasa",
+            "prices": [
+              {
+                "eur": 8.95,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6.5,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 3.95,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Chorizo al vino",
+            "prices": [
+              {
+                "eur": 8.95,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6.5,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 3.95,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Chorizo frito",
+            "prices": [
+              {
+                "eur": 8,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 3.6,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Morcilla frita",
+            "prices": [
+              {
+                "eur": 8,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 3.6,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Pinchito de lomo de cerdo (unidad)",
+            "prices": [
+              {
+                "eur": 2.75,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Pinchito de pollo (unidad)",
+            "prices": [
+              {
+                "eur": 3,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Churrasco de pollo",
+            "prices": [
+              {
+                "eur": 13.85,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Brocheta de solomillo ibérico, boletus y champiñones",
+            "prices": [
+              {
+                "eur": 5.6,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Mollejas de cordero lechal",
+            "prices": [
+              {
+                "eur": 21.95,
+                "portion": "Ración"
+              },
+              {
+                "eur": 15.65,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Riñones al Moriles",
+            "prices": [
+              {
+                "eur": 9.35,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6.95,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 3.8,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Lomo ibérico de orza",
+            "prices": [
+              {
+                "eur": 16.15,
+                "portion": "Ración"
+              },
+              {
+                "eur": 9.1,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Carne con tomate",
+            "prices": [
+              {
+                "eur": 9.35,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6.95,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 3.8,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Callos de ternera",
+            "prices": [
+              {
+                "eur": 9.95,
+                "portion": "Ración"
+              },
+              {
+                "eur": 7.75,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 4,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Ternera en salsa",
+            "prices": [
+              {
+                "eur": 9.95,
+                "portion": "Ración"
+              },
+              {
+                "eur": 7.75,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 4,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín a la española con queso",
+            "prices": [
+              {
+                "eur": 9.75,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Cochifrito",
+            "prices": [
+              {
+                "eur": 13,
+                "portion": "Ración"
+              },
+              {
+                "eur": 8.5,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 4.1,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín de jamón serrano",
+            "prices": [
+              {
+                "eur": 10,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Rabo de toro",
+            "prices": [
+              {
+                "eur": 13.4,
+                "portion": "Ración"
+              },
+              {
+                "eur": 9.95,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Chuletitas de cordero lechal",
+            "prices": [
+              {
+                "eur": 26,
+                "portion": "Ración"
+              },
+              {
+                "eur": 15.65,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Parrillada ibérica (2 personas)",
+            "prices": [
+              {
+                "eur": 32.95,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Codillo asado",
+            "prices": [
+              {
+                "eur": 18.95,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Entrecot de ternera",
+            "prices": [
+              {
+                "eur": 26.95,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Solomillo de ternera",
+            "prices": [
+              {
+                "eur": 26.95,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Churrasco ibérico",
+            "prices": [
+              {
+                "eur": 15.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Presa ibérica",
+            "prices": [
+              {
+                "eur": 18.7,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Secreto ibérico",
+            "prices": [
+              {
+                "eur": 17.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Pluma ibérica",
+            "prices": [
+              {
+                "eur": 18.7,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Abanico ibérico",
+            "prices": [
+              {
+                "eur": 17.7,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Lagarto ibérico",
+            "prices": [
+              {
+                "eur": 15.15,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Solomillo ibérico a la pimienta",
+            "prices": [
+              {
+                "eur": 16.95,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Solomillo ibérico al queso azul del Valle de los Pedroches",
+            "prices": [
+              {
+                "eur": 16.95,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Solomillo ibérico al Pedro Ximénez",
+            "prices": [
+              {
+                "eur": 16.95,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Carrillada ibérica a la miel de caña",
+            "prices": [
+              {
+                "eur": 22.75,
+                "portion": "Ración"
+              },
+              {
+                "eur": 12.65,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 5.55,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Magret de pato con salsa agridulce",
+            "prices": [
+              {
+                "eur": 20,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Costillar de cerdo a la barbacoa",
+            "prices": [
+              {
+                "eur": 17.75,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Flamenquito de jamón ibérico y queso puro de oveja",
+            "prices": [
+              {
+                "eur": 5.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Tomahawk (corona de solomillo ibérico, 270 g aprox.)",
+            "prices": [
+              {
+                "eur": 14.65,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Platos combinados",
+        "items": [
+          {
+            "name": "Plato Moriles",
+            "prices": [
+              {
+                "eur": 14.65,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Plato Pata Negra",
+            "prices": [
+              {
+                "eur": 11.15,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Plato Currito",
+            "prices": [
+              {
+                "eur": 15.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Plato nº 1 (filete, patatas, calamar plancha y ensalada)",
+            "prices": [
+              {
+                "eur": 9.75,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Plato nº 2 (filete, patatas, dos huevos fritos y ensalada)",
+            "prices": [
+              {
+                "eur": 8.35,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Plato nº 3 (filete, patatas, japuta y ensalada)",
+            "prices": [
+              {
+                "eur": 9.7,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Plato nº 4 (tortilla de jamón, patatas, japuta y ensalada)",
+            "prices": [
+              {
+                "eur": 9.75,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Plato nº 5 (tortilla de gambas, filete, patatas y ensalada)",
+            "prices": [
+              {
+                "eur": 9.75,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Plato nº 6 (chorizo, dos huevos fritos, patatas y ensalada)",
+            "prices": [
+              {
+                "eur": 9.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Plato nº 7 (pez espada, dos huevos fritos, patatas y ensalada)",
+            "prices": [
+              {
+                "eur": 12.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Plato nº 8 (carne con tomate, dos huevos fritos, patatas y ensalada)",
+            "prices": [
+              {
+                "eur": 9.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Plato nº 9 (loncha de jamón serrano con dos huevos fritos, patatas y ensalada)",
+            "prices": [
+              {
+                "eur": 12.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Plato nº 10 (calamar plancha, dos huevos fritos, patatas y ensalada)",
+            "prices": [
+              {
+                "eur": 9.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Plato nº 11 (dos pinchitos, calamar plancha, patatas y ensalada)",
+            "prices": [
+              {
+                "eur": 9.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Plato nº 12 (flamenquín de jamón serrano, calamares fritos, patatas y ensalada)",
+            "prices": [
+              {
+                "eur": 14.75,
+                "portion": "Unidad"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Para los más chicos",
+        "items": [
+          {
+            "name": "Huevos con patatas fritas",
+            "prices": [
+              {
+                "eur": 5.1,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Espaguetis a la carbonara",
+            "prices": [
+              {
+                "eur": 6.6,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Espaguetis a la boloñesa",
+            "prices": [
+              {
+                "eur": 6.6,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "San Jacobo",
+            "prices": [
+              {
+                "eur": 6.6,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín de jamón york",
+            "prices": [
+              {
+                "eur": 5.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Nuggets de pollo",
+            "prices": [
+              {
+                "eur": 7.3,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Pechuga de pollo empanada con patatas",
+            "prices": [
+              {
+                "eur": 7.3,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Pechuga de pollo a la plancha con patatas",
+            "prices": [
+              {
+                "eur": 7.3,
+                "portion": "Unidad"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Nuestros guisos",
+        "items": [
+          {
+            "name": "Carne con tomate",
+            "prices": [
+              {
+                "eur": 9.35,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6.95,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 3.8,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Ternera en salsa",
+            "prices": [
+              {
+                "eur": 9.95,
+                "portion": "Ración"
+              },
+              {
+                "eur": 7.75,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 4,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Rabo de toro",
+            "prices": [
+              {
+                "eur": 13.4,
+                "portion": "Ración"
+              },
+              {
+                "eur": 9.95,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Carrillada ibérica a la miel de caña",
+            "prices": [
+              {
+                "eur": 22.75,
+                "portion": "Ración"
+              },
+              {
+                "eur": 12.65,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 5.55,
+                "portion": "Tapa"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bocadillos (carta general)",
+        "items": [
+          {
+            "name": "Jamón ibérico",
+            "prices": [
+              {
+                "eur": 9,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Caña de lomo ibérico",
+            "prices": [
+              {
+                "eur": 9,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Jamón serrano",
+            "prices": [
+              {
+                "eur": 5.6,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Queso puro de oveja",
+            "prices": [
+              {
+                "eur": 5.8,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Jamón ibérico y queso",
+            "prices": [
+              {
+                "eur": 10,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Jamón serrano y queso",
+            "prices": [
+              {
+                "eur": 7,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Salchichón ibérico",
+            "prices": [
+              {
+                "eur": 6.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Chorizo ibérico",
+            "prices": [
+              {
+                "eur": 6.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Calamares fritos",
+            "prices": [
+              {
+                "eur": 4.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Calamares fritos (salsa brava)",
+            "prices": [
+              {
+                "eur": 4.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Vegetal de atún",
+            "prices": [
+              {
+                "eur": 5.8,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Vegetal de salmón",
+            "prices": [
+              {
+                "eur": 6.6,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Tortilla de patatas",
+            "prices": [
+              {
+                "eur": 4.35,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Tortilla con salmorejo",
+            "prices": [
+              {
+                "eur": 5.3,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Tortilla con pimientos",
+            "prices": [
+              {
+                "eur": 5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Tortilla con lomo",
+            "prices": [
+              {
+                "eur": 7.4,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Tortilla francesa",
+            "prices": [
+              {
+                "eur": 4,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Tortilla de gambas",
+            "prices": [
+              {
+                "eur": 6,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Tortilla de atún",
+            "prices": [
+              {
+                "eur": 6,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Tortilla de jamón",
+            "prices": [
+              {
+                "eur": 6,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Tortilla de queso",
+            "prices": [
+              {
+                "eur": 6,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Tortilla de chorizo",
+            "prices": [
+              {
+                "eur": 6,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Hamburguesa original",
+            "prices": [
+              {
+                "eur": 8.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Hamburguesa serranito",
+            "prices": [
+              {
+                "eur": 10,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Hamburguesa buey",
+            "prices": [
+              {
+                "eur": 10.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Chorizo frito",
+            "prices": [
+              {
+                "eur": 5.3,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Carne con tomate",
+            "prices": [
+              {
+                "eur": 5.85,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Ternera en salsa",
+            "prices": [
+              {
+                "eur": 6,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Lomo de orza",
+            "prices": [
+              {
+                "eur": 7.8,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Lomo",
+            "prices": [
+              {
+                "eur": 5.6,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Lomo y queso",
+            "prices": [
+              {
+                "eur": 7,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Lomo con pimientos",
+            "prices": [
+              {
+                "eur": 6,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Bacon",
+            "prices": [
+              {
+                "eur": 5.6,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Bacon y queso",
+            "prices": [
+              {
+                "eur": 7,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Bacon y lomo",
+            "prices": [
+              {
+                "eur": 7.4,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Bacon, lomo y queso",
+            "prices": [
+              {
+                "eur": 7.95,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Serranito",
+            "prices": [
+              {
+                "eur": 7.1,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Serranito con queso",
+            "prices": [
+              {
+                "eur": 7.1,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Pepito de ternera",
+            "prices": [
+              {
+                "eur": 6.3,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Pepito serranito",
+            "prices": [
+              {
+                "eur": 7.85,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Pepito serranito con queso",
+            "prices": [
+              {
+                "eur": 8.95,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Pechuga de pollo",
+            "prices": [
+              {
+                "eur": 6,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Pechuga de pollo con queso",
+            "prices": [
+              {
+                "eur": 7.3,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Pechuga de pollo serranito",
+            "prices": [
+              {
+                "eur": 7.8,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Pechuga de pollo serranito con queso",
+            "prices": [
+              {
+                "eur": 8.6,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín de jamón serrano",
+            "prices": [
+              {
+                "eur": 9.35,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Hamburguesa con queso",
+            "prices": [
+              {
+                "eur": 9.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Hamburguesa serranito con queso",
+            "prices": [
+              {
+                "eur": 10.8,
+                "portion": "Unidad"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Molletes (carta general)",
+        "items": [
+          {
+            "name": "Jamón ibérico",
+            "prices": [
+              {
+                "eur": 9,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Caña de lomo ibérico",
+            "prices": [
+              {
+                "eur": 9,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Salchichón ibérico",
+            "prices": [
+              {
+                "eur": 6.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Chorizo ibérico",
+            "prices": [
+              {
+                "eur": 6.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Queso puro de oveja",
+            "prices": [
+              {
+                "eur": 5.8,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Jamón serrano",
+            "prices": [
+              {
+                "eur": 5.6,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Jamón serrano y queso de oveja",
+            "prices": [
+              {
+                "eur": 7,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Salmón",
+            "prices": [
+              {
+                "eur": 6.6,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Salmón al queso azul del Valle de los Pedroches",
+            "prices": [
+              {
+                "eur": 7.3,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Jamón serrano al queso azul del Valle de los Pedroches",
+            "prices": [
+              {
+                "eur": 7.3,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Anchoas con tomate",
+            "prices": [
+              {
+                "eur": 6.6,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Anchoas con tomate al queso azul del Valle de los Pedroches",
+            "prices": [
+              {
+                "eur": 7.3,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Anchoas, queso y confitura de tomate",
+            "prices": [
+              {
+                "eur": 7.4,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Presa ibérica con salmorejo",
+            "prices": [
+              {
+                "eur": 11.95,
+                "portion": "Unidad"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Desayunos y meriendas · sándwiches",
+        "items": [
+          {
+            "name": "Jamón york y queso",
+            "prices": [
+              {
+                "eur": 2.75,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Americano (bacon, queso y huevo frito)",
+            "prices": [
+              {
+                "eur": 3.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Club (pollo, queso, lechuga y salsa cocktail)",
+            "prices": [
+              {
+                "eur": 3.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Noruego (salmón ahumado, tomate, lechuga y huevo cocido)",
+            "prices": [
+              {
+                "eur": 3.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Vegetal de atún",
+            "prices": [
+              {
+                "eur": 3,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Vegetal de jamón york",
+            "prices": [
+              {
+                "eur": 2.95,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Vegetal de salmón",
+            "prices": [
+              {
+                "eur": 3,
+                "portion": "Unidad"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Desayunos y meriendas · bocadillos",
+        "items": [
+          {
+            "name": "Jamón ibérico",
+            "prices": [
+              {
+                "eur": 5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Jamón serrano",
+            "prices": [
+              {
+                "eur": 4,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Queso oveja",
+            "prices": [
+              {
+                "eur": 4,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Jamón serrano y queso",
+            "prices": [
+              {
+                "eur": 4.75,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Salchichón ibérico",
+            "prices": [
+              {
+                "eur": 4.25,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Chorizo ibérico",
+            "prices": [
+              {
+                "eur": 4.25,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Caña de lomo ibérico",
+            "prices": [
+              {
+                "eur": 5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Tortilla francesa",
+            "prices": [
+              {
+                "eur": 2.95,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Tortilla de patatas",
+            "prices": [
+              {
+                "eur": 3.25,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Lomo de cerdo",
+            "prices": [
+              {
+                "eur": 3.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Lomo de orza",
+            "prices": [
+              {
+                "eur": 4,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Carne con tomate",
+            "prices": [
+              {
+                "eur": 4,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Ternera en salsa",
+            "prices": [
+              {
+                "eur": 4,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Pechuga de pollo",
+            "prices": [
+              {
+                "eur": 3.75,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Pechuga de pollo y queso",
+            "prices": [
+              {
+                "eur": 4.75,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Ternera",
+            "prices": [
+              {
+                "eur": 4.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Bacon",
+            "prices": [
+              {
+                "eur": 3.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Bacon con queso",
+            "prices": [
+              {
+                "eur": 4.5,
+                "portion": "Unidad"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Desayunos y meriendas · croissants",
+        "items": [
+          {
+            "name": "Solo",
+            "prices": [
+              {
+                "eur": 1.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Mantequilla y mermelada",
+            "prices": [
+              {
+                "eur": 2,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "York y queso",
+            "prices": [
+              {
+                "eur": 3.25,
+                "portion": "Unidad"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Desayunos y meriendas · gofres",
+        "items": [
+          {
+            "name": "Con nata, sirope de chocolate, fresa o caramelo",
+            "prices": [
+              {
+                "eur": 2.25,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Con helado de vainilla o turrón",
+            "prices": [
+              {
+                "eur": 3,
+                "portion": "Unidad"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Desayunos y meriendas · tartas",
+        "items": [
+          {
+            "name": "Tarta de queso con membrillo",
+            "prices": [
+              {
+                "eur": 3.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Tarta tres chocolates",
+            "prices": [
+              {
+                "eur": 3.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Tarta de chocolate",
+            "prices": [
+              {
+                "eur": 3.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Sacher (sin gluten y sin lactosa)",
+            "prices": [
+              {
+                "eur": 3.5,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Pastel cordobés",
+            "prices": [
+              {
+                "eur": 3,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Gachas",
+            "prices": [
+              {
+                "eur": 3,
+                "portion": "Unidad"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Desayunos y meriendas · jeringos",
+        "items": [
+          {
+            "name": "Media ración",
+            "prices": [
+              {
+                "eur": 1.65,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Entera",
+            "prices": [
+              {
+                "eur": 3.15,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Unidad",
+            "prices": [
+              {
+                "eur": 0.65,
+                "portion": "Unidad"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Menú del día",
+        "items": [
+          {
+            "name": "Menú del día (primero, segundo, bebida, postre y pan)",
+            "prices": [
+              {
+                "eur": 11.1,
+                "portion": "Unidad"
+              }
+            ]
+          },
+          {
+            "name": "Menú del día con segundo especial",
+            "prices": [
+              {
+                "eur": 14.25,
+                "portion": "Unidad"
+              }
+            ]
+          }
+        ]
       }
     ],
     "breakfastToastOptions": [
@@ -26122,7 +30517,7 @@
       "Miel de flores",
       "Miel de caña"
     ],
-    "menuSourceNote": "Capturas facilitadas por el usuario el 16/10/2026, identificadas expresamente como Bar Moriles Ciudad Jardín. Transcripción parcial de ensaladas, entrantes y tostadas de desayunos; existen además capturas de cafés, infusiones, chocolates y bebidas pendientes de incorporación individual o de revisión. No se dispone de capturas de todos los platos principales, por lo que NO se da por completa la carta. Alérgenos por pictogramas pendientes de identificación. PDF «Grupo Bar Moriles Menús» reúne menús del grupo y de distintas ubicaciones y NO debe asignarse íntegramente a Ciudad Jardín sin verificar ámbito; indica vigencia de algunos menús hasta 30/06/2027. Fotos subidas por usuarios no usadas. Los postres se incorporan desde la captura, conservando disponibilidad y precios sujetos a verificación."
+    "menuSourceNote": "Capturas de carta de Bar Moriles Ciudad Jardín facilitadas el 16/10/2026. Ampliadas secciones de ibéricos, verduras, tostas, pescados, carnes, guisos, combinados, infantil, bocadillos, molletes, desayunos/meriendas y menú del día; ensaladas, entrantes, tostadas y postres ya registrados. Los bocadillos de desayuno y de carta general conservan precios separados. Pendiente transcribir/verificar individualmente cafés, infusiones, chocolates, algunas bebidas y pictogramas de alérgenos. Precios sujetos a comprobación de vigencia. PDF de Grupo Bar Moriles contiene menús de grupo/eventos y de diferentes sedes: no asignar íntegro a Ciudad Jardín sin confirmación. No usar fotografías de clientes."
   },
   {
     "id": "moriles-ribera",
