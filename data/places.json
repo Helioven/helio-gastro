@@ -15149,6 +15149,37 @@
             "portion": "Precio de carta; formato no indicado"
           }
         ]
+      },
+      {
+        "service": "Carnes",
+        "dishes": [
+          "Solomillo Ibérico con Migas Camperas, Almendras y Dulce al Pedro Ximénez",
+          "Presa Ibérica a la Parrilla sobre Rissoto de setas",
+          "Solomillo de ternera Gallega con patatas cremosa",
+          "Entrecot de Vaca Gallega"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Solomillo Ibérico con Migas Camperas, Almendras y Dulce al Pedro Ximénez",
+            "eur": 18,
+            "portion": "Precio de carta; formato no indicado"
+          },
+          {
+            "dish": "Presa Ibérica a la Parrilla sobre Rissoto de setas",
+            "eur": 25.5,
+            "portion": "Precio de carta; formato no indicado"
+          },
+          {
+            "dish": "Solomillo de ternera Gallega con patatas cremosa",
+            "eur": 28.5,
+            "portion": "Precio de carta; formato no indicado"
+          },
+          {
+            "dish": "Entrecot de Vaca Gallega",
+            "eur": 30,
+            "portion": "Precio de carta; formato no indicado"
+          }
+        ]
       }
     ],
     "menuSections": [
@@ -15335,6 +15366,49 @@
             ]
           }
         ]
+      },
+      {
+        "title": "Carnes",
+        "items": [
+          {
+            "name": "Solomillo Ibérico con Migas Camperas, Almendras y Dulce al Pedro Ximénez",
+            "prices": [
+              {
+                "eur": 18,
+                "portion": "Formato no indicado"
+              }
+            ]
+          },
+          {
+            "name": "Presa Ibérica a la Parrilla sobre Rissoto de setas",
+            "prices": [
+              {
+                "eur": 25.5,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "Alérgenos presentes únicamente en la salsa. Puntalette elaborado y presentado en estilo risotto."
+          },
+          {
+            "name": "Solomillo de ternera Gallega con patatas cremosa",
+            "prices": [
+              {
+                "eur": 28.5,
+                "portion": "Formato no indicado"
+              }
+            ]
+          },
+          {
+            "name": "Entrecot de Vaca Gallega",
+            "prices": [
+              {
+                "eur": 30,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "Peso: 450 g"
+          }
+        ]
       }
     ],
     "extras": [
@@ -15347,7 +15421,7 @@
         "eur": 2.5
       }
     ],
-    "menuSourceNote": "Transcripción parcial de la sección Entrantes facilitada por el usuario el 16/10/2026. Restantes secciones pendientes. Los marcadores 'svg' de la fuente copiada no identifican alérgenos y no se interpretan. Fecha y vigencia de precios no indicadas. Sin imágenes de terceros. Sección «Opciones sin gluten / para celíacos» facilitada por el usuario: cuatro platos y servicio de pan a 2,50 €. Precio de berenjenas: «Consultar». La clasificación es la publicada por la carta y no garantiza ausencia de contaminación cruzada; verificar con el establecimiento. Marcadores svg sin identificación de alérgenos. Sección «Cordobesa» facilitada por el usuario: contiene cinco platos, varios también listados en otras secciones; se conserva su pertenencia a cada sección sin tratar las coincidencias como platos nuevos."
+    "menuSourceNote": "Transcripción parcial de la sección Entrantes facilitada por el usuario el 16/10/2026. Restantes secciones pendientes. Los marcadores 'svg' de la fuente copiada no identifican alérgenos y no se interpretan. Fecha y vigencia de precios no indicadas. Sin imágenes de terceros. Sección «Opciones sin gluten / para celíacos» facilitada por el usuario: cuatro platos y servicio de pan a 2,50 €. Precio de berenjenas: «Consultar». La clasificación es la publicada por la carta y no garantiza ausencia de contaminación cruzada; verificar con el establecimiento. Marcadores svg sin identificación de alérgenos. Sección «Cordobesa» facilitada por el usuario: contiene cinco platos, varios también listados en otras secciones; se conserva su pertenencia a cada sección sin tratar las coincidencias como platos nuevos. Sección Carnes, cuatro platos, facilitada por el usuario el 16/10/2026. Etiquetas svg de alérgenos no interpretables; descripción de la presa y peso de entrecot mantenidos como aparecen en la fuente."
   },
   {
     "id": "posada-caballo-andaluz",
