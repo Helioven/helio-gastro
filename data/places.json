@@ -24501,8 +24501,8 @@
     "area": "Ciudad Jardín · Antonio Maura",
     "address": "Calle Antonio Maura, 21, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "priceStatus": "partial_user_supplied_menu",
+    "checkedAt": "2026-10-16",
     "sources": [
       {
         "label": "Ficha del restaurante con dirección y especialidades",
@@ -24515,17 +24515,1272 @@
     ],
     "menus": [
       {
-        "service": "general",
+        "service": "Ensaladas",
         "dishes": [
-          "Flamenquín cordobés",
-          "Salmorejo cordobés",
-          "Croquetas caseras",
-          "Montaditos variados",
-          "Ensaladilla rusa"
+          "César",
+          "Moriles",
+          "Tropical",
+          "De la Casa",
+          "Zuehros",
+          "Ensalada templada de perdiz en escabeche",
+          "Picadillo cordobés",
+          "Tomate con ventresca",
+          "Ensalada de pimientos con ventresca",
+          "Cogollos al ajillo",
+          "Cogollos con salmón",
+          "Cogollos con anchoas y gulas"
         ],
-        "dishPrices": []
+        "dishPrices": [
+          {
+            "dish": "César",
+            "portion": "Ración",
+            "eur": 11.65
+          },
+          {
+            "dish": "César",
+            "portion": "1/2 ración",
+            "eur": 7
+          },
+          {
+            "dish": "Moriles",
+            "portion": "Ración",
+            "eur": 12.4
+          },
+          {
+            "dish": "Moriles",
+            "portion": "1/2 ración",
+            "eur": 7.5
+          },
+          {
+            "dish": "Tropical",
+            "portion": "Ración",
+            "eur": 11.9
+          },
+          {
+            "dish": "Tropical",
+            "portion": "1/2 ración",
+            "eur": 7.15
+          },
+          {
+            "dish": "De la Casa",
+            "portion": "Ración",
+            "eur": 10.85
+          },
+          {
+            "dish": "De la Casa",
+            "portion": "1/2 ración",
+            "eur": 6.35
+          },
+          {
+            "dish": "Zuehros",
+            "portion": "Ración",
+            "eur": 12.9
+          },
+          {
+            "dish": "Zuehros",
+            "portion": "1/2 ración",
+            "eur": 8.1
+          },
+          {
+            "dish": "Ensalada templada de perdiz en escabeche",
+            "portion": "Ración",
+            "eur": 14.1
+          },
+          {
+            "dish": "Ensalada templada de perdiz en escabeche",
+            "portion": "1/2 ración",
+            "eur": 9.1
+          },
+          {
+            "dish": "Picadillo cordobés",
+            "portion": "Ración",
+            "eur": 8.4
+          },
+          {
+            "dish": "Picadillo cordobés",
+            "portion": "1/2 ración",
+            "eur": 6.15
+          },
+          {
+            "dish": "Tomate con ventresca",
+            "portion": "Ración",
+            "eur": 10.85
+          },
+          {
+            "dish": "Tomate con ventresca",
+            "portion": "1/2 ración",
+            "eur": 6.75
+          },
+          {
+            "dish": "Ensalada de pimientos con ventresca",
+            "portion": "Ración",
+            "eur": 10.85
+          },
+          {
+            "dish": "Ensalada de pimientos con ventresca",
+            "portion": "1/2 ración",
+            "eur": 6.75
+          },
+          {
+            "dish": "Cogollos al ajillo",
+            "portion": "Ración",
+            "eur": 7.6
+          },
+          {
+            "dish": "Cogollos al ajillo",
+            "portion": "1/2 ración",
+            "eur": 5.1
+          },
+          {
+            "dish": "Cogollos con salmón",
+            "portion": "Ración",
+            "eur": 13.4
+          },
+          {
+            "dish": "Cogollos con salmón",
+            "portion": "1/2 ración",
+            "eur": 8.75
+          },
+          {
+            "dish": "Cogollos con anchoas y gulas",
+            "portion": "Ración",
+            "eur": 14.1
+          },
+          {
+            "dish": "Cogollos con anchoas y gulas",
+            "portion": "1/2 ración",
+            "eur": 9.15
+          }
+        ]
+      },
+      {
+        "service": "Entrantes",
+        "dishes": [
+          "Naranjas con bacalao",
+          "Patatas a la brava",
+          "Ensaladilla rusa",
+          "Patatas ali-oli",
+          "Salpicón de marisco",
+          "Salmorejo con jamón",
+          "Boquerones en vinagre",
+          "Croquetas de jamón ibérico",
+          "Croquetas de espinacas con piñones",
+          "Croquetas de boletus",
+          "Croquetas de rabo de toro",
+          "Surtido de croquetas",
+          "Tortilla de camarones",
+          "Tortilla de patatas (cuña)",
+          "Tortilla con salmorejo",
+          "Mojama de Barbate",
+          "Carpaccio de wagyu",
+          "Tartar de atún",
+          "Gambas al ajillo",
+          "Pan bao de langostinos y salsa curry",
+          "Mazamorra cordobesa",
+          "Risotto de rabo de toro"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Naranjas con bacalao",
+            "portion": "Ración",
+            "eur": 10.35
+          },
+          {
+            "dish": "Naranjas con bacalao",
+            "portion": "1/2 ración",
+            "eur": 6.85
+          },
+          {
+            "dish": "Naranjas con bacalao",
+            "portion": "Tapa",
+            "eur": 3.7
+          },
+          {
+            "dish": "Patatas a la brava",
+            "portion": "Ración",
+            "eur": 8.35
+          },
+          {
+            "dish": "Patatas a la brava",
+            "portion": "1/2 ración",
+            "eur": 6.35
+          },
+          {
+            "dish": "Patatas a la brava",
+            "portion": "Tapa",
+            "eur": 2.95
+          },
+          {
+            "dish": "Ensaladilla rusa",
+            "portion": "Ración",
+            "eur": 7.55
+          },
+          {
+            "dish": "Ensaladilla rusa",
+            "portion": "1/2 ración",
+            "eur": 6.25
+          },
+          {
+            "dish": "Ensaladilla rusa",
+            "portion": "Tapa",
+            "eur": 2.95
+          },
+          {
+            "dish": "Patatas ali-oli",
+            "portion": "Ración",
+            "eur": 7.55
+          },
+          {
+            "dish": "Patatas ali-oli",
+            "portion": "1/2 ración",
+            "eur": 6.25
+          },
+          {
+            "dish": "Patatas ali-oli",
+            "portion": "Tapa",
+            "eur": 2.95
+          },
+          {
+            "dish": "Salpicón de marisco",
+            "portion": "Ración",
+            "eur": 8.6
+          },
+          {
+            "dish": "Salpicón de marisco",
+            "portion": "1/2 ración",
+            "eur": 6.35
+          },
+          {
+            "dish": "Salpicón de marisco",
+            "portion": "Tapa",
+            "eur": 3
+          },
+          {
+            "dish": "Salmorejo con jamón",
+            "portion": "Ración",
+            "eur": 9.35
+          },
+          {
+            "dish": "Salmorejo con jamón",
+            "portion": "1/2 ración",
+            "eur": 7
+          },
+          {
+            "dish": "Salmorejo con jamón",
+            "portion": "Tapa",
+            "eur": 3.15
+          },
+          {
+            "dish": "Boquerones en vinagre",
+            "portion": "Ración",
+            "eur": 11.9
+          },
+          {
+            "dish": "Boquerones en vinagre",
+            "portion": "1/2 ración",
+            "eur": 8.7
+          },
+          {
+            "dish": "Boquerones en vinagre",
+            "portion": "Tapa",
+            "eur": 4.25
+          },
+          {
+            "dish": "Croquetas de jamón ibérico",
+            "portion": "Ración",
+            "eur": 11.95
+          },
+          {
+            "dish": "Croquetas de jamón ibérico",
+            "portion": "1/2 ración",
+            "eur": 6.35
+          },
+          {
+            "dish": "Croquetas de espinacas con piñones",
+            "portion": "Ración",
+            "eur": 11.95
+          },
+          {
+            "dish": "Croquetas de espinacas con piñones",
+            "portion": "1/2 ración",
+            "eur": 6.35
+          },
+          {
+            "dish": "Croquetas de boletus",
+            "portion": "Ración",
+            "eur": 11.95
+          },
+          {
+            "dish": "Croquetas de boletus",
+            "portion": "1/2 ración",
+            "eur": 6.35
+          },
+          {
+            "dish": "Croquetas de rabo de toro",
+            "portion": "Ración",
+            "eur": 12.95
+          },
+          {
+            "dish": "Croquetas de rabo de toro",
+            "portion": "1/2 ración",
+            "eur": 7
+          },
+          {
+            "dish": "Surtido de croquetas",
+            "portion": "Ración",
+            "eur": 12.5
+          },
+          {
+            "dish": "Surtido de croquetas",
+            "portion": "1/2 ración",
+            "eur": 6.85
+          },
+          {
+            "dish": "Tortilla de camarones",
+            "portion": "Ración",
+            "eur": 10.85
+          },
+          {
+            "dish": "Tortilla de camarones",
+            "portion": "1/2 ración",
+            "eur": 7
+          },
+          {
+            "dish": "Tortilla de patatas (cuña)",
+            "portion": "Ración",
+            "eur": 3.8
+          },
+          {
+            "dish": "Tortilla con salmorejo",
+            "portion": "Ración",
+            "eur": 7.6
+          },
+          {
+            "dish": "Mojama de Barbate",
+            "portion": "Ración",
+            "eur": 20.25
+          },
+          {
+            "dish": "Mojama de Barbate",
+            "portion": "1/2 ración",
+            "eur": 14.75
+          },
+          {
+            "dish": "Mojama de Barbate",
+            "portion": "Tapa",
+            "eur": 7.5
+          },
+          {
+            "dish": "Carpaccio de wagyu",
+            "portion": "Ración",
+            "eur": 18.25
+          },
+          {
+            "dish": "Tartar de atún",
+            "portion": "Ración",
+            "eur": 20.45
+          },
+          {
+            "dish": "Gambas al ajillo",
+            "portion": "Ración",
+            "eur": 14.65
+          },
+          {
+            "dish": "Gambas al ajillo",
+            "portion": "1/2 ración",
+            "eur": 10.5
+          },
+          {
+            "dish": "Pan bao de langostinos y salsa curry",
+            "portion": "Ración",
+            "eur": 10.55
+          },
+          {
+            "dish": "Pan bao de langostinos y salsa curry",
+            "portion": "1/2 ración",
+            "eur": 6.35
+          },
+          {
+            "dish": "Mazamorra cordobesa",
+            "portion": "Ración",
+            "eur": 10.35
+          },
+          {
+            "dish": "Mazamorra cordobesa",
+            "portion": "1/2 ración",
+            "eur": 7.6
+          },
+          {
+            "dish": "Mazamorra cordobesa",
+            "portion": "Tapa",
+            "eur": 3.8
+          },
+          {
+            "dish": "Risotto de rabo de toro",
+            "portion": "Ración",
+            "eur": 10.75
+          }
+        ]
+      },
+      {
+        "service": "Desayunos y meriendas · tostadas",
+        "dishes": [
+          "Mollete de Antequera",
+          "Mollete rústico cordobés",
+          "Chapata",
+          "Integral",
+          "Viena de lino",
+          "York",
+          "York y queso",
+          "Piquitos de jamón",
+          "Lonchas de queso Edam",
+          "Queso del Moriles",
+          "Atún",
+          "Picada de bacalao",
+          "Picada de salmón",
+          "Salmón y queso azul",
+          "Jamón al corte"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Mollete de Antequera",
+            "portion": "Media",
+            "eur": 1.3
+          },
+          {
+            "dish": "Mollete de Antequera",
+            "portion": "Entera",
+            "eur": 2.1
+          },
+          {
+            "dish": "Mollete rústico cordobés",
+            "portion": "Media",
+            "eur": 1.3
+          },
+          {
+            "dish": "Mollete rústico cordobés",
+            "portion": "Entera",
+            "eur": 2.1
+          },
+          {
+            "dish": "Chapata",
+            "portion": "Media",
+            "eur": 1.3
+          },
+          {
+            "dish": "Chapata",
+            "portion": "Entera",
+            "eur": 2.1
+          },
+          {
+            "dish": "Integral",
+            "portion": "Media",
+            "eur": 1.3
+          },
+          {
+            "dish": "Integral",
+            "portion": "Entera",
+            "eur": 2.1
+          },
+          {
+            "dish": "Viena de lino",
+            "portion": "Media",
+            "eur": 1.3
+          },
+          {
+            "dish": "Viena de lino",
+            "portion": "Entera",
+            "eur": 2.1
+          },
+          {
+            "dish": "York",
+            "portion": "Media",
+            "eur": 1.7
+          },
+          {
+            "dish": "York",
+            "portion": "Entera",
+            "eur": 2.25
+          },
+          {
+            "dish": "York y queso",
+            "portion": "Media",
+            "eur": 1.85
+          },
+          {
+            "dish": "York y queso",
+            "portion": "Entera",
+            "eur": 2.5
+          },
+          {
+            "dish": "Piquitos de jamón",
+            "portion": "Media",
+            "eur": 1.8
+          },
+          {
+            "dish": "Piquitos de jamón",
+            "portion": "Entera",
+            "eur": 2.25
+          },
+          {
+            "dish": "Lonchas de queso Edam",
+            "portion": "Media",
+            "eur": 1.7
+          },
+          {
+            "dish": "Lonchas de queso Edam",
+            "portion": "Entera",
+            "eur": 2.35
+          },
+          {
+            "dish": "Queso del Moriles",
+            "portion": "Media",
+            "eur": 1.8
+          },
+          {
+            "dish": "Queso del Moriles",
+            "portion": "Entera",
+            "eur": 2.55
+          },
+          {
+            "dish": "Atún",
+            "portion": "Media",
+            "eur": 1.7
+          },
+          {
+            "dish": "Atún",
+            "portion": "Entera",
+            "eur": 2.35
+          },
+          {
+            "dish": "Picada de bacalao",
+            "portion": "Media",
+            "eur": 1.8
+          },
+          {
+            "dish": "Picada de bacalao",
+            "portion": "Entera",
+            "eur": 2.55
+          },
+          {
+            "dish": "Picada de salmón",
+            "portion": "Media",
+            "eur": 1.8
+          },
+          {
+            "dish": "Picada de salmón",
+            "portion": "Entera",
+            "eur": 2.55
+          },
+          {
+            "dish": "Salmón y queso azul",
+            "portion": "Media",
+            "eur": 1.9
+          },
+          {
+            "dish": "Salmón y queso azul",
+            "portion": "Entera",
+            "eur": 2.55
+          },
+          {
+            "dish": "Jamón al corte",
+            "portion": "Media",
+            "eur": 2.05
+          },
+          {
+            "dish": "Jamón al corte",
+            "portion": "Entera",
+            "eur": 2.75
+          }
+        ]
       }
-    ]
+    ],
+    "menuSections": [
+      {
+        "title": "Ensaladas",
+        "items": [
+          {
+            "name": "César",
+            "prices": [
+              {
+                "eur": 11.65,
+                "portion": "Ración"
+              },
+              {
+                "eur": 7,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Moriles",
+            "prices": [
+              {
+                "eur": 12.4,
+                "portion": "Ración"
+              },
+              {
+                "eur": 7.5,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Tropical",
+            "prices": [
+              {
+                "eur": 11.9,
+                "portion": "Ración"
+              },
+              {
+                "eur": 7.15,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "De la Casa",
+            "prices": [
+              {
+                "eur": 10.85,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6.35,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Zuehros",
+            "prices": [
+              {
+                "eur": 12.9,
+                "portion": "Ración"
+              },
+              {
+                "eur": 8.1,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Ensalada templada de perdiz en escabeche",
+            "prices": [
+              {
+                "eur": 14.1,
+                "portion": "Ración"
+              },
+              {
+                "eur": 9.1,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Picadillo cordobés",
+            "prices": [
+              {
+                "eur": 8.4,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6.15,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Tomate con ventresca",
+            "prices": [
+              {
+                "eur": 10.85,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6.75,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Ensalada de pimientos con ventresca",
+            "prices": [
+              {
+                "eur": 10.85,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6.75,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Cogollos al ajillo",
+            "prices": [
+              {
+                "eur": 7.6,
+                "portion": "Ración"
+              },
+              {
+                "eur": 5.1,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Cogollos con salmón",
+            "prices": [
+              {
+                "eur": 13.4,
+                "portion": "Ración"
+              },
+              {
+                "eur": 8.75,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Cogollos con anchoas y gulas",
+            "prices": [
+              {
+                "eur": 14.1,
+                "portion": "Ración"
+              },
+              {
+                "eur": 9.15,
+                "portion": "1/2 ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Entrantes",
+        "items": [
+          {
+            "name": "Naranjas con bacalao",
+            "prices": [
+              {
+                "eur": 10.35,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6.85,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 3.7,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Patatas a la brava",
+            "prices": [
+              {
+                "eur": 8.35,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6.35,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 2.95,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Ensaladilla rusa",
+            "prices": [
+              {
+                "eur": 7.55,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6.25,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 2.95,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Patatas ali-oli",
+            "prices": [
+              {
+                "eur": 7.55,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6.25,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 2.95,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Salpicón de marisco",
+            "prices": [
+              {
+                "eur": 8.6,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6.35,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 3,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Salmorejo con jamón",
+            "prices": [
+              {
+                "eur": 9.35,
+                "portion": "Ración"
+              },
+              {
+                "eur": 7,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 3.15,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Boquerones en vinagre",
+            "prices": [
+              {
+                "eur": 11.9,
+                "portion": "Ración"
+              },
+              {
+                "eur": 8.7,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 4.25,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Croquetas de jamón ibérico",
+            "prices": [
+              {
+                "eur": 11.95,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6.35,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Croquetas de espinacas con piñones",
+            "prices": [
+              {
+                "eur": 11.95,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6.35,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Croquetas de boletus",
+            "prices": [
+              {
+                "eur": 11.95,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6.35,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Croquetas de rabo de toro",
+            "prices": [
+              {
+                "eur": 12.95,
+                "portion": "Ración"
+              },
+              {
+                "eur": 7,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Surtido de croquetas",
+            "prices": [
+              {
+                "eur": 12.5,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6.85,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Tortilla de camarones",
+            "prices": [
+              {
+                "eur": 10.85,
+                "portion": "Ración"
+              },
+              {
+                "eur": 7,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Tortilla de patatas (cuña)",
+            "prices": [
+              {
+                "eur": 3.8,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Tortilla con salmorejo",
+            "prices": [
+              {
+                "eur": 7.6,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Mojama de Barbate",
+            "prices": [
+              {
+                "eur": 20.25,
+                "portion": "Ración"
+              },
+              {
+                "eur": 14.75,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 7.5,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Carpaccio de wagyu",
+            "prices": [
+              {
+                "eur": 18.25,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Tartar de atún",
+            "prices": [
+              {
+                "eur": 20.45,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Gambas al ajillo",
+            "prices": [
+              {
+                "eur": 14.65,
+                "portion": "Ración"
+              },
+              {
+                "eur": 10.5,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Pan bao de langostinos y salsa curry",
+            "prices": [
+              {
+                "eur": 10.55,
+                "portion": "Ración"
+              },
+              {
+                "eur": 6.35,
+                "portion": "1/2 ración"
+              }
+            ]
+          },
+          {
+            "name": "Mazamorra cordobesa",
+            "prices": [
+              {
+                "eur": 10.35,
+                "portion": "Ración"
+              },
+              {
+                "eur": 7.6,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 3.8,
+                "portion": "Tapa"
+              }
+            ]
+          },
+          {
+            "name": "Risotto de rabo de toro",
+            "prices": [
+              {
+                "eur": 10.75,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Desayunos y meriendas · tostadas",
+        "items": [
+          {
+            "name": "Mollete de Antequera",
+            "prices": [
+              {
+                "eur": 1.3,
+                "portion": "Media"
+              },
+              {
+                "eur": 2.1,
+                "portion": "Entera"
+              }
+            ]
+          },
+          {
+            "name": "Mollete rústico cordobés",
+            "prices": [
+              {
+                "eur": 1.3,
+                "portion": "Media"
+              },
+              {
+                "eur": 2.1,
+                "portion": "Entera"
+              }
+            ]
+          },
+          {
+            "name": "Chapata",
+            "prices": [
+              {
+                "eur": 1.3,
+                "portion": "Media"
+              },
+              {
+                "eur": 2.1,
+                "portion": "Entera"
+              }
+            ]
+          },
+          {
+            "name": "Integral",
+            "prices": [
+              {
+                "eur": 1.3,
+                "portion": "Media"
+              },
+              {
+                "eur": 2.1,
+                "portion": "Entera"
+              }
+            ]
+          },
+          {
+            "name": "Viena de lino",
+            "prices": [
+              {
+                "eur": 1.3,
+                "portion": "Media"
+              },
+              {
+                "eur": 2.1,
+                "portion": "Entera"
+              }
+            ]
+          },
+          {
+            "name": "York",
+            "prices": [
+              {
+                "eur": 1.7,
+                "portion": "Media"
+              },
+              {
+                "eur": 2.25,
+                "portion": "Entera"
+              }
+            ]
+          },
+          {
+            "name": "York y queso",
+            "prices": [
+              {
+                "eur": 1.85,
+                "portion": "Media"
+              },
+              {
+                "eur": 2.5,
+                "portion": "Entera"
+              }
+            ]
+          },
+          {
+            "name": "Piquitos de jamón",
+            "prices": [
+              {
+                "eur": 1.8,
+                "portion": "Media"
+              },
+              {
+                "eur": 2.25,
+                "portion": "Entera"
+              }
+            ]
+          },
+          {
+            "name": "Lonchas de queso Edam",
+            "prices": [
+              {
+                "eur": 1.7,
+                "portion": "Media"
+              },
+              {
+                "eur": 2.35,
+                "portion": "Entera"
+              }
+            ]
+          },
+          {
+            "name": "Queso del Moriles",
+            "prices": [
+              {
+                "eur": 1.8,
+                "portion": "Media"
+              },
+              {
+                "eur": 2.55,
+                "portion": "Entera"
+              }
+            ]
+          },
+          {
+            "name": "Atún",
+            "prices": [
+              {
+                "eur": 1.7,
+                "portion": "Media"
+              },
+              {
+                "eur": 2.35,
+                "portion": "Entera"
+              }
+            ]
+          },
+          {
+            "name": "Picada de bacalao",
+            "prices": [
+              {
+                "eur": 1.8,
+                "portion": "Media"
+              },
+              {
+                "eur": 2.55,
+                "portion": "Entera"
+              }
+            ]
+          },
+          {
+            "name": "Picada de salmón",
+            "prices": [
+              {
+                "eur": 1.8,
+                "portion": "Media"
+              },
+              {
+                "eur": 2.55,
+                "portion": "Entera"
+              }
+            ]
+          },
+          {
+            "name": "Salmón y queso azul",
+            "prices": [
+              {
+                "eur": 1.9,
+                "portion": "Media"
+              },
+              {
+                "eur": 2.55,
+                "portion": "Entera"
+              }
+            ]
+          },
+          {
+            "name": "Jamón al corte",
+            "prices": [
+              {
+                "eur": 2.05,
+                "portion": "Media"
+              },
+              {
+                "eur": 2.75,
+                "portion": "Entera"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "breakfastToastOptions": [
+      "Aceite de oliva",
+      "Tomate natural triturado",
+      "Paté tradicional",
+      "Paté ibérico",
+      "Crema de York",
+      "Sobrasada",
+      "Zurrapa de lomo",
+      "Manteca colorá",
+      "Mantequilla",
+      "Mermelada de fresa",
+      "Mermelada de melocotón",
+      "Miel de flores",
+      "Miel de caña"
+    ],
+    "menuSourceNote": "Capturas facilitadas por el usuario el 16/10/2026, identificadas expresamente como Bar Moriles Ciudad Jardín. Transcripción parcial de ensaladas, entrantes y tostadas de desayunos; existen además capturas de postres, cafés, infusiones, chocolates y bebidas pendientes de incorporación individual o de revisión. No se dispone de capturas de todos los platos principales, por lo que NO se da por completa la carta. Alérgenos por pictogramas pendientes de identificación. PDF «Grupo Bar Moriles Menús» reúne menús del grupo y de distintas ubicaciones y NO debe asignarse íntegramente a Ciudad Jardín sin verificar ámbito; indica vigencia de algunos menús hasta 30/06/2027. Fotos subidas por usuarios no usadas."
   },
   {
     "id": "moriles-ribera",
