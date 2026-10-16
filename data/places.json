@@ -3409,5 +3409,360 @@
         ]
       }
     ]
+  },
+  {
+    "id": "el-burlaero",
+    "name": "Taberna El Burlaero",
+    "area": "Córdoba",
+    "address": "Córdoba, España",
+    "mealCostEur": null,
+    "priceStatus": "verified",
+    "checkedAt": "2026-10-16",
+    "sources": [
+      {
+        "label": "Carta oficial de El Burlaero (PDF facilitado)",
+        "url": "https://restauranteelburlaero.com/?page_id=7"
+      }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Jamón ibérico",
+          "Tabla de quesos de la provincia",
+          "Salmorejo",
+          "Volcanes de patatas con salsas de la casa",
+          "Berenjenas con miel o salmorejo",
+          "Croquetas caseras de jamón",
+          "Capotes de gamba, panceta y queso",
+          "Flamenquín de jamón",
+          "Ensaladilla rusa",
+          "Gazpacho cordobés",
+          "Tomate de temporada con melva y cebolleta fresca",
+          "Melón con jamón y miel de caña",
+          "Ensalada Cordocésar",
+          "Salteado de verduras",
+          "Paella de verduras",
+          "Falso pisto",
+          "Huevos al Ruedo",
+          "Tortilla de papas",
+          "Calamares fritos",
+          "Calamares a la plancha",
+          "Boquerones fritos",
+          "Pez a la plancha con gambitas y calamaritos",
+          "Choco a la plancha con alioli",
+          "Paella de gambón y calamar",
+          "Pata de pulpo a la plancha",
+          "Solomillo de cerdo ibérico",
+          "Presa ibérica con jamón",
+          "Solomillo de ternera",
+          "Chuletas de cordero",
+          "Hamburguesa Blesa's Burger",
+          "Brioche de pechuga de pollo",
+          "Brioche de serranito",
+          "Rabo de toro",
+          "Flamenquín de rabo",
+          "Arroz de rabo",
+          "Hamburguesa de rabo",
+          "Rabonachos",
+          "Taco de rabo de toro (3 unidades)",
+          "Brownie de chocolate negro",
+          "Pudding de vainilla y café",
+          "Pastel cordobés",
+          "Sorbete de limón",
+          "Frutas de temporada",
+          "Crème brûlée"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Jamón ibérico",
+            "eur": 21
+          },
+          {
+            "dish": "Tabla de quesos de la provincia (opción 1)",
+            "eur": 11
+          },
+          {
+            "dish": "Tabla de quesos de la provincia (opción 2)",
+            "eur": 21
+          },
+          {
+            "dish": "Salmorejo (opción 1)",
+            "eur": 5
+          },
+          {
+            "dish": "Salmorejo (opción 2)",
+            "eur": 9
+          },
+          {
+            "dish": "Volcanes de patatas con salsas de la casa (tapa)",
+            "eur": 5
+          },
+          {
+            "dish": "Volcanes de patatas con salsas de la casa (media ración)",
+            "eur": 7.5
+          },
+          {
+            "dish": "Volcanes de patatas con salsas de la casa (ración)",
+            "eur": 12
+          },
+          {
+            "dish": "Berenjenas con miel o salmorejo (tapa)",
+            "eur": 5.5
+          },
+          {
+            "dish": "Berenjenas con miel o salmorejo (media ración)",
+            "eur": 8
+          },
+          {
+            "dish": "Berenjenas con miel o salmorejo (ración)",
+            "eur": 12
+          },
+          {
+            "dish": "Croquetas caseras de jamón (tapa)",
+            "eur": 5
+          },
+          {
+            "dish": "Croquetas caseras de jamón (media ración)",
+            "eur": 7.5
+          },
+          {
+            "dish": "Croquetas caseras de jamón (ración)",
+            "eur": 12
+          },
+          {
+            "dish": "Capotes de gamba, panceta y queso (tapa)",
+            "eur": 6
+          },
+          {
+            "dish": "Capotes de gamba, panceta y queso (media ración)",
+            "eur": 8
+          },
+          {
+            "dish": "Capotes de gamba, panceta y queso (ración)",
+            "eur": 15
+          },
+          {
+            "dish": "Flamenquín de jamón",
+            "eur": 16
+          },
+          {
+            "dish": "Ensaladilla rusa (tapa)",
+            "eur": 5
+          },
+          {
+            "dish": "Ensaladilla rusa (media ración)",
+            "eur": 7.5
+          },
+          {
+            "dish": "Ensaladilla rusa (ración)",
+            "eur": 12
+          },
+          {
+            "dish": "Gazpacho cordobés",
+            "eur": 6
+          },
+          {
+            "dish": "Tomate de temporada con melva y cebolleta fresca",
+            "eur": 14
+          },
+          {
+            "dish": "Melón con jamón y miel de caña",
+            "eur": 12.5
+          },
+          {
+            "dish": "Ensalada Cordocésar",
+            "eur": 13
+          },
+          {
+            "dish": "Salteado de verduras",
+            "eur": 14
+          },
+          {
+            "dish": "Paella de verduras",
+            "eur": 14
+          },
+          {
+            "dish": "Falso pisto (opción 1)",
+            "eur": 7
+          },
+          {
+            "dish": "Falso pisto (opción 2)",
+            "eur": 13
+          },
+          {
+            "dish": "Huevos al Ruedo",
+            "eur": 13.5
+          },
+          {
+            "dish": "Tortilla de papas (opción 1)",
+            "eur": 6
+          },
+          {
+            "dish": "Tortilla de papas (opción 2)",
+            "eur": 10
+          },
+          {
+            "dish": "Calamares fritos (tapa)",
+            "eur": 6.5
+          },
+          {
+            "dish": "Calamares fritos (media ración)",
+            "eur": 9
+          },
+          {
+            "dish": "Calamares fritos (ración)",
+            "eur": 15
+          },
+          {
+            "dish": "Calamares a la plancha",
+            "eur": 15
+          },
+          {
+            "dish": "Boquerones fritos (tapa)",
+            "eur": 6.5
+          },
+          {
+            "dish": "Boquerones fritos (media ración)",
+            "eur": 9
+          },
+          {
+            "dish": "Boquerones fritos (ración)",
+            "eur": 15
+          },
+          {
+            "dish": "Pez a la plancha con gambitas y calamaritos",
+            "eur": 21
+          },
+          {
+            "dish": "Choco a la plancha con alioli",
+            "eur": 20.5
+          },
+          {
+            "dish": "Paella de gambón y calamar",
+            "eur": 19.5
+          },
+          {
+            "dish": "Pata de pulpo a la plancha",
+            "eur": 22.5
+          },
+          {
+            "dish": "Solomillo de cerdo ibérico (opción 1)",
+            "eur": 9.6
+          },
+          {
+            "dish": "Solomillo de cerdo ibérico (opción 2)",
+            "eur": 19.5
+          },
+          {
+            "dish": "Presa ibérica con jamón (opción 1)",
+            "eur": 10.5
+          },
+          {
+            "dish": "Presa ibérica con jamón (opción 2)",
+            "eur": 20
+          },
+          {
+            "dish": "Solomillo de ternera",
+            "eur": 24
+          },
+          {
+            "dish": "Chuletas de cordero",
+            "eur": 20
+          },
+          {
+            "dish": "Hamburguesa Blesa's Burger",
+            "eur": 14.5
+          },
+          {
+            "dish": "Brioche de pechuga de pollo",
+            "eur": 13.5
+          },
+          {
+            "dish": "Brioche de serranito",
+            "eur": 12
+          },
+          {
+            "dish": "Rabo de toro (opción 1)",
+            "eur": 9.6
+          },
+          {
+            "dish": "Rabo de toro (opción 2)",
+            "eur": 23
+          },
+          {
+            "dish": "Flamenquín de rabo",
+            "eur": 17
+          },
+          {
+            "dish": "Arroz de rabo",
+            "eur": 17.5
+          },
+          {
+            "dish": "Hamburguesa de rabo",
+            "eur": 17
+          },
+          {
+            "dish": "Rabonachos (opción 1)",
+            "eur": 9.8
+          },
+          {
+            "dish": "Rabonachos (opción 2)",
+            "eur": 17.5
+          },
+          {
+            "dish": "Taco de rabo de toro (3 unidades)",
+            "eur": 13.5
+          },
+          {
+            "dish": "Brownie de chocolate negro",
+            "eur": 6.5
+          },
+          {
+            "dish": "Pudding de vainilla y café",
+            "eur": 6.5
+          },
+          {
+            "dish": "Pastel cordobés",
+            "eur": 6.5
+          },
+          {
+            "dish": "Sorbete de limón",
+            "eur": 6.5
+          },
+          {
+            "dish": "Frutas de temporada",
+            "eur": 5
+          },
+          {
+            "dish": "Crème brûlée",
+            "eur": 6.75
+          }
+        ]
+      },
+      {
+        "service": "menu-del-dia",
+        "dishes": [
+          "Menú del día (lunes a viernes no festivos): elegir primero, segundo, bebida, pan y postre o café",
+          "Primeros: salmorejo, gazpacho, ensaladilla rusa, tomate con melva, falso pisto, berenjenas fritas con miel o melón con jamón",
+          "Segundos: pechuga de pollo empanada, calamares fritos, boquerones fritos, arroz cordobés, brioche de serranito, flamenquín (+2,50 €), rabo de toro (+4 €)",
+          "Postres: pastel cordobés, bola de helado, pudding de vainilla y café, fruta de temporada o natillas"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Menú del día (incluye bebida, pan y postre o café)",
+            "eur": 16.5
+          },
+          {
+            "dish": "Suplemento flamenquín en menú",
+            "eur": 2.5
+          },
+          {
+            "dish": "Suplemento rabo de toro en menú",
+            "eur": 4
+          }
+        ]
+      }
+    ]
   }
 ]
