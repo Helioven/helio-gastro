@@ -3764,5 +3764,268 @@
         ]
       }
     ]
+  },
+  {
+    "id": "con-acento-braseria",
+    "name": "Con Acento Brasería",
+    "area": "Córdoba",
+    "address": "Córdoba, España",
+    "mealCostEur": null,
+    "priceStatus": "verified",
+    "checkedAt": "2026-10-16",
+    "sources": [
+      {
+        "label": "Carta general y tapas oficiales (PDF facilitados)",
+        "url": "https://www.conacentoparrilla.com/carta/"
+      }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Pan de ajo (masa madre, ajo y perejil)",
+          "Aceitunas ConAcento en panko con mayonesa de piparra",
+          "Gilda tradicional de aceituna gordal, piparra y anchoa",
+          "Tosta Matrimonio con anchoa, boquerón y mantequilla de oveja (unidad)",
+          "Tosta de atún rojo de almadraba con mayonesa de sésamo, soja y trufa",
+          "Tataki de atún de almadraba con ponzu, mayonesa de sésamo y puerro frito",
+          "Bikini de steak tartar en brioche con mayonesa de piparra y anchoa (2 ud.)",
+          "Nigiri de presa ibérica con teriyaki, foie y mayonesa japonesa (6 ud.)",
+          "Empanada criolla de carne especiada (2 ud.)",
+          "Nuestras bravas con espuma de salsa brava (media)",
+          "Nuestras bravas con espuma de salsa brava (ración)",
+          "Croquetas de jamón ibérico y pollo (media)",
+          "Croquetas de jamón ibérico y pollo (ración)",
+          "Flamenquín cordobés con parmentier y salsa de oloroso",
+          "Tortilla ConAcento con jamón ibérico, cebolla caramelizada y queso de cabra",
+          "Torreznos con patatas paja y huevos camperos",
+          "Alcachofas a la brasa con papada ibérica y foie",
+          "Ensalada de temporada",
+          "Solomillo de atún rojo de almadraba con pimientos, cebolla y teriyaki",
+          "Pata de pulpo a la brasa sobre parmentier",
+          "Solomillo de ternera nacional",
+          "Solomillo de ternera al foie con salsa de setas shiitake",
+          "Lomo bajo a la brasa 45 días de maduración",
+          "Entraña de angus a la brasa",
+          "Abanico ibérico a la brasa",
+          "Presa ibérica de bellota a la brasa",
+          "Hamburguesa Doblecheese con cheddar, pepinillos y salsa Con Acento",
+          "Extra bacon para hamburguesa Doblecheese",
+          "Hamburguesa Carbonara con ternera madurada, havarti, mayonesa trufada y bacon",
+          "Honey Burger con cheddar, camembert, bacon, cebolla caramelizada y salsa BBQ honey",
+          "Torrija de brioche con helado de caramelo salado",
+          "Tarta de queso estilo New York",
+          "Coulant de chocolate con helado de vainilla"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Pan de ajo (masa madre, ajo y perejil)",
+            "eur": 2.2
+          },
+          {
+            "dish": "Aceitunas ConAcento en panko con mayonesa de piparra",
+            "eur": 4.5
+          },
+          {
+            "dish": "Gilda tradicional de aceituna gordal, piparra y anchoa",
+            "eur": 2.5
+          },
+          {
+            "dish": "Tosta Matrimonio con anchoa, boquerón y mantequilla de oveja (unidad)",
+            "eur": 4
+          },
+          {
+            "dish": "Tosta de atún rojo de almadraba con mayonesa de sésamo, soja y trufa",
+            "eur": 7
+          },
+          {
+            "dish": "Tataki de atún de almadraba con ponzu, mayonesa de sésamo y puerro frito",
+            "eur": 14
+          },
+          {
+            "dish": "Bikini de steak tartar en brioche con mayonesa de piparra y anchoa (2 ud.)",
+            "eur": 14
+          },
+          {
+            "dish": "Nigiri de presa ibérica con teriyaki, foie y mayonesa japonesa (6 ud.)",
+            "eur": 14
+          },
+          {
+            "dish": "Empanada criolla de carne especiada (2 ud.)",
+            "eur": 8
+          },
+          {
+            "dish": "Nuestras bravas con espuma de salsa brava (media)",
+            "eur": 7
+          },
+          {
+            "dish": "Nuestras bravas con espuma de salsa brava (ración)",
+            "eur": 12.5
+          },
+          {
+            "dish": "Croquetas de jamón ibérico y pollo (media)",
+            "eur": 6
+          },
+          {
+            "dish": "Croquetas de jamón ibérico y pollo (ración)",
+            "eur": 10.5
+          },
+          {
+            "dish": "Flamenquín cordobés con parmentier y salsa de oloroso",
+            "eur": 12.5
+          },
+          {
+            "dish": "Tortilla ConAcento con jamón ibérico, cebolla caramelizada y queso de cabra",
+            "eur": 12.5
+          },
+          {
+            "dish": "Torreznos con patatas paja y huevos camperos",
+            "eur": 12
+          },
+          {
+            "dish": "Alcachofas a la brasa con papada ibérica y foie",
+            "eur": 13.5
+          },
+          {
+            "dish": "Ensalada de temporada",
+            "eur": 13.5
+          },
+          {
+            "dish": "Solomillo de atún rojo de almadraba con pimientos, cebolla y teriyaki",
+            "eur": 24
+          },
+          {
+            "dish": "Pata de pulpo a la brasa sobre parmentier",
+            "eur": 22
+          },
+          {
+            "dish": "Solomillo de ternera nacional",
+            "eur": 23
+          },
+          {
+            "dish": "Solomillo de ternera al foie con salsa de setas shiitake",
+            "eur": 25
+          },
+          {
+            "dish": "Lomo bajo a la brasa 45 días de maduración",
+            "eur": 26
+          },
+          {
+            "dish": "Entraña de angus a la brasa",
+            "eur": 23
+          },
+          {
+            "dish": "Abanico ibérico a la brasa",
+            "eur": 22
+          },
+          {
+            "dish": "Presa ibérica de bellota a la brasa",
+            "eur": 22
+          },
+          {
+            "dish": "Hamburguesa Doblecheese con cheddar, pepinillos y salsa Con Acento",
+            "eur": 14
+          },
+          {
+            "dish": "Extra bacon para hamburguesa Doblecheese",
+            "eur": 1.5
+          },
+          {
+            "dish": "Hamburguesa Carbonara con ternera madurada, havarti, mayonesa trufada y bacon",
+            "eur": 16
+          },
+          {
+            "dish": "Honey Burger con cheddar, camembert, bacon, cebolla caramelizada y salsa BBQ honey",
+            "eur": 15
+          },
+          {
+            "dish": "Torrija de brioche con helado de caramelo salado",
+            "eur": 6.5
+          },
+          {
+            "dish": "Tarta de queso estilo New York",
+            "eur": 6.5
+          },
+          {
+            "dish": "Coulant de chocolate con helado de vainilla",
+            "eur": 6.5
+          }
+        ]
+      },
+      {
+        "service": "tapas",
+        "dishes": [
+          "Gilda de cecina y queso",
+          "Gilda de atún, mayonesa y sésamo",
+          "Tosta de atún con mayonesa kimchi",
+          "Tosta de pan cristal con steak tartar y gilda",
+          "Ensaladilla con atún rojo de almadraba",
+          "Torreznos con huevo frito y patatas paja (tapa)",
+          "Tosta de presa ibérica, cebolla y salsa de foie"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Gilda de cecina y queso",
+            "eur": 2.9
+          },
+          {
+            "dish": "Gilda de atún, mayonesa y sésamo",
+            "eur": 3.9
+          },
+          {
+            "dish": "Tosta de atún con mayonesa kimchi",
+            "eur": 5.5
+          },
+          {
+            "dish": "Tosta de pan cristal con steak tartar y gilda",
+            "eur": 5.5
+          },
+          {
+            "dish": "Ensaladilla con atún rojo de almadraba",
+            "eur": 5.9
+          },
+          {
+            "dish": "Torreznos con huevo frito y patatas paja (tapa)",
+            "eur": 5.9
+          },
+          {
+            "dish": "Tosta de presa ibérica, cebolla y salsa de foie",
+            "eur": 5.9
+          }
+        ]
+      },
+      {
+        "service": "carnes-al-corte",
+        "dishes": [
+          "Lomo bajo rubia gallega (+45 días; mínimo 300 g; precio por 100 g)",
+          "Lomo bajo simmental centroeuropeo (+45 días; mínimo 300 g; precio por 100 g)",
+          "Chuletón rubia gallega (+45 días; precio por 100 g; corte mínimo de hueso)",
+          "Chuletón simmental centroeuropeo (+45 días; precio por 100 g; corte mínimo de hueso)",
+          "Wagyu japonés A5 (mínimo 300 g; precio por 100 g)"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Lomo bajo rubia gallega (+45 días; mínimo 300 g; precio por 100 g)",
+            "eur": 10
+          },
+          {
+            "dish": "Lomo bajo simmental centroeuropeo (+45 días; mínimo 300 g; precio por 100 g)",
+            "eur": 11
+          },
+          {
+            "dish": "Chuletón rubia gallega (+45 días; precio por 100 g; corte mínimo de hueso)",
+            "eur": 9
+          },
+          {
+            "dish": "Chuletón simmental centroeuropeo (+45 días; precio por 100 g; corte mínimo de hueso)",
+            "eur": 10
+          },
+          {
+            "dish": "Wagyu japonés A5 (mínimo 300 g; precio por 100 g)",
+            "eur": 25
+          }
+        ]
+      }
+    ]
   }
 ]
