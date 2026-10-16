@@ -15920,6 +15920,36 @@
             "portion": "Ración"
           }
         ]
+      },
+      {
+        "service": "Para los más peques",
+        "dishes": [
+          "Tortilla francesa con patatas fritas",
+          "Croquetas con patatas fritas",
+          "Lagrimitas de pollo con patatas fritas"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Tortilla francesa con patatas fritas",
+            "eur": 8.9,
+            "portion": "Formato no indicado"
+          },
+          {
+            "dish": "Croquetas con patatas fritas",
+            "eur": 8.9,
+            "portion": "Formato no indicado"
+          },
+          {
+            "dish": "Lagrimitas de pollo con patatas fritas",
+            "eur": 10.9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Lagrimitas de pollo con patatas fritas",
+            "eur": 12.9,
+            "portion": "Ración"
+          }
+        ]
       }
     ],
     "menuSections": [
@@ -16277,6 +16307,43 @@
             "description": "Codillo de cerdo asado a baja temperatura, acompañado de salsa de su propio jugo"
           }
         ]
+      },
+      {
+        "title": "Para los más peques",
+        "items": [
+          {
+            "name": "Tortilla francesa con patatas fritas",
+            "prices": [
+              {
+                "eur": 8.9,
+                "portion": "Formato no indicado"
+              }
+            ]
+          },
+          {
+            "name": "Croquetas con patatas fritas",
+            "prices": [
+              {
+                "eur": 8.9,
+                "portion": "Formato no indicado"
+              }
+            ]
+          },
+          {
+            "name": "Lagrimitas de pollo con patatas fritas",
+            "prices": [
+              {
+                "eur": 10.9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12.9,
+                "portion": "Ración"
+              }
+            ],
+            "description": "Tiras de pollo rebozadas y crujientes, servidas con patatas fritas recién hechas"
+          }
+        ]
       }
     ],
     "extras": [
@@ -16298,7 +16365,7 @@
         "eur": 1.5
       }
     ],
-    "menuSourceNote": "Transcripción parcial de la carta facilitada en texto por el usuario el 16/10/2026: Entrantes fríos y ensaladas, ocho platos y cuatro suplementos. Precios de carta no verificados en tiempo real; fecha de edición no indicada. Secciones restantes pendientes. Sin fotografías de terceros. Sección Entrantes calientes recibida del usuario el 16/10/2026: siete platos y trece importes; huevos rotos sin tamaño de porción indicado. Sección Pescados facilitada por el usuario el 16/10/2026: cinco platos, seis precios. Solo la japuta presenta medias raciones y raciones expresas; los restantes formatos no se indican. Sección Carnes y platos fuertes proporcionada por el usuario: ocho platos, once precios. La distinción «Premio al Mejor Rabo de Toro Cordobés 2026» está citada según la carta, no verificada independientemente. Iconos svg sin información textual, no interpretados."
+    "menuSourceNote": "Transcripción parcial de la carta facilitada en texto por el usuario el 16/10/2026: Entrantes fríos y ensaladas, ocho platos y cuatro suplementos. Precios de carta no verificados en tiempo real; fecha de edición no indicada. Secciones restantes pendientes. Sin fotografías de terceros. Sección Entrantes calientes recibida del usuario el 16/10/2026: siete platos y trece importes; huevos rotos sin tamaño de porción indicado. Sección Pescados facilitada por el usuario el 16/10/2026: cinco platos, seis precios. Solo la japuta presenta medias raciones y raciones expresas; los restantes formatos no se indican. Sección Carnes y platos fuertes proporcionada por el usuario: ocho platos, once precios. La distinción «Premio al Mejor Rabo de Toro Cordobés 2026» está citada según la carta, no verificada independientemente. Iconos svg sin información textual, no interpretados. Sección infantil «Para los más peques» recibida del usuario: tres referencias y cuatro precios. Lagrimitas también presentes en entrantes calientes con los mismos importes; se mantiene la pertenencia a ambas secciones sin considerar un plato distinto. Iconos svg no interpretados."
   },
   {
     "id": "bodegas-campos",
