@@ -16053,6 +16053,36 @@
             "portion": "Formato no indicado"
           }
         ]
+      },
+      {
+        "service": "Carta especial de celíacos",
+        "dishes": [
+          "Croquetas (carta especial de celíacos)",
+          "Flamenquín (carta especial de celíacos)",
+          "Pechuga de pollo empanada (carta especial de celíacos)"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Croquetas (carta especial de celíacos)",
+            "eur": 9.9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Croquetas (carta especial de celíacos)",
+            "eur": 13.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Flamenquín (carta especial de celíacos)",
+            "eur": 14.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Pechuga de pollo empanada (carta especial de celíacos)",
+            "eur": 13.9,
+            "portion": "Formato no indicado"
+          }
+        ]
       }
     ],
     "menuSections": [
@@ -16597,6 +16627,44 @@
             ]
           }
         ]
+      },
+      {
+        "title": "Carta especial de celíacos",
+        "items": [
+          {
+            "name": "Croquetas (carta especial de celíacos)",
+            "prices": [
+              {
+                "eur": 9.9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 13.9,
+                "portion": "Ración"
+              }
+            ],
+            "description": "Consultar disponibilidad"
+          },
+          {
+            "name": "Flamenquín (carta especial de celíacos)",
+            "prices": [
+              {
+                "eur": 14.9,
+                "portion": "Ración"
+              }
+            ],
+            "description": "Consultar disponibilidad"
+          },
+          {
+            "name": "Pechuga de pollo empanada (carta especial de celíacos)",
+            "prices": [
+              {
+                "eur": 13.9,
+                "portion": "Formato no indicado"
+              }
+            ]
+          }
+        ]
       }
     ],
     "extras": [
@@ -16616,9 +16684,13 @@
       {
         "name": "Salsa extra",
         "eur": 1.5
+      },
+      {
+        "name": "Pan sin gluten o palillos sin gluten",
+        "eur": 1.5
       }
     ],
-    "menuSourceNote": "Transcripción parcial de la carta facilitada en texto por el usuario el 16/10/2026: Entrantes fríos y ensaladas, ocho platos y cuatro suplementos. Precios de carta no verificados en tiempo real; fecha de edición no indicada. Secciones restantes pendientes. Sin fotografías de terceros. Sección Entrantes calientes recibida del usuario el 16/10/2026: siete platos y trece importes; huevos rotos sin tamaño de porción indicado. Sección Pescados facilitada por el usuario el 16/10/2026: cinco platos, seis precios. Solo la japuta presenta medias raciones y raciones expresas; los restantes formatos no se indican. Sección Carnes y platos fuertes proporcionada por el usuario: ocho platos, once precios. La distinción «Premio al Mejor Rabo de Toro Cordobés 2026» está citada según la carta, no verificada independientemente. Iconos svg sin información textual, no interpretados. Sección infantil «Para los más peques» recibida del usuario: tres referencias y cuatro precios. Lagrimitas también presentes en entrantes calientes con los mismos importes; se mantiene la pertenencia a ambas secciones sin considerar un plato distinto. Iconos svg no interpretados. Sección Postres facilitada por el usuario: diez referencias y diez precios. Se conserva mención del chef Julián en el helado de naranja con vermut, así como la receta atribuida a la abuela Concha. Vigencia de los importes no verificada independientemente. Sugerencias del día facilitadas por el usuario el 16/10/2026: cuatro referencias, cinco precios, sujetos a cambios y disponibilidad. Las migas requieren consultar disponibilidad. El menudo gitano figura también en carnes y platos fuertes al mismo precio: no se contabiliza como plato único adicional. No se identifican los marcadores svg de alérgenos."
+    "menuSourceNote": "Transcripción parcial de la carta facilitada en texto por el usuario el 16/10/2026: Entrantes fríos y ensaladas, ocho platos y cuatro suplementos. Precios de carta no verificados en tiempo real; fecha de edición no indicada. Secciones restantes pendientes. Sin fotografías de terceros. Sección Entrantes calientes recibida del usuario el 16/10/2026: siete platos y trece importes; huevos rotos sin tamaño de porción indicado. Sección Pescados facilitada por el usuario el 16/10/2026: cinco platos, seis precios. Solo la japuta presenta medias raciones y raciones expresas; los restantes formatos no se indican. Sección Carnes y platos fuertes proporcionada por el usuario: ocho platos, once precios. La distinción «Premio al Mejor Rabo de Toro Cordobés 2026» está citada según la carta, no verificada independientemente. Iconos svg sin información textual, no interpretados. Sección infantil «Para los más peques» recibida del usuario: tres referencias y cuatro precios. Lagrimitas también presentes en entrantes calientes con los mismos importes; se mantiene la pertenencia a ambas secciones sin considerar un plato distinto. Iconos svg no interpretados. Sección Postres facilitada por el usuario: diez referencias y diez precios. Se conserva mención del chef Julián en el helado de naranja con vermut, así como la receta atribuida a la abuela Concha. Vigencia de los importes no verificada independientemente. Sugerencias del día facilitadas por el usuario el 16/10/2026: cuatro referencias, cinco precios, sujetos a cambios y disponibilidad. Las migas requieren consultar disponibilidad. El menudo gitano figura también en carnes y platos fuertes al mismo precio: no se contabiliza como plato único adicional. No se identifican los marcadores svg de alérgenos. Carta especial de celíacos facilitada por el usuario el 16/10/2026: tres platos y un suplemento (pan o palillos sin gluten). Consultar disponibilidad de toda la sección y expresamente de croquetas y flamenquín. La carta los presenta para celíacos, pero no se ha verificado el control de contaminación cruzada; confirmar con el establecimiento. Los símbolos svg de alérgenos no son identificables."
   },
   {
     "id": "bodegas-campos",
