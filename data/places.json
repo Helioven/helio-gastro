@@ -2707,25 +2707,462 @@
     "area": "Centro · San Hipólito",
     "address": "Calle Alonso de Burgos, 2, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "priceStatus": "confirmed",
+    "checkedAt": "2026-10-16",
     "sources": [
       {
-        "label": "Web oficial y locales",
-        "url": "https://tabernaelpoema.com/"
+        "label": "Just Eat · carta de reparto (Alonso de Burgos, 2)",
+        "url": "https://www.just-eat.es/restaurants-taberna-el-poema-cordoba/menu"
+      },
+      {
+        "label": "Uber Eats · carta de reparto (Alonso de Burgos, 2)",
+        "url": "https://www.ubereats.com/es/store/taberna-el-poema/CbDjgDGhVEqNYmYsVKSpJA"
       }
     ],
     "menus": [
       {
-        "service": "general",
+        "service": "Entrantes",
         "dishes": [
-          "Salmorejo cordobés",
-          "Rabo de toro",
-          "Cocina cordobesa"
+          "Salmorejo cordobés con huevo cocido y jamón",
+          "Ensaladilla rusa",
+          "Boquerones en vinagre con cebolla morada y AOVE",
+          "Parrillada de verduras",
+          "Setas a la plancha con jamón",
+          "Anchoa del Cantábrico con tomate",
+          "Jamón ibérico de bellota D.O. Valle de los Pedroches",
+          "Queso curado manchego de oveja Marantona"
         ],
-        "dishPrices": []
+        "dishPrices": [
+          {
+            "dish": "Salmorejo cordobés con huevo cocido y jamón",
+            "eur": 7,
+            "portion": "Just Eat · reparto"
+          },
+          {
+            "dish": "Salmorejo cordobés con huevo cocido y jamón",
+            "eur": 7,
+            "portion": "Uber Eats · reparto"
+          },
+          {
+            "dish": "Ensaladilla rusa",
+            "eur": 8,
+            "portion": "Just Eat · reparto"
+          },
+          {
+            "dish": "Ensaladilla rusa",
+            "eur": 6,
+            "portion": "Uber Eats · reparto"
+          },
+          {
+            "dish": "Boquerones en vinagre con cebolla morada y AOVE",
+            "eur": 9,
+            "portion": "Just Eat · reparto"
+          },
+          {
+            "dish": "Boquerones en vinagre con cebolla morada y AOVE",
+            "eur": 8,
+            "portion": "Uber Eats · reparto"
+          },
+          {
+            "dish": "Parrillada de verduras",
+            "eur": 12,
+            "portion": "Just Eat · reparto"
+          },
+          {
+            "dish": "Parrillada de verduras",
+            "eur": 13,
+            "portion": "Uber Eats · reparto"
+          },
+          {
+            "dish": "Setas a la plancha con jamón",
+            "eur": 12,
+            "portion": "Just Eat · reparto"
+          },
+          {
+            "dish": "Setas a la plancha con jamón",
+            "eur": 9,
+            "portion": "Uber Eats · reparto"
+          },
+          {
+            "dish": "Anchoa del Cantábrico con tomate",
+            "eur": 2.9,
+            "portion": "Uber Eats · reparto"
+          },
+          {
+            "dish": "Jamón ibérico de bellota D.O. Valle de los Pedroches",
+            "eur": 15,
+            "portion": "Uber Eats · reparto"
+          },
+          {
+            "dish": "Queso curado manchego de oveja Marantona",
+            "eur": 9,
+            "portion": "Uber Eats · reparto"
+          }
+        ]
+      },
+      {
+        "service": "Guisos",
+        "dishes": [
+          "Rabo de toro con patatas",
+          "Manitas de cerdo",
+          "Callos de ternera con patatas fritas",
+          "Alcachofas a la Montillana",
+          "Solomillo al whisky",
+          "Carrillada ibérica con alcachofas",
+          "Puntas de solomillo con setas y champiñones"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Rabo de toro con patatas",
+            "eur": 19,
+            "portion": "Uber Eats · reparto"
+          },
+          {
+            "dish": "Manitas de cerdo",
+            "eur": 12,
+            "portion": "Uber Eats · reparto"
+          },
+          {
+            "dish": "Callos de ternera con patatas fritas",
+            "eur": 16,
+            "portion": "Uber Eats · reparto"
+          },
+          {
+            "dish": "Alcachofas a la Montillana",
+            "eur": 14,
+            "portion": "Uber Eats · reparto"
+          },
+          {
+            "dish": "Solomillo al whisky",
+            "eur": 14,
+            "portion": "Uber Eats · reparto"
+          },
+          {
+            "dish": "Carrillada ibérica con alcachofas",
+            "eur": 16,
+            "portion": "Uber Eats · reparto"
+          },
+          {
+            "dish": "Puntas de solomillo con setas y champiñones",
+            "eur": 14,
+            "portion": "Uber Eats · reparto"
+          }
+        ]
+      },
+      {
+        "service": "Ensaladas",
+        "dishes": [
+          "Tomate con caballa",
+          "Ensalada de ahumados",
+          "Ensalada caprese",
+          "Ensalada de perdiz",
+          "Remojón de bacalao con naranja"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Tomate con caballa",
+            "eur": 6,
+            "portion": "Uber Eats · reparto"
+          },
+          {
+            "dish": "Ensalada de ahumados",
+            "eur": 14,
+            "portion": "Uber Eats · reparto"
+          },
+          {
+            "dish": "Ensalada caprese",
+            "eur": 12,
+            "portion": "Uber Eats · reparto"
+          },
+          {
+            "dish": "Ensalada de perdiz",
+            "eur": 14,
+            "portion": "Uber Eats · reparto"
+          },
+          {
+            "dish": "Remojón de bacalao con naranja",
+            "eur": 13,
+            "portion": "Uber Eats · reparto"
+          }
+        ]
       }
-    ]
+    ],
+    "menuSections": [
+      {
+        "title": "Entrantes",
+        "items": [
+          {
+            "name": "Salmorejo cordobés con huevo cocido y jamón",
+            "description": "Salmorejo cordobés con huevo cocido y jamón.",
+            "en": "Cordoban chilled tomato cream with boiled egg and ham.",
+            "prices": [
+              {
+                "label": "Just Eat · reparto",
+                "eur": 7
+              },
+              {
+                "label": "Uber Eats · reparto",
+                "eur": 7
+              }
+            ]
+          },
+          {
+            "name": "Ensaladilla rusa",
+            "description": "Ensaladilla rusa.",
+            "en": "Russian-style potato salad.",
+            "prices": [
+              {
+                "label": "Just Eat · reparto",
+                "eur": 8
+              },
+              {
+                "label": "Uber Eats · reparto",
+                "eur": 6
+              }
+            ]
+          },
+          {
+            "name": "Boquerones en vinagre con cebolla morada y AOVE",
+            "description": "Boquerones en vinagre con cebolla; Just Eat especifica cebolla morada y AOVE.",
+            "en": "Vinegar-marinated anchovies with onion; Just Eat specifies red onion and extra virgin olive oil.",
+            "prices": [
+              {
+                "label": "Just Eat · reparto",
+                "eur": 9
+              },
+              {
+                "label": "Uber Eats · reparto",
+                "eur": 8
+              }
+            ]
+          },
+          {
+            "name": "Parrillada de verduras",
+            "description": "Verduras a la parrilla.",
+            "en": "Grilled vegetables.",
+            "prices": [
+              {
+                "label": "Just Eat · reparto",
+                "eur": 12
+              },
+              {
+                "label": "Uber Eats · reparto",
+                "eur": 13
+              }
+            ]
+          },
+          {
+            "name": "Setas a la plancha con jamón",
+            "description": "Setas a la plancha con jamón.",
+            "en": "Griddled mushrooms with ham.",
+            "prices": [
+              {
+                "label": "Just Eat · reparto",
+                "eur": 12
+              },
+              {
+                "label": "Uber Eats · reparto",
+                "eur": 9
+              }
+            ]
+          },
+          {
+            "name": "Anchoa del Cantábrico con tomate",
+            "description": "Anchoa del Cantábrico con tomate, por unidad.",
+            "en": "Cantabrian anchovy with tomato, sold individually.",
+            "prices": [
+              {
+                "label": "Uber Eats · reparto",
+                "eur": 2.9
+              }
+            ]
+          },
+          {
+            "name": "Jamón ibérico de bellota D.O. Valle de los Pedroches",
+            "description": "Ración de jamón ibérico de bellota de los Pedroches.",
+            "en": "Portion of acorn-fed Iberian ham from Los Pedroches.",
+            "prices": [
+              {
+                "label": "Uber Eats · reparto",
+                "eur": 15
+              }
+            ]
+          },
+          {
+            "name": "Queso curado manchego de oveja Marantona",
+            "description": "Queso curado manchego de oveja Marantona.",
+            "en": "Aged Marantona Manchego sheep's cheese.",
+            "prices": [
+              {
+                "label": "Uber Eats · reparto",
+                "eur": 9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Guisos",
+        "items": [
+          {
+            "name": "Rabo de toro con patatas",
+            "description": "Rabo de toro con patatas.",
+            "en": "Braised oxtail with potatoes.",
+            "prices": [
+              {
+                "label": "Uber Eats · reparto",
+                "eur": 19
+              }
+            ]
+          },
+          {
+            "name": "Manitas de cerdo",
+            "description": "Manitas de cerdo en salsa.",
+            "en": "Pork trotters in sauce.",
+            "prices": [
+              {
+                "label": "Uber Eats · reparto",
+                "eur": 12
+              }
+            ]
+          },
+          {
+            "name": "Callos de ternera con patatas fritas",
+            "description": "Callos de ternera con patatas fritas.",
+            "en": "Beef tripe with chips.",
+            "prices": [
+              {
+                "label": "Uber Eats · reparto",
+                "eur": 16
+              }
+            ]
+          },
+          {
+            "name": "Alcachofas a la Montillana",
+            "description": "Alcachofas a la Montillana.",
+            "en": "Montilla-style artichokes.",
+            "prices": [
+              {
+                "label": "Uber Eats · reparto",
+                "eur": 14
+              }
+            ]
+          },
+          {
+            "name": "Solomillo al whisky",
+            "description": "Solomillo al whisky.",
+            "en": "Pork tenderloin in whisky sauce.",
+            "prices": [
+              {
+                "label": "Uber Eats · reparto",
+                "eur": 14
+              }
+            ]
+          },
+          {
+            "name": "Carrillada ibérica con alcachofas",
+            "description": "Carrillada ibérica con alcachofas.",
+            "en": "Iberian pork cheeks with artichokes.",
+            "prices": [
+              {
+                "label": "Uber Eats · reparto",
+                "eur": 16
+              }
+            ]
+          },
+          {
+            "name": "Puntas de solomillo con setas y champiñones",
+            "description": "Puntas de solomillo con setas y champiñones.",
+            "en": "Tenderloin tips with wild and button mushrooms.",
+            "prices": [
+              {
+                "label": "Uber Eats · reparto",
+                "eur": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Ensaladas",
+        "items": [
+          {
+            "name": "Tomate con caballa",
+            "description": "Ensalada de tomate y caballa.",
+            "en": "Tomato and mackerel salad.",
+            "prices": [
+              {
+                "label": "Uber Eats · reparto",
+                "eur": 6
+              }
+            ]
+          },
+          {
+            "name": "Ensalada de ahumados",
+            "description": "Ensalada de ahumados; composición no especificada.",
+            "en": "Smoked-food salad; ingredients not specified.",
+            "prices": [
+              {
+                "label": "Uber Eats · reparto",
+                "eur": 14
+              }
+            ]
+          },
+          {
+            "name": "Ensalada caprese",
+            "description": "Ensalada caprese; composición no detallada en la fuente.",
+            "en": "Caprese salad; ingredients not detailed by the source.",
+            "prices": [
+              {
+                "label": "Uber Eats · reparto",
+                "eur": 12
+              }
+            ]
+          },
+          {
+            "name": "Ensalada de perdiz",
+            "description": "Ensalada de perdiz.",
+            "en": "Partridge salad.",
+            "prices": [
+              {
+                "label": "Uber Eats · reparto",
+                "eur": 14
+              }
+            ]
+          },
+          {
+            "name": "Remojón de bacalao con naranja",
+            "description": "Ensalada de remojón de bacalao con naranja.",
+            "en": "Salt cod and orange salad.",
+            "prices": [
+              {
+                "label": "Uber Eats · reparto",
+                "eur": 13
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "menuSourceNote": "Precios de plataformas de reparto, no confirmados para consumo en el local. Cada precio identifica Just Eat o Uber Eats; pueden variar entre plataformas y respecto a sala. Transcripción limitada a los 20 platos visibles y verificables en las páginas consultadas; otras secciones no accesibles íntegramente y no se consideran completas. No se usan fotografías de terceros."
+  },
+  {
+    "id": "taberna-el-poema-gran-capitan",
+    "name": "Taberna El Poema · Gran Capitán",
+    "area": "Centro · Gran Capitán",
+    "address": "Avenida del Gran Capitán, 29, Córdoba",
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-16",
+    "sources": [
+      {
+        "label": "Ficha del establecimiento (sin carta verificable)",
+        "url": "https://es.restaurantguru.com/El-Poema-Tabern-Cordoba-Andalusia"
+      }
+    ],
+    "menus": [],
+    "menuSections": [],
+    "menuSourceNote": "Carta no disponible / pendiente de verificar. No se atribuyen a esta sucursal platos ni precios de Alonso de Burgos. No se reutilizan fotografías subidas por terceros."
   },
   {
     "id": "taberna-rafae",
