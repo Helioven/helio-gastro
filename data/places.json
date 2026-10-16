@@ -5519,8 +5519,8 @@
     "area": "Centro · Lineros",
     "address": "Calle Lineros, 32, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "priceStatus": "published_official_menu",
+    "checkedAt": "2026-10-16",
     "sources": [
       {
         "label": "Menús oficiales",
@@ -5529,6 +5529,10 @@
       {
         "label": "Menú degustación Tradición (66 €/persona, mínimo 2, máximo 4)",
         "url": "https://tienda.bodegascampos.com/inicio/7-menu-tradicion.html"
+      },
+      {
+        "label": "Carta oficial en español e inglés (PDF facilitados por el usuario)",
+        "url": "https://bodegascampos.com/"
       }
     ],
     "groupMenus": [
@@ -5538,17 +5542,972 @@
         "minPeople": 2,
         "includes": "Bebidas durante el almuerzo; oferta sujeta a cambios estacionales",
         "sourceUrl": "https://tienda.bodegascampos.com/inicio/7-menu-tradicion.html"
+      },
+      {
+        "includes": "IVA incluido; bebidas incluidas durante el almuerzo, excepto consumiciones en barra y posteriores al servicio; pan de masa madre incluido.",
+        "priceStatus": "published_official_menu",
+        "menuItemsAreNotIndividuallyPriced": true,
+        "name": "Menú Los Flamencos",
+        "eurPerPerson": 69,
+        "shared": [
+          "Ensaladilla de gamba blanca",
+          "Ensalada de puerros confitados con solomillo de bellota escabechado",
+          "Alboronía de la huerta con huevo frito",
+          "Flamenquín de presa ibérica y jamón de bellota",
+          "Croqueta de leche de oveja"
+        ],
+        "choice": [
+          "Carrillada ibérica con cremoso de patata",
+          "Ravioli de txangurro con salsa de cigala y chanquetes de bogavante",
+          "Arroz de secreto ibérico"
+        ],
+        "dessert": "Helado de naranja en aceite de oliva",
+        "conditions": "Elegir plato principal con 72 horas de antelación; grupos de más de 20 personas: una sola opción.",
+        "sourceDocument": "MENU-LOS-FLAMENCOS.pdf"
+      },
+      {
+        "includes": "IVA incluido; bebidas incluidas durante el almuerzo, excepto consumiciones en barra y posteriores al servicio; pan de masa madre incluido.",
+        "priceStatus": "published_official_menu",
+        "menuItemsAreNotIndividuallyPriced": true,
+        "name": "Menú Los Patios",
+        "eurPerPerson": 77,
+        "appetizers": [
+          "Croqueta de leche de oveja",
+          "Gilda de tarantelo de atún de almadraba",
+          "Mazamorra con sorbete de manzana"
+        ],
+        "shared": [
+          "Ensalada de puerros confitados con solomillo de bellota escabechado",
+          "Alcachofas en caldito de jamón ibérico con tartar de gamba blanca"
+        ],
+        "choice": [
+          "Atún de almadraba con puré de mandarina, pimientos y crema de almendra",
+          "Arroz de rabo de toro, shiitake y espárragos",
+          "Presa ibérica de bellota con patatas fritas"
+        ],
+        "dessert": "Pastel de chocolate (70 %) con helado de fruta de la pasión",
+        "conditions": "Elegir plato principal con 72 horas de antelación; grupos de más de 20 personas: una sola opción.",
+        "sourceDocument": "MENU-LOS-PATIOS.pdf"
+      },
+      {
+        "includes": "IVA incluido; bebidas incluidas durante el almuerzo, excepto consumiciones en barra y posteriores al servicio; pan de masa madre incluido.",
+        "priceStatus": "published_official_menu",
+        "menuItemsAreNotIndividuallyPriced": true,
+        "name": "Menú La Bodega",
+        "eurPerPerson": 89,
+        "appetizers": [
+          "Croqueta de leche de oveja",
+          "Gilda de tarantelo de atún de almadraba",
+          "Ensaladilla sobre pan cristal y boquerón en vinagre"
+        ],
+        "shared": [
+          "Ensalada de puerros confitados con solomillo de bellota escabechado",
+          "Alcachofas en caldito de jamón ibérico con tartar de gamba blanca"
+        ],
+        "firstCourse": "Merluza de pincho al vapor con beurre blanc amontillada y ceniza de puerros",
+        "mainCourse": "Presa ibérica de bellota con patatas fritas",
+        "dessert": "Tocino de cielo con helado de yogur",
+        "sourceDocument": "MENU-LA-BODEGA.pdf"
       }
     ],
     "menus": [
       {
         "service": "general",
         "dishes": [
-          "Menú degustación Tradición"
+          "Caña de lomo ibérico de bellota «Diego López»",
+          "Queso de oveja artesano añejo",
+          "Tabla de ibéricos «Diego López» (140 g)",
+          "Jamón ibérico de bellota «Diego López» (100 g)",
+          "Lomito de presa de montanera (80-100 g)",
+          "Anchoa sobre regañá de salmorejo",
+          "Nuestra gilda de tarantelo de atún rojo de almadraba",
+          "Cortadillo de almendra helada y salchichón ibérico de los Pedroches «Diego López»",
+          "Mantequilla de leche de oveja y tapenade de aceituna chupadeos",
+          "Croqueta de leche de oveja y jamón ibérico de bellota",
+          "Tatin de tomate seco sobre pesto de albahaca y parmesano",
+          "Ensaladilla sobre pan cristal y boquerón en vinagre casero",
+          "Mollete de steak tartar de solomillo de vaca con emulsión de tuétano",
+          "Pavía de bacalao desalado con mayonesa de perejil",
+          "Salmorejo cordobés con jamón ibérico y huevo",
+          "Mazamorra con sorbete de manzana y gelatina de P.X.",
+          "Ensaladilla de gamba blanca (hecha al día)",
+          "Ensalada de tomate de temporada aliñado con cebolleta fresca y naranja",
+          "Salpicón de la bodega con hueva de atún rojo y aguacate",
+          "Carpaccio de quisquilla al ajillo con almendra y uva",
+          "Alcachofas en caldito de jamón ibérico con tartar de gamba blanca",
+          "Steak tartar de solomillo de vaca con mantequilla ahumada",
+          "Láminas de vaca madurada con tartar de tomate y queso de oveja",
+          "Alboronía de la huerta con huevo frito en aceite de oliva",
+          "Flamenquín de presa ibérica y jamón de bellota",
+          "Arroz meloso de rabo de toro cordobés (mínimo dos personas)",
+          "Ravioli de txangurro con salsa de cigala y chanquetes de bogavante",
+          "Merluza de pincho al vapor con beurre blanc amontillada y ceniza de puerros",
+          "Atún rojo de almadraba con puré cítrico de mandarina, asadillo de pimientos y crema de almendra escabechada",
+          "Lubina a la sal con gazpachuelo malagueño y berenjena ahumada al carbón de encina",
+          "Carrillada ibérica de bellota con cremoso de patata",
+          "Rabo de toro tradicional cordobés",
+          "Presa ibérica de bellota",
+          "Pluma ibérica de bellota",
+          "Solomillo de vaca con foie",
+          "Lechuga aliñada y cebolla",
+          "Cremoso de patata",
+          "Piquillos caramelizados",
+          "Pimientos de Padrón",
+          "Patatas fritas en aceite de oliva",
+          "Helado de naranja con aceite de oliva y gelatina de P.X. Pérez Barquero",
+          "Sopa de maracuyá sobre frutas de verano y helado de jengibre",
+          "Milhojas de crema catalana con helado de albaricoque",
+          "Pastel de chocolate (70 %) con helado de fruta de la pasión",
+          "Tocino de cielo con helado de yogur"
         ],
-        "dishPrices": []
+        "dishPrices": [
+          {
+            "dish": "Caña de lomo ibérico de bellota «Diego López»",
+            "eur": 12,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Caña de lomo ibérico de bellota «Diego López»",
+            "eur": 18,
+            "portion": "ración"
+          },
+          {
+            "dish": "Queso de oveja artesano añejo",
+            "eur": 10,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Queso de oveja artesano añejo",
+            "eur": 16.5,
+            "portion": "ración"
+          },
+          {
+            "dish": "Tabla de ibéricos «Diego López» (140 g)",
+            "eur": 24,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Jamón ibérico de bellota «Diego López» (100 g)",
+            "eur": 19.5,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Jamón ibérico de bellota «Diego López» (100 g)",
+            "eur": 28,
+            "portion": "ración"
+          },
+          {
+            "dish": "Lomito de presa de montanera (80-100 g)",
+            "eur": 21.5,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Anchoa sobre regañá de salmorejo",
+            "eur": 4,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Nuestra gilda de tarantelo de atún rojo de almadraba",
+            "eur": 4.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Cortadillo de almendra helada y salchichón ibérico de los Pedroches «Diego López»",
+            "eur": 4.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Mantequilla de leche de oveja y tapenade de aceituna chupadeos",
+            "eur": 3,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Croqueta de leche de oveja y jamón ibérico de bellota",
+            "eur": 3.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tatin de tomate seco sobre pesto de albahaca y parmesano",
+            "eur": 4.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Ensaladilla sobre pan cristal y boquerón en vinagre casero",
+            "eur": 3.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Mollete de steak tartar de solomillo de vaca con emulsión de tuétano",
+            "eur": 9.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Pavía de bacalao desalado con mayonesa de perejil",
+            "eur": 3,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Salmorejo cordobés con jamón ibérico y huevo",
+            "eur": 10,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Mazamorra con sorbete de manzana y gelatina de P.X.",
+            "eur": 14,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Ensaladilla de gamba blanca (hecha al día)",
+            "eur": 12.5,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Ensalada de tomate de temporada aliñado con cebolleta fresca y naranja",
+            "eur": 12,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Salpicón de la bodega con hueva de atún rojo y aguacate",
+            "eur": 16.5,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Carpaccio de quisquilla al ajillo con almendra y uva",
+            "eur": 23,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Alcachofas en caldito de jamón ibérico con tartar de gamba blanca",
+            "eur": 23,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Steak tartar de solomillo de vaca con mantequilla ahumada",
+            "eur": 23.5,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Láminas de vaca madurada con tartar de tomate y queso de oveja",
+            "eur": 18,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Alboronía de la huerta con huevo frito en aceite de oliva",
+            "eur": 15,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Flamenquín de presa ibérica y jamón de bellota",
+            "eur": 19,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Arroz meloso de rabo de toro cordobés (mínimo dos personas)",
+            "eur": 25,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Ravioli de txangurro con salsa de cigala y chanquetes de bogavante",
+            "eur": 23.5,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Merluza de pincho al vapor con beurre blanc amontillada y ceniza de puerros",
+            "eur": 27,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Atún rojo de almadraba con puré cítrico de mandarina, asadillo de pimientos y crema de almendra escabechada",
+            "eur": 28,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Lubina a la sal con gazpachuelo malagueño y berenjena ahumada al carbón de encina",
+            "eur": 28,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Carrillada ibérica de bellota con cremoso de patata",
+            "eur": 20,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Rabo de toro tradicional cordobés",
+            "eur": 29,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Presa ibérica de bellota",
+            "eur": 25,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Pluma ibérica de bellota",
+            "eur": 27,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Solomillo de vaca con foie",
+            "eur": 32,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Lechuga aliñada y cebolla",
+            "eur": 3.5,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Cremoso de patata",
+            "eur": 3.5,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Piquillos caramelizados",
+            "eur": 4,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Pimientos de Padrón",
+            "eur": 3.5,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Patatas fritas en aceite de oliva",
+            "eur": 3.5,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Helado de naranja con aceite de oliva y gelatina de P.X. Pérez Barquero",
+            "eur": 6.5,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Sopa de maracuyá sobre frutas de verano y helado de jengibre",
+            "eur": 7,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Milhojas de crema catalana con helado de albaricoque",
+            "eur": 7,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Pastel de chocolate (70 %) con helado de fruta de la pasión",
+            "eur": 8,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Tocino de cielo con helado de yogur",
+            "eur": 7,
+            "portion": "ración / precio único"
+          },
+          {
+            "dish": "Servicio de aceite y pan de masa madre",
+            "eur": 3,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Recipiente para llevar",
+            "eur": 0.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bolsa para llevar",
+            "eur": 0.1,
+            "portion": "unidad"
+          }
+        ]
       }
-    ]
+    ],
+    "menuSections": [
+      {
+        "title": "Abacería andaluza",
+        "items": [
+          {
+            "name": "Caña de lomo ibérico de bellota «Diego López»",
+            "description": "Caña de lomo ibérico de bellota «Diego López»",
+            "en": "Acorn-fed Iberian pork loin",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 12
+              },
+              {
+                "label": "ración",
+                "eur": 18
+              }
+            ]
+          },
+          {
+            "name": "Queso de oveja artesano añejo",
+            "description": "Queso de oveja artesano añejo",
+            "en": "Aged artisan sheep cheese",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 10
+              },
+              {
+                "label": "ración",
+                "eur": 16.5
+              }
+            ]
+          },
+          {
+            "name": "Tabla de ibéricos «Diego López» (140 g)",
+            "description": "Tabla de ibéricos «Diego López» (140 g)",
+            "en": "Iberian cured ham, loin and sheep cheese platter",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 24
+              }
+            ]
+          },
+          {
+            "name": "Jamón ibérico de bellota «Diego López» (100 g)",
+            "description": "Jamón ibérico de bellota «Diego López» (100 g)",
+            "en": "Acorn-fed Iberian cured ham",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 19.5
+              },
+              {
+                "label": "ración",
+                "eur": 28
+              }
+            ]
+          },
+          {
+            "name": "Lomito de presa de montanera (80-100 g)",
+            "description": "Lomito de presa de montanera (80-100 g)",
+            "en": "Acorn-fed Iberian presa loin",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 21.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Para abrir boca",
+        "items": [
+          {
+            "name": "Anchoa sobre regañá de salmorejo",
+            "description": "Anchoa sobre regañá de salmorejo",
+            "en": "Anchovy on crispy salmorejo flatbread",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 4
+              }
+            ]
+          },
+          {
+            "name": "Nuestra gilda de tarantelo de atún rojo de almadraba",
+            "description": "Nuestra gilda de tarantelo de atún rojo de almadraba",
+            "en": "Almadraba tuna gilda skewer",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 4.5
+              }
+            ]
+          },
+          {
+            "name": "Cortadillo de almendra helada y salchichón ibérico de los Pedroches «Diego López»",
+            "description": "Cortadillo de almendra helada y salchichón ibérico de los Pedroches «Diego López»",
+            "en": "Frozen almond nougat with Iberian salchichón",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 4.5
+              }
+            ]
+          },
+          {
+            "name": "Mantequilla de leche de oveja y tapenade de aceituna chupadeos",
+            "description": "Mantequilla de leche de oveja y tapenade de aceituna chupadeos",
+            "en": "Sheep milk butter with olive tapenade",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 3
+              }
+            ]
+          },
+          {
+            "name": "Croqueta de leche de oveja y jamón ibérico de bellota",
+            "description": "Croqueta de leche de oveja y jamón ibérico de bellota",
+            "en": "Sheep milk and Iberian ham croquette",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 3.5
+              }
+            ]
+          },
+          {
+            "name": "Tatin de tomate seco sobre pesto de albahaca y parmesano",
+            "description": "Tatin de tomate seco sobre pesto de albahaca y parmesano",
+            "en": "Sun-dried tomato tatin with basil and Parmesan pesto",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 4.5
+              }
+            ]
+          },
+          {
+            "name": "Ensaladilla sobre pan cristal y boquerón en vinagre casero",
+            "description": "Ensaladilla sobre pan cristal y boquerón en vinagre casero",
+            "en": "Russian salad on crispy bread with marinated anchovy",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 3.5
+              }
+            ]
+          },
+          {
+            "name": "Mollete de steak tartar de solomillo de vaca con emulsión de tuétano",
+            "description": "Mollete de steak tartar de solomillo de vaca con emulsión de tuétano",
+            "en": "Beef steak tartare roll with bone marrow emulsion",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 9.5
+              }
+            ]
+          },
+          {
+            "name": "Pavía de bacalao desalado con mayonesa de perejil",
+            "description": "Pavía de bacalao desalado con mayonesa de perejil",
+            "en": "Salt cod fritter with parsley mayonnaise",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Para compartir",
+        "items": [
+          {
+            "name": "Salmorejo cordobés con jamón ibérico y huevo",
+            "description": "Salmorejo cordobés con jamón ibérico y huevo",
+            "en": "Cordoban salmorejo with Iberian ham and egg",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 10
+              }
+            ]
+          },
+          {
+            "name": "Mazamorra con sorbete de manzana y gelatina de P.X.",
+            "description": "Mazamorra con sorbete de manzana y gelatina de P.X.",
+            "en": "Mazamorra with apple sorbet and Pedro Ximénez jelly",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 14
+              }
+            ]
+          },
+          {
+            "name": "Ensaladilla de gamba blanca (hecha al día)",
+            "description": "Ensaladilla de gamba blanca (hecha al día)",
+            "en": "Fresh white prawn Russian salad",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 12.5
+              }
+            ]
+          },
+          {
+            "name": "Ensalada de tomate de temporada aliñado con cebolleta fresca y naranja",
+            "description": "Ensalada de tomate de temporada aliñado con cebolleta fresca y naranja",
+            "en": "Seasonal tomato salad with spring onion and orange",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 12
+              }
+            ]
+          },
+          {
+            "name": "Salpicón de la bodega con hueva de atún rojo y aguacate",
+            "description": "Salpicón de la bodega con hueva de atún rojo y aguacate",
+            "en": "Seafood salpicón with tuna roe and avocado",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 16.5
+              }
+            ]
+          },
+          {
+            "name": "Carpaccio de quisquilla al ajillo con almendra y uva",
+            "description": "Carpaccio de quisquilla al ajillo con almendra y uva",
+            "en": "Shrimp carpaccio with garlic, almonds and grapes",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 23
+              }
+            ]
+          },
+          {
+            "name": "Alcachofas en caldito de jamón ibérico con tartar de gamba blanca",
+            "description": "Alcachofas en caldito de jamón ibérico con tartar de gamba blanca",
+            "en": "Artichokes in Iberian ham broth with white prawn tartare",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 23
+              }
+            ]
+          },
+          {
+            "name": "Steak tartar de solomillo de vaca con mantequilla ahumada",
+            "description": "Steak tartar de solomillo de vaca con mantequilla ahumada",
+            "en": "Beef steak tartare with smoked butter",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 23.5
+              }
+            ]
+          },
+          {
+            "name": "Láminas de vaca madurada con tartar de tomate y queso de oveja",
+            "description": "Láminas de vaca madurada con tartar de tomate y queso de oveja",
+            "en": "Aged beef slices with tomato tartare and sheep cheese",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 18
+              }
+            ]
+          },
+          {
+            "name": "Alboronía de la huerta con huevo frito en aceite de oliva",
+            "description": "Alboronía de la huerta con huevo frito en aceite de oliva",
+            "en": "Cordoban vegetable stew with fried egg",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 15
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín de presa ibérica y jamón de bellota",
+            "description": "Flamenquín de presa ibérica y jamón de bellota",
+            "en": "Iberian pork and ham breaded flamenquín",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 19
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Arroz",
+        "items": [
+          {
+            "name": "Arroz meloso de rabo de toro cordobés (mínimo dos personas)",
+            "description": "Arroz meloso de rabo de toro cordobés (mínimo dos personas)",
+            "en": "Creamy Cordoban oxtail rice",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 25
+              }
+            ],
+            "minPeople": 2
+          }
+        ]
+      },
+      {
+        "title": "Pescado",
+        "items": [
+          {
+            "name": "Ravioli de txangurro con salsa de cigala y chanquetes de bogavante",
+            "description": "Ravioli de txangurro con salsa de cigala y chanquetes de bogavante",
+            "en": "Spider crab ravioli with langoustine sauce and lobster bites",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 23.5
+              }
+            ]
+          },
+          {
+            "name": "Merluza de pincho al vapor con beurre blanc amontillada y ceniza de puerros",
+            "description": "Merluza de pincho al vapor con beurre blanc amontillada y ceniza de puerros",
+            "en": "Steamed hake with amontillado beurre blanc and leek ash",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 27
+              }
+            ]
+          },
+          {
+            "name": "Atún rojo de almadraba con puré cítrico de mandarina, asadillo de pimientos y crema de almendra escabechada",
+            "description": "Atún rojo de almadraba con puré cítrico de mandarina, asadillo de pimientos y crema de almendra escabechada",
+            "en": "Bluefin tuna with mandarin purée, peppers and almond cream",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 28
+              }
+            ]
+          },
+          {
+            "name": "Lubina a la sal con gazpachuelo malagueño y berenjena ahumada al carbón de encina",
+            "description": "Lubina a la sal con gazpachuelo malagueño y berenjena ahumada al carbón de encina",
+            "en": "Salt-crusted sea bass with gazpachuelo and smoked aubergine",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 28
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Carnes",
+        "items": [
+          {
+            "name": "Carrillada ibérica de bellota con cremoso de patata",
+            "description": "Carrillada ibérica de bellota con cremoso de patata",
+            "en": "Iberian pork cheeks with mashed potato",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 20
+              }
+            ]
+          },
+          {
+            "name": "Rabo de toro tradicional cordobés",
+            "description": "Rabo de toro tradicional cordobés",
+            "en": "Traditional Cordoban oxtail",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 29
+              }
+            ]
+          },
+          {
+            "name": "Presa ibérica de bellota",
+            "description": "Presa ibérica de bellota",
+            "en": "Acorn-fed Iberian presa",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 25
+              }
+            ]
+          },
+          {
+            "name": "Pluma ibérica de bellota",
+            "description": "Pluma ibérica de bellota",
+            "en": "Acorn-fed Iberian pluma",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 27
+              }
+            ]
+          },
+          {
+            "name": "Solomillo de vaca con foie",
+            "description": "Solomillo de vaca con foie",
+            "en": "Beef tenderloin with foie gras",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 32
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Guarnición",
+        "items": [
+          {
+            "name": "Lechuga aliñada y cebolla",
+            "description": "Lechuga aliñada y cebolla",
+            "en": "Dressed lettuce and onion",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 3.5
+              }
+            ]
+          },
+          {
+            "name": "Cremoso de patata",
+            "description": "Cremoso de patata",
+            "en": "Creamy mashed potato",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 3.5
+              }
+            ]
+          },
+          {
+            "name": "Piquillos caramelizados",
+            "description": "Piquillos caramelizados",
+            "en": "Caramelised piquillo peppers",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 4
+              }
+            ]
+          },
+          {
+            "name": "Pimientos de Padrón",
+            "description": "Pimientos de Padrón",
+            "en": "Padrón peppers",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 3.5
+              }
+            ]
+          },
+          {
+            "name": "Patatas fritas en aceite de oliva",
+            "description": "Patatas fritas en aceite de oliva",
+            "en": "Olive-oil fried potatoes",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 3.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Postres",
+        "items": [
+          {
+            "name": "Helado de naranja con aceite de oliva y gelatina de P.X. Pérez Barquero",
+            "description": "Helado de naranja con aceite de oliva y gelatina de P.X. Pérez Barquero",
+            "en": "Orange ice cream with olive oil and Pedro Ximénez jelly",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 6.5
+              }
+            ]
+          },
+          {
+            "name": "Sopa de maracuyá sobre frutas de verano y helado de jengibre",
+            "description": "Sopa de maracuyá sobre frutas de verano y helado de jengibre",
+            "en": "Passion fruit soup with summer fruits and ginger ice cream",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 7
+              }
+            ]
+          },
+          {
+            "name": "Milhojas de crema catalana con helado de albaricoque",
+            "description": "Milhojas de crema catalana con helado de albaricoque",
+            "en": "Crème brûlée mille-feuille with apricot ice cream",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 7
+              }
+            ]
+          },
+          {
+            "name": "Pastel de chocolate (70 %) con helado de fruta de la pasión",
+            "description": "Pastel de chocolate (70 %) con helado de fruta de la pasión",
+            "en": "Dark chocolate cake with passion fruit ice cream",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 8
+              }
+            ]
+          },
+          {
+            "name": "Tocino de cielo con helado de yogur",
+            "description": "Tocino de cielo con helado de yogur",
+            "en": "Tocino de cielo with yoghurt ice cream",
+            "prices": [
+              {
+                "label": "ración / precio único",
+                "eur": 7
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Suplementos",
+        "items": [
+          {
+            "name": "Servicio de aceite y pan de masa madre",
+            "description": "Servicio de aceite y pan de masa madre",
+            "en": "Sourdough bread and olive oil service",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 3
+              }
+            ]
+          },
+          {
+            "name": "Recipiente para llevar",
+            "description": "Recipiente para llevar",
+            "en": "Takeaway container",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 0.5
+              }
+            ]
+          },
+          {
+            "name": "Bolsa para llevar",
+            "description": "Bolsa para llevar",
+            "en": "Takeaway bag",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 0.1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "menuSourceNote": "Precios de Carta.pdf oficial facilitada por el usuario, consultada en octubre de 2026. No se indica fecha de última actualización de cada PDF. Inglés adaptado de Carta_ingles.pdf, prevalece español ante discrepancias. Menús cerrados separados. Bebidas no añadidas como productos. Alérgenos pictográficos pendientes de transcripción y verificación individual."
   },
   {
     "id": "casa-pepe-juderia",
