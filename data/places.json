@@ -17007,8 +17007,8 @@
     "area": "Judería · Puerta de Almodóvar",
     "address": "Calle Puerta de Almodóvar, 1, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "priceStatus": "previous_menu_prices_unverified",
+    "checkedAt": "2026-10-16",
     "sources": [
       {
         "label": "Carta oficial con formatos e importes",
@@ -17140,7 +17140,19 @@
           }
         ]
       }
-    ]
+    ],
+    "groupName": "Grupo Ágora",
+    "groupMembers": [
+      "agora-mezquita",
+      "taberna-museo-manolete",
+      "casa-bravo-1919"
+    ],
+    "brandRelation": "Establecimiento independiente dentro de la misma casa Ágora; no se presupone carta ni precios compartidos.",
+    "groupProfile": "Taberna cordobesa con raíces en 1919, en el corazón de la Judería.",
+    "contactPhone": "957 947 750",
+    "publishedHours": "Todos los días 12:30–00:00; cocina siempre abierta (según captura facilitada, sin verificación adicional).",
+    "addressDiscrepancy": "La ficha existente indica Calle Puerta de Almodóvar, 1; la captura de la web del grupo indica Puerta de Almodóvar s/n. Pendiente de verificar.",
+    "menuSourceNote": "La ficha contiene 12 platos y precios de una fuente previa atribuida a casabravo1919.es/carta/. La captura reciente del grupo no muestra carta; no se ha comprobado la vigencia de los precios ni que las cartas sean comunes."
   },
   {
     "id": "taberna-el-abuelo",
@@ -19709,5 +19721,69 @@
       }
     ],
     "menuSourceNote": "Precios facilitados mediante transcripción de la carta web. En Revueltos, 'Revuelto de Aguacate con Crujiente de Jamón' figura con 14 € y 13 €; ambos valores se conservan pendientes de aclaración. Vinos pendientes. Entrecot/chuletón: 7 €/100 g, precio final según peso."
+  },
+  {
+    "id": "agora-mezquita",
+    "name": "Ágora Mezquita",
+    "area": "Judería · Mezquita-Catedral",
+    "address": "Calle Céspedes, 11 y Calle Velázquez Bosco, 10–12, Córdoba (dos direcciones publicadas; verificar si son accesos o locales distintos)",
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-16",
+    "sources": [
+      {
+        "label": "Información de establecimientos del grupo Ágora (captura aportada por el usuario)",
+        "url": "https://casabravo1919.es/"
+      }
+    ],
+    "groupName": "Grupo Ágora",
+    "groupMembers": [
+      "agora-mezquita",
+      "taberna-museo-manolete",
+      "casa-bravo-1919"
+    ],
+    "groupProfile": "Cocina cordobesa de raíz con enfoque contemporáneo, en las inmediaciones de la Mezquita-Catedral.",
+    "contactPhone": "957 491 263",
+    "publishedHours": "Todos los días 12:30–00:00; cocina siempre abierta (según captura).",
+    "menuSourceNote": "No se ha aportado carta individual ni precios para este establecimiento. No se trasladan platos o precios de Casa Bravo.",
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [],
+        "dishPrices": []
+      }
+    ]
+  },
+  {
+    "id": "taberna-museo-manolete",
+    "name": "Taberna Museo Manolete",
+    "area": "Judería · Puerta de Almodóvar",
+    "address": "Puerta de Almodóvar, 6, Córdoba",
+    "mealCostEur": null,
+    "priceStatus": "unknown",
+    "checkedAt": "2026-10-16",
+    "sources": [
+      {
+        "label": "Información de establecimientos del grupo Ágora (captura aportada por el usuario)",
+        "url": "https://casabravo1919.es/"
+      }
+    ],
+    "groupName": "Grupo Ágora",
+    "groupMembers": [
+      "agora-mezquita",
+      "taberna-museo-manolete",
+      "casa-bravo-1919"
+    ],
+    "groupProfile": "Taberna museo dedicada a Manuel Laureano Rodríguez Sánchez, Manolete, con más de 30 piezas originales sobre su vida.",
+    "contactPhone": "957 940 805",
+    "publishedHours": "Abierto todos los días 12:30–00:00 (según captura).",
+    "menuSourceNote": "No se ha aportado carta individual ni precios para este establecimiento. No se trasladan platos o precios de Casa Bravo.",
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [],
+        "dishPrices": []
+      }
+    ]
   }
 ]
