@@ -15850,6 +15850,76 @@
             "portion": "Formato no indicado"
           }
         ]
+      },
+      {
+        "service": "Carnes y platos fuertes",
+        "dishes": [
+          "Menudo gitano",
+          "Albondiguitas en su salsa",
+          "Gallina en pepitoria",
+          "Flamenquín cordobés",
+          "Pifarrada de conejo",
+          "Rabo de toro a la antigua",
+          "Abanico ibérico de bellota",
+          "Codillo asado en su jugo"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Menudo gitano",
+            "eur": 12.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Albondiguitas en su salsa",
+            "eur": 7.9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Albondiguitas en su salsa",
+            "eur": 10.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Gallina en pepitoria",
+            "eur": 7.9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Gallina en pepitoria",
+            "eur": 10.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Flamenquín cordobés",
+            "eur": 13.9,
+            "portion": "Formato no indicado"
+          },
+          {
+            "dish": "Pifarrada de conejo",
+            "eur": 14.9,
+            "portion": "Formato no indicado"
+          },
+          {
+            "dish": "Rabo de toro a la antigua",
+            "eur": 14.9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Rabo de toro a la antigua",
+            "eur": 19.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Abanico ibérico de bellota",
+            "eur": 16.9,
+            "portion": "Formato no indicado"
+          },
+          {
+            "dish": "Codillo asado en su jugo",
+            "eur": 17.9,
+            "portion": "Ración"
+          }
+        ]
       }
     ],
     "menuSections": [
@@ -16110,6 +16180,103 @@
             "description": "Lomo de bacalao al horno sobre patatas panaderas y cubierto con pisto casero"
           }
         ]
+      },
+      {
+        "title": "Carnes y platos fuertes",
+        "items": [
+          {
+            "name": "Menudo gitano",
+            "prices": [
+              {
+                "eur": 12.9,
+                "portion": "Ración"
+              }
+            ],
+            "description": "Potaje de garbanzos con casquería"
+          },
+          {
+            "name": "Albondiguitas en su salsa",
+            "prices": [
+              {
+                "eur": 7.9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 10.9,
+                "portion": "Ración"
+              }
+            ],
+            "description": "De cerdo y ternera en salsa de hortalizas"
+          },
+          {
+            "name": "Gallina en pepitoria",
+            "prices": [
+              {
+                "eur": 7.9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 10.9,
+                "portion": "Ración"
+              }
+            ],
+            "description": "Gallina guisada en salsa tradicional de su propio jugo, almendras y azafrán"
+          },
+          {
+            "name": "Flamenquín cordobés",
+            "prices": [
+              {
+                "eur": 13.9,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "Rollo de lomo de cerdo y jamón ibérico empanado y frito"
+          },
+          {
+            "name": "Pifarrada de conejo",
+            "prices": [
+              {
+                "eur": 14.9,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "Receta tradicional del pastoreo cordobés: guiso de conejo con verdurita pochada"
+          },
+          {
+            "name": "Rabo de toro a la antigua",
+            "prices": [
+              {
+                "eur": 14.9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 19.9,
+                "portion": "Ración"
+              }
+            ],
+            "description": "La carta lo presenta como Premio al Mejor Rabo de Toro Cordobés 2026, otorgado por la Cofradía Gastronómica del Rabo de Toro Cordobés (afirmación del establecimiento, pendiente de verificación independiente)"
+          },
+          {
+            "name": "Abanico ibérico de bellota",
+            "prices": [
+              {
+                "eur": 16.9,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "Corte de cerdo ibérico de bellota a la plancha"
+          },
+          {
+            "name": "Codillo asado en su jugo",
+            "prices": [
+              {
+                "eur": 17.9,
+                "portion": "Ración"
+              }
+            ],
+            "description": "Codillo de cerdo asado a baja temperatura, acompañado de salsa de su propio jugo"
+          }
+        ]
       }
     ],
     "extras": [
@@ -16131,7 +16298,7 @@
         "eur": 1.5
       }
     ],
-    "menuSourceNote": "Transcripción parcial de la carta facilitada en texto por el usuario el 16/10/2026: Entrantes fríos y ensaladas, ocho platos y cuatro suplementos. Precios de carta no verificados en tiempo real; fecha de edición no indicada. Secciones restantes pendientes. Sin fotografías de terceros. Sección Entrantes calientes recibida del usuario el 16/10/2026: siete platos y trece importes; huevos rotos sin tamaño de porción indicado. Sección Pescados facilitada por el usuario el 16/10/2026: cinco platos, seis precios. Solo la japuta presenta medias raciones y raciones expresas; los restantes formatos no se indican."
+    "menuSourceNote": "Transcripción parcial de la carta facilitada en texto por el usuario el 16/10/2026: Entrantes fríos y ensaladas, ocho platos y cuatro suplementos. Precios de carta no verificados en tiempo real; fecha de edición no indicada. Secciones restantes pendientes. Sin fotografías de terceros. Sección Entrantes calientes recibida del usuario el 16/10/2026: siete platos y trece importes; huevos rotos sin tamaño de porción indicado. Sección Pescados facilitada por el usuario el 16/10/2026: cinco platos, seis precios. Solo la japuta presenta medias raciones y raciones expresas; los restantes formatos no se indican. Sección Carnes y platos fuertes proporcionada por el usuario: ocho platos, once precios. La distinción «Premio al Mejor Rabo de Toro Cordobés 2026» está citada según la carta, no verificada independientemente. Iconos svg sin información textual, no interpretados."
   },
   {
     "id": "bodegas-campos",
