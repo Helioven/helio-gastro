@@ -17007,7 +17007,7 @@
     "area": "Judería · Puerta de Almodóvar",
     "address": "Calle Puerta de Almodóvar, 1, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "previous_menu_prices_unverified",
+    "priceStatus": "published_menu_prices_unverified_current",
     "checkedAt": "2026-10-16",
     "sources": [
       {
@@ -17017,128 +17017,520 @@
     ],
     "menus": [
       {
-        "service": "general",
+        "service": "Entrantes",
         "dishes": [
-          "Flamenquín cordobés de lomo y jamón",
-          "Flamenquín de roquefort",
-          "Rabo de toro",
-          "Carrillada de cerdo en salsa",
-          "Salmorejo cordobés con dados de jamón",
-          "Mazamorra",
-          "Croquetas caseras de puchero",
+          "Tabla mixta jamón y queso",
+          "Surtido de croquetas (4 de cada)",
+          "Queso curado",
+          "Jamón Ibérico de Cebo",
+          "Gazpacho andaluz",
           "Croquetas de chipirones",
+          "Croquetas caseras de puchero",
+          "Boquerones en vinagre",
+          "Patatas bravas",
           "Croquetas caseras de jamón serrano",
+          "Salmorejo cordobés con dados de jamón",
+          "Mazamorra"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Tabla mixta jamón y queso",
+            "eur": 19.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Surtido de croquetas (4 de cada)",
+            "eur": 12.95,
+            "portion": "ración (12 unidades)"
+          },
+          {
+            "dish": "Queso curado",
+            "eur": 13.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Queso curado",
+            "eur": 9.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Jamón Ibérico de Cebo",
+            "eur": 19.95,
+            "portion": "ración (100 g)"
+          },
+          {
+            "dish": "Jamón Ibérico de Cebo",
+            "eur": 14.95,
+            "portion": "media ración (60 g)"
+          },
+          {
+            "dish": "Gazpacho andaluz",
+            "eur": 6.95,
+            "portion": "con guarnición"
+          },
+          {
+            "dish": "Gazpacho andaluz",
+            "eur": 4.95,
+            "portion": "vaso"
+          },
+          {
+            "dish": "Croquetas de chipirones",
+            "eur": 12.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Croquetas de chipirones",
+            "eur": 8.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Croquetas caseras de puchero",
+            "eur": 10.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Croquetas caseras de puchero",
+            "eur": 7.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Boquerones en vinagre",
+            "eur": 11.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Boquerones en vinagre",
+            "eur": 8.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Patatas bravas",
+            "eur": 10.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Patatas bravas",
+            "eur": 7.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Croquetas caseras de jamón serrano",
+            "eur": 10.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Croquetas caseras de jamón serrano",
+            "eur": 7.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Salmorejo cordobés con dados de jamón",
+            "eur": 9.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Salmorejo cordobés con dados de jamón",
+            "eur": 7.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Salmorejo cordobés con dados de jamón",
+            "eur": 4.95,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Mazamorra",
+            "eur": 9.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Mazamorra",
+            "eur": 7.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Mazamorra",
+            "eur": 4.95,
+            "portion": "tapa"
+          }
+        ]
+      },
+      {
+        "service": "Ensaladas",
+        "dishes": [
+          "Ensalada de la casa",
+          "Ensalada de rulo de queso de cabra",
+          "Ensalada de burrata con salsa pesto, tomate cherry y nueces"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Ensalada de la casa",
+            "eur": 11.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Ensalada de rulo de queso de cabra",
+            "eur": 12.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Ensalada de burrata con salsa pesto, tomate cherry y nueces",
+            "eur": 12.95,
+            "portion": "ración"
+          }
+        ]
+      },
+      {
+        "service": "Revueltos",
+        "dishes": [
+          "Revuelto de setas y gambas",
+          "Revuelto de patatas con huevo frito y jamón",
+          "Revuelto de patatas con huevo frito y chorizo picante",
+          "Revuelto de gulas, gambas y patatas"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Revuelto de setas y gambas",
+            "eur": 12.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Revuelto de patatas con huevo frito y jamón",
+            "eur": 13.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Revuelto de patatas con huevo frito y chorizo picante",
+            "eur": 12.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Revuelto de gulas, gambas y patatas",
+            "eur": 13.95,
+            "portion": "ración"
+          }
+        ]
+      },
+      {
+        "service": "Verduras",
+        "dishes": [
           "Pisto cordobés con huevos fritos",
-          "Cochifrito del Valle de los Pedroches",
           "Berenjenas con miel de caña"
         ],
         "dishPrices": [
           {
-            "dish": "Flamenquín cordobés de lomo y jamón (ración)",
-            "eur": 12.95,
-            "portion": "racion"
-          },
-          {
-            "dish": "Flamenquín de roquefort (ración)",
-            "eur": 12.95,
-            "portion": "racion"
-          },
-          {
-            "dish": "Rabo de toro (ración)",
-            "eur": 19.95,
-            "portion": "racion"
-          },
-          {
-            "dish": "Carrillada de cerdo en salsa (ración)",
-            "eur": 15.95,
-            "portion": "racion"
-          },
-          {
-            "dish": "Salmorejo cordobés con dados de jamón (tapa)",
-            "eur": 4.95,
-            "portion": "tapa"
-          },
-          {
-            "dish": "Salmorejo cordobés con dados de jamón (media ración)",
-            "eur": 7.95,
-            "portion": "media"
-          },
-          {
-            "dish": "Salmorejo cordobés con dados de jamón (ración)",
-            "eur": 9.95,
-            "portion": "racion"
-          },
-          {
-            "dish": "Mazamorra (tapa)",
-            "eur": 4.95,
-            "portion": "tapa"
-          },
-          {
-            "dish": "Mazamorra (media ración)",
-            "eur": 7.95,
-            "portion": "media"
-          },
-          {
-            "dish": "Mazamorra (ración)",
-            "eur": 9.95,
-            "portion": "racion"
-          },
-          {
-            "dish": "Croquetas caseras de puchero (media ración)",
-            "eur": 7.95,
-            "portion": "media"
-          },
-          {
-            "dish": "Croquetas caseras de puchero (ración)",
+            "dish": "Pisto cordobés con huevos fritos",
             "eur": 10.95,
-            "portion": "racion"
+            "portion": "ración"
           },
           {
-            "dish": "Croquetas de chipirones (media ración)",
+            "dish": "Pisto cordobés con huevos fritos",
             "eur": 8.95,
-            "portion": "media"
+            "portion": "media ración"
           },
           {
-            "dish": "Croquetas de chipirones (ración)",
-            "eur": 12.95,
-            "portion": "racion"
-          },
-          {
-            "dish": "Croquetas caseras de jamón serrano (media ración)",
-            "eur": 7.95,
-            "portion": "media"
-          },
-          {
-            "dish": "Croquetas caseras de jamón serrano (ración)",
-            "eur": 10.95,
-            "portion": "racion"
-          },
-          {
-            "dish": "Pisto cordobés con huevos fritos (media ración)",
-            "eur": 8.95,
-            "portion": "media"
-          },
-          {
-            "dish": "Pisto cordobés con huevos fritos (ración)",
-            "eur": 10.95,
-            "portion": "racion"
-          },
-          {
-            "dish": "Cochifrito del Valle de los Pedroches (ración)",
-            "eur": 16.95,
-            "portion": "racion"
-          },
-          {
-            "dish": "Berenjenas con miel de caña (media ración)",
-            "eur": 7.95,
-            "portion": "media"
-          },
-          {
-            "dish": "Berenjenas con miel de caña (ración)",
+            "dish": "Berenjenas con miel de caña",
             "eur": 9.95,
-            "portion": "racion"
+            "portion": "ración"
+          },
+          {
+            "dish": "Berenjenas con miel de caña",
+            "eur": 7.95,
+            "portion": "media ración"
           }
         ]
+      },
+      {
+        "service": "Pescados",
+        "dishes": [
+          "Boquerones fritos al limón",
+          "Salmón a la plancha con verduras",
+          "Calamar a la plancha",
+          "Choco frito",
+          "Calamares fritos",
+          "Chanquetes",
+          "Langostinos al pil pil",
+          "Gambas fritas",
+          "Tortilla de camarones"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Boquerones fritos al limón",
+            "eur": 11.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Boquerones fritos al limón",
+            "eur": 8.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Salmón a la plancha con verduras",
+            "eur": 18.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Calamar a la plancha",
+            "eur": 14.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Choco frito",
+            "eur": 13.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Choco frito",
+            "eur": 10.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Calamares fritos",
+            "eur": 13.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Calamares fritos",
+            "eur": 9.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Chanquetes",
+            "eur": 10.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Langostinos al pil pil",
+            "eur": 12.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Gambas fritas",
+            "eur": 11.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Tortilla de camarones",
+            "eur": 12.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Tortilla de camarones",
+            "eur": 9.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Tortilla de camarones",
+            "eur": 4.95,
+            "portion": "tapa"
+          }
+        ]
+      },
+      {
+        "service": "Carnes",
+        "dishes": [
+          "Muslo de pollo a la parrilla",
+          "Cochifrito del Valle de los Pedroches",
+          "Flamenquín de roquefort",
+          "Flamenquín cordobés de lomo y jamón",
+          "Rabo de toro",
+          "Carrillada de cerdo en salsa",
+          "Hamburguesa ÁGORA",
+          "Hamburguesa de vaca Retinta",
+          "Timbal de rabo de toro deshuesado con salsa y patatas",
+          "Patata fritas",
+          "Solomillo de ternera a la parrilla",
+          "Solomillo de cerdo ibérico"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Muslo de pollo a la parrilla",
+            "eur": 11.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Cochifrito del Valle de los Pedroches",
+            "eur": 16.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Flamenquín de roquefort",
+            "eur": 12.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Flamenquín cordobés de lomo y jamón",
+            "eur": 12.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Rabo de toro",
+            "eur": 19.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Carrillada de cerdo en salsa",
+            "eur": 15.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Hamburguesa ÁGORA",
+            "eur": 12.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Hamburguesa de vaca Retinta",
+            "eur": 15.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Timbal de rabo de toro deshuesado con salsa y patatas",
+            "eur": 17.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Patata fritas",
+            "eur": 5.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Solomillo de ternera a la parrilla",
+            "eur": 25.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Solomillo de cerdo ibérico",
+            "eur": 18.95,
+            "portion": "ración"
+          }
+        ]
+      },
+      {
+        "service": "Menú Infantil",
+        "dishes": [
+          "Nuggets de pollo con patatas fritas",
+          "Pasta a la boloñesa",
+          "Pasta con salsa carbonara",
+          "Pechuga de pollo empanada con patatas fritas"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Nuggets de pollo con patatas fritas",
+            "eur": 10.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Pasta a la boloñesa",
+            "eur": 11.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Pasta con salsa carbonara",
+            "eur": 11.95,
+            "portion": "ración"
+          },
+          {
+            "dish": "Pechuga de pollo empanada con patatas fritas",
+            "eur": 10.95,
+            "portion": "ración"
+          }
+        ]
+      },
+      {
+        "service": "Postres",
+        "dishes": [
+          "Torrija Caramelizada con helado de vainilla",
+          "Tarta de queso casera",
+          "Pastel cordobés",
+          "Naranja con aceite de oliva y canela",
+          "Tarta casera 3 chocolates",
+          "Helado de vainilla con chocolate caliente"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Torrija Caramelizada con helado de vainilla",
+            "eur": 6.5,
+            "portion": "ración"
+          },
+          {
+            "dish": "Tarta de queso casera",
+            "eur": 6.5,
+            "portion": "ración"
+          },
+          {
+            "dish": "Pastel cordobés",
+            "eur": 6.5,
+            "portion": "ración"
+          },
+          {
+            "dish": "Naranja con aceite de oliva y canela",
+            "eur": 5.9,
+            "portion": "ración"
+          },
+          {
+            "dish": "Tarta casera 3 chocolates",
+            "eur": 6.5,
+            "portion": "ración"
+          },
+          {
+            "dish": "Helado de vainilla con chocolate caliente",
+            "eur": 5.9,
+            "portion": "ración"
+          }
+        ]
+      },
+      {
+        "service": "Potaje Flamenco",
+        "dishes": [
+          "Potaje flamenco"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Potaje flamenco",
+            "eur": 7.95,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Potaje flamenco",
+            "eur": 9.95,
+            "portion": "ración"
+          }
+        ]
+      },
+      {
+        "service": "Menú del día",
+        "priceEur": 13.95,
+        "per": "persona",
+        "includes": [
+          "Primer plato a elegir",
+          "Segundo plato a elegir",
+          "Pan",
+          "Bebida",
+          "Postre o café"
+        ],
+        "starters": [
+          "Potaje flamenco (espinacas, garbanzos, morcilla, chorizo y panceta)",
+          "Salmorejo cordobés con jamón y huevo",
+          "Berenjenas con miel de caña",
+          "Sopa de picadillo con jamón y huevo",
+          "Ensalada de la casa",
+          "Ensaladilla rusa de salmón",
+          "Patatas bravas"
+        ],
+        "mains": [
+          "Pisto casero con huevo y patatas fritas",
+          "Flamenquín cordobés de lomo y jamón",
+          "Filete de pollo con patatas (empanado o a la plancha)",
+          "Merluza en salsa verde",
+          "Lomo en salsa gaucha o mostaza dulce con patatas fritas"
+        ],
+        "dessertsOrCoffee": [
+          "Flan",
+          "Arroz con leche",
+          "Café"
+        ],
+        "vatIncluded": true,
+        "availabilityNote": "No se indica fecha de vigencia ni horario específico del menú del día."
       }
     ],
     "groupName": "Grupo Ágora",
@@ -17152,7 +17544,717 @@
     "contactPhone": "957 947 750",
     "publishedHours": "Todos los días 12:30–00:00; cocina siempre abierta (según captura facilitada, sin verificación adicional).",
     "addressDiscrepancy": "La ficha existente indica Calle Puerta de Almodóvar, 1; la captura de la web del grupo indica Puerta de Almodóvar s/n. Pendiente de verificar.",
-    "menuSourceNote": "La ficha contiene 12 platos y precios de una fuente previa atribuida a casabravo1919.es/carta/. La captura reciente del grupo no muestra carta; no se ha comprobado la vigencia de los precios ni que las cartas sean comunes."
+    "menuSourceNote": "Carta oficial de Casa Bravo facilitada por el usuario: 53 platos en 9 secciones y 73 variantes de precio, más menú del día de 13,95 € por persona con IVA incluido. Vigencia de los precios y disponibilidad del menú del día no confirmadas. Bebidas individuales excluidas. Descripciones ES/EN basadas en los datos publicados, sin inferir ingredientes no especificados.",
+    "menuSections": [
+      {
+        "title": "Entrantes",
+        "items": [
+          {
+            "name": "Tabla mixta jamón y queso",
+            "description": "Tabla mixta jamón y queso",
+            "en": "Mixed ham and cheese platter",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 19.95
+              }
+            ]
+          },
+          {
+            "name": "Surtido de croquetas (4 de cada)",
+            "description": "Surtido de croquetas (4 de cada)",
+            "en": "Assorted croquettes (four of each kind)",
+            "prices": [
+              {
+                "label": "ración (12 unidades)",
+                "eur": 12.95
+              }
+            ]
+          },
+          {
+            "name": "Queso curado",
+            "description": "Queso curado",
+            "en": "Aged cheese",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.95
+              },
+              {
+                "label": "media ración",
+                "eur": 9.95
+              }
+            ]
+          },
+          {
+            "name": "Jamón Ibérico de Cebo",
+            "description": "Jamón Ibérico de Cebo",
+            "en": "Grain-fed Iberian ham",
+            "prices": [
+              {
+                "label": "ración (100 g)",
+                "eur": 19.95
+              },
+              {
+                "label": "media ración (60 g)",
+                "eur": 14.95
+              }
+            ]
+          },
+          {
+            "name": "Gazpacho andaluz",
+            "description": "Gazpacho andaluz",
+            "en": "Andalusian gazpacho",
+            "prices": [
+              {
+                "label": "con guarnición",
+                "eur": 6.95
+              },
+              {
+                "label": "vaso",
+                "eur": 4.95
+              }
+            ]
+          },
+          {
+            "name": "Croquetas de chipirones",
+            "description": "Croquetas de chipirones",
+            "en": "Baby squid croquettes",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.95
+              },
+              {
+                "label": "media ración",
+                "eur": 8.95
+              }
+            ]
+          },
+          {
+            "name": "Croquetas caseras de puchero",
+            "description": "Croquetas caseras de puchero",
+            "en": "Homemade stew croquettes",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 10.95
+              },
+              {
+                "label": "media ración",
+                "eur": 7.95
+              }
+            ]
+          },
+          {
+            "name": "Boquerones en vinagre",
+            "description": "Boquerones en vinagre",
+            "en": "Vinegar-marinated anchovies",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 11.95
+              },
+              {
+                "label": "media ración",
+                "eur": 8.95
+              }
+            ]
+          },
+          {
+            "name": "Patatas bravas",
+            "description": "Patatas bravas",
+            "en": "Spicy potatoes",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 10.95
+              },
+              {
+                "label": "media ración",
+                "eur": 7.95
+              }
+            ]
+          },
+          {
+            "name": "Croquetas caseras de jamón serrano",
+            "description": "Croquetas caseras de jamón serrano",
+            "en": "Homemade Serrano ham croquettes",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 10.95
+              },
+              {
+                "label": "media ración",
+                "eur": 7.95
+              }
+            ]
+          },
+          {
+            "name": "Salmorejo cordobés con dados de jamón",
+            "description": "Salmorejo cordobés con dados de jamón",
+            "en": "Cordoban salmorejo with diced ham",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 9.95
+              },
+              {
+                "label": "media ración",
+                "eur": 7.95
+              },
+              {
+                "label": "tapa",
+                "eur": 4.95
+              }
+            ]
+          },
+          {
+            "name": "Mazamorra",
+            "description": "Mazamorra",
+            "en": "Cordoban almond mazamorra",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 9.95
+              },
+              {
+                "label": "media ración",
+                "eur": 7.95
+              },
+              {
+                "label": "tapa",
+                "eur": 4.95
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Ensaladas",
+        "items": [
+          {
+            "name": "Ensalada de la casa",
+            "description": "Ensalada de la casa",
+            "en": "House salad",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 11.95
+              }
+            ]
+          },
+          {
+            "name": "Ensalada de rulo de queso de cabra",
+            "description": "Ensalada de rulo de queso de cabra",
+            "en": "Goat's cheese salad",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.95
+              }
+            ]
+          },
+          {
+            "name": "Ensalada de burrata con salsa pesto, tomate cherry y nueces",
+            "description": "Ensalada de burrata con salsa pesto, tomate cherry y nueces",
+            "en": "Burrata salad with pesto, cherry tomatoes and walnuts",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.95
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Revueltos",
+        "items": [
+          {
+            "name": "Revuelto de setas y gambas",
+            "description": "Revuelto de setas y gambas",
+            "en": "Scrambled eggs with mushrooms and prawns",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.95
+              }
+            ]
+          },
+          {
+            "name": "Revuelto de patatas con huevo frito y jamón",
+            "description": "Revuelto de patatas con huevo frito y jamón",
+            "en": "Potatoes with fried egg and ham",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.95
+              }
+            ]
+          },
+          {
+            "name": "Revuelto de patatas con huevo frito y chorizo picante",
+            "description": "Revuelto de patatas con huevo frito y chorizo picante",
+            "en": "Potatoes with fried egg and spicy chorizo",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.95
+              }
+            ]
+          },
+          {
+            "name": "Revuelto de gulas, gambas y patatas",
+            "description": "Revuelto de gulas, gambas y patatas",
+            "en": "Scrambled eggs with surimi eel strips, prawns and potatoes",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.95
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Verduras",
+        "items": [
+          {
+            "name": "Pisto cordobés con huevos fritos",
+            "description": "Pisto cordobés con huevos fritos",
+            "en": "Cordoban vegetable stew with fried eggs",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 10.95
+              },
+              {
+                "label": "media ración",
+                "eur": 8.95
+              }
+            ]
+          },
+          {
+            "name": "Berenjenas con miel de caña",
+            "description": "Berenjenas con miel de caña",
+            "en": "Aubergine sticks with sugarcane molasses",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 9.95
+              },
+              {
+                "label": "media ración",
+                "eur": 7.95
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Pescados",
+        "items": [
+          {
+            "name": "Boquerones fritos al limón",
+            "description": "Boquerones fritos al limón",
+            "en": "Fried anchovies with lemon",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 11.95
+              },
+              {
+                "label": "media ración",
+                "eur": 8.95
+              }
+            ]
+          },
+          {
+            "name": "Salmón a la plancha con verduras",
+            "description": "Salmón a la plancha con verduras",
+            "en": "Grilled salmon with vegetables",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 18.95
+              }
+            ]
+          },
+          {
+            "name": "Calamar a la plancha",
+            "description": "Calamar a la plancha",
+            "en": "Grilled squid",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 14.95
+              }
+            ]
+          },
+          {
+            "name": "Choco frito",
+            "description": "Choco frito",
+            "en": "Fried cuttlefish",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.95
+              },
+              {
+                "label": "media ración",
+                "eur": 10.95
+              }
+            ]
+          },
+          {
+            "name": "Calamares fritos",
+            "description": "Calamares fritos",
+            "en": "Fried squid",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 13.95
+              },
+              {
+                "label": "media ración",
+                "eur": 9.95
+              }
+            ]
+          },
+          {
+            "name": "Chanquetes",
+            "description": "Chanquetes",
+            "en": "Chanquetes (small fish)",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 10.95
+              }
+            ]
+          },
+          {
+            "name": "Langostinos al pil pil",
+            "description": "Langostinos al pil pil",
+            "en": "King prawns in pil pil sauce",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.95
+              }
+            ]
+          },
+          {
+            "name": "Gambas fritas",
+            "description": "Gambas fritas",
+            "en": "Fried prawns",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 11.95
+              }
+            ]
+          },
+          {
+            "name": "Tortilla de camarones",
+            "description": "Tortilla de camarones",
+            "en": "Shrimp fritter",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.95
+              },
+              {
+                "label": "media ración",
+                "eur": 9.95
+              },
+              {
+                "label": "tapa",
+                "eur": 4.95
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Carnes",
+        "items": [
+          {
+            "name": "Muslo de pollo a la parrilla",
+            "description": "Muslo de pollo a la parrilla",
+            "en": "Grilled chicken thigh",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 11.95
+              }
+            ]
+          },
+          {
+            "name": "Cochifrito del Valle de los Pedroches",
+            "description": "Cochifrito del Valle de los Pedroches",
+            "en": "Fried pork from Los Pedroches Valley",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 16.95
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín de roquefort",
+            "description": "Flamenquín de roquefort",
+            "en": "Roquefort cheese flamenquín",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.95
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín cordobés de lomo y jamón",
+            "description": "Flamenquín cordobés de lomo y jamón",
+            "en": "Cordoban pork loin and ham flamenquín",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.95
+              }
+            ]
+          },
+          {
+            "name": "Rabo de toro",
+            "description": "Rabo de toro",
+            "en": "Braised oxtail",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 19.95
+              }
+            ]
+          },
+          {
+            "name": "Carrillada de cerdo en salsa",
+            "description": "Carrillada de cerdo en salsa",
+            "en": "Pork cheeks in sauce",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 15.95
+              }
+            ]
+          },
+          {
+            "name": "Hamburguesa ÁGORA",
+            "description": "Ternera de 1ª picada, cheddar, bacon, tomate natural, mezclum, aros de cebolla en tempura y salsa burguer casera",
+            "en": "Minced first-grade beef, cheddar, bacon, fresh tomato, mixed salad leaves, tempura onion rings and homemade burger sauce",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 12.95
+              }
+            ]
+          },
+          {
+            "name": "Hamburguesa de vaca Retinta",
+            "description": "Hamburguesa de vaca Retinta",
+            "en": "Retinta beef burger",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 15.95
+              }
+            ]
+          },
+          {
+            "name": "Timbal de rabo de toro deshuesado con salsa y patatas",
+            "description": "Timbal de rabo de toro deshuesado con salsa y patatas",
+            "en": "Boneless oxtail timbale with sauce and potatoes",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 17.95
+              }
+            ]
+          },
+          {
+            "name": "Patata fritas",
+            "description": "Patata fritas",
+            "en": "French fries",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 5.95
+              }
+            ]
+          },
+          {
+            "name": "Solomillo de ternera a la parrilla",
+            "description": "Solomillo de ternera a la parrilla",
+            "en": "Grilled beef tenderloin",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 25.95
+              }
+            ]
+          },
+          {
+            "name": "Solomillo de cerdo ibérico",
+            "description": "Solomillo de cerdo ibérico",
+            "en": "Iberian pork tenderloin",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 18.95
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Menú Infantil",
+        "items": [
+          {
+            "name": "Nuggets de pollo con patatas fritas",
+            "description": "Nuggets de pollo con patatas fritas",
+            "en": "Chicken nuggets with French fries",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 10.95
+              }
+            ]
+          },
+          {
+            "name": "Pasta a la boloñesa",
+            "description": "Pasta a la boloñesa",
+            "en": "Pasta with Bolognese sauce",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 11.95
+              }
+            ]
+          },
+          {
+            "name": "Pasta con salsa carbonara",
+            "description": "Pasta con salsa carbonara",
+            "en": "Pasta with carbonara sauce",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 11.95
+              }
+            ]
+          },
+          {
+            "name": "Pechuga de pollo empanada con patatas fritas",
+            "description": "Pechuga de pollo empanada con patatas fritas",
+            "en": "Breaded chicken breast with French fries",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 10.95
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Postres",
+        "items": [
+          {
+            "name": "Torrija Caramelizada con helado de vainilla",
+            "description": "Torrija Caramelizada con helado de vainilla",
+            "en": "Caramelised Spanish-style French toast with vanilla ice cream",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 6.5
+              }
+            ]
+          },
+          {
+            "name": "Tarta de queso casera",
+            "description": "Tarta de queso casera",
+            "en": "Homemade cheesecake",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 6.5
+              }
+            ]
+          },
+          {
+            "name": "Pastel cordobés",
+            "description": "Pastel cordobés",
+            "en": "Traditional Cordoban pastry",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 6.5
+              }
+            ]
+          },
+          {
+            "name": "Naranja con aceite de oliva y canela",
+            "description": "Naranja con aceite de oliva y canela",
+            "en": "Orange with olive oil and cinnamon",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 5.9
+              }
+            ]
+          },
+          {
+            "name": "Tarta casera 3 chocolates",
+            "description": "Tarta casera 3 chocolates",
+            "en": "Homemade three-chocolate cake",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 6.5
+              }
+            ]
+          },
+          {
+            "name": "Helado de vainilla con chocolate caliente",
+            "description": "Helado de vainilla con chocolate caliente",
+            "en": "Vanilla ice cream with hot chocolate",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 5.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Potaje Flamenco",
+        "items": [
+          {
+            "name": "Potaje flamenco",
+            "description": "Potaje con espinacas, garbanzos, morcilla, chorizo y panceta (ingredientes especificados en el menú del día).",
+            "en": "Stew with spinach, chickpeas, blood sausage, chorizo and pork belly.",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.95
+              },
+              {
+                "label": "ración",
+                "eur": 9.95
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "taberna-el-abuelo",
