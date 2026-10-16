@@ -8398,8 +8398,8 @@
     "area": "Judería · Romero",
     "address": "Calle Romero, 16, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "priceStatus": "date_unknown_unverified",
+    "checkedAt": "2026-10-16",
     "sources": [
       {
         "label": "Carta y especialidades oficiales",
@@ -8408,23 +8408,1975 @@
       {
         "label": "Dirección y contacto oficiales",
         "url": "https://elchurrasco.com/contacto/"
+      },
+      {
+        "label": "Carta QR del restaurante, sin fecha (PDF aportado por el usuario)",
+        "url": "https://elchurrasco.com/cartas/"
       }
     ],
     "menus": [
       {
         "service": "general",
         "dishes": [
-          "Salmorejo cordobés",
-          "Berenjenas fritas",
-          "Rabo de toro",
-          "Tortilla de patatas",
-          "Churrasco cordobés",
-          "Chuletón de vacuno",
-          "Flamenquín cordobés"
+          "Tosta de Anchoa del Cantábrico en Salazón (Unidad)",
+          "Tosta de Sardina Ahumada con Guacamole (Unidad)",
+          "Gazpacho Rojo de Tomate",
+          "Gazpacho Blanco de Piñones",
+          "Salmorejo Cordobés con Jamón y Huevo Duro",
+          "Berenjenas Fritas",
+          "Cocido Cordobés con su Pringá (Miércoles)",
+          "Caldo del Cocido Cordobés con Hierbabuena",
+          "Sopa de Picadillo",
+          "Riñones de Cordero a la Plancha",
+          "Foie de Pato de la Casa con Crema de Higos",
+          "Queso Puro de Oveja (80 Gr. / 130 Gr.)",
+          "Caña de Presa de Bellota 100% Ibérica (60 Gr. / 100 Gr.)",
+          "Jamón de Bellota 100% Ibérico (60 Gr. / 100 Gr.)",
+          "Tortilla de Patatas",
+          "Patatas a lo Pobre con Jamón Ibérico",
+          "Ensalada Mixta",
+          "Setas a la Plancha con Ajo y Perejil",
+          "Tomate con Cebolla Morada y Atún Claro",
+          "Revuelto de la Casa (Gambas, Setas, Calabacín y Jamón)",
+          "Habitas Baby con Jamón y Huevo Frito Roto",
+          "Chorizo Frito",
+          "Morcilla Frita",
+          "Croquetas de la Pringá del Cocido",
+          "Boquerones Fritos",
+          "Boquerones Adobados Fritos",
+          "Calamares",
+          "Chipirones",
+          "Cazuela de Chistorra Navarra",
+          "Carrillada de Cerdo en Salsa",
+          "Magret de Pato al PX",
+          "Chuleta de Ternera Lechal Frita con Ajos",
+          "Rabo de Toro",
+          "Pierna de Cordero Lechal Horno",
+          "Solomillo de Vacuno al PX",
+          "Paletilla de Cordero Lechal Horno",
+          "Parrillada Mixta (recomendado 2 personas)",
+          "Churrasco Cordobés de Solomillo de Cerdo Ibérico",
+          "Presa de Paletilla Ibérica al Carbón de Encina",
+          "Chuleta de Ternera Lechal",
+          "Lomo de Vacuno",
+          "Chuletitas de Cordero Lechal",
+          "Solomillo de Vacuno",
+          "Chuleta de Vacuno",
+          "Chuletón de Vacuno (recomendado 2 personas)",
+          "T-Bone de Ternera Selección Especial",
+          "Chuletón de Vacuno Selección Especial (recomendado 2 personas)",
+          "Lomo de Vaca Rubia Gallega",
+          "Solomillo de Vaca Rubia Gallega",
+          "Chuletón de Vaca Rubia Gallega (recomendado 2 personas)",
+          "Delicia de Wagyu (Unidad)",
+          "Hamburguesa Especial de la Casa (Wagyu, Salsa de Soja, Salmorejo)",
+          "Steak Tartar de Wagyu",
+          "Lomo Bajo de Wagyu al Carbón de Encina",
+          "Presa de Black Angus",
+          "Plato de Patatas Fritas",
+          "Gamba Extra (100 Gramos)",
+          "Almejas a la Marinera",
+          "Pez Espada",
+          "Salmón a la Plancha",
+          "Lubina al Horno con Ajitos Fritos o a la Sal",
+          "Bacalao a Nuestro Estilo",
+          "Pulpo de Galicia a la Plancha con Patatas al Pimentón",
+          "Ración de Rodaballo al Horno con Gambas y Almejas",
+          "Rape a la Cordobesa",
+          "Cocochas de Merluza al Pil-Pil",
+          "Atún Rojo de Almadraba a la Plancha",
+          "Tataki de Atún Rojo sobre Migas de Salmorejo",
+          "Nuestro Tartar de Atún Rojo con Huevas de Trucha",
+          "Cremoso de Turrón y PX",
+          "Sorbete de Limón al Cava",
+          "Torrija de la Casa",
+          "Pastel Cordobés",
+          "Helado de Menta con Chocolate",
+          "Crocanti al Amaretto con Chocolate",
+          "Tocino de Cielo",
+          "Tarta de Queso con Sorbete de Frambuesa",
+          "Leche Frita con Helado de Canela",
+          "Brownie, Salsa de Baileys y Helado de Vainilla",
+          "Crustillante de Gin Tonic con Sorbete de Limón"
         ],
-        "dishPrices": []
+        "dishPrices": [
+          {
+            "dish": "Tosta de Anchoa del Cantábrico en Salazón (Unidad)",
+            "eur": 4.2,
+            "portion": "unidad",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Tosta de Sardina Ahumada con Guacamole (Unidad)",
+            "eur": 4.3,
+            "portion": "unidad",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Gazpacho Rojo de Tomate",
+            "eur": 8.6,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Gazpacho Blanco de Piñones",
+            "eur": 9.6,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Salmorejo Cordobés con Jamón y Huevo Duro",
+            "eur": 7.2,
+            "portion": "media ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Salmorejo Cordobés con Jamón y Huevo Duro",
+            "eur": 12,
+            "portion": "ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Berenjenas Fritas",
+            "eur": 7.2,
+            "portion": "media ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Berenjenas Fritas",
+            "eur": 12,
+            "portion": "ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Cocido Cordobés con su Pringá (Miércoles)",
+            "eur": 16,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Caldo del Cocido Cordobés con Hierbabuena",
+            "eur": 8.5,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Sopa de Picadillo",
+            "eur": 9.5,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Riñones de Cordero a la Plancha",
+            "eur": 11,
+            "portion": "media ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Riñones de Cordero a la Plancha",
+            "eur": 18.3,
+            "portion": "ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Foie de Pato de la Casa con Crema de Higos",
+            "eur": 22,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Queso Puro de Oveja (80 Gr. / 130 Gr.)",
+            "eur": 12,
+            "portion": "media ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Queso Puro de Oveja (80 Gr. / 130 Gr.)",
+            "eur": 18,
+            "portion": "ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Caña de Presa de Bellota 100% Ibérica (60 Gr. / 100 Gr.)",
+            "eur": 15,
+            "portion": "media ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Caña de Presa de Bellota 100% Ibérica (60 Gr. / 100 Gr.)",
+            "eur": 25,
+            "portion": "ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Jamón de Bellota 100% Ibérico (60 Gr. / 100 Gr.)",
+            "eur": 15,
+            "portion": "media ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Jamón de Bellota 100% Ibérico (60 Gr. / 100 Gr.)",
+            "eur": 25,
+            "portion": "ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Tortilla de Patatas",
+            "eur": 5.5,
+            "portion": "media ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Tortilla de Patatas",
+            "eur": 9.2,
+            "portion": "ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Patatas a lo Pobre con Jamón Ibérico",
+            "eur": 6.6,
+            "portion": "media ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Patatas a lo Pobre con Jamón Ibérico",
+            "eur": 11,
+            "portion": "ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Ensalada Mixta",
+            "eur": 7.2,
+            "portion": "media ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Ensalada Mixta",
+            "eur": 12,
+            "portion": "ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Setas a la Plancha con Ajo y Perejil",
+            "eur": 7.5,
+            "portion": "media ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Setas a la Plancha con Ajo y Perejil",
+            "eur": 12.5,
+            "portion": "ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Tomate con Cebolla Morada y Atún Claro",
+            "eur": 7.8,
+            "portion": "media ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Tomate con Cebolla Morada y Atún Claro",
+            "eur": 13,
+            "portion": "ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Revuelto de la Casa (Gambas, Setas, Calabacín y Jamón)",
+            "eur": 7.8,
+            "portion": "media ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Revuelto de la Casa (Gambas, Setas, Calabacín y Jamón)",
+            "eur": 13,
+            "portion": "ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Habitas Baby con Jamón y Huevo Frito Roto",
+            "eur": 9.6,
+            "portion": "media ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Habitas Baby con Jamón y Huevo Frito Roto",
+            "eur": 16,
+            "portion": "ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Chorizo Frito",
+            "eur": 8.4,
+            "portion": "media ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Chorizo Frito",
+            "eur": 12.6,
+            "portion": "ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Morcilla Frita",
+            "eur": 8.4,
+            "portion": "media ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Morcilla Frita",
+            "eur": 12.6,
+            "portion": "ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Croquetas de la Pringá del Cocido",
+            "eur": 8.4,
+            "portion": "media ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Croquetas de la Pringá del Cocido",
+            "eur": 12.6,
+            "portion": "ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Boquerones Fritos",
+            "eur": 9,
+            "portion": "media ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Boquerones Fritos",
+            "eur": 15,
+            "portion": "ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Boquerones Adobados Fritos",
+            "eur": 10.8,
+            "portion": "media ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Boquerones Adobados Fritos",
+            "eur": 18,
+            "portion": "ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Calamares",
+            "eur": 11.4,
+            "portion": "media ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Calamares",
+            "eur": 19,
+            "portion": "ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Chipirones",
+            "eur": 13.2,
+            "portion": "media ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Chipirones",
+            "eur": 22,
+            "portion": "ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Cazuela de Chistorra Navarra",
+            "eur": 12.5,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Carrillada de Cerdo en Salsa",
+            "eur": 18.6,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Magret de Pato al PX",
+            "eur": 19,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Chuleta de Ternera Lechal Frita con Ajos",
+            "eur": 23,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Rabo de Toro",
+            "eur": 24,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Pierna de Cordero Lechal Horno",
+            "eur": 28,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Solomillo de Vacuno al PX",
+            "eur": 29,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Paletilla de Cordero Lechal Horno",
+            "eur": 33,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Parrillada Mixta (recomendado 2 personas)",
+            "eur": 39,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Churrasco Cordobés de Solomillo de Cerdo Ibérico",
+            "eur": 19,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Presa de Paletilla Ibérica al Carbón de Encina",
+            "eur": 23,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Chuleta de Ternera Lechal",
+            "eur": 23,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Lomo de Vacuno",
+            "eur": 25,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Chuletitas de Cordero Lechal",
+            "eur": 26,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Solomillo de Vacuno",
+            "eur": 28,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Chuleta de Vacuno",
+            "eur": 36,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Chuletón de Vacuno (recomendado 2 personas)",
+            "eur": 72,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "T-Bone de Ternera Selección Especial",
+            "eur": 39,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Chuletón de Vacuno Selección Especial (recomendado 2 personas)",
+            "eur": 84,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Lomo de Vaca Rubia Gallega",
+            "eur": 33,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Solomillo de Vaca Rubia Gallega",
+            "eur": 38,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Chuletón de Vaca Rubia Gallega (recomendado 2 personas)",
+            "eur": 90,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Delicia de Wagyu (Unidad)",
+            "eur": 6,
+            "portion": "unidad",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Hamburguesa Especial de la Casa (Wagyu, Salsa de Soja, Salmorejo)",
+            "eur": 18.6,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Steak Tartar de Wagyu",
+            "eur": 38,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Lomo Bajo de Wagyu al Carbón de Encina",
+            "eur": 49.5,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Presa de Black Angus",
+            "eur": 24,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Plato de Patatas Fritas",
+            "eur": 3.5,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Gamba Extra (100 Gramos)",
+            "eur": 19,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Almejas a la Marinera",
+            "eur": 23,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Pez Espada",
+            "eur": 18,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Salmón a la Plancha",
+            "eur": 19,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Lubina al Horno con Ajitos Fritos o a la Sal",
+            "eur": 21,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Bacalao a Nuestro Estilo",
+            "eur": 22,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Pulpo de Galicia a la Plancha con Patatas al Pimentón",
+            "eur": 24,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Ración de Rodaballo al Horno con Gambas y Almejas",
+            "eur": 25,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Rape a la Cordobesa",
+            "eur": 26,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Cocochas de Merluza al Pil-Pil",
+            "eur": 39,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Atún Rojo de Almadraba a la Plancha",
+            "eur": 22.5,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Tataki de Atún Rojo sobre Migas de Salmorejo",
+            "eur": 23.5,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Nuestro Tartar de Atún Rojo con Huevas de Trucha",
+            "eur": 23.5,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Cremoso de Turrón y PX",
+            "eur": 5.5,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Sorbete de Limón al Cava",
+            "eur": 5.5,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Torrija de la Casa",
+            "eur": 6,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Pastel Cordobés",
+            "eur": 3.6,
+            "portion": "media ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Pastel Cordobés",
+            "eur": 6,
+            "portion": "ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Helado de Menta con Chocolate",
+            "eur": 6,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Crocanti al Amaretto con Chocolate",
+            "eur": 6,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Tocino de Cielo",
+            "eur": 4.2,
+            "portion": "media ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Tocino de Cielo",
+            "eur": 7,
+            "portion": "ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Tarta de Queso con Sorbete de Frambuesa",
+            "eur": 7,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Leche Frita con Helado de Canela",
+            "eur": 4.2,
+            "portion": "media ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Leche Frita con Helado de Canela",
+            "eur": 7,
+            "portion": "ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Brownie, Salsa de Baileys y Helado de Vainilla",
+            "eur": 4.2,
+            "portion": "media ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Brownie, Salsa de Baileys y Helado de Vainilla",
+            "eur": 7,
+            "portion": "ración",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Crustillante de Gin Tonic con Sorbete de Limón",
+            "eur": 8,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          },
+          {
+            "dish": "Servicio de Pan y Palillos",
+            "eur": 2.1,
+            "portion": "precio único",
+            "verifiedCurrent": false
+          }
+        ]
       }
-    ]
+    ],
+    "menuSections": [
+      {
+        "title": "Entrantes",
+        "titleEn": "Starters",
+        "items": [
+          {
+            "name": "Tosta de Anchoa del Cantábrico en Salazón (Unidad)",
+            "description": "Tosta de Anchoa del Cantábrico en Salazón (Unidad)",
+            "en": "Salt-cured Cantabrian anchovy toast",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 4.2
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Tosta de Sardina Ahumada con Guacamole (Unidad)",
+            "description": "Tosta de Sardina Ahumada con Guacamole (Unidad)",
+            "en": "Smoked sardine toast with guacamole",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 4.3
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Gazpacho Rojo de Tomate",
+            "description": "Gazpacho Rojo de Tomate",
+            "en": "Red tomato gazpacho",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 8.6
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Gazpacho Blanco de Piñones",
+            "description": "Gazpacho Blanco de Piñones",
+            "en": "White pine nut gazpacho",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 9.6
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Salmorejo Cordobés con Jamón y Huevo Duro",
+            "description": "Salmorejo Cordobés con Jamón y Huevo Duro",
+            "en": "Cordoban salmorejo with ham and hard-boiled egg",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.2
+              },
+              {
+                "label": "ración",
+                "eur": 12
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Berenjenas Fritas",
+            "description": "Berenjenas Fritas",
+            "en": "Fried aubergines",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.2
+              },
+              {
+                "label": "ración",
+                "eur": 12
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Cocido Cordobés con su Pringá (Miércoles)",
+            "description": "Cocido Cordobés con su Pringá (Miércoles)",
+            "en": "Cordoban stew with its traditional meat accompaniment (Wednesdays)",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 16
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed",
+            "availableDayNote": "Miércoles (según carta sin fecha)"
+          },
+          {
+            "name": "Caldo del Cocido Cordobés con Hierbabuena",
+            "description": "Caldo del Cocido Cordobés con Hierbabuena",
+            "en": "Cordoban stew broth with mint",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 8.5
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Sopa de Picadillo",
+            "description": "Sopa de Picadillo",
+            "en": "Chicken and ham soup with chopped garnishes",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 9.5
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Riñones de Cordero a la Plancha",
+            "description": "Riñones de Cordero a la Plancha",
+            "en": "Grilled lamb kidneys",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 11
+              },
+              {
+                "label": "ración",
+                "eur": 18.3
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Foie de Pato de la Casa con Crema de Higos",
+            "description": "Foie de Pato de la Casa con Crema de Higos",
+            "en": "House duck foie gras with fig cream",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 22
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Queso Puro de Oveja (80 Gr. / 130 Gr.)",
+            "description": "Queso Puro de Oveja (80 Gr. / 130 Gr.)",
+            "en": "Pure sheep's milk cheese",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 12
+              },
+              {
+                "label": "ración",
+                "eur": 18
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Caña de Presa de Bellota 100% Ibérica (60 Gr. / 100 Gr.)",
+            "description": "Caña de Presa de Bellota 100% Ibérica (60 Gr. / 100 Gr.)",
+            "en": "100% Iberian acorn-fed cured presa loin",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 15
+              },
+              {
+                "label": "ración",
+                "eur": 25
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Jamón de Bellota 100% Ibérico (60 Gr. / 100 Gr.)",
+            "description": "Jamón de Bellota 100% Ibérico (60 Gr. / 100 Gr.)",
+            "en": "100% Iberian acorn-fed ham",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 15
+              },
+              {
+                "label": "ración",
+                "eur": 25
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          }
+        ]
+      },
+      {
+        "title": "Ensaladas, Huevos y Verduras",
+        "titleEn": "Salads, Eggs & Vegetables",
+        "items": [
+          {
+            "name": "Tortilla de Patatas",
+            "description": "Tortilla de Patatas",
+            "en": "Spanish potato omelette",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 5.5
+              },
+              {
+                "label": "ración",
+                "eur": 9.2
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Patatas a lo Pobre con Jamón Ibérico",
+            "description": "Patatas a lo Pobre con Jamón Ibérico",
+            "en": "Potatoes with Iberian ham",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 6.6
+              },
+              {
+                "label": "ración",
+                "eur": 11
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Ensalada Mixta",
+            "description": "Ensalada Mixta",
+            "en": "Mixed salad",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.2
+              },
+              {
+                "label": "ración",
+                "eur": 12
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Setas a la Plancha con Ajo y Perejil",
+            "description": "Setas a la Plancha con Ajo y Perejil",
+            "en": "Grilled mushrooms with garlic and parsley",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.5
+              },
+              {
+                "label": "ración",
+                "eur": 12.5
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Tomate con Cebolla Morada y Atún Claro",
+            "description": "Tomate con Cebolla Morada y Atún Claro",
+            "en": "Tomato with red onion and tuna",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.8
+              },
+              {
+                "label": "ración",
+                "eur": 13
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Revuelto de la Casa (Gambas, Setas, Calabacín y Jamón)",
+            "description": "Revuelto de la Casa (Gambas, Setas, Calabacín y Jamón)",
+            "en": "House scrambled eggs with prawns, mushrooms, courgette and ham",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.8
+              },
+              {
+                "label": "ración",
+                "eur": 13
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Habitas Baby con Jamón y Huevo Frito Roto",
+            "description": "Habitas Baby con Jamón y Huevo Frito Roto",
+            "en": "Baby broad beans with ham and fried egg",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 9.6
+              },
+              {
+                "label": "ración",
+                "eur": 16
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          }
+        ]
+      },
+      {
+        "title": "Frituras",
+        "titleEn": "Fried Dishes",
+        "items": [
+          {
+            "name": "Chorizo Frito",
+            "description": "Chorizo Frito",
+            "en": "Fried chorizo",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 8.4
+              },
+              {
+                "label": "ración",
+                "eur": 12.6
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Morcilla Frita",
+            "description": "Morcilla Frita",
+            "en": "Fried blood sausage",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 8.4
+              },
+              {
+                "label": "ración",
+                "eur": 12.6
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Croquetas de la Pringá del Cocido",
+            "description": "Croquetas de la Pringá del Cocido",
+            "en": "Traditional stew croquettes",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 8.4
+              },
+              {
+                "label": "ración",
+                "eur": 12.6
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Boquerones Fritos",
+            "description": "Boquerones Fritos",
+            "en": "Fried anchovies",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 9
+              },
+              {
+                "label": "ración",
+                "eur": 15
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Boquerones Adobados Fritos",
+            "description": "Boquerones Adobados Fritos",
+            "en": "Fried marinated anchovies",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 10.8
+              },
+              {
+                "label": "ración",
+                "eur": 18
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Calamares",
+            "description": "Calamares",
+            "en": "Squid",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 11.4
+              },
+              {
+                "label": "ración",
+                "eur": 19
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Chipirones",
+            "description": "Chipirones",
+            "en": "Baby squid",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 13.2
+              },
+              {
+                "label": "ración",
+                "eur": 22
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          }
+        ]
+      },
+      {
+        "title": "Carnes",
+        "titleEn": "Meat",
+        "items": [
+          {
+            "name": "Cazuela de Chistorra Navarra",
+            "description": "Cazuela de Chistorra Navarra",
+            "en": "Navarre chistorra sausage casserole",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 12.5
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Carrillada de Cerdo en Salsa",
+            "description": "Carrillada de Cerdo en Salsa",
+            "en": "Pork cheeks in sauce",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 18.6
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Magret de Pato al PX",
+            "description": "Magret de Pato al PX",
+            "en": "Duck breast with Pedro Ximénez sauce",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 19
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Chuleta de Ternera Lechal Frita con Ajos",
+            "description": "Chuleta de Ternera Lechal Frita con Ajos",
+            "en": "Fried veal chop with garlic",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 23
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Rabo de Toro",
+            "description": "Rabo de Toro",
+            "en": "Oxtail stew",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 24
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Pierna de Cordero Lechal Horno",
+            "description": "Pierna de Cordero Lechal Horno",
+            "en": "Roasted milk-fed lamb leg",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 28
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Solomillo de Vacuno al PX",
+            "description": "Solomillo de Vacuno al PX",
+            "en": "Beef tenderloin with Pedro Ximénez sauce",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 29
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Paletilla de Cordero Lechal Horno",
+            "description": "Paletilla de Cordero Lechal Horno",
+            "en": "Roasted milk-fed lamb shoulder",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 33
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Parrillada Mixta (recomendado 2 personas)",
+            "description": "Parrillada Mixta (recomendado 2 personas)",
+            "en": "Mixed grill (recommended for two)",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 39
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed",
+            "recommendedForPeople": 2
+          }
+        ]
+      },
+      {
+        "title": "A la brasa del Carbón de Encina",
+        "titleEn": "Holm Oak Charcoal Grill",
+        "items": [
+          {
+            "name": "Churrasco Cordobés de Solomillo de Cerdo Ibérico",
+            "description": "Churrasco Cordobés de Solomillo de Cerdo Ibérico",
+            "en": "Cordoban Iberian pork tenderloin charcoal grill",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 19
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Presa de Paletilla Ibérica al Carbón de Encina",
+            "description": "Presa de Paletilla Ibérica al Carbón de Encina",
+            "en": "Iberian pork presa grilled over holm oak charcoal",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 23
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Chuleta de Ternera Lechal",
+            "description": "Chuleta de Ternera Lechal",
+            "en": "Milk-fed veal chop",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 23
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Lomo de Vacuno",
+            "description": "Lomo de Vacuno",
+            "en": "Beef loin",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 25
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Chuletitas de Cordero Lechal",
+            "description": "Chuletitas de Cordero Lechal",
+            "en": "Milk-fed lamb chops",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 26
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Solomillo de Vacuno",
+            "description": "Solomillo de Vacuno",
+            "en": "Beef tenderloin",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 28
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Chuleta de Vacuno",
+            "description": "Chuleta de Vacuno",
+            "en": "Beef chop",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 36
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Chuletón de Vacuno (recomendado 2 personas)",
+            "description": "Chuletón de Vacuno (recomendado 2 personas)",
+            "en": "Beef rib steak (recommended for two)",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 72
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed",
+            "recommendedForPeople": 2
+          }
+        ]
+      },
+      {
+        "title": "Selección Especial",
+        "titleEn": "Special Selection",
+        "items": [
+          {
+            "name": "T-Bone de Ternera Selección Especial",
+            "description": "T-Bone de Ternera Selección Especial",
+            "en": "Special selection veal T-bone",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 39
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Chuletón de Vacuno Selección Especial (recomendado 2 personas)",
+            "description": "Chuletón de Vacuno Selección Especial (recomendado 2 personas)",
+            "en": "Special selection beef rib steak (recommended for two)",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 84
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed",
+            "recommendedForPeople": 2
+          }
+        ]
+      },
+      {
+        "title": "Vaca Rubia Gallega",
+        "titleEn": "Galician Blonde Beef",
+        "items": [
+          {
+            "name": "Lomo de Vaca Rubia Gallega",
+            "description": "Lomo de Vaca Rubia Gallega",
+            "en": "Galician blonde cow loin",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 33
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Solomillo de Vaca Rubia Gallega",
+            "description": "Solomillo de Vaca Rubia Gallega",
+            "en": "Galician blonde cow tenderloin",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 38
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Chuletón de Vaca Rubia Gallega (recomendado 2 personas)",
+            "description": "Chuletón de Vaca Rubia Gallega (recomendado 2 personas)",
+            "en": "Galician blonde cow rib steak (recommended for two)",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 90
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed",
+            "recommendedForPeople": 2
+          }
+        ]
+      },
+      {
+        "title": "Wagyu",
+        "titleEn": "Wagyu",
+        "items": [
+          {
+            "name": "Delicia de Wagyu (Unidad)",
+            "description": "Delicia de Wagyu (Unidad)",
+            "en": "Wagyu bite (one piece)",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 6
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Hamburguesa Especial de la Casa (Wagyu, Salsa de Soja, Salmorejo)",
+            "description": "Hamburguesa Especial de la Casa (Wagyu, Salsa de Soja, Salmorejo)",
+            "en": "House Wagyu burger with soy sauce and salmorejo",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 18.6
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Steak Tartar de Wagyu",
+            "description": "Steak Tartar de Wagyu",
+            "en": "Wagyu steak tartare",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 38
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Lomo Bajo de Wagyu al Carbón de Encina",
+            "description": "Lomo Bajo de Wagyu al Carbón de Encina",
+            "en": "Wagyu sirloin grilled over holm oak charcoal",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 49.5
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          }
+        ]
+      },
+      {
+        "title": "Black Angus",
+        "titleEn": "Black Angus",
+        "items": [
+          {
+            "name": "Presa de Black Angus",
+            "description": "Presa de Black Angus",
+            "en": "Black Angus presa",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 24
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          }
+        ]
+      },
+      {
+        "title": "Guarniciones",
+        "titleEn": "Sides",
+        "items": [
+          {
+            "name": "Plato de Patatas Fritas",
+            "description": "Plato de Patatas Fritas",
+            "en": "Plate of French fries",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 3.5
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          }
+        ]
+      },
+      {
+        "title": "Pescados",
+        "titleEn": "Fish & Seafood",
+        "items": [
+          {
+            "name": "Gamba Extra (100 Gramos)",
+            "description": "Gamba Extra (100 Gramos)",
+            "en": "Extra prawns (100 g)",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 19
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Almejas a la Marinera",
+            "description": "Almejas a la Marinera",
+            "en": "Clams marinara-style",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 23
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Pez Espada",
+            "description": "Pez Espada",
+            "en": "Swordfish",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 18
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Salmón a la Plancha",
+            "description": "Salmón a la Plancha",
+            "en": "Grilled salmon",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 19
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Lubina al Horno con Ajitos Fritos o a la Sal",
+            "description": "Lubina al Horno con Ajitos Fritos o a la Sal",
+            "en": "Oven-baked sea bass with fried garlic or salt-baked",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 21
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Bacalao a Nuestro Estilo",
+            "description": "Bacalao a Nuestro Estilo",
+            "en": "Cod prepared in the house style",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 22
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Pulpo de Galicia a la Plancha con Patatas al Pimentón",
+            "description": "Pulpo de Galicia a la Plancha con Patatas al Pimentón",
+            "en": "Grilled Galician octopus with paprika potatoes",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 24
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Ración de Rodaballo al Horno con Gambas y Almejas",
+            "description": "Ración de Rodaballo al Horno con Gambas y Almejas",
+            "en": "Oven-baked turbot with prawns and clams",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 25
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Rape a la Cordobesa",
+            "description": "Rape a la Cordobesa",
+            "en": "Monkfish Cordoban-style",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 26
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Cocochas de Merluza al Pil-Pil",
+            "description": "Cocochas de Merluza al Pil-Pil",
+            "en": "Hake cheeks in pil-pil sauce",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 39
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          }
+        ]
+      },
+      {
+        "title": "Atún Rojo de Almadraba",
+        "titleEn": "Almadraba Bluefin Tuna",
+        "items": [
+          {
+            "name": "Atún Rojo de Almadraba a la Plancha",
+            "description": "Atún Rojo de Almadraba a la Plancha",
+            "en": "Grilled almadraba bluefin tuna",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 22.5
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Tataki de Atún Rojo sobre Migas de Salmorejo",
+            "description": "Tataki de Atún Rojo sobre Migas de Salmorejo",
+            "en": "Bluefin tuna tataki on salmorejo crumbs",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 23.5
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Nuestro Tartar de Atún Rojo con Huevas de Trucha",
+            "description": "Nuestro Tartar de Atún Rojo con Huevas de Trucha",
+            "en": "House bluefin tuna tartare with trout roe",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 23.5
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          }
+        ]
+      },
+      {
+        "title": "Postres",
+        "titleEn": "Desserts",
+        "items": [
+          {
+            "name": "Cremoso de Turrón y PX",
+            "description": "Cremoso de Turrón y PX",
+            "en": "Creamy nougat dessert with Pedro Ximénez",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 5.5
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Sorbete de Limón al Cava",
+            "description": "Sorbete de Limón al Cava",
+            "en": "Lemon sorbet with cava",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 5.5
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Torrija de la Casa",
+            "description": "Torrija de la Casa",
+            "en": "House torrija French toast",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 6
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Pastel Cordobés",
+            "description": "Pastel Cordobés",
+            "en": "Traditional Cordoban pastry",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 3.6
+              },
+              {
+                "label": "ración",
+                "eur": 6
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Helado de Menta con Chocolate",
+            "description": "Helado de Menta con Chocolate",
+            "en": "Mint ice cream with chocolate",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 6
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Crocanti al Amaretto con Chocolate",
+            "description": "Crocanti al Amaretto con Chocolate",
+            "en": "Amaretto crocanti with chocolate",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 6
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Tocino de Cielo",
+            "description": "Tocino de Cielo",
+            "en": "Tocino de cielo egg-yolk flan",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 4.2
+              },
+              {
+                "label": "ración",
+                "eur": 7
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Tarta de Queso con Sorbete de Frambuesa",
+            "description": "Tarta de Queso con Sorbete de Frambuesa",
+            "en": "Cheesecake with raspberry sorbet",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 7
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Leche Frita con Helado de Canela",
+            "description": "Leche Frita con Helado de Canela",
+            "en": "Fried milk custard with cinnamon ice cream",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 4.2
+              },
+              {
+                "label": "ración",
+                "eur": 7
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Brownie, Salsa de Baileys y Helado de Vainilla",
+            "description": "Brownie, Salsa de Baileys y Helado de Vainilla",
+            "en": "Brownie with Baileys sauce and vanilla ice cream",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 4.2
+              },
+              {
+                "label": "ración",
+                "eur": 7
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          },
+          {
+            "name": "Crustillante de Gin Tonic con Sorbete de Limón",
+            "description": "Crustillante de Gin Tonic con Sorbete de Limón",
+            "en": "Gin and tonic crisp dessert with lemon sorbet",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 8
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          }
+        ]
+      },
+      {
+        "title": "Suplementos",
+        "titleEn": "Extras",
+        "items": [
+          {
+            "name": "Servicio de Pan y Palillos",
+            "description": "Servicio de Pan y Palillos",
+            "en": "Bread and breadsticks service",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 2.1
+              }
+            ],
+            "priceStatus": "date_unknown_unverified",
+            "availability": "unconfirmed"
+          }
+        ]
+      }
+    ],
+    "menuDate": null,
+    "menuDisclaimer": "Información sobre la carta: Los platos y precios proceden de una carta del restaurante sin fecha de publicación indicada. Su disponibilidad y sus precios actuales no están confirmados y podrían haber cambiado. Recomendamos consultar directamente con El Churrasco antes de acudir.",
+    "menuDisclaimerEn": "Menu information: Dishes and prices come from an undated restaurant menu. Current prices and availability have not been confirmed and may have changed. Please contact El Churrasco directly before visiting.",
+    "menuSourceNote": "QR-Carta-Restaurante.pdf (4 páginas), aportado por el usuario. Comida en páginas 1–3; página 4 contiene vinos, excluidos. IVA incluido. Alérgenos: consultar al restaurante, sin desglose por plato. Aviso de congelación/control de anisakis para productos de pesca consumidos crudos o poco hechos en la página 3. No se atribuye fecha a la carta."
   },
   {
     "id": "el-caballo-rojo",
