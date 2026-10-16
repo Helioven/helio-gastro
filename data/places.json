@@ -15248,6 +15248,25 @@
             "portion": "Precio de carta; formato no indicado"
           }
         ]
+      },
+      {
+        "service": "Sugerencias del día",
+        "dishes": [
+          "Steak Tartar de Solomillo de Ternera",
+          "Croquetas cremosas de Puchero"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Steak Tartar de Solomillo de Ternera",
+            "eur": 29,
+            "portion": "Formato no indicado"
+          },
+          {
+            "dish": "Croquetas cremosas de Puchero",
+            "eur": 15,
+            "portion": "Formato no indicado"
+          }
+        ]
       }
     ],
     "menuSections": [
@@ -15571,6 +15590,30 @@
             "description": "Preguntar al personal por los sabores"
           }
         ]
+      },
+      {
+        "title": "Sugerencias del día",
+        "items": [
+          {
+            "name": "Steak Tartar de Solomillo de Ternera",
+            "prices": [
+              {
+                "eur": 29,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "Con chalotas glaseadas y crujiente de regañá"
+          },
+          {
+            "name": "Croquetas cremosas de Puchero",
+            "prices": [
+              {
+                "eur": 15,
+                "portion": "Formato no indicado"
+              }
+            ]
+          }
+        ]
       }
     ],
     "extras": [
@@ -15583,7 +15626,15 @@
         "eur": 2.5
       }
     ],
-    "menuSourceNote": "Transcripción parcial de la sección Entrantes facilitada por el usuario el 16/10/2026. Restantes secciones pendientes. Los marcadores 'svg' de la fuente copiada no identifican alérgenos y no se interpretan. Fecha y vigencia de precios no indicadas. Sin imágenes de terceros. Sección «Opciones sin gluten / para celíacos» facilitada por el usuario: cuatro platos y servicio de pan a 2,50 €. Precio de berenjenas: «Consultar». La clasificación es la publicada por la carta y no garantiza ausencia de contaminación cruzada; verificar con el establecimiento. Marcadores svg sin identificación de alérgenos. Sección «Cordobesa» facilitada por el usuario: contiene cinco platos, varios también listados en otras secciones; se conserva su pertenencia a cada sección sin tratar las coincidencias como platos nuevos. Sección Carnes, cuatro platos, facilitada por el usuario el 16/10/2026. Etiquetas svg de alérgenos no interpretables; descripción de la presa y peso de entrecot mantenidos como aparecen en la fuente. Sección Pescados con cuatro platos facilitada por el usuario. Lubina indicada como medio kilo. Iconos svg de alérgenos sin identificación textual, no interpretados. Sección Postres aportada por el usuario el 16/10/2026: cinco referencias. Se normalizó editorialmente el nombre del tocinito eliminando la «u» final suelta del texto copiado, con autorización del usuario. Coulant con preparación indicada de 10 minutos. Iconos svg sin identificación."
+    "menuSourceNote": "Transcripción parcial de la sección Entrantes facilitada por el usuario el 16/10/2026. Restantes secciones pendientes. Los marcadores 'svg' de la fuente copiada no identifican alérgenos y no se interpretan. Fecha y vigencia de precios no indicadas. Sin imágenes de terceros. Sección «Opciones sin gluten / para celíacos» facilitada por el usuario: cuatro platos y servicio de pan a 2,50 €. Precio de berenjenas: «Consultar». La clasificación es la publicada por la carta y no garantiza ausencia de contaminación cruzada; verificar con el establecimiento. Marcadores svg sin identificación de alérgenos. Sección «Cordobesa» facilitada por el usuario: contiene cinco platos, varios también listados en otras secciones; se conserva su pertenencia a cada sección sin tratar las coincidencias como platos nuevos. Sección Carnes, cuatro platos, facilitada por el usuario el 16/10/2026. Etiquetas svg de alérgenos no interpretables; descripción de la presa y peso de entrecot mantenidos como aparecen en la fuente. Sección Pescados con cuatro platos facilitada por el usuario. Lubina indicada como medio kilo. Iconos svg de alérgenos sin identificación textual, no interpretados. Sección Postres aportada por el usuario el 16/10/2026: cinco referencias. Se normalizó editorialmente el nombre del tocinito eliminando la «u» final suelta del texto copiado, con autorización del usuario. Coulant con preparación indicada de 10 minutos. Iconos svg sin identificación. Sugerencias del día facilitadas por el usuario el 16/10/2026; sujetas a disponibilidad y variación. Dos platos y una referencia de vino separada del catálogo gastronómico. Marcadores svg no interpretados.",
+    "beverageSuggestions": [
+      {
+        "name": "Vivanco Crianza 2021",
+        "eur": 18,
+        "designation": "D.O. Rioja",
+        "description": "Coupage de Tempranillo, Graciano y Maturana Tinta"
+      }
+    ]
   },
   {
     "id": "posada-caballo-andaluz",
