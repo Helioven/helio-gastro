@@ -15950,6 +15950,73 @@
             "portion": "Ración"
           }
         ]
+      },
+      {
+        "service": "Postres",
+        "dishes": [
+          "Torrija con miel",
+          "Leche frita",
+          "Helado de naranja con vermut",
+          "Postre de la abuela Concha",
+          "Pastel cordobés",
+          "Naranjas mozárabes",
+          "Helado variado",
+          "Fruta temporada",
+          "Tarta de Toblerone de chocolate",
+          "Tarta de tres leches"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Torrija con miel",
+            "eur": 5.9,
+            "portion": "Formato no indicado"
+          },
+          {
+            "dish": "Leche frita",
+            "eur": 5.9,
+            "portion": "Formato no indicado"
+          },
+          {
+            "dish": "Helado de naranja con vermut",
+            "eur": 6.9,
+            "portion": "Formato no indicado"
+          },
+          {
+            "dish": "Postre de la abuela Concha",
+            "eur": 5.9,
+            "portion": "Formato no indicado"
+          },
+          {
+            "dish": "Pastel cordobés",
+            "eur": 5.9,
+            "portion": "Formato no indicado"
+          },
+          {
+            "dish": "Naranjas mozárabes",
+            "eur": 5.9,
+            "portion": "Formato no indicado"
+          },
+          {
+            "dish": "Helado variado",
+            "eur": 5.9,
+            "portion": "Formato no indicado"
+          },
+          {
+            "dish": "Fruta temporada",
+            "eur": 5.9,
+            "portion": "Formato no indicado"
+          },
+          {
+            "dish": "Tarta de Toblerone de chocolate",
+            "eur": 6.5,
+            "portion": "Formato no indicado"
+          },
+          {
+            "dish": "Tarta de tres leches",
+            "eur": 5.9,
+            "portion": "Formato no indicado"
+          }
+        ]
       }
     ],
     "menuSections": [
@@ -16344,6 +16411,108 @@
             "description": "Tiras de pollo rebozadas y crujientes, servidas con patatas fritas recién hechas"
           }
         ]
+      },
+      {
+        "title": "Postres",
+        "items": [
+          {
+            "name": "Torrija con miel",
+            "prices": [
+              {
+                "eur": 5.9,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "De pan brioche, servida con una bola de helado"
+          },
+          {
+            "name": "Leche frita",
+            "prices": [
+              {
+                "eur": 5.9,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "Postre de leche aromatizada con canela y frito en aceite de oliva"
+          },
+          {
+            "name": "Helado de naranja con vermut",
+            "prices": [
+              {
+                "eur": 6.9,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "Creación del chef Julián: helado artesanal de naranja con un toque de vermut"
+          },
+          {
+            "name": "Postre de la abuela Concha",
+            "prices": [
+              {
+                "eur": 5.9,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "Tarta de galleta, natillas y chocolate, según la receta de la abuela Concha"
+          },
+          {
+            "name": "Pastel cordobés",
+            "prices": [
+              {
+                "eur": 5.9,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "Hojaldre tradicional relleno de cabello de ángel, horneado y espolvoreado con azúcar y canela"
+          },
+          {
+            "name": "Naranjas mozárabes",
+            "prices": [
+              {
+                "eur": 5.9,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "Rodajas de naranja natural con canela, miel y crocanti de almendra"
+          },
+          {
+            "name": "Helado variado",
+            "prices": [
+              {
+                "eur": 5.9,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "Selección de helados artesanales de chocolate, vainilla y naranja"
+          },
+          {
+            "name": "Fruta temporada",
+            "prices": [
+              {
+                "eur": 5.9,
+                "portion": "Formato no indicado"
+              }
+            ]
+          },
+          {
+            "name": "Tarta de Toblerone de chocolate",
+            "prices": [
+              {
+                "eur": 6.5,
+                "portion": "Formato no indicado"
+              }
+            ]
+          },
+          {
+            "name": "Tarta de tres leches",
+            "prices": [
+              {
+                "eur": 5.9,
+                "portion": "Formato no indicado"
+              }
+            ]
+          }
+        ]
       }
     ],
     "extras": [
@@ -16365,7 +16534,7 @@
         "eur": 1.5
       }
     ],
-    "menuSourceNote": "Transcripción parcial de la carta facilitada en texto por el usuario el 16/10/2026: Entrantes fríos y ensaladas, ocho platos y cuatro suplementos. Precios de carta no verificados en tiempo real; fecha de edición no indicada. Secciones restantes pendientes. Sin fotografías de terceros. Sección Entrantes calientes recibida del usuario el 16/10/2026: siete platos y trece importes; huevos rotos sin tamaño de porción indicado. Sección Pescados facilitada por el usuario el 16/10/2026: cinco platos, seis precios. Solo la japuta presenta medias raciones y raciones expresas; los restantes formatos no se indican. Sección Carnes y platos fuertes proporcionada por el usuario: ocho platos, once precios. La distinción «Premio al Mejor Rabo de Toro Cordobés 2026» está citada según la carta, no verificada independientemente. Iconos svg sin información textual, no interpretados. Sección infantil «Para los más peques» recibida del usuario: tres referencias y cuatro precios. Lagrimitas también presentes en entrantes calientes con los mismos importes; se mantiene la pertenencia a ambas secciones sin considerar un plato distinto. Iconos svg no interpretados."
+    "menuSourceNote": "Transcripción parcial de la carta facilitada en texto por el usuario el 16/10/2026: Entrantes fríos y ensaladas, ocho platos y cuatro suplementos. Precios de carta no verificados en tiempo real; fecha de edición no indicada. Secciones restantes pendientes. Sin fotografías de terceros. Sección Entrantes calientes recibida del usuario el 16/10/2026: siete platos y trece importes; huevos rotos sin tamaño de porción indicado. Sección Pescados facilitada por el usuario el 16/10/2026: cinco platos, seis precios. Solo la japuta presenta medias raciones y raciones expresas; los restantes formatos no se indican. Sección Carnes y platos fuertes proporcionada por el usuario: ocho platos, once precios. La distinción «Premio al Mejor Rabo de Toro Cordobés 2026» está citada según la carta, no verificada independientemente. Iconos svg sin información textual, no interpretados. Sección infantil «Para los más peques» recibida del usuario: tres referencias y cuatro precios. Lagrimitas también presentes en entrantes calientes con los mismos importes; se mantiene la pertenencia a ambas secciones sin considerar un plato distinto. Iconos svg no interpretados. Sección Postres facilitada por el usuario: diez referencias y diez precios. Se conserva mención del chef Julián en el helado de naranja con vermut, así como la receta atribuida a la abuela Concha. Vigencia de los importes no verificada independientemente."
   },
   {
     "id": "bodegas-campos",
