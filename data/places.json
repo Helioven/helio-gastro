@@ -15180,6 +15180,37 @@
             "portion": "Precio de carta; formato no indicado"
           }
         ]
+      },
+      {
+        "service": "Pescados",
+        "dishes": [
+          "Bacalao Confitado sobre Pisto Tradicional",
+          "Lubina a la Espalda con patatas panadera",
+          "Corvina Plancha con Verduras de Temporada",
+          "Ventresca de Atun con verduras"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Bacalao Confitado sobre Pisto Tradicional",
+            "eur": 25,
+            "portion": "Precio de carta; formato no indicado"
+          },
+          {
+            "dish": "Lubina a la Espalda con patatas panadera",
+            "eur": 24,
+            "portion": "Precio de carta; formato no indicado"
+          },
+          {
+            "dish": "Corvina Plancha con Verduras de Temporada",
+            "eur": 24,
+            "portion": "Precio de carta; formato no indicado"
+          },
+          {
+            "dish": "Ventresca de Atun con verduras",
+            "eur": 32,
+            "portion": "Precio de carta; formato no indicado"
+          }
+        ]
       }
     ],
     "menuSections": [
@@ -15409,6 +15440,48 @@
             "description": "Peso: 450 g"
           }
         ]
+      },
+      {
+        "title": "Pescados",
+        "items": [
+          {
+            "name": "Bacalao Confitado sobre Pisto Tradicional",
+            "prices": [
+              {
+                "eur": 25,
+                "portion": "Formato no indicado"
+              }
+            ]
+          },
+          {
+            "name": "Lubina a la Espalda con patatas panadera",
+            "prices": [
+              {
+                "eur": 24,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "Medio kilo"
+          },
+          {
+            "name": "Corvina Plancha con Verduras de Temporada",
+            "prices": [
+              {
+                "eur": 24,
+                "portion": "Formato no indicado"
+              }
+            ]
+          },
+          {
+            "name": "Ventresca de Atun con verduras",
+            "prices": [
+              {
+                "eur": 32,
+                "portion": "Formato no indicado"
+              }
+            ]
+          }
+        ]
       }
     ],
     "extras": [
@@ -15421,7 +15494,7 @@
         "eur": 2.5
       }
     ],
-    "menuSourceNote": "Transcripción parcial de la sección Entrantes facilitada por el usuario el 16/10/2026. Restantes secciones pendientes. Los marcadores 'svg' de la fuente copiada no identifican alérgenos y no se interpretan. Fecha y vigencia de precios no indicadas. Sin imágenes de terceros. Sección «Opciones sin gluten / para celíacos» facilitada por el usuario: cuatro platos y servicio de pan a 2,50 €. Precio de berenjenas: «Consultar». La clasificación es la publicada por la carta y no garantiza ausencia de contaminación cruzada; verificar con el establecimiento. Marcadores svg sin identificación de alérgenos. Sección «Cordobesa» facilitada por el usuario: contiene cinco platos, varios también listados en otras secciones; se conserva su pertenencia a cada sección sin tratar las coincidencias como platos nuevos. Sección Carnes, cuatro platos, facilitada por el usuario el 16/10/2026. Etiquetas svg de alérgenos no interpretables; descripción de la presa y peso de entrecot mantenidos como aparecen en la fuente."
+    "menuSourceNote": "Transcripción parcial de la sección Entrantes facilitada por el usuario el 16/10/2026. Restantes secciones pendientes. Los marcadores 'svg' de la fuente copiada no identifican alérgenos y no se interpretan. Fecha y vigencia de precios no indicadas. Sin imágenes de terceros. Sección «Opciones sin gluten / para celíacos» facilitada por el usuario: cuatro platos y servicio de pan a 2,50 €. Precio de berenjenas: «Consultar». La clasificación es la publicada por la carta y no garantiza ausencia de contaminación cruzada; verificar con el establecimiento. Marcadores svg sin identificación de alérgenos. Sección «Cordobesa» facilitada por el usuario: contiene cinco platos, varios también listados en otras secciones; se conserva su pertenencia a cada sección sin tratar las coincidencias como platos nuevos. Sección Carnes, cuatro platos, facilitada por el usuario el 16/10/2026. Etiquetas svg de alérgenos no interpretables; descripción de la presa y peso de entrecot mantenidos como aparecen en la fuente. Sección Pescados con cuatro platos facilitada por el usuario. Lubina indicada como medio kilo. Iconos svg de alérgenos sin identificación textual, no interpretados."
   },
   {
     "id": "posada-caballo-andaluz",
