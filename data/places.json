@@ -15007,8 +15007,8 @@
     "area": "Alcázar Viejo · San Basilio",
     "address": "Calle Postrera, 51, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "priceStatus": "partial_user_supplied_menu",
+    "checkedAt": "2026-10-16",
     "sources": [
       {
         "label": "Web y cocina oficial",
@@ -15021,16 +15021,178 @@
     ],
     "menus": [
       {
-        "service": "general",
+        "service": "Entrantes",
         "dishes": [
-          "Salmorejo cordobés",
-          "Berenjenas fritas con miel de caña",
-          "Solomillo ibérico con migas camperas",
-          "Bacalao confitado sobre pisto"
+          "Surtido de Ibéricos del Valle de Los Pedroches",
+          "Jamón Ibérico de los Pedroches",
+          "Tosta de Matrimonio (Boquerón y Anchoa)",
+          "Mazamorra Cordobesa",
+          "Salmorejo Cordobés con Jamón y Huevo Duro",
+          "Berenjenas Fritas",
+          "Habitas Rotas con Huevo y Jamón Ibérico",
+          "Ensalada de Naranja y Bacalao",
+          "Carpaccio de Tomate con Avellana Cordobesa y Pipas de Calabaza",
+          "Foie Casero con Confitura de Frambuesa y Helado de Higo"
         ],
-        "dishPrices": []
+        "dishPrices": [
+          {
+            "dish": "Surtido de Ibéricos del Valle de Los Pedroches",
+            "eur": 20,
+            "portion": "Precio de carta; formato no indicado"
+          },
+          {
+            "dish": "Jamón Ibérico de los Pedroches",
+            "eur": 28,
+            "portion": "Precio de carta; formato no indicado"
+          },
+          {
+            "dish": "Tosta de Matrimonio (Boquerón y Anchoa)",
+            "eur": 6.5,
+            "portion": "Precio de carta; formato no indicado"
+          },
+          {
+            "dish": "Mazamorra Cordobesa",
+            "eur": 12,
+            "portion": "Precio de carta; formato no indicado"
+          },
+          {
+            "dish": "Salmorejo Cordobés con Jamón y Huevo Duro",
+            "eur": 10.5,
+            "portion": "Precio de carta; formato no indicado"
+          },
+          {
+            "dish": "Berenjenas Fritas",
+            "eur": 11.5,
+            "portion": "Precio de carta; formato no indicado"
+          },
+          {
+            "dish": "Habitas Rotas con Huevo y Jamón Ibérico",
+            "eur": 16.5,
+            "portion": "Precio de carta; formato no indicado"
+          },
+          {
+            "dish": "Ensalada de Naranja y Bacalao",
+            "eur": 15,
+            "portion": "Precio de carta; formato no indicado"
+          },
+          {
+            "dish": "Carpaccio de Tomate con Avellana Cordobesa y Pipas de Calabaza",
+            "eur": 13.5,
+            "portion": "Precio de carta; formato no indicado"
+          },
+          {
+            "dish": "Foie Casero con Confitura de Frambuesa y Helado de Higo",
+            "eur": 23,
+            "portion": "Precio de carta; formato no indicado"
+          }
+        ]
       }
-    ]
+    ],
+    "menuSections": [
+      {
+        "title": "Entrantes",
+        "items": [
+          {
+            "name": "Surtido de Ibéricos del Valle de Los Pedroches",
+            "prices": [
+              {
+                "eur": 20,
+                "portion": "Formato no indicado"
+              }
+            ]
+          },
+          {
+            "name": "Jamón Ibérico de los Pedroches",
+            "prices": [
+              {
+                "eur": 28,
+                "portion": "Formato no indicado"
+              }
+            ]
+          },
+          {
+            "name": "Tosta de Matrimonio (Boquerón y Anchoa)",
+            "prices": [
+              {
+                "eur": 6.5,
+                "portion": "Formato no indicado"
+              }
+            ]
+          },
+          {
+            "name": "Mazamorra Cordobesa",
+            "prices": [
+              {
+                "eur": 12,
+                "portion": "Formato no indicado"
+              }
+            ]
+          },
+          {
+            "name": "Salmorejo Cordobés con Jamón y Huevo Duro",
+            "prices": [
+              {
+                "eur": 10.5,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "Crema de tomate fría"
+          },
+          {
+            "name": "Berenjenas Fritas",
+            "prices": [
+              {
+                "eur": 11.5,
+                "portion": "Formato no indicado"
+              }
+            ]
+          },
+          {
+            "name": "Habitas Rotas con Huevo y Jamón Ibérico",
+            "prices": [
+              {
+                "eur": 16.5,
+                "portion": "Formato no indicado"
+              }
+            ]
+          },
+          {
+            "name": "Ensalada de Naranja y Bacalao",
+            "prices": [
+              {
+                "eur": 15,
+                "portion": "Formato no indicado"
+              }
+            ]
+          },
+          {
+            "name": "Carpaccio de Tomate con Avellana Cordobesa y Pipas de Calabaza",
+            "prices": [
+              {
+                "eur": 13.5,
+                "portion": "Formato no indicado"
+              }
+            ]
+          },
+          {
+            "name": "Foie Casero con Confitura de Frambuesa y Helado de Higo",
+            "prices": [
+              {
+                "eur": 23,
+                "portion": "Formato no indicado"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "extras": [
+      {
+        "name": "Servicio de pan",
+        "eur": 1.9
+      }
+    ],
+    "menuSourceNote": "Transcripción parcial de la sección Entrantes facilitada por el usuario el 16/10/2026. Restantes secciones pendientes. Los marcadores 'svg' de la fuente copiada no identifican alérgenos y no se interpretan. Fecha y vigencia de precios no indicadas. Sin imágenes de terceros."
   },
   {
     "id": "posada-caballo-andaluz",
