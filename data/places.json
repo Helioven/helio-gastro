@@ -3644,8 +3644,8 @@
     "area": "Judería · Mezquita",
     "address": "Calle Cardenal González, 69, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "priceStatus": "published_official_menu",
+    "checkedAt": "2026-10-16",
     "sources": [
       {
         "label": "Carta y dirección oficiales",
@@ -3656,24 +3656,2688 @@
       {
         "service": "general",
         "dishes": [
-          "Flamenquín cordobés",
-          "Flamenquín de rabo de toro",
           "Salmorejo cordobés",
-          "Mazamorra",
-          "Rabo de toro"
+          "Aceitunas",
+          "Mazamorra de Almendras",
+          "Ensaladilla rusa",
+          "Salpicón de Marisco",
+          "Jamón Ibérico de Cebo de Campo",
+          "Mixto de Jamón Ibérico de Cebo de Campo (70g) y Queso de Oveja Curado (100g)",
+          "Berenjenas a la miel",
+          "Berenjenas a la miel SIN GLUTEN",
+          "Queso Frito Semicurado",
+          "Tortilla de Patatas",
+          "Patatas alioli",
+          "Patatas Bravas",
+          "Papas Arrugás",
+          "Patatas cortijeras",
+          "Vaso de Gazpacho",
+          "GAZPACHO ANDALUZ CON GUARNICIÓN",
+          "Ensalada “La Manuela”",
+          "Ensalada César",
+          "Picadillo Cordobés",
+          "Ensalada Miel & Mostaza",
+          "Parrillada de Verduras con Salsa Verde",
+          "Croquetas de arroz negro y calamares",
+          "Croquetas de gambas al ajillo",
+          "Croquetas de jamón ibérico",
+          "Mixto de Croquetas",
+          "Croquetas de berenjenas",
+          "Croquetas de rabo de toro",
+          "Croquetas de pollo & curry",
+          "De Puchero",
+          "Fideuá de marisco",
+          "Paella Cordobesa",
+          "Paella de costillas de cordero",
+          "Paella de calamares en su tinta",
+          "Paella de Pollo y Marisco",
+          "Paella Marisco",
+          "Paella Marisco Limpio",
+          "Paella Vegetal",
+          "Paella de Rabo de Toro",
+          "ATÚN A LA PLANCHA con salsa verde",
+          "BACALAO FRITO con papas arrugás Canarias",
+          "Bacalao frito SIN GLUTEN",
+          "CALAMARES FRITOS",
+          "GAMBONES AL AJILLO",
+          "MERO A LA PLANCHA",
+          "TORTILLITA DE CAMARONES (unidad)",
+          "HAMBURGUESA DE VACA",
+          "HAMBURGUESA DE POLLO CRUJIENTE",
+          "RABO DE TORO CORDOBÉS",
+          "CARRILLADA DE CERDO EN SALSA",
+          "ALBÓNDIGAS, en salsa de pimienta",
+          "ALBÓNDIGAS, en salsa de tomate",
+          "FLAMENQUÍN CORDOBÉS (troceado)",
+          "FLAMENQUÍN RELLENO DE RABO DE TORO, troceado y con su salsa",
+          "SAN JACOBO",
+          "LAGRIMITAS DE POLLO",
+          "ALITAS DE POLLO fritas (10 uds)",
+          "PECHUGA DE POLLO a la plancha",
+          "MUSLO DE POLLO ASADO",
+          "PUNTAS DE SOLOMILLO DE CERDO A LA PIMIENTA",
+          "CHURRASCO CORDOBÉS solomillo de cerdo a la plancha",
+          "SECRETO IBÉRICO",
+          "Pizza 4 Quesos",
+          "Del Huerto",
+          "Marinera",
+          "Peperoni Picante",
+          "Salami",
+          "York & champiñones",
+          "BBQ Pollo",
+          "Margarita",
+          "Coulant con helado a elegir",
+          "Tarta Sacher (porción)",
+          "Torrija con helado",
+          "Arroz con leche",
+          "Flan de Huevo",
+          "Natillas de chocolate",
+          "Natillas de vainilla",
+          "Limón helado",
+          "Coco helado",
+          "Crema catalana helada",
+          "Tarta helada al whisky",
+          "Le Tentazione caffé",
+          "Le Tentazione Tiramisú",
+          "Le Tentazioni Panna e Cioccolato",
+          "Le Tentazione Limoncello",
+          "Sensación de chocolate",
+          "Sensación Cheesecake de Frambuesa",
+          "Sensación de limón",
+          "Sensanción de turrón",
+          "Bombones helados",
+          "Milka bombón",
+          "Milka cono",
+          "Kit Kat cono",
+          "Extreme doble vainilla",
+          "Extreme fresa y nata",
+          "Xtreme blueberry cheesecake",
+          "Xtreme doble chocolate",
+          "Xtreme caramelo salado",
+          "Maxibon Cookie",
+          "Maxibon red berry",
+          "Maxibon nata",
+          "Maxibon Waffle",
+          "Maxibon Red Cheesecake",
+          "Maxibon Pops",
+          "Lotus Biscoff",
+          "Oreo bombón",
+          "Oreo bombones",
+          "Oreo cono",
+          "Oreo sandwich",
+          "Toblerone",
+          "Choco clack",
+          "Mango",
+          "Calipo fresa",
+          "Calipo limon",
+          "Fantasmikos",
+          "Fruit explosion",
+          "Mikolapiz vainilla",
+          "Sandwich nata",
+          "Pirulo tropical",
+          "Sandia",
+          "Smarties"
         ],
         "dishPrices": [
           {
-            "dish": "Flamenquín cordobés troceado con patatas (ración)",
+            "dish": "Salmorejo cordobés",
+            "portion": "tapa",
+            "eur": 4.5
+          },
+          {
+            "dish": "Salmorejo cordobés",
+            "portion": "media ración",
+            "eur": 9
+          },
+          {
+            "dish": "Salmorejo cordobés",
+            "portion": "ración",
+            "eur": 11.5
+          },
+          {
+            "dish": "Aceitunas",
+            "portion": "tapa",
+            "eur": 1.7
+          },
+          {
+            "dish": "Mazamorra de Almendras",
+            "portion": "tapa",
+            "eur": 4.5
+          },
+          {
+            "dish": "Mazamorra de Almendras",
+            "portion": "media ración",
+            "eur": 9.5
+          },
+          {
+            "dish": "Mazamorra de Almendras",
+            "portion": "ración",
             "eur": 12.5
           },
           {
-            "dish": "Flamenquín de rabo de toro troceado (ración)",
+            "dish": "Ensaladilla rusa",
+            "portion": "tapa",
+            "eur": 4
+          },
+          {
+            "dish": "Ensaladilla rusa",
+            "portion": "media ración",
+            "eur": 7.5
+          },
+          {
+            "dish": "Salpicón de Marisco",
+            "portion": "tapa",
+            "eur": 4.5
+          },
+          {
+            "dish": "Salpicón de Marisco",
+            "portion": "media ración",
+            "eur": 8.5
+          },
+          {
+            "dish": "Salpicón de Marisco",
+            "portion": "ración",
+            "eur": 10.5
+          },
+          {
+            "dish": "Jamón Ibérico de Cebo de Campo",
+            "portion": "tapa",
+            "eur": 4
+          },
+          {
+            "dish": "Jamón Ibérico de Cebo de Campo",
+            "portion": "media ración",
+            "eur": 7.5
+          },
+          {
+            "dish": "Jamón Ibérico de Cebo de Campo",
+            "portion": "ración",
+            "eur": 10.5
+          },
+          {
+            "dish": "Mixto de Jamón Ibérico de Cebo de Campo (70g) y Queso de Oveja Curado (100g)",
+            "portion": "precio único",
+            "eur": 18.8
+          },
+          {
+            "dish": "Berenjenas a la miel",
+            "portion": "tapa",
+            "eur": 4.5
+          },
+          {
+            "dish": "Berenjenas a la miel",
+            "portion": "media ración",
+            "eur": 7.5
+          },
+          {
+            "dish": "Berenjenas a la miel",
+            "portion": "ración",
+            "eur": 13.5
+          },
+          {
+            "dish": "Berenjenas a la miel SIN GLUTEN",
+            "portion": "media ración",
+            "eur": 7.5
+          },
+          {
+            "dish": "Berenjenas a la miel SIN GLUTEN",
+            "portion": "ración",
+            "eur": 10.5
+          },
+          {
+            "dish": "Queso Frito Semicurado",
+            "portion": "tapa",
+            "eur": 4.5
+          },
+          {
+            "dish": "Queso Frito Semicurado",
+            "portion": "media ración",
+            "eur": 7.5
+          },
+          {
+            "dish": "Queso Frito Semicurado",
+            "portion": "ración",
+            "eur": 13.5
+          },
+          {
+            "dish": "Tortilla de Patatas",
+            "portion": "tapa",
+            "eur": 4
+          },
+          {
+            "dish": "Patatas alioli",
+            "portion": "tapa",
+            "eur": 3.8
+          },
+          {
+            "dish": "Patatas alioli",
+            "portion": "media ración",
+            "eur": 6.8
+          },
+          {
+            "dish": "Patatas alioli",
+            "portion": "ración",
+            "eur": 8.8
+          },
+          {
+            "dish": "Patatas Bravas",
+            "portion": "tapa",
+            "eur": 3.8
+          },
+          {
+            "dish": "Patatas Bravas",
+            "portion": "media ración",
+            "eur": 6.8
+          },
+          {
+            "dish": "Patatas Bravas",
+            "portion": "ración",
+            "eur": 8.8
+          },
+          {
+            "dish": "Papas Arrugás",
+            "portion": "tapa",
+            "eur": 3.8
+          },
+          {
+            "dish": "Papas Arrugás",
+            "portion": "media ración",
+            "eur": 6.8
+          },
+          {
+            "dish": "Papas Arrugás",
+            "portion": "ración",
+            "eur": 8.8
+          },
+          {
+            "dish": "Patatas cortijeras",
+            "portion": "precio único",
+            "eur": 11.2
+          },
+          {
+            "dish": "Vaso de Gazpacho",
+            "portion": "precio único",
+            "eur": 3
+          },
+          {
+            "dish": "GAZPACHO ANDALUZ CON GUARNICIÓN",
+            "portion": "precio único",
+            "eur": 7.5
+          },
+          {
+            "dish": "Ensalada “La Manuela”",
+            "portion": "precio único",
+            "eur": 12.8
+          },
+          {
+            "dish": "Ensalada César",
+            "portion": "precio único",
+            "eur": 12.8
+          },
+          {
+            "dish": "Picadillo Cordobés",
+            "portion": "precio único",
+            "eur": 8.6
+          },
+          {
+            "dish": "Ensalada Miel & Mostaza",
+            "portion": "precio único",
+            "eur": 13.8
+          },
+          {
+            "dish": "Parrillada de Verduras con Salsa Verde",
+            "portion": "precio único",
+            "eur": 13.9
+          },
+          {
+            "dish": "Croquetas de arroz negro y calamares",
+            "portion": "tapa (3 uds.)",
+            "eur": 4.5
+          },
+          {
+            "dish": "Croquetas de arroz negro y calamares",
+            "portion": "media ración (5 uds.)",
+            "eur": 7.5
+          },
+          {
+            "dish": "Croquetas de arroz negro y calamares",
+            "portion": "ración (9 uds.)",
+            "eur": 13
+          },
+          {
+            "dish": "Croquetas de gambas al ajillo",
+            "portion": "tapa (3 uds.)",
+            "eur": 4.5
+          },
+          {
+            "dish": "Croquetas de gambas al ajillo",
+            "portion": "media ración (5 uds.)",
+            "eur": 7.5
+          },
+          {
+            "dish": "Croquetas de gambas al ajillo",
+            "portion": "ración (9 uds.)",
+            "eur": 13
+          },
+          {
+            "dish": "Croquetas de jamón ibérico",
+            "portion": "tapa (3 uds.)",
+            "eur": 4.5
+          },
+          {
+            "dish": "Croquetas de jamón ibérico",
+            "portion": "media ración (5 uds.)",
+            "eur": 7.5
+          },
+          {
+            "dish": "Croquetas de jamón ibérico",
+            "portion": "ración (9 uds.)",
+            "eur": 13
+          },
+          {
+            "dish": "Mixto de Croquetas",
+            "portion": "ración (9 uds.)",
+            "eur": 13
+          },
+          {
+            "dish": "Croquetas de berenjenas",
+            "portion": "tapa (3 uds.)",
+            "eur": 4.5
+          },
+          {
+            "dish": "Croquetas de berenjenas",
+            "portion": "media ración (5 uds.)",
+            "eur": 7.5
+          },
+          {
+            "dish": "Croquetas de berenjenas",
+            "portion": "ración (9 uds.)",
+            "eur": 13
+          },
+          {
+            "dish": "Croquetas de rabo de toro",
+            "portion": "tapa (3 uds.)",
+            "eur": 4.5
+          },
+          {
+            "dish": "Croquetas de rabo de toro",
+            "portion": "media ración (5 uds.)",
+            "eur": 7.5
+          },
+          {
+            "dish": "Croquetas de rabo de toro",
+            "portion": "ración (9 uds.)",
+            "eur": 13
+          },
+          {
+            "dish": "Croquetas de pollo & curry",
+            "portion": "tapa (3 uds.)",
+            "eur": 4.5
+          },
+          {
+            "dish": "Croquetas de pollo & curry",
+            "portion": "media ración (5 uds.)",
+            "eur": 7.5
+          },
+          {
+            "dish": "Croquetas de pollo & curry",
+            "portion": "ración (9 uds.)",
+            "eur": 13
+          },
+          {
+            "dish": "De Puchero",
+            "portion": "tapa (3 uds.)",
+            "eur": 4.5
+          },
+          {
+            "dish": "De Puchero",
+            "portion": "media ración (5 uds.)",
+            "eur": 7.5
+          },
+          {
+            "dish": "De Puchero",
+            "portion": "ración (9 uds.)",
+            "eur": 13
+          },
+          {
+            "dish": "Fideuá de marisco",
+            "portion": "precio único",
+            "eur": 12.5
+          },
+          {
+            "dish": "Paella Cordobesa",
+            "portion": "precio único",
+            "eur": 14.5
+          },
+          {
+            "dish": "Paella de costillas de cordero",
+            "portion": "precio único",
+            "eur": 14.5
+          },
+          {
+            "dish": "Paella de calamares en su tinta",
+            "portion": "precio único",
+            "eur": 14.5
+          },
+          {
+            "dish": "Paella de Pollo y Marisco",
+            "portion": "precio único",
+            "eur": 14.5
+          },
+          {
+            "dish": "Paella Marisco",
+            "portion": "precio único",
+            "eur": 14.5
+          },
+          {
+            "dish": "Paella Marisco Limpio",
+            "portion": "precio único",
+            "eur": 14.5
+          },
+          {
+            "dish": "Paella Vegetal",
+            "portion": "precio único",
+            "eur": 14.5
+          },
+          {
+            "dish": "Paella de Rabo de Toro",
+            "portion": "precio único",
+            "eur": 14.5
+          },
+          {
+            "dish": "ATÚN A LA PLANCHA con salsa verde",
+            "portion": "precio único",
+            "eur": 14.5
+          },
+          {
+            "dish": "BACALAO FRITO con papas arrugás Canarias",
+            "portion": "media ración",
+            "eur": 9.9
+          },
+          {
+            "dish": "BACALAO FRITO con papas arrugás Canarias",
+            "portion": "ración",
+            "eur": 14.5
+          },
+          {
+            "dish": "Bacalao frito SIN GLUTEN",
+            "portion": "media ración",
+            "eur": 9.9
+          },
+          {
+            "dish": "Bacalao frito SIN GLUTEN",
+            "portion": "ración",
+            "eur": 14.5
+          },
+          {
+            "dish": "CALAMARES FRITOS",
+            "portion": "precio único",
+            "eur": 14.9
+          },
+          {
+            "dish": "GAMBONES AL AJILLO",
+            "portion": "precio único",
+            "eur": 12.5
+          },
+          {
+            "dish": "MERO A LA PLANCHA",
+            "portion": "media ración",
+            "eur": 9.9
+          },
+          {
+            "dish": "MERO A LA PLANCHA",
+            "portion": "ración",
+            "eur": 14.5
+          },
+          {
+            "dish": "TORTILLITA DE CAMARONES (unidad)",
+            "portion": "unidad",
+            "eur": 3
+          },
+          {
+            "dish": "HAMBURGUESA DE VACA",
+            "portion": "precio único",
+            "eur": 15.8
+          },
+          {
+            "dish": "HAMBURGUESA DE POLLO CRUJIENTE",
+            "portion": "precio único",
+            "eur": 15.6
+          },
+          {
+            "dish": "RABO DE TORO CORDOBÉS",
+            "portion": "media ración",
             "eur": 18.5
+          },
+          {
+            "dish": "CARRILLADA DE CERDO EN SALSA",
+            "portion": "media ración",
+            "eur": 10.5
+          },
+          {
+            "dish": "CARRILLADA DE CERDO EN SALSA",
+            "portion": "ración",
+            "eur": 15.9
+          },
+          {
+            "dish": "ALBÓNDIGAS, en salsa de pimienta",
+            "portion": "tapa",
+            "eur": 4.8
+          },
+          {
+            "dish": "ALBÓNDIGAS, en salsa de pimienta",
+            "portion": "media ración",
+            "eur": 7.8
+          },
+          {
+            "dish": "ALBÓNDIGAS, en salsa de pimienta",
+            "portion": "ración",
+            "eur": 11.5
+          },
+          {
+            "dish": "ALBÓNDIGAS, en salsa de tomate",
+            "portion": "tapa",
+            "eur": 4.8
+          },
+          {
+            "dish": "ALBÓNDIGAS, en salsa de tomate",
+            "portion": "media ración",
+            "eur": 7.8
+          },
+          {
+            "dish": "ALBÓNDIGAS, en salsa de tomate",
+            "portion": "ración",
+            "eur": 11.5
+          },
+          {
+            "dish": "FLAMENQUÍN CORDOBÉS (troceado)",
+            "portion": "precio único",
+            "eur": 12.5
+          },
+          {
+            "dish": "FLAMENQUÍN RELLENO DE RABO DE TORO, troceado y con su salsa",
+            "portion": "precio único",
+            "eur": 18.5
+          },
+          {
+            "dish": "SAN JACOBO",
+            "portion": "precio único",
+            "eur": 12.5
+          },
+          {
+            "dish": "LAGRIMITAS DE POLLO",
+            "portion": "tapa",
+            "eur": 4.5
+          },
+          {
+            "dish": "LAGRIMITAS DE POLLO",
+            "portion": "media ración",
+            "eur": 7.5
+          },
+          {
+            "dish": "LAGRIMITAS DE POLLO",
+            "portion": "ración",
+            "eur": 11.8
+          },
+          {
+            "dish": "ALITAS DE POLLO fritas (10 uds)",
+            "portion": "precio único",
+            "eur": 10.5
+          },
+          {
+            "dish": "PECHUGA DE POLLO a la plancha",
+            "portion": "precio único",
+            "eur": 13.5
+          },
+          {
+            "dish": "MUSLO DE POLLO ASADO",
+            "portion": "precio único",
+            "eur": 9.5
+          },
+          {
+            "dish": "PUNTAS DE SOLOMILLO DE CERDO A LA PIMIENTA",
+            "portion": "media ración",
+            "eur": 10.5
+          },
+          {
+            "dish": "PUNTAS DE SOLOMILLO DE CERDO A LA PIMIENTA",
+            "portion": "ración",
+            "eur": 13.9
+          },
+          {
+            "dish": "CHURRASCO CORDOBÉS solomillo de cerdo a la plancha",
+            "portion": "precio único",
+            "eur": 13.9
+          },
+          {
+            "dish": "SECRETO IBÉRICO",
+            "portion": "precio único",
+            "eur": 14.5
+          },
+          {
+            "dish": "Pizza 4 Quesos",
+            "portion": "precio único",
+            "eur": 12.9
+          },
+          {
+            "dish": "Del Huerto",
+            "portion": "precio único",
+            "eur": 12.9
+          },
+          {
+            "dish": "Marinera",
+            "portion": "precio único",
+            "eur": 12.9
+          },
+          {
+            "dish": "Peperoni Picante",
+            "portion": "precio único",
+            "eur": 12.9
+          },
+          {
+            "dish": "Salami",
+            "portion": "precio único",
+            "eur": 12.9
+          },
+          {
+            "dish": "York & champiñones",
+            "portion": "precio único",
+            "eur": 12.9
+          },
+          {
+            "dish": "BBQ Pollo",
+            "portion": "precio único",
+            "eur": 12.9
+          },
+          {
+            "dish": "Margarita",
+            "portion": "precio único",
+            "eur": 10.2
+          },
+          {
+            "dish": "Coulant con helado a elegir",
+            "portion": "precio único",
+            "eur": 5.5
+          },
+          {
+            "dish": "Tarta Sacher (porción)",
+            "portion": "precio único",
+            "eur": 6
+          },
+          {
+            "dish": "Torrija con helado",
+            "portion": "precio único",
+            "eur": 6
+          },
+          {
+            "dish": "Arroz con leche",
+            "portion": "precio único",
+            "eur": 4
+          },
+          {
+            "dish": "Flan de Huevo",
+            "portion": "precio único",
+            "eur": 4
+          },
+          {
+            "dish": "Natillas de chocolate",
+            "portion": "precio único",
+            "eur": 4
+          },
+          {
+            "dish": "Natillas de vainilla",
+            "portion": "precio único",
+            "eur": 4
+          },
+          {
+            "dish": "Limón helado",
+            "portion": "precio único",
+            "eur": 5.8
+          },
+          {
+            "dish": "Coco helado",
+            "portion": "precio único",
+            "eur": 5.8
+          },
+          {
+            "dish": "Crema catalana helada",
+            "portion": "precio único",
+            "eur": 6
+          },
+          {
+            "dish": "Tarta helada al whisky",
+            "portion": "precio único",
+            "eur": 6
+          },
+          {
+            "dish": "Le Tentazione caffé",
+            "portion": "precio único",
+            "eur": 6
+          },
+          {
+            "dish": "Le Tentazione Tiramisú",
+            "portion": "precio único",
+            "eur": 6
+          },
+          {
+            "dish": "Le Tentazioni Panna e Cioccolato",
+            "portion": "precio único",
+            "eur": 6
+          },
+          {
+            "dish": "Le Tentazione Limoncello",
+            "portion": "precio único",
+            "eur": 6
+          },
+          {
+            "dish": "Sensación de chocolate",
+            "portion": "precio único",
+            "eur": 5.5
+          },
+          {
+            "dish": "Sensación Cheesecake de Frambuesa",
+            "portion": "precio único",
+            "eur": 5.5
+          },
+          {
+            "dish": "Sensación de limón",
+            "portion": "precio único",
+            "eur": 5.5
+          },
+          {
+            "dish": "Sensanción de turrón",
+            "portion": "precio único",
+            "eur": 5.5
+          },
+          {
+            "dish": "Bombones helados",
+            "portion": "precio único",
+            "eur": 4.8
+          },
+          {
+            "dish": "Milka bombón",
+            "portion": "precio único",
+            "eur": 3.5
+          },
+          {
+            "dish": "Milka cono",
+            "portion": "precio único",
+            "eur": 3.5
+          },
+          {
+            "dish": "Kit Kat cono",
+            "portion": "precio único",
+            "eur": 3.5
+          },
+          {
+            "dish": "Extreme doble vainilla",
+            "portion": "precio único",
+            "eur": 3.5
+          },
+          {
+            "dish": "Extreme fresa y nata",
+            "portion": "precio único",
+            "eur": 3.5
+          },
+          {
+            "dish": "Xtreme blueberry cheesecake",
+            "portion": "precio único",
+            "eur": 3.5
+          },
+          {
+            "dish": "Xtreme doble chocolate",
+            "portion": "precio único",
+            "eur": 3.5
+          },
+          {
+            "dish": "Xtreme caramelo salado",
+            "portion": "precio único",
+            "eur": 3.5
+          },
+          {
+            "dish": "Maxibon Cookie",
+            "portion": "precio único",
+            "eur": 3.5
+          },
+          {
+            "dish": "Maxibon red berry",
+            "portion": "precio único",
+            "eur": 3.5
+          },
+          {
+            "dish": "Maxibon nata",
+            "portion": "precio único",
+            "eur": 3.5
+          },
+          {
+            "dish": "Maxibon Waffle",
+            "portion": "precio único",
+            "eur": 3.5
+          },
+          {
+            "dish": "Maxibon Red Cheesecake",
+            "portion": "precio único",
+            "eur": 3.5
+          },
+          {
+            "dish": "Maxibon Pops",
+            "portion": "precio único",
+            "eur": 3.5
+          },
+          {
+            "dish": "Lotus Biscoff",
+            "portion": "precio único",
+            "eur": 3.5
+          },
+          {
+            "dish": "Oreo bombón",
+            "portion": "precio único",
+            "eur": 3.5
+          },
+          {
+            "dish": "Oreo bombones",
+            "portion": "precio único",
+            "eur": 3.5
+          },
+          {
+            "dish": "Oreo cono",
+            "portion": "precio único",
+            "eur": 3.5
+          },
+          {
+            "dish": "Oreo sandwich",
+            "portion": "precio único",
+            "eur": 3.5
+          },
+          {
+            "dish": "Toblerone",
+            "portion": "precio único",
+            "eur": 3.5
+          },
+          {
+            "dish": "Choco clack",
+            "portion": "precio único",
+            "eur": 2.5
+          },
+          {
+            "dish": "Mango",
+            "portion": "precio único",
+            "eur": 2.5
+          },
+          {
+            "dish": "Calipo fresa",
+            "portion": "precio único",
+            "eur": 2.5
+          },
+          {
+            "dish": "Calipo limon",
+            "portion": "precio único",
+            "eur": 2.5
+          },
+          {
+            "dish": "Fantasmikos",
+            "portion": "precio único",
+            "eur": 2.5
+          },
+          {
+            "dish": "Fruit explosion",
+            "portion": "precio único",
+            "eur": 2.5
+          },
+          {
+            "dish": "Mikolapiz vainilla",
+            "portion": "precio único",
+            "eur": 2.5
+          },
+          {
+            "dish": "Sandwich nata",
+            "portion": "precio único",
+            "eur": 2.5
+          },
+          {
+            "dish": "Pirulo tropical",
+            "portion": "precio único",
+            "eur": 2.5
+          },
+          {
+            "dish": "Sandia",
+            "portion": "precio único",
+            "eur": 2.5
+          },
+          {
+            "dish": "Smarties",
+            "portion": "precio único",
+            "eur": 2.5
           }
         ]
       }
-    ]
+    ],
+    "menuSections": [
+      {
+        "title": "Entrantes",
+        "titleEn": "Starters",
+        "items": [
+          {
+            "name": "Salmorejo cordobés",
+            "description": "Salmorejo cordobés",
+            "en": "Cordoban salmorejo",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 4.5
+              },
+              {
+                "label": "media ración",
+                "eur": 9
+              },
+              {
+                "label": "ración",
+                "eur": 11.5
+              }
+            ]
+          },
+          {
+            "name": "Aceitunas",
+            "description": "Aceitunas",
+            "en": "Olives",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 1.7
+              }
+            ],
+            "vegan": true,
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Mazamorra de Almendras",
+            "description": "Mazamorra de Almendras",
+            "en": "Almond mazamorra",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 4.5
+              },
+              {
+                "label": "media ración",
+                "eur": 9.5
+              },
+              {
+                "label": "ración",
+                "eur": 12.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Ensaladilla rusa",
+            "description": "Ensaladilla rusa",
+            "en": "Russian-style potato salad",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 4
+              },
+              {
+                "label": "media ración",
+                "eur": 7.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Salpicón de Marisco",
+            "description": "Salpicón de Marisco",
+            "en": "Seafood salad",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 4.5
+              },
+              {
+                "label": "media ración",
+                "eur": 8.5
+              },
+              {
+                "label": "ración",
+                "eur": 10.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Jamón Ibérico de Cebo de Campo",
+            "description": "Jamón Ibérico de Cebo de Campo",
+            "en": "Free-range grain-fed Iberian ham",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 4
+              },
+              {
+                "label": "media ración",
+                "eur": 7.5
+              },
+              {
+                "label": "ración",
+                "eur": 10.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Mixto de Jamón Ibérico de Cebo de Campo (70g) y Queso de Oveja Curado (100g)",
+            "description": "Mixto de Jamón Ibérico de Cebo de Campo (70g) y Queso de Oveja Curado (100g)",
+            "en": "Mixto de Jamón Ibérico de Cebo de Campo (70g) y Queso de Oveja Curado (100g)",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 18.8
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Berenjenas a la miel",
+            "description": "Berenjenas a la miel",
+            "en": "Aubergines with cane syrup",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 4.5
+              },
+              {
+                "label": "media ración",
+                "eur": 7.5
+              },
+              {
+                "label": "ración",
+                "eur": 13.5
+              }
+            ],
+            "vegan": true
+          },
+          {
+            "name": "Berenjenas a la miel SIN GLUTEN",
+            "description": "Berenjenas a la miel SIN GLUTEN",
+            "en": "Gluten-free aubergines with cane syrup",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.5
+              },
+              {
+                "label": "ración",
+                "eur": 10.5
+              }
+            ],
+            "vegan": true,
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Queso Frito Semicurado",
+            "description": "Queso Frito Semicurado",
+            "en": "Fried semi-cured cheese",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 4.5
+              },
+              {
+                "label": "media ración",
+                "eur": 7.5
+              },
+              {
+                "label": "ración",
+                "eur": 13.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Tortilla de Patatas",
+            "description": "Tortilla de Patatas",
+            "en": "Spanish potato omelette",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 4
+              }
+            ],
+            "vegetarian": true,
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Patatas alioli",
+            "description": "Patatas alioli",
+            "en": "Potatoes with aioli",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 3.8
+              },
+              {
+                "label": "media ración",
+                "eur": 6.8
+              },
+              {
+                "label": "ración",
+                "eur": 8.8
+              }
+            ],
+            "vegetarian": true,
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Patatas Bravas",
+            "description": "Patatas Bravas",
+            "en": "Patatas bravas",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 3.8
+              },
+              {
+                "label": "media ración",
+                "eur": 6.8
+              },
+              {
+                "label": "ración",
+                "eur": 8.8
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Papas Arrugás",
+            "description": "Papas Arrugás",
+            "en": "Canarian-style wrinkled potatoes",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 3.8
+              },
+              {
+                "label": "media ración",
+                "eur": 6.8
+              },
+              {
+                "label": "ración",
+                "eur": 8.8
+              }
+            ],
+            "vegan": true
+          },
+          {
+            "name": "Patatas cortijeras",
+            "description": "Patatas cortijeras",
+            "en": "Country-style potatoes",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 11.2
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          }
+        ]
+      },
+      {
+        "title": "De la huerta",
+        "titleEn": "From the Garden",
+        "items": [
+          {
+            "name": "Vaso de Gazpacho",
+            "description": "Vaso de Gazpacho",
+            "en": "Glass of gazpacho",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 3
+              }
+            ],
+            "vegan": true
+          },
+          {
+            "name": "GAZPACHO ANDALUZ CON GUARNICIÓN",
+            "description": "GAZPACHO ANDALUZ CON GUARNICIÓN",
+            "en": "Andalusian gazpacho with garnish",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 7.5
+              }
+            ],
+            "vegan": true
+          },
+          {
+            "name": "Ensalada “La Manuela”",
+            "description": "Ensalada “La Manuela”",
+            "en": "La Manuela salad",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 12.8
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Ensalada César",
+            "description": "Lechuga fresca con pollo asado a la plancha, lascas de queso parmesano, nueces, pasas y salsa César de la casa.",
+            "en": "Fresh lettuce with grilled chicken, Parmesan shavings, walnuts, raisins and house Caesar dressing.",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 12.8
+              }
+            ],
+            "allergensDeclared": [
+              "Gluten",
+              "Cacahuetes",
+              "Lácteos",
+              "Frutos de cáscara"
+            ]
+          },
+          {
+            "name": "Picadillo Cordobés",
+            "description": "Picadillo Cordobés",
+            "en": "Cordoban-style chopped salad",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 8.6
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Ensalada Miel & Mostaza",
+            "description": "Ensalada Miel & Mostaza",
+            "en": "Honey and mustard salad",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 13.8
+              }
+            ]
+          },
+          {
+            "name": "Parrillada de Verduras con Salsa Verde",
+            "description": "Parrillada de Verduras con Salsa Verde",
+            "en": "Grilled vegetables with green sauce",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 13.9
+              }
+            ],
+            "vegan": true,
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          }
+        ]
+      },
+      {
+        "title": "Croquetas",
+        "titleEn": "Croquettes",
+        "items": [
+          {
+            "name": "Croquetas de arroz negro y calamares",
+            "description": "Croquetas de arroz negro y calamares",
+            "en": "arroz negro y calamares croquettes",
+            "prices": [
+              {
+                "label": "tapa (3 uds.)",
+                "eur": 4.5
+              },
+              {
+                "label": "media ración (5 uds.)",
+                "eur": 7.5
+              },
+              {
+                "label": "ración (9 uds.)",
+                "eur": 13
+              }
+            ]
+          },
+          {
+            "name": "Croquetas de gambas al ajillo",
+            "description": "Croquetas de gambas al ajillo",
+            "en": "gambas al ajillo croquettes",
+            "prices": [
+              {
+                "label": "tapa (3 uds.)",
+                "eur": 4.5
+              },
+              {
+                "label": "media ración (5 uds.)",
+                "eur": 7.5
+              },
+              {
+                "label": "ración (9 uds.)",
+                "eur": 13
+              }
+            ]
+          },
+          {
+            "name": "Croquetas de jamón ibérico",
+            "description": "Croquetas de jamón ibérico",
+            "en": "jamón ibérico croquettes",
+            "prices": [
+              {
+                "label": "tapa (3 uds.)",
+                "eur": 4.5
+              },
+              {
+                "label": "media ración (5 uds.)",
+                "eur": 7.5
+              },
+              {
+                "label": "ración (9 uds.)",
+                "eur": 13
+              }
+            ]
+          },
+          {
+            "name": "Mixto de Croquetas",
+            "description": "Mixto de Croquetas",
+            "en": "Assorted croquettes",
+            "prices": [
+              {
+                "label": "ración (9 uds.)",
+                "eur": 13
+              }
+            ]
+          },
+          {
+            "name": "Croquetas de berenjenas",
+            "description": "Croquetas de berenjenas",
+            "en": "berenjenas croquettes",
+            "prices": [
+              {
+                "label": "tapa (3 uds.)",
+                "eur": 4.5
+              },
+              {
+                "label": "media ración (5 uds.)",
+                "eur": 7.5
+              },
+              {
+                "label": "ración (9 uds.)",
+                "eur": 13
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Croquetas de rabo de toro",
+            "description": "Croquetas de rabo de toro",
+            "en": "rabo de toro croquettes",
+            "prices": [
+              {
+                "label": "tapa (3 uds.)",
+                "eur": 4.5
+              },
+              {
+                "label": "media ración (5 uds.)",
+                "eur": 7.5
+              },
+              {
+                "label": "ración (9 uds.)",
+                "eur": 13
+              }
+            ]
+          },
+          {
+            "name": "Croquetas de pollo & curry",
+            "description": "Croquetas de pollo & curry",
+            "en": "pollo & curry croquettes",
+            "prices": [
+              {
+                "label": "tapa (3 uds.)",
+                "eur": 4.5
+              },
+              {
+                "label": "media ración (5 uds.)",
+                "eur": 7.5
+              },
+              {
+                "label": "ración (9 uds.)",
+                "eur": 13
+              }
+            ]
+          },
+          {
+            "name": "De Puchero",
+            "description": "De Puchero",
+            "en": "Traditional stew croquettes",
+            "prices": [
+              {
+                "label": "tapa (3 uds.)",
+                "eur": 4.5
+              },
+              {
+                "label": "media ración (5 uds.)",
+                "eur": 7.5
+              },
+              {
+                "label": "ración (9 uds.)",
+                "eur": 13
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Paellas",
+        "titleEn": "Paellas and Fideuà",
+        "items": [
+          {
+            "name": "Fideuá de marisco",
+            "description": "Fideuá de marisco",
+            "en": "Seafood fideuà",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 12.5
+              }
+            ]
+          },
+          {
+            "name": "Paella Cordobesa",
+            "description": "Paella Cordobesa",
+            "en": "Cordoban-style paella",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 14.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Paella de costillas de cordero",
+            "description": "Paella de costillas de cordero",
+            "en": "Lamb rib paella",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 14.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Paella de calamares en su tinta",
+            "description": "Paella de calamares en su tinta",
+            "en": "Squid ink paella",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 14.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Paella de Pollo y Marisco",
+            "description": "Paella de Pollo y Marisco",
+            "en": "Chicken and seafood paella",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 14.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Paella Marisco",
+            "description": "Paella Marisco",
+            "en": "Seafood paella",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 14.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Paella Marisco Limpio",
+            "description": "Paella Marisco Limpio",
+            "en": "Shell-free seafood paella",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 14.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Paella Vegetal",
+            "description": "Paella Vegetal",
+            "en": "Vegetable paella",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 14.5
+              }
+            ],
+            "vegan": true,
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Paella de Rabo de Toro",
+            "description": "Paella de Rabo de Toro",
+            "en": "Oxtail paella",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 14.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          }
+        ]
+      },
+      {
+        "title": "Del Mediterráneo - Pescados",
+        "titleEn": "Mediterranean Fish and Seafood",
+        "items": [
+          {
+            "name": "ATÚN A LA PLANCHA con salsa verde",
+            "description": "ATÚN A LA PLANCHA con salsa verde",
+            "en": "Grilled tuna with green sauce",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 14.5
+              }
+            ]
+          },
+          {
+            "name": "BACALAO FRITO con papas arrugás Canarias",
+            "description": "BACALAO FRITO con papas arrugás Canarias",
+            "en": "Fried cod with Canarian wrinkled potatoes",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 9.9
+              },
+              {
+                "label": "ración",
+                "eur": 14.5
+              }
+            ]
+          },
+          {
+            "name": "Bacalao frito SIN GLUTEN",
+            "description": "Bacalao frito SIN GLUTEN",
+            "en": "Gluten-free fried cod",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 9.9
+              },
+              {
+                "label": "ración",
+                "eur": 14.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "CALAMARES FRITOS",
+            "description": "CALAMARES FRITOS",
+            "en": "Fried squid",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 14.9
+              }
+            ]
+          },
+          {
+            "name": "GAMBONES AL AJILLO",
+            "description": "GAMBONES AL AJILLO",
+            "en": "Garlic prawns",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 12.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "MERO A LA PLANCHA",
+            "description": "MERO A LA PLANCHA",
+            "en": "Grilled grouper",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 9.9
+              },
+              {
+                "label": "ración",
+                "eur": 14.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "TORTILLITA DE CAMARONES (unidad)",
+            "description": "TORTILLITA DE CAMARONES (unidad)",
+            "en": "Andalusian shrimp fritter (one piece)",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Carnes",
+        "titleEn": "Meat",
+        "items": [
+          {
+            "name": "HAMBURGUESA DE VACA",
+            "description": "HAMBURGUESA DE VACA",
+            "en": "Beef burger",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 15.8
+              }
+            ]
+          },
+          {
+            "name": "HAMBURGUESA DE POLLO CRUJIENTE",
+            "description": "HAMBURGUESA DE POLLO CRUJIENTE",
+            "en": "Crispy chicken burger",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 15.6
+              }
+            ]
+          },
+          {
+            "name": "RABO DE TORO CORDOBÉS",
+            "description": "RABO DE TORO CORDOBÉS",
+            "en": "Cordoban oxtail stew",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 18.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "CARRILLADA DE CERDO EN SALSA",
+            "description": "CARRILLADA DE CERDO EN SALSA",
+            "en": "Pork cheeks in sauce",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 10.5
+              },
+              {
+                "label": "ración",
+                "eur": 15.9
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "ALBÓNDIGAS, en salsa de pimienta",
+            "description": "ALBÓNDIGAS, en salsa de pimienta",
+            "en": "Meatballs in pepper sauce",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 4.8
+              },
+              {
+                "label": "media ración",
+                "eur": 7.8
+              },
+              {
+                "label": "ración",
+                "eur": 11.5
+              }
+            ]
+          },
+          {
+            "name": "ALBÓNDIGAS, en salsa de tomate",
+            "description": "ALBÓNDIGAS, en salsa de tomate",
+            "en": "Meatballs in tomato sauce",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 4.8
+              },
+              {
+                "label": "media ración",
+                "eur": 7.8
+              },
+              {
+                "label": "ración",
+                "eur": 11.5
+              }
+            ]
+          },
+          {
+            "name": "FLAMENQUÍN CORDOBÉS (troceado)",
+            "description": "FLAMENQUÍN CORDOBÉS (troceado)",
+            "en": "Sliced Cordoban flamenquín",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 12.5
+              }
+            ]
+          },
+          {
+            "name": "FLAMENQUÍN RELLENO DE RABO DE TORO, troceado y con su salsa",
+            "description": "FLAMENQUÍN RELLENO DE RABO DE TORO, troceado y con su salsa",
+            "en": "Sliced oxtail-stuffed flamenquín with sauce",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 18.5
+              }
+            ]
+          },
+          {
+            "name": "SAN JACOBO",
+            "description": "SAN JACOBO",
+            "en": "San Jacobo",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 12.5
+              }
+            ]
+          },
+          {
+            "name": "LAGRIMITAS DE POLLO",
+            "description": "LAGRIMITAS DE POLLO",
+            "en": "Crispy chicken strips",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 4.5
+              },
+              {
+                "label": "media ración",
+                "eur": 7.5
+              },
+              {
+                "label": "ración",
+                "eur": 11.8
+              }
+            ]
+          },
+          {
+            "name": "ALITAS DE POLLO fritas (10 uds)",
+            "description": "ALITAS DE POLLO fritas (10 uds)",
+            "en": "Fried chicken wings (10 pieces)",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 10.5
+              }
+            ]
+          },
+          {
+            "name": "PECHUGA DE POLLO a la plancha",
+            "description": "PECHUGA DE POLLO a la plancha",
+            "en": "Grilled chicken breast",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 13.5
+              }
+            ]
+          },
+          {
+            "name": "MUSLO DE POLLO ASADO",
+            "description": "MUSLO DE POLLO ASADO",
+            "en": "Roasted chicken leg",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 9.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "PUNTAS DE SOLOMILLO DE CERDO A LA PIMIENTA",
+            "description": "PUNTAS DE SOLOMILLO DE CERDO A LA PIMIENTA",
+            "en": "Pork tenderloin tips in pepper sauce",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 10.5
+              },
+              {
+                "label": "ración",
+                "eur": 13.9
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "CHURRASCO CORDOBÉS solomillo de cerdo a la plancha",
+            "description": "CHURRASCO CORDOBÉS solomillo de cerdo a la plancha",
+            "en": "Grilled Cordoban-style pork tenderloin",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 13.9
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "SECRETO IBÉRICO",
+            "description": "SECRETO IBÉRICO",
+            "en": "Iberian pork secreto cut",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 14.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Pizzas individuales",
+        "titleEn": "Individual Pizzas",
+        "items": [
+          {
+            "name": "Pizza 4 Quesos",
+            "description": "Pizza 4 Quesos",
+            "en": "Four cheese pizza",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 12.9
+              }
+            ]
+          },
+          {
+            "name": "Del Huerto",
+            "description": "Del Huerto",
+            "en": "Garden vegetable pizza",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 12.9
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Marinera",
+            "description": "Marinera",
+            "en": "Marinera pizza",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 12.9
+              }
+            ]
+          },
+          {
+            "name": "Peperoni Picante",
+            "description": "Peperoni Picante",
+            "en": "Spicy pepperoni pizza",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 12.9
+              }
+            ]
+          },
+          {
+            "name": "Salami",
+            "description": "Salami",
+            "en": "Salami",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 12.9
+              }
+            ]
+          },
+          {
+            "name": "York & champiñones",
+            "description": "York & champiñones",
+            "en": "Ham and mushroom pizza",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 12.9
+              }
+            ]
+          },
+          {
+            "name": "BBQ Pollo",
+            "description": "BBQ Pollo",
+            "en": "BBQ chicken pizza",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 12.9
+              }
+            ]
+          },
+          {
+            "name": "Margarita",
+            "description": "Margarita",
+            "en": "Margherita pizza",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 10.2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Postres",
+        "titleEn": "Desserts",
+        "items": [
+          {
+            "name": "Coulant con helado a elegir",
+            "description": "Coulant con helado a elegir",
+            "en": "Chocolate fondant with choice of ice cream",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 5.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Tarta Sacher (porción)",
+            "description": "Tarta Sacher (porción)",
+            "en": "Slice of Sachertorte",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 6
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Torrija con helado",
+            "description": "Torrija con helado",
+            "en": "Spanish-style French toast with ice cream",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 6
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Arroz con leche",
+            "description": "Arroz con leche",
+            "en": "Rice pudding",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 4
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Flan de Huevo",
+            "description": "Flan de Huevo",
+            "en": "Egg custard flan",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 4
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Natillas de chocolate",
+            "description": "Natillas de chocolate",
+            "en": "Chocolate custard",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 4
+              }
+            ]
+          },
+          {
+            "name": "Natillas de vainilla",
+            "description": "Natillas de vainilla",
+            "en": "Vanilla custard",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Helados",
+        "titleEn": "Ice Creams",
+        "items": [
+          {
+            "name": "Limón helado",
+            "description": "Limón helado",
+            "en": "Limón helado",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 5.8
+              }
+            ],
+            "vegetarian": true,
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Coco helado",
+            "description": "Coco helado",
+            "en": "Coco helado",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 5.8
+              }
+            ],
+            "vegetarian": true,
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Crema catalana helada",
+            "description": "Crema catalana helada",
+            "en": "Crema catalana helada",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 6
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Tarta helada al whisky",
+            "description": "Tarta helada al whisky",
+            "en": "Tarta helada al whisky",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 6
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Le Tentazione caffé",
+            "description": "Le Tentazione caffé",
+            "en": "Le Tentazione caffé",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 6
+              }
+            ],
+            "vegetarian": true,
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Le Tentazione Tiramisú",
+            "description": "Le Tentazione Tiramisú",
+            "en": "Le Tentazione Tiramisú",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 6
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Le Tentazioni Panna e Cioccolato",
+            "description": "Le Tentazioni Panna e Cioccolato",
+            "en": "Le Tentazioni Panna e Cioccolato",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 6
+              }
+            ],
+            "vegetarian": true,
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Le Tentazione Limoncello",
+            "description": "Le Tentazione Limoncello",
+            "en": "Le Tentazione Limoncello",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 6
+              }
+            ],
+            "vegetarian": true,
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Sensación de chocolate",
+            "description": "Sensación de chocolate",
+            "en": "Sensación de chocolate",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 5.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Sensación Cheesecake de Frambuesa",
+            "description": "Sensación Cheesecake de Frambuesa",
+            "en": "Sensación Cheesecake de Frambuesa",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 5.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Sensación de limón",
+            "description": "Sensación de limón",
+            "en": "Sensación de limón",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 5.5
+              }
+            ],
+            "vegetarian": true,
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Sensanción de turrón",
+            "description": "Sensanción de turrón",
+            "en": "Sensanción de turrón",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 5.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Bombones helados",
+            "description": "Bombones helados",
+            "en": "Bombones helados",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 4.8
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Milka bombón",
+            "description": "Milka bombón",
+            "en": "Milka bombón",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 3.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Milka cono",
+            "description": "Milka cono",
+            "en": "Milka cono",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 3.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Kit Kat cono",
+            "description": "Kit Kat cono",
+            "en": "Kit Kat cono",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 3.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Extreme doble vainilla",
+            "description": "Extreme doble vainilla",
+            "en": "Extreme doble vainilla",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 3.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Extreme fresa y nata",
+            "description": "Extreme fresa y nata",
+            "en": "Extreme fresa y nata",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 3.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Xtreme blueberry cheesecake",
+            "description": "Xtreme blueberry cheesecake",
+            "en": "Xtreme blueberry cheesecake",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 3.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Xtreme doble chocolate",
+            "description": "Xtreme doble chocolate",
+            "en": "Xtreme doble chocolate",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 3.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Xtreme caramelo salado",
+            "description": "Xtreme caramelo salado",
+            "en": "Xtreme caramelo salado",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 3.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Maxibon Cookie",
+            "description": "Maxibon Cookie",
+            "en": "Maxibon Cookie",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 3.5
+              }
+            ]
+          },
+          {
+            "name": "Maxibon red berry",
+            "description": "Maxibon red berry",
+            "en": "Maxibon red berry",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 3.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Maxibon nata",
+            "description": "Maxibon nata",
+            "en": "Maxibon nata",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 3.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Maxibon Waffle",
+            "description": "Maxibon Waffle",
+            "en": "Maxibon Waffle",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 3.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Maxibon Red Cheesecake",
+            "description": "Maxibon Red Cheesecake",
+            "en": "Maxibon Red Cheesecake",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 3.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Maxibon Pops",
+            "description": "Maxibon Pops",
+            "en": "Maxibon Pops",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 3.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Lotus Biscoff",
+            "description": "Lotus Biscoff",
+            "en": "Lotus Biscoff",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 3.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Oreo bombón",
+            "description": "Oreo bombón",
+            "en": "Oreo bombón",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 3.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Oreo bombones",
+            "description": "Oreo bombones",
+            "en": "Oreo bombones",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 3.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Oreo cono",
+            "description": "Oreo cono",
+            "en": "Oreo cono",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 3.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Oreo sandwich",
+            "description": "Oreo sandwich",
+            "en": "Oreo sandwich",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 3.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Toblerone",
+            "description": "Toblerone",
+            "en": "Toblerone",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 3.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Choco clack",
+            "description": "Choco clack",
+            "en": "Choco clack",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 2.5
+              }
+            ],
+            "vegetarian": true,
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Mango",
+            "description": "Mango",
+            "en": "Mango",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 2.5
+              }
+            ],
+            "vegetarian": true,
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Calipo fresa",
+            "description": "Calipo fresa",
+            "en": "Calipo fresa",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 2.5
+              }
+            ],
+            "vegetarian": true,
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Calipo limon",
+            "description": "Calipo limon",
+            "en": "Calipo limon",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 2.5
+              }
+            ],
+            "vegetarian": true,
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Fantasmikos",
+            "description": "Fantasmikos",
+            "en": "Fantasmikos",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 2.5
+              }
+            ],
+            "vegetarian": true,
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Fruit explosion",
+            "description": "Fruit explosion",
+            "en": "Fruit explosion",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 2.5
+              }
+            ],
+            "vegetarian": true,
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Mikolapiz vainilla",
+            "description": "Mikolapiz vainilla",
+            "en": "Mikolapiz vainilla",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 2.5
+              }
+            ],
+            "vegetarian": true,
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Sandwich nata",
+            "description": "Sandwich nata",
+            "en": "Sandwich nata",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 2.5
+              }
+            ],
+            "vegetarian": true
+          },
+          {
+            "name": "Pirulo tropical",
+            "description": "Pirulo tropical",
+            "en": "Pirulo tropical",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 2.5
+              }
+            ],
+            "vegetarian": true,
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Sandia",
+            "description": "Sandia",
+            "en": "Sandia",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 2.5
+              }
+            ],
+            "vegetarian": true,
+            "glutenFree": true,
+            "glutenFreeSource": "Etiqueta sin gluten en la carta del restaurante"
+          },
+          {
+            "name": "Smarties",
+            "description": "Smarties",
+            "en": "Smarties",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 2.5
+              }
+            ],
+            "vegetarian": true
+          }
+        ]
+      }
+    ],
+    "menuNotes": "Carta aportada por el usuario y precios confirmados para paellas (fideuá 12,50 €, otras 8 paellas 14,50 €), ensaladas La Manuela y César (12,80 € cada una), pizzas y grupos de postres y helados. Bebidas, vinos y cervezas excluidos. Etiquetas dietéticas solo cuando constan expresamente. No se infieren alérgenos a partir de ingredientes ni de la leyenda general; los alérgenos de la ensalada César proceden de su ficha ampliada. El icono 'eco' no se interpreta como certificación ecológica. En croquetas, tapa 3 uds., media 5 uds., ración 9 uds."
   },
   {
     "id": "taberna-gongora",
