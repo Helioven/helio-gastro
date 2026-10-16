@@ -4027,5 +4027,543 @@
         ]
       }
     ]
+  },
+  {
+    "id": "taberna-la-sal",
+    "name": "Taberna La Sal",
+    "area": "Córdoba",
+    "address": "Córdoba, España (dirección pendiente de verificar)",
+    "mealCostEur": null,
+    "priceStatus": "confirmed",
+    "checkedAt": "2026-10-16",
+    "sources": [
+      {
+        "label": "Carta publicada en web del restaurante; transcripción facilitada por usuario",
+        "url": "https://tabernalasalcordoba.com/cartas/"
+      }
+    ],
+    "menus": [
+      {
+        "service": "Tapeo",
+        "dishes": [
+          "Salmorejo Cordobés",
+          "Patatas a la brava",
+          "Chorizo al Infierno",
+          "Ensaladilla de Gambas",
+          "Lomo de Orza",
+          "Boquerones en Vinagre",
+          "Queso de Oveja",
+          "Tortilla de Camarones (unidad)",
+          "Tosta de Anchoa del Cantábrico (unidad)",
+          "Tosta de Sardina con Aguacate",
+          "Berenjenas a la miel de caña",
+          "Cartuchito de Gambas con Mayonesa de Lima",
+          "Torreznos",
+          "Gambas al Ajillo",
+          "Pulpo a la Gallega"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Salmorejo Cordobés",
+            "eur": 7.5,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Salmorejo Cordobés",
+            "eur": 9.5,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Patatas a la brava",
+            "eur": 7.5,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Patatas a la brava",
+            "eur": 9.5,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Chorizo al Infierno",
+            "eur": 7.5,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Chorizo al Infierno",
+            "eur": 10.5,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Ensaladilla de Gambas",
+            "eur": 7.5,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Ensaladilla de Gambas",
+            "eur": 10,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Lomo de Orza",
+            "eur": 8.5,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Lomo de Orza",
+            "eur": 12.5,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Boquerones en Vinagre",
+            "eur": 7,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Boquerones en Vinagre",
+            "eur": 9.5,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Queso de Oveja",
+            "eur": 10,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Queso de Oveja",
+            "eur": 13.5,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Tortilla de Camarones (unidad)",
+            "eur": 2.6,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tosta de Anchoa del Cantábrico (unidad)",
+            "eur": 2.9,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tosta de Sardina con Aguacate",
+            "eur": 3.6,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Berenjenas a la miel de caña",
+            "eur": 10,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Cartuchito de Gambas con Mayonesa de Lima",
+            "eur": 12,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Torreznos",
+            "eur": 14,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Gambas al Ajillo",
+            "eur": 13,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Pulpo a la Gallega",
+            "eur": 17.5,
+            "portion": "ración / precio indicado"
+          }
+        ]
+      },
+      {
+        "service": "Verduras y ensaladas",
+        "dishes": [
+          "Cogollitos al Ajillo",
+          "Ventresca sobre Lecho de Daditos de Tomate",
+          "Ensalada de Aguacate con Frutos del Mar",
+          "Ensalada de Rulo de Cabra y Frutos Secos",
+          "Alcachofas al Moriles",
+          "Pimientos Asados con Brandada de Bacalao y Melva",
+          "Habitas Baby con Huevo Roto",
+          "Cazuela de Cardos con Almejas y Gambas"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Cogollitos al Ajillo",
+            "eur": 8.5,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Ventresca sobre Lecho de Daditos de Tomate",
+            "eur": 11.5,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Ensalada de Aguacate con Frutos del Mar",
+            "eur": 14,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Ensalada de Rulo de Cabra y Frutos Secos",
+            "eur": 14,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Alcachofas al Moriles",
+            "eur": 14.5,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Pimientos Asados con Brandada de Bacalao y Melva",
+            "eur": 14.5,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Habitas Baby con Huevo Roto",
+            "eur": 14.5,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Cazuela de Cardos con Almejas y Gambas",
+            "eur": 16.5,
+            "portion": "ración / precio indicado"
+          }
+        ]
+      },
+      {
+        "service": "Revueltos",
+        "dishes": [
+          "Patatas con Huevo y Virutas de Jamón",
+          "Revuelto de Setas, Gulas y Gambas",
+          "Revuelto de Aguacate con Crujiente de Jamón",
+          "Revuelto de Bacalao con Patatas Paja"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Patatas con Huevo y Virutas de Jamón",
+            "eur": 11,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Revuelto de Setas, Gulas y Gambas",
+            "eur": 12.5,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Revuelto de Aguacate con Crujiente de Jamón",
+            "eur": 14,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Revuelto de Bacalao con Patatas Paja",
+            "eur": 15,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Revuelto de Aguacate con Crujiente de Jamón",
+            "eur": 13,
+            "portion": "ración / precio indicado"
+          }
+        ]
+      },
+      {
+        "service": "Croquetas y empanados",
+        "dishes": [
+          "Lagrimitas de Pollo",
+          "Croquetas de la Abuela",
+          "Croquetas de Rabo de Toro",
+          "Flamenquín Cordobés"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Lagrimitas de Pollo",
+            "eur": 8,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Lagrimitas de Pollo",
+            "eur": 11,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Croquetas de la Abuela",
+            "eur": 8,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Croquetas de la Abuela",
+            "eur": 12,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Croquetas de Rabo de Toro",
+            "eur": 9,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Croquetas de Rabo de Toro",
+            "eur": 14,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Flamenquín Cordobés",
+            "eur": 13,
+            "portion": "ración / precio indicado"
+          }
+        ]
+      },
+      {
+        "service": "Marisco",
+        "dishes": [
+          "Gamba Blanca",
+          "Mejillones al Vapor",
+          "Almejas de Carril"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Gamba Blanca",
+            "eur": 11,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Gamba Blanca",
+            "eur": 18,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Mejillones al Vapor",
+            "eur": 11,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Almejas de Carril",
+            "eur": 14.5,
+            "portion": "ración / precio indicado"
+          }
+        ]
+      },
+      {
+        "service": "Pescaito frito",
+        "dishes": [
+          "Boquerones",
+          "Cazón en Adobo",
+          "Boquerón al Limón",
+          "Calamares",
+          "Bacalao",
+          "Chanquetitos con Huevos Fritos",
+          "Choco Salvaje Frito"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Boquerones",
+            "eur": 7,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Boquerones",
+            "eur": 10,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Cazón en Adobo",
+            "eur": 7.5,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Cazón en Adobo",
+            "eur": 10.5,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Boquerón al Limón",
+            "eur": 8,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Boquerón al Limón",
+            "eur": 12,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Calamares",
+            "eur": 8,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Calamares",
+            "eur": 12,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Bacalao",
+            "eur": 8.5,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Bacalao",
+            "eur": 12.5,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Chanquetitos con Huevos Fritos",
+            "eur": 13,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Choco Salvaje Frito",
+            "eur": 15.5,
+            "portion": "ración / precio indicado"
+          }
+        ]
+      },
+      {
+        "service": "Pescado a la plancha",
+        "dishes": [
+          "Choco Salvaje a la Plancha",
+          "Bacalao Confitado sobre Boronía de Pisto",
+          "Pulpo a la Brasa con Parmentier de Patata y Alioli de Ajo Negro",
+          "Bacalao La Sal en su Salsa con Gambas y Almejas"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Choco Salvaje a la Plancha",
+            "eur": 15.5,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Bacalao Confitado sobre Boronía de Pisto",
+            "eur": 18.5,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Pulpo a la Brasa con Parmentier de Patata y Alioli de Ajo Negro",
+            "eur": 22,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Bacalao La Sal en su Salsa con Gambas y Almejas",
+            "eur": 22,
+            "portion": "ración / precio indicado"
+          }
+        ]
+      },
+      {
+        "service": "Carnes y guisos",
+        "dishes": [
+          "Callos Caseros",
+          "Puntas de Solomillo al Jerez",
+          "Rabo de Toro",
+          "Churrasco de dos Salsas",
+          "Presa Ibérica",
+          "Chuletitas de Cordero Lechal",
+          "Entrecot o Chuletón de Ternera 45 días de maduración (precio por 100 g; total según peso)"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Callos Caseros",
+            "eur": 9,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Callos Caseros",
+            "eur": 14.5,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Puntas de Solomillo al Jerez",
+            "eur": 13.5,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Rabo de Toro",
+            "eur": 16.5,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Churrasco de dos Salsas",
+            "eur": 15.5,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Presa Ibérica",
+            "eur": 19,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Chuletitas de Cordero Lechal",
+            "eur": 19,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Entrecot o Chuletón de Ternera 45 días de maduración (precio por 100 g; total según peso)",
+            "eur": 7,
+            "portion": "por 100 g (precio final según peso)"
+          }
+        ]
+      },
+      {
+        "service": "Arroces (mínimo 2 personas; precios por persona)",
+        "dishes": [
+          "Cordobés (Carne, Espárragos y Setas)",
+          "De Marisco",
+          "De Bogavante"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Cordobés (Carne, Espárragos y Setas)",
+            "eur": 14,
+            "portion": "por persona (mínimo 2)"
+          },
+          {
+            "dish": "De Marisco",
+            "eur": 18.5,
+            "portion": "por persona (mínimo 2)"
+          },
+          {
+            "dish": "De Bogavante",
+            "eur": 25,
+            "portion": "por persona (mínimo 2)"
+          }
+        ]
+      },
+      {
+        "service": "Postres",
+        "dishes": [
+          "Pudin",
+          "Milhoja de Crema",
+          "Tocino de Cielo",
+          "Tarta de Queso",
+          "Brownie con Helado de Vainilla"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Pudin",
+            "eur": 4.5,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Milhoja de Crema",
+            "eur": 4.5,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Tocino de Cielo",
+            "eur": 5.5,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Tarta de Queso",
+            "eur": 6,
+            "portion": "ración / precio indicado"
+          },
+          {
+            "dish": "Brownie con Helado de Vainilla",
+            "eur": 6.5,
+            "portion": "ración / precio indicado"
+          }
+        ]
+      }
+    ],
+    "menuSourceNote": "Precios facilitados mediante transcripción de la carta web. En Revueltos, 'Revuelto de Aguacate con Crujiente de Jamón' figura con 14 € y 13 €; ambos valores se conservan pendientes de aclaración. Vinos pendientes. Entrecot/chuletón: 7 €/100 g, precio final según peso."
   }
 ]
