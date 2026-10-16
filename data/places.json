@@ -46,26 +46,102 @@
     "address": "Calle Tundidores, 3, Córdoba",
     "mealCostEur": null,
     "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "checkedAt": "2026-10-16",
     "sources": [
       {
-        "label": "Carta oficial sin precios",
+        "label": "Carta oficial de Taberna Salinas (platos y postres; sin precios)",
         "url": "https://www.tabernasalinas.com/la-carta/"
       }
     ],
     "menus": [
       {
-        "service": "general",
+        "service": "Entrantes, fríos y ensaladas",
         "dishes": [
-          "Flamenquín de jamón",
-          "Rabo de toro",
-          "Salmorejo cordobés",
-          "Berenjenas fritas sin miel",
-          "Carrillada ibérica"
+          "Gazpacho – vaso",
+          "Ajo blanco – vaso con uvas pasas",
+          "Jamón serrano del Valle",
+          "Queso de oveja de Zuhetos",
+          "Ensalada cordobesa – picadillo cordobés",
+          "Ensalada de col con ajitos fritos y salmón ahumado",
+          "Naranjas picás con aceite y bacalao",
+          "Melón con jamón",
+          "Plato de tomate aliñado de la Vega de Alcolea",
+          "Salmorejo cordobés"
+        ],
+        "dishPrices": []
+      },
+      {
+        "service": "Guisos y carnes",
+        "dishes": [
+          "Albóndigas en caldo del puchero y jamón",
+          "Potaje de garbanzos con manitas",
+          "Pisto Tundidores con huevos fritos",
+          "Patatas rellenas de carne",
+          "Lomo en salsa especial con avellanas cordobesas",
+          "Chorizo casero a la sartén",
+          "Morcillas caseras",
+          "Rabo de toro estofado al estilo cordobés",
+          "Cochinillo frito del Valle con ajitos fritos",
+          "Callos a la antigua",
+          "Manitas de cerdo",
+          "Chuletas de cordero",
+          "Carne con tomate a la cordobesa",
+          "Carrillada ibérica al estilo de la taberna"
+        ],
+        "dishPrices": []
+      },
+      {
+        "service": "Verduras, huevos y frituras",
+        "dishes": [
+          "Cazuela de espárragos trigueros con huevo escalfado",
+          "Espinacas con garbanzos",
+          "Habichuelas con rabo",
+          "Revuelto Salinas",
+          "Revuelto de setas con salmón",
+          "Huevo, lomo, chorizo y patatas",
+          "Croquetas caseras de espinacas con piñones",
+          "Croquetas caseras de pollo y jamón",
+          "Berenjenas fritas con o sin miel de caña",
+          "Setas a la plancha",
+          "Tortilla de la taberna",
+          "Sangre encebollada",
+          "Flamenquín de jamón al estilo de Córdoba"
+        ],
+        "dishPrices": []
+      },
+      {
+        "service": "Pescados y mariscos",
+        "dishes": [
+          "Bacalao rebozado",
+          "Adobo cordobés (japuta, rosada)",
+          "Boquerones en vinagre",
+          "Boquerones fritos adobados",
+          "Calamares fritos o a la plancha",
+          "Gambas rebozadas",
+          "Lenguado a la plancha a mi estilo",
+          "Filetitos de lenguado fritos en taquitos"
+        ],
+        "dishPrices": []
+      },
+      {
+        "service": "Postres",
+        "dishes": [
+          "Natillas cordobesas",
+          "Tarta de queso",
+          "Zumo de naranja natural",
+          "Bombones de helado",
+          "Naranja preparada con azúcar y canela",
+          "Tocino de cielo",
+          "Pastel cordobés",
+          "Flan casero de huevo",
+          "Arroz con leche",
+          "Pastel de chocolate",
+          "Melón dulce de Moltalbán"
         ],
         "dishPrices": []
       }
-    ]
+    ],
+    "menuSourceNote": "Listado de platos y postres transcrito por el usuario de la web oficial y respaldado por captura. Sin precios publicados en el material aportado. Ortografías dudosas del original: 'Zuhetos' y 'Moltalbán', pendientes de contrastar. Se separaron morcillas y rabo de toro, que venían unidos en el texto."
   },
   {
     "id": "bodegas-mezquita-cespedes",
