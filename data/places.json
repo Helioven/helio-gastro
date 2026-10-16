@@ -15808,6 +15808,48 @@
             "portion": "Ración"
           }
         ]
+      },
+      {
+        "service": "Pescados",
+        "dishes": [
+          "Japuta en adobo",
+          "Calamares fritos",
+          "Chanquetes",
+          "Chanquetes al estilo del fundador",
+          "Bacalao a la cordobesa"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Japuta en adobo",
+            "eur": 8.9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Japuta en adobo",
+            "eur": 11.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Calamares fritos",
+            "eur": 11.9,
+            "portion": "Formato no indicado"
+          },
+          {
+            "dish": "Chanquetes",
+            "eur": 10.9,
+            "portion": "Formato no indicado"
+          },
+          {
+            "dish": "Chanquetes al estilo del fundador",
+            "eur": 15.9,
+            "portion": "Formato no indicado"
+          },
+          {
+            "dish": "Bacalao a la cordobesa",
+            "eur": 13.9,
+            "portion": "Formato no indicado"
+          }
+        ]
       }
     ],
     "menuSections": [
@@ -16009,6 +16051,65 @@
             "description": "Tiras de pollo rebozadas y crujientes, servidas con patatas fritas"
           }
         ]
+      },
+      {
+        "title": "Pescados",
+        "items": [
+          {
+            "name": "Japuta en adobo",
+            "prices": [
+              {
+                "eur": 8.9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 11.9,
+                "portion": "Ración"
+              }
+            ],
+            "description": "Pescado frito marinado al estilo andaluz"
+          },
+          {
+            "name": "Calamares fritos",
+            "prices": [
+              {
+                "eur": 11.9,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "Calamares rebozados y fritos al estilo andaluz acompañados de mayonesa y alioli casero"
+          },
+          {
+            "name": "Chanquetes",
+            "prices": [
+              {
+                "eur": 10.9,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "Pescadito frito crujiente acompañado de huevo frito"
+          },
+          {
+            "name": "Chanquetes al estilo del fundador",
+            "prices": [
+              {
+                "eur": 15.9,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "Receta de Alberto Rosales: chanquetes fritos con huevo frito y asadillo de pimientos"
+          },
+          {
+            "name": "Bacalao a la cordobesa",
+            "prices": [
+              {
+                "eur": 13.9,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "Lomo de bacalao al horno sobre patatas panaderas y cubierto con pisto casero"
+          }
+        ]
       }
     ],
     "extras": [
@@ -16030,7 +16131,7 @@
         "eur": 1.5
       }
     ],
-    "menuSourceNote": "Transcripción parcial de la carta facilitada en texto por el usuario el 16/10/2026: Entrantes fríos y ensaladas, ocho platos y cuatro suplementos. Precios de carta no verificados en tiempo real; fecha de edición no indicada. Secciones restantes pendientes. Sin fotografías de terceros. Sección Entrantes calientes recibida del usuario el 16/10/2026: siete platos y trece importes; huevos rotos sin tamaño de porción indicado."
+    "menuSourceNote": "Transcripción parcial de la carta facilitada en texto por el usuario el 16/10/2026: Entrantes fríos y ensaladas, ocho platos y cuatro suplementos. Precios de carta no verificados en tiempo real; fecha de edición no indicada. Secciones restantes pendientes. Sin fotografías de terceros. Sección Entrantes calientes recibida del usuario el 16/10/2026: siete platos y trece importes; huevos rotos sin tamaño de porción indicado. Sección Pescados facilitada por el usuario el 16/10/2026: cinco platos, seis precios. Solo la japuta presenta medias raciones y raciones expresas; los restantes formatos no se indican."
   },
   {
     "id": "bodegas-campos",
