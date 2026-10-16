@@ -1191,8 +1191,8 @@
     "area": "Judería · Mezquita",
     "address": "Calle Céspedes, 12, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "priceStatus": "confirmed",
+    "checkedAt": "2026-10-16",
     "sources": [
       {
         "label": "Carta oficial con precios",
@@ -1209,29 +1209,1497 @@
     ],
     "menus": [
       {
-        "service": "general",
+        "service": "Entrantes",
         "dishes": [
-          "Flamenquín cordobés",
-          "Salmorejo cordobés",
-          "Rabo de toro",
-          "Mazamorra cordobesa"
+          "Queso curado en aceite de oliva virgen extra, elaborado con leche pasteurizada",
+          "Selección de quesos cordobeses Los Balanchares con membrillo de Puente Genil",
+          "Jamón de bellota 100 % ibérico del Valle de los Pedroches «Pura Dehesa»",
+          "Sopa Maimónides",
+          "Ensalada mediterránea con vinagreta de tomate",
+          "Ensalada de pollo crujiente con queso de cabra Los Balanchares y bacon",
+          "Remojón (ensalada de naranja, bacalao y almendras)",
+          "Ensalada de burrata con cogollos de lechuga a la cordobesa e higos confitados",
+          "Ensalada de quesos Los Balanchares, peras al amontillado y membrillo",
+          "Canasta de pan de pueblo con regañá y AOVE de Córdoba",
+          "Aceite de oliva virgen extra de Córdoba"
         ],
         "dishPrices": [
           {
-            "dish": "Flamenquín cordobés con patatas",
-            "eur": 17.95
+            "dish": "Queso curado en aceite de oliva virgen extra, elaborado con leche pasteurizada",
+            "eur": 9.3,
+            "portion": "media 90 g"
           },
           {
-            "dish": "Salmorejo cordobés (tapa)",
-            "eur": 5.75
+            "dish": "Queso curado en aceite de oliva virgen extra, elaborado con leche pasteurizada",
+            "eur": 16,
+            "portion": "ración 180 g"
           },
           {
-            "dish": "Salmorejo cordobés (media)",
-            "eur": 9.4
+            "dish": "Selección de quesos cordobeses Los Balanchares con membrillo de Puente Genil",
+            "eur": 11.95,
+            "portion": "media 95 g"
+          },
+          {
+            "dish": "Selección de quesos cordobeses Los Balanchares con membrillo de Puente Genil",
+            "eur": 21.8,
+            "portion": "ración 250 g"
+          },
+          {
+            "dish": "Jamón de bellota 100 % ibérico del Valle de los Pedroches «Pura Dehesa»",
+            "eur": 19.9,
+            "portion": "media 60 g"
+          },
+          {
+            "dish": "Jamón de bellota 100 % ibérico del Valle de los Pedroches «Pura Dehesa»",
+            "eur": 29.9,
+            "portion": "ración 100 g"
+          },
+          {
+            "dish": "Sopa Maimónides",
+            "eur": 6.75,
+            "portion": "precio único"
+          },
+          {
+            "dish": "Ensalada mediterránea con vinagreta de tomate",
+            "eur": 7.9,
+            "portion": "media"
+          },
+          {
+            "dish": "Ensalada mediterránea con vinagreta de tomate",
+            "eur": 12.6,
+            "portion": "ración"
+          },
+          {
+            "dish": "Ensalada de pollo crujiente con queso de cabra Los Balanchares y bacon",
+            "eur": 9,
+            "portion": "media"
+          },
+          {
+            "dish": "Ensalada de pollo crujiente con queso de cabra Los Balanchares y bacon",
+            "eur": 14.35,
+            "portion": "ración"
+          },
+          {
+            "dish": "Remojón (ensalada de naranja, bacalao y almendras)",
+            "eur": 16.25,
+            "portion": "precio único"
+          },
+          {
+            "dish": "Ensalada de burrata con cogollos de lechuga a la cordobesa e higos confitados",
+            "eur": 15.85,
+            "portion": "precio único"
+          },
+          {
+            "dish": "Ensalada de quesos Los Balanchares, peras al amontillado y membrillo",
+            "eur": 15.2,
+            "portion": "precio único"
+          },
+          {
+            "dish": "Canasta de pan de pueblo con regañá y AOVE de Córdoba",
+            "eur": 3,
+            "portion": "con aceite"
+          },
+          {
+            "dish": "Canasta de pan de pueblo con regañá y AOVE de Córdoba",
+            "eur": 2.9,
+            "portion": "sin aceite"
+          },
+          {
+            "dish": "Aceite de oliva virgen extra de Córdoba",
+            "eur": 0.9,
+            "portion": "degustación"
+          },
+          {
+            "dish": "Aceite de oliva virgen extra de Córdoba",
+            "eur": 8.25,
+            "portion": "botella 50 cl"
+          }
+        ]
+      },
+      {
+        "service": "Tapear",
+        "dishes": [
+          "Salmorejo cordobés emulsionado con aceite de oliva, jamón ibérico y huevo",
+          "Nuestra ensaladilla de atún y pulpo",
+          "Mazamorra cordobesa: la antepasada blanca del salmorejo",
+          "Tortilla de patatas con cebolla y alioli de ajo negro de Montalbán",
+          "Guiso tradicional del día",
+          "Patatas bravas con sofrito MUY PICANTE y alioli",
+          "Tortillitas de camarones con alioli de tinta de calamar (dos unidades)",
+          "Berenjenas califales rebozadas con reducción de Pedro Ximénez y ajonjolí",
+          "Lagrimitas de pollo con mayonesa de curry",
+          "Croquetas de jamón del puchero de la abuela con mayonesa de huevo frito",
+          "Croquetas de rabo de toro con mayonesa de su salsa",
+          "Croquetas de boletus con mayonesa de trufa",
+          "Albóndigas mozárabes en salsa de almendras y azafrán"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Salmorejo cordobés emulsionado con aceite de oliva, jamón ibérico y huevo",
+            "eur": 5.75,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Salmorejo cordobés emulsionado con aceite de oliva, jamón ibérico y huevo",
+            "eur": 9.4,
+            "portion": "media"
+          },
+          {
+            "dish": "Nuestra ensaladilla de atún y pulpo",
+            "eur": 5.2,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Nuestra ensaladilla de atún y pulpo",
+            "eur": 8.35,
+            "portion": "media"
+          },
+          {
+            "dish": "Mazamorra cordobesa: la antepasada blanca del salmorejo",
+            "eur": 6.15,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Mazamorra cordobesa: la antepasada blanca del salmorejo",
+            "eur": 10.15,
+            "portion": "media"
+          },
+          {
+            "dish": "Tortilla de patatas con cebolla y alioli de ajo negro de Montalbán",
+            "eur": 6.95,
+            "portion": "precio único"
+          },
+          {
+            "dish": "Guiso tradicional del día",
+            "eur": 7.65,
+            "portion": "precio único"
+          },
+          {
+            "dish": "Patatas bravas con sofrito MUY PICANTE y alioli",
+            "eur": 4.95,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Patatas bravas con sofrito MUY PICANTE y alioli",
+            "eur": 7.85,
+            "portion": "media"
+          },
+          {
+            "dish": "Patatas bravas con sofrito MUY PICANTE y alioli",
+            "eur": 12.55,
+            "portion": "ración"
+          },
+          {
+            "dish": "Tortillitas de camarones con alioli de tinta de calamar (dos unidades)",
+            "eur": 5.7,
+            "portion": "2 unidades"
+          },
+          {
+            "dish": "Berenjenas califales rebozadas con reducción de Pedro Ximénez y ajonjolí",
+            "eur": 5.5,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Berenjenas califales rebozadas con reducción de Pedro Ximénez y ajonjolí",
+            "eur": 9.4,
+            "portion": "media"
+          },
+          {
+            "dish": "Berenjenas califales rebozadas con reducción de Pedro Ximénez y ajonjolí",
+            "eur": 15.4,
+            "portion": "ración"
+          },
+          {
+            "dish": "Lagrimitas de pollo con mayonesa de curry",
+            "eur": 6.1,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Lagrimitas de pollo con mayonesa de curry",
+            "eur": 10.75,
+            "portion": "media"
+          },
+          {
+            "dish": "Lagrimitas de pollo con mayonesa de curry",
+            "eur": 16.9,
+            "portion": "ración"
+          },
+          {
+            "dish": "Croquetas de jamón del puchero de la abuela con mayonesa de huevo frito",
+            "eur": 5.95,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Croquetas de jamón del puchero de la abuela con mayonesa de huevo frito",
+            "eur": 10.45,
+            "portion": "media"
+          },
+          {
+            "dish": "Croquetas de jamón del puchero de la abuela con mayonesa de huevo frito",
+            "eur": 16.45,
+            "portion": "ración"
+          },
+          {
+            "dish": "Croquetas de rabo de toro con mayonesa de su salsa",
+            "eur": 5.95,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Croquetas de rabo de toro con mayonesa de su salsa",
+            "eur": 10.45,
+            "portion": "media"
+          },
+          {
+            "dish": "Croquetas de rabo de toro con mayonesa de su salsa",
+            "eur": 16.45,
+            "portion": "ración"
+          },
+          {
+            "dish": "Croquetas de boletus con mayonesa de trufa",
+            "eur": 6.1,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Croquetas de boletus con mayonesa de trufa",
+            "eur": 10.6,
+            "portion": "media"
+          },
+          {
+            "dish": "Croquetas de boletus con mayonesa de trufa",
+            "eur": 16.75,
+            "portion": "ración"
+          },
+          {
+            "dish": "Albóndigas mozárabes en salsa de almendras y azafrán",
+            "eur": 5.95,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Albóndigas mozárabes en salsa de almendras y azafrán",
+            "eur": 10.45,
+            "portion": "media"
+          },
+          {
+            "dish": "Albóndigas mozárabes en salsa de almendras y azafrán",
+            "eur": 16.45,
+            "portion": "ración"
+          }
+        ]
+      },
+      {
+        "service": "Compartir",
+        "dishes": [
+          "Surtido de croquetas caseras (jamón, boletus y rabo de toro)",
+          "Bacalao «Dorao», plato típico portugués",
+          "Sartenada de pisto tradicional cordobés con huevos fritos",
+          "Risotto de rabo de toro y queso curado de oveja",
+          "Risotto de boletus confitados y setas de temporada",
+          "Huevos rotos con patatas, jamón ibérico y cebolla crujiente"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Surtido de croquetas caseras (jamón, boletus y rabo de toro)",
+            "eur": 10.6,
+            "portion": "media"
+          },
+          {
+            "dish": "Surtido de croquetas caseras (jamón, boletus y rabo de toro)",
+            "eur": 16.75,
+            "portion": "ración"
+          },
+          {
+            "dish": "Bacalao «Dorao», plato típico portugués",
+            "eur": 17.35,
+            "portion": "precio único"
+          },
+          {
+            "dish": "Sartenada de pisto tradicional cordobés con huevos fritos",
+            "eur": 13.95,
+            "portion": "precio único"
+          },
+          {
+            "dish": "Risotto de rabo de toro y queso curado de oveja",
+            "eur": 16.75,
+            "portion": "precio único"
+          },
+          {
+            "dish": "Risotto de boletus confitados y setas de temporada",
+            "eur": 14.65,
+            "portion": "precio único"
+          },
+          {
+            "dish": "Huevos rotos con patatas, jamón ibérico y cebolla crujiente",
+            "eur": 16.45,
+            "portion": "precio único"
+          }
+        ]
+      },
+      {
+        "service": "Pescado",
+        "dishes": [
+          "Bacalao frito con pimientos de Padrón",
+          "Atún en salsa de mojito con mango y alcaparras",
+          "Lomo de bacalao confitado en AOVE con pisto cordobés",
+          "Calamares fritos con mayonesa de limón",
+          "Chipirones salteados con ensalada de col"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Bacalao frito con pimientos de Padrón",
+            "eur": 8.35,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Bacalao frito con pimientos de Padrón",
+            "eur": 13.85,
+            "portion": "media"
+          },
+          {
+            "dish": "Bacalao frito con pimientos de Padrón",
+            "eur": 21.8,
+            "portion": "ración"
+          },
+          {
+            "dish": "Atún en salsa de mojito con mango y alcaparras",
+            "eur": 7.85,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Atún en salsa de mojito con mango y alcaparras",
+            "eur": 12.8,
+            "portion": "media"
+          },
+          {
+            "dish": "Atún en salsa de mojito con mango y alcaparras",
+            "eur": 21.75,
+            "portion": "ración"
+          },
+          {
+            "dish": "Lomo de bacalao confitado en AOVE con pisto cordobés",
+            "eur": 26,
+            "portion": "precio único"
+          },
+          {
+            "dish": "Calamares fritos con mayonesa de limón",
+            "eur": 6.1,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Calamares fritos con mayonesa de limón",
+            "eur": 10.6,
+            "portion": "media"
+          },
+          {
+            "dish": "Calamares fritos con mayonesa de limón",
+            "eur": 16.75,
+            "portion": "ración"
+          },
+          {
+            "dish": "Chipirones salteados con ensalada de col",
+            "eur": 6.1,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Chipirones salteados con ensalada de col",
+            "eur": 10.6,
+            "portion": "media"
+          },
+          {
+            "dish": "Chipirones salteados con ensalada de col",
+            "eur": 16.75,
+            "portion": "ración"
+          }
+        ]
+      },
+      {
+        "service": "Carnes",
+        "dishes": [
+          "Carrillada de cerdo en salsa de vino oloroso",
+          "Tajín de pollo andalusí con arroz basmati, calabaza y pasas",
+          "Flamenquín cordobés de lomo y jamón con patatas fritas",
+          "Tajín de cordero sefardí a la miel con frutos secos y pasas con cuscús",
+          "Rabo de toro a la cordobesa",
+          "Solomillo de cerdo ibérico con salsa de boletus"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Carrillada de cerdo en salsa de vino oloroso",
+            "eur": 6.55,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Carrillada de cerdo en salsa de vino oloroso",
+            "eur": 10.95,
+            "portion": "media"
+          },
+          {
+            "dish": "Carrillada de cerdo en salsa de vino oloroso",
+            "eur": 17.65,
+            "portion": "ración"
+          },
+          {
+            "dish": "Tajín de pollo andalusí con arroz basmati, calabaza y pasas",
+            "eur": 8.95,
+            "portion": "precio único"
+          },
+          {
+            "dish": "Flamenquín cordobés de lomo y jamón con patatas fritas",
+            "eur": 17.95,
+            "portion": "precio único"
+          },
+          {
+            "dish": "Tajín de cordero sefardí a la miel con frutos secos y pasas con cuscús",
+            "eur": 25.6,
+            "portion": "precio único"
+          },
+          {
+            "dish": "Rabo de toro a la cordobesa",
+            "eur": 20.5,
+            "portion": "precio único"
+          },
+          {
+            "dish": "Solomillo de cerdo ibérico con salsa de boletus",
+            "eur": 21.95,
+            "portion": "precio único"
+          }
+        ]
+      },
+      {
+        "service": "Postres",
+        "dishes": [
+          "Naranja a la antigua con aceite de oliva, azúcar y canela",
+          "Pastel cordobés (hojaldre relleno de cabello de ángel con azúcar y canela)",
+          "Tarta de galletas y chocolate con crema de vainilla al caramelo",
+          "Torrija con sopa de coco y helado de canela",
+          "Tarta de la abuela Pilar con queso semicurado Los Balanchares e higo confitado",
+          "Coulant con helado de vainilla"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Naranja a la antigua con aceite de oliva, azúcar y canela",
+            "eur": 5.5,
+            "portion": "precio único"
+          },
+          {
+            "dish": "Pastel cordobés (hojaldre relleno de cabello de ángel con azúcar y canela)",
+            "eur": 6.55,
+            "portion": "precio único"
+          },
+          {
+            "dish": "Tarta de galletas y chocolate con crema de vainilla al caramelo",
+            "eur": 6.85,
+            "portion": "precio único"
+          },
+          {
+            "dish": "Torrija con sopa de coco y helado de canela",
+            "eur": 6.95,
+            "portion": "precio único"
+          },
+          {
+            "dish": "Tarta de la abuela Pilar con queso semicurado Los Balanchares e higo confitado",
+            "eur": 7.15,
+            "portion": "precio único"
+          },
+          {
+            "dish": "Coulant con helado de vainilla",
+            "eur": 6.95,
+            "portion": "precio único"
           }
         ]
       }
-    ]
+    ],
+    "menuSections": [
+      {
+        "title": "Entrantes",
+        "titleEn": "Starters",
+        "items": [
+          {
+            "name": "Queso curado en aceite de oliva virgen extra, elaborado con leche pasteurizada",
+            "description": "Queso curado en aceite de oliva virgen extra, elaborado con leche pasteurizada",
+            "en": "Aged cheese in extra virgin olive oil, made from pasteurised milk",
+            "prices": [
+              {
+                "label": "media 90 g",
+                "eur": 9.3
+              },
+              {
+                "label": "ración 180 g",
+                "eur": 16
+              }
+            ],
+            "allergens": "Leche",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": true,
+            "houseClassic": false,
+            "isExtra": false,
+            "note": "Listed under 'Sin gluten' by the restaurant; verify suitability and cross-contact directly, especially where gluten traces are declared."
+          },
+          {
+            "name": "Selección de quesos cordobeses Los Balanchares con membrillo de Puente Genil",
+            "description": "Selección de quesos cordobeses Los Balanchares con membrillo de Puente Genil",
+            "en": "Selection of Los Balanchares cheeses from Córdoba with Puente Genil quince paste",
+            "prices": [
+              {
+                "label": "media 95 g",
+                "eur": 11.95
+              },
+              {
+                "label": "ración 250 g",
+                "eur": 21.8
+              }
+            ],
+            "allergens": "Leche, frutos de cáscara",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": true,
+            "houseClassic": false,
+            "isExtra": false,
+            "note": "Listed under 'Sin gluten' by the restaurant; verify suitability and cross-contact directly, especially where gluten traces are declared."
+          },
+          {
+            "name": "Jamón de bellota 100 % ibérico del Valle de los Pedroches «Pura Dehesa»",
+            "description": "Jamón de bellota 100 % ibérico del Valle de los Pedroches «Pura Dehesa»",
+            "en": "100% Iberian acorn-fed ham from Los Pedroches, Pura Dehesa",
+            "prices": [
+              {
+                "label": "media 60 g",
+                "eur": 19.9
+              },
+              {
+                "label": "ración 100 g",
+                "eur": 29.9
+              }
+            ],
+            "allergens": "Ninguno declarado",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": true,
+            "houseClassic": false,
+            "isExtra": false,
+            "note": "Listed under 'Sin gluten' by the restaurant; verify suitability and cross-contact directly, especially where gluten traces are declared."
+          },
+          {
+            "name": "Sopa Maimónides",
+            "description": "Sopa Maimónides",
+            "en": "Maimonides chicken and spice soup",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 6.75
+              }
+            ],
+            "allergens": "Huevo, gluten",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": false,
+            "houseClassic": false,
+            "isExtra": false
+          },
+          {
+            "name": "Ensalada mediterránea con vinagreta de tomate",
+            "description": "Ensalada mediterránea con vinagreta de tomate",
+            "en": "Mediterranean salad with tomato vinaigrette",
+            "prices": [
+              {
+                "label": "media",
+                "eur": 7.9
+              },
+              {
+                "label": "ración",
+                "eur": 12.6
+              }
+            ],
+            "allergens": "Huevo, pescado",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": true,
+            "houseClassic": false,
+            "isExtra": false,
+            "note": "Listed under 'Sin gluten' by the restaurant; verify suitability and cross-contact directly, especially where gluten traces are declared."
+          },
+          {
+            "name": "Ensalada de pollo crujiente con queso de cabra Los Balanchares y bacon",
+            "description": "Ensalada de pollo crujiente con queso de cabra Los Balanchares y bacon",
+            "en": "Crispy chicken salad with Los Balanchares goat's cheese and bacon",
+            "prices": [
+              {
+                "label": "media",
+                "eur": 9
+              },
+              {
+                "label": "ración",
+                "eur": 14.35
+              }
+            ],
+            "allergens": "Gluten, huevo, leche, mostaza, sulfitos",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": false,
+            "houseClassic": false,
+            "isExtra": false
+          },
+          {
+            "name": "Remojón (ensalada de naranja, bacalao y almendras)",
+            "description": "Remojón (ensalada de naranja, bacalao y almendras)",
+            "en": "Traditional orange, salt cod and almond salad",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 16.25
+              }
+            ],
+            "allergens": "Huevo, pescado, frutos de cáscara",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": true,
+            "houseClassic": true,
+            "isExtra": false,
+            "note": "Listed under 'Sin gluten' by the restaurant; verify suitability and cross-contact directly, especially where gluten traces are declared."
+          },
+          {
+            "name": "Ensalada de burrata con cogollos de lechuga a la cordobesa e higos confitados",
+            "description": "Ensalada de burrata con cogollos de lechuga a la cordobesa e higos confitados",
+            "en": "Burrata salad with Cordoban-style lettuce hearts and candied figs",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 15.85
+              }
+            ],
+            "allergens": "Frutos de cáscara, leche",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": true,
+            "houseClassic": false,
+            "isExtra": false,
+            "note": "Listed under 'Sin gluten' by the restaurant; verify suitability and cross-contact directly, especially where gluten traces are declared."
+          },
+          {
+            "name": "Ensalada de quesos Los Balanchares, peras al amontillado y membrillo",
+            "description": "Ensalada de quesos Los Balanchares, peras al amontillado y membrillo",
+            "en": "Los Balanchares cheese salad with amontillado pears and quince paste",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 15.2
+              }
+            ],
+            "allergens": "Soja, leche",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": true,
+            "houseClassic": false,
+            "isExtra": false,
+            "note": "Listed under 'Sin gluten' by the restaurant; verify suitability and cross-contact directly, especially where gluten traces are declared."
+          },
+          {
+            "name": "Canasta de pan de pueblo con regañá y AOVE de Córdoba",
+            "description": "Canasta de pan de pueblo con regañá y AOVE de Córdoba",
+            "en": "Rustic bread basket with crispy regañá flatbread and Córdoba extra virgin olive oil",
+            "prices": [
+              {
+                "label": "con aceite",
+                "eur": 3
+              },
+              {
+                "label": "sin aceite",
+                "eur": 2.9
+              }
+            ],
+            "allergens": "Gluten",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": false,
+            "houseClassic": false,
+            "isExtra": false
+          },
+          {
+            "name": "Aceite de oliva virgen extra de Córdoba",
+            "description": "Aceite de oliva virgen extra de Córdoba",
+            "en": "Córdoba extra virgin olive oil",
+            "prices": [
+              {
+                "label": "degustación",
+                "eur": 0.9
+              },
+              {
+                "label": "botella 50 cl",
+                "eur": 8.25
+              }
+            ],
+            "allergens": "Ninguno declarado",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": false,
+            "houseClassic": false,
+            "isExtra": false
+          }
+        ]
+      },
+      {
+        "title": "Tapear",
+        "titleEn": "Tapas",
+        "items": [
+          {
+            "name": "Salmorejo cordobés emulsionado con aceite de oliva, jamón ibérico y huevo",
+            "description": "Salmorejo cordobés emulsionado con aceite de oliva, jamón ibérico y huevo",
+            "en": "Cordoban salmorejo with olive oil, Iberian ham and egg",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 5.75
+              },
+              {
+                "label": "media",
+                "eur": 9.4
+              }
+            ],
+            "allergens": "Gluten, huevo",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": false,
+            "houseClassic": true,
+            "isExtra": false
+          },
+          {
+            "name": "Nuestra ensaladilla de atún y pulpo",
+            "description": "Nuestra ensaladilla de atún y pulpo",
+            "en": "House potato salad with tuna and octopus",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 5.2
+              },
+              {
+                "label": "media",
+                "eur": 8.35
+              }
+            ],
+            "allergens": "Huevo, pescado, crustáceos, moluscos",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": false,
+            "houseClassic": false,
+            "isExtra": false
+          },
+          {
+            "name": "Mazamorra cordobesa: la antepasada blanca del salmorejo",
+            "description": "Mazamorra cordobesa: la antepasada blanca del salmorejo",
+            "en": "Cordoban almond mazamorra, the white predecessor of salmorejo",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 6.15
+              },
+              {
+                "label": "media",
+                "eur": 10.15
+              }
+            ],
+            "allergens": "Gluten, leche, frutos de cáscara",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": false,
+            "houseClassic": true,
+            "isExtra": false
+          },
+          {
+            "name": "Tortilla de patatas con cebolla y alioli de ajo negro de Montalbán",
+            "description": "Tortilla de patatas con cebolla y alioli de ajo negro de Montalbán",
+            "en": "Spanish potato omelette with onion and Montalbán black garlic aioli",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 6.95
+              }
+            ],
+            "allergens": "Huevo, mostaza",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": true,
+            "houseClassic": false,
+            "isExtra": false,
+            "note": "Listed under 'Sin gluten' by the restaurant; verify suitability and cross-contact directly, especially where gluten traces are declared."
+          },
+          {
+            "name": "Guiso tradicional del día",
+            "description": "Guiso tradicional del día",
+            "en": "Traditional stew of the day; ingredients vary",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 7.65
+              }
+            ],
+            "allergens": "Consultar por cada plato",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": true,
+            "houseClassic": false,
+            "isExtra": false,
+            "note": "Listed under 'Sin gluten' by the restaurant; verify suitability and cross-contact directly, especially where gluten traces are declared."
+          },
+          {
+            "name": "Patatas bravas con sofrito MUY PICANTE y alioli",
+            "description": "Patatas bravas con sofrito MUY PICANTE y alioli",
+            "en": "Potatoes with VERY SPICY tomato sofrito and aioli",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 4.95
+              },
+              {
+                "label": "media",
+                "eur": 7.85
+              },
+              {
+                "label": "ración",
+                "eur": 12.55
+              }
+            ],
+            "allergens": "Mostaza, sulfitos",
+            "mayContainTraces": "Pescado, moluscos, huevo, gluten, frutos de cáscara, leche",
+            "listedInGlutenFreeSection": false,
+            "houseClassic": false,
+            "isExtra": false
+          },
+          {
+            "name": "Tortillitas de camarones con alioli de tinta de calamar (dos unidades)",
+            "description": "Tortillitas de camarones con alioli de tinta de calamar (dos unidades)",
+            "en": "Two crispy shrimp fritters with squid ink aioli",
+            "prices": [
+              {
+                "label": "2 unidades",
+                "eur": 5.7
+              }
+            ],
+            "allergens": "Gluten, crustáceos, mostaza",
+            "mayContainTraces": "Pescado, moluscos, huevo, frutos de cáscara, leche",
+            "listedInGlutenFreeSection": false,
+            "houseClassic": false,
+            "isExtra": false
+          },
+          {
+            "name": "Berenjenas califales rebozadas con reducción de Pedro Ximénez y ajonjolí",
+            "description": "Berenjenas califales rebozadas con reducción de Pedro Ximénez y ajonjolí",
+            "en": "Battered Caliphal-style aubergines with Pedro Ximénez reduction and sesame",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 5.5
+              },
+              {
+                "label": "media",
+                "eur": 9.4
+              },
+              {
+                "label": "ración",
+                "eur": 15.4
+              }
+            ],
+            "allergens": "Gluten, huevo, sésamo, sulfitos",
+            "mayContainTraces": "Pescado, moluscos, frutos de cáscara, leche",
+            "listedInGlutenFreeSection": false,
+            "houseClassic": true,
+            "isExtra": false
+          },
+          {
+            "name": "Lagrimitas de pollo con mayonesa de curry",
+            "description": "Lagrimitas de pollo con mayonesa de curry",
+            "en": "Crispy chicken strips with curry mayonnaise",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 6.1
+              },
+              {
+                "label": "media",
+                "eur": 10.75
+              },
+              {
+                "label": "ración",
+                "eur": 16.9
+              }
+            ],
+            "allergens": "Gluten, sulfitos",
+            "mayContainTraces": "Crustáceos, leche, huevo, pescado, soja",
+            "listedInGlutenFreeSection": false,
+            "houseClassic": false,
+            "isExtra": false
+          },
+          {
+            "name": "Croquetas de jamón del puchero de la abuela con mayonesa de huevo frito",
+            "description": "Croquetas de jamón del puchero de la abuela con mayonesa de huevo frito",
+            "en": "Traditional ham croquettes with fried-egg mayonnaise",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 5.95
+              },
+              {
+                "label": "media",
+                "eur": 10.45
+              },
+              {
+                "label": "ración",
+                "eur": 16.45
+              }
+            ],
+            "allergens": "Gluten, huevo, apio, leche",
+            "mayContainTraces": "Soja, pescado, moluscos, frutos de cáscara",
+            "listedInGlutenFreeSection": false,
+            "houseClassic": false,
+            "isExtra": false
+          },
+          {
+            "name": "Croquetas de rabo de toro con mayonesa de su salsa",
+            "description": "Croquetas de rabo de toro con mayonesa de su salsa",
+            "en": "Oxtail croquettes with sauce-infused mayonnaise",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 5.95
+              },
+              {
+                "label": "media",
+                "eur": 10.45
+              },
+              {
+                "label": "ración",
+                "eur": 16.45
+              }
+            ],
+            "allergens": "Gluten, huevo, leche, sulfitos, mostaza",
+            "mayContainTraces": "Soja, pescado, moluscos, frutos de cáscara",
+            "listedInGlutenFreeSection": false,
+            "houseClassic": true,
+            "isExtra": false
+          },
+          {
+            "name": "Croquetas de boletus con mayonesa de trufa",
+            "description": "Croquetas de boletus con mayonesa de trufa",
+            "en": "Boletus mushroom croquettes with truffle mayonnaise",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 6.1
+              },
+              {
+                "label": "media",
+                "eur": 10.6
+              },
+              {
+                "label": "ración",
+                "eur": 16.75
+              }
+            ],
+            "allergens": "Gluten, huevo, leche",
+            "mayContainTraces": "Soja, pescado, moluscos, frutos de cáscara",
+            "listedInGlutenFreeSection": false,
+            "houseClassic": false,
+            "isExtra": false
+          },
+          {
+            "name": "Albóndigas mozárabes en salsa de almendras y azafrán",
+            "description": "Albóndigas mozárabes en salsa de almendras y azafrán",
+            "en": "Mozarabic-style meatballs in almond and saffron sauce",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 5.95
+              },
+              {
+                "label": "media",
+                "eur": 10.45
+              },
+              {
+                "label": "ración",
+                "eur": 16.45
+              }
+            ],
+            "allergens": "Gluten, huevo, frutos de cáscara, lactosa, mostaza",
+            "mayContainTraces": "Soja",
+            "listedInGlutenFreeSection": false,
+            "houseClassic": true,
+            "isExtra": false
+          }
+        ]
+      },
+      {
+        "title": "Compartir",
+        "titleEn": "To Share",
+        "items": [
+          {
+            "name": "Surtido de croquetas caseras (jamón, boletus y rabo de toro)",
+            "description": "Surtido de croquetas caseras (jamón, boletus y rabo de toro)",
+            "en": "Homemade croquette selection: ham, boletus mushrooms and oxtail",
+            "prices": [
+              {
+                "label": "media",
+                "eur": 10.6
+              },
+              {
+                "label": "ración",
+                "eur": 16.75
+              }
+            ],
+            "allergens": "Gluten, huevo, apio, leche, mostaza",
+            "mayContainTraces": "Soja, pescado, moluscos, frutos de cáscara",
+            "listedInGlutenFreeSection": false,
+            "houseClassic": false,
+            "isExtra": false
+          },
+          {
+            "name": "Bacalao «Dorao», plato típico portugués",
+            "description": "Bacalao «Dorao», plato típico portugués",
+            "en": "Portuguese-style golden cod, known as bacalhau dourado",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 17.35
+              }
+            ],
+            "allergens": "Pescado, huevo",
+            "mayContainTraces": "Leche, gluten, soja, mostaza",
+            "listedInGlutenFreeSection": true,
+            "houseClassic": false,
+            "isExtra": false,
+            "note": "Listed under 'Sin gluten' by the restaurant; verify suitability and cross-contact directly, especially where gluten traces are declared."
+          },
+          {
+            "name": "Sartenada de pisto tradicional cordobés con huevos fritos",
+            "description": "Sartenada de pisto tradicional cordobés con huevos fritos",
+            "en": "Cordoban vegetable stew served in a skillet with fried eggs",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 13.95
+              }
+            ],
+            "allergens": "Huevo",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": true,
+            "houseClassic": false,
+            "isExtra": false,
+            "note": "Listed under 'Sin gluten' by the restaurant; verify suitability and cross-contact directly, especially where gluten traces are declared."
+          },
+          {
+            "name": "Risotto de rabo de toro y queso curado de oveja",
+            "description": "Risotto de rabo de toro y queso curado de oveja",
+            "en": "Oxtail risotto with aged sheep's milk cheese",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 16.75
+              }
+            ],
+            "allergens": "Leche, sulfitos",
+            "mayContainTraces": "Gluten (albahaca)",
+            "listedInGlutenFreeSection": true,
+            "houseClassic": false,
+            "isExtra": false,
+            "note": "Listed under 'Sin gluten' by the restaurant; verify suitability and cross-contact directly, especially where gluten traces are declared."
+          },
+          {
+            "name": "Risotto de boletus confitados y setas de temporada",
+            "description": "Risotto de boletus confitados y setas de temporada",
+            "en": "Risotto with confit boletus and seasonal mushrooms",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 14.65
+              }
+            ],
+            "allergens": "Leche, sulfitos",
+            "mayContainTraces": "Gluten (albahaca)",
+            "listedInGlutenFreeSection": true,
+            "houseClassic": false,
+            "isExtra": false,
+            "note": "Listed under 'Sin gluten' by the restaurant; verify suitability and cross-contact directly, especially where gluten traces are declared."
+          },
+          {
+            "name": "Huevos rotos con patatas, jamón ibérico y cebolla crujiente",
+            "description": "Huevos rotos con patatas, jamón ibérico y cebolla crujiente",
+            "en": "Broken fried eggs with potatoes, Iberian ham and crispy onion",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 16.45
+              }
+            ],
+            "allergens": "Huevo",
+            "mayContainTraces": "Frutos de cáscara, leche, gluten, pescado, moluscos",
+            "listedInGlutenFreeSection": false,
+            "houseClassic": false,
+            "isExtra": false
+          }
+        ]
+      },
+      {
+        "title": "Pescado",
+        "titleEn": "Fish & Seafood",
+        "items": [
+          {
+            "name": "Bacalao frito con pimientos de Padrón",
+            "description": "Bacalao frito con pimientos de Padrón",
+            "en": "Fried cod with Padrón peppers",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 8.35
+              },
+              {
+                "label": "media",
+                "eur": 13.85
+              },
+              {
+                "label": "ración",
+                "eur": 21.8
+              }
+            ],
+            "allergens": "Gluten, huevo, pescado, mostaza",
+            "mayContainTraces": "Frutos de cáscara, leche, moluscos",
+            "listedInGlutenFreeSection": false,
+            "houseClassic": false,
+            "isExtra": false
+          },
+          {
+            "name": "Atún en salsa de mojito con mango y alcaparras",
+            "description": "Atún en salsa de mojito con mango y alcaparras",
+            "en": "Tuna in mojito sauce with mango and capers",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 7.85
+              },
+              {
+                "label": "media",
+                "eur": 12.8
+              },
+              {
+                "label": "ración",
+                "eur": 21.75
+              }
+            ],
+            "allergens": "Pescado, soja, gluten, leche",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": false,
+            "houseClassic": true,
+            "isExtra": false
+          },
+          {
+            "name": "Lomo de bacalao confitado en AOVE con pisto cordobés",
+            "description": "Lomo de bacalao confitado en AOVE con pisto cordobés",
+            "en": "Confit cod loin in extra virgin olive oil with Cordoban vegetable stew",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 26
+              }
+            ],
+            "allergens": "Pescado",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": true,
+            "houseClassic": false,
+            "isExtra": false,
+            "note": "Listed under 'Sin gluten' by the restaurant; verify suitability and cross-contact directly, especially where gluten traces are declared."
+          },
+          {
+            "name": "Calamares fritos con mayonesa de limón",
+            "description": "Calamares fritos con mayonesa de limón",
+            "en": "Fried squid with lemon mayonnaise",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 6.1
+              },
+              {
+                "label": "media",
+                "eur": 10.6
+              },
+              {
+                "label": "ración",
+                "eur": 16.75
+              }
+            ],
+            "allergens": "Gluten, huevo, moluscos, mostaza",
+            "mayContainTraces": "Pescado, frutos de cáscara, leche",
+            "listedInGlutenFreeSection": false,
+            "houseClassic": false,
+            "isExtra": false
+          },
+          {
+            "name": "Chipirones salteados con ensalada de col",
+            "description": "Chipirones salteados con ensalada de col",
+            "en": "Sautéed baby squid with cabbage salad",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 6.1
+              },
+              {
+                "label": "media",
+                "eur": 10.6
+              },
+              {
+                "label": "ración",
+                "eur": 16.75
+              }
+            ],
+            "allergens": "Moluscos",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": true,
+            "houseClassic": false,
+            "isExtra": false,
+            "note": "Listed under 'Sin gluten' by the restaurant; verify suitability and cross-contact directly, especially where gluten traces are declared."
+          }
+        ]
+      },
+      {
+        "title": "Carnes",
+        "titleEn": "Meat",
+        "items": [
+          {
+            "name": "Carrillada de cerdo en salsa de vino oloroso",
+            "description": "Carrillada de cerdo en salsa de vino oloroso",
+            "en": "Pork cheeks in oloroso sherry sauce",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 6.55
+              },
+              {
+                "label": "media",
+                "eur": 10.95
+              },
+              {
+                "label": "ración",
+                "eur": 17.65
+              }
+            ],
+            "allergens": "Leche, sulfitos",
+            "mayContainTraces": "Gluten",
+            "listedInGlutenFreeSection": false,
+            "houseClassic": false,
+            "isExtra": false
+          },
+          {
+            "name": "Tajín de pollo andalusí con arroz basmati, calabaza y pasas",
+            "description": "Tajín de pollo andalusí con arroz basmati, calabaza y pasas",
+            "en": "Andalusian-style chicken tagine with basmati rice, pumpkin and raisins",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 8.95
+              }
+            ],
+            "allergens": "Gluten, leche, frutos de cáscara, mostaza",
+            "mayContainTraces": "Apio, huevo, cacahuetes",
+            "listedInGlutenFreeSection": false,
+            "houseClassic": false,
+            "isExtra": false
+          },
+          {
+            "name": "Flamenquín cordobés de lomo y jamón con patatas fritas",
+            "description": "Flamenquín cordobés de lomo y jamón con patatas fritas",
+            "en": "Cordoban breaded pork loin and ham roll with French fries",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 17.95
+              }
+            ],
+            "allergens": "Gluten, huevo",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": false,
+            "houseClassic": true,
+            "isExtra": false
+          },
+          {
+            "name": "Tajín de cordero sefardí a la miel con frutos secos y pasas con cuscús",
+            "description": "Tajín de cordero sefardí a la miel con frutos secos y pasas con cuscús",
+            "en": "Sephardic-style lamb tagine with honey, nuts, raisins and couscous",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 25.6
+              }
+            ],
+            "allergens": "Gluten, leche, frutos de cáscara, sulfitos",
+            "mayContainTraces": "Apio, huevo, cacahuetes",
+            "listedInGlutenFreeSection": false,
+            "houseClassic": false,
+            "isExtra": false
+          },
+          {
+            "name": "Rabo de toro a la cordobesa",
+            "description": "Rabo de toro a la cordobesa",
+            "en": "Traditional Cordoban-style oxtail stew",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 20.5
+              }
+            ],
+            "allergens": "Sulfitos",
+            "mayContainTraces": "Gluten",
+            "listedInGlutenFreeSection": false,
+            "houseClassic": true,
+            "isExtra": false
+          },
+          {
+            "name": "Solomillo de cerdo ibérico con salsa de boletus",
+            "description": "Solomillo de cerdo ibérico con salsa de boletus",
+            "en": "Iberian pork tenderloin with boletus mushroom sauce",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 21.95
+              }
+            ],
+            "allergens": "Leche, huevo",
+            "mayContainTraces": "Gluten",
+            "listedInGlutenFreeSection": true,
+            "houseClassic": false,
+            "isExtra": false,
+            "note": "Listed under 'Sin gluten' by the restaurant; verify suitability and cross-contact directly, especially where gluten traces are declared."
+          }
+        ]
+      },
+      {
+        "title": "Postres",
+        "titleEn": "Desserts",
+        "items": [
+          {
+            "name": "Naranja a la antigua con aceite de oliva, azúcar y canela",
+            "description": "Naranja a la antigua con aceite de oliva, azúcar y canela",
+            "en": "Traditional orange dessert with olive oil, sugar and cinnamon",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 5.5
+              }
+            ],
+            "allergens": "Ninguno declarado",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": true,
+            "houseClassic": false,
+            "isExtra": false,
+            "note": "Listed under 'Sin gluten' by the restaurant; verify suitability and cross-contact directly, especially where gluten traces are declared."
+          },
+          {
+            "name": "Pastel cordobés (hojaldre relleno de cabello de ángel con azúcar y canela)",
+            "description": "Pastel cordobés (hojaldre relleno de cabello de ángel con azúcar y canela)",
+            "en": "Cordoban puff pastry filled with sweet pumpkin preserve, sugar and cinnamon",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 6.55
+              }
+            ],
+            "allergens": "Gluten, huevo, sulfitos",
+            "mayContainTraces": "Leche, frutos de cáscara, cacahuetes, soja, sésamo",
+            "listedInGlutenFreeSection": false,
+            "houseClassic": false,
+            "isExtra": false
+          },
+          {
+            "name": "Tarta de galletas y chocolate con crema de vainilla al caramelo",
+            "description": "Tarta de galletas y chocolate con crema de vainilla al caramelo",
+            "en": "Biscuit and chocolate cake with caramel vanilla cream",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 6.85
+              }
+            ],
+            "allergens": "Gluten, huevo, leche, sulfitos",
+            "mayContainTraces": "Soja",
+            "listedInGlutenFreeSection": false,
+            "houseClassic": false,
+            "isExtra": false
+          },
+          {
+            "name": "Torrija con sopa de coco y helado de canela",
+            "description": "Torrija con sopa de coco y helado de canela",
+            "en": "Spanish-style French toast with coconut soup and cinnamon ice cream",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 6.95
+              }
+            ],
+            "allergens": "Gluten, leche, huevo, soja",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": false,
+            "houseClassic": true,
+            "isExtra": false
+          },
+          {
+            "name": "Tarta de la abuela Pilar con queso semicurado Los Balanchares e higo confitado",
+            "description": "Tarta de la abuela Pilar con queso semicurado Los Balanchares e higo confitado",
+            "en": "Grandma Pilar's cake with semi-cured Los Balanchares cheese and candied fig",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 7.15
+              }
+            ],
+            "allergens": "Gluten, leche, huevo",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": false,
+            "houseClassic": false,
+            "isExtra": false
+          },
+          {
+            "name": "Coulant con helado de vainilla",
+            "description": "Coulant con helado de vainilla",
+            "en": "Coulant dessert with vanilla ice cream",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 6.95
+              }
+            ],
+            "allergens": "Leche, huevo, soja",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": true,
+            "houseClassic": false,
+            "isExtra": false,
+            "note": "Listed under 'Sin gluten' by the restaurant; verify suitability and cross-contact directly, especially where gluten traces are declared."
+          }
+        ]
+      },
+      {
+        "title": "Acompañamientos",
+        "titleEn": "Sides & Extras",
+        "items": [
+          {
+            "name": "Rebanadas de pan sin gluten (120 g) con AOVE de Córdoba",
+            "description": "Rebanadas de pan sin gluten (120 g) con AOVE de Córdoba",
+            "en": "120 g gluten-free bread slices with Córdoba extra virgin olive oil",
+            "prices": [
+              {
+                "label": "con aceite",
+                "eur": 3.6
+              },
+              {
+                "label": "sin aceite",
+                "eur": 3.5
+              }
+            ],
+            "allergens": "No especificados",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": true,
+            "houseClassic": false,
+            "isExtra": false,
+            "note": "Listed under 'Sin gluten' by the restaurant; verify suitability and cross-contact directly, especially where gluten traces are declared."
+          },
+          {
+            "name": "Salsas: mayonesa, alioli, kétchup, mostaza o mantequilla",
+            "description": "Salsas: mayonesa, alioli, kétchup, mostaza o mantequilla",
+            "en": "Extra sauce: mayonnaise, aioli, ketchup, mustard or butter",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 0.85
+              }
+            ],
+            "allergens": "Huevo, leche, mostaza",
+            "mayContainTraces": null,
+            "listedInGlutenFreeSection": false,
+            "houseClassic": false,
+            "isExtra": true
+          }
+        ]
+      }
+    ],
+    "menuSourceNote": "Carta oficial transcrita por el usuario el 16/10/2026. 47 referencias en seis secciones, 1 pan sin gluten y 1 suplemento de salsas (49 referencias únicas, incluyendo aceite de oliva y pan). 'Sin gluten' es clasificación transversal, no sección duplicada: 19 referencias incluyendo pan nuevo, 18 platos ya presentes. Declaraciones de alérgenos y trazas transcritas; algunas entradas sin gluten advierten trazas de gluten. No implica aptitud garantizada para celíacos. Precios no verificados de forma independiente en tiempo real. Bebidas fuera; la botella de AOVE es producto alimentario, no bebida. Descripciones ES/EN editoriales."
   },
   {
     "id": "taberna-el-poema-alonso",
