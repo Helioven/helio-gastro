@@ -1412,35 +1412,420 @@
     "address": "Calle San Francisco, 6, Córdoba",
     "mealCostEur": null,
     "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "checkedAt": "2026-10-16",
     "sources": [
       {
-        "label": "Carta oficial de platos sin precios visibles",
+        "label": "Carta oficial del restaurante",
         "url": "https://tabernaplateros.com/nuestra-carta/"
-      },
-      {
-        "label": "Web oficial y dirección",
-        "url": "https://tabernaplateros.com/"
       }
     ],
     "menus": [
       {
-        "service": "general",
+        "service": "Entrantes",
         "dishes": [
-          "Flamenquín casero",
+          "Ensalada mixta",
+          "Ensalada de perdiz en escabeche",
           "Salmorejo cordobés",
-          "Carrillada en salsa",
-          "Rabo de toro",
-          "Codillo de cerdo",
+          "Ensaladilla rusa",
+          "Tomate aliñado con ventresca",
+          "Cogollitos con ajitos fritos",
           "Berenjenas fritas con miel",
-          "Pisto con huevo",
-          "Croquetas de jamón",
           "Croquetas de rabo de toro",
-          "Carne con tomate"
+          "Croquetas de jamón",
+          "Alcachofas con anchoas"
+        ],
+        "dishPrices": []
+      },
+      {
+        "service": "Embutidos",
+        "dishes": [
+          "Jamón ibérico"
+        ],
+        "dishPrices": []
+      },
+      {
+        "service": "Verduras y huevos",
+        "dishes": [
+          "Pisto con huevo"
+        ],
+        "dishPrices": []
+      },
+      {
+        "service": "Pescados y mariscos",
+        "dishes": [
+          "Bacalao frito",
+          "Bacalao rebozado",
+          "Calamares fritos",
+          "Calamar a la plancha",
+          "Tortillitas de camarones",
+          "Gambas rebozadas",
+          "Gambas fritas",
+          "Japuta en adobo",
+          "Choco a la plancha",
+          "Choco frito",
+          "Mejillones al vapor"
+        ],
+        "dishPrices": []
+      },
+      {
+        "service": "Carnes",
+        "dishes": [
+          "Carne con tomate",
+          "Callos de ternera",
+          "Flamenquín casero",
+          "Pollo empanado",
+          "Pollo a la plancha",
+          "Rabo de toro",
+          "Presa ibérica de bellota",
+          "Codillo de cerdo",
+          "Solomillo a la plancha",
+          "San Jacobo",
+          "Menudillo de pollo (receta de la abuela)",
+          "Estofado de puntas de solomillo",
+          "Conejo al ajillo",
+          "Carrillada en salsa",
+          "Chuletitas de cordero"
         ],
         "dishPrices": []
       }
-    ]
+    ],
+    "menuSections": [
+      {
+        "title": "Entrantes",
+        "note": "Precios a consultar. Descripciones editoriales bilingües; ingredientes exactos y alérgenos no confirmados.",
+        "items": [
+          {
+            "name": "Ensalada mixta",
+            "description": "Ensalada mixta. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Mixed salad.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Ensalada de perdiz en escabeche",
+            "description": "Ensalada de perdiz en escabeche. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Pickled partridge salad.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Salmorejo cordobés",
+            "description": "Crema fría cordobesa de tomate, pan, aceite y ajo.",
+            "en": "Chilled Cordoban tomato and bread cream.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Ensaladilla rusa",
+            "description": "Ensaladilla rusa. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Spanish potato and vegetable salad with mayonnaise.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Tomate aliñado con ventresca",
+            "description": "Tomate aliñado con ventresca. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Seasoned tomato with tuna belly.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Cogollitos con ajitos fritos",
+            "description": "Cogollitos con ajitos fritos. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Baby lettuce hearts with fried garlic.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Berenjenas fritas con miel",
+            "description": "Berenjenas fritas con miel. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Fried aubergines with syrup.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Croquetas de rabo de toro",
+            "description": "Croquetas de rabo de toro. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Oxtail croquettes.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Croquetas de jamón",
+            "description": "Croquetas de jamón. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Cured ham croquettes.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Alcachofas con anchoas",
+            "description": "Alcachofas con anchoas. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Artichokes with anchovies.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          }
+        ]
+      },
+      {
+        "title": "Embutidos",
+        "note": "Precios a consultar. Descripciones editoriales bilingües; ingredientes exactos y alérgenos no confirmados.",
+        "items": [
+          {
+            "name": "Jamón ibérico",
+            "description": "Jamón ibérico. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Cured Iberian ham.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          }
+        ]
+      },
+      {
+        "title": "Verduras y huevos",
+        "note": "Precios a consultar. Descripciones editoriales bilingües; ingredientes exactos y alérgenos no confirmados.",
+        "items": [
+          {
+            "name": "Pisto con huevo",
+            "description": "Verduras guisadas con huevo.",
+            "en": "Stewed vegetables with egg.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          }
+        ]
+      },
+      {
+        "title": "Pescados y mariscos",
+        "note": "Precios a consultar. Descripciones editoriales bilingües; ingredientes exactos y alérgenos no confirmados.",
+        "items": [
+          {
+            "name": "Bacalao frito",
+            "description": "Bacalao frito. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Fried cod.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Bacalao rebozado",
+            "description": "Bacalao rebozado. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Battered cod.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Calamares fritos",
+            "description": "Calamares fritos. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Fried squid.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Calamar a la plancha",
+            "description": "Calamar a la plancha. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Griddled squid.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Tortillitas de camarones",
+            "description": "Tortillitas de camarones. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Crispy shrimp fritters.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Gambas rebozadas",
+            "description": "Gambas rebozadas. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Battered prawns.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Gambas fritas",
+            "description": "Gambas fritas. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Fried prawns.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Japuta en adobo",
+            "description": "Pescado marinado en adobo.",
+            "en": "Marinated pomfret.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Choco a la plancha",
+            "description": "Choco a la plancha. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Griddled cuttlefish.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Choco frito",
+            "description": "Choco frito. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Fried cuttlefish.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Mejillones al vapor",
+            "description": "Mejillones al vapor. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Steamed mussels.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          }
+        ]
+      },
+      {
+        "title": "Carnes",
+        "note": "Precios a consultar. Descripciones editoriales bilingües; ingredientes exactos y alérgenos no confirmados.",
+        "items": [
+          {
+            "name": "Carne con tomate",
+            "description": "Carne con tomate. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Meat stewed in tomato sauce.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Callos de ternera",
+            "description": "Callos de ternera. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Beef tripe stew.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Flamenquín casero",
+            "description": "Rollo de carne y jamón empanado y frito, especialidad cordobesa.",
+            "en": "Homemade breaded meat roll.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Pollo empanado",
+            "description": "Pollo empanado. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Breaded chicken.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Pollo a la plancha",
+            "description": "Pollo a la plancha. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Griddled chicken.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Rabo de toro",
+            "description": "Rabo estofado a fuego lento.",
+            "en": "Slow-cooked oxtail.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Presa ibérica de bellota",
+            "description": "Presa ibérica de bellota. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Acorn-fed Iberian pork presa cut.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Codillo de cerdo",
+            "description": "Codillo de cerdo. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Pork knuckle.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Solomillo a la plancha",
+            "description": "Solomillo a la plancha. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Griddled tenderloin.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "San Jacobo",
+            "description": "Filete empanado relleno de jamón y queso.",
+            "en": "Breaded ham-and-cheese filled cutlet.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Menudillo de pollo (receta de la abuela)",
+            "description": "Menudillo de pollo (receta de la abuela). Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Traditional chicken offal dish.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Estofado de puntas de solomillo",
+            "description": "Estofado de puntas de solomillo. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Stewed tenderloin tips.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Conejo al ajillo",
+            "description": "Conejo al ajillo. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Garlic rabbit.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Carrillada en salsa",
+            "description": "Carrillada de cerdo cocinada en salsa.",
+            "en": "Pork cheeks in sauce.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Chuletitas de cordero",
+            "description": "Chuletitas de cordero. Plato incluido en la carta; preparación y guarniciones exactas no especificadas.",
+            "en": "Lamb chops.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          }
+        ]
+      }
+    ],
+    "menuSourceNote": "Ampliación con 38 platos verificables en la carta oficial y transcripción de la carta publicada por el establecimiento. No es una garantía de carta exhaustiva. Sin precios visibles: a consultar. Descripciones bilingües editoriales; no utilizar como información certificada de alérgenos."
   },
   {
     "id": "sociedad-plateros-maria-auxiliadora",
