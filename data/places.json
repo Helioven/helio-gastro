@@ -734,7 +734,7 @@
     "address": "Plaza de San Miguel, 1, Córdoba",
     "mealCostEur": null,
     "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "checkedAt": "2026-10-16",
     "sources": [
       {
         "label": "Carta general oficial sin importes visibles",
@@ -747,21 +747,663 @@
     ],
     "menus": [
       {
-        "service": "general",
+        "service": "Comenzamos",
         "dishes": [
+          "Jamón ibérico de bellota",
+          "Caña de lomo",
+          "Salchichón ibérico",
+          "Chorizo ibérico",
+          "Queso añejo de oveja",
+          "Surtido de ibéricos",
           "Salmorejo cordobés",
           "Mazamorra",
-          "Flamenquín casero de jamón",
-          "Carrillada ibérica al vino viejo",
-          "Estofado de rabo de toro",
-          "Croquetas caseras de rabo de toro",
+          "Nuestra ensaladilla",
+          "Huevas con mahonesa",
+          "Tomate con ventresca (en temporada)",
+          "Tomate picado con A.O.V.E. (en temporada)",
+          "Cogollitos de lechuga con ajitos fritos",
+          "Ensalada de la casa",
+          "Mejillones en escabeche",
+          "Boquerones en vinagre"
+        ],
+        "dishPrices": []
+      },
+      {
+        "service": "De la tierra",
+        "dishes": [
           "Berenjenas fritas con miel de caña",
-          "Pisto casero con huevo",
-          "Cochifrito"
+          "Nuestras patatas bravas con huevo frito",
+          "Volcán de patatas",
+          "El plato del abuelo Pepe",
+          "Espinacas esparragadas",
+          "Habitas con jamón",
+          "Pisto casero con huevo frito"
+        ],
+        "dishPrices": []
+      },
+      {
+        "service": "Del mar",
+        "dishes": [
+          "Jaimitos (boquerones fritos al limón)",
+          "Calamares fritos",
+          "Bacalao rebozado",
+          "Bacalao frito",
+          "Langostinos rebozados",
+          "Langostinos fritos",
+          "Taquitos de rosada en adobo",
+          "Lomo de bacalao con pisto",
+          "Taquitos de atún a la brasa",
+          "Langostinos al ajillo"
+        ],
+        "dishPrices": []
+      },
+      {
+        "service": "Nuestras carnes",
+        "dishes": [
+          "Croquetas caseras de jamón",
+          "Croquetas caseras de rabo de toro",
+          "Flamenquín de jamón casero",
+          "Cochifrito (cochinillo frito)",
+          "Morcilla de cebolla frita (de Espejo)",
+          "Solomillo ibérico al vino oloroso (200 g aprox.)"
+        ],
+        "dishPrices": []
+      },
+      {
+        "service": "Dando la brasa",
+        "dishes": [
+          "Lomo de vaca (350 g aprox.)",
+          "Presa ibérica",
+          "Solomillo ibérico",
+          "Solomillo de gramo"
+        ],
+        "dishPrices": []
+      },
+      {
+        "service": "Los guisos de la abuela",
+        "dishes": [
+          "Callos de ternera caseros",
+          "Albóndigas con caldo al estilo de la abuela Loli",
+          "Manitas de cerdo en salsa",
+          "Carrillada ibérica al vino viejo",
+          "Estofado de rabo de toro"
+        ],
+        "dishPrices": []
+      },
+      {
+        "service": "Guiso del día (consultar disponibilidad)",
+        "dishes": [
+          "Habichuelas",
+          "Cocido",
+          "Lentejas",
+          "Estofado de patatas",
+          "Fideos a la marinera"
+        ],
+        "dishPrices": []
+      },
+      {
+        "service": "Nuestro rincón más dulce",
+        "dishes": [
+          "Tarta de queso",
+          "Tarta de zanahoria",
+          "Tocino de cielo",
+          "Coulant de chocolate con helado",
+          "Natillas caseras",
+          "Tarta Lotus",
+          "Bola de helado casero",
+          "Pestiños",
+          "Fruta"
         ],
         "dishPrices": []
       }
-    ]
+    ],
+    "menuSections": [
+      {
+        "title": "Comenzamos",
+        "note": "Precio: a consultar / Price: ask the restaurant. Descripciones editoriales orientativas.",
+        "items": [
+          {
+            "name": "Jamón ibérico de bellota",
+            "description": "Jamón ibérico de bellota. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Jamón ibérico de bellota. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Caña de lomo",
+            "description": "Caña de lomo. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Caña de lomo. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Salchichón ibérico",
+            "description": "Salchichón ibérico. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Salchichón ibérico. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Chorizo ibérico",
+            "description": "Chorizo ibérico. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Chorizo ibérico. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Queso añejo de oveja",
+            "description": "Queso añejo de oveja. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Queso añejo de oveja. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Surtido de ibéricos",
+            "description": "Selección de jamón, caña de lomo, salchichón y chorizo ibéricos.",
+            "en": "Selection of Iberian ham, cured loin, salchichón and chorizo.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Salmorejo cordobés",
+            "description": "Crema fría cordobesa de tomate y pan con taquitos de jamón y huevo.",
+            "en": "Chilled Cordoban tomato-and-bread cream topped with diced cured ham and egg.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Mazamorra",
+            "description": "Crema fría tradicional cordobesa de almendras y pan.",
+            "en": "Traditional chilled Cordoban almond-and-bread cream.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Nuestra ensaladilla",
+            "description": "ensaladilla. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Nuestra ensaladilla. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Huevas con mahonesa",
+            "description": "Huevas con mahonesa. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Huevas con mahonesa. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Tomate con ventresca (en temporada)",
+            "description": "Tomate con ventresca. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Tomate con ventresca (en temporada). Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Tomate picado con A.O.V.E. (en temporada)",
+            "description": "Tomate picado con A.O.V.E.. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Tomate picado con A.O.V.E. (en temporada). Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Cogollitos de lechuga con ajitos fritos",
+            "description": "Cogollos de lechuga con ajo frito y vinagre de Módena.",
+            "en": "Baby lettuce hearts with fried garlic and balsamic vinegar.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Ensalada de la casa",
+            "description": "Ensalada de la casa. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Ensalada de la casa. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Mejillones en escabeche",
+            "description": "Mejillones en escabeche. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Mejillones en escabeche. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Boquerones en vinagre",
+            "description": "Boquerones en vinagre. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Boquerones en vinagre. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          }
+        ]
+      },
+      {
+        "title": "De la tierra",
+        "note": "Precio: a consultar / Price: ask the restaurant. Descripciones editoriales orientativas.",
+        "items": [
+          {
+            "name": "Berenjenas fritas con miel de caña",
+            "description": "Berenjenas fritas con miel de caña. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Berenjenas fritas con miel de caña. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Nuestras patatas bravas con huevo frito",
+            "description": "patatas bravas con huevo frito. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Nuestras patatas bravas con huevo frito. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Volcán de patatas",
+            "description": "Patatas con huevo, jamón y cebolla caramelizada.",
+            "en": "Potatoes with egg, cured ham and caramelized onion.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "El plato del abuelo Pepe",
+            "description": "Huevos y patatas fritas acompañados de lomo y chorizo.",
+            "en": "Fried eggs and potatoes served with pork loin and chorizo.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Espinacas esparragadas",
+            "description": "Espinacas con garbanzos y huevo frito.",
+            "en": "Spinach with chickpeas and a fried egg.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Habitas con jamón",
+            "description": "Habitas con jamón, cebolla caramelizada y huevo frito.",
+            "en": "Baby broad beans with cured ham, caramelized onion and fried egg.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Pisto casero con huevo frito",
+            "description": "Pisto casero con huevo frito. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Pisto casero con huevo frito. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          }
+        ]
+      },
+      {
+        "title": "Del mar",
+        "note": "Precio: a consultar / Price: ask the restaurant. Descripciones editoriales orientativas.",
+        "items": [
+          {
+            "name": "Jaimitos (boquerones fritos al limón)",
+            "description": "Boquerones fritos al limón.",
+            "en": "Lemon-flavoured fried anchovies.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Calamares fritos",
+            "description": "Calamares fritos. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Calamares fritos. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Bacalao rebozado",
+            "description": "Bacalao rebozado. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Bacalao rebozado. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Bacalao frito",
+            "description": "Bacalao frito. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Bacalao frito. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Langostinos rebozados",
+            "description": "Langostinos rebozados. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Langostinos rebozados. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Langostinos fritos",
+            "description": "Langostinos fritos. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Langostinos fritos. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Taquitos de rosada en adobo",
+            "description": "Taquitos de rosada en adobo. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Taquitos de rosada en adobo. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Lomo de bacalao con pisto",
+            "description": "Lomo de bacalao con pisto. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Lomo de bacalao con pisto. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Taquitos de atún a la brasa",
+            "description": "Taquitos de atún a la brasa. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Taquitos de atún a la brasa. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Langostinos al ajillo",
+            "description": "Langostinos al ajillo. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Langostinos al ajillo. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          }
+        ]
+      },
+      {
+        "title": "Nuestras carnes",
+        "note": "Precio: a consultar / Price: ask the restaurant. Descripciones editoriales orientativas.",
+        "items": [
+          {
+            "name": "Croquetas caseras de jamón",
+            "description": "Croquetas caseras de jamón. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Croquetas caseras de jamón. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Croquetas caseras de rabo de toro",
+            "description": "Croquetas caseras de rabo de toro. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Croquetas caseras de rabo de toro. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Flamenquín de jamón casero",
+            "description": "Flamenquín de jamón casero. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Flamenquín de jamón casero. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Cochifrito (cochinillo frito)",
+            "description": "Cochifrito. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Cochifrito (cochinillo frito). Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Morcilla de cebolla frita (de Espejo)",
+            "description": "Morcilla de cebolla frita. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Morcilla de cebolla frita (de Espejo). Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Solomillo ibérico al vino oloroso (200 g aprox.)",
+            "description": "Solomillo de cerdo ibérico con vino oloroso; unos 200 g.",
+            "en": "Iberian pork tenderloin with oloroso sherry; approximately 200 g.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          }
+        ]
+      },
+      {
+        "title": "Dando la brasa",
+        "note": "Precio: a consultar / Price: ask the restaurant. Descripciones editoriales orientativas.",
+        "items": [
+          {
+            "name": "Lomo de vaca (350 g aprox.)",
+            "description": "Lomo de vaca. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Lomo de vaca (350 g aprox.). Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Presa ibérica",
+            "description": "Presa ibérica. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Presa ibérica. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Solomillo ibérico",
+            "description": "Solomillo ibérico. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Solomillo ibérico. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Solomillo de gramo",
+            "description": "Corte denominado «solomillo de gramo» en la carta; tipo exacto pendiente de confirmar.",
+            "en": "Cut listed as 'solomillo de gramo'; exact type unconfirmed.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          }
+        ]
+      },
+      {
+        "title": "Los guisos de la abuela",
+        "note": "Precio: a consultar / Price: ask the restaurant. Descripciones editoriales orientativas.",
+        "items": [
+          {
+            "name": "Callos de ternera caseros",
+            "description": "Callos de ternera caseros. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Callos de ternera caseros. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Albóndigas con caldo al estilo de la abuela Loli",
+            "description": "Albóndigas con caldo al estilo de la abuela Loli. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Albóndigas con caldo al estilo de la abuela Loli. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Manitas de cerdo en salsa",
+            "description": "Manitas de cerdo en salsa. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Manitas de cerdo en salsa. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Carrillada ibérica al vino viejo",
+            "description": "Carrillada ibérica al vino viejo. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Carrillada ibérica al vino viejo. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Estofado de rabo de toro",
+            "description": "Estofado de rabo de toro. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Estofado de rabo de toro. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          }
+        ]
+      },
+      {
+        "title": "Guiso del día (consultar disponibilidad)",
+        "note": "Precio: a consultar / Price: ask the restaurant. Descripciones editoriales orientativas.",
+        "items": [
+          {
+            "name": "Habichuelas",
+            "description": "Habichuelas. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Habichuelas. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Cocido",
+            "description": "Cocido. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Cocido. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Lentejas",
+            "description": "Lentejas. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Lentejas. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Estofado de patatas",
+            "description": "Estofado de patatas. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Estofado de patatas. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Fideos a la marinera",
+            "description": "Fideos a la marinera. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Fideos a la marinera. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          }
+        ]
+      },
+      {
+        "title": "Nuestro rincón más dulce",
+        "note": "Precio: a consultar / Price: ask the restaurant. Descripciones editoriales orientativas.",
+        "items": [
+          {
+            "name": "Tarta de queso",
+            "description": "Tarta de queso. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Tarta de queso. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Tarta de zanahoria",
+            "description": "Tarta de zanahoria. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Tarta de zanahoria. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Tocino de cielo",
+            "description": "Postre tradicional de yema de huevo y azúcar.",
+            "en": "Traditional rich egg-yolk and sugar custard.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Coulant de chocolate con helado",
+            "description": "Bizcocho de chocolate de interior fundente acompañado de helado.",
+            "en": "Molten-centre chocolate cake served with ice cream.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Natillas caseras",
+            "description": "Natillas caseras. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Natillas caseras. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Tarta Lotus",
+            "description": "Tarta Lotus. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Tarta Lotus. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Bola de helado casero",
+            "description": "Bola de helado casero. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Bola de helado casero. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Pestiños",
+            "description": "Dulce tradicional de masa frita.",
+            "en": "Traditional fried pastry sweet.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          },
+          {
+            "name": "Fruta",
+            "description": "Fruta. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
+            "en": "Fruta. Preparation and accompaniments as listed on the menu; further details not specified.",
+            "prices": [],
+            "priceLabel": "A consultar",
+            "priceLabelEn": "Ask for price"
+          }
+        ]
+      }
+    ],
+    "menuSourceNote": "Carta general oficial consultada el 16/10/2026. La web muestra guiones en lugar de importes: precios a consultar, sin importes inventados. Descripciones bilingües editoriales, no recetas ni alérgenos certificados. El guiso del día está sujeto a disponibilidad. Extras y pan no incorporados como platos. El original dice 'solomillo de gramo', pendiente de aclaración."
   },
   {
     "id": "taberna-plateros-san-francisco",
