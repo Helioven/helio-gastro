@@ -15729,6 +15729,85 @@
             "portion": "Formato no indicado"
           }
         ]
+      },
+      {
+        "service": "Entrantes calientes",
+        "dishes": [
+          "Berenjenas fritas con miel de caña",
+          "Croquetas de jamón",
+          "Pisto cordobés con huevo frito",
+          "Alcachofas al Moriles",
+          "Revuelto de morcilla",
+          "Huevos rotos con patatas y jamón",
+          "Lagrimitas de pollo con patatas fritas"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Berenjenas fritas con miel de caña",
+            "eur": 7.9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Berenjenas fritas con miel de caña",
+            "eur": 10.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Croquetas de jamón",
+            "eur": 8.9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Croquetas de jamón",
+            "eur": 12.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Pisto cordobés con huevo frito",
+            "eur": 7.9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Pisto cordobés con huevo frito",
+            "eur": 10.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Alcachofas al Moriles",
+            "eur": 8.9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Alcachofas al Moriles",
+            "eur": 11.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Revuelto de morcilla",
+            "eur": 9.9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Revuelto de morcilla",
+            "eur": 12.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Huevos rotos con patatas y jamón",
+            "eur": 10.9,
+            "portion": "Formato no indicado"
+          },
+          {
+            "dish": "Lagrimitas de pollo con patatas fritas",
+            "eur": 10.9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Lagrimitas de pollo con patatas fritas",
+            "eur": 12.9,
+            "portion": "Ración"
+          }
+        ]
       }
     ],
     "menuSections": [
@@ -15831,6 +15910,105 @@
             "description": "Rúcula fresca, burrata, jamón ibérico y vinagreta de higos"
           }
         ]
+      },
+      {
+        "title": "Entrantes calientes",
+        "items": [
+          {
+            "name": "Berenjenas fritas con miel de caña",
+            "prices": [
+              {
+                "eur": 7.9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 10.9,
+                "portion": "Ración"
+              }
+            ],
+            "description": "Berenjenas fritas crujientes acompañadas de miel de caña"
+          },
+          {
+            "name": "Croquetas de jamón",
+            "prices": [
+              {
+                "eur": 8.9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12.9,
+                "portion": "Ración"
+              }
+            ],
+            "description": "Croquetas cremosas de jamón ibérico, acompañadas de mayonesa y alioli casero"
+          },
+          {
+            "name": "Pisto cordobés con huevo frito",
+            "prices": [
+              {
+                "eur": 7.9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 10.9,
+                "portion": "Ración"
+              }
+            ],
+            "description": "El tradicional, el de toda la vida"
+          },
+          {
+            "name": "Alcachofas al Moriles",
+            "prices": [
+              {
+                "eur": 8.9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 11.9,
+                "portion": "Ración"
+              }
+            ],
+            "description": "Alcachofas salteadas con jamón en taquitos guisadas con fino de Córdoba"
+          },
+          {
+            "name": "Revuelto de morcilla",
+            "prices": [
+              {
+                "eur": 9.9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12.9,
+                "portion": "Ración"
+              }
+            ],
+            "description": "Revuelto de huevos con la intensidad y el toque especiado de la morcilla"
+          },
+          {
+            "name": "Huevos rotos con patatas y jamón",
+            "prices": [
+              {
+                "eur": 10.9,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "Patatas fritas caseras y huevos fritos de yema fluida, con jamón ibérico"
+          },
+          {
+            "name": "Lagrimitas de pollo con patatas fritas",
+            "prices": [
+              {
+                "eur": 10.9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12.9,
+                "portion": "Ración"
+              }
+            ],
+            "description": "Tiras de pollo rebozadas y crujientes, servidas con patatas fritas"
+          }
+        ]
       }
     ],
     "extras": [
@@ -15852,7 +16030,7 @@
         "eur": 1.5
       }
     ],
-    "menuSourceNote": "Transcripción parcial de la carta facilitada en texto por el usuario el 16/10/2026: Entrantes fríos y ensaladas, ocho platos y cuatro suplementos. Precios de carta no verificados en tiempo real; fecha de edición no indicada. Secciones restantes pendientes. Sin fotografías de terceros."
+    "menuSourceNote": "Transcripción parcial de la carta facilitada en texto por el usuario el 16/10/2026: Entrantes fríos y ensaladas, ocho platos y cuatro suplementos. Precios de carta no verificados en tiempo real; fecha de edición no indicada. Secciones restantes pendientes. Sin fotografías de terceros. Sección Entrantes calientes recibida del usuario el 16/10/2026: siete platos y trece importes; huevos rotos sin tamaño de porción indicado."
   },
   {
     "id": "bodegas-campos",
