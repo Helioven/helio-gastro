@@ -16138,8 +16138,8 @@
     "area": "Santa Marina · Beatillas",
     "address": "Plaza de las Beatillas, 1, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "priceStatus": "individual_menu_no_prices_group_menus_2025_unverified",
+    "checkedAt": "2026-10-16",
     "sources": [
       {
         "label": "Carta oficial de platos",
@@ -16152,17 +16152,854 @@
     ],
     "menus": [
       {
-        "service": "general",
+        "service": "Carta individual (sin precios publicados)",
         "dishes": [
-          "Rabo de toro estofado",
-          "Codillo de cerdo asado",
-          "Croquetas de jamón",
-          "Mazamorra cordobesa",
-          "Croquetas de espinacas y piñones"
+          "Salmorejo",
+          "Berenjenas Fritas",
+          "Ensaladilla Rusa",
+          "Croquetas Caseras",
+          "Salpicón de Marisco",
+          "Boquerones en Vinagre",
+          "Boquerones Fritos",
+          "Japuta en Adobo",
+          "Calamares Fritos",
+          "Choco Frito",
+          "Bacalao Frito",
+          "Huevas Fritas con Mahonesa",
+          "Huevas en Vinagreta",
+          "Ancas de Rana",
+          "Flamenquín Casero",
+          "San Jacobo Casero",
+          "Carne con Tomate (ternera)",
+          "Callos Caseros (Ternera)",
+          "Manitas de Cerdo",
+          "Jabalí Serrano",
+          "Venado en Salsa de Espárragos",
+          "Lechón Frito",
+          "Jamón Ibérico de Bellota",
+          "Queso Añejo de Oveja",
+          "Morcilla Ibérica",
+          "Pimientos Asados con Atún y Huevo",
+          "Pisto con Huevo Frito",
+          "Habas Finas con Jamón",
+          "Alcachofas a la Montillana",
+          "Ensalada Tradicional (2 personas)",
+          "Ensalada de Bacalao Ahumado",
+          "Ensalada con Aguacate y Gulas (2 pax)",
+          "Ensalada de Ahumados y Queso de Cabra (2 pax)",
+          "Ensalada de Perdiz en Escabeche (2 pax)",
+          "Gazpacho con Guarnición (En temporada)",
+          "Sopa de Ajo a la Antigua",
+          "Sopa de Puchero",
+          "Revuelto de Habas Finas",
+          "Revuelto Beatillas",
+          "Revuelto de Bacalao",
+          "Revuelto de Espárragos",
+          "Pulpo a la Gallega",
+          "Gambas al Ajillo",
+          "Gambas Plancha 250 gr",
+          "Lomo de Bacalao",
+          "Pez Espada a la Plancha",
+          "Salmón a la Parrilla",
+          "Merluza de Pincho",
+          "Lenguado de Costa",
+          "Calamar de Potera a la Plancha",
+          "Fritura de Pescado (2 personas)",
+          "Rabo de Toro Estofado",
+          "Codillo de Cerdo Asado",
+          "Solomillo Ibérico de los Pedroches (2 Salsas)",
+          "Presa Ibérica de los Pedroches",
+          "Cochinillo de Segovia Asado",
+          "Chuletón de Vaca Madurado (500g)",
+          "Entrecot de Vaca Madurado",
+          "Solomillo de Vaca Madurado",
+          "Mollejas de Cordero al ajillo",
+          "Chuletitas de Cordero Lechal",
+          "Paletilla de Cordero Lechal",
+          "Lomo de Ciervo",
+          "Flan de huevo",
+          "Flan de huevo con Nata",
+          "Flan de queso",
+          "Natillas Caseras",
+          "Arroz con Leche y Canela",
+          "Tocino de Cielo",
+          "Crema de Yogurt con Tocino de Cielo",
+          "Pastel Cordobés",
+          "Tarta de la Casa",
+          "Helados Variados (ver carta)",
+          "Fruta del Tiempo",
+          "Piña Natural"
         ],
         "dishPrices": []
+      },
+      {
+        "service": "Menú n.º 1 (2025)",
+        "price": 40,
+        "starting": [
+          "Aceitunas de temporada",
+          "Almendras fritas",
+          "Surtido de ibéricos"
+        ],
+        "following": [
+          "Salmorejo cordobés",
+          "Berenjenas fritas",
+          "Revuelto de espárragos trigueros",
+          "Croquetas de salmón"
+        ],
+        "mains": [
+          "Carrillada ibérica en salsa (con patatitas salteadas)",
+          "Pez espada (con verduritas salteadas)"
+        ],
+        "dessert": [
+          "Surtido de pastelería"
+        ],
+        "drinks": "Cervezas, vino de Montilla-Moriles, tinto de Rioja, agua mineral y cava de Bodegas Faustino",
+        "dishes": [
+          "Aceitunas de temporada",
+          "Almendras fritas",
+          "Surtido de ibéricos",
+          "Salmorejo cordobés",
+          "Berenjenas fritas",
+          "Revuelto de espárragos trigueros",
+          "Croquetas de salmón",
+          "Carrillada ibérica en salsa (con patatitas salteadas)",
+          "Pez espada (con verduritas salteadas)",
+          "Surtido de pastelería"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Menú n.º 1 (2025)",
+            "eur": 40
+          }
+        ],
+        "year": 2025,
+        "priceUnit": "Por comensal (no indicado expresamente en el texto facilitado)",
+        "mainChoice": "Elegir una opción al contratar",
+        "reservationDepositPercent": 20,
+        "sharedDishes": "Platos para compartir cada cuatro personas, excepto principal",
+        "beveragesIncluded": "Cervezas, vino de Montilla-Moriles, tinto de Rioja, agua mineral y cava de Bodegas Faustino",
+        "menuCourses": {
+          "starters": [
+            "Aceitunas de temporada",
+            "Almendras fritas",
+            "Surtido de ibéricos"
+          ],
+          "following": [
+            "Salmorejo cordobés",
+            "Berenjenas fritas",
+            "Revuelto de espárragos trigueros",
+            "Croquetas de salmón"
+          ],
+          "mainOptions": [
+            "Carrillada ibérica en salsa (con patatitas salteadas)",
+            "Pez espada (con verduritas salteadas)"
+          ],
+          "desserts": [
+            "Surtido de pastelería"
+          ]
+        }
+      },
+      {
+        "service": "Menú n.º 2 (2025)",
+        "price": 45,
+        "starting": [
+          "Aceitunas de temporada",
+          "Almendras fritas",
+          "Jamón ibérico",
+          "Queso de oveja curado"
+        ],
+        "following": [
+          "Ensaladilla de gambas",
+          "Revuelto de boletus",
+          "Fritos de pescado",
+          "Croquetas de jamón"
+        ],
+        "mains": [
+          "Lomo de bacalao al pilpil",
+          "Presa ibérica"
+        ],
+        "dessert": [
+          "Surtido de pastelería"
+        ],
+        "drinks": "Cervezas, vino de Montilla-Moriles, tinto de Rioja, agua mineral y cava de Bodegas Faustino",
+        "dishes": [
+          "Aceitunas de temporada",
+          "Almendras fritas",
+          "Jamón ibérico",
+          "Queso de oveja curado",
+          "Ensaladilla de gambas",
+          "Revuelto de boletus",
+          "Fritos de pescado",
+          "Croquetas de jamón",
+          "Lomo de bacalao al pilpil",
+          "Presa ibérica",
+          "Surtido de pastelería"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Menú n.º 2 (2025)",
+            "eur": 45
+          }
+        ],
+        "year": 2025,
+        "priceUnit": "Por comensal (no indicado expresamente en el texto facilitado)",
+        "mainChoice": "Elegir una opción al contratar",
+        "reservationDepositPercent": 20,
+        "sharedDishes": "Platos para compartir cada cuatro personas, excepto principal",
+        "beveragesIncluded": "Cervezas, vino de Montilla-Moriles, tinto de Rioja, agua mineral y cava de Bodegas Faustino",
+        "menuCourses": {
+          "starters": [
+            "Aceitunas de temporada",
+            "Almendras fritas",
+            "Jamón ibérico",
+            "Queso de oveja curado"
+          ],
+          "following": [
+            "Ensaladilla de gambas",
+            "Revuelto de boletus",
+            "Fritos de pescado",
+            "Croquetas de jamón"
+          ],
+          "mainOptions": [
+            "Lomo de bacalao al pilpil",
+            "Presa ibérica"
+          ],
+          "desserts": [
+            "Surtido de pastelería"
+          ]
+        }
+      },
+      {
+        "service": "Menú n.º 3 (2025)",
+        "price": 48,
+        "starting": [
+          "Aceitunas de temporada",
+          "Almendras fritas",
+          "Jamón ibérico",
+          "Queso de oveja curado"
+        ],
+        "following": [
+          "Ensalada de pimientos con ventresca y huevo duro",
+          "Mazamorra cordobesa con uvas pasas y manzana",
+          "Habas finas con jamón",
+          "Croquetas de espinacas y piñones"
+        ],
+        "mains": [
+          "Suprema de salmón con salsa de gambas",
+          "Solomillo ibérico con salsa de setas"
+        ],
+        "dessert": [
+          "Surtido de pastelería"
+        ],
+        "drinks": "Cervezas, vino de Montilla-Moriles, tinto de Rioja, agua mineral y cava de Bodegas Faustino",
+        "dishes": [
+          "Aceitunas de temporada",
+          "Almendras fritas",
+          "Jamón ibérico",
+          "Queso de oveja curado",
+          "Ensalada de pimientos con ventresca y huevo duro",
+          "Mazamorra cordobesa con uvas pasas y manzana",
+          "Habas finas con jamón",
+          "Croquetas de espinacas y piñones",
+          "Suprema de salmón con salsa de gambas",
+          "Solomillo ibérico con salsa de setas",
+          "Surtido de pastelería"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Menú n.º 3 (2025)",
+            "eur": 48
+          }
+        ],
+        "year": 2025,
+        "priceUnit": "Por comensal (no indicado expresamente en el texto facilitado)",
+        "mainChoice": "Elegir una opción al contratar",
+        "reservationDepositPercent": 20,
+        "sharedDishes": "Platos para compartir cada cuatro personas, excepto principal",
+        "beveragesIncluded": "Cervezas, vino de Montilla-Moriles, tinto de Rioja, agua mineral y cava de Bodegas Faustino",
+        "menuCourses": {
+          "starters": [
+            "Aceitunas de temporada",
+            "Almendras fritas",
+            "Jamón ibérico",
+            "Queso de oveja curado"
+          ],
+          "following": [
+            "Ensalada de pimientos con ventresca y huevo duro",
+            "Mazamorra cordobesa con uvas pasas y manzana",
+            "Habas finas con jamón",
+            "Croquetas de espinacas y piñones"
+          ],
+          "mainOptions": [
+            "Suprema de salmón con salsa de gambas",
+            "Solomillo ibérico con salsa de setas"
+          ],
+          "desserts": [
+            "Surtido de pastelería"
+          ]
+        }
+      },
+      {
+        "service": "Menú infantil (2025)",
+        "price": 25,
+        "starting": [
+          "Aceitunas deshuesadas",
+          "Patatas fritas",
+          "Jamón ibérico",
+          "Queso de oveja curado"
+        ],
+        "following": [
+          "Croquetitas de jamón",
+          "Calamaritos fritos"
+        ],
+        "mains": [
+          "Pechuga de pollo empanada",
+          "Pechuga de pollo a la plancha"
+        ],
+        "dessert": [
+          "Tarta de comunión y helado"
+        ],
+        "drinks": "Agua mineral y dos refrescos",
+        "dishes": [
+          "Aceitunas deshuesadas",
+          "Patatas fritas",
+          "Jamón ibérico",
+          "Queso de oveja curado",
+          "Croquetitas de jamón",
+          "Calamaritos fritos",
+          "Pechuga de pollo empanada",
+          "Pechuga de pollo a la plancha",
+          "Tarta de comunión y helado"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Menú infantil (2025)",
+            "eur": 25
+          }
+        ],
+        "year": 2025,
+        "priceUnit": "Por comensal (no indicado expresamente en el texto facilitado)",
+        "mainChoice": "Elegir una opción al contratar",
+        "reservationDepositPercent": 20,
+        "sharedDishes": "No confirmado para menú infantil",
+        "beveragesIncluded": "Agua mineral y dos refrescos",
+        "menuCourses": {
+          "starters": [
+            "Aceitunas deshuesadas",
+            "Patatas fritas",
+            "Jamón ibérico",
+            "Queso de oveja curado"
+          ],
+          "following": [
+            "Croquetitas de jamón",
+            "Calamaritos fritos"
+          ],
+          "mainOptions": [
+            "Pechuga de pollo empanada",
+            "Pechuga de pollo a la plancha"
+          ],
+          "desserts": [
+            "Tarta de comunión y helado"
+          ]
+        }
       }
-    ]
+    ],
+    "menuSections": [
+      {
+        "title": "Platos",
+        "titleEn": "Traditional Dishes",
+        "items": [
+          {
+            "name": "Salmorejo",
+            "description": "Salmorejo",
+            "en": "Cordoban salmorejo",
+            "prices": []
+          },
+          {
+            "name": "Berenjenas Fritas",
+            "description": "Berenjenas Fritas",
+            "en": "Fried aubergines",
+            "prices": []
+          },
+          {
+            "name": "Ensaladilla Rusa",
+            "description": "Ensaladilla Rusa",
+            "en": "Russian-style potato salad",
+            "prices": []
+          },
+          {
+            "name": "Croquetas Caseras",
+            "description": "Croquetas Caseras",
+            "en": "Homemade croquettes",
+            "prices": []
+          },
+          {
+            "name": "Salpicón de Marisco",
+            "description": "Salpicón de Marisco",
+            "en": "Seafood salad",
+            "prices": []
+          },
+          {
+            "name": "Boquerones en Vinagre",
+            "description": "Boquerones en Vinagre",
+            "en": "Vinegar-marinated anchovies",
+            "prices": []
+          },
+          {
+            "name": "Boquerones Fritos",
+            "description": "Boquerones Fritos",
+            "en": "Fried anchovies",
+            "prices": []
+          },
+          {
+            "name": "Japuta en Adobo",
+            "description": "Japuta en Adobo",
+            "en": "Marinated fried pomfret (japuta)",
+            "prices": []
+          },
+          {
+            "name": "Calamares Fritos",
+            "description": "Calamares Fritos",
+            "en": "Fried squid",
+            "prices": []
+          },
+          {
+            "name": "Choco Frito",
+            "description": "Choco Frito",
+            "en": "Fried cuttlefish",
+            "prices": []
+          },
+          {
+            "name": "Bacalao Frito",
+            "description": "Bacalao Frito",
+            "en": "Fried cod",
+            "prices": []
+          },
+          {
+            "name": "Huevas Fritas con Mahonesa",
+            "description": "Huevas Fritas con Mahonesa",
+            "en": "Fried fish roe with mayonnaise",
+            "prices": []
+          },
+          {
+            "name": "Huevas en Vinagreta",
+            "description": "Huevas en Vinagreta",
+            "en": "Fish roe with vinaigrette",
+            "prices": []
+          },
+          {
+            "name": "Ancas de Rana",
+            "description": "Ancas de Rana",
+            "en": "Frog legs",
+            "prices": []
+          },
+          {
+            "name": "Flamenquín Casero",
+            "description": "Flamenquín Casero",
+            "en": "Homemade Cordoban flamenquín",
+            "prices": []
+          },
+          {
+            "name": "San Jacobo Casero",
+            "description": "San Jacobo Casero",
+            "en": "Homemade San Jacobo",
+            "prices": []
+          },
+          {
+            "name": "Carne con Tomate (ternera)",
+            "description": "Carne con Tomate (ternera)",
+            "en": "Beef in tomato sauce",
+            "prices": []
+          },
+          {
+            "name": "Callos Caseros (Ternera)",
+            "description": "Callos Caseros (Ternera)",
+            "en": "Homemade beef tripe",
+            "prices": []
+          },
+          {
+            "name": "Manitas de Cerdo",
+            "description": "Manitas de Cerdo",
+            "en": "Pig's trotters",
+            "prices": []
+          },
+          {
+            "name": "Jabalí Serrano",
+            "description": "Jabalí Serrano",
+            "en": "Mountain-style wild boar",
+            "prices": []
+          },
+          {
+            "name": "Venado en Salsa de Espárragos",
+            "description": "Venado en Salsa de Espárragos",
+            "en": "Venison in asparagus sauce",
+            "prices": []
+          },
+          {
+            "name": "Lechón Frito",
+            "description": "Lechón Frito",
+            "en": "Fried suckling pig",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Entremeses",
+        "titleEn": "Appetizers",
+        "items": [
+          {
+            "name": "Jamón Ibérico de Bellota",
+            "description": "Jamón Ibérico de Bellota",
+            "en": "Acorn-fed Iberian ham",
+            "prices": []
+          },
+          {
+            "name": "Queso Añejo de Oveja",
+            "description": "Queso Añejo de Oveja",
+            "en": "Aged sheep's milk cheese",
+            "prices": []
+          },
+          {
+            "name": "Morcilla Ibérica",
+            "description": "Morcilla Ibérica",
+            "en": "Iberian blood sausage",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Ensaladas y Verduras",
+        "titleEn": "Salads and Vegetables",
+        "items": [
+          {
+            "name": "Pimientos Asados con Atún y Huevo",
+            "description": "Pimientos Asados con Atún y Huevo",
+            "en": "Roasted peppers with tuna and egg",
+            "prices": []
+          },
+          {
+            "name": "Pisto con Huevo Frito",
+            "description": "Pisto con Huevo Frito",
+            "en": "Vegetable pisto with fried egg",
+            "prices": []
+          },
+          {
+            "name": "Habas Finas con Jamón",
+            "description": "Habas Finas con Jamón",
+            "en": "Tender broad beans with cured ham",
+            "prices": []
+          },
+          {
+            "name": "Alcachofas a la Montillana",
+            "description": "Alcachofas a la Montillana",
+            "en": "Montilla-style artichokes",
+            "prices": []
+          },
+          {
+            "name": "Ensalada Tradicional (2 personas)",
+            "description": "Ensalada Tradicional (2 personas)",
+            "en": "Traditional salad (serves two)",
+            "prices": []
+          },
+          {
+            "name": "Ensalada de Bacalao Ahumado",
+            "description": "Ensalada de Bacalao Ahumado",
+            "en": "Smoked cod salad",
+            "prices": []
+          },
+          {
+            "name": "Ensalada con Aguacate y Gulas (2 pax)",
+            "description": "Ensalada con Aguacate y Gulas (2 pax)",
+            "en": "Avocado and surimi eel salad (serves two)",
+            "prices": []
+          },
+          {
+            "name": "Ensalada de Ahumados y Queso de Cabra (2 pax)",
+            "description": "Ensalada de Ahumados y Queso de Cabra (2 pax)",
+            "en": "Smoked fish and goat cheese salad (serves two)",
+            "prices": []
+          },
+          {
+            "name": "Ensalada de Perdiz en Escabeche (2 pax)",
+            "description": "Ensalada de Perdiz en Escabeche (2 pax)",
+            "en": "Pickled partridge salad (serves two)",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Sopas y revueltos",
+        "titleEn": "Soups and Scrambled Eggs",
+        "items": [
+          {
+            "name": "Gazpacho con Guarnición (En temporada)",
+            "description": "Gazpacho con Guarnición (En temporada)",
+            "en": "Gazpacho with garnish (seasonal)",
+            "prices": []
+          },
+          {
+            "name": "Sopa de Ajo a la Antigua",
+            "description": "Sopa de Ajo a la Antigua",
+            "en": "Traditional garlic soup",
+            "prices": []
+          },
+          {
+            "name": "Sopa de Puchero",
+            "description": "Sopa de Puchero",
+            "en": "Traditional Spanish stew broth",
+            "prices": []
+          },
+          {
+            "name": "Revuelto de Habas Finas",
+            "description": "Revuelto de Habas Finas",
+            "en": "Scrambled eggs with tender broad beans",
+            "prices": []
+          },
+          {
+            "name": "Revuelto Beatillas",
+            "description": "Revuelto Beatillas",
+            "en": "Beatillas-style scrambled eggs",
+            "prices": []
+          },
+          {
+            "name": "Revuelto de Bacalao",
+            "description": "Revuelto de Bacalao",
+            "en": "Scrambled eggs with cod",
+            "prices": []
+          },
+          {
+            "name": "Revuelto de Espárragos",
+            "description": "Revuelto de Espárragos",
+            "en": "Scrambled eggs with asparagus",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Pescados",
+        "titleEn": "Fish and Seafood",
+        "items": [
+          {
+            "name": "Pulpo a la Gallega",
+            "description": "Pulpo a la Gallega",
+            "en": "Galician-style octopus",
+            "prices": []
+          },
+          {
+            "name": "Gambas al Ajillo",
+            "description": "Gambas al Ajillo",
+            "en": "Garlic prawns",
+            "prices": []
+          },
+          {
+            "name": "Gambas Plancha 250 gr",
+            "description": "Gambas Plancha 250 gr",
+            "en": "Grilled prawns (250 g)",
+            "prices": []
+          },
+          {
+            "name": "Lomo de Bacalao",
+            "description": "Lomo de Bacalao",
+            "en": "Cod loin",
+            "prices": []
+          },
+          {
+            "name": "Pez Espada a la Plancha",
+            "description": "Pez Espada a la Plancha",
+            "en": "Grilled swordfish",
+            "prices": []
+          },
+          {
+            "name": "Salmón a la Parrilla",
+            "description": "Salmón a la Parrilla",
+            "en": "Grilled salmon",
+            "prices": []
+          },
+          {
+            "name": "Merluza de Pincho",
+            "description": "Merluza de Pincho",
+            "en": "Line-caught hake",
+            "prices": []
+          },
+          {
+            "name": "Lenguado de Costa",
+            "description": "Lenguado de Costa",
+            "en": "Coastal sole",
+            "prices": []
+          },
+          {
+            "name": "Calamar de Potera a la Plancha",
+            "description": "Calamar de Potera a la Plancha",
+            "en": "Grilled jig-caught squid",
+            "prices": []
+          },
+          {
+            "name": "Fritura de Pescado (2 personas)",
+            "description": "Fritura de Pescado (2 personas)",
+            "en": "Assorted fried fish (serves two)",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Carnes",
+        "titleEn": "Meat",
+        "items": [
+          {
+            "name": "Rabo de Toro Estofado",
+            "description": "Rabo de Toro Estofado",
+            "en": "Braised oxtail",
+            "prices": []
+          },
+          {
+            "name": "Codillo de Cerdo Asado",
+            "description": "Codillo de Cerdo Asado",
+            "en": "Roasted pork knuckle",
+            "prices": []
+          },
+          {
+            "name": "Solomillo Ibérico de los Pedroches (2 Salsas)",
+            "description": "Solomillo Ibérico de los Pedroches (2 Salsas)",
+            "en": "Los Pedroches Iberian pork tenderloin (two sauces)",
+            "prices": []
+          },
+          {
+            "name": "Presa Ibérica de los Pedroches",
+            "description": "Presa Ibérica de los Pedroches",
+            "en": "Los Pedroches Iberian pork presa cut",
+            "prices": []
+          },
+          {
+            "name": "Cochinillo de Segovia Asado",
+            "description": "Cochinillo de Segovia Asado",
+            "en": "Segovian-style roast suckling pig",
+            "prices": []
+          },
+          {
+            "name": "Chuletón de Vaca Madurado (500g)",
+            "description": "Chuletón de Vaca Madurado (500g)",
+            "en": "Aged beef rib steak (500 g)",
+            "prices": []
+          },
+          {
+            "name": "Entrecot de Vaca Madurado",
+            "description": "Entrecot de Vaca Madurado",
+            "en": "Aged beef entrecôte",
+            "prices": []
+          },
+          {
+            "name": "Solomillo de Vaca Madurado",
+            "description": "Solomillo de Vaca Madurado",
+            "en": "Aged beef tenderloin",
+            "prices": []
+          },
+          {
+            "name": "Mollejas de Cordero al ajillo",
+            "description": "Mollejas de Cordero al ajillo",
+            "en": "Lamb sweetbreads with garlic",
+            "prices": []
+          },
+          {
+            "name": "Chuletitas de Cordero Lechal",
+            "description": "Chuletitas de Cordero Lechal",
+            "en": "Suckling lamb chops",
+            "prices": []
+          },
+          {
+            "name": "Paletilla de Cordero Lechal",
+            "description": "Paletilla de Cordero Lechal",
+            "en": "Suckling lamb shoulder",
+            "prices": []
+          },
+          {
+            "name": "Lomo de Ciervo",
+            "description": "Lomo de Ciervo",
+            "en": "Venison loin",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Postres",
+        "titleEn": "Desserts",
+        "items": [
+          {
+            "name": "Flan de huevo",
+            "description": "Flan de huevo",
+            "en": "Egg custard flan",
+            "prices": []
+          },
+          {
+            "name": "Flan de huevo con Nata",
+            "description": "Flan de huevo con Nata",
+            "en": "Egg custard flan with whipped cream",
+            "prices": []
+          },
+          {
+            "name": "Flan de queso",
+            "description": "Flan de queso",
+            "en": "Cheese flan",
+            "prices": []
+          },
+          {
+            "name": "Natillas Caseras",
+            "description": "Natillas Caseras",
+            "en": "Homemade custard",
+            "prices": []
+          },
+          {
+            "name": "Arroz con Leche y Canela",
+            "description": "Arroz con Leche y Canela",
+            "en": "Rice pudding with cinnamon",
+            "prices": []
+          },
+          {
+            "name": "Tocino de Cielo",
+            "description": "Tocino de Cielo",
+            "en": "Traditional egg yolk custard",
+            "prices": []
+          },
+          {
+            "name": "Crema de Yogurt con Tocino de Cielo",
+            "description": "Crema de Yogurt con Tocino de Cielo",
+            "en": "Yogurt cream with egg yolk custard",
+            "prices": []
+          },
+          {
+            "name": "Pastel Cordobés",
+            "description": "Pastel Cordobés",
+            "en": "Traditional Cordoban pastry",
+            "prices": []
+          },
+          {
+            "name": "Tarta de la Casa",
+            "description": "Tarta de la Casa",
+            "en": "House cake",
+            "prices": []
+          },
+          {
+            "name": "Helados Variados (ver carta)",
+            "description": "Tipos de helados y precios no disponibles en la carta publicada.",
+            "en": "Ice cream varieties and prices are not listed on the published menu.",
+            "prices": []
+          },
+          {
+            "name": "Fruta del Tiempo",
+            "description": "Fruta del Tiempo",
+            "en": "Seasonal fruit",
+            "prices": []
+          },
+          {
+            "name": "Piña Natural",
+            "description": "Piña Natural",
+            "en": "Fresh pineapple",
+            "prices": []
+          }
+        ]
+      }
+    ],
+    "menuNotes": "Carta individual: 75 platos en 7 secciones, sin precios publicados. 'Helados variados': tipos y precios no disponibles en la carta publicada. Menús de grupo: 2025, precios históricos de 40, 45, 48 y 25 EUR; vigencia 2026 no verificada. En los tres menús generales, platos compartidos entre cuatro personas excepto el principal, que se elige al contratar; reserva del 20% del presupuesto. Aplicación de la regla de compartir al menú infantil no confirmada. 'Ensaladilla de gambas' corrige errata original 'Gamas' a petición del usuario. Rabo de toro mencionado en introducción y listado como estofado en carnes. Bebidas solo se describen como incluidas en los menús, no como productos individuales. Sin atribución de alérgenos no publicados.",
+    "menuDisclaimer": "Los precios de menús corresponden a la publicación 2025 y pueden haber cambiado. La carta individual no publica precios. Consultar directamente con el restaurante."
   },
   {
     "id": "casa-bravo-1919",
