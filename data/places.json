@@ -25093,6 +25093,145 @@
             "eur": 2.75
           }
         ]
+      },
+      {
+        "service": "Postres",
+        "dishes": [
+          "Tarta cremosa de queso",
+          "Pastel cordobés con helado de vainilla",
+          "Flan casero con helado de vainilla",
+          "Flú de Ferrero Rocher",
+          "Natillas",
+          "Tocino de cielo con helado de turrón",
+          "Bomba de chocolate",
+          "Tarta de tiramisú",
+          "Tres chocolates",
+          "Naranja estilo Moriles",
+          "Tarta selva negra",
+          "Surtido de postres",
+          "Coulant de chocolate con helado de vainilla",
+          "Tulipa muerte por chocolate",
+          "Tulipa helada de vainilla de Tahití con nueces de macadamia",
+          "Tulipa helada de turrón",
+          "Tarta de turrón",
+          "Torrija con helado de vainilla",
+          "Gachas",
+          "Tarta de chocolate (sin gluten ni lactosa)",
+          "Copa helada de nata y nueces (sin azúcar)",
+          "Trufita de chocolate"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Tarta cremosa de queso",
+            "eur": 5,
+            "portion": "Unidad / formato de carta"
+          },
+          {
+            "dish": "Pastel cordobés con helado de vainilla",
+            "eur": 5,
+            "portion": "Unidad / formato de carta"
+          },
+          {
+            "dish": "Flan casero con helado de vainilla",
+            "eur": 4.65,
+            "portion": "Unidad / formato de carta"
+          },
+          {
+            "dish": "Flú de Ferrero Rocher",
+            "eur": 5.65,
+            "portion": "Unidad / formato de carta"
+          },
+          {
+            "dish": "Natillas",
+            "eur": 4.25,
+            "portion": "Unidad / formato de carta"
+          },
+          {
+            "dish": "Tocino de cielo con helado de turrón",
+            "eur": 5,
+            "portion": "Unidad / formato de carta"
+          },
+          {
+            "dish": "Bomba de chocolate",
+            "eur": 5.5,
+            "portion": "Unidad / formato de carta"
+          },
+          {
+            "dish": "Tarta de tiramisú",
+            "eur": 5,
+            "portion": "Unidad / formato de carta"
+          },
+          {
+            "dish": "Tres chocolates",
+            "eur": 5.5,
+            "portion": "Unidad / formato de carta"
+          },
+          {
+            "dish": "Naranja estilo Moriles",
+            "eur": 4.25,
+            "portion": "Unidad / formato de carta"
+          },
+          {
+            "dish": "Tarta selva negra",
+            "eur": 5,
+            "portion": "Unidad / formato de carta"
+          },
+          {
+            "dish": "Surtido de postres",
+            "eur": 14.95,
+            "portion": "Unidad / formato de carta"
+          },
+          {
+            "dish": "Coulant de chocolate con helado de vainilla",
+            "eur": 5.6,
+            "portion": "Unidad / formato de carta"
+          },
+          {
+            "dish": "Tulipa muerte por chocolate",
+            "eur": 5,
+            "portion": "Unidad / formato de carta"
+          },
+          {
+            "dish": "Tulipa helada de vainilla de Tahití con nueces de macadamia",
+            "eur": 5,
+            "portion": "Unidad / formato de carta"
+          },
+          {
+            "dish": "Tulipa helada de turrón",
+            "eur": 5,
+            "portion": "Unidad / formato de carta"
+          },
+          {
+            "dish": "Tarta de turrón",
+            "eur": 4.9,
+            "portion": "Unidad / formato de carta"
+          },
+          {
+            "dish": "Torrija con helado de vainilla",
+            "eur": 5,
+            "portion": "Unidad / formato de carta"
+          },
+          {
+            "dish": "Gachas",
+            "eur": 4.25,
+            "portion": "Unidad / formato de carta"
+          },
+          {
+            "dish": "Tarta de chocolate (sin gluten ni lactosa)",
+            "eur": 4.65,
+            "portion": "Unidad / formato de carta"
+          },
+          {
+            "dish": "Copa helada de nata y nueces (sin azúcar)",
+            "eur": 4.65,
+            "portion": "Unidad / formato de carta"
+          },
+          {
+            "dish": "Trufita de chocolate",
+            "eur": 0.85,
+            "portion": "Unidad / formato de carta"
+          }
+        ]
       }
     ],
     "menuSections": [
@@ -25763,6 +25902,209 @@
             ]
           }
         ]
+      },
+      {
+        "title": "Postres",
+        "items": [
+          {
+            "name": "Tarta cremosa de queso",
+            "prices": [
+              {
+                "eur": 5,
+                "portion": "Unidad / formato de carta"
+              }
+            ]
+          },
+          {
+            "name": "Pastel cordobés con helado de vainilla",
+            "prices": [
+              {
+                "eur": 5,
+                "portion": "Unidad / formato de carta"
+              }
+            ]
+          },
+          {
+            "name": "Flan casero con helado de vainilla",
+            "prices": [
+              {
+                "eur": 4.65,
+                "portion": "Unidad / formato de carta"
+              }
+            ]
+          },
+          {
+            "name": "Flú de Ferrero Rocher",
+            "prices": [
+              {
+                "eur": 5.65,
+                "portion": "Unidad / formato de carta"
+              }
+            ]
+          },
+          {
+            "name": "Natillas",
+            "prices": [
+              {
+                "eur": 4.25,
+                "portion": "Unidad / formato de carta"
+              }
+            ]
+          },
+          {
+            "name": "Tocino de cielo con helado de turrón",
+            "prices": [
+              {
+                "eur": 5,
+                "portion": "Unidad / formato de carta"
+              }
+            ]
+          },
+          {
+            "name": "Bomba de chocolate",
+            "prices": [
+              {
+                "eur": 5.5,
+                "portion": "Unidad / formato de carta"
+              }
+            ]
+          },
+          {
+            "name": "Tarta de tiramisú",
+            "prices": [
+              {
+                "eur": 5,
+                "portion": "Unidad / formato de carta"
+              }
+            ]
+          },
+          {
+            "name": "Tres chocolates",
+            "prices": [
+              {
+                "eur": 5.5,
+                "portion": "Unidad / formato de carta"
+              }
+            ]
+          },
+          {
+            "name": "Naranja estilo Moriles",
+            "prices": [
+              {
+                "eur": 4.25,
+                "portion": "Unidad / formato de carta"
+              }
+            ]
+          },
+          {
+            "name": "Tarta selva negra",
+            "prices": [
+              {
+                "eur": 5,
+                "portion": "Unidad / formato de carta"
+              }
+            ]
+          },
+          {
+            "name": "Surtido de postres",
+            "prices": [
+              {
+                "eur": 14.95,
+                "portion": "Unidad / formato de carta"
+              }
+            ]
+          },
+          {
+            "name": "Coulant de chocolate con helado de vainilla",
+            "prices": [
+              {
+                "eur": 5.6,
+                "portion": "Unidad / formato de carta"
+              }
+            ]
+          },
+          {
+            "name": "Tulipa muerte por chocolate",
+            "prices": [
+              {
+                "eur": 5,
+                "portion": "Unidad / formato de carta"
+              }
+            ]
+          },
+          {
+            "name": "Tulipa helada de vainilla de Tahití con nueces de macadamia",
+            "prices": [
+              {
+                "eur": 5,
+                "portion": "Unidad / formato de carta"
+              }
+            ]
+          },
+          {
+            "name": "Tulipa helada de turrón",
+            "prices": [
+              {
+                "eur": 5,
+                "portion": "Unidad / formato de carta"
+              }
+            ]
+          },
+          {
+            "name": "Tarta de turrón",
+            "prices": [
+              {
+                "eur": 4.9,
+                "portion": "Unidad / formato de carta"
+              }
+            ]
+          },
+          {
+            "name": "Torrija con helado de vainilla",
+            "prices": [
+              {
+                "eur": 5,
+                "portion": "Unidad / formato de carta"
+              }
+            ]
+          },
+          {
+            "name": "Gachas",
+            "prices": [
+              {
+                "eur": 4.25,
+                "portion": "Unidad / formato de carta"
+              }
+            ]
+          },
+          {
+            "name": "Tarta de chocolate (sin gluten ni lactosa)",
+            "prices": [
+              {
+                "eur": 4.65,
+                "portion": "Unidad / formato de carta"
+              }
+            ]
+          },
+          {
+            "name": "Copa helada de nata y nueces (sin azúcar)",
+            "prices": [
+              {
+                "eur": 4.65,
+                "portion": "Unidad / formato de carta"
+              }
+            ]
+          },
+          {
+            "name": "Trufita de chocolate",
+            "prices": [
+              {
+                "eur": 0.85,
+                "portion": "Unidad / formato de carta"
+              }
+            ]
+          }
+        ]
       }
     ],
     "breakfastToastOptions": [
@@ -25780,7 +26122,7 @@
       "Miel de flores",
       "Miel de caña"
     ],
-    "menuSourceNote": "Capturas facilitadas por el usuario el 16/10/2026, identificadas expresamente como Bar Moriles Ciudad Jardín. Transcripción parcial de ensaladas, entrantes y tostadas de desayunos; existen además capturas de postres, cafés, infusiones, chocolates y bebidas pendientes de incorporación individual o de revisión. No se dispone de capturas de todos los platos principales, por lo que NO se da por completa la carta. Alérgenos por pictogramas pendientes de identificación. PDF «Grupo Bar Moriles Menús» reúne menús del grupo y de distintas ubicaciones y NO debe asignarse íntegramente a Ciudad Jardín sin verificar ámbito; indica vigencia de algunos menús hasta 30/06/2027. Fotos subidas por usuarios no usadas."
+    "menuSourceNote": "Capturas facilitadas por el usuario el 16/10/2026, identificadas expresamente como Bar Moriles Ciudad Jardín. Transcripción parcial de ensaladas, entrantes y tostadas de desayunos; existen además capturas de cafés, infusiones, chocolates y bebidas pendientes de incorporación individual o de revisión. No se dispone de capturas de todos los platos principales, por lo que NO se da por completa la carta. Alérgenos por pictogramas pendientes de identificación. PDF «Grupo Bar Moriles Menús» reúne menús del grupo y de distintas ubicaciones y NO debe asignarse íntegramente a Ciudad Jardín sin verificar ámbito; indica vigencia de algunos menús hasta 30/06/2027. Fotos subidas por usuarios no usadas. Los postres se incorporan desde la captura, conservando disponibilidad y precios sujetos a verificación."
   },
   {
     "id": "moriles-ribera",
