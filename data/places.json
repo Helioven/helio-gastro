@@ -16017,6 +16017,42 @@
             "portion": "Formato no indicado"
           }
         ]
+      },
+      {
+        "service": "Sugerencias del día",
+        "dishes": [
+          "Migas completas",
+          "Menudo gitano",
+          "Costillar al horno con salsa BBQ",
+          "Secreto ibérico al horno con patatas y verduritas"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Migas completas",
+            "eur": 7.9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Migas completas",
+            "eur": 10.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Menudo gitano",
+            "eur": 12.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Costillar al horno con salsa BBQ",
+            "eur": 15.9,
+            "portion": "Formato no indicado"
+          },
+          {
+            "dish": "Secreto ibérico al horno con patatas y verduritas",
+            "eur": 15.9,
+            "portion": "Formato no indicado"
+          }
+        ]
       }
     ],
     "menuSections": [
@@ -16513,6 +16549,54 @@
             ]
           }
         ]
+      },
+      {
+        "title": "Sugerencias del día",
+        "items": [
+          {
+            "name": "Migas completas",
+            "prices": [
+              {
+                "eur": 7.9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 10.9,
+                "portion": "Ración"
+              }
+            ],
+            "description": "Migas de pan salteadas con chorizo, morcilla, panceta, pimientos verdes y ajo. Consultar disponibilidad."
+          },
+          {
+            "name": "Menudo gitano",
+            "prices": [
+              {
+                "eur": 12.9,
+                "portion": "Ración"
+              }
+            ],
+            "description": "Potaje de garbanzos con casquería"
+          },
+          {
+            "name": "Costillar al horno con salsa BBQ",
+            "prices": [
+              {
+                "eur": 15.9,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "Costillar de cerdo asado al horno con salsa barbacoa"
+          },
+          {
+            "name": "Secreto ibérico al horno con patatas y verduritas",
+            "prices": [
+              {
+                "eur": 15.9,
+                "portion": "Formato no indicado"
+              }
+            ]
+          }
+        ]
       }
     ],
     "extras": [
@@ -16534,7 +16618,7 @@
         "eur": 1.5
       }
     ],
-    "menuSourceNote": "Transcripción parcial de la carta facilitada en texto por el usuario el 16/10/2026: Entrantes fríos y ensaladas, ocho platos y cuatro suplementos. Precios de carta no verificados en tiempo real; fecha de edición no indicada. Secciones restantes pendientes. Sin fotografías de terceros. Sección Entrantes calientes recibida del usuario el 16/10/2026: siete platos y trece importes; huevos rotos sin tamaño de porción indicado. Sección Pescados facilitada por el usuario el 16/10/2026: cinco platos, seis precios. Solo la japuta presenta medias raciones y raciones expresas; los restantes formatos no se indican. Sección Carnes y platos fuertes proporcionada por el usuario: ocho platos, once precios. La distinción «Premio al Mejor Rabo de Toro Cordobés 2026» está citada según la carta, no verificada independientemente. Iconos svg sin información textual, no interpretados. Sección infantil «Para los más peques» recibida del usuario: tres referencias y cuatro precios. Lagrimitas también presentes en entrantes calientes con los mismos importes; se mantiene la pertenencia a ambas secciones sin considerar un plato distinto. Iconos svg no interpretados. Sección Postres facilitada por el usuario: diez referencias y diez precios. Se conserva mención del chef Julián en el helado de naranja con vermut, así como la receta atribuida a la abuela Concha. Vigencia de los importes no verificada independientemente."
+    "menuSourceNote": "Transcripción parcial de la carta facilitada en texto por el usuario el 16/10/2026: Entrantes fríos y ensaladas, ocho platos y cuatro suplementos. Precios de carta no verificados en tiempo real; fecha de edición no indicada. Secciones restantes pendientes. Sin fotografías de terceros. Sección Entrantes calientes recibida del usuario el 16/10/2026: siete platos y trece importes; huevos rotos sin tamaño de porción indicado. Sección Pescados facilitada por el usuario el 16/10/2026: cinco platos, seis precios. Solo la japuta presenta medias raciones y raciones expresas; los restantes formatos no se indican. Sección Carnes y platos fuertes proporcionada por el usuario: ocho platos, once precios. La distinción «Premio al Mejor Rabo de Toro Cordobés 2026» está citada según la carta, no verificada independientemente. Iconos svg sin información textual, no interpretados. Sección infantil «Para los más peques» recibida del usuario: tres referencias y cuatro precios. Lagrimitas también presentes en entrantes calientes con los mismos importes; se mantiene la pertenencia a ambas secciones sin considerar un plato distinto. Iconos svg no interpretados. Sección Postres facilitada por el usuario: diez referencias y diez precios. Se conserva mención del chef Julián en el helado de naranja con vermut, así como la receta atribuida a la abuela Concha. Vigencia de los importes no verificada independientemente. Sugerencias del día facilitadas por el usuario el 16/10/2026: cuatro referencias, cinco precios, sujetos a cambios y disponibilidad. Las migas requieren consultar disponibilidad. El menudo gitano figura también en carnes y platos fuertes al mismo precio: no se contabiliza como plato único adicional. No se identifican los marcadores svg de alérgenos."
   },
   {
     "id": "bodegas-campos",
