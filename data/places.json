@@ -5,39 +5,713 @@
     "area": "Centro · Plaza de San Miguel",
     "address": "Calle San Álvaro, 5, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "priceStatus": "confirmed",
+    "checkedAt": "2026-10-16",
     "sources": [
       {
         "label": "Carta oficial con precios",
+        "url": "https://tabernalamontillana.com/carta/"
+      },
+      {
+        "label": "Carta oficial PDF 2025 aportada por el usuario",
         "url": "https://tabernalamontillana.com/carta/"
       }
     ],
     "menus": [
       {
-        "service": "general",
+        "service": "Lo nuestro",
         "dishes": [
-          "Flamenquín cordobés",
           "Salmorejo cordobés",
+          "Mazamorra de almendras, maracuyá-ají amarillo y bacalao ahumado",
+          "Ensaladilla",
+          "Berenjenas fritas, miel de Montoro y queso de cabra de Zuheros",
+          "Patatas muy bravas",
           "Croquetas de jamón ibérico",
-          "Rabo de toro"
+          "Flamenquín cordobés",
+          "Revolcón de patatas con jamón ibérico",
+          "Torreznos fritos, demi-glace de palo cortado y patata chafada"
         ],
         "dishPrices": [
           {
-            "dish": "Flamenquín cordobés (media ración)",
-            "eur": 8.5
+            "dish": "Salmorejo cordobés",
+            "eur": 6.9,
+            "portion": "media ración"
           },
           {
-            "dish": "Flamenquín cordobés (ración)",
-            "eur": 12.5
+            "dish": "Salmorejo cordobés",
+            "eur": 9.9,
+            "portion": "ración entera"
           },
           {
-            "dish": "Salmorejo cordobés (media ración)",
-            "eur": 6.9
+            "dish": "Mazamorra de almendras, maracuyá-ají amarillo y bacalao ahumado",
+            "eur": 7.5,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Mazamorra de almendras, maracuyá-ají amarillo y bacalao ahumado",
+            "eur": 10.5,
+            "portion": "ración entera"
+          },
+          {
+            "dish": "Ensaladilla",
+            "eur": 7.5,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Ensaladilla",
+            "eur": 10.5,
+            "portion": "ración entera"
+          },
+          {
+            "dish": "Berenjenas fritas, miel de Montoro y queso de cabra de Zuheros",
+            "eur": 7.5,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Berenjenas fritas, miel de Montoro y queso de cabra de Zuheros",
+            "eur": 10.5,
+            "portion": "ración entera"
+          },
+          {
+            "dish": "Patatas muy bravas",
+            "eur": 6.9,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Patatas muy bravas",
+            "eur": 9.9,
+            "portion": "ración entera"
+          },
+          {
+            "dish": "Croquetas de jamón ibérico",
+            "eur": 1.7,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Flamenquín cordobés",
+            "eur": 8.5,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Flamenquín cordobés",
+            "eur": 12.5,
+            "portion": "ración entera"
+          },
+          {
+            "dish": "Revolcón de patatas con jamón ibérico",
+            "eur": 12.5,
+            "portion": "plato"
+          },
+          {
+            "dish": "Torreznos fritos, demi-glace de palo cortado y patata chafada",
+            "eur": 13.5,
+            "portion": "plato"
+          }
+        ]
+      },
+      {
+        "service": "Del huerto",
+        "dishes": [
+          "Ensalada de rúcula, focaccia, tomates horneados, pollo crujiente y salsa rosa de vermouth de la tierra",
+          "Ensalada de codorniz escabechada, cebolla dulce, queso de cabra, picatostes y vinagreta de yogur y mostaza",
+          "Calabacín a la brasa, queso brie y miel picante"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Ensalada de rúcula, focaccia, tomates horneados, pollo crujiente y salsa rosa de vermouth de la tierra",
+            "eur": 12.9,
+            "portion": "plato"
+          },
+          {
+            "dish": "Ensalada de codorniz escabechada, cebolla dulce, queso de cabra, picatostes y vinagreta de yogur y mostaza",
+            "eur": 12.9,
+            "portion": "plato"
+          },
+          {
+            "dish": "Calabacín a la brasa, queso brie y miel picante",
+            "eur": 10.5,
+            "portion": "plato"
+          }
+        ]
+      },
+      {
+        "service": "Para gozar",
+        "dishes": [
+          "Bocadillo de ternera crujiente, rúcula, tomates horneados y mayonesa de sriracha-miel",
+          "Brioche de pulled pork ibérico, col encurtida, queso ahumado y mayo-hoisin",
+          "Bocadillo de oreja a la plancha, col encurtida y mayo-chipotle"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Bocadillo de ternera crujiente, rúcula, tomates horneados y mayonesa de sriracha-miel",
+            "eur": 12.5,
+            "portion": "plato"
+          },
+          {
+            "dish": "Brioche de pulled pork ibérico, col encurtida, queso ahumado y mayo-hoisin",
+            "eur": 11.9,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bocadillo de oreja a la plancha, col encurtida y mayo-chipotle",
+            "eur": 13.9,
+            "portion": "unidad"
+          }
+        ]
+      },
+      {
+        "service": "De la mar",
+        "dishes": [
+          "Calamaritos fritos",
+          "Bacalao frito con mayokimchi",
+          "Rosada aliñada frita",
+          "Boquerones fritos al limón",
+          "Crepes rellenos de salmón y espinacas con bechamel y almendras/curry",
+          "Lomo de bacalao confitado con alioli tostado y pisto"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Calamaritos fritos",
+            "eur": 8.9,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Calamaritos fritos",
+            "eur": 11.9,
+            "portion": "ración entera"
+          },
+          {
+            "dish": "Bacalao frito con mayokimchi",
+            "eur": 9.2,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Bacalao frito con mayokimchi",
+            "eur": 12.2,
+            "portion": "ración entera"
+          },
+          {
+            "dish": "Rosada aliñada frita",
+            "eur": 9.2,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Rosada aliñada frita",
+            "eur": 12.2,
+            "portion": "ración entera"
+          },
+          {
+            "dish": "Boquerones fritos al limón",
+            "eur": 9.2,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Boquerones fritos al limón",
+            "eur": 12.2,
+            "portion": "ración entera"
+          },
+          {
+            "dish": "Crepes rellenos de salmón y espinacas con bechamel y almendras/curry",
+            "eur": 7.8,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Crepes rellenos de salmón y espinacas con bechamel y almendras/curry",
+            "eur": 15.6,
+            "portion": "ración entera"
+          },
+          {
+            "dish": "Lomo de bacalao confitado con alioli tostado y pisto",
+            "eur": 14.9,
+            "portion": "220 g"
+          }
+        ]
+      },
+      {
+        "service": "De la tierra",
+        "dishes": [
+          "Abanico ibérico de bellota confitado y braseado con salsa de turrón, foie y PX",
+          "Mogote ibérico confitado y braseado con velouté de amontillado y patata chafada",
+          "Crepes rellenos de cordero asado con salsa al ras el hanout",
+          "Rabo de toro al oloroso",
+          "Lomo bajo de vaca madurada a la brasa"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Abanico ibérico de bellota confitado y braseado con salsa de turrón, foie y PX",
+            "eur": 14.9,
+            "portion": "220 g"
+          },
+          {
+            "dish": "Mogote ibérico confitado y braseado con velouté de amontillado y patata chafada",
+            "eur": 14.9,
+            "portion": "250 g"
+          },
+          {
+            "dish": "Crepes rellenos de cordero asado con salsa al ras el hanout",
+            "eur": 7.8,
+            "portion": "media ración"
+          },
+          {
+            "dish": "Crepes rellenos de cordero asado con salsa al ras el hanout",
+            "eur": 15.6,
+            "portion": "ración entera"
+          },
+          {
+            "dish": "Rabo de toro al oloroso",
+            "eur": 19.9,
+            "portion": "350 g"
+          },
+          {
+            "dish": "Lomo bajo de vaca madurada a la brasa",
+            "eur": 22.9,
+            "portion": "330–360 g"
+          }
+        ]
+      },
+      {
+        "service": "Dulce final",
+        "dishes": [
+          "Tarta de la abuela",
+          "Manolete relleno de cabello de ángel y sopa fría dulce de vinagre de PX",
+          "Tarta de queso curado de la Sierra de Córdoba con chantillí de fresa",
+          "Torrija, crema de chocolate blanco-mango y helado de dulce de leche merengada"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Tarta de la abuela",
+            "eur": 5.9,
+            "portion": "plato"
+          },
+          {
+            "dish": "Manolete relleno de cabello de ángel y sopa fría dulce de vinagre de PX",
+            "eur": 6.6,
+            "portion": "plato"
+          },
+          {
+            "dish": "Tarta de queso curado de la Sierra de Córdoba con chantillí de fresa",
+            "eur": 5.9,
+            "portion": "plato"
+          },
+          {
+            "dish": "Torrija, crema de chocolate blanco-mango y helado de dulce de leche merengada",
+            "eur": 6.6,
+            "portion": "plato"
           }
         ]
       }
-    ]
+    ],
+    "menuSections": [
+      {
+        "title": "Lo nuestro",
+        "items": [
+          {
+            "name": "Salmorejo cordobés",
+            "description": "Crema fría cordobesa de tomate y pan.",
+            "en": "Traditional chilled Cordoban tomato and bread cream.",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 6.9
+              },
+              {
+                "label": "ración entera",
+                "eur": 9.9
+              }
+            ]
+          },
+          {
+            "name": "Mazamorra de almendras, maracuyá-ají amarillo y bacalao ahumado",
+            "description": "Mazamorra de almendras con maracuyá, ají amarillo y bacalao ahumado.",
+            "en": "Almond mazamorra with passion fruit, yellow chilli and smoked cod.",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.5
+              },
+              {
+                "label": "ración entera",
+                "eur": 10.5
+              }
+            ]
+          },
+          {
+            "name": "Ensaladilla",
+            "description": "Ensaladilla de patata, zanahoria, bacalao, gamba blanca y atún.",
+            "en": "Potato salad with carrot, cod, white prawns and tuna.",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.5
+              },
+              {
+                "label": "ración entera",
+                "eur": 10.5
+              }
+            ]
+          },
+          {
+            "name": "Berenjenas fritas, miel de Montoro y queso de cabra de Zuheros",
+            "description": "Berenjenas fritas con miel de Montoro y queso de cabra de Zuheros.",
+            "en": "Fried aubergines with Montoro honey and Zuheros goat's cheese.",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.5
+              },
+              {
+                "label": "ración entera",
+                "eur": 10.5
+              }
+            ]
+          },
+          {
+            "name": "Patatas muy bravas",
+            "description": "Patatas con salsa casera picante de tomate y mayonesa.",
+            "en": "Potatoes with house-made spicy tomato sauce and mayonnaise.",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 6.9
+              },
+              {
+                "label": "ración entera",
+                "eur": 9.9
+              }
+            ]
+          },
+          {
+            "name": "Croquetas de jamón ibérico",
+            "description": "Croquetas de jamón ibérico, vendidas por unidad.",
+            "en": "Iberian ham croquettes, sold individually.",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 1.7
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín cordobés",
+            "description": "Flamenquín cordobés empanado y frito.",
+            "en": "Traditional breaded and fried Cordoban flamenquín.",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 8.5
+              },
+              {
+                "label": "ración entera",
+                "eur": 12.5
+              }
+            ]
+          },
+          {
+            "name": "Revolcón de patatas con jamón ibérico",
+            "description": "Patatas revolconas con jamón ibérico.",
+            "en": "Rustic mashed potatoes with Iberian ham.",
+            "prices": [
+              {
+                "label": "plato",
+                "eur": 12.5
+              }
+            ]
+          },
+          {
+            "name": "Torreznos fritos, demi-glace de palo cortado y patata chafada",
+            "description": "Torreznos fritos con reducción de palo cortado y patata chafada.",
+            "en": "Crispy pork belly with palo cortado demi-glace and crushed potatoes.",
+            "prices": [
+              {
+                "label": "plato",
+                "eur": 13.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Del huerto",
+        "items": [
+          {
+            "name": "Ensalada de rúcula, focaccia, tomates horneados, pollo crujiente y salsa rosa de vermouth de la tierra",
+            "description": "Ensalada con rúcula, focaccia, tomate al horno y pollo crujiente marinado en fino y especias, con salsa rosa de vermú.",
+            "en": "Rocket and focaccia salad with roasted tomatoes, crispy chicken marinated in fino sherry and spices, and vermouth dressing.",
+            "prices": [
+              {
+                "label": "plato",
+                "eur": 12.9
+              }
+            ]
+          },
+          {
+            "name": "Ensalada de codorniz escabechada, cebolla dulce, queso de cabra, picatostes y vinagreta de yogur y mostaza",
+            "description": "Ensalada de codorniz escabechada con cebolla dulce, queso de cabra, picatostes y vinagreta de yogur y mostaza.",
+            "en": "Pickled quail salad with sweet onion, goat's cheese, croutons and yoghurt-mustard dressing.",
+            "prices": [
+              {
+                "label": "plato",
+                "eur": 12.9
+              }
+            ]
+          },
+          {
+            "name": "Calabacín a la brasa, queso brie y miel picante",
+            "description": "Calabacín a la brasa con queso brie y miel picante.",
+            "en": "Chargrilled courgette with Brie cheese and spicy honey.",
+            "prices": [
+              {
+                "label": "plato",
+                "eur": 10.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Para gozar",
+        "items": [
+          {
+            "name": "Bocadillo de ternera crujiente, rúcula, tomates horneados y mayonesa de sriracha-miel",
+            "description": "Bocadillo de ternera marinada en fino y harissa, con rúcula, tomate al horno y mayonesa de sriracha y miel.",
+            "en": "Crispy beef sandwich with rocket, roasted tomatoes and sriracha-honey mayonnaise; beef marinated in fino and harissa.",
+            "prices": [
+              {
+                "label": "plato",
+                "eur": 12.5
+              }
+            ]
+          },
+          {
+            "name": "Brioche de pulled pork ibérico, col encurtida, queso ahumado y mayo-hoisin",
+            "description": "Brioche de cerdo ibérico desmigado con col encurtida, queso ahumado y mayonesa hoisin.",
+            "en": "Iberian pulled pork brioche with pickled cabbage, smoked cheese and hoisin mayonnaise.",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 11.9
+              }
+            ]
+          },
+          {
+            "name": "Bocadillo de oreja a la plancha, col encurtida y mayo-chipotle",
+            "description": "Bocadillo de oreja a la plancha con col encurtida y mayonesa de chipotle.",
+            "en": "Griddled pork ear sandwich with pickled cabbage and chipotle mayonnaise.",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 13.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "De la mar",
+        "items": [
+          {
+            "name": "Calamaritos fritos",
+            "description": "Calamaritos fritos.",
+            "en": "Fried baby squid.",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 8.9
+              },
+              {
+                "label": "ración entera",
+                "eur": 11.9
+              }
+            ]
+          },
+          {
+            "name": "Bacalao frito con mayokimchi",
+            "description": "Bacalao frito con mayonesa de kimchi.",
+            "en": "Fried cod with kimchi mayonnaise.",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 9.2
+              },
+              {
+                "label": "ración entera",
+                "eur": 12.2
+              }
+            ]
+          },
+          {
+            "name": "Rosada aliñada frita",
+            "description": "Rosada aliñada y frita.",
+            "en": "Seasoned fried pink cusk-eel.",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 9.2
+              },
+              {
+                "label": "ración entera",
+                "eur": 12.2
+              }
+            ]
+          },
+          {
+            "name": "Boquerones fritos al limón",
+            "description": "Boquerones fritos con limón.",
+            "en": "Fried anchovies with lemon.",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 9.2
+              },
+              {
+                "label": "ración entera",
+                "eur": 12.2
+              }
+            ]
+          },
+          {
+            "name": "Crepes rellenos de salmón y espinacas con bechamel y almendras/curry",
+            "description": "Crepes de salmón y espinacas con bechamel, almendras y curry.",
+            "en": "Salmon and spinach crêpes with béchamel, almonds and curry.",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.8
+              },
+              {
+                "label": "ración entera",
+                "eur": 15.6
+              }
+            ]
+          },
+          {
+            "name": "Lomo de bacalao confitado con alioli tostado y pisto",
+            "description": "Lomo de bacalao confitado con alioli tostado y pisto.",
+            "en": "Confit cod loin with toasted garlic mayonnaise and ratatouille-style vegetables.",
+            "prices": [
+              {
+                "label": "220 g",
+                "eur": 14.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "De la tierra",
+        "items": [
+          {
+            "name": "Abanico ibérico de bellota confitado y braseado con salsa de turrón, foie y PX",
+            "description": "Abanico ibérico de bellota confitado y braseado, con turrón, foie y Pedro Ximénez.",
+            "en": "Confit and chargrilled acorn-fed Iberian pork with nougat sauce, foie gras and Pedro Ximénez.",
+            "prices": [
+              {
+                "label": "220 g",
+                "eur": 14.9
+              }
+            ]
+          },
+          {
+            "name": "Mogote ibérico confitado y braseado con velouté de amontillado y patata chafada",
+            "description": "Mogote ibérico confitado y braseado con velouté de amontillado y patata chafada.",
+            "en": "Confit and chargrilled Iberian pork neck with amontillado velouté and crushed potatoes.",
+            "prices": [
+              {
+                "label": "250 g",
+                "eur": 14.9
+              }
+            ]
+          },
+          {
+            "name": "Crepes rellenos de cordero asado con salsa al ras el hanout",
+            "description": "Crepes de cordero asado con salsa especiada de ras el hanout.",
+            "en": "Roast lamb crêpes with ras el hanout spiced sauce.",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.8
+              },
+              {
+                "label": "ración entera",
+                "eur": 15.6
+              }
+            ]
+          },
+          {
+            "name": "Rabo de toro al oloroso",
+            "description": "Rabo de toro guisado con vino oloroso.",
+            "en": "Oxtail braised with oloroso sherry.",
+            "prices": [
+              {
+                "label": "350 g",
+                "eur": 19.9
+              }
+            ]
+          },
+          {
+            "name": "Lomo bajo de vaca madurada a la brasa",
+            "description": "Lomo bajo de vaca madurada a la brasa.",
+            "en": "Chargrilled dry-aged beef striploin.",
+            "prices": [
+              {
+                "label": "330–360 g",
+                "eur": 22.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Dulce final",
+        "items": [
+          {
+            "name": "Tarta de la abuela",
+            "description": "Tarta de galleta anisada, natillas y chocolate.",
+            "en": "Traditional biscuit cake with aniseed biscuits, custard and chocolate.",
+            "prices": [
+              {
+                "label": "plato",
+                "eur": 5.9
+              }
+            ]
+          },
+          {
+            "name": "Manolete relleno de cabello de ángel y sopa fría dulce de vinagre de PX",
+            "description": "Pastel manolete relleno de cabello de ángel con sopa fría dulce de vinagre de Pedro Ximénez.",
+            "en": "Manolete pastry filled with sweet pumpkin preserve and a chilled sweet Pedro Ximénez vinegar sauce.",
+            "prices": [
+              {
+                "label": "plato",
+                "eur": 6.6
+              }
+            ]
+          },
+          {
+            "name": "Tarta de queso curado de la Sierra de Córdoba con chantillí de fresa",
+            "description": "Tarta de queso curado de la Sierra de Córdoba con chantillí de fresa.",
+            "en": "Aged cheese cake from the Córdoba mountains with strawberry Chantilly cream.",
+            "prices": [
+              {
+                "label": "plato",
+                "eur": 5.9
+              }
+            ]
+          },
+          {
+            "name": "Torrija, crema de chocolate blanco-mango y helado de dulce de leche merengada",
+            "description": "Torrija con crema de chocolate blanco y mango y helado de dulce de leche merengada.",
+            "en": "Spanish-style French toast with white chocolate and mango cream and dulce de leche ice cream.",
+            "prices": [
+              {
+                "label": "plato",
+                "eur": 6.6
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "menuSourceNote": "Carta oficial PDF aportada por el usuario, edición 2025. 30 platos en seis secciones, sin bebidas. Precios históricos de la carta de 2025, NO verificados como vigentes en 2026. IVA incluido. Descripciones ES/EN editoriales basadas en los nombres e ingredientes publicados. En crepes la carta indica suplemento de unidad adicional 3,90 €. Para gozar: platos no se sirven cortados desde cocina. Alérgenos indicados en documento fuente; consultar restaurante para información actualizada."
   },
   {
     "id": "taberna-salinas",
