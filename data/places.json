@@ -2819,8 +2819,8 @@
     "area": "Centro · Conde de Torres Cabrera",
     "address": "Calle Conde de Torres Cabrera, 4, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "priceStatus": "published_official_menu",
+    "checkedAt": "2026-10-16",
     "sources": [
       {
         "label": "Carta oficial con precios",
@@ -2835,39 +2835,1483 @@
       {
         "service": "general",
         "dishes": [
+          "Jamón ibérico de bellota (55 g / 90 g)",
+          "Queso de oveja curado (90 g / 170 g)",
+          "Salmorejo cordobés",
+          "Berenjenas fritas",
+          "Berenjenas fritas con miel de caña",
+          "Croquetas caseras de bacalao",
+          "Croquetas caseras de rabo de toro",
+          "Croquetas de berenjena y jamón ibérico",
+          "Croquetas de gambas al ajillo",
+          "Croquetas de chorizo de venado",
+          "Champiñón a la plancha con jamón, ajo y perejil",
+          "Cogollitos a la cordobesa",
+          "Espárragos verdes a la plancha",
+          "Patatas al pelotón",
+          "Pisto cordobés con huevos y patatas",
+          "Revuelto de bacalao",
+          "Tosta de bacalao ahumado con salmorejo",
+          "Tosta de salmón ahumado con salmorejo",
+          "Pulpo a la gallega o a la plancha",
+          "Revuelto de boletus",
+          "Anchoas del Cantábrico (unidad)",
+          "Boquerones en vinagre",
+          "Ensalada mixta",
+          "Ensalada especial (queso de cabra, PX, miel y frutos secos)",
+          "Tomate aliñado",
+          "Tomate con ventresca",
+          "Mousse de pato y queso de cabra",
+          "Habitas con jamón y huevo",
+          "Albóndigas de venado en salsa",
+          "Cochifrito lechón ibérico",
+          "Jabalí con tomate",
+          "Manitas de cerdo",
+          "Pincho de cordero (unidad)",
           "Rabo de toro",
-          "Boquerones al limón",
-          "Croquetas de rabo de toro",
-          "Berenjenas con miel de caña"
+          "Venado en salsa",
+          "Flamenquín casero (unidad)",
+          "San Jacobo casero (unidad)",
+          "Muflón al ajillo",
+          "Solomillo ibérico de bellota",
+          "Lomo de jabalí en manteca",
+          "Morcilla de Burgos a la plancha",
+          "Mogote ibérico al Pedro Ximénez",
+          "Secreto ibérico de bellota",
+          "Lágrimas ibéricas a la plancha",
+          "Flamenquín casero de venado (unidad)",
+          "Lomo de jabalí a la plancha",
+          "Carrillada en salsa",
+          "Supremas de venado",
+          "Atún encebollado",
+          "Bacalao frito",
+          "Boquerones fritos",
+          "Boquerones fritos al limón",
+          "Calamares fritos",
+          "Japuta en adobo",
+          "Rosada frita al limón",
+          "Sepia frita",
+          "Sepia a la plancha",
+          "Gambones al ajillo",
+          "Gambones rebozados",
+          "Lomo de bacalao con pisto",
+          "Calamares a la plancha",
+          "Araña"
         ],
         "dishPrices": [
           {
-            "dish": "Rabo de toro (media ración)",
-            "eur": 11
-          },
-          {
-            "dish": "Rabo de toro (ración)",
-            "eur": 21
-          },
-          {
-            "dish": "Boquerones al limón (media ración)",
-            "eur": 8
-          },
-          {
-            "dish": "Boquerones al limón (ración)",
+            "dish": "Jamón ibérico de bellota (55 g / 90 g)",
+            "portion": "media ración",
             "eur": 15
           },
           {
-            "dish": "Croquetas de rabo de toro (media ración)",
+            "dish": "Jamón ibérico de bellota (55 g / 90 g)",
+            "portion": "ración",
+            "eur": 20
+          },
+          {
+            "dish": "Queso de oveja curado (90 g / 170 g)",
+            "portion": "media ración",
+            "eur": 12
+          },
+          {
+            "dish": "Queso de oveja curado (90 g / 170 g)",
+            "portion": "ración",
+            "eur": 17.5
+          },
+          {
+            "dish": "Salmorejo cordobés",
+            "portion": "media ración",
+            "eur": 6.5
+          },
+          {
+            "dish": "Salmorejo cordobés",
+            "portion": "ración",
+            "eur": 12
+          },
+          {
+            "dish": "Berenjenas fritas",
+            "portion": "media ración",
+            "eur": 6
+          },
+          {
+            "dish": "Berenjenas fritas",
+            "portion": "ración",
+            "eur": 10
+          },
+          {
+            "dish": "Berenjenas fritas con miel de caña",
+            "portion": "media ración",
+            "eur": 6.7
+          },
+          {
+            "dish": "Berenjenas fritas con miel de caña",
+            "portion": "ración",
+            "eur": 11
+          },
+          {
+            "dish": "Croquetas caseras de bacalao",
+            "portion": "media ración",
             "eur": 7.5
           },
           {
-            "dish": "Croquetas de rabo de toro (ración)",
+            "dish": "Croquetas caseras de bacalao",
+            "portion": "ración",
             "eur": 14.5
+          },
+          {
+            "dish": "Croquetas caseras de rabo de toro",
+            "portion": "media ración",
+            "eur": 7.5
+          },
+          {
+            "dish": "Croquetas caseras de rabo de toro",
+            "portion": "ración",
+            "eur": 14.5
+          },
+          {
+            "dish": "Croquetas de berenjena y jamón ibérico",
+            "portion": "media ración",
+            "eur": 7.5
+          },
+          {
+            "dish": "Croquetas de berenjena y jamón ibérico",
+            "portion": "ración",
+            "eur": 14.5
+          },
+          {
+            "dish": "Croquetas de gambas al ajillo",
+            "portion": "media ración",
+            "eur": 7.5
+          },
+          {
+            "dish": "Croquetas de gambas al ajillo",
+            "portion": "ración",
+            "eur": 14.5
+          },
+          {
+            "dish": "Croquetas de chorizo de venado",
+            "portion": "media ración",
+            "eur": 7.5
+          },
+          {
+            "dish": "Croquetas de chorizo de venado",
+            "portion": "ración",
+            "eur": 14.5
+          },
+          {
+            "dish": "Champiñón a la plancha con jamón, ajo y perejil",
+            "portion": "precio único",
+            "eur": 6.5
+          },
+          {
+            "dish": "Cogollitos a la cordobesa",
+            "portion": "precio único",
+            "eur": 6.5
+          },
+          {
+            "dish": "Espárragos verdes a la plancha",
+            "portion": "precio único",
+            "eur": 6.5
+          },
+          {
+            "dish": "Patatas al pelotón",
+            "portion": "precio único",
+            "eur": 9
+          },
+          {
+            "dish": "Pisto cordobés con huevos y patatas",
+            "portion": "precio único",
+            "eur": 11.5
+          },
+          {
+            "dish": "Revuelto de bacalao",
+            "portion": "precio único",
+            "eur": 9
+          },
+          {
+            "dish": "Tosta de bacalao ahumado con salmorejo",
+            "portion": "precio único",
+            "eur": 9
+          },
+          {
+            "dish": "Tosta de salmón ahumado con salmorejo",
+            "portion": "precio único",
+            "eur": 8
+          },
+          {
+            "dish": "Pulpo a la gallega o a la plancha",
+            "portion": "precio único",
+            "eur": 14
+          },
+          {
+            "dish": "Revuelto de boletus",
+            "portion": "precio único",
+            "eur": 9
+          },
+          {
+            "dish": "Anchoas del Cantábrico (unidad)",
+            "portion": "unidad",
+            "eur": 2.6
+          },
+          {
+            "dish": "Boquerones en vinagre",
+            "portion": "precio único",
+            "eur": 7
+          },
+          {
+            "dish": "Ensalada mixta",
+            "portion": "precio único",
+            "eur": 7.5
+          },
+          {
+            "dish": "Ensalada especial (queso de cabra, PX, miel y frutos secos)",
+            "portion": "precio único",
+            "eur": 9.5
+          },
+          {
+            "dish": "Tomate aliñado",
+            "portion": "precio único",
+            "eur": 6
+          },
+          {
+            "dish": "Tomate con ventresca",
+            "portion": "precio único",
+            "eur": 8.5
+          },
+          {
+            "dish": "Mousse de pato y queso de cabra",
+            "portion": "precio único",
+            "eur": 9.5
+          },
+          {
+            "dish": "Habitas con jamón y huevo",
+            "portion": "precio único",
+            "eur": 10.5
+          },
+          {
+            "dish": "Albóndigas de venado en salsa",
+            "portion": "media ración",
+            "eur": 8
+          },
+          {
+            "dish": "Albóndigas de venado en salsa",
+            "portion": "ración",
+            "eur": 15
+          },
+          {
+            "dish": "Cochifrito lechón ibérico",
+            "portion": "media ración",
+            "eur": 9
+          },
+          {
+            "dish": "Cochifrito lechón ibérico",
+            "portion": "ración",
+            "eur": 17
+          },
+          {
+            "dish": "Jabalí con tomate",
+            "portion": "media ración",
+            "eur": 8
+          },
+          {
+            "dish": "Jabalí con tomate",
+            "portion": "ración",
+            "eur": 15
+          },
+          {
+            "dish": "Manitas de cerdo",
+            "portion": "media ración",
+            "eur": 7.3
+          },
+          {
+            "dish": "Manitas de cerdo",
+            "portion": "ración",
+            "eur": 13.6
+          },
+          {
+            "dish": "Pincho de cordero (unidad)",
+            "portion": "unidad",
+            "eur": 3
+          },
+          {
+            "dish": "Rabo de toro",
+            "portion": "media ración",
+            "eur": 11
+          },
+          {
+            "dish": "Rabo de toro",
+            "portion": "ración",
+            "eur": 21
+          },
+          {
+            "dish": "Venado en salsa",
+            "portion": "media ración",
+            "eur": 8
+          },
+          {
+            "dish": "Venado en salsa",
+            "portion": "ración",
+            "eur": 15
+          },
+          {
+            "dish": "Flamenquín casero (unidad)",
+            "portion": "unidad",
+            "eur": 13
+          },
+          {
+            "dish": "San Jacobo casero (unidad)",
+            "portion": "unidad",
+            "eur": 13
+          },
+          {
+            "dish": "Muflón al ajillo",
+            "portion": "media ración",
+            "eur": 7.5
+          },
+          {
+            "dish": "Muflón al ajillo",
+            "portion": "ración",
+            "eur": 13.5
+          },
+          {
+            "dish": "Solomillo ibérico de bellota",
+            "portion": "precio único",
+            "eur": 17
+          },
+          {
+            "dish": "Lomo de jabalí en manteca",
+            "portion": "precio único",
+            "eur": 8.5
+          },
+          {
+            "dish": "Morcilla de Burgos a la plancha",
+            "portion": "precio único",
+            "eur": 7
+          },
+          {
+            "dish": "Mogote ibérico al Pedro Ximénez",
+            "portion": "media ración",
+            "eur": 9
+          },
+          {
+            "dish": "Mogote ibérico al Pedro Ximénez",
+            "portion": "ración",
+            "eur": 17
+          },
+          {
+            "dish": "Secreto ibérico de bellota",
+            "portion": "precio único",
+            "eur": 19
+          },
+          {
+            "dish": "Lágrimas ibéricas a la plancha",
+            "portion": "precio único",
+            "eur": 17
+          },
+          {
+            "dish": "Flamenquín casero de venado (unidad)",
+            "portion": "unidad",
+            "eur": 16.5
+          },
+          {
+            "dish": "Lomo de jabalí a la plancha",
+            "portion": "precio único",
+            "eur": 15
+          },
+          {
+            "dish": "Carrillada en salsa",
+            "portion": "media ración",
+            "eur": 9
+          },
+          {
+            "dish": "Carrillada en salsa",
+            "portion": "ración",
+            "eur": 17
+          },
+          {
+            "dish": "Supremas de venado",
+            "portion": "precio único",
+            "eur": 13
+          },
+          {
+            "dish": "Atún encebollado",
+            "portion": "media ración",
+            "eur": 9
+          },
+          {
+            "dish": "Atún encebollado",
+            "portion": "ración",
+            "eur": 18
+          },
+          {
+            "dish": "Bacalao frito",
+            "portion": "media ración",
+            "eur": 9
+          },
+          {
+            "dish": "Bacalao frito",
+            "portion": "ración",
+            "eur": 17
+          },
+          {
+            "dish": "Boquerones fritos",
+            "portion": "media ración",
+            "eur": 8
+          },
+          {
+            "dish": "Boquerones fritos",
+            "portion": "ración",
+            "eur": 15
+          },
+          {
+            "dish": "Boquerones fritos al limón",
+            "portion": "media ración",
+            "eur": 8
+          },
+          {
+            "dish": "Boquerones fritos al limón",
+            "portion": "ración",
+            "eur": 15
+          },
+          {
+            "dish": "Calamares fritos",
+            "portion": "media ración",
+            "eur": 8.5
+          },
+          {
+            "dish": "Calamares fritos",
+            "portion": "ración",
+            "eur": 16
+          },
+          {
+            "dish": "Japuta en adobo",
+            "portion": "media ración",
+            "eur": 7.5
+          },
+          {
+            "dish": "Japuta en adobo",
+            "portion": "ración",
+            "eur": 14
+          },
+          {
+            "dish": "Rosada frita al limón",
+            "portion": "media ración",
+            "eur": 7.5
+          },
+          {
+            "dish": "Rosada frita al limón",
+            "portion": "ración",
+            "eur": 14
+          },
+          {
+            "dish": "Sepia frita",
+            "portion": "media ración",
+            "eur": 9
+          },
+          {
+            "dish": "Sepia frita",
+            "portion": "ración",
+            "eur": 17
+          },
+          {
+            "dish": "Sepia a la plancha",
+            "portion": "media ración",
+            "eur": 9
+          },
+          {
+            "dish": "Sepia a la plancha",
+            "portion": "ración",
+            "eur": 17
+          },
+          {
+            "dish": "Gambones al ajillo",
+            "portion": "precio único",
+            "eur": 8.8
+          },
+          {
+            "dish": "Gambones rebozados",
+            "portion": "precio único",
+            "eur": 7.8
+          },
+          {
+            "dish": "Lomo de bacalao con pisto",
+            "portion": "precio único",
+            "eur": 16
+          },
+          {
+            "dish": "Calamares a la plancha",
+            "portion": "precio único",
+            "eur": 16
+          },
+          {
+            "dish": "Araña",
+            "portion": "media ración",
+            "eur": 7.5
+          },
+          {
+            "dish": "Araña",
+            "portion": "ración",
+            "eur": 14
           }
         ]
       }
-    ]
+    ],
+    "menuSections": [
+      {
+        "title": "Entrantes",
+        "titleEn": "Starters",
+        "items": [
+          {
+            "name": "Jamón ibérico de bellota (55 g / 90 g)",
+            "description": "Jamón ibérico de bellota (55 g / 90 g)",
+            "en": "Acorn-fed Iberian ham",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 15
+              },
+              {
+                "label": "ración",
+                "eur": 20
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Queso de oveja curado (90 g / 170 g)",
+            "description": "Queso de oveja curado (90 g / 170 g)",
+            "en": "Aged sheep's milk cheese",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 12
+              },
+              {
+                "label": "ración",
+                "eur": 17.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Salmorejo cordobés",
+            "description": "Salmorejo cordobés",
+            "en": "Cordoban salmorejo",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 6.5
+              },
+              {
+                "label": "ración",
+                "eur": 12
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Berenjenas fritas",
+            "description": "Berenjenas fritas",
+            "en": "Fried aubergines",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 6
+              },
+              {
+                "label": "ración",
+                "eur": 10
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Berenjenas fritas con miel de caña",
+            "description": "Berenjenas fritas con miel de caña",
+            "en": "Fried aubergines with cane syrup",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 6.7
+              },
+              {
+                "label": "ración",
+                "eur": 11
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Croquetas caseras de bacalao",
+            "description": "Croquetas caseras de bacalao",
+            "en": "Homemade cod croquettes",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.5
+              },
+              {
+                "label": "ración",
+                "eur": 14.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten",
+            "lactoseFree": true,
+            "lactoseFreeSource": "Declaración general del restaurante: croquetas sin lactosa"
+          },
+          {
+            "name": "Croquetas caseras de rabo de toro",
+            "description": "Croquetas caseras de rabo de toro",
+            "en": "Homemade oxtail croquettes",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.5
+              },
+              {
+                "label": "ración",
+                "eur": 14.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten",
+            "lactoseFree": true,
+            "lactoseFreeSource": "Declaración general del restaurante: croquetas sin lactosa"
+          },
+          {
+            "name": "Croquetas de berenjena y jamón ibérico",
+            "description": "Croquetas de berenjena y jamón ibérico",
+            "en": "Aubergine and Iberian ham croquettes",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.5
+              },
+              {
+                "label": "ración",
+                "eur": 14.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten",
+            "lactoseFree": true,
+            "lactoseFreeSource": "Declaración general del restaurante: croquetas sin lactosa"
+          },
+          {
+            "name": "Croquetas de gambas al ajillo",
+            "description": "Croquetas de gambas al ajillo",
+            "en": "Garlic prawn croquettes",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.5
+              },
+              {
+                "label": "ración",
+                "eur": 14.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten",
+            "lactoseFree": true,
+            "lactoseFreeSource": "Declaración general del restaurante: croquetas sin lactosa"
+          },
+          {
+            "name": "Croquetas de chorizo de venado",
+            "description": "Croquetas de chorizo de venado",
+            "en": "Venison chorizo croquettes",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.5
+              },
+              {
+                "label": "ración",
+                "eur": 14.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten",
+            "lactoseFree": true,
+            "lactoseFreeSource": "Declaración general del restaurante: croquetas sin lactosa"
+          },
+          {
+            "name": "Champiñón a la plancha con jamón, ajo y perejil",
+            "description": "Champiñón a la plancha con jamón, ajo y perejil",
+            "en": "Grilled mushrooms with ham, garlic and parsley",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 6.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Cogollitos a la cordobesa",
+            "description": "Cogollitos a la cordobesa",
+            "en": "Cordoban-style lettuce hearts",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 6.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Espárragos verdes a la plancha",
+            "description": "Espárragos verdes a la plancha",
+            "en": "Grilled green asparagus",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 6.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Patatas al pelotón",
+            "description": "Patatas al pelotón",
+            "en": "Patatas al pelotón, a local potato dish",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 9
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Pisto cordobés con huevos y patatas",
+            "description": "Pisto cordobés con huevos y patatas",
+            "en": "Cordoban vegetable pisto with eggs and potatoes",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 11.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Revuelto de bacalao",
+            "description": "Revuelto de bacalao",
+            "en": "Scrambled eggs with cod",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 9
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Tosta de bacalao ahumado con salmorejo",
+            "description": "Tosta de bacalao ahumado con salmorejo",
+            "en": "Smoked cod toast with salmorejo",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 9
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Tosta de salmón ahumado con salmorejo",
+            "description": "Tosta de salmón ahumado con salmorejo",
+            "en": "Smoked salmon toast with salmorejo",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 8
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Pulpo a la gallega o a la plancha",
+            "description": "Pulpo a la gallega o a la plancha",
+            "en": "Galician-style or grilled octopus",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 14
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Revuelto de boletus",
+            "description": "Revuelto de boletus",
+            "en": "Scrambled eggs with boletus mushrooms",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 9
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Anchoas del Cantábrico (unidad)",
+            "description": "Anchoas del Cantábrico (unidad)",
+            "en": "Cantabrian anchovy (per piece)",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 2.6
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Boquerones en vinagre",
+            "description": "Boquerones en vinagre",
+            "en": "Vinegar-marinated anchovies",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 7
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Ensalada mixta",
+            "description": "Ensalada mixta",
+            "en": "Mixed salad",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 7.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Ensalada especial (queso de cabra, PX, miel y frutos secos)",
+            "description": "Ensalada especial (queso de cabra, PX, miel y frutos secos)",
+            "en": "Special salad with goat cheese, Pedro Ximénez, honey and nuts",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 9.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Tomate aliñado",
+            "description": "Tomate aliñado",
+            "en": "Seasoned tomato",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 6
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Tomate con ventresca",
+            "description": "Tomate con ventresca",
+            "en": "Tomato with tuna belly",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 8.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Mousse de pato y queso de cabra",
+            "description": "Mousse de pato y queso de cabra",
+            "en": "Duck and goat cheese mousse",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 9.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Habitas con jamón y huevo",
+            "description": "Habitas con jamón y huevo",
+            "en": "Baby broad beans with ham and egg",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 10.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          }
+        ]
+      },
+      {
+        "title": "Carnes y Caza",
+        "titleEn": "Meat & Game",
+        "items": [
+          {
+            "name": "Albóndigas de venado en salsa",
+            "description": "Albóndigas de venado en salsa",
+            "en": "Venison meatballs in sauce",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 8
+              },
+              {
+                "label": "ración",
+                "eur": 15
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Cochifrito lechón ibérico",
+            "description": "Cochifrito lechón ibérico",
+            "en": "Fried Iberian suckling pig",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 9
+              },
+              {
+                "label": "ración",
+                "eur": 17
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Jabalí con tomate",
+            "description": "Jabalí con tomate",
+            "en": "Wild boar with tomato",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 8
+              },
+              {
+                "label": "ración",
+                "eur": 15
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Manitas de cerdo",
+            "description": "Manitas de cerdo",
+            "en": "Pig's trotters",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.3
+              },
+              {
+                "label": "ración",
+                "eur": 13.6
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Pincho de cordero (unidad)",
+            "description": "Pincho de cordero (unidad)",
+            "en": "Lamb skewer (per piece)",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 3
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Rabo de toro",
+            "description": "Rabo de toro",
+            "en": "Oxtail stew",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 11
+              },
+              {
+                "label": "ración",
+                "eur": 21
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Venado en salsa",
+            "description": "Venado en salsa",
+            "en": "Venison in sauce",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 8
+              },
+              {
+                "label": "ración",
+                "eur": 15
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Flamenquín casero (unidad)",
+            "description": "Flamenquín casero (unidad)",
+            "en": "Homemade flamenquín (per piece)",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 13
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "San Jacobo casero (unidad)",
+            "description": "San Jacobo casero (unidad)",
+            "en": "Homemade San Jacobo (per piece)",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 13
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Muflón al ajillo",
+            "description": "Muflón al ajillo",
+            "en": "Mouflon with garlic",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.5
+              },
+              {
+                "label": "ración",
+                "eur": 13.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Solomillo ibérico de bellota",
+            "description": "Solomillo ibérico de bellota",
+            "en": "Acorn-fed Iberian pork tenderloin",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 17
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Lomo de jabalí en manteca",
+            "description": "Lomo de jabalí en manteca",
+            "en": "Wild boar loin preserved in lard",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 8.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Morcilla de Burgos a la plancha",
+            "description": "Morcilla de Burgos a la plancha",
+            "en": "Grilled Burgos blood sausage",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 7
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Mogote ibérico al Pedro Ximénez",
+            "description": "Mogote ibérico al Pedro Ximénez",
+            "en": "Iberian pork neck with Pedro Ximénez",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 9
+              },
+              {
+                "label": "ración",
+                "eur": 17
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Secreto ibérico de bellota",
+            "description": "Secreto ibérico de bellota",
+            "en": "Acorn-fed Iberian pork secreto",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 19
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Lágrimas ibéricas a la plancha",
+            "description": "Lágrimas ibéricas a la plancha",
+            "en": "Grilled Iberian pork strips",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 17
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Flamenquín casero de venado (unidad)",
+            "description": "Flamenquín casero de venado (unidad)",
+            "en": "Homemade venison flamenquín (per piece)",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 16.5
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Lomo de jabalí a la plancha",
+            "description": "Lomo de jabalí a la plancha",
+            "en": "Grilled wild boar loin",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 15
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Carrillada en salsa",
+            "description": "Carrillada en salsa",
+            "en": "Braised pork cheeks in sauce",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 9
+              },
+              {
+                "label": "ración",
+                "eur": 17
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Supremas de venado",
+            "description": "Supremas de venado",
+            "en": "Venison supremes",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 13
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          }
+        ]
+      },
+      {
+        "title": "Pescados",
+        "titleEn": "Fish & Seafood",
+        "items": [
+          {
+            "name": "Atún encebollado",
+            "description": "Atún encebollado",
+            "en": "Tuna with onions",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 9
+              },
+              {
+                "label": "ración",
+                "eur": 18
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Bacalao frito",
+            "description": "Bacalao frito",
+            "en": "Fried cod",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 9
+              },
+              {
+                "label": "ración",
+                "eur": 17
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Boquerones fritos",
+            "description": "Boquerones fritos",
+            "en": "Fried anchovies",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 8
+              },
+              {
+                "label": "ración",
+                "eur": 15
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Boquerones fritos al limón",
+            "description": "Boquerones fritos al limón",
+            "en": "Lemon fried anchovies",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 8
+              },
+              {
+                "label": "ración",
+                "eur": 15
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Calamares fritos",
+            "description": "Calamares fritos",
+            "en": "Fried squid",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 8.5
+              },
+              {
+                "label": "ración",
+                "eur": 16
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Japuta en adobo",
+            "description": "Japuta en adobo",
+            "en": "Marinated japuta fish",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.5
+              },
+              {
+                "label": "ración",
+                "eur": 14
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Rosada frita al limón",
+            "description": "Rosada frita al limón",
+            "en": "Lemon fried rosada fish",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.5
+              },
+              {
+                "label": "ración",
+                "eur": 14
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Sepia frita",
+            "description": "Sepia frita",
+            "en": "Fried cuttlefish",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 9
+              },
+              {
+                "label": "ración",
+                "eur": 17
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Sepia a la plancha",
+            "description": "Sepia a la plancha",
+            "en": "Grilled cuttlefish",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 9
+              },
+              {
+                "label": "ración",
+                "eur": 17
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Gambones al ajillo",
+            "description": "Gambones al ajillo",
+            "en": "Garlic king prawns",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 8.8
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Gambones rebozados",
+            "description": "Gambones rebozados",
+            "en": "Battered king prawns",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 7.8
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Lomo de bacalao con pisto",
+            "description": "Lomo de bacalao con pisto",
+            "en": "Cod loin with vegetable pisto",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 16
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Calamares a la plancha",
+            "description": "Calamares a la plancha",
+            "en": "Grilled squid",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 16
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          },
+          {
+            "name": "Araña",
+            "description": "Araña",
+            "en": "Araña fish (preparation not specified)",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7.5
+              },
+              {
+                "label": "ración",
+                "eur": 14
+              }
+            ],
+            "glutenFree": true,
+            "glutenFreeSource": "Declaración general del restaurante: cocina 100 % sin gluten"
+          }
+        ]
+      }
+    ],
+    "menuNotes": "La carta puede variar según mercado y temporada. El restaurante declara que toda su cocina es 100 % sin gluten, sin excepciones, y que sus croquetas no contienen lactosa. Dispone de carta de alérgenos; para otras intolerancias se debe consultar al personal. No se han inferido otros alérgenos. No se han incluido vinos ni postres no publicados.",
+    "menuDisclaimer": "La carta puede variar según mercado y temporada. Según el establecimiento, toda la carta es sin gluten y las croquetas no contienen lactosa. Consulte al personal por otros alérgenos e intolerancias.",
+    "menuDisclaimerEn": "The menu may vary depending on market availability and season. According to the restaurant, the entire menu is gluten-free and its croquettes contain no lactose. Ask staff about other allergens and intolerances."
   },
   {
     "id": "taberna-san-miguel-el-pisto",
