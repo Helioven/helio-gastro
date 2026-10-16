@@ -206,3 +206,17 @@ El filtro «Solo precios documentados» se mantiene estricto, pero el resultado 
 - Diferencia especialidad documentada de precios y horarios confirmados, y deja de afirmar cero locales cuando existen tres.
 - Se conservan las dos ubicaciones contrastadas de Don Pepe por separado. No se presupone franquicia o relación societaria ni se agregan locales sin dirección contrastada.
 - Regresión: desayunar > churros/tostadas muestra tres; merendar sin datos sigue explicando que faltan cartas; se conservan búsqueda y comparador.
+
+## Hoja de ruta acordada — 16 de octubre de 2026
+
+Orden de trabajo para Helio Gastro (42 restaurantes registrados; las cartas no están todas completas):
+
+1. **Completar las cartas de los restaurantes**: continuar por las fichas pendientes, sección a sección; conservar nombre, ingredientes confirmados, tamaños, precios y fuentes. No inventar precios ni ingredientes. No subir una carta parcial hasta que Helio confirme que está terminada. Próximo restaurante propuesto: Taberna El Poema · Alonso de Burgos.
+2. **Añadir francés**: interfaz y cartas en español, inglés y francés; conservar denominaciones tradicionales cuando proceda.
+3. **Auditoría integral y QA**: comprobar integridad de las 42 fichas, duplicados, correspondencia de precios y formatos, traducciones, buscador en los tres idiomas, filtros, comparador, navegación, móvil y escritorio.
+4. **Envío de reseñas y comentarios**: formulario público, almacenamiento apropiado, moderación, privacidad y protección frente a spam.
+5. **Resúmenes de reseñas por restaurante**: mostrar síntesis útil de opiniones reales en vez de decenas de comentarios; distinguir las reseñas propias de fuentes externas, respetando licencias, atribución y condiciones de uso. No inventar valoraciones.
+6. **Imágenes al final**: no utilizar fotografías oficiales sin autorización; usar imágenes propias, generadas o con licencia adecuada, identificadas claramente como ilustrativas. Aviso propuesto: «Imagen ilustrativa. La presentación real puede variar»; incluir equivalente en los tres idiomas. Los enlaces directos a fotos de terceros fueron retirados de `data/places.json` el 16/10/2026.
+7. **Revisión final del producto**: repasar funcionalidades, experiencia de usuario, accesibilidad, rendimiento, privacidad, seguridad y decidir si falta algo antes del lanzamiento.
+
+Mejoras transversales: indicar fecha de verificación de cada carta y estudiar un mecanismo para que visitantes avisen de datos o precios incorrectos. Prioridad general: **datos reales → tres idiomas → QA → reseñas → imágenes → revisión final**.
