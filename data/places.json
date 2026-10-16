@@ -3195,5 +3195,219 @@
         ]
       }
     ]
+  },
+  {
+    "id": "patio-romano",
+    "name": "Patio Romano",
+    "area": "Córdoba · Centro histórico",
+    "address": "Córdoba, España",
+    "mealCostEur": null,
+    "priceStatus": "verified",
+    "checkedAt": "2026-10-16",
+    "sources": [
+      {
+        "label": "Carta oficial 2026 (PDF facilitado; comidas y precios)",
+        "url": "https://patioromano.com/carta/"
+      }
+    ],
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Berenjenas fritas con miel de flores y ciuffi di melanzana",
+          "Salmorejo cordobés con jamón crujiente, huevo duro y almendras",
+          "Bruschetta de sardina ahumada, crema de berenjenas y tomate cherry (2 ud.)",
+          "Bruschetta de guanciale, huevos y queso pecorino a la carbonara",
+          "Góndola de burrata con mortadela trufada, tomate cherry y pesto de pistacho",
+          "Buñuelos de bacalao en tempura de cerveza con chips de calabacín",
+          "Tabla de quesos con mermelada de higos y almendras fritas",
+          "Surtido de ibéricos Belloterra (120 g)",
+          "Jamón ibérico de cebo Belloterra (120 g)",
+          "Ensalada Patio Romano con mozzarella de búfala, cherry y pesto de albahaca y pistacho",
+          "Ensalada Caprese con tomate rosa, mozzarella de búfala y pesto de albahaca",
+          "Ensalada César con pollo a la plancha, picatostes y salsa César",
+          "Ensalada Fumé con salmón ahumado, apio, pimiento rojo y yogur",
+          "Rigatoni boloñesa con carne picada de vacuno",
+          "Linguine alla Nerano con calabacín, albahaca y provolone",
+          "Linguine alla Ostiense con gambas, mejillones, guanciale y pesto de rúcula y almendras",
+          "Pasta rellena de rabo de toro con salsa de amontillado y champiñones",
+          "Espagueti carbonara estilo Patio Romano con guanciale, yema y pecorino",
+          "Risotto Armonia di Lombardia con gorgonzola, pera y nueces",
+          "Risotto Sole e Mare di Puglia con gambas, azafrán, burrata de búfala y limón",
+          "Pizza Pistacchiella con tomate, mozzarella, mortadela de pistachos y pesto de albahaca",
+          "Pizza Capricciosa con jamón cocido, alcachofas, champiñón y aceitunas negras",
+          "Pizza Bronte con crema de patata, pistacho, mozzarella, bacon y pesto de pistacho",
+          "Pizza Pratolina con crema de trufa negra, champiñón y jamón cocido",
+          "Pizza Regina del Mare con atún, gambas y mejillones",
+          "Pizza Ibérica con jamón ibérico, mozzarella de búfala, rúcula y cherry",
+          "Rollito de lubina con verduras, puré de patatas y salsa de espumoso (200 g)",
+          "Bacalao alla Cannaruta con tomate cherry, cebolla, pasas y piñones (200 g)",
+          "Salmón al Cartoccio con verduras y mayonesa de perejil (200 g)",
+          "Solomillo de cerdo con salsa de vino tinto, frutos secos y patatas paja (200 g)",
+          "Presa ibérica con ñoquis en salsa gorgonzola (200 g)",
+          "Entrecot de vaca madurada con patatas baby y salsa de pimienta verde (300 g)",
+          "Pizza romana margarita y refresco o zumo (menú infantil)",
+          "Pastelón cordobés de crema con frutos secos",
+          "Tiramisú casero",
+          "Canoli siciliano con ricotta y pistachos",
+          "Canoli siciliano con ricotta, Nutella y avellanas",
+          "Macedonia de frutas de temporada"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Berenjenas fritas con miel de flores y ciuffi di melanzana",
+            "eur": 12
+          },
+          {
+            "dish": "Salmorejo cordobés con jamón crujiente, huevo duro y almendras",
+            "eur": 12
+          },
+          {
+            "dish": "Bruschetta de sardina ahumada, crema de berenjenas y tomate cherry (2 ud.)",
+            "eur": 12
+          },
+          {
+            "dish": "Bruschetta de guanciale, huevos y queso pecorino a la carbonara",
+            "eur": 14
+          },
+          {
+            "dish": "Góndola de burrata con mortadela trufada, tomate cherry y pesto de pistacho",
+            "eur": 15
+          },
+          {
+            "dish": "Buñuelos de bacalao en tempura de cerveza con chips de calabacín",
+            "eur": 16
+          },
+          {
+            "dish": "Tabla de quesos con mermelada de higos y almendras fritas",
+            "eur": 19
+          },
+          {
+            "dish": "Surtido de ibéricos Belloterra (120 g)",
+            "eur": 19
+          },
+          {
+            "dish": "Jamón ibérico de cebo Belloterra (120 g)",
+            "eur": 20
+          },
+          {
+            "dish": "Ensalada Patio Romano con mozzarella de búfala, cherry y pesto de albahaca y pistacho",
+            "eur": 15
+          },
+          {
+            "dish": "Ensalada Caprese con tomate rosa, mozzarella de búfala y pesto de albahaca",
+            "eur": 15
+          },
+          {
+            "dish": "Ensalada César con pollo a la plancha, picatostes y salsa César",
+            "eur": 16
+          },
+          {
+            "dish": "Ensalada Fumé con salmón ahumado, apio, pimiento rojo y yogur",
+            "eur": 17
+          },
+          {
+            "dish": "Rigatoni boloñesa con carne picada de vacuno",
+            "eur": 16
+          },
+          {
+            "dish": "Linguine alla Nerano con calabacín, albahaca y provolone",
+            "eur": 16
+          },
+          {
+            "dish": "Linguine alla Ostiense con gambas, mejillones, guanciale y pesto de rúcula y almendras",
+            "eur": 18
+          },
+          {
+            "dish": "Pasta rellena de rabo de toro con salsa de amontillado y champiñones",
+            "eur": 18
+          },
+          {
+            "dish": "Espagueti carbonara estilo Patio Romano con guanciale, yema y pecorino",
+            "eur": 19
+          },
+          {
+            "dish": "Risotto Armonia di Lombardia con gorgonzola, pera y nueces",
+            "eur": 17
+          },
+          {
+            "dish": "Risotto Sole e Mare di Puglia con gambas, azafrán, burrata de búfala y limón",
+            "eur": 18
+          },
+          {
+            "dish": "Pizza Pistacchiella con tomate, mozzarella, mortadela de pistachos y pesto de albahaca",
+            "eur": 16
+          },
+          {
+            "dish": "Pizza Capricciosa con jamón cocido, alcachofas, champiñón y aceitunas negras",
+            "eur": 17
+          },
+          {
+            "dish": "Pizza Bronte con crema de patata, pistacho, mozzarella, bacon y pesto de pistacho",
+            "eur": 17
+          },
+          {
+            "dish": "Pizza Pratolina con crema de trufa negra, champiñón y jamón cocido",
+            "eur": 18
+          },
+          {
+            "dish": "Pizza Regina del Mare con atún, gambas y mejillones",
+            "eur": 19
+          },
+          {
+            "dish": "Pizza Ibérica con jamón ibérico, mozzarella de búfala, rúcula y cherry",
+            "eur": 21
+          },
+          {
+            "dish": "Rollito de lubina con verduras, puré de patatas y salsa de espumoso (200 g)",
+            "eur": 17
+          },
+          {
+            "dish": "Bacalao alla Cannaruta con tomate cherry, cebolla, pasas y piñones (200 g)",
+            "eur": 18
+          },
+          {
+            "dish": "Salmón al Cartoccio con verduras y mayonesa de perejil (200 g)",
+            "eur": 18
+          },
+          {
+            "dish": "Solomillo de cerdo con salsa de vino tinto, frutos secos y patatas paja (200 g)",
+            "eur": 17
+          },
+          {
+            "dish": "Presa ibérica con ñoquis en salsa gorgonzola (200 g)",
+            "eur": 23
+          },
+          {
+            "dish": "Entrecot de vaca madurada con patatas baby y salsa de pimienta verde (300 g)",
+            "eur": 25
+          },
+          {
+            "dish": "Pizza romana margarita y refresco o zumo (menú infantil)",
+            "eur": 17
+          },
+          {
+            "dish": "Pastelón cordobés de crema con frutos secos",
+            "eur": 6
+          },
+          {
+            "dish": "Tiramisú casero",
+            "eur": 6
+          },
+          {
+            "dish": "Canoli siciliano con ricotta y pistachos",
+            "eur": 6
+          },
+          {
+            "dish": "Canoli siciliano con ricotta, Nutella y avellanas",
+            "eur": 6
+          },
+          {
+            "dish": "Macedonia de frutas de temporada",
+            "eur": 7
+          }
+        ]
+      }
+    ]
   }
 ]
