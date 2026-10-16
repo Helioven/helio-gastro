@@ -11456,8 +11456,8 @@
     "area": "Centro · Corredera",
     "address": "Calle Rodríguez Marín, 16, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "priceStatus": "confirmed_from_user_menu_images",
+    "checkedAt": "2026-10-16",
     "sources": [
       {
         "label": "Carta y cocina tradicional oficiales",
@@ -11466,20 +11466,1982 @@
       {
         "label": "Web oficial y ubicación",
         "url": "https://lacazueladelaesparteria.es/"
+      },
+      {
+        "label": "Carta general · capturas facilitadas por el usuario (11 imágenes, octubre 2026)",
+        "url": "https://lacazueladelaesparteria.es/"
       }
     ],
     "menus": [
       {
-        "service": "general",
+        "service": "Mantequeando",
+        "dishes": [
+          "Jamón ibérico de bellota (90/150 g)",
+          "Salchichón ibérico (90/130 g)",
+          "Caña de lomo ibérica (90/130 g)",
+          "Morcilla ibérica de bellota (100/150 g)",
+          "Chicharrones de Cádiz",
+          "Surtido ibérico (jamón, salchichón, morcilla, caña de lomo)"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Jamón ibérico de bellota (90/150 g)",
+            "eur": 16.4,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Jamón ibérico de bellota (90/150 g)",
+            "eur": 24.6,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Salchichón ibérico (90/130 g)",
+            "eur": 10.4,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Salchichón ibérico (90/130 g)",
+            "eur": 15.7,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Caña de lomo ibérica (90/130 g)",
+            "eur": 16.4,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Caña de lomo ibérica (90/130 g)",
+            "eur": 24.6,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Morcilla ibérica de bellota (100/150 g)",
+            "eur": 10.4,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Morcilla ibérica de bellota (100/150 g)",
+            "eur": 15.7,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Chicharrones de Cádiz",
+            "eur": 10.8,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Chicharrones de Cádiz",
+            "eur": 15.4,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Surtido ibérico (jamón, salchichón, morcilla, caña de lomo)",
+            "eur": 20.5,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Surtido ibérico (jamón, salchichón, morcilla, caña de lomo)",
+            "eur": 28.2,
+            "portion": "Ración"
+          }
+        ]
+      },
+      {
+        "service": "La Quesería",
+        "dishes": [
+          "Queso manchego (75/165 g)",
+          "Queso curado Calaveruela (75/165 g)",
+          "Queso de cabra Payoyo (75/165 g)",
+          "Queso manchego a la trufa (75/165 g)",
+          "Surtido de quesos (Calaveruela, Payoyo, manchego a la trufa, rulo de cabra y Maasdam)"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Queso manchego (75/165 g)",
+            "eur": 12.7,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Queso manchego (75/165 g)",
+            "eur": 17.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Queso curado Calaveruela (75/165 g)",
+            "eur": 14.85,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Queso curado Calaveruela (75/165 g)",
+            "eur": 19,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Queso de cabra Payoyo (75/165 g)",
+            "eur": 14.85,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Queso de cabra Payoyo (75/165 g)",
+            "eur": 19,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Queso manchego a la trufa (75/165 g)",
+            "eur": 12.7,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Queso manchego a la trufa (75/165 g)",
+            "eur": 17.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Surtido de quesos (Calaveruela, Payoyo, manchego a la trufa, rulo de cabra y Maasdam)",
+            "eur": 25.5,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Surtido de quesos (Calaveruela, Payoyo, manchego a la trufa, rulo de cabra y Maasdam)",
+            "eur": 29.6,
+            "portion": "Ración"
+          }
+        ]
+      },
+      {
+        "service": "Para empezar",
         "dishes": [
           "Salmorejo cordobés",
-          "Flamenquín",
-          "Rabo de toro",
-          "Croquetas de salmón",
-          "Berenjenas cazuela",
-          "Chipirones con huevo frito"
+          "Mazamorra",
+          "Ensalada de pollo",
+          "Ensalada de pimientos con atún en manteca",
+          "Ensaladilla rusa",
+          "Asadillo de pimientos",
+          "Salpicón de marisco",
+          "Papas aliñás a nuestro estilo",
+          "Ensalada mixta",
+          "Ensalada de salmón marinado con vinagreta de trufa blanca",
+          "Tartar de atún",
+          "Tomate con melva",
+          "Montaditos de pringá (3 uds.)"
         ],
-        "dishPrices": []
+        "dishPrices": [
+          {
+            "dish": "Salmorejo cordobés",
+            "eur": 4.5,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Salmorejo cordobés",
+            "eur": 9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Salmorejo cordobés",
+            "eur": 11.7,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Mazamorra",
+            "eur": 6,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Mazamorra",
+            "eur": 10.1,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Mazamorra",
+            "eur": 12.7,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Ensalada de pollo",
+            "eur": 4,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Ensalada de pollo",
+            "eur": 8.7,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Ensalada de pollo",
+            "eur": 12.6,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Ensalada de pimientos con atún en manteca",
+            "eur": 16.1,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Ensaladilla rusa",
+            "eur": 4,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Ensaladilla rusa",
+            "eur": 8.7,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Ensaladilla rusa",
+            "eur": 10.6,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Asadillo de pimientos",
+            "eur": 4,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Asadillo de pimientos",
+            "eur": 8.7,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Asadillo de pimientos",
+            "eur": 10.6,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Salpicón de marisco",
+            "eur": 5.5,
+            "portion": "Tapa"
+          },
+          {
+            "dish": "Salpicón de marisco",
+            "eur": 10.3,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Salpicón de marisco",
+            "eur": 14.3,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Papas aliñás a nuestro estilo",
+            "eur": 11.15,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Papas aliñás a nuestro estilo",
+            "eur": 16.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Ensalada mixta",
+            "eur": 11.15,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Ensalada de salmón marinado con vinagreta de trufa blanca",
+            "eur": 16.2,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Tartar de atún",
+            "eur": 18.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Tomate con melva",
+            "eur": 14.4,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Montaditos de pringá (3 uds.)",
+            "eur": 5.4,
+            "portion": "Ración"
+          }
+        ]
+      },
+      {
+        "service": "De la gallina",
+        "dishes": [
+          "Revuelto de la casa",
+          "Revuelto de berenjenas y gambas",
+          "Revuelto del cortijo",
+          "Revuelto de setas con jamón",
+          "Bacalao dorado",
+          "Habitas foie",
+          "Huevos con foie",
+          "Espinacas esparragadas con huevo escalfado",
+          "Boletus al oloroso con jamón, huevo pochado y AOVE de trufa",
+          "Borrajas esparragadas (2 pax.)",
+          "Huevos ibéricos",
+          "Gambusi con huevos fritos y pimientos asados"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Revuelto de la casa",
+            "eur": 9.7,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Revuelto de la casa",
+            "eur": 12.2,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Revuelto de berenjenas y gambas",
+            "eur": 9.7,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Revuelto de berenjenas y gambas",
+            "eur": 12.2,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Revuelto del cortijo",
+            "eur": 10.1,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Revuelto del cortijo",
+            "eur": 12.8,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Revuelto de setas con jamón",
+            "eur": 9.3,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Revuelto de setas con jamón",
+            "eur": 11.4,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Bacalao dorado",
+            "eur": 10.9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Bacalao dorado",
+            "eur": 13.4,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Habitas foie",
+            "eur": 10.2,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Habitas foie",
+            "eur": 12.8,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Huevos con foie",
+            "eur": 17.2,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Espinacas esparragadas con huevo escalfado",
+            "eur": 10.1,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Espinacas esparragadas con huevo escalfado",
+            "eur": 12.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Boletus al oloroso con jamón, huevo pochado y AOVE de trufa",
+            "eur": 18.6,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Borrajas esparragadas (2 pax.)",
+            "eur": 19.8,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Huevos ibéricos",
+            "eur": 14,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Huevos ibéricos",
+            "eur": 20.65,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Gambusi con huevos fritos y pimientos asados",
+            "eur": 16.1,
+            "portion": "Ración"
+          }
+        ]
+      },
+      {
+        "service": "Los fritos de Carlitos",
+        "dishes": [
+          "Berenjenas fritas",
+          "Berenjenas fritas con miel de flores",
+          "Croquetas de cocido",
+          "Croquetas de bacalao",
+          "Croquetas de morcilla",
+          "Croquetas de carrillada ibérica",
+          "Patatas rellenas de carne y mostaza",
+          "Mejillón relleno",
+          "Flamenquín cordobés",
+          "Torreznos",
+          "Pechuga al limón",
+          "Gambas fritas",
+          "Bacalao frito",
+          "Boquerones fritos",
+          "Pavía de bacalao",
+          "Choco frito",
+          "Mero en adobo",
+          "Japuta en adobo",
+          "Lubina frita",
+          "Fritura variada"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Berenjenas fritas",
+            "eur": 10.2,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Berenjenas fritas",
+            "eur": 13.2,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Berenjenas fritas con miel de flores",
+            "eur": 10.5,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Berenjenas fritas con miel de flores",
+            "eur": 13.6,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Croquetas de cocido",
+            "eur": 9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Croquetas de cocido",
+            "eur": 11.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Croquetas de bacalao",
+            "eur": 9.3,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Croquetas de bacalao",
+            "eur": 12,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Croquetas de morcilla",
+            "eur": 9.4,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Croquetas de morcilla",
+            "eur": 12,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Croquetas de carrillada ibérica",
+            "eur": 9.4,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Croquetas de carrillada ibérica",
+            "eur": 12.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Patatas rellenas de carne y mostaza",
+            "eur": 9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Patatas rellenas de carne y mostaza",
+            "eur": 11.3,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Mejillón relleno",
+            "eur": 2.4,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Flamenquín cordobés",
+            "eur": 18,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Torreznos",
+            "eur": 12.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Pechuga al limón",
+            "eur": 9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Pechuga al limón",
+            "eur": 11.3,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Gambas fritas",
+            "eur": 9.8,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Gambas fritas",
+            "eur": 12.7,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Bacalao frito",
+            "eur": 9.8,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Bacalao frito",
+            "eur": 12.7,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Boquerones fritos",
+            "eur": 12,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Pavía de bacalao",
+            "eur": 10,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Pavía de bacalao",
+            "eur": 14,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Choco frito",
+            "eur": 9.3,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Choco frito",
+            "eur": 12.3,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Mero en adobo",
+            "eur": 8.7,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Mero en adobo",
+            "eur": 12,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Japuta en adobo",
+            "eur": 8.7,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Japuta en adobo",
+            "eur": 12,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Lubina frita",
+            "eur": 16,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Fritura variada",
+            "eur": 14.8,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Fritura variada",
+            "eur": 20.8,
+            "portion": "Ración"
+          }
+        ]
+      },
+      {
+        "service": "Entre Plancha y Brasa",
+        "dishes": [
+          "Chipirones a la plancha",
+          "Solomillo ibérico a la brasa",
+          "Solomillo ibérico al roquefort",
+          "Puntas de solomillo ibérico",
+          "Chuletitas de cordero lechal",
+          "Presa ibérica a la brasa",
+          "Lagarto ibérico al ajillo",
+          "Entrecot «del Valle del Esla» (precio según peso; consultar)",
+          "Solomillo ibérico al P.X.",
+          "Secreto de Angus a la brasa"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Chipirones a la plancha",
+            "eur": 9.3,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Chipirones a la plancha",
+            "eur": 12.2,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Solomillo ibérico a la brasa",
+            "eur": 19.4,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Solomillo ibérico al roquefort",
+            "eur": 20.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Puntas de solomillo ibérico",
+            "eur": 10.6,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Puntas de solomillo ibérico",
+            "eur": 14.8,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Chuletitas de cordero lechal",
+            "eur": 19.8,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Presa ibérica a la brasa",
+            "eur": 19.8,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Lagarto ibérico al ajillo",
+            "eur": 17.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Solomillo ibérico al P.X.",
+            "eur": 17,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Secreto de Angus a la brasa",
+            "eur": 22,
+            "portion": "Ración"
+          }
+        ]
+      },
+      {
+        "service": "Nuestros fogones",
+        "dishes": [
+          "Pisto cordobés",
+          "Risotto de presa y hongos con AOVE de trufa",
+          "Bacalao a la vizcaína",
+          "Lomo de orza con torta de Zújar",
+          "Lomo a la crema de setas",
+          "Carrillada ibérica",
+          "Albóndigas con setas",
+          "Ternera a la miel",
+          "Rabo de toro",
+          "Venado en salsa",
+          "Guiso del día (según guiso)",
+          "Albóndigas de atún con wakame frito"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Pisto cordobés",
+            "eur": 9.8,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Pisto cordobés",
+            "eur": 12.2,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Risotto de presa y hongos con AOVE de trufa",
+            "eur": 17.2,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Bacalao a la vizcaína",
+            "eur": 17.2,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Lomo de orza con torta de Zújar",
+            "eur": 18.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Lomo a la crema de setas",
+            "eur": 15.2,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Carrillada ibérica",
+            "eur": 9.3,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Carrillada ibérica",
+            "eur": 14,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Albóndigas con setas",
+            "eur": 9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Albóndigas con setas",
+            "eur": 13.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Ternera a la miel",
+            "eur": 9.9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Ternera a la miel",
+            "eur": 12.2,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Rabo de toro",
+            "eur": 12.5,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Rabo de toro",
+            "eur": 17.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Venado en salsa",
+            "eur": 13.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Albóndigas de atún con wakame frito",
+            "eur": 16.4,
+            "portion": "Ración"
+          }
+        ]
+      },
+      {
+        "service": "Nuestros clásicos",
+        "dishes": [
+          "Corderfrito",
+          "Berenjenas con salmón",
+          "Berenjenas a la Cazuela",
+          "Alcachofas con rabo de toro"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Corderfrito",
+            "eur": 9.6,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Corderfrito",
+            "eur": 12.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Berenjenas con salmón",
+            "eur": 9.8,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Berenjenas con salmón",
+            "eur": 13.8,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Berenjenas a la Cazuela",
+            "eur": 15.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Alcachofas con rabo de toro",
+            "eur": 12.9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Alcachofas con rabo de toro",
+            "eur": 19.2,
+            "portion": "Ración"
+          }
+        ]
+      },
+      {
+        "service": "De la Confi del Abuelo",
+        "dishes": [
+          "Porción de tarta a elegir (queso, chocolate, tiramisú)",
+          "Tocino de cielo",
+          "Pastel cordobés",
+          "Postre de la casa",
+          "Leche frita, brownie",
+          "Fruta del tiempo",
+          "Surtido de postres de temporada"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Porción de tarta a elegir (queso, chocolate, tiramisú)",
+            "eur": 6,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Tocino de cielo",
+            "eur": 6,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Pastel cordobés",
+            "eur": 6,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Postre de la casa",
+            "eur": 6,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Leche frita, brownie",
+            "eur": 6.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Fruta del tiempo",
+            "eur": 5.5,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Surtido de postres de temporada",
+            "eur": 16,
+            "portion": "Ración"
+          }
+        ]
+      }
+    ],
+    "menuSections": [
+      {
+        "title": "Mantequeando",
+        "items": [
+          {
+            "name": "Jamón ibérico de bellota (90/150 g)",
+            "prices": [
+              {
+                "eur": 16.4,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 24.6,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Salchichón ibérico (90/130 g)",
+            "prices": [
+              {
+                "eur": 10.4,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 15.7,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Caña de lomo ibérica (90/130 g)",
+            "prices": [
+              {
+                "eur": 16.4,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 24.6,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Morcilla ibérica de bellota (100/150 g)",
+            "prices": [
+              {
+                "eur": 10.4,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 15.7,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Chicharrones de Cádiz",
+            "prices": [
+              {
+                "eur": 10.8,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 15.4,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Surtido ibérico (jamón, salchichón, morcilla, caña de lomo)",
+            "prices": [
+              {
+                "eur": 20.5,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 28.2,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "La Quesería",
+        "items": [
+          {
+            "name": "Queso manchego (75/165 g)",
+            "prices": [
+              {
+                "eur": 12.7,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 17.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Queso curado Calaveruela (75/165 g)",
+            "prices": [
+              {
+                "eur": 14.85,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 19,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Queso de cabra Payoyo (75/165 g)",
+            "prices": [
+              {
+                "eur": 14.85,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 19,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Queso manchego a la trufa (75/165 g)",
+            "prices": [
+              {
+                "eur": 12.7,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 17.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Surtido de quesos (Calaveruela, Payoyo, manchego a la trufa, rulo de cabra y Maasdam)",
+            "prices": [
+              {
+                "eur": 25.5,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 29.6,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Para empezar",
+        "items": [
+          {
+            "name": "Salmorejo cordobés",
+            "prices": [
+              {
+                "eur": 4.5,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 11.7,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Mazamorra",
+            "prices": [
+              {
+                "eur": 6,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 10.1,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12.7,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Ensalada de pollo",
+            "prices": [
+              {
+                "eur": 4,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 8.7,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12.6,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Ensalada de pimientos con atún en manteca",
+            "prices": [
+              {
+                "eur": 16.1,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Ensaladilla rusa",
+            "prices": [
+              {
+                "eur": 4,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 8.7,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 10.6,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Asadillo de pimientos",
+            "prices": [
+              {
+                "eur": 4,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 8.7,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 10.6,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Salpicón de marisco",
+            "prices": [
+              {
+                "eur": 5.5,
+                "portion": "Tapa"
+              },
+              {
+                "eur": 10.3,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 14.3,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Papas aliñás a nuestro estilo",
+            "prices": [
+              {
+                "eur": 11.15,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 16.9,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Ensalada mixta",
+            "prices": [
+              {
+                "eur": 11.15,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Ensalada de salmón marinado con vinagreta de trufa blanca",
+            "prices": [
+              {
+                "eur": 16.2,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Tartar de atún",
+            "prices": [
+              {
+                "eur": 18.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Tomate con melva",
+            "prices": [
+              {
+                "eur": 14.4,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Montaditos de pringá (3 uds.)",
+            "prices": [
+              {
+                "eur": 5.4,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "De la gallina",
+        "items": [
+          {
+            "name": "Revuelto de la casa",
+            "prices": [
+              {
+                "eur": 9.7,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12.2,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Revuelto de berenjenas y gambas",
+            "prices": [
+              {
+                "eur": 9.7,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12.2,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Revuelto del cortijo",
+            "prices": [
+              {
+                "eur": 10.1,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12.8,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Revuelto de setas con jamón",
+            "prices": [
+              {
+                "eur": 9.3,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 11.4,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Bacalao dorado",
+            "prices": [
+              {
+                "eur": 10.9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 13.4,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Habitas foie",
+            "prices": [
+              {
+                "eur": 10.2,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12.8,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Huevos con foie",
+            "prices": [
+              {
+                "eur": 17.2,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Espinacas esparragadas con huevo escalfado",
+            "prices": [
+              {
+                "eur": 10.1,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Boletus al oloroso con jamón, huevo pochado y AOVE de trufa",
+            "prices": [
+              {
+                "eur": 18.6,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Borrajas esparragadas (2 pax.)",
+            "prices": [
+              {
+                "eur": 19.8,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Huevos ibéricos",
+            "prices": [
+              {
+                "eur": 14,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 20.65,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Gambusi con huevos fritos y pimientos asados",
+            "prices": [
+              {
+                "eur": 16.1,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Los fritos de Carlitos",
+        "items": [
+          {
+            "name": "Berenjenas fritas",
+            "prices": [
+              {
+                "eur": 10.2,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 13.2,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Berenjenas fritas con miel de flores",
+            "prices": [
+              {
+                "eur": 10.5,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 13.6,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Croquetas de cocido",
+            "prices": [
+              {
+                "eur": 9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 11.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Croquetas de bacalao",
+            "prices": [
+              {
+                "eur": 9.3,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Croquetas de morcilla",
+            "prices": [
+              {
+                "eur": 9.4,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Croquetas de carrillada ibérica",
+            "prices": [
+              {
+                "eur": 9.4,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Patatas rellenas de carne y mostaza",
+            "prices": [
+              {
+                "eur": 9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 11.3,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Mejillón relleno",
+            "prices": [
+              {
+                "eur": 2.4,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín cordobés",
+            "prices": [
+              {
+                "eur": 18,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Torreznos",
+            "prices": [
+              {
+                "eur": 12.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Pechuga al limón",
+            "prices": [
+              {
+                "eur": 9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 11.3,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Gambas fritas",
+            "prices": [
+              {
+                "eur": 9.8,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12.7,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Bacalao frito",
+            "prices": [
+              {
+                "eur": 9.8,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12.7,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Boquerones fritos",
+            "prices": [
+              {
+                "eur": 12,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Pavía de bacalao",
+            "prices": [
+              {
+                "eur": 10,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 14,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Choco frito",
+            "prices": [
+              {
+                "eur": 9.3,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12.3,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Mero en adobo",
+            "prices": [
+              {
+                "eur": 8.7,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Japuta en adobo",
+            "prices": [
+              {
+                "eur": 8.7,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Lubina frita",
+            "prices": [
+              {
+                "eur": 16,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Fritura variada",
+            "prices": [
+              {
+                "eur": 14.8,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 20.8,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Entre Plancha y Brasa",
+        "items": [
+          {
+            "name": "Chipirones a la plancha",
+            "prices": [
+              {
+                "eur": 9.3,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12.2,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Solomillo ibérico a la brasa",
+            "prices": [
+              {
+                "eur": 19.4,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Solomillo ibérico al roquefort",
+            "prices": [
+              {
+                "eur": 20.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Puntas de solomillo ibérico",
+            "prices": [
+              {
+                "eur": 10.6,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 14.8,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Chuletitas de cordero lechal",
+            "prices": [
+              {
+                "eur": 19.8,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Presa ibérica a la brasa",
+            "prices": [
+              {
+                "eur": 19.8,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Lagarto ibérico al ajillo",
+            "prices": [
+              {
+                "eur": 17.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Entrecot «del Valle del Esla» (precio según peso; consultar)",
+            "prices": []
+          },
+          {
+            "name": "Solomillo ibérico al P.X.",
+            "prices": [
+              {
+                "eur": 17,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Secreto de Angus a la brasa",
+            "prices": [
+              {
+                "eur": 22,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Nuestros fogones",
+        "items": [
+          {
+            "name": "Pisto cordobés",
+            "prices": [
+              {
+                "eur": 9.8,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12.2,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Risotto de presa y hongos con AOVE de trufa",
+            "prices": [
+              {
+                "eur": 17.2,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Bacalao a la vizcaína",
+            "prices": [
+              {
+                "eur": 17.2,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Lomo de orza con torta de Zújar",
+            "prices": [
+              {
+                "eur": 18.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Lomo a la crema de setas",
+            "prices": [
+              {
+                "eur": 15.2,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Carrillada ibérica",
+            "prices": [
+              {
+                "eur": 9.3,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 14,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Albóndigas con setas",
+            "prices": [
+              {
+                "eur": 9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 13.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Ternera a la miel",
+            "prices": [
+              {
+                "eur": 9.9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12.2,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Rabo de toro",
+            "prices": [
+              {
+                "eur": 12.5,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 17.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Venado en salsa",
+            "prices": [
+              {
+                "eur": 13.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Guiso del día (según guiso)",
+            "prices": []
+          },
+          {
+            "name": "Albóndigas de atún con wakame frito",
+            "prices": [
+              {
+                "eur": 16.4,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Nuestros clásicos",
+        "items": [
+          {
+            "name": "Corderfrito",
+            "prices": [
+              {
+                "eur": 9.6,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Berenjenas con salmón",
+            "prices": [
+              {
+                "eur": 9.8,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 13.8,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Berenjenas a la Cazuela",
+            "prices": [
+              {
+                "eur": 15.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Alcachofas con rabo de toro",
+            "prices": [
+              {
+                "eur": 12.9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 19.2,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "De la Confi del Abuelo",
+        "items": [
+          {
+            "name": "Porción de tarta a elegir (queso, chocolate, tiramisú)",
+            "prices": [
+              {
+                "eur": 6,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Tocino de cielo",
+            "prices": [
+              {
+                "eur": 6,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Pastel cordobés",
+            "prices": [
+              {
+                "eur": 6,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Postre de la casa",
+            "prices": [
+              {
+                "eur": 6,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Leche frita, brownie",
+            "prices": [
+              {
+                "eur": 6.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Fruta del tiempo",
+            "prices": [
+              {
+                "eur": 5.5,
+                "portion": "Ración"
+              }
+            ]
+          },
+          {
+            "name": "Surtido de postres de temporada",
+            "prices": [
+              {
+                "eur": 16,
+                "portion": "Ración"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "menuSourceNote": "Carta general transcrita a partir de 11 capturas suministradas por el usuario el 16/10/2026. Precios por tapa, media ración y ración, sin inventar tamaños faltantes. Entrecot del Valle del Esla: S/P (según peso); guiso del día: precio variable según guiso. En primera planta no se sirve formato tapa. Menús especiales o de grupo pendientes de recibir. No se incorporan imágenes de terceros. Los importes requieren confirmación de vigencia con el restaurante.",
+    "extras": [
+      {
+        "name": "Servicio de pan",
+        "eur": 1.3,
+        "portion": "por persona"
+      },
+      {
+        "name": "Extra de picos de pan (bolsita)",
+        "eur": 0.5
+      },
+      {
+        "name": "Pan extra",
+        "eur": 1
+      },
+      {
+        "name": "Salsas extra",
+        "eur": 1
+      },
+      {
+        "name": "Croqueta extra",
+        "eur": 1
+      },
+      {
+        "name": "Plato de patatas fritas",
+        "eur": 5.3
+      },
+      {
+        "name": "Tupper para llevar",
+        "eur": 0.5
       }
     ]
   },
