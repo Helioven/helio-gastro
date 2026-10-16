@@ -141,7 +141,375 @@
         "dishPrices": []
       }
     ],
-    "menuSourceNote": "Listado de platos y postres transcrito por el usuario de la web oficial y respaldado por captura. Sin precios publicados en el material aportado. Ortografías dudosas del original: 'Zuhetos' y 'Moltalbán', pendientes de contrastar. Se separaron morcillas y rabo de toro, que venían unidos en el texto."
+    "menuSourceNote": "Listado de platos y postres transcrito por el usuario de la web oficial y respaldado por captura. Sin precios publicados en el material aportado. Ortografías dudosas del original: 'Zuhetos' y 'Moltalbán', pendientes de contrastar. Se separaron morcillas y rabo de toro, que venían unidos en el texto. Descripciones editoriales bilingües añadidas; no equivalen a fichas de ingredientes/alérgenos confirmadas por el establecimiento.",
+    "menuSections": [
+      {
+        "title": "Entrantes, fríos y ensaladas",
+        "note": "Descripciones editoriales orientativas (ES/EN), no confirmadas como recetas exactas del restaurante. Precios no disponibles.",
+        "items": [
+          {
+            "name": "Gazpacho – vaso",
+            "description": "Gazpacho frío de tomate y verduras, servido en vaso.",
+            "en": "Chilled tomato and vegetable soup, served in a glass.",
+            "prices": []
+          },
+          {
+            "name": "Ajo blanco – vaso con uvas pasas",
+            "description": "Crema fría de almendras y ajo, servida en vaso con uvas pasas.",
+            "en": "Chilled almond and garlic soup, served in a glass with raisins.",
+            "prices": []
+          },
+          {
+            "name": "Jamón serrano del Valle",
+            "description": "Jamón serrano curado procedente del Valle, según la carta.",
+            "en": "Cured Serrano ham from the Valley, as listed on the menu.",
+            "prices": []
+          },
+          {
+            "name": "Queso de oveja de Zuhetos",
+            "description": "Queso de oveja de la localidad indicada en la carta; origen exacto pendiente de confirmar.",
+            "en": "Sheep's milk cheese from the place named on the menu; exact origin unconfirmed.",
+            "prices": []
+          },
+          {
+            "name": "Ensalada cordobesa – picadillo cordobés",
+            "description": "Picadillo cordobés de verduras frescas, servido como ensalada.",
+            "en": "Cordoban-style chopped vegetable salad.",
+            "prices": []
+          },
+          {
+            "name": "Ensalada de col con ajitos fritos y salmón ahumado",
+            "description": "Ensalada de col con ajitos fritos y salmón ahumado.",
+            "en": "Cabbage salad with fried garlic and smoked salmon.",
+            "prices": []
+          },
+          {
+            "name": "Naranjas picás con aceite y bacalao",
+            "description": "Naranja troceada con aceite y bacalao, combinación tradicional cordobesa.",
+            "en": "Chopped orange with olive oil and salt cod, a traditional Cordoban combination.",
+            "prices": []
+          },
+          {
+            "name": "Melón con jamón",
+            "description": "Melón acompañado de jamón serrano.",
+            "en": "Melon served with cured ham.",
+            "prices": []
+          },
+          {
+            "name": "Plato de tomate aliñado de la Vega de Alcolea",
+            "description": "Tomate aliñado procedente de la Vega de Alcolea, según la carta.",
+            "en": "Seasoned tomatoes from the Vega de Alcolea area, as described on the menu.",
+            "prices": []
+          },
+          {
+            "name": "Salmorejo cordobés",
+            "description": "Crema fría tradicional cordobesa a base de tomate, pan, aceite de oliva y ajo.",
+            "en": "Traditional chilled Cordoban tomato, bread, olive oil and garlic cream.",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Guisos y carnes",
+        "note": "Descripciones editoriales orientativas (ES/EN), no confirmadas como recetas exactas del restaurante. Precios no disponibles.",
+        "items": [
+          {
+            "name": "Albóndigas en caldo del puchero y jamón",
+            "description": "Albóndigas servidas en caldo de puchero con jamón.",
+            "en": "Meatballs served in traditional stew broth with cured ham.",
+            "prices": []
+          },
+          {
+            "name": "Potaje de garbanzos con manitas",
+            "description": "Guiso de garbanzos con manitas de cerdo.",
+            "en": "Chickpea stew with pig's trotters.",
+            "prices": []
+          },
+          {
+            "name": "Pisto Tundidores con huevos fritos",
+            "description": "Pisto de verduras al estilo Tundidores, acompañado de huevos fritos.",
+            "en": "Tundidores-style vegetable stew served with fried eggs.",
+            "prices": []
+          },
+          {
+            "name": "Patatas rellenas de carne",
+            "description": "Patatas rellenas de carne; relleno y preparación exactos no especificados.",
+            "en": "Potatoes stuffed with meat; exact filling and preparation not specified.",
+            "prices": []
+          },
+          {
+            "name": "Lomo en salsa especial con avellanas cordobesas",
+            "description": "Lomo de cerdo con salsa especial de avellanas cordobesas.",
+            "en": "Pork loin with a house-style sauce featuring local hazelnuts.",
+            "prices": []
+          },
+          {
+            "name": "Chorizo casero a la sartén",
+            "description": "Chorizo casero preparado a la sartén.",
+            "en": "Homemade chorizo cooked in a frying pan.",
+            "prices": []
+          },
+          {
+            "name": "Morcillas caseras",
+            "description": "Morcillas caseras; ingredientes y preparación exactos no detallados.",
+            "en": "Homemade blood sausages; exact ingredients and preparation not specified.",
+            "prices": []
+          },
+          {
+            "name": "Rabo de toro estofado al estilo cordobés",
+            "description": "Rabo de toro estofado siguiendo el estilo tradicional cordobés.",
+            "en": "Slow-braised oxtail prepared in traditional Cordoban style.",
+            "prices": []
+          },
+          {
+            "name": "Cochinillo frito del Valle con ajitos fritos",
+            "description": "Cochinillo frito del Valle acompañado de ajitos fritos.",
+            "en": "Fried suckling pig from the Valley served with fried garlic.",
+            "prices": []
+          },
+          {
+            "name": "Callos a la antigua",
+            "description": "Callos preparados al estilo tradicional de la casa.",
+            "en": "Traditional-style tripe stew.",
+            "prices": []
+          },
+          {
+            "name": "Manitas de cerdo",
+            "description": "Manitas de cerdo; elaboración exacta no especificada.",
+            "en": "Pig's trotters; exact preparation not specified.",
+            "prices": []
+          },
+          {
+            "name": "Chuletas de cordero",
+            "description": "Chuletas de cordero; guarnición y preparación no especificadas.",
+            "en": "Lamb chops; cooking method and sides not specified.",
+            "prices": []
+          },
+          {
+            "name": "Carne con tomate a la cordobesa",
+            "description": "Carne guisada con tomate al estilo cordobés.",
+            "en": "Cordoban-style meat cooked in tomato sauce.",
+            "prices": []
+          },
+          {
+            "name": "Carrillada ibérica al estilo de la taberna",
+            "description": "Carrillada de cerdo ibérico preparada al estilo de la taberna.",
+            "en": "Iberian pork cheeks prepared in the tavern's house style.",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Verduras, huevos y frituras",
+        "note": "Descripciones editoriales orientativas (ES/EN), no confirmadas como recetas exactas del restaurante. Precios no disponibles.",
+        "items": [
+          {
+            "name": "Cazuela de espárragos trigueros con huevo escalfado",
+            "description": "Cazuela de espárragos trigueros con huevo escalfado.",
+            "en": "Wild asparagus casserole topped with a poached egg.",
+            "prices": []
+          },
+          {
+            "name": "Espinacas con garbanzos",
+            "description": "Plato tradicional de espinacas con garbanzos.",
+            "en": "Traditional spinach and chickpea dish.",
+            "prices": []
+          },
+          {
+            "name": "Habichuelas con rabo",
+            "description": "Guiso de habichuelas con rabo; tipo de rabo no especificado.",
+            "en": "Bean stew with tail meat; type of meat not specified.",
+            "prices": []
+          },
+          {
+            "name": "Revuelto Salinas",
+            "description": "Revuelto especial de la casa; ingredientes no detallados en la carta.",
+            "en": "House-special scrambled egg dish; ingredients not detailed on the menu.",
+            "prices": []
+          },
+          {
+            "name": "Revuelto de setas con salmón",
+            "description": "Huevos revueltos con setas y salmón.",
+            "en": "Scrambled eggs with mushrooms and salmon.",
+            "prices": []
+          },
+          {
+            "name": "Huevo, lomo, chorizo y patatas",
+            "description": "Plato combinado de huevo, lomo, chorizo y patatas.",
+            "en": "Combination plate with egg, pork loin, chorizo and potatoes.",
+            "prices": []
+          },
+          {
+            "name": "Croquetas caseras de espinacas con piñones",
+            "description": "Croquetas caseras de espinacas y piñones.",
+            "en": "Homemade spinach and pine nut croquettes.",
+            "prices": []
+          },
+          {
+            "name": "Croquetas caseras de pollo y jamón",
+            "description": "Croquetas caseras de pollo y jamón.",
+            "en": "Homemade chicken and cured ham croquettes.",
+            "prices": []
+          },
+          {
+            "name": "Berenjenas fritas con o sin miel de caña",
+            "description": "Berenjenas fritas, disponibles con o sin miel de caña.",
+            "en": "Fried aubergines, served with or without cane syrup.",
+            "prices": []
+          },
+          {
+            "name": "Setas a la plancha",
+            "description": "Setas cocinadas a la plancha.",
+            "en": "Griddled mushrooms.",
+            "prices": []
+          },
+          {
+            "name": "Tortilla de la taberna",
+            "description": "Tortilla especial de la taberna; ingredientes no especificados.",
+            "en": "House-style omelette; ingredients not specified.",
+            "prices": []
+          },
+          {
+            "name": "Sangre encebollada",
+            "description": "Sangre encebollada, plato tradicional preparado con cebolla.",
+            "en": "Traditional cooked blood dish with onions.",
+            "prices": []
+          },
+          {
+            "name": "Flamenquín de jamón al estilo de Córdoba",
+            "description": "Flamenquín cordobés de jamón, enrollado y empanado.",
+            "en": "Cordoban-style rolled and breaded flamenquín with cured ham.",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Pescados y mariscos",
+        "note": "Descripciones editoriales orientativas (ES/EN), no confirmadas como recetas exactas del restaurante. Precios no disponibles.",
+        "items": [
+          {
+            "name": "Bacalao rebozado",
+            "description": "Bacalao rebozado y frito.",
+            "en": "Battered and fried cod.",
+            "prices": []
+          },
+          {
+            "name": "Adobo cordobés (japuta, rosada)",
+            "description": "Pescado en adobo al estilo cordobés, con japuta o rosada según la carta.",
+            "en": "Cordoban-style marinated fish, listed as pomfret or pink cusk-eel.",
+            "prices": []
+          },
+          {
+            "name": "Boquerones en vinagre",
+            "description": "Boquerones marinados en vinagre.",
+            "en": "Anchovies marinated in vinegar.",
+            "prices": []
+          },
+          {
+            "name": "Boquerones fritos adobados",
+            "description": "Boquerones adobados y fritos.",
+            "en": "Marinated and fried anchovies.",
+            "prices": []
+          },
+          {
+            "name": "Calamares fritos o a la plancha",
+            "description": "Calamares disponibles fritos o a la plancha.",
+            "en": "Squid available fried or griddled.",
+            "prices": []
+          },
+          {
+            "name": "Gambas rebozadas",
+            "description": "Gambas rebozadas y fritas.",
+            "en": "Battered and fried prawns.",
+            "prices": []
+          },
+          {
+            "name": "Lenguado a la plancha a mi estilo",
+            "description": "Lenguado a la plancha preparado al estilo de la casa.",
+            "en": "Griddled sole prepared in the house style.",
+            "prices": []
+          },
+          {
+            "name": "Filetitos de lenguado fritos en taquitos",
+            "description": "Taquitos de lenguado fritos.",
+            "en": "Bite-sized pieces of fried sole.",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Postres",
+        "note": "Descripciones editoriales orientativas (ES/EN), no confirmadas como recetas exactas del restaurante. Precios no disponibles.",
+        "items": [
+          {
+            "name": "Natillas cordobesas",
+            "description": "Natillas tradicionales de estilo cordobés.",
+            "en": "Traditional Cordoban-style custard.",
+            "prices": []
+          },
+          {
+            "name": "Tarta de queso",
+            "description": "Tarta de queso; estilo y acompañamiento no especificados.",
+            "en": "Cheesecake; style and accompaniments not specified.",
+            "prices": []
+          },
+          {
+            "name": "Zumo de naranja natural",
+            "description": "Zumo de naranja natural recién exprimido.",
+            "en": "Freshly squeezed orange juice.",
+            "prices": []
+          },
+          {
+            "name": "Bombones de helado",
+            "description": "Bombones de helado recubiertos de chocolate.",
+            "en": "Chocolate-coated ice cream bites.",
+            "prices": []
+          },
+          {
+            "name": "Naranja preparada con azúcar y canela",
+            "description": "Naranja preparada con azúcar y canela.",
+            "en": "Orange served with sugar and cinnamon.",
+            "prices": []
+          },
+          {
+            "name": "Tocino de cielo",
+            "description": "Tocino de cielo, postre tradicional de yemas de huevo y azúcar.",
+            "en": "Tocino de cielo, a traditional rich egg-yolk and sugar custard.",
+            "prices": []
+          },
+          {
+            "name": "Pastel cordobés",
+            "description": "Pastel cordobés tradicional, hojaldre relleno de cabello de ángel.",
+            "en": "Traditional Cordoban puff pastry filled with sweet pumpkin preserve.",
+            "prices": []
+          },
+          {
+            "name": "Flan casero de huevo",
+            "description": "Flan casero de huevo.",
+            "en": "Homemade egg flan.",
+            "prices": []
+          },
+          {
+            "name": "Arroz con leche",
+            "description": "Arroz con leche, postre tradicional de arroz cocido en leche.",
+            "en": "Traditional rice pudding cooked in milk.",
+            "prices": []
+          },
+          {
+            "name": "Pastel de chocolate",
+            "description": "Pastel de chocolate; elaboración exacta no especificada.",
+            "en": "Chocolate cake; exact preparation not specified.",
+            "prices": []
+          },
+          {
+            "name": "Melón dulce de Moltalbán",
+            "description": "Melón dulce de la procedencia indicada en la carta, pendiente de confirmar.",
+            "en": "Sweet melon from the place named on the menu; origin unconfirmed.",
+            "prices": []
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "bodegas-mezquita-cespedes",
