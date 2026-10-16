@@ -13443,7 +13443,101 @@
         "name": "Tupper para llevar",
         "eur": 0.5
       }
-    ]
+    ],
+    "groupMenus": [
+      {
+        "name": "Menú 1 Navidad · mesa",
+        "eurPerPerson": 42,
+        "format": "Mesa; platos a compartir para cada 5 personas",
+        "shared": [
+          "Mixto de jamón ibérico y queso manchego",
+          "Ensaladilla rusa",
+          "Anchoas sobre pan brioche y mantequilla Calaveruela",
+          "Oreja frita",
+          "Pescaito frito",
+          "Gamba cristal con huevos fritos y ensalada de pimientos",
+          "Croquetas de cocido",
+          "Tacos de atún encebollado",
+          "Costilla de ternera asada en salsa de P.X."
+        ],
+        "dessert": "Surtido de dulce fino",
+        "drinks": "Fino de la casa, verdejo «Coto de Haya», tinto RD «Monteabellón», refrescos, agua y cerveza.",
+        "conditions": "Precio por persona con IVA incluido. Consultar condiciones de salones. Bebida del menú desde que estén todos los comensales; consumiciones anteriores aparte; finaliza tras el postre. Número de comensales confirmado tres días antes y cobrado según el número indicado. Indicar alergias/intolerancias antes de reservar. Salones asignados según necesidades y sujetos a cambios.",
+        "sourceDocument": "Captura menú Navidad 1, aportada 16/10/2026"
+      },
+      {
+        "name": "Menú 2 Navidad · mesa",
+        "eurPerPerson": 46,
+        "format": "Mesa; platos a compartir para cada 5 personas",
+        "shared": [
+          "Surtido ibérico y queso (jamón, tacos de salchichón, caña de lomo y tacos de queso manchego)",
+          "Ensalada de perdiz individual",
+          "Mazamorra con sardina ahumada y huevas de bocarte individual",
+          "Torreznos",
+          "Huevos al ajillo con lagostinos",
+          "Pescaito frito"
+        ],
+        "choice": [
+          "Albóndigas de atún con crujiente de wakame",
+          "Bacalao vizcaína",
+          "Costilla de ternera con salsa de P.X.",
+          "Solomillo ibérico"
+        ],
+        "dessert": "Surtido de dulce fino",
+        "drinks": "Fino de la casa, verdejo «Coto de Haya», tinto RD «Monteabellón», refrescos, agua y cerveza.",
+        "conditions": "Precio por persona con IVA incluido. Consultar condiciones de salones. Bebida del menú desde que estén todos los comensales; consumiciones anteriores aparte; finaliza tras el postre. Número de comensales confirmado tres días antes y cobrado según el número indicado. Indicar alergias/intolerancias antes de reservar. Salones asignados según necesidades y sujetos a cambios.",
+        "sourceDocument": "Captura menú Navidad 2, aportada 16/10/2026"
+      },
+      {
+        "name": "Menú 1 Navidad · cóctel de pie",
+        "eurPerPerson": 47,
+        "format": "Cóctel de pie",
+        "shared": [
+          "Surtido ibérico y queso (jamón, tacos de salchichón, caña de lomo y tacos de queso manchego)",
+          "Cuenco de salmorejo cordobés",
+          "Crujiente de rusa",
+          "Anchoas en pan brioche con mantequilla de Calaveruela",
+          "Mini-croquetas de cocido",
+          "Pinchos del mar",
+          "Montaditos de pringá",
+          "Albóndigas de atún con crujiente de wakame",
+          "Tacos de cochinita"
+        ],
+        "choice": [
+          "Arroz de carrillada ibérica",
+          "Fideuá de rabo de toro"
+        ],
+        "choiceNote": "Un mismo plato para todos",
+        "dessert": "Bombones helados",
+        "drinks": "Fino de la casa, verdejo «Coto de Haya», tinto RD «Monteabellón», refrescos, agua y cerveza.",
+        "conditions": "Precio por persona con IVA incluido. Consultar condiciones de salones. Bebida del menú desde que estén todos los comensales; consumiciones anteriores aparte; finaliza tras el postre. Número de comensales confirmado tres días antes y cobrado según el número indicado. Indicar alergias/intolerancias antes de reservar. Salones asignados según necesidades y sujetos a cambios.",
+        "sourceDocument": "Captura cóctel Navidad 1, aportada 16/10/2026"
+      },
+      {
+        "name": "Menú 2 Navidad · cóctel de pie",
+        "eurPerPerson": 50,
+        "format": "Cóctel de pie",
+        "shared": [
+          "Surtido ibérico y queso (jamón, tacos de salchichón, caña de lomo y tacos de queso manchego)",
+          "Cuenco de salmorejo cordobés",
+          "Crujiente de rusa",
+          "Anchoas en pan brioche con mantequilla de Calaveruela",
+          "Mini-croquetas de cocido",
+          "Pinchos del mar",
+          "Montaditos de pringá",
+          "Pinchos teriyakis",
+          "Albóndigas de atún con crujiente de wakame",
+          "Tacos de cochinita",
+          "Pañuelitos de espinacas",
+          "Mogote ibérico con parmentier individual"
+        ],
+        "dessert": "Tarta de la casa",
+        "drinks": "Fino de la casa, verdejo «Coto de Haya», tinto RD «Monteabellón», refrescos, agua y cerveza.",
+        "conditions": "Precio por persona con IVA incluido. Consultar condiciones de salones. Bebida del menú desde que estén todos los comensales; consumiciones anteriores aparte; finaliza tras el postre. Número de comensales confirmado tres días antes y cobrado según el número indicado. Indicar alergias/intolerancias antes de reservar. Salones asignados según necesidades y sujetos a cambios.",
+        "sourceDocument": "Captura cóctel Navidad 2, aportada 16/10/2026"
+      }
+    ],
+    "groupMenuSourceNote": "Cuatro menús de Navidad transcritos de capturas facilitadas por el usuario el 16/10/2026. No figura año específico de celebración ni período exacto de validez; confirmar disponibilidad y precio con el establecimiento. IVA incluido. Teléfono de reservas 957 488 952; email lacazueladelaesparteria@hotmail.com. No se utilizan imágenes de terceros."
   },
   {
     "id": "taberna-la-viuda",
