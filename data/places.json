@@ -15112,6 +15112,43 @@
             "portion": "Formato no indicado"
           }
         ]
+      },
+      {
+        "service": "Cordobesa",
+        "dishes": [
+          "Salmorejo Cordobés con Jamón y Huevo Duro",
+          "Alcachofas Mozárabes",
+          "Berenjenas Fritas",
+          "Flamenquín de Jamón Ibérico con Patatas",
+          "Rabo de Toro"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Salmorejo Cordobés con Jamón y Huevo Duro",
+            "eur": 10.5,
+            "portion": "Precio de carta; formato no indicado"
+          },
+          {
+            "dish": "Alcachofas Mozárabes",
+            "eur": 16,
+            "portion": "Precio de carta; formato no indicado"
+          },
+          {
+            "dish": "Berenjenas Fritas",
+            "eur": 11.5,
+            "portion": "Precio de carta; formato no indicado"
+          },
+          {
+            "dish": "Flamenquín de Jamón Ibérico con Patatas",
+            "eur": 18,
+            "portion": "Precio de carta; formato no indicado"
+          },
+          {
+            "dish": "Rabo de Toro",
+            "eur": 23,
+            "portion": "Precio de carta; formato no indicado"
+          }
+        ]
       }
     ],
     "menuSections": [
@@ -15247,6 +15284,57 @@
             ]
           }
         ]
+      },
+      {
+        "title": "Cordobesa",
+        "items": [
+          {
+            "name": "Salmorejo Cordobés con Jamón y Huevo Duro",
+            "prices": [
+              {
+                "eur": 10.5,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "Crema de tomate fría"
+          },
+          {
+            "name": "Alcachofas Mozárabes",
+            "prices": [
+              {
+                "eur": 16,
+                "portion": "Formato no indicado"
+              }
+            ]
+          },
+          {
+            "name": "Berenjenas Fritas",
+            "prices": [
+              {
+                "eur": 11.5,
+                "portion": "Formato no indicado"
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín de Jamón Ibérico con Patatas",
+            "prices": [
+              {
+                "eur": 18,
+                "portion": "Formato no indicado"
+              }
+            ]
+          },
+          {
+            "name": "Rabo de Toro",
+            "prices": [
+              {
+                "eur": 23,
+                "portion": "Formato no indicado"
+              }
+            ]
+          }
+        ]
       }
     ],
     "extras": [
@@ -15259,7 +15347,7 @@
         "eur": 2.5
       }
     ],
-    "menuSourceNote": "Transcripción parcial de la sección Entrantes facilitada por el usuario el 16/10/2026. Restantes secciones pendientes. Los marcadores 'svg' de la fuente copiada no identifican alérgenos y no se interpretan. Fecha y vigencia de precios no indicadas. Sin imágenes de terceros. Sección «Opciones sin gluten / para celíacos» facilitada por el usuario: cuatro platos y servicio de pan a 2,50 €. Precio de berenjenas: «Consultar». La clasificación es la publicada por la carta y no garantiza ausencia de contaminación cruzada; verificar con el establecimiento. Marcadores svg sin identificación de alérgenos."
+    "menuSourceNote": "Transcripción parcial de la sección Entrantes facilitada por el usuario el 16/10/2026. Restantes secciones pendientes. Los marcadores 'svg' de la fuente copiada no identifican alérgenos y no se interpretan. Fecha y vigencia de precios no indicadas. Sin imágenes de terceros. Sección «Opciones sin gluten / para celíacos» facilitada por el usuario: cuatro platos y servicio de pan a 2,50 €. Precio de berenjenas: «Consultar». La clasificación es la publicada por la carta y no garantiza ausencia de contaminación cruzada; verificar con el establecimiento. Marcadores svg sin identificación de alérgenos. Sección «Cordobesa» facilitada por el usuario: contiene cinco platos, varios también listados en otras secciones; se conserva su pertenencia a cada sección sin tratar las coincidencias como platos nuevos."
   },
   {
     "id": "posada-caballo-andaluz",
