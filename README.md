@@ -234,3 +234,42 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - **Gran Capitán, 29**: ficha diferenciada, pero sin carta verificable; indicar «Carta no disponible / pendiente de verificar». No extrapolar platos, ingredientes ni precios de Alonso de Burgos. Restaurant Guru puede servir para identificar el local, no para copiar imágenes de usuarios.
 - **Imágenes**: prohibido incorporar fotos de terceros subidas a Restaurant Guru, Google u otras plataformas sin permiso o licencia válida. Se mantiene la fase de imágenes para el final.
 - **Estado**: decisión editorial documentada; transcripción completa de Alonso de Burgos y edición de las fichas de datos pendientes de ejecución y comprobación.
+
+## Investigación exploratoria — rutas gastronómicas personalizadas (20/10/2026)
+
+> **Estado: idea en investigación; no aprobada para desarrollo ni incorporada a la hoja de ruta de siete fases.** Este apartado conserva hipótesis y tareas de validación, no requisitos cerrados ni funcionalidades implementadas. No modificar prioridades ni código por esta investigación sin decisión posterior.
+
+### Hipótesis de valor y diferenciación
+- Evolucionar de un directorio/comparador de cartas hacia una herramienta para **decidir qué comer, dónde y por cuánto**, combinando platos concretos, precios documentados y recorridos a pie.
+- Explorar un **planificador de rutas gastronómicas personalizadas por Córdoba**: varias paradas seleccionadas por platos, presupuesto y preferencias, en vez de limitarse a mostrar restaurantes en un mapa.
+- Diferenciación por **calidad y transparencia de datos**: indicar fuentes, fecha de verificación, tipo de precio (sala/reparto), formatos (unidad/tapa/media/ración) e incertidumbres. No comparar formatos incompatibles como si fueran equivalentes.
+- La búsqueda por plato y las rutas gastronómicas **no son conceptos exclusivos**; investigar competidores y validar con usuarios antes de afirmar novedad o demanda.
+
+### Funciones candidatas a estudiar (no implementadas)
+1. **Origen configurable:** ubicación actual solo con permiso explícito o punto de partida manual (p. ej., Plaza de las Tendillas).
+2. **Preferencias de ruta:** platos deseados, presupuesto por persona o total, número de comensales, máximo de paradas y distancia/tiempo a pie.
+3. **Modos de planificación:** ruta automática por preferencias, ruta manual con locales/platos seleccionados y rutas temáticas (tapeo tradicional, económica, frituras, etc.). No afirmar aptitud para dietas o alérgenos sin evidencia documental suficiente.
+4. **Recorrido calculado:** ordenar paradas de forma razonable, estimar coste únicamente con precios y formatos contrastados, y mostrar claramente los datos desconocidos. No garantizar disponibilidad de platos, apertura ni mesa.
+5. **Cambios durante el recorrido:** opción de saltar una parada y recalcular el resto conservando preferencias y presupuesto.
+6. **Experiencia simple:** entrada rápida tipo «Sorpréndeme» y controles avanzados opcionales; evitar una interfaz sobrecargada.
+7. **Otras hipótesis complementarias:** planificador de comida por presupuesto, comparador explícito de formatos/raciones, ficha de confianza de cada carta y posible búsqueda conversacional **limitada a datos verificados**.
+
+### Investigación de mercado pendiente
+- Comparar funciones reales y cobertura en Córdoba de Google Maps, TheFork, Tripadvisor y servicios especializados en cartas, búsqueda por plato o rutas de tapas (p. ej., Restauranis, MenuRoom, Foodyt, Dishity y Gastrorutas). Las menciones son **candidatos a analizar, no una auditoría competitiva concluida**.
+- Examinar fuentes recientes (preferentemente 2024–2026) sobre turismo gastronómico local, consulta digital de cartas, sensibilidad al precio y necesidades no cubiertas; distinguir datos específicos de Córdoba de estadísticas nacionales y de hipótesis.
+- Investigar cómo gestionan otros productos las cartas desactualizadas, precios de reparto frente a sala, tamaños de ración y disponibilidad.
+- Preparar una prueba de concepto **sin cambiar la interfaz** con cartas verificadas: ¿pueden generarse rutas plausibles para varias combinaciones de platos, presupuesto y origen? Registrar datos faltantes, errores y límites.
+- Validar utilidad con usuarios reales antes de priorizar desarrollo. No inventar métricas de demanda, cifras de mercado ni resultados de entrevistas.
+
+### Nombre comercial y comprobación de marcas
+- **«GPS de la Fritanga»** fue una broma interna, **no** un nombre comercial propuesto.
+- **«GastroRuta»** gustó como nombre inicial, pero apareció un servicio del mismo ámbito llamado **Gastrorutas** (https://gastrorutas.app/). Esto representa un **posible riesgo de confusión**, no una constatación de infracción ni de registro marcario.
+- **No adoptar todavía «GastroRuta» como marca definitiva.** Buscar alternativas más distintivas; nombres mencionados para explorar: SaborBrújula, BocadoNómada y Helio Rutas (todos **sin verificar**).
+- Antes de elegir nombre: comprobar coincidencias exactas y similares en OEPM (https://consultas2.oepm.es/LocalizadorWeb/index.jsp) y EUIPO (https://www.euipo.europa.eu/es/search), usos comerciales, dominios y denominaciones del mismo sector. La ausencia de resultados en una búsqueda web no equivale a disponibilidad legal; considerar asesoramiento especializado si se va a registrar o comercializar.
+
+### Criterios para decidir si avanzar
+- Datos suficientes y fiables para recomendar paradas sin inventar precios, ingredientes ni horarios.
+- Ventaja comprensible frente a herramientas existentes, contrastada mediante investigación y pruebas de uso.
+- Viabilidad técnica de rutas y recálculo, permisos de ubicación y tratamiento de privacidad.
+- Nombre distintivo tras comprobación de marcas.
+- **Punto de decisión futuro:** evaluar la idea tras cumplir las prioridades de la hoja de ruta vigente; documentar aceptación, descarte o aplazamiento antes de implementarla.
