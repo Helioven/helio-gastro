@@ -221,6 +221,14 @@ Orden de trabajo para Helio Gastro (42 restaurantes registrados; las cartas no e
 
 Mejoras transversales: indicar fecha de verificación de cada carta y estudiar un mecanismo para que visitantes avisen de datos o precios incorrectos. Prioridad general: **datos reales → tres idiomas → QA → reseñas → imágenes → revisión final**.
 
+### Dependencias entre fases y puntos de control (20/10/2026)
+- **Fase 1 → fase 2 (cartas → francés):** antes de traducir, hacer una validación documental ligera de cada carta completada: fuente, fecha de consulta, precios, formatos, ingredientes confirmados y ausencia de duplicados evidentes. Corregir primero los datos de origen para evitar traducir errores o rehacer traducciones. Esta comprobación no sustituye la auditoría integral de la fase 3.
+- **Fase 2 → fase 3 (idiomas → QA):** una vez incorporado el francés, comprobar correspondencia entre ES/EN/FR, denominaciones tradicionales y visualización de textos en móvil y escritorio. Registrar defectos y corregirlos antes de cerrar la fase de QA.
+- **Fase 3 → fases 4 y 5 (QA → reseñas):** estabilizar buscador, fichas, filtros y navegación antes de introducir formularios y almacenamiento de comentarios. Los resúmenes solo podrán utilizar reseñas reales disponibles y verificables; primero definir moderación, privacidad, consentimiento y tratamiento del spam.
+- **Fases 4 y 5 → fase 6 (reseñas → imágenes):** mantener las imágenes para el final y verificar derechos de uso, atribución y etiquetas ilustrativas antes de incorporarlas. No bloquear la revisión de datos por falta de imágenes.
+- **Todas las fases → fase 7 (revisión final):** realizar pruebas de regresión después de cambios relevantes, no únicamente al final. La publicación se decidirá tras comprobar integridad de datos, funciones críticas, accesibilidad, rendimiento, privacidad y seguridad.
+- **Gestión de cambios:** si se modifica una carta ya traducida, revisar sus versiones en los tres idiomas y repetir las pruebas afectadas. Mantener el orden general acordado y registrar las excepciones justificadas.
+
 ### Criterio documental: las dos Tabernas El Poema (16/10/2026)
 - **Alonso de Burgos, 2**: usar únicamente platos y precios verificables en las cartas de Just Eat (https://www.just-eat.es/restaurants-taberna-el-poema-cordoba/menu) y Uber Eats (https://www.ubereats.com/es/store/taberna-el-poema/CbDjgDGhVEqNYmYsVKSpJA). Identificar claramente la fuente y advertir que los precios de reparto pueden diferir de los precios en sala. No mezclar importes entre plataformas sin atribución.
 - **Gran Capitán, 29**: ficha diferenciada, pero sin carta verificable; indicar «Carta no disponible / pendiente de verificar». No extrapolar platos, ingredientes ni precios de Alonso de Burgos. Restaurant Guru puede servir para identificar el local, no para copiar imágenes de usuarios.
