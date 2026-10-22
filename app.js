@@ -271,17 +271,20 @@ const SERVICE_TYPES={
 };
 function normalizePlace(raw){
  if(!raw||typeof raw!=='object')return raw;
- // Conversión de la antigua carta plana para consumidores existentes.
- const menus=Array.isArray(raw.menus)?raw.menus:
+ // Las cartas por secciones editoriales se pueden explorar en Comida y Cena,
+ // sin atribuir al restaurante horarios ni servicios confirmados.
+ const sourceMenus=Array.isArray(raw.menus)?raw.menus:
   [{service:'general',dishes:raw.dishes,dishPrices:raw.dishPrices}];
- const safeMenus=menus.filter(m=>m&&Object.hasOwn(SERVICE_TYPES,m.service)
-  &&Array.isArray(m.dishes)&&Array.isArray(m.dishPrices)
+ const safeMenus=sourceMenus.filter(m=>m&&Array.isArray(m.dishes)&&Array.isArray(m.dishPrices)
   &&m.dishes.every(d=>typeof d==='string')
   &&m.dishPrices.every(item=>item&&typeof item.dish==='string'
-   &&Number.isFinite(item.eur)&&item.eur>=0));
+   &&Number.isFinite(item.eur)&&item.eur>=0))
+  .map(m=>({...m,service:Object.hasOwn(SERVICE_TYPES,m.service)?m.service:'general'}));
  const allDishes=[...new Set(safeMenus.flatMap(m=>m.dishes))];
  const allPrices=safeMenus.flatMap(m=>m.dishPrices.map(price=>({...price,service:m.service})));
- return {...raw,menus:safeMenus,dishes:allDishes,dishPrices:allPrices};
+ // No convertir la procedencia editorial en una afirmación de precio confirmado.
+ const priceStatus=['confirmed','estimated','unknown'].includes(raw.priceStatus)?raw.priceStatus:'unknown';
+ return {...raw,sourcePriceStatus:raw.priceStatus,priceStatus,menus:safeMenus,dishes:allDishes,dishPrices:allPrices};
 }
 
 function validPlace(p){
