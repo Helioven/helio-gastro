@@ -32081,7 +32081,46 @@
         "dishPrices": []
       }
     ],
-    "menuSourceNote": "Auditoría documental iniciada el 22/10/2026: seis láminas oficiales en español con precios, alojadas en carpetas de febrero y marzo 2026. La versión inglesa utiliza archivos de 2025 y presenta importes divergentes. Pendiente transcripción íntegra y validación de platos, precios y formatos ES/EN antes de sustituir la ficha preliminar; no copiar carta de los otros Moriles ni publicar una carta parcial. Fuentes complementarias localizadas 22/10/2026: menú Tapas Cordobesas (15,95 € en lámina consultada), cafés/chocolates, postres, versiones inglesas y glosario. Se conservarán separadas las cartas por servicios y los menús cerrados; falta transcripción integral y control de importes antes de publicar."
+    "menuSourceNote": "Auditoría documental iniciada el 22/10/2026: seis láminas oficiales en español con precios, alojadas en carpetas de febrero y marzo 2026. La versión inglesa utiliza archivos de 2025 y presenta importes divergentes. Pendiente transcripción íntegra y validación de platos, precios y formatos ES/EN antes de sustituir la ficha preliminar; no copiar carta de los otros Moriles ni publicar una carta parcial. Fuentes complementarias localizadas 22/10/2026: menú Tapas Cordobesas (15,95 € en lámina consultada), cafés/chocolates, postres, versiones inglesas y glosario. Se conservarán separadas las cartas por servicios y los menús cerrados; falta transcripción integral y control de importes antes de publicar.",
+    "officialMenuLinks": [
+      {
+        "es": "Carta de cocina",
+        "en": "Main food menu",
+        "url": "https://www.morilesribera.com/nuestra-cocina"
+      },
+      {
+        "es": "Menú Tapas Cordobesas",
+        "en": "Córdoba tapas set menu",
+        "url": "https://www.morilesribera.com/menu-tapas-cordobesas"
+      },
+      {
+        "es": "Postres",
+        "en": "Desserts",
+        "url": "https://www.morilesribera.com/postres"
+      },
+      {
+        "es": "Cafés, tés y chocolates",
+        "en": "Coffee, tea and chocolate",
+        "url": "https://www.morilesribera.com/cafes-y-chocolates"
+      },
+      {
+        "es": "Carta de cocina en inglés",
+        "en": "English food menu",
+        "url": "https://www.morilesribera.com/our-kitchen"
+      },
+      {
+        "es": "Menú sugerido en inglés",
+        "en": "Suggested menu (English)",
+        "url": "https://www.morilesribera.com/suggested-menu"
+      },
+      {
+        "es": "Glosario de traducciones",
+        "en": "Food glossary (English)",
+        "url": "https://www.morilesribera.com/glossary"
+      }
+    ],
+    "officialMenuNoticeEs": "Cartas oficiales del establecimiento, publicadas como imágenes. Consulta platos y precios directamente en las cartas enlazadas. La transcripción detallada a Helio Gastro está pendiente. La carta inglesa puede pertenecer a una edición anterior: comprueba los importes en la carta española y su vigencia con el local.",
+    "officialMenuNoticeEn": "Official restaurant menus published as images. View dishes and prices in the linked menus. Item-by-item transcription into Helio Gastro is pending. The English menu may be from an older edition: check prices against the Spanish menu and confirm current validity with the restaurant."
   },
   {
     "id": "moriles-casa-fina",
