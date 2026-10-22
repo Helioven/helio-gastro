@@ -8800,8 +8800,12 @@
     "address": "Plaza de San Miguel, 1, Córdoba",
     "mealCostEur": null,
     "priceStatus": "unknown",
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-22",
     "sources": [
+      {
+        "label": "Carta oficial Casa El Pisto · edición conmemorativa 1974–2024 · precios históricos (vigencia en 2026 sin verificar)",
+        "url": "https://www.casaelpisto.com/cartas/carta-spain.pdf"
+      },
       {
         "label": "Carta general oficial sin importes visibles",
         "url": "https://tabernacordoba.es/carta-general/"
@@ -8809,6 +8813,10 @@
       {
         "label": "Dirección y web oficial",
         "url": "https://tabernacordoba.es/"
+      },
+      {
+        "label": "Carta oficial en inglés, edición conmemorativa 2024",
+        "url": "https://www.casaelpisto.com/cartas/carta-ingles.pdf"
       }
     ],
     "menus": [
@@ -8881,7 +8889,7 @@
           "Lomo de vaca (350 g aprox.)",
           "Presa ibérica",
           "Solomillo ibérico",
-          "Solomillo de gramo"
+          "Solomillo de gamo"
         ],
         "dishPrices": []
       },
@@ -8926,550 +8934,876 @@
     "menuSections": [
       {
         "title": "Comenzamos",
-        "note": "Precio: a consultar / Price: ask the restaurant. Descripciones editoriales orientativas.",
+        "note": "Precios históricos de la carta oficial conmemorativa 1974–2024. No verificados en 2026; consultar posibles cambios directamente con el restaurante. / Historical prices from the official 2024 anniversary menu; not verified for 2026. Confirm current prices with the restaurant.",
         "items": [
           {
             "name": "Jamón ibérico de bellota",
             "description": "Jamón ibérico de bellota. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Jamón ibérico de bellota. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 13
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 22.3
+              }
+            ]
           },
           {
             "name": "Caña de lomo",
             "description": "Caña de lomo. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Caña de lomo. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 11
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 17.5
+              }
+            ]
           },
           {
             "name": "Salchichón ibérico",
             "description": "Salchichón ibérico. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Salchichón ibérico. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 9.6
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 13.5
+              }
+            ]
           },
           {
             "name": "Chorizo ibérico",
             "description": "Chorizo ibérico. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Chorizo ibérico. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 9.6
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 13.5
+              }
+            ]
           },
           {
             "name": "Queso añejo de oveja",
             "description": "Queso añejo de oveja. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Queso añejo de oveja. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 9.8
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 14.3
+              }
+            ]
           },
           {
             "name": "Surtido de ibéricos",
             "description": "Selección de jamón, caña de lomo, salchichón y chorizo ibéricos.",
             "en": "Selection of Iberian ham, cured loin, salchichón and chorizo.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 23
+              }
+            ]
           },
           {
             "name": "Salmorejo cordobés",
             "description": "Crema fría cordobesa de tomate y pan con taquitos de jamón y huevo.",
             "en": "Chilled Cordoban tomato-and-bread cream topped with diced cured ham and egg.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 7.5
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 9.5
+              }
+            ]
           },
           {
             "name": "Mazamorra",
             "description": "Crema fría tradicional cordobesa de almendras y pan.",
             "en": "Traditional chilled Cordoban almond-and-bread cream.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 10.2
+              }
+            ]
           },
           {
             "name": "Nuestra ensaladilla",
             "description": "ensaladilla. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Nuestra ensaladilla. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 7.9
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 9.7
+              }
+            ]
           },
           {
             "name": "Huevas con mahonesa",
             "description": "Huevas con mahonesa. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Huevas con mahonesa. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 8.1
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 10.5
+              }
+            ]
           },
           {
             "name": "Tomate con ventresca (en temporada)",
             "description": "Tomate con ventresca. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Tomate con ventresca (en temporada). Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 6.8
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 9.2
+              }
+            ]
           },
           {
             "name": "Tomate picado con A.O.V.E. (en temporada)",
             "description": "Tomate picado con A.O.V.E.. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Tomate picado con A.O.V.E. (en temporada). Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 5
+              }
+            ]
           },
           {
             "name": "Cogollitos de lechuga con ajitos fritos",
             "description": "Cogollos de lechuga con ajo frito y vinagre de Módena.",
             "en": "Baby lettuce hearts with fried garlic and balsamic vinegar.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 3.6
+              }
+            ]
           },
           {
             "name": "Ensalada de la casa",
             "description": "Ensalada de la casa. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Ensalada de la casa. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 9
+              }
+            ]
           },
           {
             "name": "Mejillones en escabeche",
             "description": "Mejillones en escabeche. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Mejillones en escabeche. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 8.9
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 11.9
+              }
+            ]
           },
           {
             "name": "Boquerones en vinagre",
             "description": "Boquerones en vinagre. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Boquerones en vinagre. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 8.9
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 11.9
+              }
+            ]
           }
         ]
       },
       {
         "title": "De la tierra",
-        "note": "Precio: a consultar / Price: ask the restaurant. Descripciones editoriales orientativas.",
+        "note": "Precios históricos de la carta oficial conmemorativa 1974–2024. No verificados en 2026; consultar posibles cambios directamente con el restaurante. / Historical prices from the official 2024 anniversary menu; not verified for 2026. Confirm current prices with the restaurant.",
         "items": [
           {
             "name": "Berenjenas fritas con miel de caña",
             "description": "Berenjenas fritas con miel de caña. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Berenjenas fritas con miel de caña. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 7.4
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 9.9
+              }
+            ]
           },
           {
             "name": "Nuestras patatas bravas con huevo frito",
             "description": "patatas bravas con huevo frito. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Nuestras patatas bravas con huevo frito. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 7.2
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 9.2
+              }
+            ]
           },
           {
             "name": "Volcán de patatas",
             "description": "Patatas con huevo, jamón y cebolla caramelizada.",
             "en": "Potatoes with egg, cured ham and caramelized onion.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 11.8
+              }
+            ]
           },
           {
             "name": "El plato del abuelo Pepe",
             "description": "Huevos y patatas fritas acompañados de lomo y chorizo.",
             "en": "Fried eggs and potatoes served with pork loin and chorizo.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 13
+              }
+            ]
           },
           {
             "name": "Espinacas esparragadas",
             "description": "Espinacas con garbanzos y huevo frito.",
             "en": "Spinach with chickpeas and a fried egg.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 9.1
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 11.8
+              }
+            ]
           },
           {
             "name": "Habitas con jamón",
             "description": "Habitas con jamón, cebolla caramelizada y huevo frito.",
             "en": "Baby broad beans with cured ham, caramelized onion and fried egg.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 11.5
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 14.3
+              }
+            ]
           },
           {
             "name": "Pisto casero con huevo frito",
             "description": "Pisto casero con huevo frito. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Pisto casero con huevo frito. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 9.3
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 13.2
+              }
+            ]
           }
         ]
       },
       {
         "title": "Del mar",
-        "note": "Precio: a consultar / Price: ask the restaurant. Descripciones editoriales orientativas.",
+        "note": "Precios históricos de la carta oficial conmemorativa 1974–2024. No verificados en 2026; consultar posibles cambios directamente con el restaurante. / Historical prices from the official 2024 anniversary menu; not verified for 2026. Confirm current prices with the restaurant.",
         "items": [
           {
             "name": "Jaimitos (boquerones fritos al limón)",
             "description": "Boquerones fritos al limón.",
             "en": "Lemon-flavoured fried anchovies.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 9.7
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 12.4
+              }
+            ]
           },
           {
             "name": "Calamares fritos",
             "description": "Calamares fritos. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Calamares fritos. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 8.2
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 11.5
+              }
+            ]
           },
           {
             "name": "Bacalao rebozado",
             "description": "Bacalao rebozado. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Bacalao rebozado. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 9.6
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 12.1
+              }
+            ]
           },
           {
             "name": "Bacalao frito",
             "description": "Bacalao frito. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Bacalao frito. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 9.4
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 12.1
+              }
+            ]
           },
           {
             "name": "Langostinos rebozados",
             "description": "Langostinos rebozados. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Langostinos rebozados. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 8.9
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 11.6
+              }
+            ]
           },
           {
             "name": "Langostinos fritos",
             "description": "Langostinos fritos. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Langostinos fritos. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 8.2
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 11.6
+              }
+            ]
           },
           {
             "name": "Taquitos de rosada en adobo",
             "description": "Taquitos de rosada en adobo. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Taquitos de rosada en adobo. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 8.3
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 11.4
+              }
+            ]
           },
           {
             "name": "Lomo de bacalao con pisto",
             "description": "Lomo de bacalao con pisto. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Lomo de bacalao con pisto. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 14.9
+              }
+            ]
           },
           {
             "name": "Taquitos de atún a la brasa",
             "description": "Taquitos de atún a la brasa. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Taquitos de atún a la brasa. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 16.4
+              }
+            ]
           },
           {
             "name": "Langostinos al ajillo",
             "description": "Langostinos al ajillo. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Langostinos al ajillo. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 13.3
+              }
+            ]
           }
         ]
       },
       {
         "title": "Nuestras carnes",
-        "note": "Precio: a consultar / Price: ask the restaurant. Descripciones editoriales orientativas.",
+        "note": "Precios históricos de la carta oficial conmemorativa 1974–2024. No verificados en 2026; consultar posibles cambios directamente con el restaurante. / Historical prices from the official 2024 anniversary menu; not verified for 2026. Confirm current prices with the restaurant.",
         "items": [
           {
             "name": "Croquetas caseras de jamón",
             "description": "Croquetas caseras de jamón. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Croquetas caseras de jamón. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 8.5
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 12
+              }
+            ]
           },
           {
             "name": "Croquetas caseras de rabo de toro",
             "description": "Croquetas caseras de rabo de toro. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Croquetas caseras de rabo de toro. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 8.5
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 12
+              }
+            ]
           },
           {
             "name": "Flamenquín de jamón casero",
             "description": "Flamenquín de jamón casero. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Flamenquín de jamón casero. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 12.8
+              }
+            ]
           },
           {
             "name": "Cochifrito (cochinillo frito)",
             "description": "Cochifrito. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Cochifrito (cochinillo frito). Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 11
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 13.8
+              }
+            ]
           },
           {
             "name": "Morcilla de cebolla frita (de Espejo)",
             "description": "Morcilla de cebolla frita. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Morcilla de cebolla frita (de Espejo). Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 8.6
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 11.4
+              }
+            ]
           },
           {
             "name": "Solomillo ibérico al vino oloroso (200 g aprox.)",
             "description": "Solomillo de cerdo ibérico con vino oloroso; unos 200 g.",
             "en": "Iberian pork tenderloin with oloroso sherry; approximately 200 g.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 13.2
+              }
+            ]
           }
         ]
       },
       {
         "title": "Dando la brasa",
-        "note": "Precio: a consultar / Price: ask the restaurant. Descripciones editoriales orientativas.",
+        "note": "Precios históricos de la carta oficial conmemorativa 1974–2024. No verificados en 2026; consultar posibles cambios directamente con el restaurante. / Historical prices from the official 2024 anniversary menu; not verified for 2026. Confirm current prices with the restaurant.",
         "items": [
           {
             "name": "Lomo de vaca (350 g aprox.)",
             "description": "Lomo de vaca. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Lomo de vaca (350 g aprox.). Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 25
+              }
+            ]
           },
           {
             "name": "Presa ibérica",
             "description": "Presa ibérica. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Presa ibérica. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 23
+              }
+            ]
           },
           {
             "name": "Solomillo ibérico",
             "description": "Solomillo ibérico. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Solomillo ibérico. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 21
+              }
+            ]
           },
           {
-            "name": "Solomillo de gramo",
-            "description": "Corte denominado «solomillo de gramo» en la carta; tipo exacto pendiente de confirmar.",
-            "en": "Cut listed as 'solomillo de gramo'; exact type unconfirmed.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "name": "Solomillo de gamo",
+            "description": "Solomillo de gamo a la brasa; carta de 2024.",
+            "en": "Grilled fallow deer tenderloin, listed on the 2024 menu.",
+            "prices": [
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 24
+              }
+            ]
           }
         ]
       },
       {
         "title": "Los guisos de la abuela",
-        "note": "Precio: a consultar / Price: ask the restaurant. Descripciones editoriales orientativas.",
+        "note": "Precios históricos de la carta oficial conmemorativa 1974–2024. No verificados en 2026; consultar posibles cambios directamente con el restaurante. / Historical prices from the official 2024 anniversary menu; not verified for 2026. Confirm current prices with the restaurant.",
         "items": [
           {
             "name": "Callos de ternera caseros",
             "description": "Callos de ternera caseros. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Callos de ternera caseros. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 8.5
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 11
+              }
+            ]
           },
           {
             "name": "Albóndigas con caldo al estilo de la abuela Loli",
             "description": "Albóndigas con caldo al estilo de la abuela Loli. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Albóndigas con caldo al estilo de la abuela Loli. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 8.1
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 10.8
+              }
+            ]
           },
           {
             "name": "Manitas de cerdo en salsa",
             "description": "Manitas de cerdo en salsa. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Manitas de cerdo en salsa. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 11
+              }
+            ]
           },
           {
             "name": "Carrillada ibérica al vino viejo",
             "description": "Carrillada ibérica al vino viejo. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Carrillada ibérica al vino viejo. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 9.9
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 13.2
+              }
+            ]
           },
           {
             "name": "Estofado de rabo de toro",
             "description": "Estofado de rabo de toro. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Estofado de rabo de toro. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 13.1
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 17.9
+              }
+            ]
           }
         ]
       },
       {
         "title": "Guiso del día (consultar disponibilidad)",
-        "note": "Precio: a consultar / Price: ask the restaurant. Descripciones editoriales orientativas.",
+        "note": "Precios históricos de la carta oficial conmemorativa 1974–2024. No verificados en 2026; consultar posibles cambios directamente con el restaurante. / Historical prices from the official 2024 anniversary menu; not verified for 2026. Confirm current prices with the restaurant.",
         "items": [
           {
             "name": "Habichuelas",
             "description": "Habichuelas. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Habichuelas. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 6.5
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 7.7
+              }
+            ]
           },
           {
             "name": "Cocido",
             "description": "Cocido. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Cocido. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 6.5
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 7.7
+              }
+            ]
           },
           {
             "name": "Lentejas",
             "description": "Lentejas. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Lentejas. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 6.5
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 7.7
+              }
+            ]
           },
           {
             "name": "Estofado de patatas",
             "description": "Estofado de patatas. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Estofado de patatas. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 6.5
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 7.7
+              }
+            ]
           },
           {
             "name": "Fideos a la marinera",
             "description": "Fideos a la marinera. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Fideos a la marinera. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Media ración · precio de carta 2024",
+                "eur": 7.3
+              },
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 8.6
+              }
+            ]
           }
         ]
       },
       {
         "title": "Nuestro rincón más dulce",
-        "note": "Precio: a consultar / Price: ask the restaurant. Descripciones editoriales orientativas.",
+        "note": "Precios históricos de la carta oficial conmemorativa 1974–2024. No verificados en 2026; consultar posibles cambios directamente con el restaurante. / Historical prices from the official 2024 anniversary menu; not verified for 2026. Confirm current prices with the restaurant.",
         "items": [
           {
             "name": "Tarta de queso",
             "description": "Tarta de queso. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Tarta de queso. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 6
+              }
+            ]
           },
           {
             "name": "Tarta de zanahoria",
             "description": "Tarta de zanahoria. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Tarta de zanahoria. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 5.5
+              }
+            ]
           },
           {
             "name": "Tocino de cielo",
             "description": "Postre tradicional de yema de huevo y azúcar.",
             "en": "Traditional rich egg-yolk and sugar custard.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 5
+              }
+            ]
           },
           {
             "name": "Coulant de chocolate con helado",
             "description": "Bizcocho de chocolate de interior fundente acompañado de helado.",
             "en": "Molten-centre chocolate cake served with ice cream.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 5.8
+              }
+            ]
           },
           {
             "name": "Natillas caseras",
             "description": "Natillas caseras. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Natillas caseras. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 5.5
+              }
+            ]
           },
           {
             "name": "Tarta Lotus",
             "description": "Tarta Lotus. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Tarta Lotus. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 5.9
+              }
+            ]
           },
           {
             "name": "Bola de helado casero",
             "description": "Bola de helado casero. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Bola de helado casero. Preparation and accompaniments as listed on the menu; further details not specified.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Ración · precio de carta 2024",
+                "eur": 1.8
+              }
+            ]
           },
           {
             "name": "Pestiños",
             "description": "Dulce tradicional de masa frita.",
             "en": "Traditional fried pastry sweet.",
-            "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "prices": [
+              {
+                "label": "Unidad · precio de carta 2024",
+                "eur": 2
+              }
+            ]
           },
           {
             "name": "Fruta",
             "description": "Fruta. Preparación y acompañamientos según la carta; detalles adicionales no especificados.",
             "en": "Fruta. Preparation and accompaniments as listed on the menu; further details not specified.",
             "prices": [],
-            "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "note": "Fruta según temporada; precio no indicado en la carta de 2024."
           }
         ]
       }
     ],
-    "menuSourceNote": "Carta general oficial consultada el 16/10/2026. La web muestra guiones en lugar de importes: precios a consultar, sin importes inventados. Descripciones bilingües editoriales, no recetas ni alérgenos certificados. El guiso del día está sujeto a disponibilidad. Extras y pan no incorporados como platos. El original dice 'solomillo de gramo', pendiente de aclaración."
+    "menuSourceNote": "Importes transcritos del PDF oficial conmemorativo 1974–2024. Precios históricos NO confirmados en 2026: consultar directamente con Casa El Pisto antes de acudir. Las cantidades del PDF se muestran solo en la ficha; no se incorporan al comparador de precios actuales."
   },
   {
     "id": "taberna-plateros-san-francisco",
