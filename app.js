@@ -624,7 +624,7 @@ function renderBeatillasGroupMenus(panel,p){
    const list=document.createElement('ul');for(const item of items){const li=document.createElement('li');li.dataset.keepDishSpanish='';li.textContent=item;list.append(li)}card.append(list);
   }
   if(menu.beveragesIncluded){
-   const b=document.createElement('p');b.className='note';b.dataset.groupMenuLabelEs='Bebidas incluidas: '+menu.beveragesIncluded;b.dataset.groupMenuLabelEn='Drinks listed as included: '+menu.beveragesIncluded;
+   const b=document.createElement('p');b.className='note';b.dataset.groupMenuLabelEs='Bebidas incluidas: '+menu.beveragesIncluded;b.dataset.groupMenuLabelEn='Drinks included: '+(menu.service==='Menú infantil (2025)'?'mineral water and two soft drinks':'beer, Montilla-Moriles wine, Rioja red wine, mineral water and cava from Bodegas Faustino');
    b.textContent=window.HelioGastroLanguage?.get()==='en'?b.dataset.groupMenuLabelEn:b.dataset.groupMenuLabelEs;card.append(b);
   }
   const conditions=document.createElement('p');conditions.className='note';
