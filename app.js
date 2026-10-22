@@ -218,6 +218,7 @@ function venueMenuPriceLabel(source,english){
 }
 function refreshDishExplanations(){
  const english=window.HelioGastroLanguage?.get()==='en';
+ document.querySelectorAll('[data-source-audit-title]').forEach(node=>{node.textContent=english?'Source documentation (expand)':'Documentación de fuentes (desplegar)';});
  document.querySelectorAll('[data-official-menus-heading]').forEach(node=>{node.textContent=english?'Official menus':'Cartas oficiales';});
  document.querySelectorAll('[data-official-menu-notice-es]').forEach(node=>{node.textContent=english?node.dataset.officialMenuNoticeEn:node.dataset.officialMenuNoticeEs;});
  document.querySelectorAll('[data-official-menu-es]').forEach(node=>{node.textContent=(english?node.dataset.officialMenuEn:node.dataset.officialMenuEs)+' ↗';});
@@ -801,7 +802,14 @@ function showPlace(p,scroll=true){
  }
  const sources=document.createElement('h3');sources.textContent='Fuentes y fecha';panel.append(sources);
  const checked=document.createElement('p');checked.textContent='Última consulta: '+(p.checkedAt||'Sin fecha registrada');panel.append(checked);
- for(const source of p.sources){if(!/^https:\/\//.test(source.url))continue;const a=document.createElement('a');a.href=source.url;a.textContent=source.label+' ↗';a.target='_blank';a.rel='noopener noreferrer';a.className='detail-source';panel.append(a)}
+ if(Array.isArray(p.officialMenuLinks)&&p.officialMenuLinks.length){
+  const details=document.createElement('details');details.className='source-details';
+  const summary=document.createElement('summary');summary.dataset.sourceAuditTitle='1';summary.textContent=window.HelioGastroLanguage?.get()==='en'?'Source documentation (expand)':'Documentación de fuentes (desplegar)';details.append(summary);
+  for(const source of p.sources){if(!/^https:\/\//.test(source.url))continue;const a=document.createElement('a');a.href=source.url;a.textContent=source.label+' ↗';a.target='_blank';a.rel='noopener noreferrer';a.className='detail-source';details.append(a)}
+  panel.append(details);
+ }else{
+  for(const source of p.sources){if(!/^https:\/\//.test(source.url))continue;const a=document.createElement('a');a.href=source.url;a.textContent=source.label+' ↗';a.target='_blank';a.rel='noopener noreferrer';a.className='detail-source';panel.append(a)}
+ }
  el('detail-section').hidden=false;
  refreshDishExplanations();
  if(scroll){el('detail-section').scrollIntoView({behavior:'auto',block:'start'});el('detail-title').focus({preventScroll:true})}
