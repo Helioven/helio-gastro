@@ -585,7 +585,7 @@ function renderVenueMenuSections(panel,p){
    for(const language of ['es','en']){const value=dish[language];if(typeof value!=='string'||!value.trim()||clean(value)===clean(dish.name))continue;const description=document.createElement('small');description.className='dish-explanation detail-dish-explanation';description.dataset.dishExplanation='';description.dataset.explanationLanguage=language;description.textContent=value;description.hidden=(window.HelioGastroLanguage?.get()||'es')!==language;entry.append(description);}
    for(const price of dish.prices){
     const row=document.createElement('div');row.className='menu-price-row';
-    const label=document.createElement('span');label.textContent=price.label;
+    const label=document.createElement('span');label.textContent=price.label||price.portion||'';
     const amount=document.createElement('strong');amount.textContent=fmt(price.eur);
     row.append(label,amount);entry.append(row);
    }
