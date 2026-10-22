@@ -205,6 +205,9 @@ const VENUE_MENU_SECTION_EN={
 function venueMenuPriceLabel(source,english){
  if(!english)return source;
  if(source==='Just Eat · reparto · formato no especificado')return 'Just Eat · delivery · portion size unspecified';
+ if(source==='Media ración · precio de carta 2024')return 'Half portion · 2024 menu price';
+ if(source==='Ración · precio de carta 2024')return 'Full portion · 2024 menu price';
+ if(source==='Unidad · precio de carta 2024')return 'Single item · 2024 menu price';
  return source;
 }
 function refreshDishExplanations(){
