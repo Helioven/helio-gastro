@@ -14338,7 +14338,9 @@
                 "eur": 13.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Potaje tradicional de la casa, presentado como una receta centenaria; la carta no detalla sus ingredientes.",
+            "en": "Traditional house stew described as a century-old recipe; its ingredients are not specified."
           },
           {
             "name": "Salchichón de ciervo (receta de cazadores cordobeses)",
@@ -14355,7 +14357,9 @@
                 "eur": 13,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Salchichón elaborado con carne de ciervo según una receta de cazadores cordobeses.",
+            "en": "Venison cured sausage made to a Córdoba hunters' recipe."
           },
           {
             "name": "Boquerones en vinagre (estilo el Mítico Bar Mezquita)",
@@ -14372,7 +14376,9 @@
                 "eur": 12,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Boquerones marinados en vinagre al estilo del antiguo Bar Mezquita.",
+            "en": "Vinegar-marinated anchovies prepared in the style of the historic Bar Mezquita."
           },
           {
             "name": "Salmorejo cordobés (como el de mi madre)",
@@ -14389,7 +14395,9 @@
                 "eur": 9,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Crema fría cordobesa de tomate y pan, elaborada según la receta familiar del establecimiento.",
+            "en": "Traditional Córdoba-style cold tomato and bread cream, prepared to the restaurant's family recipe."
           },
           {
             "name": "Gazpacho rojo con guarnición de verduritas crujientes",
@@ -14398,7 +14406,9 @@
                 "eur": 10,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Gazpacho rojo acompañado de verduras crujientes como guarnición.",
+            "en": "Red gazpacho served with a garnish of crunchy vegetables."
           },
           {
             "name": "Gazpacho blanco con uvas al sol y manzanas ácidas",
@@ -14407,7 +14417,9 @@
                 "eur": 10,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Gazpacho blanco acompañado de uvas y manzana ácida.",
+            "en": "White gazpacho served with grapes and tart apple."
           },
           {
             "name": "Mazamorra de almendra y avellanas cordobesas",
@@ -14424,7 +14436,9 @@
                 "eur": 12,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Mazamorra elaborada con almendras y avellanas cordobesas.",
+            "en": "Cordoban mazamorra made with almonds and local hazelnuts."
           },
           {
             "name": "Queso «La Viuda» (receta propia)",
@@ -14441,7 +14455,9 @@
                 "eur": 11,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Queso de la casa preparado según una receta propia; no se especifica su variedad.",
+            "en": "House cheese prepared to the restaurant's own recipe; the cheese variety is not specified."
           },
           {
             "name": "Picadillo de tomate con mango de Torrox y helado de AOVE",
@@ -14454,7 +14470,9 @@
                 "eur": 12,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Picadillo de tomate con mango de Torrox y helado de aceite de oliva virgen extra.",
+            "en": "Chopped tomato salad with mango from Torrox and extra virgin olive oil ice cream."
           }
         ]
       },
@@ -14468,7 +14486,9 @@
                 "eur": 10,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Berenjenas fritas procedentes de la huerta del establecimiento.",
+            "en": "Fried aubergines from the restaurant's vegetable garden."
           },
           {
             "name": "Croquetas de jamón y caldo de cocido (con mahonesa de hierbabuena)",
@@ -14477,7 +14497,9 @@
                 "eur": 1.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "es": "Croquetas de jamón y caldo de cocido acompañadas de mayonesa de hierbabuena.",
+            "en": "Ham and cocido-broth croquettes served with spearmint mayonnaise."
           },
           {
             "name": "Croquetas de boniato (elaborado al baño maría)",
@@ -14486,7 +14508,9 @@
                 "eur": 1.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "es": "Croquetas de boniato elaboradas al baño maría.",
+            "en": "Sweet potato croquettes prepared using a bain-marie method."
           },
           {
             "name": "Flamenquín cordobés",
@@ -14495,7 +14519,9 @@
                 "eur": 15,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Flamenquín cordobés tradicional; la carta no detalla su relleno.",
+            "en": "Traditional Córdoba-style flamenquín; the filling is not specified."
           },
           {
             "name": "Flamenquín de queso La Viuda",
@@ -14504,7 +14530,9 @@
                 "eur": 16,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Flamenquín elaborado con el queso propio de La Viuda.",
+            "en": "Flamenquín made with the restaurant's own La Viuda cheese."
           },
           {
             "name": "Flamenquín de rabo de toro con salsa de chocolate y jugo de rabo de toro",
@@ -14513,7 +14541,9 @@
                 "eur": 18,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Flamenquín de rabo de toro acompañado de salsa de chocolate y jugo de rabo de toro.",
+            "en": "Oxtail flamenquín with chocolate sauce and oxtail cooking juices."
           },
           {
             "name": "Japuta en adobo con especias de la India (cúrcuma y mano de Buda)",
@@ -14526,7 +14556,9 @@
                 "eur": 12,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Japuta marinada con especias de la India, incluida cúrcuma y mano de Buda.",
+            "en": "Marinated Atlantic pomfret with Indian spices, including turmeric and Buddha's hand citrus."
           },
           {
             "name": "Bacalao frito con pisto casero al Palo Cortado",
@@ -14535,7 +14567,9 @@
                 "eur": 16,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Bacalao frito con pisto casero preparado con vino Palo Cortado.",
+            "en": "Fried cod with homemade vegetable pisto prepared with Palo Cortado sherry."
           }
         ]
       },
@@ -14549,7 +14583,9 @@
                 "eur": 6,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Patatas fritas al estilo churrería con sal del Himalaya.",
+            "en": "Churrería-style chips seasoned with Himalayan salt."
           },
           {
             "name": "Huevos de campo estrellados con patatas pochas",
@@ -14558,7 +14594,9 @@
                 "eur": 14,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Huevos de campo estrellados sobre patatas pochas.",
+            "en": "Free-range fried eggs served over gently cooked potatoes."
           },
           {
             "name": "Jamón, ajitos y perejil (complemento para los huevos estrellados)",
@@ -14567,7 +14605,9 @@
                 "eur": 4.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Complemento para huevos estrellados con jamón, ajo y perejil.",
+            "en": "Optional topping for fried eggs: ham, garlic and parsley."
           },
           {
             "name": "Chorizo de matanza y pimientos de Padrón (complemento para los huevos estrellados)",
@@ -14576,7 +14616,9 @@
                 "eur": 4.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Complemento para huevos estrellados con chorizo de matanza y pimientos de Padrón.",
+            "en": "Optional topping for fried eggs: traditional chorizo and Padrón peppers."
           },
           {
             "name": "Gula al ajillo con guindillas piparras (complemento para los huevos estrellados)",
@@ -14585,7 +14627,9 @@
                 "eur": 6,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Complemento para huevos estrellados con gulas al ajillo y piparras.",
+            "en": "Optional topping for fried eggs: garlic-fried surimi eel substitutes and piparra peppers."
           },
           {
             "name": "Revuelto de calabacín y ahumados con huevas de trucha (huevos ecológicos)",
@@ -14594,7 +14638,9 @@
                 "eur": 14,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Revuelto de calabacín y productos ahumados con huevas de trucha, elaborado con huevos ecológicos.",
+            "en": "Scrambled organic eggs with courgette, smoked ingredients and trout roe."
           }
         ]
       },
@@ -14608,7 +14654,9 @@
                 "eur": 23,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Rabo de toro cordobés preparado según la receta del antiguo Bar Rosales.",
+            "en": "Córdoba-style oxtail stew made to the former Bar Rosales recipe."
           },
           {
             "name": "Churrasco de bellota Pata Negra (solo temporada)",
@@ -14617,7 +14665,9 @@
                 "eur": 22,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Churrasco de cerdo ibérico de bellota Pata Negra, disponible únicamente en temporada.",
+            "en": "Acorn-fed Pata Negra Iberian pork churrasco, available seasonally."
           },
           {
             "name": "Presa ibérica marinada con soja, pimentón de la Vera y miel, parmentier de boniato y salsa de manteca colorá y ajo",
@@ -14626,7 +14676,9 @@
                 "eur": 22,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Presa ibérica marinada con soja, pimentón de la Vera y miel, acompañada de parmentier de boniato y salsa de manteca colorá y ajo.",
+            "en": "Iberian pork presa marinated with soy, La Vera paprika and honey, served with sweet potato purée and paprika-flavoured pork fat and garlic sauce."
           }
         ]
       },
@@ -14644,7 +14696,9 @@
                 "eur": 12,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Ensaladilla rusa acompañada de huevo frito.",
+            "en": "Russian-style potato salad served with a fried egg."
           },
           {
             "name": "Timbal de patatas y huevos con tataki de atún",
@@ -14653,7 +14707,9 @@
                 "eur": 14,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Timbal de patatas y huevos con tataki de atún.",
+            "en": "Layered potato and egg dish topped with seared tuna tataki."
           },
           {
             "name": "Huevo con patatas pochas, crema de bogavante y gambón",
@@ -14662,7 +14718,9 @@
                 "eur": 18,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Huevo con patatas pochas, crema de bogavante y gambón.",
+            "en": "Egg with gently cooked potatoes, lobster cream and large prawn."
           },
           {
             "name": "Pastel de tagarninas con gazpachuelo malagueño",
@@ -14671,7 +14729,9 @@
                 "eur": 20,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Pastel de tagarninas acompañado de gazpachuelo malagueño.",
+            "en": "Wild-thistle tart served with Málaga-style gazpachuelo sauce."
           }
         ]
       }
