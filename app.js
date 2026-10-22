@@ -222,6 +222,8 @@ function refreshDishExplanations(){
  document.querySelectorAll('[data-venue-menu-section]').forEach(node=>{node.textContent=english?(VENUE_MENU_SECTION_EN[node.dataset.venueMenuSection]||node.dataset.venueMenuSection):node.dataset.venueMenuSection;});
  document.querySelectorAll('[data-venue-menu-price-label]').forEach(node=>{node.textContent=venueMenuPriceLabel(node.dataset.venueMenuPriceLabel,english);});
  document.querySelectorAll('[data-venue-menu-note-es]').forEach(node=>{node.textContent=english?node.dataset.venueMenuNoteEn:node.dataset.venueMenuNoteEs;});
+ document.querySelectorAll('[data-group-menu-label-es]').forEach(node=>{node.textContent=english?node.dataset.groupMenuLabelEn:node.dataset.groupMenuLabelEs;});
+ document.querySelectorAll('[data-group-menu-price]').forEach(node=>{node.textContent=fmt(Number(node.dataset.groupMenuPrice))+' · '+(english?'2025 published set-menu price':'Precio de menú publicado en 2025');});
  document.querySelectorAll('[data-group-menu-includes]').forEach(node=>{node.textContent=english&&node.dataset.en?node.dataset.en:node.dataset.es;});
  document.querySelectorAll('[data-group-menu-heading]').forEach(node=>{node.textContent=node.dataset.menuName+' · '+node.dataset.menuPrice+(english?'/person · minimum '+node.dataset.menuMin+' guests':'/persona · mínimo '+node.dataset.menuMin+' comensales');});
  document.querySelectorAll('[data-group-menu-dessert]').forEach(node=>{if(node.firstChild?.nodeType===Node.TEXT_NODE)node.firstChild.textContent=english?'Dessert: ':'Postre: ';});
@@ -306,7 +308,8 @@ function normalizePlace(raw){
    &&Number.isFinite(item.eur)&&item.eur>=0))
   .map(m=>({...m,service:Object.hasOwn(SERVICE_TYPES,m.service)?m.service:'general'}));
  const allDishes=[...new Set(safeMenus.flatMap(m=>m.dishes))];
- const allPrices=safeMenus.flatMap(m=>m.dishPrices.map(price=>({...price,service:m.service})));
+ const allPrices=safeMenus.filter(m=>!(raw.id==='rincon-beatillas' && /^Menú/.test(m.service))).flatMap(m=>m.dishPrices.map(price=>({...price,service:m.service})));
+ // Los menús cerrados de grupo no representan precios individuales comparables.
  // No convertir la procedencia editorial en una afirmación de precio confirmado.
  const priceStatus=['confirmed','estimated','unknown'].includes(raw.priceStatus)?raw.priceStatus:'unknown';
  return {...raw,sourcePriceStatus:raw.priceStatus,priceStatus,menus:safeMenus,dishes:allDishes,dishPrices:allPrices};
@@ -596,6 +599,42 @@ function menuGroups(p){
  });
  return {groups,unpriced};
 }
+function renderBeatillasGroupMenus(panel,p){
+ if(p.id!=='rincon-beatillas')return;
+ const menus=(p.menus||[]).filter(m=>m.menuCourses&&Number.isFinite(m.price));
+ if(!menus.length)return;
+ const section=document.createElement('section');
+ section.className='beatillas-group-menus';
+ const heading=document.createElement('h3');heading.dataset.groupMenuLabelEs='Menús para grupos · precios publicados en 2025';heading.dataset.groupMenuLabelEn='Group set menus · prices published in 2025';
+ heading.textContent=window.HelioGastroLanguage?.get()==='en'?heading.dataset.groupMenuLabelEn:heading.dataset.groupMenuLabelEs;section.append(heading);
+ const notice=document.createElement('p');notice.className='service-notice';
+ notice.dataset.venueMenuNoteEs='Precios históricos de los menús completos publicados en 2025, no confirmados en 2026. Consultar vigencia, condiciones y precio por comensal directamente con el restaurante. No son precios de platos individuales.';
+ notice.dataset.venueMenuNoteEn='Historical prices for complete set menus published in 2025; not verified for 2026. Confirm current prices, terms and per-person pricing with the restaurant. These are not individual dish prices.';
+ notice.textContent=window.HelioGastroLanguage?.get()==='en'?notice.dataset.venueMenuNoteEn:notice.dataset.venueMenuNoteEs;section.append(notice);
+ const headings={starters:['Para comenzar','To start'],following:['Para continuar','Following courses'],mainOptions:['Principal · opciones a elegir','Main course · choose an option'],desserts:['Postre','Dessert']};
+ for(const menu of menus){
+  const card=document.createElement('div');card.className='menu-dish';
+  const title=document.createElement('h4');title.dataset.keepDishSpanish='';title.textContent=menu.service.replace(/ \(2025\)$/,'');card.append(title);
+  const amount=document.createElement('p');amount.className='note';
+  amount.textContent=fmt(menu.price)+' · '+(window.HelioGastroLanguage?.get()==='en'?'2025 published set-menu price':'Precio de menú publicado en 2025');
+  amount.dataset.groupMenuPrice=String(menu.price);card.append(amount);
+  for(const [key,names] of Object.entries(headings)){
+   const items=menu.menuCourses[key]||[];if(!items.length)continue;
+   const label=document.createElement('p');label.className='note';label.dataset.groupMenuLabelEs=names[0];label.dataset.groupMenuLabelEn=names[1];label.textContent=window.HelioGastroLanguage?.get()==='en'?names[1]:names[0];card.append(label);
+   const list=document.createElement('ul');for(const item of items){const li=document.createElement('li');li.dataset.keepDishSpanish='';li.textContent=item;list.append(li)}card.append(list);
+  }
+  if(menu.beveragesIncluded){
+   const b=document.createElement('p');b.className='note';b.dataset.groupMenuLabelEs='Bebidas incluidas: '+menu.beveragesIncluded;b.dataset.groupMenuLabelEn='Drinks listed as included: '+menu.beveragesIncluded;
+   b.textContent=window.HelioGastroLanguage?.get()==='en'?b.dataset.groupMenuLabelEn:b.dataset.groupMenuLabelEs;card.append(b);
+  }
+  const conditions=document.createElement('p');conditions.className='note';
+  conditions.dataset.groupMenuLabelEs='La documentación de 2025 indica una reserva del 20 % y platos compartidos entre cuatro personas, excepto el principal. Confirmar condiciones actuales.';
+  conditions.dataset.groupMenuLabelEn='The 2025 documentation indicates a 20% deposit and dishes shared among four guests, except the main course. Confirm current terms.';
+  if(menu.service!=='Menú infantil (2025)'){conditions.textContent=window.HelioGastroLanguage?.get()==='en'?conditions.dataset.groupMenuLabelEn:conditions.dataset.groupMenuLabelEs;card.append(conditions)}
+  section.append(card);
+ }
+ panel.append(section);
+}
 function renderVenueMenuSections(panel,p){
  // El aviso público sobre ausencia de precios aparece una sola vez.
  if(p.menuPublicNoticeEs){
@@ -641,7 +680,7 @@ function showPlace(p,scroll=true){
  const map=document.createElement('a');map.href=placeMapUrl(p);map.target='_blank';map.rel='noopener noreferrer';map.textContent='Abrir en Google Maps ↗';panel.append(map);
  if(p.menuPriceNotice){const notice=document.createElement('p');notice.className='service-notice';notice.textContent=p.menuPriceNotice;panel.append(notice);}
  if(p.id==='casa-rubio'&&p.menuNotes?.length){const note=document.createElement('p');note.className='note';note.textContent=p.menuNotes[0];panel.append(note);}
- if(Array.isArray(p.menuSections)&&p.menuSections.length)renderVenueMenuSections(panel,p);
+ if(Array.isArray(p.menuSections)&&p.menuSections.length){renderVenueMenuSections(panel,p);renderBeatillasGroupMenus(panel,p);}
  else {
  const menu=menuGroups(p);
  const heading=document.createElement('h3');heading.textContent='Carta y especialidades';panel.append(heading);
