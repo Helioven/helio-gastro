@@ -215,6 +215,7 @@ function refreshDishExplanations(){
  document.querySelectorAll('[data-dish-explanation]').forEach(node=>{node.hidden=node.dataset.explanationLanguage?node.dataset.explanationLanguage!==(english?'en':'es'):!english;});
  document.querySelectorAll('[data-venue-menu-section]').forEach(node=>{node.textContent=english?(VENUE_MENU_SECTION_EN[node.dataset.venueMenuSection]||node.dataset.venueMenuSection):node.dataset.venueMenuSection;});
  document.querySelectorAll('[data-venue-menu-price-label]').forEach(node=>{node.textContent=venueMenuPriceLabel(node.dataset.venueMenuPriceLabel,english);});
+ document.querySelectorAll('[data-venue-menu-note-es]').forEach(node=>{node.textContent=english?node.dataset.venueMenuNoteEn:node.dataset.venueMenuNoteEs;});
  document.querySelectorAll('[data-group-menu-includes]').forEach(node=>{node.textContent=english&&node.dataset.en?node.dataset.en:node.dataset.es;});
  document.querySelectorAll('[data-group-menu-heading]').forEach(node=>{node.textContent=node.dataset.menuName+' · '+node.dataset.menuPrice+(english?'/person · minimum '+node.dataset.menuMin+' guests':'/persona · mínimo '+node.dataset.menuMin+' comensales');});
  document.querySelectorAll('[data-group-menu-dessert]').forEach(node=>{if(node.firstChild?.nodeType===Node.TEXT_NODE)node.firstChild.textContent=english?'Dessert: ':'Postre: ';});
@@ -607,7 +608,7 @@ function renderVenueMenuSections(panel,p){
    list.append(entry);
   }
   panel.append(list);
-  if(section.note){const foot=document.createElement('p');foot.className='note';foot.textContent=section.note;panel.append(foot);}
+  if(section.note){const foot=document.createElement('p');foot.className='note';foot.dataset.venueMenuNoteEs=section.note;foot.dataset.venueMenuNoteEn=section.noteEn||section.note;foot.textContent=window.HelioGastroLanguage?.get()==='en'?foot.dataset.venueMenuNoteEn:foot.dataset.venueMenuNoteEs;panel.append(foot);}
  }
 }
 function showPlace(p,scroll=true){
