@@ -591,6 +591,15 @@ function menuGroups(p){
  return {groups,unpriced};
 }
 function renderVenueMenuSections(panel,p){
+ // El aviso público sobre ausencia de precios aparece una sola vez.
+ if(p.menuPublicNoticeEs){
+  const notice=document.createElement('p');
+  notice.className='service-notice';
+  notice.dataset.venueMenuNoteEs=p.menuPublicNoticeEs;
+  notice.dataset.venueMenuNoteEn=p.menuPublicNoticeEn||p.menuPublicNoticeEs;
+  notice.textContent=window.HelioGastroLanguage?.get()==='en'?notice.dataset.venueMenuNoteEn:notice.dataset.venueMenuNoteEs;
+  panel.append(notice);
+ }
  // Las notas de auditoría son metadatos internos, no texto para visitantes.
  for(const section of p.menuSections){
   const heading=document.createElement('h3');heading.dataset.venueMenuSection=section.title;heading.textContent=window.HelioGastroLanguage?.get()==='en'?(VENUE_MENU_SECTION_EN[section.title]||section.title):section.title;panel.append(heading);
