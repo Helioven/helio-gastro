@@ -9970,7 +9970,6 @@
     "menuSections": [
       {
         "title": "Entrantes",
-        "note": "Carta oficial revisada por secciones. Precio: a consultar / Ask for price. Descripciones editoriales, no información certificada de alérgenos.",
         "items": [
           {
             "name": "Ensalada mixta",
@@ -9978,7 +9977,8 @@
             "en": "Mixed salad.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Ensalada mixta. Plato incluido en la carta; preparación y guarniciones exactas no especificadas."
           },
           {
             "name": "Ensalada de perdiz en escabeche",
@@ -9986,7 +9986,8 @@
             "en": "Salad with pickled partridge.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Ensalada con perdiz en escabeche."
           },
           {
             "name": "Salmorejo cordobés",
@@ -9994,7 +9995,8 @@
             "en": "Chilled Cordoban tomato and bread cream.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Crema fría cordobesa de tomate, pan, aceite y ajo."
           },
           {
             "name": "Ensaladilla rusa",
@@ -10002,7 +10004,8 @@
             "en": "Traditional Spanish Olivier-style salad.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Ensaladilla rusa tradicional."
           },
           {
             "name": "Tomate aliñado con ventresca",
@@ -10010,7 +10013,8 @@
             "en": "Seasoned tomato with tuna belly.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Tomate aliñado con ventresca. Plato incluido en la carta; preparación y guarniciones exactas no especificadas."
           },
           {
             "name": "Cogollitos con ajitos fritos",
@@ -10018,7 +10022,8 @@
             "en": "Baby lettuce hearts with fried garlic.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Cogollitos con ajitos fritos. Plato incluido en la carta; preparación y guarniciones exactas no especificadas."
           },
           {
             "name": "Berenjenas fritas con miel",
@@ -10026,7 +10031,8 @@
             "en": "Fried aubergines with cane syrup.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Berenjenas fritas con miel de caña, según la traducción oficial."
           },
           {
             "name": "Croquetas de rabo de toro",
@@ -10034,7 +10040,8 @@
             "en": "Oxtail croquettes.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Croquetas de rabo de toro. Plato incluido en la carta; preparación y guarniciones exactas no especificadas."
           },
           {
             "name": "Croquetas de jamón",
@@ -10042,7 +10049,8 @@
             "en": "Cured ham croquettes.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Croquetas de jamón. Plato incluido en la carta; preparación y guarniciones exactas no especificadas."
           },
           {
             "name": "Alcachofas con anchoas",
@@ -10050,13 +10058,13 @@
             "en": "Artichokes with anchovies.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Alcachofas con anchoas. Plato incluido en la carta; preparación y guarniciones exactas no especificadas."
           }
         ]
       },
       {
         "title": "Embutidos",
-        "note": "Carta oficial revisada por secciones. Precio: a consultar / Ask for price. Descripciones editoriales, no información certificada de alérgenos.",
         "items": [
           {
             "name": "Jamón ibérico",
@@ -10064,7 +10072,8 @@
             "en": "Sliced cured Iberian ham.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Jamón ibérico curado, servido en lonchas."
           },
           {
             "name": "Queso de oveja curado",
@@ -10072,7 +10081,8 @@
             "en": "Aged sheep's milk cheese.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Queso de leche de oveja sometido a curación."
           },
           {
             "name": "Queso de oveja en aceite",
@@ -10080,7 +10090,8 @@
             "en": "Sheep's milk cheese preserved or seasoned in olive oil.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Queso de oveja conservado o aderezado en aceite de oliva."
           },
           {
             "name": "Morcilla ibérica",
@@ -10088,13 +10099,13 @@
             "en": "Iberian-style pork blood sausage.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Morcilla elaborada con sangre de cerdo; variedad ibérica según la carta."
           }
         ]
       },
       {
         "title": "Huevos y revueltos",
-        "note": "Carta oficial revisada por secciones. Precio: a consultar / Ask for price. Descripciones editoriales, no información certificada de alérgenos.",
         "items": [
           {
             "name": "Tortilla",
@@ -10102,7 +10113,8 @@
             "en": "Traditional Spanish potato omelette.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Tortilla tradicional de patatas."
           },
           {
             "name": "Tortilla francesa",
@@ -10110,7 +10122,8 @@
             "en": "Plain omelette made with beaten eggs.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Tortilla sencilla de huevo batido."
           },
           {
             "name": "2 huevos con patatas",
@@ -10118,7 +10131,8 @@
             "en": "Two fried eggs served with fried potatoes.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Dos huevos fritos acompañados de patatas fritas."
           },
           {
             "name": "Revuelto de trigueros, champiñón y jamón",
@@ -10126,7 +10140,8 @@
             "en": "Scrambled eggs with wild asparagus, mushrooms and Iberian cured ham.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Huevos revueltos con espárragos trigueros, champiñones y jamón ibérico."
           },
           {
             "name": "Revuelto de habitas con jamón",
@@ -10134,7 +10149,8 @@
             "en": "Scrambled eggs with baby broad beans and Iberian cured ham.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Huevos revueltos con habitas y jamón ibérico."
           },
           {
             "name": "Pisto con huevo",
@@ -10142,13 +10158,13 @@
             "en": "Stewed aubergine, pepper, onion and tomato, served with a fried egg.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Verduras guisadas con berenjena, pimiento, cebolla y tomate, acompañadas de huevo frito."
           }
         ]
       },
       {
         "title": "Pescados",
-        "note": "Carta oficial revisada por secciones. Precio: a consultar / Ask for price. Descripciones editoriales, no información certificada de alérgenos.",
         "items": [
           {
             "name": "Bacalao frito",
@@ -10156,7 +10172,8 @@
             "en": "Fried cod.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Bacalao frito. Plato incluido en la carta; preparación y guarniciones exactas no especificadas."
           },
           {
             "name": "Bacalao rebozado",
@@ -10164,7 +10181,8 @@
             "en": "Battered cod.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Bacalao rebozado. Plato incluido en la carta; preparación y guarniciones exactas no especificadas."
           },
           {
             "name": "Calamares fritos",
@@ -10172,7 +10190,8 @@
             "en": "Fried squid.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Calamares fritos. Plato incluido en la carta; preparación y guarniciones exactas no especificadas."
           },
           {
             "name": "Calamar a la plancha",
@@ -10180,7 +10199,8 @@
             "en": "Griddled squid.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Calamar a la plancha. Plato incluido en la carta; preparación y guarniciones exactas no especificadas."
           },
           {
             "name": "Tortillitas de camarones",
@@ -10188,7 +10208,8 @@
             "en": "Thin, crispy shrimp fritters.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Tortillitas finas y crujientes de camarones fritas."
           },
           {
             "name": "Gambas rebozadas",
@@ -10196,7 +10217,8 @@
             "en": "Battered prawns.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Gambas rebozadas. Plato incluido en la carta; preparación y guarniciones exactas no especificadas."
           },
           {
             "name": "Gambas fritas",
@@ -10204,7 +10226,8 @@
             "en": "Fried prawns.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Gambas fritas. Plato incluido en la carta; preparación y guarniciones exactas no especificadas."
           },
           {
             "name": "Japuta en adobo",
@@ -10212,7 +10235,8 @@
             "en": "Marinated pomfret.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Pescado marinado en adobo."
           },
           {
             "name": "Choco a la plancha",
@@ -10220,7 +10244,8 @@
             "en": "Griddled cuttlefish.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Choco cocinado a la plancha."
           },
           {
             "name": "Choco frito",
@@ -10228,7 +10253,8 @@
             "en": "Fried cuttlefish.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Choco frito."
           },
           {
             "name": "Mejillones al vapor",
@@ -10236,13 +10262,13 @@
             "en": "Steamed mussels.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Mejillones al vapor. Plato incluido en la carta; preparación y guarniciones exactas no especificadas."
           }
         ]
       },
       {
         "title": "Carnes",
-        "note": "Carta oficial revisada por secciones. Precio: a consultar / Ask for price. Descripciones editoriales, no información certificada de alérgenos.",
         "items": [
           {
             "name": "Carne con tomate",
@@ -10250,7 +10276,8 @@
             "en": "Meat stewed in tomato sauce.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Carne con tomate. Plato incluido en la carta; preparación y guarniciones exactas no especificadas."
           },
           {
             "name": "Callos de ternera",
@@ -10258,7 +10285,8 @@
             "en": "Beef tripe stew.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Guiso de callos de ternera."
           },
           {
             "name": "Flamenquín casero",
@@ -10266,7 +10294,8 @@
             "en": "Homemade Cordoban-style breaded meat roll with cured ham.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Rollo de carne y jamón empanado y frito, especialidad cordobesa."
           },
           {
             "name": "Pollo empanado",
@@ -10274,7 +10303,8 @@
             "en": "Breaded chicken.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Pollo empanado. Plato incluido en la carta; preparación y guarniciones exactas no especificadas."
           },
           {
             "name": "Pollo a la plancha",
@@ -10282,7 +10312,8 @@
             "en": "Griddled chicken.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Pollo a la plancha. Plato incluido en la carta; preparación y guarniciones exactas no especificadas."
           },
           {
             "name": "Rabo de toro",
@@ -10290,7 +10321,8 @@
             "en": "Slow-cooked oxtail.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Rabo estofado a fuego lento."
           },
           {
             "name": "Presa ibérica de bellota",
@@ -10298,7 +10330,8 @@
             "en": "Acorn-fed Iberian pork presa cut.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Presa ibérica de bellota. Plato incluido en la carta; preparación y guarniciones exactas no especificadas."
           },
           {
             "name": "Codillo de cerdo",
@@ -10306,7 +10339,8 @@
             "en": "Pork knuckle; preparation and sides not specified.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Codillo de cerdo; preparación y guarnición no especificadas."
           },
           {
             "name": "Solomillo a la plancha",
@@ -10314,7 +10348,8 @@
             "en": "Griddled beef tenderloin, as identified in the restaurant's English menu.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Solomillo de ternera cocinado a la plancha, según la traducción de la carta."
           },
           {
             "name": "San Jacobo",
@@ -10322,7 +10357,8 @@
             "en": "Breaded cutlet stuffed with ham and cheese.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Filete empanado relleno de jamón y queso."
           },
           {
             "name": "Menudillo de pollo (receta de la abuela)",
@@ -10330,7 +10366,8 @@
             "en": "Traditional chicken offal dish made to a family recipe.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Plato tradicional de menudillos de pollo, según la receta de la abuela."
           },
           {
             "name": "Estofado de puntas de solomillo",
@@ -10338,7 +10375,8 @@
             "en": "Stewed tenderloin tips.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Estofado de puntas de solomillo. Plato incluido en la carta; preparación y guarniciones exactas no especificadas."
           },
           {
             "name": "Conejo al ajillo",
@@ -10346,7 +10384,8 @@
             "en": "Garlic rabbit.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Conejo al ajillo. Plato incluido en la carta; preparación y guarniciones exactas no especificadas."
           },
           {
             "name": "Carrillada en salsa",
@@ -10354,7 +10393,8 @@
             "en": "Pork cheeks in sauce.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Carrillada de cerdo cocinada en salsa."
           },
           {
             "name": "Chuletitas de cordero",
@@ -10362,12 +10402,15 @@
             "en": "Lamb chops.",
             "prices": [],
             "priceLabel": "A consultar",
-            "priceLabelEn": "Ask for price"
+            "priceLabelEn": "Ask for price",
+            "es": "Chuletitas de cordero. Plato incluido en la carta; preparación y guarniciones exactas no especificadas."
           }
         ]
       }
     ],
-    "menuSourceNote": "Carta oficial completa, cinco apartados y 46 referencias, contrastada por el usuario con el contenido de los desplegables el 16/10/2026. Precios no publicados: a consultar. Descripciones editoriales bilingües; traducciones inglesas de la web corregidas cuando eran erróneas. No se han certificado ingredientes ni alérgenos."
+    "menuSourceNote": "Carta oficial completa, cinco apartados y 46 referencias, contrastada por el usuario con el contenido de los desplegables el 16/10/2026. Precios no publicados: a consultar. Descripciones editoriales bilingües; traducciones inglesas de la web corregidas cuando eran erróneas. No se han certificado ingredientes ni alérgenos.",
+    "menuPublicNoticeEs": "La carta oficial online no publica precios. No disponemos de importes verificados; recomendamos consultar los precios directamente con el restaurante antes de pedir. Las descripciones son orientativas y no sustituyen la información sobre alérgenos.",
+    "menuPublicNoticeEn": "The official online menu does not list prices. We have no verified prices; please check prices directly with the restaurant before ordering. Descriptions are for guidance only and do not replace allergen information."
   },
   {
     "id": "sociedad-plateros-maria-auxiliadora",
