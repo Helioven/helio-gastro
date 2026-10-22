@@ -23761,7 +23761,7 @@
     "address": "Plaza de las Beatillas, 1, Córdoba",
     "mealCostEur": null,
     "priceStatus": "individual_menu_no_prices_group_menus_2025_unverified",
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-22",
     "sources": [
       {
         "label": "Carta oficial de platos",
@@ -24135,133 +24135,155 @@
             "name": "Salmorejo",
             "description": "Salmorejo",
             "en": "Cordoban salmorejo",
-            "prices": []
+            "prices": [],
+            "es": "Salmorejo"
           },
           {
             "name": "Berenjenas Fritas",
             "description": "Berenjenas Fritas",
             "en": "Fried aubergines",
-            "prices": []
+            "prices": [],
+            "es": "Berenjenas Fritas"
           },
           {
             "name": "Ensaladilla Rusa",
             "description": "Ensaladilla Rusa",
             "en": "Russian-style potato salad",
-            "prices": []
+            "prices": [],
+            "es": "Ensaladilla Rusa"
           },
           {
             "name": "Croquetas Caseras",
             "description": "Croquetas Caseras",
             "en": "Homemade croquettes",
-            "prices": []
+            "prices": [],
+            "es": "Croquetas Caseras"
           },
           {
             "name": "Salpicón de Marisco",
             "description": "Salpicón de Marisco",
             "en": "Seafood salad",
-            "prices": []
+            "prices": [],
+            "es": "Salpicón de Marisco"
           },
           {
             "name": "Boquerones en Vinagre",
             "description": "Boquerones en Vinagre",
             "en": "Vinegar-marinated anchovies",
-            "prices": []
+            "prices": [],
+            "es": "Boquerones en Vinagre"
           },
           {
             "name": "Boquerones Fritos",
             "description": "Boquerones Fritos",
             "en": "Fried anchovies",
-            "prices": []
+            "prices": [],
+            "es": "Boquerones Fritos"
           },
           {
             "name": "Japuta en Adobo",
             "description": "Japuta en Adobo",
             "en": "Marinated fried pomfret (japuta)",
-            "prices": []
+            "prices": [],
+            "es": "Japuta en Adobo"
           },
           {
             "name": "Calamares Fritos",
             "description": "Calamares Fritos",
             "en": "Fried squid",
-            "prices": []
+            "prices": [],
+            "es": "Calamares Fritos"
           },
           {
             "name": "Choco Frito",
             "description": "Choco Frito",
             "en": "Fried cuttlefish",
-            "prices": []
+            "prices": [],
+            "es": "Choco Frito"
           },
           {
             "name": "Bacalao Frito",
             "description": "Bacalao Frito",
             "en": "Fried cod",
-            "prices": []
+            "prices": [],
+            "es": "Bacalao Frito"
           },
           {
             "name": "Huevas Fritas con Mahonesa",
             "description": "Huevas Fritas con Mahonesa",
             "en": "Fried fish roe with mayonnaise",
-            "prices": []
+            "prices": [],
+            "es": "Huevas Fritas con Mahonesa"
           },
           {
             "name": "Huevas en Vinagreta",
             "description": "Huevas en Vinagreta",
             "en": "Fish roe with vinaigrette",
-            "prices": []
+            "prices": [],
+            "es": "Huevas en Vinagreta"
           },
           {
             "name": "Ancas de Rana",
             "description": "Ancas de Rana",
             "en": "Frog legs",
-            "prices": []
+            "prices": [],
+            "es": "Ancas de Rana"
           },
           {
             "name": "Flamenquín Casero",
             "description": "Flamenquín Casero",
             "en": "Homemade Cordoban flamenquín",
-            "prices": []
+            "prices": [],
+            "es": "Flamenquín Casero"
           },
           {
             "name": "San Jacobo Casero",
             "description": "San Jacobo Casero",
             "en": "Homemade San Jacobo",
-            "prices": []
+            "prices": [],
+            "es": "San Jacobo Casero"
           },
           {
             "name": "Carne con Tomate (ternera)",
             "description": "Carne con Tomate (ternera)",
             "en": "Beef in tomato sauce",
-            "prices": []
+            "prices": [],
+            "es": "Carne con Tomate (ternera)"
           },
           {
             "name": "Callos Caseros (Ternera)",
             "description": "Callos Caseros (Ternera)",
             "en": "Homemade beef tripe",
-            "prices": []
+            "prices": [],
+            "es": "Callos Caseros (Ternera)"
           },
           {
             "name": "Manitas de Cerdo",
             "description": "Manitas de Cerdo",
             "en": "Pig's trotters",
-            "prices": []
+            "prices": [],
+            "es": "Manitas de Cerdo"
           },
           {
             "name": "Jabalí Serrano",
             "description": "Jabalí Serrano",
             "en": "Mountain-style wild boar",
-            "prices": []
+            "prices": [],
+            "es": "Jabalí Serrano"
           },
           {
             "name": "Venado en Salsa de Espárragos",
             "description": "Venado en Salsa de Espárragos",
             "en": "Venison in asparagus sauce",
-            "prices": []
+            "prices": [],
+            "es": "Venado en Salsa de Espárragos"
           },
           {
             "name": "Lechón Frito",
             "description": "Lechón Frito",
             "en": "Fried suckling pig",
-            "prices": []
+            "prices": [],
+            "es": "Lechón Frito"
           }
         ]
       },
@@ -24273,19 +24295,22 @@
             "name": "Jamón Ibérico de Bellota",
             "description": "Jamón Ibérico de Bellota",
             "en": "Acorn-fed Iberian ham",
-            "prices": []
+            "prices": [],
+            "es": "Jamón Ibérico de Bellota"
           },
           {
             "name": "Queso Añejo de Oveja",
             "description": "Queso Añejo de Oveja",
             "en": "Aged sheep's milk cheese",
-            "prices": []
+            "prices": [],
+            "es": "Queso Añejo de Oveja"
           },
           {
             "name": "Morcilla Ibérica",
             "description": "Morcilla Ibérica",
             "en": "Iberian blood sausage",
-            "prices": []
+            "prices": [],
+            "es": "Morcilla Ibérica"
           }
         ]
       },
@@ -24297,55 +24322,64 @@
             "name": "Pimientos Asados con Atún y Huevo",
             "description": "Pimientos Asados con Atún y Huevo",
             "en": "Roasted peppers with tuna and egg",
-            "prices": []
+            "prices": [],
+            "es": "Pimientos Asados con Atún y Huevo"
           },
           {
             "name": "Pisto con Huevo Frito",
             "description": "Pisto con Huevo Frito",
             "en": "Vegetable pisto with fried egg",
-            "prices": []
+            "prices": [],
+            "es": "Pisto con Huevo Frito"
           },
           {
             "name": "Habas Finas con Jamón",
             "description": "Habas Finas con Jamón",
             "en": "Tender broad beans with cured ham",
-            "prices": []
+            "prices": [],
+            "es": "Habas Finas con Jamón"
           },
           {
             "name": "Alcachofas a la Montillana",
             "description": "Alcachofas a la Montillana",
             "en": "Montilla-style artichokes",
-            "prices": []
+            "prices": [],
+            "es": "Alcachofas a la Montillana"
           },
           {
             "name": "Ensalada Tradicional (2 personas)",
             "description": "Ensalada Tradicional (2 personas)",
             "en": "Traditional salad (serves two)",
-            "prices": []
+            "prices": [],
+            "es": "Ensalada Tradicional (2 personas)"
           },
           {
             "name": "Ensalada de Bacalao Ahumado",
             "description": "Ensalada de Bacalao Ahumado",
             "en": "Smoked cod salad",
-            "prices": []
+            "prices": [],
+            "es": "Ensalada de Bacalao Ahumado"
           },
           {
             "name": "Ensalada con Aguacate y Gulas (2 pax)",
             "description": "Ensalada con Aguacate y Gulas (2 pax)",
             "en": "Avocado and surimi eel salad (serves two)",
-            "prices": []
+            "prices": [],
+            "es": "Ensalada con Aguacate y Gulas (2 pax)"
           },
           {
             "name": "Ensalada de Ahumados y Queso de Cabra (2 pax)",
             "description": "Ensalada de Ahumados y Queso de Cabra (2 pax)",
             "en": "Smoked fish and goat cheese salad (serves two)",
-            "prices": []
+            "prices": [],
+            "es": "Ensalada de Ahumados y Queso de Cabra (2 pax)"
           },
           {
             "name": "Ensalada de Perdiz en Escabeche (2 pax)",
             "description": "Ensalada de Perdiz en Escabeche (2 pax)",
             "en": "Pickled partridge salad (serves two)",
-            "prices": []
+            "prices": [],
+            "es": "Ensalada de Perdiz en Escabeche (2 pax)"
           }
         ]
       },
@@ -24357,43 +24391,50 @@
             "name": "Gazpacho con Guarnición (En temporada)",
             "description": "Gazpacho con Guarnición (En temporada)",
             "en": "Gazpacho with garnish (seasonal)",
-            "prices": []
+            "prices": [],
+            "es": "Gazpacho con Guarnición (En temporada)"
           },
           {
             "name": "Sopa de Ajo a la Antigua",
             "description": "Sopa de Ajo a la Antigua",
             "en": "Traditional garlic soup",
-            "prices": []
+            "prices": [],
+            "es": "Sopa de Ajo a la Antigua"
           },
           {
             "name": "Sopa de Puchero",
             "description": "Sopa de Puchero",
             "en": "Traditional Spanish stew broth",
-            "prices": []
+            "prices": [],
+            "es": "Sopa de Puchero"
           },
           {
             "name": "Revuelto de Habas Finas",
             "description": "Revuelto de Habas Finas",
             "en": "Scrambled eggs with tender broad beans",
-            "prices": []
+            "prices": [],
+            "es": "Revuelto de Habas Finas"
           },
           {
             "name": "Revuelto Beatillas",
             "description": "Revuelto Beatillas",
             "en": "Beatillas-style scrambled eggs",
-            "prices": []
+            "prices": [],
+            "es": "Revuelto Beatillas"
           },
           {
             "name": "Revuelto de Bacalao",
             "description": "Revuelto de Bacalao",
             "en": "Scrambled eggs with cod",
-            "prices": []
+            "prices": [],
+            "es": "Revuelto de Bacalao"
           },
           {
             "name": "Revuelto de Espárragos",
             "description": "Revuelto de Espárragos",
             "en": "Scrambled eggs with asparagus",
-            "prices": []
+            "prices": [],
+            "es": "Revuelto de Espárragos"
           }
         ]
       },
@@ -24405,61 +24446,71 @@
             "name": "Pulpo a la Gallega",
             "description": "Pulpo a la Gallega",
             "en": "Galician-style octopus",
-            "prices": []
+            "prices": [],
+            "es": "Pulpo a la Gallega"
           },
           {
             "name": "Gambas al Ajillo",
             "description": "Gambas al Ajillo",
             "en": "Garlic prawns",
-            "prices": []
+            "prices": [],
+            "es": "Gambas al Ajillo"
           },
           {
             "name": "Gambas Plancha 250 gr",
             "description": "Gambas Plancha 250 gr",
             "en": "Grilled prawns (250 g)",
-            "prices": []
+            "prices": [],
+            "es": "Gambas Plancha 250 gr"
           },
           {
             "name": "Lomo de Bacalao",
             "description": "Lomo de Bacalao",
             "en": "Cod loin",
-            "prices": []
+            "prices": [],
+            "es": "Lomo de Bacalao"
           },
           {
             "name": "Pez Espada a la Plancha",
             "description": "Pez Espada a la Plancha",
             "en": "Grilled swordfish",
-            "prices": []
+            "prices": [],
+            "es": "Pez Espada a la Plancha"
           },
           {
             "name": "Salmón a la Parrilla",
             "description": "Salmón a la Parrilla",
             "en": "Grilled salmon",
-            "prices": []
+            "prices": [],
+            "es": "Salmón a la Parrilla"
           },
           {
             "name": "Merluza de Pincho",
             "description": "Merluza de Pincho",
             "en": "Line-caught hake",
-            "prices": []
+            "prices": [],
+            "es": "Merluza de Pincho"
           },
           {
             "name": "Lenguado de Costa",
             "description": "Lenguado de Costa",
             "en": "Coastal sole",
-            "prices": []
+            "prices": [],
+            "es": "Lenguado de Costa"
           },
           {
             "name": "Calamar de Potera a la Plancha",
             "description": "Calamar de Potera a la Plancha",
             "en": "Grilled jig-caught squid",
-            "prices": []
+            "prices": [],
+            "es": "Calamar de Potera a la Plancha"
           },
           {
             "name": "Fritura de Pescado (2 personas)",
             "description": "Fritura de Pescado (2 personas)",
             "en": "Assorted fried fish (serves two)",
-            "prices": []
+            "prices": [],
+            "es": "Fritura de Pescado (2 personas)"
           }
         ]
       },
@@ -24471,73 +24522,85 @@
             "name": "Rabo de Toro Estofado",
             "description": "Rabo de Toro Estofado",
             "en": "Braised oxtail",
-            "prices": []
+            "prices": [],
+            "es": "Rabo de Toro Estofado"
           },
           {
             "name": "Codillo de Cerdo Asado",
             "description": "Codillo de Cerdo Asado",
             "en": "Roasted pork knuckle",
-            "prices": []
+            "prices": [],
+            "es": "Codillo de Cerdo Asado"
           },
           {
             "name": "Solomillo Ibérico de los Pedroches (2 Salsas)",
             "description": "Solomillo Ibérico de los Pedroches (2 Salsas)",
             "en": "Los Pedroches Iberian pork tenderloin (two sauces)",
-            "prices": []
+            "prices": [],
+            "es": "Solomillo Ibérico de los Pedroches (2 Salsas)"
           },
           {
             "name": "Presa Ibérica de los Pedroches",
             "description": "Presa Ibérica de los Pedroches",
             "en": "Los Pedroches Iberian pork presa cut",
-            "prices": []
+            "prices": [],
+            "es": "Presa Ibérica de los Pedroches"
           },
           {
             "name": "Cochinillo de Segovia Asado",
             "description": "Cochinillo de Segovia Asado",
             "en": "Segovian-style roast suckling pig",
-            "prices": []
+            "prices": [],
+            "es": "Cochinillo de Segovia Asado"
           },
           {
             "name": "Chuletón de Vaca Madurado (500g)",
             "description": "Chuletón de Vaca Madurado (500g)",
             "en": "Aged beef rib steak (500 g)",
-            "prices": []
+            "prices": [],
+            "es": "Chuletón de Vaca Madurado (500g)"
           },
           {
             "name": "Entrecot de Vaca Madurado",
             "description": "Entrecot de Vaca Madurado",
             "en": "Aged beef entrecôte",
-            "prices": []
+            "prices": [],
+            "es": "Entrecot de Vaca Madurado"
           },
           {
             "name": "Solomillo de Vaca Madurado",
             "description": "Solomillo de Vaca Madurado",
             "en": "Aged beef tenderloin",
-            "prices": []
+            "prices": [],
+            "es": "Solomillo de Vaca Madurado"
           },
           {
             "name": "Mollejas de Cordero al ajillo",
             "description": "Mollejas de Cordero al ajillo",
             "en": "Lamb sweetbreads with garlic",
-            "prices": []
+            "prices": [],
+            "es": "Mollejas de Cordero al ajillo"
           },
           {
             "name": "Chuletitas de Cordero Lechal",
             "description": "Chuletitas de Cordero Lechal",
             "en": "Suckling lamb chops",
-            "prices": []
+            "prices": [],
+            "es": "Chuletitas de Cordero Lechal"
           },
           {
             "name": "Paletilla de Cordero Lechal",
             "description": "Paletilla de Cordero Lechal",
             "en": "Suckling lamb shoulder",
-            "prices": []
+            "prices": [],
+            "es": "Paletilla de Cordero Lechal"
           },
           {
             "name": "Lomo de Ciervo",
             "description": "Lomo de Ciervo",
             "en": "Venison loin",
-            "prices": []
+            "prices": [],
+            "es": "Lomo de Ciervo"
           }
         ]
       },
@@ -24549,79 +24612,93 @@
             "name": "Flan de huevo",
             "description": "Flan de huevo",
             "en": "Egg custard flan",
-            "prices": []
+            "prices": [],
+            "es": "Flan de huevo"
           },
           {
             "name": "Flan de huevo con Nata",
             "description": "Flan de huevo con Nata",
             "en": "Egg custard flan with whipped cream",
-            "prices": []
+            "prices": [],
+            "es": "Flan de huevo con Nata"
           },
           {
             "name": "Flan de queso",
             "description": "Flan de queso",
             "en": "Cheese flan",
-            "prices": []
+            "prices": [],
+            "es": "Flan de queso"
           },
           {
             "name": "Natillas Caseras",
             "description": "Natillas Caseras",
             "en": "Homemade custard",
-            "prices": []
+            "prices": [],
+            "es": "Natillas Caseras"
           },
           {
             "name": "Arroz con Leche y Canela",
             "description": "Arroz con Leche y Canela",
             "en": "Rice pudding with cinnamon",
-            "prices": []
+            "prices": [],
+            "es": "Arroz con Leche y Canela"
           },
           {
             "name": "Tocino de Cielo",
             "description": "Tocino de Cielo",
             "en": "Traditional egg yolk custard",
-            "prices": []
+            "prices": [],
+            "es": "Tocino de Cielo"
           },
           {
             "name": "Crema de Yogurt con Tocino de Cielo",
             "description": "Crema de Yogurt con Tocino de Cielo",
             "en": "Yogurt cream with egg yolk custard",
-            "prices": []
+            "prices": [],
+            "es": "Crema de Yogurt con Tocino de Cielo"
           },
           {
             "name": "Pastel Cordobés",
             "description": "Pastel Cordobés",
             "en": "Traditional Cordoban pastry",
-            "prices": []
+            "prices": [],
+            "es": "Pastel Cordobés"
           },
           {
             "name": "Tarta de la Casa",
             "description": "Tarta de la Casa",
             "en": "House cake",
-            "prices": []
+            "prices": [],
+            "es": "Tarta de la Casa"
           },
           {
             "name": "Helados Variados (ver carta)",
             "description": "Tipos de helados y precios no disponibles en la carta publicada.",
             "en": "Ice cream varieties and prices are not listed on the published menu.",
-            "prices": []
+            "prices": [],
+            "es": "Tipos de helados y precios no disponibles en la carta publicada."
           },
           {
             "name": "Fruta del Tiempo",
             "description": "Fruta del Tiempo",
             "en": "Seasonal fruit",
-            "prices": []
+            "prices": [],
+            "es": "Fruta del Tiempo"
           },
           {
             "name": "Piña Natural",
             "description": "Piña Natural",
             "en": "Fresh pineapple",
-            "prices": []
+            "prices": [],
+            "es": "Piña Natural"
           }
         ]
       }
     ],
     "menuNotes": "Carta individual: 75 platos en 7 secciones, sin precios publicados. 'Helados variados': tipos y precios no disponibles en la carta publicada. Menús de grupo: 2025, precios históricos de 40, 45, 48 y 25 EUR; vigencia 2026 no verificada. En los tres menús generales, platos compartidos entre cuatro personas excepto el principal, que se elige al contratar; reserva del 20% del presupuesto. Aplicación de la regla de compartir al menú infantil no confirmada. 'Ensaladilla de gambas' corrige errata original 'Gamas' a petición del usuario. Rabo de toro mencionado en introducción y listado como estofado en carnes. Bebidas solo se describen como incluidas en los menús, no como productos individuales. Sin atribución de alérgenos no publicados.",
-    "menuDisclaimer": "Los precios de menús corresponden a la publicación 2025 y pueden haber cambiado. La carta individual no publica precios. Consultar directamente con el restaurante."
+    "menuDisclaimer": "Los precios de menús corresponden a la publicación 2025 y pueden haber cambiado. La carta individual no publica precios. Consultar directamente con el restaurante.",
+    "menuPublicNoticeEs": "La carta individual oficial no publica precios por plato. Recomendamos consultar los importes con el restaurante antes de pedir. Los precios publicados de los menús para grupos corresponden a menús completos de 2025 y no a platos sueltos; su vigencia actual no está confirmada.",
+    "menuPublicNoticeEn": "The official à la carte menu does not list individual dish prices. Please check prices with the restaurant before ordering. Published group-menu prices refer to complete set menus from 2025, not individual dishes; current validity is unconfirmed."
   },
   {
     "id": "casa-bravo-1919",
