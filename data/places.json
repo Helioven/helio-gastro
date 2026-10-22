@@ -32467,6 +32467,279 @@
             "portion": "media"
           }
         ]
+      },
+      {
+        "service": "Ibéricos, quesos y embutidos",
+        "dishes": [
+          "Jamón Ibérico de Bellota",
+          "Chorizo Ibérico de Bellota",
+          "Salchichón Ibérico de Bellota",
+          "Caña de Lomo Ibérica de Bellota",
+          "Mixto de Jamón Ibérico de Bellota y Queso Puro de Oveja",
+          "Surtido Ibérico de Bellota con Queso Puro de Oveja",
+          "Mojama de Barbate",
+          "Queso Puro de Oveja",
+          "Quesito de Zuheros",
+          "Queso asado a la miel de caña",
+          "Queso Brie frito con Confitura de Tomate",
+          "Queso Provolone gratinado",
+          "Tabla de Quesos",
+          "Chicharrones de Cádiz"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Jamón Ibérico de Bellota",
+            "eur": 26,
+            "portion": "racion"
+          },
+          {
+            "dish": "Jamón Ibérico de Bellota",
+            "eur": 17.5,
+            "portion": "media"
+          },
+          {
+            "dish": "Jamón Ibérico de Bellota",
+            "eur": 7.25,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Chorizo Ibérico de Bellota",
+            "eur": 18.25,
+            "portion": "racion"
+          },
+          {
+            "dish": "Chorizo Ibérico de Bellota",
+            "eur": 12.4,
+            "portion": "media"
+          },
+          {
+            "dish": "Chorizo Ibérico de Bellota",
+            "eur": 5.9,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Salchichón Ibérico de Bellota",
+            "eur": 18.25,
+            "portion": "racion"
+          },
+          {
+            "dish": "Salchichón Ibérico de Bellota",
+            "eur": 12.4,
+            "portion": "media"
+          },
+          {
+            "dish": "Salchichón Ibérico de Bellota",
+            "eur": 5.9,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Caña de Lomo Ibérica de Bellota",
+            "eur": 26,
+            "portion": "racion"
+          },
+          {
+            "dish": "Caña de Lomo Ibérica de Bellota",
+            "eur": 17.5,
+            "portion": "media"
+          },
+          {
+            "dish": "Caña de Lomo Ibérica de Bellota",
+            "eur": 7.25,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Mixto de Jamón Ibérico de Bellota y Queso Puro de Oveja",
+            "eur": 28.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Mixto de Jamón Ibérico de Bellota y Queso Puro de Oveja",
+            "eur": 19.75,
+            "portion": "media"
+          },
+          {
+            "dish": "Surtido Ibérico de Bellota con Queso Puro de Oveja",
+            "eur": 29.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Mojama de Barbate",
+            "eur": 20.5,
+            "portion": "racion"
+          },
+          {
+            "dish": "Mojama de Barbate",
+            "eur": 14.95,
+            "portion": "media"
+          },
+          {
+            "dish": "Mojama de Barbate",
+            "eur": 7.5,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Queso Puro de Oveja",
+            "eur": 17.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Queso Puro de Oveja",
+            "eur": 12.5,
+            "portion": "media"
+          },
+          {
+            "dish": "Queso Puro de Oveja",
+            "eur": 6.15,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Quesito de Zuheros",
+            "eur": 3.75,
+            "portion": "racion"
+          },
+          {
+            "dish": "Queso asado a la miel de caña",
+            "eur": 10.25,
+            "portion": "racion"
+          },
+          {
+            "dish": "Queso asado a la miel de caña",
+            "eur": 7,
+            "portion": "media"
+          },
+          {
+            "dish": "Queso asado a la miel de caña",
+            "eur": 4.15,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Queso Brie frito con Confitura de Tomate",
+            "eur": 10.25,
+            "portion": "racion"
+          },
+          {
+            "dish": "Queso Brie frito con Confitura de Tomate",
+            "eur": 7,
+            "portion": "media"
+          },
+          {
+            "dish": "Queso Brie frito con Confitura de Tomate",
+            "eur": 4.15,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Queso Provolone gratinado",
+            "eur": 8.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Tabla de Quesos",
+            "eur": 17,
+            "portion": "racion"
+          },
+          {
+            "dish": "Tabla de Quesos",
+            "eur": 11.5,
+            "portion": "media"
+          },
+          {
+            "dish": "Chicharrones de Cádiz",
+            "eur": 7.3,
+            "portion": "racion"
+          }
+        ]
+      },
+      {
+        "service": "Tostas",
+        "dishes": [
+          "Anchoas con Queso Azul del Valle de los Pedroches",
+          "Anchoas con Tomate",
+          "Anchoas, Queso de Zuheros y confitura de Tomate",
+          "Lomo de Ciervo con Queso Asado y Cebolla Caramelizada",
+          "Salmón Ahumado",
+          "Salmón Ahumado con Queso Azul del Valle de los Pedroches",
+          "Sardina Ahumada con Salmorejo",
+          "Tartar de Atún"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Anchoas con Queso Azul del Valle de los Pedroches",
+            "eur": 3.95,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Anchoas con Tomate",
+            "eur": 3.95,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Anchoas, Queso de Zuheros y confitura de Tomate",
+            "eur": 3.95,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Lomo de Ciervo con Queso Asado y Cebolla Caramelizada",
+            "eur": 3.95,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Salmón Ahumado",
+            "eur": 3.95,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Salmón Ahumado con Queso Azul del Valle de los Pedroches",
+            "eur": 3.95,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Sardina Ahumada con Salmorejo",
+            "eur": 3.95,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tartar de Atún",
+            "eur": 4.5,
+            "portion": "unidad"
+          }
+        ]
+      },
+      {
+        "service": "Risottos y pastas",
+        "dishes": [
+          "Risotto de Boletus y Setas",
+          "Risotto de Rabo de Toro",
+          "Risotto de Bacalao con Sardina Ahumada",
+          "Espaguetis a la Carbonara",
+          "Espaguetis a la Boloñesa"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Risotto de Boletus y Setas",
+            "eur": 10.75,
+            "portion": "racion"
+          },
+          {
+            "dish": "Risotto de Rabo de Toro",
+            "eur": 11.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Risotto de Bacalao con Sardina Ahumada",
+            "eur": 11.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Espaguetis a la Carbonara",
+            "eur": 7.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Espaguetis a la Boloñesa",
+            "eur": 7.95,
+            "portion": "racion"
+          }
+        ]
       }
     ],
     "menuSourceNote": "Auditoría documental iniciada el 22/10/2026: seis láminas oficiales en español con precios, alojadas en carpetas de febrero y marzo 2026. La versión inglesa utiliza archivos de 2025 y presenta importes divergentes. Pendiente transcripción íntegra y validación de platos, precios y formatos ES/EN antes de sustituir la ficha preliminar; no copiar carta de los otros Moriles ni publicar una carta parcial. Fuentes complementarias localizadas 22/10/2026: menú Tapas Cordobesas (15,95 € en lámina consultada), cafés/chocolates, postres, versiones inglesas y glosario. Se conservarán separadas las cartas por servicios y los menús cerrados; falta transcripción integral y control de importes antes de publicar.",
@@ -33051,6 +33324,417 @@
               {
                 "label": "Media ración",
                 "eur": 7.65
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Ibéricos, quesos y embutidos",
+        "items": [
+          {
+            "name": "Jamón Ibérico de Bellota",
+            "description": "Jamón Ibérico de Bellota",
+            "es": "Jamón Ibérico de Bellota",
+            "en": "Jamón Ibérico de Bellota",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 26
+              },
+              {
+                "label": "Media ración",
+                "eur": 17.5
+              },
+              {
+                "label": "Tapa",
+                "eur": 7.25
+              }
+            ]
+          },
+          {
+            "name": "Chorizo Ibérico de Bellota",
+            "description": "Chorizo Ibérico de Bellota",
+            "es": "Chorizo Ibérico de Bellota",
+            "en": "Chorizo Ibérico de Bellota",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 18.25
+              },
+              {
+                "label": "Media ración",
+                "eur": 12.4
+              },
+              {
+                "label": "Tapa",
+                "eur": 5.9
+              }
+            ]
+          },
+          {
+            "name": "Salchichón Ibérico de Bellota",
+            "description": "Salchichón Ibérico de Bellota",
+            "es": "Salchichón Ibérico de Bellota",
+            "en": "Salchichón Ibérico de Bellota",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 18.25
+              },
+              {
+                "label": "Media ración",
+                "eur": 12.4
+              },
+              {
+                "label": "Tapa",
+                "eur": 5.9
+              }
+            ]
+          },
+          {
+            "name": "Caña de Lomo Ibérica de Bellota",
+            "description": "Caña de Lomo Ibérica de Bellota",
+            "es": "Caña de Lomo Ibérica de Bellota",
+            "en": "Caña de Lomo Ibérica de Bellota",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 26
+              },
+              {
+                "label": "Media ración",
+                "eur": 17.5
+              },
+              {
+                "label": "Tapa",
+                "eur": 7.25
+              }
+            ]
+          },
+          {
+            "name": "Mixto de Jamón Ibérico de Bellota y Queso Puro de Oveja",
+            "description": "Mixto de Jamón Ibérico de Bellota y Queso Puro de Oveja",
+            "es": "Mixto de Jamón Ibérico de Bellota y Queso Puro de Oveja",
+            "en": "Mixto de Jamón Ibérico de Bellota y Queso Puro de Oveja",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 28.95
+              },
+              {
+                "label": "Media ración",
+                "eur": 19.75
+              }
+            ]
+          },
+          {
+            "name": "Surtido Ibérico de Bellota con Queso Puro de Oveja",
+            "description": "Surtido Ibérico de Bellota con Queso Puro de Oveja",
+            "es": "Surtido Ibérico de Bellota con Queso Puro de Oveja",
+            "en": "Surtido Ibérico de Bellota con Queso Puro de Oveja",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 29.95
+              }
+            ]
+          },
+          {
+            "name": "Mojama de Barbate",
+            "description": "Formatos 110 g, 75 g y 40 g",
+            "es": "Formatos 110 g, 75 g y 40 g",
+            "en": "Formatos 110 g, 75 g y 40 g",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 20.5
+              },
+              {
+                "label": "Media ración",
+                "eur": 14.95
+              },
+              {
+                "label": "Tapa",
+                "eur": 7.5
+              }
+            ]
+          },
+          {
+            "name": "Queso Puro de Oveja",
+            "description": "Queso Puro de Oveja",
+            "es": "Queso Puro de Oveja",
+            "en": "Queso Puro de Oveja",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 17.95
+              },
+              {
+                "label": "Media ración",
+                "eur": 12.5
+              },
+              {
+                "label": "Tapa",
+                "eur": 6.15
+              }
+            ]
+          },
+          {
+            "name": "Quesito de Zuheros",
+            "description": "Quesito de Zuheros",
+            "es": "Quesito de Zuheros",
+            "en": "Quesito de Zuheros",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 3.75
+              }
+            ]
+          },
+          {
+            "name": "Queso asado a la miel de caña",
+            "description": "Queso asado a la miel de caña",
+            "es": "Queso asado a la miel de caña",
+            "en": "Queso asado a la miel de caña",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 10.25
+              },
+              {
+                "label": "Media ración",
+                "eur": 7
+              },
+              {
+                "label": "Tapa",
+                "eur": 4.15
+              }
+            ]
+          },
+          {
+            "name": "Queso Brie frito con Confitura de Tomate",
+            "description": "Queso Brie frito con Confitura de Tomate",
+            "es": "Queso Brie frito con Confitura de Tomate",
+            "en": "Queso Brie frito con Confitura de Tomate",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 10.25
+              },
+              {
+                "label": "Media ración",
+                "eur": 7
+              },
+              {
+                "label": "Tapa",
+                "eur": 4.15
+              }
+            ]
+          },
+          {
+            "name": "Queso Provolone gratinado",
+            "description": "Queso Provolone gratinado",
+            "es": "Queso Provolone gratinado",
+            "en": "Queso Provolone gratinado",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 8.95
+              }
+            ]
+          },
+          {
+            "name": "Tabla de Quesos",
+            "description": "Tabla de Quesos",
+            "es": "Tabla de Quesos",
+            "en": "Tabla de Quesos",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 17
+              },
+              {
+                "label": "Media ración",
+                "eur": 11.5
+              }
+            ]
+          },
+          {
+            "name": "Chicharrones de Cádiz",
+            "description": "Chicharrones de Cádiz",
+            "es": "Chicharrones de Cádiz",
+            "en": "Chicharrones de Cádiz",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 7.3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Tostas",
+        "items": [
+          {
+            "name": "Anchoas con Queso Azul del Valle de los Pedroches",
+            "description": "Anchoas con Queso Azul del Valle de los Pedroches",
+            "es": "Anchoas con Queso Azul del Valle de los Pedroches",
+            "en": "Anchoas con Queso Azul del Valle de los Pedroches",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 3.95
+              }
+            ]
+          },
+          {
+            "name": "Anchoas con Tomate",
+            "description": "Anchoas con Tomate",
+            "es": "Anchoas con Tomate",
+            "en": "Anchoas con Tomate",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 3.95
+              }
+            ]
+          },
+          {
+            "name": "Anchoas, Queso de Zuheros y confitura de Tomate",
+            "description": "Anchoas, Queso de Zuheros y confitura de Tomate",
+            "es": "Anchoas, Queso de Zuheros y confitura de Tomate",
+            "en": "Anchoas, Queso de Zuheros y confitura de Tomate",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 3.95
+              }
+            ]
+          },
+          {
+            "name": "Lomo de Ciervo con Queso Asado y Cebolla Caramelizada",
+            "description": "Lomo de Ciervo con Queso Asado y Cebolla Caramelizada",
+            "es": "Lomo de Ciervo con Queso Asado y Cebolla Caramelizada",
+            "en": "Lomo de Ciervo con Queso Asado y Cebolla Caramelizada",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 3.95
+              }
+            ]
+          },
+          {
+            "name": "Salmón Ahumado",
+            "description": "Salmón Ahumado",
+            "es": "Salmón Ahumado",
+            "en": "Salmón Ahumado",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 3.95
+              }
+            ]
+          },
+          {
+            "name": "Salmón Ahumado con Queso Azul del Valle de los Pedroches",
+            "description": "Salmón Ahumado con Queso Azul del Valle de los Pedroches",
+            "es": "Salmón Ahumado con Queso Azul del Valle de los Pedroches",
+            "en": "Salmón Ahumado con Queso Azul del Valle de los Pedroches",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 3.95
+              }
+            ]
+          },
+          {
+            "name": "Sardina Ahumada con Salmorejo",
+            "description": "Sardina Ahumada con Salmorejo",
+            "es": "Sardina Ahumada con Salmorejo",
+            "en": "Sardina Ahumada con Salmorejo",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 3.95
+              }
+            ]
+          },
+          {
+            "name": "Tartar de Atún",
+            "description": "Tartar de Atún",
+            "es": "Tartar de Atún",
+            "en": "Tartar de Atún",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 4.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Risottos y pastas",
+        "items": [
+          {
+            "name": "Risotto de Boletus y Setas",
+            "description": "Risotto de Boletus y Setas",
+            "es": "Risotto de Boletus y Setas",
+            "en": "Risotto de Boletus y Setas",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 10.75
+              }
+            ]
+          },
+          {
+            "name": "Risotto de Rabo de Toro",
+            "description": "Risotto de Rabo de Toro",
+            "es": "Risotto de Rabo de Toro",
+            "en": "Risotto de Rabo de Toro",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 11.95
+              }
+            ]
+          },
+          {
+            "name": "Risotto de Bacalao con Sardina Ahumada",
+            "description": "Risotto de Bacalao con Sardina Ahumada",
+            "es": "Risotto de Bacalao con Sardina Ahumada",
+            "en": "Risotto de Bacalao con Sardina Ahumada",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 11.95
+              }
+            ]
+          },
+          {
+            "name": "Espaguetis a la Carbonara",
+            "description": "Espaguetis a la Carbonara",
+            "es": "Espaguetis a la Carbonara",
+            "en": "Espaguetis a la Carbonara",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 7.95
+              }
+            ]
+          },
+          {
+            "name": "Espaguetis a la Boloñesa",
+            "description": "Espaguetis a la Boloñesa",
+            "es": "Espaguetis a la Boloñesa",
+            "en": "Espaguetis a la Boloñesa",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 7.95
               }
             ]
           }
