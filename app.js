@@ -218,6 +218,7 @@ function venueMenuPriceLabel(source,english){
 }
 function refreshDishExplanations(){
  const english=window.HelioGastroLanguage?.get()==='en';
+ document.querySelectorAll('[data-set-menu-es]').forEach(node=>{node.textContent=english?node.dataset.setMenuEn:node.dataset.setMenuEs;});
  document.querySelectorAll('[data-source-audit-title]').forEach(node=>{node.textContent=english?'Source documentation (expand)':'Documentación de fuentes (desplegar)';});
  document.querySelectorAll('[data-official-menus-heading]').forEach(node=>{node.textContent=english?'Official menus':'Cartas oficiales';});
  document.querySelectorAll('[data-official-menu-notice-es]').forEach(node=>{node.textContent=english?node.dataset.officialMenuNoticeEn:node.dataset.officialMenuNoticeEs;});
@@ -740,6 +741,17 @@ function showPlace(p,scroll=true){
  panel.append(mapButton(p));
  const map=document.createElement('a');map.href=placeMapUrl(p);map.target='_blank';map.rel='noopener noreferrer';map.textContent='Abrir en Google Maps ↗';panel.append(map);
  if(p.menuPriceNotice){const notice=document.createElement('p');notice.className='service-notice';notice.textContent=p.menuPriceNotice;panel.append(notice);}
+ if(Array.isArray(p.officialSetMenus)&&p.officialSetMenus.length){
+  for(const menu of p.officialSetMenus){
+    const section=document.createElement('section');section.className='menu-dish';
+    const title=document.createElement('h3');title.dataset.setMenuEs=menu.name;title.dataset.setMenuEn=menu.nameEn;title.textContent=window.HelioGastroLanguage?.get()==='en'?menu.nameEn:menu.name;section.append(title);
+    const amount=document.createElement('strong');amount.textContent=fmt(menu.price)+' · 2026';section.append(amount);
+    const blocks=[['Platos a elegir','Dishes to choose from',menu.choiceOptions],['Postre a elegir','Dessert choices',menu.dessertOptions],['Bebidas incluidas (una a elegir)','Included drinks (choose one)',menu.drinkOptions]];
+    for(const [es,en,items] of blocks){const heading=document.createElement('p');heading.dataset.setMenuEs=es;heading.dataset.setMenuEn=en;heading.textContent=window.HelioGastroLanguage?.get()==='en'?en:es;section.append(heading);const list=document.createElement('ul');for(const name of items){const li=document.createElement('li');li.textContent=name;li.dataset.keepDishSpanish='';list.append(li)}section.append(list);}
+    const notice=document.createElement('p');notice.className='note';notice.dataset.setMenuEs=menu.noteEs;notice.dataset.setMenuEn=menu.noteEn;notice.textContent=window.HelioGastroLanguage?.get()==='en'?menu.noteEn:menu.noteEs;section.append(notice);
+    panel.append(section);
+  }
+ }
  if(Array.isArray(p.officialMenuLinks)&&p.officialMenuLinks.length){
   const english=window.HelioGastroLanguage?.get()==='en';
   const section=document.createElement('section');section.className='official-menu-resources';
