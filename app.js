@@ -599,6 +599,39 @@ function menuGroups(p){
  });
  return {groups,unpriced};
 }
+const BEATILLAS_GROUP_DISH_EN={
+ "Aceitunas de temporada": "Seasonal olives",
+ "Almendras fritas": "Fried almonds",
+ "Surtido de ibéricos": "Assortment of Iberian cured meats",
+ "Salmorejo cordobés": "Traditional chilled Cordoban tomato-and-bread cream",
+ "Berenjenas fritas": "Fried aubergines",
+ "Revuelto de espárragos trigueros": "Scrambled eggs with wild asparagus",
+ "Croquetas de salmón": "Salmon croquettes",
+ "Carrillada ibérica en salsa (con patatitas salteadas)": "Iberian pork cheeks in sauce with sautéed potatoes",
+ "Pez espada (con verduritas salteadas)": "Swordfish with sautéed vegetables",
+ "Surtido de pastelería": "Assortment of pastries",
+ "Jamón ibérico": "Iberian cured ham",
+ "Queso de oveja curado": "Aged sheep's milk cheese",
+ "Ensaladilla de gambas": "Prawn potato salad",
+ "Revuelto de boletus": "Scrambled eggs with porcini mushrooms",
+ "Fritos de pescado": "Assortment of fried fish",
+ "Croquetas de jamón": "Ham croquettes",
+ "Lomo de bacalao al pilpil": "Cod loin with pil-pil sauce",
+ "Presa ibérica": "Iberian pork presa cut",
+ "Ensalada de pimientos con ventresca y huevo duro": "Pepper salad with tuna belly and hard-boiled egg",
+ "Mazamorra cordobesa con uvas pasas y manzana": "Cordoban chilled almond-and-bread cream with raisins and apple",
+ "Habas finas con jamón": "Broad beans with cured ham",
+ "Croquetas de espinacas y piñones": "Spinach and pine-nut croquettes",
+ "Suprema de salmón con salsa de gambas": "Salmon fillet with prawn sauce",
+ "Solomillo ibérico con salsa de setas": "Iberian pork tenderloin with mushroom sauce",
+ "Aceitunas deshuesadas": "Pitted olives",
+ "Patatas fritas": "Fried potatoes",
+ "Croquetitas de jamón": "Small ham croquettes",
+ "Calamaritos fritos": "Small fried squid",
+ "Pechuga de pollo empanada": "Breaded chicken breast",
+ "Pechuga de pollo a la plancha": "Grilled chicken breast",
+ "Tarta de comunión y helado": "Celebration cake and ice cream"
+};
 function renderBeatillasGroupMenus(panel,p){
  if(p.id!=='rincon-beatillas')return;
  const menus=p.groupMenuRecords||[];
@@ -621,7 +654,19 @@ function renderBeatillasGroupMenus(panel,p){
   for(const [key,names] of Object.entries(headings)){
    const items=menu.menuCourses[key]||[];if(!items.length)continue;
    const label=document.createElement('p');label.className='note';label.dataset.groupMenuLabelEs=names[0];label.dataset.groupMenuLabelEn=names[1];label.textContent=window.HelioGastroLanguage?.get()==='en'?names[1]:names[0];card.append(label);
-   const list=document.createElement('ul');for(const item of items){const li=document.createElement('li');li.dataset.keepDishSpanish='';li.textContent=item;list.append(li)}card.append(list);
+   const list=document.createElement('ul');
+   for(const item of items){
+    const li=document.createElement('li');
+    const name=document.createElement('span');name.dataset.keepDishSpanish='';name.textContent=item;li.append(name);
+    const explanation=BEATILLAS_GROUP_DISH_EN[item];
+    if(explanation){
+     const detail=document.createElement('small');detail.className='dish-explanation detail-dish-explanation';
+     detail.dataset.dishExplanation='';detail.dataset.explanationLanguage='en';detail.textContent=explanation;
+     detail.hidden=window.HelioGastroLanguage?.get()!=='en';li.append(detail);
+    }
+    list.append(li);
+   }
+   card.append(list);
   }
   if(menu.beveragesIncluded){
    const b=document.createElement('p');b.className='note';b.dataset.groupMenuLabelEs='Bebidas incluidas: '+menu.beveragesIncluded;b.dataset.groupMenuLabelEn='Drinks included: '+(menu.service==='Menú infantil (2025)'?'mineral water and two soft drinks':'beer, Montilla-Moriles wine, Rioja red wine, mineral water and cava from Bodegas Faustino');
