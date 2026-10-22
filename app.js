@@ -218,6 +218,9 @@ function venueMenuPriceLabel(source,english){
 }
 function refreshDishExplanations(){
  const english=window.HelioGastroLanguage?.get()==='en';
+ document.querySelectorAll('[data-official-menus-heading]').forEach(node=>{node.textContent=english?'Official menus':'Cartas oficiales';});
+ document.querySelectorAll('[data-official-menu-notice-es]').forEach(node=>{node.textContent=english?node.dataset.officialMenuNoticeEn:node.dataset.officialMenuNoticeEs;});
+ document.querySelectorAll('[data-official-menu-es]').forEach(node=>{node.textContent=(english?node.dataset.officialMenuEn:node.dataset.officialMenuEs)+' ↗';});
  document.querySelectorAll('[data-specialties-es]').forEach(node=>{node.textContent=english?node.dataset.specialtiesEn:node.dataset.specialtiesEs;});
  document.querySelectorAll('[data-dish-explanation]').forEach(node=>{node.hidden=node.dataset.explanationLanguage?node.dataset.explanationLanguage!==(english?'en':'es'):!english;});
  document.querySelectorAll('[data-venue-menu-section]').forEach(node=>{node.textContent=english?(VENUE_MENU_SECTION_EN[node.dataset.venueMenuSection]||node.dataset.venueMenuSection):node.dataset.venueMenuSection;});
@@ -736,6 +739,16 @@ function showPlace(p,scroll=true){
  panel.append(mapButton(p));
  const map=document.createElement('a');map.href=placeMapUrl(p);map.target='_blank';map.rel='noopener noreferrer';map.textContent='Abrir en Google Maps ↗';panel.append(map);
  if(p.menuPriceNotice){const notice=document.createElement('p');notice.className='service-notice';notice.textContent=p.menuPriceNotice;panel.append(notice);}
+ if(Array.isArray(p.officialMenuLinks)&&p.officialMenuLinks.length){
+  const english=window.HelioGastroLanguage?.get()==='en';
+  const section=document.createElement('section');section.className='official-menu-resources';
+  const heading=document.createElement('h3');heading.dataset.officialMenusHeading='1';heading.textContent=english?'Official menus':'Cartas oficiales';section.append(heading);
+  const note=document.createElement('p');note.className='service-notice';note.dataset.officialMenuNoticeEs=p.officialMenuNoticeEs||'';note.dataset.officialMenuNoticeEn=p.officialMenuNoticeEn||'';note.textContent=english?note.dataset.officialMenuNoticeEn:note.dataset.officialMenuNoticeEs;section.append(note);
+  const links=document.createElement('div');links.className='menu-groups';
+  for(const m of p.officialMenuLinks){if(!/^https:\/\//.test(m.url))continue;
+    const a=document.createElement('a');a.href=m.url;a.target='_blank';a.rel='noopener noreferrer';a.className='detail-source';a.dataset.officialMenuEs=m.es;a.dataset.officialMenuEn=m.en||m.es;a.textContent=(english?a.dataset.officialMenuEn:a.dataset.officialMenuEs)+' ↗';links.append(a);}
+  section.append(links);panel.append(section);
+ }
  if(p.id==='casa-rubio'&&p.menuNotes?.length){const note=document.createElement('p');note.className='note';note.textContent=p.menuNotes[0];panel.append(note);}
  if(Array.isArray(p.menuSections)&&p.menuSections.length){renderVenueMenuSections(panel,p);renderBeatillasGroupMenus(panel,p);}
  else {
