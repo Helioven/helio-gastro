@@ -19827,7 +19827,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Jamón ibérico 100 % cortado al momento, con opciones de 60 y 100 gramos."
           },
           {
             "name": "Queso curado de oveja de Córdoba (100/150 g)",
@@ -19844,7 +19845,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Queso curado de oveja de Córdoba, en cantidades de 100 y 150 gramos."
           },
           {
             "name": "Mixto de jamón ibérico y queso de oveja (90/160 g)",
@@ -19861,7 +19863,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Selección conjunta de jamón ibérico y queso de oveja, en cantidades de 90 y 160 gramos."
           },
           {
             "name": "Salmorejo cordobés con jamón y huevo",
@@ -19874,7 +19877,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Salmorejo cordobés acompañado de jamón y huevo."
           },
           {
             "name": "Mazamorra con manzana verde y pasas al PX",
@@ -19887,7 +19891,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Mazamorra acompañada de manzana verde y pasas al vino Pedro Ximénez."
           },
           {
             "name": "Nuestra ensaladilla de atún con carpaccio de pulpo y pimentón (200/300 g)",
@@ -19904,7 +19909,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Ensaladilla de atún con carpaccio de pulpo y pimentón, en cantidades de 200 y 300 gramos."
           },
           {
             "name": "Las bravas de Rubio con espuma de alioli",
@@ -19921,7 +19927,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Patatas bravas al estilo de Casa Rubio con espuma de alioli."
           },
           {
             "name": "Oreja frita en adobo y salsa brava (150 g)",
@@ -19934,7 +19941,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Oreja de cerdo frita en adobo con salsa brava; cantidad indicada de 150 gramos."
           },
           {
             "name": "Berenjenas abuñueladas con miel de caña",
@@ -19951,7 +19959,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Berenjenas fritas en forma de buñuelo acompañadas de miel de caña."
           },
           {
             "name": "Croquetas de puchero y jamón ibérico (6/9 unidades)",
@@ -19968,7 +19977,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Croquetas de puchero y jamón ibérico, en raciones de seis o nueve unidades."
           },
           {
             "name": "Flamenquín cordobés con polvo de parmesano y patatas",
@@ -19981,7 +19991,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Flamenquín cordobés acompañado de polvo de parmesano y patatas."
           }
         ]
       },
@@ -19999,7 +20010,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Ensalada elaborada con hortalizas de temporada."
           },
           {
             "name": "Ensalada de salmón ahumado, aguacate y vinagreta de lima",
@@ -20012,7 +20024,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Ensalada de salmón ahumado y aguacate con vinagreta de lima."
           },
           {
             "name": "Puerros confitados y asados, carbonara, parmesano y torreznos fritos (1/2 unidades)",
@@ -20029,7 +20042,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Puerros confitados y asados con carbonara, parmesano y torreznos fritos, en opciones de una o dos unidades."
           },
           {
             "name": "Alcachofas con bechamel de foie y jamón ibérico (2 unidades)",
@@ -20042,7 +20056,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Alcachofas con bechamel de foie y jamón ibérico; dos unidades."
           }
         ]
       },
@@ -20060,7 +20075,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Atún rojo de almadraba acompañado de verduras de temporada salteadas."
           },
           {
             "name": "Bacalao premium con salsa de tomate y judías salteadas",
@@ -20073,7 +20089,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Bacalao con salsa de tomate y judías salteadas."
           },
           {
             "name": "Pisto de verduras con tomate y gamba cristal frita",
@@ -20090,7 +20107,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Pisto de verduras con tomate acompañado de gamba cristal frita."
           },
           {
             "name": "Rosada al limón frita y ensalada de col (140/240 g)",
@@ -20107,7 +20125,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Rosada frita al limón con ensalada de col, en cantidades de 140 y 240 gramos."
           },
           {
             "name": "Calamares fritos y mayonesa cítrica (120/220 g)",
@@ -20124,7 +20143,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Calamares fritos con mayonesa cítrica, en cantidades de 120 y 220 gramos."
           }
         ]
       },
@@ -20146,7 +20166,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Rabo de toro estofado con patatas, en cantidades de 240 y 360 gramos."
           },
           {
             "name": "Albóndigas de vaca en salsa con parmentier de patata (3/5 unidades)",
@@ -20163,7 +20184,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Albóndigas de vaca en salsa con parmentier de patata, en raciones de tres o cinco unidades."
           },
           {
             "name": "Jarrete de cordero al estilo sefardí y cuscús de verduras",
@@ -20176,7 +20198,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Jarrete de cordero al estilo sefardí acompañado de cuscús de verduras."
           },
           {
             "name": "Solomillo 100% ibérico de bellota con salsa verde (200 g)",
@@ -20189,7 +20212,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Solomillo de cerdo ibérico 100 % de bellota con salsa verde; cantidad indicada de 200 gramos."
           },
           {
             "name": "Pluma ibérica 100% de bellota con pimientos de piquillo confitados (200 g)",
@@ -20202,7 +20226,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Pluma de cerdo ibérico 100 % de bellota con pimientos de piquillo confitados; cantidad indicada de 200 gramos."
           },
           {
             "name": "Lomo de vaca dry aged (300 g)",
@@ -20215,7 +20240,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Lomo de vaca madurado en seco; cantidad indicada de 300 gramos."
           },
           {
             "name": "Cochinillo asado en dos cocciones (para dos personas, en cuartos)",
@@ -20228,7 +20254,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Cochinillo asado en dos cocciones, presentado en cuartos para dos personas."
           },
           {
             "name": "Secreto ibérico de bellota a la plancha, salsa de vino de Montilla y espárragos salteados (200 g)",
@@ -20241,7 +20268,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Secreto ibérico de bellota a la plancha con salsa de vino de Montilla y espárragos salteados; 200 gramos."
           }
         ]
       },
@@ -20259,7 +20287,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Torrija de pan brioche acompañada de helado de leche merengada."
           },
           {
             "name": "Tarta de queso casera muy cremosa con queso azul",
@@ -20272,7 +20301,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Tarta de queso casera muy cremosa elaborada con queso azul."
           },
           {
             "name": "Brownie con helado de vainilla",
@@ -20285,7 +20315,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Brownie acompañado de helado de vainilla."
           },
           {
             "name": "Flan de vainilla con helado de galleta",
@@ -20298,7 +20329,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Flan de vainilla acompañado de helado de galleta."
           },
           {
             "name": "Tocino de cielo y sorbete de limón",
@@ -20311,7 +20343,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Tocino de cielo acompañado de sorbete de limón."
           },
           {
             "name": "Pastel cordobés con helado de avellana",
@@ -20324,7 +20357,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Pastel cordobés acompañado de helado de avellana."
           },
           {
             "name": "Helado de turrón",
@@ -20337,7 +20371,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Helado de sabor turrón."
           }
         ]
       },
@@ -20355,7 +20390,8 @@
               }
             ],
             "priceStatus": "historical_2025_10",
-            "availability": "unconfirmed"
+            "availability": "unconfirmed",
+            "es": "Cesta de pan y picos, indicada como acompañamiento."
           }
         ]
       }
