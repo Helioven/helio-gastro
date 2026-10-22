@@ -23750,7 +23750,9 @@
     ],
     "menuDisclaimer": "Los platos mostrados proceden de las cartas oficiales de Bar y Restaurante publicadas en febrero de 2023, las únicas que hemos podido documentar. Los precios están pendientes de actualización y algunos platos podrían haber cambiado o dejado de estar disponibles. Recomendamos consultar directamente con el establecimiento antes de acudir.",
     "menuDisclaimerEn": "The dishes listed come from the restaurant's official Bar and Restaurant menus dated February 2023, the only versions we could document. Prices require updating and some dishes may have changed or no longer be available. Please confirm directly with the restaurant before visiting.",
-    "menuSourceNote": "Transcripción de Carta-Bar-Febrero-2023.pdf (2 páginas) y Carta-Rte.-Febrero-2023.pdf (2 páginas), facilitados por el usuario. Los precios de 2023 no se muestran como actuales. No hay información de alérgenos en los documentos. Servicio de pan 1,80 € en la carta histórica del restaurante, precio no vigente."
+    "menuSourceNote": "Transcripción de Carta-Bar-Febrero-2023.pdf (2 páginas) y Carta-Rte.-Febrero-2023.pdf (2 páginas), facilitados por el usuario. Los precios de 2023 no se muestran como actuales. No hay información de alérgenos en los documentos. Servicio de pan 1,80 € en la carta histórica del restaurante, precio no vigente.",
+    "hidden": true,
+    "visibilityNote": "Oculto provisionalmente el 22/10/2026 por indicación de cierre temporal; conservar ficha y fuentes para posible reapertura. Revalidar actividad y carta antes de mostrar de nuevo."
   },
   {
     "id": "rincon-beatillas",
