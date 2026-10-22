@@ -201,6 +201,8 @@ function refreshDishExplanations(){
  const english=window.HelioGastroLanguage?.get()==='en';
  document.querySelectorAll('[data-dish-explanation]').forEach(node=>{node.hidden=!english;});
  document.querySelectorAll('[data-group-menu-includes]').forEach(node=>{node.textContent=english&&node.dataset.en?node.dataset.en:node.dataset.es;});
+ document.querySelectorAll('[data-group-menu-heading]').forEach(node=>{node.textContent=node.dataset.menuName+' · '+node.dataset.menuPrice+(english?'/person · minimum '+node.dataset.menuMin+' guests':'/persona · mínimo '+node.dataset.menuMin+' comensales');});
+ document.querySelectorAll('[data-group-menu-dessert]').forEach(node=>{if(node.firstChild?.nodeType===Node.TEXT_NODE)node.firstChild.textContent=english?'Dessert: ':'Postre: ';});
  const help=el('portion-help');if(help)help.hidden=!english;
 }
 const DISH_ICONS={
@@ -647,11 +649,11 @@ function showPlace(p,scroll=true){
   const label=document.createElement('h3');label.textContent='Menús para grupos';panel.append(label);
   for(const m of p.groupMenus){
    const card=document.createElement('section');card.className='menu-dish';
-   const heading=document.createElement('h4');heading.textContent=m.name+' · '+fmt(m.eurPerPerson)+'/persona · mínimo '+m.minPeople+' comensales';card.append(heading);
+   const heading=document.createElement('h4');heading.dataset.groupMenuHeading='';heading.dataset.menuName=m.name;heading.dataset.menuPrice=fmt(m.eurPerPerson);heading.dataset.menuMin=String(m.minPeople);heading.textContent=m.name+' · '+fmt(m.eurPerPerson)+'/persona · mínimo '+m.minPeople+' comensales';card.append(heading);
    const addList=(headingText,values,englishValues)=>{if(!Array.isArray(values)||!values.length)return;const h=document.createElement('strong');h.textContent=headingText;card.append(h);const ul=document.createElement('ul');for(const [i,value] of values.entries()){const li=document.createElement('li');const name=document.createElement('span');name.dataset.keepDishSpanish='';name.textContent=value;li.append(name);if(englishValues?.[i]){const desc=document.createElement('small');desc.className='dish-explanation detail-dish-explanation';desc.dataset.dishExplanation='';desc.textContent=englishValues[i];desc.hidden=window.HelioGastroLanguage?.get()!=='en';li.append(desc)}ul.append(li)}card.append(ul)};
    addList('Platos para compartir',m.shared,m.sharedEn);
    addList('Plato a elegir',m.choice,m.choiceEn);
-   if(m.dessert){const d=document.createElement('p');d.textContent='Postre: ';const name=document.createElement('span');name.dataset.keepDishSpanish='';name.textContent=m.dessert;d.append(name);if(m.dessertEn){const desc=document.createElement('small');desc.className='dish-explanation detail-dish-explanation';desc.dataset.dishExplanation='';desc.textContent=m.dessertEn;desc.hidden=window.HelioGastroLanguage?.get()!=='en';d.append(desc)}card.append(d)}
+   if(m.dessert){const d=document.createElement('p');d.textContent='Postre: ';d.dataset.groupMenuDessert='';const name=document.createElement('span');name.dataset.keepDishSpanish='';name.textContent=m.dessert;d.append(name);if(m.dessertEn){const desc=document.createElement('small');desc.className='dish-explanation detail-dish-explanation';desc.dataset.dishExplanation='';desc.textContent=m.dessertEn;desc.hidden=window.HelioGastroLanguage?.get()!=='en';d.append(desc)}card.append(d)}
    if(m.includes){const note=document.createElement('p');note.className='note';note.textContent=window.HelioGastroLanguage?.get()==='en'&&m.includesEn?m.includesEn:m.includes;note.dataset.groupMenuIncludes='';note.dataset.es=m.includes;note.dataset.en=m.includesEn||'';card.append(note)}
    if(m.sourceUrl){const link=document.createElement('a');link.href=m.sourceUrl;link.target='_blank';link.rel='noopener noreferrer';link.textContent='Ver PDF oficial del menú';card.append(link)}
    panel.append(card);
