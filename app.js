@@ -204,7 +204,9 @@ const VENUE_MENU_SECTION_EN={
  'Entrantes, fríos y ensaladas':'Starters, cold dishes and salads',
  'Guisos y carnes':'Stews and meat dishes',
  'Verduras, huevos y frituras':'Vegetables, eggs and fried dishes',
- 'Pescados y mariscos':'Fish and seafood','Postres':'Desserts'
+ 'Pescados y mariscos':'Fish and seafood','Postres':'Desserts',
+ 'Platos':'Main dishes','Entremeses':'Appetizers','Ensaladas y Verduras':'Salads and vegetables',
+ 'Sopas y revueltos':'Soups and scrambled egg dishes'
 };
 function venueMenuPriceLabel(source,english){
  if(!english)return source;
