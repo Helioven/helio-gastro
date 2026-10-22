@@ -3074,7 +3074,8 @@
                 "eur": 7
               }
             ],
-            "en": "Traditional Cordoban salmorejo with boiled egg and ham"
+            "en": "Traditional Cordoban salmorejo with boiled egg and ham",
+            "es": "Salmorejo cordobés acompañado de huevo cocido y jamón."
           },
           {
             "name": "Ensaladilla Rusa",
@@ -3085,7 +3086,8 @@
                 "eur": 8
               }
             ],
-            "en": "Russian-style potato salad"
+            "en": "Russian-style potato salad",
+            "es": "Ensaladilla rusa; la carta no detalla sus ingredientes."
           },
           {
             "name": "Parrillada de Verdura",
@@ -3096,7 +3098,8 @@
                 "eur": 12
               }
             ],
-            "en": "Grilled mixed vegetables"
+            "en": "Grilled mixed vegetables",
+            "es": "Selección de verduras a la parrilla."
           },
           {
             "name": "Setas a la Plancha con Jamón",
@@ -3107,14 +3110,16 @@
                 "eur": 12
               }
             ],
-            "en": "Griddled mushrooms with ham"
+            "en": "Griddled mushrooms with ham",
+            "es": "Setas cocinadas a la plancha con jamón."
           },
           {
             "name": "Boquerones en Vinagre con Cebolla Morada y AOVE",
             "description": "Boquerones en Vinagre con Cebolla Morada y AOVE",
             "prices": [],
             "note": "Just Eat indicaba «No disponible» en la consulta del 20/10/2026; no implica retirada permanente.",
-            "en": "Vinegar-marinated anchovies with red onion and extra virgin olive oil"
+            "en": "Vinegar-marinated anchovies with red onion and extra virgin olive oil",
+            "es": "Boquerones marinados en vinagre con cebolla morada y aceite de oliva virgen extra."
           }
         ]
       },
@@ -3130,7 +3135,8 @@
                 "eur": 9
               }
             ],
-            "en": "Tomato and mackerel salad"
+            "en": "Tomato and mackerel salad",
+            "es": "Ensalada de tomate y caballa."
           },
           {
             "name": "Ensalada de Ahumados",
@@ -3141,7 +3147,8 @@
                 "eur": 10
               }
             ],
-            "en": "Smoked-food salad (ingredients not specified)"
+            "en": "Smoked-food salad (ingredients not specified)",
+            "es": "Ensalada de ahumados; la carta no especifica sus ingredientes."
           },
           {
             "name": "Ensalada de Remojón de Bacalao con Naranja",
@@ -3152,7 +3159,8 @@
                 "eur": 12
               }
             ],
-            "en": "Cod and orange remojón salad"
+            "en": "Cod and orange remojón salad",
+            "es": "Ensalada de remojón con bacalao y naranja."
           },
           {
             "name": "Ensalada de Perdiz",
@@ -3163,7 +3171,8 @@
                 "eur": 12
               }
             ],
-            "en": "Partridge salad"
+            "en": "Partridge salad",
+            "es": "Ensalada de perdiz; la carta no detalla otros ingredientes."
           },
           {
             "name": "Ensalada Caprese",
@@ -3174,7 +3183,8 @@
                 "eur": 12
               }
             ],
-            "en": "Caprese salad"
+            "en": "Caprese salad",
+            "es": "Ensalada caprese; la carta no detalla su composición."
           }
         ]
       },
@@ -3190,7 +3200,8 @@
                 "eur": 9
               }
             ],
-            "en": "Scrambled eggs with potatoes and ham"
+            "en": "Scrambled eggs with potatoes and ham",
+            "es": "Revuelto de huevos con patatas y jamón."
           },
           {
             "name": "Revuelto de Bacalao con Gambas",
@@ -3201,7 +3212,8 @@
                 "eur": 10
               }
             ],
-            "en": "Scrambled eggs with cod and prawns"
+            "en": "Scrambled eggs with cod and prawns",
+            "es": "Revuelto de huevos con bacalao y gambas."
           },
           {
             "name": "Revuelto de Habitas Baby con Jamón y Foie",
@@ -3212,7 +3224,8 @@
                 "eur": 12
               }
             ],
-            "en": "Scrambled eggs with baby broad beans, ham and foie gras"
+            "en": "Scrambled eggs with baby broad beans, ham and foie gras",
+            "es": "Revuelto de huevos con habitas baby, jamón y foie."
           }
         ]
       },
@@ -3228,7 +3241,8 @@
                 "eur": 5
               }
             ],
-            "en": "Patatas bravas"
+            "en": "Spanish-style patatas bravas; sauce ingredients are not specified.",
+            "es": "Patatas bravas; la carta no especifica los ingredientes de la salsa."
           },
           {
             "name": "Patatas Roquefort",
@@ -3239,7 +3253,8 @@
                 "eur": 5
               }
             ],
-            "en": "Potatoes with Roquefort cheese"
+            "en": "Potatoes with Roquefort cheese",
+            "es": "Patatas acompañadas de queso roquefort."
           },
           {
             "name": "Berenjenas Califales en Tempura con Miel de Caña y Sésamo",
@@ -3250,7 +3265,8 @@
                 "eur": 9
               }
             ],
-            "en": "Caliphal-style tempura aubergines with cane syrup and sesame"
+            "en": "Caliphal-style tempura aubergines with cane syrup and sesame",
+            "es": "Berenjenas al estilo califal rebozadas en tempura con miel de caña y sésamo."
           },
           {
             "name": "Flamenquín de Jamón",
@@ -3261,7 +3277,8 @@
                 "eur": 9.5
               }
             ],
-            "en": "Ham flamenquín"
+            "en": "Ham flamenquín",
+            "es": "Flamenquín relleno de jamón."
           },
           {
             "name": "Flamenquín de Jamón y Queso",
@@ -3272,7 +3289,8 @@
                 "eur": 9.5
               }
             ],
-            "en": "Ham and cheese flamenquín"
+            "en": "Ham and cheese flamenquín",
+            "es": "Flamenquín relleno de jamón y queso."
           },
           {
             "name": "Croquetas de Rabo de Toro",
@@ -3283,7 +3301,8 @@
                 "eur": 10
               }
             ],
-            "en": "Oxtail croquettes"
+            "en": "Oxtail croquettes",
+            "es": "Croquetas de rabo de toro."
           },
           {
             "name": "Croquetas de Merluza",
@@ -3294,7 +3313,8 @@
                 "eur": 10
               }
             ],
-            "en": "Hake croquettes"
+            "en": "Hake croquettes",
+            "es": "Croquetas de merluza."
           },
           {
             "name": "Croquetas de Pringá",
@@ -3305,7 +3325,8 @@
                 "eur": 10
               }
             ],
-            "en": "Pringá croquettes (traditional stew-meat filling)"
+            "en": "Pringá croquettes (traditional stew-meat filling)",
+            "es": "Croquetas de pringá, el relleno tradicional de carnes del cocido."
           },
           {
             "name": "Cochifrito Ibérico del Valle de los Pedroches",
@@ -3316,7 +3337,8 @@
                 "eur": 12
               }
             ],
-            "en": "Iberian-style fried pork from Los Pedroches Valley"
+            "en": "Iberian-style fried pork from Los Pedroches Valley",
+            "es": "Cochifrito de cerdo ibérico del Valle de los Pedroches."
           }
         ]
       },
@@ -3332,7 +3354,8 @@
                 "eur": 10
               }
             ],
-            "en": "Tripe with chips"
+            "en": "Tripe with chips",
+            "es": "Callos acompañados de patatas fritas."
           },
           {
             "name": "Pisto con Huevos Fritos",
@@ -3343,7 +3366,8 @@
                 "eur": 10
               }
             ],
-            "en": "Vegetable pisto with fried eggs"
+            "en": "Vegetable pisto with fried eggs",
+            "es": "Pisto de verduras acompañado de huevos fritos."
           },
           {
             "name": "Manitas de Cerdo",
@@ -3354,7 +3378,8 @@
                 "eur": 12
               }
             ],
-            "en": "Pig's trotters"
+            "en": "Pig's trotters",
+            "es": "Manitas de cerdo; la carta no especifica la preparación."
           },
           {
             "name": "Carrillada Ibérica con Patatas Fritas",
@@ -3365,7 +3390,8 @@
                 "eur": 12
               }
             ],
-            "en": "Iberian pork cheeks with chips"
+            "en": "Iberian pork cheeks with chips",
+            "es": "Carrillada ibérica acompañada de patatas fritas."
           },
           {
             "name": "Alcachofas a la Montillana",
@@ -3376,7 +3402,8 @@
                 "eur": 12
               }
             ],
-            "en": "Montilla-style artichokes"
+            "en": "Montilla-style artichokes",
+            "es": "Alcachofas preparadas al estilo de Montilla."
           },
           {
             "name": "Solomillo al Whisky",
@@ -3387,7 +3414,8 @@
                 "eur": 13
               }
             ],
-            "en": "Pork tenderloin with whisky sauce"
+            "en": "Pork tenderloin with whisky sauce",
+            "es": "Solomillo con salsa al whisky."
           },
           {
             "name": "Puntas de Solomillo con Setas y Champiñones",
@@ -3398,7 +3426,8 @@
                 "eur": 14
               }
             ],
-            "en": "Tenderloin tips with wild and button mushrooms"
+            "en": "Tenderloin tips with wild and button mushrooms",
+            "es": "Puntas de solomillo con setas y champiñones."
           },
           {
             "name": "Rabo de Toro con Patatas",
@@ -3409,7 +3438,8 @@
                 "eur": 16
               }
             ],
-            "en": "Oxtail with potatoes"
+            "en": "Oxtail with potatoes",
+            "es": "Rabo de toro acompañado de patatas."
           }
         ]
       },
@@ -3425,7 +3455,8 @@
                 "eur": 6
               }
             ],
-            "en": "Fried squid"
+            "en": "Fried squid",
+            "es": "Calamares fritos."
           },
           {
             "name": "Bacalao Frito",
@@ -3436,7 +3467,8 @@
                 "eur": 6
               }
             ],
-            "en": "Fried cod"
+            "en": "Fried cod",
+            "es": "Bacalao frito."
           },
           {
             "name": "Lomo de Bacalao con Pisto",
@@ -3447,7 +3479,8 @@
                 "eur": 12
               }
             ],
-            "en": "Cod loin with pisto vegetables"
+            "en": "Cod loin with pisto vegetables",
+            "es": "Lomo de bacalao acompañado de pisto de verduras."
           },
           {
             "name": "Pulpo a la Gallega",
@@ -3458,14 +3491,16 @@
                 "eur": 14
               }
             ],
-            "en": "Galician-style octopus"
+            "en": "Galician-style octopus",
+            "es": "Pulpo preparado al estilo gallego."
           },
           {
             "name": "Boquerones Fritos",
             "description": "Boquerones Fritos",
             "prices": [],
             "note": "Just Eat indicaba «No disponible» en la consulta del 20/10/2026; no implica retirada permanente.",
-            "en": "Fried anchovies"
+            "en": "Fried anchovies",
+            "es": "Boquerones fritos."
           }
         ]
       },
@@ -3481,7 +3516,8 @@
                 "eur": 12
               }
             ],
-            "en": "Grilled pork steak"
+            "en": "Grilled pork steak",
+            "es": "Churrasco de cerdo a la parrilla."
           },
           {
             "name": "Presa Ibérica del Valle de los Pedroches",
@@ -3492,7 +3528,8 @@
                 "eur": 14
               }
             ],
-            "en": "Iberian pork shoulder cut from Los Pedroches Valley"
+            "en": "Iberian pork shoulder cut from Los Pedroches Valley",
+            "es": "Presa de cerdo ibérico del Valle de los Pedroches."
           },
           {
             "name": "Chuletillas de Cordero",
@@ -3503,7 +3540,8 @@
                 "eur": 16
               }
             ],
-            "en": "Lamb cutlets"
+            "en": "Lamb cutlets",
+            "es": "Chuletillas de cordero."
           },
           {
             "name": "Entrecote de Vaca",
@@ -3514,7 +3552,8 @@
                 "eur": 24
               }
             ],
-            "en": "Beef entrecôte"
+            "en": "Beef entrecôte",
+            "es": "Entrecot de vaca."
           }
         ]
       },
@@ -3530,7 +3569,8 @@
                 "eur": 4.5
               }
             ],
-            "en": "Tocinillo de cielo (traditional egg-yolk custard)"
+            "en": "Tocinillo de cielo (traditional egg-yolk custard)",
+            "es": "Tocinillo de cielo, postre tradicional elaborado con yemas de huevo."
           },
           {
             "name": "Tarta de Queso con Mermelada de Arándanos y Frutos Rojos",
@@ -3541,7 +3581,8 @@
                 "eur": 4.5
               }
             ],
-            "en": "Cheesecake with blueberry and mixed berry jam"
+            "en": "Cheesecake with blueberry and mixed berry jam",
+            "es": "Tarta de queso con mermelada de arándanos y frutos rojos."
           },
           {
             "name": "Tarta de Tres Chocolates",
@@ -3552,7 +3593,8 @@
                 "eur": 4.5
               }
             ],
-            "en": "Three-chocolate cake"
+            "en": "Three-chocolate cake",
+            "es": "Tarta de tres chocolates."
           },
           {
             "name": "Brownie de Chocolate con Helado de Vainilla",
@@ -3563,7 +3605,8 @@
                 "eur": 5.5
               }
             ],
-            "en": "Chocolate brownie with vanilla ice cream"
+            "en": "Chocolate brownie with vanilla ice cream",
+            "es": "Brownie de chocolate acompañado de helado de vainilla."
           },
           {
             "name": "Coulant de Chocolate con Helado de Vainilla",
@@ -3574,7 +3617,8 @@
                 "eur": 5.5
               }
             ],
-            "en": "Chocolate fondant with vanilla ice cream"
+            "en": "Chocolate fondant with vanilla ice cream",
+            "es": "Coulant de chocolate acompañado de helado de vainilla."
           }
         ]
       }
