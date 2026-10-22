@@ -218,6 +218,7 @@ function venueMenuPriceLabel(source,english){
 }
 function refreshDishExplanations(){
  const english=window.HelioGastroLanguage?.get()==='en';
+ document.querySelectorAll('[data-specialties-es]').forEach(node=>{node.textContent=english?node.dataset.specialtiesEn:node.dataset.specialtiesEs;});
  document.querySelectorAll('[data-dish-explanation]').forEach(node=>{node.hidden=node.dataset.explanationLanguage?node.dataset.explanationLanguage!==(english?'en':'es'):!english;});
  document.querySelectorAll('[data-venue-menu-section]').forEach(node=>{node.textContent=english?(VENUE_MENU_SECTION_EN[node.dataset.venueMenuSection]||node.dataset.venueMenuSection):node.dataset.venueMenuSection;});
  document.querySelectorAll('[data-venue-menu-price-label]').forEach(node=>{node.textContent=venueMenuPriceLabel(node.dataset.venueMenuPriceLabel,english);});
@@ -530,7 +531,11 @@ function draw(){
   } else {
    const dishes=document.createElement('p');
    const sample=p.dishes.slice(0,5);
-   dishes.textContent='Especialidades: '+sample.join(', ')+(p.dishes.length>5?'…':'');
+   const english=window.HelioGastroLanguage?.get()==='en';
+   const map={'Tapas tradicionales cordobesas':'Traditional Córdoba tapas','Montaditos clásicos':'Classic small sandwiches','Salazones y conservas':'Salt-cured foods and preserves','Cocina tradicional cordobesa y andaluza':'Traditional Córdoba and Andalusian cuisine','Tapas y platos tradicionales':'Traditional tapas and dishes'};
+   dishes.dataset.specialtiesEs='Especialidades: '+sample.join(', ')+(p.dishes.length>5?'…':'');
+   dishes.dataset.specialtiesEn='Specialties: '+sample.map(d=>map[d]||d).join(', ')+(p.dishes.length>5?'…':'');
+   dishes.textContent=english?dishes.dataset.specialtiesEn:dishes.dataset.specialtiesEs;
    card.append(dishes);
   }
   const chosen=relevantPrices(p,state.appliedTerm,state.appliedScope==='dish'?state.appliedPortion:'');
