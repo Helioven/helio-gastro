@@ -32015,7 +32015,7 @@
     "area": "Ribera · Guadalquivir",
     "address": "Paseo de la Ribera, 6, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
+    "priceStatus": "confirmed",
     "checkedAt": "2026-10-22",
     "sources": [
       {
@@ -32073,12 +32073,400 @@
     ],
     "menus": [
       {
-        "service": "general",
+        "service": "Ensaladas",
         "dishes": [
-          "Cocina tradicional cordobesa y andaluza",
-          "Tapas y platos tradicionales"
+          "Ave César",
+          "De la Casa",
+          "Moriles",
+          "Pimientos con Ventresca",
+          "Templada de Perdiz en Escabeche",
+          "Tropical",
+          "Zuheros",
+          "Cogollos al ajillo",
+          "Cogollos al ajillo con Salmón",
+          "Cogollos con Anchoas y Gulas al ajillo",
+          "Picadillo Cordobés con Ventresca",
+          "Tomate con Ventresca"
         ],
-        "dishPrices": []
+        "dishPrices": [
+          {
+            "dish": "Ave César",
+            "eur": 12.25,
+            "portion": "racion"
+          },
+          {
+            "dish": "Ave César",
+            "eur": 7.15,
+            "portion": "media"
+          },
+          {
+            "dish": "De la Casa",
+            "eur": 11.25,
+            "portion": "racion"
+          },
+          {
+            "dish": "De la Casa",
+            "eur": 6.6,
+            "portion": "media"
+          },
+          {
+            "dish": "Moriles",
+            "eur": 12.85,
+            "portion": "racion"
+          },
+          {
+            "dish": "Moriles",
+            "eur": 7.7,
+            "portion": "media"
+          },
+          {
+            "dish": "Pimientos con Ventresca",
+            "eur": 12.5,
+            "portion": "racion"
+          },
+          {
+            "dish": "Pimientos con Ventresca",
+            "eur": 7.5,
+            "portion": "media"
+          },
+          {
+            "dish": "Templada de Perdiz en Escabeche",
+            "eur": 14.6,
+            "portion": "racion"
+          },
+          {
+            "dish": "Templada de Perdiz en Escabeche",
+            "eur": 9.35,
+            "portion": "media"
+          },
+          {
+            "dish": "Tropical",
+            "eur": 12.6,
+            "portion": "racion"
+          },
+          {
+            "dish": "Tropical",
+            "eur": 7.65,
+            "portion": "media"
+          },
+          {
+            "dish": "Zuheros",
+            "eur": 13.6,
+            "portion": "racion"
+          },
+          {
+            "dish": "Zuheros",
+            "eur": 8.5,
+            "portion": "media"
+          },
+          {
+            "dish": "Cogollos al ajillo",
+            "eur": 7.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Cogollos al ajillo",
+            "eur": 5.15,
+            "portion": "media"
+          },
+          {
+            "dish": "Cogollos al ajillo con Salmón",
+            "eur": 14.8,
+            "portion": "racion"
+          },
+          {
+            "dish": "Cogollos al ajillo con Salmón",
+            "eur": 9.5,
+            "portion": "media"
+          },
+          {
+            "dish": "Cogollos con Anchoas y Gulas al ajillo",
+            "eur": 15.35,
+            "portion": "racion"
+          },
+          {
+            "dish": "Cogollos con Anchoas y Gulas al ajillo",
+            "eur": 9.85,
+            "portion": "media"
+          },
+          {
+            "dish": "Picadillo Cordobés con Ventresca",
+            "eur": 9.5,
+            "portion": "racion"
+          },
+          {
+            "dish": "Picadillo Cordobés con Ventresca",
+            "eur": 6.95,
+            "portion": "media"
+          },
+          {
+            "dish": "Tomate con Ventresca",
+            "eur": 10.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Tomate con Ventresca",
+            "eur": 6.95,
+            "portion": "media"
+          }
+        ]
+      },
+      {
+        "service": "Entrantes",
+        "dishes": [
+          "Boquerones en Vinagre",
+          "Croquetas de Boletus",
+          "Croquetas de Espinacas con Piñones",
+          "Croquetas de Jamón Ibérico",
+          "Croquetas de Rabo de Toro",
+          "Surtido de Croquetas",
+          "Ensaladilla Rusa con Salmón Ahumado",
+          "Gambas al ajillo",
+          "Hummus con crudités",
+          "Mazamorra Cordobesa",
+          "Migas Cortijeras",
+          "Naranja con Bacalao",
+          "Bravas muy Bravas",
+          "Patatas Ali-Oli",
+          "Salmorejo con Jamón",
+          "Salpicón de Marisco",
+          "Tartar de Atún",
+          "Tortilla de patatas al momento",
+          "Tortilla de patatas al momento con salmorejo y Jamón Ibérico",
+          "Tortilla de Camarones"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Boquerones en Vinagre",
+            "eur": 12.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Boquerones en Vinagre",
+            "eur": 9.5,
+            "portion": "media"
+          },
+          {
+            "dish": "Boquerones en Vinagre",
+            "eur": 4.45,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Croquetas de Boletus",
+            "eur": 12.3,
+            "portion": "racion"
+          },
+          {
+            "dish": "Croquetas de Boletus",
+            "eur": 7.15,
+            "portion": "media"
+          },
+          {
+            "dish": "Croquetas de Espinacas con Piñones",
+            "eur": 12.3,
+            "portion": "racion"
+          },
+          {
+            "dish": "Croquetas de Espinacas con Piñones",
+            "eur": 7.15,
+            "portion": "media"
+          },
+          {
+            "dish": "Croquetas de Jamón Ibérico",
+            "eur": 12.3,
+            "portion": "racion"
+          },
+          {
+            "dish": "Croquetas de Jamón Ibérico",
+            "eur": 7.15,
+            "portion": "media"
+          },
+          {
+            "dish": "Croquetas de Rabo de Toro",
+            "eur": 13.8,
+            "portion": "racion"
+          },
+          {
+            "dish": "Croquetas de Rabo de Toro",
+            "eur": 7.85,
+            "portion": "media"
+          },
+          {
+            "dish": "Surtido de Croquetas",
+            "eur": 13.25,
+            "portion": "racion"
+          },
+          {
+            "dish": "Ensaladilla Rusa con Salmón Ahumado",
+            "eur": 9.25,
+            "portion": "racion"
+          },
+          {
+            "dish": "Ensaladilla Rusa con Salmón Ahumado",
+            "eur": 7.2,
+            "portion": "media"
+          },
+          {
+            "dish": "Ensaladilla Rusa con Salmón Ahumado",
+            "eur": 3.65,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Gambas al ajillo",
+            "eur": 14.85,
+            "portion": "racion"
+          },
+          {
+            "dish": "Gambas al ajillo",
+            "eur": 10.65,
+            "portion": "media"
+          },
+          {
+            "dish": "Hummus con crudités",
+            "eur": 10.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Hummus con crudités",
+            "eur": 7.65,
+            "portion": "media"
+          },
+          {
+            "dish": "Hummus con crudités",
+            "eur": 3.9,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Mazamorra Cordobesa",
+            "eur": 10.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Mazamorra Cordobesa",
+            "eur": 7.65,
+            "portion": "media"
+          },
+          {
+            "dish": "Mazamorra Cordobesa",
+            "eur": 3.9,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Migas Cortijeras",
+            "eur": 9.25,
+            "portion": "racion"
+          },
+          {
+            "dish": "Migas Cortijeras",
+            "eur": 7.2,
+            "portion": "media"
+          },
+          {
+            "dish": "Migas Cortijeras",
+            "eur": 3.65,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Naranja con Bacalao",
+            "eur": 10.9,
+            "portion": "racion"
+          },
+          {
+            "dish": "Naranja con Bacalao",
+            "eur": 7,
+            "portion": "media"
+          },
+          {
+            "dish": "Naranja con Bacalao",
+            "eur": 3.9,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Bravas muy Bravas",
+            "eur": 8.45,
+            "portion": "racion"
+          },
+          {
+            "dish": "Bravas muy Bravas",
+            "eur": 6.4,
+            "portion": "media"
+          },
+          {
+            "dish": "Bravas muy Bravas",
+            "eur": 2.95,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Patatas Ali-Oli",
+            "eur": 7.65,
+            "portion": "racion"
+          },
+          {
+            "dish": "Patatas Ali-Oli",
+            "eur": 6.25,
+            "portion": "media"
+          },
+          {
+            "dish": "Patatas Ali-Oli",
+            "eur": 2.95,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Salmorejo con Jamón",
+            "eur": 9.85,
+            "portion": "racion"
+          },
+          {
+            "dish": "Salmorejo con Jamón",
+            "eur": 7.2,
+            "portion": "media"
+          },
+          {
+            "dish": "Salmorejo con Jamón",
+            "eur": 3.9,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Salpicón de Marisco",
+            "eur": 8.8,
+            "portion": "racion"
+          },
+          {
+            "dish": "Salpicón de Marisco",
+            "eur": 6.4,
+            "portion": "media"
+          },
+          {
+            "dish": "Salpicón de Marisco",
+            "eur": 3,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Tartar de Atún",
+            "eur": 21.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Tortilla de patatas al momento",
+            "eur": 4.6,
+            "portion": "racion"
+          },
+          {
+            "dish": "Tortilla de patatas al momento con salmorejo y Jamón Ibérico",
+            "eur": 7.7,
+            "portion": "racion"
+          },
+          {
+            "dish": "Tortilla de Camarones",
+            "eur": 11.25,
+            "portion": "racion"
+          },
+          {
+            "dish": "Tortilla de Camarones",
+            "eur": 7.65,
+            "portion": "media"
+          }
+        ]
       }
     ],
     "menuSourceNote": "Auditoría documental iniciada el 22/10/2026: seis láminas oficiales en español con precios, alojadas en carpetas de febrero y marzo 2026. La versión inglesa utiliza archivos de 2025 y presenta importes divergentes. Pendiente transcripción íntegra y validación de platos, precios y formatos ES/EN antes de sustituir la ficha preliminar; no copiar carta de los otros Moriles ni publicar una carta parcial. Fuentes complementarias localizadas 22/10/2026: menú Tapas Cordobesas (15,95 € en lámina consultada), cafés/chocolates, postres, versiones inglesas y glosario. Se conservarán separadas las cartas por servicios y los menús cerrados; falta transcripción integral y control de importes antes de publicar.",
@@ -32120,7 +32508,557 @@
       }
     ],
     "officialMenuNoticeEs": "Cartas oficiales del establecimiento, publicadas como imágenes. Consulta platos y precios directamente en las cartas enlazadas. La transcripción detallada a Helio Gastro está pendiente. La carta inglesa puede pertenecer a una edición anterior: comprueba los importes en la carta española y su vigencia con el local.",
-    "officialMenuNoticeEn": "Official restaurant menus published as images. View dishes and prices in the linked menus. Item-by-item transcription into Helio Gastro is pending. The English menu may be from an older edition: check prices against the Spanish menu and confirm current validity with the restaurant."
+    "officialMenuNoticeEn": "Official restaurant menus published as images. View dishes and prices in the linked menus. Item-by-item transcription into Helio Gastro is pending. The English menu may be from an older edition: check prices against the Spanish menu and confirm current validity with the restaurant.",
+    "menuSections": [
+      {
+        "title": "Ensaladas",
+        "items": [
+          {
+            "name": "Ave César",
+            "description": "Lechuga romana, tomate cherry, aceitunas negras, picatostes, pollo empanado y salsa César",
+            "es": "Lechuga romana, tomate cherry, aceitunas negras, picatostes, pollo empanado y salsa César",
+            "en": "Lechuga romana, tomate cherry, aceitunas negras, picatostes, pollo empanado y salsa César",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 12.25
+              },
+              {
+                "label": "Media ración",
+                "eur": 7.15
+              }
+            ]
+          },
+          {
+            "name": "De la Casa",
+            "description": "Lechuga, tomate, cebolla, pimiento, maíz, atún y espárragos blancos",
+            "es": "Lechuga, tomate, cebolla, pimiento, maíz, atún y espárragos blancos",
+            "en": "Lechuga, tomate, cebolla, pimiento, maíz, atún y espárragos blancos",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 11.25
+              },
+              {
+                "label": "Media ración",
+                "eur": 6.6
+              }
+            ]
+          },
+          {
+            "name": "Moriles",
+            "description": "Jamón ibérico, queso puro de oveja, tomate rosa, lechuga romana y aceitunas negras",
+            "es": "Jamón ibérico, queso puro de oveja, tomate rosa, lechuga romana y aceitunas negras",
+            "en": "Jamón ibérico, queso puro de oveja, tomate rosa, lechuga romana y aceitunas negras",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 12.85
+              },
+              {
+                "label": "Media ración",
+                "eur": 7.7
+              }
+            ]
+          },
+          {
+            "name": "Pimientos con Ventresca",
+            "description": "Pimientos rojos y verdes asados con ventresca",
+            "es": "Pimientos rojos y verdes asados con ventresca",
+            "en": "Pimientos rojos y verdes asados con ventresca",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 12.5
+              },
+              {
+                "label": "Media ración",
+                "eur": 7.5
+              }
+            ]
+          },
+          {
+            "name": "Templada de Perdiz en Escabeche",
+            "description": "Mezclum, perdiz, frutos rojos, piñones, pasas, tomates cherry y vinagreta de PX",
+            "es": "Mezclum, perdiz, frutos rojos, piñones, pasas, tomates cherry y vinagreta de PX",
+            "en": "Mezclum, perdiz, frutos rojos, piñones, pasas, tomates cherry y vinagreta de PX",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 14.6
+              },
+              {
+                "label": "Media ración",
+                "eur": 9.35
+              }
+            ]
+          },
+          {
+            "name": "Tropical",
+            "description": "Anchoas, espárragos blancos, palmitos, piña, tomate rosa, maíz y salsa rosa",
+            "es": "Anchoas, espárragos blancos, palmitos, piña, tomate rosa, maíz y salsa rosa",
+            "en": "Anchoas, espárragos blancos, palmitos, piña, tomate rosa, maíz y salsa rosa",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 12.6
+              },
+              {
+                "label": "Media ración",
+                "eur": 7.65
+              }
+            ]
+          },
+          {
+            "name": "Zuheros",
+            "description": "Hojas, tomates cherry, nueces, pasas, queso de cabra y vinagreta de PX",
+            "es": "Hojas, tomates cherry, nueces, pasas, queso de cabra y vinagreta de PX",
+            "en": "Hojas, tomates cherry, nueces, pasas, queso de cabra y vinagreta de PX",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 13.6
+              },
+              {
+                "label": "Media ración",
+                "eur": 8.5
+              }
+            ]
+          },
+          {
+            "name": "Cogollos al ajillo",
+            "description": "Cogollos al ajillo",
+            "es": "Cogollos al ajillo",
+            "en": "Cogollos al ajillo",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 7.95
+              },
+              {
+                "label": "Media ración",
+                "eur": 5.15
+              }
+            ]
+          },
+          {
+            "name": "Cogollos al ajillo con Salmón",
+            "description": "Cogollos al ajillo con Salmón",
+            "es": "Cogollos al ajillo con Salmón",
+            "en": "Cogollos al ajillo con Salmón",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 14.8
+              },
+              {
+                "label": "Media ración",
+                "eur": 9.5
+              }
+            ]
+          },
+          {
+            "name": "Cogollos con Anchoas y Gulas al ajillo",
+            "description": "Cogollos con Anchoas y Gulas al ajillo",
+            "es": "Cogollos con Anchoas y Gulas al ajillo",
+            "en": "Cogollos con Anchoas y Gulas al ajillo",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 15.35
+              },
+              {
+                "label": "Media ración",
+                "eur": 9.85
+              }
+            ]
+          },
+          {
+            "name": "Picadillo Cordobés con Ventresca",
+            "description": "Ventresca, tomate rosa, pepino, pimiento rojo y verde, cebolla",
+            "es": "Ventresca, tomate rosa, pepino, pimiento rojo y verde, cebolla",
+            "en": "Ventresca, tomate rosa, pepino, pimiento rojo y verde, cebolla",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 9.5
+              },
+              {
+                "label": "Media ración",
+                "eur": 6.95
+              }
+            ]
+          },
+          {
+            "name": "Tomate con Ventresca",
+            "description": "Tomate con Ventresca",
+            "es": "Tomate con Ventresca",
+            "en": "Tomate con Ventresca",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 10.95
+              },
+              {
+                "label": "Media ración",
+                "eur": 6.95
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Entrantes",
+        "items": [
+          {
+            "name": "Boquerones en Vinagre",
+            "description": "Boquerones en Vinagre",
+            "es": "Boquerones en Vinagre",
+            "en": "Boquerones en Vinagre",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 12.95
+              },
+              {
+                "label": "Media ración",
+                "eur": 9.5
+              },
+              {
+                "label": "Tapa",
+                "eur": 4.45
+              }
+            ]
+          },
+          {
+            "name": "Croquetas de Boletus",
+            "description": "Croquetas de Boletus",
+            "es": "Croquetas de Boletus",
+            "en": "Croquetas de Boletus",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 12.3
+              },
+              {
+                "label": "Media ración",
+                "eur": 7.15
+              }
+            ]
+          },
+          {
+            "name": "Croquetas de Espinacas con Piñones",
+            "description": "Croquetas de Espinacas con Piñones",
+            "es": "Croquetas de Espinacas con Piñones",
+            "en": "Croquetas de Espinacas con Piñones",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 12.3
+              },
+              {
+                "label": "Media ración",
+                "eur": 7.15
+              }
+            ]
+          },
+          {
+            "name": "Croquetas de Jamón Ibérico",
+            "description": "Croquetas de Jamón Ibérico",
+            "es": "Croquetas de Jamón Ibérico",
+            "en": "Croquetas de Jamón Ibérico",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 12.3
+              },
+              {
+                "label": "Media ración",
+                "eur": 7.15
+              }
+            ]
+          },
+          {
+            "name": "Croquetas de Rabo de Toro",
+            "description": "Croquetas de Rabo de Toro",
+            "es": "Croquetas de Rabo de Toro",
+            "en": "Croquetas de Rabo de Toro",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 13.8
+              },
+              {
+                "label": "Media ración",
+                "eur": 7.85
+              }
+            ]
+          },
+          {
+            "name": "Surtido de Croquetas",
+            "description": "Surtido de Croquetas",
+            "es": "Surtido de Croquetas",
+            "en": "Surtido de Croquetas",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 13.25
+              }
+            ]
+          },
+          {
+            "name": "Ensaladilla Rusa con Salmón Ahumado",
+            "description": "Ensaladilla Rusa con Salmón Ahumado",
+            "es": "Ensaladilla Rusa con Salmón Ahumado",
+            "en": "Ensaladilla Rusa con Salmón Ahumado",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 9.25
+              },
+              {
+                "label": "Media ración",
+                "eur": 7.2
+              },
+              {
+                "label": "Tapa",
+                "eur": 3.65
+              }
+            ]
+          },
+          {
+            "name": "Gambas al ajillo",
+            "description": "Gambas al ajillo",
+            "es": "Gambas al ajillo",
+            "en": "Gambas al ajillo",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 14.85
+              },
+              {
+                "label": "Media ración",
+                "eur": 10.65
+              }
+            ]
+          },
+          {
+            "name": "Hummus con crudités",
+            "description": "Hummus con crudités",
+            "es": "Hummus con crudités",
+            "en": "Hummus con crudités",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 10.95
+              },
+              {
+                "label": "Media ración",
+                "eur": 7.65
+              },
+              {
+                "label": "Tapa",
+                "eur": 3.9
+              }
+            ]
+          },
+          {
+            "name": "Mazamorra Cordobesa",
+            "description": "Crema de almendras con sardinas ahumadas, uvas, pasas y almendras garrapiñadas",
+            "es": "Crema de almendras con sardinas ahumadas, uvas, pasas y almendras garrapiñadas",
+            "en": "Crema de almendras con sardinas ahumadas, uvas, pasas y almendras garrapiñadas",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 10.95
+              },
+              {
+                "label": "Media ración",
+                "eur": 7.65
+              },
+              {
+                "label": "Tapa",
+                "eur": 3.9
+              }
+            ]
+          },
+          {
+            "name": "Migas Cortijeras",
+            "description": "Migas Cortijeras",
+            "es": "Migas Cortijeras",
+            "en": "Migas Cortijeras",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 9.25
+              },
+              {
+                "label": "Media ración",
+                "eur": 7.2
+              },
+              {
+                "label": "Tapa",
+                "eur": 3.65
+              }
+            ]
+          },
+          {
+            "name": "Naranja con Bacalao",
+            "description": "Naranja con Bacalao",
+            "es": "Naranja con Bacalao",
+            "en": "Naranja con Bacalao",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 10.9
+              },
+              {
+                "label": "Media ración",
+                "eur": 7
+              },
+              {
+                "label": "Tapa",
+                "eur": 3.9
+              }
+            ]
+          },
+          {
+            "name": "Bravas muy Bravas",
+            "description": "Bravas muy Bravas",
+            "es": "Bravas muy Bravas",
+            "en": "Bravas muy Bravas",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 8.45
+              },
+              {
+                "label": "Media ración",
+                "eur": 6.4
+              },
+              {
+                "label": "Tapa",
+                "eur": 2.95
+              }
+            ]
+          },
+          {
+            "name": "Patatas Ali-Oli",
+            "description": "Patatas Ali-Oli",
+            "es": "Patatas Ali-Oli",
+            "en": "Patatas Ali-Oli",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 7.65
+              },
+              {
+                "label": "Media ración",
+                "eur": 6.25
+              },
+              {
+                "label": "Tapa",
+                "eur": 2.95
+              }
+            ]
+          },
+          {
+            "name": "Salmorejo con Jamón",
+            "description": "Salmorejo con Jamón",
+            "es": "Salmorejo con Jamón",
+            "en": "Salmorejo con Jamón",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 9.85
+              },
+              {
+                "label": "Media ración",
+                "eur": 7.2
+              },
+              {
+                "label": "Tapa",
+                "eur": 3.9
+              }
+            ]
+          },
+          {
+            "name": "Salpicón de Marisco",
+            "description": "Salpicón de Marisco",
+            "es": "Salpicón de Marisco",
+            "en": "Salpicón de Marisco",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 8.8
+              },
+              {
+                "label": "Media ración",
+                "eur": 6.4
+              },
+              {
+                "label": "Tapa",
+                "eur": 3
+              }
+            ]
+          },
+          {
+            "name": "Tartar de Atún",
+            "description": "Tartar de Atún",
+            "es": "Tartar de Atún",
+            "en": "Tartar de Atún",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 21.95
+              }
+            ]
+          },
+          {
+            "name": "Tortilla de patatas al momento",
+            "description": "Tortilla de patatas al momento",
+            "es": "Tortilla de patatas al momento",
+            "en": "Tortilla de patatas al momento",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 4.6
+              }
+            ]
+          },
+          {
+            "name": "Tortilla de patatas al momento con salmorejo y Jamón Ibérico",
+            "description": "Tortilla de patatas al momento con salmorejo y Jamón Ibérico",
+            "es": "Tortilla de patatas al momento con salmorejo y Jamón Ibérico",
+            "en": "Tortilla de patatas al momento con salmorejo y Jamón Ibérico",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 7.7
+              }
+            ]
+          },
+          {
+            "name": "Tortilla de Camarones",
+            "description": "Tortilla de Camarones",
+            "es": "Tortilla de Camarones",
+            "en": "Tortilla de Camarones",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 11.25
+              },
+              {
+                "label": "Media ración",
+                "eur": 7.65
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "menuPublicNoticeEs": "Transcripción en curso de carta oficial española de 2026. Se están incorporando las secciones por bloques; consulte los enlaces oficiales para la carta completa. Vigencia actual de precios por confirmar.",
+    "menuPublicNoticeEn": "Transcription in progress from the official Spanish 2026 menu. Sections are being added in batches; refer to the official links for the complete menu. Current price validity unconfirmed."
   },
   {
     "id": "moriles-casa-fina",
