@@ -3043,7 +3043,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 7.0
               }
-            ]
+            ],
+            "en": "Traditional Cordoban salmorejo with boiled egg and ham"
           },
           {
             "name": "Ensaladilla Rusa",
@@ -3053,7 +3054,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 8.0
               }
-            ]
+            ],
+            "en": "Russian-style potato salad"
           },
           {
             "name": "Parrillada de Verdura",
@@ -3063,7 +3065,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 12.0
               }
-            ]
+            ],
+            "en": "Grilled mixed vegetables"
           },
           {
             "name": "Setas a la Plancha con Jamón",
@@ -3073,13 +3076,15 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 12.0
               }
-            ]
+            ],
+            "en": "Griddled mushrooms with ham"
           },
           {
             "name": "Boquerones en Vinagre con Cebolla Morada y AOVE",
             "description": "Boquerones en Vinagre con Cebolla Morada y AOVE",
             "prices": [],
-            "note": "Just Eat indicaba «No disponible» en la consulta del 20/10/2026; no implica retirada permanente."
+            "note": "Just Eat indicaba «No disponible» en la consulta del 20/10/2026; no implica retirada permanente.",
+            "en": "Vinegar-marinated anchovies with red onion and extra virgin olive oil"
           }
         ]
       },
@@ -3094,7 +3099,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 9.0
               }
-            ]
+            ],
+            "en": "Tomato and mackerel salad"
           },
           {
             "name": "Ensalada de Ahumados",
@@ -3104,7 +3110,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 10.0
               }
-            ]
+            ],
+            "en": "Smoked-food salad (ingredients not specified)"
           },
           {
             "name": "Ensalada de Remojón de Bacalao con Naranja",
@@ -3114,7 +3121,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 12.0
               }
-            ]
+            ],
+            "en": "Cod and orange remojón salad"
           },
           {
             "name": "Ensalada de Perdiz",
@@ -3124,7 +3132,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 12.0
               }
-            ]
+            ],
+            "en": "Partridge salad"
           },
           {
             "name": "Ensalada Caprese",
@@ -3134,7 +3143,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 12.0
               }
-            ]
+            ],
+            "en": "Caprese salad"
           }
         ]
       },
@@ -3149,7 +3159,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 9.0
               }
-            ]
+            ],
+            "en": "Scrambled eggs with potatoes and ham"
           },
           {
             "name": "Revuelto de Bacalao con Gambas",
@@ -3159,7 +3170,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 10.0
               }
-            ]
+            ],
+            "en": "Scrambled eggs with cod and prawns"
           },
           {
             "name": "Revuelto de Habitas Baby con Jamón y Foie",
@@ -3169,7 +3181,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 12.0
               }
-            ]
+            ],
+            "en": "Scrambled eggs with baby broad beans, ham and foie gras"
           }
         ]
       },
@@ -3184,7 +3197,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 5.0
               }
-            ]
+            ],
+            "en": "Patatas bravas"
           },
           {
             "name": "Patatas Roquefort",
@@ -3194,7 +3208,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 5.0
               }
-            ]
+            ],
+            "en": "Potatoes with Roquefort cheese"
           },
           {
             "name": "Berenjenas Califales en Tempura con Miel de Caña y Sésamo",
@@ -3204,7 +3219,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 9.0
               }
-            ]
+            ],
+            "en": "Caliphal-style tempura aubergines with cane syrup and sesame"
           },
           {
             "name": "Flamenquín de Jamón",
@@ -3214,7 +3230,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 9.5
               }
-            ]
+            ],
+            "en": "Ham flamenquín"
           },
           {
             "name": "Flamenquín de Jamón y Queso",
@@ -3224,7 +3241,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 9.5
               }
-            ]
+            ],
+            "en": "Ham and cheese flamenquín"
           },
           {
             "name": "Croquetas de Rabo de Toro",
@@ -3234,7 +3252,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 10.0
               }
-            ]
+            ],
+            "en": "Oxtail croquettes"
           },
           {
             "name": "Croquetas de Merluza",
@@ -3244,7 +3263,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 10.0
               }
-            ]
+            ],
+            "en": "Hake croquettes"
           },
           {
             "name": "Croquetas de Pringá",
@@ -3254,7 +3274,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 10.0
               }
-            ]
+            ],
+            "en": "Pringá croquettes (traditional stew-meat filling)"
           },
           {
             "name": "Cochifrito Ibérico del Valle de los Pedroches",
@@ -3264,7 +3285,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 12.0
               }
-            ]
+            ],
+            "en": "Iberian-style fried pork from Los Pedroches Valley"
           }
         ]
       },
@@ -3279,7 +3301,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 10.0
               }
-            ]
+            ],
+            "en": "Tripe with chips"
           },
           {
             "name": "Pisto con Huevos Fritos",
@@ -3289,7 +3312,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 10.0
               }
-            ]
+            ],
+            "en": "Vegetable pisto with fried eggs"
           },
           {
             "name": "Manitas de Cerdo",
@@ -3299,7 +3323,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 12.0
               }
-            ]
+            ],
+            "en": "Pig's trotters"
           },
           {
             "name": "Carrillada Ibérica con Patatas Fritas",
@@ -3309,7 +3334,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 12.0
               }
-            ]
+            ],
+            "en": "Iberian pork cheeks with chips"
           },
           {
             "name": "Alcachofas a la Montillana",
@@ -3319,7 +3345,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 12.0
               }
-            ]
+            ],
+            "en": "Montilla-style artichokes"
           },
           {
             "name": "Solomillo al Whisky",
@@ -3329,7 +3356,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 13.0
               }
-            ]
+            ],
+            "en": "Pork tenderloin with whisky sauce"
           },
           {
             "name": "Puntas de Solomillo con Setas y Champiñones",
@@ -3339,7 +3367,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 14.0
               }
-            ]
+            ],
+            "en": "Tenderloin tips with wild and button mushrooms"
           },
           {
             "name": "Rabo de Toro con Patatas",
@@ -3349,7 +3378,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 16.0
               }
-            ]
+            ],
+            "en": "Oxtail with potatoes"
           }
         ]
       },
@@ -3364,7 +3394,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 6.0
               }
-            ]
+            ],
+            "en": "Fried squid"
           },
           {
             "name": "Bacalao Frito",
@@ -3374,7 +3405,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 6.0
               }
-            ]
+            ],
+            "en": "Fried cod"
           },
           {
             "name": "Lomo de Bacalao con Pisto",
@@ -3384,7 +3416,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 12.0
               }
-            ]
+            ],
+            "en": "Cod loin with pisto vegetables"
           },
           {
             "name": "Pulpo a la Gallega",
@@ -3394,13 +3427,15 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 14.0
               }
-            ]
+            ],
+            "en": "Galician-style octopus"
           },
           {
             "name": "Boquerones Fritos",
             "description": "Boquerones Fritos",
             "prices": [],
-            "note": "Just Eat indicaba «No disponible» en la consulta del 20/10/2026; no implica retirada permanente."
+            "note": "Just Eat indicaba «No disponible» en la consulta del 20/10/2026; no implica retirada permanente.",
+            "en": "Fried anchovies"
           }
         ]
       },
@@ -3415,7 +3450,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 12.0
               }
-            ]
+            ],
+            "en": "Grilled pork steak"
           },
           {
             "name": "Presa Ibérica del Valle de los Pedroches",
@@ -3425,7 +3461,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 14.0
               }
-            ]
+            ],
+            "en": "Iberian pork shoulder cut from Los Pedroches Valley"
           },
           {
             "name": "Chuletillas de Cordero",
@@ -3435,7 +3472,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 16.0
               }
-            ]
+            ],
+            "en": "Lamb cutlets"
           },
           {
             "name": "Entrecote de Vaca",
@@ -3445,7 +3483,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 24.0
               }
-            ]
+            ],
+            "en": "Beef entrecôte"
           }
         ]
       },
@@ -3460,7 +3499,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 4.5
               }
-            ]
+            ],
+            "en": "Tocinillo de cielo (traditional egg-yolk custard)"
           },
           {
             "name": "Tarta de Queso con Mermelada de Arándanos y Frutos Rojos",
@@ -3470,7 +3510,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 4.5
               }
-            ]
+            ],
+            "en": "Cheesecake with blueberry and mixed berry jam"
           },
           {
             "name": "Tarta de Tres Chocolates",
@@ -3480,7 +3521,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 4.5
               }
-            ]
+            ],
+            "en": "Three-chocolate cake"
           },
           {
             "name": "Brownie de Chocolate con Helado de Vainilla",
@@ -3490,7 +3532,8 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 5.5
               }
-            ]
+            ],
+            "en": "Chocolate brownie with vanilla ice cream"
           },
           {
             "name": "Coulant de Chocolate con Helado de Vainilla",
@@ -3500,12 +3543,13 @@
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 5.5
               }
-            ]
+            ],
+            "en": "Chocolate fondant with vanilla ice cream"
           }
         ]
       }
     ],
-    "menuSourceNote": "Transcripción completa de las 8 secciones visibles de Just Eat facilitada por el usuario el 20/10/2026: 44 platos, 42 precios de reparto y 2 marcados «No disponible» (sin precio vigente). Importes de reparto, no verificados como precios en sala. Formatos/tamaños no especificados en esta carta: no asumir tapa, media ni ración. La transcripción de Uber Eats consultada previamente presenta posibles datos desactualizados y discrepancias: se conserva su URL como referencia para contraste, pero no se incorporan sus precios como actuales ni platos exclusivos sin confirmación actual. Las descripciones son únicamente denominaciones originales, sin ingredientes adicionales inferidos. Traducciones inglesas para estas entradas pendientes de revisión editorial."
+    "menuSourceNote": "Transcripción completa de las 8 secciones visibles de Just Eat facilitada por el usuario el 20/10/2026: 44 platos, 42 precios de reparto y 2 marcados «No disponible» (sin precio vigente). Importes de reparto, no verificados como precios en sala. Formatos/tamaños no especificados en esta carta: no asumir tapa, media ni ración. La transcripción de Uber Eats consultada previamente presenta posibles datos desactualizados y discrepancias: se conserva su URL como referencia para contraste, pero no se incorporan sus precios como actuales ni platos exclusivos sin confirmación actual. Las descripciones son únicamente denominaciones originales, sin ingredientes adicionales inferidos. Traducciones inglesas para estas entradas pendientes de revisión editorial. Traducciones EN editoriales añadidas el 22/10/2026 a partir de las denominaciones documentadas; no acreditan ingredientes adicionales ni disponibilidad actual."
   },
   {
     "id": "taberna-el-poema-gran-capitan",
