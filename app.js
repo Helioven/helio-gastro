@@ -200,7 +200,11 @@ function appendDetailExplanation(container,name,placeId=''){
 const VENUE_MENU_SECTION_EN={
  'Entrantes':'Starters','Ensaladas':'Salads','Revueltos':'Scrambled egg dishes',
  'Fritos':'Fried dishes','Guisos':'Stews and traditional dishes',
- 'Pescados':'Fish and seafood','Carnes':'Meat dishes','Postres Caseros':'Homemade desserts'
+ 'Pescados':'Fish and seafood','Carnes':'Meat dishes','Postres Caseros':'Homemade desserts',
+ 'Entrantes, fríos y ensaladas':'Starters, cold dishes and salads',
+ 'Guisos y carnes':'Stews and meat dishes',
+ 'Verduras, huevos y frituras':'Vegetables, eggs and fried dishes',
+ 'Pescados y mariscos':'Fish and seafood','Postres':'Desserts'
 };
 function venueMenuPriceLabel(source,english){
  if(!english)return source;
