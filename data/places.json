@@ -37229,7 +37229,39 @@
       }
     ],
     "menuPublicNoticeEs": "Carta oficial española de Moriles Ribera publicada en imágenes archivadas entre febrero y octubre de 2026. Precios y formatos documentados, vigencia actual por confirmar. Chuletón de vaca vieja: 40 €/kg (excluido del comparador por ración). El menú cerrado Tapas Cordobesas se consulta en su enlace oficial independiente.",
-    "menuPublicNoticeEn": "Official Spanish Moriles Ribera menu shown in images hosted from February to October 2026. Documented prices and portion sizes; current validity unconfirmed. Mature-beef steak: €40/kg (excluded from per-serving comparisons). The Córdoba tapas set menu is available via its own official link."
+    "menuPublicNoticeEn": "Official Spanish Moriles Ribera menu shown in images hosted from February to October 2026. Documented prices and portion sizes; current validity unconfirmed. Mature-beef steak: €40/kg (excluded from per-serving comparisons). The Córdoba tapas set menu is available via its own official link.",
+    "officialSetMenus": [
+      {
+        "name": "Menú Tapas Cordobesas",
+        "nameEn": "Córdoba tapas set menu",
+        "price": 15.95,
+        "currency": "EUR",
+        "sourceUrl": "https://www.morilesribera.com/menu-tapas-cordobesas",
+        "sourceDate": "2026-02",
+        "choiceOptions": [
+          "Cogollos al ajillo",
+          "Bacalao con Naranja",
+          "Salmorejo con Jamón",
+          "Mazamorra con Sardina Ahumada, Uvas y Pasas",
+          "Japuta en Adobo",
+          "Soldaditos de Pavía",
+          "Carrillada Ibérica Confitada a la Miel de Caña",
+          "Flamenquito de Jamón Ibérico y Queso Puro de Oveja"
+        ],
+        "dessertOptions": [
+          "Pastel Cordobés",
+          "Torrija de Crema"
+        ],
+        "drinkOptions": [
+          "Vino de la Casa",
+          "Mahou de Barril",
+          "Refrescos",
+          "Agua Solán de Cabras"
+        ],
+        "noteEs": "La lámina indica platos individuales a elegir, postre y una bebida; no especifica inequívocamente cuántos platos individuales incluye. Confirmar condiciones con el local. Precio IVA incluido, vigencia actual sin confirmar.",
+        "noteEn": "The image lists a selection of individual dishes, a dessert and one drink, but does not clearly specify how many individual dishes are included. Confirm terms with the restaurant. VAT included; current validity unconfirmed."
+      }
+    ]
   },
   {
     "id": "moriles-casa-fina",
