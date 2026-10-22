@@ -3972,7 +3972,8 @@
                 "label": "ración",
                 "eur": 21
               }
-            ]
+            ],
+            "es": "Jamón ibérico cortado a cuchillo; la carta indica una cantidad de 100 gramos."
           },
           {
             "name": "Queso Curado de Oveja (140 gr.)",
@@ -3987,7 +3988,8 @@
                 "label": "ración",
                 "eur": 13.9
               }
-            ]
+            ],
+            "es": "Queso curado de leche de oveja; la carta indica una cantidad de 140 gramos."
           },
           {
             "name": "Mixto de Jamón Ibérico (60 gr.) y Queso Curado de Oveja (80 gr.)",
@@ -3998,7 +4000,8 @@
                 "label": "ración",
                 "eur": 18.5
               }
-            ]
+            ],
+            "es": "Selección de jamón ibérico de 60 gramos y queso curado de oveja de 80 gramos."
           },
           {
             "name": "Salmorejo Cordobés",
@@ -4013,7 +4016,8 @@
                 "label": "ración",
                 "eur": 9.8
               }
-            ]
+            ],
+            "es": "Salmorejo cordobés acompañado de jamón ibérico, huevo cocido y aceite de oliva virgen extra."
           },
           {
             "name": "Gazpacho con su Guarnición",
@@ -4024,7 +4028,8 @@
                 "label": "ración",
                 "eur": 7.1
               }
-            ]
+            ],
+            "es": "Gazpacho con guarnición de tomate, cebolla, pepino, pimiento y picatostes."
           },
           {
             "name": "Ensaladilla Rusa Tradicional",
@@ -4039,7 +4044,8 @@
                 "label": "ración",
                 "eur": 9.3
               }
-            ]
+            ],
+            "es": "Ensaladilla rusa tradicional con patata, zanahoria, atún, huevo cocido, lechuga y mayonesa casera de aceite de oliva virgen extra."
           },
           {
             "name": "Mazamorra de Almendras",
@@ -4054,7 +4060,8 @@
                 "label": "ración",
                 "eur": 10
               }
-            ]
+            ],
+            "es": "Mazamorra de almendras con remolacha y coco caramelizado."
           }
         ]
       },
@@ -4071,7 +4078,8 @@
                 "label": "ración",
                 "eur": 13.5
               }
-            ]
+            ],
+            "es": "Ensalada de hojas variadas, tomate, setas, espárragos, habitas y vinagreta de espárrago blanco."
           },
           {
             "name": "Ensalada Mixta",
@@ -4082,7 +4090,8 @@
                 "label": "ración",
                 "eur": 10.5
               }
-            ]
+            ],
+            "es": "Ensalada de lechuga, tomate, cebolla, zanahoria, maíz, atún, huevo cocido y aceite de oliva virgen extra."
           },
           {
             "name": "Nuestra Ensalada de Tomate",
@@ -4093,7 +4102,8 @@
                 "label": "ración",
                 "eur": 12.5
               }
-            ]
+            ],
+            "es": "Ensalada de tomate de huerta, atún, ajetes y aceite de oliva virgen extra."
           }
         ]
       },
@@ -4114,7 +4124,8 @@
                 "label": "ración",
                 "eur": 15.5
               }
-            ]
+            ],
+            "es": "Arroz al estilo cordobés elaborado con rabo de toro de la casa."
           }
         ]
       },
@@ -4135,7 +4146,8 @@
                 "label": "ración",
                 "eur": 10.9
               }
-            ]
+            ],
+            "es": "Berenjenas rebozadas en pasta Orly, con miel de caña y sésamo."
           },
           {
             "name": "Croquetas de Nuestros Callos a la Cordobesa",
@@ -4150,7 +4162,8 @@
                 "label": "ración",
                 "eur": 11.5
               }
-            ]
+            ],
+            "es": "Croquetas de callos a la cordobesa acompañadas de crema de sobrasada."
           },
           {
             "name": "Espinacas Esparragadas",
@@ -4165,7 +4178,8 @@
                 "label": "ración",
                 "eur": 9.8
               }
-            ]
+            ],
+            "es": "Espinacas esparragadas al estilo andaluz con garbanzos, vinagre y pan."
           },
           {
             "name": "Nuestras Patatas Bravas",
@@ -4180,7 +4194,8 @@
                 "label": "ración",
                 "eur": 9.9
               }
-            ]
+            ],
+            "es": "Patatas bravas acompañadas de mayonesa de kimchi."
           },
           {
             "name": "Croquetas Caseras",
@@ -4195,7 +4210,8 @@
                 "label": "ración",
                 "eur": 10.9
               }
-            ]
+            ],
+            "es": "Croquetas caseras tradicionales de puchero."
           },
           {
             "name": "Cochifrito",
@@ -4210,7 +4226,8 @@
                 "label": "ración",
                 "eur": 13.5
               }
-            ]
+            ],
+            "es": "Cochinillo confitado a baja temperatura, troceado y frito."
           },
           {
             "name": "Setas con Chipirones",
@@ -4221,7 +4238,8 @@
                 "label": "ración",
                 "eur": 15
               }
-            ]
+            ],
+            "es": "Setas con chipirones y alioli negro."
           },
           {
             "name": "Alcachofas Confitadas en AOVE",
@@ -4232,7 +4250,8 @@
                 "label": "ración",
                 "eur": 16.5
               }
-            ]
+            ],
+            "es": "Alcachofas confitadas en aceite de oliva virgen extra con crema de foie y jamón crujiente."
           }
         ]
       },
@@ -4253,7 +4272,8 @@
                 "label": "ración",
                 "eur": 13
               }
-            ]
+            ],
+            "es": "Calamares fritos con mayonesa de limón asado."
           },
           {
             "name": "Japuta en Adobo Casero",
@@ -4268,7 +4288,8 @@
                 "label": "ración",
                 "eur": 12.5
               }
-            ]
+            ],
+            "es": "Japuta marinada en adobo casero."
           },
           {
             "name": "Buñuelos de Bacalao",
@@ -4283,7 +4304,8 @@
                 "label": "ración",
                 "eur": 12.5
               }
-            ]
+            ],
+            "es": "Buñuelos de bacalao con mermelada de pimiento."
           }
         ]
       },
@@ -4300,7 +4322,8 @@
                 "label": "ración",
                 "eur": 12.9
               }
-            ]
+            ],
+            "es": "Revuelto de huevos con ajo, espárragos, setas y jamón ibérico."
           },
           {
             "name": "Papas de la Casa",
@@ -4311,7 +4334,8 @@
                 "label": "ración",
                 "eur": 11.5
               }
-            ]
+            ],
+            "es": "Patatas confitadas con huevo roto y tiras de jamón."
           },
           {
             "name": "Tortilla de Patatas al Momento",
@@ -4322,7 +4346,8 @@
                 "label": "ración",
                 "eur": 10.3
               }
-            ]
+            ],
+            "es": "Tortilla de patatas española elaborada al momento."
           },
           {
             "name": "Tortilla Ahumada",
@@ -4333,7 +4358,8 @@
                 "label": "ración",
                 "eur": 15
               }
-            ]
+            ],
+            "es": "Tortilla ahumada con jamón ibérico cortado a cuchillo."
           }
         ]
       },
@@ -4350,7 +4376,8 @@
                 "label": "ración",
                 "eur": 11.9
               }
-            ]
+            ],
+            "es": "Flamenquín cordobés de lomo de cerdo empanado y frito, relleno de jamón."
           },
           {
             "name": "Flamenquín Casero de Nuestro Rabo de Toro",
@@ -4361,7 +4388,8 @@
                 "label": "ración",
                 "eur": 15
               }
-            ]
+            ],
+            "es": "Flamenquín de lomo de cerdo empanado y frito, relleno de rabo de toro de la casa y queso cheddar."
           },
           {
             "name": "Rabo de Toro Tradicional Cordobés",
@@ -4376,7 +4404,8 @@
                 "label": "ración",
                 "eur": 26
               }
-            ]
+            ],
+            "es": "Rabo de toro guisado al estilo tradicional cordobés."
           },
           {
             "name": "Venado en Salsa Cordobesa",
@@ -4391,7 +4420,8 @@
                 "label": "ración",
                 "eur": 12.5
               }
-            ]
+            ],
+            "es": "Venado guisado con hierbas aromáticas y vino de Montilla-Moriles."
           },
           {
             "name": "Albóndigas Caseras Mozárabes",
@@ -4406,7 +4436,8 @@
                 "label": "ración",
                 "eur": 13.5
               }
-            ]
+            ],
+            "es": "Albóndigas caseras al estilo mozárabe acompañadas de patatas."
           },
           {
             "name": "Guiso de Callos a la Cordobesa",
@@ -4421,7 +4452,8 @@
                 "label": "ración",
                 "eur": 11.5
               }
-            ]
+            ],
+            "es": "Guiso de callos preparado al estilo cordobés."
           }
         ]
       },
@@ -4438,7 +4470,8 @@
                 "label": "ración",
                 "eur": 21.5
               }
-            ]
+            ],
+            "es": "Lubina con emulsión de espinacas, jamón crujiente, cardos, garbanzos y vinagreta de naranja."
           },
           {
             "name": "Bacalao",
@@ -4449,7 +4482,8 @@
                 "label": "ración",
                 "eur": 16.5
               }
-            ]
+            ],
+            "es": "Bacalao confitado con salsa al estilo de Rota y parmentier de patata."
           },
           {
             "name": "Atún",
@@ -4464,7 +4498,8 @@
                 "label": "ración",
                 "eur": 13
               }
-            ]
+            ],
+            "es": "Atún encebollado acompañado de patatas panadera al horno."
           }
         ]
       },
@@ -4481,7 +4516,8 @@
                 "label": "ración",
                 "eur": 12.5
               }
-            ]
+            ],
+            "es": "Pollo a la plancha acompañado de verduras de temporada."
           },
           {
             "name": "Mogote Ibérico",
@@ -4492,7 +4528,8 @@
                 "label": "ración",
                 "eur": 17.9
               }
-            ]
+            ],
+            "es": "Mogote de cerdo ibérico cocinado lentamente con patatas, pimientos y reducción de sus jugos."
           },
           {
             "name": "Solomillo Ternera",
@@ -4503,7 +4540,8 @@
                 "label": "ración",
                 "eur": 25
               }
-            ]
+            ],
+            "es": "Solomillo de ternera ahumado con demi-glace, puré de patata al estilo Robuchon, crujiente de pistacho y verduras."
           }
         ]
       }
