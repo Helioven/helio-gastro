@@ -32016,11 +32016,39 @@
     "address": "Paseo de la Ribera, 6, Córdoba",
     "mealCostEur": null,
     "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "checkedAt": "2026-10-22",
     "sources": [
       {
-        "label": "Web oficial, sede y dirección",
-        "url": "https://www.morilesribera.com/"
+        "label": "Carta digital oficial de Moriles Ribera (índice)",
+        "url": "https://www.morilesribera.com/inicio-carta-digital"
+      },
+      {
+        "label": "Carta española oficial · ensaladas y entrantes (archivo febrero 2026)",
+        "url": "https://www.morilesribera.com/wp-content/uploads/2026/02/MR-002-Ensaladas-Entrantes-scaled.png"
+      },
+      {
+        "label": "Carta española oficial · ibéricos, tostas, risottos y pastas (febrero 2026)",
+        "url": "https://www.morilesribera.com/wp-content/uploads/2026/02/MR-003-Ibericos-Revueltos-Risottos-Pastas-scaled.png"
+      },
+      {
+        "label": "Carta española oficial · revueltos, verduras y pescados (febrero 2026)",
+        "url": "https://www.morilesribera.com/wp-content/uploads/2026/02/MR-004-Tostas-Pescados1-scaled.png"
+      },
+      {
+        "label": "Carta española oficial · carnes (febrero 2026)",
+        "url": "https://www.morilesribera.com/wp-content/uploads/2026/02/MR-005-Carnes-scaled.png"
+      },
+      {
+        "label": "Carta española oficial · guisos, infantil y combinados (febrero 2026)",
+        "url": "https://www.morilesribera.com/wp-content/uploads/2026/02/MR-006-Guisos-Ninos-Platos-Combinados-scaled.png"
+      },
+      {
+        "label": "Carta española oficial · postres (marzo 2026)",
+        "url": "https://www.morilesribera.com/wp-content/uploads/2026/03/MR-007-Postres-scaled.png"
+      },
+      {
+        "label": "Carta inglesa de contraste · archivos 2025 (no mezclar importes)",
+        "url": "https://www.morilesribera.com/our-kitchen"
       }
     ],
     "menus": [
@@ -32032,7 +32060,8 @@
         ],
         "dishPrices": []
       }
-    ]
+    ],
+    "menuSourceNote": "Auditoría documental iniciada el 22/10/2026: seis láminas oficiales en español con precios, alojadas en carpetas de febrero y marzo 2026. La versión inglesa utiliza archivos de 2025 y presenta importes divergentes. Pendiente transcripción íntegra y validación de platos, precios y formatos ES/EN antes de sustituir la ficha preliminar; no copiar carta de los otros Moriles ni publicar una carta parcial."
   },
   {
     "id": "moriles-casa-fina",
