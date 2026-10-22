@@ -199,7 +199,7 @@ function appendDetailExplanation(container,name,placeId=''){
 }
 function refreshDishExplanations(){
  const english=window.HelioGastroLanguage?.get()==='en';
- document.querySelectorAll('[data-dish-explanation]').forEach(node=>{node.hidden=!english;});
+ document.querySelectorAll('[data-dish-explanation]').forEach(node=>{node.hidden=node.dataset.explanationLanguage?node.dataset.explanationLanguage!==(english?'en':'es'):!english;});
  document.querySelectorAll('[data-group-menu-includes]').forEach(node=>{node.textContent=english&&node.dataset.en?node.dataset.en:node.dataset.es;});
  document.querySelectorAll('[data-group-menu-heading]').forEach(node=>{node.textContent=node.dataset.menuName+' · '+node.dataset.menuPrice+(english?'/person · minimum '+node.dataset.menuMin+' guests':'/persona · mínimo '+node.dataset.menuMin+' comensales');});
  document.querySelectorAll('[data-group-menu-dessert]').forEach(node=>{if(node.firstChild?.nodeType===Node.TEXT_NODE)node.firstChild.textContent=english?'Dessert: ':'Postre: ';});
@@ -582,7 +582,7 @@ function renderVenueMenuSections(panel,p){
   for(const dish of section.items){
    const entry=document.createElement('section');entry.className='menu-dish';
    const title=document.createElement('h4');title.dataset.keepDishSpanish='';title.textContent=dish.name;entry.append(title);
-   if(typeof dish.en==='string'&&dish.en.trim()&&clean(dish.en)!==clean(dish.name)){const description=document.createElement('small');description.className='dish-explanation detail-dish-explanation';description.dataset.dishExplanation='';description.textContent=dish.en;description.hidden=window.HelioGastroLanguage?.get()!=='en';entry.append(description);}
+   for(const language of ['es','en']){const value=dish[language];if(typeof value!=='string'||!value.trim()||clean(value)===clean(dish.name))continue;const description=document.createElement('small');description.className='dish-explanation detail-dish-explanation';description.dataset.dishExplanation='';description.dataset.explanationLanguage=language;description.textContent=value;description.hidden=(window.HelioGastroLanguage?.get()||'es')!==language;entry.append(description);}
    for(const price of dish.prices){
     const row=document.createElement('div');row.className='menu-price-row';
     const label=document.createElement('span');label.textContent=price.label;
