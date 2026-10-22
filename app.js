@@ -197,9 +197,21 @@ function appendDetailExplanation(container,name,placeId=''){
  node.hidden=window.HelioGastroLanguage?.get()!=='en';
  container.append(node);
 }
+const VENUE_MENU_SECTION_EN={
+ 'Entrantes':'Starters','Ensaladas':'Salads','Revueltos':'Scrambled egg dishes',
+ 'Fritos':'Fried dishes','Guisos':'Stews and traditional dishes',
+ 'Pescados':'Fish and seafood','Carnes':'Meat dishes','Postres Caseros':'Homemade desserts'
+};
+function venueMenuPriceLabel(source,english){
+ if(!english)return source;
+ if(source==='Just Eat · reparto · formato no especificado')return 'Just Eat · delivery · portion size unspecified';
+ return source;
+}
 function refreshDishExplanations(){
  const english=window.HelioGastroLanguage?.get()==='en';
  document.querySelectorAll('[data-dish-explanation]').forEach(node=>{node.hidden=node.dataset.explanationLanguage?node.dataset.explanationLanguage!==(english?'en':'es'):!english;});
+ document.querySelectorAll('[data-venue-menu-section]').forEach(node=>{node.textContent=english?(VENUE_MENU_SECTION_EN[node.dataset.venueMenuSection]||node.dataset.venueMenuSection):node.dataset.venueMenuSection;});
+ document.querySelectorAll('[data-venue-menu-price-label]').forEach(node=>{node.textContent=venueMenuPriceLabel(node.dataset.venueMenuPriceLabel,english);});
  document.querySelectorAll('[data-group-menu-includes]').forEach(node=>{node.textContent=english&&node.dataset.en?node.dataset.en:node.dataset.es;});
  document.querySelectorAll('[data-group-menu-heading]').forEach(node=>{node.textContent=node.dataset.menuName+' · '+node.dataset.menuPrice+(english?'/person · minimum '+node.dataset.menuMin+' guests':'/persona · mínimo '+node.dataset.menuMin+' comensales');});
  document.querySelectorAll('[data-group-menu-dessert]').forEach(node=>{if(node.firstChild?.nodeType===Node.TEXT_NODE)node.firstChild.textContent=english?'Dessert: ':'Postre: ';});
@@ -577,7 +589,7 @@ function menuGroups(p){
 function renderVenueMenuSections(panel,p){
  // Las notas de auditoría son metadatos internos, no texto para visitantes.
  for(const section of p.menuSections){
-  const heading=document.createElement('h3');heading.textContent=section.title;panel.append(heading);
+  const heading=document.createElement('h3');heading.dataset.venueMenuSection=section.title;heading.textContent=window.HelioGastroLanguage?.get()==='en'?(VENUE_MENU_SECTION_EN[section.title]||section.title):section.title;panel.append(heading);
   const list=document.createElement('div');list.className='menu-groups';
   for(const dish of section.items){
    const entry=document.createElement('section');entry.className='menu-dish';
@@ -585,7 +597,7 @@ function renderVenueMenuSections(panel,p){
    for(const language of ['es','en']){const value=dish[language];if(typeof value!=='string'||!value.trim()||clean(value)===clean(dish.name))continue;const description=document.createElement('small');description.className='dish-explanation detail-dish-explanation';description.dataset.dishExplanation='';description.dataset.explanationLanguage=language;description.textContent=value;description.hidden=(window.HelioGastroLanguage?.get()||'es')!==language;entry.append(description);}
    for(const price of dish.prices){
     const row=document.createElement('div');row.className='menu-price-row';
-    const label=document.createElement('span');label.textContent=price.label||price.portion||'';
+    const label=document.createElement('span');label.dataset.venueMenuPriceLabel=price.label||price.portion||'';label.textContent=venueMenuPriceLabel(label.dataset.venueMenuPriceLabel,window.HelioGastroLanguage?.get()==='en');
     const amount=document.createElement('strong');amount.textContent=fmt(price.eur);
     row.append(label,amount);entry.append(row);
    }
