@@ -579,7 +579,7 @@ function renderVenueMenuSections(panel,p){
   for(const dish of section.items){
    const entry=document.createElement('section');entry.className='menu-dish';
    const title=document.createElement('h4');title.dataset.keepDishSpanish='';title.textContent=dish.name;entry.append(title);
-   if(dish.en){const description=document.createElement('small');description.className='dish-explanation detail-dish-explanation';description.dataset.dishExplanation='';description.textContent=dish.en;description.hidden=window.HelioGastroLanguage?.get()!=='en';entry.append(description);}
+   if(typeof dish.en==='string'&&dish.en.trim()&&clean(dish.en)!==clean(dish.name)){const description=document.createElement('small');description.className='dish-explanation detail-dish-explanation';description.dataset.dishExplanation='';description.textContent=dish.en;description.hidden=window.HelioGastroLanguage?.get()!=='en';entry.append(description);}
    for(const price of dish.prices){
     const row=document.createElement('div');row.className='menu-price-row';
     const label=document.createElement('span');label.textContent=price.label;
