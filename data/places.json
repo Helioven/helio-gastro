@@ -2732,22 +2732,22 @@
         "dishPrices": [
           {
             "dish": "Salmorejo Cordobés con Huevo Cocido y Jamón",
-            "eur": 7.0,
+            "eur": 7,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Ensaladilla Rusa",
-            "eur": 8.0,
+            "eur": 8,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Parrillada de Verdura",
-            "eur": 12.0,
+            "eur": 12,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Setas a la Plancha con Jamón",
-            "eur": 12.0,
+            "eur": 12,
             "portion": "Just Eat · reparto · formato no especificado"
           }
         ]
@@ -2764,27 +2764,27 @@
         "dishPrices": [
           {
             "dish": "Ensalada de Tomate con Caballa",
-            "eur": 9.0,
+            "eur": 9,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Ensalada de Ahumados",
-            "eur": 10.0,
+            "eur": 10,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Ensalada de Remojón de Bacalao con Naranja",
-            "eur": 12.0,
+            "eur": 12,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Ensalada de Perdiz",
-            "eur": 12.0,
+            "eur": 12,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Ensalada Caprese",
-            "eur": 12.0,
+            "eur": 12,
             "portion": "Just Eat · reparto · formato no especificado"
           }
         ]
@@ -2799,17 +2799,17 @@
         "dishPrices": [
           {
             "dish": "Revuelto de Patatas con Jamón",
-            "eur": 9.0,
+            "eur": 9,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Revuelto de Bacalao con Gambas",
-            "eur": 10.0,
+            "eur": 10,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Revuelto de Habitas Baby con Jamón y Foie",
-            "eur": 12.0,
+            "eur": 12,
             "portion": "Just Eat · reparto · formato no especificado"
           }
         ]
@@ -2830,17 +2830,17 @@
         "dishPrices": [
           {
             "dish": "Patatas Bravas",
-            "eur": 5.0,
+            "eur": 5,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Patatas Roquefort",
-            "eur": 5.0,
+            "eur": 5,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Berenjenas Califales en Tempura con Miel de Caña y Sésamo",
-            "eur": 9.0,
+            "eur": 9,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
@@ -2855,22 +2855,22 @@
           },
           {
             "dish": "Croquetas de Rabo de Toro",
-            "eur": 10.0,
+            "eur": 10,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Croquetas de Merluza",
-            "eur": 10.0,
+            "eur": 10,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Croquetas de Pringá",
-            "eur": 10.0,
+            "eur": 10,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Cochifrito Ibérico del Valle de los Pedroches",
-            "eur": 12.0,
+            "eur": 12,
             "portion": "Just Eat · reparto · formato no especificado"
           }
         ]
@@ -2890,42 +2890,42 @@
         "dishPrices": [
           {
             "dish": "Callos con Patatas Fritas",
-            "eur": 10.0,
+            "eur": 10,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Pisto con Huevos Fritos",
-            "eur": 10.0,
+            "eur": 10,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Manitas de Cerdo",
-            "eur": 12.0,
+            "eur": 12,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Carrillada Ibérica con Patatas Fritas",
-            "eur": 12.0,
+            "eur": 12,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Alcachofas a la Montillana",
-            "eur": 12.0,
+            "eur": 12,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Solomillo al Whisky",
-            "eur": 13.0,
+            "eur": 13,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Puntas de Solomillo con Setas y Champiñones",
-            "eur": 14.0,
+            "eur": 14,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Rabo de Toro con Patatas",
-            "eur": 16.0,
+            "eur": 16,
             "portion": "Just Eat · reparto · formato no especificado"
           }
         ]
@@ -2942,22 +2942,22 @@
         "dishPrices": [
           {
             "dish": "Calamares Fritos",
-            "eur": 6.0,
+            "eur": 6,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Bacalao Frito",
-            "eur": 6.0,
+            "eur": 6,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Lomo de Bacalao con Pisto",
-            "eur": 12.0,
+            "eur": 12,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Pulpo a la Gallega",
-            "eur": 14.0,
+            "eur": 14,
             "portion": "Just Eat · reparto · formato no especificado"
           }
         ]
@@ -2973,22 +2973,22 @@
         "dishPrices": [
           {
             "dish": "Churrasco de Cerdo",
-            "eur": 12.0,
+            "eur": 12,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Presa Ibérica del Valle de los Pedroches",
-            "eur": 14.0,
+            "eur": 14,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Chuletillas de Cordero",
-            "eur": 16.0,
+            "eur": 16,
             "portion": "Just Eat · reparto · formato no especificado"
           },
           {
             "dish": "Entrecote de Vaca",
-            "eur": 24.0,
+            "eur": 24,
             "portion": "Just Eat · reparto · formato no especificado"
           }
         ]
@@ -3041,7 +3041,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 7.0
+                "eur": 7
               }
             ],
             "en": "Traditional Cordoban salmorejo with boiled egg and ham"
@@ -3052,7 +3052,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 8.0
+                "eur": 8
               }
             ],
             "en": "Russian-style potato salad"
@@ -3063,7 +3063,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 12.0
+                "eur": 12
               }
             ],
             "en": "Grilled mixed vegetables"
@@ -3074,7 +3074,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 12.0
+                "eur": 12
               }
             ],
             "en": "Griddled mushrooms with ham"
@@ -3097,7 +3097,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 9.0
+                "eur": 9
               }
             ],
             "en": "Tomato and mackerel salad"
@@ -3108,7 +3108,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 10.0
+                "eur": 10
               }
             ],
             "en": "Smoked-food salad (ingredients not specified)"
@@ -3119,7 +3119,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 12.0
+                "eur": 12
               }
             ],
             "en": "Cod and orange remojón salad"
@@ -3130,7 +3130,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 12.0
+                "eur": 12
               }
             ],
             "en": "Partridge salad"
@@ -3141,7 +3141,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 12.0
+                "eur": 12
               }
             ],
             "en": "Caprese salad"
@@ -3157,7 +3157,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 9.0
+                "eur": 9
               }
             ],
             "en": "Scrambled eggs with potatoes and ham"
@@ -3168,7 +3168,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 10.0
+                "eur": 10
               }
             ],
             "en": "Scrambled eggs with cod and prawns"
@@ -3179,7 +3179,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 12.0
+                "eur": 12
               }
             ],
             "en": "Scrambled eggs with baby broad beans, ham and foie gras"
@@ -3195,7 +3195,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 5.0
+                "eur": 5
               }
             ],
             "en": "Patatas bravas"
@@ -3206,7 +3206,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 5.0
+                "eur": 5
               }
             ],
             "en": "Potatoes with Roquefort cheese"
@@ -3217,7 +3217,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 9.0
+                "eur": 9
               }
             ],
             "en": "Caliphal-style tempura aubergines with cane syrup and sesame"
@@ -3250,7 +3250,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 10.0
+                "eur": 10
               }
             ],
             "en": "Oxtail croquettes"
@@ -3261,7 +3261,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 10.0
+                "eur": 10
               }
             ],
             "en": "Hake croquettes"
@@ -3272,7 +3272,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 10.0
+                "eur": 10
               }
             ],
             "en": "Pringá croquettes (traditional stew-meat filling)"
@@ -3283,7 +3283,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 12.0
+                "eur": 12
               }
             ],
             "en": "Iberian-style fried pork from Los Pedroches Valley"
@@ -3299,7 +3299,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 10.0
+                "eur": 10
               }
             ],
             "en": "Tripe with chips"
@@ -3310,7 +3310,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 10.0
+                "eur": 10
               }
             ],
             "en": "Vegetable pisto with fried eggs"
@@ -3321,7 +3321,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 12.0
+                "eur": 12
               }
             ],
             "en": "Pig's trotters"
@@ -3332,7 +3332,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 12.0
+                "eur": 12
               }
             ],
             "en": "Iberian pork cheeks with chips"
@@ -3343,7 +3343,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 12.0
+                "eur": 12
               }
             ],
             "en": "Montilla-style artichokes"
@@ -3354,7 +3354,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 13.0
+                "eur": 13
               }
             ],
             "en": "Pork tenderloin with whisky sauce"
@@ -3365,7 +3365,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 14.0
+                "eur": 14
               }
             ],
             "en": "Tenderloin tips with wild and button mushrooms"
@@ -3376,7 +3376,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 16.0
+                "eur": 16
               }
             ],
             "en": "Oxtail with potatoes"
@@ -3392,7 +3392,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 6.0
+                "eur": 6
               }
             ],
             "en": "Fried squid"
@@ -3403,7 +3403,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 6.0
+                "eur": 6
               }
             ],
             "en": "Fried cod"
@@ -3414,7 +3414,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 12.0
+                "eur": 12
               }
             ],
             "en": "Cod loin with pisto vegetables"
@@ -3425,7 +3425,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 14.0
+                "eur": 14
               }
             ],
             "en": "Galician-style octopus"
@@ -3448,7 +3448,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 12.0
+                "eur": 12
               }
             ],
             "en": "Grilled pork steak"
@@ -3459,7 +3459,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 14.0
+                "eur": 14
               }
             ],
             "en": "Iberian pork shoulder cut from Los Pedroches Valley"
@@ -3470,7 +3470,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 16.0
+                "eur": 16
               }
             ],
             "en": "Lamb cutlets"
@@ -3481,7 +3481,7 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
-                "eur": 24.0
+                "eur": 24
               }
             ],
             "en": "Beef entrecôte"
@@ -22113,7 +22113,7 @@
           {
             "name": "Anchoa del Cantábrico, brioche tostado, mantequilla de oveja y praliné de pistacho",
             "description": "Anchoa del Cantábrico, brioche tostado, mantequilla de oveja y praliné de pistacho",
-            "en": "Anchoa del Cantábrico, brioche tostado, mantequilla de oveja y praliné de pistacho",
+            "en": "Anchovy from the Cantabrian Sea served with toasted brioche, sheep's butter and pistachio praline.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22125,7 +22125,7 @@
           {
             "name": "Gilda El Caballo Rojo",
             "description": "Gilda El Caballo Rojo",
-            "en": "Gilda El Caballo Rojo",
+            "en": "House-style gilda; the menu does not specify its ingredients.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22134,7 +22134,7 @@
           {
             "name": "Tortillitas de San José (10 unidades)",
             "description": "Tortillitas de San José (10 unidades)",
-            "en": "Tortillitas de San José (10 unidades)",
+            "en": "San José fritters, served as ten pieces; ingredients are not specified in the menu.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22143,7 +22143,7 @@
           {
             "name": "Jamón ibérico de bellota 100 %",
             "description": "Jamón ibérico de bellota 100 %",
-            "en": "Jamón ibérico de bellota 100 %",
+            "en": "100% acorn-fed Iberian ham.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22156,7 +22156,7 @@
           {
             "name": "Tabla de embutidos ibéricos de bellota de los Pedroches",
             "description": "Tabla de embutidos ibéricos de bellota de los Pedroches",
-            "en": "Tabla de embutidos ibéricos de bellota de los Pedroches",
+            "en": "Selection of acorn-fed Iberian cured meats from Los Pedroches.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22165,7 +22165,7 @@
           {
             "name": "Tabla de quesos artesanos cordobeses",
             "description": "Tabla de quesos artesanos cordobeses",
-            "en": "Tabla de quesos artesanos cordobeses",
+            "en": "Selection of artisan cheeses from Córdoba.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22174,7 +22174,7 @@
           {
             "name": "Bollito de chipirones fritos con alioli y salsa harissa",
             "description": "Bollito de chipirones fritos con alioli y salsa harissa",
-            "en": "Bollito de chipirones fritos con alioli y salsa harissa",
+            "en": "Small bread roll with fried baby squid, aioli and harissa sauce.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22183,7 +22183,7 @@
           {
             "name": "Bikini de tartar de gamba blanca, crema de aguacate y huevas de arenque",
             "description": "Bikini de tartar de gamba blanca, crema de aguacate y huevas de arenque",
-            "en": "Bikini de tartar de gamba blanca, crema de aguacate y huevas de arenque",
+            "en": "Toasted sandwich with white prawn tartare, avocado cream and herring roe.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22192,7 +22192,7 @@
           {
             "name": "Degustación de crema salmorejo, virutas de mojama, mixtura de algas y brotes de soja",
             "description": "Degustación de crema salmorejo, virutas de mojama, mixtura de algas y brotes de soja",
-            "en": "Degustación de crema salmorejo, virutas de mojama, mixtura de algas y brotes de soja",
+            "en": "Tasting portion of salmorejo cream with cured tuna shavings, mixed seaweed and soy sprouts.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22201,7 +22201,7 @@
           {
             "name": "Degustación de mazamorra cordobesa",
             "description": "Degustación de mazamorra cordobesa",
-            "en": "Degustación de mazamorra cordobesa",
+            "en": "Tasting portion of traditional Cordoban mazamorra; toppings are not specified.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22210,7 +22210,7 @@
           {
             "name": "Ensaladilla rusa de ventresca de atún",
             "description": "Ensaladilla rusa de ventresca de atún",
-            "en": "Ensaladilla rusa de ventresca de atún",
+            "en": "Spanish-style potato salad with tuna belly.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22223,7 +22223,7 @@
           {
             "name": "Berenjenas de la abuela con miel de caña",
             "description": "Berenjenas de la abuela con miel de caña",
-            "en": "Berenjenas de la abuela con miel de caña",
+            "en": "Grandmother-style aubergines with cane syrup.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22236,7 +22236,7 @@
           {
             "name": "Croquetas de puchero",
             "description": "Croquetas de puchero",
-            "en": "Croquetas de puchero",
+            "en": "Croquettes made with traditional puchero stew filling.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22249,7 +22249,7 @@
           {
             "name": "Patatas bravas con salsa habanero",
             "description": "Patatas bravas con salsa habanero",
-            "en": "Patatas bravas con salsa habanero",
+            "en": "Potatoes with a spicy habanero brava sauce.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22262,7 +22262,7 @@
           {
             "name": "Ensalada de lechugas vivas de temporada",
             "description": "Ensalada de lechugas vivas de temporada",
-            "en": "Ensalada de lechugas vivas de temporada",
+            "en": "Salad of seasonal fresh lettuces.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22271,7 +22271,7 @@
           {
             "name": "Focaccia Almadraba (masa madre, salmorejo de asadillo, rúcula, atún ahumado y burrata)",
             "description": "Focaccia Almadraba (masa madre, salmorejo de asadillo, rúcula, atún ahumado y burrata)",
-            "en": "Focaccia Almadraba (masa madre, salmorejo de asadillo, rúcula, atún ahumado y burrata)",
+            "en": "Sourdough focaccia with roasted-vegetable salmorejo, rocket, smoked tuna and burrata.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22280,7 +22280,7 @@
           {
             "name": "Revuelto cremoso de setas y langostinos",
             "description": "Revuelto cremoso de setas y langostinos",
-            "en": "Revuelto cremoso de setas y langostinos",
+            "en": "Creamy scrambled eggs with mushrooms and king prawns.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22289,7 +22289,7 @@
           {
             "name": "Alcachofas a la montillana",
             "description": "Alcachofas a la montillana",
-            "en": "Alcachofas a la montillana",
+            "en": "Artichokes prepared Montilla-style; the menu does not specify further ingredients.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22302,7 +22302,7 @@
           {
             "name": "Rosada frita con alioli de limón y ajo confitado",
             "description": "Rosada frita con alioli de limón y ajo confitado",
-            "en": "Rosada frita con alioli de limón y ajo confitado",
+            "en": "Fried pink cusk-eel served with lemon aioli and confit garlic.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22315,7 +22315,7 @@
           {
             "name": "Manojito de boquerones fritos",
             "description": "Manojito de boquerones fritos",
-            "en": "Manojito de boquerones fritos",
+            "en": "Small bunch of fried anchovies.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22328,7 +22328,7 @@
           {
             "name": "Bacalao frito en tempura de espirulina",
             "description": "Bacalao frito en tempura de espirulina",
-            "en": "Bacalao frito en tempura de espirulina",
+            "en": "Cod fried in spirulina tempura batter.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22341,7 +22341,7 @@
           {
             "name": "Cochifrito con salsa brava",
             "description": "Cochifrito con salsa brava",
-            "en": "Cochifrito con salsa brava",
+            "en": "Fried suckling pork with brava sauce.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22354,7 +22354,7 @@
           {
             "name": "Flamenquín cordobés",
             "description": "Flamenquín cordobés",
-            "en": "Flamenquín cordobés",
+            "en": "Traditional Cordoban flamenquín; the menu does not specify the filling.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22363,7 +22363,7 @@
           {
             "name": "Guiso de morros y patas de ternera",
             "description": "Guiso de morros y patas de ternera",
-            "en": "Guiso de morros y patas de ternera",
+            "en": "Stew of beef snout and feet.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22372,7 +22372,7 @@
           {
             "name": "Tuétano asado con tartar de vaca",
             "description": "Tuétano asado con tartar de vaca",
-            "en": "Tuétano asado con tartar de vaca",
+            "en": "Roasted bone marrow with beef tartare.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22381,7 +22381,7 @@
           {
             "name": "Rabo de toro",
             "description": "Rabo de toro",
-            "en": "Rabo de toro",
+            "en": "Traditional oxtail stew.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22390,7 +22390,7 @@
           {
             "name": "Arroz de rabo de toro (mínimo dos personas; precio por persona)",
             "description": "Arroz de rabo de toro (mínimo dos personas; precio por persona)",
-            "en": "Arroz de rabo de toro (mínimo dos personas; precio por persona)",
+            "en": "Rice dish with oxtail; minimum two diners, priced per person.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22408,7 +22408,7 @@
           {
             "name": "Anchoa del Cantábrico, brioche tostado, mantequilla de oveja y praliné de pistacho",
             "description": "Anchoa del Cantábrico, brioche tostado, mantequilla de oveja y praliné de pistacho",
-            "en": "Anchoa del Cantábrico, brioche tostado, mantequilla de oveja y praliné de pistacho",
+            "en": "Anchovy from the Cantabrian Sea served with toasted brioche, sheep's butter and pistachio praline.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22417,7 +22417,7 @@
           {
             "name": "Jamón ibérico de bellota 100 %",
             "description": "Jamón ibérico de bellota 100 %",
-            "en": "Jamón ibérico de bellota 100 %",
+            "en": "100% acorn-fed Iberian ham.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22426,7 +22426,7 @@
           {
             "name": "Tabla de embutidos de bellota de los Pedroches",
             "description": "Tabla de embutidos de bellota de los Pedroches",
-            "en": "Tabla de embutidos de bellota de los Pedroches",
+            "en": "Selection of acorn-fed cured meats from Los Pedroches.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22435,7 +22435,7 @@
           {
             "name": "Tabla de quesos artesanos",
             "description": "Tabla de quesos artesanos",
-            "en": "Tabla de quesos artesanos",
+            "en": "Selection of artisan cheeses.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22444,7 +22444,7 @@
           {
             "name": "Ajo blanco malagueño de coco con salmón marinado",
             "description": "Ajo blanco malagueño de coco con salmón marinado",
-            "en": "Ajo blanco malagueño de coco con salmón marinado",
+            "en": "Malaga-style coconut ajoblanco with marinated salmon.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22453,7 +22453,7 @@
           {
             "name": "Crema de salmorejo con virutas de mojama, algas y germinados",
             "description": "Crema de salmorejo con virutas de mojama, algas y germinados",
-            "en": "Crema de salmorejo con virutas de mojama, algas y germinados",
+            "en": "Salmorejo cream with cured tuna shavings, seaweed and sprouts.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22462,7 +22462,7 @@
           {
             "name": "Mazamorra cordobesa con sardina ahumada",
             "description": "Mazamorra cordobesa con sardina ahumada",
-            "en": "Mazamorra cordobesa con sardina ahumada",
+            "en": "Cordoban mazamorra with smoked sardine.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22471,7 +22471,7 @@
           {
             "name": "Berenjenas de la abuela con miel de caña",
             "description": "Berenjenas de la abuela con miel de caña",
-            "en": "Berenjenas de la abuela con miel de caña",
+            "en": "Grandmother-style aubergines with cane syrup.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22480,7 +22480,7 @@
           {
             "name": "Croquetas de puchero",
             "description": "Croquetas de puchero",
-            "en": "Croquetas de puchero",
+            "en": "Croquettes made with traditional puchero stew filling.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
@@ -22489,7 +22489,7 @@
           {
             "name": "Sopa de cocido en taza y croissant de pringá",
             "description": "Sopa de cocido en taza y croissant de pringá",
-            "en": "Sopa de cocido en taza y croissant de pringá",
+            "en": "Cup of cocido stew broth served with a pringá-filled croissant.",
             "prices": [],
             "priceStatus": "pending_update",
             "historicalMenuDate": "2023-02",
