@@ -642,7 +642,20 @@ function showPlace(p,scroll=true){
  }
  if(Number.isFinite(p.mealCostEur)){const total=document.createElement('p');total.textContent='Comida completa por persona: '+fmt(p.mealCostEur);panel.append(total)}
  else{const caveat=document.createElement('p');caveat.className='note';caveat.textContent='El coste total de comer aquí no está documentado. Los precios de platos no incluyen necesariamente bebida ni extras.';panel.append(caveat)}
- if(Array.isArray(p.groupMenus)&&p.groupMenus.length){const label=document.createElement('h3');label.textContent='Menús para grupos';panel.append(label);for(const m of p.groupMenus){const text=document.createElement('p');text.textContent=m.name+' · '+fmt(m.eurPerPerson)+'/persona · mínimo '+m.minPeople+' comensales';panel.append(text)}}
+ if(Array.isArray(p.groupMenus)&&p.groupMenus.length){
+  const label=document.createElement('h3');label.textContent='Menús para grupos';panel.append(label);
+  for(const m of p.groupMenus){
+   const card=document.createElement('section');card.className='menu-dish';
+   const heading=document.createElement('h4');heading.textContent=m.name+' · '+fmt(m.eurPerPerson)+'/persona · mínimo '+m.minPeople+' comensales';card.append(heading);
+   const addList=(headingText,values)=>{if(!Array.isArray(values)||!values.length)return;const h=document.createElement('strong');h.textContent=headingText;card.append(h);const ul=document.createElement('ul');for(const value of values){const li=document.createElement('li');li.dataset.keepDishSpanish='';li.textContent=value;ul.append(li)}card.append(ul)};
+   addList('Platos para compartir',m.shared);
+   addList('Plato a elegir',m.choice);
+   if(m.dessert){const d=document.createElement('p');d.textContent='Postre: ';const name=document.createElement('span');name.dataset.keepDishSpanish='';name.textContent=m.dessert;d.append(name);card.append(d)}
+   if(m.includes){const note=document.createElement('p');note.className='note';note.textContent=m.includes;card.append(note)}
+   if(m.sourceUrl){const link=document.createElement('a');link.href=m.sourceUrl;link.target='_blank';link.rel='noopener noreferrer';link.textContent='Ver PDF oficial del menú';card.append(link)}
+   panel.append(card);
+  }
+ }
  const sources=document.createElement('h3');sources.textContent='Fuentes y fecha';panel.append(sources);
  const checked=document.createElement('p');checked.textContent='Última consulta: '+(p.checkedAt||'Sin fecha registrada');panel.append(checked);
  for(const source of p.sources){if(!/^https:\/\//.test(source.url))continue;const a=document.createElement('a');a.href=source.url;a.textContent=source.label+' ↗';a.target='_blank';a.rel='noopener noreferrer';a.className='detail-source';panel.append(a)}
