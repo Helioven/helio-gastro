@@ -32740,6 +32740,500 @@
             "portion": "racion"
           }
         ]
+      },
+      {
+        "service": "Revueltos y verduras",
+        "dishes": [
+          "Huevos a la flamenca con Jamón y Chorizo",
+          "Huevos camperos con Patatas y Gulas",
+          "Revuelto Tierra y Mar",
+          "Revuelto de Bacalao",
+          "Revuelto de Espárragos con Jamón",
+          "Revuelto de Habitas baby con Jamón",
+          "Revuelto Moriles",
+          "Alcachofas a la Montillana",
+          "Berenjenas abuñueladas a la miel de caña",
+          "Berenjenas con Salmorejo y Jamón",
+          "Berenjenas Fritas",
+          "Boletus plancha con Jamón",
+          "Cardos con Almejas y Gambas",
+          "Champiñones con Jamón y Salsa Verde",
+          "Parrillada de Verduras con Salsa Romesco",
+          "Parrillada de Verduras con Queso de Cabra Asado",
+          "Pimientos del Padrón",
+          "Pisto Cordobés con Huevo",
+          "Setas a la plancha con Salsa Verde"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Huevos a la flamenca con Jamón y Chorizo",
+            "eur": 13.15,
+            "portion": "racion"
+          },
+          {
+            "dish": "Huevos camperos con Patatas y Gulas",
+            "eur": 15.15,
+            "portion": "racion"
+          },
+          {
+            "dish": "Revuelto Tierra y Mar",
+            "eur": 13.15,
+            "portion": "racion"
+          },
+          {
+            "dish": "Revuelto Tierra y Mar",
+            "eur": 8.1,
+            "portion": "media"
+          },
+          {
+            "dish": "Revuelto de Bacalao",
+            "eur": 12.65,
+            "portion": "racion"
+          },
+          {
+            "dish": "Revuelto de Bacalao",
+            "eur": 7.6,
+            "portion": "media"
+          },
+          {
+            "dish": "Revuelto de Espárragos con Jamón",
+            "eur": 11.3,
+            "portion": "racion"
+          },
+          {
+            "dish": "Revuelto de Espárragos con Jamón",
+            "eur": 7.1,
+            "portion": "media"
+          },
+          {
+            "dish": "Revuelto de Habitas baby con Jamón",
+            "eur": 15.3,
+            "portion": "racion"
+          },
+          {
+            "dish": "Revuelto de Habitas baby con Jamón",
+            "eur": 11,
+            "portion": "media"
+          },
+          {
+            "dish": "Revuelto Moriles",
+            "eur": 14,
+            "portion": "racion"
+          },
+          {
+            "dish": "Revuelto Moriles",
+            "eur": 10,
+            "portion": "media"
+          },
+          {
+            "dish": "Alcachofas a la Montillana",
+            "eur": 13.65,
+            "portion": "racion"
+          },
+          {
+            "dish": "Alcachofas a la Montillana",
+            "eur": 8.65,
+            "portion": "media"
+          },
+          {
+            "dish": "Berenjenas abuñueladas a la miel de caña",
+            "eur": 8.9,
+            "portion": "racion"
+          },
+          {
+            "dish": "Berenjenas abuñueladas a la miel de caña",
+            "eur": 6.7,
+            "portion": "media"
+          },
+          {
+            "dish": "Berenjenas con Salmorejo y Jamón",
+            "eur": 10,
+            "portion": "racion"
+          },
+          {
+            "dish": "Berenjenas con Salmorejo y Jamón",
+            "eur": 7.35,
+            "portion": "media"
+          },
+          {
+            "dish": "Berenjenas Fritas",
+            "eur": 7.35,
+            "portion": "racion"
+          },
+          {
+            "dish": "Berenjenas Fritas",
+            "eur": 5.1,
+            "portion": "media"
+          },
+          {
+            "dish": "Boletus plancha con Jamón",
+            "eur": 12,
+            "portion": "racion"
+          },
+          {
+            "dish": "Boletus plancha con Jamón",
+            "eur": 7.85,
+            "portion": "media"
+          },
+          {
+            "dish": "Cardos con Almejas y Gambas",
+            "eur": 15.4,
+            "portion": "racion"
+          },
+          {
+            "dish": "Cardos con Almejas y Gambas",
+            "eur": 11.65,
+            "portion": "media"
+          },
+          {
+            "dish": "Champiñones con Jamón y Salsa Verde",
+            "eur": 12.4,
+            "portion": "racion"
+          },
+          {
+            "dish": "Champiñones con Jamón y Salsa Verde",
+            "eur": 7.85,
+            "portion": "media"
+          },
+          {
+            "dish": "Parrillada de Verduras con Salsa Romesco",
+            "eur": 13.15,
+            "portion": "racion"
+          },
+          {
+            "dish": "Parrillada de Verduras con Queso de Cabra Asado",
+            "eur": 17.45,
+            "portion": "racion"
+          },
+          {
+            "dish": "Pimientos del Padrón",
+            "eur": 7.8,
+            "portion": "racion"
+          },
+          {
+            "dish": "Pimientos del Padrón",
+            "eur": 5.6,
+            "portion": "media"
+          },
+          {
+            "dish": "Pisto Cordobés con Huevo",
+            "eur": 9.35,
+            "portion": "racion"
+          },
+          {
+            "dish": "Pisto Cordobés con Huevo",
+            "eur": 5.8,
+            "portion": "media"
+          },
+          {
+            "dish": "Pisto Cordobés con Huevo",
+            "eur": 3.1,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Setas a la plancha con Salsa Verde",
+            "eur": 8.85,
+            "portion": "racion"
+          },
+          {
+            "dish": "Setas a la plancha con Salsa Verde",
+            "eur": 6.6,
+            "portion": "media"
+          }
+        ]
+      },
+      {
+        "service": "Pescados",
+        "dishes": [
+          "Araña",
+          "Bacalao Frito",
+          "Soldaditos de Pavía",
+          "Boquerones Fritos",
+          "Calamaritos Fritos",
+          "Chanquetes Cristal con Huevos Fritos y Fritada de Ajitos",
+          "Chipirones Fritos",
+          "Choco Frito",
+          "Japuta en Adobo",
+          "Ortiguillas de Chipiona Fritas",
+          "Rosada al Limón",
+          "Fritura Variada de Pescaito (2 personas)",
+          "Calamar a la brasa",
+          "Mero a la plancha",
+          "Navajas a la plancha",
+          "Filete de Atún vuelta y vuelta con sal de escamas",
+          "Pez espada a la Cordobesa",
+          "Gamba blanca de Huelva a la plancha",
+          "Gamba blanca de Huelva cocida",
+          "Almejas a la marinera",
+          "Coquinas de la Isla Cristina",
+          "Taco de Bacalao con Pisto",
+          "Taco de Bacalao en salsa de Gambas",
+          "Pata de Pulpo a la brasa",
+          "Pulpo Feira a la Gallega",
+          "Salmón plancha a la naranja con patatitas y zanahoria baby"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Araña",
+            "eur": 10.85,
+            "portion": "racion"
+          },
+          {
+            "dish": "Araña",
+            "eur": 6.35,
+            "portion": "media"
+          },
+          {
+            "dish": "Araña",
+            "eur": 3.3,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Bacalao Frito",
+            "eur": 11.25,
+            "portion": "racion"
+          },
+          {
+            "dish": "Bacalao Frito",
+            "eur": 7.5,
+            "portion": "media"
+          },
+          {
+            "dish": "Bacalao Frito",
+            "eur": 3.8,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Soldaditos de Pavía",
+            "eur": 12.15,
+            "portion": "racion"
+          },
+          {
+            "dish": "Soldaditos de Pavía",
+            "eur": 8.1,
+            "portion": "media"
+          },
+          {
+            "dish": "Soldaditos de Pavía",
+            "eur": 4,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Boquerones Fritos",
+            "eur": 11.15,
+            "portion": "racion"
+          },
+          {
+            "dish": "Boquerones Fritos",
+            "eur": 7.1,
+            "portion": "media"
+          },
+          {
+            "dish": "Boquerones Fritos",
+            "eur": 3.8,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Calamaritos Fritos",
+            "eur": 10.5,
+            "portion": "racion"
+          },
+          {
+            "dish": "Calamaritos Fritos",
+            "eur": 6.3,
+            "portion": "media"
+          },
+          {
+            "dish": "Calamaritos Fritos",
+            "eur": 3.3,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Chanquetes Cristal con Huevos Fritos y Fritada de Ajitos",
+            "eur": 13.15,
+            "portion": "racion"
+          },
+          {
+            "dish": "Chipirones Fritos",
+            "eur": 10.85,
+            "portion": "racion"
+          },
+          {
+            "dish": "Chipirones Fritos",
+            "eur": 6.35,
+            "portion": "media"
+          },
+          {
+            "dish": "Chipirones Fritos",
+            "eur": 3.3,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Choco Frito",
+            "eur": 13.65,
+            "portion": "racion"
+          },
+          {
+            "dish": "Japuta en Adobo",
+            "eur": 11.15,
+            "portion": "racion"
+          },
+          {
+            "dish": "Japuta en Adobo",
+            "eur": 7.1,
+            "portion": "media"
+          },
+          {
+            "dish": "Japuta en Adobo",
+            "eur": 3.8,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Ortiguillas de Chipiona Fritas",
+            "eur": 16.15,
+            "portion": "racion"
+          },
+          {
+            "dish": "Ortiguillas de Chipiona Fritas",
+            "eur": 10.6,
+            "portion": "media"
+          },
+          {
+            "dish": "Ortiguillas de Chipiona Fritas",
+            "eur": 4.15,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Rosada al Limón",
+            "eur": 10.85,
+            "portion": "racion"
+          },
+          {
+            "dish": "Rosada al Limón",
+            "eur": 6.35,
+            "portion": "media"
+          },
+          {
+            "dish": "Rosada al Limón",
+            "eur": 3.3,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Fritura Variada de Pescaito (2 personas)",
+            "eur": 20,
+            "portion": "racion"
+          },
+          {
+            "dish": "Fritura Variada de Pescaito (2 personas)",
+            "eur": 12,
+            "portion": "media"
+          },
+          {
+            "dish": "Calamar a la brasa",
+            "eur": 11.6,
+            "portion": "racion"
+          },
+          {
+            "dish": "Mero a la plancha",
+            "eur": 11.6,
+            "portion": "racion"
+          },
+          {
+            "dish": "Mero a la plancha",
+            "eur": 7.3,
+            "portion": "media"
+          },
+          {
+            "dish": "Navajas a la plancha",
+            "eur": 15,
+            "portion": "racion"
+          },
+          {
+            "dish": "Navajas a la plancha",
+            "eur": 10,
+            "portion": "media"
+          },
+          {
+            "dish": "Filete de Atún vuelta y vuelta con sal de escamas",
+            "eur": 20.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Pez espada a la Cordobesa",
+            "eur": 13.65,
+            "portion": "racion"
+          },
+          {
+            "dish": "Gamba blanca de Huelva a la plancha",
+            "eur": 16,
+            "portion": "racion"
+          },
+          {
+            "dish": "Gamba blanca de Huelva a la plancha",
+            "eur": 10,
+            "portion": "media"
+          },
+          {
+            "dish": "Gamba blanca de Huelva cocida",
+            "eur": 16,
+            "portion": "racion"
+          },
+          {
+            "dish": "Gamba blanca de Huelva cocida",
+            "eur": 10,
+            "portion": "media"
+          },
+          {
+            "dish": "Almejas a la marinera",
+            "eur": 17,
+            "portion": "racion"
+          },
+          {
+            "dish": "Almejas a la marinera",
+            "eur": 10.5,
+            "portion": "media"
+          },
+          {
+            "dish": "Coquinas de la Isla Cristina",
+            "eur": 17,
+            "portion": "racion"
+          },
+          {
+            "dish": "Coquinas de la Isla Cristina",
+            "eur": 10.5,
+            "portion": "media"
+          },
+          {
+            "dish": "Taco de Bacalao con Pisto",
+            "eur": 15.9,
+            "portion": "racion"
+          },
+          {
+            "dish": "Taco de Bacalao en salsa de Gambas",
+            "eur": 17.7,
+            "portion": "racion"
+          },
+          {
+            "dish": "Pata de Pulpo a la brasa",
+            "eur": 18.15,
+            "portion": "racion"
+          },
+          {
+            "dish": "Pulpo Feira a la Gallega",
+            "eur": 17.5,
+            "portion": "racion"
+          },
+          {
+            "dish": "Pulpo Feira a la Gallega",
+            "eur": 9.5,
+            "portion": "media"
+          },
+          {
+            "dish": "Salmón plancha a la naranja con patatitas y zanahoria baby",
+            "eur": 20,
+            "portion": "racion"
+          }
+        ]
       }
     ],
     "menuSourceNote": "Auditoría documental iniciada el 22/10/2026: seis láminas oficiales en español con precios, alojadas en carpetas de febrero y marzo 2026. La versión inglesa utiliza archivos de 2025 y presenta importes divergentes. Pendiente transcripción íntegra y validación de platos, precios y formatos ES/EN antes de sustituir la ficha preliminar; no copiar carta de los otros Moriles ni publicar una carta parcial. Fuentes complementarias localizadas 22/10/2026: menú Tapas Cordobesas (15,95 € en lámina consultada), cafés/chocolates, postres, versiones inglesas y glosario. Se conservarán separadas las cartas por servicios y los menús cerrados; falta transcripción integral y control de importes antes de publicar.",
@@ -33735,6 +34229,724 @@
               {
                 "label": "Ración",
                 "eur": 7.95
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Revueltos y verduras",
+        "items": [
+          {
+            "name": "Huevos a la flamenca con Jamón y Chorizo",
+            "description": "Huevos a la flamenca con Jamón y Chorizo",
+            "es": "Huevos a la flamenca con Jamón y Chorizo",
+            "en": "Huevos a la flamenca con Jamón y Chorizo",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 13.15
+              }
+            ]
+          },
+          {
+            "name": "Huevos camperos con Patatas y Gulas",
+            "description": "Huevos camperos con Patatas y Gulas",
+            "es": "Huevos camperos con Patatas y Gulas",
+            "en": "Huevos camperos con Patatas y Gulas",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 15.15
+              }
+            ]
+          },
+          {
+            "name": "Revuelto Tierra y Mar",
+            "description": "Espárragos, salmón ahumado y gambas",
+            "es": "Espárragos, salmón ahumado y gambas",
+            "en": "Espárragos, salmón ahumado y gambas",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 13.15
+              },
+              {
+                "label": "Media ración",
+                "eur": 8.1
+              }
+            ]
+          },
+          {
+            "name": "Revuelto de Bacalao",
+            "description": "Revuelto de Bacalao",
+            "es": "Revuelto de Bacalao",
+            "en": "Revuelto de Bacalao",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 12.65
+              },
+              {
+                "label": "Media ración",
+                "eur": 7.6
+              }
+            ]
+          },
+          {
+            "name": "Revuelto de Espárragos con Jamón",
+            "description": "Revuelto de Espárragos con Jamón",
+            "es": "Revuelto de Espárragos con Jamón",
+            "en": "Revuelto de Espárragos con Jamón",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 11.3
+              },
+              {
+                "label": "Media ración",
+                "eur": 7.1
+              }
+            ]
+          },
+          {
+            "name": "Revuelto de Habitas baby con Jamón",
+            "description": "Revuelto de Habitas baby con Jamón",
+            "es": "Revuelto de Habitas baby con Jamón",
+            "en": "Revuelto de Habitas baby con Jamón",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 15.3
+              },
+              {
+                "label": "Media ración",
+                "eur": 11
+              }
+            ]
+          },
+          {
+            "name": "Revuelto Moriles",
+            "description": "Guisantes, setas, cebolla y jamón",
+            "es": "Guisantes, setas, cebolla y jamón",
+            "en": "Guisantes, setas, cebolla y jamón",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 14
+              },
+              {
+                "label": "Media ración",
+                "eur": 10
+              }
+            ]
+          },
+          {
+            "name": "Alcachofas a la Montillana",
+            "description": "Alcachofas a la Montillana",
+            "es": "Alcachofas a la Montillana",
+            "en": "Alcachofas a la Montillana",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 13.65
+              },
+              {
+                "label": "Media ración",
+                "eur": 8.65
+              }
+            ]
+          },
+          {
+            "name": "Berenjenas abuñueladas a la miel de caña",
+            "description": "Berenjenas abuñueladas a la miel de caña",
+            "es": "Berenjenas abuñueladas a la miel de caña",
+            "en": "Berenjenas abuñueladas a la miel de caña",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 8.9
+              },
+              {
+                "label": "Media ración",
+                "eur": 6.7
+              }
+            ]
+          },
+          {
+            "name": "Berenjenas con Salmorejo y Jamón",
+            "description": "Berenjenas con Salmorejo y Jamón",
+            "es": "Berenjenas con Salmorejo y Jamón",
+            "en": "Berenjenas con Salmorejo y Jamón",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 10
+              },
+              {
+                "label": "Media ración",
+                "eur": 7.35
+              }
+            ]
+          },
+          {
+            "name": "Berenjenas Fritas",
+            "description": "Berenjenas Fritas",
+            "es": "Berenjenas Fritas",
+            "en": "Berenjenas Fritas",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 7.35
+              },
+              {
+                "label": "Media ración",
+                "eur": 5.1
+              }
+            ]
+          },
+          {
+            "name": "Boletus plancha con Jamón",
+            "description": "Boletus plancha con Jamón",
+            "es": "Boletus plancha con Jamón",
+            "en": "Boletus plancha con Jamón",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 12
+              },
+              {
+                "label": "Media ración",
+                "eur": 7.85
+              }
+            ]
+          },
+          {
+            "name": "Cardos con Almejas y Gambas",
+            "description": "Cardos con Almejas y Gambas",
+            "es": "Cardos con Almejas y Gambas",
+            "en": "Cardos con Almejas y Gambas",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 15.4
+              },
+              {
+                "label": "Media ración",
+                "eur": 11.65
+              }
+            ]
+          },
+          {
+            "name": "Champiñones con Jamón y Salsa Verde",
+            "description": "Champiñones con Jamón y Salsa Verde",
+            "es": "Champiñones con Jamón y Salsa Verde",
+            "en": "Champiñones con Jamón y Salsa Verde",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 12.4
+              },
+              {
+                "label": "Media ración",
+                "eur": 7.85
+              }
+            ]
+          },
+          {
+            "name": "Parrillada de Verduras con Salsa Romesco",
+            "description": "Parrillada de Verduras con Salsa Romesco",
+            "es": "Parrillada de Verduras con Salsa Romesco",
+            "en": "Parrillada de Verduras con Salsa Romesco",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 13.15
+              }
+            ]
+          },
+          {
+            "name": "Parrillada de Verduras con Queso de Cabra Asado",
+            "description": "Parrillada de Verduras con Queso de Cabra Asado",
+            "es": "Parrillada de Verduras con Queso de Cabra Asado",
+            "en": "Parrillada de Verduras con Queso de Cabra Asado",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 17.45
+              }
+            ]
+          },
+          {
+            "name": "Pimientos del Padrón",
+            "description": "Pimientos del Padrón",
+            "es": "Pimientos del Padrón",
+            "en": "Pimientos del Padrón",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 7.8
+              },
+              {
+                "label": "Media ración",
+                "eur": 5.6
+              }
+            ]
+          },
+          {
+            "name": "Pisto Cordobés con Huevo",
+            "description": "Pisto Cordobés con Huevo",
+            "es": "Pisto Cordobés con Huevo",
+            "en": "Pisto Cordobés con Huevo",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 9.35
+              },
+              {
+                "label": "Media ración",
+                "eur": 5.8
+              },
+              {
+                "label": "Tapa",
+                "eur": 3.1
+              }
+            ]
+          },
+          {
+            "name": "Setas a la plancha con Salsa Verde",
+            "description": "Setas a la plancha con Salsa Verde",
+            "es": "Setas a la plancha con Salsa Verde",
+            "en": "Setas a la plancha con Salsa Verde",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 8.85
+              },
+              {
+                "label": "Media ración",
+                "eur": 6.6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Pescados",
+        "items": [
+          {
+            "name": "Araña",
+            "description": "Araña",
+            "es": "Araña",
+            "en": "Araña",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 10.85
+              },
+              {
+                "label": "Media ración",
+                "eur": 6.35
+              },
+              {
+                "label": "Tapa",
+                "eur": 3.3
+              }
+            ]
+          },
+          {
+            "name": "Bacalao Frito",
+            "description": "Bacalao Frito",
+            "es": "Bacalao Frito",
+            "en": "Bacalao Frito",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 11.25
+              },
+              {
+                "label": "Media ración",
+                "eur": 7.5
+              },
+              {
+                "label": "Tapa",
+                "eur": 3.8
+              }
+            ]
+          },
+          {
+            "name": "Soldaditos de Pavía",
+            "description": "Soldaditos de Pavía",
+            "es": "Soldaditos de Pavía",
+            "en": "Soldaditos de Pavía",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 12.15
+              },
+              {
+                "label": "Media ración",
+                "eur": 8.1
+              },
+              {
+                "label": "Tapa",
+                "eur": 4
+              }
+            ]
+          },
+          {
+            "name": "Boquerones Fritos",
+            "description": "Boquerones Fritos",
+            "es": "Boquerones Fritos",
+            "en": "Boquerones Fritos",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 11.15
+              },
+              {
+                "label": "Media ración",
+                "eur": 7.1
+              },
+              {
+                "label": "Tapa",
+                "eur": 3.8
+              }
+            ]
+          },
+          {
+            "name": "Calamaritos Fritos",
+            "description": "Calamaritos Fritos",
+            "es": "Calamaritos Fritos",
+            "en": "Calamaritos Fritos",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 10.5
+              },
+              {
+                "label": "Media ración",
+                "eur": 6.3
+              },
+              {
+                "label": "Tapa",
+                "eur": 3.3
+              }
+            ]
+          },
+          {
+            "name": "Chanquetes Cristal con Huevos Fritos y Fritada de Ajitos",
+            "description": "Chanquetes Cristal con Huevos Fritos y Fritada de Ajitos",
+            "es": "Chanquetes Cristal con Huevos Fritos y Fritada de Ajitos",
+            "en": "Chanquetes Cristal con Huevos Fritos y Fritada de Ajitos",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 13.15
+              }
+            ]
+          },
+          {
+            "name": "Chipirones Fritos",
+            "description": "Chipirones Fritos",
+            "es": "Chipirones Fritos",
+            "en": "Chipirones Fritos",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 10.85
+              },
+              {
+                "label": "Media ración",
+                "eur": 6.35
+              },
+              {
+                "label": "Tapa",
+                "eur": 3.3
+              }
+            ]
+          },
+          {
+            "name": "Choco Frito",
+            "description": "Choco Frito",
+            "es": "Choco Frito",
+            "en": "Choco Frito",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 13.65
+              }
+            ]
+          },
+          {
+            "name": "Japuta en Adobo",
+            "description": "Japuta en Adobo",
+            "es": "Japuta en Adobo",
+            "en": "Japuta en Adobo",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 11.15
+              },
+              {
+                "label": "Media ración",
+                "eur": 7.1
+              },
+              {
+                "label": "Tapa",
+                "eur": 3.8
+              }
+            ]
+          },
+          {
+            "name": "Ortiguillas de Chipiona Fritas",
+            "description": "Ortiguillas de Chipiona Fritas",
+            "es": "Ortiguillas de Chipiona Fritas",
+            "en": "Ortiguillas de Chipiona Fritas",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 16.15
+              },
+              {
+                "label": "Media ración",
+                "eur": 10.6
+              },
+              {
+                "label": "Tapa",
+                "eur": 4.15
+              }
+            ]
+          },
+          {
+            "name": "Rosada al Limón",
+            "description": "Rosada al Limón",
+            "es": "Rosada al Limón",
+            "en": "Rosada al Limón",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 10.85
+              },
+              {
+                "label": "Media ración",
+                "eur": 6.35
+              },
+              {
+                "label": "Tapa",
+                "eur": 3.3
+              }
+            ]
+          },
+          {
+            "name": "Fritura Variada de Pescaito (2 personas)",
+            "description": "Fritura Variada de Pescaito (2 personas)",
+            "es": "Fritura Variada de Pescaito (2 personas)",
+            "en": "Fritura Variada de Pescaito (2 personas)",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 20
+              },
+              {
+                "label": "Media ración",
+                "eur": 12
+              }
+            ]
+          },
+          {
+            "name": "Calamar a la brasa",
+            "description": "Calamar a la brasa",
+            "es": "Calamar a la brasa",
+            "en": "Calamar a la brasa",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 11.6
+              }
+            ]
+          },
+          {
+            "name": "Mero a la plancha",
+            "description": "Mero a la plancha",
+            "es": "Mero a la plancha",
+            "en": "Mero a la plancha",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 11.6
+              },
+              {
+                "label": "Media ración",
+                "eur": 7.3
+              }
+            ]
+          },
+          {
+            "name": "Navajas a la plancha",
+            "description": "Navajas a la plancha",
+            "es": "Navajas a la plancha",
+            "en": "Navajas a la plancha",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 15
+              },
+              {
+                "label": "Media ración",
+                "eur": 10
+              }
+            ]
+          },
+          {
+            "name": "Filete de Atún vuelta y vuelta con sal de escamas",
+            "description": "Filete de Atún vuelta y vuelta con sal de escamas",
+            "es": "Filete de Atún vuelta y vuelta con sal de escamas",
+            "en": "Filete de Atún vuelta y vuelta con sal de escamas",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 20.95
+              }
+            ]
+          },
+          {
+            "name": "Pez espada a la Cordobesa",
+            "description": "Pez espada a la Cordobesa",
+            "es": "Pez espada a la Cordobesa",
+            "en": "Pez espada a la Cordobesa",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 13.65
+              }
+            ]
+          },
+          {
+            "name": "Gamba blanca de Huelva a la plancha",
+            "description": "Gamba blanca de Huelva a la plancha",
+            "es": "Gamba blanca de Huelva a la plancha",
+            "en": "Gamba blanca de Huelva a la plancha",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 16
+              },
+              {
+                "label": "Media ración",
+                "eur": 10
+              }
+            ]
+          },
+          {
+            "name": "Gamba blanca de Huelva cocida",
+            "description": "Gamba blanca de Huelva cocida",
+            "es": "Gamba blanca de Huelva cocida",
+            "en": "Gamba blanca de Huelva cocida",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 16
+              },
+              {
+                "label": "Media ración",
+                "eur": 10
+              }
+            ]
+          },
+          {
+            "name": "Almejas a la marinera",
+            "description": "Almejas a la marinera",
+            "es": "Almejas a la marinera",
+            "en": "Almejas a la marinera",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 17
+              },
+              {
+                "label": "Media ración",
+                "eur": 10.5
+              }
+            ]
+          },
+          {
+            "name": "Coquinas de la Isla Cristina",
+            "description": "Coquinas de la Isla Cristina",
+            "es": "Coquinas de la Isla Cristina",
+            "en": "Coquinas de la Isla Cristina",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 17
+              },
+              {
+                "label": "Media ración",
+                "eur": 10.5
+              }
+            ]
+          },
+          {
+            "name": "Taco de Bacalao con Pisto",
+            "description": "Taco de Bacalao con Pisto",
+            "es": "Taco de Bacalao con Pisto",
+            "en": "Taco de Bacalao con Pisto",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 15.9
+              }
+            ]
+          },
+          {
+            "name": "Taco de Bacalao en salsa de Gambas",
+            "description": "Taco de Bacalao en salsa de Gambas",
+            "es": "Taco de Bacalao en salsa de Gambas",
+            "en": "Taco de Bacalao en salsa de Gambas",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 17.7
+              }
+            ]
+          },
+          {
+            "name": "Pata de Pulpo a la brasa",
+            "description": "Pata de Pulpo a la brasa",
+            "es": "Pata de Pulpo a la brasa",
+            "en": "Pata de Pulpo a la brasa",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 18.15
+              }
+            ]
+          },
+          {
+            "name": "Pulpo Feira a la Gallega",
+            "description": "Pulpo Feira a la Gallega",
+            "es": "Pulpo Feira a la Gallega",
+            "en": "Pulpo Feira a la Gallega",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 17.5
+              },
+              {
+                "label": "Media ración",
+                "eur": 9.5
+              }
+            ]
+          },
+          {
+            "name": "Salmón plancha a la naranja con patatitas y zanahoria baby",
+            "description": "Salmón plancha a la naranja con patatitas y zanahoria baby",
+            "es": "Salmón plancha a la naranja con patatitas y zanahoria baby",
+            "en": "Salmón plancha a la naranja con patatitas y zanahoria baby",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 20
               }
             ]
           }
