@@ -16544,7 +16544,8 @@
                 "portion": "Ración"
               }
             ],
-            "description": "Servido con AOVE y avellanas cordobesas"
+            "description": "Servido con AOVE y avellanas cordobesas",
+            "en": "Hard sheep's cheese served with extra virgin olive oil and local Córdoba hazelnuts."
           },
           {
             "name": "Jamón ibérico de cebo",
@@ -16557,7 +16558,8 @@
                 "eur": 12.9,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Grain-fed Iberian ham."
           },
           {
             "name": "Jamón ibérico de bellota 100%",
@@ -16567,7 +16569,8 @@
                 "portion": "Ración"
               }
             ],
-            "description": "Cortado a cuchillo; D.O. Valle de los Pedroches"
+            "description": "Cortado a cuchillo; D.O. Valle de los Pedroches",
+            "en": "Hand-carved 100% acorn-fed Iberian ham from the Los Pedroches designation of origin."
           },
           {
             "name": "Surtido de embutidos ibéricos",
@@ -16581,7 +16584,8 @@
                 "portion": "Ración"
               }
             ],
-            "description": "Salchichón y chorizo ibéricos de bellota 100%, jamón ibérico y queso curado de oveja"
+            "description": "Salchichón y chorizo ibéricos de bellota 100%, jamón ibérico y queso curado de oveja",
+            "en": "Selection of 100% acorn-fed Iberian salchichón and chorizo, Iberian ham and aged sheep's cheese."
           },
           {
             "name": "Salmorejo cordobés",
@@ -16591,7 +16595,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Crema fría de tomate, pan, ajo y AOVE, con jamón ibérico y huevo duro"
+            "description": "Crema fría de tomate, pan, ajo y AOVE, con jamón ibérico y huevo duro",
+            "en": "Cold tomato, bread, garlic and olive-oil cream, topped with Iberian ham and hard-boiled egg."
           },
           {
             "name": "Mazamorra cordobesa",
@@ -16601,7 +16606,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Crema fría de pan, almendras, avellana cordobesa, ajo y AOVE, con manzana y uvas"
+            "description": "Crema fría de pan, almendras, avellana cordobesa, ajo y AOVE, con manzana y uvas",
+            "en": "Cold bread, almond, local hazelnut, garlic and olive-oil cream, served with apple and grapes."
           },
           {
             "name": "Ensalada mixta con su «vinagreta clásica»",
@@ -16615,7 +16621,8 @@
                 "portion": "Ración"
               }
             ],
-            "description": "Lechuga, pimiento verde, huevo duro, atún, tomate, cebolla y olivas negras"
+            "description": "Lechuga, pimiento verde, huevo duro, atún, tomate, cebolla y olivas negras",
+            "en": "Mixed salad with lettuce, green pepper, hard-boiled egg, tuna, tomato, onion and black olives."
           },
           {
             "name": "Ensalada de burrata",
@@ -16625,7 +16632,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Rúcula fresca, burrata, jamón ibérico y vinagreta de higos"
+            "description": "Rúcula fresca, burrata, jamón ibérico y vinagreta de higos",
+            "en": "Fresh rocket, burrata, Iberian ham and fig vinaigrette."
           }
         ]
       },
@@ -16644,7 +16652,8 @@
                 "portion": "Ración"
               }
             ],
-            "description": "Berenjenas fritas crujientes acompañadas de miel de caña"
+            "description": "Berenjenas fritas crujientes acompañadas de miel de caña",
+            "en": "Crispy fried aubergines with cane syrup."
           },
           {
             "name": "Croquetas de jamón",
@@ -16658,7 +16667,8 @@
                 "portion": "Ración"
               }
             ],
-            "description": "Croquetas cremosas de jamón ibérico, acompañadas de mayonesa y alioli casero"
+            "description": "Croquetas cremosas de jamón ibérico, acompañadas de mayonesa y alioli casero",
+            "en": "Creamy Iberian ham croquettes with mayonnaise and house-made aioli."
           },
           {
             "name": "Pisto cordobés con huevo frito",
@@ -16672,7 +16682,8 @@
                 "portion": "Ración"
               }
             ],
-            "description": "El tradicional, el de toda la vida"
+            "description": "El tradicional, el de toda la vida",
+            "en": "Traditional Cordoban vegetable pisto topped with a fried egg; the menu does not list the vegetables."
           },
           {
             "name": "Alcachofas al Moriles",
@@ -16686,7 +16697,8 @@
                 "portion": "Ración"
               }
             ],
-            "description": "Alcachofas salteadas con jamón en taquitos guisadas con fino de Córdoba"
+            "description": "Alcachofas salteadas con jamón en taquitos guisadas con fino de Córdoba",
+            "en": "Artichokes sautéed with diced ham and cooked in Córdoba fino wine."
           },
           {
             "name": "Revuelto de morcilla",
@@ -16700,7 +16712,8 @@
                 "portion": "Ración"
               }
             ],
-            "description": "Revuelto de huevos con la intensidad y el toque especiado de la morcilla"
+            "description": "Revuelto de huevos con la intensidad y el toque especiado de la morcilla",
+            "en": "Scrambled eggs with seasoned blood sausage."
           },
           {
             "name": "Huevos rotos con patatas y jamón",
@@ -16710,7 +16723,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Patatas fritas caseras y huevos fritos de yema fluida, con jamón ibérico"
+            "description": "Patatas fritas caseras y huevos fritos de yema fluida, con jamón ibérico",
+            "en": "Homemade chips topped with fried eggs with runny yolks and Iberian ham."
           },
           {
             "name": "Lagrimitas de pollo con patatas fritas",
@@ -16724,7 +16738,8 @@
                 "portion": "Ración"
               }
             ],
-            "description": "Tiras de pollo rebozadas y crujientes, servidas con patatas fritas"
+            "description": "Tiras de pollo rebozadas y crujientes, servidas con patatas fritas",
+            "en": "Crispy breaded chicken strips served with chips."
           }
         ]
       },
@@ -16743,7 +16758,8 @@
                 "portion": "Ración"
               }
             ],
-            "description": "Pescado frito marinado al estilo andaluz"
+            "description": "Pescado frito marinado al estilo andaluz",
+            "en": "Andalusian-style marinated fried fish."
           },
           {
             "name": "Calamares fritos",
@@ -16753,7 +16769,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Calamares rebozados y fritos al estilo andaluz acompañados de mayonesa y alioli casero"
+            "description": "Calamares rebozados y fritos al estilo andaluz acompañados de mayonesa y alioli casero",
+            "en": "Andalusian-style battered fried squid with mayonnaise and house-made aioli."
           },
           {
             "name": "Chanquetes",
@@ -16763,7 +16780,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Pescadito frito crujiente acompañado de huevo frito"
+            "description": "Pescadito frito crujiente acompañado de huevo frito",
+            "en": "Crispy fried small fish served with a fried egg."
           },
           {
             "name": "Chanquetes al estilo del fundador",
@@ -16773,7 +16791,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Receta de Alberto Rosales: chanquetes fritos con huevo frito y asadillo de pimientos"
+            "description": "Receta de Alberto Rosales: chanquetes fritos con huevo frito y asadillo de pimientos",
+            "en": "Founder Alberto Rosales's recipe: fried small fish with a fried egg and roasted pepper salad."
           },
           {
             "name": "Bacalao a la cordobesa",
@@ -16783,7 +16802,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Lomo de bacalao al horno sobre patatas panaderas y cubierto con pisto casero"
+            "description": "Lomo de bacalao al horno sobre patatas panaderas y cubierto con pisto casero",
+            "en": "Oven-baked cod loin on sliced potatoes, topped with homemade pisto."
           }
         ]
       },
@@ -16798,7 +16818,8 @@
                 "portion": "Ración"
               }
             ],
-            "description": "Potaje de garbanzos con casquería"
+            "description": "Potaje de garbanzos con casquería",
+            "en": "Chickpea stew with offal."
           },
           {
             "name": "Albondiguitas en su salsa",
@@ -16812,7 +16833,8 @@
                 "portion": "Ración"
               }
             ],
-            "description": "De cerdo y ternera en salsa de hortalizas"
+            "description": "De cerdo y ternera en salsa de hortalizas",
+            "en": "Small pork and beef meatballs in a vegetable sauce."
           },
           {
             "name": "Gallina en pepitoria",
@@ -16826,7 +16848,8 @@
                 "portion": "Ración"
               }
             ],
-            "description": "Gallina guisada en salsa tradicional de su propio jugo, almendras y azafrán"
+            "description": "Gallina guisada en salsa tradicional de su propio jugo, almendras y azafrán",
+            "en": "Stewed hen in a traditional sauce made with its cooking juices, almonds and saffron."
           },
           {
             "name": "Flamenquín cordobés",
@@ -16836,7 +16859,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Rollo de lomo de cerdo y jamón ibérico empanado y frito"
+            "description": "Rollo de lomo de cerdo y jamón ibérico empanado y frito",
+            "en": "Breaded and fried roll of pork loin and Iberian ham."
           },
           {
             "name": "Pifarrada de conejo",
@@ -16846,7 +16870,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Receta tradicional del pastoreo cordobés: guiso de conejo con verdurita pochada"
+            "description": "Receta tradicional del pastoreo cordobés: guiso de conejo con verdurita pochada",
+            "en": "Traditional Córdoba shepherds' recipe: rabbit stew with gently cooked vegetables."
           },
           {
             "name": "Rabo de toro a la antigua",
@@ -16860,7 +16885,8 @@
                 "portion": "Ración"
               }
             ],
-            "description": "La carta lo presenta como Premio al Mejor Rabo de Toro Cordobés 2026, otorgado por la Cofradía Gastronómica del Rabo de Toro Cordobés (afirmación del establecimiento, pendiente de verificación independiente)"
+            "description": "La carta lo presenta como Premio al Mejor Rabo de Toro Cordobés 2026, otorgado por la Cofradía Gastronómica del Rabo de Toro Cordobés (afirmación del establecimiento, pendiente de verificación independiente)",
+            "en": "Traditional oxtail stew. The restaurant claims a 2026 Córdoba oxtail award; this claim has not been independently verified."
           },
           {
             "name": "Abanico ibérico de bellota",
@@ -16870,7 +16896,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Corte de cerdo ibérico de bellota a la plancha"
+            "description": "Corte de cerdo ibérico de bellota a la plancha",
+            "en": "Grilled cut of acorn-fed Iberian pork."
           },
           {
             "name": "Codillo asado en su jugo",
@@ -16880,7 +16907,8 @@
                 "portion": "Ración"
               }
             ],
-            "description": "Codillo de cerdo asado a baja temperatura, acompañado de salsa de su propio jugo"
+            "description": "Codillo de cerdo asado a baja temperatura, acompañado de salsa de su propio jugo",
+            "en": "Slow-roasted pork knuckle served with a sauce made from its roasting juices."
           }
         ]
       },
@@ -16894,7 +16922,8 @@
                 "eur": 8.9,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Plain omelette served with chips."
           },
           {
             "name": "Croquetas con patatas fritas",
@@ -16903,7 +16932,8 @@
                 "eur": 8.9,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Croquettes served with chips; filling is not specified."
           },
           {
             "name": "Lagrimitas de pollo con patatas fritas",
@@ -16917,7 +16947,8 @@
                 "portion": "Ración"
               }
             ],
-            "description": "Tiras de pollo rebozadas y crujientes, servidas con patatas fritas recién hechas"
+            "description": "Tiras de pollo rebozadas y crujientes, servidas con patatas fritas recién hechas",
+            "en": "Crispy breaded chicken strips served with freshly made chips."
           }
         ]
       },
@@ -16932,7 +16963,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "De pan brioche, servida con una bola de helado"
+            "description": "De pan brioche, servida con una bola de helado",
+            "en": "Brioche French-toast-style dessert with honey and a scoop of ice cream."
           },
           {
             "name": "Leche frita",
@@ -16942,7 +16974,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Postre de leche aromatizada con canela y frito en aceite de oliva"
+            "description": "Postre de leche aromatizada con canela y frito en aceite de oliva",
+            "en": "Traditional fried milk dessert flavoured with cinnamon and cooked in olive oil."
           },
           {
             "name": "Helado de naranja con vermut",
@@ -16952,7 +16985,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Creación del chef Julián: helado artesanal de naranja con un toque de vermut"
+            "description": "Creación del chef Julián: helado artesanal de naranja con un toque de vermut",
+            "en": "Chef Julián's handmade orange ice cream with a touch of vermouth."
           },
           {
             "name": "Postre de la abuela Concha",
@@ -16962,7 +16996,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Tarta de galleta, natillas y chocolate, según la receta de la abuela Concha"
+            "description": "Tarta de galleta, natillas y chocolate, según la receta de la abuela Concha",
+            "en": "Grandmother Concha's biscuit, custard and chocolate cake."
           },
           {
             "name": "Pastel cordobés",
@@ -16972,7 +17007,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Hojaldre tradicional relleno de cabello de ángel, horneado y espolvoreado con azúcar y canela"
+            "description": "Hojaldre tradicional relleno de cabello de ángel, horneado y espolvoreado con azúcar y canela",
+            "en": "Traditional Córdoba puff pastry filled with candied squash strands, dusted with sugar and cinnamon."
           },
           {
             "name": "Naranjas mozárabes",
@@ -16982,7 +17018,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Rodajas de naranja natural con canela, miel y crocanti de almendra"
+            "description": "Rodajas de naranja natural con canela, miel y crocanti de almendra",
+            "en": "Fresh orange slices with cinnamon, honey and crunchy almonds."
           },
           {
             "name": "Helado variado",
@@ -16992,7 +17029,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Selección de helados artesanales de chocolate, vainilla y naranja"
+            "description": "Selección de helados artesanales de chocolate, vainilla y naranja",
+            "en": "Selection of handmade chocolate, vanilla and orange ice creams."
           },
           {
             "name": "Fruta temporada",
@@ -17001,7 +17039,8 @@
                 "eur": 5.9,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Seasonal fruit."
           },
           {
             "name": "Tarta de Toblerone de chocolate",
@@ -17010,7 +17049,8 @@
                 "eur": 6.5,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Toblerone chocolate cake; further ingredients are not specified."
           },
           {
             "name": "Tarta de tres leches",
@@ -17019,7 +17059,8 @@
                 "eur": 5.9,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Three-milk cake; further ingredients are not specified."
           }
         ]
       },
@@ -17038,7 +17079,8 @@
                 "portion": "Ración"
               }
             ],
-            "description": "Migas de pan salteadas con chorizo, morcilla, panceta, pimientos verdes y ajo. Consultar disponibilidad."
+            "description": "Migas de pan salteadas con chorizo, morcilla, panceta, pimientos verdes y ajo. Consultar disponibilidad.",
+            "en": "Fried breadcrumbs with chorizo, blood sausage, pork belly, green peppers and garlic. Subject to availability."
           },
           {
             "name": "Menudo gitano",
@@ -17048,7 +17090,8 @@
                 "portion": "Ración"
               }
             ],
-            "description": "Potaje de garbanzos con casquería"
+            "description": "Potaje de garbanzos con casquería",
+            "en": "Chickpea stew with offal."
           },
           {
             "name": "Costillar al horno con salsa BBQ",
@@ -17058,7 +17101,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Costillar de cerdo asado al horno con salsa barbacoa"
+            "description": "Costillar de cerdo asado al horno con salsa barbacoa",
+            "en": "Oven-roasted pork ribs with barbecue sauce."
           },
           {
             "name": "Secreto ibérico al horno con patatas y verduritas",
@@ -17067,7 +17111,8 @@
                 "eur": 15.9,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Oven-roasted Iberian pork secreto cut with potatoes and vegetables."
           }
         ]
       },
@@ -17086,7 +17131,8 @@
                 "portion": "Ración"
               }
             ],
-            "description": "Consultar disponibilidad"
+            "description": "Consultar disponibilidad",
+            "en": "Croquettes from the special coeliac menu. Ask about availability and suitability."
           },
           {
             "name": "Flamenquín (carta especial de celíacos)",
@@ -17096,7 +17142,8 @@
                 "portion": "Ración"
               }
             ],
-            "description": "Consultar disponibilidad"
+            "description": "Consultar disponibilidad",
+            "en": "Flamenquín from the special coeliac menu. Ask about availability and suitability."
           },
           {
             "name": "Pechuga de pollo empanada (carta especial de celíacos)",
@@ -17105,7 +17152,8 @@
                 "eur": 13.9,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Breaded chicken breast from the special coeliac menu; confirm availability and suitability."
           }
         ]
       }
