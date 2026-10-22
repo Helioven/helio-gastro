@@ -962,7 +962,7 @@ async function init(){
   const res=await fetch('./data/places.json',{cache:'no-store'});
   if(!res.ok)throw Error('HTTP '+res.status);
   const data=await res.json();if(!Array.isArray(data))throw Error('Formato inválido');
-  state.places=data.map(normalizePlace).filter(validPlace);
+  state.places=data.filter(place=>place?.hidden!==true).map(normalizePlace).filter(validPlace);
   state.favorites=new Set([...loadFavorites()].filter(id=>state.places.some(p=>p.id===id)));
   renderFavorites();
   updateMealMode((()=>{try{return localStorage.getItem(MODE_KEY)||'comida'}catch{return 'comida'}})(),{reset:false});
