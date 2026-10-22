@@ -15422,6 +15422,10 @@
       {
         "label": "Platos del menú degustación",
         "url": "https://tienda.gruporosalescordoba.com/restaurante-puerta-sevilla-experiencia-cordoba-bajo-la-luz-de-la-historia/"
+      },
+      {
+        "label": "Carta digital oficial en inglés (versión independiente; puede diferir de la española)",
+        "url": "https://puertasevilla.tucartadigital.com/en/wLm4pqrBwo6WnZyZpQ=="
       }
     ],
     "menus": [
@@ -15685,7 +15689,8 @@
                 "eur": 20,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Selection of Iberian cured meats from Los Pedroches Valley."
           },
           {
             "name": "Jamón Ibérico de los Pedroches",
@@ -15694,7 +15699,8 @@
                 "eur": 28,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Iberian ham from Los Pedroches Valley."
           },
           {
             "name": "Tosta de Matrimonio (Boquerón y Anchoa)",
@@ -15703,7 +15709,8 @@
                 "eur": 6.5,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Toast with marinated anchovy and salted anchovy."
           },
           {
             "name": "Mazamorra Cordobesa",
@@ -15712,7 +15719,8 @@
                 "eur": 12,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Traditional Cordoban cold almond-and-bread cream."
           },
           {
             "name": "Salmorejo Cordobés con Jamón y Huevo Duro",
@@ -15722,7 +15730,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Crema de tomate fría"
+            "description": "Crema de tomate fría",
+            "en": "Chilled Cordoban tomato and bread cream, served with ham and hard-boiled egg."
           },
           {
             "name": "Berenjenas Fritas",
@@ -15731,7 +15740,8 @@
                 "eur": 11.5,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Fried aubergines."
           },
           {
             "name": "Habitas Rotas con Huevo y Jamón Ibérico",
@@ -15740,7 +15750,8 @@
                 "eur": 16.5,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Baby broad beans with egg and Iberian ham."
           },
           {
             "name": "Ensalada de Naranja y Bacalao",
@@ -15749,7 +15760,8 @@
                 "eur": 15,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Orange and cod salad."
           },
           {
             "name": "Carpaccio de Tomate con Avellana Cordobesa y Pipas de Calabaza",
@@ -15758,7 +15770,8 @@
                 "eur": 13.5,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Tomato carpaccio with Cordoban hazelnuts and pumpkin seeds."
           },
           {
             "name": "Foie Casero con Confitura de Frambuesa y Helado de Higo",
@@ -15767,7 +15780,8 @@
                 "eur": 23,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Homemade foie gras with raspberry preserve and fig ice cream."
           }
         ]
       },
@@ -15781,7 +15795,8 @@
                 "eur": 10.5,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Cordoban salmorejo; listed by the restaurant among its gluten-free options."
           },
           {
             "name": "Croquetas de Jamón",
@@ -15790,12 +15805,14 @@
                 "eur": 15,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Ham croquettes; listed by the restaurant among its gluten-free options."
           },
           {
             "name": "Berenjenas fritas",
             "prices": [],
-            "priceNote": "Consultar"
+            "priceNote": "Consultar",
+            "en": "Fried aubergines; availability and price to be confirmed."
           },
           {
             "name": "Flamenquín de Jamón Ibérico con Patatas",
@@ -15804,7 +15821,8 @@
                 "eur": 18,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Iberian ham flamenquín served with potatoes; listed among the restaurant’s gluten-free options."
           }
         ]
       },
@@ -15819,7 +15837,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Crema de tomate fría"
+            "description": "Crema de tomate fría",
+            "en": "Chilled Cordoban tomato and bread cream, served with ham and hard-boiled egg."
           },
           {
             "name": "Alcachofas Mozárabes",
@@ -15828,7 +15847,8 @@
                 "eur": 16,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Mozarabic-style artichokes."
           },
           {
             "name": "Berenjenas Fritas",
@@ -15837,7 +15857,8 @@
                 "eur": 11.5,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Fried aubergines."
           },
           {
             "name": "Flamenquín de Jamón Ibérico con Patatas",
@@ -15846,7 +15867,8 @@
                 "eur": 18,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Iberian ham flamenquín served with potatoes."
           },
           {
             "name": "Rabo de Toro",
@@ -15855,7 +15877,8 @@
                 "eur": 23,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Traditional Cordoban oxtail stew."
           }
         ]
       },
@@ -15869,7 +15892,8 @@
                 "eur": 18,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Iberian pork tenderloin with country-style migas, almonds and a Pedro Ximénez sweet sauce."
           },
           {
             "name": "Presa Ibérica a la Parrilla sobre Rissoto de setas",
@@ -15879,7 +15903,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Alérgenos presentes únicamente en la salsa. Puntalette elaborado y presentado en estilo risotto."
+            "description": "Alérgenos presentes únicamente en la salsa. Puntalette elaborado y presentado en estilo risotto.",
+            "en": "Grilled Iberian pork shoulder cut served over mushroom puntalette prepared risotto-style; allergens indicated by the restaurant apply to the sauce."
           },
           {
             "name": "Solomillo de ternera Gallega con patatas cremosa",
@@ -15888,7 +15913,8 @@
                 "eur": 28.5,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Galician beef tenderloin with creamy potatoes."
           },
           {
             "name": "Entrecot de Vaca Gallega",
@@ -15898,7 +15924,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Peso: 450 g"
+            "description": "Peso: 450 g",
+            "en": "Galician beef entrecôte, approximately 450 g."
           }
         ]
       },
@@ -15912,7 +15939,8 @@
                 "eur": 25,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Confit cod served over traditional Spanish vegetable pisto."
           },
           {
             "name": "Lubina a la Espalda con patatas panadera",
@@ -15922,7 +15950,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Medio kilo"
+            "description": "Medio kilo",
+            "en": "Butterflied sea bass with sliced baked potatoes; listed at approximately half a kilogram."
           },
           {
             "name": "Corvina Plancha con Verduras de Temporada",
@@ -15931,7 +15960,8 @@
                 "eur": 24,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Grilled meagre fish with seasonal vegetables."
           },
           {
             "name": "Ventresca de Atun con verduras",
@@ -15940,7 +15970,8 @@
                 "eur": 32,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Tuna belly with vegetables."
           }
         ]
       },
@@ -15955,7 +15986,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Elaboración al momento · 10 minutos"
+            "description": "Elaboración al momento · 10 minutos",
+            "en": "Chocolate coulant, prepared to order (approximately 10 minutes); the menu mentions an award and Pedro Ximénez pairing."
           },
           {
             "name": "Tocinito de cielo con caramelo y helado de vainilla",
@@ -15964,7 +15996,8 @@
                 "eur": 7.5,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Tocinillo de cielo, a traditional egg-yolk custard, with caramel and vanilla ice cream."
           },
           {
             "name": "Tarta de Queso Cremosa y Coulis de Frutos Rojos",
@@ -15973,7 +16006,8 @@
                 "eur": 7.5,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Creamy cheesecake with red-berry coulis."
           },
           {
             "name": "Pastel Cordobés",
@@ -15982,7 +16016,8 @@
                 "eur": 7.5,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Traditional Cordoban pastry."
           },
           {
             "name": "Helados caseros",
@@ -15992,7 +16027,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Preguntar al personal por los sabores"
+            "description": "Preguntar al personal por los sabores",
+            "en": "Homemade ice creams; ask staff about available flavours."
           }
         ]
       },
@@ -16007,7 +16043,8 @@
                 "portion": "Formato no indicado"
               }
             ],
-            "description": "Con chalotas glaseadas y crujiente de regañá"
+            "description": "Con chalotas glaseadas y crujiente de regañá",
+            "en": "Beef tenderloin steak tartare with glazed shallots and crisp regañá flatbread."
           },
           {
             "name": "Croquetas cremosas de Puchero",
@@ -16016,7 +16053,8 @@
                 "eur": 15,
                 "portion": "Formato no indicado"
               }
-            ]
+            ],
+            "en": "Creamy croquettes made with traditional stew filling."
           }
         ]
       }
@@ -16031,7 +16069,7 @@
         "eur": 2.5
       }
     ],
-    "menuSourceNote": "Transcripción parcial de la sección Entrantes facilitada por el usuario el 16/10/2026. Restantes secciones pendientes. Los marcadores 'svg' de la fuente copiada no identifican alérgenos y no se interpretan. Fecha y vigencia de precios no indicadas. Sin imágenes de terceros. Sección «Opciones sin gluten / para celíacos» facilitada por el usuario: cuatro platos y servicio de pan a 2,50 €. Precio de berenjenas: «Consultar». La clasificación es la publicada por la carta y no garantiza ausencia de contaminación cruzada; verificar con el establecimiento. Marcadores svg sin identificación de alérgenos. Sección «Cordobesa» facilitada por el usuario: contiene cinco platos, varios también listados en otras secciones; se conserva su pertenencia a cada sección sin tratar las coincidencias como platos nuevos. Sección Carnes, cuatro platos, facilitada por el usuario el 16/10/2026. Etiquetas svg de alérgenos no interpretables; descripción de la presa y peso de entrecot mantenidos como aparecen en la fuente. Sección Pescados con cuatro platos facilitada por el usuario. Lubina indicada como medio kilo. Iconos svg de alérgenos sin identificación textual, no interpretados. Sección Postres aportada por el usuario el 16/10/2026: cinco referencias. Se normalizó editorialmente el nombre del tocinito eliminando la «u» final suelta del texto copiado, con autorización del usuario. Coulant con preparación indicada de 10 minutos. Iconos svg sin identificación. Sugerencias del día facilitadas por el usuario el 16/10/2026; sujetas a disponibilidad y variación. Dos platos y una referencia de vino separada del catálogo gastronómico. Marcadores svg no interpretados.",
+    "menuSourceNote": "Transcripción parcial de la sección Entrantes facilitada por el usuario el 16/10/2026. Restantes secciones pendientes. Los marcadores 'svg' de la fuente copiada no identifican alérgenos y no se interpretan. Fecha y vigencia de precios no indicadas. Sin imágenes de terceros. Sección «Opciones sin gluten / para celíacos» facilitada por el usuario: cuatro platos y servicio de pan a 2,50 €. Precio de berenjenas: «Consultar». La clasificación es la publicada por la carta y no garantiza ausencia de contaminación cruzada; verificar con el establecimiento. Marcadores svg sin identificación de alérgenos. Sección «Cordobesa» facilitada por el usuario: contiene cinco platos, varios también listados en otras secciones; se conserva su pertenencia a cada sección sin tratar las coincidencias como platos nuevos. Sección Carnes, cuatro platos, facilitada por el usuario el 16/10/2026. Etiquetas svg de alérgenos no interpretables; descripción de la presa y peso de entrecot mantenidos como aparecen en la fuente. Sección Pescados con cuatro platos facilitada por el usuario. Lubina indicada como medio kilo. Iconos svg de alérgenos sin identificación textual, no interpretados. Sección Postres aportada por el usuario el 16/10/2026: cinco referencias. Se normalizó editorialmente el nombre del tocinito eliminando la «u» final suelta del texto copiado, con autorización del usuario. Coulant con preparación indicada de 10 minutos. Iconos svg sin identificación. Sugerencias del día facilitadas por el usuario el 16/10/2026; sujetas a disponibilidad y variación. Dos platos y una referencia de vino separada del catálogo gastronómico. Marcadores svg no interpretados. Auditoría bilingüe 22/10/2026: se añadieron explicaciones EN editoriales para los 34 registros existentes sin alterar nombres españoles, platos, precios ni secciones. La carta inglesa oficial se conserva como fuente independiente y presenta diferencias en algunas referencias de Entrantes; no se fusionaron ambas versiones. Los alérgenos visuales no se incorporaron por falta de contraste de iconos con la leyenda oficial.",
     "beverageSuggestions": [
       {
         "name": "Vivanco Crianza 2021",
