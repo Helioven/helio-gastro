@@ -308,11 +308,11 @@ function normalizePlace(raw){
    &&Number.isFinite(item.eur)&&item.eur>=0))
   .map(m=>({...m,service:Object.hasOwn(SERVICE_TYPES,m.service)?m.service:'general'}));
  const allDishes=[...new Set(safeMenus.flatMap(m=>m.dishes))];
- const allPrices=safeMenus.filter(m=>!(raw.id==='rincon-beatillas' && /^Menú/.test(m.service))).flatMap(m=>m.dishPrices.map(price=>({...price,service:m.service})));
+ const allPrices=safeMenus.filter(m=>!(raw.id==='rincon-beatillas' && m.menuCourses)).flatMap(m=>m.dishPrices.map(price=>({...price,service:m.service})));
  // Los menús cerrados de grupo no representan precios individuales comparables.
  // No convertir la procedencia editorial en una afirmación de precio confirmado.
  const priceStatus=['confirmed','estimated','unknown'].includes(raw.priceStatus)?raw.priceStatus:'unknown';
- return {...raw,sourcePriceStatus:raw.priceStatus,priceStatus,menus:safeMenus,dishes:allDishes,dishPrices:allPrices};
+ return {...raw,sourcePriceStatus:raw.priceStatus,priceStatus,menus:safeMenus,groupMenuRecords:raw.id==='rincon-beatillas'?sourceMenus.filter(m=>m.menuCourses&&Number.isFinite(m.price)):[],dishes:allDishes,dishPrices:allPrices};
 }
 
 function validPlace(p){
@@ -601,7 +601,7 @@ function menuGroups(p){
 }
 function renderBeatillasGroupMenus(panel,p){
  if(p.id!=='rincon-beatillas')return;
- const menus=(p.menus||[]).filter(m=>m.menuCourses&&Number.isFinite(m.price));
+ const menus=p.groupMenuRecords||[];
  if(!menus.length)return;
  const section=document.createElement('section');
  section.className='beatillas-group-menus';
