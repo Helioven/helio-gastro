@@ -33234,6 +33234,392 @@
             "portion": "racion"
           }
         ]
+      },
+      {
+        "service": "Carnes",
+        "dishes": [
+          "Chorizo al vino",
+          "Chorizo criollo a la brasa",
+          "Chorizo frito",
+          "Cochifrito cordobés confitado",
+          "Flamenquín de Jamón Serrano",
+          "Flamenquín de Jamón Ibérico y Queso puro de Oveja",
+          "Brocheta de Solomillo Ibérico",
+          "Mollejas de Cordero lechal a la brasa",
+          "Riñones de Cordero lechal a la brasa",
+          "Codillo asado",
+          "Chuletitas de cordero lechal",
+          "Entrecot de vaca vieja",
+          "Chuletón de vaca vieja Frisona",
+          "Solomillo de vaca Simmental",
+          "Churrasco de Pollo a la Brasa con ajitos y patatas panaderas",
+          "Lomo Ibérico de orza",
+          "Abanico Ibérico",
+          "Churrasco Ibérico a las dos salsas",
+          "Lagarto Ibérico",
+          "Pluma Ibérica",
+          "Presa Ibérica",
+          "Secreto Ibérico",
+          "Parrillada Ibérica",
+          "Tomahawk Ibérico (270 g aprox.)",
+          "Solomillo Ibérico a la Pimienta",
+          "Solomillo Ibérico al Pedro Ximénez",
+          "Solomillo Ibérico con Queso Azul del Valle de los Pedroches",
+          "Magret de Pato Mulard con salsa de naranja de Palma del Río",
+          "Hamburguesa Moriles"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Chorizo al vino",
+            "eur": 9.85,
+            "portion": "racion"
+          },
+          {
+            "dish": "Chorizo al vino",
+            "eur": 7,
+            "portion": "media"
+          },
+          {
+            "dish": "Chorizo al vino",
+            "eur": 4,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Chorizo criollo a la brasa",
+            "eur": 9.85,
+            "portion": "racion"
+          },
+          {
+            "dish": "Chorizo criollo a la brasa",
+            "eur": 7,
+            "portion": "media"
+          },
+          {
+            "dish": "Chorizo criollo a la brasa",
+            "eur": 4,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Chorizo frito",
+            "eur": 8.1,
+            "portion": "racion"
+          },
+          {
+            "dish": "Chorizo frito",
+            "eur": 6.25,
+            "portion": "media"
+          },
+          {
+            "dish": "Chorizo frito",
+            "eur": 3.7,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Cochifrito cordobés confitado",
+            "eur": 13.4,
+            "portion": "racion"
+          },
+          {
+            "dish": "Cochifrito cordobés confitado",
+            "eur": 8.75,
+            "portion": "media"
+          },
+          {
+            "dish": "Cochifrito cordobés confitado",
+            "eur": 4.5,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Flamenquín de Jamón Serrano",
+            "eur": 10.1,
+            "portion": "racion"
+          },
+          {
+            "dish": "Flamenquín de Jamón Ibérico y Queso puro de Oveja",
+            "eur": 5.55,
+            "portion": "racion"
+          },
+          {
+            "dish": "Brocheta de Solomillo Ibérico",
+            "eur": 6.2,
+            "portion": "racion"
+          },
+          {
+            "dish": "Mollejas de Cordero lechal a la brasa",
+            "eur": 22.25,
+            "portion": "racion"
+          },
+          {
+            "dish": "Mollejas de Cordero lechal a la brasa",
+            "eur": 15.9,
+            "portion": "media"
+          },
+          {
+            "dish": "Riñones de Cordero lechal a la brasa",
+            "eur": 22.25,
+            "portion": "racion"
+          },
+          {
+            "dish": "Riñones de Cordero lechal a la brasa",
+            "eur": 15.9,
+            "portion": "media"
+          },
+          {
+            "dish": "Codillo asado",
+            "eur": 19.2,
+            "portion": "racion"
+          },
+          {
+            "dish": "Chuletitas de cordero lechal",
+            "eur": 27.25,
+            "portion": "racion"
+          },
+          {
+            "dish": "Chuletitas de cordero lechal",
+            "eur": 16.95,
+            "portion": "media"
+          },
+          {
+            "dish": "Entrecot de vaca vieja",
+            "eur": 30,
+            "portion": "racion"
+          },
+          {
+            "dish": "Solomillo de vaca Simmental",
+            "eur": 27.25,
+            "portion": "racion"
+          },
+          {
+            "dish": "Churrasco de Pollo a la Brasa con ajitos y patatas panaderas",
+            "eur": 13.9,
+            "portion": "racion"
+          },
+          {
+            "dish": "Lomo Ibérico de orza",
+            "eur": 16.45,
+            "portion": "racion"
+          },
+          {
+            "dish": "Lomo Ibérico de orza",
+            "eur": 9.3,
+            "portion": "media"
+          },
+          {
+            "dish": "Abanico Ibérico",
+            "eur": 18.3,
+            "portion": "racion"
+          },
+          {
+            "dish": "Churrasco Ibérico a las dos salsas",
+            "eur": 16.1,
+            "portion": "racion"
+          },
+          {
+            "dish": "Lagarto Ibérico",
+            "eur": 15.6,
+            "portion": "racion"
+          },
+          {
+            "dish": "Pluma Ibérica",
+            "eur": 19.45,
+            "portion": "racion"
+          },
+          {
+            "dish": "Presa Ibérica",
+            "eur": 19.45,
+            "portion": "racion"
+          },
+          {
+            "dish": "Secreto Ibérico",
+            "eur": 18.3,
+            "portion": "racion"
+          },
+          {
+            "dish": "Parrillada Ibérica",
+            "eur": 34.9,
+            "portion": "racion"
+          },
+          {
+            "dish": "Tomahawk Ibérico (270 g aprox.)",
+            "eur": 14.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Solomillo Ibérico a la Pimienta",
+            "eur": 17.8,
+            "portion": "racion"
+          },
+          {
+            "dish": "Solomillo Ibérico al Pedro Ximénez",
+            "eur": 17.8,
+            "portion": "racion"
+          },
+          {
+            "dish": "Solomillo Ibérico con Queso Azul del Valle de los Pedroches",
+            "eur": 17.8,
+            "portion": "racion"
+          },
+          {
+            "dish": "Magret de Pato Mulard con salsa de naranja de Palma del Río",
+            "eur": 20.75,
+            "portion": "racion"
+          },
+          {
+            "dish": "Hamburguesa Moriles",
+            "eur": 13.1,
+            "portion": "racion"
+          }
+        ]
+      },
+      {
+        "service": "Nuestros guisos",
+        "dishes": [
+          "Rabo de toro",
+          "Carrillada Ibérica a la miel de caña",
+          "Callos con Manitas y Garbanzos",
+          "Ternera en salsa",
+          "Lomo con Tomate"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Rabo de toro",
+            "eur": 14.1,
+            "portion": "racion"
+          },
+          {
+            "dish": "Rabo de toro",
+            "eur": 10.85,
+            "portion": "media"
+          },
+          {
+            "dish": "Carrillada Ibérica a la miel de caña",
+            "eur": 23.7,
+            "portion": "racion"
+          },
+          {
+            "dish": "Carrillada Ibérica a la miel de caña",
+            "eur": 13.5,
+            "portion": "media"
+          },
+          {
+            "dish": "Carrillada Ibérica a la miel de caña",
+            "eur": 5.55,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Callos con Manitas y Garbanzos",
+            "eur": 11.85,
+            "portion": "racion"
+          },
+          {
+            "dish": "Callos con Manitas y Garbanzos",
+            "eur": 9.6,
+            "portion": "media"
+          },
+          {
+            "dish": "Callos con Manitas y Garbanzos",
+            "eur": 4.8,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Ternera en salsa",
+            "eur": 10.1,
+            "portion": "racion"
+          },
+          {
+            "dish": "Ternera en salsa",
+            "eur": 7.5,
+            "portion": "media"
+          },
+          {
+            "dish": "Ternera en salsa",
+            "eur": 4.2,
+            "portion": "tapa"
+          },
+          {
+            "dish": "Lomo con Tomate",
+            "eur": 9.45,
+            "portion": "racion"
+          },
+          {
+            "dish": "Lomo con Tomate",
+            "eur": 7.1,
+            "portion": "media"
+          },
+          {
+            "dish": "Lomo con Tomate",
+            "eur": 4,
+            "portion": "tapa"
+          }
+        ]
+      },
+      {
+        "service": "Para los más chicos",
+        "dishes": [
+          "Flamenquín de york con patatas fritas",
+          "San Jacobo con patatas fritas",
+          "Huevos (dos) con patatas fritas",
+          "Mini hamburguesas (dos) de pollo con patatas fritas",
+          "Nuggets de pollo con patatas fritas",
+          "Pechuga de pollo empanada con patatas fritas",
+          "Pechuga de pollo plancha con patatas fritas"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Flamenquín de york con patatas fritas",
+            "eur": 5.5,
+            "portion": "racion"
+          },
+          {
+            "dish": "San Jacobo con patatas fritas",
+            "eur": 6.9,
+            "portion": "racion"
+          },
+          {
+            "dish": "Huevos (dos) con patatas fritas",
+            "eur": 6,
+            "portion": "racion"
+          },
+          {
+            "dish": "Mini hamburguesas (dos) de pollo con patatas fritas",
+            "eur": 6.6,
+            "portion": "racion"
+          },
+          {
+            "dish": "Nuggets de pollo con patatas fritas",
+            "eur": 7.5,
+            "portion": "racion"
+          },
+          {
+            "dish": "Pechuga de pollo empanada con patatas fritas",
+            "eur": 7.5,
+            "portion": "racion"
+          },
+          {
+            "dish": "Pechuga de pollo plancha con patatas fritas",
+            "eur": 7.5,
+            "portion": "racion"
+          }
+        ]
+      },
+      {
+        "service": "Platos combinados",
+        "dishes": [
+          "Plato Moriles",
+          "Plato Ribera"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Plato Moriles",
+            "eur": 16.1,
+            "portion": "racion"
+          },
+          {
+            "dish": "Plato Ribera",
+            "eur": 16.1,
+            "portion": "racion"
+          }
+        ]
       }
     ],
     "menuSourceNote": "Auditoría documental iniciada el 22/10/2026: seis láminas oficiales en español con precios, alojadas en carpetas de febrero y marzo 2026. La versión inglesa utiliza archivos de 2025 y presenta importes divergentes. Pendiente transcripción íntegra y validación de platos, precios y formatos ES/EN antes de sustituir la ficha preliminar; no copiar carta de los otros Moriles ni publicar una carta parcial. Fuentes complementarias localizadas 22/10/2026: menú Tapas Cordobesas (15,95 € en lámina consultada), cafés/chocolates, postres, versiones inglesas y glosario. Se conservarán separadas las cartas por servicios y los menús cerrados; falta transcripción integral y control de importes antes de publicar.",
@@ -34947,6 +35333,626 @@
               {
                 "label": "Ración",
                 "eur": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Carnes",
+        "items": [
+          {
+            "name": "Chorizo al vino",
+            "description": "Chorizo al vino",
+            "es": "Chorizo al vino",
+            "en": "Chorizo al vino",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 9.85
+              },
+              {
+                "label": "Media ración",
+                "eur": 7
+              },
+              {
+                "label": "Tapa",
+                "eur": 4
+              }
+            ]
+          },
+          {
+            "name": "Chorizo criollo a la brasa",
+            "description": "Chorizo criollo a la brasa",
+            "es": "Chorizo criollo a la brasa",
+            "en": "Chorizo criollo a la brasa",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 9.85
+              },
+              {
+                "label": "Media ración",
+                "eur": 7
+              },
+              {
+                "label": "Tapa",
+                "eur": 4
+              }
+            ]
+          },
+          {
+            "name": "Chorizo frito",
+            "description": "Chorizo frito",
+            "es": "Chorizo frito",
+            "en": "Chorizo frito",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 8.1
+              },
+              {
+                "label": "Media ración",
+                "eur": 6.25
+              },
+              {
+                "label": "Tapa",
+                "eur": 3.7
+              }
+            ]
+          },
+          {
+            "name": "Cochifrito cordobés confitado",
+            "description": "Cochifrito cordobés confitado",
+            "es": "Cochifrito cordobés confitado",
+            "en": "Cochifrito cordobés confitado",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 13.4
+              },
+              {
+                "label": "Media ración",
+                "eur": 8.75
+              },
+              {
+                "label": "Tapa",
+                "eur": 4.5
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín de Jamón Serrano",
+            "description": "Flamenquín de Jamón Serrano",
+            "es": "Flamenquín de Jamón Serrano",
+            "en": "Flamenquín de Jamón Serrano",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 10.1
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín de Jamón Ibérico y Queso puro de Oveja",
+            "description": "Flamenquín de Jamón Ibérico y Queso puro de Oveja",
+            "es": "Flamenquín de Jamón Ibérico y Queso puro de Oveja",
+            "en": "Flamenquín de Jamón Ibérico y Queso puro de Oveja",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 5.55
+              }
+            ]
+          },
+          {
+            "name": "Brocheta de Solomillo Ibérico",
+            "description": "Brocheta de Solomillo Ibérico",
+            "es": "Brocheta de Solomillo Ibérico",
+            "en": "Brocheta de Solomillo Ibérico",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 6.2
+              }
+            ]
+          },
+          {
+            "name": "Mollejas de Cordero lechal a la brasa",
+            "description": "Mollejas de Cordero lechal a la brasa",
+            "es": "Mollejas de Cordero lechal a la brasa",
+            "en": "Mollejas de Cordero lechal a la brasa",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 22.25
+              },
+              {
+                "label": "Media ración",
+                "eur": 15.9
+              }
+            ]
+          },
+          {
+            "name": "Riñones de Cordero lechal a la brasa",
+            "description": "Riñones de Cordero lechal a la brasa",
+            "es": "Riñones de Cordero lechal a la brasa",
+            "en": "Riñones de Cordero lechal a la brasa",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 22.25
+              },
+              {
+                "label": "Media ración",
+                "eur": 15.9
+              }
+            ]
+          },
+          {
+            "name": "Codillo asado",
+            "description": "Codillo asado",
+            "es": "Codillo asado",
+            "en": "Codillo asado",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 19.2
+              }
+            ]
+          },
+          {
+            "name": "Chuletitas de cordero lechal",
+            "description": "Chuletitas de cordero lechal",
+            "es": "Chuletitas de cordero lechal",
+            "en": "Chuletitas de cordero lechal",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 27.25
+              },
+              {
+                "label": "Media ración",
+                "eur": 16.95
+              }
+            ]
+          },
+          {
+            "name": "Entrecot de vaca vieja",
+            "description": "Entrecot de vaca vieja",
+            "es": "Entrecot de vaca vieja",
+            "en": "Entrecot de vaca vieja",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 30
+              }
+            ]
+          },
+          {
+            "name": "Chuletón de vaca vieja Frisona",
+            "description": "Chuletón de vaca vieja Frisona",
+            "es": "Chuletón de vaca vieja Frisona",
+            "en": "Chuletón de vaca vieja Frisona",
+            "prices": [
+              {
+                "label": "Precio por kg",
+                "eur": 40
+              }
+            ]
+          },
+          {
+            "name": "Solomillo de vaca Simmental",
+            "description": "Solomillo de vaca Simmental",
+            "es": "Solomillo de vaca Simmental",
+            "en": "Solomillo de vaca Simmental",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 27.25
+              }
+            ]
+          },
+          {
+            "name": "Churrasco de Pollo a la Brasa con ajitos y patatas panaderas",
+            "description": "Churrasco de Pollo a la Brasa con ajitos y patatas panaderas",
+            "es": "Churrasco de Pollo a la Brasa con ajitos y patatas panaderas",
+            "en": "Churrasco de Pollo a la Brasa con ajitos y patatas panaderas",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 13.9
+              }
+            ]
+          },
+          {
+            "name": "Lomo Ibérico de orza",
+            "description": "Lomo Ibérico de orza",
+            "es": "Lomo Ibérico de orza",
+            "en": "Lomo Ibérico de orza",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 16.45
+              },
+              {
+                "label": "Media ración",
+                "eur": 9.3
+              }
+            ]
+          },
+          {
+            "name": "Abanico Ibérico",
+            "description": "Abanico Ibérico",
+            "es": "Abanico Ibérico",
+            "en": "Abanico Ibérico",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 18.3
+              }
+            ]
+          },
+          {
+            "name": "Churrasco Ibérico a las dos salsas",
+            "description": "Churrasco Ibérico a las dos salsas",
+            "es": "Churrasco Ibérico a las dos salsas",
+            "en": "Churrasco Ibérico a las dos salsas",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 16.1
+              }
+            ]
+          },
+          {
+            "name": "Lagarto Ibérico",
+            "description": "Lagarto Ibérico",
+            "es": "Lagarto Ibérico",
+            "en": "Lagarto Ibérico",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 15.6
+              }
+            ]
+          },
+          {
+            "name": "Pluma Ibérica",
+            "description": "Pluma Ibérica",
+            "es": "Pluma Ibérica",
+            "en": "Pluma Ibérica",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 19.45
+              }
+            ]
+          },
+          {
+            "name": "Presa Ibérica",
+            "description": "Presa Ibérica",
+            "es": "Presa Ibérica",
+            "en": "Presa Ibérica",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 19.45
+              }
+            ]
+          },
+          {
+            "name": "Secreto Ibérico",
+            "description": "Secreto Ibérico",
+            "es": "Secreto Ibérico",
+            "en": "Secreto Ibérico",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 18.3
+              }
+            ]
+          },
+          {
+            "name": "Parrillada Ibérica",
+            "description": "Parrillada Ibérica",
+            "es": "Parrillada Ibérica",
+            "en": "Parrillada Ibérica",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 34.9
+              }
+            ]
+          },
+          {
+            "name": "Tomahawk Ibérico (270 g aprox.)",
+            "description": "Tomahawk Ibérico (270 g aprox.)",
+            "es": "Tomahawk Ibérico (270 g aprox.)",
+            "en": "Tomahawk Ibérico (270 g aprox.)",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 14.95
+              }
+            ]
+          },
+          {
+            "name": "Solomillo Ibérico a la Pimienta",
+            "description": "Solomillo Ibérico a la Pimienta",
+            "es": "Solomillo Ibérico a la Pimienta",
+            "en": "Solomillo Ibérico a la Pimienta",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 17.8
+              }
+            ]
+          },
+          {
+            "name": "Solomillo Ibérico al Pedro Ximénez",
+            "description": "Solomillo Ibérico al Pedro Ximénez",
+            "es": "Solomillo Ibérico al Pedro Ximénez",
+            "en": "Solomillo Ibérico al Pedro Ximénez",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 17.8
+              }
+            ]
+          },
+          {
+            "name": "Solomillo Ibérico con Queso Azul del Valle de los Pedroches",
+            "description": "Solomillo Ibérico con Queso Azul del Valle de los Pedroches",
+            "es": "Solomillo Ibérico con Queso Azul del Valle de los Pedroches",
+            "en": "Solomillo Ibérico con Queso Azul del Valle de los Pedroches",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 17.8
+              }
+            ]
+          },
+          {
+            "name": "Magret de Pato Mulard con salsa de naranja de Palma del Río",
+            "description": "Magret de Pato Mulard con salsa de naranja de Palma del Río",
+            "es": "Magret de Pato Mulard con salsa de naranja de Palma del Río",
+            "en": "Magret de Pato Mulard con salsa de naranja de Palma del Río",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 20.75
+              }
+            ]
+          },
+          {
+            "name": "Hamburguesa Moriles",
+            "description": "Vaca retinta con jamón ibérico y queso puro de oveja, patatas gajo y pimientos del Padrón",
+            "es": "Vaca retinta con jamón ibérico y queso puro de oveja, patatas gajo y pimientos del Padrón",
+            "en": "Vaca retinta con jamón ibérico y queso puro de oveja, patatas gajo y pimientos del Padrón",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 13.1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Nuestros guisos",
+        "items": [
+          {
+            "name": "Rabo de toro",
+            "description": "Rabo de toro",
+            "es": "Rabo de toro",
+            "en": "Rabo de toro",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 14.1
+              },
+              {
+                "label": "Media ración",
+                "eur": 10.85
+              }
+            ]
+          },
+          {
+            "name": "Carrillada Ibérica a la miel de caña",
+            "description": "Carrillada Ibérica a la miel de caña",
+            "es": "Carrillada Ibérica a la miel de caña",
+            "en": "Carrillada Ibérica a la miel de caña",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 23.7
+              },
+              {
+                "label": "Media ración",
+                "eur": 13.5
+              },
+              {
+                "label": "Tapa",
+                "eur": 5.55
+              }
+            ]
+          },
+          {
+            "name": "Callos con Manitas y Garbanzos",
+            "description": "Callos con Manitas y Garbanzos",
+            "es": "Callos con Manitas y Garbanzos",
+            "en": "Callos con Manitas y Garbanzos",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 11.85
+              },
+              {
+                "label": "Media ración",
+                "eur": 9.6
+              },
+              {
+                "label": "Tapa",
+                "eur": 4.8
+              }
+            ]
+          },
+          {
+            "name": "Ternera en salsa",
+            "description": "Ternera en salsa",
+            "es": "Ternera en salsa",
+            "en": "Ternera en salsa",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 10.1
+              },
+              {
+                "label": "Media ración",
+                "eur": 7.5
+              },
+              {
+                "label": "Tapa",
+                "eur": 4.2
+              }
+            ]
+          },
+          {
+            "name": "Lomo con Tomate",
+            "description": "Lomo con Tomate",
+            "es": "Lomo con Tomate",
+            "en": "Lomo con Tomate",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 9.45
+              },
+              {
+                "label": "Media ración",
+                "eur": 7.1
+              },
+              {
+                "label": "Tapa",
+                "eur": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Para los más chicos",
+        "items": [
+          {
+            "name": "Flamenquín de york con patatas fritas",
+            "description": "Flamenquín de york con patatas fritas",
+            "es": "Flamenquín de york con patatas fritas",
+            "en": "Flamenquín de york con patatas fritas",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 5.5
+              }
+            ]
+          },
+          {
+            "name": "San Jacobo con patatas fritas",
+            "description": "San Jacobo con patatas fritas",
+            "es": "San Jacobo con patatas fritas",
+            "en": "San Jacobo con patatas fritas",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 6.9
+              }
+            ]
+          },
+          {
+            "name": "Huevos (dos) con patatas fritas",
+            "description": "Huevos (dos) con patatas fritas",
+            "es": "Huevos (dos) con patatas fritas",
+            "en": "Huevos (dos) con patatas fritas",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 6
+              }
+            ]
+          },
+          {
+            "name": "Mini hamburguesas (dos) de pollo con patatas fritas",
+            "description": "Mini hamburguesas (dos) de pollo con patatas fritas",
+            "es": "Mini hamburguesas (dos) de pollo con patatas fritas",
+            "en": "Mini hamburguesas (dos) de pollo con patatas fritas",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 6.6
+              }
+            ]
+          },
+          {
+            "name": "Nuggets de pollo con patatas fritas",
+            "description": "Nuggets de pollo con patatas fritas",
+            "es": "Nuggets de pollo con patatas fritas",
+            "en": "Nuggets de pollo con patatas fritas",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 7.5
+              }
+            ]
+          },
+          {
+            "name": "Pechuga de pollo empanada con patatas fritas",
+            "description": "Pechuga de pollo empanada con patatas fritas",
+            "es": "Pechuga de pollo empanada con patatas fritas",
+            "en": "Pechuga de pollo empanada con patatas fritas",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 7.5
+              }
+            ]
+          },
+          {
+            "name": "Pechuga de pollo plancha con patatas fritas",
+            "description": "Pechuga de pollo plancha con patatas fritas",
+            "es": "Pechuga de pollo plancha con patatas fritas",
+            "en": "Pechuga de pollo plancha con patatas fritas",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 7.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Platos combinados",
+        "items": [
+          {
+            "name": "Plato Moriles",
+            "description": "Plato Moriles",
+            "es": "Plato Moriles",
+            "en": "Plato Moriles",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 16.1
+              }
+            ]
+          },
+          {
+            "name": "Plato Ribera",
+            "description": "Plato Ribera",
+            "es": "Plato Ribera",
+            "en": "Plato Ribera",
+            "prices": [
+              {
+                "label": "Ración",
+                "eur": 16.1
               }
             ]
           }
