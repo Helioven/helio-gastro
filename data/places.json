@@ -15033,7 +15033,8 @@
                 "eur": 4,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Toast with Cantabrian anchovy, piparra pepper pâté and extra virgin olive oil."
           },
           {
             "name": "Tabla charcutera de morcón ibérico, mortadela de Bolonia, sobrasada ibérica del Valle de los Pedroches y pan de aceite",
@@ -15042,7 +15043,8 @@
                 "eur": 21,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Charcuterie board with Iberian morcón, Bologna mortadella, Iberian sobrasada from Los Pedroches and olive-oil bread."
           },
           {
             "name": "Quesos afinados D.O.P. de España y palillos caseros de maíz",
@@ -15051,7 +15053,8 @@
                 "eur": 16,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Selection of Spanish PDO matured cheeses with homemade corn breadsticks."
           },
           {
             "name": "Boquerones en vinagre, crema de aguacate e hinojo encurtido",
@@ -15060,7 +15063,8 @@
                 "eur": 16,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Vinegar-marinated anchovies with avocado cream and pickled fennel."
           },
           {
             "name": "Ensaladilla de atún y mahonesa de AOVE",
@@ -15069,7 +15073,8 @@
                 "eur": 9.9,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Tuna potato salad with extra virgin olive oil mayonnaise."
           },
           {
             "name": "Ensalada de cherrys confitados, chermoula marroquí y caballa en AOVE",
@@ -15078,7 +15083,8 @@
                 "eur": 13.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Salad of confit cherry tomatoes, Moroccan chermoula and mackerel in extra virgin olive oil."
           },
           {
             "name": "Cogollos de lechuga «César cordobesa», vinagre de membrillo de Priego, queso de cabra payoya, pechuga asada y picatostes",
@@ -15087,7 +15093,8 @@
                 "eur": 13.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Baby lettuce hearts with Córdoba-style Caesar dressing, quince vinegar from Priego, Payoya goat's cheese, roasted chicken breast and croutons."
           },
           {
             "name": "Tartar de salchichón ibérico, chips de patata, crema agria y lima, regañás de pan con tomate y orégano fresco",
@@ -15096,7 +15103,8 @@
                 "eur": 13,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Iberian salchichón tartare with potato crisps, lime sour cream and tomato regañás crackers with fresh oregano."
           }
         ]
       },
@@ -15114,7 +15122,8 @@
                 "eur": 9.9,
                 "portion": "Formato 2 (sin tamaño indicado)"
               }
-            ]
+            ],
+            "en": "Córdoba-style cold tomato and bread cream with cured Iberian pork shoulder and free-range egg."
           },
           {
             "name": "Mazamorra de pistacho, mermelada de higo seco al PX y caramelo salado",
@@ -15123,7 +15132,8 @@
                 "eur": 9.9,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Pistachio mazamorra with Pedro Ximénez dried-fig jam and salted caramel."
           },
           {
             "name": "Berenjenas fritas, miel de Montoro y queso de cabra de Zuheros",
@@ -15132,7 +15142,8 @@
                 "eur": 11.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Fried aubergines with honey from Montoro and goat's cheese from Zuheros."
           },
           {
             "name": "Huevos rotos con patatas y paletilla de cerdo ibérico",
@@ -15141,7 +15152,8 @@
                 "eur": 14.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Fried eggs over potatoes with cured Iberian pork shoulder."
           },
           {
             "name": "Flamenquín tradicional cordobés con patatas fritas",
@@ -15150,7 +15162,8 @@
                 "eur": 14,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Traditional Córdoba-style breaded pork flamenquín served with chips."
           },
           {
             "name": "Rabo de toro guisado tradicional con patatas fritas",
@@ -15159,7 +15172,8 @@
                 "eur": 20.9,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Traditional oxtail stew served with chips."
           }
         ]
       },
@@ -15177,7 +15191,8 @@
                 "eur": 13,
                 "portion": "Formato 2 (sin tamaño indicado)"
               }
-            ]
+            ],
+            "en": "Creamy croquettes filled with Andalusian puchero stew."
           },
           {
             "name": "Patatas bravas, mojo picón canario y chile de árbol molido",
@@ -15186,7 +15201,8 @@
                 "eur": 9.9,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Patatas bravas with Canary Islands mojo picón and ground árbol chilli."
           },
           {
             "name": "Hummus, queso cottage, bimi frito y salsa de cacahuete y coco",
@@ -15195,7 +15211,8 @@
                 "eur": 15,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Hummus with cottage cheese, fried bimi and peanut-coconut sauce."
           },
           {
             "name": "Focaccia, zaloük de berenjena asada, alcachofa frita y panceta curada",
@@ -15204,7 +15221,8 @@
                 "eur": 12.9,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Focaccia with roasted aubergine zaalouk, fried artichoke and cured pork belly."
           },
           {
             "name": "Provoletta a la brasa de queso artesano, shiitakes, pimiento confitado y tomillo",
@@ -15213,7 +15231,8 @@
                 "eur": 13,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Grilled artisan provolone-style cheese with shiitake mushrooms, confit pepper and thyme."
           },
           {
             "name": "Brioche de rabo de toro estofado, mayonesa ahumada de soja y relish de pepinillo agridulce",
@@ -15222,7 +15241,8 @@
                 "eur": 9.9,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Brioche with braised oxtail, smoked soy mayonnaise and sweet-and-sour pickle relish."
           },
           {
             "name": "Aburi de atún rojo, salmorejo escabechado, huevas de maruca y piparras",
@@ -15231,7 +15251,8 @@
                 "eur": 23,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Seared bluefin tuna aburi with pickled salmorejo, ling fish roe and piparra peppers."
           },
           {
             "name": "Sashimi semicurado de hamachi (pez limón), ají amarillo, pepino y lima",
@@ -15240,7 +15261,8 @@
                 "eur": 18.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Lightly cured yellowtail sashimi with ají amarillo, cucumber and lime."
           },
           {
             "name": "Gyozas de caldereta de cordero, salsa «Butter Massala», agria, cilantro y cacahuete",
@@ -15249,7 +15271,8 @@
                 "eur": 17.9,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Lamb-stew gyozas with butter masala sauce, sour cream, coriander and peanuts."
           },
           {
             "name": "Risotto de rabo de toro, mantequilla casera y parmesano",
@@ -15258,7 +15281,8 @@
                 "eur": 19.9,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Oxtail risotto with homemade butter and Parmesan."
           }
         ]
       },
@@ -15272,7 +15296,8 @@
                 "eur": 19,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Chargrilled line-caught squid with dried-scallop americana sauce and free-range egg-yolk aioli."
           },
           {
             "name": "Lubina a la brasa, bilbaína, habitas al aceite de oliva y emulsión de puerro",
@@ -15281,7 +15306,8 @@
                 "eur": 18.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Grilled sea bass with Bilbao-style dressing, baby broad beans in olive oil and leek emulsion."
           },
           {
             "name": "Salmón a la brasa, crema de curry y verduritas marinadas",
@@ -15290,7 +15316,8 @@
                 "eur": 18,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Grilled salmon with curry cream and marinated vegetables."
           },
           {
             "name": "Rodaballo a la brasa, alcachofas asadas, holandesa y aceite de ajo morado",
@@ -15299,7 +15326,8 @@
                 "eur": 24,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Grilled turbot with roasted artichokes, hollandaise sauce and purple garlic oil."
           },
           {
             "name": "Pulpo flor asado a la brasa, crema de patata, pimienta fresca y emulsión de puerro",
@@ -15308,7 +15336,8 @@
                 "eur": 24,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Grilled octopus with potato cream, fresh pepper and leek emulsion."
           }
         ]
       },
@@ -15322,7 +15351,8 @@
                 "eur": 18,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Braised chicken roll with sweet-potato fries, parmentier potato purée and huacatay sauce."
           },
           {
             "name": "Tacos de mogote ibérico ahumado al carbón, marinado de achiote, guacamole y sofrito picante",
@@ -15331,7 +15361,8 @@
                 "eur": 19.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Charcoal-smoked Iberian pork shoulder tacos with achiote marinade, guacamole and spicy sofrito."
           },
           {
             "name": "Carrillada de cerdo al oloroso, curry de za’atar, cúrcuma y salsa agria",
@@ -15340,7 +15371,8 @@
                 "eur": 17.9,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Pork cheeks in oloroso sherry with za'atar curry, turmeric and sour sauce."
           },
           {
             "name": "Pluma ibérica a la brasa, patata parisine y chimichurri ahumado",
@@ -15349,7 +15381,8 @@
                 "eur": 23.9,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Grilled Iberian pork pluma with Parisienne potatoes and smoked chimichurri."
           },
           {
             "name": "Entrecot de vaca madurada a la brasa, patatas fritas y pimientos del Padrón",
@@ -15358,7 +15391,8 @@
                 "eur": 29,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Grilled aged beef entrecôte with chips and Padrón peppers."
           }
         ]
       },
@@ -15372,7 +15406,8 @@
                 "eur": 6.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Grandmother-style cake with traditional custard, cocoa ganache and peanuts."
           },
           {
             "name": "Tarta de queso y yema tostada",
@@ -15381,7 +15416,8 @@
                 "eur": 6.9,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Cheesecake with toasted egg-yolk topping."
           },
           {
             "name": "«Lemon pie» sablée, crema de limón y merengue suizo",
@@ -15390,7 +15426,8 @@
                 "eur": 7,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Lemon pie with sablée pastry, lemon cream and Swiss meringue."
           },
           {
             "name": "Bavaroise de mango, coco y pimienta de Jamaica, coulis de fresa y crumble de maíz (sin gluten ni lactosa)",
@@ -15399,7 +15436,8 @@
                 "eur": 6.9,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Mango and coconut bavarois with allspice, strawberry coulis and corn crumble; listed as gluten- and lactose-free."
           }
         ]
       }
