@@ -224,7 +224,7 @@ function refreshDishExplanations(){
  document.querySelectorAll('[data-official-menu-es]').forEach(node=>{node.textContent=(english?node.dataset.officialMenuEn:node.dataset.officialMenuEs)+' ↗';});
  document.querySelectorAll('[data-specialties-es]').forEach(node=>{node.textContent=english?node.dataset.specialtiesEn:node.dataset.specialtiesEs;});
  document.querySelectorAll('[data-dish-explanation]').forEach(node=>{node.hidden=node.dataset.explanationLanguage?node.dataset.explanationLanguage!==(english?'en':'es'):!english;});
- document.querySelectorAll('[data-venue-menu-section]').forEach(node=>{node.textContent=english?(VENUE_MENU_SECTION_EN[node.dataset.venueMenuSection]||node.dataset.venueMenuSection):node.dataset.venueMenuSection;});
+ document.querySelectorAll('[data-venue-menu-section]').forEach(node=>{node.textContent=english?(node.dataset.venueMenuSectionEn||VENUE_MENU_SECTION_EN[node.dataset.venueMenuSection]||node.dataset.venueMenuSection):node.dataset.venueMenuSection;});
  document.querySelectorAll('[data-venue-menu-price-label]').forEach(node=>{node.textContent=venueMenuPriceLabel(node.dataset.venueMenuPriceLabel,english);});
  document.querySelectorAll('[data-venue-menu-note-es]').forEach(node=>{node.textContent=english?node.dataset.venueMenuNoteEn:node.dataset.venueMenuNoteEs;});
  document.querySelectorAll('[data-group-menu-label-es]').forEach(node=>{node.textContent=english?node.dataset.groupMenuLabelEn:node.dataset.groupMenuLabelEs;});
@@ -708,7 +708,7 @@ function renderVenueMenuSections(panel,p){
  }
  // Las notas de auditoría son metadatos internos, no texto para visitantes.
  for(const section of p.menuSections){
-  const heading=document.createElement('h3');heading.dataset.venueMenuSection=section.title;heading.textContent=window.HelioGastroLanguage?.get()==='en'?(VENUE_MENU_SECTION_EN[section.title]||section.title):section.title;panel.append(heading);
+  const heading=document.createElement('h3');heading.dataset.venueMenuSection=section.title;heading.dataset.venueMenuSectionEn=section.titleEn||VENUE_MENU_SECTION_EN[section.title]||section.title;heading.textContent=window.HelioGastroLanguage?.get()==='en'?heading.dataset.venueMenuSectionEn:section.title;panel.append(heading);
   const list=document.createElement('div');list.className='menu-groups';
   for(const dish of section.items){
    const entry=document.createElement('section');entry.className='menu-dish';
