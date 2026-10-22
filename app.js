@@ -528,7 +528,10 @@ function draw(){
    matched.textContent=matches.length?'🍴 Plato encontrado: '+matches.join(' · '):'Coincidencia con el nombre del local';
    card.append(matched);
   } else {
-   const dishes=document.createElement('p');dishes.textContent='Especialidades: '+p.dishes.join(', ');card.append(dishes);
+   const dishes=document.createElement('p');
+   const sample=p.dishes.slice(0,5);
+   dishes.textContent='Especialidades: '+sample.join(', ')+(p.dishes.length>5?'…':'');
+   card.append(dishes);
   }
   const chosen=relevantPrices(p,state.appliedTerm,state.appliedScope==='dish'?state.appliedPortion:'');
   const cost=lowestPrice(p,state.appliedScope,state.appliedTerm,state.appliedPortion);
