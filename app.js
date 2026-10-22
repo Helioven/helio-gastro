@@ -572,8 +572,7 @@ function menuGroups(p){
  return {groups,unpriced};
 }
 function renderVenueMenuSections(panel,p){
- const note=document.createElement('p');note.className='service-notice';
- note.textContent=p.menuSourceNote||'';panel.append(note);
+ // Las notas de auditoría son metadatos internos, no texto para visitantes.
  for(const section of p.menuSections){
   const heading=document.createElement('h3');heading.textContent=section.title;panel.append(heading);
   const list=document.createElement('div');list.className='menu-groups';
