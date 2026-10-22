@@ -34052,7 +34052,7 @@
         ]
       }
     ],
-    "menuSourceNote": "Auditoría documental iniciada el 22/10/2026: seis láminas oficiales en español con precios, alojadas en carpetas de febrero y marzo 2026. La versión inglesa utiliza archivos de 2025 y presenta importes divergentes. Pendiente transcripción íntegra y validación de platos, precios y formatos ES/EN antes de sustituir la ficha preliminar; no copiar carta de los otros Moriles ni publicar una carta parcial. Fuentes complementarias localizadas 22/10/2026: menú Tapas Cordobesas (15,95 € en lámina consultada), cafés/chocolates, postres, versiones inglesas y glosario. Se conservarán separadas las cartas por servicios y los menús cerrados; falta transcripción integral y control de importes antes de publicar.",
+    "menuSourceNote": "Transcripción de 214 entradas de cocina, postres y cafetería desde las láminas españolas oficiales 2026, registrada el 22/10/2026. Menú especial Tapas Cordobesas accesible mediante enlace independiente; no se computa como plato individual. QA visual de toda la transcripción y revisión completa de traducciones pendientes.",
     "officialMenuLinks": [
       {
         "es": "Carta de cocina",
@@ -34100,7 +34100,7 @@
             "name": "Ave César",
             "description": "Lechuga romana, tomate cherry, aceitunas negras, picatostes, pollo empanado y salsa César",
             "es": "Lechuga romana, tomate cherry, aceitunas negras, picatostes, pollo empanado y salsa César",
-            "en": "Lechuga romana, tomate cherry, aceitunas negras, picatostes, pollo empanado y salsa César",
+            "en": "Romaine lettuce, cherry tomatoes, black olives, croutons, breaded chicken breast and Caesar dressing",
             "prices": [
               {
                 "label": "Ración",
@@ -34116,7 +34116,7 @@
             "name": "De la Casa",
             "description": "Lechuga, tomate, cebolla, pimiento, maíz, atún y espárragos blancos",
             "es": "Lechuga, tomate, cebolla, pimiento, maíz, atún y espárragos blancos",
-            "en": "Lechuga, tomate, cebolla, pimiento, maíz, atún y espárragos blancos",
+            "en": "Lettuce, tomato, onion, pepper, sweetcorn, tuna and white asparagus",
             "prices": [
               {
                 "label": "Ración",
@@ -34132,7 +34132,7 @@
             "name": "Moriles",
             "description": "Jamón ibérico, queso puro de oveja, tomate rosa, lechuga romana y aceitunas negras",
             "es": "Jamón ibérico, queso puro de oveja, tomate rosa, lechuga romana y aceitunas negras",
-            "en": "Jamón ibérico, queso puro de oveja, tomate rosa, lechuga romana y aceitunas negras",
+            "en": "Iberian cured ham, sheep's milk cheese, pink tomato, romaine lettuce and black olives",
             "prices": [
               {
                 "label": "Ración",
@@ -34148,7 +34148,7 @@
             "name": "Pimientos con Ventresca",
             "description": "Pimientos rojos y verdes asados con ventresca",
             "es": "Pimientos rojos y verdes asados con ventresca",
-            "en": "Pimientos rojos y verdes asados con ventresca",
+            "en": "Roasted red and green peppers with tuna belly",
             "prices": [
               {
                 "label": "Ración",
@@ -34164,7 +34164,7 @@
             "name": "Templada de Perdiz en Escabeche",
             "description": "Mezclum, perdiz, frutos rojos, piñones, pasas, tomates cherry y vinagreta de PX",
             "es": "Mezclum, perdiz, frutos rojos, piñones, pasas, tomates cherry y vinagreta de PX",
-            "en": "Mezclum, perdiz, frutos rojos, piñones, pasas, tomates cherry y vinagreta de PX",
+            "en": "Mixed leaves, pickled partridge, red berries, pine nuts, raisins, cherry tomatoes and Pedro Ximénez vinaigrette",
             "prices": [
               {
                 "label": "Ración",
@@ -34180,7 +34180,7 @@
             "name": "Tropical",
             "description": "Anchoas, espárragos blancos, palmitos, piña, tomate rosa, maíz y salsa rosa",
             "es": "Anchoas, espárragos blancos, palmitos, piña, tomate rosa, maíz y salsa rosa",
-            "en": "Anchoas, espárragos blancos, palmitos, piña, tomate rosa, maíz y salsa rosa",
+            "en": "Anchovies, white asparagus, hearts of palm, pineapple, pink tomato, sweetcorn and pink dressing",
             "prices": [
               {
                 "label": "Ración",
@@ -34196,7 +34196,7 @@
             "name": "Zuheros",
             "description": "Hojas, tomates cherry, nueces, pasas, queso de cabra y vinagreta de PX",
             "es": "Hojas, tomates cherry, nueces, pasas, queso de cabra y vinagreta de PX",
-            "en": "Hojas, tomates cherry, nueces, pasas, queso de cabra y vinagreta de PX",
+            "en": "Mixed leaves, cherry tomatoes, walnuts, raisins, goat cheese and Pedro Ximénez vinaigrette",
             "prices": [
               {
                 "label": "Ración",
@@ -34260,7 +34260,7 @@
             "name": "Picadillo Cordobés con Ventresca",
             "description": "Ventresca, tomate rosa, pepino, pimiento rojo y verde, cebolla",
             "es": "Ventresca, tomate rosa, pepino, pimiento rojo y verde, cebolla",
-            "en": "Ventresca, tomate rosa, pepino, pimiento rojo y verde, cebolla",
+            "en": "Tuna belly, pink tomato, cucumber, red and green peppers and onion",
             "prices": [
               {
                 "label": "Ración",
@@ -34288,7 +34288,8 @@
               }
             ]
           }
-        ]
+        ],
+        "titleEn": "Salads"
       },
       {
         "title": "Entrantes",
@@ -34449,7 +34450,7 @@
             "name": "Mazamorra Cordobesa",
             "description": "Crema de almendras con sardinas ahumadas, uvas, pasas y almendras garrapiñadas",
             "es": "Crema de almendras con sardinas ahumadas, uvas, pasas y almendras garrapiñadas",
-            "en": "Crema de almendras con sardinas ahumadas, uvas, pasas y almendras garrapiñadas",
+            "en": "Chilled almond cream with smoked sardines, grapes, raisins and caramelized almonds",
             "prices": [
               {
                 "label": "Ración",
@@ -34637,7 +34638,8 @@
               }
             ]
           }
-        ]
+        ],
+        "titleEn": "Starters"
       },
       {
         "title": "Ibéricos, quesos y embutidos",
@@ -34754,7 +34756,7 @@
             "name": "Mojama de Barbate",
             "description": "Formatos 110 g, 75 g y 40 g",
             "es": "Formatos 110 g, 75 g y 40 g",
-            "en": "Formatos 110 g, 75 g y 40 g",
+            "en": "Salt-cured tuna from Barbate, with published 110 g, 75 g and 40 g portions",
             "prices": [
               {
                 "label": "Ración",
@@ -34882,7 +34884,8 @@
               }
             ]
           }
-        ]
+        ],
+        "titleEn": "Iberian cured meats and cheeses"
       },
       {
         "title": "Tostas",
@@ -34983,7 +34986,8 @@
               }
             ]
           }
-        ]
+        ],
+        "titleEn": "Toasts"
       },
       {
         "title": "Risottos y pastas",
@@ -35048,7 +35052,8 @@
               }
             ]
           }
-        ]
+        ],
+        "titleEn": "Risotto and pasta"
       },
       {
         "title": "Revueltos y verduras",
@@ -35081,7 +35086,7 @@
             "name": "Revuelto Tierra y Mar",
             "description": "Espárragos, salmón ahumado y gambas",
             "es": "Espárragos, salmón ahumado y gambas",
-            "en": "Espárragos, salmón ahumado y gambas",
+            "en": "Scrambled eggs with asparagus, smoked salmon and prawns",
             "prices": [
               {
                 "label": "Ración",
@@ -35145,7 +35150,7 @@
             "name": "Revuelto Moriles",
             "description": "Guisantes, setas, cebolla y jamón",
             "es": "Guisantes, setas, cebolla y jamón",
-            "en": "Guisantes, setas, cebolla y jamón",
+            "en": "Scrambled eggs with peas, mushrooms, onion and ham",
             "prices": [
               {
                 "label": "Ración",
@@ -35177,7 +35182,7 @@
             "name": "Berenjenas abuñueladas a la miel de caña",
             "description": "Berenjenas abuñueladas a la miel de caña",
             "es": "Berenjenas abuñueladas a la miel de caña",
-            "en": "Berenjenas abuñueladas a la miel de caña",
+            "en": "Battered aubergines with sugarcane syrup",
             "prices": [
               {
                 "label": "Ración",
@@ -35345,7 +35350,8 @@
               }
             ]
           }
-        ]
+        ],
+        "titleEn": "Egg dishes and vegetables"
       },
       {
         "title": "Pescados",
@@ -35766,7 +35772,8 @@
               }
             ]
           }
-        ]
+        ],
+        "titleEn": "Fish and seafood"
       },
       {
         "title": "Carnes",
@@ -35879,7 +35886,7 @@
             "name": "Brocheta de Solomillo Ibérico",
             "description": "Brocheta de Solomillo Ibérico",
             "es": "Brocheta de Solomillo Ibérico",
-            "en": "Brocheta de Solomillo Ibérico",
+            "en": "Iberian pork tenderloin skewer with boletus mushrooms, button mushrooms and blue cheese",
             "prices": [
               {
                 "label": "Ración",
@@ -35962,8 +35969,8 @@
           {
             "name": "Chuletón de vaca vieja Frisona",
             "description": "Chuletón de vaca vieja Frisona",
-            "es": "Chuletón de vaca vieja Frisona",
-            "en": "Chuletón de vaca vieja Frisona",
+            "es": "Precio publicado por kilogramo, no por ración.",
+            "en": "Published price per kilogram, not per serving.",
             "prices": [
               {
                 "label": "Precio por kg",
@@ -36087,7 +36094,7 @@
             "name": "Parrillada Ibérica",
             "description": "Parrillada Ibérica",
             "es": "Parrillada Ibérica",
-            "en": "Parrillada Ibérica",
+            "en": "Selection of Iberian pork cuts and sausages for two people",
             "prices": [
               {
                 "label": "Ración",
@@ -36159,7 +36166,7 @@
             "name": "Hamburguesa Moriles",
             "description": "Vaca retinta con jamón ibérico y queso puro de oveja, patatas gajo y pimientos del Padrón",
             "es": "Vaca retinta con jamón ibérico y queso puro de oveja, patatas gajo y pimientos del Padrón",
-            "en": "Vaca retinta con jamón ibérico y queso puro de oveja, patatas gajo y pimientos del Padrón",
+            "en": "Retinta beef burger with Iberian cured ham, sheep's cheese, potato wedges and Padrón peppers",
             "prices": [
               {
                 "label": "Ración",
@@ -36167,7 +36174,8 @@
               }
             ]
           }
-        ]
+        ],
+        "titleEn": "Meat dishes"
       },
       {
         "title": "Nuestros guisos",
@@ -36268,7 +36276,8 @@
               }
             ]
           }
-        ]
+        ],
+        "titleEn": "Traditional stews"
       },
       {
         "title": "Para los más chicos",
@@ -36357,7 +36366,8 @@
               }
             ]
           }
-        ]
+        ],
+        "titleEn": "Children's dishes"
       },
       {
         "title": "Platos combinados",
@@ -36366,7 +36376,7 @@
             "name": "Plato Moriles",
             "description": "Plato Moriles",
             "es": "Plato Moriles",
-            "en": "Plato Moriles",
+            "en": "Combination plate with preserved pork loin, Serrano ham, chorizo, blood sausage and potatoes",
             "prices": [
               {
                 "label": "Ración",
@@ -36378,7 +36388,7 @@
             "name": "Plato Ribera",
             "description": "Plato Ribera",
             "es": "Plato Ribera",
-            "en": "Plato Ribera",
+            "en": "Combination plate with flamenquín, fried aubergines, eggs and potatoes",
             "prices": [
               {
                 "label": "Ración",
@@ -36386,7 +36396,8 @@
               }
             ]
           }
-        ]
+        ],
+        "titleEn": "Combination plates"
       },
       {
         "title": "Postres",
@@ -36491,7 +36502,7 @@
             "name": "Arco de la Mezquita",
             "description": "Corazón de mousse de vainilla, arco de frambuesa y cobertura de chocolate",
             "es": "Corazón de mousse de vainilla, arco de frambuesa y cobertura de chocolate",
-            "en": "Corazón de mousse de vainilla, arco de frambuesa y cobertura de chocolate",
+            "en": "Vanilla mousse heart with raspberry arc and chocolate coating",
             "prices": [
               {
                 "label": "Unidad",
@@ -36671,7 +36682,7 @@
             "name": "Surtido de postres",
             "description": "Tres chocolates, tarta de tiramisú y torrija de crema con helado de vainilla",
             "es": "Tres chocolates, tarta de tiramisú y torrija de crema con helado de vainilla",
-            "en": "Tres chocolates, tarta de tiramisú y torrija de crema con helado de vainilla",
+            "en": "Three chocolates dessert, tiramisu cake and custard French toast with vanilla ice cream",
             "prices": [
               {
                 "label": "Unidad",
@@ -36683,7 +36694,7 @@
             "name": "Surtido de postres cordobeses",
             "description": "Tarta de queso del Moriles con membrillo, pastel cordobés con helado de vainilla y Arco de la Mezquita",
             "es": "Tarta de queso del Moriles con membrillo, pastel cordobés con helado de vainilla y Arco de la Mezquita",
-            "en": "Tarta de queso del Moriles con membrillo, pastel cordobés con helado de vainilla y Arco de la Mezquita",
+            "en": "Moriles cheesecake with quince, Cordoban pastry with vanilla ice cream and Arco de la Mezquita",
             "prices": [
               {
                 "label": "Unidad",
@@ -36703,7 +36714,8 @@
               }
             ]
           }
-        ]
+        ],
+        "titleEn": "Desserts"
       },
       {
         "title": "Cafés y descafeinados",
@@ -36984,7 +36996,8 @@
               }
             ]
           }
-        ]
+        ],
+        "titleEn": "Coffee and decaf"
       },
       {
         "title": "Infusiones y tés",
@@ -37097,7 +37110,8 @@
               }
             ]
           }
-        ]
+        ],
+        "titleEn": "Herbal infusions and tea"
       },
       {
         "title": "Chocolates y especialidades",
@@ -37178,7 +37192,7 @@
             "name": "Chocolate Suizo",
             "description": "Chocolate negro, nata montada y canela",
             "es": "Chocolate negro, nata montada y canela",
-            "en": "Chocolate negro, nata montada y canela",
+            "en": "Dark hot chocolate with whipped cream and cinnamon",
             "prices": [
               {
                 "label": "Unidad",
@@ -37190,7 +37204,7 @@
             "name": "Chocolate al Turrón",
             "description": "Chocolate negro, nata montada y helado de turrón",
             "es": "Chocolate negro, nata montada y helado de turrón",
-            "en": "Chocolate negro, nata montada y helado de turrón",
+            "en": "Dark hot chocolate with whipped cream and nougat ice cream",
             "prices": [
               {
                 "label": "Unidad",
@@ -37202,7 +37216,7 @@
             "name": "Chocolate a la Vainilla",
             "description": "Chocolate negro, nata montada y helado de vainilla",
             "es": "Chocolate negro, nata montada y helado de vainilla",
-            "en": "Chocolate negro, nata montada y helado de vainilla",
+            "en": "Dark hot chocolate with whipped cream and vanilla ice cream",
             "prices": [
               {
                 "label": "Unidad",
@@ -37210,7 +37224,8 @@
               }
             ]
           }
-        ]
+        ],
+        "titleEn": "Hot chocolate and specialties"
       }
     ],
     "menuPublicNoticeEs": "Carta oficial española de Moriles Ribera publicada en imágenes archivadas entre febrero y octubre de 2026. Precios y formatos documentados, vigencia actual por confirmar. Chuletón de vaca vieja: 40 €/kg (excluido del comparador por ración). El menú cerrado Tapas Cordobesas se consulta en su enlace oficial independiente.",
