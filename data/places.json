@@ -11444,7 +11444,9 @@
                 "eur": 11.5,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "es": "Crema fría cordobesa de tomate y pan acompañada de jamón ibérico.",
+            "en": "Cold Cordoban tomato-and-bread cream served with Iberian ham."
           },
           {
             "name": "Mazamorra, almendras fritas, pasas en oloroso y manzana ácida",
@@ -11457,7 +11459,9 @@
                 "eur": 12.5,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "es": "Crema fría de mazamorra con almendras fritas, pasas maceradas en oloroso y manzana ácida.",
+            "en": "Cold mazamorra cream with fried almonds, oloroso-soaked raisins and tart apple."
           },
           {
             "name": "Ensaladilla de gambas al ajillo (100 g / 200 g)",
@@ -11470,7 +11474,9 @@
                 "eur": 14,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "es": "Ensaladilla con gambas al ajillo, disponible en formatos de 100 y 200 gramos.",
+            "en": "Spanish-style potato salad with garlic prawns, offered in 100 g and 200 g portions."
           },
           {
             "name": "Oreja de cerdo frita y mayonesa de pimentón",
@@ -11483,7 +11489,9 @@
                 "eur": 13.5,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "es": "Oreja de cerdo frita acompañada de mayonesa de pimentón.",
+            "en": "Fried pig's ear with paprika mayonnaise."
           },
           {
             "name": "Nuestras bravas, con salsa de tomate chipotle y espuma de alioli",
@@ -11496,7 +11504,9 @@
                 "eur": 11,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "es": "Patatas bravas con salsa de tomate y chipotle y espuma de alioli.",
+            "en": "Patatas bravas with tomato-chipotle sauce and aioli foam."
           },
           {
             "name": "Berenjenas rebozadas con miel de caña",
@@ -11509,7 +11519,9 @@
                 "eur": 12,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "es": "Berenjenas rebozadas y fritas con miel de caña.",
+            "en": "Battered fried aubergines with cane syrup."
           },
           {
             "name": "Croquetas cremosas de puchero y jamón ibérico (3 uds. / 6 uds.)",
@@ -11522,7 +11534,9 @@
                 "eur": 12,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "es": "Croquetas cremosas de puchero y jamón ibérico, en formatos de tres o seis unidades.",
+            "en": "Creamy puchero stew and Iberian ham croquettes, served in portions of three or six."
           }
         ]
       },
@@ -11540,7 +11554,9 @@
                 "eur": 15,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "es": "Jamón ibérico cortado al momento, en formatos de 30 y 60 gramos.",
+            "en": "Freshly carved Iberian ham, offered in 30 g and 60 g portions."
           },
           {
             "name": "Caña de lomo ibérica de bellota (30 g / 60 g)",
@@ -11553,7 +11569,9 @@
                 "eur": 14,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "es": "Caña de lomo ibérico de bellota, en formatos de 30 y 60 gramos.",
+            "en": "Acorn-fed Iberian cured pork loin, offered in 30 g and 60 g portions."
           },
           {
             "name": "Morcilla achorizada (30 g / 60 g)",
@@ -11566,7 +11584,9 @@
                 "eur": 9,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "es": "Morcilla achorizada, en formatos de 30 y 60 gramos.",
+            "en": "Chorizo-style blood sausage, offered in 30 g and 60 g portions."
           },
           {
             "name": "Cecina de León (30 g / 60 g)",
@@ -11579,7 +11599,9 @@
                 "eur": 11,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "es": "Cecina de León, en formatos de 30 y 60 gramos.",
+            "en": "Cured beef from León, offered in 30 g and 60 g portions."
           },
           {
             "name": "Queso azul «Tormentoso» Calaveruela (50 g / 100 g)",
@@ -11592,7 +11614,9 @@
                 "eur": 13.5,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "es": "Queso azul Tormentoso de Calaveruela, en formatos de 50 y 100 gramos.",
+            "en": "Calaveruela Tormentoso blue cheese, offered in 50 g and 100 g portions."
           },
           {
             "name": "Queso de leche cruda de oveja curado (50 g / 100 g)",
@@ -11605,7 +11629,9 @@
                 "eur": 13,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "es": "Queso curado elaborado con leche cruda de oveja, en formatos de 50 y 100 gramos.",
+            "en": "Aged raw sheep's milk cheese, offered in 50 g and 100 g portions."
           },
           {
             "name": "Anchoa del Cantábrico en pan cristal y mantequilla de oveja",
@@ -11614,7 +11640,9 @@
                 "eur": 5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "es": "Anchoa del Cantábrico servida sobre pan cristal con mantequilla de oveja.",
+            "en": "Cantabrian anchovy on crisp pan cristal bread with sheep's milk butter."
           },
           {
             "name": "Sardina ahumada en tosta y salmorejo",
@@ -11623,7 +11651,9 @@
                 "eur": 6,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "es": "Sardina ahumada sobre una tosta con salmorejo.",
+            "en": "Smoked sardine on toast with salmorejo."
           },
           {
             "name": "Boquerones en vinagre y patatas chips (6 uds.)",
@@ -11632,7 +11662,9 @@
                 "eur": 14.5,
                 "portion": "6 uds."
               }
-            ]
+            ],
+            "es": "Seis boquerones en vinagre acompañados de patatas chips.",
+            "en": "Six vinegar-marinated anchovies served with potato crisps."
           },
           {
             "name": "Mojama de atún y almendras fritas (50 g)",
@@ -11641,7 +11673,9 @@
                 "eur": 13,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Mojama de atún con almendras fritas; porción indicada de 50 gramos.",
+            "en": "Salt-cured tuna with fried almonds; listed portion of 50 g."
           },
           {
             "name": "Carpaccio de salmón curado en casa, salsa tártara y tostas de pan cristal (80 g)",
@@ -11650,7 +11684,9 @@
                 "eur": 16,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Salmón curado en el establecimiento, cortado fino, con salsa tártara y tostas de pan cristal.",
+            "en": "House-cured salmon carpaccio with tartare sauce and crisp pan cristal toast."
           }
         ]
       },
@@ -11664,7 +11700,9 @@
                 "eur": 15.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Cogollos de lechuga preparados al estilo César; la carta no detalla los demás ingredientes.",
+            "en": "Baby lettuce hearts prepared Caesar-style; other ingredients are not specified."
           },
           {
             "name": "Espárragos a la plancha, pesto de pistacho y parmesano",
@@ -11673,7 +11711,9 @@
                 "eur": 16,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Espárragos a la plancha con pesto de pistacho y queso parmesano.",
+            "en": "Grilled asparagus with pistachio pesto and Parmesan cheese."
           },
           {
             "name": "Pimientos de Padrón fritos",
@@ -11682,7 +11722,9 @@
                 "eur": 11,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Pimientos de Padrón fritos.",
+            "en": "Fried Padrón peppers."
           },
           {
             "name": "Chipirones fritos y mayonesa de kimchie",
@@ -11695,7 +11737,9 @@
                 "eur": 15,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "es": "Chipirones fritos acompañados de mayonesa de kimchi.",
+            "en": "Fried baby squid with kimchi mayonnaise."
           },
           {
             "name": "Tortillita de camarones, guacamole y carpaccio de pulpo",
@@ -11704,7 +11748,9 @@
                 "eur": 8,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "es": "Tortillita de camarones con guacamole y carpaccio de pulpo.",
+            "en": "Crispy shrimp fritter with guacamole and octopus carpaccio."
           }
         ]
       },
@@ -11718,7 +11764,9 @@
                 "eur": 15,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Hamburguesa doble de ternera tipo smash con trocitos de beicon, cheddar, salsa barbacoa y patatas fritas.",
+            "en": "Double smash beef burger with bacon bits, cheddar, barbecue sauce and chips."
           },
           {
             "name": "Presa ibérica de bellota con pimientos de Padrón (180 g)",
@@ -11727,7 +11775,9 @@
                 "eur": 24,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Presa de cerdo ibérico de bellota con pimientos de Padrón; corte indicado de 180 gramos.",
+            "en": "Acorn-fed Iberian pork presa with Padrón peppers; listed cut of 180 g."
           },
           {
             "name": "Costillas glaseadas con barbacoa casera (500 g)",
@@ -11736,7 +11786,9 @@
                 "eur": 20,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Costillas de 500 gramos glaseadas con salsa barbacoa casera.",
+            "en": "500 g portion of ribs glazed with homemade barbecue sauce."
           },
           {
             "name": "Alitas de pollo en dos frituras y barbacoa coreana (6 uds. / 12 uds.)",
@@ -11749,7 +11801,9 @@
                 "eur": 16,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "es": "Alitas de pollo con doble fritura y salsa barbacoa coreana, en formatos de seis o doce unidades.",
+            "en": "Double-fried chicken wings with Korean barbecue sauce, in portions of six or twelve."
           },
           {
             "name": "Lomo de vaca madurado durante 40 días a la plancha con patatas (300 g)",
@@ -11758,7 +11812,9 @@
                 "eur": 28,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Lomo de vaca madurado 40 días, hecho a la plancha y acompañado de patatas; corte de 300 gramos.",
+            "en": "40-day aged beef loin grilled and served with potatoes; listed cut of 300 g."
           },
           {
             "name": "Sándwich de rabo de «toro» con su salsa, mantequilla de oveja y velo de papada",
@@ -11767,7 +11823,9 @@
                 "eur": 14,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Sándwich de rabo de toro con su salsa, mantequilla de oveja y velo de papada.",
+            "en": "Oxtail sandwich with its cooking sauce, sheep's milk butter and thinly sliced pork jowl."
           },
           {
             "name": "Rabo de «toro» estofado con patatas",
@@ -11776,7 +11834,9 @@
                 "eur": 21,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Rabo de toro estofado acompañado de patatas.",
+            "en": "Braised oxtail served with potatoes."
           },
           {
             "name": "Albóndigas de vaca en salsa y crema de boniato (3 uds. / 6 uds.)",
@@ -11789,7 +11849,9 @@
                 "eur": 14.5,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "es": "Albóndigas de vaca en salsa con crema de boniato, en formatos de tres o seis unidades.",
+            "en": "Beef meatballs in sauce with sweet potato cream, in portions of three or six."
           },
           {
             "name": "Flamenquín de lomo y jamón ibérico",
@@ -11798,7 +11860,9 @@
                 "eur": 15.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Flamenquín de lomo de cerdo y jamón ibérico.",
+            "en": "Breaded Córdoba-style flamenquín filled with pork loin and Iberian ham."
           }
         ]
       },
@@ -11812,7 +11876,9 @@
                 "eur": 8,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Tarta de quesos acompañada de helado de pistacho.",
+            "en": "Cheese cake served with pistachio ice cream."
           },
           {
             "name": "Brownie templado, helado de avellana y toffe de P.X.",
@@ -11821,7 +11887,9 @@
                 "eur": 7.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Brownie templado con helado de avellana y toffee de Pedro Ximénez.",
+            "en": "Warm brownie with hazelnut ice cream and Pedro Ximénez toffee."
           },
           {
             "name": "Limón y chocolate blanco",
@@ -11830,7 +11898,9 @@
                 "eur": 7,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Postre de limón y chocolate blanco; la carta no detalla su preparación.",
+            "en": "Lemon and white chocolate dessert; the preparation is not specified."
           },
           {
             "name": "Pastel cordobés",
@@ -11839,7 +11909,9 @@
                 "eur": 7.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Pastel cordobés tradicional; la carta no detalla su relleno.",
+            "en": "Traditional Córdoba pastry; the menu does not specify its filling."
           },
           {
             "name": "Torrija caramelizada y helado de vainilla",
@@ -11848,7 +11920,9 @@
                 "eur": 7.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "es": "Torrija caramelizada acompañada de helado de vainilla.",
+            "en": "Caramelised Spanish-style French toast with vanilla ice cream."
           }
         ]
       }
