@@ -647,7 +647,11 @@ function renderBeatillasGroupMenus(panel,p){
  const headings={starters:['Para comenzar','To start'],following:['Para continuar','Following courses'],mainOptions:['Principal · opciones a elegir','Main course · choose an option'],desserts:['Postre','Dessert']};
  for(const menu of menus){
   const card=document.createElement('div');card.className='menu-dish';
-  const title=document.createElement('h4');title.dataset.keepDishSpanish='';title.textContent=menu.service.replace(/ \(2025\)$/,'');card.append(title);
+  const title=document.createElement('h4');
+  title.dataset.groupMenuLabelEs=menu.service.replace(/ \(2025\)$/,'');
+  title.dataset.groupMenuLabelEn=title.dataset.groupMenuLabelEs==='Menú infantil'?"Children's menu":title.dataset.groupMenuLabelEs.replace('Menú n.º','Set menu no.');
+  title.textContent=window.HelioGastroLanguage?.get()==='en'?title.dataset.groupMenuLabelEn:title.dataset.groupMenuLabelEs;
+  card.append(title);
   const amount=document.createElement('p');amount.className='note';
   amount.textContent=fmt(menu.price)+' · '+(window.HelioGastroLanguage?.get()==='en'?'2025 published set-menu price':'Precio de menú publicado en 2025');
   amount.dataset.groupMenuPrice=String(menu.price);card.append(amount);
