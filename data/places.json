@@ -33620,6 +33620,436 @@
             "portion": "racion"
           }
         ]
+      },
+      {
+        "service": "Postres",
+        "dishes": [
+          "Flan con helado de vainilla",
+          "Gachas con pasas y nueces",
+          "Naranja estilo Moriles",
+          "Natillas con su galleta María",
+          "Pastel Cordobés con helado de vainilla",
+          "Tarta de queso del Moriles con membrillo",
+          "Tocino de cielo con helado de turrón",
+          "Torrija de crema con helado de vainilla",
+          "Arco de la Mezquita",
+          "Pastel de Caramelo a la Flor de Sal",
+          "Coulant de chocolate con helado de vainilla",
+          "Tres chocolates",
+          "Iglú de Ferrero",
+          "Tarta de chocolate (sin gluten y sin lactosa)",
+          "Tarta Selva Negra",
+          "Tarta de Tiramisú",
+          "Tarta de Mousse de Chocolate",
+          "Tarta Cremosa de Pistacho",
+          "Tulipa de muerte por chocolate",
+          "Tulipa helada de turrón",
+          "Tulipa helada de vainilla de Tahití con nueces de macadamia",
+          "Copa Helada de Nata y Nueces (sin azúcar)",
+          "Tarta de Zanahoria",
+          "Surtido de postres",
+          "Surtido de postres cordobeses",
+          "Trufita de Chocolate"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Flan con helado de vainilla",
+            "eur": 4.8,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Gachas con pasas y nueces",
+            "eur": 4.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Naranja estilo Moriles",
+            "eur": 4.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Natillas con su galleta María",
+            "eur": 4.25,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Pastel Cordobés con helado de vainilla",
+            "eur": 5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tarta de queso del Moriles con membrillo",
+            "eur": 5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tocino de cielo con helado de turrón",
+            "eur": 5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Torrija de crema con helado de vainilla",
+            "eur": 5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Arco de la Mezquita",
+            "eur": 5.8,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Pastel de Caramelo a la Flor de Sal",
+            "eur": 4.8,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Coulant de chocolate con helado de vainilla",
+            "eur": 5.8,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tres chocolates",
+            "eur": 5.8,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Iglú de Ferrero",
+            "eur": 5.8,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tarta de chocolate (sin gluten y sin lactosa)",
+            "eur": 4.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tarta Selva Negra",
+            "eur": 5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tarta de Tiramisú",
+            "eur": 5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tarta de Mousse de Chocolate",
+            "eur": 4.8,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tarta Cremosa de Pistacho",
+            "eur": 4.8,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tulipa de muerte por chocolate",
+            "eur": 4.95,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tulipa helada de turrón",
+            "eur": 4.95,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tulipa helada de vainilla de Tahití con nueces de macadamia",
+            "eur": 4.95,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Copa Helada de Nata y Nueces (sin azúcar)",
+            "eur": 4.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tarta de Zanahoria",
+            "eur": 5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Surtido de postres",
+            "eur": 15,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Surtido de postres cordobeses",
+            "eur": 15,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Trufita de Chocolate",
+            "eur": 0.85,
+            "portion": "unidad"
+          }
+        ]
+      },
+      {
+        "service": "Cafés y descafeinados",
+        "dishes": [
+          "Café Solo",
+          "Café Expreso",
+          "Café Cortado",
+          "Café con Leche",
+          "Leche Manchada",
+          "Café Americano",
+          "Café Bombón",
+          "Café Capuchino",
+          "Café Vienés",
+          "Café Mocaccino",
+          "Café con Helado de Vainilla",
+          "Café con Helado de Turrón",
+          "Carajillo Flameado de Brandy",
+          "Carajillo Flameado de Ron",
+          "Carajillo Flameado de Anís",
+          "Carajillo Flameado de Whisky",
+          "Expreso 43",
+          "Café con Baileys",
+          "Café Irlandés",
+          "Café Cubano",
+          "Amaretto Café",
+          "Calypso Café",
+          "Café Barraquito"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Café Solo",
+            "eur": 1.45,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Café Expreso",
+            "eur": 1.45,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Café Cortado",
+            "eur": 1.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Café con Leche",
+            "eur": 1.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Leche Manchada",
+            "eur": 1.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Café Americano",
+            "eur": 1.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Café Bombón",
+            "eur": 2,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Café Capuchino",
+            "eur": 2,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Café Vienés",
+            "eur": 2.2,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Café Mocaccino",
+            "eur": 2.2,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Café con Helado de Vainilla",
+            "eur": 3.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Café con Helado de Turrón",
+            "eur": 3.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Carajillo Flameado de Brandy",
+            "eur": 2.95,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Carajillo Flameado de Ron",
+            "eur": 2.95,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Carajillo Flameado de Anís",
+            "eur": 2.95,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Carajillo Flameado de Whisky",
+            "eur": 2.95,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Expreso 43",
+            "eur": 2.95,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Café con Baileys",
+            "eur": 2.95,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Café Irlandés",
+            "eur": 5.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Café Cubano",
+            "eur": 5.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Amaretto Café",
+            "eur": 5.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Calypso Café",
+            "eur": 5.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Café Barraquito",
+            "eur": 5.5,
+            "portion": "unidad"
+          }
+        ]
+      },
+      {
+        "service": "Infusiones y tés",
+        "dishes": [
+          "Menta",
+          "Manzanilla",
+          "Tila",
+          "Rooibos Canela y Menta",
+          "Té Blanco con Fresa y Frambuesa",
+          "Té Rojo Pu-Erh",
+          "Té Verde Gunpowder",
+          "Té Verde con Hierbabuena",
+          "Té Negro English Breakfast"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Menta",
+            "eur": 2.4,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Manzanilla",
+            "eur": 2.4,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tila",
+            "eur": 2.4,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Rooibos Canela y Menta",
+            "eur": 2.4,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Té Blanco con Fresa y Frambuesa",
+            "eur": 2.4,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Té Rojo Pu-Erh",
+            "eur": 2.4,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Té Verde Gunpowder",
+            "eur": 2.4,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Té Verde con Hierbabuena",
+            "eur": 2.4,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Té Negro English Breakfast",
+            "eur": 2.4,
+            "portion": "unidad"
+          }
+        ]
+      },
+      {
+        "service": "Chocolates y especialidades",
+        "dishes": [
+          "Chocolate con leche",
+          "Chocolate Blanco",
+          "Chocolate Negro",
+          "Chocolate Blanco con Avellanas",
+          "Chocolate con Leche y Praliné",
+          "Chocolate Negro con Naranja y Canela",
+          "Chocolate Suizo",
+          "Chocolate al Turrón",
+          "Chocolate a la Vainilla"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Chocolate con leche",
+            "eur": 2.8,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Chocolate Blanco",
+            "eur": 2.8,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Chocolate Negro",
+            "eur": 2.8,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Chocolate Blanco con Avellanas",
+            "eur": 2.8,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Chocolate con Leche y Praliné",
+            "eur": 2.8,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Chocolate Negro con Naranja y Canela",
+            "eur": 2.8,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Chocolate Suizo",
+            "eur": 3.25,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Chocolate al Turrón",
+            "eur": 3.95,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Chocolate a la Vainilla",
+            "eur": 3.95,
+            "portion": "unidad"
+          }
+        ]
       }
     ],
     "menuSourceNote": "Auditoría documental iniciada el 22/10/2026: seis láminas oficiales en español con precios, alojadas en carpetas de febrero y marzo 2026. La versión inglesa utiliza archivos de 2025 y presenta importes divergentes. Pendiente transcripción íntegra y validación de platos, precios y formatos ES/EN antes de sustituir la ficha preliminar; no copiar carta de los otros Moriles ni publicar una carta parcial. Fuentes complementarias localizadas 22/10/2026: menú Tapas Cordobesas (15,95 € en lámina consultada), cafés/chocolates, postres, versiones inglesas y glosario. Se conservarán separadas las cartas por servicios y los menús cerrados; falta transcripción integral y control de importes antes de publicar.",
@@ -35957,10 +36387,834 @@
             ]
           }
         ]
+      },
+      {
+        "title": "Postres",
+        "items": [
+          {
+            "name": "Flan con helado de vainilla",
+            "description": "Flan con helado de vainilla",
+            "es": "Flan con helado de vainilla",
+            "en": "Flan con helado de vainilla",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 4.8
+              }
+            ]
+          },
+          {
+            "name": "Gachas con pasas y nueces",
+            "description": "Gachas con pasas y nueces",
+            "es": "Gachas con pasas y nueces",
+            "en": "Gachas con pasas y nueces",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 4.5
+              }
+            ]
+          },
+          {
+            "name": "Naranja estilo Moriles",
+            "description": "Naranja estilo Moriles",
+            "es": "Naranja estilo Moriles",
+            "en": "Naranja estilo Moriles",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 4.5
+              }
+            ]
+          },
+          {
+            "name": "Natillas con su galleta María",
+            "description": "Natillas con su galleta María",
+            "es": "Natillas con su galleta María",
+            "en": "Natillas con su galleta María",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 4.25
+              }
+            ]
+          },
+          {
+            "name": "Pastel Cordobés con helado de vainilla",
+            "description": "Pastel Cordobés con helado de vainilla",
+            "es": "Pastel Cordobés con helado de vainilla",
+            "en": "Pastel Cordobés con helado de vainilla",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 5
+              }
+            ]
+          },
+          {
+            "name": "Tarta de queso del Moriles con membrillo",
+            "description": "Tarta de queso del Moriles con membrillo",
+            "es": "Tarta de queso del Moriles con membrillo",
+            "en": "Tarta de queso del Moriles con membrillo",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 5
+              }
+            ]
+          },
+          {
+            "name": "Tocino de cielo con helado de turrón",
+            "description": "Tocino de cielo con helado de turrón",
+            "es": "Tocino de cielo con helado de turrón",
+            "en": "Tocino de cielo con helado de turrón",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 5
+              }
+            ]
+          },
+          {
+            "name": "Torrija de crema con helado de vainilla",
+            "description": "Torrija de crema con helado de vainilla",
+            "es": "Torrija de crema con helado de vainilla",
+            "en": "Torrija de crema con helado de vainilla",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 5
+              }
+            ]
+          },
+          {
+            "name": "Arco de la Mezquita",
+            "description": "Corazón de mousse de vainilla, arco de frambuesa y cobertura de chocolate",
+            "es": "Corazón de mousse de vainilla, arco de frambuesa y cobertura de chocolate",
+            "en": "Corazón de mousse de vainilla, arco de frambuesa y cobertura de chocolate",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 5.8
+              }
+            ]
+          },
+          {
+            "name": "Pastel de Caramelo a la Flor de Sal",
+            "description": "Pastel de Caramelo a la Flor de Sal",
+            "es": "Pastel de Caramelo a la Flor de Sal",
+            "en": "Pastel de Caramelo a la Flor de Sal",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 4.8
+              }
+            ]
+          },
+          {
+            "name": "Coulant de chocolate con helado de vainilla",
+            "description": "Coulant de chocolate con helado de vainilla",
+            "es": "Coulant de chocolate con helado de vainilla",
+            "en": "Coulant de chocolate con helado de vainilla",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 5.8
+              }
+            ]
+          },
+          {
+            "name": "Tres chocolates",
+            "description": "Tres chocolates",
+            "es": "Tres chocolates",
+            "en": "Tres chocolates",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 5.8
+              }
+            ]
+          },
+          {
+            "name": "Iglú de Ferrero",
+            "description": "Iglú de Ferrero",
+            "es": "Iglú de Ferrero",
+            "en": "Iglú de Ferrero",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 5.8
+              }
+            ]
+          },
+          {
+            "name": "Tarta de chocolate (sin gluten y sin lactosa)",
+            "description": "Tarta de chocolate (sin gluten y sin lactosa)",
+            "es": "Tarta de chocolate (sin gluten y sin lactosa)",
+            "en": "Tarta de chocolate (sin gluten y sin lactosa)",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 4.5
+              }
+            ]
+          },
+          {
+            "name": "Tarta Selva Negra",
+            "description": "Tarta Selva Negra",
+            "es": "Tarta Selva Negra",
+            "en": "Tarta Selva Negra",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 5
+              }
+            ]
+          },
+          {
+            "name": "Tarta de Tiramisú",
+            "description": "Tarta de Tiramisú",
+            "es": "Tarta de Tiramisú",
+            "en": "Tarta de Tiramisú",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 5
+              }
+            ]
+          },
+          {
+            "name": "Tarta de Mousse de Chocolate",
+            "description": "Tarta de Mousse de Chocolate",
+            "es": "Tarta de Mousse de Chocolate",
+            "en": "Tarta de Mousse de Chocolate",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 4.8
+              }
+            ]
+          },
+          {
+            "name": "Tarta Cremosa de Pistacho",
+            "description": "Tarta Cremosa de Pistacho",
+            "es": "Tarta Cremosa de Pistacho",
+            "en": "Tarta Cremosa de Pistacho",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 4.8
+              }
+            ]
+          },
+          {
+            "name": "Tulipa de muerte por chocolate",
+            "description": "Tulipa de muerte por chocolate",
+            "es": "Tulipa de muerte por chocolate",
+            "en": "Tulipa de muerte por chocolate",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 4.95
+              }
+            ]
+          },
+          {
+            "name": "Tulipa helada de turrón",
+            "description": "Tulipa helada de turrón",
+            "es": "Tulipa helada de turrón",
+            "en": "Tulipa helada de turrón",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 4.95
+              }
+            ]
+          },
+          {
+            "name": "Tulipa helada de vainilla de Tahití con nueces de macadamia",
+            "description": "Tulipa helada de vainilla de Tahití con nueces de macadamia",
+            "es": "Tulipa helada de vainilla de Tahití con nueces de macadamia",
+            "en": "Tulipa helada de vainilla de Tahití con nueces de macadamia",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 4.95
+              }
+            ]
+          },
+          {
+            "name": "Copa Helada de Nata y Nueces (sin azúcar)",
+            "description": "Copa Helada de Nata y Nueces (sin azúcar)",
+            "es": "Copa Helada de Nata y Nueces (sin azúcar)",
+            "en": "Copa Helada de Nata y Nueces (sin azúcar)",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 4.5
+              }
+            ]
+          },
+          {
+            "name": "Tarta de Zanahoria",
+            "description": "Tarta de Zanahoria",
+            "es": "Tarta de Zanahoria",
+            "en": "Tarta de Zanahoria",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 5
+              }
+            ]
+          },
+          {
+            "name": "Surtido de postres",
+            "description": "Tres chocolates, tarta de tiramisú y torrija de crema con helado de vainilla",
+            "es": "Tres chocolates, tarta de tiramisú y torrija de crema con helado de vainilla",
+            "en": "Tres chocolates, tarta de tiramisú y torrija de crema con helado de vainilla",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 15
+              }
+            ]
+          },
+          {
+            "name": "Surtido de postres cordobeses",
+            "description": "Tarta de queso del Moriles con membrillo, pastel cordobés con helado de vainilla y Arco de la Mezquita",
+            "es": "Tarta de queso del Moriles con membrillo, pastel cordobés con helado de vainilla y Arco de la Mezquita",
+            "en": "Tarta de queso del Moriles con membrillo, pastel cordobés con helado de vainilla y Arco de la Mezquita",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 15
+              }
+            ]
+          },
+          {
+            "name": "Trufita de Chocolate",
+            "description": "Trufita de Chocolate",
+            "es": "Trufita de Chocolate",
+            "en": "Trufita de Chocolate",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 0.85
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Cafés y descafeinados",
+        "items": [
+          {
+            "name": "Café Solo",
+            "description": "Café Solo",
+            "es": "Café Solo",
+            "en": "Café Solo",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 1.45
+              }
+            ]
+          },
+          {
+            "name": "Café Expreso",
+            "description": "Café Expreso",
+            "es": "Café Expreso",
+            "en": "Café Expreso",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 1.45
+              }
+            ]
+          },
+          {
+            "name": "Café Cortado",
+            "description": "Café Cortado",
+            "es": "Café Cortado",
+            "en": "Café Cortado",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 1.5
+              }
+            ]
+          },
+          {
+            "name": "Café con Leche",
+            "description": "Café con Leche",
+            "es": "Café con Leche",
+            "en": "Café con Leche",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 1.5
+              }
+            ]
+          },
+          {
+            "name": "Leche Manchada",
+            "description": "Leche Manchada",
+            "es": "Leche Manchada",
+            "en": "Leche Manchada",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 1.5
+              }
+            ]
+          },
+          {
+            "name": "Café Americano",
+            "description": "Café Americano",
+            "es": "Café Americano",
+            "en": "Café Americano",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 1.5
+              }
+            ]
+          },
+          {
+            "name": "Café Bombón",
+            "description": "Café Bombón",
+            "es": "Café Bombón",
+            "en": "Café Bombón",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 2
+              }
+            ]
+          },
+          {
+            "name": "Café Capuchino",
+            "description": "Café Capuchino",
+            "es": "Café Capuchino",
+            "en": "Café Capuchino",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 2
+              }
+            ]
+          },
+          {
+            "name": "Café Vienés",
+            "description": "Café Vienés",
+            "es": "Café Vienés",
+            "en": "Café Vienés",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 2.2
+              }
+            ]
+          },
+          {
+            "name": "Café Mocaccino",
+            "description": "Café Mocaccino",
+            "es": "Café Mocaccino",
+            "en": "Café Mocaccino",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 2.2
+              }
+            ]
+          },
+          {
+            "name": "Café con Helado de Vainilla",
+            "description": "Café con Helado de Vainilla",
+            "es": "Café con Helado de Vainilla",
+            "en": "Café con Helado de Vainilla",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 3.5
+              }
+            ]
+          },
+          {
+            "name": "Café con Helado de Turrón",
+            "description": "Café con Helado de Turrón",
+            "es": "Café con Helado de Turrón",
+            "en": "Café con Helado de Turrón",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 3.5
+              }
+            ]
+          },
+          {
+            "name": "Carajillo Flameado de Brandy",
+            "description": "Carajillo Flameado de Brandy",
+            "es": "Carajillo Flameado de Brandy",
+            "en": "Carajillo Flameado de Brandy",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 2.95
+              }
+            ]
+          },
+          {
+            "name": "Carajillo Flameado de Ron",
+            "description": "Carajillo Flameado de Ron",
+            "es": "Carajillo Flameado de Ron",
+            "en": "Carajillo Flameado de Ron",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 2.95
+              }
+            ]
+          },
+          {
+            "name": "Carajillo Flameado de Anís",
+            "description": "Carajillo Flameado de Anís",
+            "es": "Carajillo Flameado de Anís",
+            "en": "Carajillo Flameado de Anís",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 2.95
+              }
+            ]
+          },
+          {
+            "name": "Carajillo Flameado de Whisky",
+            "description": "Carajillo Flameado de Whisky",
+            "es": "Carajillo Flameado de Whisky",
+            "en": "Carajillo Flameado de Whisky",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 2.95
+              }
+            ]
+          },
+          {
+            "name": "Expreso 43",
+            "description": "Expreso 43",
+            "es": "Expreso 43",
+            "en": "Expreso 43",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 2.95
+              }
+            ]
+          },
+          {
+            "name": "Café con Baileys",
+            "description": "Café con Baileys",
+            "es": "Café con Baileys",
+            "en": "Café con Baileys",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 2.95
+              }
+            ]
+          },
+          {
+            "name": "Café Irlandés",
+            "description": "Café Irlandés",
+            "es": "Café Irlandés",
+            "en": "Café Irlandés",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 5.5
+              }
+            ]
+          },
+          {
+            "name": "Café Cubano",
+            "description": "Café Cubano",
+            "es": "Café Cubano",
+            "en": "Café Cubano",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 5.5
+              }
+            ]
+          },
+          {
+            "name": "Amaretto Café",
+            "description": "Amaretto Café",
+            "es": "Amaretto Café",
+            "en": "Amaretto Café",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 5.5
+              }
+            ]
+          },
+          {
+            "name": "Calypso Café",
+            "description": "Calypso Café",
+            "es": "Calypso Café",
+            "en": "Calypso Café",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 5.5
+              }
+            ]
+          },
+          {
+            "name": "Café Barraquito",
+            "description": "Café Barraquito",
+            "es": "Café Barraquito",
+            "en": "Café Barraquito",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 5.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infusiones y tés",
+        "items": [
+          {
+            "name": "Menta",
+            "description": "Menta",
+            "es": "Menta",
+            "en": "Menta",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 2.4
+              }
+            ]
+          },
+          {
+            "name": "Manzanilla",
+            "description": "Manzanilla",
+            "es": "Manzanilla",
+            "en": "Manzanilla",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 2.4
+              }
+            ]
+          },
+          {
+            "name": "Tila",
+            "description": "Tila",
+            "es": "Tila",
+            "en": "Tila",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 2.4
+              }
+            ]
+          },
+          {
+            "name": "Rooibos Canela y Menta",
+            "description": "Rooibos Canela y Menta",
+            "es": "Rooibos Canela y Menta",
+            "en": "Rooibos Canela y Menta",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 2.4
+              }
+            ]
+          },
+          {
+            "name": "Té Blanco con Fresa y Frambuesa",
+            "description": "Té Blanco con Fresa y Frambuesa",
+            "es": "Té Blanco con Fresa y Frambuesa",
+            "en": "Té Blanco con Fresa y Frambuesa",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 2.4
+              }
+            ]
+          },
+          {
+            "name": "Té Rojo Pu-Erh",
+            "description": "Té Rojo Pu-Erh",
+            "es": "Té Rojo Pu-Erh",
+            "en": "Té Rojo Pu-Erh",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 2.4
+              }
+            ]
+          },
+          {
+            "name": "Té Verde Gunpowder",
+            "description": "Té Verde Gunpowder",
+            "es": "Té Verde Gunpowder",
+            "en": "Té Verde Gunpowder",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 2.4
+              }
+            ]
+          },
+          {
+            "name": "Té Verde con Hierbabuena",
+            "description": "Té Verde con Hierbabuena",
+            "es": "Té Verde con Hierbabuena",
+            "en": "Té Verde con Hierbabuena",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 2.4
+              }
+            ]
+          },
+          {
+            "name": "Té Negro English Breakfast",
+            "description": "Té Negro English Breakfast",
+            "es": "Té Negro English Breakfast",
+            "en": "Té Negro English Breakfast",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 2.4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Chocolates y especialidades",
+        "items": [
+          {
+            "name": "Chocolate con leche",
+            "description": "Chocolate con leche",
+            "es": "Chocolate con leche",
+            "en": "Chocolate con leche",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 2.8
+              }
+            ]
+          },
+          {
+            "name": "Chocolate Blanco",
+            "description": "Chocolate Blanco",
+            "es": "Chocolate Blanco",
+            "en": "Chocolate Blanco",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 2.8
+              }
+            ]
+          },
+          {
+            "name": "Chocolate Negro",
+            "description": "Chocolate Negro",
+            "es": "Chocolate Negro",
+            "en": "Chocolate Negro",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 2.8
+              }
+            ]
+          },
+          {
+            "name": "Chocolate Blanco con Avellanas",
+            "description": "Chocolate Blanco con Avellanas",
+            "es": "Chocolate Blanco con Avellanas",
+            "en": "Chocolate Blanco con Avellanas",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 2.8
+              }
+            ]
+          },
+          {
+            "name": "Chocolate con Leche y Praliné",
+            "description": "Chocolate con Leche y Praliné",
+            "es": "Chocolate con Leche y Praliné",
+            "en": "Chocolate con Leche y Praliné",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 2.8
+              }
+            ]
+          },
+          {
+            "name": "Chocolate Negro con Naranja y Canela",
+            "description": "Chocolate Negro con Naranja y Canela",
+            "es": "Chocolate Negro con Naranja y Canela",
+            "en": "Chocolate Negro con Naranja y Canela",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 2.8
+              }
+            ]
+          },
+          {
+            "name": "Chocolate Suizo",
+            "description": "Chocolate negro, nata montada y canela",
+            "es": "Chocolate negro, nata montada y canela",
+            "en": "Chocolate negro, nata montada y canela",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 3.25
+              }
+            ]
+          },
+          {
+            "name": "Chocolate al Turrón",
+            "description": "Chocolate negro, nata montada y helado de turrón",
+            "es": "Chocolate negro, nata montada y helado de turrón",
+            "en": "Chocolate negro, nata montada y helado de turrón",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 3.95
+              }
+            ]
+          },
+          {
+            "name": "Chocolate a la Vainilla",
+            "description": "Chocolate negro, nata montada y helado de vainilla",
+            "es": "Chocolate negro, nata montada y helado de vainilla",
+            "en": "Chocolate negro, nata montada y helado de vainilla",
+            "prices": [
+              {
+                "label": "Unidad",
+                "eur": 3.95
+              }
+            ]
+          }
+        ]
       }
     ],
-    "menuPublicNoticeEs": "Transcripción en curso de carta oficial española de 2026. Se están incorporando las secciones por bloques; consulte los enlaces oficiales para la carta completa. Vigencia actual de precios por confirmar.",
-    "menuPublicNoticeEn": "Transcription in progress from the official Spanish 2026 menu. Sections are being added in batches; refer to the official links for the complete menu. Current price validity unconfirmed."
+    "menuPublicNoticeEs": "Carta oficial española de Moriles Ribera publicada en imágenes archivadas entre febrero y octubre de 2026. Precios y formatos documentados, vigencia actual por confirmar. Chuletón de vaca vieja: 40 €/kg (excluido del comparador por ración). El menú cerrado Tapas Cordobesas se consulta en su enlace oficial independiente.",
+    "menuPublicNoticeEn": "Official Spanish Moriles Ribera menu shown in images hosted from February to October 2026. Documented prices and portion sizes; current validity unconfirmed. Mature-beef steak: €40/kg (excluded from per-serving comparisons). The Córdoba tapas set menu is available via its own official link."
   },
   {
     "id": "moriles-casa-fina",
