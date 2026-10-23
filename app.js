@@ -750,6 +750,22 @@ const MORILES_RIBERA_EXPLANATIONS_EN={
  'Agua Solán de Cabras':'Solán de Cabras mineral water.'
 };
 function morilesExplanation(name){return MORILES_RIBERA_EXPLANATIONS_EN[name]||'';}
+const CASA_FINA_TAPAS_EN={
+ 'Cogollos al ajillo':'Little gem lettuce with garlic.',
+ 'Bacalao con Naranja':'Salt cod with orange.',
+ 'Salmorejo con Jamón':'Cordoban salmorejo with cured ham.',
+ 'Mazamorra con Sardina Ahumada, Uvas y Pasas':'Cordoban mazamorra with smoked sardine, grapes and raisins.',
+ 'Japuta en Adobo':'Marinated japuta fish.',
+ 'Soldaditos de Pavía':'Traditional battered salt cod.',
+ 'Carrillada Ibérica Confitada a la Miel de Caña':'Slow-cooked Iberian pork cheeks with cane syrup.',
+ 'Flamenquito de Jamón Ibérico y Queso Puro de Oveja':'Mini flamenquín with Iberian ham and sheep’s milk cheese.',
+ 'Pastel Cordobés':'Traditional Cordoban pastry.',
+ 'Torrija de Crema':'Cream-filled torrija.',
+ 'Vino de la Casa':'House wine.',
+ 'Mahou de Barril':'Draught Mahou beer.',
+ 'Refrescos':'Soft drinks.',
+ 'Agua Solán de Cabras':'Solán de Cabras mineral water.'
+};
 function renderVenueMenuSections(panel,p){
  // El aviso público sobre ausencia de precios aparece una sola vez.
  if(p.menuPublicNoticeEs && !(p.id==='moriles-ribera' && Array.isArray(p.officialMenuLinks) && p.officialMenuLinks.length)){
@@ -814,9 +830,9 @@ function showPlace(p,scroll=true){
   for(const menu of p.officialSetMenus){
     const section=document.createElement('section');section.className='menu-dish';
     const title=document.createElement('h3');title.dataset.setMenuEs=menu.name;title.dataset.setMenuEn=menu.nameEn;title.textContent=window.HelioGastroLanguage?.get()==='en'?menu.nameEn:menu.name;section.append(title);
-    const amount=document.createElement('strong');amount.textContent=fmt(menu.price)+' · 2026';section.append(amount);
+    const amount=document.createElement('strong');amount.textContent=fmt(menu.price)+(p.id==='moriles-casa-fina'?' · Vigencia pendiente de confirmar':' · 2026');section.append(amount);
     const blocks=[['Platos a elegir','Dishes to choose from',menu.choiceOptions],['Postre a elegir','Dessert choices',menu.dessertOptions],['Bebidas incluidas (una a elegir)','Included drinks (choose one)',menu.drinkOptions]];
-    for(const [es,en,items] of blocks){const heading=document.createElement('p');heading.dataset.setMenuEs=es;heading.dataset.setMenuEn=en;heading.textContent=window.HelioGastroLanguage?.get()==='en'?en:es;section.append(heading);const list=document.createElement('ul');for(const name of items){const li=document.createElement('li');li.dataset.keepDishSpanish='';li.textContent=name;const explanation=p.id==='moriles-ribera'?morilesExplanation(name):'';if(explanation){const description=document.createElement('small');description.className='dish-explanation detail-dish-explanation';description.dataset.dishExplanation='';description.dataset.explanationLanguage='en';description.textContent=explanation;description.hidden=window.HelioGastroLanguage?.get()!=='en';li.append(description)}list.append(li)}section.append(list);}
+    for(const [es,en,items] of blocks){const heading=document.createElement('p');heading.dataset.setMenuEs=es;heading.dataset.setMenuEn=en;heading.textContent=window.HelioGastroLanguage?.get()==='en'?en:es;section.append(heading);const list=document.createElement('ul');for(const name of items){const li=document.createElement('li');li.dataset.keepDishSpanish='';li.textContent=name;const explanation=p.id==='moriles-ribera'?morilesExplanation(name):p.id==='moriles-casa-fina'?(CASA_FINA_TAPAS_EN[name]||''):'';if(explanation){const description=document.createElement('small');description.className='dish-explanation detail-dish-explanation';description.dataset.dishExplanation='';description.dataset.explanationLanguage='en';description.textContent=explanation;description.hidden=window.HelioGastroLanguage?.get()!=='en';li.append(description)}list.append(li)}section.append(list);}
     const notice=document.createElement('p');notice.className='note';notice.dataset.setMenuEs=menu.noteEs;notice.dataset.setMenuEn=menu.noteEn;notice.textContent=window.HelioGastroLanguage?.get()==='en'?menu.noteEn:menu.noteEs;section.append(notice);
     panel.append(section);
   }
