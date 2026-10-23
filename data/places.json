@@ -42053,7 +42053,87 @@
         "noteEs": "La imagen inglesa indica validez hasta el 30/11/2024; la española no indica fecha. Vigencia pendiente de confirmar.",
         "noteEn": "The English image says valid until 30 November 2024; the Spanish image gives no validity date. Current availability is unconfirmed."
       }
-    ]
+    ],
+    "documentedEventMenus": [
+      {
+        "name": "Vendimia",
+        "price": 35.5,
+        "validThrough": "2027-06-30",
+        "kind": "individual_set_menu",
+        "note": "Includes dessert and drinks as shown on the original event menu; verify conditions and group size."
+      },
+      {
+        "name": "Cóctel Vendimia",
+        "price": 35.5,
+        "validThrough": "2027-06-30",
+        "kind": "individual_set_menu",
+        "note": "Includes dessert and drinks as shown on the original event menu; verify conditions."
+      },
+      {
+        "name": "Cordobés",
+        "price": 40,
+        "validThrough": "2027-06-30",
+        "kind": "individual_set_menu",
+        "note": "Includes dessert and drinks as shown on the original event menu; verify conditions."
+      },
+      {
+        "name": "Cóctel Cordobés",
+        "price": 40,
+        "validThrough": "2027-06-30",
+        "kind": "individual_set_menu",
+        "note": "Includes dessert and drinks as shown on the original event menu; verify conditions."
+      },
+      {
+        "name": "Menús Infantiles",
+        "price": 15,
+        "validThrough": "2027-06-30",
+        "kind": "child_event_menu",
+        "note": "Three choice variants, child drinks conditions indicated on the original; avoid interpreting as ordinary individual meal."
+      },
+      {
+        "name": "Moriles",
+        "price": 37.75,
+        "validThrough": "2027-06-30",
+        "kind": "event_menu"
+      },
+      {
+        "name": "Ribera",
+        "price": 43.75,
+        "validThrough": "2027-06-30",
+        "kind": "event_menu"
+      },
+      {
+        "name": "Guadalquivir",
+        "price": 48,
+        "validThrough": "2027-06-30",
+        "kind": "event_menu"
+      },
+      {
+        "name": "Plaza del Potro · Números 1, 2 y 3",
+        "price": 28.25,
+        "unlimitedDrinksPrice": 35.5,
+        "validThrough": "2027-06-30",
+        "kind": "event_menu_family",
+        "note": "Three variants; water, drinks, coffee/infusion and cava. Dessert may be replaced by a celebration cake as noted."
+      },
+      {
+        "name": "Puente Romano · Números 1 y 2",
+        "price": 29.5,
+        "unlimitedDrinksPrice": 36.5,
+        "validThrough": "2027-06-30",
+        "kind": "event_menu_family",
+        "note": "Two variants; water, drinks, coffee/infusion and cava. Dessert may be replaced by a celebration cake as noted."
+      },
+      {
+        "name": "Vegetarianos · Vegetarianos 1 y 2",
+        "price": 28.25,
+        "unlimitedDrinksPrice": 34.5,
+        "validThrough": "2027-06-30",
+        "kind": "event_menu_family",
+        "note": "Two variants; do not infer suitability for dietary restrictions beyond documented ingredients."
+      }
+    ],
+    "eventMenusPublicationStatus": "draft_not_yet_rendered"
   },
   {
     "id": "churros-bar-marta",
