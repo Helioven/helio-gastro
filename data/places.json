@@ -3946,16 +3946,385 @@
     "address": "Avenida del Gran Capitán, 29, Córdoba",
     "mealCostEur": null,
     "priceStatus": "unknown",
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-23",
     "sources": [
       {
-        "label": "Ficha del establecimiento (sin carta verificable)",
+        "label": "Referencia pública de Gran Capitán (sin carta oficial verificable)",
         "url": "https://es.restaurantguru.com/El-Poema-Tabern-Cordoba-Andalusia"
       }
     ],
-    "menus": [],
-    "menuSections": [],
-    "menuSourceNote": "Carta no disponible / pendiente de verificar. No se atribuyen a esta sucursal platos ni precios de Alonso de Burgos. No se reutilizan fotografías subidas por terceros."
+    "menus": [
+      {
+        "service": "general",
+        "dishes": [
+          "Mini Hamburguesa con Salsa Barbacoa",
+          "Mini Perrito con Salsa",
+          "Montadito de Lomo con Chimichurri",
+          "Montadito de Lomo con Mahonesa",
+          "Montadito de Morcilla con Queso",
+          "Montadito de Calamares con Mahonesa",
+          "Montadito de Anchoas con Tomate",
+          "Montadito de Anchoas con Pimiento y Queso",
+          "Montadito de Chistorra",
+          "Montadito de Jamón con Tomate",
+          "Montadito de Longaniza Picante",
+          "Montadito de Gulas Picantes",
+          "Montadito de Bacon con Queso",
+          "Montadito de Salmón con Philadelphia",
+          "Croquetas",
+          "Cazuelita de Salchichas Picantes",
+          "Cazuelita de Champiñones al Jerez",
+          "Patatas con Roquefort",
+          "Patatas Bravas",
+          "Albóndigas en Salsa",
+          "Lagrimitas de Pollo",
+          "Pincho de Butifarra",
+          "Pincho de Chorizo Criollo",
+          "Pinchito de Pollo",
+          "Tapa Extra",
+          "Salmorejo Cordobés",
+          "Tortilla de Patatas",
+          "Tortilla de Patatas con Salmorejo",
+          "Ensaladilla Rusa",
+          "Patatas Alioli",
+          "Boquerones en Vinagre",
+          "Salpicón de Bocas de Mar",
+          "Gambas Cocidas (35 g)",
+          "Queso Curado (20 g)",
+          "Huevos Rellenos",
+          "Banderitas Picantes",
+          "Aceitunas",
+          "Habichuelas",
+          "Macarrones con Carbonara",
+          "Ensalada César",
+          "Pollo Salsa",
+          "Pechuga Empan",
+          "Boquerones",
+          "Tarta Ferrero",
+          "Naranja",
+          "Melón",
+          "Jamón Ibérico de Bellota D.O. Valle de los Pedroches",
+          "Surtido de Ibéricos de Bellota",
+          "Queso Curado Manchego de Oveja Marantona",
+          "Salmorejo Cordobés con Huevo Cocido y Jamón",
+          "Boquerones en Vinagre con Cebolla",
+          "Foie de Pato con Mix de Mermeladas",
+          "Anchoa del Cantábrico con Tomate",
+          "Setas a la Plancha con Jamón",
+          "Parrillada de Verdura"
+        ],
+        "dishPrices": []
+      }
+    ],
+    "menuSections": [
+      {
+        "title": "Tapas calientes",
+        "titleEn": "Hot tapas",
+        "items": [
+          {
+            "name": "Mini Hamburguesa con Salsa Barbacoa",
+            "en": "Mini burger with barbecue sauce.",
+            "prices": []
+          },
+          {
+            "name": "Mini Perrito con Salsa",
+            "en": "Mini hot dog with sauce.",
+            "prices": []
+          },
+          {
+            "name": "Montadito de Lomo con Chimichurri",
+            "en": "Pork loin mini sandwich with chimichurri.",
+            "prices": []
+          },
+          {
+            "name": "Montadito de Lomo con Mahonesa",
+            "en": "Pork loin mini sandwich with mayonnaise.",
+            "prices": []
+          },
+          {
+            "name": "Montadito de Morcilla con Queso",
+            "en": "Blood sausage and cheese mini sandwich.",
+            "prices": []
+          },
+          {
+            "name": "Montadito de Calamares con Mahonesa",
+            "en": "Squid mini sandwich with mayonnaise.",
+            "prices": []
+          },
+          {
+            "name": "Montadito de Anchoas con Tomate",
+            "en": "Anchovy and tomato mini sandwich.",
+            "prices": []
+          },
+          {
+            "name": "Montadito de Anchoas con Pimiento y Queso",
+            "en": "Anchovy, pepper and cheese mini sandwich.",
+            "prices": []
+          },
+          {
+            "name": "Montadito de Chistorra",
+            "en": "Chistorra mini sandwich.",
+            "prices": []
+          },
+          {
+            "name": "Montadito de Jamón con Tomate",
+            "en": "Ham and tomato mini sandwich.",
+            "prices": []
+          },
+          {
+            "name": "Montadito de Longaniza Picante",
+            "en": "Spicy longaniza mini sandwich.",
+            "prices": []
+          },
+          {
+            "name": "Montadito de Gulas Picantes",
+            "en": "Spicy gulas mini sandwich.",
+            "prices": []
+          },
+          {
+            "name": "Montadito de Bacon con Queso",
+            "en": "Bacon and cheese mini sandwich.",
+            "prices": []
+          },
+          {
+            "name": "Montadito de Salmón con Philadelphia",
+            "en": "Salmon and Philadelphia cream cheese mini sandwich.",
+            "prices": []
+          },
+          {
+            "name": "Croquetas",
+            "en": "Croquettes; filling unspecified.",
+            "prices": []
+          },
+          {
+            "name": "Cazuelita de Salchichas Picantes",
+            "en": "Small dish of spicy sausages.",
+            "prices": []
+          },
+          {
+            "name": "Cazuelita de Champiñones al Jerez",
+            "en": "Small dish of mushrooms with sherry.",
+            "prices": []
+          },
+          {
+            "name": "Patatas con Roquefort",
+            "en": "Potatoes with Roquefort cheese.",
+            "prices": []
+          },
+          {
+            "name": "Patatas Bravas",
+            "en": "Bravas-style potatoes.",
+            "prices": []
+          },
+          {
+            "name": "Albóndigas en Salsa",
+            "en": "Meatballs in sauce.",
+            "prices": []
+          },
+          {
+            "name": "Lagrimitas de Pollo",
+            "en": "Chicken pieces; preparation unspecified.",
+            "prices": []
+          },
+          {
+            "name": "Pincho de Butifarra",
+            "en": "Butifarra sausage skewer.",
+            "prices": []
+          },
+          {
+            "name": "Pincho de Chorizo Criollo",
+            "en": "Criollo chorizo skewer.",
+            "prices": []
+          },
+          {
+            "name": "Pinchito de Pollo",
+            "en": "Chicken skewer.",
+            "prices": []
+          },
+          {
+            "name": "Tapa Extra",
+            "en": "Extra tapa; contents unspecified.",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Tapas frías",
+        "titleEn": "Cold tapas",
+        "items": [
+          {
+            "name": "Salmorejo Cordobés",
+            "en": "Traditional cold Cordoban tomato-and-bread cream.",
+            "prices": []
+          },
+          {
+            "name": "Tortilla de Patatas",
+            "en": "Spanish potato omelette.",
+            "prices": []
+          },
+          {
+            "name": "Tortilla de Patatas con Salmorejo",
+            "en": "Spanish potato omelette with salmorejo.",
+            "prices": []
+          },
+          {
+            "name": "Ensaladilla Rusa",
+            "en": "Spanish-style potato salad.",
+            "prices": []
+          },
+          {
+            "name": "Patatas Alioli",
+            "en": "Potatoes with alioli.",
+            "prices": []
+          },
+          {
+            "name": "Boquerones en Vinagre",
+            "en": "Vinegar-marinated anchovies.",
+            "prices": []
+          },
+          {
+            "name": "Salpicón de Bocas de Mar",
+            "en": "Seafood-style salpicón; exact contents unspecified.",
+            "prices": []
+          },
+          {
+            "name": "Gambas Cocidas (35 g)",
+            "en": "Boiled prawns, 35 g.",
+            "prices": []
+          },
+          {
+            "name": "Queso Curado (20 g)",
+            "en": "Cured cheese, 20 g.",
+            "prices": []
+          },
+          {
+            "name": "Huevos Rellenos",
+            "en": "Stuffed eggs; filling unspecified.",
+            "prices": []
+          },
+          {
+            "name": "Banderitas Picantes",
+            "en": "Spicy pickled skewers.",
+            "prices": []
+          },
+          {
+            "name": "Aceitunas",
+            "en": "Olives.",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Menú del día",
+        "titleEn": "Daily set menu",
+        "items": [
+          {
+            "name": "Habichuelas",
+            "en": "Beans; preparation unspecified.",
+            "prices": []
+          },
+          {
+            "name": "Macarrones con Carbonara",
+            "en": "Macaroni carbonara-style.",
+            "prices": []
+          },
+          {
+            "name": "Ensalada César",
+            "en": "Caesar-style salad.",
+            "prices": []
+          },
+          {
+            "name": "Pollo Salsa",
+            "en": "Chicken in sauce; preparation unspecified.",
+            "prices": []
+          },
+          {
+            "name": "Pechuga Empan",
+            "en": "Breaded chicken breast; source name abbreviated.",
+            "prices": []
+          },
+          {
+            "name": "Boquerones",
+            "en": "Anchovies; preparation unspecified.",
+            "prices": []
+          },
+          {
+            "name": "Tarta Ferrero",
+            "en": "Ferrero-style cake.",
+            "prices": []
+          },
+          {
+            "name": "Naranja",
+            "en": "Orange.",
+            "prices": []
+          },
+          {
+            "name": "Melón",
+            "en": "Melon.",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Entrantes",
+        "titleEn": "Starters",
+        "items": [
+          {
+            "name": "Jamón Ibérico de Bellota D.O. Valle de los Pedroches",
+            "en": "Acorn-fed Iberian cured ham from Los Pedroches.",
+            "prices": []
+          },
+          {
+            "name": "Surtido de Ibéricos de Bellota",
+            "en": "Assortment of acorn-fed Iberian cured meats.",
+            "prices": []
+          },
+          {
+            "name": "Queso Curado Manchego de Oveja Marantona",
+            "en": "Cured Manchego sheep's milk cheese.",
+            "prices": []
+          },
+          {
+            "name": "Ensaladilla Rusa",
+            "en": "Spanish-style potato salad.",
+            "prices": []
+          },
+          {
+            "name": "Salmorejo Cordobés con Huevo Cocido y Jamón",
+            "en": "Traditional Cordoban salmorejo with boiled egg and cured ham.",
+            "prices": []
+          },
+          {
+            "name": "Boquerones en Vinagre con Cebolla",
+            "en": "Vinegar-marinated anchovies with onion.",
+            "prices": []
+          },
+          {
+            "name": "Foie de Pato con Mix de Mermeladas",
+            "en": "Duck foie with assorted preserves.",
+            "prices": []
+          },
+          {
+            "name": "Anchoa del Cantábrico con Tomate",
+            "en": "Cantabrian anchovy with tomato.",
+            "prices": []
+          },
+          {
+            "name": "Setas a la Plancha con Jamón",
+            "en": "Griddled mushrooms with cured ham.",
+            "prices": []
+          },
+          {
+            "name": "Parrillada de Verdura",
+            "en": "Grilled mixed vegetables.",
+            "prices": []
+          }
+        ]
+      }
+    ],
+    "menuSourceNote": "Listado obtenido de resultados de búsqueda aportados por Helio el 23/10/2026, no validado contra carta oficial; no se han incorporado precios ni imágenes de terceros ni platos de la sede Alonso de Burgos.",
+    "menuPublicNoticeEs": "Carta parcial orientativa elaborada a partir de un listado público aportado el 23/10/2026. No se han podido confirmar los precios, formatos ni la vigencia de todos los platos. Consulta la oferta actual con el establecimiento. Esta información pertenece exclusivamente a Gran Capitán, 29.",
+    "menuPublicNoticeEn": "Partial menu for guidance, based on a publicly listed menu supplied on 23 October 2026. Prices, portion sizes and current availability have not been verified. Please check directly with the restaurant. This listing relates only to the Gran Capitán, 29 location."
   },
   {
     "id": "taberna-rafae",
