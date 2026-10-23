@@ -724,7 +724,12 @@ const MORILES_RIBERA_EXPLANATIONS_EN={
  'Mazamorra Cordobesa':'Traditional Córdoba-style chilled almond cream.',
  'Migas Cortijeras':'Traditional Spanish migas.',
  'Naranja con Bacalao':'Orange with salt cod.',
- 'Pastel Cordobés':'Traditional Cordoban pastry.'
+ 'Pastel Cordobés':'Traditional Cordoban pastry.',
+ 'Torrija de Crema':'Cream-filled torrija.',
+ 'Vino de la Casa':'House wine.',
+ 'Mahou de Barril':'Draught Mahou beer.',
+ 'Refrescos':'Soft drinks.',
+ 'Agua Solán de Cabras':'Solán de Cabras mineral water.'
 };
 function morilesExplanation(name){return MORILES_RIBERA_EXPLANATIONS_EN[name]||'';}
 function renderVenueMenuSections(panel,p){
