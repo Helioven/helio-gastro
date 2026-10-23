@@ -206,7 +206,23 @@ const VENUE_MENU_SECTION_EN={
  'Verduras, huevos y frituras':'Vegetables, eggs and fried dishes',
  'Pescados y mariscos':'Fish and seafood','Postres':'Desserts',
  'Platos':'Main dishes','Entremeses':'Appetizers','Ensaladas y Verduras':'Salads and vegetables',
- 'Sopas y revueltos':'Soups and scrambled egg dishes'
+ 'Sopas y revueltos':'Soups and scrambled egg dishes',
+ 'Ibéricos, quesos y curados':'Iberian cured meats and cheeses',
+ 'Desayunos y meriendas · tostadas':'Breakfast and afternoon snacks · toast',
+ 'Revueltos y verduras':'Scrambled egg dishes and vegetables',
+ 'Tostas':'Open-faced toasts',
+ 'Platos combinados':'Combination plates',
+ 'Para los más chicos':'Children’s dishes',
+ 'Nuestros guisos':'Traditional stews',
+ 'Bocadillos (carta general)':'Sandwiches (general menu)',
+ 'Molletes (carta general)':'Mollete rolls (general menu)',
+ 'Desayunos y meriendas · sándwiches':'Breakfast and afternoon snacks · sandwiches',
+ 'Desayunos y meriendas · bocadillos':'Breakfast and afternoon snacks · baguette sandwiches',
+ 'Desayunos y meriendas · croissants':'Breakfast and afternoon snacks · croissants',
+ 'Desayunos y meriendas · gofres':'Breakfast and afternoon snacks · waffles',
+ 'Desayunos y meriendas · tartas':'Breakfast and afternoon snacks · cakes',
+ 'Desayunos y meriendas · jeringos':'Breakfast and afternoon snacks · jeringos',
+ 'Menú del día':'Set lunch menu'
 };
 function venueMenuPriceLabel(source,english){
  if(!english)return source;
