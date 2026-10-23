@@ -189,3 +189,12 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 #detail-content .menu-price-row>span{min-width:0;overflow-wrap:anywhere}
 #detail-content .source-details{margin-top:12px}
 #detail-content .source-details summary{cursor:pointer;padding:8px 0}
+
+/* Navegación accesible por las 21 secciones de Moriles Ciudad Jardín */
+.venue-section-nav{margin:20px 0 24px}
+.venue-section-nav-title{font-size:14px;font-weight:700;color:#ffdc9e;margin:0 0 10px}
+.venue-section-nav-buttons{display:flex;flex-wrap:wrap;gap:8px}
+.venue-section-nav-button{background:#22516f;border:1px solid #7297b4;border-radius:8px;color:#f6f6f2;padding:8px 11px;font:inherit;font-size:12px;line-height:1.35;cursor:pointer;max-width:100%;overflow-wrap:anywhere;text-align:left}
+.venue-section-nav-button:hover,.venue-section-nav-button:focus-visible{background:#346989;outline-offset:3px}
+.venue-section-target{scroll-margin-top:155px}
+@media(max-width:560px){.venue-section-nav-buttons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.venue-section-nav-button{font-size:11px;padding:9px}.venue-section-target{scroll-margin-top:145px}}
