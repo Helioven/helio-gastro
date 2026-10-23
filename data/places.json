@@ -9,11 +9,7 @@
     "checkedAt": "2026-10-16",
     "sources": [
       {
-        "label": "Carta oficial con precios",
-        "url": "https://tabernalamontillana.com/carta/"
-      },
-      {
-        "label": "Carta oficial PDF 2025 aportada por el usuario",
+        "label": "Carta oficial — web del establecimiento",
         "url": "https://tabernalamontillana.com/carta/"
       }
     ],
@@ -340,7 +336,7 @@
           {
             "name": "Ensaladilla",
             "description": "Ensaladilla de patata, zanahoria, bacalao, gamba blanca y atún.",
-            "en": "Spanish-style potato salad; ingredients are not specified in the dish name.",
+            "en": "Spanish-style salad with potato, carrot, cod, white prawns and tuna.",
             "prices": [
               {
                 "label": "media ración",
@@ -351,7 +347,7 @@
                 "eur": 10.5
               }
             ],
-            "es": "Ensaladilla; la denominación no detalla sus ingredientes."
+            "es": "Ensaladilla de patata, zanahoria, bacalao, gamba blanca y atún."
           },
           {
             "name": "Berenjenas fritas, miel de Montoro y queso de cabra de Zuheros",
@@ -372,7 +368,7 @@
           {
             "name": "Patatas muy bravas",
             "description": "Patatas con salsa casera picante de tomate y mayonesa.",
-            "en": "Spicy potatoes; the sauce ingredients are not specified in the dish name.",
+            "en": "Spicy potatoes with homemade hot tomato sauce and mayonnaise.",
             "prices": [
               {
                 "label": "media ración",
@@ -383,7 +379,7 @@
                 "eur": 9.9
               }
             ],
-            "es": "Patatas con salsa brava; la carta no detalla la composición de la salsa."
+            "es": "Patatas con salsa casera de tomate picante y mayonesa."
           },
           {
             "name": "Croquetas de jamón ibérico",
@@ -445,14 +441,14 @@
           {
             "name": "Ensalada de rúcula, focaccia, tomates horneados, pollo crujiente y salsa rosa de vermouth de la tierra",
             "description": "Ensalada con rúcula, focaccia, tomate al horno y pollo crujiente marinado en fino y especias, con salsa rosa de vermú.",
-            "en": "Rocket and focaccia salad with roasted tomatoes, crispy chicken and a local vermouth-based pink sauce.",
+            "en": "Rocket, focaccia and roasted tomato salad with crispy chicken marinated in unfiltered fino sherry and spices, and local vermouth pink sauce.",
             "prices": [
               {
                 "label": "plato",
                 "eur": 12.9
               }
             ],
-            "es": "Ensalada de rúcula y focaccia con tomates horneados, pollo crujiente y salsa rosa de vermut."
+            "es": "Ensalada de rúcula, focaccia, tomates horneados y pollo crujiente macerado en fino en rama y especias, con salsa rosa de vermú de la tierra."
           },
           {
             "name": "Ensalada de codorniz escabechada, cebolla dulce, queso de cabra, picatostes y vinagreta de yogur y mostaza",
@@ -486,14 +482,14 @@
           {
             "name": "Bocadillo de ternera crujiente, rúcula, tomates horneados y mayonesa de sriracha-miel",
             "description": "Bocadillo de ternera marinada en fino y harissa, con rúcula, tomate al horno y mayonesa de sriracha y miel.",
-            "en": "Crispy beef sandwich with rocket, roasted tomatoes and sriracha-honey mayonnaise.",
+            "en": "Crispy beef sandwich marinated in fino sherry and harissa, with rocket, roasted tomatoes and sriracha-honey mayonnaise.",
             "prices": [
               {
                 "label": "plato",
                 "eur": 12.5
               }
             ],
-            "es": "Bocadillo de ternera crujiente con rúcula, tomates horneados y mayonesa de sriracha y miel."
+            "es": "Bocadillo de ternera marinada en fino y harissa, con rúcula, tomates horneados y mayonesa de sriracha y miel."
           },
           {
             "name": "Brioche de pulled pork ibérico, col encurtida, queso ahumado y mayo-hoisin",
@@ -693,14 +689,14 @@
           {
             "name": "Tarta de la abuela",
             "description": "Tarta de galleta anisada, natillas y chocolate.",
-            "en": "Traditional grandmother-style cake; ingredients are not specified in the dish name.",
+            "en": "Grandmother-style cake with aniseed biscuits, custard and chocolate.",
             "prices": [
               {
                 "label": "plato",
                 "eur": 5.9
               }
             ],
-            "es": "Tarta de la abuela; la carta no especifica sus ingredientes."
+            "es": "Tarta de galleta anisada, natillas y chocolate."
           },
           {
             "name": "Manolete relleno de cabello de ángel y sopa fría dulce de vinagre de PX",
@@ -741,7 +737,7 @@
         ]
       }
     ],
-    "menuSourceNote": "Carta oficial PDF aportada por el usuario, edición 2025. 30 platos en seis secciones, sin bebidas. Precios históricos de la carta de 2025, NO verificados como vigentes en 2026. IVA incluido. Descripciones ES/EN editoriales basadas en los nombres e ingredientes publicados. En crepes la carta indica suplemento de unidad adicional 3,90 €. Para gozar: platos no se sirven cortados desde cocina. Alérgenos indicados en documento fuente; consultar restaurante para información actualizada."
+    "menuSourceNote": "Carta oficial PDF aportada por el usuario, edición 2025. 30 platos en seis secciones, sin bebidas. Precios históricos de la carta de 2025, NO verificados como vigentes en 2026. IVA incluido. Descripciones ES/EN contrastadas con las denominaciones e ingredientes del PDF oficial de 2025. En crepes la carta indica suplemento de unidad adicional 3,90 €. Para gozar: platos no se sirven cortados desde cocina. Alérgenos indicados en documento fuente; consultar restaurante para información actualizada."
   },
   {
     "id": "taberna-salinas",
