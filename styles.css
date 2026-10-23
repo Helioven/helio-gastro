@@ -176,3 +176,16 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 /* A single documented price needs no empty format column. */
 .menu-price-row.price-only-row{justify-content:flex-end;padding:3px 0}
 .menu-price-row.price-only-row span:empty{display:none}
+
+
+/* Moriles Ribera / fichas con cartas extensas: fuentes y menú compacto (HG QA 2026-10-23) */
+#detail-content .official-menu-resources{margin:18px 0 22px}
+#detail-content .official-menu-resources .menu-groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:8px 12px;margin-top:12px}
+#detail-content .official-menu-resources .detail-source{display:flex;align-items:center;min-width:0;margin:0;padding:10px 12px;border:1px solid #416481;border-radius:8px;background:#173753;font-size:14px;line-height:1.4;overflow-wrap:anywhere;text-decoration:none}
+#detail-content .official-menu-resources .detail-source:hover,#detail-content .official-menu-resources .detail-source:focus-visible{background:#24506e;text-decoration:underline}
+#detail-content .menu-dish{min-width:0;overflow-wrap:anywhere}
+#detail-content .menu-dish ul{padding-left:22px;margin:8px 0 12px}
+#detail-content .menu-dish li{line-height:1.5;padding:5px 0}
+#detail-content .menu-price-row>span{min-width:0;overflow-wrap:anywhere}
+#detail-content .source-details{margin-top:12px}
+#detail-content .source-details summary{cursor:pointer;padding:8px 0}
