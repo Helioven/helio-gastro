@@ -92,6 +92,15 @@ window.GASTRO_I18N = Object.freeze({
     'El presupuesto usa exclusivamente el formato seleccionado: unidad, tapa, media o ración. Si no hay precio de ese formato, se indica como desconocido.':'The budget applies only to the selected portion size: single item, tapa, half or full portion. If no price is available for that size, it is marked as unknown.',
     'Presupuesto aplicado al coste total por persona. Los locales sin coste documentado pueden mostrarse, pero no se consideran dentro del límite.':'Budget applied to the total cost per person. Places without a documented total may still appear, but they are not counted as within budget.'
   });
+  Object.assign(translations,{
+    'Ficha del local':'Restaurant details',
+    'Ficha del establecimiento':'Restaurant information',
+    'Cerrar ficha ×':'Close details ×',
+    'Fuentes y fecha':'Sources and date',
+    'Platos a elegir':'Dishes to choose from',
+    'Postre a elegir':'Choose a dessert',
+    'Bebidas incluidas (una a elegir)':'Included drinks (choose one)'
+  });
   function translateValue(value){
     if(Object.prototype.hasOwnProperty.call(sourceLabelTranslations,value.replace(/ ↗$/,'')))return sourceLabelTranslations[value.replace(/ ↗$/,'')]+(value.endsWith(' ↗')?' ↗':'');
     if(Object.prototype.hasOwnProperty.call(translations,value))return translations[value];
