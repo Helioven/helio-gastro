@@ -26588,7 +26588,7 @@
     "address": "Calle Cruz Conde, 3, Córdoba",
     "mealCostEur": null,
     "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "checkedAt": "2026-10-23",
     "sources": [
       {
         "label": "Ficha de Turismo de Córdoba",
@@ -26603,13 +26603,577 @@
       {
         "service": "general",
         "dishes": [
-          "Frituras tradicionales",
-          "Casquería",
-          "Cocina tradicional cordobesa"
+          "Bacalao frito",
+          "Bacalao rebozado",
+          "Gambas al ajillo",
+          "Gambas rebozadas",
+          "Boquerones en vinagre",
+          "Boquerones en adobo",
+          "Japuta en adobo",
+          "Rosada frita",
+          "Berenjenas fritas",
+          "Cogollos al ajillo",
+          "Queso",
+          "Ensaladilla rusa",
+          "Tomate con ventresca",
+          "Mejillones cocidos",
+          "Gambas cocidas",
+          "Pavo en adobo",
+          "Lomo al adobo",
+          "Flamenquín de jamón",
+          "Lengua estofada",
+          "Callos de ternera",
+          "Asadura al ajillo",
+          "Torreznos a la plancha",
+          "Criadillas fritas",
+          "Chorizo al vino",
+          "Morcilla frita",
+          "Croquetas caseras",
+          "Solomillo en salsa",
+          "Salmorejo cordobés",
+          "Habitas con jamón",
+          "Pisto con huevo",
+          "Patata rellena"
         ],
-        "dishPrices": []
+        "dishPrices": [
+          {
+            "dish": "Bacalao frito",
+            "eur": 7.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Bacalao rebozado",
+            "eur": 7,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Gambas al ajillo",
+            "eur": 8,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Gambas rebozadas",
+            "eur": 7,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Boquerones en vinagre",
+            "eur": 7,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Boquerones en adobo",
+            "eur": 7,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Japuta en adobo",
+            "eur": 7,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Rosada frita",
+            "eur": 7,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Berenjenas fritas",
+            "eur": 7,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Cogollos al ajillo",
+            "eur": 4,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Queso",
+            "eur": 7,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Ensaladilla rusa",
+            "eur": 7,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Tomate con ventresca",
+            "eur": 10,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Mejillones cocidos",
+            "eur": 10,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Gambas cocidas",
+            "eur": 10,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Pavo en adobo",
+            "eur": 7,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Lomo al adobo",
+            "eur": 7,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Flamenquín de jamón",
+            "eur": 11,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Lengua estofada",
+            "eur": 7,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Callos de ternera",
+            "eur": 7,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Asadura al ajillo",
+            "eur": 8,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Torreznos a la plancha",
+            "eur": 7,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Criadillas fritas",
+            "eur": 7,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Chorizo al vino",
+            "eur": 7,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Morcilla frita",
+            "eur": 7,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Croquetas caseras",
+            "eur": 7,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Solomillo en salsa",
+            "eur": 7,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Salmorejo cordobés",
+            "eur": 7,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Habitas con jamón",
+            "eur": 12,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Pisto con huevo",
+            "eur": 10,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Patata rellena",
+            "eur": 4,
+            "portion": "desconocida"
+          }
+        ]
       }
-    ]
+    ],
+    "menuSections": [
+      {
+        "title": "Cocina casera · menú publicado en Google",
+        "items": [
+          {
+            "name": "Bacalao frito",
+            "description": "Bacalao frito",
+            "es": "Bacalao frito",
+            "en": "Fried cod",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 7.5
+              }
+            ]
+          },
+          {
+            "name": "Bacalao rebozado",
+            "description": "Bacalao rebozado",
+            "es": "Bacalao rebozado",
+            "en": "Battered cod",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 7
+              }
+            ]
+          },
+          {
+            "name": "Gambas al ajillo",
+            "description": "Gambas al ajillo",
+            "es": "Gambas al ajillo",
+            "en": "Prawns with garlic",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 8
+              }
+            ]
+          },
+          {
+            "name": "Gambas rebozadas",
+            "description": "Gambas rebozadas",
+            "es": "Gambas rebozadas",
+            "en": "Battered prawns",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 7
+              }
+            ]
+          },
+          {
+            "name": "Boquerones en vinagre",
+            "description": "Boquerones en vinagre",
+            "es": "Boquerones en vinagre",
+            "en": "Anchovies in vinegar",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 7
+              }
+            ]
+          },
+          {
+            "name": "Boquerones en adobo",
+            "description": "Boquerones en adobo",
+            "es": "Boquerones en adobo",
+            "en": "Marinated anchovies",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 7
+              }
+            ]
+          },
+          {
+            "name": "Japuta en adobo",
+            "description": "Japuta en adobo",
+            "es": "Japuta en adobo",
+            "en": "Marinated pomfret",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 7
+              }
+            ]
+          },
+          {
+            "name": "Rosada frita",
+            "description": "Rosada frita",
+            "es": "Rosada frita",
+            "en": "Fried rosada fish",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 7
+              }
+            ]
+          },
+          {
+            "name": "Berenjenas fritas",
+            "description": "Berenjenas fritas",
+            "es": "Berenjenas fritas",
+            "en": "Fried aubergines",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 7
+              }
+            ]
+          },
+          {
+            "name": "Cogollos al ajillo",
+            "description": "Cogollos al ajillo",
+            "es": "Cogollos al ajillo",
+            "en": "Lettuce hearts with garlic",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 4
+              }
+            ]
+          },
+          {
+            "name": "Queso",
+            "description": "Queso",
+            "es": "Queso",
+            "en": "Cheese",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 7
+              }
+            ]
+          },
+          {
+            "name": "Ensaladilla rusa",
+            "description": "Ensaladilla rusa",
+            "es": "Ensaladilla rusa",
+            "en": "Russian-style potato salad",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 7
+              }
+            ]
+          },
+          {
+            "name": "Tomate con ventresca",
+            "description": "Tomate con ventresca",
+            "es": "Tomate con ventresca",
+            "en": "Tomato with tuna belly",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 10
+              }
+            ]
+          },
+          {
+            "name": "Mejillones cocidos",
+            "description": "Mejillones cocidos",
+            "es": "Mejillones cocidos",
+            "en": "Boiled mussels",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 10
+              }
+            ]
+          },
+          {
+            "name": "Gambas cocidas",
+            "description": "Gambas cocidas",
+            "es": "Gambas cocidas",
+            "en": "Boiled prawns",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 10
+              }
+            ]
+          },
+          {
+            "name": "Pavo en adobo",
+            "description": "Pavo en adobo",
+            "es": "Pavo en adobo",
+            "en": "Marinated turkey",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 7
+              }
+            ]
+          },
+          {
+            "name": "Lomo al adobo",
+            "description": "Lomo al adobo",
+            "es": "Lomo al adobo",
+            "en": "Marinated pork loin",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 7
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín de jamón",
+            "description": "Flamenquín de jamón",
+            "es": "Flamenquín de jamón",
+            "en": "Ham flamenquín",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 11
+              }
+            ]
+          },
+          {
+            "name": "Lengua estofada",
+            "description": "Lengua estofada",
+            "es": "Lengua estofada",
+            "en": "Stewed tongue",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 7
+              }
+            ]
+          },
+          {
+            "name": "Callos de ternera",
+            "description": "Callos de ternera",
+            "es": "Callos de ternera",
+            "en": "Veal tripe",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 7
+              }
+            ]
+          },
+          {
+            "name": "Asadura al ajillo",
+            "description": "Asadura al ajillo",
+            "es": "Asadura al ajillo",
+            "en": "Offal with garlic",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 8
+              }
+            ]
+          },
+          {
+            "name": "Torreznos a la plancha",
+            "description": "Torreznos a la plancha",
+            "es": "Torreznos a la plancha",
+            "en": "Griddled pork belly",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 7
+              }
+            ]
+          },
+          {
+            "name": "Criadillas fritas",
+            "description": "Criadillas fritas",
+            "es": "Criadillas fritas",
+            "en": "Fried criadillas (testicles)",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 7
+              }
+            ]
+          },
+          {
+            "name": "Chorizo al vino",
+            "description": "Chorizo al vino",
+            "es": "Chorizo al vino",
+            "en": "Chorizo cooked in wine",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 7
+              }
+            ]
+          },
+          {
+            "name": "Morcilla frita",
+            "description": "Morcilla frita",
+            "es": "Morcilla frita",
+            "en": "Fried blood sausage",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 7
+              }
+            ]
+          },
+          {
+            "name": "Croquetas caseras",
+            "description": "Croquetas caseras",
+            "es": "Croquetas caseras",
+            "en": "Homemade croquettes",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 7
+              }
+            ]
+          },
+          {
+            "name": "Solomillo en salsa",
+            "description": "Solomillo en salsa",
+            "es": "Solomillo en salsa",
+            "en": "Tenderloin in sauce",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 7
+              }
+            ]
+          },
+          {
+            "name": "Salmorejo cordobés",
+            "description": "Salmorejo cordobés",
+            "es": "Salmorejo cordobés",
+            "en": "Cordoban salmorejo",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 7
+              }
+            ]
+          },
+          {
+            "name": "Habitas con jamón",
+            "description": "Habitas con jamón",
+            "es": "Habitas con jamón",
+            "en": "Baby broad beans with ham",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 12
+              }
+            ]
+          },
+          {
+            "name": "Pisto con huevo",
+            "description": "Pisto con huevo",
+            "es": "Pisto con huevo",
+            "en": "Vegetable pisto with egg",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 10
+              }
+            ]
+          },
+          {
+            "name": "Patata rellena",
+            "description": "Patata rellena",
+            "es": "Patata rellena",
+            "en": "Stuffed potato",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 4
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "menuSourceNote": "Transcripción del panel de menú de Google Maps aportada por el usuario el 23/10/2026. Son precios publicados por terceros: fecha original y vigencia NO verificadas. Los formatos y tamaños no se especifican; no se equiparan a raciones. Los listados 'At a Glance', 'Cocina Casera' y 'Otros' se consolidaron sin duplicados. 'Criadillas' y 'morcilla' se normalizaron a partir de variantes de transcripción; requieren cotejo con la fotografía original. No se incluyeron fotografías de terceros ni platos del apartado 'El Abuelo' sin precios propios comprobables. Fuentes enlazadas de Turismo y prensa solo identifican el establecimiento, NO acreditan los precios."
   },
   {
     "id": "bar-moriles-original",
