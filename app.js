@@ -219,7 +219,6 @@ function venueMenuPriceLabel(source,english){
 function refreshDishExplanations(){
  const english=window.HelioGastroLanguage?.get()==='en';
  document.querySelectorAll('[data-set-menu-es]').forEach(node=>{node.textContent=english?node.dataset.setMenuEn:node.dataset.setMenuEs;});
- document.querySelectorAll('[data-moriles-dish-es]').forEach(node=>{node.textContent=english?node.dataset.morilesDishEn:node.dataset.morilesDishEs;});
  document.querySelectorAll('[data-source-audit-title]').forEach(node=>{node.textContent=english?'Source documentation (expand)':'Documentación de fuentes (desplegar)';});
  document.querySelectorAll('[data-official-menus-heading]').forEach(node=>{node.textContent=english?'Official menus':'Cartas oficiales';});
  document.querySelectorAll('[data-official-menu-notice-es]').forEach(node=>{node.textContent=english?node.dataset.officialMenuNoticeEn:node.dataset.officialMenuNoticeEs;});
@@ -700,24 +699,34 @@ function renderBeatillasGroupMenus(panel,p){
 }
 // Traducciones documentales puntuales de Moriles Ribera. Mantener los nombres
 // tradicionales sin equivalentes fiables y nunca alterar datos/precios originales.
-const MORILES_RIBERA_NAMES_EN={
- 'Cogollos al ajillo':'Little gem lettuce with garlic',
- 'Bacalao con Naranja':'Salt cod with orange',
- 'Salmorejo con Jamón':'Salmorejo with cured ham',
- 'Mazamorra con Sardina Ahumada, Uvas y Pasas':'Mazamorra with smoked sardine, grapes and raisins',
- 'Japuta en Adobo':'Marinated japuta fish',
- 'Soldaditos de Pavía':'Soldaditos de Pavía (battered salt cod)',
- 'Carrillada Ibérica Confitada a la Miel de Caña':'Slow-cooked Iberian pork cheeks with cane syrup',
- 'Flamenquito de Jamón Ibérico y Queso Puro de Oveja':'Mini flamenquín with Iberian ham and sheep’s milk cheese',
- 'Boquerones en Vinagre':'Marinated anchovies',
- 'Croquetas de Boletus':'Boletus mushroom croquettes',
- 'Croquetas de Espinacas con Piñones':'Spinach and pine nut croquettes',
- 'Anchoas con Queso Azul del Valle de los Pedroches':'Anchovies with blue cheese from Los Pedroches',
- 'Anchoas con Tomate':'Anchovies with tomato',
- 'Anchoas, Queso de Zuheros y confitura de Tomate':'Anchovies, Zuheros cheese and tomato preserve',
- 'Lomo de Ciervo con Queso Asado y Cebolla Caramelizada':'Venison loin with grilled cheese and caramelised onion'
+// Moriles Ribera: preserve official Spanish names; show an English explanation below.
+// Existing source-backed dish.en takes precedence over this small terminology fallback.
+const MORILES_RIBERA_EXPLANATIONS_EN={
+ 'Cogollos al ajillo':'Little gem lettuce with garlic.',
+ 'Bacalao con Naranja':'Salt cod with orange.',
+ 'Salmorejo con Jamón':'Salmorejo with cured ham.',
+ 'Mazamorra con Sardina Ahumada, Uvas y Pasas':'Mazamorra with smoked sardine, grapes and raisins.',
+ 'Japuta en Adobo':'Marinated japuta fish.',
+ 'Soldaditos de Pavía':'Battered salt cod, traditionally known as Soldaditos de Pavía.',
+ 'Carrillada Ibérica Confitada a la Miel de Caña':'Slow-cooked Iberian pork cheeks with cane syrup.',
+ 'Flamenquito de Jamón Ibérico y Queso Puro de Oveja':'Mini flamenquín with Iberian ham and sheep’s milk cheese.',
+ 'Boquerones en Vinagre':'Marinated anchovies.',
+ 'Croquetas de Boletus':'Boletus mushroom croquettes.',
+ 'Croquetas de Espinacas con Piñones':'Spinach and pine nut croquettes.',
+ 'Croquetas de Jamón Ibérico':'Iberian ham croquettes.',
+ 'Croquetas de Rabo de Toro':'Oxtail croquettes.',
+ 'Surtido de Croquetas':'Selection of croquettes.',
+ 'Ensaladilla Rusa con Salmón Ahumado':'Russian-style potato salad with smoked salmon.',
+ 'Anchoas con Queso Azul del Valle de los Pedroches':'Anchovies with blue cheese from Los Pedroches.',
+ 'Anchoas con Tomate':'Anchovies with tomato.',
+ 'Anchoas, Queso de Zuheros y confitura de Tomate':'Anchovies, Zuheros cheese and tomato preserve.',
+ 'Lomo de Ciervo con Queso Asado y Cebolla Caramelizada':'Venison loin with grilled cheese and caramelised onion.',
+ 'Mazamorra Cordobesa':'Traditional Córdoba-style chilled almond cream.',
+ 'Migas Cortijeras':'Traditional Spanish migas.',
+ 'Naranja con Bacalao':'Orange with salt cod.',
+ 'Pastel Cordobés':'Traditional Cordoban pastry.'
 };
-function morilesEnglishName(p,name){return p.id==='moriles-ribera'?(MORILES_RIBERA_NAMES_EN[name]||name):name;}
+function morilesExplanation(name){return MORILES_RIBERA_EXPLANATIONS_EN[name]||'';}
 function renderVenueMenuSections(panel,p){
  // El aviso público sobre ausencia de precios aparece una sola vez.
  if(p.menuPublicNoticeEs && !(p.id==='moriles-ribera' && Array.isArray(p.officialMenuLinks) && p.officialMenuLinks.length)){
@@ -734,8 +743,8 @@ function renderVenueMenuSections(panel,p){
   const list=document.createElement('div');list.className='menu-groups';
   for(const dish of section.items){
    const entry=document.createElement('section');entry.className='menu-dish';
-   const title=document.createElement('h4');title.dataset.keepDishSpanish='';title.dataset.morilesDishEs=dish.name;title.dataset.morilesDishEn=morilesEnglishName(p,dish.name);title.textContent=window.HelioGastroLanguage?.get()==='en'?title.dataset.morilesDishEn:dish.name;entry.append(title);
-   for(const language of ['es','en']){const value=dish[language];if(typeof value!=='string'||!value.trim()||clean(value)===clean(dish.name))continue;const description=document.createElement('small');description.className='dish-explanation detail-dish-explanation';description.dataset.dishExplanation='';description.dataset.explanationLanguage=language;description.textContent=value;description.hidden=(window.HelioGastroLanguage?.get()||'es')!==language;entry.append(description);}
+   const title=document.createElement('h4');title.dataset.keepDishSpanish='';title.textContent=dish.name;entry.append(title);
+   for(const language of ['es','en']){const value=language==='en'?(typeof dish.en==='string'&&dish.en.trim()?dish.en:((p.id==='moriles-ribera')?morilesExplanation(dish.name):'')):dish.es;if(typeof value!=='string'||!value.trim()||clean(value)===clean(dish.name))continue;const description=document.createElement('small');description.className='dish-explanation detail-dish-explanation';description.dataset.dishExplanation='';description.dataset.explanationLanguage=language;description.textContent=value;description.hidden=(window.HelioGastroLanguage?.get()||'es')!==language;entry.append(description);}
    for(const price of dish.prices){
     const row=document.createElement('div');row.className='menu-price-row';
     const label=document.createElement('span');label.dataset.venueMenuPriceLabel=price.label||price.portion||'';label.textContent=venueMenuPriceLabel(label.dataset.venueMenuPriceLabel,window.HelioGastroLanguage?.get()==='en');
@@ -768,7 +777,7 @@ function showPlace(p,scroll=true){
     const title=document.createElement('h3');title.dataset.setMenuEs=menu.name;title.dataset.setMenuEn=menu.nameEn;title.textContent=window.HelioGastroLanguage?.get()==='en'?menu.nameEn:menu.name;section.append(title);
     const amount=document.createElement('strong');amount.textContent=fmt(menu.price)+' · 2026';section.append(amount);
     const blocks=[['Platos a elegir','Dishes to choose from',menu.choiceOptions],['Postre a elegir','Dessert choices',menu.dessertOptions],['Bebidas incluidas (una a elegir)','Included drinks (choose one)',menu.drinkOptions]];
-    for(const [es,en,items] of blocks){const heading=document.createElement('p');heading.dataset.setMenuEs=es;heading.dataset.setMenuEn=en;heading.textContent=window.HelioGastroLanguage?.get()==='en'?en:es;section.append(heading);const list=document.createElement('ul');for(const name of items){const li=document.createElement('li');li.dataset.keepDishSpanish='';li.dataset.morilesDishEs=name;li.dataset.morilesDishEn=morilesEnglishName(p,name);li.textContent=window.HelioGastroLanguage?.get()==='en'?li.dataset.morilesDishEn:name;list.append(li)}section.append(list);}
+    for(const [es,en,items] of blocks){const heading=document.createElement('p');heading.dataset.setMenuEs=es;heading.dataset.setMenuEn=en;heading.textContent=window.HelioGastroLanguage?.get()==='en'?en:es;section.append(heading);const list=document.createElement('ul');for(const name of items){const li=document.createElement('li');li.dataset.keepDishSpanish='';li.textContent=name;const explanation=p.id==='moriles-ribera'?morilesExplanation(name):'';if(explanation){const description=document.createElement('small');description.className='dish-explanation detail-dish-explanation';description.dataset.dishExplanation='';description.dataset.explanationLanguage='en';description.textContent=explanation;description.hidden=window.HelioGastroLanguage?.get()!=='en';li.append(description)}list.append(li)}section.append(list);}
     const notice=document.createElement('p');notice.className='note';notice.dataset.setMenuEs=menu.noteEs;notice.dataset.setMenuEn=menu.noteEn;notice.textContent=window.HelioGastroLanguage?.get()==='en'?menu.noteEn:menu.noteEs;section.append(notice);
     panel.append(section);
   }
