@@ -744,9 +744,25 @@ function renderVenueMenuSections(panel,p){
   notice.textContent=window.HelioGastroLanguage?.get()==='en'?notice.dataset.venueMenuNoteEn:notice.dataset.venueMenuNoteEs;
   panel.append(notice);
  }
+ // Índice de secciones: navegación local sin ocultar platos ni modificar datos.
+ const sectionNavId=p.id==='bar-moriles-original';
+ if(sectionNavId){
+  const nav=document.createElement('nav');nav.className='venue-section-nav';nav.setAttribute('aria-label','Secciones de la carta');
+  const navTitle=document.createElement('p');navTitle.className='venue-section-nav-title';navTitle.textContent='Ir a sección';nav.append(navTitle);
+  const buttons=document.createElement('div');buttons.className='venue-section-nav-buttons';
+  p.menuSections.forEach((section,index)=>{
+   const button=document.createElement('button');button.type='button';button.className='venue-section-nav-button';
+   button.dataset.venueMenuSection=section.title;
+   button.dataset.venueMenuSectionEn=section.titleEn||VENUE_MENU_SECTION_EN[section.title]||section.title;
+   button.textContent=window.HelioGastroLanguage?.get()==='en'?button.dataset.venueMenuSectionEn:section.title;
+   button.addEventListener('click',()=>{const target=el('venue-section-'+p.id+'-'+index);if(target){target.scrollIntoView({behavior:'smooth',block:'start'});target.focus({preventScroll:true});}});
+   buttons.append(button);
+  });
+  nav.append(buttons);panel.append(nav);
+ }
  // Las notas de auditoría son metadatos internos, no texto para visitantes.
- for(const section of p.menuSections){
-  const heading=document.createElement('h3');heading.dataset.venueMenuSection=section.title;heading.dataset.venueMenuSectionEn=section.titleEn||VENUE_MENU_SECTION_EN[section.title]||section.title;heading.textContent=window.HelioGastroLanguage?.get()==='en'?heading.dataset.venueMenuSectionEn:section.title;panel.append(heading);
+ for(const [sectionIndex,section] of p.menuSections.entries()){
+  const heading=document.createElement('h3');if(sectionNavId){heading.id='venue-section-'+p.id+'-'+sectionIndex;heading.tabIndex=-1;heading.classList.add('venue-section-target');}heading.dataset.venueMenuSection=section.title;heading.dataset.venueMenuSectionEn=section.titleEn||VENUE_MENU_SECTION_EN[section.title]||section.title;heading.textContent=window.HelioGastroLanguage?.get()==='en'?heading.dataset.venueMenuSectionEn:section.title;panel.append(heading);
   const list=document.createElement('div');list.className='menu-groups';
   for(const dish of section.items){
    const entry=document.createElement('section');entry.className='menu-dish';
