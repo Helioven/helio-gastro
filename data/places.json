@@ -4168,9 +4168,11 @@
       }
     ],
     "menuSourceNote": "Carta parcial de Alonso de Burgos: precios de Just Eat transcritos el 20/10/2026 en la ficha original. Las referencias adicionales proceden del listado de búsqueda de Google aportado por Helio el 23/10/2026 y no tienen precio confirmado. Las divergencias entre fuentes y fechas siguen pendientes de verificar. Los precios de reparto no equivalen a los de sala.",
-    "dataReviewStatus": "draft_requires_owner_approval",
+    "dataReviewStatus": "partial_publication_authorized_with_notice_2026-10-23",
     "googleSearchReferenceCheckedAt": "2026-10-23",
-    "googleSearchReferencePriceStatus": "No verificado; los importes del extracto no se han incorporado por no poder atribuirlos inequívocamente a una plataforma y formato."
+    "googleSearchReferencePriceStatus": "No verificado; los importes del extracto no se han incorporado por no poder atribuirlos inequívocamente a una plataforma y formato.",
+    "menuPublicNoticeEs": "Carta parcial orientativa. La información se ha recopilado de cartas de reparto y resultados públicos de búsqueda con acceso limitado; algunos platos, precios y formatos podrían estar desactualizados, incompletos o no corresponder a la oferta en sala. Los precios mostrados proceden de Just Eat (consulta del 20/10/2026), no son precios confirmados en el local. Confirma carta, disponibilidad e importe directamente con el establecimiento antes de pedir.",
+    "menuPublicNoticeEn": "Partial menu for guidance only. Information was gathered from delivery listings and public search results with limited access; some dishes, prices and portion sizes may be outdated, incomplete or differ from the dine-in menu. Displayed prices come from Just Eat (checked 20 October 2026) and are not confirmed dine-in prices. Please confirm the menu, availability and prices with the restaurant before ordering."
   },
   {
     "id": "taberna-el-poema-gran-capitan",
