@@ -761,7 +761,7 @@ function renderVenueMenuSections(panel,p){
   panel.append(notice);
  }
  // Índice de secciones: navegación local sin ocultar platos ni modificar datos.
- const sectionNavId=p.id==='bar-moriles-original';
+ const sectionNavId=p.id==='bar-moriles-original'||p.id==='moriles-casa-fina';
  if(sectionNavId){
   const nav=document.createElement('nav');nav.className='venue-section-nav';nav.setAttribute('aria-label','Secciones de la carta');
   const navTitle=document.createElement('p');navTitle.className='venue-section-nav-title';navTitle.textContent='Ir a sección';nav.append(navTitle);
