@@ -214,6 +214,8 @@ function venueMenuPriceLabel(source,english){
  if(source==='Media ración · precio de carta 2024')return 'Half portion · 2024 menu price';
  if(source==='Ración · precio de carta 2024')return 'Full portion · 2024 menu price';
  if(source==='Unidad · precio de carta 2024')return 'Single item · 2024 menu price';
+ const labels={'Ración':'Full portion','1/2 ración':'Half portion','Media ración':'Half portion','Tapa':'Tapa','Unidad':'Single item','Entera':'Full serving','Media':'Half serving','Sin formato':'Portion size unspecified'};
+ if(Object.hasOwn(labels,source))return labels[source];
  return source;
 }
 function refreshDishExplanations(){
