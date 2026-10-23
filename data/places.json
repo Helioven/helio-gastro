@@ -2798,7 +2798,7 @@
         "url": "https://www.just-eat.es/restaurants-taberna-el-poema-cordoba/menu"
       },
       {
-        "label": "Uber Eats · referencia de contraste histórica; precios pendientes de verificación",
+        "label": "Uber Eats · carta histórica y contraste (vigencia de precios no confirmada)",
         "url": "https://www.ubereats.com/es/store/taberna-el-poema/CbDjgDGhVEqNYmYsVKSpJA"
       }
     ],
@@ -3173,6 +3173,56 @@
             "note": "Just Eat indicaba «No disponible» en la consulta del 20/10/2026; no implica retirada permanente.",
             "en": "Vinegar-marinated anchovies with red onion and extra virgin olive oil",
             "es": "Boquerones marinados en vinagre con cebolla morada y aceite de oliva virgen extra."
+          },
+          {
+            "name": "Jamón Ibérico de Bellota D.O. Valle de los Pedroches",
+            "en": "Acorn-fed Iberian ham from Los Pedroches.",
+            "prices": [
+              {
+                "eur": 15,
+                "label": "Uber Eats · precio publicado en fuente histórica (vigencia no confirmada)"
+              }
+            ],
+            "sourceStatus": "uber_eats_historical_not_current",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Queso Curado Manchego de Oveja Marantona",
+            "en": "Cured Manchego sheep's milk cheese.",
+            "prices": [
+              {
+                "eur": 9,
+                "label": "Uber Eats · precio publicado en fuente histórica (vigencia no confirmada)"
+              }
+            ],
+            "sourceStatus": "uber_eats_historical_not_current",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Pimientos de Padrón",
+            "en": "Padrón peppers.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Champiñones al Jerez",
+            "en": "Mushrooms with sherry.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Anchoa del Cantábrico con Tomate",
+            "en": "Cantabrian anchovy with tomato.",
+            "prices": [
+              {
+                "eur": 2.9,
+                "label": "Uber Eats · precio publicado en fuente histórica (vigencia no confirmada)"
+              }
+            ],
+            "sourceStatus": "uber_eats_historical_not_current",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
           }
         ]
       },
@@ -3238,6 +3288,13 @@
             ],
             "en": "Caprese salad",
             "es": "Ensalada caprese; la carta no detalla su composición."
+          },
+          {
+            "name": "Tomate con Boquerones en Vinagre",
+            "en": "Tomato with vinegar-marinated anchovies.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
           }
         ]
       },
@@ -3672,11 +3729,468 @@
             ],
             "en": "Chocolate fondant with vanilla ice cream",
             "es": "Coulant de chocolate acompañado de helado de vainilla."
+          },
+          {
+            "name": "Biscuit de Higos",
+            "en": "Fig biscuit dessert; preparation not specified.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Natillas con Pestiños",
+            "en": "Spanish custard with pestiños.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Piña Natural",
+            "en": "Fresh pineapple.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          }
+        ]
+      },
+      {
+        "title": "Tapas calientes",
+        "titleEn": "Hot tapas",
+        "items": [
+          {
+            "name": "Mini Hamburguesa con Salsa Barbacoa",
+            "en": "Mini burger with barbecue sauce.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Mini Perrito con Salsa",
+            "en": "Mini hot dog with sauce.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Montadito de Lomo con Chimichurri",
+            "en": "Pork loin mini sandwich with chimichurri.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Montadito de Lomo con Mahonesa",
+            "en": "Pork loin mini sandwich with mayonnaise.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Montadito de Morcilla con Queso",
+            "en": "Blood sausage and cheese mini sandwich.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Montadito de Calamares con Mahonesa",
+            "en": "Squid mini sandwich with mayonnaise.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Montadito de Chistorra",
+            "en": "Chistorra sausage mini sandwich.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Montadito de Longaniza Picante",
+            "en": "Spicy sausage mini sandwich.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Montadito de Gulas Picantes",
+            "en": "Spicy gulas mini sandwich.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Montadito de Bacon con Queso",
+            "en": "Bacon and cheese mini sandwich.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Croquetas",
+            "en": "Traditional Spanish croquettes; variety not specified.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Albóndigas en Salsa",
+            "en": "Meatballs in sauce.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Lagrimitas de Pollo",
+            "en": "Pieces of chicken, traditionally served fried.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Pincho de Butifarra",
+            "en": "Butifarra sausage skewer.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Pincho de Chorizo Criollo",
+            "en": "Criollo chorizo skewer.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Pinchito de Pollo",
+            "en": "Chicken skewer.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          }
+        ]
+      },
+      {
+        "title": "Tapas frías",
+        "titleEn": "Cold tapas",
+        "items": [
+          {
+            "name": "Salmorejo Cordobés",
+            "en": "Traditional thick chilled tomato and bread cream.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Tortilla de Patatas",
+            "en": "Spanish potato omelette.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Patatas Alioli",
+            "en": "Potatoes with alioli.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Salpicón de Bocas de Mar",
+            "en": "Seafood-style salpicón; exact ingredients not specified.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Queso Curado",
+            "en": "Cured cheese.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Huevos Rellenos",
+            "en": "Stuffed eggs; filling not specified.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Banderitas Picantes",
+            "en": "Spicy pickled skewers.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Aceitunas",
+            "en": "Olives.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          }
+        ]
+      },
+      {
+        "title": "Otros",
+        "titleEn": "Other dishes",
+        "items": [
+          {
+            "name": "Berenjenas Califales en Tempura con Salmorejo",
+            "en": "Tempura aubergines with salmorejo.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Pan y Palillos",
+            "en": "Bread and breadsticks.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          }
+        ]
+      },
+      {
+        "title": "Finos D.O. Montilla-Moriles",
+        "titleEn": "Montilla-Moriles fino wines",
+        "items": [
+          {
+            "name": "El Gallo Amargoso",
+            "en": "Fino wine by Bodegas El Gallo.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Eléctrico en Rama",
+            "en": "Fino wine by Toro Albalá.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Los Naranjos",
+            "en": "Fino wine by Bodegas El Monte.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Doblas",
+            "en": "Fino wine by Doblas Martos.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Fino Cancionero",
+            "en": "Fino wine by Jesús Nazareno.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Fino Andalucía",
+            "en": "Fino wine by Bodegas Navarro.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Fino Cebolla",
+            "en": "Fino wine by El Monte.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Solera Fino Saavedra",
+            "en": "Fino wine by Maíllo e Hijos.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Tertulia",
+            "en": "Fino wine by Bodegas Delgado.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Gran Barquero",
+            "en": "Fino wine by Pérez Barquero.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          }
+        ]
+      },
+      {
+        "title": "Otros vinos y bebidas",
+        "titleEn": "Other wines and drinks",
+        "items": [
+          {
+            "name": "Pedro Ximénez La Aurora",
+            "en": "Pedro Ximénez wine by La Aurora.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Don PX Toro Albalá",
+            "en": "Pedro Ximénez wine by Toro Albalá.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Copa de Vino Tinto",
+            "en": "Glass of red wine; origin varies.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Copa de Vino Blanco o Rosado",
+            "en": "Glass of white or rosé wine.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Benjamín François Montand",
+            "en": "Small-format François Montand sparkling wine.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Benjamín Codorníu",
+            "en": "Small-format Codorníu sparkling wine.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Chupito",
+            "en": "Spirit shot; options vary.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Copa Nacional",
+            "en": "Standard mixed-spirit drink.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Copa Premium",
+            "en": "Premium mixed-spirit drink.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          }
+        ]
+      },
+      {
+        "title": "Cervezas y refrescos",
+        "titleEn": "Beer and soft drinks",
+        "items": [
+          {
+            "name": "Caña",
+            "en": "Small draught beer.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Maceta",
+            "en": "Larger draught beer.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Copa de Cerveza",
+            "en": "Glass of beer.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Tercio de Cerveza",
+            "en": "Bottled beer.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Tercio de Cerveza Especial",
+            "en": "Special bottled beer.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Tercio de Cerveza Reserva",
+            "en": "Reserva bottled beer.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Vermut de Bodega",
+            "en": "Vermouth from the winery.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Tinto de Verano",
+            "en": "Red wine mixed with lemon soda or gaseosa.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Copa de Sangría",
+            "en": "Glass of sangría.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Agua 0,50 cl",
+            "en": "Water; quantity shown in source requires checking.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Refresco 237 ml",
+            "en": "Soft drink, 237 ml.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
+          },
+          {
+            "name": "Refresco 300 ml",
+            "en": "Soft drink, 300 ml.",
+            "prices": [],
+            "sourceStatus": "google_search_snippet_unverified",
+            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
           }
         ]
       }
     ],
-    "menuSourceNote": "Transcripción completa de las 8 secciones visibles de Just Eat facilitada por el usuario el 20/10/2026: 44 platos, 42 precios de reparto y 2 marcados «No disponible» (sin precio vigente). Importes de reparto, no verificados como precios en sala. Formatos/tamaños no especificados en esta carta: no asumir tapa, media ni ración. La transcripción de Uber Eats consultada previamente presenta posibles datos desactualizados y discrepancias: se conserva su URL como referencia para contraste, pero no se incorporan sus precios como actuales ni platos exclusivos sin confirmación actual. Las descripciones son únicamente denominaciones originales, sin ingredientes adicionales inferidos. Traducciones inglesas para estas entradas pendientes de revisión editorial. Traducciones EN editoriales añadidas el 22/10/2026 a partir de las denominaciones documentadas; no acreditan ingredientes adicionales ni disponibilidad actual."
+    "menuSourceNote": "Borrador: platos nuevos identificados en el texto de resultados de Google proporcionado por Helio; sin importes salvo 3 ofertas históricas vinculadas a Uber Eats. No publicar hasta verificación del origen y de la carta completa.",
+    "dataReviewStatus": "draft_not_for_publication"
   },
   {
     "id": "taberna-el-poema-gran-capitan",
