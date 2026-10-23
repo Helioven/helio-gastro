@@ -26796,7 +26796,7 @@
     ],
     "menuSections": [
       {
-        "title": "Cocina casera · menú publicado en Google",
+        "title": "Cocina casera",
         "items": [
           {
             "name": "Bacalao frito",
@@ -27170,7 +27170,8 @@
               }
             ]
           }
-        ]
+        ],
+        "titleEn": "Home-style cooking"
       }
     ],
     "menuSourceNote": "Transcripción del panel de menú de Google Maps aportada por el usuario el 23/10/2026. Son precios publicados por terceros: fecha original y vigencia NO verificadas. Los formatos y tamaños no se especifican; no se equiparan a raciones. Los listados 'At a Glance', 'Cocina Casera' y 'Otros' se consolidaron sin duplicados. 'Criadillas' y 'morcilla' se normalizaron a partir de variantes de transcripción; requieren cotejo con la fotografía original. No se incluyeron fotografías de terceros ni platos del apartado 'El Abuelo' sin precios propios comprobables. Fuentes enlazadas de Turismo y prensa solo identifican el establecimiento, NO acreditan los precios."
