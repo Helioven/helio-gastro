@@ -28652,7 +28652,8 @@
                 "eur": 7,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Caesar-style salad (exact ingredients not specified in this record)."
           },
           {
             "name": "Moriles",
@@ -28665,7 +28666,8 @@
                 "eur": 7.5,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Moriles house salad (ingredients not specified in this record)."
           },
           {
             "name": "Tropical",
@@ -28678,7 +28680,8 @@
                 "eur": 7.15,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Tropical-style salad (ingredients not specified in this record)."
           },
           {
             "name": "De la Casa",
@@ -28691,7 +28694,8 @@
                 "eur": 6.35,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "House salad (ingredients not specified in this record)."
           },
           {
             "name": "Zuehros",
@@ -28704,7 +28708,8 @@
                 "eur": 8.1,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Zuheros-style salad (ingredients not specified in this record)."
           },
           {
             "name": "Ensalada templada de perdiz en escabeche",
@@ -28717,7 +28722,8 @@
                 "eur": 9.1,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Warm salad with marinated partridge."
           },
           {
             "name": "Picadillo cordobés",
@@ -28730,7 +28736,8 @@
                 "eur": 6.15,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Traditional Córdoba-style chopped salad."
           },
           {
             "name": "Tomate con ventresca",
@@ -28743,7 +28750,8 @@
                 "eur": 6.75,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Tomato with ventresca."
           },
           {
             "name": "Ensalada de pimientos con ventresca",
@@ -28756,7 +28764,8 @@
                 "eur": 6.75,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Salad of peppers with ventresca."
           },
           {
             "name": "Cogollos al ajillo",
@@ -28769,7 +28778,8 @@
                 "eur": 5.1,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Little gem lettuce with garlic."
           },
           {
             "name": "Cogollos con salmón",
@@ -28782,7 +28792,8 @@
                 "eur": 8.75,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Little gem lettuce with salmon."
           },
           {
             "name": "Cogollos con anchoas y gulas",
@@ -28795,7 +28806,8 @@
                 "eur": 9.15,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Little gem lettuce with anchovies and gulas (surimi seafood)."
           }
         ]
       },
@@ -28817,7 +28829,8 @@
                 "eur": 3.7,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Oranges with salt cod."
           },
           {
             "name": "Patatas a la brava",
@@ -28834,7 +28847,8 @@
                 "eur": 2.95,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Potatoes with brava sauce."
           },
           {
             "name": "Ensaladilla rusa",
@@ -28851,7 +28865,8 @@
                 "eur": 2.95,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Spanish-style potato salad."
           },
           {
             "name": "Patatas ali-oli",
@@ -28868,7 +28883,8 @@
                 "eur": 2.95,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Potatoes ali-oli."
           },
           {
             "name": "Salpicón de marisco",
@@ -28885,7 +28901,8 @@
                 "eur": 3,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Cold seafood salad of marisco."
           },
           {
             "name": "Salmorejo con jamón",
@@ -28902,7 +28919,8 @@
                 "eur": 3.15,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Salmorejo with cured ham."
           },
           {
             "name": "Boquerones en vinagre",
@@ -28919,7 +28937,8 @@
                 "eur": 4.25,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Anchovies en vinagre."
           },
           {
             "name": "Croquetas de jamón ibérico",
@@ -28932,7 +28951,8 @@
                 "eur": 6.35,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Croquettes of jamón Iberian."
           },
           {
             "name": "Croquetas de espinacas con piñones",
@@ -28945,7 +28965,8 @@
                 "eur": 6.35,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Croquettes of espinacas with piñones."
           },
           {
             "name": "Croquetas de boletus",
@@ -28958,7 +28979,8 @@
                 "eur": 6.35,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Croquettes of boletus mushrooms."
           },
           {
             "name": "Croquetas de rabo de toro",
@@ -28971,7 +28993,8 @@
                 "eur": 7,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Croquettes of oxtail."
           },
           {
             "name": "Surtido de croquetas",
@@ -28984,7 +29007,8 @@
                 "eur": 6.85,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Selection of croquettes."
           },
           {
             "name": "Tortilla de camarones",
@@ -28997,7 +29021,8 @@
                 "eur": 7,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Omelette of camarones."
           },
           {
             "name": "Tortilla de patatas (cuña)",
@@ -29006,7 +29031,8 @@
                 "eur": 3.8,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Omelette of potatoes (cuña)."
           },
           {
             "name": "Tortilla con salmorejo",
@@ -29015,7 +29041,8 @@
                 "eur": 7.6,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Omelette with salmorejo."
           },
           {
             "name": "Mojama de Barbate",
@@ -29032,7 +29059,8 @@
                 "eur": 7.5,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Mojama of Barbate."
           },
           {
             "name": "Carpaccio de wagyu",
@@ -29041,7 +29069,8 @@
                 "eur": 18.25,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Wagyu beef carpaccio."
           },
           {
             "name": "Tartar de atún",
@@ -29050,7 +29079,8 @@
                 "eur": 20.45,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Tartar of tuna."
           },
           {
             "name": "Gambas al ajillo",
@@ -29063,7 +29093,8 @@
                 "eur": 10.5,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Prawns with garlic."
           },
           {
             "name": "Pan bao de langostinos y salsa curry",
@@ -29076,7 +29107,8 @@
                 "eur": 6.35,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Pan bao of king prawns and curry sauce."
           },
           {
             "name": "Mazamorra cordobesa",
@@ -29093,7 +29125,8 @@
                 "eur": 3.8,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Traditional chilled Córdoba-style almond cream."
           },
           {
             "name": "Risotto de rabo de toro",
@@ -29102,7 +29135,8 @@
                 "eur": 10.75,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Risotto of oxtail."
           }
         ]
       },
@@ -29120,7 +29154,8 @@
                 "eur": 2.1,
                 "portion": "Entera"
               }
-            ]
+            ],
+            "en": "Traditional Antequera-style soft bread roll."
           },
           {
             "name": "Mollete rústico cordobés",
@@ -29133,7 +29168,8 @@
                 "eur": 2.1,
                 "portion": "Entera"
               }
-            ]
+            ],
+            "en": "Rustic Córdoba-style soft bread roll."
           },
           {
             "name": "Chapata",
@@ -29146,7 +29182,8 @@
                 "eur": 2.1,
                 "portion": "Entera"
               }
-            ]
+            ],
+            "en": "Ciabatta-style bread."
           },
           {
             "name": "Integral",
@@ -29159,7 +29196,8 @@
                 "eur": 2.1,
                 "portion": "Entera"
               }
-            ]
+            ],
+            "en": "Wholemeal toast."
           },
           {
             "name": "Viena de lino",
@@ -29172,7 +29210,8 @@
                 "eur": 2.1,
                 "portion": "Entera"
               }
-            ]
+            ],
+            "en": "Flaxseed Vienna-style bread."
           },
           {
             "name": "York",
@@ -29185,7 +29224,8 @@
                 "eur": 2.25,
                 "portion": "Entera"
               }
-            ]
+            ],
+            "en": "Cooked ham topping."
           },
           {
             "name": "York y queso",
@@ -29198,7 +29238,8 @@
                 "eur": 2.5,
                 "portion": "Entera"
               }
-            ]
+            ],
+            "en": "Toast option: Cooked ham and cheese."
           },
           {
             "name": "Piquitos de jamón",
@@ -29211,7 +29252,8 @@
                 "eur": 2.25,
                 "portion": "Entera"
               }
-            ]
+            ],
+            "en": "Small pieces of ham topping."
           },
           {
             "name": "Lonchas de queso Edam",
@@ -29224,7 +29266,8 @@
                 "eur": 2.35,
                 "portion": "Entera"
               }
-            ]
+            ],
+            "en": "Slices of Edam cheese."
           },
           {
             "name": "Queso del Moriles",
@@ -29237,7 +29280,8 @@
                 "eur": 2.55,
                 "portion": "Entera"
               }
-            ]
+            ],
+            "en": "Moriles cheese topping; variety not specified."
           },
           {
             "name": "Atún",
@@ -29250,7 +29294,8 @@
                 "eur": 2.35,
                 "portion": "Entera"
               }
-            ]
+            ],
+            "en": "Tuna topping."
           },
           {
             "name": "Picada de bacalao",
@@ -29263,7 +29308,8 @@
                 "eur": 2.55,
                 "portion": "Entera"
               }
-            ]
+            ],
+            "en": "Chopped salt cod topping."
           },
           {
             "name": "Picada de salmón",
@@ -29276,7 +29322,8 @@
                 "eur": 2.55,
                 "portion": "Entera"
               }
-            ]
+            ],
+            "en": "Chopped salmon topping."
           },
           {
             "name": "Salmón y queso azul",
@@ -29289,7 +29336,8 @@
                 "eur": 2.55,
                 "portion": "Entera"
               }
-            ]
+            ],
+            "en": "Toast option: Salmon and cheese azul."
           },
           {
             "name": "Jamón al corte",
@@ -29302,7 +29350,8 @@
                 "eur": 2.75,
                 "portion": "Entera"
               }
-            ]
+            ],
+            "en": "Freshly sliced cured ham."
           }
         ]
       },
@@ -29316,7 +29365,8 @@
                 "eur": 5,
                 "portion": "Unidad / formato de carta"
               }
-            ]
+            ],
+            "en": "Cake cremosa of cheese."
           },
           {
             "name": "Pastel cordobés con helado de vainilla",
@@ -29325,7 +29375,8 @@
                 "eur": 5,
                 "portion": "Unidad / formato de carta"
               }
-            ]
+            ],
+            "en": "Pastry cordobés with ice cream of vainilla."
           },
           {
             "name": "Flan casero con helado de vainilla",
@@ -29334,7 +29385,8 @@
                 "eur": 4.65,
                 "portion": "Unidad / formato de carta"
               }
-            ]
+            ],
+            "en": "Flan casero with ice cream of vainilla."
           },
           {
             "name": "Flú de Ferrero Rocher",
@@ -29343,7 +29395,8 @@
                 "eur": 5.65,
                 "portion": "Unidad / formato de carta"
               }
-            ]
+            ],
+            "en": "Ferrero Rocher-style dessert (composition not documented)."
           },
           {
             "name": "Natillas",
@@ -29352,7 +29405,8 @@
                 "eur": 4.25,
                 "portion": "Unidad / formato de carta"
               }
-            ]
+            ],
+            "en": "Spanish custard."
           },
           {
             "name": "Tocino de cielo con helado de turrón",
@@ -29361,7 +29415,8 @@
                 "eur": 5,
                 "portion": "Unidad / formato de carta"
               }
-            ]
+            ],
+            "en": "Traditional egg-yolk dessert with ice cream of nougat."
           },
           {
             "name": "Bomba de chocolate",
@@ -29370,7 +29425,8 @@
                 "eur": 5.5,
                 "portion": "Unidad / formato de carta"
               }
-            ]
+            ],
+            "en": "Bomba of chocolate."
           },
           {
             "name": "Tarta de tiramisú",
@@ -29379,7 +29435,8 @@
                 "eur": 5,
                 "portion": "Unidad / formato de carta"
               }
-            ]
+            ],
+            "en": "Cake of tiramisú."
           },
           {
             "name": "Tres chocolates",
@@ -29388,7 +29445,8 @@
                 "eur": 5.5,
                 "portion": "Unidad / formato de carta"
               }
-            ]
+            ],
+            "en": "Menu item: Tres chocolates (details not specified)."
           },
           {
             "name": "Naranja estilo Moriles",
@@ -29397,7 +29455,8 @@
                 "eur": 4.25,
                 "portion": "Unidad / formato de carta"
               }
-            ]
+            ],
+            "en": "Orange estilo Moriles."
           },
           {
             "name": "Tarta selva negra",
@@ -29406,7 +29465,8 @@
                 "eur": 5,
                 "portion": "Unidad / formato de carta"
               }
-            ]
+            ],
+            "en": "Cake selva negra."
           },
           {
             "name": "Surtido de postres",
@@ -29415,7 +29475,8 @@
                 "eur": 14.95,
                 "portion": "Unidad / formato de carta"
               }
-            ]
+            ],
+            "en": "Selection of postres."
           },
           {
             "name": "Coulant de chocolate con helado de vainilla",
@@ -29424,7 +29485,8 @@
                 "eur": 5.6,
                 "portion": "Unidad / formato de carta"
               }
-            ]
+            ],
+            "en": "Coulant of chocolate with ice cream of vainilla."
           },
           {
             "name": "Tulipa muerte por chocolate",
@@ -29433,7 +29495,8 @@
                 "eur": 5,
                 "portion": "Unidad / formato de carta"
               }
-            ]
+            ],
+            "en": "Menu item: Tulipa muerte por chocolate (details not specified)."
           },
           {
             "name": "Tulipa helada de vainilla de Tahití con nueces de macadamia",
@@ -29442,7 +29505,8 @@
                 "eur": 5,
                 "portion": "Unidad / formato de carta"
               }
-            ]
+            ],
+            "en": "Tulipa helada of vainilla of Tahití with nueces of macadamia."
           },
           {
             "name": "Tulipa helada de turrón",
@@ -29451,7 +29515,8 @@
                 "eur": 5,
                 "portion": "Unidad / formato de carta"
               }
-            ]
+            ],
+            "en": "Tulipa helada of nougat."
           },
           {
             "name": "Tarta de turrón",
@@ -29460,7 +29525,8 @@
                 "eur": 4.9,
                 "portion": "Unidad / formato de carta"
               }
-            ]
+            ],
+            "en": "Cake of nougat."
           },
           {
             "name": "Torrija con helado de vainilla",
@@ -29469,7 +29535,8 @@
                 "eur": 5,
                 "portion": "Unidad / formato de carta"
               }
-            ]
+            ],
+            "en": "Torrija bread dessert with ice cream of vainilla."
           },
           {
             "name": "Gachas",
@@ -29478,7 +29545,8 @@
                 "eur": 4.25,
                 "portion": "Unidad / formato de carta"
               }
-            ]
+            ],
+            "en": "Traditional sweet gachas dessert."
           },
           {
             "name": "Tarta de chocolate (sin gluten ni lactosa)",
@@ -29487,7 +29555,8 @@
                 "eur": 4.65,
                 "portion": "Unidad / formato de carta"
               }
-            ]
+            ],
+            "en": "Cake of chocolate (sin gluten ni lactosa)."
           },
           {
             "name": "Copa helada de nata y nueces (sin azúcar)",
@@ -29496,7 +29565,8 @@
                 "eur": 4.65,
                 "portion": "Unidad / formato de carta"
               }
-            ]
+            ],
+            "en": "Copa helada of nata and nueces (sin azúcar)."
           },
           {
             "name": "Trufita de chocolate",
@@ -29505,7 +29575,8 @@
                 "eur": 0.85,
                 "portion": "Unidad / formato de carta"
               }
-            ]
+            ],
+            "en": "Trufita of chocolate."
           }
         ]
       },
@@ -29527,7 +29598,8 @@
                 "eur": 7,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Jamón Iberian acorn-fed."
           },
           {
             "name": "Caña de lomo ibérico de bellota",
@@ -29544,7 +29616,8 @@
                 "eur": 7,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Caña of pork loin Iberian acorn-fed."
           },
           {
             "name": "Salchichón ibérico",
@@ -29561,7 +29634,8 @@
                 "eur": 5.5,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Salchichón sausage Iberian."
           },
           {
             "name": "Chorizo ibérico",
@@ -29578,7 +29652,8 @@
                 "eur": 5.5,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Chorizo Iberian."
           },
           {
             "name": "Queso puro de oveja",
@@ -29595,7 +29670,8 @@
                 "eur": 4.9,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Sheep's milk cheese."
           },
           {
             "name": "Jamón serrano",
@@ -29612,7 +29688,8 @@
                 "eur": 4,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Menu item: Jamón serrano (details not specified)."
           },
           {
             "name": "Surtido ibérico con queso puro de oveja",
@@ -29621,7 +29698,8 @@
                 "eur": 28.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Selection Iberian with sheep's milk cheese."
           },
           {
             "name": "Mixto jamón ibérico - queso puro de oveja",
@@ -29634,7 +29712,8 @@
                 "eur": 18.95,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Mixto jamón Iberian - sheep's milk cheese."
           },
           {
             "name": "Mixto jamón serrano - queso puro de oveja",
@@ -29647,7 +29726,8 @@
                 "eur": 11.1,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Mixto jamón Serrano - sheep's milk cheese."
           },
           {
             "name": "Queso provolone gratinado",
@@ -29656,7 +29736,8 @@
                 "eur": 8.7,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Cheese provolone gratinated."
           },
           {
             "name": "Tabla de quesos",
@@ -29669,7 +29750,8 @@
                 "eur": 11.5,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Tabla of quesos."
           },
           {
             "name": "Queso asado a la miel de caña",
@@ -29686,7 +29768,8 @@
                 "eur": 3.95,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Cheese asado with cane syrup."
           },
           {
             "name": "Queso brie frito con confitura de tomate",
@@ -29703,7 +29786,8 @@
                 "eur": 3.95,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Cheese brie fried with tomato preserve."
           },
           {
             "name": "Quesito de Zuheros (unidad)",
@@ -29712,7 +29796,8 @@
                 "eur": 3.7,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Quesito of Zuheros (unidad)."
           }
         ]
       },
@@ -29730,7 +29815,8 @@
                 "eur": 7.1,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Boletus mushrooms plancha with cured ham."
           },
           {
             "name": "Parrillada de verduras",
@@ -29739,7 +29825,8 @@
                 "eur": 12.95,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Mixed grill of verduras."
           },
           {
             "name": "Huevos rotos con patatas, jamón y pimientos",
@@ -29748,7 +29835,8 @@
                 "eur": 10.85,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Eggs rotos with potatoes, jamón and peppers."
           },
           {
             "name": "Huevos rotos con patatas, jamón, pimientos y chorizo",
@@ -29757,7 +29845,8 @@
                 "eur": 11.65,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Eggs rotos with potatoes, jamón, peppers and chorizo."
           },
           {
             "name": "Huevos rotos con patatas y gulas",
@@ -29766,7 +29855,8 @@
                 "eur": 14.1,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Eggs rotos with potatoes and gulas (surimi seafood)."
           },
           {
             "name": "Huevos rotos con patatas y chorizo criollo",
@@ -29775,7 +29865,8 @@
                 "eur": 10.85,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Eggs rotos with potatoes and chorizo criollo."
           },
           {
             "name": "Revuelto de ajetes con jamón",
@@ -29788,7 +29879,8 @@
                 "eur": 7,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Scrambled eggs of ajetes with cured ham."
           },
           {
             "name": "Revuelto de guisantes con jamón",
@@ -29801,7 +29893,8 @@
                 "eur": 7,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Scrambled eggs of guisantes with cured ham."
           },
           {
             "name": "Revuelto de espárragos con jamón",
@@ -29814,7 +29907,8 @@
                 "eur": 7,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Scrambled eggs of espárragos with cured ham."
           },
           {
             "name": "Revuelto de habitas baby",
@@ -29827,7 +29921,8 @@
                 "eur": 10.85,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Scrambled eggs of habitas baby."
           },
           {
             "name": "Revuelto tierra y mar",
@@ -29840,7 +29935,8 @@
                 "eur": 7.6,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Scrambled egg dish named 'Land and Sea'; ingredients not specified."
           },
           {
             "name": "Revuelto Pata Negra",
@@ -29853,7 +29949,8 @@
                 "eur": 9.5,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Scrambled egg dish named 'Pata Negra'; ingredients not specified."
           },
           {
             "name": "Alcachofas salteadas con jamón",
@@ -29866,7 +29963,8 @@
                 "eur": 7,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Alcachofas salteadas with cured ham."
           },
           {
             "name": "Setas a la plancha",
@@ -29879,7 +29977,8 @@
                 "eur": 6,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Mushrooms griddled."
           },
           {
             "name": "Berenjenas fritas",
@@ -29892,7 +29991,8 @@
                 "eur": 5,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Aubergines fried."
           },
           {
             "name": "Berenjenas a la miel de caña",
@@ -29905,7 +30005,8 @@
                 "eur": 6.6,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Aubergines with cane syrup."
           },
           {
             "name": "Berenjenas con salmorejo",
@@ -29918,7 +30019,8 @@
                 "eur": 7,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Aubergines with salmorejo."
           },
           {
             "name": "Pimientos del padrón",
@@ -29931,7 +30033,8 @@
                 "eur": 5.55,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Peppers from padrón."
           }
         ]
       },
@@ -29945,7 +30048,8 @@
                 "eur": 4.8,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Pork loin of ciervo with cheese asado and cebolla caramelizada."
           },
           {
             "name": "Salmón",
@@ -29954,7 +30058,8 @@
                 "eur": 3.75,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Salmon."
           },
           {
             "name": "Salmón con roquefort",
@@ -29963,7 +30068,8 @@
                 "eur": 3.75,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Salmon with roquefort."
           },
           {
             "name": "Anchoas con tomate",
@@ -29972,7 +30078,8 @@
                 "eur": 3.75,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Anchovies with tomato."
           },
           {
             "name": "Anchoas con roquefort",
@@ -29981,7 +30088,8 @@
                 "eur": 3.75,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Anchovies with roquefort."
           },
           {
             "name": "Anchoas, queso de Zuheros y confitura de tomate",
@@ -29990,7 +30098,8 @@
                 "eur": 3.75,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Anchovies, cheese of Zuheros and tomato preserve."
           },
           {
             "name": "Gulas con huevo de codorniz",
@@ -29999,7 +30108,8 @@
                 "eur": 3.75,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Gulas (surimi seafood) with quail egg."
           },
           {
             "name": "Surtido de tostas (7 unidades)",
@@ -30008,7 +30118,8 @@
                 "eur": 21,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Selection of tostas (7 unidades)."
           }
         ]
       },
@@ -30022,7 +30133,8 @@
                 "eur": 13.15,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Cuttlefish griddled."
           },
           {
             "name": "Choco frito",
@@ -30031,7 +30143,8 @@
                 "eur": 13.15,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Cuttlefish fried."
           },
           {
             "name": "Ortiguillas fritas",
@@ -30044,7 +30157,8 @@
                 "eur": 10,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Sea anemones fried."
           },
           {
             "name": "Chanquetes con huevo frito",
@@ -30053,7 +30167,8 @@
                 "eur": 11.1,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Chanquetes with fried egg."
           },
           {
             "name": "Chipirones fritos",
@@ -30070,7 +30185,8 @@
                 "eur": 3,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Baby squid fried."
           },
           {
             "name": "Japuta en adobo",
@@ -30087,7 +30203,8 @@
                 "eur": 3,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Japuta fish marinated."
           },
           {
             "name": "Rosada al limón",
@@ -30104,7 +30221,8 @@
                 "eur": 3,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Rosada fish with lemon."
           },
           {
             "name": "Bacalao rebozado",
@@ -30121,7 +30239,8 @@
                 "eur": 3.7,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Salt cod rebozado."
           },
           {
             "name": "Bacalao frito",
@@ -30138,7 +30257,8 @@
                 "eur": 3.6,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Salt cod fried."
           },
           {
             "name": "Boquerones fritos",
@@ -30155,7 +30275,8 @@
                 "eur": 3,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Anchovies fried."
           },
           {
             "name": "Calamares fritos",
@@ -30172,7 +30293,8 @@
                 "eur": 2.95,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Squid fried."
           },
           {
             "name": "Fritura variada (fuente)",
@@ -30185,7 +30307,8 @@
                 "eur": 11.5,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Fried assortment variada (fuente)."
           },
           {
             "name": "Calamar plancha",
@@ -30198,7 +30321,8 @@
                 "eur": 7.5,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Squid plancha."
           },
           {
             "name": "Mero plancha",
@@ -30211,7 +30335,8 @@
                 "eur": 7.5,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Grouper plancha."
           },
           {
             "name": "Pez espada plancha",
@@ -30224,7 +30349,8 @@
                 "eur": 8,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Swordfish plancha."
           },
           {
             "name": "Pulpo a la gallega",
@@ -30237,7 +30363,8 @@
                 "eur": 9.35,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Octopus Galician-style."
           },
           {
             "name": "Pulpo a la brasa",
@@ -30246,7 +30373,8 @@
                 "eur": 17.95,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Octopus chargrilled."
           },
           {
             "name": "Almejas a la marinera",
@@ -30259,7 +30387,8 @@
                 "eur": 9.95,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Clams marinera-style."
           },
           {
             "name": "Lomo de bacalao con pisto",
@@ -30268,7 +30397,8 @@
                 "eur": 15.4,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Pork loin of salt cod with pisto."
           },
           {
             "name": "Lomo de bacalao en salsa de gambas",
@@ -30277,7 +30407,8 @@
                 "eur": 16.4,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Pork loin of salt cod in sauce of prawns."
           },
           {
             "name": "Calamar fino (750 g aprox.)",
@@ -30286,7 +30417,8 @@
                 "eur": 25.75,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Squid fino (750 g aprox.)."
           },
           {
             "name": "Flamenquín de pez espada, gambas y gulas",
@@ -30295,7 +30427,8 @@
                 "eur": 10.9,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Flamenquín of swordfish, prawns and gulas (surimi seafood)."
           }
         ]
       },
@@ -30317,7 +30450,8 @@
                 "eur": 3.95,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Chorizo criollo chargrilled."
           },
           {
             "name": "Chorizo al vino",
@@ -30334,7 +30468,8 @@
                 "eur": 3.95,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Menu item: Chorizo al vino (details not specified)."
           },
           {
             "name": "Chorizo frito",
@@ -30351,7 +30486,8 @@
                 "eur": 3.6,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Chorizo fried."
           },
           {
             "name": "Morcilla frita",
@@ -30368,7 +30504,8 @@
                 "eur": 3.6,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Blood sausage frita."
           },
           {
             "name": "Pinchito de lomo de cerdo (unidad)",
@@ -30377,7 +30514,8 @@
                 "eur": 2.75,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Skewer of pork loin of cerdo (unidad)."
           },
           {
             "name": "Pinchito de pollo (unidad)",
@@ -30386,7 +30524,8 @@
                 "eur": 3,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Skewer of chicken (unidad)."
           },
           {
             "name": "Churrasco de pollo",
@@ -30395,7 +30534,8 @@
                 "eur": 13.85,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Grilled meat of chicken."
           },
           {
             "name": "Brocheta de solomillo ibérico, boletus y champiñones",
@@ -30404,7 +30544,8 @@
                 "eur": 5.6,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Skewer of tenderloin Iberian, boletus mushrooms and mushrooms."
           },
           {
             "name": "Mollejas de cordero lechal",
@@ -30417,7 +30558,8 @@
                 "eur": 15.65,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Mollejas of milk-fed lamb."
           },
           {
             "name": "Riñones al Moriles",
@@ -30434,7 +30576,8 @@
                 "eur": 3.8,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Kidneys prepared Moriles-style; sauce not specified."
           },
           {
             "name": "Lomo ibérico de orza",
@@ -30447,7 +30590,8 @@
                 "eur": 9.1,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Pork loin Iberian of orza."
           },
           {
             "name": "Carne con tomate",
@@ -30464,7 +30608,8 @@
                 "eur": 3.8,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Meat with tomato."
           },
           {
             "name": "Callos de ternera",
@@ -30481,7 +30626,8 @@
                 "eur": 4,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Callos of veal."
           },
           {
             "name": "Ternera en salsa",
@@ -30498,7 +30644,8 @@
                 "eur": 4,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Veal in sauce."
           },
           {
             "name": "Flamenquín a la española con queso",
@@ -30507,7 +30654,8 @@
                 "eur": 9.75,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Spanish-style flamenquín with cheese."
           },
           {
             "name": "Cochifrito",
@@ -30524,7 +30672,8 @@
                 "eur": 4.1,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Menu item: Cochifrito (details not specified)."
           },
           {
             "name": "Flamenquín de jamón serrano",
@@ -30533,7 +30682,8 @@
                 "eur": 10,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Flamenquín of jamón Serrano."
           },
           {
             "name": "Rabo de toro",
@@ -30546,7 +30696,8 @@
                 "eur": 9.95,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Oxtail."
           },
           {
             "name": "Chuletitas de cordero lechal",
@@ -30559,7 +30710,8 @@
                 "eur": 15.65,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Chuletitas of milk-fed lamb."
           },
           {
             "name": "Parrillada ibérica (2 personas)",
@@ -30568,7 +30720,8 @@
                 "eur": 32.95,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Mixed grill Iberian (2 personas)."
           },
           {
             "name": "Codillo asado",
@@ -30577,7 +30730,8 @@
                 "eur": 18.95,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Pork knuckle asado."
           },
           {
             "name": "Entrecot de ternera",
@@ -30586,7 +30740,8 @@
                 "eur": 26.95,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Entrecot of veal."
           },
           {
             "name": "Solomillo de ternera",
@@ -30595,7 +30750,8 @@
                 "eur": 26.95,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Tenderloin of veal."
           },
           {
             "name": "Churrasco ibérico",
@@ -30604,7 +30760,8 @@
                 "eur": 15.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Grilled meat Iberian."
           },
           {
             "name": "Presa ibérica",
@@ -30613,7 +30770,8 @@
                 "eur": 18.7,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Presa pork cut Iberian."
           },
           {
             "name": "Secreto ibérico",
@@ -30622,7 +30780,8 @@
                 "eur": 17.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Secreto pork cut Iberian."
           },
           {
             "name": "Pluma ibérica",
@@ -30631,7 +30790,8 @@
                 "eur": 18.7,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Pluma pork cut Iberian."
           },
           {
             "name": "Abanico ibérico",
@@ -30640,7 +30800,8 @@
                 "eur": 17.7,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Abanico pork cut Iberian."
           },
           {
             "name": "Lagarto ibérico",
@@ -30649,7 +30810,8 @@
                 "eur": 15.15,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Lagarto pork cut Iberian."
           },
           {
             "name": "Solomillo ibérico a la pimienta",
@@ -30658,7 +30820,8 @@
                 "eur": 16.95,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Tenderloin Iberian with pepper sauce."
           },
           {
             "name": "Solomillo ibérico al queso azul del Valle de los Pedroches",
@@ -30667,7 +30830,8 @@
                 "eur": 16.95,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Tenderloin Iberian with blue cheese from Los Pedroches."
           },
           {
             "name": "Solomillo ibérico al Pedro Ximénez",
@@ -30676,7 +30840,8 @@
                 "eur": 16.95,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Tenderloin Iberian with Pedro Ximénez wine sauce."
           },
           {
             "name": "Carrillada ibérica a la miel de caña",
@@ -30693,7 +30858,8 @@
                 "eur": 5.55,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Pork cheeks Iberian with cane syrup."
           },
           {
             "name": "Magret de pato con salsa agridulce",
@@ -30702,7 +30868,8 @@
                 "eur": 20,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Magret of duck with sauce agridulce."
           },
           {
             "name": "Costillar de cerdo a la barbacoa",
@@ -30711,7 +30878,8 @@
                 "eur": 17.75,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Rack of ribs of cerdo with barbecue sauce."
           },
           {
             "name": "Flamenquito de jamón ibérico y queso puro de oveja",
@@ -30720,7 +30888,8 @@
                 "eur": 5.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Mini flamenquín of jamón Iberian and sheep's milk cheese."
           },
           {
             "name": "Tomahawk (corona de solomillo ibérico, 270 g aprox.)",
@@ -30729,7 +30898,8 @@
                 "eur": 14.65,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Tomahawk (corona of tenderloin Iberian, 270 g aprox.)."
           }
         ]
       },
@@ -30743,7 +30913,8 @@
                 "eur": 14.65,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "House combination plate named Moriles; see original menu for components."
           },
           {
             "name": "Plato Pata Negra",
@@ -30752,7 +30923,8 @@
                 "eur": 11.15,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Combination plate named Pata Negra; components not specified."
           },
           {
             "name": "Plato Currito",
@@ -30761,7 +30933,8 @@
                 "eur": 15.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Combination plate named Currito; components not specified."
           },
           {
             "name": "Plato nº 1 (filete, patatas, calamar plancha y ensalada)",
@@ -30770,7 +30943,8 @@
                 "eur": 9.75,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Combination plate: filete, potatoes, squid plancha and salad."
           },
           {
             "name": "Plato nº 2 (filete, patatas, dos huevos fritos y ensalada)",
@@ -30779,7 +30953,8 @@
                 "eur": 8.35,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Combination plate: filete, potatoes, dos eggs fried and salad."
           },
           {
             "name": "Plato nº 3 (filete, patatas, japuta y ensalada)",
@@ -30788,7 +30963,8 @@
                 "eur": 9.7,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Combination plate: filete, potatoes, japuta fish and salad."
           },
           {
             "name": "Plato nº 4 (tortilla de jamón, patatas, japuta y ensalada)",
@@ -30797,7 +30973,8 @@
                 "eur": 9.75,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Combination plate: omelette of jamón, potatoes, japuta fish and salad."
           },
           {
             "name": "Plato nº 5 (tortilla de gambas, filete, patatas y ensalada)",
@@ -30806,7 +30983,8 @@
                 "eur": 9.75,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Combination plate: omelette of prawns, filete, potatoes and salad."
           },
           {
             "name": "Plato nº 6 (chorizo, dos huevos fritos, patatas y ensalada)",
@@ -30815,7 +30993,8 @@
                 "eur": 9.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Combination plate: chorizo, dos eggs fried, potatoes and salad."
           },
           {
             "name": "Plato nº 7 (pez espada, dos huevos fritos, patatas y ensalada)",
@@ -30824,7 +31003,8 @@
                 "eur": 12.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Combination plate: swordfish, dos eggs fried, potatoes and salad."
           },
           {
             "name": "Plato nº 8 (carne con tomate, dos huevos fritos, patatas y ensalada)",
@@ -30833,7 +31013,8 @@
                 "eur": 9.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Combination plate: meat with tomato, dos eggs fried, potatoes and salad."
           },
           {
             "name": "Plato nº 9 (loncha de jamón serrano con dos huevos fritos, patatas y ensalada)",
@@ -30842,7 +31023,8 @@
                 "eur": 12.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Combination plate: loncha of jamón Serrano with dos eggs fried, potatoes and salad."
           },
           {
             "name": "Plato nº 10 (calamar plancha, dos huevos fritos, patatas y ensalada)",
@@ -30851,7 +31033,8 @@
                 "eur": 9.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Combination plate: squid plancha, dos eggs fried, potatoes and salad."
           },
           {
             "name": "Plato nº 11 (dos pinchitos, calamar plancha, patatas y ensalada)",
@@ -30860,7 +31043,8 @@
                 "eur": 9.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Combination plate: dos pinchitos, squid plancha, potatoes and salad."
           },
           {
             "name": "Plato nº 12 (flamenquín de jamón serrano, calamares fritos, patatas y ensalada)",
@@ -30869,7 +31053,8 @@
                 "eur": 14.75,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Combination plate: flamenquín of jamón Serrano, squid fried, potatoes and salad."
           }
         ]
       },
@@ -30883,7 +31068,8 @@
                 "eur": 5.1,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Eggs with chips."
           },
           {
             "name": "Espaguetis a la carbonara",
@@ -30892,7 +31078,8 @@
                 "eur": 6.6,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Espaguetis carbonara-style."
           },
           {
             "name": "Espaguetis a la boloñesa",
@@ -30901,7 +31088,8 @@
                 "eur": 6.6,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Espaguetis Bolognese-style."
           },
           {
             "name": "San Jacobo",
@@ -30910,7 +31098,8 @@
                 "eur": 6.6,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Menu item: San Jacobo (details not specified)."
           },
           {
             "name": "Flamenquín de jamón york",
@@ -30919,7 +31108,8 @@
                 "eur": 5.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Flamenquín of cooked ham."
           },
           {
             "name": "Nuggets de pollo",
@@ -30928,7 +31118,8 @@
                 "eur": 7.3,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Nuggets of chicken."
           },
           {
             "name": "Pechuga de pollo empanada con patatas",
@@ -30937,7 +31128,8 @@
                 "eur": 7.3,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Chicken breast of chicken empanada with potatoes."
           },
           {
             "name": "Pechuga de pollo a la plancha con patatas",
@@ -30946,7 +31138,8 @@
                 "eur": 7.3,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Chicken breast of chicken griddled with potatoes."
           }
         ]
       },
@@ -30968,7 +31161,8 @@
                 "eur": 3.8,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Meat with tomato."
           },
           {
             "name": "Ternera en salsa",
@@ -30985,7 +31179,8 @@
                 "eur": 4,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Veal in sauce."
           },
           {
             "name": "Rabo de toro",
@@ -30998,7 +31193,8 @@
                 "eur": 9.95,
                 "portion": "1/2 ración"
               }
-            ]
+            ],
+            "en": "Oxtail."
           },
           {
             "name": "Carrillada ibérica a la miel de caña",
@@ -31015,7 +31211,8 @@
                 "eur": 5.55,
                 "portion": "Tapa"
               }
-            ]
+            ],
+            "en": "Pork cheeks Iberian with cane syrup."
           }
         ]
       },
@@ -31029,7 +31226,8 @@
                 "eur": 9,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Jamón Iberian."
           },
           {
             "name": "Caña de lomo ibérico",
@@ -31038,7 +31236,8 @@
                 "eur": 9,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Caña of pork loin Iberian."
           },
           {
             "name": "Jamón serrano",
@@ -31047,7 +31246,8 @@
                 "eur": 5.6,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Traditional filling: Jamón serrano (details not specified)."
           },
           {
             "name": "Queso puro de oveja",
@@ -31056,7 +31256,8 @@
                 "eur": 5.8,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Sheep's milk cheese."
           },
           {
             "name": "Jamón ibérico y queso",
@@ -31065,7 +31266,8 @@
                 "eur": 10,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Jamón Iberian and cheese."
           },
           {
             "name": "Jamón serrano y queso",
@@ -31074,7 +31276,8 @@
                 "eur": 7,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Jamón Serrano and cheese."
           },
           {
             "name": "Salchichón ibérico",
@@ -31083,7 +31286,8 @@
                 "eur": 6.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Salchichón sausage Iberian."
           },
           {
             "name": "Chorizo ibérico",
@@ -31092,7 +31296,8 @@
                 "eur": 6.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Chorizo Iberian."
           },
           {
             "name": "Calamares fritos",
@@ -31101,7 +31306,8 @@
                 "eur": 4.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Squid fried."
           },
           {
             "name": "Calamares fritos (salsa brava)",
@@ -31110,7 +31316,8 @@
                 "eur": 4.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Squid fried (brava sauce)."
           },
           {
             "name": "Vegetal de atún",
@@ -31119,7 +31326,8 @@
                 "eur": 5.8,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Vegetal of tuna."
           },
           {
             "name": "Vegetal de salmón",
@@ -31128,7 +31336,8 @@
                 "eur": 6.6,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Vegetal of salmon."
           },
           {
             "name": "Tortilla de patatas",
@@ -31137,7 +31346,8 @@
                 "eur": 4.35,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Omelette of potatoes."
           },
           {
             "name": "Tortilla con salmorejo",
@@ -31146,7 +31356,8 @@
                 "eur": 5.3,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Omelette with salmorejo."
           },
           {
             "name": "Tortilla con pimientos",
@@ -31155,7 +31366,8 @@
                 "eur": 5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Omelette with peppers."
           },
           {
             "name": "Tortilla con lomo",
@@ -31164,7 +31376,8 @@
                 "eur": 7.4,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Omelette with pork loin."
           },
           {
             "name": "Tortilla francesa",
@@ -31173,7 +31386,8 @@
                 "eur": 4,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Omelette francesa."
           },
           {
             "name": "Tortilla de gambas",
@@ -31182,7 +31396,8 @@
                 "eur": 6,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Omelette of prawns."
           },
           {
             "name": "Tortilla de atún",
@@ -31191,7 +31406,8 @@
                 "eur": 6,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Omelette of tuna."
           },
           {
             "name": "Tortilla de jamón",
@@ -31200,7 +31416,8 @@
                 "eur": 6,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Omelette of jamón."
           },
           {
             "name": "Tortilla de queso",
@@ -31209,7 +31426,8 @@
                 "eur": 6,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Omelette of cheese."
           },
           {
             "name": "Tortilla de chorizo",
@@ -31218,7 +31436,8 @@
                 "eur": 6,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Omelette of chorizo."
           },
           {
             "name": "Hamburguesa original",
@@ -31227,7 +31446,8 @@
                 "eur": 8.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Traditional filling: Hamburguesa original (details not specified)."
           },
           {
             "name": "Hamburguesa serranito",
@@ -31236,7 +31456,8 @@
                 "eur": 10,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Traditional filling: Hamburguesa serranito (details not specified)."
           },
           {
             "name": "Hamburguesa buey",
@@ -31245,7 +31466,8 @@
                 "eur": 10.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Traditional filling: Hamburguesa buey (details not specified)."
           },
           {
             "name": "Chorizo frito",
@@ -31254,7 +31476,8 @@
                 "eur": 5.3,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Chorizo fried."
           },
           {
             "name": "Carne con tomate",
@@ -31263,7 +31486,8 @@
                 "eur": 5.85,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Meat with tomato."
           },
           {
             "name": "Ternera en salsa",
@@ -31272,7 +31496,8 @@
                 "eur": 6,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Veal in sauce."
           },
           {
             "name": "Lomo de orza",
@@ -31281,7 +31506,8 @@
                 "eur": 7.8,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Pork loin of orza."
           },
           {
             "name": "Lomo",
@@ -31290,7 +31516,8 @@
                 "eur": 5.6,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Pork loin."
           },
           {
             "name": "Lomo y queso",
@@ -31299,7 +31526,8 @@
                 "eur": 7,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Pork loin and cheese."
           },
           {
             "name": "Lomo con pimientos",
@@ -31308,7 +31536,8 @@
                 "eur": 6,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Pork loin with peppers."
           },
           {
             "name": "Bacon",
@@ -31317,7 +31546,8 @@
                 "eur": 5.6,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Traditional filling: Bacon (details not specified)."
           },
           {
             "name": "Bacon y queso",
@@ -31326,7 +31556,8 @@
                 "eur": 7,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Bacon and cheese."
           },
           {
             "name": "Bacon y lomo",
@@ -31335,7 +31566,8 @@
                 "eur": 7.4,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Bacon and pork loin."
           },
           {
             "name": "Bacon, lomo y queso",
@@ -31344,7 +31576,8 @@
                 "eur": 7.95,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Bacon, pork loin and cheese."
           },
           {
             "name": "Serranito",
@@ -31353,7 +31586,8 @@
                 "eur": 7.1,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Traditional filling: Serranito (details not specified)."
           },
           {
             "name": "Serranito con queso",
@@ -31362,7 +31596,8 @@
                 "eur": 7.1,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Serranito with cheese."
           },
           {
             "name": "Pepito de ternera",
@@ -31371,7 +31606,8 @@
                 "eur": 6.3,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Pepito of veal."
           },
           {
             "name": "Pepito serranito",
@@ -31380,7 +31616,8 @@
                 "eur": 7.85,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Traditional filling: Pepito serranito (details not specified)."
           },
           {
             "name": "Pepito serranito con queso",
@@ -31389,7 +31626,8 @@
                 "eur": 8.95,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Pepito serranito with cheese."
           },
           {
             "name": "Pechuga de pollo",
@@ -31398,7 +31636,8 @@
                 "eur": 6,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Chicken breast of chicken."
           },
           {
             "name": "Pechuga de pollo con queso",
@@ -31407,7 +31646,8 @@
                 "eur": 7.3,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Chicken breast of chicken with cheese."
           },
           {
             "name": "Pechuga de pollo serranito",
@@ -31416,7 +31656,8 @@
                 "eur": 7.8,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Chicken breast of chicken serranito."
           },
           {
             "name": "Pechuga de pollo serranito con queso",
@@ -31425,7 +31666,8 @@
                 "eur": 8.6,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Chicken breast of chicken serranito with cheese."
           },
           {
             "name": "Flamenquín de jamón serrano",
@@ -31434,7 +31676,8 @@
                 "eur": 9.35,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Flamenquín of jamón Serrano."
           },
           {
             "name": "Hamburguesa con queso",
@@ -31443,7 +31686,8 @@
                 "eur": 9.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Hamburguesa with cheese."
           },
           {
             "name": "Hamburguesa serranito con queso",
@@ -31452,7 +31696,8 @@
                 "eur": 10.8,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Hamburguesa serranito with cheese."
           }
         ]
       },
@@ -31466,7 +31711,8 @@
                 "eur": 9,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Mollete with Jamón Iberian."
           },
           {
             "name": "Caña de lomo ibérico",
@@ -31475,7 +31721,8 @@
                 "eur": 9,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Mollete with Caña of pork loin Iberian."
           },
           {
             "name": "Salchichón ibérico",
@@ -31484,7 +31731,8 @@
                 "eur": 6.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Mollete with Salchichón sausage Iberian."
           },
           {
             "name": "Chorizo ibérico",
@@ -31493,7 +31741,8 @@
                 "eur": 6.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Mollete with Chorizo Iberian."
           },
           {
             "name": "Queso puro de oveja",
@@ -31502,7 +31751,8 @@
                 "eur": 5.8,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Mollete with Sheep's milk cheese."
           },
           {
             "name": "Jamón serrano",
@@ -31511,7 +31761,8 @@
                 "eur": 5.6,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Mollete with Traditional filling: Jamón serrano (details not specified)."
           },
           {
             "name": "Jamón serrano y queso de oveja",
@@ -31520,7 +31771,8 @@
                 "eur": 7,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Mollete with Jamón Serrano and sheep's milk cheese."
           },
           {
             "name": "Salmón",
@@ -31529,7 +31781,8 @@
                 "eur": 6.6,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Mollete with Salmon."
           },
           {
             "name": "Salmón al queso azul del Valle de los Pedroches",
@@ -31538,7 +31791,8 @@
                 "eur": 7.3,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Mollete with Salmon with blue cheese from Los Pedroches."
           },
           {
             "name": "Jamón serrano al queso azul del Valle de los Pedroches",
@@ -31547,7 +31801,8 @@
                 "eur": 7.3,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Mollete with Jamón Serrano with blue cheese from Los Pedroches."
           },
           {
             "name": "Anchoas con tomate",
@@ -31556,7 +31811,8 @@
                 "eur": 6.6,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Mollete with Anchovies with tomato."
           },
           {
             "name": "Anchoas con tomate al queso azul del Valle de los Pedroches",
@@ -31565,7 +31821,8 @@
                 "eur": 7.3,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Mollete with Anchovies with tomato with blue cheese from Los Pedroches."
           },
           {
             "name": "Anchoas, queso y confitura de tomate",
@@ -31574,7 +31831,8 @@
                 "eur": 7.4,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Mollete with Anchovies, cheese and tomato preserve."
           },
           {
             "name": "Presa ibérica con salmorejo",
@@ -31583,7 +31841,8 @@
                 "eur": 11.95,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Mollete with Presa pork cut Iberian with salmorejo."
           }
         ]
       },
@@ -31597,7 +31856,8 @@
                 "eur": 2.75,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Cooked ham and cheese."
           },
           {
             "name": "Americano (bacon, queso y huevo frito)",
@@ -31606,7 +31866,8 @@
                 "eur": 3.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Americano (bacon, cheese and egg fried)."
           },
           {
             "name": "Club (pollo, queso, lechuga y salsa cocktail)",
@@ -31615,7 +31876,8 @@
                 "eur": 3.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Club (chicken, cheese, lettuce and sauce cocktail)."
           },
           {
             "name": "Noruego (salmón ahumado, tomate, lechuga y huevo cocido)",
@@ -31624,7 +31886,8 @@
                 "eur": 3.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Noruego (salmon ahumado, tomato, lettuce and egg cocido)."
           },
           {
             "name": "Vegetal de atún",
@@ -31633,7 +31896,8 @@
                 "eur": 3,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Vegetal of tuna."
           },
           {
             "name": "Vegetal de jamón york",
@@ -31642,7 +31906,8 @@
                 "eur": 2.95,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Vegetal of cooked ham."
           },
           {
             "name": "Vegetal de salmón",
@@ -31651,7 +31916,8 @@
                 "eur": 3,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Vegetal of salmon."
           }
         ]
       },
@@ -31665,7 +31931,8 @@
                 "eur": 5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Jamón Iberian."
           },
           {
             "name": "Jamón serrano",
@@ -31674,7 +31941,8 @@
                 "eur": 4,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Traditional filling: Jamón serrano (details not specified)."
           },
           {
             "name": "Queso oveja",
@@ -31683,7 +31951,8 @@
                 "eur": 4,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Sheep's milk cheese."
           },
           {
             "name": "Jamón serrano y queso",
@@ -31692,7 +31961,8 @@
                 "eur": 4.75,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Jamón Serrano and cheese."
           },
           {
             "name": "Salchichón ibérico",
@@ -31701,7 +31971,8 @@
                 "eur": 4.25,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Salchichón sausage Iberian."
           },
           {
             "name": "Chorizo ibérico",
@@ -31710,7 +31981,8 @@
                 "eur": 4.25,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Chorizo Iberian."
           },
           {
             "name": "Caña de lomo ibérico",
@@ -31719,7 +31991,8 @@
                 "eur": 5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Caña of pork loin Iberian."
           },
           {
             "name": "Tortilla francesa",
@@ -31728,7 +32001,8 @@
                 "eur": 2.95,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Omelette francesa."
           },
           {
             "name": "Tortilla de patatas",
@@ -31737,7 +32011,8 @@
                 "eur": 3.25,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Omelette of potatoes."
           },
           {
             "name": "Lomo de cerdo",
@@ -31746,7 +32021,8 @@
                 "eur": 3.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Pork loin of cerdo."
           },
           {
             "name": "Lomo de orza",
@@ -31755,7 +32031,8 @@
                 "eur": 4,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Pork loin of orza."
           },
           {
             "name": "Carne con tomate",
@@ -31764,7 +32041,8 @@
                 "eur": 4,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Meat with tomato."
           },
           {
             "name": "Ternera en salsa",
@@ -31773,7 +32051,8 @@
                 "eur": 4,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Veal in sauce."
           },
           {
             "name": "Pechuga de pollo",
@@ -31782,7 +32061,8 @@
                 "eur": 3.75,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Chicken breast of chicken."
           },
           {
             "name": "Pechuga de pollo y queso",
@@ -31791,7 +32071,8 @@
                 "eur": 4.75,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Chicken breast of chicken and cheese."
           },
           {
             "name": "Ternera",
@@ -31800,7 +32081,8 @@
                 "eur": 4.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Veal."
           },
           {
             "name": "Bacon",
@@ -31809,7 +32091,8 @@
                 "eur": 3.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Traditional filling: Bacon (details not specified)."
           },
           {
             "name": "Bacon con queso",
@@ -31818,7 +32101,8 @@
                 "eur": 4.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sandwich with Bacon with cheese."
           }
         ]
       },
@@ -31832,7 +32116,8 @@
                 "eur": 1.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Plain croissant."
           },
           {
             "name": "Mantequilla y mermelada",
@@ -31841,7 +32126,8 @@
                 "eur": 2,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Butter and jam."
           },
           {
             "name": "York y queso",
@@ -31850,7 +32136,8 @@
                 "eur": 3.25,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Cooked ham and cheese."
           }
         ]
       },
@@ -31864,7 +32151,8 @@
                 "eur": 2.25,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Waffle with cream and a choice of chocolate, strawberry or caramel syrup."
           },
           {
             "name": "Con helado de vainilla o turrón",
@@ -31873,7 +32161,8 @@
                 "eur": 3,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Waffle with vanilla or nougat ice cream."
           }
         ]
       },
@@ -31887,7 +32176,8 @@
                 "eur": 3.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Cake of cheese with membrillo."
           },
           {
             "name": "Tarta tres chocolates",
@@ -31896,7 +32186,8 @@
                 "eur": 3.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Three-chocolate cake."
           },
           {
             "name": "Tarta de chocolate",
@@ -31905,7 +32196,8 @@
                 "eur": 3.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Cake of chocolate."
           },
           {
             "name": "Sacher (sin gluten y sin lactosa)",
@@ -31914,7 +32206,8 @@
                 "eur": 3.5,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Sacher (sin gluten and sin lactosa)."
           },
           {
             "name": "Pastel cordobés",
@@ -31923,7 +32216,8 @@
                 "eur": 3,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Pastry cordobés."
           },
           {
             "name": "Gachas",
@@ -31932,7 +32226,8 @@
                 "eur": 3,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Traditional sweet gachas dessert."
           }
         ]
       },
@@ -31946,7 +32241,8 @@
                 "eur": 1.65,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Half serving of jeringos (Andalusian fried dough)."
           },
           {
             "name": "Entera",
@@ -31955,7 +32251,8 @@
                 "eur": 3.15,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Full serving of jeringos (Andalusian fried dough)."
           },
           {
             "name": "Unidad",
@@ -31964,7 +32261,8 @@
                 "eur": 0.65,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "One jeringo (Andalusian fried dough)."
           }
         ]
       },
@@ -31978,7 +32276,8 @@
                 "eur": 11.1,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Set lunch menu with first and second courses, drink, dessert and bread."
           },
           {
             "name": "Menú del día con segundo especial",
@@ -31987,7 +32286,8 @@
                 "eur": 14.25,
                 "portion": "Unidad"
               }
-            ]
+            ],
+            "en": "Set lunch menu with a special second course."
           }
         ]
       }
