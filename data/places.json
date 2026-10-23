@@ -3177,24 +3177,14 @@
           {
             "name": "Jamón Ibérico de Bellota D.O. Valle de los Pedroches",
             "en": "Acorn-fed Iberian ham from Los Pedroches.",
-            "prices": [
-              {
-                "eur": 15,
-                "label": "Uber Eats · precio publicado en fuente histórica (vigencia no confirmada)"
-              }
-            ],
+            "prices": [],
             "sourceStatus": "uber_eats_historical_not_current",
             "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
           },
           {
             "name": "Queso Curado Manchego de Oveja Marantona",
             "en": "Cured Manchego sheep's milk cheese.",
-            "prices": [
-              {
-                "eur": 9,
-                "label": "Uber Eats · precio publicado en fuente histórica (vigencia no confirmada)"
-              }
-            ],
+            "prices": [],
             "sourceStatus": "uber_eats_historical_not_current",
             "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
           },
@@ -3210,18 +3200,6 @@
             "en": "Mushrooms with sherry.",
             "prices": [],
             "sourceStatus": "google_search_snippet_unverified",
-            "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
-          },
-          {
-            "name": "Anchoa del Cantábrico con Tomate",
-            "en": "Cantabrian anchovy with tomato.",
-            "prices": [
-              {
-                "eur": 2.9,
-                "label": "Uber Eats · precio publicado en fuente histórica (vigencia no confirmada)"
-              }
-            ],
-            "sourceStatus": "uber_eats_historical_not_current",
             "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
           }
         ]
@@ -4189,8 +4167,10 @@
         ]
       }
     ],
-    "menuSourceNote": "Borrador: platos nuevos identificados en el texto de resultados de Google proporcionado por Helio; sin importes salvo 3 ofertas históricas vinculadas a Uber Eats. No publicar hasta verificación del origen y de la carta completa.",
-    "dataReviewStatus": "draft_not_for_publication"
+    "menuSourceNote": "Carta parcial de Alonso de Burgos: precios de Just Eat transcritos el 20/10/2026 en la ficha original. Las referencias adicionales proceden del listado de búsqueda de Google aportado por Helio el 23/10/2026 y no tienen precio confirmado. Las divergencias entre fuentes y fechas siguen pendientes de verificar. Los precios de reparto no equivalen a los de sala.",
+    "dataReviewStatus": "draft_requires_owner_approval",
+    "googleSearchReferenceCheckedAt": "2026-10-23",
+    "googleSearchReferencePriceStatus": "No verificado; los importes del extracto no se han incorporado por no poder atribuirlos inequívocamente a una plataforma y formato."
   },
   {
     "id": "taberna-el-poema-gran-capitan",
