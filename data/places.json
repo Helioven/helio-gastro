@@ -34212,7 +34212,7 @@
             "name": "Cogollos al ajillo",
             "description": "Cogollos al ajillo",
             "es": "Cogollos al ajillo",
-            "en": "Cogollos al ajillo",
+            "en": "Little gem lettuce with garlic.",
             "prices": [
               {
                 "label": "Ración",
@@ -34228,7 +34228,7 @@
             "name": "Cogollos al ajillo con Salmón",
             "description": "Cogollos al ajillo con Salmón",
             "es": "Cogollos al ajillo con Salmón",
-            "en": "Cogollos al ajillo con Salmón",
+            "en": "Little gem lettuce with garlic and salmon.",
             "prices": [
               {
                 "label": "Ración",
@@ -34244,7 +34244,7 @@
             "name": "Cogollos con Anchoas y Gulas al ajillo",
             "description": "Cogollos con Anchoas y Gulas al ajillo",
             "es": "Cogollos con Anchoas y Gulas al ajillo",
-            "en": "Cogollos con Anchoas y Gulas al ajillo",
+            "en": "Little gem lettuce with anchovies and garlic-seasoned gulas.",
             "prices": [
               {
                 "label": "Ración",
@@ -34276,7 +34276,7 @@
             "name": "Tomate con Ventresca",
             "description": "Tomate con Ventresca",
             "es": "Tomate con Ventresca",
-            "en": "Tomate con Ventresca",
+            "en": "Tomato with tuna belly.",
             "prices": [
               {
                 "label": "Ración",
@@ -34298,7 +34298,7 @@
             "name": "Boquerones en Vinagre",
             "description": "Boquerones en Vinagre",
             "es": "Boquerones en Vinagre",
-            "en": "Boquerones en Vinagre",
+            "en": "Marinated anchovies.",
             "prices": [
               {
                 "label": "Ración",
@@ -34318,7 +34318,7 @@
             "name": "Croquetas de Boletus",
             "description": "Croquetas de Boletus",
             "es": "Croquetas de Boletus",
-            "en": "Croquetas de Boletus",
+            "en": "Boletus mushroom croquettes.",
             "prices": [
               {
                 "label": "Ración",
@@ -34334,7 +34334,7 @@
             "name": "Croquetas de Espinacas con Piñones",
             "description": "Croquetas de Espinacas con Piñones",
             "es": "Croquetas de Espinacas con Piñones",
-            "en": "Croquetas de Espinacas con Piñones",
+            "en": "Spinach and pine nut croquettes.",
             "prices": [
               {
                 "label": "Ración",
@@ -34350,7 +34350,7 @@
             "name": "Croquetas de Jamón Ibérico",
             "description": "Croquetas de Jamón Ibérico",
             "es": "Croquetas de Jamón Ibérico",
-            "en": "Croquetas de Jamón Ibérico",
+            "en": "Iberian ham croquettes.",
             "prices": [
               {
                 "label": "Ración",
@@ -34366,7 +34366,7 @@
             "name": "Croquetas de Rabo de Toro",
             "description": "Croquetas de Rabo de Toro",
             "es": "Croquetas de Rabo de Toro",
-            "en": "Croquetas de Rabo de Toro",
+            "en": "Oxtail croquettes.",
             "prices": [
               {
                 "label": "Ración",
@@ -34382,7 +34382,7 @@
             "name": "Surtido de Croquetas",
             "description": "Surtido de Croquetas",
             "es": "Surtido de Croquetas",
-            "en": "Surtido de Croquetas",
+            "en": "Selection of croquettes.",
             "prices": [
               {
                 "label": "Ración",
@@ -34394,7 +34394,7 @@
             "name": "Ensaladilla Rusa con Salmón Ahumado",
             "description": "Ensaladilla Rusa con Salmón Ahumado",
             "es": "Ensaladilla Rusa con Salmón Ahumado",
-            "en": "Ensaladilla Rusa con Salmón Ahumado",
+            "en": "Spanish-style potato salad with smoked salmon.",
             "prices": [
               {
                 "label": "Ración",
@@ -34414,7 +34414,7 @@
             "name": "Gambas al ajillo",
             "description": "Gambas al ajillo",
             "es": "Gambas al ajillo",
-            "en": "Gambas al ajillo",
+            "en": "Prawns with garlic.",
             "prices": [
               {
                 "label": "Ración",
@@ -34430,7 +34430,7 @@
             "name": "Hummus con crudités",
             "description": "Hummus con crudités",
             "es": "Hummus con crudités",
-            "en": "Hummus con crudités",
+            "en": "Hummus with raw vegetable sticks.",
             "prices": [
               {
                 "label": "Ración",
@@ -34470,7 +34470,7 @@
             "name": "Migas Cortijeras",
             "description": "Migas Cortijeras",
             "es": "Migas Cortijeras",
-            "en": "Migas Cortijeras",
+            "en": "Traditional Spanish migas.",
             "prices": [
               {
                 "label": "Ración",
@@ -34490,7 +34490,7 @@
             "name": "Naranja con Bacalao",
             "description": "Naranja con Bacalao",
             "es": "Naranja con Bacalao",
-            "en": "Naranja con Bacalao",
+            "en": "Orange with salt cod.",
             "prices": [
               {
                 "label": "Ración",
@@ -34510,7 +34510,7 @@
             "name": "Bravas muy Bravas",
             "description": "Bravas muy Bravas",
             "es": "Bravas muy Bravas",
-            "en": "Bravas muy Bravas",
+            "en": "Bravas-style potatoes.",
             "prices": [
               {
                 "label": "Ración",
@@ -34530,7 +34530,7 @@
             "name": "Patatas Ali-Oli",
             "description": "Patatas Ali-Oli",
             "es": "Patatas Ali-Oli",
-            "en": "Patatas Ali-Oli",
+            "en": "Potatoes with alioli.",
             "prices": [
               {
                 "label": "Ración",
@@ -34550,7 +34550,7 @@
             "name": "Salmorejo con Jamón",
             "description": "Salmorejo con Jamón",
             "es": "Salmorejo con Jamón",
-            "en": "Salmorejo con Jamón",
+            "en": "Salmorejo with cured ham.",
             "prices": [
               {
                 "label": "Ración",
@@ -34570,7 +34570,7 @@
             "name": "Salpicón de Marisco",
             "description": "Salpicón de Marisco",
             "es": "Salpicón de Marisco",
-            "en": "Salpicón de Marisco",
+            "en": "Cold seafood salad.",
             "prices": [
               {
                 "label": "Ración",
@@ -34590,7 +34590,7 @@
             "name": "Tartar de Atún",
             "description": "Tartar de Atún",
             "es": "Tartar de Atún",
-            "en": "Tartar de Atún",
+            "en": "Tuna tartare.",
             "prices": [
               {
                 "label": "Ración",
@@ -34602,7 +34602,7 @@
             "name": "Tortilla de patatas al momento",
             "description": "Tortilla de patatas al momento",
             "es": "Tortilla de patatas al momento",
-            "en": "Tortilla de patatas al momento",
+            "en": "Freshly made Spanish potato omelette.",
             "prices": [
               {
                 "label": "Ración",
@@ -34614,7 +34614,7 @@
             "name": "Tortilla de patatas al momento con salmorejo y Jamón Ibérico",
             "description": "Tortilla de patatas al momento con salmorejo y Jamón Ibérico",
             "es": "Tortilla de patatas al momento con salmorejo y Jamón Ibérico",
-            "en": "Tortilla de patatas al momento con salmorejo y Jamón Ibérico",
+            "en": "Spanish potato omelette with salmorejo and Iberian ham.",
             "prices": [
               {
                 "label": "Ración",
@@ -34626,7 +34626,7 @@
             "name": "Tortilla de Camarones",
             "description": "Tortilla de Camarones",
             "es": "Tortilla de Camarones",
-            "en": "Tortilla de Camarones",
+            "en": "Traditional shrimp fritter.",
             "prices": [
               {
                 "label": "Ración",
@@ -34648,7 +34648,7 @@
             "name": "Jamón Ibérico de Bellota",
             "description": "Jamón Ibérico de Bellota",
             "es": "Jamón Ibérico de Bellota",
-            "en": "Jamón Ibérico de Bellota",
+            "en": "Acorn-fed Iberian cured ham.",
             "prices": [
               {
                 "label": "Ración",
@@ -34668,7 +34668,7 @@
             "name": "Chorizo Ibérico de Bellota",
             "description": "Chorizo Ibérico de Bellota",
             "es": "Chorizo Ibérico de Bellota",
-            "en": "Chorizo Ibérico de Bellota",
+            "en": "Acorn-fed Iberian chorizo.",
             "prices": [
               {
                 "label": "Ración",
@@ -34688,7 +34688,7 @@
             "name": "Salchichón Ibérico de Bellota",
             "description": "Salchichón Ibérico de Bellota",
             "es": "Salchichón Ibérico de Bellota",
-            "en": "Salchichón Ibérico de Bellota",
+            "en": "Acorn-fed Iberian salchichón.",
             "prices": [
               {
                 "label": "Ración",
@@ -34708,7 +34708,7 @@
             "name": "Caña de Lomo Ibérica de Bellota",
             "description": "Caña de Lomo Ibérica de Bellota",
             "es": "Caña de Lomo Ibérica de Bellota",
-            "en": "Caña de Lomo Ibérica de Bellota",
+            "en": "Acorn-fed Iberian cured pork loin.",
             "prices": [
               {
                 "label": "Ración",
@@ -34728,7 +34728,7 @@
             "name": "Mixto de Jamón Ibérico de Bellota y Queso Puro de Oveja",
             "description": "Mixto de Jamón Ibérico de Bellota y Queso Puro de Oveja",
             "es": "Mixto de Jamón Ibérico de Bellota y Queso Puro de Oveja",
-            "en": "Mixto de Jamón Ibérico de Bellota y Queso Puro de Oveja",
+            "en": "Acorn-fed Iberian ham with sheep's milk cheese.",
             "prices": [
               {
                 "label": "Ración",
@@ -34744,7 +34744,7 @@
             "name": "Surtido Ibérico de Bellota con Queso Puro de Oveja",
             "description": "Surtido Ibérico de Bellota con Queso Puro de Oveja",
             "es": "Surtido Ibérico de Bellota con Queso Puro de Oveja",
-            "en": "Surtido Ibérico de Bellota con Queso Puro de Oveja",
+            "en": "Selection of acorn-fed Iberian cured meats with sheep's milk cheese.",
             "prices": [
               {
                 "label": "Ración",
@@ -34776,7 +34776,7 @@
             "name": "Queso Puro de Oveja",
             "description": "Queso Puro de Oveja",
             "es": "Queso Puro de Oveja",
-            "en": "Queso Puro de Oveja",
+            "en": "Sheep's milk cheese.",
             "prices": [
               {
                 "label": "Ración",
@@ -34796,7 +34796,7 @@
             "name": "Quesito de Zuheros",
             "description": "Quesito de Zuheros",
             "es": "Quesito de Zuheros",
-            "en": "Quesito de Zuheros",
+            "en": "Cheese from Zuheros.",
             "prices": [
               {
                 "label": "Ración",
@@ -34808,7 +34808,7 @@
             "name": "Queso asado a la miel de caña",
             "description": "Queso asado a la miel de caña",
             "es": "Queso asado a la miel de caña",
-            "en": "Queso asado a la miel de caña",
+            "en": "Grilled cheese with cane syrup.",
             "prices": [
               {
                 "label": "Ración",
@@ -34828,7 +34828,7 @@
             "name": "Queso Brie frito con Confitura de Tomate",
             "description": "Queso Brie frito con Confitura de Tomate",
             "es": "Queso Brie frito con Confitura de Tomate",
-            "en": "Queso Brie frito con Confitura de Tomate",
+            "en": "Fried Brie with tomato preserve.",
             "prices": [
               {
                 "label": "Ración",
@@ -34848,7 +34848,7 @@
             "name": "Queso Provolone gratinado",
             "description": "Queso Provolone gratinado",
             "es": "Queso Provolone gratinado",
-            "en": "Queso Provolone gratinado",
+            "en": "Gratinated provolone.",
             "prices": [
               {
                 "label": "Ración",
@@ -34860,7 +34860,7 @@
             "name": "Tabla de Quesos",
             "description": "Tabla de Quesos",
             "es": "Tabla de Quesos",
-            "en": "Tabla de Quesos",
+            "en": "Selection of cheeses.",
             "prices": [
               {
                 "label": "Ración",
@@ -34876,7 +34876,7 @@
             "name": "Chicharrones de Cádiz",
             "description": "Chicharrones de Cádiz",
             "es": "Chicharrones de Cádiz",
-            "en": "Chicharrones de Cádiz",
+            "en": "Traditional Cádiz-style pork chicharrones.",
             "prices": [
               {
                 "label": "Ración",
@@ -34894,7 +34894,7 @@
             "name": "Anchoas con Queso Azul del Valle de los Pedroches",
             "description": "Anchoas con Queso Azul del Valle de los Pedroches",
             "es": "Anchoas con Queso Azul del Valle de los Pedroches",
-            "en": "Anchoas con Queso Azul del Valle de los Pedroches",
+            "en": "Anchovies with blue cheese from Los Pedroches.",
             "prices": [
               {
                 "label": "Unidad",
@@ -34906,7 +34906,7 @@
             "name": "Anchoas con Tomate",
             "description": "Anchoas con Tomate",
             "es": "Anchoas con Tomate",
-            "en": "Anchoas con Tomate",
+            "en": "Anchovies with tomato.",
             "prices": [
               {
                 "label": "Unidad",
@@ -34918,7 +34918,7 @@
             "name": "Anchoas, Queso de Zuheros y confitura de Tomate",
             "description": "Anchoas, Queso de Zuheros y confitura de Tomate",
             "es": "Anchoas, Queso de Zuheros y confitura de Tomate",
-            "en": "Anchoas, Queso de Zuheros y confitura de Tomate",
+            "en": "Anchovies with Zuheros cheese and tomato preserve.",
             "prices": [
               {
                 "label": "Unidad",
@@ -34930,7 +34930,7 @@
             "name": "Lomo de Ciervo con Queso Asado y Cebolla Caramelizada",
             "description": "Lomo de Ciervo con Queso Asado y Cebolla Caramelizada",
             "es": "Lomo de Ciervo con Queso Asado y Cebolla Caramelizada",
-            "en": "Lomo de Ciervo con Queso Asado y Cebolla Caramelizada",
+            "en": "Venison loin with grilled cheese and caramelised onion.",
             "prices": [
               {
                 "label": "Unidad",
@@ -34942,7 +34942,7 @@
             "name": "Salmón Ahumado",
             "description": "Salmón Ahumado",
             "es": "Salmón Ahumado",
-            "en": "Salmón Ahumado",
+            "en": "Smoked salmon.",
             "prices": [
               {
                 "label": "Unidad",
@@ -34954,7 +34954,7 @@
             "name": "Salmón Ahumado con Queso Azul del Valle de los Pedroches",
             "description": "Salmón Ahumado con Queso Azul del Valle de los Pedroches",
             "es": "Salmón Ahumado con Queso Azul del Valle de los Pedroches",
-            "en": "Salmón Ahumado con Queso Azul del Valle de los Pedroches",
+            "en": "Smoked salmon with blue cheese from Los Pedroches.",
             "prices": [
               {
                 "label": "Unidad",
@@ -34966,7 +34966,7 @@
             "name": "Sardina Ahumada con Salmorejo",
             "description": "Sardina Ahumada con Salmorejo",
             "es": "Sardina Ahumada con Salmorejo",
-            "en": "Sardina Ahumada con Salmorejo",
+            "en": "Smoked sardine with salmorejo.",
             "prices": [
               {
                 "label": "Unidad",
@@ -34978,7 +34978,7 @@
             "name": "Tartar de Atún",
             "description": "Tartar de Atún",
             "es": "Tartar de Atún",
-            "en": "Tartar de Atún",
+            "en": "Tuna tartare.",
             "prices": [
               {
                 "label": "Unidad",
@@ -34996,7 +34996,7 @@
             "name": "Risotto de Boletus y Setas",
             "description": "Risotto de Boletus y Setas",
             "es": "Risotto de Boletus y Setas",
-            "en": "Risotto de Boletus y Setas",
+            "en": "Risotto with boletus and other mushrooms.",
             "prices": [
               {
                 "label": "Ración",
@@ -35008,7 +35008,7 @@
             "name": "Risotto de Rabo de Toro",
             "description": "Risotto de Rabo de Toro",
             "es": "Risotto de Rabo de Toro",
-            "en": "Risotto de Rabo de Toro",
+            "en": "Oxtail risotto.",
             "prices": [
               {
                 "label": "Ración",
@@ -35020,7 +35020,7 @@
             "name": "Risotto de Bacalao con Sardina Ahumada",
             "description": "Risotto de Bacalao con Sardina Ahumada",
             "es": "Risotto de Bacalao con Sardina Ahumada",
-            "en": "Risotto de Bacalao con Sardina Ahumada",
+            "en": "Salt cod risotto with smoked sardine.",
             "prices": [
               {
                 "label": "Ración",
@@ -35032,7 +35032,7 @@
             "name": "Espaguetis a la Carbonara",
             "description": "Espaguetis a la Carbonara",
             "es": "Espaguetis a la Carbonara",
-            "en": "Espaguetis a la Carbonara",
+            "en": "Spaghetti carbonara.",
             "prices": [
               {
                 "label": "Ración",
@@ -35044,7 +35044,7 @@
             "name": "Espaguetis a la Boloñesa",
             "description": "Espaguetis a la Boloñesa",
             "es": "Espaguetis a la Boloñesa",
-            "en": "Espaguetis a la Boloñesa",
+            "en": "Spaghetti bolognese.",
             "prices": [
               {
                 "label": "Ración",
@@ -35062,7 +35062,7 @@
             "name": "Huevos a la flamenca con Jamón y Chorizo",
             "description": "Huevos a la flamenca con Jamón y Chorizo",
             "es": "Huevos a la flamenca con Jamón y Chorizo",
-            "en": "Huevos a la flamenca con Jamón y Chorizo",
+            "en": "Eggs flamenca-style with ham and chorizo.",
             "prices": [
               {
                 "label": "Ración",
@@ -35074,7 +35074,7 @@
             "name": "Huevos camperos con Patatas y Gulas",
             "description": "Huevos camperos con Patatas y Gulas",
             "es": "Huevos camperos con Patatas y Gulas",
-            "en": "Huevos camperos con Patatas y Gulas",
+            "en": "Country-style eggs with potatoes and gulas.",
             "prices": [
               {
                 "label": "Ración",
@@ -35102,7 +35102,7 @@
             "name": "Revuelto de Bacalao",
             "description": "Revuelto de Bacalao",
             "es": "Revuelto de Bacalao",
-            "en": "Revuelto de Bacalao",
+            "en": "Scrambled eggs with salt cod.",
             "prices": [
               {
                 "label": "Ración",
@@ -35118,7 +35118,7 @@
             "name": "Revuelto de Espárragos con Jamón",
             "description": "Revuelto de Espárragos con Jamón",
             "es": "Revuelto de Espárragos con Jamón",
-            "en": "Revuelto de Espárragos con Jamón",
+            "en": "Scrambled eggs with asparagus and ham.",
             "prices": [
               {
                 "label": "Ración",
@@ -35134,7 +35134,7 @@
             "name": "Revuelto de Habitas baby con Jamón",
             "description": "Revuelto de Habitas baby con Jamón",
             "es": "Revuelto de Habitas baby con Jamón",
-            "en": "Revuelto de Habitas baby con Jamón",
+            "en": "Scrambled eggs with baby broad beans and ham.",
             "prices": [
               {
                 "label": "Ración",
@@ -35166,7 +35166,7 @@
             "name": "Alcachofas a la Montillana",
             "description": "Alcachofas a la Montillana",
             "es": "Alcachofas a la Montillana",
-            "en": "Alcachofas a la Montillana",
+            "en": "Montilla-style artichokes.",
             "prices": [
               {
                 "label": "Ración",
@@ -35198,7 +35198,7 @@
             "name": "Berenjenas con Salmorejo y Jamón",
             "description": "Berenjenas con Salmorejo y Jamón",
             "es": "Berenjenas con Salmorejo y Jamón",
-            "en": "Berenjenas con Salmorejo y Jamón",
+            "en": "Aubergines with salmorejo and ham.",
             "prices": [
               {
                 "label": "Ración",
@@ -35214,7 +35214,7 @@
             "name": "Berenjenas Fritas",
             "description": "Berenjenas Fritas",
             "es": "Berenjenas Fritas",
-            "en": "Berenjenas Fritas",
+            "en": "Fried aubergines.",
             "prices": [
               {
                 "label": "Ración",
@@ -35230,7 +35230,7 @@
             "name": "Boletus plancha con Jamón",
             "description": "Boletus plancha con Jamón",
             "es": "Boletus plancha con Jamón",
-            "en": "Boletus plancha con Jamón",
+            "en": "Griddled boletus mushrooms with ham.",
             "prices": [
               {
                 "label": "Ración",
@@ -35246,7 +35246,7 @@
             "name": "Cardos con Almejas y Gambas",
             "description": "Cardos con Almejas y Gambas",
             "es": "Cardos con Almejas y Gambas",
-            "en": "Cardos con Almejas y Gambas",
+            "en": "Cardoons with clams and prawns.",
             "prices": [
               {
                 "label": "Ración",
@@ -35262,7 +35262,7 @@
             "name": "Champiñones con Jamón y Salsa Verde",
             "description": "Champiñones con Jamón y Salsa Verde",
             "es": "Champiñones con Jamón y Salsa Verde",
-            "en": "Champiñones con Jamón y Salsa Verde",
+            "en": "Mushrooms with ham and green sauce.",
             "prices": [
               {
                 "label": "Ración",
@@ -35278,7 +35278,7 @@
             "name": "Parrillada de Verduras con Salsa Romesco",
             "description": "Parrillada de Verduras con Salsa Romesco",
             "es": "Parrillada de Verduras con Salsa Romesco",
-            "en": "Parrillada de Verduras con Salsa Romesco",
+            "en": "Grilled vegetables with romesco sauce.",
             "prices": [
               {
                 "label": "Ración",
@@ -35290,7 +35290,7 @@
             "name": "Parrillada de Verduras con Queso de Cabra Asado",
             "description": "Parrillada de Verduras con Queso de Cabra Asado",
             "es": "Parrillada de Verduras con Queso de Cabra Asado",
-            "en": "Parrillada de Verduras con Queso de Cabra Asado",
+            "en": "Grilled vegetables with roasted goat's cheese.",
             "prices": [
               {
                 "label": "Ración",
@@ -35302,7 +35302,7 @@
             "name": "Pimientos del Padrón",
             "description": "Pimientos del Padrón",
             "es": "Pimientos del Padrón",
-            "en": "Pimientos del Padrón",
+            "en": "Padrón peppers.",
             "prices": [
               {
                 "label": "Ración",
@@ -35318,7 +35318,7 @@
             "name": "Pisto Cordobés con Huevo",
             "description": "Pisto Cordobés con Huevo",
             "es": "Pisto Cordobés con Huevo",
-            "en": "Pisto Cordobés con Huevo",
+            "en": "Cordoban vegetable pisto with egg.",
             "prices": [
               {
                 "label": "Ración",
@@ -35338,7 +35338,7 @@
             "name": "Setas a la plancha con Salsa Verde",
             "description": "Setas a la plancha con Salsa Verde",
             "es": "Setas a la plancha con Salsa Verde",
-            "en": "Setas a la plancha con Salsa Verde",
+            "en": "Griddled mushrooms with green sauce.",
             "prices": [
               {
                 "label": "Ración",
@@ -35360,7 +35360,7 @@
             "name": "Araña",
             "description": "Araña",
             "es": "Araña",
-            "en": "Araña",
+            "en": "Fish listed as araña on the original menu.",
             "prices": [
               {
                 "label": "Ración",
@@ -35380,7 +35380,7 @@
             "name": "Bacalao Frito",
             "description": "Bacalao Frito",
             "es": "Bacalao Frito",
-            "en": "Bacalao Frito",
+            "en": "Fried salt cod.",
             "prices": [
               {
                 "label": "Ración",
@@ -35400,7 +35400,7 @@
             "name": "Soldaditos de Pavía",
             "description": "Soldaditos de Pavía",
             "es": "Soldaditos de Pavía",
-            "en": "Soldaditos de Pavía",
+            "en": "Traditional battered salt cod.",
             "prices": [
               {
                 "label": "Ración",
@@ -35420,7 +35420,7 @@
             "name": "Boquerones Fritos",
             "description": "Boquerones Fritos",
             "es": "Boquerones Fritos",
-            "en": "Boquerones Fritos",
+            "en": "Fried anchovies.",
             "prices": [
               {
                 "label": "Ración",
@@ -35440,7 +35440,7 @@
             "name": "Calamaritos Fritos",
             "description": "Calamaritos Fritos",
             "es": "Calamaritos Fritos",
-            "en": "Calamaritos Fritos",
+            "en": "Fried small squid.",
             "prices": [
               {
                 "label": "Ración",
@@ -35460,7 +35460,7 @@
             "name": "Chanquetes Cristal con Huevos Fritos y Fritada de Ajitos",
             "description": "Chanquetes Cristal con Huevos Fritos y Fritada de Ajitos",
             "es": "Chanquetes Cristal con Huevos Fritos y Fritada de Ajitos",
-            "en": "Chanquetes Cristal con Huevos Fritos y Fritada de Ajitos",
+            "en": "Crystal fish with fried eggs and garlic.",
             "prices": [
               {
                 "label": "Ración",
@@ -35472,7 +35472,7 @@
             "name": "Chipirones Fritos",
             "description": "Chipirones Fritos",
             "es": "Chipirones Fritos",
-            "en": "Chipirones Fritos",
+            "en": "Fried baby squid.",
             "prices": [
               {
                 "label": "Ración",
@@ -35492,7 +35492,7 @@
             "name": "Choco Frito",
             "description": "Choco Frito",
             "es": "Choco Frito",
-            "en": "Choco Frito",
+            "en": "Fried cuttlefish.",
             "prices": [
               {
                 "label": "Ración",
@@ -35504,7 +35504,7 @@
             "name": "Japuta en Adobo",
             "description": "Japuta en Adobo",
             "es": "Japuta en Adobo",
-            "en": "Japuta en Adobo",
+            "en": "Marinated japuta fish.",
             "prices": [
               {
                 "label": "Ración",
@@ -35524,7 +35524,7 @@
             "name": "Ortiguillas de Chipiona Fritas",
             "description": "Ortiguillas de Chipiona Fritas",
             "es": "Ortiguillas de Chipiona Fritas",
-            "en": "Ortiguillas de Chipiona Fritas",
+            "en": "Fried sea anemones from Chipiona.",
             "prices": [
               {
                 "label": "Ración",
@@ -35544,7 +35544,7 @@
             "name": "Rosada al Limón",
             "description": "Rosada al Limón",
             "es": "Rosada al Limón",
-            "en": "Rosada al Limón",
+            "en": "Rosada fish with lemon.",
             "prices": [
               {
                 "label": "Ración",
@@ -35564,7 +35564,7 @@
             "name": "Fritura Variada de Pescaito (2 personas)",
             "description": "Fritura Variada de Pescaito (2 personas)",
             "es": "Fritura Variada de Pescaito (2 personas)",
-            "en": "Fritura Variada de Pescaito (2 personas)",
+            "en": "Assorted fried fish for two people.",
             "prices": [
               {
                 "label": "Ración",
@@ -35580,7 +35580,7 @@
             "name": "Calamar a la brasa",
             "description": "Calamar a la brasa",
             "es": "Calamar a la brasa",
-            "en": "Calamar a la brasa",
+            "en": "Chargrilled squid.",
             "prices": [
               {
                 "label": "Ración",
@@ -35592,7 +35592,7 @@
             "name": "Mero a la plancha",
             "description": "Mero a la plancha",
             "es": "Mero a la plancha",
-            "en": "Mero a la plancha",
+            "en": "Griddled grouper.",
             "prices": [
               {
                 "label": "Ración",
@@ -35608,7 +35608,7 @@
             "name": "Navajas a la plancha",
             "description": "Navajas a la plancha",
             "es": "Navajas a la plancha",
-            "en": "Navajas a la plancha",
+            "en": "Griddled razor clams.",
             "prices": [
               {
                 "label": "Ración",
@@ -35624,7 +35624,7 @@
             "name": "Filete de Atún vuelta y vuelta con sal de escamas",
             "description": "Filete de Atún vuelta y vuelta con sal de escamas",
             "es": "Filete de Atún vuelta y vuelta con sal de escamas",
-            "en": "Filete de Atún vuelta y vuelta con sal de escamas",
+            "en": "Quick-seared tuna fillet with flaky salt.",
             "prices": [
               {
                 "label": "Ración",
@@ -35636,7 +35636,7 @@
             "name": "Pez espada a la Cordobesa",
             "description": "Pez espada a la Cordobesa",
             "es": "Pez espada a la Cordobesa",
-            "en": "Pez espada a la Cordobesa",
+            "en": "Córdoba-style swordfish.",
             "prices": [
               {
                 "label": "Ración",
@@ -35648,7 +35648,7 @@
             "name": "Gamba blanca de Huelva a la plancha",
             "description": "Gamba blanca de Huelva a la plancha",
             "es": "Gamba blanca de Huelva a la plancha",
-            "en": "Gamba blanca de Huelva a la plancha",
+            "en": "Griddled white prawns from Huelva.",
             "prices": [
               {
                 "label": "Ración",
@@ -35664,7 +35664,7 @@
             "name": "Gamba blanca de Huelva cocida",
             "description": "Gamba blanca de Huelva cocida",
             "es": "Gamba blanca de Huelva cocida",
-            "en": "Gamba blanca de Huelva cocida",
+            "en": "Boiled white prawns from Huelva.",
             "prices": [
               {
                 "label": "Ración",
@@ -35680,7 +35680,7 @@
             "name": "Almejas a la marinera",
             "description": "Almejas a la marinera",
             "es": "Almejas a la marinera",
-            "en": "Almejas a la marinera",
+            "en": "Clams in marinera-style sauce.",
             "prices": [
               {
                 "label": "Ración",
@@ -35696,7 +35696,7 @@
             "name": "Coquinas de la Isla Cristina",
             "description": "Coquinas de la Isla Cristina",
             "es": "Coquinas de la Isla Cristina",
-            "en": "Coquinas de la Isla Cristina",
+            "en": "Coquina clams from Isla Cristina.",
             "prices": [
               {
                 "label": "Ración",
@@ -35712,7 +35712,7 @@
             "name": "Taco de Bacalao con Pisto",
             "description": "Taco de Bacalao con Pisto",
             "es": "Taco de Bacalao con Pisto",
-            "en": "Taco de Bacalao con Pisto",
+            "en": "Salt cod portion with vegetable pisto.",
             "prices": [
               {
                 "label": "Ración",
@@ -35724,7 +35724,7 @@
             "name": "Taco de Bacalao en salsa de Gambas",
             "description": "Taco de Bacalao en salsa de Gambas",
             "es": "Taco de Bacalao en salsa de Gambas",
-            "en": "Taco de Bacalao en salsa de Gambas",
+            "en": "Salt cod portion in prawn sauce.",
             "prices": [
               {
                 "label": "Ración",
@@ -35736,7 +35736,7 @@
             "name": "Pata de Pulpo a la brasa",
             "description": "Pata de Pulpo a la brasa",
             "es": "Pata de Pulpo a la brasa",
-            "en": "Pata de Pulpo a la brasa",
+            "en": "Chargrilled octopus tentacle.",
             "prices": [
               {
                 "label": "Ración",
@@ -35748,7 +35748,7 @@
             "name": "Pulpo Feira a la Gallega",
             "description": "Pulpo Feira a la Gallega",
             "es": "Pulpo Feira a la Gallega",
-            "en": "Pulpo Feira a la Gallega",
+            "en": "Galician-style octopus.",
             "prices": [
               {
                 "label": "Ración",
@@ -35764,7 +35764,7 @@
             "name": "Salmón plancha a la naranja con patatitas y zanahoria baby",
             "description": "Salmón plancha a la naranja con patatitas y zanahoria baby",
             "es": "Salmón plancha a la naranja con patatitas y zanahoria baby",
-            "en": "Salmón plancha a la naranja con patatitas y zanahoria baby",
+            "en": "Griddled salmon with orange, baby potatoes and baby carrots.",
             "prices": [
               {
                 "label": "Ración",
@@ -35782,7 +35782,7 @@
             "name": "Chorizo al vino",
             "description": "Chorizo al vino",
             "es": "Chorizo al vino",
-            "en": "Chorizo al vino",
+            "en": "Chorizo cooked with wine.",
             "prices": [
               {
                 "label": "Ración",
@@ -35802,7 +35802,7 @@
             "name": "Chorizo criollo a la brasa",
             "description": "Chorizo criollo a la brasa",
             "es": "Chorizo criollo a la brasa",
-            "en": "Chorizo criollo a la brasa",
+            "en": "Chargrilled criollo sausage.",
             "prices": [
               {
                 "label": "Ración",
@@ -35822,7 +35822,7 @@
             "name": "Chorizo frito",
             "description": "Chorizo frito",
             "es": "Chorizo frito",
-            "en": "Chorizo frito",
+            "en": "Fried chorizo.",
             "prices": [
               {
                 "label": "Ración",
@@ -35842,7 +35842,7 @@
             "name": "Cochifrito cordobés confitado",
             "description": "Cochifrito cordobés confitado",
             "es": "Cochifrito cordobés confitado",
-            "en": "Cochifrito cordobés confitado",
+            "en": "Traditional Cordoban cochifrito.",
             "prices": [
               {
                 "label": "Ración",
@@ -35862,7 +35862,7 @@
             "name": "Flamenquín de Jamón Serrano",
             "description": "Flamenquín de Jamón Serrano",
             "es": "Flamenquín de Jamón Serrano",
-            "en": "Flamenquín de Jamón Serrano",
+            "en": "Flamenquín with Serrano ham.",
             "prices": [
               {
                 "label": "Ración",
@@ -35874,7 +35874,7 @@
             "name": "Flamenquín de Jamón Ibérico y Queso puro de Oveja",
             "description": "Flamenquín de Jamón Ibérico y Queso puro de Oveja",
             "es": "Flamenquín de Jamón Ibérico y Queso puro de Oveja",
-            "en": "Flamenquín de Jamón Ibérico y Queso puro de Oveja",
+            "en": "Flamenquín with Iberian ham and sheep's milk cheese.",
             "prices": [
               {
                 "label": "Ración",
@@ -35898,7 +35898,7 @@
             "name": "Mollejas de Cordero lechal a la brasa",
             "description": "Mollejas de Cordero lechal a la brasa",
             "es": "Mollejas de Cordero lechal a la brasa",
-            "en": "Mollejas de Cordero lechal a la brasa",
+            "en": "Chargrilled milk-fed lamb sweetbreads.",
             "prices": [
               {
                 "label": "Ración",
@@ -35914,7 +35914,7 @@
             "name": "Riñones de Cordero lechal a la brasa",
             "description": "Riñones de Cordero lechal a la brasa",
             "es": "Riñones de Cordero lechal a la brasa",
-            "en": "Riñones de Cordero lechal a la brasa",
+            "en": "Chargrilled milk-fed lamb kidneys.",
             "prices": [
               {
                 "label": "Ración",
@@ -35930,7 +35930,7 @@
             "name": "Codillo asado",
             "description": "Codillo asado",
             "es": "Codillo asado",
-            "en": "Codillo asado",
+            "en": "Roasted pork knuckle.",
             "prices": [
               {
                 "label": "Ración",
@@ -35942,7 +35942,7 @@
             "name": "Chuletitas de cordero lechal",
             "description": "Chuletitas de cordero lechal",
             "es": "Chuletitas de cordero lechal",
-            "en": "Chuletitas de cordero lechal",
+            "en": "Milk-fed lamb chops.",
             "prices": [
               {
                 "label": "Ración",
@@ -35958,7 +35958,7 @@
             "name": "Entrecot de vaca vieja",
             "description": "Entrecot de vaca vieja",
             "es": "Entrecot de vaca vieja",
-            "en": "Entrecot de vaca vieja",
+            "en": "Mature beef entrecôte.",
             "prices": [
               {
                 "label": "Ración",
@@ -35982,7 +35982,7 @@
             "name": "Solomillo de vaca Simmental",
             "description": "Solomillo de vaca Simmental",
             "es": "Solomillo de vaca Simmental",
-            "en": "Solomillo de vaca Simmental",
+            "en": "Simmental beef tenderloin.",
             "prices": [
               {
                 "label": "Ración",
@@ -35994,7 +35994,7 @@
             "name": "Churrasco de Pollo a la Brasa con ajitos y patatas panaderas",
             "description": "Churrasco de Pollo a la Brasa con ajitos y patatas panaderas",
             "es": "Churrasco de Pollo a la Brasa con ajitos y patatas panaderas",
-            "en": "Churrasco de Pollo a la Brasa con ajitos y patatas panaderas",
+            "en": "Chargrilled chicken with garlic and sliced potatoes.",
             "prices": [
               {
                 "label": "Ración",
@@ -36006,7 +36006,7 @@
             "name": "Lomo Ibérico de orza",
             "description": "Lomo Ibérico de orza",
             "es": "Lomo Ibérico de orza",
-            "en": "Lomo Ibérico de orza",
+            "en": "Traditional orza-style Iberian pork loin.",
             "prices": [
               {
                 "label": "Ración",
@@ -36022,7 +36022,7 @@
             "name": "Abanico Ibérico",
             "description": "Abanico Ibérico",
             "es": "Abanico Ibérico",
-            "en": "Abanico Ibérico",
+            "en": "Iberian pork abanico cut.",
             "prices": [
               {
                 "label": "Ración",
@@ -36034,7 +36034,7 @@
             "name": "Churrasco Ibérico a las dos salsas",
             "description": "Churrasco Ibérico a las dos salsas",
             "es": "Churrasco Ibérico a las dos salsas",
-            "en": "Churrasco Ibérico a las dos salsas",
+            "en": "Iberian pork churrasco with two sauces.",
             "prices": [
               {
                 "label": "Ración",
@@ -36046,7 +36046,7 @@
             "name": "Lagarto Ibérico",
             "description": "Lagarto Ibérico",
             "es": "Lagarto Ibérico",
-            "en": "Lagarto Ibérico",
+            "en": "Iberian pork lagarto cut.",
             "prices": [
               {
                 "label": "Ración",
@@ -36058,7 +36058,7 @@
             "name": "Pluma Ibérica",
             "description": "Pluma Ibérica",
             "es": "Pluma Ibérica",
-            "en": "Pluma Ibérica",
+            "en": "Iberian pork pluma cut.",
             "prices": [
               {
                 "label": "Ración",
@@ -36070,7 +36070,7 @@
             "name": "Presa Ibérica",
             "description": "Presa Ibérica",
             "es": "Presa Ibérica",
-            "en": "Presa Ibérica",
+            "en": "Iberian pork presa cut.",
             "prices": [
               {
                 "label": "Ración",
@@ -36082,7 +36082,7 @@
             "name": "Secreto Ibérico",
             "description": "Secreto Ibérico",
             "es": "Secreto Ibérico",
-            "en": "Secreto Ibérico",
+            "en": "Iberian pork secreto cut.",
             "prices": [
               {
                 "label": "Ración",
@@ -36106,7 +36106,7 @@
             "name": "Tomahawk Ibérico (270 g aprox.)",
             "description": "Tomahawk Ibérico (270 g aprox.)",
             "es": "Tomahawk Ibérico (270 g aprox.)",
-            "en": "Tomahawk Ibérico (270 g aprox.)",
+            "en": "Iberian pork tomahawk cut, approximately 270 g.",
             "prices": [
               {
                 "label": "Ración",
@@ -36118,7 +36118,7 @@
             "name": "Solomillo Ibérico a la Pimienta",
             "description": "Solomillo Ibérico a la Pimienta",
             "es": "Solomillo Ibérico a la Pimienta",
-            "en": "Solomillo Ibérico a la Pimienta",
+            "en": "Iberian pork tenderloin with pepper sauce.",
             "prices": [
               {
                 "label": "Ración",
@@ -36130,7 +36130,7 @@
             "name": "Solomillo Ibérico al Pedro Ximénez",
             "description": "Solomillo Ibérico al Pedro Ximénez",
             "es": "Solomillo Ibérico al Pedro Ximénez",
-            "en": "Solomillo Ibérico al Pedro Ximénez",
+            "en": "Iberian pork tenderloin with Pedro Ximénez wine sauce.",
             "prices": [
               {
                 "label": "Ración",
@@ -36142,7 +36142,7 @@
             "name": "Solomillo Ibérico con Queso Azul del Valle de los Pedroches",
             "description": "Solomillo Ibérico con Queso Azul del Valle de los Pedroches",
             "es": "Solomillo Ibérico con Queso Azul del Valle de los Pedroches",
-            "en": "Solomillo Ibérico con Queso Azul del Valle de los Pedroches",
+            "en": "Iberian pork tenderloin with blue cheese from Los Pedroches.",
             "prices": [
               {
                 "label": "Ración",
@@ -36154,7 +36154,7 @@
             "name": "Magret de Pato Mulard con salsa de naranja de Palma del Río",
             "description": "Magret de Pato Mulard con salsa de naranja de Palma del Río",
             "es": "Magret de Pato Mulard con salsa de naranja de Palma del Río",
-            "en": "Magret de Pato Mulard con salsa de naranja de Palma del Río",
+            "en": "Mulard duck breast with orange sauce from Palma del Río.",
             "prices": [
               {
                 "label": "Ración",
@@ -36184,7 +36184,7 @@
             "name": "Rabo de toro",
             "description": "Rabo de toro",
             "es": "Rabo de toro",
-            "en": "Rabo de toro",
+            "en": "Traditional oxtail.",
             "prices": [
               {
                 "label": "Ración",
@@ -36200,7 +36200,7 @@
             "name": "Carrillada Ibérica a la miel de caña",
             "description": "Carrillada Ibérica a la miel de caña",
             "es": "Carrillada Ibérica a la miel de caña",
-            "en": "Carrillada Ibérica a la miel de caña",
+            "en": "Iberian pork cheeks with cane syrup.",
             "prices": [
               {
                 "label": "Ración",
@@ -36220,7 +36220,7 @@
             "name": "Callos con Manitas y Garbanzos",
             "description": "Callos con Manitas y Garbanzos",
             "es": "Callos con Manitas y Garbanzos",
-            "en": "Callos con Manitas y Garbanzos",
+            "en": "Tripe with pig's trotters and chickpeas.",
             "prices": [
               {
                 "label": "Ración",
@@ -36240,7 +36240,7 @@
             "name": "Ternera en salsa",
             "description": "Ternera en salsa",
             "es": "Ternera en salsa",
-            "en": "Ternera en salsa",
+            "en": "Veal in sauce.",
             "prices": [
               {
                 "label": "Ración",
@@ -36260,7 +36260,7 @@
             "name": "Lomo con Tomate",
             "description": "Lomo con Tomate",
             "es": "Lomo con Tomate",
-            "en": "Lomo con Tomate",
+            "en": "Pork loin with tomato.",
             "prices": [
               {
                 "label": "Ración",
@@ -36286,7 +36286,7 @@
             "name": "Flamenquín de york con patatas fritas",
             "description": "Flamenquín de york con patatas fritas",
             "es": "Flamenquín de york con patatas fritas",
-            "en": "Flamenquín de york con patatas fritas",
+            "en": "Flamenquín with cooked ham and chips.",
             "prices": [
               {
                 "label": "Ración",
@@ -36298,7 +36298,7 @@
             "name": "San Jacobo con patatas fritas",
             "description": "San Jacobo con patatas fritas",
             "es": "San Jacobo con patatas fritas",
-            "en": "San Jacobo con patatas fritas",
+            "en": "Breaded ham-and-cheese San Jacobo with chips.",
             "prices": [
               {
                 "label": "Ración",
@@ -36310,7 +36310,7 @@
             "name": "Huevos (dos) con patatas fritas",
             "description": "Huevos (dos) con patatas fritas",
             "es": "Huevos (dos) con patatas fritas",
-            "en": "Huevos (dos) con patatas fritas",
+            "en": "Two eggs with chips.",
             "prices": [
               {
                 "label": "Ración",
@@ -36322,7 +36322,7 @@
             "name": "Mini hamburguesas (dos) de pollo con patatas fritas",
             "description": "Mini hamburguesas (dos) de pollo con patatas fritas",
             "es": "Mini hamburguesas (dos) de pollo con patatas fritas",
-            "en": "Mini hamburguesas (dos) de pollo con patatas fritas",
+            "en": "Two mini chicken burgers with chips.",
             "prices": [
               {
                 "label": "Ración",
@@ -36334,7 +36334,7 @@
             "name": "Nuggets de pollo con patatas fritas",
             "description": "Nuggets de pollo con patatas fritas",
             "es": "Nuggets de pollo con patatas fritas",
-            "en": "Nuggets de pollo con patatas fritas",
+            "en": "Chicken nuggets with chips.",
             "prices": [
               {
                 "label": "Ración",
@@ -36346,7 +36346,7 @@
             "name": "Pechuga de pollo empanada con patatas fritas",
             "description": "Pechuga de pollo empanada con patatas fritas",
             "es": "Pechuga de pollo empanada con patatas fritas",
-            "en": "Pechuga de pollo empanada con patatas fritas",
+            "en": "Breaded chicken breast with chips.",
             "prices": [
               {
                 "label": "Ración",
@@ -36358,7 +36358,7 @@
             "name": "Pechuga de pollo plancha con patatas fritas",
             "description": "Pechuga de pollo plancha con patatas fritas",
             "es": "Pechuga de pollo plancha con patatas fritas",
-            "en": "Pechuga de pollo plancha con patatas fritas",
+            "en": "Griddled chicken breast with chips.",
             "prices": [
               {
                 "label": "Ración",
@@ -36406,7 +36406,7 @@
             "name": "Flan con helado de vainilla",
             "description": "Flan con helado de vainilla",
             "es": "Flan con helado de vainilla",
-            "en": "Flan con helado de vainilla",
+            "en": "Flan with vanilla ice cream.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36418,7 +36418,7 @@
             "name": "Gachas con pasas y nueces",
             "description": "Gachas con pasas y nueces",
             "es": "Gachas con pasas y nueces",
-            "en": "Gachas con pasas y nueces",
+            "en": "Traditional sweet gachas with raisins and walnuts.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36430,7 +36430,7 @@
             "name": "Naranja estilo Moriles",
             "description": "Naranja estilo Moriles",
             "es": "Naranja estilo Moriles",
-            "en": "Naranja estilo Moriles",
+            "en": "Moriles-style orange dessert.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36442,7 +36442,7 @@
             "name": "Natillas con su galleta María",
             "description": "Natillas con su galleta María",
             "es": "Natillas con su galleta María",
-            "en": "Natillas con su galleta María",
+            "en": "Spanish custard with María biscuit.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36454,7 +36454,7 @@
             "name": "Pastel Cordobés con helado de vainilla",
             "description": "Pastel Cordobés con helado de vainilla",
             "es": "Pastel Cordobés con helado de vainilla",
-            "en": "Pastel Cordobés con helado de vainilla",
+            "en": "Cordoban pastry with vanilla ice cream.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36466,7 +36466,7 @@
             "name": "Tarta de queso del Moriles con membrillo",
             "description": "Tarta de queso del Moriles con membrillo",
             "es": "Tarta de queso del Moriles con membrillo",
-            "en": "Tarta de queso del Moriles con membrillo",
+            "en": "Moriles cheesecake with quince paste.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36478,7 +36478,7 @@
             "name": "Tocino de cielo con helado de turrón",
             "description": "Tocino de cielo con helado de turrón",
             "es": "Tocino de cielo con helado de turrón",
-            "en": "Tocino de cielo con helado de turrón",
+            "en": "Traditional egg-yolk dessert with nougat ice cream.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36490,7 +36490,7 @@
             "name": "Torrija de crema con helado de vainilla",
             "description": "Torrija de crema con helado de vainilla",
             "es": "Torrija de crema con helado de vainilla",
-            "en": "Torrija de crema con helado de vainilla",
+            "en": "Cream-filled torrija with vanilla ice cream.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36514,7 +36514,7 @@
             "name": "Pastel de Caramelo a la Flor de Sal",
             "description": "Pastel de Caramelo a la Flor de Sal",
             "es": "Pastel de Caramelo a la Flor de Sal",
-            "en": "Pastel de Caramelo a la Flor de Sal",
+            "en": "Salted caramel cake.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36526,7 +36526,7 @@
             "name": "Coulant de chocolate con helado de vainilla",
             "description": "Coulant de chocolate con helado de vainilla",
             "es": "Coulant de chocolate con helado de vainilla",
-            "en": "Coulant de chocolate con helado de vainilla",
+            "en": "Chocolate fondant with vanilla ice cream.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36538,7 +36538,7 @@
             "name": "Tres chocolates",
             "description": "Tres chocolates",
             "es": "Tres chocolates",
-            "en": "Tres chocolates",
+            "en": "Three-chocolate dessert.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36550,7 +36550,7 @@
             "name": "Iglú de Ferrero",
             "description": "Iglú de Ferrero",
             "es": "Iglú de Ferrero",
-            "en": "Iglú de Ferrero",
+            "en": "Ferrero-style ice-cream dessert.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36562,7 +36562,7 @@
             "name": "Tarta de chocolate (sin gluten y sin lactosa)",
             "description": "Tarta de chocolate (sin gluten y sin lactosa)",
             "es": "Tarta de chocolate (sin gluten y sin lactosa)",
-            "en": "Tarta de chocolate (sin gluten y sin lactosa)",
+            "en": "Chocolate cake listed as gluten-free and lactose-free.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36574,7 +36574,7 @@
             "name": "Tarta Selva Negra",
             "description": "Tarta Selva Negra",
             "es": "Tarta Selva Negra",
-            "en": "Tarta Selva Negra",
+            "en": "Black Forest cake.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36586,7 +36586,7 @@
             "name": "Tarta de Tiramisú",
             "description": "Tarta de Tiramisú",
             "es": "Tarta de Tiramisú",
-            "en": "Tarta de Tiramisú",
+            "en": "Tiramisu cake.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36598,7 +36598,7 @@
             "name": "Tarta de Mousse de Chocolate",
             "description": "Tarta de Mousse de Chocolate",
             "es": "Tarta de Mousse de Chocolate",
-            "en": "Tarta de Mousse de Chocolate",
+            "en": "Chocolate mousse cake.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36610,7 +36610,7 @@
             "name": "Tarta Cremosa de Pistacho",
             "description": "Tarta Cremosa de Pistacho",
             "es": "Tarta Cremosa de Pistacho",
-            "en": "Tarta Cremosa de Pistacho",
+            "en": "Creamy pistachio cake.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36622,7 +36622,7 @@
             "name": "Tulipa de muerte por chocolate",
             "description": "Tulipa de muerte por chocolate",
             "es": "Tulipa de muerte por chocolate",
-            "en": "Tulipa de muerte por chocolate",
+            "en": "Chocolate dessert in a tulip-shaped cup.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36634,7 +36634,7 @@
             "name": "Tulipa helada de turrón",
             "description": "Tulipa helada de turrón",
             "es": "Tulipa helada de turrón",
-            "en": "Tulipa helada de turrón",
+            "en": "Nougat ice cream in a tulip-shaped cup.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36646,7 +36646,7 @@
             "name": "Tulipa helada de vainilla de Tahití con nueces de macadamia",
             "description": "Tulipa helada de vainilla de Tahití con nueces de macadamia",
             "es": "Tulipa helada de vainilla de Tahití con nueces de macadamia",
-            "en": "Tulipa helada de vainilla de Tahití con nueces de macadamia",
+            "en": "Tahitian vanilla ice cream with macadamia nuts.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36658,7 +36658,7 @@
             "name": "Copa Helada de Nata y Nueces (sin azúcar)",
             "description": "Copa Helada de Nata y Nueces (sin azúcar)",
             "es": "Copa Helada de Nata y Nueces (sin azúcar)",
-            "en": "Copa Helada de Nata y Nueces (sin azúcar)",
+            "en": "Cream-and-walnut ice cream cup listed as sugar-free.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36670,7 +36670,7 @@
             "name": "Tarta de Zanahoria",
             "description": "Tarta de Zanahoria",
             "es": "Tarta de Zanahoria",
-            "en": "Tarta de Zanahoria",
+            "en": "Carrot cake.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36706,7 +36706,7 @@
             "name": "Trufita de Chocolate",
             "description": "Trufita de Chocolate",
             "es": "Trufita de Chocolate",
-            "en": "Trufita de Chocolate",
+            "en": "Small chocolate truffle.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36724,7 +36724,7 @@
             "name": "Café Solo",
             "description": "Café Solo",
             "es": "Café Solo",
-            "en": "Café Solo",
+            "en": "Black espresso coffee.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36736,7 +36736,7 @@
             "name": "Café Expreso",
             "description": "Café Expreso",
             "es": "Café Expreso",
-            "en": "Café Expreso",
+            "en": "Espresso coffee.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36748,7 +36748,7 @@
             "name": "Café Cortado",
             "description": "Café Cortado",
             "es": "Café Cortado",
-            "en": "Café Cortado",
+            "en": "Espresso with a little milk.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36760,7 +36760,7 @@
             "name": "Café con Leche",
             "description": "Café con Leche",
             "es": "Café con Leche",
-            "en": "Café con Leche",
+            "en": "Coffee with milk.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36772,7 +36772,7 @@
             "name": "Leche Manchada",
             "description": "Leche Manchada",
             "es": "Leche Manchada",
-            "en": "Leche Manchada",
+            "en": "Milk with a dash of coffee.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36784,7 +36784,7 @@
             "name": "Café Americano",
             "description": "Café Americano",
             "es": "Café Americano",
-            "en": "Café Americano",
+            "en": "Americano coffee.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36796,7 +36796,7 @@
             "name": "Café Bombón",
             "description": "Café Bombón",
             "es": "Café Bombón",
-            "en": "Café Bombón",
+            "en": "Coffee with condensed milk.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36808,7 +36808,7 @@
             "name": "Café Capuchino",
             "description": "Café Capuchino",
             "es": "Café Capuchino",
-            "en": "Café Capuchino",
+            "en": "Cappuccino.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36820,7 +36820,7 @@
             "name": "Café Vienés",
             "description": "Café Vienés",
             "es": "Café Vienés",
-            "en": "Café Vienés",
+            "en": "Viennese-style coffee.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36832,7 +36832,7 @@
             "name": "Café Mocaccino",
             "description": "Café Mocaccino",
             "es": "Café Mocaccino",
-            "en": "Café Mocaccino",
+            "en": "Mocha coffee.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36844,7 +36844,7 @@
             "name": "Café con Helado de Vainilla",
             "description": "Café con Helado de Vainilla",
             "es": "Café con Helado de Vainilla",
-            "en": "Café con Helado de Vainilla",
+            "en": "Coffee with vanilla ice cream.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36856,7 +36856,7 @@
             "name": "Café con Helado de Turrón",
             "description": "Café con Helado de Turrón",
             "es": "Café con Helado de Turrón",
-            "en": "Café con Helado de Turrón",
+            "en": "Coffee with nougat ice cream.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36868,7 +36868,7 @@
             "name": "Carajillo Flameado de Brandy",
             "description": "Carajillo Flameado de Brandy",
             "es": "Carajillo Flameado de Brandy",
-            "en": "Carajillo Flameado de Brandy",
+            "en": "Flambéed coffee with brandy.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36880,7 +36880,7 @@
             "name": "Carajillo Flameado de Ron",
             "description": "Carajillo Flameado de Ron",
             "es": "Carajillo Flameado de Ron",
-            "en": "Carajillo Flameado de Ron",
+            "en": "Flambéed coffee with rum.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36892,7 +36892,7 @@
             "name": "Carajillo Flameado de Anís",
             "description": "Carajillo Flameado de Anís",
             "es": "Carajillo Flameado de Anís",
-            "en": "Carajillo Flameado de Anís",
+            "en": "Flambéed coffee with anise liqueur.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36904,7 +36904,7 @@
             "name": "Carajillo Flameado de Whisky",
             "description": "Carajillo Flameado de Whisky",
             "es": "Carajillo Flameado de Whisky",
-            "en": "Carajillo Flameado de Whisky",
+            "en": "Flambéed coffee with whisky.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36916,7 +36916,7 @@
             "name": "Expreso 43",
             "description": "Expreso 43",
             "es": "Expreso 43",
-            "en": "Expreso 43",
+            "en": "Espresso with Licor 43.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36928,7 +36928,7 @@
             "name": "Café con Baileys",
             "description": "Café con Baileys",
             "es": "Café con Baileys",
-            "en": "Café con Baileys",
+            "en": "Coffee with Baileys.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36940,7 +36940,7 @@
             "name": "Café Irlandés",
             "description": "Café Irlandés",
             "es": "Café Irlandés",
-            "en": "Café Irlandés",
+            "en": "Irish coffee.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36952,7 +36952,7 @@
             "name": "Café Cubano",
             "description": "Café Cubano",
             "es": "Café Cubano",
-            "en": "Café Cubano",
+            "en": "Cuban-style coffee.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36964,7 +36964,7 @@
             "name": "Amaretto Café",
             "description": "Amaretto Café",
             "es": "Amaretto Café",
-            "en": "Amaretto Café",
+            "en": "Coffee with amaretto.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36976,7 +36976,7 @@
             "name": "Calypso Café",
             "description": "Calypso Café",
             "es": "Calypso Café",
-            "en": "Calypso Café",
+            "en": "Calypso-style coffee.",
             "prices": [
               {
                 "label": "Unidad",
@@ -36988,7 +36988,7 @@
             "name": "Café Barraquito",
             "description": "Café Barraquito",
             "es": "Café Barraquito",
-            "en": "Café Barraquito",
+            "en": "Barraquito-style coffee.",
             "prices": [
               {
                 "label": "Unidad",
@@ -37006,7 +37006,7 @@
             "name": "Menta",
             "description": "Menta",
             "es": "Menta",
-            "en": "Menta",
+            "en": "Mint infusion.",
             "prices": [
               {
                 "label": "Unidad",
@@ -37018,7 +37018,7 @@
             "name": "Manzanilla",
             "description": "Manzanilla",
             "es": "Manzanilla",
-            "en": "Manzanilla",
+            "en": "Chamomile infusion.",
             "prices": [
               {
                 "label": "Unidad",
@@ -37030,7 +37030,7 @@
             "name": "Tila",
             "description": "Tila",
             "es": "Tila",
-            "en": "Tila",
+            "en": "Linden flower infusion.",
             "prices": [
               {
                 "label": "Unidad",
@@ -37042,7 +37042,7 @@
             "name": "Rooibos Canela y Menta",
             "description": "Rooibos Canela y Menta",
             "es": "Rooibos Canela y Menta",
-            "en": "Rooibos Canela y Menta",
+            "en": "Rooibos with cinnamon and mint.",
             "prices": [
               {
                 "label": "Unidad",
@@ -37054,7 +37054,7 @@
             "name": "Té Blanco con Fresa y Frambuesa",
             "description": "Té Blanco con Fresa y Frambuesa",
             "es": "Té Blanco con Fresa y Frambuesa",
-            "en": "Té Blanco con Fresa y Frambuesa",
+            "en": "White tea with strawberry and raspberry.",
             "prices": [
               {
                 "label": "Unidad",
@@ -37066,7 +37066,7 @@
             "name": "Té Rojo Pu-Erh",
             "description": "Té Rojo Pu-Erh",
             "es": "Té Rojo Pu-Erh",
-            "en": "Té Rojo Pu-Erh",
+            "en": "Pu-erh tea.",
             "prices": [
               {
                 "label": "Unidad",
@@ -37078,7 +37078,7 @@
             "name": "Té Verde Gunpowder",
             "description": "Té Verde Gunpowder",
             "es": "Té Verde Gunpowder",
-            "en": "Té Verde Gunpowder",
+            "en": "Gunpowder green tea.",
             "prices": [
               {
                 "label": "Unidad",
@@ -37090,7 +37090,7 @@
             "name": "Té Verde con Hierbabuena",
             "description": "Té Verde con Hierbabuena",
             "es": "Té Verde con Hierbabuena",
-            "en": "Té Verde con Hierbabuena",
+            "en": "Green tea with spearmint.",
             "prices": [
               {
                 "label": "Unidad",
@@ -37102,7 +37102,7 @@
             "name": "Té Negro English Breakfast",
             "description": "Té Negro English Breakfast",
             "es": "Té Negro English Breakfast",
-            "en": "Té Negro English Breakfast",
+            "en": "English Breakfast black tea.",
             "prices": [
               {
                 "label": "Unidad",
@@ -37120,7 +37120,7 @@
             "name": "Chocolate con leche",
             "description": "Chocolate con leche",
             "es": "Chocolate con leche",
-            "en": "Chocolate con leche",
+            "en": "Milk chocolate.",
             "prices": [
               {
                 "label": "Unidad",
@@ -37132,7 +37132,7 @@
             "name": "Chocolate Blanco",
             "description": "Chocolate Blanco",
             "es": "Chocolate Blanco",
-            "en": "Chocolate Blanco",
+            "en": "White chocolate.",
             "prices": [
               {
                 "label": "Unidad",
@@ -37144,7 +37144,7 @@
             "name": "Chocolate Negro",
             "description": "Chocolate Negro",
             "es": "Chocolate Negro",
-            "en": "Chocolate Negro",
+            "en": "Dark chocolate.",
             "prices": [
               {
                 "label": "Unidad",
@@ -37156,7 +37156,7 @@
             "name": "Chocolate Blanco con Avellanas",
             "description": "Chocolate Blanco con Avellanas",
             "es": "Chocolate Blanco con Avellanas",
-            "en": "Chocolate Blanco con Avellanas",
+            "en": "White chocolate with hazelnuts.",
             "prices": [
               {
                 "label": "Unidad",
@@ -37168,7 +37168,7 @@
             "name": "Chocolate con Leche y Praliné",
             "description": "Chocolate con Leche y Praliné",
             "es": "Chocolate con Leche y Praliné",
-            "en": "Chocolate con Leche y Praliné",
+            "en": "Milk chocolate with praline.",
             "prices": [
               {
                 "label": "Unidad",
@@ -37180,7 +37180,7 @@
             "name": "Chocolate Negro con Naranja y Canela",
             "description": "Chocolate Negro con Naranja y Canela",
             "es": "Chocolate Negro con Naranja y Canela",
-            "en": "Chocolate Negro con Naranja y Canela",
+            "en": "Dark chocolate with orange and cinnamon.",
             "prices": [
               {
                 "label": "Unidad",
