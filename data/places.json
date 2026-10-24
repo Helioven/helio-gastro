@@ -18948,15 +18948,18 @@
     "sources": [
       {
         "label": "Menús oficiales",
-        "url": "https://bodegascampos.com/nuestros-menus/"
+        "url": "https://bodegascampos.com/nuestros-menus/",
+        "labelEn": "Official set menus"
       },
       {
         "label": "Menú degustación Tradición (66 €/persona, mínimo 2, máximo 4)",
-        "url": "https://tienda.bodegascampos.com/inicio/7-menu-tradicion.html"
+        "url": "https://tienda.bodegascampos.com/inicio/7-menu-tradicion.html",
+        "labelEn": "Tradición tasting menu (€66 per person; minimum 2, maximum 4)"
       },
       {
         "label": "Carta oficial en español e inglés (PDF facilitados por el usuario)",
-        "url": "https://bodegascampos.com/"
+        "url": "https://bodegascampos.com/",
+        "labelEn": "Official menu in Spanish and English (PDFs supplied for verification)"
       }
     ],
     "groupMenus": [
@@ -18965,7 +18968,8 @@
         "eurPerPerson": 66,
         "minPeople": 2,
         "includes": "Bebidas durante el almuerzo; oferta sujeta a cambios estacionales",
-        "sourceUrl": "https://tienda.bodegascampos.com/inicio/7-menu-tradicion.html"
+        "sourceUrl": "https://tienda.bodegascampos.com/inicio/7-menu-tradicion.html",
+        "includesEn": "Drinks during lunch; selection may change seasonally."
       },
       {
         "includes": "IVA incluido; bebidas incluidas durante el almuerzo, excepto consumiciones en barra y posteriores al servicio; pan de masa madre incluido.",
@@ -18987,7 +18991,8 @@
         ],
         "dessert": "Helado de naranja en aceite de oliva",
         "conditions": "Elegir plato principal con 72 horas de antelación; grupos de más de 20 personas: una sola opción.",
-        "sourceDocument": "MENU-LOS-FLAMENCOS.pdf"
+        "sourceDocument": "MENU-LOS-FLAMENCOS.pdf",
+        "includesEn": "VAT included; drinks included during lunch, excluding bar orders and drinks after meal service; sourdough bread included."
       },
       {
         "includes": "IVA incluido; bebidas incluidas durante el almuerzo, excepto consumiciones en barra y posteriores al servicio; pan de masa madre incluido.",
@@ -19011,7 +19016,8 @@
         ],
         "dessert": "Pastel de chocolate (70 %) con helado de fruta de la pasión",
         "conditions": "Elegir plato principal con 72 horas de antelación; grupos de más de 20 personas: una sola opción.",
-        "sourceDocument": "MENU-LOS-PATIOS.pdf"
+        "sourceDocument": "MENU-LOS-PATIOS.pdf",
+        "includesEn": "VAT included; drinks included during lunch, excluding bar orders and drinks after meal service; sourdough bread included."
       },
       {
         "includes": "IVA incluido; bebidas incluidas durante el almuerzo, excepto consumiciones en barra y posteriores al servicio; pan de masa madre incluido.",
@@ -19031,7 +19037,8 @@
         "firstCourse": "Merluza de pincho al vapor con beurre blanc amontillada y ceniza de puerros",
         "mainCourse": "Presa ibérica de bellota con patatas fritas",
         "dessert": "Tocino de cielo con helado de yogur",
-        "sourceDocument": "MENU-LA-BODEGA.pdf"
+        "sourceDocument": "MENU-LA-BODEGA.pdf",
+        "includesEn": "VAT included; drinks included during lunch, excluding bar orders and drinks after meal service; sourdough bread included."
       }
     ],
     "menus": [
