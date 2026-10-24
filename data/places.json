@@ -44211,7 +44211,7 @@
         "items": [
           {
             "name": "Café 100% natural (con leche, solo o cortado)",
-            "en": "Coffee, black, with milk or cortado",
+            "en": "Coffee, black, with milk or cortado — Milk options: cow, sheep, goat or lactose-free.",
             "es": "Opciones de leche: vaca, oveja, cabra o sin lactosa.",
             "prices": [
               {
@@ -44223,7 +44223,7 @@
           },
           {
             "name": "Capuchino",
-            "en": "Cappuccino",
+            "en": "Cappuccino — Milk options: cow, sheep, goat or lactose-free.",
             "es": "Opciones de leche: vaca, oveja, cabra o sin lactosa.",
             "prices": [
               {
@@ -44245,7 +44245,7 @@
           },
           {
             "name": "Vaso de leche",
-            "en": "Glass of milk",
+            "en": "Glass of milk — Milk options: cow, sheep, goat or lactose-free.",
             "es": "Opciones de leche: vaca, oveja, cabra o sin lactosa.",
             "prices": [
               {
@@ -44257,7 +44257,7 @@
           },
           {
             "name": "Vaso de leche con ColaCao",
-            "en": "Milk with ColaCao",
+            "en": "Milk with ColaCao — Milk options: cow, sheep, goat or lactose-free.",
             "es": "Opciones de leche: vaca, oveja, cabra o sin lactosa.",
             "prices": [
               {
@@ -44416,7 +44416,7 @@
         "items": [
           {
             "name": "Jamón de Bellota 100% Ibérico Alta Expresión D.O.P. Los Pedroches",
-            "en": "Iberian ham: Bellota 100% Ibérico Alta Expresión D.O.P. Los Pedroches",
+            "en": "Iberian ham: Bellota 100% Ibérico Alta Expresión D.O.P. Los Pedroches — Half portion 60 g; full portion approximately 90 g.",
             "es": "Media 60 g; entera 90 g aprox.",
             "prices": [
               {
@@ -44502,7 +44502,7 @@
           },
           {
             "name": "Queso de leche cruda de oveja Gran Reserva",
-            "en": "Cheese: leche cruda de oveja Gran Reserva",
+            "en": "Cheese: leche cruda de oveja Gran Reserva — Half portion 60 g; full portion approximately 90 g.",
             "es": "Media 60 g; entera 90 g aprox.",
             "prices": [
               {
@@ -44517,7 +44517,7 @@
           },
           {
             "name": "Queso de oveja pasteurizado curado con trufa",
-            "en": "Cheese: oveja pasteurizado curado con trufa",
+            "en": "Cheese: oveja pasteurizado curado con trufa — Half portion 60 g; full portion approximately 90 g.",
             "es": "Media 60 g; entera 90 g aprox.",
             "prices": [
               {
@@ -44532,7 +44532,7 @@
           },
           {
             "name": "Queso de oveja pasteurizado curado con ajo negro",
-            "en": "Cheese: oveja pasteurizado curado con ajo negro",
+            "en": "Cheese: oveja pasteurizado curado con ajo negro — Half portion 60 g; full portion approximately 90 g.",
             "es": "Media 60 g; entera 90 g aprox.",
             "prices": [
               {
@@ -44597,7 +44597,7 @@
           },
           {
             "name": "Puerros a la brasa con Jamón de Bellota 100% Ibérico",
-            "en": "Grilled leeks with Iberian ham",
+            "en": "Grilled leeks with Iberian ham — Declared allergens: dairy.",
             "es": "Alérgenos declarados: Lácteos.",
             "prices": [
               {
@@ -44608,7 +44608,7 @@
           },
           {
             "name": "Alcachofas a la brasa con queso Gran Reserva",
-            "en": "Grilled artichokes with aged cheese",
+            "en": "Grilled artichokes with aged cheese — Declared allergens: egg, dairy.",
             "es": "Alérgenos declarados: Huevo, lácteos.",
             "prices": [
               {
@@ -44619,7 +44619,7 @@
           },
           {
             "name": "Salteado de setas con huevo poché y Jamón de Bellota 100% Ibérico",
-            "en": "Sautéed mushrooms with poached egg and Iberian ham",
+            "en": "Sautéed mushrooms with poached egg and Iberian ham — Declared allergens: egg, dairy.",
             "es": "Alérgenos declarados: Huevo, lácteos.",
             "prices": [
               {
@@ -44630,7 +44630,7 @@
           },
           {
             "name": "Berenjenas fritas con miel de caña y salmorejo",
-            "en": "Fried aubergines with cane syrup and salmorejo",
+            "en": "Fried aubergines with cane syrup and salmorejo — Declared allergens: dairy, gluten.",
             "es": "Alérgenos declarados: Lácteos, gluten.",
             "prices": [
               {
@@ -44647,7 +44647,7 @@
         "items": [
           {
             "name": "Salmorejo cordobés con Jamón de Bellota 100% Ibérico",
-            "en": "Salmorejo: cordobés con Jamón de Bellota 100% Ibérico",
+            "en": "Salmorejo: cordobés con Jamón de Bellota 100% Ibérico — Declared allergens: gluten.",
             "es": "Alérgenos declarados: Gluten.",
             "prices": [
               {
@@ -44658,7 +44658,7 @@
           },
           {
             "name": "Mazamorra con crema de PX y uvas laminadas",
-            "en": "Mazamorra: con crema de PX y uvas laminadas",
+            "en": "Mazamorra: con crema de PX y uvas laminadas — Declared allergens: tree nuts (la fuente dice «con cáscara, sin cáscara»), gluten, sulphites.",
             "es": "Alérgenos declarados: Frutos secos (la fuente dice «con cáscara, sin cáscara»), gluten, sulfitos.",
             "prices": [
               {
@@ -44669,7 +44669,7 @@
           },
           {
             "name": "Ensaladilla con Jamón de Bellota 100% Ibérico",
-            "en": "Potato salad: con Jamón de Bellota 100% Ibérico",
+            "en": "Potato salad: con Jamón de Bellota 100% Ibérico — Declared allergens: egg.",
             "es": "Alérgenos declarados: Huevo.",
             "prices": [
               {
@@ -44680,7 +44680,7 @@
           },
           {
             "name": "Trío de Frios",
-            "en": "Trio of cold dishes: salmorejo, mazamorra and potato salad",
+            "en": "Trio of cold dishes: salmorejo, mazamorra and potato salad — Salmorejo, mazamorra and potato salad. Declared allergens: egg, gluten, sulphites.",
             "es": "Salmorejo, mazamorra y ensaladilla. Alérgenos declarados: Huevo, gluten, sulfitos.",
             "prices": [
               {
@@ -44691,7 +44691,7 @@
           },
           {
             "name": "Steak Tartar de Solomillo de Bellota 100% Ibérico",
-            "en": "Steak tartare: Solomillo de Bellota 100% Ibérico",
+            "en": "Steak tartare: Solomillo de Bellota 100% Ibérico — Declared allergens: egg, soy, mustard.",
             "es": "Alérgenos declarados: Huevo, soja, mostaza.",
             "prices": [
               {
@@ -44702,7 +44702,7 @@
           },
           {
             "name": "Huevos rotos con Jamón de Bellota 100% Ibérico",
-            "en": "Broken eggs: con Jamón de Bellota 100% Ibérico",
+            "en": "Broken eggs: con Jamón de Bellota 100% Ibérico — Declared allergens: egg.",
             "es": "Alérgenos declarados: Huevo.",
             "prices": [
               {
@@ -44713,7 +44713,7 @@
           },
           {
             "name": "Tartar de Salchichón de Bellota 100% Ibérico",
-            "en": "Tartare: Salchichón de Bellota 100% Ibérico",
+            "en": "Tartare: Salchichón de Bellota 100% Ibérico — Declared allergens: dairy, sulphites.",
             "es": "Alérgenos declarados: Lácteos, sulfitos.",
             "prices": [
               {
@@ -44730,7 +44730,7 @@
         "items": [
           {
             "name": "Jamón de Bellota 100% Ibérico Alta Expresión",
-            "en": "Iberian ham: Bellota 100% Ibérico Alta Expresión",
+            "en": "Iberian ham: Bellota 100% Ibérico Alta Expresión — Declared allergens: gluten.",
             "es": "Alérgenos declarados: Gluten.",
             "prices": [
               {
@@ -44742,7 +44742,7 @@
           },
           {
             "name": "Caña de presa de Bellota 100% Ibérico Alta Expresión",
-            "en": "Iberian cured pork: presa de Bellota 100% Ibérico Alta Expresión",
+            "en": "Iberian cured pork: presa de Bellota 100% Ibérico Alta Expresión — Declared allergens: dairy, soy, gluten.",
             "es": "Alérgenos declarados: Lácteos, soja, gluten.",
             "prices": [
               {
@@ -44754,7 +44754,7 @@
           },
           {
             "name": "Lomo de Bellota 100% Ibérico Alta Expresión",
-            "en": "Iberian loin: Bellota 100% Ibérico Alta Expresión",
+            "en": "Iberian loin: Bellota 100% Ibérico Alta Expresión — Declared allergens: dairy, soy, gluten.",
             "es": "Alérgenos declarados: Lácteos, soja, gluten.",
             "prices": [
               {
@@ -44766,7 +44766,7 @@
           },
           {
             "name": "Sobrasada y crema queso Torremilano",
-            "en": "Spanish speciality: Sobrasada y crema queso Torremilano",
+            "en": "Spanish speciality: Sobrasada y crema queso Torremilano — Declared allergens: egg, dairy, soy, gluten.",
             "es": "Alérgenos declarados: Huevo, lácteos, soja, gluten.",
             "prices": [
               {
@@ -44777,7 +44777,7 @@
           },
           {
             "name": "Presa de Bellota 100% Ibérica a la brasa",
-            "en": "Iberian presa: Bellota 100% Ibérica a la brasa",
+            "en": "Iberian presa: Bellota 100% Ibérica a la brasa — Declared allergens: egg, dairy, gluten.",
             "es": "Alérgenos declarados: Huevo, lácteos, gluten.",
             "prices": [
               {
@@ -44789,7 +44789,7 @@
           },
           {
             "name": "Secreto de Bellota 100% Ibérico a la brasa",
-            "en": "Iberian secreto: Bellota 100% Ibérico a la brasa",
+            "en": "Iberian secreto: Bellota 100% Ibérico a la brasa — Declared allergens: egg, dairy, gluten, celery.",
             "es": "Alérgenos declarados: Huevo, lácteos, gluten, apio.",
             "prices": [
               {
@@ -44801,7 +44801,7 @@
           },
           {
             "name": "Abanico y Piparra",
-            "en": "Iberian abanico: y Piparra",
+            "en": "Iberian abanico: y Piparra — Declared allergens: egg, dairy, gluten, sulphites.",
             "es": "Alérgenos declarados: Huevo, lácteos, gluten, sulfitos.",
             "prices": [
               {
@@ -44818,7 +44818,7 @@
         "items": [
           {
             "name": "Presa de Bellota 100% Ibérica",
-            "en": "Iberian presa: Bellota 100% Ibérica",
+            "en": "Iberian presa: Bellota 100% Ibérica — Homemade chips",
             "es": "Patatas fritas hechas en casa",
             "prices": [
               {
@@ -44834,7 +44834,7 @@
           },
           {
             "name": "Pluma de Bellota 100% Ibérica",
-            "en": "Iberian pluma: Bellota 100% Ibérica",
+            "en": "Iberian pluma: Bellota 100% Ibérica — Homemade chips",
             "es": "Patatas fritas hechas en casa",
             "prices": [
               {
@@ -44846,7 +44846,7 @@
           },
           {
             "name": "Solomillo de Bellota 100% Ibérico",
-            "en": "Tenderloin: Bellota 100% Ibérico",
+            "en": "Tenderloin: Bellota 100% Ibérico — Homemade chips",
             "es": "Patatas fritas hechas en casa",
             "prices": [
               {
@@ -44858,7 +44858,7 @@
           },
           {
             "name": "Secreto de Bellota 100% Ibérico",
-            "en": "Iberian secreto: Bellota 100% Ibérico",
+            "en": "Iberian secreto: Bellota 100% Ibérico — Homemade chips",
             "es": "Patatas fritas hechas en casa",
             "prices": [
               {
@@ -44870,7 +44870,7 @@
           },
           {
             "name": "Abanico Confitado 100% Ibérico con crema de queso",
-            "en": "Iberian abanico: Confitado 100% Ibérico con crema de queso",
+            "en": "Iberian abanico: Confitado 100% Ibérico con crema de queso — Homemade chips Declared allergens: egg, dairy.",
             "es": "Patatas fritas hechas en casa Alérgenos declarados: Huevo, lácteos.",
             "prices": [
               {
@@ -44881,7 +44881,7 @@
           },
           {
             "name": "Parrillada Ibérica",
-            "en": "Iberian mixed grill",
+            "en": "Iberian mixed grill — Iberian pork secreto, tenderloin and presa cuts; chimichurri and green sauce",
             "es": "Secreto, solomillo, presa ibérica; salsa chimichurri y salsa verde",
             "prices": [
               {
@@ -44892,7 +44892,7 @@
           },
           {
             "name": "Entrecot (400 g aprox.)",
-            "en": "Ribeye steak (400 g aprox.)",
+            "en": "Ribeye steak (400 g aprox.) — Homemade chips y pimientos del piquillo estilo Julián de Tolosa",
             "es": "Patatas fritas caseras y pimientos del piquillo estilo Julián de Tolosa",
             "prices": [
               {
@@ -44904,7 +44904,7 @@
           },
           {
             "name": "Chuletón (1.000 g aprox.)",
-            "en": "Bone-in steak (1.000 g aprox.)",
+            "en": "Bone-in steak (1.000 g aprox.) — Homemade chips y pimientos del piquillo estilo Julián de Tolosa",
             "es": "Patatas fritas caseras y pimientos del piquillo estilo Julián de Tolosa",
             "prices": [
               {
@@ -44916,7 +44916,7 @@
           },
           {
             "name": "Solomillo (200 g aprox.)",
-            "en": "Spanish speciality: Solomillo (200 g aprox.)",
+            "en": "Spanish speciality: Solomillo (200 g aprox.) — Potato purée Declared allergens: dairy, soy, celery.",
             "es": "Parmentier de patata Alérgenos declarados: Lácteos, soja, apio.",
             "prices": [
               {
@@ -44928,7 +44928,7 @@
           },
           {
             "name": "Picaña de vacuno (250 g aprox.)",
-            "en": "Spanish speciality: Picaña de vacuno (250 g aprox.)",
+            "en": "Spanish speciality: Picaña de vacuno (250 g aprox.) — Homemade chips",
             "es": "Patatas fritas hechas en casa",
             "prices": [
               {
@@ -44939,7 +44939,7 @@
           },
           {
             "name": "Hamburguesa de vacuno con crema de queso (180 g aprox.)",
-            "en": "Burger of vacuno con crema de queso (180 g aprox.)",
+            "en": "Burger of vacuno con crema de queso (180 g aprox.) — Homemade chips Declared allergens: egg, dairy, gluten, sulphites.",
             "es": "Patatas fritas hechas en casa Alérgenos declarados: Huevo, lácteos, gluten, sulfitos.",
             "prices": [
               {
@@ -44951,7 +44951,7 @@
           },
           {
             "name": "Chuletillas de cordero",
-            "en": "Lamb cutlets",
+            "en": "Lamb cutlets — Declared allergens: sesame, sulphites.",
             "es": "Alérgenos declarados: Sésamo, sulfitos.",
             "prices": [
               {
@@ -44963,7 +44963,7 @@
           },
           {
             "name": "Pan Bao con pierna de cordero recental y pepino encurtido",
-            "en": "Bao bun with lamb and pickled cucumber",
+            "en": "Bao bun with lamb and pickled cucumber — Declared allergens: dairy, soy, gluten, sulphites.",
             "es": "Alérgenos declarados: Lácteos, soja, gluten, sulfitos.",
             "prices": [
               {
@@ -44981,7 +44981,7 @@
         "items": [
           {
             "name": "Carrillada de Bellota 100% Ibérica guisada con puré Robuchon",
-            "en": "Braised Iberian pork cheeks with Robuchon-style mash",
+            "en": "Braised Iberian pork cheeks with Robuchon-style mash — Declared allergens: soy, gluten, celery.",
             "es": "Alérgenos declarados: Soja, gluten, apio.",
             "prices": [
               {
@@ -44999,7 +44999,7 @@
         "items": [
           {
             "name": "Arroz con leche de oveja o de cabra",
-            "en": "Rice pudding with sheep's or goat's milk",
+            "en": "Rice pudding with sheep's or goat's milk — Declared allergens: dairy.",
             "es": "Alérgenos declarados: Lácteos.",
             "prices": [
               {
@@ -45011,7 +45011,7 @@
           },
           {
             "name": "Tarta de queso estilo La Viña",
-            "en": "La Viña-style cheesecake",
+            "en": "La Viña-style cheesecake — Declared allergens: egg, dairy, gluten, sulphites.",
             "es": "Alérgenos declarados: Huevo, lácteos, gluten, sulfitos.",
             "prices": [
               {
@@ -45022,7 +45022,7 @@
           },
           {
             "name": "Flan de Queso y Caramelo",
-            "en": "Cheese and caramel flan",
+            "en": "Cheese and caramel flan — Declared allergens: dairy, gluten, sulphites.",
             "es": "Alérgenos declarados: Lácteos, gluten, sulfitos.",
             "prices": [
               {
@@ -45039,7 +45039,7 @@
         "items": [
           {
             "name": "Servicio de pan de masa madre",
-            "en": "Sourdough bread service",
+            "en": "Sourdough bread service — Declared allergens: egg, dairy, gluten.",
             "es": "Alérgenos declarados: Huevo, lácteos, gluten.",
             "prices": [
               {
@@ -45050,7 +45050,7 @@
           },
           {
             "name": "Servicio de pan con tomate",
-            "en": "Bread with tomato service",
+            "en": "Bread with tomato service — Declared allergens: egg, dairy, gluten.",
             "es": "Alérgenos declarados: Huevo, lácteos, gluten.",
             "prices": [
               {
