@@ -167,3 +167,23 @@ Nueve referencias de bebidas de desayuno; precios con IVA incluido. Los asterisc
 **Declaración comercial de la fuente:** «La leche de nuestras ganaderías la recogemos cada día, garantizándote la máxima calidad y frescura». Atribuir a COVAP; no presentarlo como verificación independiente.
 
 No figuran iconos de alérgenos en este fragmento. Eso no significa que sean productos libres de alérgenos. La documentación sigue sin publicación de carta parcial.
+
+
+## Tostadas — décima sección documental (24/10/2026)
+
+Ocho referencias de desayuno; todos los precios incluyen IVA. El importe corresponde a una tostada indicada en la carta; no se indica «media tostada» ni variantes de tamaño. Las opciones unidas mediante **«o»** tienen un único precio publicado y no deben convertirse en dos productos con precios ficticiamente independientes.
+
+| Producto (transcripción) | Precio | Enlace de producto |
+|---|---:|---|
+| Tostada con Jamón de Cebo de Campo 100% Ibérico D.O.P Los Pedroches cortado a mano | 3,20 € | https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=69 |
+| Tostada con Caña de Presa o Caña de Lomo de Bellota 100% Ibérico | 2,70 € | https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=276 |
+| Tostada con Chorizo o Salchichón de Bellota 100% Ibérico | 2,60 € | No aportado |
+| Tostada con mantequilla (vaca, oveja o cabra) | 2,00 € | https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=81 |
+| Tostada con aceite y tomate | 2,00 € | No aportado |
+| Tostada pan sin gluten con Jamón de Cebo de Campo 100% Ibérico D.O.P Los Pedroches cortado a mano | 3,50 € | https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=364 |
+| Tostada pan sin gluten con Chorizo o Salchichón de Bellota 100% Ibérico | 3,25 € | No aportado |
+| Tostada pan sin gluten con mantequilla (vaca, oveja o cabra) | 3,00 € | No aportado |
+
+**QA:** conservar literalmente «pan sin gluten» como descripción del producto ofrecido; no inferir seguridad para celíacos ni ausencia de contaminación cruzada. La fuente no facilita iconos de alérgenos en el fragmento, lo que no equivale a ausencia de alérgenos. Distinguir las opciones de mantequilla de vaca, oveja o cabra de la nota sobre **tipos de leche** de la sección anterior.
+
+**Acumulado documental:** diez secciones, 68 referencias (51 + 9 bebidas + 8 tostadas). Sigue pendiente comprobar si hay más apartados y obtener visto bueno editorial para publicar carta completa con traducciones.
