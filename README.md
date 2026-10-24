@@ -327,3 +327,7 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - **Cafetería Don Pepe · Centro (Diego de León, 6) — REVISADA Y CERRADA / QA visual PASS confirmado por Helio.** La carta de desayunos y precios incorporada (9 apartados, 43 entradas, 36 importes) fue comprobada en ES/EN. Queda sin efecto el anterior pendiente de incorporación de precios. La vigencia de los importes obtenidos de la búsqueda de Google sigue sin acreditación independiente; no presentarlos como precios oficiales actuales.
 - **Cafetería Bar Don Pepe · Ciudad Jardín (Antonio Maura, 35) — REVISADA Y CERRADA / QA visual PASS confirmado por Helio.** Se ratifica el cierre anterior tras revisión de la carta con 18 importes registrados. Mantener la distinción entre web del establecimiento y carta externa con vigencia no verificada.
 - **Control de pendientes:** excluir ambos locales de nuevas revisiones ordinarias, salvo evidencia de cambios, incidencias o petición expresa. Conservar sus fichas y datos por separado.
+
+### Excepción de revisión — El Caballo Rojo (24/10/2026)
+
+- Helio confirma que el restaurante está cerrado temporalmente y que su ficha ya se había ocultado. No programar revisión ordinaria mientras continúe esta situación; conservar datos históricos y comprobar una eventual reapertura antes de reactivar la ficha. Este apunte refleja el estado comunicado por Helio, no una comprobación externa nueva. No modificar la visibilidad en código sin revisar el estado implementado.
