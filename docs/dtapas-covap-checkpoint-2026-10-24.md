@@ -52,3 +52,20 @@ Siete referencias; importes publicados con IVA incluido. No consta formato media
 | Tartar de Salchichón de Bellota 100% Ibérico | 13,50 € | Lácteos, sulfitos |
 
 **Nota:** «Trío de Frios» incluye salmorejo, mazamorra y ensaladilla. Mantener el nombre tal como figura en la transcripción hasta cotejar la grafía con la carta; no confundir el trío con tres precios individuales. La enumeración de alérgenos es la que figura en el texto recibido; no equivale a una evaluación independiente ni a ausencia de otros alérgenos.
+
+
+## Montaditos — cuarta sección (24/10/2026)
+
+Siete montaditos; cada importe es por montadito, **no** corresponde a media ni ración. Precios con IVA incluido.
+
+| Montadito | Precio | Alérgenos indicados | Ficha oficial |
+|---|---:|---|---|
+| Jamón de Bellota 100% Ibérico Alta Expresión | 4,85 € | Gluten | product_id=73 |
+| Caña de presa de Bellota 100% Ibérico Alta Expresión | 4,85 € | Lácteos, soja, gluten | product_id=71 |
+| Lomo de Bellota 100% Ibérico Alta Expresión | 4,50 € | Lácteos, soja, gluten | product_id=74 |
+| Sobrasada y crema queso Torremilano | 4,00 € | Huevo, lácteos, soja, gluten | Sin ficha individual en la transcripción |
+| Presa de Bellota 100% Ibérica a la brasa | 5,45 € | Huevo, lácteos, gluten | product_id=72 |
+| Secreto de Bellota 100% Ibérico a la brasa | 5,45 € | Huevo, lácteos, gluten, apio | product_id=154 |
+| Abanico y Piparra | 5,45 € | Huevo, lácteos, gluten, sulfitos | Sin ficha individual en la transcripción |
+
+Fuente común: https://www.ibericoscovap.com/es/dtapas-covap-cordoba-carta/ . Enlaces de producto con identificador: https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=ID (sustituir ID únicamente por los números documentados en la columna). En ausencia de enlace no se inventa uno. Los alérgenos son los publicados en el fragmento facilitado y deben contrastarse con la información oficial antes de usarse para consejo dietético. La ausencia de un alérgeno en la lista no garantiza su ausencia.
