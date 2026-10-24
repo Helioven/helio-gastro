@@ -1,8 +1,8 @@
 # La Tarterie — punto de control documental (23/10/2026)
 
-**Estado: trabajo en curso, NO publicar.** Actualizado con tanda 6 (24/10/2026). Proyecto Helio Gastro, fase 1. La ficha actual de La Tarterie no debe modificarse hasta completar y validar el catálogo. Fuente principal: capturas de la tienda oficial aportadas por Helio (https://la-tarterie.es/tienda/ y páginas 2 y 3). **Próximo producto a documentar: número 25.**
+**Estado: trabajo en curso, NO publicar.** Actualizado con tanda 7 (24/10/2026). Proyecto Helio Gastro, fase 1. La ficha actual de La Tarterie no debe modificarse hasta completar y validar el catálogo. Fuente principal: capturas de la tienda oficial aportadas por Helio (https://la-tarterie.es/tienda/ y páginas 2 y 3). **Próximo producto a documentar: número 26.**
 
-## Productos documentados (24)
+## Productos documentados (25)
 
 | # | Producto | Rango publicado (€) | Ingredientes / descripción constatados | Opciones vistas |
 |---|---|---|---|---|
@@ -34,6 +34,8 @@
 | 23 | Quiché de tomate cherry | 20 € | Quiché salada con tomates cherry, cebolla caramelizada y queso de cabra | Tamaño único de 12 porciones; iconos: soja, gluten, huevos, lácteos |
 | 24 | Quiché Lorraine | 20 € | Quiché tradicional de bacon y queso | Tamaño único de 12 porciones; **alérgenos pendientes: texto recibido cortado tras el encabezado** |
 
+| 25 | Red Velvet | 19–72 | Bizcocho de remolacha con un toque de cacao y frosting de queso | 6/12/14, supergrande; normal/sin gluten, normal/sin lactosa, normal/sin azúcar; alérgenos específicos pendientes de consultar en tabla oficial |
+
 ## Precauciones y próximos pasos
 
 - Los rangos corresponden a las fichas de producto; **no se ha comprobado el precio exacto de cada combinación de tamaño y opción dietética**. No imputarlo.
@@ -42,5 +44,5 @@
 - En Mojito mousse se cita ron: no afirmar que carece de alcohol. En Quiché Lorraine falta la lista de alérgenos y debe comprobarse con la fuente antes de publicar.
 - Descripciones ES/EN definitivas todavía pendientes de preparar y verificar.
 - No copiar fotografías ajenas. Evitar duplicados.
-- Continuar con las transcripciones **desde el producto 25**; comprobar que se cubren todas las páginas y categorías, y pedir aprobación expresa antes de publicar.
-- El progreso registrado es 24 productos recibidos, **no** el total confirmado del catálogo.
+- Continuar con las transcripciones **desde el producto 26**; comprobar que se cubren todas las páginas y categorías, y pedir aprobación expresa antes de publicar.
+- El progreso registrado es 25 productos recibidos, **no** el total confirmado del catálogo.
