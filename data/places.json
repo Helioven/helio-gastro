@@ -44282,7 +44282,8 @@
     "sources": [
       {
         "label": "Tienda oficial La Tarterie — catálogo y precios por producto",
-        "url": "https://la-tarterie.es/tienda/"
+        "url": "https://la-tarterie.es/tienda/",
+        "labelEn": "La Tarterie official shop — product catalogue and prices"
       }
     ],
     "menus": [
