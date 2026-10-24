@@ -43723,11 +43723,11 @@
     "area": "Centro · Cruz Conde",
     "address": "Calle Cruz Conde, 12, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
-    "checkedAt": "2026-10-11",
+    "priceStatus": "confirmed",
+    "checkedAt": "2026-10-24",
     "sources": [
       {
-        "label": "Carta oficial de desayunos COVAP",
+        "label": "Carta oficial D'Tapas COVAP Córdoba completa",
         "url": "https://www.ibericoscovap.com/es/dtapas-covap-cordoba-carta/"
       },
       {
@@ -43739,18 +43739,89 @@
       {
         "service": "desayuno",
         "dishes": [
-          "Tostadas",
-          "Café 100% natural",
+          "Café 100% natural (con leche, solo o cortado)",
+          "Capuchino",
+          "Café descafeinado",
+          "Vaso de leche",
+          "Vaso de leche con ColaCao",
+          "Zumo de naranja natural",
+          "Zumos (varios)",
+          "Batidos de chocolate, fresa o vainilla",
+          "Infusiones",
+          "Tostada con Jamón de Cebo de Campo 100% Ibérico D.O.P Los Pedroches cortado a mano",
+          "Tostada con Caña de Presa o Caña de Lomo de Bellota 100% Ibérico",
+          "Tostada con Chorizo o Salchichón de Bellota 100% Ibérico",
+          "Tostada con mantequilla (vaca, oveja o cabra)",
           "Tostada con aceite y tomate",
-          "Tostada con jamón ibérico",
-          "Tostada con mantequilla",
-          "Zumo de naranja natural"
+          "Tostada pan sin gluten con Jamón de Cebo de Campo 100% Ibérico D.O.P Los Pedroches cortado a mano",
+          "Tostada pan sin gluten con Chorizo o Salchichón de Bellota 100% Ibérico",
+          "Tostada pan sin gluten con mantequilla (vaca, oveja o cabra)"
         ],
         "dishPrices": [
           {
-            "dish": "Café 100% natural",
+            "dish": "Café 100% natural (con leche, solo o cortado)",
             "eur": 1.7,
-            "portion": "unidad"
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Capuchino",
+            "eur": 2.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Café descafeinado",
+            "eur": 1.7,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Vaso de leche",
+            "eur": 1.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Vaso de leche con ColaCao",
+            "eur": 2.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Zumo de naranja natural",
+            "eur": 3.1,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Zumos (varios)",
+            "eur": 2.3,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Batidos de chocolate, fresa o vainilla",
+            "eur": 2.2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Infusiones",
+            "eur": 2.2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Tostada con Jamón de Cebo de Campo 100% Ibérico D.O.P Los Pedroches cortado a mano",
+            "eur": 3.2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Tostada con Caña de Presa o Caña de Lomo de Bellota 100% Ibérico",
+            "eur": 2.7,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Tostada con Chorizo o Salchichón de Bellota 100% Ibérico",
+            "eur": 2.6,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Tostada con mantequilla (vaca, oveja o cabra)",
+            "eur": 2,
+            "portion": "desconocida"
           },
           {
             "dish": "Tostada con aceite y tomate",
@@ -43758,23 +43829,1253 @@
             "portion": "desconocida"
           },
           {
-            "dish": "Tostada con jamón ibérico",
-            "eur": 3.2,
+            "dish": "Tostada pan sin gluten con Jamón de Cebo de Campo 100% Ibérico D.O.P Los Pedroches cortado a mano",
+            "eur": 3.5,
             "portion": "desconocida"
           },
           {
-            "dish": "Tostada con mantequilla",
-            "eur": 2,
+            "dish": "Tostada pan sin gluten con Chorizo o Salchichón de Bellota 100% Ibérico",
+            "eur": 3.25,
             "portion": "desconocida"
           },
           {
-            "dish": "Zumo de naranja natural",
-            "eur": 3.1,
-            "portion": "unidad"
+            "dish": "Tostada pan sin gluten con mantequilla (vaca, oveja o cabra)",
+            "eur": 3,
+            "portion": "desconocida"
+          }
+        ]
+      },
+      {
+        "service": "comida",
+        "dishes": [
+          "Jamón de Bellota 100% Ibérico Alta Expresión D.O.P. Los Pedroches",
+          "Caña de presa de Bellota 100% Ibérica Alta Expresión",
+          "Lomo de Bellota 100% Ibérico Alta Expresión",
+          "Salchichón de Bellota 100% Ibérico Alta Expresión",
+          "Chorizo de Bellota 100% Ibérico Alta Expresión",
+          "Tabla surtida de embutidos de Bellota",
+          "Queso de leche cruda de oveja Gran Reserva",
+          "Queso de oveja pasteurizado curado con trufa",
+          "Queso de oveja pasteurizado curado con ajo negro",
+          "Tabla surtida de quesos",
+          "Tabla surtida de queso de oveja pasteurizado curado con trufa y ajo negro",
+          "Ensalada de tomate de temporada",
+          "Pimientos del piquillo estilo Julián de Tolosa",
+          "Puerros a la brasa con Jamón de Bellota 100% Ibérico",
+          "Alcachofas a la brasa con queso Gran Reserva",
+          "Salteado de setas con huevo poché y Jamón de Bellota 100% Ibérico",
+          "Berenjenas fritas con miel de caña y salmorejo",
+          "Salmorejo cordobés con Jamón de Bellota 100% Ibérico",
+          "Mazamorra con crema de PX y uvas laminadas",
+          "Ensaladilla con Jamón de Bellota 100% Ibérico",
+          "Trío de Frios",
+          "Steak Tartar de Solomillo de Bellota 100% Ibérico",
+          "Huevos rotos con Jamón de Bellota 100% Ibérico",
+          "Tartar de Salchichón de Bellota 100% Ibérico",
+          "Jamón de Bellota 100% Ibérico Alta Expresión",
+          "Caña de presa de Bellota 100% Ibérico Alta Expresión",
+          "Lomo de Bellota 100% Ibérico Alta Expresión",
+          "Sobrasada y crema queso Torremilano",
+          "Presa de Bellota 100% Ibérica a la brasa",
+          "Secreto de Bellota 100% Ibérico a la brasa",
+          "Abanico y Piparra",
+          "Presa de Bellota 100% Ibérica",
+          "Pluma de Bellota 100% Ibérica",
+          "Solomillo de Bellota 100% Ibérico",
+          "Secreto de Bellota 100% Ibérico",
+          "Abanico Confitado 100% Ibérico con crema de queso",
+          "Parrillada Ibérica",
+          "Entrecot (400 g aprox.)",
+          "Chuletón (1.000 g aprox.)",
+          "Solomillo (200 g aprox.)",
+          "Picaña de vacuno (250 g aprox.)",
+          "Hamburguesa de vacuno con crema de queso (180 g aprox.)",
+          "Chuletillas de cordero",
+          "Pan Bao con pierna de cordero recental y pepino encurtido",
+          "Carrillada de Bellota 100% Ibérica guisada con puré Robuchon",
+          "Arroz con leche de oveja o de cabra",
+          "Tarta de queso estilo La Viña",
+          "Flan de Queso y Caramelo",
+          "Servicio de pan de masa madre",
+          "Servicio de pan con tomate",
+          "Cartucho de patatas"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Jamón de Bellota 100% Ibérico Alta Expresión D.O.P. Los Pedroches",
+            "eur": 16,
+            "portion": "media"
+          },
+          {
+            "dish": "Jamón de Bellota 100% Ibérico Alta Expresión D.O.P. Los Pedroches",
+            "eur": 24,
+            "portion": "racion"
+          },
+          {
+            "dish": "Caña de presa de Bellota 100% Ibérica Alta Expresión",
+            "eur": 13.5,
+            "portion": "media"
+          },
+          {
+            "dish": "Caña de presa de Bellota 100% Ibérica Alta Expresión",
+            "eur": 22.95,
+            "portion": "racion"
+          },
+          {
+            "dish": "Lomo de Bellota 100% Ibérico Alta Expresión",
+            "eur": 11.5,
+            "portion": "media"
+          },
+          {
+            "dish": "Lomo de Bellota 100% Ibérico Alta Expresión",
+            "eur": 19.9,
+            "portion": "racion"
+          },
+          {
+            "dish": "Salchichón de Bellota 100% Ibérico Alta Expresión",
+            "eur": 5.5,
+            "portion": "media"
+          },
+          {
+            "dish": "Salchichón de Bellota 100% Ibérico Alta Expresión",
+            "eur": 9.75,
+            "portion": "racion"
+          },
+          {
+            "dish": "Chorizo de Bellota 100% Ibérico Alta Expresión",
+            "eur": 5.5,
+            "portion": "media"
+          },
+          {
+            "dish": "Chorizo de Bellota 100% Ibérico Alta Expresión",
+            "eur": 9.75,
+            "portion": "racion"
+          },
+          {
+            "dish": "Tabla surtida de embutidos de Bellota",
+            "eur": 16.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Queso de leche cruda de oveja Gran Reserva",
+            "eur": 7.5,
+            "portion": "media"
+          },
+          {
+            "dish": "Queso de leche cruda de oveja Gran Reserva",
+            "eur": 12.75,
+            "portion": "racion"
+          },
+          {
+            "dish": "Queso de oveja pasteurizado curado con trufa",
+            "eur": 8.5,
+            "portion": "media"
+          },
+          {
+            "dish": "Queso de oveja pasteurizado curado con trufa",
+            "eur": 12.5,
+            "portion": "racion"
+          },
+          {
+            "dish": "Queso de oveja pasteurizado curado con ajo negro",
+            "eur": 8.5,
+            "portion": "media"
+          },
+          {
+            "dish": "Queso de oveja pasteurizado curado con ajo negro",
+            "eur": 12.5,
+            "portion": "racion"
+          },
+          {
+            "dish": "Tabla surtida de quesos",
+            "eur": 16.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Tabla surtida de queso de oveja pasteurizado curado con trufa y ajo negro",
+            "eur": 12.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Ensalada de tomate de temporada",
+            "eur": 9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Pimientos del piquillo estilo Julián de Tolosa",
+            "eur": 9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Puerros a la brasa con Jamón de Bellota 100% Ibérico",
+            "eur": 12.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Alcachofas a la brasa con queso Gran Reserva",
+            "eur": 14.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Salteado de setas con huevo poché y Jamón de Bellota 100% Ibérico",
+            "eur": 13.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Berenjenas fritas con miel de caña y salmorejo",
+            "eur": 10.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Salmorejo cordobés con Jamón de Bellota 100% Ibérico",
+            "eur": 9.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Mazamorra con crema de PX y uvas laminadas",
+            "eur": 9.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Ensaladilla con Jamón de Bellota 100% Ibérico",
+            "eur": 10.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Trío de Frios",
+            "eur": 10.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Steak Tartar de Solomillo de Bellota 100% Ibérico",
+            "eur": 19,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Huevos rotos con Jamón de Bellota 100% Ibérico",
+            "eur": 14.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Tartar de Salchichón de Bellota 100% Ibérico",
+            "eur": 13.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Jamón de Bellota 100% Ibérico Alta Expresión",
+            "eur": 4.85,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Caña de presa de Bellota 100% Ibérico Alta Expresión",
+            "eur": 4.85,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Lomo de Bellota 100% Ibérico Alta Expresión",
+            "eur": 4.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Sobrasada y crema queso Torremilano",
+            "eur": 4,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Presa de Bellota 100% Ibérica a la brasa",
+            "eur": 5.45,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Secreto de Bellota 100% Ibérico a la brasa",
+            "eur": 5.45,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Abanico y Piparra",
+            "eur": 5.45,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Presa de Bellota 100% Ibérica",
+            "eur": 12,
+            "portion": "media"
+          },
+          {
+            "dish": "Presa de Bellota 100% Ibérica",
+            "eur": 19.5,
+            "portion": "racion"
+          },
+          {
+            "dish": "Pluma de Bellota 100% Ibérica",
+            "eur": 17.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Solomillo de Bellota 100% Ibérico",
+            "eur": 14.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Secreto de Bellota 100% Ibérico",
+            "eur": 16.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Abanico Confitado 100% Ibérico con crema de queso",
+            "eur": 15.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Parrillada Ibérica",
+            "eur": 32,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Entrecot (400 g aprox.)",
+            "eur": 23.7,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Chuletón (1.000 g aprox.)",
+            "eur": 49.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Solomillo (200 g aprox.)",
+            "eur": 24.75,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Picaña de vacuno (250 g aprox.)",
+            "eur": 14.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Hamburguesa de vacuno con crema de queso (180 g aprox.)",
+            "eur": 12.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Chuletillas de cordero",
+            "eur": 19.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Pan Bao con pierna de cordero recental y pepino encurtido",
+            "eur": 11,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Carrillada de Bellota 100% Ibérica guisada con puré Robuchon",
+            "eur": 18.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Arroz con leche de oveja o de cabra",
+            "eur": 6.2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Tarta de queso estilo La Viña",
+            "eur": 6.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Flan de Queso y Caramelo",
+            "eur": 6.2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Servicio de pan de masa madre",
+            "eur": 1.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Servicio de pan con tomate",
+            "eur": 3.6,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Cartucho de patatas",
+            "eur": 6,
+            "portion": "desconocida"
           }
         ]
       }
-    ]
+    ],
+    "menuSections": [
+      {
+        "title": "Para empezar bien el día",
+        "titleEn": "Breakfast drinks",
+        "items": [
+          {
+            "name": "Café 100% natural (con leche, solo o cortado)",
+            "en": "Coffee, black, with milk or cortado",
+            "es": "Opciones de leche: vaca, oveja, cabra o sin lactosa.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 1.7
+              }
+            ],
+            "productUrl": "https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=53"
+          },
+          {
+            "name": "Capuchino",
+            "en": "Cappuccino",
+            "es": "Opciones de leche: vaca, oveja, cabra o sin lactosa.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2.5
+              }
+            ]
+          },
+          {
+            "name": "Café descafeinado",
+            "en": "Decaffeinated coffee",
+            "es": "",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 1.7
+              }
+            ]
+          },
+          {
+            "name": "Vaso de leche",
+            "en": "Glass of milk",
+            "es": "Opciones de leche: vaca, oveja, cabra o sin lactosa.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 1.5
+              }
+            ],
+            "productUrl": "https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=149"
+          },
+          {
+            "name": "Vaso de leche con ColaCao",
+            "en": "Milk with ColaCao",
+            "es": "Opciones de leche: vaca, oveja, cabra o sin lactosa.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2.5
+              }
+            ]
+          },
+          {
+            "name": "Zumo de naranja natural",
+            "en": "Fresh orange juice",
+            "es": "",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 3.1
+              }
+            ]
+          },
+          {
+            "name": "Zumos (varios)",
+            "en": "Assorted juices",
+            "es": "",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2.3
+              }
+            ]
+          },
+          {
+            "name": "Batidos de chocolate, fresa o vainilla",
+            "en": "Chocolate, strawberry or vanilla milkshake",
+            "es": "",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2.2
+              }
+            ]
+          },
+          {
+            "name": "Infusiones",
+            "en": "Infusions",
+            "es": "",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2.2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Tostadas",
+        "titleEn": "Toast",
+        "items": [
+          {
+            "name": "Tostada con Jamón de Cebo de Campo 100% Ibérico D.O.P Los Pedroches cortado a mano",
+            "en": "Toast with Jamón de Cebo de Campo 100% Ibérico D.O.P Los Pedroches cortado a mano",
+            "es": "",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 3.2
+              }
+            ],
+            "productUrl": "https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=69"
+          },
+          {
+            "name": "Tostada con Caña de Presa o Caña de Lomo de Bellota 100% Ibérico",
+            "en": "Toast with Caña de Presa o Caña de Lomo de Bellota 100% Ibérico",
+            "es": "",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2.7
+              }
+            ],
+            "productUrl": "https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=276"
+          },
+          {
+            "name": "Tostada con Chorizo o Salchichón de Bellota 100% Ibérico",
+            "en": "Toast with Chorizo o Salchichón de Bellota 100% Ibérico",
+            "es": "",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2.6
+              }
+            ]
+          },
+          {
+            "name": "Tostada con mantequilla (vaca, oveja o cabra)",
+            "en": "Toast with mantequilla (vaca, oveja o cabra)",
+            "es": "",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2
+              }
+            ],
+            "productUrl": "https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=81"
+          },
+          {
+            "name": "Tostada con aceite y tomate",
+            "en": "Toast with aceite y tomate",
+            "es": "",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2
+              }
+            ]
+          },
+          {
+            "name": "Tostada pan sin gluten con Jamón de Cebo de Campo 100% Ibérico D.O.P Los Pedroches cortado a mano",
+            "en": "Gluten-free bread toast with Jamón de Cebo de Campo 100% Ibérico D.O.P Los Pedroches cortado a mano",
+            "es": "",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 3.5
+              }
+            ],
+            "productUrl": "https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=364"
+          },
+          {
+            "name": "Tostada pan sin gluten con Chorizo o Salchichón de Bellota 100% Ibérico",
+            "en": "Gluten-free bread toast with Chorizo o Salchichón de Bellota 100% Ibérico",
+            "es": "",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 3.25
+              }
+            ]
+          },
+          {
+            "name": "Tostada pan sin gluten con mantequilla (vaca, oveja o cabra)",
+            "en": "Gluten-free bread toast with mantequilla (vaca, oveja o cabra)",
+            "es": "",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Para empezar",
+        "titleEn": "To start",
+        "items": [
+          {
+            "name": "Jamón de Bellota 100% Ibérico Alta Expresión D.O.P. Los Pedroches",
+            "en": "Iberian ham: Bellota 100% Ibérico Alta Expresión D.O.P. Los Pedroches",
+            "es": "Media 60 g; entera 90 g aprox.",
+            "prices": [
+              {
+                "label": "Media",
+                "eur": 16
+              },
+              {
+                "label": "Entera",
+                "eur": 24
+              }
+            ]
+          },
+          {
+            "name": "Caña de presa de Bellota 100% Ibérica Alta Expresión",
+            "en": "Iberian cured pork: presa de Bellota 100% Ibérica Alta Expresión",
+            "es": "",
+            "prices": [
+              {
+                "label": "Media",
+                "eur": 13.5
+              },
+              {
+                "label": "Entera",
+                "eur": 22.95
+              }
+            ]
+          },
+          {
+            "name": "Lomo de Bellota 100% Ibérico Alta Expresión",
+            "en": "Iberian loin: Bellota 100% Ibérico Alta Expresión",
+            "es": "",
+            "prices": [
+              {
+                "label": "Media",
+                "eur": 11.5
+              },
+              {
+                "label": "Entera",
+                "eur": 19.9
+              }
+            ]
+          },
+          {
+            "name": "Salchichón de Bellota 100% Ibérico Alta Expresión",
+            "en": "Iberian salchichón: Bellota 100% Ibérico Alta Expresión",
+            "es": "",
+            "prices": [
+              {
+                "label": "Media",
+                "eur": 5.5
+              },
+              {
+                "label": "Entera",
+                "eur": 9.75
+              }
+            ]
+          },
+          {
+            "name": "Chorizo de Bellota 100% Ibérico Alta Expresión",
+            "en": "Iberian chorizo: Bellota 100% Ibérico Alta Expresión",
+            "es": "",
+            "prices": [
+              {
+                "label": "Media",
+                "eur": 5.5
+              },
+              {
+                "label": "Entera",
+                "eur": 9.75
+              }
+            ]
+          },
+          {
+            "name": "Tabla surtida de embutidos de Bellota",
+            "en": "Assorted selection of embutidos de Bellota",
+            "es": "",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 16.5
+              }
+            ]
+          },
+          {
+            "name": "Queso de leche cruda de oveja Gran Reserva",
+            "en": "Cheese: leche cruda de oveja Gran Reserva",
+            "es": "Media 60 g; entera 90 g aprox.",
+            "prices": [
+              {
+                "label": "Media",
+                "eur": 7.5
+              },
+              {
+                "label": "Entera",
+                "eur": 12.75
+              }
+            ]
+          },
+          {
+            "name": "Queso de oveja pasteurizado curado con trufa",
+            "en": "Cheese: oveja pasteurizado curado con trufa",
+            "es": "Media 60 g; entera 90 g aprox.",
+            "prices": [
+              {
+                "label": "Media",
+                "eur": 8.5
+              },
+              {
+                "label": "Entera",
+                "eur": 12.5
+              }
+            ]
+          },
+          {
+            "name": "Queso de oveja pasteurizado curado con ajo negro",
+            "en": "Cheese: oveja pasteurizado curado con ajo negro",
+            "es": "Media 60 g; entera 90 g aprox.",
+            "prices": [
+              {
+                "label": "Media",
+                "eur": 8.5
+              },
+              {
+                "label": "Entera",
+                "eur": 12.5
+              }
+            ]
+          },
+          {
+            "name": "Tabla surtida de quesos",
+            "en": "Assorted selection of quesos",
+            "es": "",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 16.5
+              }
+            ]
+          },
+          {
+            "name": "Tabla surtida de queso de oveja pasteurizado curado con trufa y ajo negro",
+            "en": "Assorted selection of queso de oveja pasteurizado curado con trufa y ajo negro",
+            "es": "",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 12.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "De la huerta",
+        "titleEn": "From the garden",
+        "items": [
+          {
+            "name": "Ensalada de tomate de temporada",
+            "en": "Seasonal tomato salad",
+            "es": "",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 9
+              }
+            ]
+          },
+          {
+            "name": "Pimientos del piquillo estilo Julián de Tolosa",
+            "en": "Piquillo peppers, Julián de Tolosa style",
+            "es": "",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 9
+              }
+            ]
+          },
+          {
+            "name": "Puerros a la brasa con Jamón de Bellota 100% Ibérico",
+            "en": "Grilled leeks with Iberian ham",
+            "es": "Alérgenos declarados: Lácteos.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 12.9
+              }
+            ]
+          },
+          {
+            "name": "Alcachofas a la brasa con queso Gran Reserva",
+            "en": "Grilled artichokes with aged cheese",
+            "es": "Alérgenos declarados: Huevo, lácteos.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 14.9
+              }
+            ]
+          },
+          {
+            "name": "Salteado de setas con huevo poché y Jamón de Bellota 100% Ibérico",
+            "en": "Sautéed mushrooms with poached egg and Iberian ham",
+            "es": "Alérgenos declarados: Huevo, lácteos.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 13.5
+              }
+            ]
+          },
+          {
+            "name": "Berenjenas fritas con miel de caña y salmorejo",
+            "en": "Fried aubergines with cane syrup and salmorejo",
+            "es": "Alérgenos declarados: Lácteos, gluten.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 10.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Primer bocado",
+        "titleEn": "First bites",
+        "items": [
+          {
+            "name": "Salmorejo cordobés con Jamón de Bellota 100% Ibérico",
+            "en": "Salmorejo: cordobés con Jamón de Bellota 100% Ibérico",
+            "es": "Alérgenos declarados: Gluten.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 9.9
+              }
+            ]
+          },
+          {
+            "name": "Mazamorra con crema de PX y uvas laminadas",
+            "en": "Mazamorra: con crema de PX y uvas laminadas",
+            "es": "Alérgenos declarados: Frutos secos (la fuente dice «con cáscara, sin cáscara»), gluten, sulfitos.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 9.9
+              }
+            ]
+          },
+          {
+            "name": "Ensaladilla con Jamón de Bellota 100% Ibérico",
+            "en": "Potato salad: con Jamón de Bellota 100% Ibérico",
+            "es": "Alérgenos declarados: Huevo.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 10.5
+              }
+            ]
+          },
+          {
+            "name": "Trío de Frios",
+            "en": "Trio of cold dishes: salmorejo, mazamorra and potato salad",
+            "es": "Salmorejo, mazamorra y ensaladilla. Alérgenos declarados: Huevo, gluten, sulfitos.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 10.9
+              }
+            ]
+          },
+          {
+            "name": "Steak Tartar de Solomillo de Bellota 100% Ibérico",
+            "en": "Steak tartare: Solomillo de Bellota 100% Ibérico",
+            "es": "Alérgenos declarados: Huevo, soja, mostaza.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 19
+              }
+            ]
+          },
+          {
+            "name": "Huevos rotos con Jamón de Bellota 100% Ibérico",
+            "en": "Broken eggs: con Jamón de Bellota 100% Ibérico",
+            "es": "Alérgenos declarados: Huevo.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 14.5
+              }
+            ]
+          },
+          {
+            "name": "Tartar de Salchichón de Bellota 100% Ibérico",
+            "en": "Tartare: Salchichón de Bellota 100% Ibérico",
+            "es": "Alérgenos declarados: Lácteos, sulfitos.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 13.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Montaditos",
+        "titleEn": "Small sandwiches",
+        "items": [
+          {
+            "name": "Jamón de Bellota 100% Ibérico Alta Expresión",
+            "en": "Iberian ham: Bellota 100% Ibérico Alta Expresión",
+            "es": "Alérgenos declarados: Gluten.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 4.85
+              }
+            ],
+            "productUrl": "https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=73"
+          },
+          {
+            "name": "Caña de presa de Bellota 100% Ibérico Alta Expresión",
+            "en": "Iberian cured pork: presa de Bellota 100% Ibérico Alta Expresión",
+            "es": "Alérgenos declarados: Lácteos, soja, gluten.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 4.85
+              }
+            ],
+            "productUrl": "https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=71"
+          },
+          {
+            "name": "Lomo de Bellota 100% Ibérico Alta Expresión",
+            "en": "Iberian loin: Bellota 100% Ibérico Alta Expresión",
+            "es": "Alérgenos declarados: Lácteos, soja, gluten.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 4.5
+              }
+            ],
+            "productUrl": "https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=74"
+          },
+          {
+            "name": "Sobrasada y crema queso Torremilano",
+            "en": "Spanish speciality: Sobrasada y crema queso Torremilano",
+            "es": "Alérgenos declarados: Huevo, lácteos, soja, gluten.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 4
+              }
+            ]
+          },
+          {
+            "name": "Presa de Bellota 100% Ibérica a la brasa",
+            "en": "Iberian presa: Bellota 100% Ibérica a la brasa",
+            "es": "Alérgenos declarados: Huevo, lácteos, gluten.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 5.45
+              }
+            ],
+            "productUrl": "https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=72"
+          },
+          {
+            "name": "Secreto de Bellota 100% Ibérico a la brasa",
+            "en": "Iberian secreto: Bellota 100% Ibérico a la brasa",
+            "es": "Alérgenos declarados: Huevo, lácteos, gluten, apio.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 5.45
+              }
+            ],
+            "productUrl": "https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=154"
+          },
+          {
+            "name": "Abanico y Piparra",
+            "en": "Iberian abanico: y Piparra",
+            "es": "Alérgenos declarados: Huevo, lácteos, gluten, sulfitos.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 5.45
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Nuestras carnes del Valle de los Pedroches",
+        "titleEn": "Pedroches Valley meats",
+        "items": [
+          {
+            "name": "Presa de Bellota 100% Ibérica",
+            "en": "Iberian presa: Bellota 100% Ibérica",
+            "es": "Patatas fritas hechas en casa",
+            "prices": [
+              {
+                "label": "Media",
+                "eur": 12
+              },
+              {
+                "label": "Entera",
+                "eur": 19.5
+              }
+            ],
+            "productUrl": "https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=109"
+          },
+          {
+            "name": "Pluma de Bellota 100% Ibérica",
+            "en": "Iberian pluma: Bellota 100% Ibérica",
+            "es": "Patatas fritas hechas en casa",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 17.5
+              }
+            ],
+            "productUrl": "https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=110"
+          },
+          {
+            "name": "Solomillo de Bellota 100% Ibérico",
+            "en": "Tenderloin: Bellota 100% Ibérico",
+            "es": "Patatas fritas hechas en casa",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 14.5
+              }
+            ],
+            "productUrl": "https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=111"
+          },
+          {
+            "name": "Secreto de Bellota 100% Ibérico",
+            "en": "Iberian secreto: Bellota 100% Ibérico",
+            "es": "Patatas fritas hechas en casa",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 16.5
+              }
+            ],
+            "productUrl": "https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=112"
+          },
+          {
+            "name": "Abanico Confitado 100% Ibérico con crema de queso",
+            "en": "Iberian abanico: Confitado 100% Ibérico con crema de queso",
+            "es": "Patatas fritas hechas en casa Alérgenos declarados: Huevo, lácteos.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 15.9
+              }
+            ]
+          },
+          {
+            "name": "Parrillada Ibérica",
+            "en": "Iberian mixed grill",
+            "es": "Secreto, solomillo, presa ibérica; salsa chimichurri y salsa verde",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 32
+              }
+            ]
+          },
+          {
+            "name": "Entrecot (400 g aprox.)",
+            "en": "Ribeye steak (400 g aprox.)",
+            "es": "Patatas fritas caseras y pimientos del piquillo estilo Julián de Tolosa",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 23.7
+              }
+            ],
+            "productUrl": "https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=114"
+          },
+          {
+            "name": "Chuletón (1.000 g aprox.)",
+            "en": "Bone-in steak (1.000 g aprox.)",
+            "es": "Patatas fritas caseras y pimientos del piquillo estilo Julián de Tolosa",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 49.9
+              }
+            ],
+            "productUrl": "https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=117"
+          },
+          {
+            "name": "Solomillo (200 g aprox.)",
+            "en": "Spanish speciality: Solomillo (200 g aprox.)",
+            "es": "Parmentier de patata Alérgenos declarados: Lácteos, soja, apio.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 24.75
+              }
+            ],
+            "productUrl": "https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=118"
+          },
+          {
+            "name": "Picaña de vacuno (250 g aprox.)",
+            "en": "Spanish speciality: Picaña de vacuno (250 g aprox.)",
+            "es": "Patatas fritas hechas en casa",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 14.9
+              }
+            ]
+          },
+          {
+            "name": "Hamburguesa de vacuno con crema de queso (180 g aprox.)",
+            "en": "Burger of vacuno con crema de queso (180 g aprox.)",
+            "es": "Patatas fritas hechas en casa Alérgenos declarados: Huevo, lácteos, gluten, sulfitos.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 12.5
+              }
+            ],
+            "productUrl": "https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=102"
+          },
+          {
+            "name": "Chuletillas de cordero",
+            "en": "Lamb cutlets",
+            "es": "Alérgenos declarados: Sésamo, sulfitos.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 19.5
+              }
+            ],
+            "productUrl": "https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=119"
+          },
+          {
+            "name": "Pan Bao con pierna de cordero recental y pepino encurtido",
+            "en": "Bao bun with lamb and pickled cucumber",
+            "es": "Alérgenos declarados: Lácteos, soja, gluten, sulfitos.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 11
+              }
+            ],
+            "productUrl": "https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=108"
+          }
+        ]
+      },
+      {
+        "title": "A fuego lento",
+        "titleEn": "Slow-cooked",
+        "items": [
+          {
+            "name": "Carrillada de Bellota 100% Ibérica guisada con puré Robuchon",
+            "en": "Braised Iberian pork cheeks with Robuchon-style mash",
+            "es": "Alérgenos declarados: Soja, gluten, apio.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 18.9
+              }
+            ],
+            "productUrl": "https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=159"
+          }
+        ]
+      },
+      {
+        "title": "Momento Dulce",
+        "titleEn": "Desserts",
+        "items": [
+          {
+            "name": "Arroz con leche de oveja o de cabra",
+            "en": "Rice pudding with sheep's or goat's milk",
+            "es": "Alérgenos declarados: Lácteos.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 6.2
+              }
+            ],
+            "productUrl": "https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=127"
+          },
+          {
+            "name": "Tarta de queso estilo La Viña",
+            "en": "La Viña-style cheesecake",
+            "es": "Alérgenos declarados: Huevo, lácteos, gluten, sulfitos.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 6.5
+              }
+            ]
+          },
+          {
+            "name": "Flan de Queso y Caramelo",
+            "en": "Cheese and caramel flan",
+            "es": "Alérgenos declarados: Lácteos, gluten, sulfitos.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 6.2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Extras",
+        "titleEn": "Extras",
+        "items": [
+          {
+            "name": "Servicio de pan de masa madre",
+            "en": "Sourdough bread service",
+            "es": "Alérgenos declarados: Huevo, lácteos, gluten.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 1.5
+              }
+            ]
+          },
+          {
+            "name": "Servicio de pan con tomate",
+            "en": "Bread with tomato service",
+            "es": "Alérgenos declarados: Huevo, lácteos, gluten.",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 3.6
+              }
+            ]
+          },
+          {
+            "name": "Cartucho de patatas",
+            "en": "Cone of fried potatoes",
+            "es": "",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 6
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "menuPublicNoticeEs": "Precios con IVA incluido. COVAP advierte que se manipulan gluten, huevo, leche y derivados (incluida lactosa), frutos de cáscara, sésamo, soja, mostaza, apio y sulfitos. No se garantiza ausencia de trazas. Pan sin gluten no garantiza ausencia de contaminación cruzada.",
+    "menuPublicNoticeEn": "Prices include VAT. COVAP warns that gluten, egg, milk and derivatives (including lactose), tree nuts, sesame, soy, mustard, celery and sulphites are handled on site. Absence of traces cannot be guaranteed. Gluten-free bread does not guarantee absence of cross-contact.",
+    "menuSourceNote": "68 referencias verificadas en la transcripción del 24/10/2026. Datos de formatos, guarniciones y alérgenos: docs/dtapas-covap-checkpoint-2026-10-24.md."
   },
   {
     "id": "cafeteria-bar-la-jineta",
