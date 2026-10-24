@@ -20954,14 +20954,14 @@
     "address": "Calle Puerta de Almodóvar, 5, Córdoba",
     "mealCostEur": null,
     "priceStatus": "historical_pending_update",
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-24",
     "sources": [
       {
-        "label": "Carta oficial de octubre de 2025 (PDF aportado por el usuario)",
+        "label": "Official October 2025 menu (PDF provided by the user)",
         "url": "https://restaurantecasarubiocordoba.com/"
       },
       {
-        "label": "Web oficial y dirección",
+        "label": "Official website and address",
         "url": "https://restaurantecasarubiocordoba.com/"
       }
     ],
