@@ -104,3 +104,15 @@ Método publicado: a la brasa con carbón de leña de encina. Importes con IVA i
 | Pan Bao con pierna de cordero recental y pepino encurtido | 11,00 € | Pan bao con pepino encurtido | Lácteos, soja, gluten, sulfitos | product_id=108 |
 
 **Total sección: 13 platos, 14 importes.** La columna de precio único no implica ración entera. Los pesos se refieren exclusivamente a los productos que lo indican y son aproximados. La ausencia de iconos en el fragmento no garantiza ausencia de alérgenos. Fuente: https://www.ibericoscovap.com/es/dtapas-covap-cordoba-carta/ . Fichas con ID: https://www.ibericoscovap.com/es/ficha-bar-cordoba?product_id=ID.
+
+
+## A fuego lento — sexta sección (24/10/2026)
+
+| Plato | Precio único | Alérgenos declarados | Fuente |
+|---|---:|---|---|
+| Carrillada de Bellota 100% Ibérica guisada con puré Robuchon | 18,90 € | Soja, gluten, apio | https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=159 |
+
+- **Formato:** no especificado; no atribuir media ni ración entera.
+- **Precio:** IVA incluido, según la carta transcrita.
+- **Descripción institucional atribuida al establecimiento:** «Nuestras carnes proceden de animales nacidos y criados en libertad en la Dehesa del Valle de los Pedroches. Gracias a nuestro modelo cooperativo, garantizamos el más alto nivel de trazabilidad, calidad y bienestar animal». No presentar esta declaración comercial como verificación independiente.
+- Los alérgenos transcritos son los que aparecen expresamente en la fuente; no deducir ausencia de otros.
