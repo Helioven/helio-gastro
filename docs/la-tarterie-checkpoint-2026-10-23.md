@@ -50,3 +50,7 @@
 - No copiar fotografías ajenas. Evitar duplicados.
 - Última tanda recibida: producto 28. Comprobar que el catálogo de las tres páginas está efectivamente completo, que no hay duplicados y que se incluyen las categorías saladas; preparar las descripciones ES/EN y obtener aprobación expresa antes de publicar.
 - El progreso registrado es 28 productos recibidos. El usuario indica que la transcripción está terminada; **cobertura total de la tienda todavía pendiente de comprobar**.
+
+## Criterio editorial de precios mínimos (24/10/2026)
+
+Decisión aprobada por Helio: evitar transcribir todas las combinaciones de tamaño, gluten, lactosa y azúcar. Mostrar por producto el precio mínimo público como «Desde X €» y explicar que el importe final depende de la configuración. Mantener tamaños y opciones verificadas, con enlace individual a la tienda oficial. No confundir precio por tarta completa con precio por porción ni presentar el mínimo como precio confirmado de cada tamaño o variante. En Zanahoria, la captura del carrito confirma 19 € para seis porciones con gluten/lactosa/azúcar normales. Preparar ES/EN; no publicar aún hasta validación completa y visto bueno.
