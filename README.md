@@ -290,3 +290,7 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 ### Cierre de revisión — Rincón de las Beatillas (24/10/2026)
 
 - **Taberna Rincón de las Beatillas — REVISADA Y CERRADA.** Helio confirma que la ficha y carta están completas respecto a las fuentes consultadas. **Los precios no figuran en la fuente**, por lo que se mantienen sin inventar ni estimar. Excluir de próximas revisiones ordinarias; reabrir solo ante nueva fuente, incidencia o cambio contrastado.
+
+### Cierre de revisión — Taberna Ágora Casa Bravo 1919 (24/10/2026)
+
+- **Taberna Ágora Casa Bravo 1919 — REVISADA Y CERRADA.** Helio confirma que la carta registrada está completa. Excluir de próximas revisiones ordinarias salvo cambio documentado, incidencia o nueva solicitud. Sin modificar datos gastronómicos ni afirmar una verificación independiente de precios.
