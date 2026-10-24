@@ -746,7 +746,7 @@
     "address": "Calle Tundidores, 3, Córdoba",
     "mealCostEur": null,
     "priceStatus": "unknown",
-    "checkedAt": "2026-10-22",
+    "checkedAt": "2026-10-24",
     "sources": [
       {
         "label": "Carta oficial de Taberna Salinas (platos y postres; sin precios)",
@@ -841,7 +841,7 @@
         "dishPrices": []
       }
     ],
-    "menuSourceNote": "Listado de platos y postres transcrito por el usuario de la web oficial y respaldado por captura. Sin precios publicados en el material aportado. Ortografías dudosas del original: 'Zuhetos' y 'Moltalbán', pendientes de contrastar. Se separaron morcillas y rabo de toro, que venían unidos en el texto. Descripciones editoriales bilingües añadidas; no equivalen a fichas de ingredientes/alérgenos confirmadas por el establecimiento. Revisión web oficial 22/10/2026: los errores tipográficos del origen incluyen «Portaje», «Morcilla caserasRabo...» y «toamte»; la ficha conserva separadas morcilla y rabo como interpretaciones editoriales y no duplica ese renglón. No se han incorporado precios.",
+    "menuSourceNote": "Listado de platos y postres transcrito por el usuario de la web oficial y respaldado por captura. Sin precios publicados en el material aportado. Ortografías dudosas del original: 'Zuhetos' y 'Moltalbán', pendientes de contrastar. Se separaron morcillas y rabo de toro, que venían unidos en el texto. Descripciones editoriales bilingües añadidas; no equivalen a fichas de ingredientes/alérgenos confirmadas por el establecimiento. Revisión web oficial 22/10/2026: los errores tipográficos del origen incluyen «Portaje», «Morcilla caserasRabo...» y «toamte»; la ficha conserva separadas morcilla y rabo como interpretaciones editoriales y no duplica ese renglón. No se han incorporado precios. Consulta 24/10/2026: 45 importes vistos en el panel Menú de Google para Taberna Salinas, cotejados únicamente con platos de la carta oficial. No consta fecha de actualización del panel ni formato de ración, por lo que no se consideran precios oficiales confirmados ni se agregan a dishPrices para comparaciones por formato. Excluidos los importes contradictorios de chorizo y morcilla (11,25/11,50 €), los platos sin coincidencia inequívoca y posibles traducciones erróneas.",
     "menuSections": [
       {
         "title": "Entrantes, fríos y ensaladas",
@@ -864,14 +864,24 @@
             "name": "Jamón serrano del Valle",
             "description": "Jamón serrano curado procedente del Valle, según la carta.",
             "en": "Cured Serrano ham from the Valley, as listed on the menu.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 14
+              }
+            ],
             "es": "Jamón serrano curado procedente del Valle, según la carta."
           },
           {
             "name": "Queso de oveja de Zuhetos",
             "description": "Queso de oveja de la localidad indicada en la carta; origen exacto pendiente de confirmar.",
             "en": "Sheep's milk cheese from the place named on the menu; exact origin unconfirmed.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 13.5
+              }
+            ],
             "es": "Queso de oveja de la localidad indicada en la carta; origen exacto pendiente de confirmar."
           },
           {
@@ -885,35 +895,60 @@
             "name": "Ensalada de col con ajitos fritos y salmón ahumado",
             "description": "Ensalada de col con ajitos fritos y salmón ahumado.",
             "en": "Cabbage salad with fried garlic and smoked salmon.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 11.25
+              }
+            ],
             "es": "Ensalada de col con ajitos fritos y salmón ahumado."
           },
           {
             "name": "Naranjas picás con aceite y bacalao",
             "description": "Naranja troceada con aceite y bacalao, combinación tradicional cordobesa.",
             "en": "Chopped orange with olive oil and salt cod, a traditional Cordoban combination.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 13.95
+              }
+            ],
             "es": "Naranja troceada con aceite y bacalao, combinación tradicional cordobesa."
           },
           {
             "name": "Melón con jamón",
             "description": "Melón acompañado de jamón serrano.",
             "en": "Melon served with cured ham.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 12.25
+              }
+            ],
             "es": "Melón acompañado de jamón serrano."
           },
           {
             "name": "Plato de tomate aliñado de la Vega de Alcolea",
             "description": "Tomate aliñado procedente de la Vega de Alcolea, según la carta.",
             "en": "Seasoned tomatoes from the Vega de Alcolea area, as described on the menu.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 8.5
+              }
+            ],
             "es": "Tomate aliñado procedente de la Vega de Alcolea, según la carta."
           },
           {
             "name": "Salmorejo cordobés",
             "description": "Crema fría tradicional cordobesa a base de tomate, pan, aceite de oliva y ajo.",
             "en": "Traditional chilled Cordoban tomato, bread, olive oil and garlic cream.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 11.25
+              }
+            ],
             "es": "Crema fría tradicional cordobesa a base de tomate, pan, aceite de oliva y ajo."
           }
         ]
@@ -925,7 +960,12 @@
             "name": "Albóndigas en caldo del puchero y jamón",
             "description": "Albóndigas servidas en caldo de puchero con jamón.",
             "en": "Meatballs served in traditional stew broth with cured ham.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 11.25
+              }
+            ],
             "es": "Albóndigas servidas en caldo de puchero con jamón."
           },
           {
@@ -939,7 +979,12 @@
             "name": "Pisto Tundidores con huevos fritos",
             "description": "Pisto de verduras al estilo Tundidores, acompañado de huevos fritos.",
             "en": "Tundidores-style vegetable stew served with fried eggs.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 11.5
+              }
+            ],
             "es": "Pisto de verduras al estilo Tundidores, acompañado de huevos fritos."
           },
           {
@@ -974,49 +1019,84 @@
             "name": "Rabo de toro estofado al estilo cordobés",
             "description": "Rabo de toro estofado siguiendo el estilo tradicional cordobés.",
             "en": "Slow-braised oxtail prepared in traditional Cordoban style.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 19.1
+              }
+            ],
             "es": "Rabo de toro estofado siguiendo el estilo tradicional cordobés."
           },
           {
             "name": "Cochinillo frito del Valle con ajitos fritos",
             "description": "Cochinillo frito del Valle acompañado de ajitos fritos.",
             "en": "Fried suckling pig from the Valley served with fried garlic.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 13.25
+              }
+            ],
             "es": "Cochinillo frito del Valle acompañado de ajitos fritos."
           },
           {
             "name": "Callos a la antigua",
             "description": "Callos preparados al estilo tradicional de la casa.",
             "en": "Traditional-style tripe stew.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 13.25
+              }
+            ],
             "es": "Callos preparados al estilo tradicional de la casa."
           },
           {
             "name": "Manitas de cerdo",
             "description": "Manitas de cerdo; elaboración exacta no especificada.",
             "en": "Pig's trotters; exact preparation not specified.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 13.5
+              }
+            ],
             "es": "Manitas de cerdo; elaboración exacta no especificada."
           },
           {
             "name": "Chuletas de cordero",
             "description": "Chuletas de cordero; guarnición y preparación no especificadas.",
             "en": "Lamb chops; cooking method and sides not specified.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 13.5
+              }
+            ],
             "es": "Chuletas de cordero; guarnición y preparación no especificadas."
           },
           {
             "name": "Carne con tomate a la cordobesa",
             "description": "Carne guisada con tomate al estilo cordobés.",
             "en": "Cordoban-style meat cooked in tomato sauce.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 13.5
+              }
+            ],
             "es": "Carne guisada con tomate al estilo cordobés."
           },
           {
             "name": "Carrillada ibérica al estilo de la taberna",
             "description": "Carrillada de cerdo ibérico preparada al estilo de la taberna.",
             "en": "Iberian pork cheeks prepared in the tavern's house style.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 13.25
+              }
+            ],
             "es": "Carrillada de cerdo ibérico preparada al estilo de la taberna."
           }
         ]
@@ -1028,14 +1108,24 @@
             "name": "Cazuela de espárragos trigueros con huevo escalfado",
             "description": "Cazuela de espárragos trigueros con huevo escalfado.",
             "en": "Wild asparagus casserole topped with a poached egg.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 11.75
+              }
+            ],
             "es": "Cazuela de espárragos trigueros con huevo escalfado."
           },
           {
             "name": "Espinacas con garbanzos",
             "description": "Plato tradicional de espinacas con garbanzos.",
             "en": "Traditional spinach and chickpea dish.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 11.25
+              }
+            ],
             "es": "Plato tradicional de espinacas con garbanzos."
           },
           {
@@ -1056,63 +1146,108 @@
             "name": "Revuelto de setas con salmón",
             "description": "Huevos revueltos con setas y salmón.",
             "en": "Scrambled eggs with mushrooms and salmon.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 11.5
+              }
+            ],
             "es": "Huevos revueltos con setas y salmón."
           },
           {
             "name": "Huevo, lomo, chorizo y patatas",
             "description": "Plato combinado de huevo, lomo, chorizo y patatas.",
             "en": "Combination plate with egg, pork loin, chorizo and potatoes.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 12
+              }
+            ],
             "es": "Plato combinado de huevo, lomo, chorizo y patatas."
           },
           {
             "name": "Croquetas caseras de espinacas con piñones",
             "description": "Croquetas caseras de espinacas y piñones.",
             "en": "Homemade spinach and pine nut croquettes.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 11.5
+              }
+            ],
             "es": "Croquetas caseras de espinacas y piñones."
           },
           {
             "name": "Croquetas caseras de pollo y jamón",
             "description": "Croquetas caseras de pollo y jamón.",
             "en": "Homemade chicken and cured ham croquettes.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 11.5
+              }
+            ],
             "es": "Croquetas caseras de pollo y jamón."
           },
           {
             "name": "Berenjenas fritas con o sin miel de caña",
             "description": "Berenjenas fritas, disponibles con o sin miel de caña.",
             "en": "Fried aubergines, served with or without cane syrup.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 10.75
+              }
+            ],
             "es": "Berenjenas fritas, disponibles con o sin miel de caña."
           },
           {
             "name": "Setas a la plancha",
             "description": "Setas cocinadas a la plancha.",
             "en": "Griddled mushrooms.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 10.75
+              }
+            ],
             "es": "Setas cocinadas a la plancha."
           },
           {
             "name": "Tortilla de la taberna",
             "description": "Tortilla especial de la taberna; ingredientes no especificados.",
             "en": "House-style omelette; ingredients not specified.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 10.75
+              }
+            ],
             "es": "Tortilla especial de la taberna; ingredientes no especificados."
           },
           {
             "name": "Sangre encebollada",
             "description": "Sangre encebollada, plato tradicional preparado con cebolla.",
             "en": "Traditional cooked blood dish with onions.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 9.95
+              }
+            ],
             "es": "Sangre encebollada, plato tradicional preparado con cebolla."
           },
           {
             "name": "Flamenquín de jamón al estilo de Córdoba",
             "description": "Flamenquín cordobés de jamón, enrollado y empanado.",
             "en": "Cordoban-style rolled and breaded flamenquín with cured ham.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 13.25
+              }
+            ],
             "es": "Flamenquín cordobés de jamón, enrollado y empanado."
           }
         ]
@@ -1124,42 +1259,72 @@
             "name": "Bacalao rebozado",
             "description": "Bacalao rebozado y frito.",
             "en": "Battered and fried cod.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 13.5
+              }
+            ],
             "es": "Bacalao rebozado y frito."
           },
           {
             "name": "Adobo cordobés (japuta, rosada)",
             "description": "Pescado en adobo al estilo cordobés, con japuta o rosada según la carta.",
             "en": "Cordoban-style marinated fish, listed as pomfret or pink cusk-eel.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 14.5
+              }
+            ],
             "es": "Pescado en adobo al estilo cordobés, con japuta o rosada según la carta."
           },
           {
             "name": "Boquerones en vinagre",
             "description": "Boquerones marinados en vinagre.",
             "en": "Anchovies marinated in vinegar.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 12.95
+              }
+            ],
             "es": "Boquerones marinados en vinagre."
           },
           {
             "name": "Boquerones fritos adobados",
             "description": "Boquerones adobados y fritos.",
             "en": "Marinated and fried anchovies.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 13.5
+              }
+            ],
             "es": "Boquerones adobados y fritos."
           },
           {
             "name": "Calamares fritos o a la plancha",
             "description": "Calamares disponibles fritos o a la plancha.",
             "en": "Squid available fried or griddled.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 13.5
+              }
+            ],
             "es": "Calamares disponibles fritos o a la plancha."
           },
           {
             "name": "Gambas rebozadas",
             "description": "Gambas rebozadas y fritas.",
             "en": "Battered and fried prawns.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 13.25
+              }
+            ],
             "es": "Gambas rebozadas y fritas."
           },
           {
@@ -1173,7 +1338,12 @@
             "name": "Filetitos de lenguado fritos en taquitos",
             "description": "Taquitos de lenguado fritos.",
             "en": "Bite-sized pieces of fried sole.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 13.5
+              }
+            ],
             "es": "Taquitos de lenguado fritos."
           }
         ]
@@ -1185,84 +1355,139 @@
             "name": "Natillas cordobesas",
             "description": "Natillas tradicionales de estilo cordobés.",
             "en": "Traditional Cordoban-style custard.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 3.95
+              }
+            ],
             "es": "Natillas tradicionales de estilo cordobés."
           },
           {
             "name": "Tarta de queso",
             "description": "Tarta de queso; estilo y acompañamiento no especificados.",
             "en": "Cheesecake; style and accompaniments not specified.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 3.95
+              }
+            ],
             "es": "Tarta de queso; estilo y acompañamiento no especificados."
           },
           {
             "name": "Zumo de naranja natural",
             "description": "Zumo de naranja natural recién exprimido.",
             "en": "Freshly squeezed orange juice.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 3.95
+              }
+            ],
             "es": "Zumo de naranja natural recién exprimido."
           },
           {
             "name": "Bombones de helado",
             "description": "Bombones de helado recubiertos de chocolate.",
             "en": "Chocolate-coated ice cream bites.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 3.65
+              }
+            ],
             "es": "Bombones de helado recubiertos de chocolate."
           },
           {
             "name": "Naranja preparada con azúcar y canela",
             "description": "Naranja preparada con azúcar y canela.",
             "en": "Orange served with sugar and cinnamon.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 3.65
+              }
+            ],
             "es": "Naranja preparada con azúcar y canela."
           },
           {
             "name": "Tocino de cielo",
             "description": "Tocino de cielo, postre tradicional de yemas de huevo y azúcar.",
             "en": "Tocino de cielo, a traditional rich egg-yolk and sugar custard.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 3.65
+              }
+            ],
             "es": "Tocino de cielo, postre tradicional de yemas de huevo y azúcar."
           },
           {
             "name": "Pastel cordobés",
             "description": "Pastel cordobés tradicional, hojaldre relleno de cabello de ángel.",
             "en": "Traditional Cordoban puff pastry filled with sweet pumpkin preserve.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 4.1
+              }
+            ],
             "es": "Pastel cordobés tradicional, hojaldre relleno de cabello de ángel."
           },
           {
             "name": "Flan casero de huevo",
             "description": "Flan casero de huevo.",
             "en": "Homemade egg flan.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 3.95
+              }
+            ],
             "es": "Flan casero de huevo."
           },
           {
             "name": "Arroz con leche",
             "description": "Arroz con leche, postre tradicional de arroz cocido en leche.",
             "en": "Traditional rice pudding cooked in milk.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 3.95
+              }
+            ],
             "es": "Arroz con leche, postre tradicional de arroz cocido en leche."
           },
           {
             "name": "Pastel de chocolate",
             "description": "Pastel de chocolate; elaboración exacta no especificada.",
             "en": "Chocolate cake; exact preparation not specified.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 3.95
+              }
+            ],
             "es": "Pastel de chocolate; elaboración exacta no especificada."
           },
           {
             "name": "Melón dulce de Moltalbán",
             "description": "Melón dulce de la procedencia indicada en la carta, pendiente de confirmar.",
             "en": "Sweet melon from the place named on the menu; origin unconfirmed.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "precio mostrado en Google",
+                "eur": 3.65
+              }
+            ],
             "es": "Melón dulce de la procedencia indicada en la carta, pendiente de confirmar."
           }
         ]
       }
     ],
-    "menuPublicNoticeEs": "La carta oficial online de Taberna Salinas no publica precios. Recomendamos consultar los importes directamente con el establecimiento antes de pedir. Las descripciones son orientativas y no sustituyen la información sobre alérgenos.",
-    "menuPublicNoticeEn": "Taberna Salinas's official online menu does not list prices. Please check prices directly with the restaurant before ordering. Descriptions are for guidance only and do not replace allergen information."
+    "menuPublicNoticeEs": "Precios orientativos mostrados en el menú de Google, consultados el 24/10/2026; no figuran en la carta oficial de Taberna Salinas. Pueden existir diferencias de precio y formato. Consulta los importes actualizados directamente con el establecimiento antes de pedir. Los alérgenos y las descripciones requieren confirmación del local.",
+    "menuPublicNoticeEn": "Indicative prices displayed on Google's menu panel, checked on 24 October 2026; these prices are not listed on Taberna Salinas's official website. Prices and portion sizes may differ. Please confirm current prices with the restaurant before ordering. Allergen details and descriptions require confirmation."
   },
   {
     "id": "bodegas-mezquita-cespedes",
