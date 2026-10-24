@@ -43644,8 +43644,8 @@
     "area": "Centro · Cruz Conde",
     "address": "Calle Cruz Conde, 32, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "priceStatus": "confirmed",
+    "checkedAt": "2026-10-24",
     "sources": [
       {
         "label": "Ficha de Churros Bar Marta y horario publicado",
@@ -43654,21 +43654,311 @@
       {
         "label": "Opiniones con especialidades de desayuno",
         "url": "https://churros-bar-marta.foodplacee.com/"
+      },
+      {
+        "label": "Carta de desayunos y bollería publicada en churrosbarmarta.shop (autoría del sitio sin verificar)",
+        "labelEn": "Breakfast and pastry menu published on churrosbarmarta.shop (website ownership unverified)",
+        "url": "https://churrosbarmarta.shop/menu"
       }
     ],
     "menus": [
       {
         "service": "desayuno",
         "dishes": [
+          "Café y media tostada normal de aceite o similar",
+          "Café y tostada entera normal de aceite o similar",
+          "Café y media tostada especial (York, York y queso, jamón serrano o pollo a la plancha)",
+          "Café y tostada entera especial",
+          "Café y media ración de churros",
+          "Café y ración entera de churros",
+          "Chocolate y media ración de churros",
+          "Chocolate y ración entera de churros",
+          "Zumo de naranja, refresco o zumo embotellado y media tostada normal",
+          "Zumo de naranja, refresco o zumo embotellado y tostada entera normal",
+          "Zumo de naranja, refresco o zumo embotellado y media tostada especial",
+          "Zumo de naranja, refresco o zumo embotellado y tostada entera especial",
+          "Bollería especial",
+          "Dulce fino",
+          "Porción de tarta",
+          "Bollería variada",
+          "Porción de tarta especial",
           "Churros",
           "Chocolate con churros",
           "Café",
           "Tostadas con tomate y jamón"
         ],
-        "dishPrices": []
+        "dishPrices": [
+          {
+            "dish": "Café y media tostada normal de aceite o similar",
+            "eur": 2.8,
+            "portion": "combinado"
+          },
+          {
+            "dish": "Café y tostada entera normal de aceite o similar",
+            "eur": 4.5,
+            "portion": "combinado"
+          },
+          {
+            "dish": "Café y media tostada especial (York, York y queso, jamón serrano o pollo a la plancha)",
+            "eur": 3.5,
+            "portion": "combinado"
+          },
+          {
+            "dish": "Café y tostada entera especial",
+            "eur": 5.5,
+            "portion": "combinado"
+          },
+          {
+            "dish": "Café y media ración de churros",
+            "eur": 3,
+            "portion": "combinado"
+          },
+          {
+            "dish": "Café y ración entera de churros",
+            "eur": 3.5,
+            "portion": "combinado"
+          },
+          {
+            "dish": "Chocolate y media ración de churros",
+            "eur": 3.5,
+            "portion": "combinado"
+          },
+          {
+            "dish": "Chocolate y ración entera de churros",
+            "eur": 4,
+            "portion": "combinado"
+          },
+          {
+            "dish": "Zumo de naranja, refresco o zumo embotellado y media tostada normal",
+            "eur": 4.5,
+            "portion": "combinado"
+          },
+          {
+            "dish": "Zumo de naranja, refresco o zumo embotellado y tostada entera normal",
+            "eur": 6.1,
+            "portion": "combinado"
+          },
+          {
+            "dish": "Zumo de naranja, refresco o zumo embotellado y media tostada especial",
+            "eur": 4.5,
+            "portion": "combinado"
+          },
+          {
+            "dish": "Zumo de naranja, refresco o zumo embotellado y tostada entera especial",
+            "eur": 6.5,
+            "portion": "combinado"
+          },
+          {
+            "dish": "Bollería especial",
+            "eur": 2.3,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Dulce fino",
+            "eur": 2.4,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Porción de tarta",
+            "eur": 2.8,
+            "portion": "unidad"
+          }
+        ]
       }
     ],
-    "openingHoursNote": "Horario general publicado: lunes a sábado, 08:00–20:45; domingo cerrado. Horario de churros y cocina no confirmado. Verificar antes de ir."
+    "openingHoursNote": "Horario general publicado: lunes a sábado, 08:00–20:45; domingo cerrado. Horario de churros y cocina no confirmado. Verificar antes de ir.",
+    "menuSections": [
+      {
+        "title": "Desayunos combinados",
+        "titleEn": "Breakfast combinations",
+        "items": [
+          {
+            "name": "Café y media tostada normal de aceite o similar",
+            "es": "Café y media tostada normal de aceite o similar",
+            "en": "Coffee and half a standard toast with olive oil or similar",
+            "prices": [
+              {
+                "label": "combinado",
+                "eur": 2.8
+              }
+            ]
+          },
+          {
+            "name": "Café y tostada entera normal de aceite o similar",
+            "es": "Café y tostada entera normal de aceite o similar",
+            "en": "Coffee and full standard toast with olive oil or similar",
+            "prices": [
+              {
+                "label": "combinado",
+                "eur": 4.5
+              }
+            ]
+          },
+          {
+            "name": "Café y media tostada especial (York, York y queso, jamón serrano o pollo a la plancha)",
+            "es": "Café y media tostada especial (York, York y queso, jamón serrano o pollo a la plancha)",
+            "en": "Coffee and half a special toast (ham, ham and cheese, Serrano ham or grilled chicken)",
+            "prices": [
+              {
+                "label": "combinado",
+                "eur": 3.5
+              }
+            ]
+          },
+          {
+            "name": "Café y tostada entera especial",
+            "es": "Café y tostada entera especial",
+            "en": "Coffee and full special toast",
+            "prices": [
+              {
+                "label": "combinado",
+                "eur": 5.5
+              }
+            ]
+          },
+          {
+            "name": "Café y media ración de churros",
+            "es": "Café y media ración de churros",
+            "en": "Coffee and half a portion of churros",
+            "prices": [
+              {
+                "label": "combinado",
+                "eur": 3
+              }
+            ]
+          },
+          {
+            "name": "Café y ración entera de churros",
+            "es": "Café y ración entera de churros",
+            "en": "Coffee and full portion of churros",
+            "prices": [
+              {
+                "label": "combinado",
+                "eur": 3.5
+              }
+            ]
+          },
+          {
+            "name": "Chocolate y media ración de churros",
+            "es": "Chocolate y media ración de churros",
+            "en": "Hot chocolate and half a portion of churros",
+            "prices": [
+              {
+                "label": "combinado",
+                "eur": 3.5
+              }
+            ]
+          },
+          {
+            "name": "Chocolate y ración entera de churros",
+            "es": "Chocolate y ración entera de churros",
+            "en": "Hot chocolate and full portion of churros",
+            "prices": [
+              {
+                "label": "combinado",
+                "eur": 4
+              }
+            ]
+          },
+          {
+            "name": "Zumo de naranja, refresco o zumo embotellado y media tostada normal",
+            "es": "Zumo de naranja, refresco o zumo embotellado y media tostada normal",
+            "en": "Orange juice, soft drink or bottled juice and half a standard toast",
+            "prices": [
+              {
+                "label": "combinado",
+                "eur": 4.5
+              }
+            ]
+          },
+          {
+            "name": "Zumo de naranja, refresco o zumo embotellado y tostada entera normal",
+            "es": "Zumo de naranja, refresco o zumo embotellado y tostada entera normal",
+            "en": "Orange juice, soft drink or bottled juice and full standard toast",
+            "prices": [
+              {
+                "label": "combinado",
+                "eur": 6.1
+              }
+            ]
+          },
+          {
+            "name": "Zumo de naranja, refresco o zumo embotellado y media tostada especial",
+            "es": "Zumo de naranja, refresco o zumo embotellado y media tostada especial",
+            "en": "Orange juice, soft drink or bottled juice and half a special toast",
+            "prices": [
+              {
+                "label": "combinado",
+                "eur": 4.5
+              }
+            ]
+          },
+          {
+            "name": "Zumo de naranja, refresco o zumo embotellado y tostada entera especial",
+            "es": "Zumo de naranja, refresco o zumo embotellado y tostada entera especial",
+            "en": "Orange juice, soft drink or bottled juice and full special toast",
+            "prices": [
+              {
+                "label": "combinado",
+                "eur": 6.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bollería y dulces",
+        "titleEn": "Pastries and sweets",
+        "items": [
+          {
+            "name": "Bollería especial",
+            "es": "Bollería especial",
+            "en": "Special pastries",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 2.3
+              }
+            ]
+          },
+          {
+            "name": "Dulce fino",
+            "es": "Dulce fino",
+            "en": "Fine pastry",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 2.4
+              }
+            ]
+          },
+          {
+            "name": "Porción de tarta",
+            "es": "Porción de tarta",
+            "en": "Slice of cake",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 2.8
+              }
+            ]
+          },
+          {
+            "name": "Bollería variada",
+            "es": "Bollería variada",
+            "en": "Assorted pastries",
+            "prices": []
+          },
+          {
+            "name": "Porción de tarta especial",
+            "es": "Porción de tarta especial",
+            "en": "Slice of special cake",
+            "prices": []
+          }
+        ]
+      }
+    ],
+    "menuSourceNote": "Importes publicados en churrosbarmarta.shop/menu, proporcionados por Helio el 24/10/2026. Titularidad de la web y vigencia en el local pendientes de confirmación; no confundir precios de desayunos combinados con productos sueltos."
   },
   {
     "id": "cafeteria-don-pepe-centro",
