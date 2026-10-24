@@ -116,3 +116,16 @@ Método publicado: a la brasa con carbón de leña de encina. Importes con IVA i
 - **Precio:** IVA incluido, según la carta transcrita.
 - **Descripción institucional atribuida al establecimiento:** «Nuestras carnes proceden de animales nacidos y criados en libertad en la Dehesa del Valle de los Pedroches. Gracias a nuestro modelo cooperativo, garantizamos el más alto nivel de trazabilidad, calidad y bienestar animal». No presentar esta declaración comercial como verificación independiente.
 - Los alérgenos transcritos son los que aparecen expresamente en la fuente; no deducir ausencia de otros.
+
+
+## Momento Dulce — séptima sección (24/10/2026)
+
+Tres postres, cada uno con precio único (formato no indicado). Todos los importes incluyen IVA según la transcripción suministrada.
+
+| Postre (denominación de la carta) | Precio | Alérgenos expresamente señalados | Ficha individual |
+|---|---:|---|---|
+| Arroz con leche de oveja o de cabra | 6,20 € | Lácteos | https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=127 |
+| Tarta de queso estilo La Viña | 6,50 € | Huevo, lácteos, gluten, sulfitos | No enlazada en el fragmento |
+| Flan de Queso y Caramelo | 6,20 € | Lácteos, gluten, sulfitos | No enlazada en el fragmento |
+
+**Nota de QA:** «leche de oveja o de cabra» se recoge como alternativa ofrecida en la denominación; no deducir que ambas opciones estén disponibles en todo momento. No eliminar alérgenos que pudieran parecer inesperados: la tarta declara gluten y sulfitos; el flan declara gluten y sulfitos. La ausencia de otros iconos en el fragmento no garantiza ausencia de otros alérgenos. Mantener el conjunto inédito hasta tener todas las secciones y la validación correspondiente.
