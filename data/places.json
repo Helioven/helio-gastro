@@ -44949,6 +44949,18 @@
         ]
       },
       {
+        "title": "Menú del día",
+        "titleEn": "Daily set menu",
+        "items": [
+          {
+            "name": "Menú del día: primero, segundo, pan, bebida y postre",
+            "es": "Menú del día: primero, segundo, pan, bebida y postre. La oferta cambia a diario; consultar precio y disponibilidad.",
+            "en": "Daily set menu: starter, main course, bread, drink and dessert. Changes daily; check current price and availability.",
+            "prices": []
+          }
+        ]
+      },
+      {
         "title": "Bocadillos de desayuno",
         "titleEn": "Breakfast sandwiches",
         "items": [
