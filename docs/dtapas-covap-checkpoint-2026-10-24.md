@@ -69,3 +69,38 @@ Siete montaditos; cada importe es por montadito, **no** corresponde a media ni r
 | Abanico y Piparra | 5,45 € | Huevo, lácteos, gluten, sulfitos | Sin ficha individual en la transcripción |
 
 Fuente común: https://www.ibericoscovap.com/es/dtapas-covap-cordoba-carta/ . Enlaces de producto con identificador: https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=ID (sustituir ID únicamente por los números documentados en la columna). En ausencia de enlace no se inventa uno. Los alérgenos son los publicados en el fragmento facilitado y deben contrastarse con la información oficial antes de usarse para consejo dietético. La ausencia de un alérgeno en la lista no garantiza su ausencia.
+
+
+## Nuestras carnes del Valle de los Pedroches — quinta sección (24/10/2026)
+
+Método publicado: a la brasa con carbón de leña de encina. Importes con IVA incluido. **Solo la presa ibérica tiene dos importes explícitos para media/entera en la transcripción.** Los demás precios únicos no se atribuyen a un tamaño de ración.
+
+### Cerdo de montanera 100 % ibérico
+
+| Producto | Media | Entera/precio único | Guarnición y notas | Alérgenos señalados | Ficha |
+|---|---:|---:|---|---|---|
+| Presa de Bellota 100% Ibérica | 12,00 € | 19,50 € (entera) | Patatas fritas hechas en casa | No indicados en el texto | product_id=109 |
+| Pluma de Bellota 100% Ibérica | — | 17,50 € (único; formato no especificado) | Patatas fritas hechas en casa | No indicados en el texto | product_id=110 |
+| Solomillo de Bellota 100% Ibérico | — | 14,50 € (único; formato no especificado) | Patatas fritas hechas en casa | No indicados en el texto | product_id=111 |
+| Secreto de Bellota 100% Ibérico | — | 16,50 € (único; formato no especificado) | Patatas fritas hechas en casa | No indicados en el texto | product_id=112 |
+| Abanico Confitado 100% Ibérico con crema de queso | — | 15,90 € (único; formato no especificado) | Patatas fritas hechas en casa | Huevo, lácteos | Sin enlace individual |
+| Parrillada Ibérica | — | 32,00 € (único; formato no especificado) | Secreto, solomillo, presa ibérica; salsa chimichurri y salsa verde | No indicados en el texto | Sin enlace individual |
+
+### Vacuno de añojo
+
+| Producto | Precio único | Guarnición y notas | Alérgenos señalados | Ficha |
+|---|---:|---|---|---|
+| Entrecot (400 g aprox.) | 23,70 € | Patatas fritas caseras y pimientos del piquillo estilo Julián de Tolosa | No indicados en el texto | product_id=114 |
+| Chuletón (1.000 g aprox.) | 49,90 € | Patatas fritas caseras y pimientos del piquillo estilo Julián de Tolosa | No indicados en el texto | product_id=117 |
+| Solomillo (200 g aprox.) | 24,75 € | Parmentier de patata | Lácteos, soja, apio | product_id=118 |
+| Picaña de vacuno (250 g aprox.) | 14,90 € | Patatas fritas hechas en casa | No indicados en el texto | Sin enlace individual |
+| Hamburguesa de vacuno con crema de queso (180 g aprox.) | 12,50 € | Patatas fritas hechas en casa | Huevo, lácteos, gluten, sulfitos | product_id=102 |
+
+### Cordero merino recental
+
+| Producto | Precio único | Notas | Alérgenos señalados | Ficha |
+|---|---:|---|---|---|
+| Chuletillas de cordero | 19,50 € | Sin guarnición especificada en el fragmento | Sésamo, sulfitos | product_id=119 |
+| Pan Bao con pierna de cordero recental y pepino encurtido | 11,00 € | Pan bao con pepino encurtido | Lácteos, soja, gluten, sulfitos | product_id=108 |
+
+**Total sección: 13 platos, 14 importes.** La columna de precio único no implica ración entera. Los pesos se refieren exclusivamente a los productos que lo indican y son aproximados. La ausencia de iconos en el fragmento no garantiza ausencia de alérgenos. Fuente: https://www.ibericoscovap.com/es/dtapas-covap-cordoba-carta/ . Fichas con ID: https://www.ibericoscovap.com/es/ficha-bar-cordoba?product_id=ID.
