@@ -1,8 +1,8 @@
 # La Tarterie — punto de control documental (23/10/2026)
 
-**Estado: trabajo en curso, NO publicar.** Actualizado con tanda 4 (24/10/2026). Proyecto Helio Gastro, fase 1. La ficha actual de La Tarterie no debe modificarse hasta completar y validar el catálogo. Fuente principal: capturas de la tienda oficial aportadas por Helio (https://la-tarterie.es/tienda/ y páginas 2 y 3). **Próximo producto a documentar: número 13.**
+**Estado: trabajo en curso, NO publicar.** Actualizado con tanda 5 (24/10/2026). Proyecto Helio Gastro, fase 1. La ficha actual de La Tarterie no debe modificarse hasta completar y validar el catálogo. Fuente principal: capturas de la tienda oficial aportadas por Helio (https://la-tarterie.es/tienda/ y páginas 2 y 3). **Próximo producto a documentar: número 19.**
 
-## Productos documentados (12)
+## Productos documentados (18)
 
 | # | Producto | Rango publicado (€) | Ingredientes / descripción constatados | Opciones vistas |
 |---|---|---|---|---|
@@ -20,6 +20,13 @@
 | 11 | Eco Brownie | 19–72 | Brownie con cacao puro ecológico y de comercio justo y nueces | 6/12/14, supergrande; normal/sin gluten, normal/sin lactosa, normal/sin azúcar; lista de alérgenos no incluida en el texto recibido |
 | 12 | Empanada de pisto, atún y huevo cocido | 20 € | Empanada de hojaldre rellena de pisto, atún y huevo cocido | 12 porciones; normal/sin gluten; alérgenos señalados: soja, gluten, huevo, lácteos, pescado |
 
+| 13 | Frambuesa y chocolate blanco | 19–72 | Mousse de frambuesas frescas y chocolate blanco sobre base de galletas, con virutas de chocolate blanco | 6/12/14, supergrande; normal/sin gluten; iconos fuente: soja, huevos, gluten, lácteos |
+| 14 | Fresas y nata | 20,50–75 | Base de galleta, crema de fresas frescas, nata montada y decoración de fresas; **tarta de temporada** | 6/12/14, supergrande; normal/sin gluten; normal/sin azúcar; iconos fuente: soja, huevos, gluten, lácteos |
+| 15 | Galletas de la abuela | 19–72 | Galletas María, natillas y chocolate a la taza | 6/12/14, supergrande; no se muestran opciones dietéticas; iconos fuente: soja, huevos, gluten, lácteos, frutos de cáscara, sésamo |
+| 16 | Hummingbird | 20,50–75 | Bizcocho de plátano, piña y canela; frosting de queso; virutas de coco | 6/12/14, supergrande; normal/sin gluten, normal/sin lactosa, normal/sin azúcar; iconos de alérgenos no identificables en el texto aportado |
+| 17 | Lemon Meringue Pie | 19–72 | Crema de limón y merengue sobre fina masa quebrada | 6/12/14, supergrande; sin opciones dietéticas visibles; iconos fuente: soja, huevos, gluten, lácteos |
+| 18 | Manzana y nueces | 19–72 | Bizcocho de manzana, nueces y canela, coronado con láminas de manzana. El establecimiento lo presenta como apto para quienes no toman lácteos; sin certificación independiente | 6/12/14, supergrande; normal/sin gluten, normal/sin azúcar; iconos fuente: soja, huevos, gluten, frutos de cáscara |
+
 ## Precauciones y próximos pasos
 
 - Los rangos corresponden a las fichas de producto; **no se ha comprobado el precio exacto de cada combinación de tamaño y opción dietética**. No imputarlo.
@@ -27,5 +34,5 @@
 - Los alérgenos de los productos 10 y 12 proceden de enlaces con nombres de iconos incluidos en la transcripción. Eco Brownie no incluye una lista de alérgenos identificable en el texto recibido. Contrastar todo con la tabla oficial antes de usarlo como información de alérgenos; no dar garantías sanitarias por opciones «sin».
 - Descripciones ES/EN definitivas todavía pendientes de preparar y verificar.
 - No copiar fotografías ajenas. Evitar duplicados.
-- Continuar con las transcripciones **desde el producto 13**; comprobar que se cubren todas las páginas y categorías, y pedir aprobación expresa antes de publicar.
-- El progreso registrado es 12 productos recibidos, **no** el total confirmado del catálogo.
+- Continuar con las transcripciones **desde el producto 19**; comprobar que se cubren todas las páginas y categorías, y pedir aprobación expresa antes de publicar.
+- El progreso registrado es 18 productos recibidos, **no** el total confirmado del catálogo.
