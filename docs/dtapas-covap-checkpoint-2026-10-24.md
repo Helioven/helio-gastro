@@ -187,3 +187,36 @@ Ocho referencias de desayuno; todos los precios incluyen IVA. El importe corresp
 **QA:** conservar literalmente «pan sin gluten» como descripción del producto ofrecido; no inferir seguridad para celíacos ni ausencia de contaminación cruzada. La fuente no facilita iconos de alérgenos en el fragmento, lo que no equivale a ausencia de alérgenos. Distinguir las opciones de mantequilla de vaca, oveja o cabra de la nota sobre **tipos de leche** de la sección anterior.
 
 **Acumulado documental:** diez secciones, 68 referencias (51 + 9 bebidas + 8 tostadas). Sigue pendiente comprobar si hay más apartados y obtener visto bueno editorial para publicar carta completa con traducciones.
+
+
+## Leyenda general de alérgenos — cierre de recopilación (24/10/2026)
+
+**Fuente:** leyenda al final de la carta oficial facilitada por Helio, https://www.ibericoscovap.com/es/dtapas-covap-cordoba-carta/ .
+
+Categorías de la leyenda original (en el mismo orden), con enlaces facilitados a los iconos oficiales: 
+
+1. Huevo — https://marketing.covap.es/uploads/tbl_dtapas_menu_allergens/20230202165644-zfeb1-2023-02-02tbl_dtapas_menu_allergens165643.png
+2. Lácteos — https://marketing.covap.es/uploads/tbl_dtapas_menu_allergens/20230202165655-3z5y9-2023-02-02tbl_dtapas_menu_allergens165653.png
+3. Cacahuetes — https://marketing.covap.es/uploads/tbl_dtapas_menu_allergens/20230202165706-qjiew-2023-02-02tbl_dtapas_menu_allergens165705.png
+4. Frutos Secos: Frutos secos con cáscara, sin cáscara — https://marketing.covap.es/uploads/tbl_dtapas_menu_allergens/20230202165718-7xfnt-2023-02-02tbl_dtapas_menu_allergens165717.png
+5. Soja — https://marketing.covap.es/uploads/tbl_dtapas_menu_allergens/20230202165729-3gdby-2023-02-02tbl_dtapas_menu_allergens165728.png
+6. Sésamo — https://marketing.covap.es/uploads/tbl_dtapas_menu_allergens/20230202165738-x9d1k-2023-02-02tbl_dtapas_menu_allergens165737.png
+7. Gluten — https://marketing.covap.es/uploads/tbl_dtapas_menu_allergens/20230202165750-l6nu2-2023-02-02tbl_dtapas_menu_allergens165749.png
+8. Sulfitos — https://marketing.covap.es/uploads/tbl_dtapas_menu_allergens/20230202165519-6p2el-2023-02-02tbl_dtapas_menu_allergens165518.png
+9. Encurtidos — https://marketing.covap.es/uploads/tbl_dtapas_menu_allergens/20230202165533-2bhta-2023-02-02tbl_dtapas_menu_allergens165531.png
+10. Marisco — https://marketing.covap.es/uploads/tbl_dtapas_menu_allergens/20230202165633-nb5ce-2023-02-02tbl_dtapas_menu_allergens165632.png
+11. Apio — https://marketing.covap.es/uploads/tbl_dtapas_menu_allergens/20250314132612-o5t9s-2025-03-14tbl_dtapas_menu_allergens132608.png
+12. Mostaza — https://marketing.covap.es/uploads/tbl_dtapas_menu_allergens/20250314134752-8labv-2025-03-14tbl_dtapas_menu_allergens134725.png
+13. Pescado — https://marketing.covap.es/uploads/tbl_dtapas_menu_allergens/20250314134819-9hptd-2025-03-14tbl_dtapas_menu_allergens134816.png
+
+**Advertencia literal del establecimiento (preservar visible en el sitio en ES y traducir fielmente al EN):**
+
+> En este establecimiento se manipulan los siguientes alérgenos, por tanto, no se puede garantizar que todos los platos puedan no contener trazas de: **gluten, huevo, leche y sus derivados incluida la lactosa, frutos de cáscara, sésamo, soja, mostaza, apio y sulfitos.**
+
+**Cautelas de QA y datos:**
+- La leyenda enumera 13 categorías, mientras que la advertencia explícita de posibles trazas enumera un subconjunto: no equiparar ambos conjuntos ni agregar al aviso otros alérgenos que COVAP no menciona.
+- «Encurtidos» se conserva porque aparece en la leyenda de la carta, sin clasificarlo por nuestra cuenta como alérgeno legal.
+- La mención «pan sin gluten» no garantiza ausencia de contaminación cruzada; siempre presentar la advertencia global junto a esas tostadas.
+- La ausencia de un icono en una ficha no equivale a ausencia del alérgeno.
+- No reutilizar/copiar iconos gráficos de la web sin autorización; preferir etiquetas textuales accesibles.
+- **Recopilación cerrada según indicación de Helio:** diez secciones de productos, 68 referencias, más la leyenda y advertencia general. Pendiente de integración ES/EN y prueba funcional/visual. No publicar carta parcial.
