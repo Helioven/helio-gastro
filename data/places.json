@@ -17825,7 +17825,7 @@
     "address": "Calle San Basilio, 16, Córdoba",
     "mealCostEur": null,
     "priceStatus": "partial_user_supplied_menu",
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-24",
     "sources": [
       {
         "label": "Web oficial y cocina tradicional",
@@ -17920,6 +17920,7 @@
           "Pisto cordobés con huevo frito",
           "Alcachofas al Moriles",
           "Revuelto de morcilla",
+          "Patatas rellenas de Bujalance",
           "Huevos rotos con patatas y jamón",
           "Lagrimitas de pollo con patatas fritas"
         ],
@@ -17988,6 +17989,16 @@
             "dish": "Lagrimitas de pollo con patatas fritas",
             "eur": 12.9,
             "portion": "Ración"
+          },
+          {
+            "dish": "Patatas rellenas de Bujalance",
+            "eur": 8.9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Patatas rellenas de Bujalance",
+            "eur": 12.9,
+            "portion": "Ración"
           }
         ]
       },
@@ -17997,6 +18008,7 @@
           "Japuta en adobo",
           "Calamares fritos",
           "Chanquetes",
+          "Boquerones fritos",
           "Chanquetes al estilo del fundador",
           "Bacalao a la cordobesa"
         ],
@@ -18030,6 +18042,11 @@
             "dish": "Bacalao a la cordobesa",
             "eur": 13.9,
             "portion": "Formato no indicado"
+          },
+          {
+            "dish": "Boquerones fritos",
+            "eur": 12.9,
+            "portion": "Ración"
           }
         ]
       },
@@ -18039,9 +18056,11 @@
           "Menudo gitano",
           "Albondiguitas en su salsa",
           "Gallina en pepitoria",
+          "Manitas de cerdo",
           "Flamenquín cordobés",
           "Pifarrada de conejo",
           "Rabo de toro a la antigua",
+          "Solomillo al whisky",
           "Abanico ibérico de bellota",
           "Codillo asado en su jugo"
         ],
@@ -18100,6 +18119,21 @@
             "dish": "Codillo asado en su jugo",
             "eur": 17.9,
             "portion": "Ración"
+          },
+          {
+            "dish": "Manitas de cerdo",
+            "eur": 7.9,
+            "portion": "1/2 ración"
+          },
+          {
+            "dish": "Manitas de cerdo",
+            "eur": 10.9,
+            "portion": "Ración"
+          },
+          {
+            "dish": "Solomillo al whisky",
+            "eur": 15.9,
+            "portion": "Formato no indicado"
           }
         ]
       },
@@ -18455,6 +18489,21 @@
             "en": "Scrambled eggs with seasoned blood sausage."
           },
           {
+            "name": "Patatas rellenas de Bujalance",
+            "prices": [
+              {
+                "eur": 8.9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 12.9,
+                "portion": "Ración"
+              }
+            ],
+            "description": "Patatas rellenas de carne picada aliñada, rebozadas y fritas según la receta tradicional de Bujalance.",
+            "en": "Potatoes stuffed with seasoned minced meat, battered and fried, following the traditional recipe from Bujalance."
+          },
+          {
             "name": "Huevos rotos con patatas y jamón",
             "prices": [
               {
@@ -18521,6 +18570,17 @@
             ],
             "description": "Pescadito frito crujiente acompañado de huevo frito",
             "en": "Crispy fried small fish served with a fried egg."
+          },
+          {
+            "name": "Boquerones fritos",
+            "prices": [
+              {
+                "eur": 12.9,
+                "portion": "Ración"
+              }
+            ],
+            "description": "Boquerones fritos.",
+            "en": "Fried anchovies."
           },
           {
             "name": "Chanquetes al estilo del fundador",
@@ -18591,6 +18651,21 @@
             "en": "Stewed hen in a traditional sauce made with its cooking juices, almonds and saffron."
           },
           {
+            "name": "Manitas de cerdo",
+            "prices": [
+              {
+                "eur": 7.9,
+                "portion": "1/2 ración"
+              },
+              {
+                "eur": 10.9,
+                "portion": "Ración"
+              }
+            ],
+            "description": "Manitas de cerdo troceadas y guisadas en salsa con verduras.",
+            "en": "Chopped pig's trotters stewed in a vegetable sauce."
+          },
+          {
             "name": "Flamenquín cordobés",
             "prices": [
               {
@@ -18626,6 +18701,17 @@
             ],
             "description": "La carta lo presenta como Premio al Mejor Rabo de Toro Cordobés 2026, otorgado por la Cofradía Gastronómica del Rabo de Toro Cordobés (afirmación del establecimiento, pendiente de verificación independiente)",
             "en": "Traditional oxtail stew. The restaurant claims a 2026 Córdoba oxtail award; this claim has not been independently verified."
+          },
+          {
+            "name": "Solomillo al whisky",
+            "prices": [
+              {
+                "eur": 15.9,
+                "portion": "Formato no indicado"
+              }
+            ],
+            "description": "Medallones de solomillo de cerdo en salsa de whisky, ajo, cebolla y aceite de oliva virgen extra.",
+            "en": "Pork tenderloin medallions in a whisky sauce with garlic, onion and extra virgin olive oil."
           },
           {
             "name": "Abanico ibérico de bellota",
@@ -18920,7 +19006,7 @@
         "eur": 1.5
       }
     ],
-    "menuSourceNote": "Transcripción parcial de la carta facilitada en texto por el usuario el 16/10/2026: Entrantes fríos y ensaladas, ocho platos y cuatro suplementos. Precios de carta no verificados en tiempo real; fecha de edición no indicada. Secciones restantes pendientes. Sin fotografías de terceros. Sección Entrantes calientes recibida del usuario el 16/10/2026: siete platos y trece importes; huevos rotos sin tamaño de porción indicado. Sección Pescados facilitada por el usuario el 16/10/2026: cinco platos, seis precios. Solo la japuta presenta medias raciones y raciones expresas; los restantes formatos no se indican. Sección Carnes y platos fuertes proporcionada por el usuario: ocho platos, once precios. La distinción «Premio al Mejor Rabo de Toro Cordobés 2026» está citada según la carta, no verificada independientemente. Iconos svg sin información textual, no interpretados. Sección infantil «Para los más peques» recibida del usuario: tres referencias y cuatro precios. Lagrimitas también presentes en entrantes calientes con los mismos importes; se mantiene la pertenencia a ambas secciones sin considerar un plato distinto. Iconos svg no interpretados. Sección Postres facilitada por el usuario: diez referencias y diez precios. Se conserva mención del chef Julián en el helado de naranja con vermut, así como la receta atribuida a la abuela Concha. Vigencia de los importes no verificada independientemente. Sugerencias del día facilitadas por el usuario el 16/10/2026: cuatro referencias, cinco precios, sujetos a cambios y disponibilidad. Las migas requieren consultar disponibilidad. El menudo gitano figura también en carnes y platos fuertes al mismo precio: no se contabiliza como plato único adicional. No se identifican los marcadores svg de alérgenos. Carta especial de celíacos facilitada por el usuario el 16/10/2026: tres platos y un suplemento (pan o palillos sin gluten). Consultar disponibilidad de toda la sección y expresamente de croquetas y flamenquín. La carta los presenta para celíacos, pero no se ha verificado el control de contaminación cruzada; confirmar con el establecimiento. Los símbolos svg de alérgenos no son identificables."
+    "menuSourceNote": "Transcripción parcial de la carta facilitada en texto por el usuario el 16/10/2026: Entrantes fríos y ensaladas, ocho platos y cuatro suplementos. Precios de carta no verificados en tiempo real; fecha de edición no indicada. Secciones restantes pendientes. Sin fotografías de terceros. Sección Entrantes calientes recibida del usuario el 16/10/2026: siete platos y trece importes; huevos rotos sin tamaño de porción indicado. Sección Pescados facilitada por el usuario el 16/10/2026: cinco platos, seis precios. Solo la japuta presenta medias raciones y raciones expresas; los restantes formatos no se indican. Sección Carnes y platos fuertes proporcionada por el usuario: ocho platos, once precios. La distinción «Premio al Mejor Rabo de Toro Cordobés 2026» está citada según la carta, no verificada independientemente. Iconos svg sin información textual, no interpretados. Sección infantil «Para los más peques» recibida del usuario: tres referencias y cuatro precios. Lagrimitas también presentes en entrantes calientes con los mismos importes; se mantiene la pertenencia a ambas secciones sin considerar un plato distinto. Iconos svg no interpretados. Sección Postres facilitada por el usuario: diez referencias y diez precios. Se conserva mención del chef Julián en el helado de naranja con vermut, así como la receta atribuida a la abuela Concha. Vigencia de los importes no verificada independientemente. Sugerencias del día facilitadas por el usuario el 16/10/2026: cuatro referencias, cinco precios, sujetos a cambios y disponibilidad. Las migas requieren consultar disponibilidad. El menudo gitano figura también en carnes y platos fuertes al mismo precio: no se contabiliza como plato único adicional. No se identifican los marcadores svg de alérgenos. Carta especial de celíacos facilitada por el usuario el 16/10/2026: tres platos y un suplemento (pan o palillos sin gluten). Consultar disponibilidad de toda la sección y expresamente de croquetas y flamenquín. La carta los presenta para celíacos, pero no se ha verificado el control de contaminación cruzada; confirmar con el establecimiento. Los símbolos svg de alérgenos no son identificables. Revisión 24/10/2026 con transcripción de la carta proporcionada por Helio: incorporadas patatas rellenas de Bujalance, boquerones fritos, manitas de cerdo y solomillo al whisky, con importes y formatos expresos; se conservan los demás registros. La tarta de tres leches preexistente no figura en esta transcripción, pendiente de contrastar; no se retira sin verificación."
   },
   {
     "id": "bodegas-campos",
