@@ -280,3 +280,9 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - **Bodegas Campos — REVISADA Y CERRADA (24/10/2026).** Helio confirma que la carta se ha revisado y completado. **No volver a incluir en la lista de restaurantes pendientes de revisión** ni repetir una auditoría documental completa sin una nueva incidencia, cambio acreditado de carta o solicitud expresa. Este cierre es un control editorial de avance; no modifica precios ni sustituye futuras pruebas de regresión de la aplicación.
 - **Casa Pepe de la Judería — REVISADA Y CERRADA (24/10/2026).** Helio confirma la carta completa y revisada; etiquetas de fuentes uniformadas en inglés y fecha de revisión actualizada. Excluir de nuevas revisiones completas salvo cambios documentados o incidencia específica.
 - **Restaurante Casa Rubio — REVISADA Y CERRADA (24/10/2026).** Helio confirma que la carta de octubre de 2025 sigue siendo la misma y da por completada la revisión de la ficha. Se corrigen al inglés las etiquetas de las fuentes y se actualiza `checkedAt`. No volver a revisar íntegramente salvo cambio documental, incidencia o solicitud expresa.
+
+### Revisión aplazada — Restaurante El Churrasco (24/10/2026)
+
+- **Estado: EN PAUSA / PENDIENTE DE VERIFICACIÓN; NO CERRADO.** Al revisar el 24/10/2026, la web del restaurante mostraba un aviso de renovación («Estamos renovando nuestra web, próximamente estaremos activos»). No es posible contrastar la carta con la web oficial en este momento.
+- Conservar los datos existentes sin atribuirles una nueva verificación; no modificar precios, formatos, ingredientes ni la fecha de comprobación de la ficha por este intento fallido.
+- Reanudar la comprobación cuando vuelva a estar accesible una fuente oficial adecuada. No confundir el mantenimiento de la web con el cierre del restaurante.
