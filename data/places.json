@@ -43967,7 +43967,7 @@
     "address": "Calle Diego de León, 6, Córdoba",
     "mealCostEur": null,
     "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "checkedAt": "2026-10-24",
     "sources": [
       {
         "label": "Ficha y dirección de Don Pepe Centro",
@@ -43976,21 +43976,748 @@
       {
         "label": "Información orientativa del establecimiento",
         "url": "https://carta.menu/restaurants/cordoba-4/cafeteria-don-pepe-2"
+      },
+      {
+        "label": "Carta transcrita de la búsqueda de Google por Helio · origen y vigencia no verificados",
+        "labelEn": "Menu transcribed from Google search by Helio · source and currency unverified",
+        "url": "https://www.google.com/maps/search/?api=1&query=Cafeteria+Don+Pepe+Calle+Diego+de+Leon+6+Cordoba"
       }
     ],
     "menus": [
       {
         "service": "desayuno",
         "dishes": [
-          "Churros",
-          "Chocolate con churros",
-          "Tostadas de jamón",
-          "Café"
+          "Café",
+          "Descafeinado",
+          "Bombón",
+          "Capuchino",
+          "Espresso",
+          "Bacon",
+          "Lomo",
+          "Jamón",
+          "Atún",
+          "Queso",
+          "Tortilla",
+          "Sándwich de jamón y queso",
+          "Zurrapa de lomo",
+          "York",
+          "Atún",
+          "Pizquitos de jamón",
+          "Paté",
+          "Sobrasada",
+          "Manteca colorá",
+          "Mantequilla",
+          "Aceite",
+          "Zurrapa de lomo",
+          "York",
+          "Atún",
+          "Pizquitos de jamón",
+          "Paté",
+          "Sobrasada",
+          "Manteca colorá",
+          "Mantequilla",
+          "Aceite",
+          "Chocolate caliente",
+          "Infusión",
+          "Infusión con miel",
+          "Zumos (piña, melocotón y otros)",
+          "Zumo recién exprimido",
+          "Queso",
+          "Bacon",
+          "Jamón",
+          "Churros (media ración, ración o para llevar)",
+          "Jeringos artesanos (media ración, ración o para llevar)",
+          "Sándwich mixto",
+          "Pepeburger",
+          "Pepe Hot Dog",
+          "Bollería"
         ],
-        "dishPrices": []
+        "dishPrices": [
+          {
+            "dish": "Café (Café 100 % natural)",
+            "eur": 1.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Descafeinado (Café 100 % natural)",
+            "eur": 1.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bombón (Café 100 % natural)",
+            "eur": 1.8,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Capuchino (Café 100 % natural)",
+            "eur": 1.8,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Espresso (Café 100 % natural)",
+            "eur": 1.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bacon (Bocadillos)",
+            "eur": 4,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Lomo (Bocadillos)",
+            "eur": 5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Jamón (Bocadillos)",
+            "eur": 4.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Atún (Bocadillos)",
+            "eur": 4,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Queso (Bocadillos)",
+            "eur": 4.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tortilla (Bocadillos)",
+            "eur": 4,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Sándwich de jamón y queso (Bocadillos)",
+            "eur": 4.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Zurrapa de lomo (Tostadas · media)",
+            "eur": 1.9,
+            "portion": "media tostada"
+          },
+          {
+            "dish": "York (Tostadas · media)",
+            "eur": 2.2,
+            "portion": "media tostada"
+          },
+          {
+            "dish": "Atún (Tostadas · media)",
+            "eur": 2.2,
+            "portion": "media tostada"
+          },
+          {
+            "dish": "Pizquitos de jamón (Tostadas · media)",
+            "eur": 2.2,
+            "portion": "media tostada"
+          },
+          {
+            "dish": "Paté (Tostadas · media)",
+            "eur": 1.5,
+            "portion": "media tostada"
+          },
+          {
+            "dish": "Sobrasada (Tostadas · media)",
+            "eur": 1.5,
+            "portion": "media tostada"
+          },
+          {
+            "dish": "Manteca colorá (Tostadas · media)",
+            "eur": 1.5,
+            "portion": "media tostada"
+          },
+          {
+            "dish": "Mantequilla (Tostadas · media)",
+            "eur": 1.5,
+            "portion": "media tostada"
+          },
+          {
+            "dish": "Aceite (Tostadas · media)",
+            "eur": 1.5,
+            "portion": "media tostada"
+          },
+          {
+            "dish": "Zurrapa de lomo (Tostadas · enteras)",
+            "eur": 2.8,
+            "portion": "tostada entera"
+          },
+          {
+            "dish": "York (Tostadas · enteras)",
+            "eur": 3.3,
+            "portion": "tostada entera"
+          },
+          {
+            "dish": "Atún (Tostadas · enteras)",
+            "eur": 3.3,
+            "portion": "tostada entera"
+          },
+          {
+            "dish": "Pizquitos de jamón (Tostadas · enteras)",
+            "eur": 3.3,
+            "portion": "tostada entera"
+          },
+          {
+            "dish": "Paté (Tostadas · enteras)",
+            "eur": 2.3,
+            "portion": "tostada entera"
+          },
+          {
+            "dish": "Sobrasada (Tostadas · enteras)",
+            "eur": 2.3,
+            "portion": "tostada entera"
+          },
+          {
+            "dish": "Manteca colorá (Tostadas · enteras)",
+            "eur": 2.3,
+            "portion": "tostada entera"
+          },
+          {
+            "dish": "Mantequilla (Tostadas · enteras)",
+            "eur": 2.3,
+            "portion": "tostada entera"
+          },
+          {
+            "dish": "Aceite (Tostadas · enteras)",
+            "eur": 2.3,
+            "portion": "tostada entera"
+          },
+          {
+            "dish": "Chocolate caliente (Chocolate caliente)",
+            "eur": 1.6,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Infusión (Infusiones)",
+            "eur": 1.4,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Infusión con miel (Infusiones)",
+            "eur": 1.8,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Zumos (piña, melocotón y otros) (Zumos)",
+            "eur": 2,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Zumo recién exprimido (Zumos)",
+            "eur": 2.8,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Queso (Extras)",
+            "eur": 1,
+            "portion": "unidad"
+          }
+        ]
       }
     ],
-    "openingHoursNote": "Horario general orientativo según directorios: 06:30–14:00. No confirma la disponibilidad de churros todo ese periodo."
+    "openingHoursNote": "Horario general orientativo según directorios: 06:30–14:00. No confirma la disponibilidad de churros todo ese periodo.",
+    "menuSections": [
+      {
+        "title": "Café 100 % natural",
+        "titleEn": "100% natural coffee",
+        "items": [
+          {
+            "name": "Café",
+            "es": "Café",
+            "en": "Coffee",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 1.5
+              }
+            ]
+          },
+          {
+            "name": "Descafeinado",
+            "es": "Descafeinado",
+            "en": "Decaffeinated coffee",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 1.5
+              }
+            ]
+          },
+          {
+            "name": "Bombón",
+            "es": "Bombón",
+            "en": "Condensed milk coffee (café bombón)",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 1.8
+              }
+            ]
+          },
+          {
+            "name": "Capuchino",
+            "es": "Capuchino",
+            "en": "Cappuccino",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 1.8
+              }
+            ]
+          },
+          {
+            "name": "Espresso",
+            "es": "Espresso",
+            "en": "Espresso",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 1.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bocadillos",
+        "titleEn": "Baguette sandwiches",
+        "items": [
+          {
+            "name": "Bacon",
+            "es": "Bacon",
+            "en": "Bacon baguette",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 4
+              }
+            ]
+          },
+          {
+            "name": "Lomo",
+            "es": "Lomo",
+            "en": "Pork loin baguette",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 5
+              }
+            ]
+          },
+          {
+            "name": "Jamón",
+            "es": "Jamón",
+            "en": "Ham baguette",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 4.5
+              }
+            ]
+          },
+          {
+            "name": "Atún",
+            "es": "Atún",
+            "en": "Tuna baguette",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 4
+              }
+            ]
+          },
+          {
+            "name": "Queso",
+            "es": "Queso",
+            "en": "Cheese baguette",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 4.5
+              }
+            ]
+          },
+          {
+            "name": "Tortilla",
+            "es": "Tortilla",
+            "en": "Omelette baguette",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 4
+              }
+            ]
+          },
+          {
+            "name": "Sándwich de jamón y queso",
+            "es": "Sándwich de jamón y queso",
+            "en": "Ham and cheese sandwich",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 4.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Tostadas · media",
+        "titleEn": "Half toast",
+        "items": [
+          {
+            "name": "Zurrapa de lomo",
+            "es": "Zurrapa de lomo",
+            "en": "Pork loin spread",
+            "prices": [
+              {
+                "label": "media tostada",
+                "eur": 1.9
+              }
+            ]
+          },
+          {
+            "name": "York",
+            "es": "York",
+            "en": "Cooked ham",
+            "prices": [
+              {
+                "label": "media tostada",
+                "eur": 2.2
+              }
+            ]
+          },
+          {
+            "name": "Atún",
+            "es": "Atún",
+            "en": "Tuna",
+            "prices": [
+              {
+                "label": "media tostada",
+                "eur": 2.2
+              }
+            ]
+          },
+          {
+            "name": "Pizquitos de jamón",
+            "es": "Pizquitos de jamón",
+            "en": "Serrano ham pieces",
+            "prices": [
+              {
+                "label": "media tostada",
+                "eur": 2.2
+              }
+            ]
+          },
+          {
+            "name": "Paté",
+            "es": "Paté",
+            "en": "Pâté",
+            "prices": [
+              {
+                "label": "media tostada",
+                "eur": 1.5
+              }
+            ]
+          },
+          {
+            "name": "Sobrasada",
+            "es": "Sobrasada",
+            "en": "Sobrasada sausage spread",
+            "prices": [
+              {
+                "label": "media tostada",
+                "eur": 1.5
+              }
+            ]
+          },
+          {
+            "name": "Manteca colorá",
+            "es": "Manteca colorá",
+            "en": "Seasoned pork lard spread",
+            "prices": [
+              {
+                "label": "media tostada",
+                "eur": 1.5
+              }
+            ]
+          },
+          {
+            "name": "Mantequilla",
+            "es": "Mantequilla",
+            "en": "Butter",
+            "prices": [
+              {
+                "label": "media tostada",
+                "eur": 1.5
+              }
+            ]
+          },
+          {
+            "name": "Aceite",
+            "es": "Aceite",
+            "en": "Olive oil",
+            "prices": [
+              {
+                "label": "media tostada",
+                "eur": 1.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Tostadas · enteras",
+        "titleEn": "Full toast",
+        "items": [
+          {
+            "name": "Zurrapa de lomo",
+            "es": "Zurrapa de lomo",
+            "en": "Pork loin spread",
+            "prices": [
+              {
+                "label": "tostada entera",
+                "eur": 2.8
+              }
+            ]
+          },
+          {
+            "name": "York",
+            "es": "York",
+            "en": "Cooked ham",
+            "prices": [
+              {
+                "label": "tostada entera",
+                "eur": 3.3
+              }
+            ]
+          },
+          {
+            "name": "Atún",
+            "es": "Atún",
+            "en": "Tuna",
+            "prices": [
+              {
+                "label": "tostada entera",
+                "eur": 3.3
+              }
+            ]
+          },
+          {
+            "name": "Pizquitos de jamón",
+            "es": "Pizquitos de jamón",
+            "en": "Serrano ham pieces",
+            "prices": [
+              {
+                "label": "tostada entera",
+                "eur": 3.3
+              }
+            ]
+          },
+          {
+            "name": "Paté",
+            "es": "Paté",
+            "en": "Pâté",
+            "prices": [
+              {
+                "label": "tostada entera",
+                "eur": 2.3
+              }
+            ]
+          },
+          {
+            "name": "Sobrasada",
+            "es": "Sobrasada",
+            "en": "Sobrasada sausage spread",
+            "prices": [
+              {
+                "label": "tostada entera",
+                "eur": 2.3
+              }
+            ]
+          },
+          {
+            "name": "Manteca colorá",
+            "es": "Manteca colorá",
+            "en": "Seasoned pork lard spread",
+            "prices": [
+              {
+                "label": "tostada entera",
+                "eur": 2.3
+              }
+            ]
+          },
+          {
+            "name": "Mantequilla",
+            "es": "Mantequilla",
+            "en": "Butter",
+            "prices": [
+              {
+                "label": "tostada entera",
+                "eur": 2.3
+              }
+            ]
+          },
+          {
+            "name": "Aceite",
+            "es": "Aceite",
+            "en": "Olive oil",
+            "prices": [
+              {
+                "label": "tostada entera",
+                "eur": 2.3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Chocolate caliente",
+        "titleEn": "Hot chocolate",
+        "items": [
+          {
+            "name": "Chocolate caliente",
+            "es": "Chocolate caliente",
+            "en": "Hot chocolate",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 1.6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infusiones",
+        "titleEn": "Herbal teas",
+        "items": [
+          {
+            "name": "Infusión",
+            "es": "Infusión",
+            "en": "Herbal tea",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 1.4
+              }
+            ]
+          },
+          {
+            "name": "Infusión con miel",
+            "es": "Infusión con miel",
+            "en": "Herbal tea with honey",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 1.8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Zumos",
+        "titleEn": "Juices",
+        "items": [
+          {
+            "name": "Zumos (piña, melocotón y otros)",
+            "es": "Zumos (piña, melocotón y otros)",
+            "en": "Juices (pineapple, peach and others)",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 2
+              }
+            ]
+          },
+          {
+            "name": "Zumo recién exprimido",
+            "es": "Zumo recién exprimido",
+            "en": "Freshly squeezed juice",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 2.8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Extras",
+        "titleEn": "Add-ons",
+        "items": [
+          {
+            "name": "Queso",
+            "es": "Queso",
+            "en": "Cheese",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 1
+              }
+            ]
+          },
+          {
+            "name": "Bacon",
+            "es": "Bacon",
+            "en": "Bacon",
+            "prices": []
+          },
+          {
+            "name": "Jamón",
+            "es": "Jamón",
+            "en": "Ham",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Otros desayunos",
+        "titleEn": "Other breakfast items",
+        "items": [
+          {
+            "name": "Churros (media ración, ración o para llevar)",
+            "es": "Churros (media ración, ración o para llevar)",
+            "en": "Churros (half portion, full portion or takeaway)",
+            "prices": []
+          },
+          {
+            "name": "Jeringos artesanos (media ración, ración o para llevar)",
+            "es": "Jeringos artesanos (media ración, ración o para llevar)",
+            "en": "Artisan thick churros (half portion, full portion or takeaway)",
+            "prices": []
+          },
+          {
+            "name": "Sándwich mixto",
+            "es": "Sándwich mixto",
+            "en": "Toasted ham and cheese sandwich",
+            "prices": []
+          },
+          {
+            "name": "Pepeburger",
+            "es": "Pepeburger",
+            "en": "Pepeburger",
+            "prices": []
+          },
+          {
+            "name": "Pepe Hot Dog",
+            "es": "Pepe Hot Dog",
+            "en": "Pepe Hot Dog",
+            "prices": []
+          },
+          {
+            "name": "Bollería",
+            "es": "Bollería",
+            "en": "Pastries",
+            "prices": []
+          }
+        ]
+      }
+    ],
+    "menuSourceNote": "Carta obtenida por Helio de resultados de búsqueda de Google el 24/10/2026. Los importes carecen de fecha de vigencia contrastada y no son precios oficiales verificados. Se desglosan variantes agrupadas (paté, sobrasada, manteca colorá, mantequilla y aceite) sin inventar importes nuevos. Productos sin importe conservados sin precio. La presentación original incluye duplicados en «At a Glance» y «Tostadas» que no se repiten. No mezclar con Don Pepe de Antonio Maura."
   },
   {
     "id": "cafeteria-don-pepe-ciudad-jardin",
