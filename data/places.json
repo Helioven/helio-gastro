@@ -44029,8 +44029,7 @@
           "Jeringos artesanos (media ración, ración o para llevar)",
           "Sándwich mixto",
           "Pepeburger",
-          "Pepe Hot Dog",
-          "Bollería"
+          "Pepe Hot Dog"
         ],
         "dishPrices": [
           {
@@ -44706,12 +44705,6 @@
             "name": "Pepe Hot Dog",
             "es": "Pepe Hot Dog",
             "en": "Pepe Hot Dog",
-            "prices": []
-          },
-          {
-            "name": "Bollería",
-            "es": "Bollería",
-            "en": "Pastries",
             "prices": []
           }
         ]
