@@ -273,3 +273,8 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Viabilidad técnica de rutas y recálculo, permisos de ubicación y tratamiento de privacidad.
 - Nombre distintivo tras comprobación de marcas.
 - **Punto de decisión futuro:** evaluar la idea tras cumplir las prioridades de la hoja de ruta vigente; documentar aceptación, descarte o aplazamiento antes de implementarla.
+
+
+## Control de cartas revisadas y cerradas (24/10/2026)
+
+- **Bodegas Campos — REVISADA Y CERRADA (24/10/2026).** Helio confirma que la carta se ha revisado y completado. **No volver a incluir en la lista de restaurantes pendientes de revisión** ni repetir una auditoría documental completa sin una nueva incidencia, cambio acreditado de carta o solicitud expresa. Este cierre es un control editorial de avance; no modifica precios ni sustituye futuras pruebas de regresión de la aplicación.
