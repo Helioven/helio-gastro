@@ -300,3 +300,5 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - **Moriles Casa Fina — REVISADA Y CERRADA (24/10/2026).** Helio confirma que la carta está completa y que las etiquetas de las fuentes en inglés se muestran correctamente tras la corrección. No repetir la revisión ordinaria salvo cambios verificados, incidencia o petición expresa.
 
 - **Bar Moriles · Ciudad Jardín — REVISADA Y CERRADA (24/10/2026).** Helio confirma que la carta y la ficha están correctas y completas. No incluir en próximas revisiones ordinarias salvo actualización documental, incidencia o solicitud expresa; no modificar precios ni otros datos gastronómicos por este cierre.
+
+- **Churros Bar Marta — REVISADO Y CERRADO (24/10/2026).** Helio confirma la revisión de la carta de desayunos, sus 15 precios publicados, las traducciones ES/EN y la claridad de la etiqueta de desayuno combinado. La atribución y titularidad de churrosbarmarta.shop quedan sujetas a la cautela documental anotada en los datos. Excluir de revisiones ordinarias salvo nueva evidencia, cambio de carta, incidencia o solicitud expresa.
