@@ -129,3 +129,18 @@ Tres postres, cada uno con precio único (formato no indicado). Todos los import
 | Flan de Queso y Caramelo | 6,20 € | Lácteos, gluten, sulfitos | No enlazada en el fragmento |
 
 **Nota de QA:** «leche de oveja o de cabra» se recoge como alternativa ofrecida en la denominación; no deducir que ambas opciones estén disponibles en todo momento. No eliminar alérgenos que pudieran parecer inesperados: la tarta declara gluten y sulfitos; el flan declara gluten y sulfitos. La ausencia de otros iconos en el fragmento no garantiza ausencia de otros alérgenos. Mantener el conjunto inédito hasta tener todas las secciones y la validación correspondiente.
+
+
+## Extras — octava sección (24/10/2026)
+
+Tres referencias de extras, IVA incluido. Precios por servicio/cartucho según nombre; tamaño y cantidad no especificados.
+
+| Extra | Precio | Alérgenos expresamente indicados |
+|---|---:|---|
+| Servicio de pan de masa madre | 1,50 € | Huevo, lácteos, gluten |
+| Servicio de pan con tomate | 3,60 € | Huevo, lácteos, gluten |
+| Cartucho de patatas | 6,00 € | No constan iconos de alérgenos en el fragmento |
+
+**QA:** respetar los 6,00 € de «Cartucho de patatas» sin presumir tamaño, peso o ingredientes. Los 3,60 € corresponden al servicio de pan con tomate, no a suplemento sobre los 1,50 €. No inferir ausencia de alérgenos por falta de iconos. Sección recibida por transcripción del usuario desde la carta oficial: https://www.ibericoscovap.com/es/dtapas-covap-cordoba-carta/.
+
+**Acumulado documental:** ocho secciones y 51 referencias distintas (11 + 6 + 7 + 7 + 13 + 1 + 3 + 3). Carta pública todavía sin actualizar; falta confirmar si hay más secciones de la carta oficial y validar publicación.
