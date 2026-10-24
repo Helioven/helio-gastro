@@ -1,8 +1,8 @@
 # La Tarterie — punto de control documental (23/10/2026)
 
-**Estado: trabajo en curso, NO publicar.** Actualizado con tanda 5 (24/10/2026). Proyecto Helio Gastro, fase 1. La ficha actual de La Tarterie no debe modificarse hasta completar y validar el catálogo. Fuente principal: capturas de la tienda oficial aportadas por Helio (https://la-tarterie.es/tienda/ y páginas 2 y 3). **Próximo producto a documentar: número 19.**
+**Estado: trabajo en curso, NO publicar.** Actualizado con tanda 6 (24/10/2026). Proyecto Helio Gastro, fase 1. La ficha actual de La Tarterie no debe modificarse hasta completar y validar el catálogo. Fuente principal: capturas de la tienda oficial aportadas por Helio (https://la-tarterie.es/tienda/ y páginas 2 y 3). **Próximo producto a documentar: número 25.**
 
-## Productos documentados (18)
+## Productos documentados (24)
 
 | # | Producto | Rango publicado (€) | Ingredientes / descripción constatados | Opciones vistas |
 |---|---|---|---|---|
@@ -27,12 +27,20 @@
 | 17 | Lemon Meringue Pie | 19–72 | Crema de limón y merengue sobre fina masa quebrada | 6/12/14, supergrande; sin opciones dietéticas visibles; iconos fuente: soja, huevos, gluten, lácteos |
 | 18 | Manzana y nueces | 19–72 | Bizcocho de manzana, nueces y canela, coronado con láminas de manzana. El establecimiento lo presenta como apto para quienes no toman lácteos; sin certificación independiente | 6/12/14, supergrande; normal/sin gluten, normal/sin azúcar; iconos fuente: soja, huevos, gluten, frutos de cáscara |
 
+| 19 | Mojito mousse | 20,50–75 | Base de galleta, mousse de limón aromatizada con ron y hierbabuena y gelatina de mojito; no se ha verificado ausencia de alcohol | 6/12/14, supergrande; normal/sin gluten, normal/sin azúcar; iconos: soja, huevos, gluten, lácteos |
+| 20 | NY Cheesecake | 19–72 | Base de galleta, crema de queso y mermelada de frambuesa | 6/12/14, supergrande; normal/sin gluten, normal/sin lactosa, normal/sin azúcar; lista de alérgenos no identificable en texto recibido |
+| 21 | Pera, avellanas y chocolate | 19–72 | Bizcocho con pera, avellanas y chips de chocolate, decorado con láminas de pera y mermelada de albaricoque | 6/12/14, supergrande; normal/sin gluten; iconos: soja, huevos, gluten, lácteos, frutos de cáscara |
+| 22 | Pistachos y frambuesas | 19–72 | Bizcocho húmedo con harina de pistacho, frambuesas enteras y trocitos de pistacho por encima | 6/12/14, supergrande; normal/sin gluten, normal/sin lactosa, normal/sin azúcar; lista de alérgenos no identificable en texto recibido |
+| 23 | Quiché de tomate cherry | 20 € | Quiché salada con tomates cherry, cebolla caramelizada y queso de cabra | Tamaño único de 12 porciones; iconos: soja, gluten, huevos, lácteos |
+| 24 | Quiché Lorraine | 20 € | Quiché tradicional de bacon y queso | Tamaño único de 12 porciones; **alérgenos pendientes: texto recibido cortado tras el encabezado** |
+
 ## Precauciones y próximos pasos
 
 - Los rangos corresponden a las fichas de producto; **no se ha comprobado el precio exacto de cada combinación de tamaño y opción dietética**. No imputarlo.
 - La tienda indica para Cerveza negra, Baileys y Amaretto que no contienen alcohol tras el horneado: es afirmación del establecimiento, no garantía independiente.
 - Los alérgenos de los productos 10 y 12 proceden de enlaces con nombres de iconos incluidos en la transcripción. Eco Brownie no incluye una lista de alérgenos identificable en el texto recibido. Contrastar todo con la tabla oficial antes de usarlo como información de alérgenos; no dar garantías sanitarias por opciones «sin».
+- En Mojito mousse se cita ron: no afirmar que carece de alcohol. En Quiché Lorraine falta la lista de alérgenos y debe comprobarse con la fuente antes de publicar.
 - Descripciones ES/EN definitivas todavía pendientes de preparar y verificar.
 - No copiar fotografías ajenas. Evitar duplicados.
-- Continuar con las transcripciones **desde el producto 19**; comprobar que se cubren todas las páginas y categorías, y pedir aprobación expresa antes de publicar.
-- El progreso registrado es 18 productos recibidos, **no** el total confirmado del catálogo.
+- Continuar con las transcripciones **desde el producto 25**; comprobar que se cubren todas las páginas y categorías, y pedir aprobación expresa antes de publicar.
+- El progreso registrado es 24 productos recibidos, **no** el total confirmado del catálogo.
