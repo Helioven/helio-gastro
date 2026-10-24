@@ -44278,27 +44278,486 @@
     "address": "Calle Claudio Marcelo, 13, Córdoba",
     "mealCostEur": null,
     "priceStatus": "unknown",
-    "checkedAt": "2026-10-11",
+    "checkedAt": "2026-10-24",
     "sources": [
       {
-        "label": "Carta de reparto en Glovo: precios NO verificados para consumo en local",
-        "url": "https://glovoapp.com/es/es/cordoba/stores/la-tarterie-cordoba"
+        "label": "Tienda oficial La Tarterie — catálogo y precios por producto",
+        "url": "https://la-tarterie.es/tienda/"
       }
     ],
     "menus": [
       {
         "service": "merienda",
         "dishes": [
-          "Tartas",
-          "New York Cheesecake",
-          "Tarta de zanahoria",
-          "Tarta de chocolate y dulce de leche",
-          "Tarta de limón y merengue suizo",
-          "Café solo"
+          "Banoffee",
+          "Brownie Cheesecake",
+          "Caramelo Salado",
+          "Cerveza negra",
+          "Cheesecake de Baileys y chocolate blanco",
+          "Cheesecake de mango al Amaretto",
+          "Cheesecake de Oreo",
+          "Chocolate blanco y negro",
+          "Chocolate y dulce de leche",
+          "Chocolate y Kinder Bueno",
+          "Eco Brownie",
+          "Empanada de pisto, atún y huevo cocido",
+          "Frambuesa y chocolate blanco",
+          "Fresas y nata",
+          "Galletas de la abuela",
+          "Hummingbird",
+          "Lemon Meringue Pie",
+          "Manzana y nueces",
+          "Mojito mousse",
+          "NY Cheesecake",
+          "Pera, avellanas y chocolate",
+          "Pistachos y frambuesas",
+          "Quiché de tomate cherry",
+          "Quiché Lorraine",
+          "Red Velvet",
+          "Tarta vegana de chocolate",
+          "Turrón",
+          "Zanahoria"
         ],
         "dishPrices": []
       }
-    ]
+    ],
+    "menuSections": [
+      {
+        "title": "Tartas y dulces",
+        "titleEn": "Cakes and sweets",
+        "items": [
+          {
+            "name": "Banoffee",
+            "es": "Galleta, plátano, dulce de leche, nata y virutas de chocolate",
+            "en": "Cookie base, banana, dulce de leche, whipped cream and chocolate shavings.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 19,
+              "max": 72
+            },
+            "sizesEs": "6, 12, 14 porciones y supergrande",
+            "sizesEn": "6, 12, 14 servings and extra-large",
+            "optionsEs": "Sin gluten",
+            "optionsEn": "Gluten-free option",
+            "productUrl": "https://la-tarterie.es/producto/banoffee/"
+          },
+          {
+            "name": "Brownie Cheesecake",
+            "es": "Brownie de cacao puro ecológico y comercio justo, tarta de queso y mermelada de frambuesa",
+            "en": "Fair-trade organic cocoa brownie, creamy cheesecake and raspberry jam.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 19,
+              "max": 72
+            },
+            "sizesEs": "6, 12, 14 porciones y supergrande",
+            "sizesEn": "6, 12, 14 servings and extra-large",
+            "optionsEs": "Sin gluten, Sin lactosa, Sin azúcar",
+            "optionsEn": "Gluten-free option, Lactose-free option, Sugar-free option",
+            "productUrl": "https://la-tarterie.es/producto/brownie-cheesecake/"
+          },
+          {
+            "name": "Caramelo Salado",
+            "es": "Tres bizcochos de vainilla, crema de caramelo salado y crumble",
+            "en": "Three vanilla sponge layers filled and covered with salted caramel cream and crumble.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 23,
+              "max": 82
+            },
+            "sizesEs": "6, 12, 14 porciones y supergrande",
+            "sizesEn": "6, 12, 14 servings and extra-large",
+            "optionsEs": "Sin gluten",
+            "optionsEn": "Gluten-free option",
+            "productUrl": "https://la-tarterie.es/producto/caramelo-salado/"
+          },
+          {
+            "name": "Cerveza negra",
+            "es": "Bizcocho de cacao puro ecológico y comercio justo con cerveza negra; relleno y cobertura de frosting de queso",
+            "en": "Organic fair-trade cocoa sponge made with dark beer, filled and covered with cream cheese frosting.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 20.5,
+              "max": 75
+            },
+            "sizesEs": "6, 12, 14 porciones y supergrande",
+            "sizesEn": "6, 12, 14 servings and extra-large",
+            "optionsEs": "Sin otras variantes confirmadas",
+            "optionsEn": "No other confirmed variants",
+            "productUrl": "https://la-tarterie.es/producto/cerveza-negra/"
+          },
+          {
+            "name": "Cheesecake de Baileys y chocolate blanco",
+            "es": "Queso con Baileys y chocolate blanco, base de galletas, virutas de chocolate blanco",
+            "en": "Cheesecake with Baileys and white chocolate, biscuit base and white chocolate shavings.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 20.5,
+              "max": 75
+            },
+            "sizesEs": "6, 12, 14 porciones y supergrande",
+            "sizesEn": "6, 12, 14 servings and extra-large",
+            "optionsEs": "Sin gluten",
+            "optionsEn": "Gluten-free option",
+            "productUrl": "https://la-tarterie.es/producto/cheesecake-de-baileys-y-chocolate-blanco/"
+          },
+          {
+            "name": "Cheesecake de mango al Amaretto",
+            "es": "Queso con aroma de almendras por Amaretto, base de galleta, mermelada casera de mango y trocitos de almendra",
+            "en": "Almond-scented Amaretto cheesecake on a biscuit base with homemade mango jam and almond pieces.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 19,
+              "max": 72
+            },
+            "sizesEs": "6, 12, 14 porciones y supergrande",
+            "sizesEn": "6, 12, 14 servings and extra-large",
+            "optionsEs": "Sin gluten, Sin lactosa",
+            "optionsEn": "Gluten-free option, Lactose-free option",
+            "productUrl": "https://la-tarterie.es/producto/cheesecake-de-mango-al-amaretto/"
+          },
+          {
+            "name": "Cheesecake de Oreo",
+            "es": "Galletas Oreo en base, crema de queso y decoración",
+            "en": "Cheesecake with Oreo biscuits in its base, cheese filling and decoration.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 20.5,
+              "max": 75
+            },
+            "sizesEs": "6, 12, 14 porciones y supergrande",
+            "sizesEn": "6, 12, 14 servings and extra-large",
+            "optionsEs": "Sin otras variantes confirmadas",
+            "optionsEn": "No other confirmed variants",
+            "productUrl": "https://la-tarterie.es/producto/cheesecake-de-oreo/"
+          },
+          {
+            "name": "Chocolate blanco y negro",
+            "es": "Bizcocho de cacao puro ecológico y comercio justo, ganache de chocolate blanco, virutas",
+            "en": "Organic fair-trade cocoa sponge with white chocolate ganache and chocolate shavings.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 20.5,
+              "max": 75
+            },
+            "sizesEs": "6, 12, 14 porciones y supergrande",
+            "sizesEn": "6, 12, 14 servings and extra-large",
+            "optionsEs": "Sin gluten",
+            "optionsEn": "Gluten-free option",
+            "productUrl": "https://la-tarterie.es/producto/chocolate-blanco-y-negro/"
+          },
+          {
+            "name": "Chocolate y dulce de leche",
+            "es": "Bizcocho de cacao puro ecológico y comercio justo, dulce de leche casero, cobertura y virutas de chocolate",
+            "en": "Organic fair-trade cocoa sponge with homemade dulce de leche, chocolate coating and shavings.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 19,
+              "max": 72
+            },
+            "sizesEs": "6, 12, 14 porciones y supergrande",
+            "sizesEn": "6, 12, 14 servings and extra-large",
+            "optionsEs": "Sin gluten, Sin lactosa, Sin azúcar",
+            "optionsEn": "Gluten-free option, Lactose-free option, Sugar-free option",
+            "productUrl": "https://la-tarterie.es/producto/chocolate-y-dulce-de-leche/"
+          },
+          {
+            "name": "Chocolate y Kinder Bueno",
+            "es": "Bizcocho de cacao puro ecológico y de comercio justo; crema casera de Kinder Bueno con avellanas, chocolate blanco y nata",
+            "en": "Organic fair-trade cocoa sponge with homemade hazelnut, white chocolate and cream Kinder Bueno filling.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 20.5,
+              "max": 75
+            },
+            "sizesEs": "6, 12, 14 porciones y supergrande",
+            "sizesEn": "6, 12, 14 servings and extra-large",
+            "optionsEs": "Sin gluten",
+            "optionsEn": "Gluten-free option",
+            "productUrl": "https://la-tarterie.es/producto/chocolate-y-kinder-bueno/"
+          },
+          {
+            "name": "Eco Brownie",
+            "es": "Brownie con cacao puro ecológico y de comercio justo y nueces",
+            "en": "Organic fair-trade cocoa brownie with walnuts.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 19,
+              "max": 72
+            },
+            "sizesEs": "6, 12, 14 porciones y supergrande",
+            "sizesEn": "6, 12, 14 servings and extra-large",
+            "optionsEs": "Sin gluten, Sin lactosa, Sin azúcar",
+            "optionsEn": "Gluten-free option, Lactose-free option, Sugar-free option",
+            "productUrl": "https://la-tarterie.es/producto/eco-brownie/"
+          },
+          {
+            "name": "Frambuesa y chocolate blanco",
+            "es": "Mousse de frambuesas frescas y chocolate blanco sobre base de galletas, con virutas de chocolate blanco",
+            "en": "Fresh raspberry and white chocolate mousse on a biscuit base, with white chocolate shavings.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 19,
+              "max": 72
+            },
+            "sizesEs": "6, 12, 14 porciones y supergrande",
+            "sizesEn": "6, 12, 14 servings and extra-large",
+            "optionsEs": "Sin gluten",
+            "optionsEn": "Gluten-free option",
+            "productUrl": "https://la-tarterie.es/producto/frambuesa-y-chocolate-blanco/"
+          },
+          {
+            "name": "Fresas y nata",
+            "es": "Base de galleta, crema de fresas frescas, nata montada y decoración de fresas; tarta de temporada",
+            "en": "Biscuit base, fresh strawberry cream, whipped cream and fresh strawberries; seasonal cake.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 20.5,
+              "max": 75
+            },
+            "sizesEs": "6, 12, 14 porciones y supergrande",
+            "sizesEn": "6, 12, 14 servings and extra-large",
+            "optionsEs": "Sin gluten, Sin azúcar",
+            "optionsEn": "Gluten-free option, Sugar-free option",
+            "productUrl": "https://la-tarterie.es/producto/fresas-y-nata/"
+          },
+          {
+            "name": "Galletas de la abuela",
+            "es": "Galletas María, natillas y chocolate a la taza",
+            "en": "María biscuits, custard and drinking chocolate.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 19,
+              "max": 72
+            },
+            "sizesEs": "6, 12, 14 porciones y supergrande",
+            "sizesEn": "6, 12, 14 servings and extra-large",
+            "optionsEs": "Sin otras variantes confirmadas",
+            "optionsEn": "No other confirmed variants",
+            "productUrl": "https://la-tarterie.es/producto/galletas-de-la-abuela/"
+          },
+          {
+            "name": "Hummingbird",
+            "es": "Bizcocho de plátano, piña y canela; frosting de queso; virutas de coco",
+            "en": "Banana, pineapple and cinnamon sponge with cream cheese frosting and coconut shavings.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 20.5,
+              "max": 75
+            },
+            "sizesEs": "6, 12, 14 porciones y supergrande",
+            "sizesEn": "6, 12, 14 servings and extra-large",
+            "optionsEs": "Sin gluten, Sin lactosa, Sin azúcar",
+            "optionsEn": "Gluten-free option, Lactose-free option, Sugar-free option",
+            "productUrl": "https://la-tarterie.es/producto/hummingbird/"
+          },
+          {
+            "name": "Lemon Meringue Pie",
+            "es": "Crema de limón y merengue sobre fina masa quebrada",
+            "en": "Lemon curd and sweet meringue on a thin shortcrust pastry base.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 19,
+              "max": 72
+            },
+            "sizesEs": "6, 12, 14 porciones y supergrande",
+            "sizesEn": "6, 12, 14 servings and extra-large",
+            "optionsEs": "Sin otras variantes confirmadas",
+            "optionsEn": "No other confirmed variants",
+            "productUrl": "https://la-tarterie.es/producto/lemon-meringue-pie/"
+          },
+          {
+            "name": "Manzana y nueces",
+            "es": "Bizcocho de manzana, nueces y canela, coronado con láminas de manzana. El establecimiento lo presenta como apto para quienes no toman lácteos; sin certificación independiente",
+            "en": "Apple, walnut and cinnamon sponge topped with apple slices.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 19,
+              "max": 72
+            },
+            "sizesEs": "6, 12, 14 porciones y supergrande",
+            "sizesEn": "6, 12, 14 servings and extra-large",
+            "optionsEs": "Sin gluten, Sin azúcar",
+            "optionsEn": "Gluten-free option, Sugar-free option",
+            "productUrl": "https://la-tarterie.es/producto/manzana-y-nueces/"
+          },
+          {
+            "name": "Mojito mousse",
+            "es": "Base de galleta, mousse de limón aromatizada con ron y hierbabuena y gelatina de mojito; no se ha verificado ausencia de alcohol",
+            "en": "Biscuit base, lemon mousse flavoured with rum and mint, and mojito jelly.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 20.5,
+              "max": 75
+            },
+            "sizesEs": "6, 12, 14 porciones y supergrande",
+            "sizesEn": "6, 12, 14 servings and extra-large",
+            "optionsEs": "Sin gluten, Sin azúcar",
+            "optionsEn": "Gluten-free option, Sugar-free option",
+            "productUrl": "https://la-tarterie.es/producto/mojito-mousse/"
+          },
+          {
+            "name": "NY Cheesecake",
+            "es": "Base de galleta, crema de queso y mermelada de frambuesa",
+            "en": "Biscuit base with creamy cheesecake filling and raspberry jam.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 19,
+              "max": 72
+            },
+            "sizesEs": "6, 12, 14 porciones y supergrande",
+            "sizesEn": "6, 12, 14 servings and extra-large",
+            "optionsEs": "Sin gluten, Sin lactosa, Sin azúcar",
+            "optionsEn": "Gluten-free option, Lactose-free option, Sugar-free option",
+            "productUrl": "https://la-tarterie.es/producto/ny-cheesecake/"
+          },
+          {
+            "name": "Pera, avellanas y chocolate",
+            "es": "Bizcocho con pera, avellanas y chips de chocolate, decorado con láminas de pera y mermelada de albaricoque",
+            "en": "Pear, hazelnut and chocolate-chip sponge topped with pear slices and apricot jam.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 19,
+              "max": 72
+            },
+            "sizesEs": "6, 12, 14 porciones y supergrande",
+            "sizesEn": "6, 12, 14 servings and extra-large",
+            "optionsEs": "Sin gluten",
+            "optionsEn": "Gluten-free option",
+            "productUrl": "https://la-tarterie.es/producto/pera-avellanas-y-chocolate/"
+          },
+          {
+            "name": "Pistachos y frambuesas",
+            "es": "Bizcocho húmedo con harina de pistacho, frambuesas enteras y trocitos de pistacho por encima",
+            "en": "Moist pistachio-flour sponge with whole raspberries and chopped pistachios.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 19,
+              "max": 72
+            },
+            "sizesEs": "6, 12, 14 porciones y supergrande",
+            "sizesEn": "6, 12, 14 servings and extra-large",
+            "optionsEs": "Sin gluten, Sin lactosa, Sin azúcar",
+            "optionsEn": "Gluten-free option, Lactose-free option, Sugar-free option",
+            "productUrl": "https://la-tarterie.es/producto/pistachos-y-frambuesas/"
+          },
+          {
+            "name": "Red Velvet",
+            "es": "Bizcocho de remolacha con un toque de cacao y frosting de queso",
+            "en": "Beetroot sponge with a hint of cocoa and cream cheese frosting.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 19,
+              "max": 72
+            },
+            "sizesEs": "6, 12, 14 porciones y supergrande",
+            "sizesEn": "6, 12, 14 servings and extra-large",
+            "optionsEs": "Sin gluten, Sin lactosa, Sin azúcar",
+            "optionsEn": "Gluten-free option, Lactose-free option, Sugar-free option",
+            "productUrl": "https://la-tarterie.es/producto/red-velvet/"
+          },
+          {
+            "name": "Tarta vegana de chocolate",
+            "es": "Bizcocho húmedo de cacao puro ecológico, mermelada de frambuesa, buttercream vegano de aguacates y cacao puro ecológicos",
+            "en": "Moist organic cocoa sponge filled with raspberry jam and covered with vegan avocado and cocoa buttercream.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 22.5,
+              "max": 53
+            },
+            "sizesEs": "6, 12 y 14 porciones",
+            "sizesEn": "6, 12 y 14 servings",
+            "optionsEs": "Sin gluten, Sin azúcar",
+            "optionsEn": "Gluten-free option, Sugar-free option",
+            "productUrl": "https://la-tarterie.es/producto/tarta-vegana-de-chocolate/"
+          },
+          {
+            "name": "Turrón",
+            "es": "Tres capas de bizcocho de turrón, ganache de turrón, chocolate y virutas de turrón; producto descrito para Navidad",
+            "en": "Three layers of nougat sponge filled with nougat ganache, covered with chocolate and nougat shavings; Christmas-themed product.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 20.5,
+              "max": 75
+            },
+            "sizesEs": "6, 12, 14 porciones y supergrande",
+            "sizesEn": "6, 12, 14 servings and extra-large",
+            "optionsEs": "Sin gluten",
+            "optionsEn": "Gluten-free option",
+            "productUrl": "https://la-tarterie.es/producto/turron/"
+          },
+          {
+            "name": "Zanahoria",
+            "es": "Bizcocho de zanahoria con canela, frosting de queso de receta propia y nueces decorativas",
+            "en": "Carrot and cinnamon sponge with cream cheese frosting and walnuts.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 19,
+              "max": 72
+            },
+            "sizesEs": "6, 12, 14 porciones y supergrande",
+            "sizesEn": "6, 12, 14 servings and extra-large",
+            "optionsEs": "Sin gluten, Sin lactosa, Sin azúcar",
+            "optionsEn": "Gluten-free option, Lactose-free option, Sugar-free option",
+            "productUrl": "https://la-tarterie.es/producto/zanahoria/"
+          }
+        ]
+      },
+      {
+        "title": "Salados",
+        "titleEn": "Savoury pastries",
+        "items": [
+          {
+            "name": "Empanada de pisto, atún y huevo cocido",
+            "es": "Empanada de hojaldre rellena de pisto, atún y huevo cocido",
+            "en": "Puff pastry pie with vegetable pisto, tuna and boiled egg.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 20,
+              "max": 20
+            },
+            "sizesEs": "12 porciones",
+            "sizesEn": "12 servings",
+            "optionsEs": "Sin gluten",
+            "optionsEn": "Gluten-free option",
+            "productUrl": "https://la-tarterie.es/producto/empanada-de-pisto-atun-y-huevo-cocido/"
+          },
+          {
+            "name": "Quiché de tomate cherry",
+            "es": "Quiché salada con tomates cherry, cebolla caramelizada y queso de cabra",
+            "en": "Savoury quiche with cherry tomatoes, caramelised onion and goat cheese.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 20,
+              "max": 20
+            },
+            "sizesEs": "12 porciones",
+            "sizesEn": "12 servings",
+            "optionsEs": "Sin otras variantes confirmadas",
+            "optionsEn": "No other confirmed variants",
+            "productUrl": "https://la-tarterie.es/producto/quiche-de-tomate-cherry/"
+          },
+          {
+            "name": "Quiché Lorraine",
+            "es": "Quiché tradicional de bacon y queso",
+            "en": "Traditional Lorraine-style quiche with bacon and cheese.",
+            "prices": [],
+            "priceRangeEur": {
+              "min": 20,
+              "max": 20
+            },
+            "sizesEs": "12 porciones",
+            "sizesEn": "12 servings",
+            "optionsEs": "Sin otras variantes confirmadas",
+            "optionsEn": "No other confirmed variants",
+            "productUrl": "https://la-tarterie.es/producto/quiche-lorraine/"
+          }
+        ]
+      }
+    ],
+    "menuPublicNoticeEs": "Precios de tartas completas o productos salados, NO por porción. Cada rango depende del tamaño y opciones elegidas; consulta el precio exacto en la tienda oficial. Las opciones especiales no garantizan ausencia de alérgenos.",
+    "menuPublicNoticeEn": "Prices are for whole cakes or savoury products, NOT individual slices. Each range depends on size and selected options; check the exact price at the official shop. Special variants do not guarantee allergen-free preparation.",
+    "menuSourceNote": "Catálogo de 28 productos transcrito desde la tienda oficial y capturas aportadas el 23–24/10/2026. Rangos mínimo–máximo tal como se publican, sin imputación por tamaño ni opción. No se transcriben precios de porción ni se incluyen en comparador monetario. Alérgenos detallados pendientes de contrastar. Algunas tartas de temporada; disponibilidad no confirmada. Sin fotografías reutilizadas."
   },
   {
     "id": "la-bandera-cafe",
