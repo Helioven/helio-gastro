@@ -44766,11 +44766,12 @@
     "area": "Norte Sierra · Al-Nasir",
     "address": "Avenida Al-Nasir, 3-1, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
-    "checkedAt": "2026-10-11",
+    "priceStatus": "confirmed",
+    "checkedAt": "2026-10-24",
     "sources": [
       {
-        "label": "Carta oficial con precios de churros, chocolate y tostadas",
+        "label": "Carta oficial de La Bandera — desayunos, meriendas y comida",
+        "labelEn": "La Bandera official menu — breakfast, afternoon snacks and meals",
         "url": "https://labanderacafe.com/carta"
       }
     ],
@@ -44778,98 +44779,2135 @@
       {
         "service": "desayuno",
         "dishes": [
-          "Churros",
           "Jeringos",
+          "Churros",
+          "Churritos divertidos",
+          "Solo",
+          "Cortado",
+          "Café con leche",
+          "Leche manchada",
+          "Capuchino",
+          "Latte macchiato",
+          "Capuchino brûlée",
+          "Irlandés",
           "Chocolate caliente",
-          "Tostadas",
-          "Café solo",
-          "Café con leche"
+          "Sin lactosa",
+          "Sin azúcar",
+          "En agua",
+          "Leche vegetal",
+          "Zumo de naranja natural",
+          "Zumo de piña",
+          "Zumo de melocotón",
+          "Zumo de tomate",
+          "Batido de chocolate",
+          "Batido de vainilla",
+          "Batido de fresa",
+          "Aceite de oliva virgen extra",
+          "Aceite y tomate",
+          "Mantequilla Lorenzana",
+          "Mantequilla y mermelada",
+          "Paté ibérico",
+          "Crema de jamón cocido",
+          "Sobrasada",
+          "Zurrapa de lomo",
+          "Atún",
+          "Aceite, tomate y piquitos",
+          "Aceite, tomate y jamón corte",
+          "Aceite, tomate y pavo",
+          "Gratinada de jamón cocido",
+          "Gratinada de atún",
+          "Queso crema, aguacate, salmón ahumado y sésamo",
+          "Queso de cabra, cebolla caramelizada y miel de caña",
+          "Mantequilla de cacahuete, plátano y miel de caña",
+          "Huevos con bacon",
+          "Revuelto de huevos con jamón",
+          "Tortilla francesa",
+          "Aguacate y atún",
+          "Palmera",
+          "Napolitana de cacao",
+          "Donuts",
+          "Croissant",
+          "Croissant mantequilla y mermelada",
+          "Croissant jamón york y queso",
+          "Croissant huevo y bacon"
         ],
         "dishPrices": [
           {
-            "dish": "Churros (unidad)",
-            "eur": 0.8,
-            "portion": "unidad"
-          },
-          {
-            "dish": "Media ración de churros",
+            "dish": "Jeringos",
             "eur": 1.6,
             "portion": "media"
           },
           {
-            "dish": "Ración de churros",
+            "dish": "Jeringos",
             "eur": 2,
             "portion": "racion"
           },
           {
-            "dish": "Chocolate caliente",
-            "eur": 2,
+            "dish": "Jeringos",
+            "eur": 0.8,
             "portion": "unidad"
           },
           {
-            "dish": "Café solo",
+            "dish": "Churros",
             "eur": 1.6,
+            "portion": "media"
+          },
+          {
+            "dish": "Churros",
+            "eur": 2,
+            "portion": "racion"
+          },
+          {
+            "dish": "Churros",
+            "eur": 0.8,
             "portion": "unidad"
+          },
+          {
+            "dish": "Churritos divertidos",
+            "eur": 1.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Solo",
+            "eur": 1.6,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Cortado",
+            "eur": 1.6,
+            "portion": "desconocida"
           },
           {
             "dish": "Café con leche",
             "eur": 1.6,
-            "portion": "unidad"
+            "portion": "desconocida"
           },
           {
-            "dish": "Media tostada de aceite y tomate",
+            "dish": "Leche manchada",
+            "eur": 1.6,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Capuchino",
+            "eur": 2.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Latte macchiato",
+            "eur": 2.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Capuchino brûlée",
+            "eur": 3.2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Irlandés",
+            "eur": 5.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Chocolate caliente",
+            "eur": 2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Sin lactosa",
+            "eur": 2.2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Sin azúcar",
+            "eur": 2.3,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "En agua",
+            "eur": 2.2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Leche vegetal",
+            "eur": 3,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Zumo de naranja natural",
+            "eur": 3.2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Zumo de piña",
+            "eur": 2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Zumo de melocotón",
+            "eur": 2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Zumo de tomate",
+            "eur": 2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Batido de chocolate",
+            "eur": 2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Batido de vainilla",
+            "eur": 2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Batido de fresa",
+            "eur": 2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Aceite de oliva virgen extra",
+            "eur": 1.6,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Aceite de oliva virgen extra",
+            "eur": 2.1,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Aceite y tomate",
             "eur": 1.9,
             "portion": "media-tostada"
           },
           {
-            "dish": "Tostada entera de aceite y tomate",
+            "dish": "Aceite y tomate",
             "eur": 2.2,
             "portion": "tostada-entera"
+          },
+          {
+            "dish": "Mantequilla Lorenzana",
+            "eur": 2.1,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Mantequilla Lorenzana",
+            "eur": 2.8,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Mantequilla y mermelada",
+            "eur": 1.9,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Mantequilla y mermelada",
+            "eur": 2.2,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Paté ibérico",
+            "eur": 1.9,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Paté ibérico",
+            "eur": 2.2,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Crema de jamón cocido",
+            "eur": 1.9,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Crema de jamón cocido",
+            "eur": 2.2,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Sobrasada",
+            "eur": 1.9,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Sobrasada",
+            "eur": 2.2,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Zurrapa de lomo",
+            "eur": 1.9,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Zurrapa de lomo",
+            "eur": 2.2,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Atún",
+            "eur": 1.9,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Atún",
+            "eur": 2.2,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Aceite, tomate y piquitos",
+            "eur": 2.1,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Aceite, tomate y piquitos",
+            "eur": 2.8,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Aceite, tomate y jamón corte",
+            "eur": 3.9,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Aceite, tomate y jamón corte",
+            "eur": 6.2,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Aceite, tomate y pavo",
+            "eur": 2.1,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Aceite, tomate y pavo",
+            "eur": 2.8,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Gratinada de jamón cocido",
+            "eur": 2.5,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Gratinada de jamón cocido",
+            "eur": 3.2,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Gratinada de atún",
+            "eur": 2.5,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Gratinada de atún",
+            "eur": 3.2,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Queso crema, aguacate, salmón ahumado y sésamo",
+            "eur": 3.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Queso de cabra, cebolla caramelizada y miel de caña",
+            "eur": 3.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Mantequilla de cacahuete, plátano y miel de caña",
+            "eur": 3.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Huevos con bacon",
+            "eur": 3.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Revuelto de huevos con jamón",
+            "eur": 3.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Tortilla francesa",
+            "eur": 3.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Aguacate y atún",
+            "eur": 3.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Palmera",
+            "eur": 2.2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Napolitana de cacao",
+            "eur": 2.2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Donuts",
+            "eur": 1.6,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Croissant",
+            "eur": 2.1,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Croissant mantequilla y mermelada",
+            "eur": 2.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Croissant jamón york y queso",
+            "eur": 3.8,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Croissant huevo y bacon",
+            "eur": 4.9,
+            "portion": "desconocida"
           }
         ]
       },
       {
         "service": "merienda",
         "dishes": [
+          "Jeringos",
           "Churros",
+          "Churritos divertidos",
+          "Solo",
+          "Cortado",
+          "Café con leche",
+          "Leche manchada",
+          "Capuchino",
+          "Latte macchiato",
+          "Capuchino brûlée",
+          "Irlandés",
           "Chocolate caliente",
-          "Café solo",
-          "Café con leche"
+          "Sin lactosa",
+          "Sin azúcar",
+          "En agua",
+          "Leche vegetal",
+          "Zumo de naranja natural",
+          "Zumo de piña",
+          "Zumo de melocotón",
+          "Zumo de tomate",
+          "Batido de chocolate",
+          "Batido de vainilla",
+          "Batido de fresa",
+          "Aceite de oliva virgen extra",
+          "Aceite y tomate",
+          "Mantequilla Lorenzana",
+          "Mantequilla y mermelada",
+          "Paté ibérico",
+          "Crema de jamón cocido",
+          "Sobrasada",
+          "Zurrapa de lomo",
+          "Atún",
+          "Aceite, tomate y piquitos",
+          "Aceite, tomate y jamón corte",
+          "Aceite, tomate y pavo",
+          "Gratinada de jamón cocido",
+          "Gratinada de atún",
+          "Queso crema, aguacate, salmón ahumado y sésamo",
+          "Queso de cabra, cebolla caramelizada y miel de caña",
+          "Mantequilla de cacahuete, plátano y miel de caña",
+          "Huevos con bacon",
+          "Revuelto de huevos con jamón",
+          "Tortilla francesa",
+          "Aguacate y atún",
+          "Palmera",
+          "Napolitana de cacao",
+          "Donuts",
+          "Croissant",
+          "Croissant mantequilla y mermelada",
+          "Croissant jamón york y queso",
+          "Croissant huevo y bacon"
         ],
         "dishPrices": [
           {
-            "dish": "Churros (unidad)",
-            "eur": 0.8,
-            "portion": "unidad"
-          },
-          {
-            "dish": "Media ración de churros",
+            "dish": "Jeringos",
             "eur": 1.6,
             "portion": "media"
           },
           {
-            "dish": "Ración de churros",
+            "dish": "Jeringos",
             "eur": 2,
             "portion": "racion"
           },
           {
-            "dish": "Chocolate caliente",
-            "eur": 2,
+            "dish": "Jeringos",
+            "eur": 0.8,
             "portion": "unidad"
           },
           {
-            "dish": "Café solo",
+            "dish": "Churros",
             "eur": 1.6,
+            "portion": "media"
+          },
+          {
+            "dish": "Churros",
+            "eur": 2,
+            "portion": "racion"
+          },
+          {
+            "dish": "Churros",
+            "eur": 0.8,
             "portion": "unidad"
+          },
+          {
+            "dish": "Churritos divertidos",
+            "eur": 1.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Solo",
+            "eur": 1.6,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Cortado",
+            "eur": 1.6,
+            "portion": "desconocida"
           },
           {
             "dish": "Café con leche",
             "eur": 1.6,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Leche manchada",
+            "eur": 1.6,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Capuchino",
+            "eur": 2.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Latte macchiato",
+            "eur": 2.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Capuchino brûlée",
+            "eur": 3.2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Irlandés",
+            "eur": 5.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Chocolate caliente",
+            "eur": 2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Sin lactosa",
+            "eur": 2.2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Sin azúcar",
+            "eur": 2.3,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "En agua",
+            "eur": 2.2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Leche vegetal",
+            "eur": 3,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Zumo de naranja natural",
+            "eur": 3.2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Zumo de piña",
+            "eur": 2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Zumo de melocotón",
+            "eur": 2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Zumo de tomate",
+            "eur": 2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Batido de chocolate",
+            "eur": 2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Batido de vainilla",
+            "eur": 2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Batido de fresa",
+            "eur": 2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Aceite de oliva virgen extra",
+            "eur": 1.6,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Aceite de oliva virgen extra",
+            "eur": 2.1,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Aceite y tomate",
+            "eur": 1.9,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Aceite y tomate",
+            "eur": 2.2,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Mantequilla Lorenzana",
+            "eur": 2.1,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Mantequilla Lorenzana",
+            "eur": 2.8,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Mantequilla y mermelada",
+            "eur": 1.9,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Mantequilla y mermelada",
+            "eur": 2.2,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Paté ibérico",
+            "eur": 1.9,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Paté ibérico",
+            "eur": 2.2,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Crema de jamón cocido",
+            "eur": 1.9,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Crema de jamón cocido",
+            "eur": 2.2,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Sobrasada",
+            "eur": 1.9,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Sobrasada",
+            "eur": 2.2,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Zurrapa de lomo",
+            "eur": 1.9,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Zurrapa de lomo",
+            "eur": 2.2,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Atún",
+            "eur": 1.9,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Atún",
+            "eur": 2.2,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Aceite, tomate y piquitos",
+            "eur": 2.1,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Aceite, tomate y piquitos",
+            "eur": 2.8,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Aceite, tomate y jamón corte",
+            "eur": 3.9,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Aceite, tomate y jamón corte",
+            "eur": 6.2,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Aceite, tomate y pavo",
+            "eur": 2.1,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Aceite, tomate y pavo",
+            "eur": 2.8,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Gratinada de jamón cocido",
+            "eur": 2.5,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Gratinada de jamón cocido",
+            "eur": 3.2,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Gratinada de atún",
+            "eur": 2.5,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Gratinada de atún",
+            "eur": 3.2,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Queso crema, aguacate, salmón ahumado y sésamo",
+            "eur": 3.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Queso de cabra, cebolla caramelizada y miel de caña",
+            "eur": 3.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Mantequilla de cacahuete, plátano y miel de caña",
+            "eur": 3.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Huevos con bacon",
+            "eur": 3.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Revuelto de huevos con jamón",
+            "eur": 3.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Tortilla francesa",
+            "eur": 3.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Aguacate y atún",
+            "eur": 3.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Palmera",
+            "eur": 2.2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Napolitana de cacao",
+            "eur": 2.2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Donuts",
+            "eur": 1.6,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Croissant",
+            "eur": 2.1,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Croissant mantequilla y mermelada",
+            "eur": 2.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Croissant jamón york y queso",
+            "eur": 3.8,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Croissant huevo y bacon",
+            "eur": 4.9,
+            "portion": "desconocida"
+          }
+        ]
+      },
+      {
+        "service": "comida",
+        "dishes": [
+          "Jamón ibérico",
+          "Queso curado",
+          "Ensaladilla rusa",
+          "Salmorejo cordobés",
+          "Salpicón de marisco",
+          "Cuña de tortilla de patatas",
+          "Mollete de jamón ibérico con AOVE",
+          "Mollete de tortilla de patatas",
+          "Mollete de huevos con jamón",
+          "Mollete de queso curado",
+          "Mollete de bacon y queso",
+          "Mollete de tomate con melva",
+          "Mollete de salmón con queso crema",
+          "Mollete serranito",
+          "Croquetas de rabo de toro",
+          "Croquetas de puchero",
+          "Pinchitos",
+          "Flamenquín de pollo",
+          "Flamenquín de cerdo",
+          "Flamenquín de roquefort",
+          "Dulce de flamenquín",
+          "Gilda de sobrasada",
+          "Gilda de salmón",
+          "Gilda de queso",
+          "Gilda de alcachofa",
+          "Gilda matrimonio",
+          "Berberechos",
+          "Navajas",
+          "Mejillones",
+          "Tarta de queso",
+          "Tarta de pistacho",
+          "Coulant de chocolate"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Jamón ibérico",
+            "eur": 17.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Queso curado",
+            "eur": 15.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Ensaladilla rusa",
+            "eur": 5.9,
+            "portion": "media"
+          },
+          {
+            "dish": "Ensaladilla rusa",
+            "eur": 9.9,
+            "portion": "racion"
+          },
+          {
+            "dish": "Salmorejo cordobés",
+            "eur": 5.9,
+            "portion": "media"
+          },
+          {
+            "dish": "Salmorejo cordobés",
+            "eur": 8.9,
+            "portion": "racion"
+          },
+          {
+            "dish": "Salpicón de marisco",
+            "eur": 5.9,
+            "portion": "media"
+          },
+          {
+            "dish": "Salpicón de marisco",
+            "eur": 9.9,
+            "portion": "racion"
+          },
+          {
+            "dish": "Cuña de tortilla de patatas",
+            "eur": 4.1,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Mollete de jamón ibérico con AOVE",
+            "eur": 6.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Mollete de tortilla de patatas",
+            "eur": 6.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Mollete de huevos con jamón",
+            "eur": 6.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Mollete de queso curado",
+            "eur": 6.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Mollete de bacon y queso",
+            "eur": 6.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Mollete de tomate con melva",
+            "eur": 6.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Mollete de salmón con queso crema",
+            "eur": 6.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Mollete serranito",
+            "eur": 6.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Croquetas de rabo de toro",
+            "eur": 6.9,
+            "portion": "media"
+          },
+          {
+            "dish": "Croquetas de rabo de toro",
+            "eur": 9.9,
+            "portion": "racion"
+          },
+          {
+            "dish": "Croquetas de puchero",
+            "eur": 6.9,
+            "portion": "media"
+          },
+          {
+            "dish": "Croquetas de puchero",
+            "eur": 9.9,
+            "portion": "racion"
+          },
+          {
+            "dish": "Pinchitos",
+            "eur": 1.2,
             "portion": "unidad"
+          },
+          {
+            "dish": "Flamenquín de pollo",
+            "eur": 11.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Flamenquín de cerdo",
+            "eur": 13.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Flamenquín de roquefort",
+            "eur": 13.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Dulce de flamenquín",
+            "eur": 13.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Gilda de sobrasada",
+            "eur": 2.2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Gilda de salmón",
+            "eur": 2.2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Gilda de queso",
+            "eur": 2.2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Gilda de alcachofa",
+            "eur": 2.2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Gilda matrimonio",
+            "eur": 2.2,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Berberechos",
+            "eur": 14.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Navajas",
+            "eur": 14.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Mejillones",
+            "eur": 7.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Tarta de queso",
+            "eur": 5.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Tarta de pistacho",
+            "eur": 5.9,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Coulant de chocolate",
+            "eur": 5.9,
+            "portion": "desconocida"
           }
         ]
       }
-    ]
+    ],
+    "menuSections": [
+      {
+        "title": "Churros",
+        "titleEn": "Churros",
+        "note": "Churritos divertidos: suplemento para llevar 0,50 €.",
+        "noteEn": "Churritos divertidos: €0.50 takeaway surcharge.",
+        "items": [
+          {
+            "name": "Jeringos",
+            "es": "Jeringos",
+            "en": "Jeringos",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 1.6
+              },
+              {
+                "label": "ración",
+                "eur": 2
+              },
+              {
+                "label": "unidad",
+                "eur": 0.8
+              }
+            ]
+          },
+          {
+            "name": "Churros",
+            "es": "Churros",
+            "en": "Churros",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 1.6
+              },
+              {
+                "label": "ración",
+                "eur": 2
+              },
+              {
+                "label": "unidad",
+                "eur": 0.8
+              }
+            ]
+          },
+          {
+            "name": "Churritos divertidos",
+            "es": "Suplemento de 0,50 € para llevar.",
+            "en": "Churritos; takeaway surcharge €0.50",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 1.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Cafés",
+        "titleEn": "Coffees",
+        "items": [
+          {
+            "name": "Solo",
+            "es": "Solo",
+            "en": "Espresso",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 1.6
+              }
+            ]
+          },
+          {
+            "name": "Cortado",
+            "es": "Cortado",
+            "en": "Espresso with a little milk",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 1.6
+              }
+            ]
+          },
+          {
+            "name": "Café con leche",
+            "es": "Café con leche",
+            "en": "Coffee with milk",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 1.6
+              }
+            ]
+          },
+          {
+            "name": "Leche manchada",
+            "es": "Leche manchada",
+            "en": "Milk with a dash of coffee",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 1.6
+              }
+            ]
+          },
+          {
+            "name": "Capuchino",
+            "es": "Capuchino",
+            "en": "Capuchino",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2.5
+              }
+            ]
+          },
+          {
+            "name": "Latte macchiato",
+            "es": "Latte macchiato",
+            "en": "Latte macchiato",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2.5
+              }
+            ]
+          },
+          {
+            "name": "Capuchino brûlée",
+            "es": "Capuchino brûlée",
+            "en": "Capuchino brûlée",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 3.2
+              }
+            ]
+          },
+          {
+            "name": "Irlandés",
+            "es": "Irlandés",
+            "en": "Irlandés",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 5.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Chocolates",
+        "titleEn": "Hot chocolates",
+        "items": [
+          {
+            "name": "Chocolate caliente",
+            "es": "Chocolate caliente",
+            "en": "Hot chocolate",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2
+              }
+            ]
+          },
+          {
+            "name": "Sin lactosa",
+            "es": "Sin lactosa",
+            "en": "Lactose-free hot chocolate",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2.2
+              }
+            ]
+          },
+          {
+            "name": "Sin azúcar",
+            "es": "Sin azúcar",
+            "en": "Sugar-free hot chocolate",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2.3
+              }
+            ]
+          },
+          {
+            "name": "En agua",
+            "es": "En agua",
+            "en": "Hot chocolate made with water",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2.2
+              }
+            ]
+          },
+          {
+            "name": "Leche vegetal",
+            "es": "Leche vegetal",
+            "en": "Hot chocolate with plant-based milk",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Zumos y batidos",
+        "titleEn": "Juices and milkshakes",
+        "items": [
+          {
+            "name": "Zumo de naranja natural",
+            "es": "Zumo de naranja natural",
+            "en": "Zumo de naranja natural",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 3.2
+              }
+            ]
+          },
+          {
+            "name": "Zumo de piña",
+            "es": "Zumo de piña",
+            "en": "Zumo de piña",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2
+              }
+            ]
+          },
+          {
+            "name": "Zumo de melocotón",
+            "es": "Zumo de melocotón",
+            "en": "Zumo de melocotón",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2
+              }
+            ]
+          },
+          {
+            "name": "Zumo de tomate",
+            "es": "Zumo de tomate",
+            "en": "Zumo de tomate",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2
+              }
+            ]
+          },
+          {
+            "name": "Batido de chocolate",
+            "es": "Batido de chocolate",
+            "en": "Batido de chocolate",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2
+              }
+            ]
+          },
+          {
+            "name": "Batido de vainilla",
+            "es": "Batido de vainilla",
+            "en": "Batido de vainilla",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2
+              }
+            ]
+          },
+          {
+            "name": "Batido de fresa",
+            "es": "Batido de fresa",
+            "en": "Batido de fresa",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Tostadas",
+        "titleEn": "Toast",
+        "items": [
+          {
+            "name": "Aceite de oliva virgen extra",
+            "es": "Aceite de oliva virgen extra",
+            "en": "Aceite de oliva virgen extra",
+            "prices": [
+              {
+                "label": "media tostada",
+                "eur": 1.6
+              },
+              {
+                "label": "tostada entera",
+                "eur": 2.1
+              }
+            ]
+          },
+          {
+            "name": "Aceite y tomate",
+            "es": "Aceite y tomate",
+            "en": "Aceite y tomate",
+            "prices": [
+              {
+                "label": "media tostada",
+                "eur": 1.9
+              },
+              {
+                "label": "tostada entera",
+                "eur": 2.2
+              }
+            ]
+          },
+          {
+            "name": "Mantequilla Lorenzana",
+            "es": "Mantequilla Lorenzana",
+            "en": "Mantequilla Lorenzana",
+            "prices": [
+              {
+                "label": "media tostada",
+                "eur": 2.1
+              },
+              {
+                "label": "tostada entera",
+                "eur": 2.8
+              }
+            ]
+          },
+          {
+            "name": "Mantequilla y mermelada",
+            "es": "Mantequilla y mermelada",
+            "en": "Mantequilla y mermelada",
+            "prices": [
+              {
+                "label": "media tostada",
+                "eur": 1.9
+              },
+              {
+                "label": "tostada entera",
+                "eur": 2.2
+              }
+            ]
+          },
+          {
+            "name": "Paté ibérico",
+            "es": "Paté ibérico",
+            "en": "Paté ibérico",
+            "prices": [
+              {
+                "label": "media tostada",
+                "eur": 1.9
+              },
+              {
+                "label": "tostada entera",
+                "eur": 2.2
+              }
+            ]
+          },
+          {
+            "name": "Crema de jamón cocido",
+            "es": "Crema de jamón cocido",
+            "en": "Crema de jamón cocido",
+            "prices": [
+              {
+                "label": "media tostada",
+                "eur": 1.9
+              },
+              {
+                "label": "tostada entera",
+                "eur": 2.2
+              }
+            ]
+          },
+          {
+            "name": "Sobrasada",
+            "es": "Sobrasada",
+            "en": "Sobrasada",
+            "prices": [
+              {
+                "label": "media tostada",
+                "eur": 1.9
+              },
+              {
+                "label": "tostada entera",
+                "eur": 2.2
+              }
+            ]
+          },
+          {
+            "name": "Zurrapa de lomo",
+            "es": "Zurrapa de lomo",
+            "en": "Zurrapa de lomo",
+            "prices": [
+              {
+                "label": "media tostada",
+                "eur": 1.9
+              },
+              {
+                "label": "tostada entera",
+                "eur": 2.2
+              }
+            ]
+          },
+          {
+            "name": "Atún",
+            "es": "Atún",
+            "en": "Atún",
+            "prices": [
+              {
+                "label": "media tostada",
+                "eur": 1.9
+              },
+              {
+                "label": "tostada entera",
+                "eur": 2.2
+              }
+            ]
+          },
+          {
+            "name": "Aceite, tomate y piquitos",
+            "es": "Aceite, tomate y piquitos",
+            "en": "Aceite, tomate y piquitos",
+            "prices": [
+              {
+                "label": "media tostada",
+                "eur": 2.1
+              },
+              {
+                "label": "tostada entera",
+                "eur": 2.8
+              }
+            ]
+          },
+          {
+            "name": "Aceite, tomate y jamón corte",
+            "es": "Aceite, tomate y jamón corte",
+            "en": "Aceite, tomate y jamón corte",
+            "prices": [
+              {
+                "label": "media tostada",
+                "eur": 3.9
+              },
+              {
+                "label": "tostada entera",
+                "eur": 6.2
+              }
+            ]
+          },
+          {
+            "name": "Aceite, tomate y pavo",
+            "es": "Aceite, tomate y pavo",
+            "en": "Aceite, tomate y pavo",
+            "prices": [
+              {
+                "label": "media tostada",
+                "eur": 2.1
+              },
+              {
+                "label": "tostada entera",
+                "eur": 2.8
+              }
+            ]
+          },
+          {
+            "name": "Gratinada de jamón cocido",
+            "es": "Gratinada de jamón cocido",
+            "en": "Gratinada de jamón cocido",
+            "prices": [
+              {
+                "label": "media tostada",
+                "eur": 2.5
+              },
+              {
+                "label": "tostada entera",
+                "eur": 3.2
+              }
+            ]
+          },
+          {
+            "name": "Gratinada de atún",
+            "es": "Gratinada de atún",
+            "en": "Gratinada de atún",
+            "prices": [
+              {
+                "label": "media tostada",
+                "eur": 2.5
+              },
+              {
+                "label": "tostada entera",
+                "eur": 3.2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Las especiales",
+        "titleEn": "Special toast",
+        "items": [
+          {
+            "name": "Queso crema, aguacate, salmón ahumado y sésamo",
+            "es": "Queso crema, aguacate, salmón ahumado y sésamo",
+            "en": "Queso crema, aguacate, salmón ahumado y sésamo",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 3.9
+              }
+            ]
+          },
+          {
+            "name": "Queso de cabra, cebolla caramelizada y miel de caña",
+            "es": "Queso de cabra, cebolla caramelizada y miel de caña",
+            "en": "Queso de cabra, cebolla caramelizada y miel de caña",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 3.9
+              }
+            ]
+          },
+          {
+            "name": "Mantequilla de cacahuete, plátano y miel de caña",
+            "es": "Mantequilla de cacahuete, plátano y miel de caña",
+            "en": "Mantequilla de cacahuete, plátano y miel de caña",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 3.9
+              }
+            ]
+          },
+          {
+            "name": "Huevos con bacon",
+            "es": "Huevos con bacon",
+            "en": "Huevos con bacon",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 3.9
+              }
+            ]
+          },
+          {
+            "name": "Revuelto de huevos con jamón",
+            "es": "Revuelto de huevos con jamón",
+            "en": "Revuelto de huevos con jamón",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 3.9
+              }
+            ]
+          },
+          {
+            "name": "Tortilla francesa",
+            "es": "Tortilla francesa",
+            "en": "Tortilla francesa",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 3.9
+              }
+            ]
+          },
+          {
+            "name": "Aguacate y atún",
+            "es": "Aguacate y atún",
+            "en": "Aguacate y atún",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 3.9
+              }
+            ]
+          },
+          {
+            "name": "Ingrediente especial extra",
+            "es": "Suplemento por ingrediente especial.",
+            "en": "Additional special ingredient",
+            "prices": [
+              {
+                "label": "suplemento",
+                "eur": 1.8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Dulces y croissants",
+        "titleEn": "Pastries and croissants",
+        "items": [
+          {
+            "name": "Palmera",
+            "es": "Palmera",
+            "en": "Palmera",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2.2
+              }
+            ]
+          },
+          {
+            "name": "Napolitana de cacao",
+            "es": "Napolitana de cacao",
+            "en": "Napolitana de cacao",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2.2
+              }
+            ]
+          },
+          {
+            "name": "Donuts",
+            "es": "Donuts",
+            "en": "Donuts",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 1.6
+              }
+            ]
+          },
+          {
+            "name": "Croissant",
+            "es": "Croissant",
+            "en": "Croissant",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2.1
+              }
+            ]
+          },
+          {
+            "name": "Croissant mantequilla y mermelada",
+            "es": "Croissant mantequilla y mermelada",
+            "en": "Croissant mantequilla y mermelada",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2.9
+              }
+            ]
+          },
+          {
+            "name": "Croissant jamón york y queso",
+            "es": "Croissant jamón york y queso",
+            "en": "Croissant jamón york y queso",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 3.8
+              }
+            ]
+          },
+          {
+            "name": "Croissant huevo y bacon",
+            "es": "Croissant huevo y bacon",
+            "en": "Croissant huevo y bacon",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 4.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Para abrir boca",
+        "titleEn": "Starters",
+        "items": [
+          {
+            "name": "Jamón ibérico",
+            "es": "Jamón ibérico",
+            "en": "Iberian ham",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 17.5
+              }
+            ]
+          },
+          {
+            "name": "Queso curado",
+            "es": "Queso curado",
+            "en": "Aged cheese",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 15.5
+              }
+            ]
+          },
+          {
+            "name": "Ensaladilla rusa",
+            "es": "Ensaladilla rusa",
+            "en": "Ensaladilla rusa",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 5.9
+              },
+              {
+                "label": "ración",
+                "eur": 9.9
+              }
+            ]
+          },
+          {
+            "name": "Salmorejo cordobés",
+            "es": "Salmorejo cordobés",
+            "en": "Cordoban salmorejo",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 5.9
+              },
+              {
+                "label": "ración",
+                "eur": 8.9
+              }
+            ]
+          },
+          {
+            "name": "Salpicón de marisco",
+            "es": "Salpicón de marisco",
+            "en": "Salpicón de marisco",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 5.9
+              },
+              {
+                "label": "ración",
+                "eur": 9.9
+              }
+            ]
+          },
+          {
+            "name": "Cuña de tortilla de patatas",
+            "es": "Cuña de tortilla de patatas",
+            "en": "Slice of Spanish potato omelette",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 4.1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Molletes de bandera",
+        "titleEn": "Signature molletes",
+        "items": [
+          {
+            "name": "Mollete de jamón ibérico con AOVE",
+            "es": "Mollete de jamón ibérico con AOVE",
+            "en": "Mollete de jamón ibérico con AOVE",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 6.9
+              }
+            ]
+          },
+          {
+            "name": "Mollete de tortilla de patatas",
+            "es": "Mollete de tortilla de patatas",
+            "en": "Mollete de tortilla de patatas",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 6.9
+              }
+            ]
+          },
+          {
+            "name": "Mollete de huevos con jamón",
+            "es": "Mollete de huevos con jamón",
+            "en": "Mollete de huevos con jamón",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 6.9
+              }
+            ]
+          },
+          {
+            "name": "Mollete de queso curado",
+            "es": "Mollete de queso curado",
+            "en": "Mollete de queso curado",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 6.9
+              }
+            ]
+          },
+          {
+            "name": "Mollete de bacon y queso",
+            "es": "Mollete de bacon y queso",
+            "en": "Mollete de bacon y queso",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 6.9
+              }
+            ]
+          },
+          {
+            "name": "Mollete de tomate con melva",
+            "es": "Mollete de tomate con melva",
+            "en": "Mollete de tomate con melva",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 6.9
+              }
+            ]
+          },
+          {
+            "name": "Mollete de salmón con queso crema",
+            "es": "Mollete de salmón con queso crema",
+            "en": "Mollete de salmón con queso crema",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 6.9
+              }
+            ]
+          },
+          {
+            "name": "Mollete serranito",
+            "es": "Lomo, jamón y pimientos fritos.",
+            "en": "Mollete with pork loin, ham and fried peppers",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 6.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Para seguir",
+        "titleEn": "More to enjoy",
+        "items": [
+          {
+            "name": "Croquetas de rabo de toro",
+            "es": "Croquetas de rabo de toro",
+            "en": "Oxtail croquettes",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 6.9
+              },
+              {
+                "label": "ración",
+                "eur": 9.9
+              }
+            ]
+          },
+          {
+            "name": "Croquetas de puchero",
+            "es": "Croquetas de puchero",
+            "en": "Stew croquettes",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 6.9
+              },
+              {
+                "label": "ración",
+                "eur": 9.9
+              }
+            ]
+          },
+          {
+            "name": "Pinchitos",
+            "es": "Precio por unidad.",
+            "en": "Skewers; priced per unit",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 1.2
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín de pollo",
+            "es": "Flamenquín de pollo",
+            "en": "Chicken flamenquín",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 11.9
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín de cerdo",
+            "es": "Flamenquín de cerdo",
+            "en": "Pork flamenquín",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 13.9
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín de roquefort",
+            "es": "Flamenquín de roquefort",
+            "en": "Roquefort flamenquín",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 13.9
+              }
+            ]
+          },
+          {
+            "name": "Dulce de flamenquín",
+            "es": "Dulce de flamenquín",
+            "en": "Dulce de flamenquín",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 13.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Gildas",
+        "titleEn": "Gildas",
+        "items": [
+          {
+            "name": "Gilda de sobrasada",
+            "es": "Gilda de sobrasada",
+            "en": "Gilda de sobrasada",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2.2
+              }
+            ]
+          },
+          {
+            "name": "Gilda de salmón",
+            "es": "Gilda de salmón",
+            "en": "Gilda de salmón",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2.2
+              }
+            ]
+          },
+          {
+            "name": "Gilda de queso",
+            "es": "Gilda de queso",
+            "en": "Gilda de queso",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2.2
+              }
+            ]
+          },
+          {
+            "name": "Gilda de alcachofa",
+            "es": "Gilda de alcachofa",
+            "en": "Gilda de alcachofa",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2.2
+              }
+            ]
+          },
+          {
+            "name": "Gilda matrimonio",
+            "es": "Gilda matrimonio",
+            "en": "Gilda matrimonio",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2.2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Conservas",
+        "titleEn": "Preserves",
+        "items": [
+          {
+            "name": "Berberechos",
+            "es": "Berberechos",
+            "en": "Berberechos",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 14.9
+              }
+            ]
+          },
+          {
+            "name": "Navajas",
+            "es": "Navajas",
+            "en": "Navajas",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 14.9
+              }
+            ]
+          },
+          {
+            "name": "Mejillones",
+            "es": "Mejillones",
+            "en": "Mejillones",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 7.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Postres",
+        "titleEn": "Desserts",
+        "items": [
+          {
+            "name": "Tarta de queso",
+            "es": "Tarta de queso",
+            "en": "Cheesecake",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 5.9
+              }
+            ]
+          },
+          {
+            "name": "Tarta de pistacho",
+            "es": "Tarta de pistacho",
+            "en": "Pistachio cake",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 5.9
+              }
+            ]
+          },
+          {
+            "name": "Coulant de chocolate",
+            "es": "Coulant de chocolate",
+            "en": "Chocolate lava cake",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 5.9
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "menuPublicNoticeEs": "Carta oficial: las especialidades pueden variar según el servicio o la franja horaria. Los precios corresponden al formato indicado; los suplementos no son platos individuales.",
+    "menuPublicNoticeEn": "Official menu: availability may vary by service and time of day. Prices are for the stated serving format; add-ons are not standalone dishes.",
+    "menuSourceNote": "Transcripción facilitada por Helio el 24/10/2026 de la carta oficial labanderacafe.com/carta. Desayunos y meriendas comparten bloque documental; servicio de comida independiente. Sin inventar horarios. Las tostadas con precios diferenciados mantienen media y entera. Churritos divertidos: suplemento de 0,50 € para llevar. Ingrediente especial extra: 1,80 € no incluido en comparaciones."
   },
   {
     "id": "patio-romano",
