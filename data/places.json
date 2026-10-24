@@ -43998,7 +43998,7 @@
     "area": "Ciudad Jardín · Antonio Maura",
     "address": "Calle Antonio Maura, 35, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "estimated",
+    "priceStatus": "unknown",
     "checkedAt": "2026-10-24",
     "sources": [
       {
@@ -44246,27 +44246,39 @@
         "items": [
           {
             "name": "Potajes",
-            "prices": []
+            "prices": [],
+            "es": "Potajes",
+            "en": "Stews"
           },
           {
             "name": "Migas camperas",
-            "prices": []
+            "prices": [],
+            "es": "Migas camperas",
+            "en": "Country-style migas"
           },
           {
             "name": "Sopa de picadillo",
-            "prices": []
+            "prices": [],
+            "es": "Sopa de picadillo",
+            "en": "Chicken and ham broth soup"
           },
           {
             "name": "Ensalada mixta",
-            "prices": []
+            "prices": [],
+            "es": "Ensalada mixta",
+            "en": "Mixed salad"
           },
           {
             "name": "Ensalada César",
-            "prices": []
+            "prices": [],
+            "es": "Ensalada César",
+            "en": "Caesar salad"
           },
           {
             "name": "Espaguetis (boloñesa, carbonara o roquefort)",
-            "prices": []
+            "prices": [],
+            "es": "Espaguetis (boloñesa, carbonara o roquefort)",
+            "en": "Spaghetti (Bolognese, carbonara or Roquefort sauce)"
           }
         ]
       },
@@ -44276,35 +44288,51 @@
         "items": [
           {
             "name": "Albóndigas en salsa",
-            "prices": []
+            "prices": [],
+            "es": "Albóndigas en salsa",
+            "en": "Meatballs in sauce"
           },
           {
             "name": "Arroz a la cubana",
-            "prices": []
+            "prices": [],
+            "es": "Arroz a la cubana",
+            "en": "Cuban-style rice with fried egg"
           },
           {
             "name": "Flamenquín",
-            "prices": []
+            "prices": [],
+            "es": "Flamenquín",
+            "en": "Flamenquín"
           },
           {
             "name": "Filete San Jacobo",
-            "prices": []
+            "prices": [],
+            "es": "Filete San Jacobo",
+            "en": "San Jacobo breaded ham and cheese cutlet"
           },
           {
             "name": "Churrasco de pollo",
-            "prices": []
+            "prices": [],
+            "es": "Churrasco de pollo",
+            "en": "Grilled chicken churrasco"
           },
           {
             "name": "Filete de ternera a la plancha",
-            "prices": []
+            "prices": [],
+            "es": "Filete de ternera a la plancha",
+            "en": "Grilled beef fillet"
           },
           {
             "name": "Pechuga de pollo a la plancha",
-            "prices": []
+            "prices": [],
+            "es": "Pechuga de pollo a la plancha",
+            "en": "Grilled chicken breast"
           },
           {
             "name": "Pescadito",
-            "prices": []
+            "prices": [],
+            "es": "Pescadito",
+            "en": "Fried fish"
           }
         ]
       },
@@ -44314,39 +44342,57 @@
         "items": [
           {
             "name": "Migas (en temporada)",
-            "prices": []
+            "prices": [],
+            "es": "Migas (en temporada)",
+            "en": "Seasonal migas"
           },
           {
             "name": "Paella (martes, sábados y domingos)",
-            "prices": []
+            "prices": [],
+            "es": "Paella (martes, sábados y domingos)",
+            "en": "Paella (Tuesdays, Saturdays and Sundays)"
           },
           {
             "name": "Bacalao con pisto",
-            "prices": []
+            "prices": [],
+            "es": "Bacalao con pisto",
+            "en": "Cod with ratatouille-style vegetables"
           },
           {
             "name": "Calamaritos fritos o a la plancha",
-            "prices": []
+            "prices": [],
+            "es": "Calamaritos fritos o a la plancha",
+            "en": "Baby squid, fried or grilled"
           },
           {
             "name": "Cachopo de jamón y queso o jamón y queso de cabra",
-            "prices": []
+            "prices": [],
+            "es": "Cachopo de jamón y queso o jamón y queso de cabra",
+            "en": "Cachopo with ham and cheese or ham and goat's cheese"
           },
           {
             "name": "Patatas con huevos rotos, gulas y ajitos",
-            "prices": []
+            "prices": [],
+            "es": "Patatas con huevos rotos, gulas y ajitos",
+            "en": "Potatoes with broken fried eggs, baby eels and garlic"
           },
           {
             "name": "Torreznos de Soria",
-            "prices": []
+            "prices": [],
+            "es": "Torreznos de Soria",
+            "en": "Soria-style crispy pork belly"
           },
           {
             "name": "Chocos fritos de Huelva",
-            "prices": []
+            "prices": [],
+            "es": "Chocos fritos de Huelva",
+            "en": "Fried cuttlefish from Huelva"
           },
           {
             "name": "Cogollos con ventresca, gulas y gambas",
-            "prices": []
+            "prices": [],
+            "es": "Cogollos con ventresca, gulas y gambas",
+            "en": "Lettuce hearts with tuna belly, baby eels and prawns"
           }
         ]
       },
@@ -44356,19 +44402,27 @@
         "items": [
           {
             "name": "Rabo de toro",
-            "prices": []
+            "prices": [],
+            "es": "Rabo de toro",
+            "en": "Oxtail stew"
           },
           {
             "name": "Flamenquín de jamón",
-            "prices": []
+            "prices": [],
+            "es": "Flamenquín de jamón",
+            "en": "Ham flamenquín"
           },
           {
             "name": "Berenjenas a la miel",
-            "prices": []
+            "prices": [],
+            "es": "Berenjenas a la miel",
+            "en": "Fried aubergines with honey"
           },
           {
             "name": "Salmorejo",
-            "prices": []
+            "prices": [],
+            "es": "Salmorejo",
+            "en": "Salmorejo"
           }
         ]
       },
@@ -44383,7 +44437,9 @@
                 "label": "formato no especificado",
                 "eur": 3.75
               }
-            ]
+            ],
+            "es": "Salmorejo (S/T)",
+            "en": "Salmorejo (S/T)"
           },
           {
             "name": "Ensaladilla rusa (S/T)",
@@ -44392,7 +44448,9 @@
                 "label": "formato no especificado",
                 "eur": 3.75
               }
-            ]
+            ],
+            "es": "Ensaladilla rusa (S/T)",
+            "en": "Russian potato salad (S/T)"
           },
           {
             "name": "Ensaladilla de gambas",
@@ -44401,7 +44459,9 @@
                 "label": "formato no especificado",
                 "eur": 3.75
               }
-            ]
+            ],
+            "es": "Ensaladilla de gambas",
+            "en": "Prawn potato salad"
           },
           {
             "name": "Queso puro de oveja",
@@ -44410,7 +44470,9 @@
                 "label": "formato no especificado",
                 "eur": 4.25
               }
-            ]
+            ],
+            "es": "Queso puro de oveja",
+            "en": "Pure sheep's milk cheese"
           },
           {
             "name": "Boquerones en vinagre",
@@ -44419,7 +44481,9 @@
                 "label": "formato no especificado",
                 "eur": 4
               }
-            ]
+            ],
+            "es": "Boquerones en vinagre",
+            "en": "Marinated anchovies"
           },
           {
             "name": "Croquetas caseras",
@@ -44428,7 +44492,9 @@
                 "label": "formato no especificado",
                 "eur": 6.75
               }
-            ]
+            ],
+            "es": "Croquetas caseras",
+            "en": "Homemade croquettes"
           }
         ]
       },
@@ -44443,7 +44509,9 @@
                 "label": "formato no especificado",
                 "eur": 12
               }
-            ]
+            ],
+            "es": "Plato nido (chanquetes, pisto y huevos fritos)",
+            "en": "Nido dish (whitebait, vegetable ratatouille and fried eggs)"
           },
           {
             "name": "Berenjenas con miel",
@@ -44452,7 +44520,9 @@
                 "label": "formato no especificado",
                 "eur": 6.75
               }
-            ]
+            ],
+            "es": "Berenjenas con miel",
+            "en": "Aubergines with honey"
           },
           {
             "name": "Berenjenas fritas",
@@ -44461,7 +44531,9 @@
                 "label": "formato no especificado",
                 "eur": 6.25
               }
-            ]
+            ],
+            "es": "Berenjenas fritas",
+            "en": "Fried aubergines"
           },
           {
             "name": "Papas al pelotazo con huevos rotos y paleta Gran Reserva Duroc",
@@ -44470,7 +44542,9 @@
                 "label": "formato no especificado",
                 "eur": 11.75
               }
-            ]
+            ],
+            "es": "Papas al pelotazo con huevos rotos y paleta Gran Reserva Duroc",
+            "en": "Potatoes with broken fried eggs and Gran Reserva Duroc cured ham"
           },
           {
             "name": "Papas al pelotazo con huevos rotos, gulas y ajitos fritos",
@@ -44479,7 +44553,9 @@
                 "label": "formato no especificado",
                 "eur": 12.5
               }
-            ]
+            ],
+            "es": "Papas al pelotazo con huevos rotos, gulas y ajitos fritos",
+            "en": "Potatoes with broken fried eggs, baby eels and fried garlic"
           },
           {
             "name": "Papas bravas",
@@ -44488,7 +44564,9 @@
                 "label": "formato no especificado",
                 "eur": 6.95
               }
-            ]
+            ],
+            "es": "Papas bravas",
+            "en": "Patatas bravas"
           }
         ]
       },
@@ -44503,7 +44581,9 @@
                 "label": "formato no especificado",
                 "eur": 12.5
               }
-            ]
+            ],
+            "es": "Cogollos con ventresca, gulas y gambas al ajillo",
+            "en": "Lettuce hearts with tuna belly, baby eels and garlic prawns"
           },
           {
             "name": "Ensalada especial (lechuga, tomate, pimiento, cebolla, zanahoria, atún, maíz y huevo)",
@@ -44512,7 +44592,9 @@
                 "label": "formato no especificado",
                 "eur": 9.75
               }
-            ]
+            ],
+            "es": "Ensalada especial (lechuga, tomate, pimiento, cebolla, zanahoria, atún, maíz y huevo)",
+            "en": "Special salad (lettuce, tomato, pepper, onion, carrot, tuna, corn and egg)"
           }
         ]
       },
@@ -44527,7 +44609,9 @@
                 "label": "formato no especificado",
                 "eur": 8.25
               }
-            ]
+            ],
+            "es": "Revuelto de bacalao",
+            "en": "Scrambled eggs with cod"
           },
           {
             "name": "Revuelto de espárragos y trigueros",
@@ -44536,7 +44620,9 @@
                 "label": "formato no especificado",
                 "eur": 8.25
               }
-            ]
+            ],
+            "es": "Revuelto de espárragos y trigueros",
+            "en": "Scrambled eggs with asparagus"
           },
           {
             "name": "Revuelto de habitas baby",
@@ -44545,7 +44631,9 @@
                 "label": "formato no especificado",
                 "eur": 8.25
               }
-            ]
+            ],
+            "es": "Revuelto de habitas baby",
+            "en": "Scrambled eggs with baby broad beans"
           },
           {
             "name": "Revuelto de setas, gambas y salmón",
@@ -44554,7 +44642,9 @@
                 "label": "formato no especificado",
                 "eur": 8.25
               }
-            ]
+            ],
+            "es": "Revuelto de setas, gambas y salmón",
+            "en": "Scrambled eggs with mushrooms, prawns and salmon"
           }
         ]
       },
@@ -44564,47 +44654,69 @@
         "items": [
           {
             "name": "Rabo de toro",
-            "prices": []
+            "prices": [],
+            "es": "Rabo de toro",
+            "en": "Oxtail stew"
           },
           {
             "name": "Torreznos de Soria",
-            "prices": []
+            "prices": [],
+            "es": "Torreznos de Soria",
+            "en": "Soria-style crispy pork belly"
           },
           {
             "name": "Salmorejo cordobés",
-            "prices": []
+            "prices": [],
+            "es": "Salmorejo cordobés",
+            "en": "Cordoban salmorejo"
           },
           {
             "name": "Flamenquín",
-            "prices": []
+            "prices": [],
+            "es": "Flamenquín",
+            "en": "Flamenquín"
           },
           {
             "name": "Callos con manitas",
-            "prices": []
+            "prices": [],
+            "es": "Callos con manitas",
+            "en": "Tripe with pig's trotters"
           },
           {
             "name": "Carrillada ibérica",
-            "prices": []
+            "prices": [],
+            "es": "Carrillada ibérica",
+            "en": "Iberian pork cheeks"
           },
           {
             "name": "Cochifrito ibérico",
-            "prices": []
+            "prices": [],
+            "es": "Cochifrito ibérico",
+            "en": "Fried Iberian suckling pork"
           },
           {
             "name": "Tiritas de pollo al limón",
-            "prices": []
+            "prices": [],
+            "es": "Tiritas de pollo al limón",
+            "en": "Lemon chicken strips"
           },
           {
             "name": "Callos de ternera con manitas (S/T)",
-            "prices": []
+            "prices": [],
+            "es": "Callos de ternera con manitas (S/T)",
+            "en": "Veal tripe with trotters (S/T)"
           },
           {
             "name": "Flamenquín de jamón casero",
-            "prices": []
+            "prices": [],
+            "es": "Flamenquín de jamón casero",
+            "en": "Homemade ham flamenquín"
           },
           {
             "name": "San Jacobo casero",
-            "prices": []
+            "prices": [],
+            "es": "San Jacobo casero",
+            "en": "Homemade San Jacobo cutlet"
           }
         ]
       },
@@ -44614,31 +44726,45 @@
         "items": [
           {
             "name": "Calamares fritos",
-            "prices": []
+            "prices": [],
+            "es": "Calamares fritos",
+            "en": "Fried squid"
           },
           {
             "name": "Calamares a la plancha",
-            "prices": []
+            "prices": [],
+            "es": "Calamares a la plancha",
+            "en": "Grilled squid"
           },
           {
             "name": "Bacalao frito",
-            "prices": []
+            "prices": [],
+            "es": "Bacalao frito",
+            "en": "Fried cod"
           },
           {
             "name": "Bacalao con pisto",
-            "prices": []
+            "prices": [],
+            "es": "Bacalao con pisto",
+            "en": "Cod with ratatouille-style vegetables"
           },
           {
             "name": "Boquerones fritos",
-            "prices": []
+            "prices": [],
+            "es": "Boquerones fritos",
+            "en": "Fried anchovies"
           },
           {
             "name": "Chocos fritos",
-            "prices": []
+            "prices": [],
+            "es": "Chocos fritos",
+            "en": "Fried cuttlefish"
           },
           {
             "name": "Rosada frita",
-            "prices": []
+            "prices": [],
+            "es": "Rosada frita",
+            "en": "Fried hake"
           }
         ]
       },
@@ -44648,11 +44774,15 @@
         "items": [
           {
             "name": "N.º 1: lomo, croquetas, dos huevos, patatas fritas y mahonesa",
-            "prices": []
+            "prices": [],
+            "es": "N.º 1: lomo, croquetas, dos huevos, patatas fritas y mahonesa",
+            "en": "No. 1: pork loin, croquettes, two eggs, chips and mayonnaise"
           },
           {
             "name": "N.º 2: bacalao frito, calamares a la plancha, ensalada y mahonesa",
-            "prices": []
+            "prices": [],
+            "es": "N.º 2: bacalao frito, calamares a la plancha, ensalada y mahonesa",
+            "en": "No. 2: fried cod, grilled squid, salad and mayonnaise"
           }
         ]
       },
@@ -44662,23 +44792,33 @@
         "items": [
           {
             "name": "Entrecot de ternera",
-            "prices": []
+            "prices": [],
+            "es": "Entrecot de ternera",
+            "en": "Beef entrecôte"
           },
           {
             "name": "Presa ibérica",
-            "prices": []
+            "prices": [],
+            "es": "Presa ibérica",
+            "en": "Iberian pork presa cut"
           },
           {
             "name": "Puntas de solomillo",
-            "prices": []
+            "prices": [],
+            "es": "Puntas de solomillo",
+            "en": "Beef tenderloin tips"
           },
           {
             "name": "Pinchitos de cerdo (unidad)",
-            "prices": []
+            "prices": [],
+            "es": "Pinchitos de cerdo (unidad)",
+            "en": "Pork skewers (each)"
           },
           {
             "name": "Codillo al horno",
-            "prices": []
+            "prices": [],
+            "es": "Codillo al horno",
+            "en": "Oven-roasted pork knuckle"
           }
         ]
       },
@@ -44688,23 +44828,33 @@
         "items": [
           {
             "name": "Natillas",
-            "prices": []
+            "prices": [],
+            "es": "Natillas",
+            "en": "Custard"
           },
           {
             "name": "Flan de huevo",
-            "prices": []
+            "prices": [],
+            "es": "Flan de huevo",
+            "en": "Egg flan"
           },
           {
             "name": "Porción de tarta",
-            "prices": []
+            "prices": [],
+            "es": "Porción de tarta",
+            "en": "Slice of cake"
           },
           {
             "name": "Pudin casero",
-            "prices": []
+            "prices": [],
+            "es": "Pudin casero",
+            "en": "Homemade pudding"
           },
           {
             "name": "Frutas de temporada",
-            "prices": []
+            "prices": [],
+            "es": "Frutas de temporada",
+            "en": "Seasonal fruit"
           }
         ]
       },
@@ -44714,59 +44864,87 @@
         "items": [
           {
             "name": "Maceta de cerveza",
-            "prices": []
+            "prices": [],
+            "es": "Maceta de cerveza",
+            "en": "Large beer"
           },
           {
             "name": "Aquarius",
-            "prices": []
+            "prices": [],
+            "es": "Aquarius",
+            "en": "Aquarius drink"
           },
           {
             "name": "Rivera (denominación de la fuente)",
-            "prices": []
+            "prices": [],
+            "es": "Rivera (denominación de la fuente)",
+            "en": "Rivera (source spelling)"
           },
           {
             "name": "Combinado nacional",
-            "prices": []
+            "prices": [],
+            "es": "Combinado nacional",
+            "en": "Spanish mixed spirit drink"
           },
           {
             "name": "Caña de cerveza",
-            "prices": []
+            "prices": [],
+            "es": "Caña de cerveza",
+            "en": "Small draft beer"
           },
           {
             "name": "Zumos",
-            "prices": []
+            "prices": [],
+            "es": "Zumos",
+            "en": "Juices"
           },
           {
             "name": "Refresco",
-            "prices": []
+            "prices": [],
+            "es": "Refresco",
+            "en": "Soft drink"
           },
           {
             "name": "Rioja",
-            "prices": []
+            "prices": [],
+            "es": "Rioja",
+            "en": "Rioja wine"
           },
           {
             "name": "Verdejo",
-            "prices": []
+            "prices": [],
+            "es": "Verdejo",
+            "en": "Verdejo wine"
           },
           {
             "name": "Tercio de cerveza",
-            "prices": []
+            "prices": [],
+            "es": "Tercio de cerveza",
+            "en": "Bottled beer"
           },
           {
             "name": "Combinado de importación",
-            "prices": []
+            "prices": [],
+            "es": "Combinado de importación",
+            "en": "Imported mixed spirit drink"
           },
           {
             "name": "Pieza de pan",
-            "prices": []
+            "prices": [],
+            "es": "Pieza de pan",
+            "en": "Bread roll"
           },
           {
             "name": "Táper para llevar",
-            "prices": []
+            "prices": [],
+            "es": "Táper para llevar",
+            "en": "Takeaway container"
           },
           {
             "name": "Bolsa",
-            "prices": []
+            "prices": [],
+            "es": "Bolsa",
+            "en": "Bag"
           }
         ]
       },
@@ -44776,27 +44954,39 @@
         "items": [
           {
             "name": "Bacon",
-            "prices": []
+            "prices": [],
+            "es": "Bacon",
+            "en": "Bacon baguette"
           },
           {
             "name": "Lomo",
-            "prices": []
+            "prices": [],
+            "es": "Lomo",
+            "en": "Pork loin baguette"
           },
           {
             "name": "York y queso",
-            "prices": []
+            "prices": [],
+            "es": "York y queso",
+            "en": "Cooked ham and cheese baguette"
           },
           {
             "name": "Atún",
-            "prices": []
+            "prices": [],
+            "es": "Atún",
+            "en": "Tuna baguette"
           },
           {
             "name": "Vegetal (tomate, lechuga, huevo y jamón york)",
-            "prices": []
+            "prices": [],
+            "es": "Vegetal (tomate, lechuga, huevo y jamón york)",
+            "en": "Vegetable baguette (tomato, lettuce, egg and cooked ham)"
           },
           {
             "name": "Tortilla francesa",
-            "prices": []
+            "prices": [],
+            "es": "Tortilla francesa",
+            "en": "French omelette baguette"
           }
         ]
       },
@@ -44806,51 +44996,75 @@
         "items": [
           {
             "name": "Aceite",
-            "prices": []
+            "prices": [],
+            "es": "Aceite",
+            "en": "Olive oil toast"
           },
           {
             "name": "Aceite de ajo",
-            "prices": []
+            "prices": [],
+            "es": "Aceite de ajo",
+            "en": "Garlic olive oil toast"
           },
           {
             "name": "Paté",
-            "prices": []
+            "prices": [],
+            "es": "Paté",
+            "en": "Pâté toast"
           },
           {
             "name": "Margarina Zas",
-            "prices": []
+            "prices": [],
+            "es": "Margarina Zas",
+            "en": "Zas margarine toast"
           },
           {
             "name": "Tulipán con sal",
-            "prices": []
+            "prices": [],
+            "es": "Tulipán con sal",
+            "en": "Salted Tulipán margarine toast"
           },
           {
             "name": "Tomate y aceite",
-            "prices": []
+            "prices": [],
+            "es": "Tomate y aceite",
+            "en": "Tomato and olive oil toast"
           },
           {
             "name": "Crema de York",
-            "prices": []
+            "prices": [],
+            "es": "Crema de York",
+            "en": "Cooked ham spread toast"
           },
           {
             "name": "Sobrasada",
-            "prices": []
+            "prices": [],
+            "es": "Sobrasada",
+            "en": "Sobrasada toast"
           },
           {
             "name": "Manteca colorá casera",
-            "prices": []
+            "prices": [],
+            "es": "Manteca colorá casera",
+            "en": "Homemade manteca colorá toast"
           },
           {
             "name": "Don Pepe (tomate y jamón)",
-            "prices": []
+            "prices": [],
+            "es": "Don Pepe (tomate y jamón)",
+            "en": "Don Pepe toast (tomato and ham)"
           },
           {
             "name": "Jamón York",
-            "prices": []
+            "prices": [],
+            "es": "Jamón York",
+            "en": "Cooked ham toast"
           },
           {
             "name": "Sándwich mixto",
-            "prices": []
+            "prices": [],
+            "es": "Sándwich mixto",
+            "en": "Ham and cheese toasted sandwich"
           }
         ]
       },
@@ -44860,27 +45074,39 @@
         "items": [
           {
             "name": "Desayuno especial n.º 1: café, zumo de naranja y media tostada normal (aceite, mantequilla o paté)",
-            "prices": []
+            "prices": [],
+            "es": "Desayuno especial n.º 1: café, zumo de naranja y media tostada normal (aceite, mantequilla o paté)",
+            "en": "Special breakfast no. 1: coffee, orange juice and half a standard toast (olive oil, butter or pâté)"
           },
           {
             "name": "Jeringos",
-            "prices": []
+            "prices": [],
+            "es": "Jeringos",
+            "en": "Jeringos (thick churros)"
           },
           {
             "name": "Churros (para tomar o llevar)",
-            "prices": []
+            "prices": [],
+            "es": "Churros (para tomar o llevar)",
+            "en": "Churros (eat in or takeaway)"
           },
           {
             "name": "Lazos",
-            "prices": []
+            "prices": [],
+            "es": "Lazos",
+            "en": "Lazos (loop-shaped churros)"
           },
           {
             "name": "Chocolate caliente",
-            "prices": []
+            "prices": [],
+            "es": "Chocolate caliente",
+            "en": "Hot chocolate"
           },
           {
             "name": "Tortitas (con o sin nata)",
-            "prices": []
+            "prices": [],
+            "es": "Tortitas (con o sin nata)",
+            "en": "Pancakes (with or without whipped cream)"
           }
         ]
       }
