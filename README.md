@@ -278,3 +278,4 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 ## Control de cartas revisadas y cerradas (24/10/2026)
 
 - **Bodegas Campos — REVISADA Y CERRADA (24/10/2026).** Helio confirma que la carta se ha revisado y completado. **No volver a incluir en la lista de restaurantes pendientes de revisión** ni repetir una auditoría documental completa sin una nueva incidencia, cambio acreditado de carta o solicitud expresa. Este cierre es un control editorial de avance; no modifica precios ni sustituye futuras pruebas de regresión de la aplicación.
+- **Casa Pepe de la Judería — REVISADA Y CERRADA (24/10/2026).** Helio confirma la carta completa y revisada; etiquetas de fuentes uniformadas en inglés y fecha de revisión actualizada. Excluir de nuevas revisiones completas salvo cambios documentados o incidencia específica.
