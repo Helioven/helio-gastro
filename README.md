@@ -321,3 +321,9 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Se ha incorporado la carta de desayunos transcrita por Helio a partir de la búsqueda de Google: **9 apartados, 43 entradas y 36 precios**. Incluye cafés, bocadillos, tostadas por media y entera, chocolate, infusiones, zumos, extras y artículos sin precio. Se han omitido duplicados del resumen «At a Glance»; los grupos con igual precio se desglosan sin modificar importes.
 - Datos ES/EN en cada entrada. Precios publicados sin fecha de vigencia verificable; no presentar como carta oficial actual ni como coste completo de desayuno. El vínculo a la búsqueda de Maps es orientativo, no prueba del origen exacto de la carta. **No mezclar** con Don Pepe Antonio Maura.
 - **Estado:** incorporación documental completa según la transcripción, pero **QA visual pendiente** en ES/EN. Actualiza la nota anterior que señalaba precios aún no incorporados; no supone un PASS visual.
+
+### Cierre definitivo de ambos Don Pepe (24/10/2026)
+
+- **Cafetería Don Pepe · Centro (Diego de León, 6) — REVISADA Y CERRADA / QA visual PASS confirmado por Helio.** La carta de desayunos y precios incorporada (9 apartados, 43 entradas, 36 importes) fue comprobada en ES/EN. Queda sin efecto el anterior pendiente de incorporación de precios. La vigencia de los importes obtenidos de la búsqueda de Google sigue sin acreditación independiente; no presentarlos como precios oficiales actuales.
+- **Cafetería Bar Don Pepe · Ciudad Jardín (Antonio Maura, 35) — REVISADA Y CERRADA / QA visual PASS confirmado por Helio.** Se ratifica el cierre anterior tras revisión de la carta con 18 importes registrados. Mantener la distinción entre web del establecimiento y carta externa con vigencia no verificada.
+- **Control de pendientes:** excluir ambos locales de nuevas revisiones ordinarias, salvo evidencia de cambios, incidencias o petición expresa. Conservar sus fichas y datos por separado.
