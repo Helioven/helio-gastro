@@ -45817,7 +45817,7 @@
           {
             "name": "Jeringos",
             "es": "Jeringos",
-            "en": "Jeringos",
+            "en": "Traditional jeringos (fried dough)",
             "prices": [
               {
                 "label": "media ración",
@@ -45836,7 +45836,7 @@
           {
             "name": "Churros",
             "es": "Churros",
-            "en": "Churros",
+            "en": "Traditional fried churros",
             "prices": [
               {
                 "label": "media ración",
@@ -45916,7 +45916,7 @@
           {
             "name": "Capuchino",
             "es": "Capuchino",
-            "en": "Capuchino",
+            "en": "Cappuccino",
             "prices": [
               {
                 "label": "precio indicado",
@@ -45927,7 +45927,7 @@
           {
             "name": "Latte macchiato",
             "es": "Latte macchiato",
-            "en": "Latte macchiato",
+            "en": "Latte macchiato coffee",
             "prices": [
               {
                 "label": "precio indicado",
@@ -45938,7 +45938,7 @@
           {
             "name": "Capuchino brûlée",
             "es": "Capuchino brûlée",
-            "en": "Capuchino brûlée",
+            "en": "Brûlée cappuccino",
             "prices": [
               {
                 "label": "precio indicado",
@@ -45949,7 +45949,7 @@
           {
             "name": "Irlandés",
             "es": "Irlandés",
-            "en": "Irlandés",
+            "en": "Irish coffee",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46027,7 +46027,7 @@
           {
             "name": "Zumo de naranja natural",
             "es": "Zumo de naranja natural",
-            "en": "Zumo de naranja natural",
+            "en": "Fresh orange juice",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46038,7 +46038,7 @@
           {
             "name": "Zumo de piña",
             "es": "Zumo de piña",
-            "en": "Zumo de piña",
+            "en": "Pineapple juice",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46049,7 +46049,7 @@
           {
             "name": "Zumo de melocotón",
             "es": "Zumo de melocotón",
-            "en": "Zumo de melocotón",
+            "en": "Peach juice",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46060,7 +46060,7 @@
           {
             "name": "Zumo de tomate",
             "es": "Zumo de tomate",
-            "en": "Zumo de tomate",
+            "en": "Tomato juice",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46071,7 +46071,7 @@
           {
             "name": "Batido de chocolate",
             "es": "Batido de chocolate",
-            "en": "Batido de chocolate",
+            "en": "Chocolate milkshake",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46082,7 +46082,7 @@
           {
             "name": "Batido de vainilla",
             "es": "Batido de vainilla",
-            "en": "Batido de vainilla",
+            "en": "Vanilla milkshake",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46093,7 +46093,7 @@
           {
             "name": "Batido de fresa",
             "es": "Batido de fresa",
-            "en": "Batido de fresa",
+            "en": "Strawberry milkshake",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46110,7 +46110,7 @@
           {
             "name": "Aceite de oliva virgen extra",
             "es": "Aceite de oliva virgen extra",
-            "en": "Aceite de oliva virgen extra",
+            "en": "Toast with extra virgin olive oil",
             "prices": [
               {
                 "label": "media tostada",
@@ -46125,7 +46125,7 @@
           {
             "name": "Aceite y tomate",
             "es": "Aceite y tomate",
-            "en": "Aceite y tomate",
+            "en": "Toast with olive oil and tomato",
             "prices": [
               {
                 "label": "media tostada",
@@ -46140,7 +46140,7 @@
           {
             "name": "Mantequilla Lorenzana",
             "es": "Mantequilla Lorenzana",
-            "en": "Mantequilla Lorenzana",
+            "en": "Toast with Lorenzana butter",
             "prices": [
               {
                 "label": "media tostada",
@@ -46155,7 +46155,7 @@
           {
             "name": "Mantequilla y mermelada",
             "es": "Mantequilla y mermelada",
-            "en": "Mantequilla y mermelada",
+            "en": "Toast with butter and jam",
             "prices": [
               {
                 "label": "media tostada",
@@ -46170,7 +46170,7 @@
           {
             "name": "Paté ibérico",
             "es": "Paté ibérico",
-            "en": "Paté ibérico",
+            "en": "Toast with Iberian pâté",
             "prices": [
               {
                 "label": "media tostada",
@@ -46185,7 +46185,7 @@
           {
             "name": "Crema de jamón cocido",
             "es": "Crema de jamón cocido",
-            "en": "Crema de jamón cocido",
+            "en": "Toast with cooked-ham spread",
             "prices": [
               {
                 "label": "media tostada",
@@ -46200,7 +46200,7 @@
           {
             "name": "Sobrasada",
             "es": "Sobrasada",
-            "en": "Sobrasada",
+            "en": "Toast with sobrasada spread",
             "prices": [
               {
                 "label": "media tostada",
@@ -46215,7 +46215,7 @@
           {
             "name": "Zurrapa de lomo",
             "es": "Zurrapa de lomo",
-            "en": "Zurrapa de lomo",
+            "en": "Toast with traditional pork loin spread",
             "prices": [
               {
                 "label": "media tostada",
@@ -46230,7 +46230,7 @@
           {
             "name": "Atún",
             "es": "Atún",
-            "en": "Atún",
+            "en": "Toast with tuna",
             "prices": [
               {
                 "label": "media tostada",
@@ -46245,7 +46245,7 @@
           {
             "name": "Aceite, tomate y piquitos",
             "es": "Aceite, tomate y piquitos",
-            "en": "Aceite, tomate y piquitos",
+            "en": "Toast with olive oil, tomato and breadsticks",
             "prices": [
               {
                 "label": "media tostada",
@@ -46260,7 +46260,7 @@
           {
             "name": "Aceite, tomate y jamón corte",
             "es": "Aceite, tomate y jamón corte",
-            "en": "Aceite, tomate y jamón corte",
+            "en": "Toast with olive oil, tomato and sliced ham",
             "prices": [
               {
                 "label": "media tostada",
@@ -46275,7 +46275,7 @@
           {
             "name": "Aceite, tomate y pavo",
             "es": "Aceite, tomate y pavo",
-            "en": "Aceite, tomate y pavo",
+            "en": "Toast with olive oil, tomato and turkey",
             "prices": [
               {
                 "label": "media tostada",
@@ -46290,7 +46290,7 @@
           {
             "name": "Gratinada de jamón cocido",
             "es": "Gratinada de jamón cocido",
-            "en": "Gratinada de jamón cocido",
+            "en": "Gratinated toast with cooked ham",
             "prices": [
               {
                 "label": "media tostada",
@@ -46305,7 +46305,7 @@
           {
             "name": "Gratinada de atún",
             "es": "Gratinada de atún",
-            "en": "Gratinada de atún",
+            "en": "Gratinated toast with tuna",
             "prices": [
               {
                 "label": "media tostada",
@@ -46326,7 +46326,7 @@
           {
             "name": "Queso crema, aguacate, salmón ahumado y sésamo",
             "es": "Queso crema, aguacate, salmón ahumado y sésamo",
-            "en": "Queso crema, aguacate, salmón ahumado y sésamo",
+            "en": "Cream cheese, avocado, smoked salmon and sesame",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46337,7 +46337,7 @@
           {
             "name": "Queso de cabra, cebolla caramelizada y miel de caña",
             "es": "Queso de cabra, cebolla caramelizada y miel de caña",
-            "en": "Queso de cabra, cebolla caramelizada y miel de caña",
+            "en": "Goat's cheese, caramelised onion and cane syrup",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46348,7 +46348,7 @@
           {
             "name": "Mantequilla de cacahuete, plátano y miel de caña",
             "es": "Mantequilla de cacahuete, plátano y miel de caña",
-            "en": "Mantequilla de cacahuete, plátano y miel de caña",
+            "en": "Peanut butter, banana and cane syrup",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46359,7 +46359,7 @@
           {
             "name": "Huevos con bacon",
             "es": "Huevos con bacon",
-            "en": "Huevos con bacon",
+            "en": "Eggs and bacon",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46370,7 +46370,7 @@
           {
             "name": "Revuelto de huevos con jamón",
             "es": "Revuelto de huevos con jamón",
-            "en": "Revuelto de huevos con jamón",
+            "en": "Scrambled eggs with ham",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46381,7 +46381,7 @@
           {
             "name": "Tortilla francesa",
             "es": "Tortilla francesa",
-            "en": "Tortilla francesa",
+            "en": "French omelette",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46392,7 +46392,7 @@
           {
             "name": "Aguacate y atún",
             "es": "Aguacate y atún",
-            "en": "Aguacate y atún",
+            "en": "Avocado and tuna",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46420,7 +46420,7 @@
           {
             "name": "Palmera",
             "es": "Palmera",
-            "en": "Palmera",
+            "en": "Palmier pastry",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46431,7 +46431,7 @@
           {
             "name": "Napolitana de cacao",
             "es": "Napolitana de cacao",
-            "en": "Napolitana de cacao",
+            "en": "Chocolate-filled pastry",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46442,7 +46442,7 @@
           {
             "name": "Donuts",
             "es": "Donuts",
-            "en": "Donuts",
+            "en": "Doughnuts",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46453,7 +46453,7 @@
           {
             "name": "Croissant",
             "es": "Croissant",
-            "en": "Croissant",
+            "en": "Croissant pastry",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46464,7 +46464,7 @@
           {
             "name": "Croissant mantequilla y mermelada",
             "es": "Croissant mantequilla y mermelada",
-            "en": "Croissant mantequilla y mermelada",
+            "en": "Croissant with butter and jam",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46475,7 +46475,7 @@
           {
             "name": "Croissant jamón york y queso",
             "es": "Croissant jamón york y queso",
-            "en": "Croissant jamón york y queso",
+            "en": "Croissant with cooked ham and cheese",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46486,7 +46486,7 @@
           {
             "name": "Croissant huevo y bacon",
             "es": "Croissant huevo y bacon",
-            "en": "Croissant huevo y bacon",
+            "en": "Croissant with egg and bacon",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46525,7 +46525,7 @@
           {
             "name": "Ensaladilla rusa",
             "es": "Ensaladilla rusa",
-            "en": "Ensaladilla rusa",
+            "en": "Russian-style potato salad",
             "prices": [
               {
                 "label": "media ración",
@@ -46555,7 +46555,7 @@
           {
             "name": "Salpicón de marisco",
             "es": "Salpicón de marisco",
-            "en": "Salpicón de marisco",
+            "en": "Seafood salad",
             "prices": [
               {
                 "label": "media ración",
@@ -46587,7 +46587,7 @@
           {
             "name": "Mollete de jamón ibérico con AOVE",
             "es": "Mollete de jamón ibérico con AOVE",
-            "en": "Mollete de jamón ibérico con AOVE",
+            "en": "Mollete bread with Iberian ham and extra virgin olive oil",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46598,7 +46598,7 @@
           {
             "name": "Mollete de tortilla de patatas",
             "es": "Mollete de tortilla de patatas",
-            "en": "Mollete de tortilla de patatas",
+            "en": "Mollete bread with Spanish potato omelette",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46609,7 +46609,7 @@
           {
             "name": "Mollete de huevos con jamón",
             "es": "Mollete de huevos con jamón",
-            "en": "Mollete de huevos con jamón",
+            "en": "Mollete bread with eggs and ham",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46620,7 +46620,7 @@
           {
             "name": "Mollete de queso curado",
             "es": "Mollete de queso curado",
-            "en": "Mollete de queso curado",
+            "en": "Mollete bread with aged cheese",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46631,7 +46631,7 @@
           {
             "name": "Mollete de bacon y queso",
             "es": "Mollete de bacon y queso",
-            "en": "Mollete de bacon y queso",
+            "en": "Mollete bread with bacon and cheese",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46642,7 +46642,7 @@
           {
             "name": "Mollete de tomate con melva",
             "es": "Mollete de tomate con melva",
-            "en": "Mollete de tomate con melva",
+            "en": "Mollete bread with tomato and frigate tuna",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46653,7 +46653,7 @@
           {
             "name": "Mollete de salmón con queso crema",
             "es": "Mollete de salmón con queso crema",
-            "en": "Mollete de salmón con queso crema",
+            "en": "Mollete bread with salmon and cream cheese",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46755,7 +46755,7 @@
           {
             "name": "Dulce de flamenquín",
             "es": "Dulce de flamenquín",
-            "en": "Dulce de flamenquín",
+            "en": "Dulce de flamenquín (house speciality)",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46772,7 +46772,7 @@
           {
             "name": "Gilda de sobrasada",
             "es": "Gilda de sobrasada",
-            "en": "Gilda de sobrasada",
+            "en": "Gilda skewer with sobrasada",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46783,7 +46783,7 @@
           {
             "name": "Gilda de salmón",
             "es": "Gilda de salmón",
-            "en": "Gilda de salmón",
+            "en": "Gilda skewer with salmon",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46794,7 +46794,7 @@
           {
             "name": "Gilda de queso",
             "es": "Gilda de queso",
-            "en": "Gilda de queso",
+            "en": "Gilda skewer with cheese",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46805,7 +46805,7 @@
           {
             "name": "Gilda de alcachofa",
             "es": "Gilda de alcachofa",
-            "en": "Gilda de alcachofa",
+            "en": "Gilda skewer with artichoke",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46816,7 +46816,7 @@
           {
             "name": "Gilda matrimonio",
             "es": "Gilda matrimonio",
-            "en": "Gilda matrimonio",
+            "en": "Gilda matrimonio skewer",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46833,7 +46833,7 @@
           {
             "name": "Berberechos",
             "es": "Berberechos",
-            "en": "Berberechos",
+            "en": "Cockles",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46844,7 +46844,7 @@
           {
             "name": "Navajas",
             "es": "Navajas",
-            "en": "Navajas",
+            "en": "Razor clams",
             "prices": [
               {
                 "label": "precio indicado",
@@ -46855,7 +46855,7 @@
           {
             "name": "Mejillones",
             "es": "Mejillones",
-            "en": "Mejillones",
+            "en": "Mussels",
             "prices": [
               {
                 "label": "precio indicado",
