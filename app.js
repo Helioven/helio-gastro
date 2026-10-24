@@ -230,7 +230,7 @@ function venueMenuPriceLabel(source,english){
  if(source==='Media ración · precio de carta 2024')return 'Half portion · 2024 menu price';
  if(source==='Ración · precio de carta 2024')return 'Full portion · 2024 menu price';
  if(source==='Unidad · precio de carta 2024')return 'Single item · 2024 menu price';
- const labels={'Ración':'Full portion','1/2 ración':'Half portion','Media ración':'Half portion','ración':'Full portion','media ración':'Half portion','Tapa':'Tapa','Unidad':'Single item','unidad':'Single item','media tostada':'Half toast','tostada entera':'Full toast','suplemento':'Add-on','Entera':'Full serving','Media':'Half serving','Sin formato':'Portion size unspecified','Precio orientativo':'Indicative price','Formato no indicado':'Portion size unspecified','Precio de carta; formato no indicado':'Menu price · portion size unspecified'};
+ const labels={'Ración':'Full portion','1/2 ración':'Half portion','Media ración':'Half portion','ración':'Full portion','media ración':'Half portion','Tapa':'Tapa','Unidad':'Single item','unidad':'Single item','media tostada':'Half toast','tostada entera':'Full toast','suplemento':'Add-on','Entera':'Full serving','Media':'Half serving','Sin formato':'Portion size unspecified','ración / precio único':'Full portion / single price','Precio orientativo':'Indicative price','Formato no indicado':'Portion size unspecified','Precio de carta; formato no indicado':'Menu price · portion size unspecified'};
  if(Object.hasOwn(labels,source))return labels[source];
  return source;
 }
@@ -250,7 +250,7 @@ function refreshDishExplanations(){
  document.querySelectorAll('[data-group-menu-label-es]').forEach(node=>{node.textContent=english?node.dataset.groupMenuLabelEn:node.dataset.groupMenuLabelEs;});
  document.querySelectorAll('[data-group-menu-price]').forEach(node=>{node.textContent=fmt(Number(node.dataset.groupMenuPrice))+' · '+(english?'2025 published set-menu price':'Precio de menú publicado en 2025');});
  document.querySelectorAll('[data-group-menu-includes]').forEach(node=>{node.textContent=english&&node.dataset.en?node.dataset.en:node.dataset.es;});
- document.querySelectorAll('[data-group-menu-heading]').forEach(node=>{node.textContent=node.dataset.menuName+' · '+node.dataset.menuPrice+(english?'/person · minimum '+node.dataset.menuMin+' guests':'/persona · mínimo '+node.dataset.menuMin+' comensales');});
+ document.querySelectorAll('[data-group-menu-heading]').forEach(node=>{const min=Number(node.dataset.menuMin);node.textContent=node.dataset.menuName+' · '+node.dataset.menuPrice+(english?'/person':'/persona')+(Number.isFinite(min)&&min>0?(english?' · minimum '+min+' guests':' · mínimo '+min+' comensales'):'');});
  document.querySelectorAll('[data-group-menu-dessert]').forEach(node=>{if(node.firstChild?.nodeType===Node.TEXT_NODE)node.firstChild.textContent=english?'Dessert: ':'Postre: ';});
  const help=el('portion-help');if(help)help.hidden=!english;
 }
@@ -895,7 +895,7 @@ function showPlace(p,scroll=true){
   const label=document.createElement('h3');label.textContent='Menús para grupos';panel.append(label);
   for(const m of p.groupMenus){
    const card=document.createElement('section');card.className='menu-dish';
-   const heading=document.createElement('h4');heading.dataset.groupMenuHeading='';heading.dataset.menuName=m.name;heading.dataset.menuPrice=fmt(m.eurPerPerson);heading.dataset.menuMin=String(m.minPeople);heading.textContent=m.name+' · '+fmt(m.eurPerPerson)+'/persona · mínimo '+m.minPeople+' comensales';card.append(heading);
+   const heading=document.createElement('h4');heading.dataset.groupMenuHeading='';heading.dataset.menuName=m.name;heading.dataset.menuPrice=fmt(m.eurPerPerson);heading.dataset.menuMin=String(m.minPeople);heading.textContent=m.name+' · '+fmt(m.eurPerPerson)+'/persona'+(Number.isFinite(m.minPeople)&&m.minPeople>0?' · mínimo '+m.minPeople+' comensales':'');card.append(heading);
    const addList=(headingText,values,englishValues)=>{if(!Array.isArray(values)||!values.length)return;const h=document.createElement('strong');h.textContent=headingText;card.append(h);const ul=document.createElement('ul');for(const [i,value] of values.entries()){const li=document.createElement('li');const name=document.createElement('span');name.dataset.keepDishSpanish='';name.textContent=value;li.append(name);if(englishValues?.[i]){const desc=document.createElement('small');desc.className='dish-explanation detail-dish-explanation';desc.dataset.dishExplanation='';desc.textContent=englishValues[i];desc.hidden=window.HelioGastroLanguage?.get()!=='en';li.append(desc)}ul.append(li)}card.append(ul)};
    addList('Platos para compartir',m.shared,m.sharedEn);
    addList('Plato a elegir',m.choice,m.choiceEn);
