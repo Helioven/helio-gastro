@@ -19987,14 +19987,14 @@
     "address": "Calle Romero, 1, Córdoba",
     "mealCostEur": null,
     "priceStatus": "confirmed",
-    "checkedAt": "2026-10-09",
+    "checkedAt": "2026-10-24",
     "sources": [
       {
-        "label": "Carta oficial de restaurante, barra y postres (PDF aportado; mayo 2026)",
+        "label": "Official restaurant, bar and dessert menus (PDF provided, May 2026)",
         "url": "https://restaurantecasapepedelajuderia.com/wp-content/uploads/2025/02/AF-CARTA-COMIDA-CASA-PEPE-A32mm-sangrado-2.pdf"
       },
       {
-        "label": "Web oficial y dirección",
+        "label": "Official website and address",
         "url": "https://restaurantecasapepedelajuderia.com/"
       }
     ],
