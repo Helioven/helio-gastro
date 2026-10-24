@@ -1,8 +1,8 @@
 # La Tarterie — punto de control documental (23/10/2026)
 
-**Estado: trabajo en curso, NO publicar.** Proyecto Helio Gastro, fase 1. La ficha actual de La Tarterie no debe modificarse hasta completar y validar el catálogo. Fuente principal: capturas de la tienda oficial aportadas por Helio (https://la-tarterie.es/tienda/ y páginas 2 y 3). **Próximo producto a documentar: número 10.**
+**Estado: trabajo en curso, NO publicar.** Actualizado con tanda 4 (24/10/2026). Proyecto Helio Gastro, fase 1. La ficha actual de La Tarterie no debe modificarse hasta completar y validar el catálogo. Fuente principal: capturas de la tienda oficial aportadas por Helio (https://la-tarterie.es/tienda/ y páginas 2 y 3). **Próximo producto a documentar: número 13.**
 
-## Productos documentados (9)
+## Productos documentados (12)
 
 | # | Producto | Rango publicado (€) | Ingredientes / descripción constatados | Opciones vistas |
 |---|---|---|---|---|
@@ -16,12 +16,16 @@
 | 8 | Chocolate blanco y negro | 20,50–75 | Bizcocho de cacao puro ecológico y comercio justo, ganache de chocolate blanco, virutas | 6/12/14, supergrande; normal/sin gluten |
 | 9 | Chocolate y dulce de leche | 19–72 | Bizcocho de cacao puro ecológico y comercio justo, dulce de leche casero, cobertura y virutas de chocolate | 6/12/14, supergrande; normal/sin gluten; normal/sin lactosa; normal/sin azúcar |
 
+| 10 | Chocolate y Kinder Bueno | 20,50–75 | Bizcocho de cacao puro ecológico y de comercio justo; crema casera de Kinder Bueno con avellanas, chocolate blanco y nata | 6/12/14, supergrande; normal/sin gluten; alérgenos señalados: soja, huevo, gluten, lácteos |
+| 11 | Eco Brownie | 19–72 | Brownie con cacao puro ecológico y de comercio justo y nueces | 6/12/14, supergrande; normal/sin gluten, normal/sin lactosa, normal/sin azúcar; lista de alérgenos no incluida en el texto recibido |
+| 12 | Empanada de pisto, atún y huevo cocido | 20 € | Empanada de hojaldre rellena de pisto, atún y huevo cocido | 12 porciones; normal/sin gluten; alérgenos señalados: soja, gluten, huevo, lácteos, pescado |
+
 ## Precauciones y próximos pasos
 
 - Los rangos corresponden a las fichas de producto; **no se ha comprobado el precio exacto de cada combinación de tamaño y opción dietética**. No imputarlo.
 - La tienda indica para Cerveza negra, Baileys y Amaretto que no contienen alcohol tras el horneado: es afirmación del establecimiento, no garantía independiente.
-- No transcribir iconos de alérgenos sin revisar la tabla correspondiente; no dar garantías sanitarias por opciones «sin».
+- Los alérgenos de los productos 10 y 12 proceden de enlaces con nombres de iconos incluidos en la transcripción. Eco Brownie no incluye una lista de alérgenos identificable en el texto recibido. Contrastar todo con la tabla oficial antes de usarlo como información de alérgenos; no dar garantías sanitarias por opciones «sin».
 - Descripciones ES/EN definitivas todavía pendientes de preparar y verificar.
 - No copiar fotografías ajenas. Evitar duplicados.
-- Continuar con las capturas **desde el producto 10**; comprobar que se cubren todas las páginas y categorías, y pedir aprobación expresa antes de publicar.
-- El progreso «9/9» indica 9 de 9 productos recibidos, **no** 9 de un total confirmado de catálogo.
+- Continuar con las transcripciones **desde el producto 13**; comprobar que se cubren todas las páginas y categorías, y pedir aprobación expresa antes de publicar.
+- El progreso registrado es 12 productos recibidos, **no** el total confirmado del catálogo.
