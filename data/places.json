@@ -43998,8 +43998,8 @@
     "area": "Ciudad Jardín · Antonio Maura",
     "address": "Calle Antonio Maura, 35, Córdoba",
     "mealCostEur": null,
-    "priceStatus": "unknown",
-    "checkedAt": "2026-10-09",
+    "priceStatus": "estimated",
+    "checkedAt": "2026-10-24",
     "sources": [
       {
         "label": "Ficha y dirección de Don Pepe Ciudad Jardín",
@@ -44008,22 +44008,884 @@
       {
         "label": "Opiniones y especialidades",
         "url": "https://wanderlog.com/es/place/details/1402518/cafeter%C3%ADa-don-pepe"
+      },
+      {
+        "label": "Web del establecimiento · especialidades de churrería",
+        "labelEn": "Restaurant website · churro and jeringo specialities",
+        "url": "https://churreriadonpepe.com/"
+      },
+      {
+        "label": "Carta publicada por usuarios · referencia externa (Restaurant Guru; vigencia no confirmada)",
+        "labelEn": "User-submitted menu · external reference (Restaurant Guru; prices not confirmed current)",
+        "url": "https://es.restaurantguru.com/Cafeteria-Don-Pepe-Cordoba-Andalusia/menu"
       }
     ],
     "menus": [
       {
         "service": "desayuno",
         "dishes": [
-          "Tostadas de jamón",
-          "Tostadas con tomate",
-          "Churros",
-          "Chocolate con churros",
-          "Café"
+          "Bacon",
+          "Lomo",
+          "York y queso",
+          "Atún",
+          "Vegetal (tomate, lechuga, huevo y jamón york)",
+          "Tortilla francesa",
+          "Aceite",
+          "Aceite de ajo",
+          "Paté",
+          "Margarina Zas",
+          "Tulipán con sal",
+          "Tomate y aceite",
+          "Crema de York",
+          "Sobrasada",
+          "Manteca colorá casera",
+          "Don Pepe (tomate y jamón)",
+          "Jamón York",
+          "Sándwich mixto",
+          "Desayuno especial n.º 1: café, zumo de naranja y media tostada normal (aceite, mantequilla o paté)",
+          "Jeringos",
+          "Churros (para tomar o llevar)",
+          "Lazos",
+          "Chocolate caliente",
+          "Tortitas (con o sin nata)"
         ],
         "dishPrices": []
+      },
+      {
+        "service": "general",
+        "dishes": [
+          "Potajes",
+          "Migas camperas",
+          "Sopa de picadillo",
+          "Ensalada mixta",
+          "Ensalada César",
+          "Espaguetis (boloñesa, carbonara o roquefort)",
+          "Albóndigas en salsa",
+          "Arroz a la cubana",
+          "Flamenquín",
+          "Filete San Jacobo",
+          "Churrasco de pollo",
+          "Filete de ternera a la plancha",
+          "Pechuga de pollo a la plancha",
+          "Pescadito",
+          "Migas (en temporada)",
+          "Paella (martes, sábados y domingos)",
+          "Bacalao con pisto",
+          "Calamaritos fritos o a la plancha",
+          "Cachopo de jamón y queso o jamón y queso de cabra",
+          "Patatas con huevos rotos, gulas y ajitos",
+          "Torreznos de Soria",
+          "Chocos fritos de Huelva",
+          "Cogollos con ventresca, gulas y gambas",
+          "Rabo de toro",
+          "Flamenquín de jamón",
+          "Berenjenas a la miel",
+          "Salmorejo",
+          "Salmorejo (S/T)",
+          "Ensaladilla rusa (S/T)",
+          "Ensaladilla de gambas",
+          "Queso puro de oveja",
+          "Boquerones en vinagre",
+          "Croquetas caseras",
+          "Plato nido (chanquetes, pisto y huevos fritos)",
+          "Berenjenas con miel",
+          "Berenjenas fritas",
+          "Papas al pelotazo con huevos rotos y paleta Gran Reserva Duroc",
+          "Papas al pelotazo con huevos rotos, gulas y ajitos fritos",
+          "Papas bravas",
+          "Cogollos con ventresca, gulas y gambas al ajillo",
+          "Ensalada especial (lechuga, tomate, pimiento, cebolla, zanahoria, atún, maíz y huevo)",
+          "Revuelto de bacalao",
+          "Revuelto de espárragos y trigueros",
+          "Revuelto de habitas baby",
+          "Revuelto de setas, gambas y salmón",
+          "Rabo de toro",
+          "Torreznos de Soria",
+          "Salmorejo cordobés",
+          "Flamenquín",
+          "Callos con manitas",
+          "Carrillada ibérica",
+          "Cochifrito ibérico",
+          "Tiritas de pollo al limón",
+          "Callos de ternera con manitas (S/T)",
+          "Flamenquín de jamón casero",
+          "San Jacobo casero",
+          "Calamares fritos",
+          "Calamares a la plancha",
+          "Bacalao frito",
+          "Bacalao con pisto",
+          "Boquerones fritos",
+          "Chocos fritos",
+          "Rosada frita",
+          "N.º 1: lomo, croquetas, dos huevos, patatas fritas y mahonesa",
+          "N.º 2: bacalao frito, calamares a la plancha, ensalada y mahonesa",
+          "Entrecot de ternera",
+          "Presa ibérica",
+          "Puntas de solomillo",
+          "Pinchitos de cerdo (unidad)",
+          "Codillo al horno",
+          "Natillas",
+          "Flan de huevo",
+          "Porción de tarta",
+          "Pudin casero",
+          "Frutas de temporada",
+          "Maceta de cerveza",
+          "Aquarius",
+          "Rivera (denominación de la fuente)",
+          "Combinado nacional",
+          "Caña de cerveza",
+          "Zumos",
+          "Refresco",
+          "Rioja",
+          "Verdejo",
+          "Tercio de cerveza",
+          "Combinado de importación",
+          "Pieza de pan",
+          "Táper para llevar",
+          "Bolsa"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Salmorejo (S/T)",
+            "eur": 3.75,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Ensaladilla rusa (S/T)",
+            "eur": 3.75,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Ensaladilla de gambas",
+            "eur": 3.75,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Queso puro de oveja",
+            "eur": 4.25,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Boquerones en vinagre",
+            "eur": 4,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Croquetas caseras",
+            "eur": 6.75,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Plato nido (chanquetes, pisto y huevos fritos)",
+            "eur": 12,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Berenjenas con miel",
+            "eur": 6.75,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Berenjenas fritas",
+            "eur": 6.25,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Papas al pelotazo con huevos rotos y paleta Gran Reserva Duroc",
+            "eur": 11.75,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Papas al pelotazo con huevos rotos, gulas y ajitos fritos",
+            "eur": 12.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Papas bravas",
+            "eur": 6.95,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Cogollos con ventresca, gulas y gambas al ajillo",
+            "eur": 12.5,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Ensalada especial (lechuga, tomate, pimiento, cebolla, zanahoria, atún, maíz y huevo)",
+            "eur": 9.75,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Revuelto de bacalao",
+            "eur": 8.25,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Revuelto de espárragos y trigueros",
+            "eur": 8.25,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Revuelto de habitas baby",
+            "eur": 8.25,
+            "portion": "desconocida"
+          },
+          {
+            "dish": "Revuelto de setas, gambas y salmón",
+            "eur": 8.25,
+            "portion": "desconocida"
+          }
+        ]
       }
     ],
-    "openingHoursNote": "Horario general publicado con información discrepante entre fuentes. Confirmar antes de ir; horario concreto de desayunos no verificado."
+    "openingHoursNote": "Horario general publicado con información discrepante entre fuentes. Confirmar antes de ir; horario concreto de desayunos no verificado.",
+    "menuSections": [
+      {
+        "title": "Primeros platos",
+        "titleEn": "First courses",
+        "items": [
+          {
+            "name": "Potajes",
+            "prices": []
+          },
+          {
+            "name": "Migas camperas",
+            "prices": []
+          },
+          {
+            "name": "Sopa de picadillo",
+            "prices": []
+          },
+          {
+            "name": "Ensalada mixta",
+            "prices": []
+          },
+          {
+            "name": "Ensalada César",
+            "prices": []
+          },
+          {
+            "name": "Espaguetis (boloñesa, carbonara o roquefort)",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Segundos platos",
+        "titleEn": "Main courses",
+        "items": [
+          {
+            "name": "Albóndigas en salsa",
+            "prices": []
+          },
+          {
+            "name": "Arroz a la cubana",
+            "prices": []
+          },
+          {
+            "name": "Flamenquín",
+            "prices": []
+          },
+          {
+            "name": "Filete San Jacobo",
+            "prices": []
+          },
+          {
+            "name": "Churrasco de pollo",
+            "prices": []
+          },
+          {
+            "name": "Filete de ternera a la plancha",
+            "prices": []
+          },
+          {
+            "name": "Pechuga de pollo a la plancha",
+            "prices": []
+          },
+          {
+            "name": "Pescadito",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Sugerencias",
+        "titleEn": "Specials",
+        "items": [
+          {
+            "name": "Migas (en temporada)",
+            "prices": []
+          },
+          {
+            "name": "Paella (martes, sábados y domingos)",
+            "prices": []
+          },
+          {
+            "name": "Bacalao con pisto",
+            "prices": []
+          },
+          {
+            "name": "Calamaritos fritos o a la plancha",
+            "prices": []
+          },
+          {
+            "name": "Cachopo de jamón y queso o jamón y queso de cabra",
+            "prices": []
+          },
+          {
+            "name": "Patatas con huevos rotos, gulas y ajitos",
+            "prices": []
+          },
+          {
+            "name": "Torreznos de Soria",
+            "prices": []
+          },
+          {
+            "name": "Chocos fritos de Huelva",
+            "prices": []
+          },
+          {
+            "name": "Cogollos con ventresca, gulas y gambas",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Muy cordobés",
+        "titleEn": "Cordoban specialities",
+        "items": [
+          {
+            "name": "Rabo de toro",
+            "prices": []
+          },
+          {
+            "name": "Flamenquín de jamón",
+            "prices": []
+          },
+          {
+            "name": "Berenjenas a la miel",
+            "prices": []
+          },
+          {
+            "name": "Salmorejo",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Entrantes",
+        "titleEn": "Starters",
+        "items": [
+          {
+            "name": "Salmorejo (S/T)",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 3.75
+              }
+            ]
+          },
+          {
+            "name": "Ensaladilla rusa (S/T)",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 3.75
+              }
+            ]
+          },
+          {
+            "name": "Ensaladilla de gambas",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 3.75
+              }
+            ]
+          },
+          {
+            "name": "Queso puro de oveja",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 4.25
+              }
+            ]
+          },
+          {
+            "name": "Boquerones en vinagre",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 4
+              }
+            ]
+          },
+          {
+            "name": "Croquetas caseras",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 6.75
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Varios",
+        "titleEn": "Other dishes",
+        "items": [
+          {
+            "name": "Plato nido (chanquetes, pisto y huevos fritos)",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 12
+              }
+            ]
+          },
+          {
+            "name": "Berenjenas con miel",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 6.75
+              }
+            ]
+          },
+          {
+            "name": "Berenjenas fritas",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 6.25
+              }
+            ]
+          },
+          {
+            "name": "Papas al pelotazo con huevos rotos y paleta Gran Reserva Duroc",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 11.75
+              }
+            ]
+          },
+          {
+            "name": "Papas al pelotazo con huevos rotos, gulas y ajitos fritos",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 12.5
+              }
+            ]
+          },
+          {
+            "name": "Papas bravas",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 6.95
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Ensaladas",
+        "titleEn": "Salads",
+        "items": [
+          {
+            "name": "Cogollos con ventresca, gulas y gambas al ajillo",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 12.5
+              }
+            ]
+          },
+          {
+            "name": "Ensalada especial (lechuga, tomate, pimiento, cebolla, zanahoria, atún, maíz y huevo)",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 9.75
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Revueltos",
+        "titleEn": "Scrambled egg dishes",
+        "items": [
+          {
+            "name": "Revuelto de bacalao",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 8.25
+              }
+            ]
+          },
+          {
+            "name": "Revuelto de espárragos y trigueros",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 8.25
+              }
+            ]
+          },
+          {
+            "name": "Revuelto de habitas baby",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 8.25
+              }
+            ]
+          },
+          {
+            "name": "Revuelto de setas, gambas y salmón",
+            "prices": [
+              {
+                "label": "formato no especificado",
+                "eur": 8.25
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Especialidades y carnes elaboradas",
+        "titleEn": "Specialities and prepared meats",
+        "items": [
+          {
+            "name": "Rabo de toro",
+            "prices": []
+          },
+          {
+            "name": "Torreznos de Soria",
+            "prices": []
+          },
+          {
+            "name": "Salmorejo cordobés",
+            "prices": []
+          },
+          {
+            "name": "Flamenquín",
+            "prices": []
+          },
+          {
+            "name": "Callos con manitas",
+            "prices": []
+          },
+          {
+            "name": "Carrillada ibérica",
+            "prices": []
+          },
+          {
+            "name": "Cochifrito ibérico",
+            "prices": []
+          },
+          {
+            "name": "Tiritas de pollo al limón",
+            "prices": []
+          },
+          {
+            "name": "Callos de ternera con manitas (S/T)",
+            "prices": []
+          },
+          {
+            "name": "Flamenquín de jamón casero",
+            "prices": []
+          },
+          {
+            "name": "San Jacobo casero",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Pescados",
+        "titleEn": "Fish and seafood",
+        "items": [
+          {
+            "name": "Calamares fritos",
+            "prices": []
+          },
+          {
+            "name": "Calamares a la plancha",
+            "prices": []
+          },
+          {
+            "name": "Bacalao frito",
+            "prices": []
+          },
+          {
+            "name": "Bacalao con pisto",
+            "prices": []
+          },
+          {
+            "name": "Boquerones fritos",
+            "prices": []
+          },
+          {
+            "name": "Chocos fritos",
+            "prices": []
+          },
+          {
+            "name": "Rosada frita",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Platos combinados",
+        "titleEn": "Combination plates",
+        "items": [
+          {
+            "name": "N.º 1: lomo, croquetas, dos huevos, patatas fritas y mahonesa",
+            "prices": []
+          },
+          {
+            "name": "N.º 2: bacalao frito, calamares a la plancha, ensalada y mahonesa",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Carnes a la plancha y horno",
+        "titleEn": "Grilled and oven-roasted meats",
+        "items": [
+          {
+            "name": "Entrecot de ternera",
+            "prices": []
+          },
+          {
+            "name": "Presa ibérica",
+            "prices": []
+          },
+          {
+            "name": "Puntas de solomillo",
+            "prices": []
+          },
+          {
+            "name": "Pinchitos de cerdo (unidad)",
+            "prices": []
+          },
+          {
+            "name": "Codillo al horno",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Postres caseros",
+        "titleEn": "Homemade desserts",
+        "items": [
+          {
+            "name": "Natillas",
+            "prices": []
+          },
+          {
+            "name": "Flan de huevo",
+            "prices": []
+          },
+          {
+            "name": "Porción de tarta",
+            "prices": []
+          },
+          {
+            "name": "Pudin casero",
+            "prices": []
+          },
+          {
+            "name": "Frutas de temporada",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Bebidas y extras",
+        "titleEn": "Drinks and extras",
+        "items": [
+          {
+            "name": "Maceta de cerveza",
+            "prices": []
+          },
+          {
+            "name": "Aquarius",
+            "prices": []
+          },
+          {
+            "name": "Rivera (denominación de la fuente)",
+            "prices": []
+          },
+          {
+            "name": "Combinado nacional",
+            "prices": []
+          },
+          {
+            "name": "Caña de cerveza",
+            "prices": []
+          },
+          {
+            "name": "Zumos",
+            "prices": []
+          },
+          {
+            "name": "Refresco",
+            "prices": []
+          },
+          {
+            "name": "Rioja",
+            "prices": []
+          },
+          {
+            "name": "Verdejo",
+            "prices": []
+          },
+          {
+            "name": "Tercio de cerveza",
+            "prices": []
+          },
+          {
+            "name": "Combinado de importación",
+            "prices": []
+          },
+          {
+            "name": "Pieza de pan",
+            "prices": []
+          },
+          {
+            "name": "Táper para llevar",
+            "prices": []
+          },
+          {
+            "name": "Bolsa",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Bocadillos de desayuno",
+        "titleEn": "Breakfast sandwiches",
+        "items": [
+          {
+            "name": "Bacon",
+            "prices": []
+          },
+          {
+            "name": "Lomo",
+            "prices": []
+          },
+          {
+            "name": "York y queso",
+            "prices": []
+          },
+          {
+            "name": "Atún",
+            "prices": []
+          },
+          {
+            "name": "Vegetal (tomate, lechuga, huevo y jamón york)",
+            "prices": []
+          },
+          {
+            "name": "Tortilla francesa",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Tostadas",
+        "titleEn": "Toast",
+        "items": [
+          {
+            "name": "Aceite",
+            "prices": []
+          },
+          {
+            "name": "Aceite de ajo",
+            "prices": []
+          },
+          {
+            "name": "Paté",
+            "prices": []
+          },
+          {
+            "name": "Margarina Zas",
+            "prices": []
+          },
+          {
+            "name": "Tulipán con sal",
+            "prices": []
+          },
+          {
+            "name": "Tomate y aceite",
+            "prices": []
+          },
+          {
+            "name": "Crema de York",
+            "prices": []
+          },
+          {
+            "name": "Sobrasada",
+            "prices": []
+          },
+          {
+            "name": "Manteca colorá casera",
+            "prices": []
+          },
+          {
+            "name": "Don Pepe (tomate y jamón)",
+            "prices": []
+          },
+          {
+            "name": "Jamón York",
+            "prices": []
+          },
+          {
+            "name": "Sándwich mixto",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "title": "Desayunos y churrería",
+        "titleEn": "Breakfast and churros",
+        "items": [
+          {
+            "name": "Desayuno especial n.º 1: café, zumo de naranja y media tostada normal (aceite, mantequilla o paté)",
+            "prices": []
+          },
+          {
+            "name": "Jeringos",
+            "prices": []
+          },
+          {
+            "name": "Churros (para tomar o llevar)",
+            "prices": []
+          },
+          {
+            "name": "Lazos",
+            "prices": []
+          },
+          {
+            "name": "Chocolate caliente",
+            "prices": []
+          },
+          {
+            "name": "Tortitas (con o sin nata)",
+            "prices": []
+          }
+        ]
+      }
+    ],
+    "menuSourceNote": "Carta extensa transcrita por Helio desde el menú mostrado en la búsqueda de Google el 24/10/2026. Los 18 precios de 4 secciones son importes publicados sin fecha de vigencia ni formato de ración verificables; el resto no muestra importe. La referencia de Restaurant Guru no acredita que los precios transcritos coincidan con sus fotos. El menú del día varía: primero, segundo, pan, bebida y postre; consultar composición y precio actuales. S/T se conserva literalmente sin interpretar. La web del establecimiento respalda churros, lazos, jeringos y chocolate, pero no los precios de Google. No mezclar con Don Pepe de Diego de León."
   },
   {
     "id": "la-piscatoria",
