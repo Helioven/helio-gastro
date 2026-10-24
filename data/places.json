@@ -10360,7 +10360,7 @@
               },
               {
                 "label": "Ración · precio de carta 2024",
-                "eur": 12
+                "eur": 11
               }
             ],
             "es": "Croquetas caseras de jamón. Preparación y acompañamientos según la carta; detalles adicionales no especificados."
@@ -10376,7 +10376,7 @@
               },
               {
                 "label": "Ración · precio de carta 2024",
-                "eur": 12
+                "eur": 11
               }
             ],
             "es": "Croquetas caseras de rabo de toro. Preparación y acompañamientos según la carta; detalles adicionales no especificados."
@@ -10388,7 +10388,7 @@
             "prices": [
               {
                 "label": "Ración · precio de carta 2024",
-                "eur": 12.8
+                "eur": 12.3
               }
             ],
             "es": "Flamenquín de jamón casero. Preparación y acompañamientos según la carta; detalles adicionales no especificados."
@@ -10404,7 +10404,7 @@
               },
               {
                 "label": "Ración · precio de carta 2024",
-                "eur": 13.8
+                "eur": 13.5
               }
             ],
             "es": "Cochifrito. Preparación y acompañamientos según la carta; detalles adicionales no especificados."
@@ -10432,7 +10432,7 @@
             "prices": [
               {
                 "label": "Ración · precio de carta 2024",
-                "eur": 13.2
+                "eur": 21.5
               }
             ],
             "es": "Solomillo de cerdo ibérico con vino oloroso; unos 200 g."
@@ -10475,7 +10475,7 @@
             "prices": [
               {
                 "label": "Ración · precio de carta 2024",
-                "eur": 21
+                "eur": 20.5
               }
             ],
             "es": "Solomillo ibérico. Preparación y acompañamientos según la carta; detalles adicionales no especificados."
@@ -10777,7 +10777,7 @@
         "noteEn": "Historical prices from the official 2024 menu; not confirmed for 2026. Please check current prices with the restaurant."
       }
     ],
-    "menuSourceNote": "Importes transcritos del PDF oficial conmemorativo 1974–2024. Precios históricos NO confirmados en 2026: consultar directamente con Casa El Pisto antes de acudir. Las cantidades del PDF se muestran solo en la ficha; no se incorporan al comparador de precios actuales."
+    "menuSourceNote": "Importes transcritos del PDF oficial conmemorativo 1974–2024. Precios históricos NO confirmados en 2026: consultar directamente con Casa El Pisto antes de acudir. Las cantidades del PDF se muestran solo en la ficha; no se incorporan al comparador de precios actuales. Revisión documental 24/10/2026: corregidos 6 importes de la edición fotografiada de la carta conmemorativa 1974–2024 aportada por el usuario (croquetas ambas raciones 11,00 €, flamenquín 12,30 €, cochifrito ración 13,50 €, solomillo ibérico al vino oloroso 21,50 €, solomillo ibérico a la brasa 20,50 €). Existen también fotografías de otra impresión con el mismo pie conmemorativo y precios distintos; no se mezclaron ni se atribuye vigencia actual. Pendiente cotejo exhaustivo de edición/fecha, especialmente de importes no coincidentes."
   },
   {
     "id": "taberna-plateros-san-francisco",
