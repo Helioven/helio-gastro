@@ -286,3 +286,7 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - **Estado: EN PAUSA / PENDIENTE DE VERIFICACIÓN; NO CERRADO.** Al revisar el 24/10/2026, la web del restaurante mostraba un aviso de renovación («Estamos renovando nuestra web, próximamente estaremos activos»). No es posible contrastar la carta con la web oficial en este momento.
 - Conservar los datos existentes sin atribuirles una nueva verificación; no modificar precios, formatos, ingredientes ni la fecha de comprobación de la ficha por este intento fallido.
 - Reanudar la comprobación cuando vuelva a estar accesible una fuente oficial adecuada. No confundir el mantenimiento de la web con el cierre del restaurante.
+
+### Cierre de revisión — Rincón de las Beatillas (24/10/2026)
+
+- **Taberna Rincón de las Beatillas — REVISADA Y CERRADA.** Helio confirma que la ficha y carta están completas respecto a las fuentes consultadas. **Los precios no figuran en la fuente**, por lo que se mantienen sin inventar ni estimar. Excluir de próximas revisiones ordinarias; reabrir solo ante nueva fuente, incidencia o cambio contrastado.
