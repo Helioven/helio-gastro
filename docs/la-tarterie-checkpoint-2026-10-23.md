@@ -1,8 +1,8 @@
 # La Tarterie — punto de control documental (23/10/2026)
 
-**Estado: trabajo en curso, NO publicar.** Actualizado con tanda 7 (24/10/2026). Proyecto Helio Gastro, fase 1. La ficha actual de La Tarterie no debe modificarse hasta completar y validar el catálogo. Fuente principal: capturas de la tienda oficial aportadas por Helio (https://la-tarterie.es/tienda/ y páginas 2 y 3). **Próximo producto a documentar: número 26.**
+**Estado: trabajo en curso, NO publicar.** Actualizado con tanda 8 (24/10/2026). Proyecto Helio Gastro, fase 1. La ficha actual de La Tarterie no debe modificarse hasta completar y validar el catálogo. Fuente principal: capturas de la tienda oficial aportadas por Helio (https://la-tarterie.es/tienda/ y páginas 2 y 3). **Transcripción aportada hasta el producto 28; Helio indica que esta es la última tanda.**
 
-## Productos documentados (25)
+## Productos documentados (28)
 
 | # | Producto | Rango publicado (€) | Ingredientes / descripción constatados | Opciones vistas |
 |---|---|---|---|---|
@@ -36,6 +36,10 @@
 
 | 25 | Red Velvet | 19–72 | Bizcocho de remolacha con un toque de cacao y frosting de queso | 6/12/14, supergrande; normal/sin gluten, normal/sin lactosa, normal/sin azúcar; alérgenos específicos pendientes de consultar en tabla oficial |
 
+| 26 | Tarta vegana de chocolate | 22,50–53 | Bizcocho húmedo de cacao puro ecológico, mermelada de frambuesa, buttercream vegano de aguacates y cacao puro ecológicos | 6/12/14 porciones (no supergrande); normal/sin gluten, normal/sin azúcar; iconos: soja, gluten |
+| 27 | Turrón | 20,50–75 | Tres capas de bizcocho de turrón, ganache de turrón, chocolate y virutas de turrón; producto descrito para Navidad | 6/12/14, supergrande; normal/sin gluten; iconos: soja, huevos, gluten, lácteos, cacahuetes, frutos de cáscara |
+| 28 | Zanahoria | 19–72 | Bizcocho de zanahoria con canela, frosting de queso de receta propia y nueces decorativas | 6/12/14, supergrande; normal/sin gluten, normal/sin lactosa, normal/sin azúcar; alérgenos por verificar en tabla oficial |
+
 ## Precauciones y próximos pasos
 
 - Los rangos corresponden a las fichas de producto; **no se ha comprobado el precio exacto de cada combinación de tamaño y opción dietética**. No imputarlo.
@@ -44,5 +48,5 @@
 - En Mojito mousse se cita ron: no afirmar que carece de alcohol. En Quiché Lorraine falta la lista de alérgenos y debe comprobarse con la fuente antes de publicar.
 - Descripciones ES/EN definitivas todavía pendientes de preparar y verificar.
 - No copiar fotografías ajenas. Evitar duplicados.
-- Continuar con las transcripciones **desde el producto 26**; comprobar que se cubren todas las páginas y categorías, y pedir aprobación expresa antes de publicar.
-- El progreso registrado es 25 productos recibidos, **no** el total confirmado del catálogo.
+- Última tanda recibida: producto 28. Comprobar que el catálogo de las tres páginas está efectivamente completo, que no hay duplicados y que se incluyen las categorías saladas; preparar las descripciones ES/EN y obtener aprobación expresa antes de publicar.
+- El progreso registrado es 28 productos recibidos. El usuario indica que la transcripción está terminada; **cobertura total de la tienda todavía pendiente de comprobar**.
