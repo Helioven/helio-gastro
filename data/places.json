@@ -18992,7 +18992,20 @@
         "dessert": "Helado de naranja en aceite de oliva",
         "conditions": "Elegir plato principal con 72 horas de antelación; grupos de más de 20 personas: una sola opción.",
         "sourceDocument": "MENU-LOS-FLAMENCOS.pdf",
-        "includesEn": "VAT included; drinks included during lunch, excluding bar orders and drinks after meal service; sourdough bread included."
+        "includesEn": "VAT included; drinks included during lunch, excluding bar orders and drinks after meal service; sourdough bread included.",
+        "sharedEn": [
+          "Potato salad with white prawns.",
+          "Confit leeks with marinated acorn-fed Iberian pork tenderloin.",
+          "Traditional Andalusian vegetable stew with a fried egg.",
+          "Breaded flamenquín with Iberian pork presa and acorn-fed Iberian ham.",
+          "Croquette made with sheep's milk."
+        ],
+        "choiceEn": [
+          "Iberian pork cheeks with creamy mashed potato.",
+          "Spider crab ravioli with Norway lobster sauce and lobster chanquetes, as named on the menu.",
+          "Rice dish with Iberian pork secreto cut."
+        ],
+        "dessertEn": "Orange ice cream with olive oil."
       },
       {
         "includes": "IVA incluido; bebidas incluidas durante el almuerzo, excepto consumiciones en barra y posteriores al servicio; pan de masa madre incluido.",
@@ -19017,7 +19030,22 @@
         "dessert": "Pastel de chocolate (70 %) con helado de fruta de la pasión",
         "conditions": "Elegir plato principal con 72 horas de antelación; grupos de más de 20 personas: una sola opción.",
         "sourceDocument": "MENU-LOS-PATIOS.pdf",
-        "includesEn": "VAT included; drinks included during lunch, excluding bar orders and drinks after meal service; sourdough bread included."
+        "includesEn": "VAT included; drinks included during lunch, excluding bar orders and drinks after meal service; sourdough bread included.",
+        "appetizersEn": [
+          "Croquette made with sheep's milk.",
+          "Gilda-style skewer with almadraba-caught tuna tarantelo.",
+          "Traditional Andalusian mazamorra with apple sorbet."
+        ],
+        "sharedEn": [
+          "Confit leeks with marinated acorn-fed Iberian pork tenderloin.",
+          "Artichokes in Iberian ham broth with white prawn tartare."
+        ],
+        "choiceEn": [
+          "Almadraba-caught tuna with mandarin purée, peppers and almond cream.",
+          "Rice with oxtail, shiitake mushrooms and asparagus.",
+          "Acorn-fed Iberian pork presa with fried potatoes."
+        ],
+        "dessertEn": "70% chocolate cake with passion fruit ice cream."
       },
       {
         "includes": "IVA incluido; bebidas incluidas durante el almuerzo, excepto consumiciones en barra y posteriores al servicio; pan de masa madre incluido.",
@@ -19038,7 +19066,19 @@
         "mainCourse": "Presa ibérica de bellota con patatas fritas",
         "dessert": "Tocino de cielo con helado de yogur",
         "sourceDocument": "MENU-LA-BODEGA.pdf",
-        "includesEn": "VAT included; drinks included during lunch, excluding bar orders and drinks after meal service; sourdough bread included."
+        "includesEn": "VAT included; drinks included during lunch, excluding bar orders and drinks after meal service; sourdough bread included.",
+        "appetizersEn": [
+          "Croquette made with sheep's milk.",
+          "Gilda-style skewer with almadraba-caught tuna tarantelo.",
+          "Potato salad on thin, crisp pan cristal bread with vinegar-marinated anchovy."
+        ],
+        "sharedEn": [
+          "Confit leeks with marinated acorn-fed Iberian pork tenderloin.",
+          "Artichokes in Iberian ham broth with white prawn tartare."
+        ],
+        "dessertEn": "Traditional egg-yolk custard with yoghurt ice cream.",
+        "firstCourseEn": "Steamed line-caught hake with Amontillado beurre blanc and leek ash.",
+        "mainCourseEn": "Acorn-fed Iberian pork presa with fried potatoes."
       }
     ],
     "menus": [
