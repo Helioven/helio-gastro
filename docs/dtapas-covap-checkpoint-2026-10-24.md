@@ -18,4 +18,20 @@
 
 Alérgenos indicados en la transcripción: lácteos y soja para caña de presa, lomo, salchichón, chorizo y tabla surtida de embutidos; huevo y lácteos para los quesos y tablas de quesos. El jamón no muestra enlaces de alérgenos en el fragmento. **No interpretar ausencia de iconos como ausencia de alérgenos.** Verificar tabla oficial antes de mostrar avisos sanitarios.
 
+
+## De la huerta — segunda sección (24/10/2026)
+
+En los seis platos se observa un único importe; **no asignar media ni ración entera** aunque la página muestre columnas generales. Todos los precios indican IVA incluido.
+
+| Plato | Precio publicado | Alérgenos señalados en el fragmento |
+|---|---:|---|
+| Ensalada de tomate de temporada | 9,00 € | Sin iconos en el texto aportado |
+| Pimientos del piquillo estilo Julián de Tolosa | 9,00 € | Sin iconos en el texto aportado |
+| Puerros a la brasa con Jamón de Bellota 100% Ibérico | 12,90 € | Lácteos |
+| Alcachofas a la brasa con queso Gran Reserva | 14,90 € | Huevo, lácteos |
+| Salteado de setas con huevo poché y Jamón de Bellota 100% Ibérico | 13,50 € | Huevo, lácteos |
+| Berenjenas fritas con miel de caña y salmorejo | 10,50 € | Lácteos, gluten |
+
+Enlaces de ficha de producto proporcionados para pimientos (104), puerros (285), alcachofas (286) y setas (105); las otras dos denominaciones no llevan enlace individual en la transcripción. Los alérgenos no son una garantía de ausencia de los no señalados. Pendiente de cotejar con información oficial completa.
+
 Pendiente: siguientes secciones, revisión de importes y formatos, traducciones ES/EN, pruebas y visto bueno antes de modificar data/places.json.
