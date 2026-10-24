@@ -35,3 +35,20 @@ En los seis platos se observa un único importe; **no asignar media ni ración e
 Enlaces de ficha de producto proporcionados para pimientos (104), puerros (285), alcachofas (286) y setas (105); las otras dos denominaciones no llevan enlace individual en la transcripción. Los alérgenos no son una garantía de ausencia de los no señalados. Pendiente de cotejar con información oficial completa.
 
 Pendiente: siguientes secciones, revisión de importes y formatos, traducciones ES/EN, pruebas y visto bueno antes de modificar data/places.json.
+
+
+## Primer bocado — tercera sección (24/10/2026)
+
+Siete referencias; importes publicados con IVA incluido. No consta formato media/entera para estos platos.
+
+| Plato (denominación de la fuente) | Precio | Alérgenos expresamente indicados |
+|---|---:|---|
+| Salmorejo cordobés con Jamón de Bellota 100% Ibérico | 9,90 € | Gluten |
+| Mazamorra con crema de PX y uvas laminadas | 9,90 € | Frutos secos (la fuente dice «con cáscara, sin cáscara»), gluten, sulfitos |
+| Ensaladilla con Jamón de Bellota 100% Ibérico | 10,50 € | Huevo |
+| Trío de Frios | 10,90 € | Huevo, gluten, sulfitos |
+| Steak Tartar de Solomillo de Bellota 100% Ibérico | 19,00 € | Huevo, soja, mostaza |
+| Huevos rotos con Jamón de Bellota 100% Ibérico | 14,50 € | Huevo |
+| Tartar de Salchichón de Bellota 100% Ibérico | 13,50 € | Lácteos, sulfitos |
+
+**Nota:** «Trío de Frios» incluye salmorejo, mazamorra y ensaladilla. Mantener el nombre tal como figura en la transcripción hasta cotejar la grafía con la carta; no confundir el trío con tres precios individuales. La enumeración de alérgenos es la que figura en el texto recibido; no equivale a una evaluación independiente ni a ausencia de otros alérgenos.
