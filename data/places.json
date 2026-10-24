@@ -9704,23 +9704,27 @@
     "address": "Plaza de San Miguel, 1, Córdoba",
     "mealCostEur": null,
     "priceStatus": "unknown",
-    "checkedAt": "2026-10-22",
+    "checkedAt": "2026-10-24",
     "sources": [
       {
         "label": "Carta oficial Casa El Pisto · edición conmemorativa 1974–2024 · precios históricos (vigencia en 2026 sin verificar)",
-        "url": "https://www.casaelpisto.com/cartas/carta-spain.pdf"
+        "url": "https://www.casaelpisto.com/cartas/carta-spain.pdf",
+        "labelEn": "Official Casa El Pisto menu · 1974–2024 commemorative edition · historical prices (validity in 2026 unverified)"
       },
       {
         "label": "Carta general oficial sin importes visibles",
-        "url": "https://tabernacordoba.es/carta-general/"
+        "url": "https://tabernacordoba.es/carta-general/",
+        "labelEn": "Official general menu without visible prices"
       },
       {
         "label": "Dirección y web oficial",
-        "url": "https://tabernacordoba.es/"
+        "url": "https://tabernacordoba.es/",
+        "labelEn": "Official website and address"
       },
       {
         "label": "Carta oficial en inglés, edición conmemorativa 2024",
-        "url": "https://www.casaelpisto.com/cartas/carta-ingles.pdf"
+        "url": "https://www.casaelpisto.com/cartas/carta-ingles.pdf",
+        "labelEn": "Official English menu · 2024 commemorative edition"
       }
     ],
     "menus": [
