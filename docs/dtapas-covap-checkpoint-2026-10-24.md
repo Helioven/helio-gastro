@@ -144,3 +144,26 @@ Tres referencias de extras, IVA incluido. Precios por servicio/cartucho según n
 **QA:** respetar los 6,00 € de «Cartucho de patatas» sin presumir tamaño, peso o ingredientes. Los 3,60 € corresponden al servicio de pan con tomate, no a suplemento sobre los 1,50 €. No inferir ausencia de alérgenos por falta de iconos. Sección recibida por transcripción del usuario desde la carta oficial: https://www.ibericoscovap.com/es/dtapas-covap-cordoba-carta/.
 
 **Acumulado documental:** ocho secciones y 51 referencias distintas (11 + 6 + 7 + 7 + 13 + 1 + 3 + 3). Carta pública todavía sin actualizar; falta confirmar si hay más secciones de la carta oficial y validar publicación.
+
+
+## Desayunos — Para empezar bien el día (novena sección documental, 24/10/2026)
+
+Nueve referencias de bebidas de desayuno; precios con IVA incluido. Los asteriscos son parte de la distinción de la fuente, no decoración.
+
+| Producto según la carta | Precio | Asterisco de elección de leche | Ficha oficial |
+|---|---:|---|---|
+| Café 100% natural (con leche, solo o cortado) | 1,70 € | Sí | https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=53 |
+| Capuchino | 2,50 € | Sí | No especificada |
+| Café descafeinado | 1,70 € | No | No especificada |
+| Vaso de leche | 1,50 € | Sí | https://www.ibericoscovap.com/es/ficha-bar-cordoba/?product_id=149 |
+| Vaso de leche con ColaCao | 2,50 € | Sí | No especificada |
+| Zumo de naranja natural | 3,10 € | No | No especificada |
+| Zumos (varios) | 2,30 € | No | No especificada |
+| Batidos de chocolate, fresa o vainilla | 2,20 € | No | No especificada |
+| Infusiones | 2,20 € | No | No especificada |
+
+**Nota de la carta asociada al asterisco:** «Puede elegir cualquiera de nuestros tipos de leche (vaca, oveja, cabra y sin lactosa)». Solo asociar a los cuatro productos con asterisco. No desglosar sabores de batidos ni variantes de café como entradas con precios diferentes: la fuente muestra un importe por referencia agrupada. No inferir elección de leche para el descafeinado, batidos u otros productos sin asterisco.
+
+**Declaración comercial de la fuente:** «La leche de nuestras ganaderías la recogemos cada día, garantizándote la máxima calidad y frescura». Atribuir a COVAP; no presentarlo como verificación independiente.
+
+No figuran iconos de alérgenos en este fragmento. Eso no significa que sean productos libres de alérgenos. La documentación sigue sin publicación de carta parcial.
