@@ -230,7 +230,7 @@ function venueMenuPriceLabel(source,english){
  if(source==='Media ración · precio de carta 2024')return 'Half portion · 2024 menu price';
  if(source==='Ración · precio de carta 2024')return 'Full portion · 2024 menu price';
  if(source==='Unidad · precio de carta 2024')return 'Single item · 2024 menu price';
- const labels={'Ración':'Full portion','1/2 ración':'Half portion','Media ración':'Half portion','Tapa':'Tapa','Unidad':'Single item','Entera':'Full serving','Media':'Half serving','Sin formato':'Portion size unspecified'};
+ const labels={'Ración':'Full portion','1/2 ración':'Half portion','Media ración':'Half portion','ración':'Full portion','media ración':'Half portion','Tapa':'Tapa','Unidad':'Single item','unidad':'Single item','media tostada':'Half toast','tostada entera':'Full toast','suplemento':'Add-on','Entera':'Full serving','Media':'Half serving','Sin formato':'Portion size unspecified'};
  if(Object.hasOwn(labels,source))return labels[source];
  return source;
 }
@@ -805,7 +805,7 @@ function renderVenueMenuSections(panel,p){
     const row=document.createElement('div');row.className='menu-price-row';
     const label=document.createElement('span');label.dataset.venueMenuPriceLabel=price.label||price.portion||'';label.textContent=venueMenuPriceLabel(label.dataset.venueMenuPriceLabel,window.HelioGastroLanguage?.get()==='en');
     const amount=document.createElement('strong');amount.textContent=fmt(price.eur);
-    row.append(label,amount);entry.append(row);
+    if(label.dataset.venueMenuPriceLabel==='precio indicado')row.append(amount);else row.append(label,amount);entry.append(row);
    }
    if(dish.priceRangeEur && Number.isFinite(dish.priceRangeEur.min) && Number.isFinite(dish.priceRangeEur.max)){
     const range=document.createElement('div');range.className='menu-price-row';
