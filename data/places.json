@@ -18235,42 +18235,6 @@
         ]
       },
       {
-        "service": "Sugerencias del día",
-        "dishes": [
-          "Migas completas",
-          "Menudo gitano",
-          "Costillar al horno con salsa BBQ",
-          "Secreto ibérico al horno con patatas y verduritas"
-        ],
-        "dishPrices": [
-          {
-            "dish": "Migas completas",
-            "eur": 7.9,
-            "portion": "1/2 ración"
-          },
-          {
-            "dish": "Migas completas",
-            "eur": 10.9,
-            "portion": "Ración"
-          },
-          {
-            "dish": "Menudo gitano",
-            "eur": 12.9,
-            "portion": "Ración"
-          },
-          {
-            "dish": "Costillar al horno con salsa BBQ",
-            "eur": 15.9,
-            "portion": "Formato no indicado"
-          },
-          {
-            "dish": "Secreto ibérico al horno con patatas y verduritas",
-            "eur": 15.9,
-            "portion": "Formato no indicado"
-          }
-        ]
-      },
-      {
         "service": "Carta especial de celíacos",
         "dishes": [
           "Croquetas (carta especial de celíacos)",
@@ -18896,58 +18860,6 @@
         ]
       },
       {
-        "title": "Sugerencias del día",
-        "items": [
-          {
-            "name": "Migas completas",
-            "prices": [
-              {
-                "eur": 7.9,
-                "portion": "1/2 ración"
-              },
-              {
-                "eur": 10.9,
-                "portion": "Ración"
-              }
-            ],
-            "description": "Migas de pan salteadas con chorizo, morcilla, panceta, pimientos verdes y ajo. Consultar disponibilidad.",
-            "en": "Fried breadcrumbs with chorizo, blood sausage, pork belly, green peppers and garlic. Subject to availability."
-          },
-          {
-            "name": "Menudo gitano",
-            "prices": [
-              {
-                "eur": 12.9,
-                "portion": "Ración"
-              }
-            ],
-            "description": "Potaje de garbanzos con casquería",
-            "en": "Chickpea stew with offal."
-          },
-          {
-            "name": "Costillar al horno con salsa BBQ",
-            "prices": [
-              {
-                "eur": 15.9,
-                "portion": "Formato no indicado"
-              }
-            ],
-            "description": "Costillar de cerdo asado al horno con salsa barbacoa",
-            "en": "Oven-roasted pork ribs with barbecue sauce."
-          },
-          {
-            "name": "Secreto ibérico al horno con patatas y verduritas",
-            "prices": [
-              {
-                "eur": 15.9,
-                "portion": "Formato no indicado"
-              }
-            ],
-            "en": "Oven-roasted Iberian pork secreto cut with potatoes and vegetables."
-          }
-        ]
-      },
-      {
         "title": "Carta especial de celíacos",
         "items": [
           {
@@ -19023,7 +18935,7 @@
         "eur": 1.5
       }
     ],
-    "menuSourceNote": "Transcripción parcial de la carta facilitada en texto por el usuario el 16/10/2026: Entrantes fríos y ensaladas, ocho platos y cuatro suplementos. Precios de carta no verificados en tiempo real; fecha de edición no indicada. Secciones restantes pendientes. Sin fotografías de terceros. Sección Entrantes calientes recibida del usuario el 16/10/2026: siete platos y trece importes; huevos rotos sin tamaño de porción indicado. Sección Pescados facilitada por el usuario el 16/10/2026: cinco platos, seis precios. Solo la japuta presenta medias raciones y raciones expresas; los restantes formatos no se indican. Sección Carnes y platos fuertes proporcionada por el usuario: ocho platos, once precios. La distinción «Premio al Mejor Rabo de Toro Cordobés 2026» está citada según la carta, no verificada independientemente. Iconos svg sin información textual, no interpretados. Sección infantil «Para los más peques» recibida del usuario: tres referencias y cuatro precios. Lagrimitas también presentes en entrantes calientes con los mismos importes; se mantiene la pertenencia a ambas secciones sin considerar un plato distinto. Iconos svg no interpretados. Sección Postres facilitada por el usuario: diez referencias y diez precios. Se conserva mención del chef Julián en el helado de naranja con vermut, así como la receta atribuida a la abuela Concha. Vigencia de los importes no verificada independientemente. Sugerencias del día facilitadas por el usuario el 16/10/2026: cuatro referencias, cinco precios, sujetos a cambios y disponibilidad. Las migas requieren consultar disponibilidad. El menudo gitano figura también en carnes y platos fuertes al mismo precio: no se contabiliza como plato único adicional. No se identifican los marcadores svg de alérgenos. Carta especial de celíacos facilitada por el usuario el 16/10/2026: tres platos y un suplemento (pan o palillos sin gluten). Consultar disponibilidad de toda la sección y expresamente de croquetas y flamenquín. La carta los presenta para celíacos, pero no se ha verificado el control de contaminación cruzada; confirmar con el establecimiento. Los símbolos svg de alérgenos no son identificables. Revisión 24/10/2026 con transcripción de la carta proporcionada por Helio: incorporadas patatas rellenas de Bujalance, boquerones fritos, manitas de cerdo y solomillo al whisky, con importes y formatos expresos; se conservan los demás registros. La tarta de tres leches preexistente no figura en esta transcripción, pendiente de contrastar; no se retira sin verificación. Actualización 24/10/2026: incorporadas a la carta especial de celíacos las patatas rellenas de Bujalance (ración 13,90 €), diferenciadas de la versión de la carta general. La fuente indica carne de cerdo aliñada con cítricos; consultar disponibilidad. No se interpretan iconos SVG de alérgenos ni se garantiza ausencia de contaminación cruzada."
+    "menuSourceNote": "Transcripción parcial de la carta facilitada en texto por el usuario el 16/10/2026: Entrantes fríos y ensaladas, ocho platos y cuatro suplementos. Precios de carta no verificados en tiempo real; fecha de edición no indicada. Secciones restantes pendientes. Sin fotografías de terceros. Sección Entrantes calientes recibida del usuario el 16/10/2026: siete platos y trece importes; huevos rotos sin tamaño de porción indicado. Sección Pescados facilitada por el usuario el 16/10/2026: cinco platos, seis precios. Solo la japuta presenta medias raciones y raciones expresas; los restantes formatos no se indican. Sección Carnes y platos fuertes proporcionada por el usuario: ocho platos, once precios. La distinción «Premio al Mejor Rabo de Toro Cordobés 2026» está citada según la carta, no verificada independientemente. Iconos svg sin información textual, no interpretados. Sección infantil «Para los más peques» recibida del usuario: tres referencias y cuatro precios. Lagrimitas también presentes en entrantes calientes con los mismos importes; se mantiene la pertenencia a ambas secciones sin considerar un plato distinto. Iconos svg no interpretados. Sección Postres facilitada por el usuario: diez referencias y diez precios. Se conserva mención del chef Julián en el helado de naranja con vermut, así como la receta atribuida a la abuela Concha. Vigencia de los importes no verificada independientemente. Sugerencias del día facilitadas por el usuario el 16/10/2026: cuatro referencias, cinco precios, sujetos a cambios y disponibilidad. Las migas requieren consultar disponibilidad. El menudo gitano figura también en carnes y platos fuertes al mismo precio: no se contabiliza como plato único adicional. No se identifican los marcadores svg de alérgenos. Carta especial de celíacos facilitada por el usuario el 16/10/2026: tres platos y un suplemento (pan o palillos sin gluten). Consultar disponibilidad de toda la sección y expresamente de croquetas y flamenquín. La carta los presenta para celíacos, pero no se ha verificado el control de contaminación cruzada; confirmar con el establecimiento. Los símbolos svg de alérgenos no son identificables. Revisión 24/10/2026 con transcripción de la carta proporcionada por Helio: incorporadas patatas rellenas de Bujalance, boquerones fritos, manitas de cerdo y solomillo al whisky, con importes y formatos expresos; se conservan los demás registros. La tarta de tres leches preexistente no figura en esta transcripción, pendiente de contrastar; no se retira sin verificación. Actualización 24/10/2026: incorporadas a la carta especial de celíacos las patatas rellenas de Bujalance (ración 13,90 €), diferenciadas de la versión de la carta general. La fuente indica carne de cerdo aliñada con cítricos; consultar disponibilidad. No se interpretan iconos SVG de alérgenos ni se garantiza ausencia de contaminación cruzada. Decisión editorial 24/10/2026: retirada la sección «Sugerencias del día» de la ficha pública y del catálogo de búsqueda por ser variable y no existir actualización automática fiable. Se conservan los platos de carta fija, incluido «Menudo gitano», sin cambios."
   },
   {
     "id": "bodegas-campos",
