@@ -237,6 +237,7 @@ function venueMenuPriceLabel(source,english){
 function refreshDishExplanations(){
  const english=window.HelioGastroLanguage?.get()==='en';
  document.querySelectorAll('[data-set-menu-es]').forEach(node=>{node.textContent=english?node.dataset.setMenuEn:node.dataset.setMenuEs;});
+ document.querySelectorAll('[data-source-label-es]').forEach(node=>{node.textContent=(english?node.dataset.sourceLabelEn:node.dataset.sourceLabelEs)+' ↗';});
  document.querySelectorAll('[data-source-audit-title]').forEach(node=>{node.textContent=english?'Source documentation (expand)':'Documentación de fuentes (desplegar)';});
  document.querySelectorAll('[data-official-menus-heading]').forEach(node=>{node.textContent=english?'Official menus':'Cartas oficiales';});
  document.querySelectorAll('[data-official-menu-notice-es]').forEach(node=>{node.textContent=english?node.dataset.officialMenuNoticeEn:node.dataset.officialMenuNoticeEs;});
@@ -909,10 +910,10 @@ function showPlace(p,scroll=true){
  if(Array.isArray(p.officialMenuLinks)&&p.officialMenuLinks.length){
   const details=document.createElement('details');details.className='source-details';
   const summary=document.createElement('summary');summary.dataset.sourceAuditTitle='1';summary.textContent=window.HelioGastroLanguage?.get()==='en'?'Source documentation (expand)':'Documentación de fuentes (desplegar)';details.append(summary);
-  for(const source of p.sources){if(!/^https:\/\//.test(source.url))continue;const a=document.createElement('a');a.href=source.url;a.textContent=source.label+' ↗';a.target='_blank';a.rel='noopener noreferrer';a.className='detail-source';details.append(a)}
+  for(const source of p.sources){if(!/^https:\/\//.test(source.url))continue;const a=document.createElement('a');a.href=source.url;a.dataset.sourceLabelEs=source.label;a.dataset.sourceLabelEn=source.labelEn||source.label;a.textContent=((window.HelioGastroLanguage?.get()==='en')?a.dataset.sourceLabelEn:a.dataset.sourceLabelEs)+' ↗';a.target='_blank';a.rel='noopener noreferrer';a.className='detail-source';details.append(a)}
   panel.append(details);
  }else{
-  for(const source of p.sources){if(!/^https:\/\//.test(source.url))continue;const a=document.createElement('a');a.href=source.url;a.textContent=source.label+' ↗';a.target='_blank';a.rel='noopener noreferrer';a.className='detail-source';panel.append(a)}
+  for(const source of p.sources){if(!/^https:\/\//.test(source.url))continue;const a=document.createElement('a');a.href=source.url;a.dataset.sourceLabelEs=source.label;a.dataset.sourceLabelEn=source.labelEn||source.label;a.textContent=((window.HelioGastroLanguage?.get()==='en')?a.dataset.sourceLabelEn:a.dataset.sourceLabelEs)+' ↗';a.target='_blank';a.rel='noopener noreferrer';a.className='detail-source';panel.append(a)}
  }
  el('detail-section').hidden=false;
  refreshDishExplanations();
