@@ -314,3 +314,10 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 
 - **Cafetería Bar Don Pepe · Ciudad Jardín (Antonio Maura, 35) — REVISADA Y CERRADA.** Helio valida visualmente la ficha incorporada, sus secciones y traducciones ES/EN. Los 18 precios transcritos desde la búsqueda de Google conservan la advertencia de vigencia no confirmada; la web del establecimiento documenta especialidades sin precios. No repetir revisión ordinaria salvo cambios o incidencias.
 - **Cafetería Don Pepe · Centro (Diego de León, 6) — REVISIÓN CERRADA POR HELIO, CON DATOS PENDIENTES.** Helio solicita cerrar ambos establecimientos. La transcripción de precios compartida para este local aún no está incorporada a `data/places.json`; por ello NO afirmar que su carta esté completa ni que sus precios estén publicados en la app. Mantener ese pendiente explícito y no mezclar cartas entre sedes. Reabrir únicamente esa tarea documental cuando se decida incorporar los datos.
+
+
+### Actualización de Don Pepe · Diego de León (24/10/2026)
+
+- Se ha incorporado la carta de desayunos transcrita por Helio a partir de la búsqueda de Google: **9 apartados, 43 entradas y 36 precios**. Incluye cafés, bocadillos, tostadas por media y entera, chocolate, infusiones, zumos, extras y artículos sin precio. Se han omitido duplicados del resumen «At a Glance»; los grupos con igual precio se desglosan sin modificar importes.
+- Datos ES/EN en cada entrada. Precios publicados sin fecha de vigencia verificable; no presentar como carta oficial actual ni como coste completo de desayuno. El vínculo a la búsqueda de Maps es orientativo, no prueba del origen exacto de la carta. **No mezclar** con Don Pepe Antonio Maura.
+- **Estado:** incorporación documental completa según la transcripción, pero **QA visual pendiente** en ES/EN. Actualiza la nota anterior que señalaba precios aún no incorporados; no supone un PASS visual.
