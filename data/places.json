@@ -15708,17 +15708,17 @@
           },
           {
             "dish": "Jamón, ajitos y perejil (complemento para los huevos estrellados)",
-            "portion": "Ración",
+            "portion": "suplemento",
             "eur": 4.5
           },
           {
             "dish": "Chorizo de matanza y pimientos de Padrón (complemento para los huevos estrellados)",
-            "portion": "Ración",
+            "portion": "suplemento",
             "eur": 4.5
           },
           {
             "dish": "Gula al ajillo con guindillas piparras (complemento para los huevos estrellados)",
-            "portion": "Ración",
+            "portion": "suplemento",
             "eur": 6
           },
           {
@@ -16070,7 +16070,7 @@
             "prices": [
               {
                 "eur": 4.5,
-                "portion": "Ración"
+                "portion": "suplemento"
               }
             ],
             "es": "Complemento para huevos estrellados con jamón, ajo y perejil.",
@@ -16081,7 +16081,7 @@
             "prices": [
               {
                 "eur": 4.5,
-                "portion": "Ración"
+                "portion": "suplemento"
               }
             ],
             "es": "Complemento para huevos estrellados con chorizo de matanza y pimientos de Padrón.",
@@ -16092,7 +16092,7 @@
             "prices": [
               {
                 "eur": 6,
-                "portion": "Ración"
+                "portion": "suplemento"
               }
             ],
             "es": "Complemento para huevos estrellados con gulas al ajillo y piparras.",
@@ -16199,6 +16199,56 @@
             ],
             "es": "Pastel de tagarninas acompañado de gazpachuelo malagueño.",
             "en": "Wild-thistle tart served with Málaga-style gazpachuelo sauce."
+          }
+        ]
+      },
+      {
+        "title": "Complementos de carta",
+        "titleEn": "Menu extras",
+        "items": [
+          {
+            "name": "Pan y palillos",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 1.8
+              }
+            ],
+            "es": "Servicio de pan y palillos indicado en la carta.",
+            "en": "Bread and breadsticks listed on the menu."
+          },
+          {
+            "name": "Aceitunas",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 2
+              }
+            ],
+            "es": "Aceitunas indicadas en la carta.",
+            "en": "Olives listed on the menu."
+          },
+          {
+            "name": "Pan extra",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 0.9
+              }
+            ],
+            "es": "Pan adicional indicado en la carta.",
+            "en": "Extra bread listed on the menu."
+          },
+          {
+            "name": "Envase desechable",
+            "prices": [
+              {
+                "label": "precio indicado",
+                "eur": 0.5
+              }
+            ],
+            "es": "Envase desechable indicado en la carta.",
+            "en": "Disposable takeaway container listed on the menu."
           }
         ]
       }
