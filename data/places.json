@@ -48159,6 +48159,131 @@
     ],
     "menuSections": [
       {
+        "title": "Desayunos: tostadas y café",
+        "titleEn": "Breakfast: toast and coffee",
+        "items": [
+          {
+            "name": "Tostada básica",
+            "es": "Aceite, tomate, paté, mantequilla, mermelada o miel.",
+            "en": "Basic toast. Olive oil, tomato, pâté, butter, jam or honey.",
+            "prices": [
+              {
+                "eur": 1.1,
+                "portion": "media-tostada",
+                "label": "Media tostada sin café"
+              },
+              {
+                "eur": 2,
+                "portion": "tostada-entera",
+                "label": "Tostada entera sin café"
+              },
+              {
+                "eur": 2,
+                "portion": "media-tostada",
+                "label": "Media tostada con café"
+              },
+              {
+                "eur": 3.3,
+                "portion": "tostada-entera",
+                "label": "Tostada entera con café"
+              }
+            ]
+          },
+          {
+            "name": "Tostada de untar",
+            "es": "Crema de York, guacamole, Philadelphia o zurrapa de lomo.",
+            "en": "Toast with spread. Cooked-ham spread, guacamole, Philadelphia cream cheese or zurrapa de lomo.",
+            "prices": [
+              {
+                "eur": 1.2,
+                "portion": "media-tostada",
+                "label": "Media tostada sin café"
+              },
+              {
+                "eur": 2.1,
+                "portion": "tostada-entera",
+                "label": "Tostada entera sin café"
+              },
+              {
+                "eur": 2.2,
+                "portion": "media-tostada",
+                "label": "Media tostada con café"
+              },
+              {
+                "eur": 3.5,
+                "portion": "tostada-entera",
+                "label": "Tostada entera con café"
+              }
+            ]
+          },
+          {
+            "name": "Tostada mixta",
+            "es": "Dos ingredientes a elegir entre tomate, jamón, York, guacamole, mantequilla, miel, mermelada o Philadelphia.",
+            "en": "Mixed toast. Choose two ingredients: tomato, cured ham, cooked ham, guacamole, butter, honey, jam or Philadelphia cream cheese.",
+            "prices": [
+              {
+                "eur": 1.4,
+                "portion": "media-tostada",
+                "label": "Media tostada sin café"
+              },
+              {
+                "eur": 2.6,
+                "portion": "tostada-entera",
+                "label": "Tostada entera sin café"
+              },
+              {
+                "eur": 2.4,
+                "portion": "media-tostada",
+                "label": "Media tostada con café"
+              },
+              {
+                "eur": 3.7,
+                "portion": "tostada-entera",
+                "label": "Tostada entera con café"
+              }
+            ]
+          },
+          {
+            "name": "Tostada gratinada",
+            "es": "Mantequilla, jamón de York y queso.",
+            "en": "Toasted cheese-topped bread. Butter, cooked ham and cheese.",
+            "prices": [
+              {
+                "eur": 1.5,
+                "portion": "media-tostada",
+                "label": "Media tostada sin café"
+              },
+              {
+                "eur": 2.8,
+                "portion": "tostada-entera",
+                "label": "Tostada entera sin café"
+              },
+              {
+                "eur": 2.6,
+                "portion": "media-tostada",
+                "label": "Media tostada con café"
+              },
+              {
+                "eur": 3.9,
+                "portion": "tostada-entera",
+                "label": "Tostada entera con café"
+              }
+            ]
+          },
+          {
+            "name": "Café",
+            "es": "Café solo, precio por unidad según la carta.",
+            "en": "Coffee, priced per serving as listed on the menu.",
+            "prices": [
+              {
+                "eur": 1.3,
+                "portion": "unidad"
+              }
+            ]
+          }
+        ]
+      },
+      {
         "title": "Perritos",
         "titleEn": "Hot dogs",
         "items": [
