@@ -374,3 +374,8 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 
 - **La Posada del Caballo Andaluz — REVISADA Y CERRADA / validación visual confirmada por Helio el 26/10/2026.** Helio indica que la ficha está correcta. No se han modificado platos, precios, textos ni enlaces por este cierre.
 - Excluir de próximas revisiones ordinarias salvo nueva evidencia documental, incidencia específica o petición expresa. Esta aprobación visual no supone una verificación independiente de precios o disponibilidad actuales ni sustituye la QA integral posterior.
+
+### Cierre de revisión — Taberna La Montillana (26/10/2026)
+
+- **Taberna La Montillana — REVISADA Y CERRADA / QA visual ES/EN PASS confirmado por Helio.** Se añadió `labelEn` a la fuente de la carta oficial («Official menu — restaurant website») y Helio comprobó la traducción en la aplicación. No se modificaron platos, importes, formatos ni enlaces.
+- Excluir de revisiones ordinarias futuras salvo incidencia, nueva evidencia documental, actualización de carta o petición expresa. El cierre de revisión visual no certifica la vigencia actual de todos los precios ni sustituye la auditoría integral posterior.
