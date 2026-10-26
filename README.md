@@ -384,3 +384,8 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 
 - **Taberna Salinas — REVISADA Y CERRADA (26/10/2026), confirmado por Helio.** Helio valida que la ficha está completa y solicita cerrar la revisión ordinaria. No se han modificado platos, precios, traducciones ni fuentes por este registro de cierre.
 - No volver a incluirla entre restaurantes pendientes salvo incidencia, cambio documental o solicitud expresa. El cierre editorial no equivale a certificar disponibilidad ni precios actuales y no sustituye las pruebas de regresión generales.
+
+### Cierre de revisión — Bodegas Mezquita Céspedes (26/10/2026)
+
+- **Bodegas Mezquita Céspedes — REVISADA Y CERRADA / QA visual ES/EN PASS confirmado por Helio.** Corregidas en `app.js` las etiquetas de formatos y cantidades que permanecían en español en la interfaz inglesa (medias y raciones por gramos, unidades, con/sin aceite, degustación, botella y precio único). Helio confirmó visualmente que la ficha queda correcta el 26/10/2026.
+- Los cambios fueron de presentación/traducción; no se alteraron platos, ingredientes, cantidades originales ni precios. Excluir este establecimiento de futuras revisiones ordinarias salvo nueva incidencia, cambio acreditado de carta o petición expresa. El cierre no sustituye la futura auditoría integral y pruebas de regresión.
