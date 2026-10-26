@@ -3016,11 +3016,13 @@
     "sources": [
       {
         "label": "Just Eat · carta de reparto transcrita el 20/10/2026 (Alonso de Burgos, 2)",
-        "url": "https://www.just-eat.es/restaurants-taberna-el-poema-cordoba/menu"
+        "url": "https://www.just-eat.es/restaurants-taberna-el-poema-cordoba/menu",
+        "labelEn": "Just Eat · delivery menu transcribed on 2026-10-20 (Alonso de Burgos, 2)"
       },
       {
         "label": "Uber Eats · carta histórica y contraste (vigencia de precios no confirmada)",
-        "url": "https://www.ubereats.com/es/store/taberna-el-poema/CbDjgDGhVEqNYmYsVKSpJA"
+        "url": "https://www.ubereats.com/es/store/taberna-el-poema/CbDjgDGhVEqNYmYsVKSpJA",
+        "labelEn": "Uber Eats · historical menu and cross-check (current price validity unconfirmed)"
       }
     ],
     "menus": [
