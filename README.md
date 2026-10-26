@@ -399,3 +399,8 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 
 - **Taberna La Manuela — REVISADA Y CERRADA (26/10/2026), validación confirmada por Helio.** Helio confirma que la ficha está correcta y da por finalizada su revisión ordinaria. No se modificaron platos, precios, traducciones ni fuentes por registrar este cierre.
 - Excluir de futuras revisiones ordinarias salvo incidencia, nueva documentación o solicitud expresa. El cierre editorial no certifica por sí solo la vigencia actual de los precios ni sustituye las pruebas de regresión generales.
+
+### Cierre de revisión — Taberna Góngora (26/10/2026)
+
+- **Taberna Góngora — REVISADA Y CERRADA (26/10/2026), validación confirmada por Helio.** Helio confirma que la ficha está correcta y solicita cerrar su revisión ordinaria. No se modificaron platos, precios, traducciones ni fuentes por registrar este cierre.
+- Excluir de futuras revisiones ordinarias salvo incidencia concreta, nueva documentación o solicitud expresa. El cierre editorial no supone verificación independiente de vigencia de precios y no sustituye las pruebas generales de regresión.
