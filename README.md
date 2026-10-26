@@ -480,3 +480,9 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 
 - **Cafetería Don Pepe · Centro — REVISADA Y CERRADA (26/10/2026), por confirmación de Helio.** Se da por concluida su revisión ordinaria y se conserva la carta y ficha existentes. El aviso de horarios cuenta con traducción ES/EN.
 - No se modifican platos, precios ni fuentes al registrar este cierre. Excluir de próximas revisiones ordinarias salvo incidencia, cambio documentado o petición expresa. El cierre no implica nueva verificación independiente de horarios o vigencia de precios ni sustituye la posterior regresión general.
+
+### Próximas revisiones al retomar — 26/10/2026
+
+- **Trabajo pausado por decisión de Helio el 26/10/2026.** No continuar revisiones ni implementar cambios hasta que Helio lo indique.
+- **Próximas fichas propuestas para revisar, aún NO cerradas:** Restaurante El Caballo Rojo, Patio Romano y Taberna El Burlaero. El orden puede decidirse al retomar.
+- Las dos fichas de Don Pepe, La Bandera, La Tarterie y Pastelerías Roldán ya están registradas como cerradas; no reabrirlas sin incidencia o petición expresa.
