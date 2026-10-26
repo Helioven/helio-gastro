@@ -419,3 +419,9 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 
 - **Sociedad Plateros · María Auxiliadora — REVISADA Y CERRADA (26/10/2026), validación editorial confirmada por Helio.** Helio confirma que la ficha puede darse por cerrada tras su revisión. Excluir de próximas revisiones ordinarias salvo incidencia, nueva documentación o solicitud expresa.
 - El cierre no implica una nueva verificación independiente de precios o disponibilidad ni certifica pruebas técnicas o de regresión no ejecutadas. **Siguiente ficha a revisar: Taberna El Nº 10 (Romero, 10), pendiente de comprobación de Helio; no cerrada.**
+
+### Cierre de revisión — Taberna El Nº 10 (26/10/2026)
+
+- **Taberna El Nº 10 (Romero, 10) — REVISADA Y CERRADA / QA visual ES/EN confirmado por Helio el 26/10/2026.** Se añadieron las traducciones inglesas `labelEn` de las tres fuentes de la ficha (cocina y especialidades, carta PDF y contacto). Helio revisó la aplicación tras el cambio y confirmó que se visualiza correctamente.
+- No se alteraron platos, precios, formatos ni enlaces. El JSON se validó tras el cambio con 43 establecimientos conservados. La carta PDF incluye una referencia a septiembre de 2025 en su URL, sin que ello acredite vigencia actual.
+- **Control de pendientes:** excluir la taberna de nuevas revisiones ordinarias salvo incidencia, actualización documental o petición expresa. El cierre no sustituye la auditoría integral ni las futuras pruebas de regresión.
