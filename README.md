@@ -431,3 +431,9 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - **La Cazuela de la Espartería — REVISADA Y CERRADA / QA visual ES/EN PASS confirmado por Helio el 26/10/2026.** Tras revisar la ficha, se incorporaron descripciones para 89 platos, títulos bilingües de sus nueve secciones, traducciones de los platos de cuatro menús navideños, traducciones de tres etiquetas de fuentes y títulos ingleses de los menús de grupo. Helio confirma que la visualización resultante es correcta.
 - **Alcance del cambio:** no se modificaron importes, formatos ni enlaces. Las descripciones no incorporan ingredientes no documentados. Los precios y la vigencia de los menús siguen sujetos a las reservas documentales ya indicadas en la ficha.
 - **Control de pendientes:** excluir de revisiones ordinarias futuras salvo incidencia, nueva documentación o petición expresa. La aprobación visual no sustituye la auditoría integral ni las pruebas de regresión posteriores.
+
+### Cierre de revisión — Restaurante El Churrasco (26/10/2026)
+
+- **Restaurante El Churrasco — REVISADO Y CERRADO / QA visual ES/EN PASS confirmado por Helio el 26/10/2026.** La única corrección detectada fue traducir la etiqueta de la tercera fuente («Carta QR del restaurante, sin fecha (PDF aportado por el usuario)») al inglés como «Restaurant QR menu, undated (PDF provided by the user)». Helio comprobó el cambio y confirmó que la ficha está correcta.
+- No se modificaron platos, precios, formatos ni enlaces. Se mantuvo el aviso de que la carta QR aportada no tiene fecha acreditada; el cierre visual no certifica vigencia de precios.
+- **Control de pendientes:** excluir El Churrasco de revisiones ordinarias futuras salvo nueva documentación, incidencia o petición expresa. No sustituye la auditoría integral ni las pruebas de regresión generales.
