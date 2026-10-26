@@ -460,3 +460,8 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - **Pastelerías Roldán — REVISADO Y CERRADO / QA visual ES/EN PASS confirmado por Helio el 26/10/2026.** Roldán Centro conserva su ficha y carta específica; se incorpora una ficha genérica para las otras cafeterías con precios documentados de desayunos y un directorio de 13 cafeterías y tres panaderías. No se atribuye la carta de cafeterías a las panaderías.
 - **Incidencia resuelta:** traducción completa al inglés de ubicación genérica, encabezado y tipos de establecimiento, avisos de carta y precios. Helio ha confirmado que ahora se visualiza correctamente. Excluir ambas fichas de la revisión ordinaria salvo actualización documental, incidencia o petición expresa.
 - Los cierres no certifican vigencia actual de precios ni sustituyen la futura regresión general.
+
+### Cierre de revisión — La Tarterie (26/10/2026)
+
+- **La Tarterie — REVISADA Y CERRADA (26/10/2026), según confirmación de Helio.** Se conserva el aviso general bilingüe al inicio de la carta sobre precios por producto completo y variaciones por tamaño u opciones. Se elimina la repetición del enlace «Ver precio exacto en tienda oficial / Check exact price at official shop» dentro de cada producto; el acceso a la tienda oficial sigue disponible en las fuentes de la ficha.
+- No se modifican precios, ingredientes, tamaños ni fichas de producto. Pendiente comprobar visualmente este último ajuste ES/EN; el cierre editorial previo no equivale a aprobar todavía esta regresión. No incluir en revisiones ordinarias futuras salvo incidencia, cambio documentado o petición expresa.
