@@ -234,6 +234,8 @@ function venueMenuPriceLabel(source,english){
  if(source==='Unidad · precio de carta 2024')return 'Single item · 2024 menu price';
  const labels={'Ración':'Full portion','1/2 ración':'Half portion','Media ración':'Half portion','ración':'Full portion','media ración':'Half portion','Tapa':'Tapa','Unidad':'Single item','unidad':'Single item','media tostada':'Half toast','tostada entera':'Full toast','suplemento':'Add-on','Entera':'Full serving','Media':'Half serving','Sin formato':'Portion size unspecified','ración / precio único':'Full portion / single price','Precio orientativo':'Indicative price','Formato no indicado':'Portion size unspecified','Precio de carta; formato no indicado':'Menu price · portion size unspecified'};
  if(Object.hasOwn(labels,source))return labels[source];
+ const detailedLabels={'media 90 g':'Half portion · 90 g','ración 180 g':'Full portion · 180 g','2 unidades':'2 pieces','con aceite':'With olive oil','sin aceite':'Without olive oil'};
+ if(Object.hasOwn(detailedLabels,source))return detailedLabels[source];
  if(/^formato (?:no especificado|sin especificar|no indicado)$/i.test(source.trim()))return 'Portion size not specified';
  return source;
 }
