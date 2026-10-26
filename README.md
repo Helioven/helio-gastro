@@ -394,3 +394,8 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 
 - **Taberna Rafaé — REVISADA Y CERRADA (26/10/2026), validación confirmada por Helio.** Helio indica que la ficha está correcta y solicita dar por terminada su revisión ordinaria. No se modificaron platos, precios, fuentes ni traducciones por este cierre.
 - Excluir de revisiones ordinarias posteriores salvo incidencia concreta, cambio documental o nueva solicitud. Este cierre editorial no constituye verificación independiente de vigencia de precios y no sustituye las pruebas generales de regresión.
+
+### Cierre de revisión — Taberna La Manuela (26/10/2026)
+
+- **Taberna La Manuela — REVISADA Y CERRADA (26/10/2026), validación confirmada por Helio.** Helio confirma que la ficha está correcta y da por finalizada su revisión ordinaria. No se modificaron platos, precios, traducciones ni fuentes por registrar este cierre.
+- Excluir de futuras revisiones ordinarias salvo incidencia, nueva documentación o solicitud expresa. El cierre editorial no certifica por sí solo la vigencia actual de los precios ni sustituye las pruebas de regresión generales.
