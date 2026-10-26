@@ -48552,7 +48552,18 @@
           "Bollo de leche con mantequilla",
           "Bollo de leche con mantequilla y mermelada",
           "Bollo de leche con jamón york",
-          "Bollo de leche con jamón york y queso"
+          "Bollo de leche con jamón york y queso",
+          "Extra de miel",
+          "Extra de mantequilla",
+          "Extra de paté",
+          "Extra de queso",
+          "Extra de tomate",
+          "Extra de leche condensada",
+          "Extra de mermelada",
+          "Extra de tarrina de aceite",
+          "Extra de jamón serrano",
+          "Extra de jamón york",
+          "Extra de pavo"
         ],
         "dishPrices": [
           {
@@ -48769,6 +48780,61 @@
             "dish": "Bollo de leche con jamón york y queso",
             "eur": 3.8,
             "portion": "unidad"
+          },
+          {
+            "dish": "Extra de miel",
+            "eur": 0.7,
+            "portion": "suplemento"
+          },
+          {
+            "dish": "Extra de mantequilla",
+            "eur": 0.7,
+            "portion": "suplemento"
+          },
+          {
+            "dish": "Extra de paté",
+            "eur": 0.7,
+            "portion": "suplemento"
+          },
+          {
+            "dish": "Extra de queso",
+            "eur": 0.7,
+            "portion": "suplemento"
+          },
+          {
+            "dish": "Extra de tomate",
+            "eur": 0.7,
+            "portion": "suplemento"
+          },
+          {
+            "dish": "Extra de leche condensada",
+            "eur": 0.7,
+            "portion": "suplemento"
+          },
+          {
+            "dish": "Extra de mermelada",
+            "eur": 0.7,
+            "portion": "suplemento"
+          },
+          {
+            "dish": "Extra de tarrina de aceite",
+            "eur": 0.7,
+            "portion": "suplemento"
+          },
+          {
+            "dish": "Extra de jamón serrano",
+            "eur": 0.7,
+            "portion": "suplemento"
+          },
+          {
+            "dish": "Extra de jamón york",
+            "eur": 0.7,
+            "portion": "suplemento"
+          },
+          {
+            "dish": "Extra de pavo",
+            "eur": 0.7,
+            "portion": "suplemento"
           }
         ]
       },
@@ -48955,25 +49021,7 @@
           }
         ]
       }
-    ],
-    "breakfastExtras": {
-      "label": "Extras para desayunos",
-      "pricePerExtraEur": 0.7,
-      "options": [
-        "Miel",
-        "Mantequilla",
-        "Paté",
-        "Queso",
-        "Tomate",
-        "Leche condensada",
-        "Mermelada",
-        "Tarrina de aceite",
-        "Jamón serrano",
-        "Jamón york",
-        "Pavo"
-      ],
-      "note": "Según la carta facilitada por Helio; no se presupone disponibilidad en otros servicios."
-    }
+    ]
   },
   {
     "id": "la-tarterie-centro",
