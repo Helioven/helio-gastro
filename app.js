@@ -238,6 +238,7 @@ function venueMenuPriceLabel(source,english){
  if(Object.hasOwn(detailedLabels,source))return detailedLabels[source];
  const remainingLabels={'media 95 g':'Half portion · 95 g','ración 250 g':'Full portion · 250 g','media 60 g':'Half portion · 60 g','ración 100 g':'Full portion · 100 g','precio único':'Single price','media':'Half portion','ración':'Full portion','tapa':'Tapa','unidad':'Single item','degustación':'Tasting portion','botella 50 cl':'50 cl bottle'};
  if(Object.hasOwn(remainingLabels,source))return remainingLabels[source];
+ if(source==='precio publicado')return 'Published price';
  if(/^formato (?:no especificado|sin especificar|no indicado)$/i.test(source.trim()))return 'Portion size not specified';
  return source;
 }
