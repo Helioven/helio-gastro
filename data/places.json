@@ -16568,11 +16568,13 @@
     "sources": [
       {
         "label": "Carta general bilingüe con precios · PDF facilitado por el usuario",
-        "url": "https://www.latabernadelrio.com/"
+        "url": "https://www.latabernadelrio.com/",
+        "labelEn": "Bilingual general menu with prices · PDF provided by the user"
       },
       {
         "label": "Menús para grupos 2026 · PDF oficial",
-        "url": "https://www.latabernadelrio.com/wp-content/uploads/2026/01/Menus-2026.pdf"
+        "url": "https://www.latabernadelrio.com/wp-content/uploads/2026/01/Menus-2026.pdf",
+        "labelEn": "2026 group menus · official PDF"
       }
     ],
     "menus": [
