@@ -379,3 +379,8 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 
 - **Taberna La Montillana — REVISADA Y CERRADA / QA visual ES/EN PASS confirmado por Helio.** Se añadió `labelEn` a la fuente de la carta oficial («Official menu — restaurant website») y Helio comprobó la traducción en la aplicación. No se modificaron platos, importes, formatos ni enlaces.
 - Excluir de revisiones ordinarias futuras salvo incidencia, nueva evidencia documental, actualización de carta o petición expresa. El cierre de revisión visual no certifica la vigencia actual de todos los precios ni sustituye la auditoría integral posterior.
+
+### Cierre de revisión — Taberna Salinas (26/10/2026)
+
+- **Taberna Salinas — REVISADA Y CERRADA (26/10/2026), confirmado por Helio.** Helio valida que la ficha está completa y solicita cerrar la revisión ordinaria. No se han modificado platos, precios, traducciones ni fuentes por este registro de cierre.
+- No volver a incluirla entre restaurantes pendientes salvo incidencia, cambio documental o solicitud expresa. El cierre editorial no equivale a certificar disponibilidad ni precios actuales y no sustituye las pruebas de regresión generales.
