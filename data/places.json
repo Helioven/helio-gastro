@@ -13535,15 +13535,18 @@
     "sources": [
       {
         "label": "Carta y cocina tradicional oficiales",
-        "url": "https://lacazueladelaesparteria.es/restaurantes-cordoba/"
+        "url": "https://lacazueladelaesparteria.es/restaurantes-cordoba/",
+        "labelEn": "Official traditional cuisine and menu"
       },
       {
         "label": "Web oficial y ubicación",
-        "url": "https://lacazueladelaesparteria.es/"
+        "url": "https://lacazueladelaesparteria.es/",
+        "labelEn": "Official website and location"
       },
       {
         "label": "Carta general · capturas facilitadas por el usuario (11 imágenes, octubre 2026)",
-        "url": "https://lacazueladelaesparteria.es/"
+        "url": "https://lacazueladelaesparteria.es/",
+        "labelEn": "General menu · screenshots provided by the user (11 images, October 2026)"
       }
     ],
     "menus": [
@@ -14435,7 +14438,9 @@
                 "eur": 24.6,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Acorn-fed Iberian ham (90/150 g)",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Salchichón ibérico (90/130 g)",
@@ -14448,7 +14453,9 @@
                 "eur": 15.7,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Iberian cured salchichón sausage (90/130 g)",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Caña de lomo ibérica (90/130 g)",
@@ -14461,7 +14468,9 @@
                 "eur": 24.6,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Iberian cured pork loin (90/130 g)",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Morcilla ibérica de bellota (100/150 g)",
@@ -14474,7 +14483,9 @@
                 "eur": 15.7,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Acorn-fed Iberian blood sausage (100/150 g)",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Chicharrones de Cádiz",
@@ -14487,7 +14498,9 @@
                 "eur": 15.4,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Cádiz-style pork chicharrones",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Surtido ibérico (jamón, salchichón, morcilla, caña de lomo)",
@@ -14500,9 +14513,12 @@
                 "eur": 28.2,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Assorted Iberian cured meats (ham, salchichón, blood sausage and cured loin)",
+            "es": "Disponible en media ración y ración según la carta."
           }
-        ]
+        ],
+        "titleEn": "Iberian cured meats"
       },
       {
         "title": "La Quesería",
@@ -14518,7 +14534,9 @@
                 "eur": 17.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Manchego cheese (75/165 g)",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Queso curado Calaveruela (75/165 g)",
@@ -14531,7 +14549,9 @@
                 "eur": 19,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Aged Calaveruela cheese (75/165 g)",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Queso de cabra Payoyo (75/165 g)",
@@ -14544,7 +14564,9 @@
                 "eur": 19,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Payoyo goat's cheese (75/165 g)",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Queso manchego a la trufa (75/165 g)",
@@ -14557,7 +14579,9 @@
                 "eur": 17.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Truffle Manchego cheese (75/165 g)",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Surtido de quesos (Calaveruela, Payoyo, manchego a la trufa, rulo de cabra y Maasdam)",
@@ -14570,9 +14594,12 @@
                 "eur": 29.6,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Assorted cheeses (Calaveruela, Payoyo, truffle Manchego, goat's cheese log and Maasdam)",
+            "es": "Disponible en media ración y ración según la carta."
           }
-        ]
+        ],
+        "titleEn": "Cheeses"
       },
       {
         "title": "Para empezar",
@@ -14592,7 +14619,9 @@
                 "eur": 11.7,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Cordoban salmorejo",
+            "es": "Disponible en tapa y media ración y ración según la carta."
           },
           {
             "name": "Mazamorra",
@@ -14609,7 +14638,9 @@
                 "eur": 12.7,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Mazamorra, a traditional Cordoban cold cream",
+            "es": "Disponible en tapa y media ración y ración según la carta."
           },
           {
             "name": "Ensalada de pollo",
@@ -14626,7 +14657,9 @@
                 "eur": 12.6,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Chicken salad",
+            "es": "Disponible en tapa y media ración y ración según la carta."
           },
           {
             "name": "Ensalada de pimientos con atún en manteca",
@@ -14635,7 +14668,9 @@
                 "eur": 16.1,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Pepper salad with tuna preserved in lard",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Ensaladilla rusa",
@@ -14652,7 +14687,9 @@
                 "eur": 10.6,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Spanish-style potato salad (ensaladilla rusa)",
+            "es": "Disponible en tapa y media ración y ración según la carta."
           },
           {
             "name": "Asadillo de pimientos",
@@ -14669,7 +14706,9 @@
                 "eur": 10.6,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Roasted pepper salad",
+            "es": "Disponible en tapa y media ración y ración según la carta."
           },
           {
             "name": "Salpicón de marisco",
@@ -14686,7 +14725,9 @@
                 "eur": 14.3,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Seafood salad",
+            "es": "Disponible en tapa y media ración y ración según la carta."
           },
           {
             "name": "Papas aliñás a nuestro estilo",
@@ -14699,7 +14740,9 @@
                 "eur": 16.9,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "House-style seasoned potatoes",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Ensalada mixta",
@@ -14708,7 +14751,9 @@
                 "eur": 11.15,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Mixed salad",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Ensalada de salmón marinado con vinagreta de trufa blanca",
@@ -14717,7 +14762,9 @@
                 "eur": 16.2,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Marinated salmon salad with white-truffle vinaigrette",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Tartar de atún",
@@ -14726,7 +14773,9 @@
                 "eur": 18.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Tuna tartare",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Tomate con melva",
@@ -14735,7 +14784,9 @@
                 "eur": 14.4,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Tomato with frigate tuna (melva)",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Montaditos de pringá (3 uds.)",
@@ -14744,9 +14795,12 @@
                 "eur": 5.4,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Pringá mini sandwiches (3 pieces)",
+            "es": "Disponible en ración según la carta."
           }
-        ]
+        ],
+        "titleEn": "Starters"
       },
       {
         "title": "De la gallina",
@@ -14762,7 +14816,9 @@
                 "eur": 12.2,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "House-style scrambled eggs",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Revuelto de berenjenas y gambas",
@@ -14775,7 +14831,9 @@
                 "eur": 12.2,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Scrambled eggs with aubergines and prawns",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Revuelto del cortijo",
@@ -14788,7 +14846,9 @@
                 "eur": 12.8,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Country-style scrambled eggs",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Revuelto de setas con jamón",
@@ -14801,7 +14861,9 @@
                 "eur": 11.4,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Scrambled eggs with mushrooms and ham",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Bacalao dorado",
@@ -14814,7 +14876,9 @@
                 "eur": 13.4,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Bacalao dorado, cod with eggs and potatoes",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Habitas foie",
@@ -14827,7 +14891,9 @@
                 "eur": 12.8,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Baby broad beans with foie gras",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Huevos con foie",
@@ -14836,7 +14902,9 @@
                 "eur": 17.2,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Eggs with foie gras",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Espinacas esparragadas con huevo escalfado",
@@ -14849,7 +14917,9 @@
                 "eur": 12.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Esparragadas-style spinach with poached egg",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Boletus al oloroso con jamón, huevo pochado y AOVE de trufa",
@@ -14858,7 +14928,9 @@
                 "eur": 18.6,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Boletus mushrooms with oloroso sherry, poached egg and truffle extra-virgin olive oil",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Borrajas esparragadas (2 pax.)",
@@ -14867,7 +14939,9 @@
                 "eur": 19.8,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Esparragadas-style borage (for 2)",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Huevos ibéricos",
@@ -14880,7 +14954,9 @@
                 "eur": 20.65,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Iberian-style eggs",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Gambusi con huevos fritos y pimientos asados",
@@ -14889,9 +14965,12 @@
                 "eur": 16.1,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Gambusi with fried eggs and roasted peppers",
+            "es": "Disponible en ración según la carta."
           }
-        ]
+        ],
+        "titleEn": "Egg dishes"
       },
       {
         "title": "Los fritos de Carlitos",
@@ -14907,7 +14986,9 @@
                 "eur": 13.2,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Fried aubergines",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Berenjenas fritas con miel de flores",
@@ -14920,7 +15001,9 @@
                 "eur": 13.6,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Fried aubergines with flower honey",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Croquetas de cocido",
@@ -14933,7 +15016,9 @@
                 "eur": 11.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Traditional stew croquettes",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Croquetas de bacalao",
@@ -14946,7 +15031,9 @@
                 "eur": 12,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Cod croquettes",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Croquetas de morcilla",
@@ -14959,7 +15046,9 @@
                 "eur": 12,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Blood sausage croquettes",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Croquetas de carrillada ibérica",
@@ -14972,7 +15061,9 @@
                 "eur": 12.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Iberian pork cheek croquettes",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Patatas rellenas de carne y mostaza",
@@ -14985,7 +15076,9 @@
                 "eur": 11.3,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Meat-stuffed potatoes with mustard",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Mejillón relleno",
@@ -14994,7 +15087,9 @@
                 "eur": 2.4,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Stuffed mussel",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Flamenquín cordobés",
@@ -15003,7 +15098,9 @@
                 "eur": 18,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Cordoban flamenquín",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Torreznos",
@@ -15012,7 +15109,9 @@
                 "eur": 12.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Crispy pork belly (torreznos)",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Pechuga al limón",
@@ -15025,7 +15124,9 @@
                 "eur": 11.3,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Lemon chicken breast",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Gambas fritas",
@@ -15038,7 +15139,9 @@
                 "eur": 12.7,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Fried prawns",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Bacalao frito",
@@ -15051,7 +15154,9 @@
                 "eur": 12.7,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Fried cod",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Boquerones fritos",
@@ -15060,7 +15165,9 @@
                 "eur": 12,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Fried anchovies",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Pavía de bacalao",
@@ -15073,7 +15180,9 @@
                 "eur": 14,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Cod pavía fritter",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Choco frito",
@@ -15086,7 +15195,9 @@
                 "eur": 12.3,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Fried cuttlefish",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Mero en adobo",
@@ -15099,7 +15210,9 @@
                 "eur": 12,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Marinated fried grouper",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Japuta en adobo",
@@ -15112,7 +15225,9 @@
                 "eur": 12,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Marinated fried Atlantic pomfret (japuta)",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Lubina frita",
@@ -15121,7 +15236,9 @@
                 "eur": 16,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Fried sea bass",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Fritura variada",
@@ -15134,9 +15251,12 @@
                 "eur": 20.8,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Assorted fried seafood and fish",
+            "es": "Disponible en media ración y ración según la carta."
           }
-        ]
+        ],
+        "titleEn": "Carlitos's fried specialties"
       },
       {
         "title": "Entre Plancha y Brasa",
@@ -15152,7 +15272,9 @@
                 "eur": 12.2,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Grilled baby squid",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Solomillo ibérico a la brasa",
@@ -15161,7 +15283,9 @@
                 "eur": 19.4,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Chargrilled Iberian pork tenderloin",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Solomillo ibérico al roquefort",
@@ -15170,7 +15294,9 @@
                 "eur": 20.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Iberian pork tenderloin with Roquefort sauce",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Puntas de solomillo ibérico",
@@ -15183,7 +15309,9 @@
                 "eur": 14.8,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Iberian pork tenderloin tips",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Chuletitas de cordero lechal",
@@ -15192,7 +15320,9 @@
                 "eur": 19.8,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Milk-fed lamb cutlets",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Presa ibérica a la brasa",
@@ -15201,7 +15331,9 @@
                 "eur": 19.8,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Chargrilled Iberian presa",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Lagarto ibérico al ajillo",
@@ -15210,11 +15342,15 @@
                 "eur": 17.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Iberian pork lagarto cut with garlic",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Entrecot «del Valle del Esla» (precio según peso; consultar)",
-            "prices": []
+            "prices": [],
+            "en": "Valle del Esla entrecôte (priced by weight; ask for details)",
+            "es": "Especialidad incluida en la carta; consulte las condiciones del establecimiento."
           },
           {
             "name": "Solomillo ibérico al P.X.",
@@ -15223,7 +15359,9 @@
                 "eur": 17,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Iberian pork tenderloin with Pedro Ximénez sauce",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Secreto de Angus a la brasa",
@@ -15232,9 +15370,12 @@
                 "eur": 22,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Chargrilled Angus secreto cut",
+            "es": "Disponible en ración según la carta."
           }
-        ]
+        ],
+        "titleEn": "Grilled dishes"
       },
       {
         "title": "Nuestros fogones",
@@ -15250,7 +15391,9 @@
                 "eur": 12.2,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Cordoban-style pisto vegetable stew",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Risotto de presa y hongos con AOVE de trufa",
@@ -15259,7 +15402,9 @@
                 "eur": 17.2,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Risotto with Iberian presa, mushrooms and truffle extra-virgin olive oil",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Bacalao a la vizcaína",
@@ -15268,7 +15413,9 @@
                 "eur": 17.2,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Biscay-style cod",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Lomo de orza con torta de Zújar",
@@ -15277,7 +15424,9 @@
                 "eur": 18.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Lomo de orza with Torta de Zújar cheese",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Lomo a la crema de setas",
@@ -15286,7 +15435,9 @@
                 "eur": 15.2,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Pork loin with mushroom cream sauce",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Carrillada ibérica",
@@ -15299,7 +15450,9 @@
                 "eur": 14,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Braised Iberian pork cheeks",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Albóndigas con setas",
@@ -15312,7 +15465,9 @@
                 "eur": 13.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Meatballs with mushrooms",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Ternera a la miel",
@@ -15325,7 +15480,9 @@
                 "eur": 12.2,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Beef with honey",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Rabo de toro",
@@ -15338,7 +15495,9 @@
                 "eur": 17.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Traditional oxtail stew",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Venado en salsa",
@@ -15347,11 +15506,15 @@
                 "eur": 13.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Venison in sauce",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Guiso del día (según guiso)",
-            "prices": []
+            "prices": [],
+            "en": "Stew of the day (varies by dish)",
+            "es": "Especialidad incluida en la carta; consulte las condiciones del establecimiento."
           },
           {
             "name": "Albóndigas de atún con wakame frito",
@@ -15360,9 +15523,12 @@
                 "eur": 16.4,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Tuna meatballs with fried wakame",
+            "es": "Disponible en ración según la carta."
           }
-        ]
+        ],
+        "titleEn": "From our kitchen"
       },
       {
         "title": "Nuestros clásicos",
@@ -15378,7 +15544,9 @@
                 "eur": 12.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Corderfrito, fried lamb",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Berenjenas con salmón",
@@ -15391,7 +15559,9 @@
                 "eur": 13.8,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Aubergines with salmon",
+            "es": "Disponible en media ración y ración según la carta."
           },
           {
             "name": "Berenjenas a la Cazuela",
@@ -15400,7 +15570,9 @@
                 "eur": 15.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "House-style aubergines",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Alcachofas con rabo de toro",
@@ -15413,9 +15585,12 @@
                 "eur": 19.2,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Artichokes with oxtail",
+            "es": "Disponible en media ración y ración según la carta."
           }
-        ]
+        ],
+        "titleEn": "Our classics"
       },
       {
         "title": "De la Confi del Abuelo",
@@ -15427,7 +15602,9 @@
                 "eur": 6,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Slice of cake (choice of cheesecake, chocolate cake or tiramisu)",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Tocino de cielo",
@@ -15436,7 +15613,9 @@
                 "eur": 6,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Tocino de cielo, traditional egg-yolk custard",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Pastel cordobés",
@@ -15445,7 +15624,9 @@
                 "eur": 6,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Pastel cordobés, traditional Cordoban pastry",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Postre de la casa",
@@ -15454,7 +15635,9 @@
                 "eur": 6,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "House dessert",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Leche frita, brownie",
@@ -15463,7 +15646,9 @@
                 "eur": 6.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Fried milk pudding or brownie",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Fruta del tiempo",
@@ -15472,7 +15657,9 @@
                 "eur": 5.5,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Seasonal fruit",
+            "es": "Disponible en ración según la carta."
           },
           {
             "name": "Surtido de postres de temporada",
@@ -15481,9 +15668,12 @@
                 "eur": 16,
                 "portion": "Ración"
               }
-            ]
+            ],
+            "en": "Assortment of seasonal desserts",
+            "es": "Disponible en ración según la carta."
           }
-        ]
+        ],
+        "titleEn": "Desserts"
       }
     ],
     "menuSourceNote": "Carta general transcrita a partir de 11 capturas suministradas por el usuario el 16/10/2026. Precios por tapa, media ración y ración, sin inventar tamaños faltantes. Entrecot del Valle del Esla: S/P (según peso); guiso del día: precio variable según guiso. En primera planta no se sirve formato tapa. Menús especiales o de grupo pendientes de recibir. No se incorporan imágenes de terceros. Los importes requieren confirmación de vigencia con el restaurante.",
@@ -15537,7 +15727,20 @@
         "dessert": "Surtido de dulce fino",
         "drinks": "Fino de la casa, verdejo «Coto de Haya», tinto RD «Monteabellón», refrescos, agua y cerveza.",
         "conditions": "Precio por persona con IVA incluido. Consultar condiciones de salones. Bebida del menú desde que estén todos los comensales; consumiciones anteriores aparte; finaliza tras el postre. Número de comensales confirmado tres días antes y cobrado según el número indicado. Indicar alergias/intolerancias antes de reservar. Salones asignados según necesidades y sujetos a cambios.",
-        "sourceDocument": "Captura menú Navidad 1, aportada 16/10/2026"
+        "sourceDocument": "Captura menú Navidad 1, aportada 16/10/2026",
+        "nameEn": "Christmas Menu 1 · seated",
+        "sharedEn": [
+          "Iberian ham and Manchego cheese platter",
+          "Spanish-style potato salad",
+          "Anchovies on brioche with Calaveruela butter",
+          "Fried pig's ear",
+          "Assorted fried fish",
+          "Small glass prawns with fried eggs and pepper salad",
+          "Traditional stew croquettes",
+          "Tuna bites with onion",
+          "Roasted beef rib with Pedro Ximénez sauce"
+        ],
+        "dessertEn": "Assorted traditional sweets"
       },
       {
         "name": "Menú 2 Navidad · mesa",
@@ -15560,7 +15763,23 @@
         "dessert": "Surtido de dulce fino",
         "drinks": "Fino de la casa, verdejo «Coto de Haya», tinto RD «Monteabellón», refrescos, agua y cerveza.",
         "conditions": "Precio por persona con IVA incluido. Consultar condiciones de salones. Bebida del menú desde que estén todos los comensales; consumiciones anteriores aparte; finaliza tras el postre. Número de comensales confirmado tres días antes y cobrado según el número indicado. Indicar alergias/intolerancias antes de reservar. Salones asignados según necesidades y sujetos a cambios.",
-        "sourceDocument": "Captura menú Navidad 2, aportada 16/10/2026"
+        "sourceDocument": "Captura menú Navidad 2, aportada 16/10/2026",
+        "nameEn": "Christmas Menu 2 · seated",
+        "sharedEn": [
+          "Iberian cured meat and cheese assortment (ham, salchichón, cured loin and Manchego cheese)",
+          "Individual partridge salad",
+          "Individual mazamorra with smoked sardine and anchovy roe",
+          "Crispy pork belly",
+          "Garlic eggs with king prawns",
+          "Assorted fried fish"
+        ],
+        "choiceEn": [
+          "Tuna meatballs with crispy wakame",
+          "Biscay-style cod",
+          "Beef rib with Pedro Ximénez sauce",
+          "Iberian pork tenderloin"
+        ],
+        "dessertEn": "Assorted traditional sweets"
       },
       {
         "name": "Menú 1 Navidad · cóctel de pie",
@@ -15585,7 +15804,24 @@
         "dessert": "Bombones helados",
         "drinks": "Fino de la casa, verdejo «Coto de Haya», tinto RD «Monteabellón», refrescos, agua y cerveza.",
         "conditions": "Precio por persona con IVA incluido. Consultar condiciones de salones. Bebida del menú desde que estén todos los comensales; consumiciones anteriores aparte; finaliza tras el postre. Número de comensales confirmado tres días antes y cobrado según el número indicado. Indicar alergias/intolerancias antes de reservar. Salones asignados según necesidades y sujetos a cambios.",
-        "sourceDocument": "Captura cóctel Navidad 1, aportada 16/10/2026"
+        "sourceDocument": "Captura cóctel Navidad 1, aportada 16/10/2026",
+        "nameEn": "Christmas Menu 1 · standing cocktail",
+        "sharedEn": [
+          "Iberian cured meat and cheese assortment (ham, salchichón, cured loin and Manchego cheese)",
+          "Bowl of Cordoban salmorejo",
+          "Crispy Spanish-style potato salad",
+          "Anchovies on brioche with Calaveruela butter",
+          "Mini traditional stew croquettes",
+          "Seafood skewers",
+          "Pringá mini sandwiches",
+          "Tuna meatballs with crispy wakame",
+          "Cochinita pork tacos"
+        ],
+        "choiceEn": [
+          "Rice with Iberian pork cheeks",
+          "Oxtail fideuá"
+        ],
+        "dessertEn": "Ice-cream bonbons"
       },
       {
         "name": "Menú 2 Navidad · cóctel de pie",
@@ -15608,7 +15844,23 @@
         "dessert": "Tarta de la casa",
         "drinks": "Fino de la casa, verdejo «Coto de Haya», tinto RD «Monteabellón», refrescos, agua y cerveza.",
         "conditions": "Precio por persona con IVA incluido. Consultar condiciones de salones. Bebida del menú desde que estén todos los comensales; consumiciones anteriores aparte; finaliza tras el postre. Número de comensales confirmado tres días antes y cobrado según el número indicado. Indicar alergias/intolerancias antes de reservar. Salones asignados según necesidades y sujetos a cambios.",
-        "sourceDocument": "Captura cóctel Navidad 2, aportada 16/10/2026"
+        "sourceDocument": "Captura cóctel Navidad 2, aportada 16/10/2026",
+        "nameEn": "Christmas Menu 2 · standing cocktail",
+        "sharedEn": [
+          "Iberian cured meat and cheese assortment (ham, salchichón, cured loin and Manchego cheese)",
+          "Bowl of Cordoban salmorejo",
+          "Crispy Spanish-style potato salad",
+          "Anchovies on brioche with Calaveruela butter",
+          "Mini traditional stew croquettes",
+          "Seafood skewers",
+          "Pringá mini sandwiches",
+          "Teriyaki skewers",
+          "Tuna meatballs with crispy wakame",
+          "Cochinita pork tacos",
+          "Spinach pastries",
+          "Individual Iberian pork mogote with potato parmentier"
+        ],
+        "dessertEn": "House cake"
       }
     ],
     "groupMenuSourceNote": "Cuatro menús de Navidad transcritos de capturas facilitadas por el usuario el 16/10/2026. No figura año específico de celebración ni período exacto de validez; confirmar disponibilidad y precio con el establecimiento. IVA incluido. Teléfono de reservas 957 488 952; email lacazueladelaesparteria@hotmail.com. No se utilizan imágenes de terceros."
