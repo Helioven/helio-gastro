@@ -4290,7 +4290,8 @@
     "sources": [
       {
         "label": "Referencia pública de Gran Capitán (sin carta oficial verificable)",
-        "url": "https://es.restaurantguru.com/El-Poema-Tabern-Cordoba-Andalusia"
+        "url": "https://es.restaurantguru.com/El-Poema-Tabern-Cordoba-Andalusia",
+        "labelEn": "Public reference for Gran Capitán (no verifiable official menu)"
       }
     ],
     "menus": [
