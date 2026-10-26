@@ -127,7 +127,7 @@ window.GASTRO_I18N = Object.freeze({
   let language='es';
   const normalize=s=>s.trim().replace(/\s+/g,' ');
   function translateText(node){
-    if(!node || !node.parentElement || node.parentElement.closest('script,style,textarea,option[data-keep-original],#language-select,[data-keep-dish-spanish]'))return;
+    if(!node || !node.parentElement || node.parentElement.closest('script,style,textarea,option[data-keep-original],#language-select,[data-keep-dish-spanish],[data-bilingual-es]'))return;
     if(!originalNodes.has(node))originalNodes.set(node,node.nodeValue);
     const original=originalNodes.get(node);
     const match=original.match(/^(\s*)([\s\S]*?)(\s*)$/);
@@ -162,6 +162,10 @@ window.GASTRO_I18N = Object.freeze({
     const select=document.getElementById('language-select');
     if(select && select.value!==language)select.value=language;
     translateElement(document.body);
+    for(const element of document.querySelectorAll('[data-bilingual-es]')){
+      const translated=language==='en'?element.dataset.bilingualEn:element.dataset.bilingualEs;
+      if(translated!==undefined && element.textContent!==translated)element.textContent=translated;
+    }
     if(typeof window.HelioGastroRefreshExplanations==='function')window.HelioGastroRefreshExplanations();
     try{localStorage.setItem(KEY,language)}catch(e){}
   }
@@ -186,7 +190,11 @@ window.GASTRO_I18N = Object.freeze({
         }else{
           for(const node of record.addedNodes){
             if(node.nodeType===Node.TEXT_NODE)translateText(node);
-            else if(node.nodeType===Node.ELEMENT_NODE)translateElement(node);
+            else if(node.nodeType===Node.ELEMENT_NODE){
+              translateElement(node);
+              const bilingual=[...(node.matches?.('[data-bilingual-es]')?[node]:[]),...(node.querySelectorAll?.('[data-bilingual-es]')||[])];
+              for(const element of bilingual){const value=language==='en'?element.dataset.bilingualEn:element.dataset.bilingualEs;if(value!==undefined && element.textContent!==value)element.textContent=value;}
+            }
           }
         }
       }
