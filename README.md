@@ -346,3 +346,10 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - **Corrección de alcance:** se retiraron las 31 entradas de bebidas que se habían añadido por error. Conforme a la decisión editorial de Helio, **las bebidas quedan fuera de la aplicación**, también de las fichas, no solo del comparador.
 - Quedan documentadas las divergencias entre fuentes. Los tamaños indicados en el listado de Google no permiten asignar un importe concreto a cada formato. No modificar la ficha distinta de Gran Capitán, 29, ni atribuir a esta última los precios de Alonso de Burgos.
 - **QA de datos ejecutado:** JSON válido tras corrección, 43 restaurantes conservados, 11 secciones de comida en esta ficha y 27 precios alimentarios de Google añadidos. **QA visual ES/EN aún pendiente; NO marcar como PASS o cierre editorial hasta la comprobación de Helio.**
+
+### Contraste documental — El Poema · Gran Capitán (26/10/2026)
+
+- Contrastado el listado de carta procedente de la consulta de Google Maps facilitado por Helio con `taberna-el-poema-gran-capitan`: las cuatro secciones coinciden (**25 tapas calientes, 12 tapas frías, 9 entradas de menú del día y 10 entrantes; 56 apariciones, 55 nombres diferentes** por repetirse «Ensaladilla rusa»).
+- Las entradas de «At a Glance» son resúmenes duplicados y no se incorporan como nuevos platos. Se conservan las denominaciones abreviadas «Pollo Salsa» y «Pechuga Empan» sin completar ingredientes por inferencia.
+- **Sin modificación de platos ni importes**: los precios siguen desconocidos (`dishPrices: []`), no existe comprobación de vigencia ni carta oficial contrastada. Se conserva la separación estricta respecto a Alonso de Burgos. La URL registrada de Restaurant Guru es referencia del establecimiento, no acreditación de que sea el origen del menú remitido por Helio.
+- **Resultado del contraste de datos: PASS** respecto al listado facilitado. **QA visual ES/EN y cierre editorial: pendientes de confirmación de Helio**; no confundir la cobertura de la transcripción con verificación externa de disponibilidad actual.
