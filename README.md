@@ -404,3 +404,8 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 
 - **Taberna Góngora — REVISADA Y CERRADA (26/10/2026), validación confirmada por Helio.** Helio confirma que la ficha está correcta y solicita cerrar su revisión ordinaria. No se modificaron platos, precios, traducciones ni fuentes por registrar este cierre.
 - Excluir de futuras revisiones ordinarias salvo incidencia concreta, nueva documentación o solicitud expresa. El cierre editorial no supone verificación independiente de vigencia de precios y no sustituye las pruebas generales de regresión.
+
+### Cierre de revisión — Taberna San Miguel · El Pisto (26/10/2026)
+
+- **Taberna San Miguel · El Pisto — REVISADA Y CERRADA (26/10/2026), validación confirmada por Helio.** La ficha ha sido aprobada para cerrar su revisión ordinaria. No se han modificado datos gastronómicos, precios, traducciones ni fuentes por registrar este cierre.
+- Excluir de próximas revisiones ordinarias salvo nueva documentación, incidencia concreta o petición expresa. Este cierre editorial no implica verificación independiente de vigencia de precios ni sustituye la auditoría general y pruebas de regresión pendientes.
