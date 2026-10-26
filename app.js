@@ -228,6 +228,7 @@ function venueMenuPriceLabel(source,english){
  if(source==='combinado')return english?'Breakfast combo (drink + food)':'Desayuno combinado';
  if(!english)return source;
  if(source==='Just Eat · reparto · formato no especificado')return 'Just Eat · delivery · portion size unspecified';
+ if(source==='Google · listado aportado · formato sin confirmar')return 'Google · user-supplied listing · portion size unconfirmed';
  if(source==='Media ración · precio de carta 2024')return 'Half portion · 2024 menu price';
  if(source==='Ración · precio de carta 2024')return 'Full portion · 2024 menu price';
  if(source==='Unidad · precio de carta 2024')return 'Single item · 2024 menu price';
