@@ -835,28 +835,28 @@ function showPlace(p,scroll=true){
  el('detail-sticky-name').textContent=p.name;
  const panel=el('detail-content');panel.replaceChildren();
  const title=document.createElement('h2');title.id='detail-title';title.tabIndex=-1;title.textContent=p.name;panel.append(title,favoriteButton(p));
- const address=document.createElement('p');address.textContent='📍 '+p.address;panel.append(address);
+ const address=document.createElement('p');if(p.addressEn){address.dataset.bilingualEs='📍 '+p.address;address.dataset.bilingualEn='📍 '+p.addressEn;}address.textContent='📍 '+p.address;panel.append(address);
  if(p.openingHoursNote){
   const hours=document.createElement('p');hours.className='service-notice';
   hours.textContent='🕒 '+p.openingHoursNote;panel.append(hours);
  }
 
  if(Array.isArray(p.locations)&&p.locations.length){
-  const heading=document.createElement('h3');heading.textContent='📍 Establecimientos de Roldán en Córdoba';panel.append(heading);
-  const note=document.createElement('p');note.className='service-notice';note.textContent='La carta y los precios indicados corresponden a las cafeterías, excepto Centro. Las panaderías se listan solo como ubicaciones; su oferta puede ser diferente.';panel.append(note);
+  const heading=document.createElement('h3');heading.dataset.bilingualEs='📍 Establecimientos de Roldán en Córdoba';heading.dataset.bilingualEn='📍 Roldán locations in Córdoba';heading.textContent=heading.dataset.bilingualEs;panel.append(heading);
+  const note=document.createElement('p');note.className='service-notice';note.dataset.bilingualEs='La carta y los precios indicados corresponden a las cafeterías, excepto Centro. Las panaderías se listan solo como ubicaciones; su oferta puede ser diferente.';note.dataset.bilingualEn='The menu and prices shown apply to the cafés, except Centro. Bakeries are listed as locations only; their selection may differ.';note.textContent=note.dataset.bilingualEs;panel.append(note);
   const list=document.createElement('ul');
   for(const place of p.locations){
    const item=document.createElement('li');
    const type=place.type==='panadería'?'Panadería':'Cafetería';
    const link=document.createElement('a');link.textContent=place.name+' · '+place.address;link.href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(place.address);link.target='_blank';link.rel='noopener noreferrer';
-   item.append(document.createTextNode(type+': '),link);list.append(item);
+   const typeLabel=document.createElement('span');typeLabel.dataset.bilingualEs=type+': ';typeLabel.dataset.bilingualEn=(place.type==='panadería'?'Bakery':'Café')+': ';typeLabel.textContent=typeLabel.dataset.bilingualEs;item.append(typeLabel,link);list.append(item);
   }
   panel.append(list);
  }else{
   panel.append(mapButton(p));
   const map=document.createElement('a');map.href=placeMapUrl(p);map.target='_blank';map.rel='noopener noreferrer';map.textContent='Abrir en Google Maps ↗';panel.append(map);
  }
- if(p.menuPriceNotice){const notice=document.createElement('p');notice.className='service-notice';notice.textContent=p.menuPriceNotice;panel.append(notice);}
+ if(p.menuPriceNotice){const notice=document.createElement('p');notice.className='service-notice';if(p.menuPriceNoticeEn){notice.dataset.bilingualEs=p.menuPriceNotice;notice.dataset.bilingualEn=p.menuPriceNoticeEn;}notice.textContent=p.menuPriceNotice;panel.append(notice);}
  if(Array.isArray(p.officialSetMenus)&&p.officialSetMenus.length){
   for(const menu of p.officialSetMenus){
     const section=document.createElement('section');section.className='menu-dish';
