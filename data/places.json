@@ -11462,7 +11462,8 @@
       },
       {
         "label": "Carta del restaurante transcrita por el usuario, con precios publicados",
-        "url": "https://restaurantecordoba.com/"
+        "url": "https://restaurantecordoba.com/",
+        "labelEn": "Restaurant menu transcribed by the user, with published prices"
       }
     ],
     "menus": [
@@ -12653,7 +12654,8 @@
               }
             ]
           }
-        ]
+        ],
+        "noteEn": "Additional items; these are not main dishes."
       }
     ],
     "menuSourceNote": "Cinco secciones gastronómicas, 64 referencias y 3 extras transcritos por el usuario de la web del establecimiento (16/10/2026). Bebidas excluidas deliberadamente. Precios publicados en la fuente facilitada, vigencia actual no verificada independientemente. Descripciones ES/EN editoriales, no certificación de alérgenos. Discrepancia en bienmesabe: cazón en nombre, japuta en imagen. Algunas menciones de ingredientes proceden de pies/nombres de imágenes. Jamón ibérico de bellota pendiente de confirmar."
