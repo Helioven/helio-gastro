@@ -442,3 +442,9 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 
 - **La Piscatoria — REVISADA Y CERRADA (26/10/2026), confirmación editorial de Helio.** Helio indica que la ficha puede darse por cerrada. No se modificaron platos, precios, formatos, traducciones ni fuentes por registrar este cierre.
 - **Control de pendientes:** excluir La Piscatoria de revisiones ordinarias futuras salvo nueva documentación, incidencia o solicitud expresa. No se atribuye un QA técnico nuevo ni una verificación independiente de vigencia de precios; las pruebas generales de regresión siguen pendientes para la fase de auditoría.
+
+### Cierre de revisión — D'Tapas COVAP Córdoba (26/10/2026)
+
+- **D'Tapas COVAP Córdoba — REVISADA Y CERRADA / QA visual ES/EN confirmado por Helio el 26/10/2026.** Se incorporó la traducción `labelEn` de la fuente «Carta oficial D'Tapas COVAP Córdoba completa» como «Complete official D'Tapas COVAP Córdoba menu». Helio comprobó el cambio y confirmó que la ficha está correcta.
+- No se modificaron platos, importes, formatos ni enlaces; el JSON siguió siendo válido con 43 establecimientos. Este cierre editorial no equivale a una nueva comprobación independiente de vigencia de precios.
+- **Control de pendientes:** excluir D'Tapas COVAP Córdoba de revisiones ordinarias futuras salvo incidencia, actualización documental o petición expresa. Las pruebas generales de regresión siguen pendientes de la fase de auditoría.
