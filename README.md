@@ -414,3 +414,8 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 
 - **Taberna Sociedad de Plateros · San Francisco — REVISADA Y CERRADA (26/10/2026), validación confirmada por Helio.** Helio confirma que la ficha está lista y solicita cerrar su revisión ordinaria. No se han modificado platos, precios, fuentes ni traducciones por este cierre.
 - Excluir de futuras revisiones ordinarias salvo incidencia, nueva fuente o solicitud expresa. El cierre editorial no acredita vigencia actual de precios ni sustituye las pruebas generales de regresión.
+
+### Cierre de revisión — Sociedad Plateros · María Auxiliadora (26/10/2026)
+
+- **Sociedad Plateros · María Auxiliadora — REVISADA Y CERRADA (26/10/2026), validación editorial confirmada por Helio.** Helio confirma que la ficha puede darse por cerrada tras su revisión. Excluir de próximas revisiones ordinarias salvo incidencia, nueva documentación o solicitud expresa.
+- El cierre no implica una nueva verificación independiente de precios o disponibilidad ni certifica pruebas técnicas o de regresión no ejecutadas. **Siguiente ficha a revisar: Taberna El Nº 10 (Romero, 10), pendiente de comprobación de Helio; no cerrada.**
