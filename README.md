@@ -425,3 +425,9 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - **Taberna El Nº 10 (Romero, 10) — REVISADA Y CERRADA / QA visual ES/EN confirmado por Helio el 26/10/2026.** Se añadieron las traducciones inglesas `labelEn` de las tres fuentes de la ficha (cocina y especialidades, carta PDF y contacto). Helio revisó la aplicación tras el cambio y confirmó que se visualiza correctamente.
 - No se alteraron platos, precios, formatos ni enlaces. El JSON se validó tras el cambio con 43 establecimientos conservados. La carta PDF incluye una referencia a septiembre de 2025 en su URL, sin que ello acredite vigencia actual.
 - **Control de pendientes:** excluir la taberna de nuevas revisiones ordinarias salvo incidencia, actualización documental o petición expresa. El cierre no sustituye la auditoría integral ni las futuras pruebas de regresión.
+
+### Cierre de revisión — La Cazuela de la Espartería (26/10/2026)
+
+- **La Cazuela de la Espartería — REVISADA Y CERRADA / QA visual ES/EN PASS confirmado por Helio el 26/10/2026.** Tras revisar la ficha, se incorporaron descripciones para 89 platos, títulos bilingües de sus nueve secciones, traducciones de los platos de cuatro menús navideños, traducciones de tres etiquetas de fuentes y títulos ingleses de los menús de grupo. Helio confirma que la visualización resultante es correcta.
+- **Alcance del cambio:** no se modificaron importes, formatos ni enlaces. Las descripciones no incorporan ingredientes no documentados. Los precios y la vigencia de los menús siguen sujetos a las reservas documentales ya indicadas en la ficha.
+- **Control de pendientes:** excluir de revisiones ordinarias futuras salvo incidencia, nueva documentación o petición expresa. La aprobación visual no sustituye la auditoría integral ni las pruebas de regresión posteriores.
