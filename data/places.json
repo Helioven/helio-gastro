@@ -48156,6 +48156,219 @@
           }
         ]
       }
+    ],
+    "menuSections": [
+      {
+        "title": "Perritos",
+        "titleEn": "Hot dogs",
+        "items": [
+          {
+            "name": "Perrito con salsa",
+            "es": "Perrito caliente acompañado de salsa.",
+            "en": "Hot dog served with sauce.",
+            "prices": [
+              {
+                "eur": 1.3,
+                "portion": "unidad"
+              }
+            ]
+          },
+          {
+            "name": "Perrito con bacon y salsa",
+            "es": "Perrito caliente con bacon y salsa.",
+            "en": "Hot dog with bacon and sauce.",
+            "prices": [
+              {
+                "eur": 1.6,
+                "portion": "unidad"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bocadillos",
+        "titleEn": "Sandwiches",
+        "items": [
+          {
+            "name": "Bocadillo de aceite, tomate y jamón",
+            "es": "Bocadillo con aceite, tomate y jamón.",
+            "en": "Sandwich with olive oil, tomato and cured ham.",
+            "prices": [
+              {
+                "eur": 4.8,
+                "portion": "unidad"
+              }
+            ]
+          },
+          {
+            "name": "Bocadillo de tortilla y mayonesa",
+            "es": "Bocadillo de tortilla y mayonesa.",
+            "en": "Sandwich with Spanish omelette and mayonnaise.",
+            "prices": [
+              {
+                "eur": 4.8,
+                "portion": "unidad"
+              }
+            ]
+          },
+          {
+            "name": "Bocadillo de bacon, lechuga y BBQ",
+            "es": "Bocadillo de bacon, lechuga y salsa barbacoa.",
+            "en": "Sandwich with bacon, lettuce and BBQ sauce.",
+            "prices": [
+              {
+                "eur": 4.8,
+                "portion": "unidad"
+              }
+            ]
+          },
+          {
+            "name": "Bocadillo de pinchitos y salsa",
+            "es": "Bocadillo de pinchitos con salsa.",
+            "en": "Sandwich with pinchitos and sauce.",
+            "prices": [
+              {
+                "eur": 4.8,
+                "portion": "unidad"
+              }
+            ]
+          },
+          {
+            "name": "Bocadillo de lomo de orza, tomate y lechuga",
+            "es": "Bocadillo de lomo de orza, tomate y lechuga.",
+            "en": "Sandwich with lomo de orza, tomato and lettuce.",
+            "prices": [
+              {
+                "eur": 4.8,
+                "portion": "unidad"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Tostas La Jineta",
+        "titleEn": "La Jineta toasts",
+        "items": [
+          {
+            "name": "Tosta de atún, queso y pimientos del piquillo",
+            "es": "Tosta de atún, queso y pimientos del piquillo.",
+            "en": "Toast with tuna, cheese and piquillo peppers.",
+            "prices": [
+              {
+                "eur": 4.5,
+                "portion": "unidad"
+              }
+            ]
+          },
+          {
+            "name": "Tosta de York y queso",
+            "es": "Tosta de jamón de York y queso.",
+            "en": "Toast with cooked ham and cheese.",
+            "prices": [
+              {
+                "eur": 4.5,
+                "portion": "unidad"
+              }
+            ]
+          },
+          {
+            "name": "Tosta de kebab de pollo",
+            "es": "Tosta de kebab de pollo.",
+            "en": "Toast with chicken kebab.",
+            "prices": [
+              {
+                "eur": 4.5,
+                "portion": "unidad"
+              }
+            ]
+          },
+          {
+            "name": "Tosta de barbacoa, bacon y carne boloñesa",
+            "es": "Tosta con salsa barbacoa, bacon y carne boloñesa.",
+            "en": "Toast with barbecue sauce, bacon and Bolognese-style meat.",
+            "prices": [
+              {
+                "eur": 4.5,
+                "portion": "unidad"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Cazuelitas",
+        "titleEn": "Small dishes",
+        "items": [
+          {
+            "name": "Cazuelita de carne con tomate",
+            "es": "Cazuelita de carne con tomate.",
+            "en": "Small dish of meat in tomato sauce.",
+            "prices": [
+              {
+                "eur": 1.5,
+                "portion": "unidad"
+              }
+            ]
+          },
+          {
+            "name": "Cazuelita de carne al PX",
+            "es": "Cazuelita de carne al Pedro Ximénez.",
+            "en": "Small dish of meat with Pedro Ximénez sauce.",
+            "prices": [
+              {
+                "eur": 1.5,
+                "portion": "unidad"
+              }
+            ]
+          },
+          {
+            "name": "Cazuelita de ensaladilla",
+            "es": "Cazuelita de ensaladilla.",
+            "en": "Small dish of Spanish-style potato salad.",
+            "prices": [
+              {
+                "eur": 1.5,
+                "portion": "unidad"
+              }
+            ]
+          },
+          {
+            "name": "Cazuelita de pollo al ajillo",
+            "es": "Cazuelita de pollo al ajillo.",
+            "en": "Small dish of chicken cooked with garlic.",
+            "prices": [
+              {
+                "eur": 1.5,
+                "portion": "unidad"
+              }
+            ]
+          },
+          {
+            "name": "Cazuelita de salmorejo con jamón",
+            "es": "Cazuelita de salmorejo con jamón.",
+            "en": "Small dish of salmorejo topped with ham.",
+            "prices": [
+              {
+                "eur": 1.5,
+                "portion": "unidad"
+              }
+            ]
+          },
+          {
+            "name": "Cazuelita de chorizo al horno",
+            "es": "Cazuelita de chorizo al horno.",
+            "en": "Small dish of oven-baked chorizo.",
+            "prices": [
+              {
+                "eur": 1.5,
+                "portion": "unidad"
+              }
+            ]
+          }
+        ]
+      }
     ]
   },
   {
