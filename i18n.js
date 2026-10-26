@@ -101,6 +101,13 @@ window.GASTRO_I18N = Object.freeze({
     'Postre a elegir':'Choose a dessert',
     'Bebidas incluidas (una a elegir)':'Included drinks (choose one)'
   });
+  // Group menu names from La Cazuela de la Espartería (keep prices unchanged).
+  dynamicRules.unshift([/^(Menú [12] Navidad · (?:mesa|cóctel de pie)) · ([\d.,]+ €)\/persona$/,m=>({
+    'Menú 1 Navidad · mesa':'Christmas Menu 1 · seated',
+    'Menú 2 Navidad · mesa':'Christmas Menu 2 · seated',
+    'Menú 1 Navidad · cóctel de pie':'Christmas Menu 1 · standing cocktail',
+    'Menú 2 Navidad · cóctel de pie':'Christmas Menu 2 · standing cocktail'
+  }[m[1]]||m[1])+' · '+m[2]+'/person']);
   function translateValue(value){
     if(Object.prototype.hasOwnProperty.call(sourceLabelTranslations,value.replace(/ ↗$/,'')))return sourceLabelTranslations[value.replace(/ ↗$/,'')]+(value.endsWith(' ↗')?' ↗':'');
     if(Object.prototype.hasOwnProperty.call(translations,value))return translations[value];
