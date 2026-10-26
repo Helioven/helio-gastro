@@ -47941,11 +47941,12 @@
     "address": "Calle Los Olivos, 1, Córdoba",
     "mealCostEur": null,
     "priceStatus": "unknown",
-    "checkedAt": "2026-10-11",
+    "checkedAt": "2026-10-26",
     "sources": [
       {
         "label": "Carta publicada por el establecimiento en Queresto",
-        "url": "https://queresto.com/barlajineta"
+        "url": "https://queresto.com/barlajineta",
+        "labelEn": "Menu published by the establishment on QueResto"
       }
     ],
     "menus": [
@@ -48042,6 +48043,115 @@
           {
             "dish": "Café",
             "eur": 1.3,
+            "portion": "unidad"
+          }
+        ]
+      },
+      {
+        "service": "general",
+        "dishes": [
+          "Perrito con salsa",
+          "Perrito con bacon y salsa",
+          "Bocadillo de aceite, tomate y jamón",
+          "Bocadillo de tortilla y mayonesa",
+          "Bocadillo de bacon, lechuga y BBQ",
+          "Bocadillo de pinchitos y salsa",
+          "Bocadillo de lomo de orza, tomate y lechuga",
+          "Tosta de atún, queso y pimientos del piquillo",
+          "Tosta de York y queso",
+          "Tosta de kebab de pollo",
+          "Tosta de barbacoa, bacon y carne boloñesa",
+          "Cazuelita de carne con tomate",
+          "Cazuelita de carne al PX",
+          "Cazuelita de ensaladilla",
+          "Cazuelita de pollo al ajillo",
+          "Cazuelita de salmorejo con jamón",
+          "Cazuelita de chorizo al horno"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Perrito con salsa",
+            "eur": 1.3,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Perrito con bacon y salsa",
+            "eur": 1.6,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bocadillo de aceite, tomate y jamón",
+            "eur": 4.8,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bocadillo de tortilla y mayonesa",
+            "eur": 4.8,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bocadillo de bacon, lechuga y BBQ",
+            "eur": 4.8,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bocadillo de pinchitos y salsa",
+            "eur": 4.8,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bocadillo de lomo de orza, tomate y lechuga",
+            "eur": 4.8,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tosta de atún, queso y pimientos del piquillo",
+            "eur": 4.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tosta de York y queso",
+            "eur": 4.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tosta de kebab de pollo",
+            "eur": 4.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Tosta de barbacoa, bacon y carne boloñesa",
+            "eur": 4.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Cazuelita de carne con tomate",
+            "eur": 1.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Cazuelita de carne al PX",
+            "eur": 1.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Cazuelita de ensaladilla",
+            "eur": 1.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Cazuelita de pollo al ajillo",
+            "eur": 1.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Cazuelita de salmorejo con jamón",
+            "eur": 1.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Cazuelita de chorizo al horno",
+            "eur": 1.5,
             "portion": "unidad"
           }
         ]
