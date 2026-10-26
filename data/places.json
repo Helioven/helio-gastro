@@ -45284,17 +45284,6 @@
           "Porción de tarta",
           "Pudin casero",
           "Frutas de temporada",
-          "Maceta de cerveza",
-          "Aquarius",
-          "Rivera (denominación de la fuente)",
-          "Combinado nacional",
-          "Caña de cerveza",
-          "Zumos",
-          "Refresco",
-          "Rioja",
-          "Verdejo",
-          "Tercio de cerveza",
-          "Combinado de importación",
           "Pieza de pan",
           "Táper para llevar",
           "Bolsa"
@@ -46014,75 +46003,9 @@
         ]
       },
       {
-        "title": "Bebidas y extras",
-        "titleEn": "Drinks and extras",
+        "title": "Extras",
+        "titleEn": "Extras",
         "items": [
-          {
-            "name": "Maceta de cerveza",
-            "prices": [],
-            "es": "Maceta de cerveza",
-            "en": "Large beer"
-          },
-          {
-            "name": "Aquarius",
-            "prices": [],
-            "es": "Aquarius",
-            "en": "Aquarius drink"
-          },
-          {
-            "name": "Rivera (denominación de la fuente)",
-            "prices": [],
-            "es": "Rivera (denominación de la fuente)",
-            "en": "Rivera (source spelling)"
-          },
-          {
-            "name": "Combinado nacional",
-            "prices": [],
-            "es": "Combinado nacional",
-            "en": "Spanish mixed spirit drink"
-          },
-          {
-            "name": "Caña de cerveza",
-            "prices": [],
-            "es": "Caña de cerveza",
-            "en": "Small draft beer"
-          },
-          {
-            "name": "Zumos",
-            "prices": [],
-            "es": "Zumos",
-            "en": "Juices"
-          },
-          {
-            "name": "Refresco",
-            "prices": [],
-            "es": "Refresco",
-            "en": "Soft drink"
-          },
-          {
-            "name": "Rioja",
-            "prices": [],
-            "es": "Rioja",
-            "en": "Rioja wine"
-          },
-          {
-            "name": "Verdejo",
-            "prices": [],
-            "es": "Verdejo",
-            "en": "Verdejo wine"
-          },
-          {
-            "name": "Tercio de cerveza",
-            "prices": [],
-            "es": "Tercio de cerveza",
-            "en": "Bottled beer"
-          },
-          {
-            "name": "Combinado de importación",
-            "prices": [],
-            "es": "Combinado de importación",
-            "en": "Imported mixed spirit drink"
-          },
           {
             "name": "Pieza de pan",
             "prices": [],
