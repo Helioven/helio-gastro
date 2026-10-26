@@ -48503,15 +48503,17 @@
     "address": "Calle Concepción, 18, Córdoba",
     "mealCostEur": null,
     "priceStatus": "unknown",
-    "checkedAt": "2026-10-11",
+    "checkedAt": "2026-10-26",
     "sources": [
       {
         "label": "Carta oficial Pastelería Centro; precios de barra y mesa, disponibilidad variable",
-        "url": "https://pasteleriasroldan.com/carta-centro/carta-pasteleria-centro/"
+        "url": "https://pasteleriasroldan.com/carta-centro/carta-pasteleria-centro/",
+        "labelEn": "Official Centro pastry menu; counter and table prices, availability may vary"
       },
       {
         "label": "Carta oficial desayunos Centro: tostadas y precios; disponibilidad durante merienda sin confirmar",
-        "url": "https://pasteleriasroldan.com/carta-centro/desayunos-centro/"
+        "url": "https://pasteleriasroldan.com/carta-centro/desayunos-centro/",
+        "labelEn": "Official Centro breakfast menu: toast and prices; afternoon availability unconfirmed"
       }
     ],
     "menus": [
@@ -48537,7 +48539,20 @@
           "Tostada con jamón york",
           "Tostada con pavo",
           "Tostada con jamón york y queso",
-          "Tostada con pavo y queso"
+          "Tostada con pavo y queso",
+          "Media tostada de bacon, mantequilla y mozzarella",
+          "Media tostada con queso crema y mozzarella",
+          "Media tostada con jamón york, queso crema y mozzarella",
+          "Media tostada de atún, tomate y mozzarella",
+          "Croissant relleno de mantequilla o mermelada",
+          "Croissant relleno de mantequilla y mermelada",
+          "Croissant con jamón york y mantequilla",
+          "Croissant relleno de jamón york y queso",
+          "Croissant relleno de pavo",
+          "Bollo de leche con mantequilla",
+          "Bollo de leche con mantequilla y mermelada",
+          "Bollo de leche con jamón york",
+          "Bollo de leche con jamón york y queso"
         ],
         "dishPrices": [
           {
@@ -48689,6 +48704,71 @@
             "dish": "Tostada con pavo y queso",
             "eur": 4.8,
             "portion": "tostada-entera"
+          },
+          {
+            "dish": "Media tostada de bacon, mantequilla y mozzarella",
+            "eur": 3.65,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Media tostada con queso crema y mozzarella",
+            "eur": 3.65,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Media tostada con jamón york, queso crema y mozzarella",
+            "eur": 3.85,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Media tostada de atún, tomate y mozzarella",
+            "eur": 3.85,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Croissant relleno de mantequilla o mermelada",
+            "eur": 2.6,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Croissant relleno de mantequilla y mermelada",
+            "eur": 2.85,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Croissant con jamón york y mantequilla",
+            "eur": 2.95,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Croissant relleno de jamón york y queso",
+            "eur": 3.85,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Croissant relleno de pavo",
+            "eur": 3.95,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bollo de leche con mantequilla",
+            "eur": 2.6,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bollo de leche con mantequilla y mermelada",
+            "eur": 2.85,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bollo de leche con jamón york",
+            "eur": 2.95,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bollo de leche con jamón york y queso",
+            "eur": 3.8,
+            "portion": "unidad"
           }
         ]
       },
@@ -48875,7 +48955,25 @@
           }
         ]
       }
-    ]
+    ],
+    "breakfastExtras": {
+      "label": "Extras para desayunos",
+      "pricePerExtraEur": 0.7,
+      "options": [
+        "Miel",
+        "Mantequilla",
+        "Paté",
+        "Queso",
+        "Tomate",
+        "Leche condensada",
+        "Mermelada",
+        "Tarrina de aceite",
+        "Jamón serrano",
+        "Jamón york",
+        "Pavo"
+      ],
+      "note": "Según la carta facilitada por Helio; no se presupone disponibilidad en otros servicios."
+    }
   },
   {
     "id": "la-tarterie-centro",
