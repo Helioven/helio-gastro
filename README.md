@@ -364,3 +364,8 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 
 - **La Taberna del Río — REVISADA Y CERRADA / QA visual ES/EN PASS confirmado por Helio.** Tras comprobar la ficha en inglés, se incorporaron las traducciones `labelEn` de sus dos fuentes (carta general bilingüe y menús para grupos de 2026), sin modificar platos, precios, enlaces ni condiciones de los menús.
 - **Control editorial:** excluir de próximas revisiones ordinarias salvo cambios documentados, incidencia específica o solicitud expresa. El cierre visual no implica verificación independiente de vigencia de todos los precios ni sustituye las futuras pruebas de regresión generales.
+
+### Cierre de revisión — Restaurante Puerta Sevilla (26/10/2026)
+
+- **Restaurante Puerta Sevilla — REVISADO Y CERRADO / QA visual ES/EN PASS confirmado por Helio.** Se corrigió `labelEn` de la fuente «Carta digital oficial en inglés (versión independiente; puede diferir de la española)» y Helio confirmó la visualización correcta. Se conservaron el texto español, los enlaces, platos y precios sin cambios.
+- Excluir de futuras revisiones ordinarias salvo modificación documentada de la carta, incidencia o petición expresa. El cierre no equivale a certificar vigencia de precios ni reemplaza las pruebas de regresión posteriores.
