@@ -486,3 +486,16 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - **Trabajo pausado por decisión de Helio el 26/10/2026.** No continuar revisiones ni implementar cambios hasta que Helio lo indique.
 - **Próximas fichas propuestas para revisar, aún NO cerradas:** Restaurante El Caballo Rojo, Patio Romano y Taberna El Burlaero. El orden puede decidirse al retomar.
 - Las dos fichas de Don Pepe, La Bandera, La Tarterie y Pastelerías Roldán ya están registradas como cerradas; no reabrirlas sin incidencia o petición expresa.
+
+
+### Propuestas de revisión externa (Paca / Gemini) — 27/10/2026
+
+**Estado: backlog propuesto, no implementado.** Mantener el orden de fases y el principio del Método Helio: **«En lo simple está la estabilidad»**. Estas ideas proceden de una revisión de capturas de pantalla, **no de una auditoría del código o de los datos**.
+
+1. **Indicador visible de última verificación de carta (prioridad alta, fase 1 y auditoría):** mostrar en cada ficha la fecha real de la última comprobación documental de la carta, cuando exista. Diferenciar la fecha de revisión de la fecha de publicación del menú y de la última modificación del registro. Aprovechar `checkedAt` si los datos existentes lo permiten; no rellenar fechas supuestas ni presentar información antigua como actual. Revisar su coherencia en la auditoría final.
+2. **Control de cambios antes de producción (prioridad alta, transversal):** desarrollar cambios en ramas, revisar diferencias y, cuando sea práctico, utilizar pull requests antes de fusionar a la rama publicada. Ejecutar regresión sobre búsqueda, filtros, favoritos, comparador, mapas y traducciones. No publicar modificaciones parciales de cartas sin aprobación de Helio.
+3. **Casos límite y pruebas de estrés (fase 3):** ampliar el plan QA con búsquedas sin resultados, formatos/precios ausentes, platos duplicados, textos largos en ES/EN/FR, fallos de enlaces y mapas, persistencia local, navegación móvil y volúmenes grandes de datos. Medir rendimiento real; no confundir pruebas funcionales con pruebas de carga.
+4. **Claridad y simplicidad (criterio transversal):** mantener navegación por Desayunar, Comer, Merendar y Cenar, precios por formato, acceso a fuentes y comparador sin añadir complejidad innecesaria. Revisar textos y densidad visual al cerrar las cartas.
+5. **Mapa de terrazas con sombra (idea futura, sin compromiso):** valorar utilidad y viabilidad solo tras completar el alcance actual. Requeriría información fiable y actualizable sobre terrazas y sombra según horario/estación; no inferir disponibilidad.
+
+**Plan de cierre ya acordado:** completar cartas y fuentes → francés ES/EN/FR → auditoría automatizada y manual enfocada en excepciones → reseñas y resúmenes con moderación → imágenes con derechos adecuados → pulido final con Work. Para evitar revisar fichas una a una, estudiar validadores automáticos de claves y traducciones ausentes, formatos/precios incoherentes, duplicados y enlaces; reservar revisión humana para errores semánticos y comprobación documental.
