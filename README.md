@@ -437,3 +437,8 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - **Restaurante El Churrasco — REVISADO Y CERRADO / QA visual ES/EN PASS confirmado por Helio el 26/10/2026.** La única corrección detectada fue traducir la etiqueta de la tercera fuente («Carta QR del restaurante, sin fecha (PDF aportado por el usuario)») al inglés como «Restaurant QR menu, undated (PDF provided by the user)». Helio comprobó el cambio y confirmó que la ficha está correcta.
 - No se modificaron platos, precios, formatos ni enlaces. Se mantuvo el aviso de que la carta QR aportada no tiene fecha acreditada; el cierre visual no certifica vigencia de precios.
 - **Control de pendientes:** excluir El Churrasco de revisiones ordinarias futuras salvo nueva documentación, incidencia o petición expresa. No sustituye la auditoría integral ni las pruebas de regresión generales.
+
+### Cierre de revisión — La Piscatoria (26/10/2026)
+
+- **La Piscatoria — REVISADA Y CERRADA (26/10/2026), confirmación editorial de Helio.** Helio indica que la ficha puede darse por cerrada. No se modificaron platos, precios, formatos, traducciones ni fuentes por registrar este cierre.
+- **Control de pendientes:** excluir La Piscatoria de revisiones ordinarias futuras salvo nueva documentación, incidencia o solicitud expresa. No se atribuye un QA técnico nuevo ni una verificación independiente de vigencia de precios; las pruebas generales de regresión siguen pendientes para la fase de auditoría.
