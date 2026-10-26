@@ -3346,6 +3346,10 @@
               {
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 7
+              },
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 7
               }
             ],
             "en": "Traditional Cordoban salmorejo with boiled egg and ham",
@@ -3358,6 +3362,10 @@
               {
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 8
+              },
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 6
               }
             ],
             "en": "Russian-style potato salad",
@@ -3370,6 +3378,10 @@
               {
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 12
+              },
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 16
               }
             ],
             "en": "Grilled mixed vegetables",
@@ -3382,6 +3394,10 @@
               {
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 12
+              },
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 9
               }
             ],
             "en": "Griddled mushrooms with ham",
@@ -3390,7 +3406,12 @@
           {
             "name": "Boquerones en Vinagre con Cebolla Morada y AOVE",
             "description": "Boquerones en Vinagre con Cebolla Morada y AOVE",
-            "prices": [],
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 3.5
+              }
+            ],
             "note": "Just Eat indicaba «No disponible» en la consulta del 20/10/2026; no implica retirada permanente.",
             "en": "Vinegar-marinated anchovies with red onion and extra virgin olive oil",
             "es": "Boquerones marinados en vinagre con cebolla morada y aceite de oliva virgen extra."
@@ -3398,28 +3419,48 @@
           {
             "name": "Jamón Ibérico de Bellota D.O. Valle de los Pedroches",
             "en": "Acorn-fed Iberian ham from Los Pedroches.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 15
+              }
+            ],
             "sourceStatus": "uber_eats_historical_not_current",
             "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
           },
           {
             "name": "Queso Curado Manchego de Oveja Marantona",
             "en": "Cured Manchego sheep's milk cheese.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 9
+              }
+            ],
             "sourceStatus": "uber_eats_historical_not_current",
             "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
           },
           {
             "name": "Pimientos de Padrón",
             "en": "Padrón peppers.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 3.5
+              }
+            ],
             "sourceStatus": "google_search_snippet_unverified",
             "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
           },
           {
             "name": "Champiñones al Jerez",
             "en": "Mushrooms with sherry.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 3.5
+              }
+            ],
             "sourceStatus": "google_search_snippet_unverified",
             "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
           }
@@ -3447,6 +3488,10 @@
               {
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 10
+              },
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 14
               }
             ],
             "en": "Smoked-food salad (ingredients not specified)",
@@ -3459,6 +3504,10 @@
               {
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 12
+              },
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 14
               }
             ],
             "en": "Cod and orange remojón salad",
@@ -3491,7 +3540,12 @@
           {
             "name": "Tomate con Boquerones en Vinagre",
             "en": "Tomato with vinegar-marinated anchovies.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 8
+              }
+            ],
             "sourceStatus": "google_search_snippet_unverified",
             "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
           }
@@ -3572,6 +3626,10 @@
               {
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 9
+              },
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 9
               }
             ],
             "en": "Caliphal-style tempura aubergines with cane syrup and sesame",
@@ -3584,6 +3642,10 @@
               {
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 9.5
+              },
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 13
               }
             ],
             "en": "Ham flamenquín",
@@ -3596,6 +3658,10 @@
               {
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 9.5
+              },
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 13.5
               }
             ],
             "en": "Ham and cheese flamenquín",
@@ -3632,6 +3698,10 @@
               {
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 10
+              },
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 7
               }
             ],
             "en": "Pringá croquettes (traditional stew-meat filling)",
@@ -3644,6 +3714,10 @@
               {
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 12
+              },
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 18
               }
             ],
             "en": "Iberian-style fried pork from Los Pedroches Valley",
@@ -3876,6 +3950,10 @@
               {
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 4.5
+              },
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 4.5
               }
             ],
             "en": "Tocinillo de cielo (traditional egg-yolk custard)",
@@ -3887,6 +3965,10 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
+                "eur": 4.5
+              },
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
                 "eur": 4.5
               }
             ],
@@ -3900,6 +3982,10 @@
               {
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 4.5
+              },
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 4.5
               }
             ],
             "en": "Three-chocolate cake",
@@ -3911,6 +3997,10 @@
             "prices": [
               {
                 "label": "Just Eat · reparto · formato no especificado",
+                "eur": 5.5
+              },
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
                 "eur": 5.5
               }
             ],
@@ -3924,6 +4014,10 @@
               {
                 "label": "Just Eat · reparto · formato no especificado",
                 "eur": 5.5
+              },
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 5.5
               }
             ],
             "en": "Chocolate fondant with vanilla ice cream",
@@ -3932,21 +4026,36 @@
           {
             "name": "Biscuit de Higos",
             "en": "Fig biscuit dessert; preparation not specified.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 6.5
+              }
+            ],
             "sourceStatus": "google_search_snippet_unverified",
             "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
           },
           {
             "name": "Natillas con Pestiños",
             "en": "Spanish custard with pestiños.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 4.5
+              }
+            ],
             "sourceStatus": "google_search_snippet_unverified",
             "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
           },
           {
             "name": "Piña Natural",
             "en": "Fresh pineapple.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 3.5
+              }
+            ],
             "sourceStatus": "google_search_snippet_unverified",
             "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
           }
@@ -4139,26 +4248,390 @@
           {
             "name": "Berenjenas Califales en Tempura con Salmorejo",
             "en": "Tempura aubergines with salmorejo.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 9
+              }
+            ],
             "sourceStatus": "google_search_snippet_unverified",
             "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
           },
           {
             "name": "Pan y Palillos",
             "en": "Bread and breadsticks.",
-            "prices": [],
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 1
+              }
+            ],
             "sourceStatus": "google_search_snippet_unverified",
             "note": "Identified from user-provided Google results excerpt; price and current listing not independently verified."
           }
         ]
+      },
+      {
+        "title": "Finos D.O. Montilla-Moriles",
+        "titleEn": "Montilla-Moriles fino wines",
+        "items": [
+          {
+            "name": "Bodegas El Gallo · Amargoso",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 2
+              }
+            ]
+          },
+          {
+            "name": "Toro Albalá · Eléctrico en Rama",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 2
+              }
+            ]
+          },
+          {
+            "name": "Bodegas El Monte · Los Naranjos",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 2
+              }
+            ]
+          },
+          {
+            "name": "Doblas Martos · Doblas",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 2
+              }
+            ]
+          },
+          {
+            "name": "Jesús Nazareno · Fino Cancionero",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 2.3
+              }
+            ]
+          },
+          {
+            "name": "Bodegas Navarro · Fino Andalucía",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 2.3
+              }
+            ]
+          },
+          {
+            "name": "Bodegas El Monte · Fino Cebolla",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 2.3
+              }
+            ]
+          },
+          {
+            "name": "Maillo e Hijos · Solera Fino Saavedra",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 2.3
+              }
+            ]
+          },
+          {
+            "name": "Bodegas Delgado · Tertulia",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 2.3
+              }
+            ]
+          },
+          {
+            "name": "Pérez Barquero · Gran Barquero",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 2.3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Vinos y copas",
+        "titleEn": "Wines and spirits",
+        "items": [
+          {
+            "name": "Pedro Ximénez · Bodegas La Aurora",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 3.5
+              }
+            ]
+          },
+          {
+            "name": "Pedro Ximénez · Toro Albalá Don PX",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 4.5
+              }
+            ]
+          },
+          {
+            "name": "Copa de vino tinto",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 3.5
+              }
+            ]
+          },
+          {
+            "name": "Copa de vino blanco o rosado",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 3.5
+              }
+            ]
+          },
+          {
+            "name": "Benjamín · François Montand",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 6
+              }
+            ]
+          },
+          {
+            "name": "Benjamín · Codorníu",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 6
+              }
+            ]
+          },
+          {
+            "name": "Chupito",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 3.5
+              }
+            ]
+          },
+          {
+            "name": "Copa nacional",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 6.5
+              }
+            ]
+          },
+          {
+            "name": "Copa premium",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Cervezas y refrescos",
+        "titleEn": "Beers and soft drinks",
+        "items": [
+          {
+            "name": "Caña",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 1.9
+              }
+            ]
+          },
+          {
+            "name": "Maceta",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 2.9
+              }
+            ]
+          },
+          {
+            "name": "Copa de cerveza",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 3
+              }
+            ]
+          },
+          {
+            "name": "Tercio de cerveza",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 2.7
+              }
+            ]
+          },
+          {
+            "name": "Tercio de cerveza especial",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 3
+              }
+            ]
+          },
+          {
+            "name": "Tercio de cerveza reserva",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 3.2
+              }
+            ]
+          },
+          {
+            "name": "Vermut de bodega",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 3.5
+              }
+            ]
+          },
+          {
+            "name": "Tinto de verano",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 2.9
+              }
+            ]
+          },
+          {
+            "name": "Copa de sangría",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 3.8
+              }
+            ]
+          },
+          {
+            "name": "Agua (volumen tal como figura: «0,50 Cl»)",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 1.8
+              }
+            ]
+          },
+          {
+            "name": "Refresco 237 ml",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": [
+              {
+                "label": "Google · listado aportado · formato sin confirmar",
+                "eur": 2.4
+              }
+            ]
+          },
+          {
+            "name": "Refresco 300 ml",
+            "es": "Precio incluido en el listado de Google facilitado por Helio; vigencia y formato no verificados.",
+            "en": "Price from a Google search listing supplied by Helio; current validity and serving size unverified.",
+            "prices": []
+          }
+        ]
       }
     ],
-    "menuSourceNote": "Carta parcial de Alonso de Burgos: precios de Just Eat transcritos el 20/10/2026 en la ficha original. Las referencias adicionales proceden del listado de búsqueda de Google aportado por Helio el 23/10/2026 y no tienen precio confirmado. Las divergencias entre fuentes y fechas siguen pendientes de verificar. Los precios de reparto no equivalen a los de sala.",
-    "dataReviewStatus": "partial_publication_authorized_with_notice_2026-10-23",
+    "menuSourceNote": "Carta Just Eat transcrita el 20/10/2026 y listado de búsqueda de Google facilitado por Helio (referencia del 23/10/2026). Precios de Google incorporados con atribución propia, vigencia y formato sin confirmar; no sustituyen los importes de reparto de Just Eat. Uber Eats se conserva como fuente de contraste histórica. Las bebidas se muestran únicamente en la ficha, sin incorporarse a menus ni al comparador de platos. No se infieren formatos ni se mezclan las sedes.",
+    "dataReviewStatus": "documented_pending_visual_QA",
     "googleSearchReferenceCheckedAt": "2026-10-23",
-    "googleSearchReferencePriceStatus": "No verificado; los importes del extracto no se han incorporado por no poder atribuirlos inequívocamente a una plataforma y formato.",
-    "menuPublicNoticeEs": "Carta parcial orientativa. La información se ha recopilado de cartas de reparto y resultados públicos de búsqueda con acceso limitado; algunos platos, precios y formatos podrían estar desactualizados, incompletos o no corresponder a la oferta en sala. Los precios mostrados proceden de Just Eat (consulta del 20/10/2026), no son precios confirmados en el local. Confirma carta, disponibilidad e importe directamente con el establecimiento antes de pedir.",
-    "menuPublicNoticeEn": "Partial menu for guidance only. Information was gathered from delivery listings and public search results with limited access; some dishes, prices and portion sizes may be outdated, incomplete or differ from the dine-in menu. Displayed prices come from Just Eat (checked 20 October 2026) and are not confirmed dine-in prices. Please confirm the menu, availability and prices with the restaurant before ordering."
+    "googleSearchReferencePriceStatus": "prices_from_user_supplied_google_listing_unverified_current",
+    "menuPublicNoticeEs": "Precios de distintas fuentes (Just Eat y listado de Google facilitado por Helio); pueden corresponder a fechas y formatos diferentes. No se confirma su vigencia ni su equivalencia con precios en sala.",
+    "menuPublicNoticeEn": "Prices from different sources (Just Eat and a Google listing supplied by Helio) may refer to different dates and portion sizes. Current validity and in-restaurant prices are not confirmed."
   },
   {
     "id": "taberna-el-poema-gran-capitan",
