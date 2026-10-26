@@ -389,3 +389,8 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 
 - **Bodegas Mezquita Céspedes — REVISADA Y CERRADA / QA visual ES/EN PASS confirmado por Helio.** Corregidas en `app.js` las etiquetas de formatos y cantidades que permanecían en español en la interfaz inglesa (medias y raciones por gramos, unidades, con/sin aceite, degustación, botella y precio único). Helio confirmó visualmente que la ficha queda correcta el 26/10/2026.
 - Los cambios fueron de presentación/traducción; no se alteraron platos, ingredientes, cantidades originales ni precios. Excluir este establecimiento de futuras revisiones ordinarias salvo nueva incidencia, cambio acreditado de carta o petición expresa. El cierre no sustituye la futura auditoría integral y pruebas de regresión.
+
+### Cierre de revisión — Taberna Rafaé (26/10/2026)
+
+- **Taberna Rafaé — REVISADA Y CERRADA (26/10/2026), validación confirmada por Helio.** Helio indica que la ficha está correcta y solicita dar por terminada su revisión ordinaria. No se modificaron platos, precios, fuentes ni traducciones por este cierre.
+- Excluir de revisiones ordinarias posteriores salvo incidencia concreta, cambio documental o nueva solicitud. Este cierre editorial no constituye verificación independiente de vigencia de precios y no sustituye las pruebas generales de regresión.
