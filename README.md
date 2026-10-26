@@ -331,3 +331,11 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 ### Excepción de revisión — El Caballo Rojo (24/10/2026)
 
 - Helio confirma que el restaurante está cerrado temporalmente y que su ficha ya se había ocultado. No programar revisión ordinaria mientras continúe esta situación; conservar datos históricos y comprobar una eventual reapertura antes de reactivar la ficha. Este apunte refleja el estado comunicado por Helio, no una comprobación externa nueva. No modificar la visibilidad en código sin revisar el estado implementado.
+
+### Ajuste documental — Taberna La Viuda (26/10/2026)
+
+- Contrastada la ficha `taberna-la-viuda` con la carta PDF de dos páginas facilitada por Helio. Los cinco apartados principales y sus precios ya estaban incorporados; no se reescribieron.
+- Los tres acompañamientos de los huevos estrellados (4,50 €, 4,50 € y 6,00 €) pasan a identificarse como `suplemento` en `menus` y `menuSections`, no como raciones independientes.
+- Los cuatro conceptos registrados en `extras` (pan y palillos, aceitunas, pan extra y envase desechable) se muestran también en una sección visible de la ficha, con texto ES/EN. La cerveza casera (3,80 €) continúa consignada en la nota documental y excluida del comparador de comida.
+- Se mantiene `priceStatus: historical_menu_2025_unverified_current` y `checkedAt` sin adelantar fechas ni afirmar vigencia actual. El PDF contiene referencias temporales no concluyentes.
+- **Verificación técnica:** JSON leído tras commit; 43 registros conservados; los tres suplementos y los cuatro extras comprobados en los datos. **Pendiente QA visual ES/EN** en navegador (apartado nuevo, etiquetas y comportamiento de filtros). **Ficha no cerrada editorialmente** hasta confirmación de Helio.
