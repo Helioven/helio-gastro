@@ -369,3 +369,8 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 
 - **Restaurante Puerta Sevilla — REVISADO Y CERRADO / QA visual ES/EN PASS confirmado por Helio.** Se corrigió `labelEn` de la fuente «Carta digital oficial en inglés (versión independiente; puede diferir de la española)» y Helio confirmó la visualización correcta. Se conservaron el texto español, los enlaces, platos y precios sin cambios.
 - Excluir de futuras revisiones ordinarias salvo modificación documentada de la carta, incidencia o petición expresa. El cierre no equivale a certificar vigencia de precios ni reemplaza las pruebas de regresión posteriores.
+
+### Cierre de revisión — La Posada del Caballo Andaluz (26/10/2026)
+
+- **La Posada del Caballo Andaluz — REVISADA Y CERRADA / validación visual confirmada por Helio el 26/10/2026.** Helio indica que la ficha está correcta. No se han modificado platos, precios, textos ni enlaces por este cierre.
+- Excluir de próximas revisiones ordinarias salvo nueva evidencia documental, incidencia específica o petición expresa. Esta aprobación visual no supone una verificación independiente de precios o disponibilidad actuales ni sustituye la QA integral posterior.
