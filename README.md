@@ -499,3 +499,9 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 5. **Mapa de terrazas con sombra (idea futura, sin compromiso):** valorar utilidad y viabilidad solo tras completar el alcance actual. Requeriría información fiable y actualizable sobre terrazas y sombra según horario/estación; no inferir disponibilidad.
 
 **Plan de cierre ya acordado:** completar cartas y fuentes → francés ES/EN/FR → auditoría automatizada y manual enfocada en excepciones → reseñas y resúmenes con moderación → imágenes con derechos adecuados → pulido final con Work. Para evitar revisar fichas una a una, estudiar validadores automáticos de claves y traducciones ausentes, formatos/precios incoherentes, duplicados y enlaces; reservar revisión humana para errores semánticos y comprobación documental.
+
+### Identidad visual ManoloLabs by Helio — pendiente
+
+- **Pendiente de implementar en la página principal de Helio Gastro:** incorporar la marca **ManoloLabs by Helio** y su mascota/logotipo oficial (robot Manolo con gafas, bigote, antena y café), siguiendo la referencia visual aprobada por Helio.
+- Lema de marca: **«Ideas humanas · Tecnología inteligente»**. Respetar la identidad actual de Helio Gastro y colocar el sello de ManoloLabs de forma discreta, sin recargar la portada ni sustituir el nombre de la aplicación.
+- **Estado:** anotado en el backlog; no implementado todavía. Abordar tras completar los restaurantes, cartas y traducciones al inglés, en la fase de pulido de la aplicación.
