@@ -12671,17 +12671,17 @@
     "sources": [
       {
         "label": "Cocina y especialidades oficiales",
-      "labelEn": "Official cuisine and specialties",
+        "labelEn": "Official cuisine and specialties",
         "url": "https://tabernaelnumero10cordoba.com/cocina/"
       },
       {
         "label": "Carta oficial PDF · 4 páginas (septiembre de 2025 en la URL; vigencia no garantizada)",
-      "labelEn": "Official menu PDF · 4 pages (September 2025 in the URL; current validity not guaranteed)",
+        "labelEn": "Official menu PDF · 4 pages (September 2025 in the URL; current validity not guaranteed)",
         "url": "https://tabernaelnumero10cordoba.com/wp-content/uploads/2025/09/carta-taberna-n10.pdf"
       },
       {
         "label": "Dirección y contacto oficial",
-      "labelEn": "Official address and contact details",
+        "labelEn": "Official address and contact details",
         "url": "https://tabernaelnumero10cordoba.com/taberna/"
       }
     ],
@@ -22351,7 +22351,7 @@
       },
       {
         "label": "Carta QR del restaurante, sin fecha (PDF aportado por el usuario)",
-      "labelEn": "Restaurant QR menu, undated (PDF provided by the user)",
+        "labelEn": "Restaurant QR menu, undated (PDF provided by the user)",
         "url": "https://elchurrasco.com/cartas/"
       }
     ],
@@ -46584,7 +46584,7 @@
     "sources": [
       {
         "label": "Carta oficial D'Tapas COVAP Córdoba completa",
-      "labelEn": "Complete official D'Tapas COVAP Córdoba menu",
+        "labelEn": "Complete official D'Tapas COVAP Córdoba menu",
         "url": "https://www.ibericoscovap.com/es/dtapas-covap-cordoba-carta/"
       },
       {
@@ -49018,6 +49018,314 @@
             "dish": "Tostada con pavo y queso",
             "eur": 4.8,
             "portion": "tostada-entera"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pastelerias-roldan-tiendas",
+    "name": "Pastelerías Roldán — otras cafeterías",
+    "area": "Córdoba · varias zonas",
+    "address": "Varias ubicaciones en Córdoba (consulta los establecimientos de abajo)",
+    "mealCostEur": null,
+    "priceStatus": "confirmed",
+    "checkedAt": "2026-10-26",
+    "menuPriceNotice": "Precios publicados en la carta general de Roldán. Pueden variar; la disponibilidad de productos depende de cada local. Roldán Centro tiene carta y ficha propias.",
+    "locations": [
+      {
+        "name": "Huerta Santa Isabel",
+        "address": "Calle Huerta Santa Isabel, frente a la iglesia, Córdoba",
+        "type": "cafetería"
+      },
+      {
+        "name": "Avda. Barcelona",
+        "address": "Avenida Barcelona esquina Calle Platero Sánchez de la Cruz, Córdoba",
+        "type": "cafetería"
+      },
+      {
+        "name": "Brillante",
+        "address": "Calle Poeta Juan Ramón Jiménez esquina Calle Poeta Emilio Prados, Córdoba",
+        "type": "cafetería"
+      },
+      {
+        "name": "Gran Capitán",
+        "address": "Avenida Gran Capitán, 29, Córdoba",
+        "type": "cafetería"
+      },
+      {
+        "name": "Marañón",
+        "address": "Calle Doctor Marañón, 7, Córdoba",
+        "type": "cafetería"
+      },
+      {
+        "name": "Medina Azahara",
+        "address": "Plaza del Poeta Ibn Zaydun, local 1, Córdoba",
+        "type": "cafetería"
+      },
+      {
+        "name": "Noreña",
+        "address": "Calle Isla Alegranza esquina Avenida Isla Fuerteventura, Córdoba",
+        "type": "cafetería"
+      },
+      {
+        "name": "Plaza Andalucía",
+        "address": "Avenida de Granada esquina Calle Huelva, Córdoba",
+        "type": "cafetería"
+      },
+      {
+        "name": "Poniente",
+        "address": "Calle José María Martorell, 22, local 1, Córdoba",
+        "type": "cafetería"
+      },
+      {
+        "name": "Realejo",
+        "address": "Calle Realejo, local 8, Córdoba",
+        "type": "cafetería"
+      },
+      {
+        "name": "Ronda de Tejares",
+        "address": "Avenida Ronda de los Tejares, 9, Córdoba",
+        "type": "cafetería"
+      },
+      {
+        "name": "Santa Rosa",
+        "address": "Avenida Almogávares, 7, Córdoba",
+        "type": "cafetería"
+      },
+      {
+        "name": "Cairo",
+        "address": "Avenida el Cairo, Córdoba",
+        "type": "cafetería"
+      },
+      {
+        "name": "Fátima",
+        "address": "Avenida de Fátima, 30, Córdoba",
+        "type": "panadería",
+        "note": "Solo ubicación; no se atribuye a estas panaderías la carta de cafeterías"
+      },
+      {
+        "name": "Damasco",
+        "address": "Calle Damasco, 20, Córdoba",
+        "type": "panadería",
+        "note": "Solo ubicación; no se atribuye a estas panaderías la carta de cafeterías"
+      },
+      {
+        "name": "Parque Azahara",
+        "address": "Avenida de la Paz, Centro comercial Azahares, Córdoba",
+        "type": "panadería",
+        "note": "Solo ubicación; no se atribuye a estas panaderías la carta de cafeterías"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Carta general oficial de desayunos (cafeterías, excepto Centro)",
+        "labelEn": "Official general breakfast menu (cafés except Centro)",
+        "url": "https://pasteleriasroldan.com/carta/desayunos-tiendas/"
+      },
+      {
+        "label": "Directorio oficial de establecimientos y direcciones",
+        "labelEn": "Official directory of branches and addresses",
+        "url": "https://pasteleriasroldan.com/tiendas/"
+      }
+    ],
+    "menus": [
+      {
+        "service": "desayuno",
+        "dishes": [
+          "Tostadas",
+          "Bollería",
+          "Croissant",
+          "Bollo de leche",
+          "Tostada con mantequilla o paté",
+          "Tostada con aceite o tomate",
+          "Tostada con aceite y tomate",
+          "Tostada con crema de york",
+          "Tostada con mantequilla y mermelada",
+          "Tostada con trocitos de jamón",
+          "Tostada con lonchas de jamón",
+          "Tostada con jamón york",
+          "Tostada con pavo",
+          "Tostada con jamón york y queso",
+          "Media tostada de bacon, mantequilla y mozzarella",
+          "Media tostada con queso crema y mozzarella",
+          "Media tostada con jamón york, queso crema y mozzarella",
+          "Media tostada de atún, tomate y mozzarella",
+          "Croissant",
+          "Croissant relleno de mantequilla o mermelada",
+          "Croissant relleno de mantequilla y mermelada",
+          "Croissant con jamón york",
+          "Croissant relleno de jamón york y queso",
+          "Bollo de leche con mantequilla",
+          "Bollo de leche con mantequilla y mermelada",
+          "Bollo de leche con jamón york",
+          "Bollo de leche con jamón york y queso"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Tostada con mantequilla o paté",
+            "eur": 1.15,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada con mantequilla o paté",
+            "eur": 2.2,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Tostada con aceite o tomate",
+            "eur": 1.2,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada con aceite o tomate",
+            "eur": 2.2,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Tostada con aceite y tomate",
+            "eur": 1.25,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada con aceite y tomate",
+            "eur": 2.45,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Tostada con crema de york",
+            "eur": 1.3,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada con crema de york",
+            "eur": 2.5,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Tostada con mantequilla y mermelada",
+            "eur": 1.4,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada con mantequilla y mermelada",
+            "eur": 2.7,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Tostada con trocitos de jamón",
+            "eur": 1.75,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada con trocitos de jamón",
+            "eur": 3.4,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Tostada con lonchas de jamón",
+            "eur": 3.5,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada con lonchas de jamón",
+            "eur": 6.3,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Tostada con jamón york",
+            "eur": 1.9,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada con jamón york",
+            "eur": 3.7,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Tostada con pavo",
+            "eur": 2.05,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada con pavo",
+            "eur": 4,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Tostada con jamón york y queso",
+            "eur": 2,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada con jamón york y queso",
+            "eur": 3.9,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Media tostada de bacon, mantequilla y mozzarella",
+            "eur": 3.45,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Media tostada con queso crema y mozzarella",
+            "eur": 3.45,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Media tostada con jamón york, queso crema y mozzarella",
+            "eur": 3.65,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Media tostada de atún, tomate y mozzarella",
+            "eur": 3.65,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Croissant",
+            "eur": 2.1,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Croissant relleno de mantequilla o mermelada",
+            "eur": 2.4,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Croissant relleno de mantequilla y mermelada",
+            "eur": 2.65,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Croissant con jamón york",
+            "eur": 2.75,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Croissant relleno de jamón york y queso",
+            "eur": 3.5,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bollo de leche con mantequilla",
+            "eur": 2.4,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bollo de leche con mantequilla y mermelada",
+            "eur": 2.65,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bollo de leche con jamón york",
+            "eur": 2.75,
+            "portion": "unidad"
+          },
+          {
+            "dish": "Bollo de leche con jamón york y queso",
+            "eur": 3.5,
+            "portion": "unidad"
           }
         ]
       }
