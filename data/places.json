@@ -10,7 +10,8 @@
     "sources": [
       {
         "label": "Carta oficial — web del establecimiento",
-        "url": "https://tabernalamontillana.com/carta/"
+        "url": "https://tabernalamontillana.com/carta/",
+        "labelEn": "Official menu — restaurant website"
       }
     ],
     "menus": [
