@@ -787,17 +787,6 @@ function renderVenueMenuSections(panel,p){
   notice.textContent=window.HelioGastroLanguage?.get()==='en'?notice.dataset.venueMenuNoteEn:notice.dataset.venueMenuNoteEs;
   panel.append(notice);
  }
- if(p.id==='la-tarterie'){
-  const productLink=p.menuSections?.flatMap(section=>section.items||[]).find(dish=>dish.productUrl)?.productUrl;
-  const notice=document.createElement('p');notice.className='service-notice';
-  const message=document.createElement('span');
-  message.dataset.venueMenuNoteEs='Los precios y las opciones pueden variar según el producto y el tamaño. Consulta el precio exacto y la disponibilidad en la tienda oficial.';
-  message.dataset.venueMenuNoteEn='Prices and options may vary by product and size. Check exact prices and availability in the official shop.';
-  message.textContent=window.HelioGastroLanguage?.get()==='en'?message.dataset.venueMenuNoteEn:message.dataset.venueMenuNoteEs;
-  notice.append(message);
-  if(productLink){const link=document.createElement('a');link.href=productLink;link.target='_blank';link.rel='noopener noreferrer';link.dataset.venueMenuNoteEs=' Abrir tienda oficial ↗';link.dataset.venueMenuNoteEn=' Open official shop ↗';link.textContent=window.HelioGastroLanguage?.get()==='en'?link.dataset.venueMenuNoteEn:link.dataset.venueMenuNoteEs;notice.append(link);}
-  panel.append(notice);
- }
  // Índice de secciones: navegación local sin ocultar platos ni modificar datos.
  const sectionNavId=p.id==='bar-moriles-original'||p.id==='moriles-casa-fina';
  if(sectionNavId){
