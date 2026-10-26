@@ -465,3 +465,8 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 
 - **La Tarterie — REVISADA Y CERRADA (26/10/2026), según confirmación de Helio.** Se conserva el aviso general bilingüe al inicio de la carta sobre precios por producto completo y variaciones por tamaño u opciones. Se elimina la repetición del enlace «Ver precio exacto en tienda oficial / Check exact price at official shop» dentro de cada producto; el acceso a la tienda oficial sigue disponible en las fuentes de la ficha.
 - No se modifican precios, ingredientes, tamaños ni fichas de producto. Pendiente comprobar visualmente este último ajuste ES/EN; el cierre editorial previo no equivale a aprobar todavía esta regresión. No incluir en revisiones ordinarias futuras salvo incidencia, cambio documentado o petición expresa.
+
+### Cierre de revisión — La Bandera (26/10/2026)
+
+- **La Bandera — REVISADA Y CERRADA (26/10/2026), confirmación visual de Helio.** Helio indica que la ficha está correcta y solicita finalizar su revisión ordinaria. No se han modificado precios, platos, traducciones ni fuentes con este cierre.
+- Excluir de próximas revisiones ordinarias salvo incidencia, nueva fuente, cambio documental o petición expresa. Esta conformidad visual no constituye una comprobación independiente de vigencia de precios ni sustituye la regresión integral de Helio Gastro.
