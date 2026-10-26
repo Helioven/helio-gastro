@@ -787,6 +787,17 @@ function renderVenueMenuSections(panel,p){
   notice.textContent=window.HelioGastroLanguage?.get()==='en'?notice.dataset.venueMenuNoteEn:notice.dataset.venueMenuNoteEs;
   panel.append(notice);
  }
+ if(p.id==='la-tarterie'){
+  const productLink=p.menuSections?.flatMap(section=>section.items||[]).find(dish=>dish.productUrl)?.productUrl;
+  const notice=document.createElement('p');notice.className='service-notice';
+  const message=document.createElement('span');
+  message.dataset.venueMenuNoteEs='Los precios y las opciones pueden variar según el producto y el tamaño. Consulta el precio exacto y la disponibilidad en la tienda oficial.';
+  message.dataset.venueMenuNoteEn='Prices and options may vary by product and size. Check exact prices and availability in the official shop.';
+  message.textContent=window.HelioGastroLanguage?.get()==='en'?message.dataset.venueMenuNoteEn:message.dataset.venueMenuNoteEs;
+  notice.append(message);
+  if(productLink){const link=document.createElement('a');link.href=productLink;link.target='_blank';link.rel='noopener noreferrer';link.dataset.venueMenuNoteEs=' Abrir tienda oficial ↗';link.dataset.venueMenuNoteEn=' Open official shop ↗';link.textContent=window.HelioGastroLanguage?.get()==='en'?link.dataset.venueMenuNoteEn:link.dataset.venueMenuNoteEs;notice.append(link);}
+  panel.append(notice);
+ }
  // Índice de secciones: navegación local sin ocultar platos ni modificar datos.
  const sectionNavId=p.id==='bar-moriles-original'||p.id==='moriles-casa-fina';
  if(sectionNavId){
@@ -822,7 +833,7 @@ function renderVenueMenuSections(panel,p){
     const label=document.createElement('span');label.dataset.venueMenuNoteEs='Rango por producto completo';label.dataset.venueMenuNoteEn='Whole-product price range';label.textContent=window.HelioGastroLanguage?.get()==='en'?label.dataset.venueMenuNoteEn:label.dataset.venueMenuNoteEs;
     const amount=document.createElement('strong');amount.textContent=dish.priceRangeEur.min===dish.priceRangeEur.max?fmt(dish.priceRangeEur.min):fmt(dish.priceRangeEur.min)+' – '+fmt(dish.priceRangeEur.max);range.append(label,amount);entry.append(range);
     const detail=document.createElement('small');detail.className='dish-explanation';detail.dataset.venueMenuNoteEs='Tamaños: '+dish.sizesEs+'. Opciones: '+dish.optionsEs+'.';detail.dataset.venueMenuNoteEn='Sizes: '+dish.sizesEn+'. Options: '+dish.optionsEn+'.';detail.textContent=window.HelioGastroLanguage?.get()==='en'?detail.dataset.venueMenuNoteEn:detail.dataset.venueMenuNoteEs;entry.append(detail);
-    if(dish.productUrl){const link=document.createElement('a');link.href=dish.productUrl;link.target='_blank';link.rel='noopener noreferrer';link.dataset.venueMenuNoteEs='Ver precio exacto en tienda oficial';link.dataset.venueMenuNoteEn='Check exact price at official shop';link.textContent=window.HelioGastroLanguage?.get()==='en'?link.dataset.venueMenuNoteEn:link.dataset.venueMenuNoteEs;entry.append(link);}
+    if(dish.productUrl && p.id!=='la-tarterie'){const link=document.createElement('a');link.href=dish.productUrl;link.target='_blank';link.rel='noopener noreferrer';link.dataset.venueMenuNoteEs='Ver precio exacto en tienda oficial';link.dataset.venueMenuNoteEn='Check exact price at official shop';link.textContent=window.HelioGastroLanguage?.get()==='en'?link.dataset.venueMenuNoteEn:link.dataset.venueMenuNoteEs;entry.append(link);}
    }
    list.append(entry);
   }
