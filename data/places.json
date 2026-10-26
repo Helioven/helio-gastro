@@ -12671,14 +12671,17 @@
     "sources": [
       {
         "label": "Cocina y especialidades oficiales",
+      "labelEn": "Official cuisine and specialties",
         "url": "https://tabernaelnumero10cordoba.com/cocina/"
       },
       {
         "label": "Carta oficial PDF · 4 páginas (septiembre de 2025 en la URL; vigencia no garantizada)",
+      "labelEn": "Official menu PDF · 4 pages (September 2025 in the URL; current validity not guaranteed)",
         "url": "https://tabernaelnumero10cordoba.com/wp-content/uploads/2025/09/carta-taberna-n10.pdf"
       },
       {
         "label": "Dirección y contacto oficial",
+      "labelEn": "Official address and contact details",
         "url": "https://tabernaelnumero10cordoba.com/taberna/"
       }
     ],
