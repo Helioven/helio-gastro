@@ -475,3 +475,8 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 
 - **Cafetería Bar Don Pepe · Ciudad Jardín — REVISADA Y CERRADA / QA visual confirmado por Helio (26/10/2026).** Se corrigió el aviso de horarios en inglés y se retiraron las once bebidas de la sección «Bebidas y extras», conservando únicamente «Extras» (pieza de pan, táper para llevar y bolsa). Se eliminaron también esas bebidas del catálogo de búsqueda de esta ficha.
 - Helio confirmó que los últimos cambios se visualizan correctamente. No se modificó el resto de la carta ni sus precios. Excluir este establecimiento de revisiones ordinarias salvo incidencia, actualización documental o petición expresa. **Cafetería Don Pepe · Centro permanece pendiente de revisión y cierre por separado.**
+
+### Cierre de revisión — Cafetería Don Pepe · Centro (26/10/2026)
+
+- **Cafetería Don Pepe · Centro — REVISADA Y CERRADA (26/10/2026), por confirmación de Helio.** Se da por concluida su revisión ordinaria y se conserva la carta y ficha existentes. El aviso de horarios cuenta con traducción ES/EN.
+- No se modifican platos, precios ni fuentes al registrar este cierre. Excluir de próximas revisiones ordinarias salvo incidencia, cambio documentado o petición expresa. El cierre no implica nueva verificación independiente de horarios o vigencia de precios ni sustituye la posterior regresión general.
