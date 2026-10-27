@@ -53812,11 +53812,13 @@
     "sources": [
       {
         "label": "Información de establecimientos del grupo Ágora (captura aportada por el usuario)",
-        "url": "https://casabravo1919.es/"
+        "url": "https://casabravo1919.es/",
+        "labelEn": "Ágora group restaurant information (screenshot supplied by the user)"
       },
       {
         "label": "Carta individual de Ágora Mezquita y fotografías oficiales aportadas por el usuario",
-        "url": "https://www.agoramezquita.com/"
+        "url": "https://www.agoramezquita.com/",
+        "labelEn": "Ágora Mezquita individual menu and official photographs supplied by the user"
       }
     ],
     "groupName": "Grupo Ágora",
@@ -53828,7 +53830,7 @@
     "groupProfile": "Cocina cordobesa de raíz con enfoque contemporáneo, en las inmediaciones de la Mezquita-Catedral.",
     "contactPhone": "957 491 263",
     "publishedHours": "Todos los días 12:30–00:00; cocina siempre abierta (según captura).",
-    "menuSourceNote": "Carta individual facilitada por el usuario; sin menú del día mostrado. El cochifrito figuraba dos veces y se consolidó en un plato con dos fotos. Las fotografías de croquetas de jamón y puchero usan el mismo archivo en origen. Los ingredientes del potaje proceden de Casa Bravo y no están confirmados por separado para este local. Precios sin verificación independiente de vigencia.",
+    "menuSourceNote": "Carta individual facilitada por el usuario y cotejada con la transcripción de Helio del 27/10/2026. El cochifrito se registra una sola vez; la composición del potaje flamenco no figura confirmada para este local y no se atribuyen ingredientes de Casa Bravo. Precios sin verificación independiente de vigencia.",
     "menus": [
       {
         "service": "Entrantes",
@@ -54164,7 +54166,7 @@
           "Hamburguesa ÁGORA",
           "Hamburguesa de vaca Retinta",
           "Timbal de rabo de toro deshuesado con salsa y patatas",
-          "Patata fritas",
+          "Patatas fritas",
           "Solomillo de ternera",
           "Solomillo de cerdo ibérico"
         ],
@@ -54215,7 +54217,7 @@
             "portion": "ración"
           },
           {
-            "dish": "Patata fritas",
+            "dish": "Patatas fritas",
             "eur": 5.95,
             "portion": "ración"
           },
@@ -54270,7 +54272,8 @@
           "Pastel cordobés",
           "Naranja con aceite de oliva y canela",
           "Tarta casera 3 chocolates",
-          "Helado de vainilla con chocolate caliente"
+          "Helado de vainilla con chocolate caliente",
+          "Coulant de chocolate con helado de naranja y nata"
         ],
         "dishPrices": [
           {
@@ -54301,6 +54304,11 @@
           {
             "dish": "Helado de vainilla con chocolate caliente",
             "eur": 5.9,
+            "portion": "ración"
+          },
+          {
+            "dish": "Coulant de chocolate con helado de naranja y nata",
+            "eur": 6.5,
             "portion": "ración"
           }
         ]
@@ -54881,8 +54889,8 @@
             ]
           },
           {
-            "name": "Patata fritas",
-            "description": "Patata fritas",
+            "name": "Patatas fritas",
+            "description": "Patatas fritas",
             "en": "French fries",
             "prices": [
               {
@@ -55032,6 +55040,17 @@
                 "eur": 5.9
               }
             ]
+          },
+          {
+            "name": "Coulant de chocolate con helado de naranja y nata",
+            "description": "Coulant de chocolate con helado de naranja y nata",
+            "en": "Chocolate lava cake with orange ice cream and whipped cream",
+            "prices": [
+              {
+                "label": "ración",
+                "eur": 6.5
+              }
+            ]
           }
         ]
       },
@@ -55040,8 +55059,8 @@
         "items": [
           {
             "name": "Potaje flamenco",
-            "description": "Potaje con espinacas, garbanzos, morcilla, chorizo y panceta (ingredientes de la carta de Casa Bravo, mismo grupo; no confirmados individualmente en Ágora Mezquita).",
-            "en": "Stew with spinach, chickpeas, blood sausage, chorizo and pork belly.",
+            "description": "",
+            "en": "",
             "prices": [
               {
                 "label": "media ración",
