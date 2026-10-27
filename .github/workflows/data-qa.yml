@@ -63,6 +63,7 @@ jobs:
           PY
           node scripts/test-fr-visual.mjs
           node scripts/test-search-regression.mjs
+          node scripts/test-filter-regression.mjs
       - name: Upload visual QA screenshots and results
         if: always()
         uses: actions/upload-artifact@v4
