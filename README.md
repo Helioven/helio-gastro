@@ -520,3 +520,10 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - **Pendiente de implementar en la página principal de Helio Gastro:** incorporar la marca **ManoloLabs by Helio** y su mascota/logotipo oficial (robot Manolo con gafas, bigote, antena y café), siguiendo la referencia visual aprobada por Helio.
 - Lema de marca: **«Ideas humanas · Tecnología inteligente»**. Respetar la identidad actual de Helio Gastro y colocar el sello de ManoloLabs de forma discreta, sin recargar la portada ni sustituir el nombre de la aplicación.
 - **Estado:** anotado en el backlog; no implementado todavía. Abordar tras completar los restaurantes, cartas y traducciones al inglés, en la fase de pulido de la aplicación.
+
+### Casa Pepe de la Judería — carta cerrada (27/10/2026)
+
+- **Estado: cerrada por validación expresa de Helio.** Se cotejaron las cartas de restaurante y barra y los postres con el PDF aportado `Casa_Pepe-carta_web-20260515.pdf` (fecha indicada en el nombre del archivo, no confirmación de vigencia actual).
+- Cobertura registrada: 26 platos de restaurante, 17 de barra, 7 postres y 4 vinos de postre. Se preservan precios distintos entre restaurante y barra y los formatos declarados, sin inventar tamaños.
+- Se incorporaron los cuatro vinos en una sección «Vinos de postre» y se corrigieron etiquetas en inglés de unidades, pesos y medias raciones, así como la nota y encabezado de vinos.
+- **QA:** Helio confirmó visualmente la corrección final y autorizó cerrar la ficha. La auditoría integral ES/EN/FR y regresión global siguen en sus fases previstas.
