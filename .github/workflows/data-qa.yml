@@ -20,3 +20,11 @@ jobs:
           node scripts/inspect-schema.mjs
           node scripts/audit-exploratory.mjs
           node scripts/audit-french-coverage.mjs
+          node scripts/build-french-plan.mjs
+
+      - name: Upload French proposals (not applied to catalog)
+        uses: actions/upload-artifact@v4
+        with:
+          name: french-coverage-proposals
+          path: qa-reports/fr-coverage-proposals.json
+          retention-days: 14
