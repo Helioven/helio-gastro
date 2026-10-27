@@ -87,6 +87,50 @@ function casaRubioExplanation(name){
 }
 function detailDishExplanation(name,placeId=''){
  if(placeId==='patio-romano'){
+  const publishedDescriptions=new Map([
+   ["Berenjenas fritas con miel de flores y ciuffi di melanzana","Fried aubergines with flower honey and ciuffi di melanzana."],
+   ["Salmorejo cordobés con jamón crujiente, huevo duro y almendras","Traditional Córdoba-style salmorejo with crispy ham, hard-boiled egg and almonds."],
+   ["Bruschetta de sardina ahumada, crema de berenjenas y tomate cherry (2 ud.)","Two artisan-bread bruschettas with smoked sardine, aubergine cream and cherry tomato."],
+   ["Bruschetta de guanciale, huevos y queso pecorino a la carbonara","Artisan-bread bruschetta with guanciale, eggs and pecorino cheese, carbonara-style."],
+   ["Góndola de burrata con mortadela trufada, tomate cherry y pesto de pistacho","Burrata with truffled mortadella mousse, cherry tomatoes, pistachio pesto and basil breadcrumbs."],
+   ["Buñuelos de bacalao en tempura de cerveza con chips de calabacín","Beer-battered cod fritters with courgette chips and caramelised vinegar."],
+   ["Tabla de quesos con mermelada de higos y almendras fritas","Selection of cheeses with fig jam and fried almonds."],
+   ["Surtido de ibéricos Belloterra (120 g)","120 g assortment of Belloterra Iberian cured meats from Los Pedroches."],
+   ["Jamón ibérico de cebo Belloterra (120 g)","120 g of Belloterra Iberian cebo ham from Los Pedroches."],
+   ["Ensalada Patio Romano con mozzarella de búfala, cherry y pesto de albahaca y pistacho","Romaine lettuce, buffalo mozzarella, cherry tomatoes, and basil and pistachio pesto."],
+   ["Ensalada Caprese con tomate rosa, mozzarella de búfala y pesto de albahaca","Pink tomato, buffalo mozzarella and basil pesto."],
+   ["Ensalada César con pollo a la plancha, picatostes y salsa César","Romaine lettuce, grilled chicken, croutons and homemade Caesar sauce."],
+   ["Ensalada Fumé con salmón ahumado, apio, pimiento rojo y yogur","Romaine lettuce, rocket, smoked salmon, celery, red pepper and yoghurt."],
+   ["Rigatoni boloñesa con carne picada de vacuno","Rigatoni with minced beef and Bolognese sauce."],
+   ["Linguine alla Nerano con calabacín, albahaca y provolone","Linguine with courgette, basil and provolone cheese."],
+   ["Linguine alla Ostiense con gambas, mejillones, guanciale y pesto de rúcula y almendras","Linguine with prawns, mussels, guanciale, rocket and almond pesto."],
+   ["Pasta rellena de rabo de toro con salsa de amontillado y champiñones","Pasta stuffed with oxtail, with Amontillado wine and mushroom sauce."],
+   ["Espagueti carbonara estilo Patio Romano con guanciale, yema y pecorino","Spaghetti with guanciale, egg yolk and Pecorino Romano cheese."],
+   ["Risotto Armonia di Lombardia con gorgonzola, pera y nueces","Risotto with gorgonzola cheese, pear and walnuts."],
+   ["Risotto Sole e Mare di Puglia con gambas, azafrán, burrata de búfala y limón","Risotto with prawns, saffron, buffalo burrata and lemon."],
+   ["Pizza Pistacchiella con tomate, mozzarella, mortadela de pistachos y pesto de albahaca","Pizza with tomato, mozzarella, pistachio mortadella and basil pesto."],
+   ["Pizza Capricciosa con jamón cocido, alcachofas, champiñón y aceitunas negras","Pizza with tomato, mozzarella, cooked ham, artichokes, mushrooms and black olives."],
+   ["Pizza Bronte con crema de patata, pistacho, mozzarella, bacon y pesto de pistacho","Pizza with potato cream, pistachios, mozzarella, bacon and pistachio pesto."],
+   ["Pizza Pratolina con crema de trufa negra, champiñón y jamón cocido","Pizza with tomato, mozzarella, black truffle cream, mushrooms and cooked ham."],
+   ["Pizza Regina del Mare con atún, gambas y mejillones","Pizza with tomato, mozzarella, tuna, prawns and mussels."],
+   ["Pizza Ibérica con jamón ibérico, mozzarella de búfala, rúcula y cherry","Pizza with tomato, mozzarella, Iberian ham, buffalo mozzarella, rocket and cherry tomatoes."],
+   ["Rollito de lubina con verduras, puré de patatas y salsa de espumoso (200 g)","200 g sea bass roll with vegetables, mashed potatoes and sparkling-wine sauce."],
+   ["Bacalao alla Cannaruta con tomate cherry, cebolla, pasas y piñones (200 g)","200 g fried cod with cherry tomatoes, onion, raisins and pine nuts."],
+   ["Salmón al Cartoccio con verduras y mayonesa de perejil (200 g)","200 g baked salmon with vegetables and parsley mayonnaise."],
+   ["Solomillo de cerdo con salsa de vino tinto, frutos secos y patatas paja (200 g)","200 g grilled pork tenderloin with red-wine sauce, nuts and straw potatoes."],
+   ["Presa ibérica con ñoquis en salsa gorgonzola (200 g)","200 g grilled Iberian pork presa with gnocchi in gorgonzola sauce."],
+   ["Entrecot de vaca madurada con patatas baby y salsa de pimienta verde (300 g)","300 g aged beef entrecôte with baby potatoes and green pepper sauce."],
+   ["Pizza romana margarita y refresco o zumo (menú infantil)","Children's menu: Roman margherita pizza with a soft drink or juice."],
+   ["Pastelón cordobés de crema con frutos secos","Córdoba-style puff pastry filled with pastry cream and nuts."],
+   ["Tiramisú casero","Homemade tiramisu."],
+   ["Canoli siciliano con ricotta y pistachos","Sicilian cannoli with ricotta cream and pistachios."],
+   ["Canoli siciliano con ricotta, Nutella y avellanas","Sicilian cannoli with ricotta cream, Nutella and hazelnuts."],
+   ["Macedonia de frutas de temporada","Seasonal fruit salad."]
+  ]);
+  const publishedDescription=publishedDescriptions.get(name);
+  if(publishedDescription)return publishedDescription;
+ }
+ if(placeId==='patio-romano'){
   const patioExplanations=[
    [/^ensalada patio romano/i,"Romaine lettuce, buffalo mozzarella, cherry tomatoes, and basil and pistachio pesto."],
    [/^ensalada caprese/i,"Pink tomato, buffalo mozzarella and basil pesto."],
