@@ -37,7 +37,26 @@ for(const profile of profiles){
  report.push(result);if(faults.length)fail=true;
  await context.close();
 }
-await browser.close();
-writeFileSync('qa-reports/fr-visual-qa.json',JSON.stringify({status:fail?'FAIL':'PASS',profiles:report},null,2)+'\n');
-console.log('FR VISUAL QA '+JSON.stringify({status:fail?'FAIL':'PASS',profiles:report}));
+
+const mainContext=await browser.newContext({viewport:{width:1280,height:800}});
+const main=await mainContext.newPage();const mainErrors=[];
+main.on('pageerror',e=>mainErrors.push(e.message));
+await main.goto('http://127.0.0.1:8765/index.html',{waitUntil:'domcontentloaded'});
+await main.locator('#language-select').waitFor();
+const normalOptions=await main.locator('#language-select option').evaluateAll(options=>options.map(o=>o.value));
+if(normalOptions.includes('fr'))mainErrors.push('FR leaked into default public selector');
+await main.goto('http://127.0.0.1:8765/index.html?qa_fr=1',{waitUntil:'domcontentloaded'});
+await main.locator('#language-select option[value="fr"]').waitFor();
+await main.locator('#language-select').selectOption('fr');
+await main.waitForFunction(()=>document.documentElement.lang==='fr'&&window.HelioGastroLanguage?.get()==='fr');
+await main.locator('#language-select').selectOption('en');
+await main.waitForFunction(()=>document.documentElement.lang==='en');
+await main.locator('#language-select').selectOption('es');
+await main.waitForFunction(()=>document.documentElement.lang==='es');
+const mainResult={defaultOptions:normalOptions,optInFrench:true,roundTrip:['fr','en','es'],errors:mainErrors};
+if(mainErrors.length)fail=true;
+await mainContext.close();
+\nawait browser.close();
+writeFileSync('qa-reports/fr-visual-qa.json',JSON.stringify({status:fail?'FAIL':'PASS',profiles:report,mainApp:mainResult},null,2)+'\n');
+console.log('FR VISUAL QA '+JSON.stringify({status:fail?'FAIL':'PASS',profiles:report,mainApp:mainResult}));
 if(fail)process.exitCode=1;
