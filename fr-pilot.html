@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Helio Gastro · Piloto francés Bar Marta</title>
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color-scheme:light;background:#f6f7f8;color:#17334a}*{box-sizing:border-box}body{margin:0}.wrap{max-width:760px;margin:auto;padding:20px 16px 70px}header{background:#10243c;color:white;padding:18px 20px}header .top{max-width:760px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:18px}select{font:inherit;padding:10px;border:1px solid #cad3dc;border-radius:9px}h1{font-size:1.2rem;margin:0}h2{font-size:1.5rem}h3{border-bottom:2px solid #e7edf3;padding-bottom:9px;margin-top:30px}article{background:white;border-radius:14px;margin:12px 0;padding:16px;border:1px solid #e2e7ef}article h4{margin:0 0 6px;font-size:1rem}p{margin:6px 0;color:#536274}.price{font-weight:750;color:#153c30;float:right}.status{font-size:.86rem;color:#a8d8c8}small{color:#62748a}.notice{background:#fff4d8;padding:12px 14px;border-radius:9px;border:1px solid #f3d992}a{color:#134f90}
+</style></head><body><header><div class="top"><div><h1>🍽️ HELIO GASTRO</h1><span class="status">Piloto aislado · Churros Bar Marta</span></div><label><span id="choose">Idioma</span> <select id="lang"><option value="es">Español</option><option value="en">English</option><option value="fr">Français</option></select></label></div></header>
+<main class="wrap"><h2 id="place">Churros Bar Marta</h2><p id="subtitle"></p><p class="notice" id="notice"></p><div id="sections"></div><p><a href="./index.html" id="back">Volver a la aplicación principal</a></p></main>
+<script>
+'use strict';
+const T={
+ es:{choose:'Idioma',subtitle:'Carta de desayunos · Vista piloto',notice:'Esta es una prueba aislada de idioma. Los precios proceden de la ficha documentada; confirma su vigencia con el establecimiento.',back:'Volver a la aplicación principal',single:'Unidad',combo:'Desayuno combinado',noPrice:'Precio no documentado'},
+ en:{choose:'Language',subtitle:'Breakfast menu · Pilot view',notice:'This is an isolated language pilot. Prices come from the documented record; confirm current prices with the establishment.',back:'Return to main application',single:'Single item',combo:'Breakfast combination',noPrice:'Price not documented'},
+ fr:{choose:'Langue',subtitle:'Carte du petit-déjeuner · Version pilote',notice:'Ceci est un test de langue isolé. Les prix proviennent de la fiche documentée ; vérifiez leur validité auprès de l’établissement.',back:'Retour à l’application principale',single:'À l’unité',combo:'Formule petit-déjeuner',noPrice:'Prix non documenté'}
+};
+let place=null;const el=id=>document.getElementById(id);
+const format=n=>new Intl.NumberFormat('fr-FR',{style:'currency',currency:'EUR'}).format(n);
+function render(){const l=el('lang').value,t=T[l];document.documentElement.lang=l;el('choose').textContent=t.choose;el('subtitle').textContent=t.subtitle;el('notice').textContent=t.notice;el('back').textContent=t.back;
+const root=el('sections');root.replaceChildren();if(!place)return;
+for(const section of place.menuSections){const h=document.createElement('h3');h.textContent=l==='fr'?section.titleFr:l==='en'?section.titleEn:section.title;root.append(h);
+for(const item of section.items){const card=document.createElement('article');const title=document.createElement('h4');title.textContent=item.name;card.append(title);
+const desc=document.createElement('p');desc.textContent=l==='fr'?item.fr:l==='en'?item.en:item.es;card.append(desc);
+if(item.prices?.length){for(const price of item.prices){const row=document.createElement('div');row.style.minHeight='24px';const amount=document.createElement('span');amount.className='price';amount.textContent=format(price.eur);const portion=document.createElement('small');portion.textContent=price.label==='combinado'?t.combo:price.label==='unidad'?t.single:price.label;row.append(portion,amount);card.append(row)}}else{const note=document.createElement('small');note.textContent=t.noPrice;card.append(note)}root.append(card)}}}
+el('lang').addEventListener('change',render);
+fetch('./data/places.json').then(r=>{if(!r.ok)throw new Error('data');return r.json()}).then(data=>{place=data.find(x=>x.id==='churros-bar-marta');if(!place)throw Error('not found');render()}).catch(()=>{el('notice').textContent='No se pudo cargar el catálogo. Esta página debe abrirse desde un servidor web (no file://).'});
+</script></body></html>
