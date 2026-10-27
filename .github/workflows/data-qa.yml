@@ -19,3 +19,4 @@ jobs:
           node scripts/audit-data.mjs
           node scripts/inspect-schema.mjs
           node scripts/audit-exploratory.mjs
+          node scripts/audit-french-coverage.mjs
