@@ -44143,16 +44143,19 @@
     "sources": [
       {
         "label": "Ficha de Churros Bar Marta y horario publicado",
-        "url": "https://www.tripadvisor.es/Restaurant_Review-g187430-d7784826-Reviews-Churros_Bar_Marta-Cordoba_Province_of_Cordoba_Andalucia.html"
+        "url": "https://www.tripadvisor.es/Restaurant_Review-g187430-d7784826-Reviews-Churros_Bar_Marta-Cordoba_Province_of_Cordoba_Andalucia.html",
+        "labelFr": "Fiche de Churros Bar Marta et horaires publiés"
       },
       {
         "label": "Opiniones con especialidades de desayuno",
-        "url": "https://churros-bar-marta.foodplacee.com/"
+        "url": "https://churros-bar-marta.foodplacee.com/",
+        "labelFr": "Avis mentionnant les spécialités du petit-déjeuner"
       },
       {
         "label": "Carta de desayunos y bollería publicada en churrosbarmarta.shop (autoría del sitio sin verificar)",
         "labelEn": "Breakfast and pastry menu published on churrosbarmarta.shop (website ownership unverified)",
-        "url": "https://churrosbarmarta.shop/menu"
+        "url": "https://churrosbarmarta.shop/menu",
+        "labelFr": "Carte des petits-déjeuners et pâtisseries publiée sur churrosbarmarta.shop (propriété du site non vérifiée)"
       }
     ],
     "menus": [
@@ -44275,7 +44278,8 @@
                 "label": "combinado",
                 "eur": 2.8
               }
-            ]
+            ],
+            "fr": "Café et demi-tartine classique à l'huile d'olive ou similaire"
           },
           {
             "name": "Café y tostada entera normal de aceite o similar",
@@ -44286,7 +44290,8 @@
                 "label": "combinado",
                 "eur": 4.5
               }
-            ]
+            ],
+            "fr": "Café et tartine entière classique à l'huile d'olive ou similaire"
           },
           {
             "name": "Café y media tostada especial (York, York y queso, jamón serrano o pollo a la plancha)",
@@ -44297,7 +44302,8 @@
                 "label": "combinado",
                 "eur": 3.5
               }
-            ]
+            ],
+            "fr": "Café et demi-tartine spéciale (jambon blanc, jambon blanc et fromage, jambon serrano ou poulet grillé)"
           },
           {
             "name": "Café y tostada entera especial",
@@ -44308,7 +44314,8 @@
                 "label": "combinado",
                 "eur": 5.5
               }
-            ]
+            ],
+            "fr": "Café et tartine entière spéciale"
           },
           {
             "name": "Café y media ración de churros",
@@ -44319,7 +44326,8 @@
                 "label": "combinado",
                 "eur": 3
               }
-            ]
+            ],
+            "fr": "Café et demi-portion de churros"
           },
           {
             "name": "Café y ración entera de churros",
@@ -44330,7 +44338,8 @@
                 "label": "combinado",
                 "eur": 3.5
               }
-            ]
+            ],
+            "fr": "Café et portion entière de churros"
           },
           {
             "name": "Chocolate y media ración de churros",
@@ -44341,7 +44350,8 @@
                 "label": "combinado",
                 "eur": 3.5
               }
-            ]
+            ],
+            "fr": "Chocolat chaud et demi-portion de churros"
           },
           {
             "name": "Chocolate y ración entera de churros",
@@ -44352,7 +44362,8 @@
                 "label": "combinado",
                 "eur": 4
               }
-            ]
+            ],
+            "fr": "Chocolat chaud et portion entière de churros"
           },
           {
             "name": "Zumo de naranja, refresco o zumo embotellado y media tostada normal",
@@ -44363,7 +44374,8 @@
                 "label": "combinado",
                 "eur": 4.5
               }
-            ]
+            ],
+            "fr": "Jus d'orange, soda ou jus en bouteille avec une demi-tartine classique"
           },
           {
             "name": "Zumo de naranja, refresco o zumo embotellado y tostada entera normal",
@@ -44374,7 +44386,8 @@
                 "label": "combinado",
                 "eur": 6.1
               }
-            ]
+            ],
+            "fr": "Jus d'orange, soda ou jus en bouteille avec une tartine entière classique"
           },
           {
             "name": "Zumo de naranja, refresco o zumo embotellado y media tostada especial",
@@ -44385,7 +44398,8 @@
                 "label": "combinado",
                 "eur": 4.5
               }
-            ]
+            ],
+            "fr": "Jus d'orange, soda ou jus en bouteille avec une demi-tartine spéciale"
           },
           {
             "name": "Zumo de naranja, refresco o zumo embotellado y tostada entera especial",
@@ -44396,9 +44410,11 @@
                 "label": "combinado",
                 "eur": 6.5
               }
-            ]
+            ],
+            "fr": "Jus d'orange, soda ou jus en bouteille avec une tartine entière spéciale"
           }
-        ]
+        ],
+        "titleFr": "Formules petit-déjeuner"
       },
       {
         "title": "Bollería y dulces",
@@ -44413,7 +44429,8 @@
                 "label": "unidad",
                 "eur": 2.3
               }
-            ]
+            ],
+            "fr": "Viennoiserie spéciale"
           },
           {
             "name": "Dulce fino",
@@ -44424,7 +44441,8 @@
                 "label": "unidad",
                 "eur": 2.4
               }
-            ]
+            ],
+            "fr": "Pâtisserie fine"
           },
           {
             "name": "Porción de tarta",
@@ -44435,21 +44453,25 @@
                 "label": "unidad",
                 "eur": 2.8
               }
-            ]
+            ],
+            "fr": "Part de gâteau"
           },
           {
             "name": "Bollería variada",
             "es": "Bollería variada",
             "en": "Assorted pastries",
-            "prices": []
+            "prices": [],
+            "fr": "Assortiment de viennoiseries"
           },
           {
             "name": "Porción de tarta especial",
             "es": "Porción de tarta especial",
             "en": "Slice of special cake",
-            "prices": []
+            "prices": [],
+            "fr": "Part de gâteau spécial"
           }
-        ]
+        ],
+        "titleFr": "Viennoiseries et douceurs"
       }
     ],
     "menuSourceNote": "Importes publicados en churrosbarmarta.shop/menu, proporcionados por Helio el 24/10/2026. Titularidad de la web y vigencia en el local pendientes de confirmación; no confundir precios de desayunos combinados con productos sueltos."
