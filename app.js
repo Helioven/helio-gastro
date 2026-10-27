@@ -373,6 +373,7 @@ function venueMenuPriceLabel(source,english){
 }
 function refreshDishExplanations(){
  const english=window.HelioGastroLanguage?.get()==='en';
+ const activeLanguage=window.HelioGastroLanguage?.get()||'es';
  document.querySelectorAll('[data-set-menu-es]').forEach(node=>{node.textContent=english?node.dataset.setMenuEn:node.dataset.setMenuEs;});
  document.querySelectorAll('[data-source-label-es]').forEach(node=>{node.textContent=(english?node.dataset.sourceLabelEn:node.dataset.sourceLabelEs)+' ↗';});
  document.querySelectorAll('[data-source-audit-title]').forEach(node=>{node.textContent=english?'Source documentation (expand)':'Documentación de fuentes (desplegar)';});
@@ -380,7 +381,7 @@ function refreshDishExplanations(){
  document.querySelectorAll('[data-official-menu-notice-es]').forEach(node=>{node.textContent=english?node.dataset.officialMenuNoticeEn:node.dataset.officialMenuNoticeEs;});
  document.querySelectorAll('[data-official-menu-es]').forEach(node=>{node.textContent=(english?node.dataset.officialMenuEn:node.dataset.officialMenuEs)+' ↗';});
  document.querySelectorAll('[data-specialties-es]').forEach(node=>{node.textContent=english?node.dataset.specialtiesEn:node.dataset.specialtiesEs;});
- document.querySelectorAll('[data-dish-explanation]').forEach(node=>{node.hidden=node.dataset.explanationLanguage?node.dataset.explanationLanguage!==(english?'en':'es'):!english;});
+ document.querySelectorAll('[data-dish-explanation]').forEach(node=>{node.hidden=node.dataset.explanationLanguage?node.dataset.explanationLanguage!==activeLanguage:!english;});
  document.querySelectorAll('[data-venue-menu-section]').forEach(node=>{node.textContent=english?(node.dataset.venueMenuSectionEn||VENUE_MENU_SECTION_EN[node.dataset.venueMenuSection]||node.dataset.venueMenuSection):node.dataset.venueMenuSection;});
  document.querySelectorAll('[data-venue-menu-price-label]').forEach(node=>{node.textContent=venueMenuPriceLabel(node.dataset.venueMenuPriceLabel,english);});
  document.querySelectorAll('[data-venue-menu-note-es]').forEach(node=>{node.textContent=english?node.dataset.venueMenuNoteEn:node.dataset.venueMenuNoteEs;});
@@ -937,7 +938,7 @@ function renderVenueMenuSections(panel,p){
   for(const dish of section.items){
    const entry=document.createElement('section');entry.className='menu-dish';
    const title=document.createElement('h4');title.dataset.keepDishSpanish='';title.textContent=dish.name;entry.append(title);
-   for(const language of ['es','en']){const value=language==='en'?(typeof dish.en==='string'&&dish.en.trim()&&clean(dish.en)!==clean(dish.name)?dish.en:((p.id==='moriles-ribera')?morilesExplanation(dish.name):'')):dish.es;if(typeof value!=='string'||!value.trim()||clean(value)===clean(dish.name))continue;const description=document.createElement('small');description.className='dish-explanation detail-dish-explanation';description.dataset.dishExplanation='';description.dataset.explanationLanguage=language;description.textContent=value;description.hidden=(window.HelioGastroLanguage?.get()||'es')!==language;entry.append(description);}
+   for(const language of ['es','en',...(window.HelioGastroLanguage?.qaFrenchEnabled?.()&&p.id==='la-montillana'?['fr']:[])]){const value=language==='fr'?dish.fr:language==='en'?(typeof dish.en==='string'&&dish.en.trim()&&clean(dish.en)!==clean(dish.name)?dish.en:((p.id==='moriles-ribera')?morilesExplanation(dish.name):'')):dish.es;if(typeof value!=='string'||!value.trim()||clean(value)===clean(dish.name))continue;const description=document.createElement('small');description.className='dish-explanation detail-dish-explanation';description.dataset.dishExplanation='';description.dataset.explanationLanguage=language;description.textContent=value;description.hidden=(window.HelioGastroLanguage?.get()||'es')!==language;entry.append(description);}
    for(const price of dish.prices){
     const row=document.createElement('div');row.className='menu-price-row';
     const label=document.createElement('span');label.dataset.venueMenuPriceLabel=price.label||price.portion||'';label.textContent=venueMenuPriceLabel(label.dataset.venueMenuPriceLabel,window.HelioGastroLanguage?.get()==='en');
@@ -1340,6 +1341,23 @@ async function init(){
   const res=await fetch('./data/places.json',{cache:'no-store'});
   if(!res.ok)throw Error('HTTP '+res.status);
   const data=await res.json();if(!Array.isArray(data))throw Error('Formato inválido');
+  if(window.HelioGastroLanguage?.qaFrenchEnabled?.()){
+    try{
+      const frResponse=await fetch('./translations/fr/batch-001-la-montillana.json',{cache:'no-store'});
+      if(!frResponse.ok)throw Error('HTTP '+frResponse.status);
+      const batch=await frResponse.json();
+      if(!Array.isArray(batch.entries)||batch.entries.length!==15)throw Error('Invalid FR QA batch');
+      const target=data.find(p=>p.id==='la-montillana');
+      if(!target)throw Error('La Montillana not found');
+      const seen=new Set();
+      for(const entry of batch.entries){
+        const key=entry.sectionIndex+':'+entry.itemIndex;
+        const dish=target.menuSections?.[entry.sectionIndex]?.items?.[entry.itemIndex];
+        if(entry.placeId!=='la-montillana'||seen.has(key)||!dish?.es||!dish?.en||!entry.fr?.trim())throw Error('Invalid FR reference '+key);
+        seen.add(key);dish.fr=entry.fr;
+      }
+    }catch(error){console.warn('French QA batch unavailable:',error.message)}
+  }
   state.places=data.filter(place=>place?.hidden!==true).map(normalizePlace).filter(validPlace);
   state.favorites=new Set([...loadFavorites()].filter(id=>state.places.some(p=>p.id===id)));
   renderFavorites();
