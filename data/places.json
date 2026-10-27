@@ -21388,6 +21388,52 @@
             ]
           }
         ]
+      },
+      {
+        "title": "Vinos de postre",
+        "note": "Vinos incluidos en el apartado de postres de la carta oficial.",
+        "items": [
+          {
+            "name": "PX San Ramón",
+            "en": "PX San Ramón",
+            "prices": [
+              {
+                "label": "Copa",
+                "eur": 5.5
+              }
+            ]
+          },
+          {
+            "name": "Cream Santa Magdalena",
+            "en": "Cream Santa Magdalena",
+            "prices": [
+              {
+                "label": "Copa",
+                "eur": 6.5
+              }
+            ]
+          },
+          {
+            "name": "Sauternes Château Bordenave",
+            "en": "Sauternes Château Bordenave",
+            "prices": [
+              {
+                "label": "Copa",
+                "eur": 8.5
+              }
+            ]
+          },
+          {
+            "name": "Don PX Reserva",
+            "en": "Don PX Reserva",
+            "prices": [
+              {
+                "label": "Copa",
+                "eur": 16
+              }
+            ]
+          }
+        ]
       }
     ],
     "menuSourceNote": "Precios transcritos del PDF aportado (Casa_Pepe-carta_web-20260515.pdf). Verificar vigencia directamente con el local."
