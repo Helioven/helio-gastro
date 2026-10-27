@@ -532,3 +532,8 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 
 - **REVISADA Y CERRADA / QA visual ES/EN confirmado por Helio.** Se revisaron etiquetas de formato con gramajes, medias/raciones y precios únicos, y se añadió la etiqueta inglesa de la fuente del grupo Ágora. Helio confirmó la correcta visualización tras los cambios.
 - Se mantienen los seis apartados y los precios registrados sin alteración. No incluir en nuevas revisiones ordinarias salvo incidencia, fuente nueva o solicitud expresa. La validación visual no sustituye la auditoría integral ni garantiza vigencia actual de los precios.
+
+### Corrección de fuente — Taberna Museo Manolete (27/10/2026)
+
+- La fuente de su ficha enlazaba por error a Casa Bravo, otro local del grupo Ágora. Sustituida por la carta del propio establecimiento: https://www.tabernaagoramuseomanolete.com/#carta (etiquetas ES/EN).
+- Comprobación puntual con la web: coinciden ejemplos de jamón ibérico de cebo, flamenquín cordobés y postres. Se conservan los 54 platos, 74 variantes y precios sin modificaciones. La revisión exhaustiva de vigencia sigue pendiente, sin reabrir la revisión editorial ya validada por Helio.
