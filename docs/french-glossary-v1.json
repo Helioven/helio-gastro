@@ -1,7 +1,7 @@
 {
   "meta": {
     "date": "2026-10-27",
-    "status": "draft_for_QA",
+    "status": "expanded_draft_for_QA",
     "source": "docs/french-ui-candidates.json",
     "purpose": "French reusable UI terminology for Helio Gastro; no catalog or application modifications",
     "rules": [
@@ -9,7 +9,8 @@
       "Preserve all amounts, years, restaurant names and units.",
       "For uncertain formats keep uncertainty; do not silently infer serving size.",
       "Keep traditional dish names when appropriate and explain them in French separately."
-    ]
+    ],
+    "note": "Context checks required before applying; preserves menu data unchanged."
   },
   "portions": [
     {
@@ -277,6 +278,246 @@
     {
       "es": "Nuestros guisos",
       "fr": "Nos plats mijotés",
+      "review": "context_check"
+    },
+    {
+      "es": "Pescado",
+      "fr": "Poisson",
+      "review": "context_check"
+    },
+    {
+      "es": "Pescados y mariscos",
+      "fr": "Poissons et fruits de mer",
+      "review": "context_check"
+    },
+    {
+      "es": "Fritos",
+      "fr": "Fritures",
+      "review": "context_check"
+    },
+    {
+      "es": "Guisos",
+      "fr": "Plats mijotés",
+      "review": "context_check"
+    },
+    {
+      "es": "Otros",
+      "fr": "Autres",
+      "review": "context_check"
+    },
+    {
+      "es": "Arroces",
+      "fr": "Plats de riz",
+      "review": "context_check"
+    },
+    {
+      "es": "Croquetas",
+      "fr": "Croquettes",
+      "review": "context_check"
+    },
+    {
+      "es": "Paellas",
+      "fr": "Paellas",
+      "review": "context_check"
+    },
+    {
+      "es": "Helados",
+      "fr": "Glaces",
+      "review": "context_check"
+    },
+    {
+      "es": "Pizzas individuales",
+      "fr": "Pizzas individuelles",
+      "review": "context_check"
+    },
+    {
+      "es": "Entrantes Fríos",
+      "fr": "Entrées froides",
+      "review": "context_check"
+    },
+    {
+      "es": "Entrantes calientes",
+      "fr": "Entrées chaudes",
+      "review": "context_check"
+    },
+    {
+      "es": "Platos Tradicionales",
+      "fr": "Plats traditionnels",
+      "review": "context_check"
+    },
+    {
+      "es": "Bocadillos",
+      "fr": "Sandwichs",
+      "review": "context_check"
+    },
+    {
+      "es": "Chocolates",
+      "fr": "Chocolats",
+      "review": "context_check"
+    },
+    {
+      "es": "Infusiones y tés",
+      "fr": "Infusions et thés",
+      "review": "context_check"
+    },
+    {
+      "es": "Cafés y descafeinados",
+      "fr": "Cafés et décaféinés",
+      "review": "context_check"
+    },
+    {
+      "es": "Embutidos",
+      "fr": "Charcuteries",
+      "review": "context_check"
+    },
+    {
+      "es": "Para los peques",
+      "fr": "Pour les petits",
+      "review": "context_check"
+    },
+    {
+      "es": "Extras y suplementos",
+      "fr": "Extras et suppléments",
+      "review": "context_check"
+    },
+    {
+      "es": "Para compartir",
+      "fr": "À partager",
+      "review": "context_check"
+    },
+    {
+      "es": "Arroz",
+      "fr": "Riz",
+      "review": "context_check"
+    },
+    {
+      "es": "Guarnición",
+      "fr": "Garniture",
+      "review": "context_check"
+    },
+    {
+      "es": "Guarniciones",
+      "fr": "Garnitures",
+      "review": "context_check"
+    },
+    {
+      "es": "Carta de restaurante",
+      "fr": "Carte du restaurant",
+      "review": "context_check"
+    },
+    {
+      "es": "Carta de barra",
+      "fr": "Carte du bar",
+      "review": "context_check"
+    },
+    {
+      "es": "Vinos de postre",
+      "fr": "Vins de dessert",
+      "review": "context_check"
+    },
+    {
+      "es": "Frituras",
+      "fr": "Fritures",
+      "review": "context_check"
+    },
+    {
+      "es": "Ensaladas y Verduras",
+      "fr": "Salades et légumes",
+      "review": "context_check"
+    },
+    {
+      "es": "Cocina casera",
+      "fr": "Cuisine maison",
+      "review": "context_check"
+    },
+    {
+      "es": "Platos",
+      "fr": "Plats",
+      "review": "context_check"
+    },
+    {
+      "es": "Entremeses",
+      "fr": "Hors-d’œuvre",
+      "review": "context_check"
+    },
+    {
+      "es": "Selección Especial",
+      "fr": "Sélection spéciale",
+      "review": "context_check"
+    },
+    {
+      "es": "Nuestras carnes",
+      "fr": "Nos viandes",
+      "review": "context_check"
+    },
+    {
+      "es": "Los clásicos de la casa",
+      "fr": "Les classiques de la maison",
+      "review": "context_check"
+    },
+    {
+      "es": "Dulce final",
+      "fr": "Douceurs pour finir",
+      "review": "context_check"
+    },
+    {
+      "es": "De la mar",
+      "fr": "De la mer",
+      "review": "context_check"
+    },
+    {
+      "es": "Del mar",
+      "fr": "De la mer",
+      "review": "context_check"
+    },
+    {
+      "es": "De la tierra",
+      "fr": "De la terre",
+      "review": "context_check"
+    },
+    {
+      "es": "Del huerto",
+      "fr": "Du potager",
+      "review": "context_check"
+    },
+    {
+      "es": "Lo nuestro",
+      "fr": "Nos spécialités",
+      "review": "context_check"
+    },
+    {
+      "es": "Para terminar",
+      "fr": "Pour terminer",
+      "review": "context_check"
+    },
+    {
+      "es": "Especialidades",
+      "fr": "Spécialités",
+      "review": "context_check"
+    },
+    {
+      "es": "Complementos de carta",
+      "fr": "Compléments de la carte",
+      "review": "context_check"
+    },
+    {
+      "es": "Sugerencias del día",
+      "fr": "Suggestions du jour",
+      "review": "context_check"
+    },
+    {
+      "es": "Pescados a la brasa",
+      "fr": "Poissons grillés au feu de bois",
+      "review": "context_check"
+    },
+    {
+      "es": "Entrantes fríos y ensaladas",
+      "fr": "Entrées froides et salades",
+      "review": "context_check"
+    },
+    {
+      "es": "Montaditos",
+      "fr": "Montaditos",
       "review": "context_check"
     }
   ],
