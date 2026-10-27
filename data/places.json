@@ -51914,6 +51914,11 @@
         "label": "Carta oficial de desayunos 2026 (PDF aportado por Helio; sin verificación independiente de vigencia)",
         "labelEn": "Official 2026 breakfast menu (PDF supplied by Helio; current validity not independently verified)",
         "url": "https://www.patioromano.com/"
+      },
+      {
+        "label": "Menús oficiales 2025–2026 — Moschea di Cordova y Giudecca di Cordova (web del restaurante; consulta 27/10/2026)",
+        "labelEn": "Official 2025–2026 set menus — Moschea di Cordova and Giudecca di Cordova (restaurant website; checked 27 Oct 2026)",
+        "url": "https://patioromano.com/menus/"
       }
     ],
     "menus": [
@@ -52462,6 +52467,64 @@
             "description": "Importe adicional al precio de tostada entera"
           }
         ]
+      }
+    ],
+    "groupMenus": [
+      {
+        "name": "Menú Moschea di Cordova",
+        "nameEn": "Moschea di Cordova Menu",
+        "eurPerPerson": 38,
+        "shared": [
+          "Salmorejo cordobés con guaciale crujiente y piñones fritos",
+          "Zeppeline de berenjenas con miel y jamón ibérico",
+          "Esferas de queso parmesano con vinagre balsámico",
+          "Surtido ibérico de los Pedroches y embutidos italianos"
+        ],
+        "sharedEn": [
+          "Córdoba-style salmorejo with crispy guanciale and fried pine nuts",
+          "Aubergine zeppeline with honey and Iberian ham",
+          "Parmesan cheese spheres with balsamic vinegar",
+          "Iberian cured meats from Los Pedroches and Italian charcuterie"
+        ],
+        "mainCourse": "Perol cordobés de «Fregola Sarda» con setas y solomillo ibérico",
+        "mainCourseEn": "Córdoba-style fregola sarda with mushrooms and Iberian pork tenderloin",
+        "dessert": "Cannolo Siciliano relleno de crema ricotta y pistachos",
+        "dessertEn": "Sicilian cannolo filled with ricotta cream and pistachios",
+        "includes": "38 € por persona, IVA incluido. Entrantes para compartir: un plato de cada entrante por cada cuatro personas. Segundo plato y postre individuales. Incluye pan, grissini y bebidas según selección publicada (agua mineral, cerveza de barril, refrescos y vinos indicados). No se especifica un mínimo de comensales en la página. Consultar condiciones y disponibilidad con el restaurante.",
+        "includesEn": "€38 per person, VAT included. Starters to share: one serving of each starter per four guests. Individual main course and dessert. Bread, grissini and the listed drinks are included (mineral water, draught beer, soft drinks and specified wines). The page does not state a minimum party size. Check conditions and availability with the restaurant.",
+        "sourceUrl": "https://patioromano.com/menus/"
+      },
+      {
+        "name": "Menú Giudecca di Cordova",
+        "nameEn": "Giudecca di Cordova Menu",
+        "eurPerPerson": 48,
+        "shared": [
+          "Mazamorra de almendras, polvo de aceitunas y sardina ahumada",
+          "Zeppeline de berenjenas con miel y jamón ibérico",
+          "Mousse de mortadela de pistachos",
+          "Surtido de quesos españoles e italianos",
+          "Rocher de patatas, espinacas y avellanas"
+        ],
+        "sharedEn": [
+          "Almond mazamorra with olive powder and smoked sardine",
+          "Aubergine zeppeline with honey and Iberian ham",
+          "Pistachio mortadella mousse",
+          "Selection of Spanish and Italian cheeses",
+          "Potato, spinach and hazelnut rocher"
+        ],
+        "choice": [
+          "Presa ibérica con salsa gorgonzola y ñoquis",
+          "Bacalao a la Toscana"
+        ],
+        "choiceEn": [
+          "Iberian pork presa with gorgonzola sauce and gnocchi",
+          "Tuscan-style cod"
+        ],
+        "dessert": "Panna cotta con caramelo y almendra crujiente",
+        "dessertEn": "Panna cotta with caramel and crunchy almonds",
+        "includes": "48 € por persona, IVA incluido. Entrantes para compartir: un plato de cada entrante por cada cuatro personas. Segundo plato individual a elegir y postre individual. Incluye pan, grissini y bebidas según selección publicada (agua mineral, cerveza de barril, refrescos y vinos indicados). No se especifica un mínimo de comensales en la página. Consultar condiciones y disponibilidad con el restaurante.",
+        "includesEn": "€48 per person, VAT included. Starters to share: one serving of each starter per four guests. Choice of individual main course and an individual dessert. Bread, grissini and the listed drinks are included (mineral water, draught beer, soft drinks and specified wines). The page does not state a minimum party size. Check conditions and availability with the restaurant.",
+        "sourceUrl": "https://patioromano.com/menus/"
       }
     ]
   },
