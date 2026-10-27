@@ -22,6 +22,7 @@ jobs:
           node scripts/audit-french-coverage.mjs
           node scripts/build-french-plan.mjs
           node scripts/list-french-section-titles.mjs
+          node scripts/audit-french-integrity.mjs
 
       - name: Upload French proposals (not applied to catalog)
         uses: actions/upload-artifact@v4
