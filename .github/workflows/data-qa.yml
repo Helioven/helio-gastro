@@ -25,6 +25,7 @@ jobs:
           node scripts/audit-french-integrity.mjs
           node scripts/preview-french-batch.mjs
           node scripts/validate-french-batch.mjs
+          node scripts/test-fr-overlay-integrity.mjs
 
       - name: Upload French proposals (not applied to catalog)
         uses: actions/upload-artifact@v4
