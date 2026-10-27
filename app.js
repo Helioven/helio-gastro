@@ -358,6 +358,8 @@ function venueMenuPriceLabel(source,english){
  if(Object.hasOwn(detailedLabels,source))return detailedLabels[source];
  const remainingLabels={'media 95 g':'Half portion · 95 g','ración 250 g':'Full portion · 250 g','media 60 g':'Half portion · 60 g','ración 100 g':'Full portion · 100 g','precio único':'Single price','media':'Half portion','ración':'Full portion','tapa':'Tapa','unidad':'Single item','degustación':'Tasting portion','botella 50 cl':'50 cl bottle'};
  if(Object.hasOwn(remainingLabels,source))return remainingLabels[source];
+ const weightPortion=source.match(/^(\d+(?:[.,]\d+)?\s*(?:g|kg))\s*·\s*(tapa|media|ración)$/i);
+ if(weightPortion)return weightPortion[1]+' · '+({'tapa':'tapa','media':'half portion','ración':'full portion'}[weightPortion[2].toLowerCase()]);
  const unitCount=source.match(/^(\d+)\s+unidades(?:\s*·\s*(tapa|media))?$/i);
  if(unitCount)return unitCount[1]+' pieces'+(unitCount[2]?' · '+(unitCount[2].toLowerCase()==='media'?'half portion':'tapa'):'');
  if(source==='precio publicado')return 'Published price';
