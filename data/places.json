@@ -54347,211 +54347,196 @@
         "items": [
           {
             "name": "Salmorejo Cordobés",
-            "description": "Sopa fría cordobesa de tomate y pan.",
-            "en": "Cordoban salmorejo",
-            "descriptionEn": "Traditional cold Cordoban tomato and bread soup.",
+            "en": "Traditional cold Cordoban tomato and bread soup.",
             "prices": [
               {
                 "label": "media ración",
                 "eur": 7.5
               },
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 9.5
               }
-            ]
+            ],
+            "es": "Sopa fría cordobesa de tomate y pan."
           },
           {
             "name": "Patatas a la brava",
-            "description": "Patatas con salsa brava.",
-            "en": "Patatas bravas",
-            "descriptionEn": "Potatoes served with spicy brava sauce.",
+            "en": "Potatoes served with spicy brava sauce.",
             "prices": [
               {
                 "label": "media ración",
                 "eur": 7.5
               },
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 9.5
               }
-            ]
+            ],
+            "es": "Patatas con salsa brava."
           },
           {
             "name": "Chorizo al Infierno",
-            "description": "Chorizo preparado al estilo «al infierno»; la carta no detalla el método.",
-            "en": "Chorizo al infierno",
-            "descriptionEn": "Chorizo served 'al infierno' style; preparation details are not specified.",
+            "en": "Chorizo served 'al infierno' style; preparation details are not specified.",
             "prices": [
               {
                 "label": "media ración",
                 "eur": 7.5
               },
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 10.5
               }
-            ]
+            ],
+            "es": "Chorizo preparado al estilo «al infierno»; la carta no detalla el método."
           },
           {
             "name": "Ensaladilla de Gambas",
-            "description": "Ensaladilla de gambas.",
-            "en": "Prawn potato salad",
-            "descriptionEn": "Spanish-style potato salad with prawns.",
+            "en": "Spanish-style potato salad with prawns.",
             "prices": [
               {
                 "label": "media ración",
                 "eur": 7.5
               },
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 10
               }
-            ]
+            ],
+            "es": "Ensaladilla de gambas."
           },
           {
             "name": "Lomo de Orza",
-            "description": "Lomo de cerdo preparado al estilo tradicional de orza.",
-            "en": "Lomo de orza",
-            "descriptionEn": "Traditional orza-style pork loin.",
+            "en": "Traditional orza-style pork loin.",
             "prices": [
               {
                 "label": "media ración",
                 "eur": 8.5
               },
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 12.5
               }
-            ]
+            ],
+            "es": "Lomo de cerdo preparado al estilo tradicional de orza."
           },
           {
             "name": "Boquerones en Vinagre",
-            "description": "Boquerones marinados en vinagre.",
-            "en": "Vinegar-marinated anchovies",
-            "descriptionEn": "Anchovies marinated in vinegar.",
+            "en": "Anchovies marinated in vinegar.",
             "prices": [
               {
                 "label": "media ración",
                 "eur": 7
               },
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 9.5
               }
-            ]
+            ],
+            "es": "Boquerones marinados en vinagre."
           },
           {
             "name": "Queso de Oveja",
-            "description": "Queso de oveja.",
-            "en": "Sheep's milk cheese",
-            "descriptionEn": "Sheep's milk cheese.",
+            "en": "Sheep's milk cheese.",
             "prices": [
               {
                 "label": "media ración",
                 "eur": 10
               },
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 13.5
               }
-            ]
+            ],
+            "es": "Queso de oveja."
           },
           {
             "name": "Tortilla de Camarones (unidad)",
-            "description": "Tortilla de camarones, precio por unidad.",
-            "en": "Shrimp fritter (one piece)",
-            "descriptionEn": "Crispy shrimp fritter, priced per piece.",
+            "en": "Crispy shrimp fritter, priced per piece.",
             "prices": [
               {
                 "label": "unidad",
                 "eur": 2.6
               }
-            ]
+            ],
+            "es": "Tortilla de camarones, precio por unidad."
           },
           {
             "name": "Tosta de Anchoa del Cantábrico (unidad)",
-            "description": "Tosta con anchoa del Cantábrico, precio por unidad.",
-            "en": "Cantabrian anchovy toast (one piece)",
-            "descriptionEn": "Toast topped with Cantabrian anchovy, priced per piece.",
+            "en": "Toast topped with Cantabrian anchovy, priced per piece.",
             "prices": [
               {
                 "label": "unidad",
                 "eur": 2.9
               }
-            ]
+            ],
+            "es": "Tosta con anchoa del Cantábrico, precio por unidad."
           },
           {
             "name": "Tosta de Sardina con Aguacate",
-            "description": "Tosta de sardina con aguacate.",
-            "en": "Sardine and avocado toast",
-            "descriptionEn": "Toast with sardine and avocado.",
+            "en": "Toast with sardine and avocado.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 3.6
               }
-            ]
+            ],
+            "es": "Tosta de sardina con aguacate."
           },
           {
             "name": "Berenjenas a la miel de caña",
-            "description": "Berenjenas acompañadas de miel de caña.",
-            "en": "Fried aubergines with cane syrup",
-            "descriptionEn": "Aubergines served with cane syrup.",
+            "en": "Aubergines served with cane syrup.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 10
               }
-            ]
+            ],
+            "es": "Berenjenas acompañadas de miel de caña."
           },
           {
             "name": "Cartuchito de Gambas con Mayonesa de Lima",
-            "description": "Cartuchito de gambas con mayonesa de lima.",
-            "en": "Prawns with lime mayonnaise",
-            "descriptionEn": "Prawns served in a paper cone with lime mayonnaise.",
+            "en": "Prawns served in a paper cone with lime mayonnaise.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 12
               }
-            ]
+            ],
+            "es": "Cartuchito de gambas con mayonesa de lima."
           },
           {
             "name": "Torreznos",
-            "description": "Torreznos; la carta no precisa guarnición.",
-            "en": "Crispy pork belly",
-            "descriptionEn": "Crispy pork belly; no side dish is specified.",
+            "en": "Crispy pork belly; no side dish is specified.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 14
               }
-            ]
+            ],
+            "es": "Torreznos; la carta no precisa guarnición."
           },
           {
             "name": "Gambas al Ajillo",
-            "description": "Gambas cocinadas al ajillo.",
-            "en": "Garlic prawns",
-            "descriptionEn": "Prawns cooked with garlic.",
+            "en": "Prawns cooked with garlic.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 13
               }
-            ]
+            ],
+            "es": "Gambas cocinadas al ajillo."
           },
           {
             "name": "Pulpo a la Gallega",
-            "description": "Pulpo preparado al estilo gallego.",
-            "en": "Galician-style octopus",
-            "descriptionEn": "Octopus served Galician-style.",
+            "en": "Octopus served Galician-style.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 17.5
               }
-            ]
+            ],
+            "es": "Pulpo preparado al estilo gallego."
           }
         ]
       },
@@ -54561,99 +54546,91 @@
         "items": [
           {
             "name": "Cogollitos al Ajillo",
-            "description": "Cogollos de lechuga al ajillo.",
-            "en": "Garlic-dressed lettuce hearts",
-            "descriptionEn": "Little gem lettuce hearts with garlic.",
+            "en": "Little gem lettuce hearts with garlic.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 8.5
               }
-            ]
+            ],
+            "es": "Cogollos de lechuga al ajillo."
           },
           {
             "name": "Ventresca sobre Lecho de Daditos de Tomate",
-            "description": "Ventresca servida sobre dados de tomate.",
-            "en": "Tuna belly on diced tomatoes",
-            "descriptionEn": "Tuna belly served on a bed of diced tomatoes.",
+            "en": "Tuna belly served on a bed of diced tomatoes.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 11.5
               }
-            ]
+            ],
+            "es": "Ventresca servida sobre dados de tomate."
           },
           {
             "name": "Ensalada de Aguacate con Frutos del Mar",
-            "description": "Ensalada de aguacate y frutos del mar.",
-            "en": "Avocado and seafood salad",
-            "descriptionEn": "Salad with avocado and assorted seafood.",
+            "en": "Salad with avocado and assorted seafood.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 14
               }
-            ]
+            ],
+            "es": "Ensalada de aguacate y frutos del mar."
           },
           {
             "name": "Ensalada de Rulo de Cabra y Frutos Secos",
-            "description": "Ensalada con rulo de queso de cabra y frutos secos.",
-            "en": "Goat's cheese and nut salad",
-            "descriptionEn": "Salad with goat's cheese and nuts.",
+            "en": "Salad with goat's cheese and nuts.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 14
               }
-            ]
+            ],
+            "es": "Ensalada con rulo de queso de cabra y frutos secos."
           },
           {
             "name": "Alcachofas al Moriles",
-            "description": "Alcachofas al Moriles; la carta no detalla más ingredientes.",
-            "en": "Artichokes with Moriles wine",
-            "descriptionEn": "Artichokes prepared 'al Moriles' style; other ingredients are not specified.",
+            "en": "Artichokes prepared 'al Moriles' style; other ingredients are not specified.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 14.5
               }
-            ]
+            ],
+            "es": "Alcachofas al Moriles; la carta no detalla más ingredientes."
           },
           {
             "name": "Pimientos Asados con Brandada de Bacalao y Melva",
-            "description": "Pimientos asados con brandada de bacalao y melva.",
-            "en": "Roasted peppers with salt-cod brandade and frigate tuna",
-            "descriptionEn": "Roasted peppers with salt-cod brandade and frigate tuna.",
+            "en": "Roasted peppers with salt-cod brandade and frigate tuna.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 14.5
               }
-            ]
+            ],
+            "es": "Pimientos asados con brandada de bacalao y melva."
           },
           {
             "name": "Habitas Baby con Huevo Roto",
-            "description": "Habitas baby acompañadas de huevo roto.",
-            "en": "Baby broad beans with broken egg",
-            "descriptionEn": "Baby broad beans with broken egg.",
+            "en": "Baby broad beans with broken egg.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 14.5
               }
-            ]
+            ],
+            "es": "Habitas baby acompañadas de huevo roto."
           },
           {
             "name": "Cazuela de Cardos con Almejas y Gambas",
-            "description": "Cardos en cazuela con almejas y gambas.",
-            "en": "Cardoon casserole with clams and prawns",
-            "descriptionEn": "Cardoons cooked in a casserole with clams and prawns.",
+            "en": "Cardoons cooked in a casserole with clams and prawns.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 16.5
               }
-            ]
+            ],
+            "es": "Cardos en cazuela con almejas y gambas."
           }
         ]
       },
@@ -54663,55 +54640,51 @@
         "items": [
           {
             "name": "Patatas con Huevo y Virutas de Jamón",
-            "description": "Patatas acompañadas de huevo y virutas de jamón.",
-            "en": "Potatoes with egg and ham shavings",
-            "descriptionEn": "Potatoes with egg and ham shavings.",
+            "en": "Potatoes with egg and ham shavings.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 11
               }
-            ]
+            ],
+            "es": "Patatas acompañadas de huevo y virutas de jamón."
           },
           {
             "name": "Revuelto de Setas, Gulas y Gambas",
-            "description": "Revuelto de setas, gulas y gambas.",
-            "en": "Scrambled eggs with mushrooms, surimi eels and prawns",
-            "descriptionEn": "Scrambled eggs with mushrooms, gulas (surimi eel-style strips) and prawns.",
+            "en": "Scrambled eggs with mushrooms, gulas (surimi eel-style strips) and prawns.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 12.5
               }
-            ]
+            ],
+            "es": "Revuelto de setas, gulas y gambas."
           },
           {
             "name": "Revuelto de Aguacate con Crujiente de Jamón",
-            "description": "Revuelto de aguacate y crujiente de jamón. La fuente muestra dos precios distintos: 13 € y 14 €.",
-            "en": "Scrambled eggs with avocado and crispy ham",
-            "descriptionEn": "Scrambled eggs with avocado and crispy ham. The source lists two conflicting prices: €13 and €14.",
+            "en": "Scrambled eggs with avocado and crispy ham. The source lists two conflicting prices: €13 and €14.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 14
               },
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 13
               }
-            ]
+            ],
+            "es": "Revuelto de aguacate y crujiente de jamón. La fuente muestra dos precios distintos: 13 € y 14 €."
           },
           {
             "name": "Revuelto de Bacalao con Patatas Paja",
-            "description": "Revuelto de bacalao con patatas paja.",
-            "en": "Scrambled eggs with cod and shoestring potatoes",
-            "descriptionEn": "Scrambled eggs with cod and shoestring potatoes.",
+            "en": "Scrambled eggs with cod and shoestring potatoes.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 15
               }
-            ]
+            ],
+            "es": "Revuelto de bacalao con patatas paja."
           }
         ]
       },
@@ -54721,63 +54694,59 @@
         "items": [
           {
             "name": "Lagrimitas de Pollo",
-            "description": "Lagrimitas de pollo.",
-            "en": "Chicken strips",
-            "descriptionEn": "Breaded chicken strips.",
+            "en": "Breaded chicken strips.",
             "prices": [
               {
                 "label": "media ración",
                 "eur": 8
               },
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 11
               }
-            ]
+            ],
+            "es": "Lagrimitas de pollo."
           },
           {
             "name": "Croquetas de la Abuela",
-            "description": "Croquetas de la Abuela; el relleno no se especifica.",
-            "en": "Grandma's croquettes",
-            "descriptionEn": "Grandma's croquettes; the filling is not specified.",
+            "en": "Grandma's croquettes; the filling is not specified.",
             "prices": [
               {
                 "label": "media ración",
                 "eur": 8
               },
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 12
               }
-            ]
+            ],
+            "es": "Croquetas de la Abuela; el relleno no se especifica."
           },
           {
             "name": "Croquetas de Rabo de Toro",
-            "description": "Croquetas de rabo de toro.",
-            "en": "Oxtail croquettes",
-            "descriptionEn": "Oxtail croquettes.",
+            "en": "Oxtail croquettes.",
             "prices": [
               {
                 "label": "media ración",
                 "eur": 9
               },
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 14
               }
-            ]
+            ],
+            "es": "Croquetas de rabo de toro."
           },
           {
             "name": "Flamenquín Cordobés",
-            "description": "Flamenquín cordobés; la carta no especifica relleno ni guarnición.",
-            "en": "Cordoban flamenquín",
-            "descriptionEn": "Traditional Cordoban flamenquín; the filling and sides are not specified.",
+            "en": "Traditional Cordoban flamenquín; the filling and sides are not specified.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 13
               }
-            ]
+            ],
+            "es": "Flamenquín cordobés; la carta no especifica relleno ni guarnición."
           }
         ]
       },
@@ -54787,43 +54756,40 @@
         "items": [
           {
             "name": "Gamba Blanca",
-            "description": "Gamba blanca.",
-            "en": "White prawns",
-            "descriptionEn": "White prawns.",
+            "en": "White prawns.",
             "prices": [
               {
                 "label": "media ración",
                 "eur": 11
               },
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 18
               }
-            ]
+            ],
+            "es": "Gamba blanca."
           },
           {
             "name": "Mejillones al Vapor",
-            "description": "Mejillones cocinados al vapor.",
-            "en": "Steamed mussels",
-            "descriptionEn": "Steamed mussels.",
+            "en": "Steamed mussels.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 11
               }
-            ]
+            ],
+            "es": "Mejillones cocinados al vapor."
           },
           {
             "name": "Almejas de Carril",
-            "description": "Almejas de Carril.",
-            "en": "Carril clams",
-            "descriptionEn": "Carril clams.",
+            "en": "Carril clams.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 14.5
               }
-            ]
+            ],
+            "es": "Almejas de Carril."
           }
         ]
       },
@@ -54833,107 +54799,100 @@
         "items": [
           {
             "name": "Boquerones",
-            "description": "Boquerones fritos.",
-            "en": "Fried anchovies",
-            "descriptionEn": "Fried anchovies.",
+            "en": "Fried anchovies.",
             "prices": [
               {
                 "label": "media ración",
                 "eur": 7
               },
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 10
               }
-            ]
+            ],
+            "es": "Boquerones fritos."
           },
           {
             "name": "Cazón en Adobo",
-            "description": "Cazón en adobo.",
-            "en": "Marinated fried dogfish",
-            "descriptionEn": "Marinated, fried dogfish.",
+            "en": "Marinated, fried dogfish.",
             "prices": [
               {
                 "label": "media ración",
                 "eur": 7.5
               },
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 10.5
               }
-            ]
+            ],
+            "es": "Cazón en adobo."
           },
           {
             "name": "Boquerón al Limón",
-            "description": "Boquerones al limón.",
-            "en": "Lemon anchovies",
-            "descriptionEn": "Lemon-seasoned anchovies.",
+            "en": "Lemon-seasoned anchovies.",
             "prices": [
               {
                 "label": "media ración",
                 "eur": 8
               },
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 12
               }
-            ]
+            ],
+            "es": "Boquerones al limón."
           },
           {
             "name": "Calamares",
-            "description": "Calamares fritos.",
-            "en": "Fried squid",
-            "descriptionEn": "Fried squid.",
+            "en": "Fried squid.",
             "prices": [
               {
                 "label": "media ración",
                 "eur": 8
               },
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 12
               }
-            ]
+            ],
+            "es": "Calamares fritos."
           },
           {
             "name": "Bacalao",
-            "description": "Bacalao de la sección de pescado frito.",
-            "en": "Fried cod",
-            "descriptionEn": "Cod from the fried-fish menu.",
+            "en": "Cod from the fried-fish menu.",
             "prices": [
               {
                 "label": "media ración",
                 "eur": 8.5
               },
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 12.5
               }
-            ]
+            ],
+            "es": "Bacalao de la sección de pescado frito."
           },
           {
             "name": "Chanquetitos con Huevos Fritos",
-            "description": "Chanquetitos acompañados de huevos fritos.",
-            "en": "Tiny fish with fried eggs",
-            "descriptionEn": "Tiny fried fish with fried eggs.",
+            "en": "Tiny fried fish with fried eggs.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 13
               }
-            ]
+            ],
+            "es": "Chanquetitos acompañados de huevos fritos."
           },
           {
             "name": "Choco Salvaje Frito",
-            "description": "Choco salvaje frito.",
-            "en": "Fried wild cuttlefish",
-            "descriptionEn": "Fried wild cuttlefish.",
+            "en": "Fried wild cuttlefish.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 15.5
               }
-            ]
+            ],
+            "es": "Choco salvaje frito."
           }
         ]
       },
@@ -54943,51 +54902,47 @@
         "items": [
           {
             "name": "Choco Salvaje a la Plancha",
-            "description": "Choco salvaje a la plancha.",
-            "en": "Grilled wild cuttlefish",
-            "descriptionEn": "Grilled wild cuttlefish.",
+            "en": "Grilled wild cuttlefish.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 15.5
               }
-            ]
+            ],
+            "es": "Choco salvaje a la plancha."
           },
           {
             "name": "Bacalao Confitado sobre Boronía de Pisto",
-            "description": "Bacalao confitado sobre boronía de pisto.",
-            "en": "Confit cod with pisto-style vegetables",
-            "descriptionEn": "Confit cod served on a bed of pisto-style stewed vegetables.",
+            "en": "Confit cod served on a bed of pisto-style stewed vegetables.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 18.5
               }
-            ]
+            ],
+            "es": "Bacalao confitado sobre boronía de pisto."
           },
           {
             "name": "Pulpo a la Brasa con Parmentier de Patata y Alioli de Ajo Negro",
-            "description": "Pulpo a la brasa con parmentier de patata y alioli de ajo negro.",
-            "en": "Chargrilled octopus with potato purée and black garlic aioli",
-            "descriptionEn": "Chargrilled octopus with creamy potato purée and black garlic aioli.",
+            "en": "Chargrilled octopus with creamy potato purée and black garlic aioli.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 22
               }
-            ]
+            ],
+            "es": "Pulpo a la brasa con parmentier de patata y alioli de ajo negro."
           },
           {
             "name": "Bacalao La Sal en su Salsa con Gambas y Almejas",
-            "description": "Bacalao en su salsa con gambas y almejas.",
-            "en": "La Sal cod with prawns and clams",
-            "descriptionEn": "Cod in house sauce with prawns and clams.",
+            "en": "Cod in house sauce with prawns and clams.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 22
               }
-            ]
+            ],
+            "es": "Bacalao en su salsa con gambas y almejas."
           }
         ]
       },
@@ -54997,91 +54952,84 @@
         "items": [
           {
             "name": "Callos Caseros",
-            "description": "Callos caseros.",
-            "en": "Homemade tripe stew",
-            "descriptionEn": "Homemade tripe stew.",
+            "en": "Homemade tripe stew.",
             "prices": [
               {
                 "label": "media ración",
                 "eur": 9
               },
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 14.5
               }
-            ]
+            ],
+            "es": "Callos caseros."
           },
           {
             "name": "Puntas de Solomillo al Jerez",
-            "description": "Puntas de solomillo al Jerez; la web describe una reducción de oloroso y perejil.",
-            "en": "Pork tenderloin tips with Jerez sherry",
-            "descriptionEn": "Grilled tenderloin tips in oloroso sherry reduction with parsley.",
+            "en": "Grilled tenderloin tips in oloroso sherry reduction with parsley.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 13.5
               }
-            ]
+            ],
+            "es": "Puntas de solomillo al Jerez; la web describe una reducción de oloroso y perejil."
           },
           {
             "name": "Rabo de Toro",
-            "description": "Rabo de toro tradicional; la carta no detalla guarnición.",
-            "en": "Cordoban oxtail stew",
-            "descriptionEn": "Traditional oxtail stew; the menu does not specify a side dish.",
+            "en": "Traditional oxtail stew; the menu does not specify a side dish.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 16.5
               }
-            ]
+            ],
+            "es": "Rabo de toro tradicional; la carta no detalla guarnición."
           },
           {
             "name": "Churrasco de dos Salsas",
-            "description": "Churrasco acompañado de dos salsas sin especificar.",
-            "en": "Churrasco with two sauces",
-            "descriptionEn": "Grilled meat served with two unspecified sauces.",
+            "en": "Grilled meat served with two unspecified sauces.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 15.5
               }
-            ]
+            ],
+            "es": "Churrasco acompañado de dos salsas sin especificar."
           },
           {
             "name": "Presa Ibérica",
-            "description": "Corte de presa de cerdo ibérico.",
-            "en": "Iberian pork presa",
-            "descriptionEn": "Iberian pork presa cut.",
+            "en": "Iberian pork presa cut.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 19
               }
-            ]
+            ],
+            "es": "Corte de presa de cerdo ibérico."
           },
           {
             "name": "Chuletitas de Cordero Lechal",
-            "description": "Chuletitas de cordero lechal.",
-            "en": "Milk-fed lamb chops",
-            "descriptionEn": "Milk-fed lamb chops.",
+            "en": "Milk-fed lamb chops.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 19
               }
-            ]
+            ],
+            "es": "Chuletitas de cordero lechal."
           },
           {
             "name": "Entrecot o Chuletón de Ternera 45 días de maduración (precio por 100 g; total según peso)",
-            "description": "Entrecot o chuletón de ternera con 45 días de maduración. 7 € por 100 g; el precio final depende del peso.",
-            "en": "45-day-aged beef entrecôte or rib steak (per 100 g)",
-            "descriptionEn": "45-day-aged beef entrecôte or rib steak. €7 per 100 g; final price depends on weight.",
+            "en": "45-day-aged beef entrecôte or rib steak. €7 per 100 g; final price depends on weight.",
             "prices": [
               {
                 "label": "por 100 g (precio final según peso)",
                 "eur": 7
               }
-            ]
+            ],
+            "es": "Entrecot o chuletón de ternera con 45 días de maduración. 7 € por 100 g; el precio final depende del peso."
           }
         ]
       },
@@ -55091,39 +55039,36 @@
         "items": [
           {
             "name": "Cordobés (Carne, Espárragos y Setas)",
-            "description": "Arroz cordobés con carne, espárragos y setas. Precio por persona; mínimo dos personas.",
-            "en": "Cordoban rice with meat, asparagus and mushrooms",
-            "descriptionEn": "Cordoban-style rice with meat, asparagus and mushrooms. Price per person; minimum two people.",
+            "en": "Cordoban-style rice with meat, asparagus and mushrooms. Price per person; minimum two people.",
             "prices": [
               {
                 "label": "por persona (mínimo 2)",
                 "eur": 14
               }
-            ]
+            ],
+            "es": "Arroz cordobés con carne, espárragos y setas. Precio por persona; mínimo dos personas."
           },
           {
             "name": "De Marisco",
-            "description": "Arroz de marisco. Precio por persona; mínimo dos personas.",
-            "en": "Seafood rice",
-            "descriptionEn": "Seafood rice. Price per person; minimum two people.",
+            "en": "Seafood rice. Price per person; minimum two people.",
             "prices": [
               {
                 "label": "por persona (mínimo 2)",
                 "eur": 18.5
               }
-            ]
+            ],
+            "es": "Arroz de marisco. Precio por persona; mínimo dos personas."
           },
           {
             "name": "De Bogavante",
-            "description": "Arroz de bogavante. Precio por persona; mínimo dos personas.",
-            "en": "Lobster rice",
-            "descriptionEn": "Lobster rice. Price per person; minimum two people.",
+            "en": "Lobster rice. Price per person; minimum two people.",
             "prices": [
               {
                 "label": "por persona (mínimo 2)",
                 "eur": 25
               }
-            ]
+            ],
+            "es": "Arroz de bogavante. Precio por persona; mínimo dos personas."
           }
         ]
       },
@@ -55133,63 +55078,58 @@
         "items": [
           {
             "name": "Pudin",
-            "description": "Pudin; la carta no especifica su variedad.",
-            "en": "Pudding",
-            "descriptionEn": "Pudding; the variety is not specified.",
+            "en": "Pudding; the variety is not specified.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 4.5
               }
-            ]
+            ],
+            "es": "Pudin; la carta no especifica su variedad."
           },
           {
             "name": "Milhoja de Crema",
-            "description": "Milhoja de crema.",
-            "en": "Cream mille-feuille",
-            "descriptionEn": "Mille-feuille pastry with cream.",
+            "en": "Mille-feuille pastry with cream.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 4.5
               }
-            ]
+            ],
+            "es": "Milhoja de crema."
           },
           {
             "name": "Tocino de Cielo",
-            "description": "Dulce tradicional de yema de huevo y azúcar.",
-            "en": "Tocino de cielo custard",
-            "descriptionEn": "Traditional Spanish egg-yolk and sugar custard.",
+            "en": "Traditional Spanish egg-yolk and sugar custard.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 5.5
               }
-            ]
+            ],
+            "es": "Dulce tradicional de yema de huevo y azúcar."
           },
           {
             "name": "Tarta de Queso",
-            "description": "Tarta de queso; el estilo no se especifica.",
-            "en": "Cheesecake",
-            "descriptionEn": "Cheesecake; the style is not specified.",
+            "en": "Cheesecake; the style is not specified.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 6
               }
-            ]
+            ],
+            "es": "Tarta de queso; el estilo no se especifica."
           },
           {
             "name": "Brownie con Helado de Vainilla",
-            "description": "Brownie acompañado de helado de vainilla.",
-            "en": "Brownie with vanilla ice cream",
-            "descriptionEn": "Chocolate brownie with vanilla ice cream.",
+            "en": "Chocolate brownie with vanilla ice cream.",
             "prices": [
               {
-                "label": "ración / precio indicado",
+                "label": "ración",
                 "eur": 6.5
               }
-            ]
+            ],
+            "es": "Brownie acompañado de helado de vainilla."
           }
         ]
       }
