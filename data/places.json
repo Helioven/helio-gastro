@@ -52525,6 +52525,62 @@
         "includes": "48 € por persona, IVA incluido. Entrantes para compartir: un plato de cada entrante por cada cuatro personas. Segundo plato individual a elegir y postre individual. Incluye pan, grissini y bebidas según selección publicada (agua mineral, cerveza de barril, refrescos y vinos indicados). No se especifica un mínimo de comensales en la página. Consultar condiciones y disponibilidad con el restaurante.",
         "includesEn": "€48 per person, VAT included. Starters to share: one serving of each starter per four guests. Choice of individual main course and an individual dessert. Bread, grissini and the listed drinks are included (mineral water, draught beer, soft drinks and specified wines). The page does not state a minimum party size. Check conditions and availability with the restaurant.",
         "sourceUrl": "https://patioromano.com/menus/"
+      },
+      {
+        "name": "Menú Cordobés",
+        "nameEn": "Córdoba Menu",
+        "eurPerPerson": 48,
+        "format": "Entrantes para compartir: un plato por cada cuatro personas; segundo plato y postre individuales",
+        "shared": [
+          "Salmorejo cordobés con jamón crujiente, huevo duro y almendras",
+          "Berenjenas fritas con miel de flores de Villa del Río",
+          "Surtido de ibéricos Belloterra del Valle de los Pedroches",
+          "Buñuelos de bacalao en tempura de cerveza con chips de calabacín"
+        ],
+        "sharedEn": [
+          "Córdoba-style salmorejo with crispy ham, hard-boiled egg and almonds",
+          "Fried aubergines with flower honey from Villa del Río",
+          "Belloterra Iberian cured meat assortment from Los Pedroches",
+          "Beer-battered cod fritters with courgette chips"
+        ],
+        "mainCourse": "Presa ibérica con salsa de vino tinto y patatas paja",
+        "mainCourseEn": "Iberian pork presa with red wine sauce and straw potatoes",
+        "dessert": "Pastelón cordobés de crema con frutos secos y helado de vainilla",
+        "dessertEn": "Córdoba-style cream pastry with nuts and vanilla ice cream",
+        "includes": "48 € por persona (IVA incluido). Entrantes para compartir: un plato de cada entrante por cada cuatro personas. Segundo plato y postre individuales. Incluye pan, café y bebidas durante la comida: agua mineral, cerveza de barril o refrescos; vinos indicados en la fuente. Sin mínimo de comensales especificado en la página. Consultar disponibilidad y condiciones.",
+        "includesEn": "€48 per person (VAT included). One serving of each shared starter per four guests, with individual main course and dessert. Bread, coffee and drinks during the meal are included: mineral water, draught beer or soft drinks, and wines listed on the source page. No minimum party size is stated. Check availability and conditions.",
+        "sourceUrl": "https://patioromano.com/menus/"
+      },
+      {
+        "name": "Menú Italiano",
+        "nameEn": "Italian Menu",
+        "eurPerPerson": 48,
+        "format": "Entrantes para compartir: un plato por cada cuatro personas; segundo plato a elegir y postre individual",
+        "shared": [
+          "Ensalada Caprese (tomate rosa, mozzarella de búfala y pesto de albahaca)",
+          "Pizza Pratolina (tomate, mozzarella, crema de trufa negra, champiñón y jamón cocido)",
+          "Berenjenas fritas con miel de flores y ciuffi di melanzana",
+          "Góndola de burrata con mousse de mortadela trufada, tomate cherry, pesto de albahaca y migas de pan"
+        ],
+        "sharedEn": [
+          "Caprese salad with pink tomato, buffalo mozzarella and basil pesto",
+          "Pratolina pizza with tomato, mozzarella, black truffle cream, mushrooms and cooked ham",
+          "Fried aubergines with flower honey and ciuffi di melanzana",
+          "Burrata with truffled mortadella mousse, cherry tomatoes, basil pesto and breadcrumbs"
+        ],
+        "choice": [
+          "Rigatoni a la boloñesa (carne de vacuno madurada y salsa boloñesa)",
+          "Risotto Sole e Mare di Puglia (gambas, burrata de búfala, azafrán y limón)"
+        ],
+        "choiceEn": [
+          "Rigatoni Bolognese with aged beef and Bolognese sauce",
+          "Sole e Mare di Puglia risotto with prawns, buffalo burrata, saffron and lemon"
+        ],
+        "dessert": "Cannoli siciliano con crema de queso ricotta y pistachos",
+        "dessertEn": "Sicilian cannoli with ricotta cheese cream and pistachios",
+        "includes": "48 € por persona (IVA incluido). Entrantes para compartir: un plato de cada entrante por cada cuatro personas. Segundo plato a elegir y postre individual. Incluye pan, café y bebidas durante la comida: agua mineral, cerveza de barril o refrescos; vinos indicados en la fuente. Sin mínimo de comensales especificado en la página. Consultar disponibilidad y condiciones.",
+        "includesEn": "€48 per person (VAT included). One serving of each shared starter per four guests, choice of individual main course and individual dessert. Bread, coffee and drinks during the meal are included: mineral water, draught beer or soft drinks, and wines listed on the source page. No minimum party size is stated. Check availability and conditions.",
+        "sourceUrl": "https://patioromano.com/menus/"
       }
     ]
   },
