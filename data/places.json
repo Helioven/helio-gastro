@@ -53446,7 +53446,13 @@
                 "eur": 13.5
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "title": "Ensaladas",
+        "titleEn": "Salads",
+        "items": [
           {
             "name": "Ensalada de temporada",
             "description": "Ensalada de temporada; ingredientes concretos no especificados",
@@ -53457,7 +53463,13 @@
                 "eur": 13.5
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "title": "Pescados",
+        "titleEn": "Fish",
+        "items": [
           {
             "name": "Solomillo de atún rojo de almadraba con pimientos, cebolla y teriyaki",
             "description": "Atún rojo a la brasa sobre pimientos y cebolla al wok con salsa teriyaki",
@@ -53468,13 +53480,7 @@
                 "eur": 24
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Ensaladas",
-        "titleEn": "Salads",
-        "items": [
+          },
           {
             "name": "Pata de pulpo a la brasa sobre parmentier",
             "description": "Pulpo a la brasa con toque ahumado sobre parmentier",
@@ -53489,8 +53495,8 @@
         ]
       },
       {
-        "title": "Pescados",
-        "titleEn": "Fish",
+        "title": "Carnes",
+        "titleEn": "Meat",
         "items": [
           {
             "name": "Solomillo de ternera nacional",
@@ -53513,13 +53519,7 @@
                 "eur": 25
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Carnes",
-        "titleEn": "Meat",
-        "items": [
+          },
           {
             "name": "Lomo bajo a la brasa 45 días de maduración",
             "description": "Lomo bajo a la brasa madurado 45 días, con piedra para terminar la cocción en mesa",
@@ -53563,7 +53563,13 @@
                 "eur": 22
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "title": "Hamburguesas",
+        "titleEn": "Burgers",
+        "items": [
           {
             "name": "Hamburguesa Doblecheese con cheddar, pepinillos y salsa Con Acento",
             "description": "Dos carnes de 90 g, cheddar, relish de pepinillos y salsa Con Acento; pan brioche y patatas",
@@ -53585,13 +53591,7 @@
                 "eur": 1.5
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Hamburguesas",
-        "titleEn": "Burgers",
-        "items": [
+          },
           {
             "name": "Hamburguesa Carbonara con ternera madurada, havarti, mayonesa trufada y bacon",
             "description": "Ternera madurada picada, crema carbonara, queso havarti, mayonesa trufada y bacon crujiente; pan brioche y patatas",
@@ -53613,7 +53613,13 @@
                 "eur": 15
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "title": "Postres",
+        "titleEn": "Desserts",
+        "items": [
           {
             "name": "Torrija de brioche con helado de caramelo salado",
             "description": "Torrija de brioche dorada con helado artesanal de caramelo salado",
@@ -53635,13 +53641,7 @@
                 "eur": 6.5
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Postres",
-        "titleEn": "Desserts",
-        "items": [
+          },
           {
             "name": "Coulant de chocolate con helado de vainilla",
             "description": "Coulant de chocolate con helado de vainilla",
@@ -53652,7 +53652,13 @@
                 "eur": 6.5
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "title": "Tapas",
+        "titleEn": "Tapas",
+        "items": [
           {
             "name": "Gilda de cecina y queso",
             "description": "Gilda de cecina y queso; sin más ingredientes detallados",
@@ -53674,13 +53680,7 @@
                 "eur": 3.9
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Tapas",
-        "titleEn": "Tapas",
-        "items": [
+          },
           {
             "name": "Tosta de atún con mayonesa kimchi",
             "description": "Tosta de atún con mayonesa kimchi",
@@ -53735,7 +53735,13 @@
                 "eur": 5.9
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "title": "Carnes al corte",
+        "titleEn": "Steaks sold by weight",
+        "items": [
           {
             "name": "Lomo bajo rubia gallega (+45 días; mínimo 300 g; precio por 100 g)",
             "description": "Lomo bajo rubia gallega madurado más de 45 días; precio por 100 g, mínimo 300 g",
@@ -53757,13 +53763,7 @@
                 "eur": 11
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Carnes al corte",
-        "titleEn": "Steaks sold by weight",
-        "items": [
+          },
           {
             "name": "Chuletón rubia gallega (+45 días; precio por 100 g; corte mínimo de hueso)",
             "description": "Chuletón rubia gallega madurado más de 45 días; precio por 100 g, sin peso mínimo numérico indicado",
