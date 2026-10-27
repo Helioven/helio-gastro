@@ -86,6 +86,27 @@ function casaRubioExplanation(name){
  return rules.find(([re])=>re.test(n))?.[1]||'';
 }
 function detailDishExplanation(name,placeId=''){
+ if(placeId==='el-burlaero'){
+  const descriptions=[
+   ['tabla de quesos','Local cheese assortment from Córdoba province.'],
+   ['tomate de temporada','Seasonal tomato with frigate tuna and spring onion.'],
+   ['melon con jamon','Melon with cured ham and sugarcane honey.'],
+   ['ensalada cordocesar','House Cordocésar salad; ingredients are not specified in the menu.'],
+   ['solomillo de cerdo iberico','Iberian pork tenderloin.'],
+   ['presa iberica con jamon','Iberian pork presa with ham.'],
+   ['falso pisto','House false pisto; ingredients are not specified in the menu.'],
+   ['huevos al ruedo','House eggs dish; preparation is not specified in the menu.'],
+   ['salteado de verduras','Sautéed vegetables.'],
+   ['paella de verduras','Vegetable paella.'],
+   ['tortilla de papas','Spanish potato omelette.'],
+   ['pez a la plancha','Grilled fish with small prawns and baby squid.'],
+   ['rabo de toro','Oxtail stew.'],
+   ['rabonachos','Oxtail nachos.']
+  ];
+  const normalized=clean(name);
+  const match=descriptions.find(([prefix])=>normalized.startsWith(prefix));
+  if(match)return match[1];
+ }
  if(placeId==='patio-romano'){
   const publishedDescriptions=new Map([
    ["Berenjenas fritas con miel de flores y ciuffi di melanzana","Fried aubergines with flower honey and ciuffi di melanzana."],
