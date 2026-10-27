@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Helio Gastro — QA francés · La Montillana</title>
+<style>
+:root{font:16px system-ui,sans-serif;color:#172a3e;background:#f3f6f8}body{max-width:900px;margin:auto;padding:24px}header,article{background:white;border-radius:12px;padding:18px;margin:16px 0;box-shadow:0 1px 6px #0001}h1{font-size:1.6rem}h2{font-size:1.15rem}h3{font-size:1rem}p{line-height:1.55}.muted{color:#526578}select{font:inherit;padding:8px}article{border-left:4px solid #2e7980}strong{font-weight:650}.warning{background:#fff7e6;padding:12px;border-radius:8px}small{display:block;margin-top:8px}a{color:#17627c}
+</style>
+</head>
+<body>
+<header><h1>Helio Gastro · Piloto de francés</h1><p class="warning">Entorno de QA: 15 descripciones de La Montillana. No es una carta publicada ni una traducción completa del establecimiento.</p>
+<label for="lang">Idioma de las descripciones</label> <select id="lang"><option value="es">Español</option><option value="en">English</option><option value="fr">Français (piloto)</option></select>
+<p id="status" role="status">Cargando fuentes…</p></header>
+<main id="dishes" aria-live="polite"></main>
+<script>
+'use strict';
+const lang=document.getElementById('lang'),container=document.getElementById('dishes'),status=document.getElementById('status');
+let catalog=[],batch=[];
+const key=(sectionIndex,itemIndex)=>sectionIndex+':'+itemIndex;
+async function init(){
+ try{
+  const responses=await Promise.all([fetch('./data/places.json'),fetch('./translations/fr/batch-001-la-montillana.json')]);
+  if(responses.some(r=>!r.ok))throw Error('No se pudieron recuperar los datos');
+  const [places,proposal]=await Promise.all(responses.map(r=>r.json()));
+  const place=places.find(p=>p.id==='la-montillana');
+  if(!place||!Array.isArray(proposal.entries))throw Error('Origen no disponible');
+  catalog=place.menuSections;batch=proposal.entries;
+  if(batch.length!==15)throw Error('El lote no tiene 15 registros');
+  for(const x of batch)if(x.placeId!=='la-montillana'||!catalog[x.sectionIndex]?.items?.[x.itemIndex]?.es||!x.fr?.trim())throw Error('Referencia inválida en el lote');
+  render();
+ }catch(e){status.textContent='Error QA: '+e.message;}
+}
+function render(){
+ const language=lang.value;
+ container.replaceChildren();
+ const fragment=document.createDocumentFragment();
+ for(const x of batch){
+  const item=catalog[x.sectionIndex].items[x.itemIndex];
+  const article=document.createElement('article');
+  const title=document.createElement('h2');title.textContent=item.name;article.append(title);
+  const description=document.createElement('p');
+  description.textContent=language==='fr'?x.fr:(language==='en'?item.en:item.es);
+  article.append(description);
+  const meta=document.createElement('small');meta.className='muted';meta.textContent='Referencia QA: '+key(x.sectionIndex,x.itemIndex);article.append(meta);
+  fragment.append(article);
+ }
+ container.append(fragment);
+ document.documentElement.lang=language;
+ status.textContent='15 descripciones de prueba · '+({es:'Español',en:'English',fr:'Français'}[language])+' · precios y fichas sin modificar';
+}
+lang.addEventListener('change',render);
+init();
+</script></body></html>
