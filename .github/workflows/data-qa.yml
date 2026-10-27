@@ -65,6 +65,7 @@ jobs:
           node scripts/test-search-regression.mjs
           node scripts/test-filter-regression.mjs
           node scripts/test-comparator-regression.mjs
+          node scripts/test-detail-regression.mjs
       - name: Upload visual QA screenshots and results
         if: always()
         uses: actions/upload-artifact@v4
