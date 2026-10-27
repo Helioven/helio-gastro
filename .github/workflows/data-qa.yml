@@ -1,0 +1,18 @@
+name: Helio Gastro - data QA
+on:
+  push:
+    branches:
+      - feature/fr-integration-qa-20261027
+  workflow_dispatch:
+jobs:
+  catalog-audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate catalog (read only)
+        run: node scripts/audit-data.mjs
