@@ -37,6 +37,32 @@ for(const profile of profiles)for(const mode of modes){
   await page.locator('#budget').selectOption('');
   await page.locator('#portion').selectOption('racion');await submit();
   const full=await page.evaluate(()=>state.filtered.map(p=>({id:p.id,prices:relevantPrices(p,'flamenquin','racion').map(x=>x.eur)})));
+  // Positive control: a real, documented Flamenquín price must survive its own exact format filter.
+  const fixture=await page.evaluate(()=>{
+    for(const p of state.places){
+      if(!serviceMenus(p).length)continue;
+      const item=servicePrices(p).find(x=>clean(x.dish).includes('flamenquin')&&x.eur<=50&&['unidad','tapa','media','racion'].includes(portionOf(x)));
+      if(item)return {id:p.id,portion:portionOf(item),eur:item.eur};
+    }
+    return null;
+  });
+  if(!fixture)errors.push('No eligible documented Flamenquín fixture; positive filter coverage impossible');
+  else {
+    await page.locator('#portion').selectOption(fixture.portion);
+    await page.locator('#budget').selectOption('50');
+    await page.locator('#include-unknown').uncheck();
+    await page.locator('#price-kind').selectOption('confirmed');
+    await submit();
+    const positive=await page.evaluate(()=>state.filtered.map(p=>p.id));
+    if(!positive.includes(fixture.id))errors.push('Positive documented-price fixture wrongly excluded: '+fixture.id);
+    const matches=await page.evaluate(id=>{
+      const p=state.filtered.find(p=>p.id===id);
+      return p?relevantPrices(p,'flamenquin',state.appliedPortion).map(x=>x.eur):[];
+    },fixture.id);
+    if(!matches.includes(fixture.eur))errors.push('Documented fixture price lost or changed');
+  }
+  await page.locator('#price-kind').selectOption('');
+  await page.locator('#include-unknown').check();
   await page.locator('#price-scope').selectOption('meal');
   if(!(await page.locator('#portion').isDisabled()))errors.push('Meal scope did not disable portion filter');
   await page.locator('#budget').selectOption('20');
@@ -44,7 +70,7 @@ for(const profile of profiles)for(const mode of modes){
   const meals=await page.evaluate(()=>state.filtered.map(p=>({id:p.id,mealCostEur:p.mealCostEur})));
   if(meals.some(p=>p.mealCostEur===null||p.mealCostEur>20))errors.push('Meal filter used dish price or unknown meal total');
   if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1))errors.push('Horizontal overflow');
-  results.push({profile:profile.name,mode:mode.name,status:errors.length?'FAIL':'PASS',budgetMatched:snapshot.records.length,includeUnknown:permissive.length,documentedOnly:documented.length,fullPortionResults:full.length,mealResults:meals.length,errors});
+  results.push({profile:profile.name,mode:mode.name,status:errors.length?'FAIL':'PASS',budgetMatched:snapshot.records.length,includeUnknown:permissive.length,documentedOnly:documented.length,fullPortionResults:full.length,positiveFixture:fixture,mealResults:meals.length,errors});
  }catch(e){errors.push('Interrupted: '+e.message);results.push({profile:profile.name,mode:mode.name,status:'FAIL',errors})}
  if(errors.length)failed=true;
  await context.close();
