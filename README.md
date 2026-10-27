@@ -537,3 +537,11 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 
 - La fuente de su ficha enlazaba por error a Casa Bravo, otro local del grupo Ágora. Sustituida por la carta del propio establecimiento: https://www.tabernaagoramuseomanolete.com/#carta (etiquetas ES/EN).
 - Comprobación puntual con la web: coinciden ejemplos de jamón ibérico de cebo, flamenquín cordobés y postres. Se conservan los 54 platos, 74 variantes y precios sin modificaciones. La revisión exhaustiva de vigencia sigue pendiente, sin reabrir la revisión editorial ya validada por Helio.
+
+### Cierre editorial — Ágora Mezquita (27/10/2026)
+
+- **REVISADA Y CERRADA**, con aprobación expresa de Helio y comprobación visual ES/EN del 27/10/2026.
+- Carta: 56 platos en 9 secciones y 76 entradas de precio. Se añadió el coulant de chocolate (6,50 €), se corrigió el nombre de «Patatas fritas» y se evitó duplicar el cochifrito.
+- Se retiraron del potaje flamenco los ingredientes atribuidos desde Casa Bravo sin confirmación para este local. También se tradujeron al inglés las etiquetas de las dos fuentes.
+- Dirección corregida a partir de la información oficial aportada: Calle Céspedes, 11 y Calle Velázquez Bosco, 10/12 (Calleja de las Flores), 14003 Córdoba, sin afirmar que sean accesos distintos.
+- Excluir de revisiones ordinarias salvo incidencia, nueva documentación o petición de Helio. La auditoría integral y la comprobación de vigencia de precios permanecen pendientes.
