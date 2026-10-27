@@ -52594,9 +52594,9 @@
     "checkedAt": "2026-10-27",
     "sources": [
       {
-        "label": "Carta oficial de El Burlaero (PDF facilitado)",
+        "label": "Carta oficial de El Burlaero (PDF facilitado; la carta no asigna formatos a todos los precios)",
         "url": "https://restauranteelburlaero.com/?page_id=7",
-        "labelEn": "El Burlaero official menu (PDF provided by Helio)"
+        "labelEn": "El Burlaero official menu (supplied PDF; not all prices have a specified portion size)"
       }
     ],
     "menus": [
@@ -52654,19 +52654,19 @@
             "eur": 21
           },
           {
-            "dish": "Tabla de quesos de la provincia (opción 1)",
+            "dish": "Tabla de quesos de la provincia (precio 1; tamaño sin precisar)",
             "eur": 11
           },
           {
-            "dish": "Tabla de quesos de la provincia (opción 2)",
+            "dish": "Tabla de quesos de la provincia (precio 2; tamaño sin precisar)",
             "eur": 21
           },
           {
-            "dish": "Salmorejo (opción 1)",
+            "dish": "Salmorejo (precio 1; tamaño sin precisar)",
             "eur": 5
           },
           {
-            "dish": "Salmorejo (opción 2)",
+            "dish": "Salmorejo (precio 2; tamaño sin precisar)",
             "eur": 9
           },
           {
@@ -52758,11 +52758,11 @@
             "eur": 14
           },
           {
-            "dish": "Falso pisto (opción 1)",
+            "dish": "Falso pisto (precio 1; tamaño sin precisar)",
             "eur": 7
           },
           {
-            "dish": "Falso pisto (opción 2)",
+            "dish": "Falso pisto (precio 2; tamaño sin precisar)",
             "eur": 13
           },
           {
@@ -52770,11 +52770,11 @@
             "eur": 13.5
           },
           {
-            "dish": "Tortilla de papas (opción 1)",
+            "dish": "Tortilla de papas (precio 1; tamaño sin precisar)",
             "eur": 6
           },
           {
-            "dish": "Tortilla de papas (opción 2)",
+            "dish": "Tortilla de papas (precio 2; tamaño sin precisar)",
             "eur": 10
           },
           {
@@ -52822,19 +52822,19 @@
             "eur": 22.5
           },
           {
-            "dish": "Solomillo de cerdo ibérico (opción 1)",
+            "dish": "Solomillo de cerdo ibérico (precio 1; tamaño sin precisar)",
             "eur": 9.6
           },
           {
-            "dish": "Solomillo de cerdo ibérico (opción 2)",
+            "dish": "Solomillo de cerdo ibérico (precio 2; tamaño sin precisar)",
             "eur": 19.5
           },
           {
-            "dish": "Presa ibérica con jamón (opción 1)",
+            "dish": "Presa ibérica con jamón (precio 1; tamaño sin precisar)",
             "eur": 10.5
           },
           {
-            "dish": "Presa ibérica con jamón (opción 2)",
+            "dish": "Presa ibérica con jamón (precio 2; tamaño sin precisar)",
             "eur": 20
           },
           {
@@ -52858,11 +52858,11 @@
             "eur": 12
           },
           {
-            "dish": "Rabo de toro (opción 1)",
+            "dish": "Rabo de toro (precio 1; tamaño sin precisar)",
             "eur": 9.6
           },
           {
-            "dish": "Rabo de toro (opción 2)",
+            "dish": "Rabo de toro (precio 2; tamaño sin precisar)",
             "eur": 23
           },
           {
@@ -52878,11 +52878,11 @@
             "eur": 17
           },
           {
-            "dish": "Rabonachos (opción 1)",
+            "dish": "Rabonachos (precio 1; tamaño sin precisar)",
             "eur": 9.8
           },
           {
-            "dish": "Rabonachos (opción 2)",
+            "dish": "Rabonachos (precio 2; tamaño sin precisar)",
             "eur": 17.5
           },
           {
