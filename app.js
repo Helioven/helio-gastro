@@ -410,6 +410,8 @@ function servicePrices(p){return serviceMenus(p).flatMap(m=>m.dishPrices)}
 function serviceKnown(p){return p.menus.some(m=>m.service===state.mode)}
 function updateMealMode(mode,{reset=true}={}){
  if(!Object.hasOwn(MODE_CONFIG,mode))return;
+ // Reset comparisons only on a genuine user-facing service switch, not on startup/restore.
+ if(reset && state.mode!==mode)state.selected.clear();
  state.mode=mode;
  try{localStorage.setItem(MODE_KEY,mode)}catch{}
  const cfg=MODE_CONFIG[mode];
