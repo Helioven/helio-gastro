@@ -53004,14 +53004,15 @@
     "id": "con-acento-braseria",
     "name": "Con Acento Brasería",
     "area": "Córdoba",
-    "address": "Córdoba, España",
+    "address": "Avenida Al-Nasir, 13 (Vial Norte), Córdoba, España",
     "mealCostEur": null,
     "priceStatus": "verified",
     "checkedAt": "2026-10-16",
     "sources": [
       {
         "label": "Carta general y tapas oficiales (PDF facilitados)",
-        "url": "https://www.conacentoparrilla.com/carta/"
+        "url": "https://www.conacentoparrilla.com/carta/",
+        "labelEn": "Official general and tapas menus (PDFs provided)"
       }
     ],
     "menus": [
@@ -53261,7 +53262,545 @@
           }
         ]
       }
-    ]
+    ],
+    "menuSections": [
+      {
+        "title": "Aperitivos",
+        "titleEn": "Appetisers",
+        "items": [
+          {
+            "name": "Pan de ajo (masa madre, ajo y perejil)",
+            "description": "Pan de masa madre crujiente con ajo y perejil",
+            "en": "Garlic bread made with crispy sourdough, garlic and parsley",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 2.2
+              }
+            ]
+          },
+          {
+            "name": "Aceitunas ConAcento en panko con mayonesa de piparra",
+            "description": "Aceituna en panko con mayonesa de piparra",
+            "en": "Panko-coated olives served with piparra pepper mayonnaise",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 4.5
+              }
+            ]
+          },
+          {
+            "name": "Gilda tradicional de aceituna gordal, piparra y anchoa",
+            "description": "Aceituna gordal, piparra y anchoa",
+            "en": "Traditional gilda with Gordal olive, piparra pepper and anchovy",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 2.5
+              }
+            ]
+          },
+          {
+            "name": "Tosta Matrimonio con anchoa, boquerón y mantequilla de oveja (unidad)",
+            "description": "Anchoa y boquerón marinados sobre mantequilla cremosa de oveja",
+            "en": "Matrimonio toast with anchovy, marinated white anchovy and sheep's milk butter",
+            "prices": [
+              {
+                "label": "unidad",
+                "eur": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Entrantes",
+        "titleEn": "Starters",
+        "items": [
+          {
+            "name": "Tosta de atún rojo de almadraba con mayonesa de sésamo, soja y trufa",
+            "description": "Atún rojo en pan crujiente con mayonesa de sésamo y soja, coronado con trufa",
+            "en": "Almadraba bluefin tuna on crispy toast with sesame and soy mayonnaise, topped with truffle",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 7
+              }
+            ]
+          },
+          {
+            "name": "Tataki de atún de almadraba con ponzu, mayonesa de sésamo y puerro frito",
+            "description": "Atún macerado en soja, sellado a la brasa con salsa ponzu, mayonesa de sésamo y puerro frito",
+            "en": "Soy-marinated almadraba tuna seared over charcoal with ponzu sauce, sesame mayonnaise and fried leek",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 14
+              }
+            ]
+          },
+          {
+            "name": "Bikini de steak tartar en brioche con mayonesa de piparra y anchoa (2 ud.)",
+            "description": "Steak tartar sobre pan brioche dorado en mantequilla, con mayonesa de piparra y anchoa; dos unidades",
+            "en": "Steak tartare on butter-toasted brioche with piparra mayonnaise and anchovy; two pieces",
+            "prices": [
+              {
+                "label": "2 unidades",
+                "eur": 14
+              }
+            ]
+          },
+          {
+            "name": "Nigiri de presa ibérica con teriyaki, foie y mayonesa japonesa (6 ud.)",
+            "description": "Presa ibérica a la brasa sobre arroz de sushi, con teriyaki, foie y mayonesa japonesa; seis unidades",
+            "en": "Chargrilled Iberian pork on sushi rice with teriyaki sauce, foie gras and Japanese mayonnaise; six pieces",
+            "prices": [
+              {
+                "label": "6 unidades",
+                "eur": 14
+              }
+            ]
+          },
+          {
+            "name": "Empanada criolla de carne especiada (2 ud.)",
+            "description": "Empanadas argentinas caseras de carne especiada; dos unidades",
+            "en": "Two homemade Argentinian-style pastries filled with seasoned meat",
+            "prices": [
+              {
+                "label": "2 unidades",
+                "eur": 8
+              }
+            ]
+          },
+          {
+            "name": "Nuestras bravas con espuma de salsa brava",
+            "description": "Patatas crujientes con espuma de salsa brava ligeramente picante",
+            "en": "Crispy fried potatoes with a mildly spicy brava sauce foam",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 7
+              },
+              {
+                "label": "ración",
+                "eur": 12.5
+              }
+            ]
+          },
+          {
+            "name": "Croquetas de jamón ibérico y pollo",
+            "description": "Croquetas cremosas de bechamel de jamón ibérico y pollo con velo de jamón ibérico",
+            "en": "Creamy Iberian ham and chicken croquettes topped with a fine layer of Iberian ham",
+            "prices": [
+              {
+                "label": "media ración",
+                "eur": 6
+              },
+              {
+                "label": "ración",
+                "eur": 10.5
+              }
+            ]
+          },
+          {
+            "name": "Flamenquín cordobés con parmentier y salsa de oloroso",
+            "description": "Flamenquín cordobés con parmentier y salsa de oloroso",
+            "en": "Cordoban flamenquín with creamy potato purée and oloroso sherry sauce",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 12.5
+              }
+            ]
+          },
+          {
+            "name": "Tortilla ConAcento con jamón ibérico, cebolla caramelizada y queso de cabra",
+            "description": "Tortilla semilíquida con jamón ibérico, cebolla caramelizada y espuma de queso de cabra",
+            "en": "Soft, runny Spanish potato omelette with Iberian ham, caramelised onion and goat's cheese foam",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 12.5
+              }
+            ]
+          },
+          {
+            "name": "Torreznos con patatas paja y huevos camperos",
+            "description": "Torreznos crujientes con patatas paja y huevos camperos",
+            "en": "Crispy pork belly with shoestring potatoes and free-range eggs",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 12
+              }
+            ]
+          },
+          {
+            "name": "Alcachofas a la brasa con papada ibérica y foie",
+            "description": "Alcachofas a la brasa con papada ibérica y foie",
+            "en": "Chargrilled artichokes with thinly sliced Iberian pork jowl and foie gras",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 13.5
+              }
+            ]
+          },
+          {
+            "name": "Ensalada de temporada",
+            "description": "Ensalada de temporada; ingredientes concretos no especificados",
+            "en": "Seasonal salad; the menu does not specify fixed ingredients",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 13.5
+              }
+            ]
+          },
+          {
+            "name": "Solomillo de atún rojo de almadraba con pimientos, cebolla y teriyaki",
+            "description": "Atún rojo a la brasa sobre pimientos y cebolla al wok con salsa teriyaki",
+            "en": "Chargrilled almadraba bluefin tuna with wok-style peppers and onion in teriyaki sauce",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 24
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Ensaladas",
+        "titleEn": "Salads",
+        "items": [
+          {
+            "name": "Pata de pulpo a la brasa sobre parmentier",
+            "description": "Pulpo a la brasa con toque ahumado sobre parmentier",
+            "en": "Smoky chargrilled octopus tentacle on creamy potato purée",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 22
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Pescados",
+        "titleEn": "Fish",
+        "items": [
+          {
+            "name": "Solomillo de ternera nacional",
+            "description": "Solomillo de ternera nacional tierno y jugoso",
+            "en": "Tender and juicy Spanish beef tenderloin",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 23
+              }
+            ]
+          },
+          {
+            "name": "Solomillo de ternera al foie con salsa de setas shiitake",
+            "description": "Solomillo de ternera con medallón de foie y salsa de setas shiitake",
+            "en": "Beef tenderloin with foie gras medallion and shiitake mushroom sauce",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 25
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Carnes",
+        "titleEn": "Meat",
+        "items": [
+          {
+            "name": "Lomo bajo a la brasa 45 días de maduración",
+            "description": "Lomo bajo a la brasa madurado 45 días, con piedra para terminar la cocción en mesa",
+            "en": "Chargrilled striploin aged for 45 days, served with a hot stone to finish cooking at the table",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 26
+              }
+            ]
+          },
+          {
+            "name": "Entraña de angus a la brasa",
+            "description": "Entraña de Angus a la brasa",
+            "en": "Chargrilled Angus skirt steak",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 23
+              }
+            ]
+          },
+          {
+            "name": "Abanico ibérico a la brasa",
+            "description": "Abanico ibérico jugoso a la brasa",
+            "en": "Juicy chargrilled Iberian pork abanico cut",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 22
+              }
+            ]
+          },
+          {
+            "name": "Presa ibérica de bellota a la brasa",
+            "description": "Presa ibérica de bellota a la brasa, jugosa y tierna",
+            "en": "Tender chargrilled acorn-fed Iberian pork presa cut",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 22
+              }
+            ]
+          },
+          {
+            "name": "Hamburguesa Doblecheese con cheddar, pepinillos y salsa Con Acento",
+            "description": "Dos carnes de 90 g, cheddar, relish de pepinillos y salsa Con Acento; pan brioche y patatas",
+            "en": "Two 90 g beef patties with cheddar, pickle relish and house sauce; brioche bun and fries",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 14
+              }
+            ]
+          },
+          {
+            "name": "Extra bacon para hamburguesa Doblecheese",
+            "description": "Suplemento opcional de bacon para la Doblecheese",
+            "en": "Optional bacon add-on for the Doblecheese burger",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 1.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Hamburguesas",
+        "titleEn": "Burgers",
+        "items": [
+          {
+            "name": "Hamburguesa Carbonara con ternera madurada, havarti, mayonesa trufada y bacon",
+            "description": "Ternera madurada picada, crema carbonara, queso havarti, mayonesa trufada y bacon crujiente; pan brioche y patatas",
+            "en": "Minced aged beef, carbonara cream, havarti cheese, truffle mayonnaise and crispy bacon; brioche and fries",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 16
+              }
+            ]
+          },
+          {
+            "name": "Honey Burger con cheddar, camembert, bacon, cebolla caramelizada y salsa BBQ honey",
+            "description": "Carne de 180 g, cheddar, crema de camembert, bacon, cebolla caramelizada y salsa BBQ honey; pan brioche y patatas",
+            "en": "180 g beef burger with cheddar, camembert cream, crispy bacon, caramelised onion and honey BBQ sauce; brioche and fries",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 15
+              }
+            ]
+          },
+          {
+            "name": "Torrija de brioche con helado de caramelo salado",
+            "description": "Torrija de brioche dorada con helado artesanal de caramelo salado",
+            "en": "Golden brioche torrija with artisan salted caramel ice cream",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 6.5
+              }
+            ]
+          },
+          {
+            "name": "Tarta de queso estilo New York",
+            "description": "Tarta de queso estilo Nueva York, cremosa y suave, con base crujiente",
+            "en": "Creamy New York-style cheesecake with a crunchy base",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 6.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Postres",
+        "titleEn": "Desserts",
+        "items": [
+          {
+            "name": "Coulant de chocolate con helado de vainilla",
+            "description": "Coulant de chocolate con helado de vainilla",
+            "en": "Chocolate lava cake with vanilla ice cream",
+            "prices": [
+              {
+                "label": "precio único",
+                "eur": 6.5
+              }
+            ]
+          },
+          {
+            "name": "Gilda de cecina y queso",
+            "description": "Gilda de cecina y queso; sin más ingredientes detallados",
+            "en": "Cured-beef and cheese gilda skewer; other ingredients are not specified",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 2.9
+              }
+            ]
+          },
+          {
+            "name": "Gilda de atún, mayonesa y sésamo",
+            "description": "Gilda de atún con mayonesa y sésamo",
+            "en": "Tuna gilda with mayonnaise and sesame",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 3.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Tapas",
+        "titleEn": "Tapas",
+        "items": [
+          {
+            "name": "Tosta de atún con mayonesa kimchi",
+            "description": "Tosta de atún con mayonesa kimchi",
+            "en": "Tuna toast with kimchi mayonnaise",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 5.5
+              }
+            ]
+          },
+          {
+            "name": "Tosta de pan cristal con steak tartar y gilda",
+            "description": "Tosta de pan cristal con steak tartar y gilda",
+            "en": "Crispy pan cristal toast with steak tartare and a gilda skewer",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 5.5
+              }
+            ]
+          },
+          {
+            "name": "Ensaladilla con atún rojo de almadraba",
+            "description": "Ensaladilla con atún rojo de almadraba; sin más ingredientes detallados",
+            "en": "Spanish-style potato salad with almadraba bluefin tuna; other ingredients are not specified",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 5.9
+              }
+            ]
+          },
+          {
+            "name": "Torreznos con huevo frito y patatas paja (tapa)",
+            "description": "Tapa de torreznos con huevo frito y patatas paja",
+            "en": "Tapas portion of crispy pork belly with fried egg and shoestring potatoes",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 5.9
+              }
+            ]
+          },
+          {
+            "name": "Tosta de presa ibérica, cebolla y salsa de foie",
+            "description": "Tosta de presa ibérica con cebolla y salsa de foie",
+            "en": "Toast with Iberian pork presa, onion and foie gras sauce",
+            "prices": [
+              {
+                "label": "tapa",
+                "eur": 5.9
+              }
+            ]
+          },
+          {
+            "name": "Lomo bajo rubia gallega (+45 días; mínimo 300 g; precio por 100 g)",
+            "description": "Lomo bajo rubia gallega madurado más de 45 días; precio por 100 g, mínimo 300 g",
+            "en": "Galician Blonde beef striploin aged over 45 days; price per 100 g, minimum cut 300 g",
+            "prices": [
+              {
+                "label": "100 g",
+                "eur": 10
+              }
+            ]
+          },
+          {
+            "name": "Lomo bajo simmental centroeuropeo (+45 días; mínimo 300 g; precio por 100 g)",
+            "description": "Lomo bajo Simmental centroeuropeo madurado más de 45 días; precio por 100 g, mínimo 300 g",
+            "en": "Central European Simmental striploin aged over 45 days; price per 100 g, minimum cut 300 g",
+            "prices": [
+              {
+                "label": "100 g",
+                "eur": 11
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Carnes al corte",
+        "titleEn": "Steaks sold by weight",
+        "items": [
+          {
+            "name": "Chuletón rubia gallega (+45 días; precio por 100 g; corte mínimo de hueso)",
+            "description": "Chuletón rubia gallega madurado más de 45 días; precio por 100 g, sin peso mínimo numérico indicado",
+            "en": "Galician Blonde bone-in rib steak aged over 45 days; price per 100 g, no numeric minimum weight specified",
+            "prices": [
+              {
+                "label": "100 g",
+                "eur": 9
+              }
+            ]
+          },
+          {
+            "name": "Chuletón simmental centroeuropeo (+45 días; precio por 100 g; corte mínimo de hueso)",
+            "description": "Chuletón Simmental centroeuropeo madurado más de 45 días; precio por 100 g, sin peso mínimo numérico indicado",
+            "en": "Central European Simmental bone-in rib steak aged over 45 days; price per 100 g, no numeric minimum weight specified",
+            "prices": [
+              {
+                "label": "100 g",
+                "eur": 10
+              }
+            ]
+          },
+          {
+            "name": "Wagyu japonés A5 (mínimo 300 g; precio por 100 g)",
+            "description": "Wagyu japonés A5; precio por 100 g, mínimo 300 g",
+            "en": "Japanese A5 wagyu beef; price per 100 g, minimum cut 300 g",
+            "prices": [
+              {
+                "label": "100 g",
+                "eur": 25
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "addressEn": "13 Avenida Al-Nasir (Vial Norte), Córdoba, Spain"
   },
   {
     "id": "taberna-la-sal",
