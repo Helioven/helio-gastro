@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "la-montillana",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 0,
+      "itemIndex": 0,
+      "fr": "Salmorejo cordobés traditionnel : crème froide à base de tomate et de pain."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 0,
+      "itemIndex": 1,
+      "fr": "Mazamorra aux amandes, avec fruit de la passion, ají amarillo et morue fumée."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 0,
+      "itemIndex": 2,
+      "fr": "Salade de pommes de terre, carottes, morue, crevettes blanches et thon."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 0,
+      "itemIndex": 3,
+      "fr": "Aubergines frites au miel de Montoro et au fromage de chèvre de Zuheros."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 0,
+      "itemIndex": 4,
+      "fr": "Pommes de terre accompagnées d’une sauce tomate piquante maison et de mayonnaise."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 0,
+      "itemIndex": 5,
+      "fr": "Croquettes au jambon ibérique, vendues à l’unité."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 0,
+      "itemIndex": 6,
+      "fr": "Flamenquín cordobés traditionnel, pané et frit."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 0,
+      "itemIndex": 7,
+      "fr": "Pommes de terre écrasées au jambon ibérique."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 0,
+      "itemIndex": 8,
+      "fr": "Torreznos frits avec une demi-glace au Palo Cortado et des pommes de terre écrasées."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 1,
+      "itemIndex": 0,
+      "fr": "Salade de roquette, focaccia, tomates rôties et poulet croustillant mariné au fino en rama et aux épices, avec une sauce rose au vermouth local."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 1,
+      "itemIndex": 1,
+      "fr": "Salade de caille marinée en escabèche, oignon doux, fromage de chèvre, croûtons et vinaigrette au yaourt et à la moutarde."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 1,
+      "itemIndex": 2,
+      "fr": "Courgette grillée, accompagnée de brie et de miel pimenté."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 2,
+      "itemIndex": 0,
+      "fr": "Sandwich au bœuf mariné au fino et à la harissa, avec roquette, tomates rôties et mayonnaise à la sriracha et au miel."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 2,
+      "itemIndex": 1,
+      "fr": "Pain brioché garni de porc ibérique effiloché, de chou mariné, de fromage fumé et de mayonnaise à la sauce hoisin."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 2,
+      "itemIndex": 2,
+      "fr": "Sandwich à l’oreille de porc grillée à la plancha, avec chou mariné et mayonnaise au chipotle."
+    }
+  ]
+}
