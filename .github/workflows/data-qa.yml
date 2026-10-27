@@ -15,4 +15,6 @@ jobs:
         with:
           node-version: '22'
       - name: Validate catalog (read only)
-        run: node scripts/audit-data.mjs
+        run: |
+          node scripts/audit-data.mjs
+          node scripts/inspect-schema.mjs
