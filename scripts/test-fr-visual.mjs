@@ -40,7 +40,7 @@ for(const profile of profiles){
 
 const mainContext=await browser.newContext({viewport:{width:1280,height:800}});
 const main=await mainContext.newPage();const mainErrors=[];
-main.on('pageerror',e=>mainErrors.push(e.message));
+main.on('pageerror',e=>mainErrors.push(e.stack||e.message));
 await main.goto('http://127.0.0.1:8765/index.html',{waitUntil:'domcontentloaded'});
 await main.locator('#language-select').waitFor();
 const normalOptions=await main.locator('#language-select option').evaluateAll(options=>options.map(o=>o.value));
