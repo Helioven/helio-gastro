@@ -55067,9 +55067,9 @@
     "checkedAt": "2026-10-16",
     "sources": [
       {
-        "label": "Información de establecimientos del grupo Ágora (captura aportada por el usuario)",
-        "url": "https://casabravo1919.es/",
-        "labelEn": "Ágora group restaurant information (screenshot supplied by the user)"
+        "label": "Carta de Taberna Ágora/Museo Manolete (web del establecimiento)",
+        "labelEn": "Taberna Ágora/Museo Manolete menu (restaurant website)",
+        "url": "https://www.tabernaagoramuseomanolete.com/#carta"
       }
     ],
     "groupName": "Grupo Ágora",
@@ -55081,7 +55081,7 @@
     "groupProfile": "Taberna museo dedicada a Manuel Laureano Rodríguez Sánchez, Manolete, con más de 30 piezas originales sobre su vida.",
     "contactPhone": "957 940 805",
     "publishedHours": "Abierto todos los días 12:30–00:00 (según captura).",
-    "menuSourceNote": "Carta individual facilitada por el usuario: 54 platos en 6 secciones y 74 variantes de precio. No aparece menú del día en la carta consultada, sin que ello descarte su existencia. Vigencia no comprobada independientemente. La receta de hamburguesa Retinta podría compartirse con Casa Bravo, sin confirmación.",
+    "menuSourceNote": "Carta individual facilitada por Helio y contrastada parcialmente con la carta publicada en la web específica de Taberna Ágora/Museo Manolete el 27/10/2026. Se conservan 54 platos en 6 secciones y 74 variantes de precio; pendiente auditoría exhaustiva de correspondencia y vigencia. Las bebidas de la web no se incorporan al catálogo gastronómico.",
     "menus": [
       {
         "service": "Entrantes",
