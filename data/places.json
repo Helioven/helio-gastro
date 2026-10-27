@@ -51903,11 +51903,16 @@
     "address": "Córdoba, España",
     "mealCostEur": null,
     "priceStatus": "verified",
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-27",
     "sources": [
       {
         "label": "Carta oficial 2026 (PDF facilitado; comidas y precios)",
         "url": "https://patioromano.com/carta/"
+      },
+      {
+        "label": "Carta oficial de desayunos 2026 (PDF aportado por Helio; sin verificación independiente de vigencia)",
+        "labelEn": "Official 2026 breakfast menu (PDF supplied by Helio; current validity not independently verified)",
+        "url": "https://www.patioromano.com/"
       }
     ],
     "menus": [
@@ -52105,6 +52110,355 @@
           {
             "dish": "Macedonia de frutas de temporada",
             "eur": 7
+          }
+        ]
+      },
+      {
+        "service": "desayuno",
+        "dishes": [
+          "Media tostada de Tomate natural triturado y AOVE",
+          "Tostada entera de Tomate natural triturado y AOVE",
+          "Media tostada de Mantequilla y mermelada",
+          "Tostada entera de Mantequilla y mermelada",
+          "Media tostada de Paté o crema de york",
+          "Tostada entera de Paté o crema de york",
+          "Media tostada de Jamón cocido, tomate natural triturado y AOVE",
+          "Tostada entera de Jamón cocido, tomate natural triturado y AOVE",
+          "Media tostada de Aguacate y crema de queso",
+          "Tostada entera de Aguacate y crema de queso",
+          "Media tostada de Salchichón de pavo halal, tomate triturado y AOVE",
+          "Tostada entera de Salchichón de pavo halal, tomate triturado y AOVE",
+          "Media tostada de Jamón ibérico, tomate natural triturado y AOVE",
+          "Tostada entera de Jamón ibérico, tomate natural triturado y AOVE",
+          "Media tostada de Queso manchego, tomate natural triturado y AOVE",
+          "Tostada entera de Queso manchego, tomate natural triturado y AOVE",
+          "Media tostada de Jamón ibérico y salmorejo",
+          "Tostada entera de Jamón ibérico y salmorejo",
+          "Media tostada de Jamón ibérico, aguacate, tomate natural triturado y AOVE",
+          "Tostada entera de Jamón ibérico, aguacate, tomate natural triturado y AOVE",
+          "Media tostada de Jamón ibérico, queso manchego, tomate natural triturado y AOVE",
+          "Tostada entera de Jamón ibérico, queso manchego, tomate natural triturado y AOVE",
+          "Desayuno español completo",
+          "Desayuno halal completo",
+          "Desayuno cordobés completo",
+          "Desayuno vegetal completo",
+          "Desayuno italiano completo",
+          "Desayuno francés completo",
+          "Desayuno inglés completo",
+          "Huevos revueltos o fritos (2 unidades)",
+          "Huevos revueltos o fritos con bacon (2 unidades)",
+          "Desayuno vegetal (plato combinado)",
+          "Desayuno italiano (plato combinado)",
+          "Desayuno francés (plato combinado)",
+          "Desayuno inglés (plato combinado)",
+          "Croissant",
+          "Croissant a la plancha con mantequilla y mermelada",
+          "Croissant con Nutella",
+          "Croissant mixto de jamón cocido y queso fundido",
+          "Croissant vegetal con tomate, huevo duro, ensalada y mahonesa",
+          "Croissant de salmón ahumado, queso crema y aguacate",
+          "Sándwich mixto de jamón cocido y queso fundido",
+          "Sándwich vegetal con tomate, huevo duro, ensalada y mahonesa",
+          "Sándwich de salmón ahumado y queso crema",
+          "Bagel de jamón cocido, queso y huevo duro",
+          "Bagel vegetal con aguacate, tomate y ensalada",
+          "Bagel halal de salchichón de pavo, queso y huevo duro",
+          "Bagel de salmón ahumado y queso crema",
+          "Bowl de yogur griego con fruta natural y miel",
+          "Bowl de yogur griego con avena, fruta natural y miel",
+          "Copa de macedonia de frutas",
+          "Ensalada de frutas de temporada",
+          "Pastelón cordobés de crema con frutos secos",
+          "Pancake con Nutella",
+          "Pancake con Nutella y sirope de arce",
+          "Pancake con frutas de temporada y sirope de arce",
+          "Pan para platos combinados"
+        ],
+        "dishPrices": [
+          {
+            "dish": "Media tostada de Tomate natural triturado y AOVE",
+            "eur": 2,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada entera de Tomate natural triturado y AOVE",
+            "eur": 4,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Media tostada de Mantequilla y mermelada",
+            "eur": 2,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada entera de Mantequilla y mermelada",
+            "eur": 4,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Media tostada de Paté o crema de york",
+            "eur": 2,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada entera de Paté o crema de york",
+            "eur": 4,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Media tostada de Jamón cocido, tomate natural triturado y AOVE",
+            "eur": 2.8,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada entera de Jamón cocido, tomate natural triturado y AOVE",
+            "eur": 5.6,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Media tostada de Aguacate y crema de queso",
+            "eur": 3.5,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada entera de Aguacate y crema de queso",
+            "eur": 7,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Media tostada de Salchichón de pavo halal, tomate triturado y AOVE",
+            "eur": 3.5,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada entera de Salchichón de pavo halal, tomate triturado y AOVE",
+            "eur": 7,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Media tostada de Jamón ibérico, tomate natural triturado y AOVE",
+            "eur": 3.5,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada entera de Jamón ibérico, tomate natural triturado y AOVE",
+            "eur": 7,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Media tostada de Queso manchego, tomate natural triturado y AOVE",
+            "eur": 3.5,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada entera de Queso manchego, tomate natural triturado y AOVE",
+            "eur": 7,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Media tostada de Jamón ibérico y salmorejo",
+            "eur": 4,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada entera de Jamón ibérico y salmorejo",
+            "eur": 8,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Media tostada de Jamón ibérico, aguacate, tomate natural triturado y AOVE",
+            "eur": 4.5,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada entera de Jamón ibérico, aguacate, tomate natural triturado y AOVE",
+            "eur": 9,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Media tostada de Jamón ibérico, queso manchego, tomate natural triturado y AOVE",
+            "eur": 4.5,
+            "portion": "media-tostada"
+          },
+          {
+            "dish": "Tostada entera de Jamón ibérico, queso manchego, tomate natural triturado y AOVE",
+            "eur": 9,
+            "portion": "tostada-entera"
+          },
+          {
+            "dish": "Desayuno español completo",
+            "eur": 12,
+            "portion": "menu",
+            "description": "Café o infusión, zumo de naranja natural, media tostada de jamón ibérico con AOVE y tomate natural, y macedonia de frutas"
+          },
+          {
+            "dish": "Desayuno halal completo",
+            "eur": 12,
+            "portion": "menu",
+            "description": "Café o infusión, zumo de naranja natural, media tostada de salchichón de pavo con tomate natural y aceite de oliva, y macedonia de frutas"
+          },
+          {
+            "dish": "Desayuno cordobés completo",
+            "eur": 13,
+            "portion": "menu",
+            "description": "Café o infusión, zumo de naranja natural, media tostada de salmorejo y jamón ibérico, y macedonia de frutas"
+          },
+          {
+            "dish": "Desayuno vegetal completo",
+            "eur": 16,
+            "portion": "menu",
+            "description": "Café o infusión, zumo de naranja natural, huevos revueltos, queso fresco, tomate asado y macedonia de frutas"
+          },
+          {
+            "dish": "Desayuno italiano completo",
+            "eur": 17,
+            "portion": "menu",
+            "description": "Café o infusión, zumo de naranja natural, huevos a la napolitana en salsa de tomate y queso, y macedonia de frutas"
+          },
+          {
+            "dish": "Desayuno francés completo",
+            "eur": 17,
+            "portion": "menu",
+            "description": "Café o infusión, zumo de naranja natural, croissant con tortilla francesa y aguacate, y macedonia de frutas"
+          },
+          {
+            "dish": "Desayuno inglés completo",
+            "eur": 18,
+            "portion": "menu",
+            "description": "Café o infusión, zumo de naranja natural, huevos revueltos, bacon, salchicha bratwurst, alubias con tomate y macedonia de frutas"
+          },
+          {
+            "dish": "Huevos revueltos o fritos (2 unidades)",
+            "eur": 5
+          },
+          {
+            "dish": "Huevos revueltos o fritos con bacon (2 unidades)",
+            "eur": 8
+          },
+          {
+            "dish": "Desayuno vegetal (plato combinado)",
+            "eur": 9,
+            "description": "Huevos revueltos, queso fresco y tomate asado"
+          },
+          {
+            "dish": "Desayuno italiano (plato combinado)",
+            "eur": 10,
+            "description": "Huevos a la napolitana cocinados en salsa de tomate y queso"
+          },
+          {
+            "dish": "Desayuno francés (plato combinado)",
+            "eur": 10,
+            "description": "Croissant con tortilla francesa y aguacate"
+          },
+          {
+            "dish": "Desayuno inglés (plato combinado)",
+            "eur": 11,
+            "description": "Huevos revueltos con bacon, salchichas y alubias con tomate"
+          },
+          {
+            "dish": "Croissant",
+            "eur": 3
+          },
+          {
+            "dish": "Croissant a la plancha con mantequilla y mermelada",
+            "eur": 5
+          },
+          {
+            "dish": "Croissant con Nutella",
+            "eur": 6
+          },
+          {
+            "dish": "Croissant mixto de jamón cocido y queso fundido",
+            "eur": 7
+          },
+          {
+            "dish": "Croissant vegetal con tomate, huevo duro, ensalada y mahonesa",
+            "eur": 7
+          },
+          {
+            "dish": "Croissant de salmón ahumado, queso crema y aguacate",
+            "eur": 10
+          },
+          {
+            "dish": "Sándwich mixto de jamón cocido y queso fundido",
+            "eur": 7
+          },
+          {
+            "dish": "Sándwich vegetal con tomate, huevo duro, ensalada y mahonesa",
+            "eur": 7
+          },
+          {
+            "dish": "Sándwich de salmón ahumado y queso crema",
+            "eur": 9
+          },
+          {
+            "dish": "Bagel de jamón cocido, queso y huevo duro",
+            "eur": 8
+          },
+          {
+            "dish": "Bagel vegetal con aguacate, tomate y ensalada",
+            "eur": 8
+          },
+          {
+            "dish": "Bagel halal de salchichón de pavo, queso y huevo duro",
+            "eur": 8
+          },
+          {
+            "dish": "Bagel de salmón ahumado y queso crema",
+            "eur": 10
+          },
+          {
+            "dish": "Bowl de yogur griego con fruta natural y miel",
+            "eur": 8
+          },
+          {
+            "dish": "Bowl de yogur griego con avena, fruta natural y miel",
+            "eur": 9
+          },
+          {
+            "dish": "Copa de macedonia de frutas",
+            "eur": 5
+          },
+          {
+            "dish": "Ensalada de frutas de temporada",
+            "eur": 10
+          },
+          {
+            "dish": "Pastelón cordobés de crema con frutos secos",
+            "eur": 5
+          },
+          {
+            "dish": "Pancake con Nutella",
+            "eur": 8
+          },
+          {
+            "dish": "Pancake con Nutella y sirope de arce",
+            "eur": 8
+          },
+          {
+            "dish": "Pancake con frutas de temporada y sirope de arce",
+            "eur": 10
+          },
+          {
+            "dish": "Pan para platos combinados",
+            "eur": 1,
+            "portion": "unidad",
+            "description": "Los platos combinados no incluyen pan"
+          },
+          {
+            "dish": "Suplemento de leche de soja, avena o sin lactosa",
+            "eur": 0.3,
+            "description": "Suplemento sobre el producto correspondiente, no producto individual"
+          },
+          {
+            "dish": "Suplemento de pan sin gluten para media tostada",
+            "eur": 0.75,
+            "description": "Importe adicional al precio de media tostada"
+          },
+          {
+            "dish": "Suplemento de pan sin gluten para tostada entera",
+            "eur": 1.5,
+            "description": "Importe adicional al precio de tostada entera"
           }
         ]
       }
