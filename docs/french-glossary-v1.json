@@ -519,6 +519,186 @@
       "es": "Montaditos",
       "fr": "Montaditos",
       "review": "context_check"
+    },
+    {
+      "es": "Entrantes, fríos y ensaladas",
+      "fr": "Entrées, plats froids et salades",
+      "review": "context_check"
+    },
+    {
+      "es": "Guisos y carnes",
+      "fr": "Plats mijotés et viandes",
+      "review": "context_check"
+    },
+    {
+      "es": "Verduras, huevos y frituras",
+      "fr": "Légumes, œufs et fritures",
+      "review": "context_check"
+    },
+    {
+      "es": "Tapear",
+      "fr": "À picorer",
+      "review": "context_check"
+    },
+    {
+      "es": "Compartir",
+      "fr": "À partager",
+      "review": "context_check"
+    },
+    {
+      "es": "Potaje Flamenco",
+      "fr": "Potaje flamenco",
+      "review": "context_check"
+    },
+    {
+      "es": "Ibéricos, quesos y embutidos",
+      "fr": "Charcuteries ibériques, fromages et salaisons",
+      "review": "context_check"
+    },
+    {
+      "es": "Huevos y revueltos",
+      "fr": "Œufs et brouillades",
+      "review": "context_check"
+    },
+    {
+      "es": "Fríos Varios",
+      "fr": "Assortiment de plats froids",
+      "review": "context_check"
+    },
+    {
+      "es": "Picar y compartir",
+      "fr": "À grignoter et à partager",
+      "review": "context_check"
+    },
+    {
+      "es": "De la lonja",
+      "fr": "De la criée",
+      "review": "context_check"
+    },
+    {
+      "es": "De nuestra dehesa",
+      "fr": "De nos pâturages de dehesa",
+      "review": "context_check"
+    },
+    {
+      "es": "Ensaladas, Huevos y Verduras",
+      "fr": "Salades, œufs et légumes",
+      "review": "context_check"
+    },
+    {
+      "es": "Carnes y Caza",
+      "fr": "Viandes et gibier",
+      "review": "context_check"
+    },
+    {
+      "es": "Desayunos y meriendas · tostadas",
+      "fr": "Petits-déjeuners et goûters · tartines grillées",
+      "review": "context_check"
+    },
+    {
+      "es": "Ibéricos, quesos y curados",
+      "fr": "Charcuteries ibériques, fromages et produits affinés",
+      "review": "context_check"
+    },
+    {
+      "es": "Bocadillos (carta general)",
+      "fr": "Sandwichs (carte générale)",
+      "review": "context_check"
+    },
+    {
+      "es": "Molletes (carta general)",
+      "fr": "Molletes (carte générale)",
+      "review": "context_check"
+    },
+    {
+      "es": "Atún Rojo de Almadraba",
+      "fr": "Thon rouge d’almadraba",
+      "review": "context_check"
+    },
+    {
+      "es": "Restaurante · Para comenzar",
+      "fr": "Restaurant · Pour commencer",
+      "review": "context_check"
+    },
+    {
+      "es": "Restaurante · Para compartir",
+      "fr": "Restaurant · À partager",
+      "review": "context_check"
+    },
+    {
+      "es": "Restaurante · Pescados",
+      "fr": "Restaurant · Poissons",
+      "review": "context_check"
+    },
+    {
+      "es": "Restaurante · Carnes",
+      "fr": "Restaurant · Viandes",
+      "review": "context_check"
+    },
+    {
+      "es": "Restaurante · Cortes de vacuno",
+      "fr": "Restaurant · Découpes de bœuf",
+      "review": "context_check"
+    },
+    {
+      "es": "Sopas y revueltos",
+      "fr": "Soupes et œufs brouillés",
+      "review": "context_check"
+    },
+    {
+      "es": "Abriendo boca",
+      "fr": "Pour se mettre en appétit",
+      "review": "context_check"
+    },
+    {
+      "es": "Para los más peques",
+      "fr": "Pour les plus petits",
+      "review": "context_check"
+    },
+    {
+      "es": "Nuestro rincón más dulce",
+      "fr": "Notre coin gourmand",
+      "review": "context_check"
+    },
+    {
+      "es": "La Quesería",
+      "fr": "La fromagerie",
+      "review": "context_check"
+    },
+    {
+      "es": "De la gallina",
+      "fr": "De la poule",
+      "review": "context_check"
+    },
+    {
+      "es": "Entre Plancha y Brasa",
+      "fr": "À la plancha et au gril",
+      "review": "context_check"
+    },
+    {
+      "es": "Nuestros fogones",
+      "fr": "Notre cuisine",
+      "review": "context_check"
+    },
+    {
+      "es": "Nuestros clásicos",
+      "fr": "Nos classiques",
+      "review": "context_check"
+    },
+    {
+      "es": "Carnes y platos fuertes",
+      "fr": "Viandes et plats principaux",
+      "review": "context_check"
+    },
+    {
+      "es": "Pescaitos Fritos",
+      "fr": "Petits poissons frits",
+      "review": "context_check"
+    },
+    {
+      "es": "Bar · Carta histórica (febrero 2023)",
+      "fr": "Bar · Carte historique (février 2023)",
+      "review": "context_check"
     }
   ],
   "gastronomy": [
