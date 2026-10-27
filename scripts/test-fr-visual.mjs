@@ -1,5 +1,5 @@
 import { chromium, devices } from 'playwright';
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { mkdirSync, writeFileSync, readFileSync } from 'node:fs';
 const base='http://127.0.0.1:8765/qa-fr-la-montillana.html';
 const profiles=[
  {name:'desktop',viewport:{width:1365,height:900},isMobile:false},
