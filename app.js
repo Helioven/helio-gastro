@@ -86,6 +86,30 @@ function casaRubioExplanation(name){
  return rules.find(([re])=>re.test(n))?.[1]||'';
 }
 function detailDishExplanation(name,placeId=''){
+ if(placeId==='patio-romano'){
+  const patioExplanations=[
+   [/^ensalada patio romano/i,"Romaine lettuce, buffalo mozzarella, cherry tomatoes, and basil and pistachio pesto."],
+   [/^ensalada caprese/i,"Pink tomato, buffalo mozzarella and basil pesto."],
+   [/^ensalada césar/i,"Romaine lettuce, grilled chicken, croutons and homemade Caesar sauce."],
+   [/^ensalada fumé/i,"Romaine lettuce, rocket, smoked salmon, celery, red pepper and yoghurt."],
+   [/^tiramisú casero/i,"Homemade tiramisu."],
+   [/^canoli siciliano con ricotta y pistachos/i,"Sicilian cannoli with ricotta cream and pistachios."],
+   [/^canoli siciliano con ricotta, nutella y avellanas/i,"Sicilian cannoli with ricotta cream, Nutella and hazelnuts."],
+   [/^desayuno español completo/i,"Coffee or tea, fresh orange juice, half a toast with Iberian ham, extra virgin olive oil and tomato, plus seasonal fruit salad."],
+   [/^desayuno halal completo/i,"Coffee or tea, fresh orange juice, half a toast with turkey salchichón, tomato and olive oil, plus seasonal fruit salad."],
+   [/^desayuno cordobés completo/i,"Coffee or tea, fresh orange juice, half a toast with salmorejo and Iberian ham, plus seasonal fruit salad."],
+   [/^desayuno vegetal completo/i,"Coffee or tea, fresh orange juice, scrambled eggs, fresh cheese, roasted tomato and seasonal fruit salad."],
+   [/^desayuno italiano completo/i,"Coffee or tea, fresh orange juice, Neapolitan-style eggs cooked in tomato sauce and cheese, plus seasonal fruit salad."],
+   [/^desayuno francés completo/i,"Coffee or tea, fresh orange juice, croissant with French omelette and avocado, plus seasonal fruit salad."],
+   [/^desayuno inglés completo/i,"Coffee or tea, fresh orange juice, scrambled eggs, bacon, bratwurst sausage, beans in tomato sauce and seasonal fruit salad."],
+   [/^desayuno vegetal \(plato combinado\)/i,"Scrambled eggs, fresh cheese and roasted tomato. The combination plate does not include bread."],
+   [/^desayuno italiano \(plato combinado\)/i,"Neapolitan-style eggs cooked in tomato sauce and cheese. The combination plate does not include bread."],
+   [/^desayuno francés \(plato combinado\)/i,"Croissant with French omelette and avocado. The combination plate does not include bread."],
+   [/^desayuno inglés \(plato combinado\)/i,"Scrambled eggs, bacon, sausages and beans in tomato sauce. The combination plate does not include bread."],
+  ];
+  const text=patioExplanations.find(([pattern])=>pattern.test(name))?.[1];
+  if(text)return text;
+ }
  if(placeId==='casa-rubio'){const description=casaRubioExplanation(name);if(description)return description;}
  if(placeId==='la-piscatoria'){const description=piscatoriaSavouryExplanation(name);if(description)return description;}
  if(placeId==='la-piscatoria'){const description=piscatoriaSweetExplanation(name);if(description)return description;}
