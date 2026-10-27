@@ -496,6 +496,13 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - **Verificación técnica:** lectura posterior del JSON válida; 44 establecimientos conservados, carta general con 38 precios, desayunos con 60 entradas y cuatro menús especiales. **QA visual:** Helio confirmó la correcta presentación tras revisar platos y menús; cierre editorial autorizado. No se certifica vigencia actual de todos los precios, apertura ni disponibilidad; la auditoría integral y pruebas generales de regresión quedan pendientes.
 - **Control de pendientes:** excluir Patio Romano de futuras revisiones ordinarias salvo incidencia, documentación nueva o solicitud expresa. **Próxima ficha propuesta: Taberna El Burlaero.**
 
+### Cierre de revisión — Taberna El Burlaero (27/10/2026)
+
+- **Taberna El Burlaero — REVISADA Y CERRADA / QA visual ES/EN confirmado por Helio el 27/10/2026.** Se cotejó el PDF aportado (11 páginas) con la ficha existente: 44 platos principales registrados y 66 entradas con precio en carta general, además del menú del día de 16,50 € con suplementos de flamenquín (2,50 €) y rabo de toro (4 €).
+- Se corrigieron etiquetas de fuente en inglés y se añadieron explicaciones inglesas para platos que carecían de ellas. Los importes presentados como «precio 1/2; tamaño sin precisar» no se asignan artificialmente a tapa, media ni ración: el documento ofrece las variantes numéricas pero no identifica inequívocamente su formato para esos platos. Los formatos expresamente indicados se conservan. Las bebidas independientes permanecen fuera del catálogo.
+- **Validación:** actualización del código y datos en GitHub; Helio ha confirmado visualmente que las correcciones se muestran correctamente. Este cierre editorial no acredita vigencia actual de precios ni sustituye la auditoría integral y la regresión posterior. Excluir de revisiones ordinarias salvo incidencia, nueva documentación o solicitud expresa.
+- **Siguiente decisión:** revisar los establecimientos restantes sin cierre, manteniendo El Caballo Rojo como caso especial por el cierre temporal comunicado y sin marcarlo como operativo hasta contrastar la reapertura.
+
 ### Propuestas de revisión externa (Paca / Gemini) — 27/10/2026
 
 **Estado: backlog propuesto, no implementado.** Mantener el orden de fases y el principio del Método Helio: **«En lo simple está la estabilidad»**. Estas ideas proceden de una revisión de capturas de pantalla, **no de una auditoría del código o de los datos**.
