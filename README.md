@@ -588,3 +588,30 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Las ejecuciones fallidas intermedias se debieron a incompatibilidad de Playwright con el runner Ubuntu 26.04 (resuelta usando imagen oficial `mcr.microsoft.com/playwright:v1.56.1-noble`) y a defectos detectados/corregidos en scripts y `i18n.js`. No se consideran fallos abiertos tras el PASS final.
 
 **Próximo paso acordado:** **paso 3: regresión de la aplicación principal**, comprobando **buscador, filtros, comparador, fichas y navegación** con y sin `?qa_fr=1`, en escritorio y móvil, comprobando conservación de ES/EN y de precios/formatos. Documentar cada prueba como propuesta/ejecutada/superada/fallida, corregir solo errores confirmados y repetir QA. No desplegar francés público ni ampliar traducciones masivas antes de superar esta etapa. Posteriormente, avanzar por lotes controlados hacia la cobertura francesa integral, siguiendo la hoja de ruta existente.
+
+
+### Pausa de trabajo — regresión global inicial (27/10/2026)
+
+**Estado: primera batería de regresión automatizada SUPERADA en GitHub Actions #55; sesión pausada por decisión de Helio.** Ejecución asociada al commit `18973b9`, rama `feature/fr-integration-qa-20261027`. Evidencia visual aportada por Helio: workflow general en verde. Esta aprobación cubre la batería automatizada actual; no equivale a finalizar la auditoría integral, las traducciones francesas ni el QA exploratorio completo.
+
+**Baterías incorporadas al job `visual-qa`:**
+- `scripts/test-fr-visual.mjs`: piloto francés, selector e integridad visual ES/EN/FR. PASS en la ejecución #51, confirmado por sus registros.
+- `scripts/test-search-regression.mjs` — HG-QA-032: búsqueda manual por plato y nombre, coincidencias, persistencia y controles del selector en escritorio/móvil con y sin modo francés QA. Corregido el propio test por errores de contexto (`clean is not defined`) y normalización de «Moriles»; ejecución #55 en verde.
+- `scripts/test-filter-regression.mjs` — HG-QA-033: presupuestos por plato/comida, precios desconocidos, filtros de formato y precios documentados. PASS observado en #51; se añadió un caso positivo documentado para evitar aprobar únicamente condiciones vacías. Incluido en #55.
+- `scripts/test-comparator-regression.mjs` — HG-QA-034: máximo tres locales, rechazo del cuarto, persistencia tras F5, enlaces de ruta seguros y limpieza al cambiar de servicio. Falló inicialmente en los cuatro escenarios y pasó los cuatro tras corregir el defecto, según informe del artefacto aportado por Helio. Incluido en #55.
+- `scripts/test-detail-regression.mjs` — HG-QA-035: ficha, dirección, fuente HTTPS segura, fecha, integridad de precios al cambiar idioma, condiciones de menú de grupo y cierre. PASS en los cuatro escenarios del informe #51 (La Montillana y La Taberna del Río); incluido en #55.
+
+**Defecto funcional HG-BUG-001 — corregido y validado:** el comparador conservaba tres establecimientos al cambiar de Comer a Desayunar, contra los requisitos. Reproducción inicial: 4/4 combinaciones escritorio/móvil × público/`?qa_fr=1` con selección restante 3. Ajuste mínimo en `app.js`: vaciar `state.selected` solo al cambiar efectivamente de servicio, manteniendo la restauración normal tras F5. Commit `65f752c`. Regresión posterior: 4/4 PASS; selección recuperada tras F5 = 3, tras cambio de servicio = 0. Ningún cambio de cartas o precios.
+
+**Control de calidad de los tests:** los fallos de `clean is not defined` y de la aserción Moriles se localizaron en el script de pruebas, no demostraron fallos de búsqueda en producción. Correcciones `47a2cb6` y `18973b9`. El test de filtros inicialmente ofrecía PASS con casos de presupuesto sin coincidencias; se reforzó con comprobación positiva real (`9c88e9a`). El workflow se modificó para ejecutar las cinco suites aunque alguna falle y preservar informes por separado (`e62194e`). No equiparar el PASS a cobertura exhaustiva de formatos, precios o los 44 establecimientos.
+
+**Evidencia y límites de verificación:** Helio aportó capturas del workflow #51, registros JSON de las cinco suites y captura del workflow #55 en verde (commit `18973b9`). En #51, `catalog-audit` pasó, mientras `visual-qa` falló por HG-QA-032 y HG-QA-034; las demás suites pasaron. La captura de #55 acredita éxito general de la ejecución más reciente, pero los artefactos individuales de #55 no se han contrastado uno por uno en este cierre. Enlaces a ejecución: https://github.com/Helioven/helio-gastro/actions/workflows/data-qa.yml .
+
+**Condiciones al retomar:**
+1. Confirmar rama, commit y estado de CI; descargar y revisar los cinco JSON de #55 si se requiere evidencia granular de cierre.
+2. Continuar fase 3 con exploratorias de navegación, favoritos, recomendaciones y mapas, accesibilidad, casos límite, coherencia semántica y revisión documental de excepciones; evitar duplicar pruebas ya cubiertas.
+3. Mantener el francés solo en modo QA (`?qa_fr=1`) y avanzar en lotes controlados hacia ES/EN/FR completos antes de declarar cerrada la auditoría integral.
+4. No fusionar la rama QA con `main`, no desplegar francés público, no reabrir las 43 cartas cerradas ni modificar datos sin nueva evidencia y autorización expresa. El Caballo Rojo continúa como excepción pendiente de verificar reapertura.
+5. Repetir regresión tras cualquier corrección y registrar evidencia, severidad, resultado y cierre de cada incidencia.
+
+**Decisión:** detener aquí la sesión de desarrollo/QA hasta que Helio solicite continuar. No se altera el orden acordado de las siete fases.
