@@ -545,3 +545,11 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Se retiraron del potaje flamenco los ingredientes atribuidos desde Casa Bravo sin confirmación para este local. También se tradujeron al inglés las etiquetas de las dos fuentes.
 - Dirección corregida a partir de la información oficial aportada: Calle Céspedes, 11 y Calle Velázquez Bosco, 10/12 (Calleja de las Flores), 14003 Córdoba, sin afirmar que sean accesos distintos.
 - Excluir de revisiones ordinarias salvo incidencia, nueva documentación o petición de Helio. La auditoría integral y la comprobación de vigencia de precios permanecen pendientes.
+
+
+### Cierre de revisión — Con Acento Brasería (27/10/2026)
+
+- **Con Acento Brasería — REVISADA Y CERRADA / aprobación visual confirmada por Helio el 27/10/2026.** Se cotejaron las cartas PDF de parrilla y tapas proporcionadas por Helio con la ficha registrada.
+- La ficha conserva **43 platos/opciones y 45 entradas de precio**, distribuidos en nueve secciones, con descripciones en español e inglés; se añadió la dirección **Avenida Al-Nasir, 13 (Vial Norte), Córdoba** y la traducción inglesa de la etiqueta de fuente.
+- Se respetaron los formatos de media/ración y los importes por 100 g de carnes al corte; los vinos quedaron fuera del catálogo conforme al criterio editorial. No se alteraron los importes ni se afirmó una nueva comprobación de vigencia de precios.
+- **Control de pendientes:** excluir de próximas revisiones ordinarias salvo incidencia, carta nueva o petición expresa. **Taberna La Sal** queda como única ficha sin cierre editorial registrado; **El Caballo Rojo** permanece como excepción por cierre temporal comunicado. La auditoría integral y pruebas generales de regresión siguen pendientes.
