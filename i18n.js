@@ -124,6 +124,8 @@ window.GASTRO_I18N = Object.freeze({
   }
   const originalNodes=new WeakMap();
   const originalAttributes=new WeakMap();
+  const frenchQaEnabled=new URLSearchParams(window.location.search).get('qa_fr')==='1';
+  const isSupportedLanguage=value=>value==='es'||value==='en'||(frenchQaEnabled&&value==='fr');
   let language='es';
   const normalize=s=>s.trim().replace(/\s+/g,' ');
   function translateText(node){
@@ -157,7 +159,7 @@ window.GASTRO_I18N = Object.freeze({
     }
   }
   function applyLanguage(next){
-    language=next==='en'?'en':'es';
+    language=isSupportedLanguage(next)?next:'es';
     document.documentElement.lang=language;
     const select=document.getElementById('language-select');
     if(select && select.value!==language)select.value=language;
@@ -167,12 +169,15 @@ window.GASTRO_I18N = Object.freeze({
       if(translated!==undefined && element.textContent!==translated)element.textContent=translated;
     }
     if(typeof window.HelioGastroRefreshExplanations==='function')window.HelioGastroRefreshExplanations();
-    try{localStorage.setItem(KEY,language)}catch(e){}
+    try{if(language!=='fr')localStorage.setItem(KEY,language)}catch(e){}
   }
   function init(){
     const select=document.getElementById('language-select');
     if(!select)return;
-    try{language=localStorage.getItem(KEY)==='en'?'en':'es'}catch(e){}
+    if(frenchQaEnabled&&!select.querySelector('option[value="fr"]')){
+      const option=document.createElement('option');option.value='fr';option.textContent='Français (QA)';select.append(option);
+    }
+    try{const saved=localStorage.getItem(KEY);language=isSupportedLanguage(saved)?saved:'es'}catch(e){}
     select.addEventListener('change',()=>applyLanguage(select.value));
     applyLanguage(language);
     const observer=new MutationObserver(records=>{
@@ -201,7 +206,7 @@ window.GASTRO_I18N = Object.freeze({
     });
     observer.observe(document.body,{childList:true,characterData:true,subtree:true});
   }
-  window.HelioGastroLanguage={set:applyLanguage,get:()=>language};
+  window.HelioGastroLanguage={set:applyLanguage,get:()=>language,qaFrenchEnabled:()=>frenchQaEnabled};
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);
   else init();
 })();
