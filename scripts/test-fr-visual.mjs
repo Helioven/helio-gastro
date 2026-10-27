@@ -46,7 +46,7 @@ await main.locator('#language-select').waitFor();
 const normalOptions=await main.locator('#language-select option').evaluateAll(options=>options.map(o=>o.value));
 if(normalOptions.includes('fr'))mainErrors.push('FR leaked into default public selector');
 await main.goto('http://127.0.0.1:8765/index.html?qa_fr=1',{waitUntil:'domcontentloaded'});
-await main.locator('#language-select option[value="fr"]').waitFor();
+await main.locator('#language-select option[value="fr"]').waitFor({state:'attached'});
 await main.locator('#language-select').selectOption('fr');
 await main.waitForFunction(()=>document.documentElement.lang==='fr'&&window.HelioGastroLanguage?.get()==='fr');
 await main.locator('#language-select').selectOption('en');
