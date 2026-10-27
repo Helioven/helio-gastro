@@ -362,6 +362,11 @@ function venueMenuPriceLabel(source,english){
  if(weightPortion)return weightPortion[1]+' · '+({'tapa':'tapa','media':'half portion','ración':'full portion'}[weightPortion[2].toLowerCase()]);
  const unitCount=source.match(/^(\d+)\s+unidades(?:\s*·\s*(tapa|media))?$/i);
  if(unitCount)return unitCount[1]+' pieces'+(unitCount[2]?' · '+(unitCount[2].toLowerCase()==='media'?'half portion':'tapa'):'');
+ if(source==='Precio único')return 'Single price';
+ const weightServing=source.match(/^(Media ración|Ración completa)\s*\((\d+\s*g)\)$/i);
+ if(weightServing)return (weightServing[1].toLowerCase()==='media ración'?'Half portion':'Full portion')+' ('+weightServing[2]+')';
+ const pieceServing=source.match(/^(tapa|media ración|ración)\s*\((\d+)\s*uds\.\)$/i);
+ if(pieceServing)return ({'tapa':'Tapa','media ración':'Half portion','ración':'Full portion'}[pieceServing[1].toLowerCase()])+' ('+pieceServing[2]+' pieces)';
  if(source==='precio publicado')return 'Published price';
  if(/^formato (?:no especificado|sin especificar|no indicado)$/i.test(source.trim()))return 'Portion size not specified';
  return source;
