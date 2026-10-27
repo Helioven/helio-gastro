@@ -488,6 +488,14 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Las dos fichas de Don Pepe, La Bandera, La Tarterie y Pastelerías Roldán ya están registradas como cerradas; no reabrirlas sin incidencia o petición expresa.
 
 
+
+### Cierre de revisión — Patio Romano (27/10/2026)
+
+- **Patio Romano — REVISADO Y CERRADO / validación visual ES/EN confirmada por Helio el 27/10/2026.** Se conservaron los 38 registros con precio de la carta general y se incorporó la carta de desayunos facilitada por Helio (60 entradas de precio, incluidos suplementos), respetando medias tostadas, tostadas enteras y desayunos completos como formatos distintos.
+- Se añadieron explicaciones inglesas específicas para los 38 platos de la carta general y se corrigió la traducción de la primera etiqueta de fuente. Se incorporaron cuatro menús especiales de la web oficial: **Moschea di Cordova (38 €), Giudecca di Cordova (48 €), Cordobés (48 €) e Italiano (48 €)**, diferenciados de los precios de platos individuales y con sus condiciones documentadas.
+- **Verificación técnica:** lectura posterior del JSON válida; 44 establecimientos conservados, carta general con 38 precios, desayunos con 60 entradas y cuatro menús especiales. **QA visual:** Helio confirmó la correcta presentación tras revisar platos y menús; cierre editorial autorizado. No se certifica vigencia actual de todos los precios, apertura ni disponibilidad; la auditoría integral y pruebas generales de regresión quedan pendientes.
+- **Control de pendientes:** excluir Patio Romano de futuras revisiones ordinarias salvo incidencia, documentación nueva o solicitud expresa. **Próxima ficha propuesta: Taberna El Burlaero.**
+
 ### Propuestas de revisión externa (Paca / Gemini) — 27/10/2026
 
 **Estado: backlog propuesto, no implementado.** Mantener el orden de fases y el principio del Método Helio: **«En lo simple está la estabilidad»**. Estas ideas proceden de una revisión de capturas de pantalla, **no de una auditoría del código o de los datos**.
