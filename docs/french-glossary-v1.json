@@ -699,6 +699,81 @@
       "es": "Bar · Carta histórica (febrero 2023)",
       "fr": "Bar · Carte historique (février 2023)",
       "review": "context_check"
+    },
+    {
+      "es": "Entre macetas y flores",
+      "fr": "Entre pots et fleurs",
+      "review": "context_check"
+    },
+    {
+      "es": "Azahar y Jazmines",
+      "fr": "Fleur d’oranger et jasmins",
+      "review": "context_check"
+    },
+    {
+      "es": "Rosas y Claveles",
+      "fr": "Roses et œillets",
+      "review": "context_check"
+    },
+    {
+      "es": "Sabores Córdoba",
+      "fr": "Saveurs de Cordoue",
+      "review": "context_check"
+    },
+    {
+      "es": "Puro Río",
+      "fr": "Puro Río",
+      "review": "preserve_name_context_check"
+    },
+    {
+      "es": "Restaurante · La antigua cocina mozárabe-magrebí",
+      "fr": "Restaurant · L’ancienne cuisine mozarabe et maghrébine",
+      "review": "context_check"
+    },
+    {
+      "es": "Wagyu",
+      "fr": "Wagyu",
+      "review": "preserve_name_context_check"
+    },
+    {
+      "es": "Black Angus",
+      "fr": "Black Angus",
+      "review": "preserve_name_context_check"
+    },
+    {
+      "es": "Vaca Rubia Gallega",
+      "fr": "Vache Rubia Gallega",
+      "review": "preserve_name_context_check"
+    },
+    {
+      "es": "A la brasa del Carbón de Encina",
+      "fr": "Grillé au charbon de chêne vert",
+      "review": "context_check"
+    },
+    {
+      "es": "Guiso del día (consultar disponibilidad)",
+      "fr": "Plat mijoté du jour (se renseigner sur la disponibilité)",
+      "review": "context_check"
+    },
+    {
+      "es": "Abacería andaluza",
+      "fr": "Épicerie fine andalouse",
+      "review": "context_check"
+    },
+    {
+      "es": "Los fritos de Carlitos",
+      "fr": "Les fritures de Carlitos",
+      "review": "context_check"
+    },
+    {
+      "es": "Dando la brasa",
+      "fr": "À la braise",
+      "review": "context_check"
+    },
+    {
+      "es": "Los guisos de la abuela",
+      "fr": "Les plats mijotés de grand-mère",
+      "review": "context_check"
     }
   ],
   "gastronomy": [
