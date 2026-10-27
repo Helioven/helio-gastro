@@ -46,7 +46,7 @@ for (const profile of profiles) {
       await page.locator('#place-name').fill('Moriles');
       await page.locator('#filters').evaluate(form => form.requestSubmit());
       const names = await page.evaluate(() => state.filtered.map(p => p.name));
-      if (!names.length || names.some(n => !clean(n).includes('moriles')))
+      if (!names.length || names.some(n => !n.normalize('NFD').replace(/[\\u0300-\\u036f]/g, '').toLowerCase().includes('moriles')))
         errors.push('Name-only Moriles search returned absent/unrelated places');
       // Filtering changes must not launch a new search before submitting.
       const countBefore = await page.locator('#count').textContent();
