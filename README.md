@@ -527,3 +527,8 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Cobertura registrada: 26 platos de restaurante, 17 de barra, 7 postres y 4 vinos de postre. Se preservan precios distintos entre restaurante y barra y los formatos declarados, sin inventar tamaños.
 - Se incorporaron los cuatro vinos en una sección «Vinos de postre» y se corrigieron etiquetas en inglés de unidades, pesos y medias raciones, así como la nota y encabezado de vinos.
 - **QA:** Helio confirmó visualmente la corrección final y autorizó cerrar la ficha. La auditoría integral ES/EN/FR y regresión global siguen en sus fases previstas.
+
+### Taberna Museo Manolete — revisión cerrada (27/10/2026)
+
+- **REVISADA Y CERRADA / QA visual ES/EN confirmado por Helio.** Se revisaron etiquetas de formato con gramajes, medias/raciones y precios únicos, y se añadió la etiqueta inglesa de la fuente del grupo Ágora. Helio confirmó la correcta visualización tras los cambios.
+- Se mantienen los seis apartados y los precios registrados sin alteración. No incluir en nuevas revisiones ordinarias salvo incidencia, fuente nueva o solicitud expresa. La validación visual no sustituye la auditoría integral ni garantiza vigencia actual de los precios.
