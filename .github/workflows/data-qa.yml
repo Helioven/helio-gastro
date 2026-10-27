@@ -34,3 +34,37 @@ jobs:
           name: french-coverage-proposals
           path: qa-reports/fr-coverage-proposals.json
           retention-days: 14
+
+  visual-qa:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser QA dependencies
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Start static server and run desktop/mobile browser QA
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/helio-qa-server.log 2>&1 &
+          python3 - <<'PY'
+          import time,urllib.request
+          for i in range(30):
+              try:
+                  urllib.request.urlopen('http://127.0.0.1:8765/qa-fr-la-montillana.html',timeout=2)
+                  break
+              except Exception: time.sleep(1)
+          else: raise SystemExit('QA web server unavailable')
+          PY
+          node scripts/test-fr-visual.mjs
+      - name: Upload visual QA screenshots and results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fr-visual-qa-desktop-mobile
+          path: qa-reports/
+          retention-days: 14
