@@ -56,7 +56,8 @@ await main.waitForFunction(()=>document.documentElement.lang==='es');
 const mainResult={defaultOptions:normalOptions,optInFrench:true,roundTrip:['fr','en','es'],errors:mainErrors};
 if(mainErrors.length)fail=true;
 await mainContext.close();
-\nawait browser.close();
+
+await browser.close();
 writeFileSync('qa-reports/fr-visual-qa.json',JSON.stringify({status:fail?'FAIL':'PASS',profiles:report,mainApp:mainResult},null,2)+'\n');
 console.log('FR VISUAL QA '+JSON.stringify({status:fail?'FAIL':'PASS',profiles:report,mainApp:mainResult}));
 if(fail)process.exitCode=1;
