@@ -1,0 +1,344 @@
+{
+  "meta": {
+    "date": "2026-10-27",
+    "status": "draft_for_QA",
+    "source": "docs/french-ui-candidates.json",
+    "purpose": "French reusable UI terminology for Helio Gastro; no catalog or application modifications",
+    "rules": [
+      "Use exact contextual matching, not global replace.",
+      "Preserve all amounts, years, restaurant names and units.",
+      "For uncertain formats keep uncertainty; do not silently infer serving size.",
+      "Keep traditional dish names when appropriate and explain them in French separately."
+    ]
+  },
+  "portions": [
+    {
+      "es": "ración",
+      "fr": "Portion entière",
+      "review": "context_check"
+    },
+    {
+      "es": "ración entera",
+      "fr": "Portion entière",
+      "review": "context_check"
+    },
+    {
+      "es": "Ración",
+      "fr": "Portion entière",
+      "review": "context_check"
+    },
+    {
+      "es": "media ración",
+      "fr": "Demi-portion",
+      "review": "context_check"
+    },
+    {
+      "es": "1/2 ración",
+      "fr": "Demi-portion",
+      "review": "context_check"
+    },
+    {
+      "es": "media",
+      "fr": "Demi-portion",
+      "review": "context_check"
+    },
+    {
+      "es": "unidad",
+      "fr": "À l'unité",
+      "review": "context_check"
+    },
+    {
+      "es": "tapa",
+      "fr": "Tapa",
+      "review": "context_check"
+    },
+    {
+      "es": "precio único",
+      "fr": "Prix unique",
+      "review": "context_check"
+    },
+    {
+      "es": "precio indicado",
+      "fr": "Prix affiché",
+      "review": "context_check"
+    },
+    {
+      "es": "Formato no indicado",
+      "fr": "Format non indiqué",
+      "review": "context_check"
+    },
+    {
+      "es": "Formato no especificado",
+      "fr": "Format non précisé",
+      "review": "context_check"
+    },
+    {
+      "es": "Precio orientativo",
+      "fr": "Prix indicatif",
+      "review": "context_check"
+    },
+    {
+      "es": "plato",
+      "fr": "Plat",
+      "review": "context_check"
+    },
+    {
+      "es": "media tostada",
+      "fr": "Demi-tartine",
+      "review": "context_check"
+    },
+    {
+      "es": "tostada entera",
+      "fr": "Tartine entière",
+      "review": "context_check"
+    },
+    {
+      "es": "suplemento",
+      "fr": "Supplément",
+      "review": "context_check"
+    },
+    {
+      "es": "100 g",
+      "fr": "100 g",
+      "review": "context_check"
+    },
+    {
+      "es": "combinado",
+      "fr": "Formule",
+      "review": "context_check"
+    },
+    {
+      "es": "ración / precio único",
+      "fr": "Portion entière · prix unique",
+      "review": "context_check"
+    },
+    {
+      "es": "Ración · precio de carta 2024",
+      "fr": "Portion entière · prix du menu de 2024",
+      "review": "context_check"
+    },
+    {
+      "es": "Media ración · precio de carta 2024",
+      "fr": "Demi-portion · prix du menu de 2024",
+      "review": "context_check"
+    },
+    {
+      "es": "Just Eat · reparto · formato no especificado",
+      "fr": "Just Eat · livraison · format non précisé",
+      "review": "context_check"
+    },
+    {
+      "es": "Google · listado aportado · formato sin confirmar",
+      "fr": "Google · liste fournie · format non confirmé",
+      "review": "context_check"
+    },
+    {
+      "es": "por persona",
+      "fr": "Par personne",
+      "review": "context_check"
+    },
+    {
+      "es": "mínimo 2 personas",
+      "fr": "Minimum 2 personnes",
+      "review": "context_check"
+    },
+    {
+      "es": "por 100 g",
+      "fr": "Pour 100 g",
+      "review": "context_check"
+    }
+  ],
+  "sections": [
+    {
+      "es": "Postres",
+      "fr": "Desserts",
+      "review": "context_check"
+    },
+    {
+      "es": "Carnes",
+      "fr": "Viandes",
+      "review": "context_check"
+    },
+    {
+      "es": "Entrantes",
+      "fr": "Entrées",
+      "review": "context_check"
+    },
+    {
+      "es": "Pescados",
+      "fr": "Poissons",
+      "review": "context_check"
+    },
+    {
+      "es": "Ensaladas",
+      "fr": "Salades",
+      "review": "context_check"
+    },
+    {
+      "es": "Revueltos",
+      "fr": "Œufs brouillés et poêlées",
+      "review": "context_check"
+    },
+    {
+      "es": "Menú del día",
+      "fr": "Menu du jour",
+      "review": "context_check"
+    },
+    {
+      "es": "De la huerta",
+      "fr": "Du potager",
+      "review": "context_check"
+    },
+    {
+      "es": "Menú Infantil",
+      "fr": "Menu enfant",
+      "review": "context_check"
+    },
+    {
+      "es": "Revueltos y verduras",
+      "fr": "Œufs brouillés et légumes",
+      "review": "context_check"
+    },
+    {
+      "es": "Tostas",
+      "fr": "Tartines",
+      "review": "context_check"
+    },
+    {
+      "es": "Platos combinados",
+      "fr": "Assiettes composées",
+      "review": "context_check"
+    },
+    {
+      "es": "Para los más chicos",
+      "fr": "Pour les plus petits",
+      "review": "context_check"
+    },
+    {
+      "es": "Extras",
+      "fr": "Suppléments",
+      "review": "context_check"
+    },
+    {
+      "es": "Tostadas",
+      "fr": "Tartines grillées",
+      "review": "context_check"
+    },
+    {
+      "es": "Acompañamientos",
+      "fr": "Accompagnements",
+      "review": "context_check"
+    },
+    {
+      "es": "Postres Caseros",
+      "fr": "Desserts maison",
+      "review": "context_check"
+    },
+    {
+      "es": "Tapas calientes",
+      "fr": "Tapas chaudes",
+      "review": "context_check"
+    },
+    {
+      "es": "Tapas frías",
+      "fr": "Tapas froides",
+      "review": "context_check"
+    },
+    {
+      "es": "Entrantes Calientes",
+      "fr": "Entrées chaudes",
+      "review": "context_check"
+    },
+    {
+      "es": "Huevos y Revueltos",
+      "fr": "Œufs et œufs brouillés",
+      "review": "context_check"
+    },
+    {
+      "es": "Para empezar",
+      "fr": "Pour commencer",
+      "review": "context_check"
+    },
+    {
+      "es": "Para abrir boca",
+      "fr": "Pour se mettre en appétit",
+      "review": "context_check"
+    },
+    {
+      "es": "Suplementos",
+      "fr": "Suppléments",
+      "review": "context_check"
+    },
+    {
+      "es": "Verduras",
+      "fr": "Légumes",
+      "review": "context_check"
+    },
+    {
+      "es": "Nuestros guisos",
+      "fr": "Nos plats mijotés",
+      "review": "context_check"
+    }
+  ],
+  "gastronomy": [
+    {
+      "es": "Salmorejo cordobés",
+      "fr": "Salmorejo cordobés",
+      "review": "context_check"
+    },
+    {
+      "es": "Flamenquín cordobés",
+      "fr": "Flamenquín cordobés",
+      "review": "context_check"
+    },
+    {
+      "es": "Rabo de toro",
+      "fr": "Queue de taureau mijotée",
+      "review": "context_check"
+    },
+    {
+      "es": "Croquetas",
+      "fr": "Croquettes",
+      "review": "context_check"
+    },
+    {
+      "es": "Mazamorra",
+      "fr": "Mazamorra",
+      "review": "context_check"
+    },
+    {
+      "es": "Carrillada",
+      "fr": "Joue de porc mijotée",
+      "review": "context_check"
+    },
+    {
+      "es": "Berenjenas con miel de caña",
+      "fr": "Aubergines au sirop de canne",
+      "review": "context_check"
+    },
+    {
+      "es": "Presa ibérica",
+      "fr": "Presa de porc ibérique",
+      "review": "context_check"
+    },
+    {
+      "es": "Torreznos",
+      "fr": "Torreznos (poitrine de porc croustillante)",
+      "review": "context_check"
+    },
+    {
+      "es": "Gilda",
+      "fr": "Gilda (brochette apéritive)",
+      "review": "context_check"
+    }
+  ],
+  "requiresManualReview": [
+    "media (can mean half serving, not a specific meal)",
+    "tostada (Spanish café toast does not always correspond to French tartine)",
+    "Menús navideños históricos (do not imply availability)",
+    "price per 100 g versus whole dish",
+    "allergens and diet claims",
+    "unverified menu ingredients",
+    "proper names and house-speciality terms"
+  ]
+}
