@@ -61,11 +61,18 @@ jobs:
               except Exception: time.sleep(1)
           else: raise SystemExit('QA web server unavailable')
           PY
-          node scripts/test-fr-visual.mjs
-          node scripts/test-search-regression.mjs
-          node scripts/test-filter-regression.mjs
-          node scripts/test-comparator-regression.mjs
-          node scripts/test-detail-regression.mjs
+          status=0
+          for suite in \
+            scripts/test-fr-visual.mjs \
+            scripts/test-search-regression.mjs \
+            scripts/test-filter-regression.mjs \
+            scripts/test-comparator-regression.mjs \
+            scripts/test-detail-regression.mjs; do
+            echo "::group::Running $suite"
+            node "$suite" || status=1
+            echo "::endgroup::"
+          done
+          exit "$status"
       - name: Upload visual QA screenshots and results
         if: always()
         uses: actions/upload-artifact@v4
