@@ -53805,7 +53805,7 @@
     "id": "agora-mezquita",
     "name": "Ágora Mezquita",
     "area": "Judería · Mezquita-Catedral",
-    "address": "Calle Céspedes, 11 y Calle Velázquez Bosco, 10–12, Córdoba (dos direcciones publicadas; verificar si son accesos o locales distintos)",
+    "address": "Calle Céspedes, 11 · Calle Velázquez Bosco, 10/12 (Calleja de las Flores), 14003 Córdoba",
     "mealCostEur": null,
     "priceStatus": "published_menu_prices_unverified_current",
     "checkedAt": "2026-10-16",
@@ -53830,7 +53830,7 @@
     "groupProfile": "Cocina cordobesa de raíz con enfoque contemporáneo, en las inmediaciones de la Mezquita-Catedral.",
     "contactPhone": "957 491 263",
     "publishedHours": "Todos los días 12:30–00:00; cocina siempre abierta (según captura).",
-    "menuSourceNote": "Carta individual facilitada por el usuario y cotejada con la transcripción de Helio del 27/10/2026. El cochifrito se registra una sola vez; la composición del potaje flamenco no figura confirmada para este local y no se atribuyen ingredientes de Casa Bravo. Precios sin verificación independiente de vigencia.",
+    "menuSourceNote": "Carta individual facilitada por el usuario y cotejada con la transcripción de Helio del 27/10/2026. El cochifrito se registra una sola vez; la composición del potaje flamenco no figura confirmada para este local y no se atribuyen ingredientes de Casa Bravo. Precios sin verificación independiente de vigencia. Las dos direcciones se muestran conjuntamente en la información oficial facilitada por Helio; no se afirma que sean accesos distintos.",
     "menus": [
       {
         "service": "Entrantes",
@@ -55075,7 +55075,7 @@
         ]
       }
     ],
-    "addressEn": "Calle Céspedes, 11 and Calle Velázquez Bosco, 10–12, Córdoba (two published addresses; not yet verified whether these are separate entrances or different premises)"
+    "addressEn": "Calle Céspedes, 11 · Calle Velázquez Bosco, 10/12 (Calleja de las Flores), 14003 Córdoba"
   },
   {
     "id": "taberna-museo-manolete",
