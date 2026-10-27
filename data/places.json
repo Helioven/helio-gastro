@@ -55068,7 +55068,8 @@
     "sources": [
       {
         "label": "Información de establecimientos del grupo Ágora (captura aportada por el usuario)",
-        "url": "https://casabravo1919.es/"
+        "url": "https://casabravo1919.es/",
+        "labelEn": "Ágora group restaurant information (screenshot supplied by the user)"
       }
     ],
     "groupName": "Grupo Ágora",
@@ -55559,11 +55560,11 @@
             "en": "Grain-fed Iberian ham",
             "prices": [
               {
-                "label": "media (60 g)",
+                "label": "Media ración (60 g)",
                 "eur": 14.95
               },
               {
-                "label": "entera (100 g)",
+                "label": "Ración completa (100 g)",
                 "eur": 19.95
               }
             ]
@@ -55574,7 +55575,7 @@
             "en": "Iberian ham and aged sheep's cheese platter",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 19.95
               }
             ]
@@ -55585,11 +55586,11 @@
             "en": "Aged cheese in extra virgin olive oil (93% sheep, 7% goat)",
             "prices": [
               {
-                "label": "media (95 g)",
+                "label": "Media ración (95 g)",
                 "eur": 9.95
               },
               {
-                "label": "entera (180 g)",
+                "label": "Ración completa (180 g)",
                 "eur": 13.95
               }
             ]
@@ -55713,7 +55714,7 @@
             "en": "Assorted croquettes (four of each kind)",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 12.95
               }
             ]
@@ -55789,7 +55790,7 @@
             "en": "Scrambled eggs with mushrooms and prawns",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 12.95
               }
             ]
@@ -55800,7 +55801,7 @@
             "en": "Scrambled eggs with surimi eel strips, prawns and potatoes",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 13.95
               }
             ]
@@ -55811,7 +55812,7 @@
             "en": "Potatoes with fried egg and ham",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 14.95
               }
             ]
@@ -55822,7 +55823,7 @@
             "en": "Potatoes with fried egg and spicy chorizo",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 12.95
               }
             ]
@@ -55833,7 +55834,7 @@
             "en": "House salad",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 11.95
               }
             ]
@@ -55844,7 +55845,7 @@
             "en": "Goat's cheese salad",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 12.95
               }
             ]
@@ -55855,7 +55856,7 @@
             "en": "Burrata salad with pesto, cherry tomatoes and walnuts",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 12.95
               }
             ]
@@ -55935,7 +55936,7 @@
             "en": "Chanquetes (small fish)",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 10.95
               }
             ]
@@ -55946,7 +55947,7 @@
             "en": "Grilled squid (220 g)",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 14.95
               }
             ]
@@ -55957,7 +55958,7 @@
             "en": "Fried prawns",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 11.95
               }
             ]
@@ -55968,7 +55969,7 @@
             "en": "King prawns in pil pil sauce",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 12.95
               }
             ]
@@ -55979,7 +55980,7 @@
             "en": "Grilled salmon with vegetables and teriyaki sauce",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 18.95
               }
             ]
@@ -55995,7 +55996,7 @@
             "en": "Cordoban pork loin and ham flamenquín",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 12.95
               }
             ]
@@ -56006,7 +56007,7 @@
             "en": "Roquefort cheese flamenquín",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 12.95
               }
             ]
@@ -56017,7 +56018,7 @@
             "en": "Grilled chicken thigh",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 11.95
               }
             ]
@@ -56028,7 +56029,7 @@
             "en": "Iberian pork cheeks",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 15.95
               }
             ]
@@ -56039,7 +56040,7 @@
             "en": "Traditional Cordoban braised oxtail stew",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 19.95
               }
             ]
@@ -56050,7 +56051,7 @@
             "en": "Boneless oxtail timbale with sauce and potatoes",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 17.95
               }
             ]
@@ -56061,7 +56062,7 @@
             "en": "Fried pork from Los Pedroches Valley",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 16.95
               }
             ]
@@ -56072,7 +56073,7 @@
             "en": "Minced beef burger with cheddar, bacon, tomato, mixed salad leaves, tempura onion rings and homemade sauce",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 12.95
               }
             ]
@@ -56083,7 +56084,7 @@
             "en": "Retinta beef burger with truffle sauce, caramelised onion, rocket and potatoes",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 15.95
               }
             ]
@@ -56094,7 +56095,7 @@
             "en": "Grilled beef tenderloin",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 25.95
               }
             ]
@@ -56105,7 +56106,7 @@
             "en": "Grilled Iberian pork tenderloin",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 18.95
               }
             ]
@@ -56116,7 +56117,7 @@
             "en": "French fries",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 5.95
               }
             ]
@@ -56132,7 +56133,7 @@
             "en": "Chicken breast with French fries",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 10.95
               }
             ]
@@ -56143,7 +56144,7 @@
             "en": "Chicken nuggets with French fries",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 10.95
               }
             ]
@@ -56154,7 +56155,7 @@
             "en": "Pasta with Bolognese sauce",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 11.95
               }
             ]
@@ -56165,7 +56166,7 @@
             "en": "Pasta with carbonara sauce",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 11.95
               }
             ]
@@ -56181,7 +56182,7 @@
             "en": "Chocolate lava cake with orange ice cream and whipped cream",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 6.5
               }
             ]
@@ -56192,7 +56193,7 @@
             "en": "Homemade three-chocolate cake",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 6.5
               }
             ]
@@ -56203,7 +56204,7 @@
             "en": "Homemade cheesecake",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 6.5
               }
             ]
@@ -56214,7 +56215,7 @@
             "en": "Traditional Cordoban puff pastry with candied citron and sugar",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 6.5
               }
             ]
@@ -56225,7 +56226,7 @@
             "en": "Caramelised Spanish-style French toast with vanilla ice cream",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 6.5
               }
             ]
@@ -56236,7 +56237,7 @@
             "en": "Vanilla ice cream with hot chocolate",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 5.9
               }
             ]
@@ -56247,7 +56248,7 @@
             "en": "Orange with olive oil and cinnamon",
             "prices": [
               {
-                "label": "único",
+                "label": "Precio único",
                 "eur": 5.9
               }
             ]
