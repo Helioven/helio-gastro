@@ -71,6 +71,7 @@ jobs:
             scripts/test-fr-real-detail-27.mjs \
             scripts/test-fr-bar-marta-17.mjs \
             scripts/test-fr-la-jineta-22.mjs \
+            scripts/test-fr-la-tarterie-28.mjs \
             scripts/test-search-regression.mjs \
             scripts/test-filter-regression.mjs \
             scripts/test-comparator-regression.mjs \
