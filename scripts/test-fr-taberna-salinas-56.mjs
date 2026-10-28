@@ -1,6 +1,6 @@
 import {chromium,devices} from 'playwright';
 import {readFileSync,mkdirSync,writeFileSync} from 'node:fs';
-const filenames=['batch-056-taberna-salinas.json','batch-047-taberna-salinas.json','batch-048-taberna-salinas.json','batch-049-taberna-salinas.json','batch-050-taberna-salinas.json'];
+const filenames=['batch-046-taberna-salinas.json','batch-047-taberna-salinas.json','batch-048-taberna-salinas.json','batch-049-taberna-salinas.json','batch-050-taberna-salinas.json'];
 const expected=filenames.flatMap(f=>JSON.parse(readFileSync('translations/fr/'+f,'utf8')).entries);
 mkdirSync('qa-reports/screenshots',{recursive:true});
 const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
