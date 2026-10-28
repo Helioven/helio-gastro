@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-la-sal",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 0,
+      "itemIndex": 0,
+      "fr": "Soupe froide cordouane à la tomate et au pain."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 0,
+      "itemIndex": 1,
+      "fr": "Pommes de terre accompagnées de sauce brava."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 0,
+      "itemIndex": 2,
+      "fr": "Chorizo préparé « al infierno » ; la carte ne précise pas la méthode de préparation."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 0,
+      "itemIndex": 3,
+      "fr": "Ensaladilla aux crevettes."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 0,
+      "itemIndex": 4,
+      "fr": "Longe de porc préparée à la manière traditionnelle dite « de orza »."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 0,
+      "itemIndex": 5,
+      "fr": "Anchois marinés au vinaigre."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 0,
+      "itemIndex": 6,
+      "fr": "Fromage au lait de brebis."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 0,
+      "itemIndex": 7,
+      "fr": "Tortillita de camarones, prix à l’unité."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 0,
+      "itemIndex": 8,
+      "fr": "Tartine garnie d’un anchois de Cantabrie, prix à l’unité."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 0,
+      "itemIndex": 9,
+      "fr": "Tartine à la sardine et à l’avocat."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 0,
+      "itemIndex": 10,
+      "fr": "Aubergines accompagnées de miel de canne."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 0,
+      "itemIndex": 11,
+      "fr": "Crevettes servies dans un cornet en papier avec mayonnaise au citron vert."
+    }
+  ]
+}
