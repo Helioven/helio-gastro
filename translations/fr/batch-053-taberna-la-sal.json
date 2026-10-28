@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-la-sal",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 2,
+      "itemIndex": 1,
+      "fr": "Œufs brouillés aux champignons, aux gulas (préparation de surimi en forme de civelles) et aux crevettes."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 2,
+      "itemIndex": 2,
+      "fr": "Œufs brouillés à l’avocat et au jambon croustillant. La source indique deux prix différents : 13 € et 14 €."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 2,
+      "itemIndex": 3,
+      "fr": "Œufs brouillés à la morue et aux pommes de terre paille."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 3,
+      "itemIndex": 0,
+      "fr": "Lamelles de poulet panées."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 3,
+      "itemIndex": 1,
+      "fr": "Croquettes de grand-mère ; la farce n’est pas précisée."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 3,
+      "itemIndex": 2,
+      "fr": "Croquettes de queue de bœuf."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 3,
+      "itemIndex": 3,
+      "fr": "Flamenquín cordouan ; la carte ne précise ni la farce ni l’accompagnement."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 4,
+      "itemIndex": 0,
+      "fr": "Crevettes blanches."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 4,
+      "itemIndex": 1,
+      "fr": "Moules cuites à la vapeur."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 4,
+      "itemIndex": 2,
+      "fr": "Palourdes de Carril."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 5,
+      "itemIndex": 0,
+      "fr": "Anchois frits."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 5,
+      "itemIndex": 1,
+      "fr": "Cazón mariné en adobo."
+    }
+  ]
+}
