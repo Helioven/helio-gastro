@@ -20,6 +20,7 @@ jobs:
           node scripts/inspect-schema.mjs
           node scripts/audit-exploratory.mjs
           node scripts/audit-french-coverage.mjs
+          node scripts/inspect-next-fr-restaurant.mjs
           node scripts/build-french-plan.mjs
           node scripts/list-french-section-titles.mjs
           node scripts/audit-french-integrity.mjs
