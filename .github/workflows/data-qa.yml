@@ -73,6 +73,7 @@ jobs:
             scripts/test-fr-la-jineta-22.mjs \
             scripts/test-fr-la-tarterie-28.mjs \
             scripts/test-fr-el-abuelo-31.mjs \
+            scripts/test-fr-la-viuda-34.mjs \
             scripts/test-search-regression.mjs \
             scripts/test-filter-regression.mjs \
             scripts/test-comparator-regression.mjs \
