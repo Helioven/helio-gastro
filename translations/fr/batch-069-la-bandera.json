@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "la-bandera-cafe",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 4,
+      "itemIndex": 5,
+      "fr": "Toast à la crème de jambon cuit."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 4,
+      "itemIndex": 6,
+      "fr": "Toast à la sobrasada."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 4,
+      "itemIndex": 7,
+      "fr": "Toast à la zurrapa de lomo (préparation traditionnelle à base de longe de porc)."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 4,
+      "itemIndex": 8,
+      "fr": "Toast au thon."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 4,
+      "itemIndex": 9,
+      "fr": "Toast à l’huile d’olive, à la tomate et aux piquitos (petits bâtonnets de pain)."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 4,
+      "itemIndex": 10,
+      "fr": "Toast à l’huile d’olive, à la tomate et au jambon tranché."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 4,
+      "itemIndex": 11,
+      "fr": "Toast à l’huile d’olive, à la tomate et à la dinde."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 4,
+      "itemIndex": 12,
+      "fr": "Toast gratiné au jambon cuit."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 4,
+      "itemIndex": 13,
+      "fr": "Toast gratiné au thon."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 5,
+      "itemIndex": 0,
+      "fr": "Fromage frais à tartiner, avocat, saumon fumé et sésame."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 5,
+      "itemIndex": 1,
+      "fr": "Fromage de chèvre, oignon caramélisé et sirop de canne à sucre."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 5,
+      "itemIndex": 2,
+      "fr": "Beurre de cacahuète, banane et sirop de canne à sucre."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 5,
+      "itemIndex": 3,
+      "fr": "Œufs et bacon."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 5,
+      "itemIndex": 4,
+      "fr": "Œufs brouillés au jambon."
+    }
+  ]
+}
