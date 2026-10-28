@@ -1301,7 +1301,8 @@ function clearSearch(){
  updateMealMode(state.mode,{reset:false});
  el('portion').disabled=false;
  state.filtered=[];
- state.searched=state.selected.size>0;
+ state.selected.clear();
+ state.searched=false;
  updateQuickNav();
  state.appliedTerm='';
  state.appliedScope='dish';
@@ -1315,7 +1316,7 @@ function clearSearch(){
  el('show-offering').hidden=true;
  el('budget-explain').textContent='Límite aplicado al precio de un plato, no a una comida completa.';
  compare();
- if(state.selected.size)saveSearch();else try{localStorage.removeItem(SEARCH_KEY)}catch{}
+ try{localStorage.removeItem(SEARCH_KEY)}catch{}
  el('dish').focus();
 }
 async function init(){
