@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "la-montillana",
+    "language": "fr",
+    "catalogModified": false,
+    "sourceVerifiedBy": "2026-10-28 read-only extraction from branch"
+  },
+  "entries": [
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 3,
+      "itemIndex": 0,
+      "fr": "Petits calamars frits."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 3,
+      "itemIndex": 1,
+      "fr": "Cabillaud frit accompagné de mayonnaise au kimchi."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 3,
+      "itemIndex": 2,
+      "fr": "Rosada assaisonnée et frite (poisson)."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 3,
+      "itemIndex": 3,
+      "fr": "Anchois frits au citron."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 3,
+      "itemIndex": 4,
+      "fr": "Crêpes farcies au saumon et aux épinards, avec béchamel, amandes et curry."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 3,
+      "itemIndex": 5,
+      "fr": "Dos de cabillaud confit avec aïoli gratiné et pisto, préparation de légumes à l’espagnole."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 4,
+      "itemIndex": 0,
+      "fr": "Abanico de porc ibérique nourri aux glands, confit puis braisé, avec sauce au turrón, foie gras et Pedro Ximénez."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 4,
+      "itemIndex": 1,
+      "fr": "Mogote de porc ibérique confit puis braisé, avec velouté à l’amontillado et pommes de terre écrasées."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 4,
+      "itemIndex": 2,
+      "fr": "Crêpes farcies à l’agneau rôti, avec sauce épicée au ras el-hanout."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 4,
+      "itemIndex": 3,
+      "fr": "Rabo de toro mijoté au vin oloroso."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 4,
+      "itemIndex": 4,
+      "fr": "Faux-filet de bœuf maturé grillé à la braise."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 5,
+      "itemIndex": 0,
+      "fr": "Gâteau de biscuits à l’anis, crème pâtissière et chocolat."
+    }
+  ]
+}
