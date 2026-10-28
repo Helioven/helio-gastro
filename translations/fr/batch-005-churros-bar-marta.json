@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "churros-bar-marta",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "churros-bar-marta",
+      "sectionIndex": 0,
+      "itemIndex": 10,
+      "fr": "Jus d’orange, boisson sans alcool ou jus en bouteille, avec une demi-tartine spéciale."
+    },
+    {
+      "placeId": "churros-bar-marta",
+      "sectionIndex": 0,
+      "itemIndex": 11,
+      "fr": "Jus d’orange, boisson sans alcool ou jus en bouteille, avec une tartine entière spéciale."
+    },
+    {
+      "placeId": "churros-bar-marta",
+      "sectionIndex": 1,
+      "itemIndex": 0,
+      "fr": "Viennoiserie spéciale."
+    },
+    {
+      "placeId": "churros-bar-marta",
+      "sectionIndex": 1,
+      "itemIndex": 1,
+      "fr": "Pâtisserie fine."
+    },
+    {
+      "placeId": "churros-bar-marta",
+      "sectionIndex": 1,
+      "itemIndex": 2,
+      "fr": "Part de gâteau."
+    },
+    {
+      "placeId": "churros-bar-marta",
+      "sectionIndex": 1,
+      "itemIndex": 3,
+      "fr": "Assortiment de viennoiseries."
+    },
+    {
+      "placeId": "churros-bar-marta",
+      "sectionIndex": 1,
+      "itemIndex": 4,
+      "fr": "Part de gâteau spécial."
+    }
+  ]
+}
