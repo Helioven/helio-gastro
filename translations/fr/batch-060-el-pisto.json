@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-san-miguel-el-pisto",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 6,
+      "itemIndex": 0,
+      "fr": "Haricots ; préparation et accompagnements non précisés sur la carte."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 6,
+      "itemIndex": 1,
+      "fr": "Cocido traditionnel ; ingrédients et accompagnements non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 6,
+      "itemIndex": 2,
+      "fr": "Lentilles ; préparation et accompagnements non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 6,
+      "itemIndex": 3,
+      "fr": "Ragoût de pommes de terre ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 6,
+      "itemIndex": 4,
+      "fr": "Vermicelles à la marinière ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 7,
+      "itemIndex": 0,
+      "fr": "Gâteau au fromage ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 7,
+      "itemIndex": 1,
+      "fr": "Gâteau aux carottes ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 7,
+      "itemIndex": 2,
+      "fr": "Tocino de cielo, dessert traditionnel aux jaunes d’œufs et au sucre."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 7,
+      "itemIndex": 3,
+      "fr": "Gâteau au chocolat à cœur fondant, accompagné de glace."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 7,
+      "itemIndex": 4,
+      "fr": "Crème dessert maison ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 7,
+      "itemIndex": 5,
+      "fr": "Gâteau Lotus ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 7,
+      "itemIndex": 6,
+      "fr": "Une boule de glace maison ; autres détails non précisés."
+    }
+  ]
+}
