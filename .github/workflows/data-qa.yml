@@ -27,6 +27,7 @@ jobs:
           node scripts/validate-french-batch.mjs
           node scripts/test-fr-batch-inventory.mjs
           node scripts/print-fr-batch-002-source.mjs
+          node scripts/print-fr-remaining-source.mjs
           node scripts/test-fr-overlay-integrity.mjs
           node scripts/test-fr-pilot-page.mjs
 
