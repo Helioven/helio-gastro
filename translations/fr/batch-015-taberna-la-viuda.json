@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-la-viuda",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 1,
+      "itemIndex": 3,
+      "fr": "Flamenquín cordouan traditionnel ; la carte ne précise pas sa farce."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 1,
+      "itemIndex": 4,
+      "fr": "Flamenquín préparé avec le fromage maison de La Viuda."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 1,
+      "itemIndex": 5,
+      "fr": "Flamenquín à la queue de bœuf, accompagné d’une sauce au chocolat et du jus de cuisson de la queue de bœuf."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 1,
+      "itemIndex": 6,
+      "fr": "Japuta marinée avec des épices indiennes, dont le curcuma et le cédrat « main de Bouddha »."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 1,
+      "itemIndex": 7,
+      "fr": "Cabillaud frit avec pisto maison préparé au vin Palo Cortado."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 2,
+      "itemIndex": 0,
+      "fr": "Pommes de terre frites à la manière d’une churrería, avec du sel de l’Himalaya."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 2,
+      "itemIndex": 1,
+      "fr": "Œufs de plein air au plat sur des pommes de terre doucement cuites."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 2,
+      "itemIndex": 2,
+      "fr": "Garniture supplémentaire pour les œufs au plat : jambon, ail et persil."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 2,
+      "itemIndex": 3,
+      "fr": "Garniture supplémentaire pour les œufs au plat : chorizo de matanza et piments de Padrón."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 2,
+      "itemIndex": 4,
+      "fr": "Garniture supplémentaire pour les œufs au plat : gulas à l’ail et piments piparra."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 2,
+      "itemIndex": 5,
+      "fr": "Œufs brouillés biologiques aux courgettes, aux produits fumés et aux œufs de truite."
+    }
+  ]
+}
