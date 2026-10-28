@@ -83,6 +83,7 @@ jobs:
             scripts/test-fr-dtapas-covap-45.mjs \
             scripts/test-fr-plateros-san-francisco-46.mjs \
             scripts/test-fr-taberna-salinas-56.mjs \
+            scripts/test-fr-taberna-la-sal-60.mjs \
             scripts/test-search-regression.mjs \
             scripts/test-filter-regression.mjs \
             scripts/test-comparator-regression.mjs \
