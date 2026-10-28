@@ -62,9 +62,9 @@ const descriptions=async language=>{
 const esTexts=await descriptions('es');
 const enTexts=await descriptions('en');
 const frTexts=await descriptions('fr');
-const expectedBatch=JSON.parse(readFileSync('translations/fr/batch-001-la-montillana.json','utf8'));
-if(esTexts.length<15||enTexts.length<15||frTexts.length!==15)mainErrors.push('description visibility count ES/EN/FR '+[esTexts.length,enTexts.length,frTexts.length]);
-if(frTexts.length===15&&frTexts.some((t,i)=>t!==expectedBatch.entries[i].fr))mainErrors.push('French descriptions differ from approved candidate ordering');
+const expectedBatch={entries:['batch-001-la-montillana.json','batch-002-la-montillana.json'].flatMap(name=>JSON.parse(readFileSync('translations/fr/'+name,'utf8')).entries)};
+if(esTexts.length<27||enTexts.length<27||frTexts.length!==27)mainErrors.push('description visibility count ES/EN/FR '+[esTexts.length,enTexts.length,frTexts.length]);
+if(frTexts.length===27&&frTexts.some((t,i)=>t!==expectedBatch.entries[i].fr))mainErrors.push('French descriptions differ from approved candidate ordering');
 await main.locator('#language-select').selectOption('es');
 const esAgain=await main.locator('#detail-content [data-dish-explanation]:visible').allTextContents();
 if(JSON.stringify(esTexts)!==JSON.stringify(esAgain))mainErrors.push('ES descriptions not restored after FR');
