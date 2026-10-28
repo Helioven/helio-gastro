@@ -1346,19 +1346,22 @@ async function init(){
   const data=await res.json();if(!Array.isArray(data))throw Error('Formato inválido');
   if(window.HelioGastroLanguage?.qaFrenchEnabled?.()){
     try{
-      const frResponse=await fetch('./translations/fr/batch-001-la-montillana.json',{cache:'no-store'});
-      if(!frResponse.ok)throw Error('HTTP '+frResponse.status);
-      const batch=await frResponse.json();
-      if(!Array.isArray(batch.entries)||batch.entries.length!==15)throw Error('Invalid FR QA batch');
+      const paths=['batch-001-la-montillana.json','batch-002-la-montillana.json'];
+      const responses=await Promise.all(paths.map(name=>fetch('./translations/fr/'+name,{cache:'no-store'})));
+      if(responses.some(response=>!response.ok))throw Error('FR QA batch HTTP error');
+      const batches=await Promise.all(responses.map(response=>response.json()));
+      if(batches[0]?.entries?.length!==15||batches[1]?.entries?.length!==12)throw Error('Invalid FR QA batch sizes');
       const target=data.find(p=>p.id==='la-montillana');
       if(!target)throw Error('La Montillana not found');
-      const seen=new Set();
-      for(const entry of batch.entries){
+      const seen=new Set(),updates=[];
+      for(const entry of batches.flatMap(batch=>batch.entries)){
         const key=entry.sectionIndex+':'+entry.itemIndex;
         const dish=target.menuSections?.[entry.sectionIndex]?.items?.[entry.itemIndex];
         if(entry.placeId!=='la-montillana'||seen.has(key)||!dish?.es||!dish?.en||!entry.fr?.trim())throw Error('Invalid FR reference '+key);
-        seen.add(key);dish.fr=entry.fr;
+        seen.add(key);updates.push([dish,entry.fr]);
       }
+      if(updates.length!==27)throw Error('Invalid FR overlay total');
+      for(const [dish,fr] of updates)dish.fr=fr;
     }catch(error){console.warn('French QA batch unavailable:',error.message)}
   }
   state.places=data.filter(place=>place?.hidden!==true).map(normalizePlace).filter(validPlace);
