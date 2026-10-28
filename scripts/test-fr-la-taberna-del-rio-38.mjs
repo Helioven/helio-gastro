@@ -2,6 +2,9 @@ import {chromium,devices} from 'playwright';
 import {readFileSync,mkdirSync,writeFileSync} from 'node:fs';
 const filenames=['batch-023-la-taberna-del-rio.json','batch-024-la-taberna-del-rio.json','batch-025-la-taberna-del-rio.json'];
 const expected=filenames.flatMap(f=>JSON.parse(readFileSync('translations/fr/'+f,'utf8')).entries);
+const sourcePlace=JSON.parse(readFileSync('data/places.json','utf8')).find(p=>p.id==='la-taberna-del-rio');
+if(!sourcePlace)throw Error('La Taberna del Rio missing from catalog');
+const originalDishNames=(sourcePlace.menuSections||[]).flatMap(section=>(section.items||[]).map(item=>item.name));
 mkdirSync('qa-reports/screenshots',{recursive:true});
 const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
 const results=[];
@@ -20,8 +23,9 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1385,height:900}}
   await page.screenshot({path:'qa-reports/screenshots/'+profile.name+'-la-taberna-del-rio-fr.png',fullPage:true});
   for(const lang of ['es','en']){
    await page.locator('#language-select').selectOption(lang);
-   const count=await page.locator('#detail-content .menu-dish h4').count();
-   if(count!==38)issues.push(lang+' dish title count '+count);
+   const names=await page.locator('#detail-content .menu-dish h4').allTextContents();
+   if(names.length!==originalDishNames.length)issues.push(lang+' dish title count '+names.length+' expected '+originalDishNames.length);
+   if(names.some((name,i)=>name!==originalDishNames[i]))issues.push(lang+' original dish titles changed');
   }
  }catch(e){issues.push(e.message)}
  results.push({profile:profile.name,status:issues.length?'FAIL':'PASS',issues});
