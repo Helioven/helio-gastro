@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "rincon-beatillas",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 2,
+      "itemIndex": 5,
+      "fr": "Salade de morue fumée."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 2,
+      "itemIndex": 6,
+      "fr": "Salade à l’avocat et aux gulas, préparation à base de surimi (pour 2 personnes)."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 2,
+      "itemIndex": 7,
+      "fr": "Salade de poissons fumés et de fromage de chèvre (pour 2 personnes)."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 2,
+      "itemIndex": 8,
+      "fr": "Salade de perdrix en escabèche (pour 2 personnes)."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 3,
+      "itemIndex": 0,
+      "fr": "Gazpacho avec garniture (en saison)."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 3,
+      "itemIndex": 1,
+      "fr": "Soupe à l’ail traditionnelle."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 3,
+      "itemIndex": 2,
+      "fr": "Soupe au bouillon de pot-au-feu traditionnel."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 3,
+      "itemIndex": 3,
+      "fr": "Œufs brouillés aux fèves tendres."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 3,
+      "itemIndex": 4,
+      "fr": "Œufs brouillés à la manière des Beatillas."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 3,
+      "itemIndex": 5,
+      "fr": "Œufs brouillés à la morue."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 3,
+      "itemIndex": 6,
+      "fr": "Œufs brouillés aux asperges."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 4,
+      "itemIndex": 0,
+      "fr": "Poulpe à la galicienne."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 4,
+      "itemIndex": 1,
+      "fr": "Crevettes à l’ail."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 4,
+      "itemIndex": 2,
+      "fr": "Crevettes à la plancha (250 g)."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 4,
+      "itemIndex": 3,
+      "fr": "Dos de morue."
+    }
+  ]
+}
