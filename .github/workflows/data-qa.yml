@@ -77,6 +77,7 @@ jobs:
             scripts/test-fr-casa-rubio-36.mjs \
             scripts/test-fr-el-numero-10-37.mjs \
             scripts/test-fr-la-taberna-del-rio-38.mjs \
+            scripts/test-fr-rafae-38.mjs \
             scripts/test-search-regression.mjs \
             scripts/test-filter-regression.mjs \
             scripts/test-comparator-regression.mjs \
