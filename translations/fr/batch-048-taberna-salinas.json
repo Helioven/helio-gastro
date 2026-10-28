@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-salinas",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 2,
+      "itemIndex": 0,
+      "fr": "Cassolette d’asperges sauvages avec un œuf poché."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 2,
+      "itemIndex": 1,
+      "fr": "Plat traditionnel d’épinards aux pois chiches."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 2,
+      "itemIndex": 2,
+      "fr": "Ragoût de haricots avec de la queue ; type de viande non précisé."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 2,
+      "itemIndex": 3,
+      "fr": "Œufs brouillés spécialité de la maison ; ingrédients non détaillés sur la carte."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 2,
+      "itemIndex": 4,
+      "fr": "Œufs brouillés aux champignons et au saumon."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 2,
+      "itemIndex": 5,
+      "fr": "Assiette composée d’œuf, de longe de porc, de chorizo et de pommes de terre."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 2,
+      "itemIndex": 6,
+      "fr": "Croquettes maison aux épinards et aux pignons de pin."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 2,
+      "itemIndex": 7,
+      "fr": "Croquettes maison au poulet et au jambon."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 2,
+      "itemIndex": 8,
+      "fr": "Aubergines frites, servies avec ou sans miel de canne."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 2,
+      "itemIndex": 9,
+      "fr": "Champignons cuits à la plancha."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 2,
+      "itemIndex": 10,
+      "fr": "Tortilla spéciale de la taverne ; ingrédients non précisés."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 2,
+      "itemIndex": 11,
+      "fr": "Plat traditionnel de sang cuisiné avec des oignons."
+    }
+  ]
+}
