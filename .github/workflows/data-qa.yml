@@ -67,7 +67,8 @@ jobs:
             scripts/test-search-regression.mjs \
             scripts/test-filter-regression.mjs \
             scripts/test-comparator-regression.mjs \
-            scripts/test-detail-regression.mjs; do
+            scripts/test-detail-regression.mjs \
+            scripts/test-navigation-regression.mjs; do
             echo "::group::Running $suite"
             node "$suite" || status=1
             echo "::endgroup::"
