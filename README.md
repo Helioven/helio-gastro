@@ -659,3 +659,14 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Cierre técnico: [`docs/qa-fr-el-numero-10-closure-2026-10-28.md`](docs/qa-fr-el-numero-10-closure-2026-10-28.md). Primera ejecución visual [#40653979630](https://github.com/Helioven/helio-gastro/actions/runs/40653979630) FAIL por falta de autorización del restaurante en el renderizado FR; corregido en `app.js` (commit `0930b478`). Repetición [#40654228938](https://github.com/Helioven/helio-gastro/actions/runs/40654228938) **SUCCESS**.
 - Las pruebas técnicas no sustituyen revisión lingüística humana. Traducciones solo en `?qa_fr=1`; no publicar ni fusionar en `main` sin autorización.
 - **Próximo paso:** consultar inventario de entradas ES/EN aún sin lotes FR, elegir establecimiento pendiente y continuar por lotes de 12 con comprobación CI, preservando originales, precios y formatos. No reabrir los ocho establecimientos técnicamente cubiertos salvo defecto real.
+
+
+### Actualización de relevo — FR QA, La Taberna del Río (28/10/2026)
+
+**Estado vigente: 9 establecimientos y 273 descripciones francesas candidatas en 25 lotes** (`batch-001` a `batch-025`). Las cifras anteriores (7/198 y 8/235) son hitos históricos, no el estado actual. **La Taberna del Río** (`la-taberna-del-rio`): **38/38 descripciones** en los lotes 023–025, integradas únicamente en `?qa_fr=1`. La ficha contiene 44 platos, pero solo 38 descripciones ES/EN traducibles identificadas en el inventario.
+
+**Cierre técnico contrastado:** [GitHub Actions #40656146561](https://github.com/Helioven/helio-gastro/actions/runs/40656146561) terminó **SUCCESS** (auditoría y regresión automatizada). Detalle del cierre y de los intentos fallidos previos: [`docs/qa-fr-la-taberna-del-rio-closure-2026-10-28.md`](docs/qa-fr-la-taberna-del-rio-closure-2026-10-28.md). Las incidencias previas procedían de expectativas incorrectas del test sobre el número de títulos y la equivalencia literal ES/EN; no se verificó un defecto de las 38 traducciones FR. Las comprobaciones finales utilizan los títulos visibles y una referencia inglesa sin overlay FR.
+
+**Límites editoriales:** la revisión semántica y lingüística humana sigue pendiente. Estas 273 traducciones son candidatas de **descripciones**, no equivalen a la traducción íntegra de títulos, secciones e interfaz. No fusionar la rama QA con `main` ni publicar el francés sin autorización. `data/places.json`, precios y formatos originales permanecen intactos.
+
+**Próximo paso operativo:** seleccionar el siguiente establecimiento pendiente del inventario real, recuperar sus entradas ES/EN, crear lotes FR revisables, integrar solo en QA y pasar las pruebas de regresión. Entre los siguientes candidatos detectados: Taberna Rafaé (38 descripciones), Cafetería Don Pepe · Centro (43), Taberna El Poema · Alonso de Burgos (44) y D'Tapas COVAP Córdoba (45); verificar datos antes de traducir. Mantener el orden acordado de fases.
