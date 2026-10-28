@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "la-bandera-cafe",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 5,
+      "itemIndex": 5,
+      "fr": "Omelette nature."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 5,
+      "itemIndex": 6,
+      "fr": "Avocat et thon."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 5,
+      "itemIndex": 7,
+      "fr": "Supplément pour un ingrédient spécial."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 6,
+      "itemIndex": 0,
+      "fr": "Palmier feuilleté."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 6,
+      "itemIndex": 1,
+      "fr": "Viennoiserie fourrée au chocolat."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 6,
+      "itemIndex": 2,
+      "fr": "Donuts."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 6,
+      "itemIndex": 3,
+      "fr": "Croissant."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 6,
+      "itemIndex": 4,
+      "fr": "Croissant au beurre et à la confiture."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 6,
+      "itemIndex": 5,
+      "fr": "Croissant au jambon cuit et au fromage."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 6,
+      "itemIndex": 6,
+      "fr": "Croissant à l’œuf et au bacon."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 7,
+      "itemIndex": 0,
+      "fr": "Jambon ibérique."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 7,
+      "itemIndex": 1,
+      "fr": "Fromage affiné."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 7,
+      "itemIndex": 2,
+      "fr": "Ensaladilla rusa (salade de pommes de terre à l’espagnole)."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 7,
+      "itemIndex": 3,
+      "fr": "Salmorejo cordouan."
+    }
+  ]
+}
