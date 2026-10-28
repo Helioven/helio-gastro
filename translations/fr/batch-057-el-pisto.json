@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-san-miguel-el-pisto",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 0,
+      "itemIndex": 12,
+      "fr": "Cœurs de laitue à l’ail frit et au vinaigre balsamique de Modène."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 0,
+      "itemIndex": 13,
+      "fr": "Salade de la maison ; ingrédients et accompagnements non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 0,
+      "itemIndex": 14,
+      "fr": "Moules en escabèche ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 0,
+      "itemIndex": 15,
+      "fr": "Anchois marinés au vinaigre ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 1,
+      "itemIndex": 0,
+      "fr": "Aubergines frites au miel de canne ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 1,
+      "itemIndex": 1,
+      "fr": "Patatas bravas avec un œuf au plat ; ingrédients de la sauce non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 1,
+      "itemIndex": 2,
+      "fr": "Pommes de terre avec œuf, jambon et oignon caramélisé."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 1,
+      "itemIndex": 3,
+      "fr": "Œufs et pommes de terre frits accompagnés de longe de porc et de chorizo."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 1,
+      "itemIndex": 4,
+      "fr": "Épinards aux pois chiches et à l’œuf au plat."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 1,
+      "itemIndex": 5,
+      "fr": "Jeunes fèves au jambon, à l’oignon caramélisé et à l’œuf au plat."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 1,
+      "itemIndex": 6,
+      "fr": "Pisto de légumes maison avec un œuf au plat ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 2,
+      "itemIndex": 0,
+      "fr": "Anchois frits au citron."
+    }
+  ]
+}
