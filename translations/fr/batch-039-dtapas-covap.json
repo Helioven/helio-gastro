@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "dtapas-covap-cordoba",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 4,
+      "itemIndex": 0,
+      "fr": "Allergènes déclarés : gluten."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 4,
+      "itemIndex": 1,
+      "fr": "Allergènes déclarés : fruits à coque (la source indique « avec coque, sans coque »), gluten et sulfites."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 4,
+      "itemIndex": 2,
+      "fr": "Allergènes déclarés : œuf."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 4,
+      "itemIndex": 3,
+      "fr": "Salmorejo, mazamorra et ensaladilla. Allergènes déclarés : œuf, gluten et sulfites."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 4,
+      "itemIndex": 4,
+      "fr": "Allergènes déclarés : œuf, soja et moutarde."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 4,
+      "itemIndex": 5,
+      "fr": "Allergènes déclarés : œuf."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 4,
+      "itemIndex": 6,
+      "fr": "Allergènes déclarés : produits laitiers et sulfites."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 5,
+      "itemIndex": 0,
+      "fr": "Allergènes déclarés : gluten."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 5,
+      "itemIndex": 1,
+      "fr": "Allergènes déclarés : produits laitiers, soja et gluten."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 5,
+      "itemIndex": 2,
+      "fr": "Allergènes déclarés : produits laitiers, soja et gluten."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 5,
+      "itemIndex": 3,
+      "fr": "Allergènes déclarés : œuf, produits laitiers, soja et gluten."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 5,
+      "itemIndex": 4,
+      "fr": "Allergènes déclarés : œuf, produits laitiers et gluten."
+    }
+  ]
+}
