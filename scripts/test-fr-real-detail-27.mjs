@@ -1,6 +1,6 @@
 import {chromium,devices} from 'playwright';
 import {readFileSync,mkdirSync,writeFileSync} from 'node:fs';
-const candidates=['batch-001-la-montillana.json','batch-002-la-montillana.json']
+const candidates=['batch-001-la-montillana.json','batch-002-la-montillana.json','batch-003-la-montillana.json']
  .flatMap(filename=>JSON.parse(readFileSync('translations/fr/'+filename,'utf8')).entries);
 const profiles=[{name:'desktop',settings:{viewport:{width:1365,height:900}}},{name:'mobile',settings:devices['iPhone 13']}];
 mkdirSync('qa-reports/screenshots',{recursive:true});
@@ -18,19 +18,19 @@ for(const profile of profiles){
   if(texts.length!==candidates.length)errors.push('Expected '+candidates.length+' French explanations; received '+texts.length);
   if(texts.some((text,index)=>text!==candidates[index]?.fr))errors.push('French descriptions do not match candidate order');
   if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1))errors.push('Horizontal overflow');
-  await page.screenshot({path:'qa-reports/screenshots/'+profile.name+'-real-detail-fr-27.png',fullPage:true});
+  await page.screenshot({path:'qa-reports/screenshots/'+profile.name+'-real-detail-fr-30.png',fullPage:true});
   await page.locator('#language-select').selectOption('es');
   const esCount=await page.locator('#detail-content [data-dish-explanation]:visible').count();
   await page.locator('#language-select').selectOption('en');
   const enCount=await page.locator('#detail-content [data-dish-explanation]:visible').count();
-  if(esCount<27||enCount<27)errors.push('Source-language descriptions missing');
+  if(esCount<30||enCount<30)errors.push('Source-language descriptions missing');
  }catch(e){errors.push('Interrupted: '+e.message)}
  results.push({profile:profile.name,status:errors.length?'FAIL':'PASS',errors});
  await context.close();
 }
 await browser.close();
 const status=results.some(result=>result.errors.length)?'FAIL':'PASS';
-const report={suite:'FR real restaurant detail 27 candidate descriptions',status,results};
-writeFileSync('qa-reports/fr-real-detail-27.json',JSON.stringify(report,null,2)+'\n');
+const report={suite:'FR real restaurant detail 30 candidate descriptions',status,results};
+writeFileSync('qa-reports/fr-real-detail-30.json',JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify(report,null,2));
 if(status==='FAIL')process.exitCode=1;
