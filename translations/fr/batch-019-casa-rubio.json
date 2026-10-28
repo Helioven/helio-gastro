@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "casa-rubio",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 3,
+      "itemIndex": 4,
+      "fr": "Pluma de porc ibérique 100 % nourri aux glands avec poivrons de piquillo confits ; portion indiquée de 200 grammes."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 3,
+      "itemIndex": 5,
+      "fr": "Longe de bœuf maturée à sec ; portion indiquée de 300 grammes."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 3,
+      "itemIndex": 6,
+      "fr": "Cochon de lait rôti en deux cuissons, présenté en quartiers pour deux personnes."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 3,
+      "itemIndex": 7,
+      "fr": "Secreto de porc ibérique nourri aux glands, grillé à la plancha, avec sauce au vin de Montilla et asperges sautées ; 200 grammes."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 4,
+      "itemIndex": 0,
+      "fr": "Torrija de pain brioché accompagnée de glace au lait meringué."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 4,
+      "itemIndex": 1,
+      "fr": "Gâteau au fromage maison très crémeux, préparé avec du fromage bleu."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 4,
+      "itemIndex": 2,
+      "fr": "Brownie accompagné de glace à la vanille."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 4,
+      "itemIndex": 3,
+      "fr": "Flan à la vanille accompagné de glace au biscuit."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 4,
+      "itemIndex": 4,
+      "fr": "Tocino de cielo accompagné de sorbet au citron."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 4,
+      "itemIndex": 5,
+      "fr": "Pastel cordobés accompagné de glace à la noisette."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 4,
+      "itemIndex": 6,
+      "fr": "Glace au turrón."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 5,
+      "itemIndex": 0,
+      "fr": "Corbeille de pain et de picos, indiquée comme accompagnement."
+    }
+  ]
+}
