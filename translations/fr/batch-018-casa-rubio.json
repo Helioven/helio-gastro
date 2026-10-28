@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "casa-rubio",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 1,
+      "itemIndex": 1,
+      "fr": "Salade de saumon fumé et d’avocat avec vinaigrette au citron vert."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 1,
+      "itemIndex": 2,
+      "fr": "Poireaux confits et rôtis avec carbonara, parmesan et torreznos frits, proposés à l’unité ou par deux."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 1,
+      "itemIndex": 3,
+      "fr": "Artichauts avec béchamel au foie gras et jambon ibérique ; deux pièces."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 2,
+      "itemIndex": 0,
+      "fr": "Thon rouge de l’almadraba accompagné de légumes de saison sautés."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 2,
+      "itemIndex": 1,
+      "fr": "Cabillaud avec sauce tomate et haricots sautés."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 2,
+      "itemIndex": 2,
+      "fr": "Pisto de légumes à la tomate accompagné de crevettes cristal frites."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 2,
+      "itemIndex": 3,
+      "fr": "Rosada frite au citron avec salade de chou, en portions de 140 ou 240 grammes."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 2,
+      "itemIndex": 4,
+      "fr": "Calamars frits avec mayonnaise aux agrumes, en portions de 120 ou 220 grammes."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 3,
+      "itemIndex": 0,
+      "fr": "Queue de bœuf mijotée avec pommes de terre, en portions de 240 ou 360 grammes."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 3,
+      "itemIndex": 1,
+      "fr": "Boulettes de viande de bœuf en sauce avec purée de pommes de terre, servies par trois ou cinq unités."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 3,
+      "itemIndex": 2,
+      "fr": "Jarret d’agneau à la manière séfarade accompagné de couscous aux légumes."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 3,
+      "itemIndex": 3,
+      "fr": "Filet de porc ibérique 100 % nourri aux glands avec sauce verte ; portion indiquée de 200 grammes."
+    }
+  ]
+}
