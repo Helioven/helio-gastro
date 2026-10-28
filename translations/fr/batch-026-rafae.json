@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-rafae",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 0,
+      "itemIndex": 0,
+      "fr": "Jambon ibérique coupé au couteau ; la carte indique une portion de 100 g."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 0,
+      "itemIndex": 1,
+      "fr": "Fromage affiné au lait de brebis ; la carte indique une portion de 140 g."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 0,
+      "itemIndex": 2,
+      "fr": "Assortiment de jambon ibérique (60 g) et de fromage de brebis affiné (80 g)."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 0,
+      "itemIndex": 3,
+      "fr": "Salmorejo cordouan accompagné de jambon ibérique, d’œuf dur et d’huile d’olive vierge extra."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 0,
+      "itemIndex": 4,
+      "fr": "Gazpacho garni de tomate, d’oignon, de concombre, de poivron et de croûtons."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 0,
+      "itemIndex": 5,
+      "fr": "Ensaladilla rusa traditionnelle à base de pommes de terre, de carottes, de thon, d’œuf dur, de laitue et de mayonnaise maison à l’huile d’olive vierge extra."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 0,
+      "itemIndex": 6,
+      "fr": "Mazamorra aux amandes, accompagnée de betterave et de noix de coco caramélisée."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 1,
+      "itemIndex": 0,
+      "fr": "Salade de jeunes pousses variées, de tomate, de champignons, d’asperges et de petites fèves, avec vinaigrette aux asperges blanches."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 1,
+      "itemIndex": 1,
+      "fr": "Salade de laitue, tomate, oignon, carotte, maïs, thon et œuf dur, assaisonnée d’huile d’olive vierge extra."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 1,
+      "itemIndex": 2,
+      "fr": "Salade de tomates du potager, de thon et de jeunes pousses d’ail, à l’huile d’olive vierge extra."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 2,
+      "itemIndex": 0,
+      "fr": "Riz à la cordouane préparé avec la queue de bœuf maison."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 3,
+      "itemIndex": 0,
+      "fr": "Aubergines enrobées de pâte Orly, accompagnées de miel de canne et de sésame."
+    }
+  ]
+}
