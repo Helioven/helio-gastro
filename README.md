@@ -744,3 +744,11 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Integración solo en el overlay experimental `?qa_fr=1`: acumulado **742 descripciones francesas candidatas en 18 establecimientos y 66 lotes**. No se ha modificado `data/places.json`, los precios ni los formatos del catálogo.
 - Prueba específica `scripts/test-fr-rincon-beatillas-75.mjs` incluida en `.github/workflows/data-qa.yml`, con comprobaciones FR y conservación ES/EN en escritorio/móvil. **QA técnico superado y cierre confirmado por Helio el 28/10/2026:** [GitHub Actions #40666623610](https://github.com/Helioven/helio-gastro/actions/runs/40666623610) finalizó `SUCCESS`, con `catalog-audit` y `visual-qa` en PASS. El cierre técnico no equivale a validación lingüística nativa ni autoriza publicar el francés.
 - Se respetan expresiones gastronómicas tradicionales, porciones de 2 personas y 250 g cuando figuran en la fuente, y el aviso de helados sin variedades ni precios disponibles. La revisión semántica y lingüística nativa y la cobertura FR de títulos/secciones/interfaz siguen pendientes. No fusionar a `main` ni publicar francés sin autorización.
+
+
+### La Bandera — traducciones francesas candidatas (28/10/2026)
+
+- A partir de `fr-next-restaurant.json` del artefacto CI #316, se han preparado las **84 descripciones ES/EN de La Bandera** (ID `la-bandera-cafe`) en seis lotes candidatos `batch-067` a `batch-072-la-bandera.json`, de 14 entradas cada uno.
+- Los textos FR están marcados `candidate_awaiting_semantic_review`. Conservan los nombres tradicionales, ingredientes presentes en la fuente y notas sobre suplementos o precios por unidad, sin afirmar ingredientes para preparaciones no detalladas.
+- Se han conectado únicamente al overlay experimental de `?qa_fr=1` y se ha incluido `scripts/test-fr-la-bandera-84.mjs` en `visual-qa` para escritorio/móvil y conservación ES/EN. **Prueba recién añadida: ejecución y resultado aún pendientes de verificar**.
+- Cobertura candidata acumulada: **826 descripciones / 19 establecimientos / 72 lotes**. No se modificó `data/places.json`, ni precios, formatos o fuentes. Pendientes revisión semántica, revisión lingüística nativa y traducción de títulos, secciones e interfaz completa. No publicar ni fusionar con `main` sin aprobación.
