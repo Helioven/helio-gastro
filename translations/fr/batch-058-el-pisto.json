@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-san-miguel-el-pisto",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 2,
+      "itemIndex": 1,
+      "fr": "Calamars frits ; préparation et accompagnements supplémentaires non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 2,
+      "itemIndex": 2,
+      "fr": "Morue en pâte à frire ; préparation et accompagnements supplémentaires non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 2,
+      "itemIndex": 3,
+      "fr": "Morue frite ; préparation et accompagnements supplémentaires non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 2,
+      "itemIndex": 4,
+      "fr": "Gambas royales en pâte à frire ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 2,
+      "itemIndex": 5,
+      "fr": "Gambas royales frites ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 2,
+      "itemIndex": 6,
+      "fr": "Petits morceaux de poisson rosada marinés en adobo ; ingrédients de la marinade non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 2,
+      "itemIndex": 7,
+      "fr": "Dos de morue au pisto de légumes ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 2,
+      "itemIndex": 8,
+      "fr": "Morceaux de thon grillés ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 2,
+      "itemIndex": 9,
+      "fr": "Gambas royales à l’ail ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 3,
+      "itemIndex": 0,
+      "fr": "Croquettes maison au jambon ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 3,
+      "itemIndex": 1,
+      "fr": "Croquettes maison à la queue de bœuf ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 3,
+      "itemIndex": 2,
+      "fr": "Flamenquín maison au jambon, rouleau pané traditionnel cordouan ; autres détails non précisés."
+    }
+  ]
+}
