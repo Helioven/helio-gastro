@@ -687,3 +687,10 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Cuatro lotes candidatos `translations/fr/batch-030-don-pepe-centro.json` a `batch-033-don-pepe-centro.json` (12+12+12+7), con estado `candidate_awaiting_semantic_review`. Total acumulado del overlay FR QA: **354 descripciones candidatas / 11 establecimientos**.
 - Activación únicamente en `?qa_fr=1`, sin modificar `data/places.json`, ingredientes, formatos ni precios. Prueba visual específica `scripts/test-fr-don-pepe-centro-43.mjs` añadida a `.github/workflows/data-qa.yml` para escritorio y móvil, ES/EN/FR.
 - **Cierre técnico QA confirmado por Helio el 28/10/2026:** [GitHub Actions #40657881675](https://github.com/Helioven/helio-gastro/actions/runs/40657881675) terminó `SUCCESS` (catalog-audit y visual-qa). No implica aprobación lingüística nativa ni publicación; no confundir traducción candidata con revisión nativa ni publicar francés o fusionar la rama a `main` sin aprobación. Revisar contextual y editorialmente los nombres breves y las diferencias entre campos ES/EN (por ejemplo, denominación genérica frente a baguette en algunas entradas).
+
+
+### El Poema · Alonso de Burgos — francés QA (28/10/2026)
+
+- ID real `taberna-el-poema-alonso`: 44 descripciones ES/EN recuperadas del inventario real; establecimiento distinto de El Poema de Gran Capitán. Cuatro lotes `translations/fr/batch-034-el-poema-alonso.json` a `batch-037-el-poema-alonso.json` (12+12+12+8), estado `candidate_awaiting_semantic_review`.
+- El overlay francés aislado `?qa_fr=1` suma ahora **398 descripciones candidatas / 12 establecimientos**. Catálogo `data/places.json`, precios de plataformas de reparto, formatos y fuentes no modificados; se preservan las notas de ingredientes no especificados.
+- Prueba de regresión `scripts/test-fr-el-poema-alonso-44.mjs` añadida al workflow para ES/EN/FR y escritorio/móvil. **CI final pendiente de comprobación; no declarar cierre técnico anticipado.** La revisión semántica y lingüística nativa, títulos/secciones y la interfaz FR completa siguen pendientes. No fusionar la rama QA con `main`.
