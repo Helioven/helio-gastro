@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "la-taberna-del-rio",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 3,
+      "itemIndex": 0,
+      "fr": "Calamar pêché à la ligne et grillé, avec sauce américaine aux coquilles Saint-Jacques séchées et aïoli au jaune d’œuf fermier."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 3,
+      "itemIndex": 1,
+      "fr": "Bar grillé avec sauce façon bilbaína, petites fèves à l’huile d’olive et émulsion de poireau."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 3,
+      "itemIndex": 2,
+      "fr": "Saumon grillé accompagné de crème au curry et de petits légumes marinés."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 3,
+      "itemIndex": 3,
+      "fr": "Turbot grillé avec artichauts rôtis, sauce hollandaise et huile à l’ail violet."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 3,
+      "itemIndex": 4,
+      "fr": "Poulpe grillé avec crème de pomme de terre, poivre frais et émulsion de poireau."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 4,
+      "itemIndex": 0,
+      "fr": "Roulé de poulet braisé avec bâtonnets de patate douce frite, purée de pommes de terre parmentier et sauce huacatay."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 4,
+      "itemIndex": 1,
+      "fr": "Tacos de porc ibérique fumé au charbon de bois, avec marinade à l’achiote, guacamole et sofrito piquant."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 4,
+      "itemIndex": 2,
+      "fr": "Joues de porc au vin oloroso avec curry au zaatar, curcuma et sauce aigre."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 4,
+      "itemIndex": 3,
+      "fr": "Pluma de porc ibérique grillée, accompagnée de pommes de terre parisiennes et de chimichurri fumé."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 4,
+      "itemIndex": 4,
+      "fr": "Entrecôte de bœuf maturé grillée, avec frites et piments de Padrón."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 5,
+      "itemIndex": 0,
+      "fr": "Gâteau aux crèmes pâtissières traditionnelles, avec ganache au cacao et cacahuètes."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 5,
+      "itemIndex": 1,
+      "fr": "Gâteau au fromage recouvert de jaune d’œuf caramélisé."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 5,
+      "itemIndex": 2,
+      "fr": "Tarte au citron à pâte sablée, crème au citron et meringue suisse."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 5,
+      "itemIndex": 3,
+      "fr": "Bavarois à la mangue et à la noix de coco, avec quatre-épices, coulis de fraise et crumble de maïs ; indiqué sur la carte comme sans gluten ni lactose."
+    }
+  ]
+}
