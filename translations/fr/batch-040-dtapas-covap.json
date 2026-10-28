@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "dtapas-covap-cordoba",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 5,
+      "itemIndex": 5,
+      "fr": "Allergènes déclarés : œuf, produits laitiers, gluten et céleri."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 5,
+      "itemIndex": 6,
+      "fr": "Allergènes déclarés : œuf, produits laitiers, gluten et sulfites."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 6,
+      "itemIndex": 0,
+      "fr": "Pommes de terre frites maison."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 6,
+      "itemIndex": 1,
+      "fr": "Pommes de terre frites maison."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 6,
+      "itemIndex": 2,
+      "fr": "Pommes de terre frites maison."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 6,
+      "itemIndex": 3,
+      "fr": "Pommes de terre frites maison."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 6,
+      "itemIndex": 4,
+      "fr": "Pommes de terre frites maison. Allergènes déclarés : œuf et produits laitiers."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 6,
+      "itemIndex": 5,
+      "fr": "Secreto, filet et presa de porc ibérique ; sauce chimichurri et sauce verte."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 6,
+      "itemIndex": 6,
+      "fr": "Pommes de terre frites maison et piments piquillo à la manière de Julián de Tolosa."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 6,
+      "itemIndex": 7,
+      "fr": "Pommes de terre frites maison et piments piquillo à la manière de Julián de Tolosa."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 6,
+      "itemIndex": 8,
+      "fr": "Parmentier de pommes de terre. Allergènes déclarés : produits laitiers, soja et céleri."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 6,
+      "itemIndex": 9,
+      "fr": "Pommes de terre frites maison."
+    }
+  ]
+}
