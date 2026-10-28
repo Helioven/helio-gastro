@@ -679,3 +679,11 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Integración exclusivamente experimental en `?qa_fr=1`, mediante overlay en memoria de `app.js`; el catálogo original, precios y formatos no se modifican. Total acumulado de candidatos: 311 descripciones / 10 establecimientos.
 - Se añadió `scripts/test-fr-rafae-38.mjs` a `.github/workflows/data-qa.yml`, con prueba FR y comprobaciones de ES/EN en escritorio y móvil. **QA técnico SUPERADO:** ejecución [#40657184491](https://github.com/Helioven/helio-gastro/actions/runs/40657184491) completada con `SUCCESS` (jobs `catalog-audit` y `visual-qa`), confirmado también por Helio el 28/10/2026. Cierre técnico FR QA de Rafaé autorizado; no equivale a revisión lingüística nativa ni a publicación.
 - Pendientes editoriales: revisión semántica de las traducciones candidatas, revisión lingüística y cobertura de títulos/secciones/interfaz FR. No fusionar a `main` ni publicar francés sin aprobación.
+
+
+### Don Pepe Centro — francés QA (28/10/2026)
+
+- `cafeteria-don-pepe-centro`: 43 entradas de descripciones ES/EN verificadas mediante `scripts/inspect-next-fr-restaurant.mjs`.
+- Cuatro lotes candidatos `translations/fr/batch-030-don-pepe-centro.json` a `batch-033-don-pepe-centro.json` (12+12+12+7), con estado `candidate_awaiting_semantic_review`. Total acumulado del overlay FR QA: **354 descripciones candidatas / 11 establecimientos**.
+- Activación únicamente en `?qa_fr=1`, sin modificar `data/places.json`, ingredientes, formatos ni precios. Prueba visual específica `scripts/test-fr-don-pepe-centro-43.mjs` añadida a `.github/workflows/data-qa.yml` para escritorio y móvil, ES/EN/FR.
+- **Cierre técnico pendiente de verificar contra la ejecución final de CI**; no confundir traducción candidata con revisión nativa ni publicar francés o fusionar la rama a `main` sin aprobación. Revisar contextual y editorialmente los nombres breves y las diferencias entre campos ES/EN (por ejemplo, denominación genérica frente a baguette en algunas entradas).
