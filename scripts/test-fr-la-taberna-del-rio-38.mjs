@@ -2,9 +2,6 @@ import {chromium,devices} from 'playwright';
 import {readFileSync,mkdirSync,writeFileSync} from 'node:fs';
 const filenames=['batch-023-la-taberna-del-rio.json','batch-024-la-taberna-del-rio.json','batch-025-la-taberna-del-rio.json'];
 const expected=filenames.flatMap(f=>JSON.parse(readFileSync('translations/fr/'+f,'utf8')).entries);
-const sourcePlace=JSON.parse(readFileSync('data/places.json','utf8')).find(p=>p.id==='la-taberna-del-rio');
-if(!sourcePlace)throw Error('La Taberna del Rio missing from catalog');
-const originalDishNames=(sourcePlace.menuSections||[]).flatMap(section=>(section.items||[]).map(item=>item.name));
 mkdirSync('qa-reports/screenshots',{recursive:true});
 const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
 const results=[];
@@ -16,6 +13,8 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1385,height:900}}
   await page.waitForFunction(()=>typeof state!=='undefined'&&state.places.some(p=>p.id==='la-taberna-del-rio'));
   await page.locator('#language-select').selectOption('fr');
   await page.evaluate(()=>showPlace(state.places.find(p=>p.id==='la-taberna-del-rio'),false));
+  const originalDishNames=await page.locator('#detail-content .menu-dish h4').allTextContents();
+  if(originalDishNames.length<38)issues.push('Visible dish titles fewer than translated descriptions');
   const fr=await page.locator('#detail-content [data-dish-explanation]:visible').allTextContents();
   if(fr.length!==38)issues.push('French explanations: '+fr.length+' expected 38');
   if(fr.some((text,i)=>text!==expected[i]?.fr))issues.push('French translation mismatch');
