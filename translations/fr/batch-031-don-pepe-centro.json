@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "cafeteria-don-pepe-centro",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 2,
+      "itemIndex": 0,
+      "fr": "Zurrapa de lomo, préparation à tartiner à base de longe de porc."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 2,
+      "itemIndex": 1,
+      "fr": "Jambon cuit."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 2,
+      "itemIndex": 2,
+      "fr": "Thon."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 2,
+      "itemIndex": 3,
+      "fr": "Petits morceaux de jambon serrano."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 2,
+      "itemIndex": 4,
+      "fr": "Pâté."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 2,
+      "itemIndex": 5,
+      "fr": "Sobrasada, charcuterie de porc à tartiner."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 2,
+      "itemIndex": 6,
+      "fr": "Manteca colorá, saindoux de porc assaisonné."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 2,
+      "itemIndex": 7,
+      "fr": "Beurre."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 2,
+      "itemIndex": 8,
+      "fr": "Huile d’olive."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 3,
+      "itemIndex": 0,
+      "fr": "Zurrapa de lomo, préparation à tartiner à base de longe de porc."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 3,
+      "itemIndex": 1,
+      "fr": "Jambon cuit."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 3,
+      "itemIndex": 2,
+      "fr": "Thon."
+    }
+  ]
+}
