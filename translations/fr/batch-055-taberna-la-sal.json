@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-la-sal",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 7,
+      "itemIndex": 3,
+      "fr": "Churrasco accompagné de deux sauces non précisées."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 7,
+      "itemIndex": 4,
+      "fr": "Morceau de presa de porc ibérique."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 7,
+      "itemIndex": 5,
+      "fr": "Petites côtelettes d’agneau de lait."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 7,
+      "itemIndex": 6,
+      "fr": "Entrecôte ou côte de bœuf maturée 45 jours. 7 € pour 100 g ; prix final selon le poids."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 8,
+      "itemIndex": 0,
+      "fr": "Riz à la cordouane avec viande, asperges et champignons. Prix par personne ; minimum deux personnes."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 8,
+      "itemIndex": 1,
+      "fr": "Riz aux fruits de mer. Prix par personne ; minimum deux personnes."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 8,
+      "itemIndex": 2,
+      "fr": "Riz au homard. Prix par personne ; minimum deux personnes."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 9,
+      "itemIndex": 0,
+      "fr": "Pudding ; variété non précisée sur la carte."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 9,
+      "itemIndex": 1,
+      "fr": "Mille-feuille à la crème."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 9,
+      "itemIndex": 2,
+      "fr": "Dessert traditionnel aux jaunes d’œufs et au sucre, tocino de cielo."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 9,
+      "itemIndex": 3,
+      "fr": "Gâteau au fromage ; style non précisé."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 9,
+      "itemIndex": 4,
+      "fr": "Brownie accompagné de glace à la vanille."
+    }
+  ]
+}
