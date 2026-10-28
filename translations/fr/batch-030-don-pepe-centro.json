@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "cafeteria-don-pepe-centro",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 0,
+      "itemIndex": 0,
+      "fr": "Café."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 0,
+      "itemIndex": 1,
+      "fr": "Café décaféiné."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 0,
+      "itemIndex": 2,
+      "fr": "Café bombón au lait concentré."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 0,
+      "itemIndex": 3,
+      "fr": "Cappuccino."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 0,
+      "itemIndex": 4,
+      "fr": "Expresso."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 1,
+      "itemIndex": 0,
+      "fr": "Baguette au bacon."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 1,
+      "itemIndex": 1,
+      "fr": "Baguette à la longe de porc."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 1,
+      "itemIndex": 2,
+      "fr": "Baguette au jambon."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 1,
+      "itemIndex": 3,
+      "fr": "Baguette au thon."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 1,
+      "itemIndex": 4,
+      "fr": "Baguette au fromage."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 1,
+      "itemIndex": 5,
+      "fr": "Baguette à l’omelette."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 1,
+      "itemIndex": 6,
+      "fr": "Sandwich au jambon et au fromage."
+    }
+  ]
+}
