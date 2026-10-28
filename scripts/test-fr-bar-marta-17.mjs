@@ -21,7 +21,12 @@ for(const config of [{name:'desktop',options:{viewport:{width:1365,height:900}}}
   for(const lang of ['es','en']){
    await page.locator('#language-select').selectOption(lang);
    const count=await page.locator('#detail-content [data-dish-explanation]:visible').count();
-   if(count!==17)issues.push(lang+' description count: '+count);
+   if(lang==='en'&&count!==17)issues.push(lang+' description count: '+count);
+   if(lang==='es'&&count!==0)issues.push('ES duplicate explanations unexpectedly shown: '+count);
+   if(lang==='es'){
+    const titles=await page.locator('#detail-content .menu-dish h4').allTextContents();
+    if(titles.length!==17)issues.push('ES dish titles count: '+titles.length);
+   }
   }
  }catch(e){issues.push(e.message)}
  results.push({profile:config.name,status:issues.length?'FAIL':'PASS',issues});
