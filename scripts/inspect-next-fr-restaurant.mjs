@@ -1,4 +1,4 @@
-import {readFileSync,readdirSync} from 'node:fs';
+import {readFileSync,readdirSync,mkdirSync,writeFileSync} from 'node:fs';
 
 const data=JSON.parse(readFileSync('data/places.json','utf8'));
 const translated=new Map();
@@ -27,3 +27,10 @@ candidates.sort((a,b)=>a.pending.length-b.pending.length||a.id.localeCompare(b.i
 console.log('FR-COVERAGE-INVENTORY '+JSON.stringify(candidates.map(({id,name,count,covered,pending})=>({id,name,count,covered,pending:pending.length}))));
 const next=candidates.find(p=>p.pending.length>0);
 console.log('FR-NEXT-CANDIDATE '+JSON.stringify(next?{id:next.id,name:next.name,count:next.count,covered:next.covered,pendingCount:next.pending.length,entries:next.pending.slice(0,12)}:null));
+
+mkdirSync('qa-reports',{recursive:true});
+writeFileSync('qa-reports/fr-next-restaurant.json',JSON.stringify({
+ source:'data/places.json + translations/fr batches',catalogModified:false,
+ next:next?{id:next.id,name:next.name,count:next.count,covered:next.covered,pendingCount:next.pending.length,entries:next.pending}:null,
+ summary:candidates.map(({id,name,count,covered,pending})=>({id,name,count,covered,pending:pending.length}))
+},null,2)+'\n');
