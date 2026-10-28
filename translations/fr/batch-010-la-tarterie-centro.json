@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "la-tarterie-centro",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 0,
+      "itemIndex": 19,
+      "fr": "Génoise aux poires, aux noisettes et aux pépites de chocolat, décorée de lamelles de poire et de confiture d’abricot."
+    },
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 0,
+      "itemIndex": 20,
+      "fr": "Génoise moelleuse à la farine de pistache, aux framboises entières, avec des éclats de pistache sur le dessus."
+    },
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 0,
+      "itemIndex": 21,
+      "fr": "Génoise à la betterave avec une touche de cacao et un glaçage au fromage frais."
+    },
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 0,
+      "itemIndex": 22,
+      "fr": "Génoise moelleuse au cacao pur biologique, confiture de framboises et crème végétale au beurre à base d’avocats et de cacao pur biologiques."
+    },
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 0,
+      "itemIndex": 23,
+      "fr": "Trois couches de génoise au turrón, ganache au turrón, chocolat et copeaux de turrón ; produit présenté pour Noël."
+    },
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 0,
+      "itemIndex": 24,
+      "fr": "Génoise à la carotte et à la cannelle, glaçage au fromage frais selon une recette maison et noix en décoration."
+    },
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 1,
+      "itemIndex": 0,
+      "fr": "Feuilleté farci au pisto, au thon et à l’œuf dur."
+    },
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 1,
+      "itemIndex": 1,
+      "fr": "Quiche salée aux tomates cerises, à l’oignon caramélisé et au fromage de chèvre."
+    },
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 1,
+      "itemIndex": 2,
+      "fr": "Quiche traditionnelle au bacon et au fromage."
+    }
+  ]
+}
