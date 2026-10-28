@@ -2,9 +2,10 @@
 // Integrity gate for a proposed French-only overlay, without writing data/places.json.
 // Fails if any approved source field changes, or a candidate points at an invalid item.
 import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
+import {readFileSync,readdirSync} from 'node:fs';
 const places=JSON.parse(readFileSync('data/places.json','utf8'));
-const batch=JSON.parse(readFileSync('translations/fr/batch-001-la-montillana.json','utf8'));
+const files=readdirSync('translations/fr').filter(f=>/^batch-\d+.*\.json$/.test(f)).sort();
+const batch={entries:files.flatMap(f=>JSON.parse(readFileSync('translations/fr/'+f,'utf8')).entries)};
 const clone=x=>JSON.parse(JSON.stringify(x));
 function overlay(data, entries) {
   const output=clone(data), seen=new Set();
