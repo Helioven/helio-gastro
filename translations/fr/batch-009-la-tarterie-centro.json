@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "la-tarterie-centro",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 0,
+      "itemIndex": 10,
+      "fr": "Brownie au cacao pur biologique issu du commerce équitable, avec des noix."
+    },
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 0,
+      "itemIndex": 11,
+      "fr": "Mousse aux framboises fraîches et au chocolat blanc sur une base de biscuits, avec des copeaux de chocolat blanc."
+    },
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 0,
+      "itemIndex": 12,
+      "fr": "Base de biscuits, crème aux fraises fraîches, crème fouettée et décoration de fraises ; gâteau de saison."
+    },
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 0,
+      "itemIndex": 13,
+      "fr": "Biscuits María, crème aux œufs et chocolat chaud épais."
+    },
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 0,
+      "itemIndex": 14,
+      "fr": "Génoise à la banane, à l’ananas et à la cannelle, glaçage au fromage frais et copeaux de noix de coco."
+    },
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 0,
+      "itemIndex": 15,
+      "fr": "Crème au citron et meringue sur une fine pâte sablée."
+    },
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 0,
+      "itemIndex": 16,
+      "fr": "Génoise aux pommes, aux noix et à la cannelle, garnie de fines tranches de pomme. L’établissement la présente comme adaptée aux personnes ne consommant pas de produits laitiers, sans certification indépendante."
+    },
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 0,
+      "itemIndex": 17,
+      "fr": "Base de biscuits, mousse au citron aromatisée au rhum et à la menthe verte, et gelée de mojito ; l’absence d’alcool n’a pas été vérifiée."
+    },
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 0,
+      "itemIndex": 18,
+      "fr": "Base de biscuits, crème au fromage et confiture de framboises."
+    }
+  ]
+}
