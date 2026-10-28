@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "rincon-beatillas",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 5,
+      "itemIndex": 9,
+      "fr": "Petites côtelettes d’agneau de lait."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 5,
+      "itemIndex": 10,
+      "fr": "Épaule d’agneau de lait."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 5,
+      "itemIndex": 11,
+      "fr": "Longe de cerf."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 6,
+      "itemIndex": 0,
+      "fr": "Flan aux œufs."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 6,
+      "itemIndex": 1,
+      "fr": "Flan aux œufs avec crème fouettée."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 6,
+      "itemIndex": 2,
+      "fr": "Flan au fromage."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 6,
+      "itemIndex": 3,
+      "fr": "Crème dessert maison."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 6,
+      "itemIndex": 4,
+      "fr": "Riz au lait et à la cannelle."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 6,
+      "itemIndex": 5,
+      "fr": "Tocino de cielo, crème traditionnelle aux jaunes d’œufs."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 6,
+      "itemIndex": 6,
+      "fr": "Crème de yaourt avec tocino de cielo."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 6,
+      "itemIndex": 7,
+      "fr": "Pastel cordobés, pâtisserie traditionnelle de Cordoue."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 6,
+      "itemIndex": 8,
+      "fr": "Gâteau de la maison."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 6,
+      "itemIndex": 9,
+      "fr": "Variétés de glaces et prix non indiqués sur la carte publiée."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 6,
+      "itemIndex": 10,
+      "fr": "Fruits de saison."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 6,
+      "itemIndex": 11,
+      "fr": "Ananas frais."
+    }
+  ]
+}
