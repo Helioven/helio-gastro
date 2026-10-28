@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-el-abuelo",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 0,
+      "fr": "Morue frite."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 1,
+      "fr": "Morue enrobée de pâte à frire."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 2,
+      "fr": "Crevettes à l’ail."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 3,
+      "fr": "Crevettes enrobées de pâte à frire."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 4,
+      "fr": "Anchois au vinaigre."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 5,
+      "fr": "Anchois marinés en adobo."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 6,
+      "fr": "Japuta marinée en adobo."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 7,
+      "fr": "Rosada frite."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 8,
+      "fr": "Aubergines frites."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 9,
+      "fr": "Cœurs de laitue à l’ail."
+    }
+  ]
+}
