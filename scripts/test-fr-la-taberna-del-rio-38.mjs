@@ -14,6 +14,13 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1385,height:900}}
   await page.locator('#language-select').selectOption('fr');
   await page.evaluate(()=>showPlace(state.places.find(p=>p.id==='la-taberna-del-rio'),false));
   const originalDishNames=await page.locator('#detail-content .menu-dish h4').allTextContents();
+  const baseline=await ctx.newPage();
+  await baseline.goto('http://127.0.0.1:8765/index.html',{waitUntil:'domcontentloaded'});
+  await baseline.waitForFunction(()=>typeof state!=='undefined'&&state.places.some(p=>p.id==='la-taberna-del-rio'));
+  await baseline.locator('#language-select').selectOption('en');
+  await baseline.evaluate(()=>showPlace(state.places.find(p=>p.id==='la-taberna-del-rio'),false));
+  const originalEnglishTitles=await baseline.locator('#detail-content .menu-dish h4').allTextContents();
+  await baseline.close();
   if(originalDishNames.length<38)issues.push('Visible dish titles fewer than translated descriptions');
   const fr=await page.locator('#detail-content [data-dish-explanation]:visible').allTextContents();
   if(fr.length!==38)issues.push('French explanations: '+fr.length+' expected 38');
@@ -25,7 +32,7 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1385,height:900}}
    const names=await page.locator('#detail-content .menu-dish h4').allTextContents();
    if(names.length!==originalDishNames.length)issues.push(lang+' dish title count '+names.length+' expected '+originalDishNames.length);
    if(lang==='es'&&names.some((name,i)=>name!==originalDishNames[i]))issues.push('Spanish original dish titles changed');
-   if(lang==='en'&&names.some(name=>!name.trim()))issues.push('Empty English dish title');
+   if(lang==='en'&&names.some((name,i)=>name!==originalEnglishTitles[i]))issues.push('English dish titles differ from public baseline');
   }
  }catch(e){issues.push(e.message)}
  results.push({profile:profile.name,status:issues.length?'FAIL':'PASS',issues});
