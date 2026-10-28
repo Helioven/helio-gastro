@@ -624,3 +624,30 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Incidencia corregida: «Limpiar búsqueda» conservaba selección de comparación y dejaba visible la navegación del comparador. La corrección restaura búsqueda limpia y elimina la selección persistida. El primer run [40645430430](https://github.com/Helioven/helio-gastro/actions/runs/40645430430) falló por este defecto; la repetición final fue satisfactoria.
 - El piloto francés permanece **sin fusionar a `main`**. La validación técnica no equivale a revisión lingüística nativa ni a cobertura integral francesa.
 - **Próximo paso:** traducir por lotes controlados a partir de descripciones ES/EN verificables; cada lote candidato debe revisarse semánticamente y validar integridad, números, formatos, pantallas y regresión antes de integrarse. No completar ingredientes desconocidos ni aplicar automáticamente traducciones.
+
+
+### Relevo de sesión — avance francés QA al 28/10/2026 (actualización operativa)
+
+**Rama de trabajo:** `feature/fr-integration-qa-20261027`. **No fusionar a `main` ni publicar el francés sin aprobación editorial explícita.** El idioma FR se aplica solo en `?qa_fr=1`, como superposición en memoria; `data/places.json` y sus precios/formato originales no se alteraron. Las traducciones son **candidatas** (`candidate_awaiting_semantic_review`), no traducciones nativas aprobadas. La cifra 198 se refiere exclusivamente a **descripciones de platos**, no a títulos, secciones ni interfaz enteramente traducidos.
+
+**Progreso confirmado: 7 establecimientos / 198 descripciones francesas candidatas**, repartidas en 19 lotes `translations/fr/batch-001-*.json` a `batch-019-*.json`:
+
+| Establecimiento (id) | Lotes | Descripciones FR candidatas |
+| --- | --- | ---: |
+| La Montillana (`la-montillana`) | 001–003 | 30/30 |
+| Churros Bar Marta (`churros-bar-marta`) | 004–005 | 17/17 |
+| Cafetería Bar La Jineta (`cafeteria-bar-la-jineta`) | 006–007 | 22/22 |
+| La Tarterie (`la-tarterie-centro`) | 008–010 | 28/28 |
+| Taberna El Abuelo (`taberna-el-abuelo`) | 011–013 | 31/31 |
+| Taberna La Viuda (`taberna-la-viuda`) | 014–016 | 34/34 |
+| Restaurante Casa Rubio (`casa-rubio`) | 017–019 | 36/36 |
+
+**Último PASS contrastado:** [GitHub Actions #40653024075](https://github.com/Helioven/helio-gastro/actions/runs/40653024075), terminado **SUCCESS**; los dos runs precedentes #40653010033 y #40652999634 también finalizaron con éxito. La suite incluye auditoría de lotes FR, integridad del overlay y pruebas Playwright en escritorio/móvil; último test específico: `scripts/test-fr-casa-rubio-36.mjs`. El PASS automatizado **no** certifica calidad lingüística ni publicación.
+
+**Documentación de cierres técnicos:** `docs/qa-fr-la-montillana-closure-2026-10-28.md`, `docs/qa-fr-churros-bar-marta-closure-2026-10-28.md`, `docs/qa-fr-la-jineta-closure-2026-10-28.md`, `docs/qa-fr-la-tarterie-closure-2026-10-28.md`, `docs/qa-fr-el-abuelo-closure-2026-10-28.md` y `docs/qa-fr-la-viuda-closure-2026-10-28.md`. Para Casa Rubio, `docs/qa-fr-batch-017-casa-rubio-2026-10-28.md` y `docs/qa-fr-batches-018-019-casa-rubio-2026-10-28.md`; **falta crear cierre técnico de Casa Rubio**, tomando como prueba el run #40653024075.
+
+**Siguiente restaurante propuesto:** **Taberna El Número 10** (`taberna-el-numero-10`), con **37 entradas ES/EN** según inventario anterior; verificar de nuevo el contenido real antes de traducir. El script `scripts/inspect-next-fr-restaurant.mjs` acaba apuntando a `casa-rubio` con `entries.slice(12)`. Para obtener los datos siguientes, ajustar filtro a `taberna-el-numero-10` y paginación `slice(0,12)`, hacer commit **solo en la rama QA**, dejar correr `.github/workflows/data-qa.yml`, y leer la línea `FR-NEXT-CANDIDATE` en los logs del job `catalog-audit`. El catálogo original es grande; no deducir platos a partir de nombres ni de memoria.
+
+**Procedimiento de continuidad:** crear lotes JSON con `meta.status='candidate_awaiting_semantic_review'`, `meta.source='data/places.json'`, `meta.language='fr'`, `meta.catalogModified=false`, entradas `{placeId,sectionIndex,itemIndex,fr}`; verificar los lotes vía GitHub Actions. Una vez completadas las descripciones de un restaurante, añadir sus nombres de lote y recuentos a la lista `paths`/`expectedCounts` de `app.js`, incluir su ID en la lista permitida y actualizar total esperado (actual **198**). Añadir una prueba de ficha FR ES/EN escritorio/móvil siguiendo `scripts/test-fr-casa-rubio-36.mjs`, activarla en `.github/workflows/data-qa.yml`, documentar reservas editoriales y **comprobar PASS antes de afirmar cierre**. Mantener preservación de gramajes, unidades, formatos, ingredientes explícitos y advertencias de origen; no inventar disponibilidad o variedades.
+
+**Prioridades y límites del proyecto:** respetar las 43 cartas editoriales ya cerradas, no publicar cartas parciales, mantener excepción de El Caballo Rojo sin verificación de reapertura. Continuar de manera incremental con francés aislado y revisión lingüística pendiente; luego auditoría integral y resto de fases según hoja de ruta, sin alterar prioridades unilateralmente. La próxima conversación puede empezar comprobando este README, creando el cierre de Casa Rubio y recuperando las entradas reales de Taberna El Número 10.
