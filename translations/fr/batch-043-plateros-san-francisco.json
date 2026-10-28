@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-plateros-san-francisco",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 1,
+      "itemIndex": 2,
+      "fr": "Fromage de brebis conservé ou assaisonné dans de l’huile d’olive."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 1,
+      "itemIndex": 3,
+      "fr": "Boudin noir à base de sang de porc, de variété ibérique selon la carte."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 2,
+      "itemIndex": 0,
+      "fr": "Tortilla traditionnelle aux pommes de terre."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 2,
+      "itemIndex": 1,
+      "fr": "Omelette nature préparée avec des œufs battus."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 2,
+      "itemIndex": 2,
+      "fr": "Deux œufs au plat accompagnés de pommes de terre frites."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 2,
+      "itemIndex": 3,
+      "fr": "Œufs brouillés aux asperges sauvages, champignons et jambon ibérique."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 2,
+      "itemIndex": 4,
+      "fr": "Œufs brouillés aux jeunes fèves et au jambon ibérique."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 2,
+      "itemIndex": 5,
+      "fr": "Légumes mijotés, dont aubergine, poivron, oignon et tomate, accompagnés d’un œuf au plat."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 3,
+      "itemIndex": 0,
+      "fr": "Morue frite. Plat figurant à la carte ; la préparation et les accompagnements exacts ne sont pas précisés."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 3,
+      "itemIndex": 1,
+      "fr": "Morue enrobée de pâte à frire. Plat figurant à la carte ; la préparation et les accompagnements exacts ne sont pas précisés."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 3,
+      "itemIndex": 2,
+      "fr": "Calamars frits. Plat figurant à la carte ; la préparation et les accompagnements exacts ne sont pas précisés."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 3,
+      "itemIndex": 3,
+      "fr": "Calamar grillé à la plancha. Plat figurant à la carte ; la préparation et les accompagnements exacts ne sont pas précisés."
+    }
+  ]
+}
