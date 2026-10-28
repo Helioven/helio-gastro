@@ -670,3 +670,12 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 **Límites editoriales:** la revisión semántica y lingüística humana sigue pendiente. Estas 273 traducciones son candidatas de **descripciones**, no equivalen a la traducción íntegra de títulos, secciones e interfaz. No fusionar la rama QA con `main` ni publicar el francés sin autorización. `data/places.json`, precios y formatos originales permanecen intactos.
 
 **Próximo paso operativo:** seleccionar el siguiente establecimiento pendiente del inventario real, recuperar sus entradas ES/EN, crear lotes FR revisables, integrar solo en QA y pasar las pruebas de regresión. Entre los siguientes candidatos detectados: Taberna Rafaé (38 descripciones), Cafetería Don Pepe · Centro (43), Taberna El Poema · Alonso de Burgos (44) y D'Tapas COVAP Córdoba (45); verificar datos antes de traducir. Mantener el orden acordado de fases.
+
+
+### Rafaé — traducción francesa QA (28/10/2026)
+
+- Fuente: 38 entradas con descripciones originales `es` y `en` de `taberna-rafae` verificadas por el inspector de la rama QA. No se reabre la carta editorial ES/EN, cerrada el 26/10.
+- Candidatas FR: 38/38 descripciones en los lotes `translations/fr/batch-026-rafae.json` a `batch-029-rafae.json`, en grupos de 12+12+12+2; `meta.status=candidate_awaiting_semantic_review`.
+- Integración exclusivamente experimental en `?qa_fr=1`, mediante overlay en memoria de `app.js`; el catálogo original, precios y formatos no se modifican. Total acumulado de candidatos: 311 descripciones / 10 establecimientos.
+- Se añadió `scripts/test-fr-rafae-38.mjs` a `.github/workflows/data-qa.yml`, con prueba FR y comprobaciones de ES/EN en escritorio y móvil. **Ejecución CI y cierre técnico pendientes de comprobación en el momento de este registro; no declarar PASS anticipadamente.**
+- Pendientes editoriales: revisión semántica de las traducciones candidatas, revisión lingüística y cobertura de títulos/secciones/interfaz FR. No fusionar a `main` ni publicar francés sin aprobación.
