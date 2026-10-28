@@ -702,3 +702,11 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Overlay QA exclusivamente con `?qa_fr=1`: total acumulado **443 descripciones francesas candidatas / 13 establecimientos**. No se modificó `data/places.json`, ni precios, fuentes, formatos o declaraciones de alérgenos originales.
 - Se añadieron `scripts/test-fr-dtapas-covap-45.mjs` y su ejecución en `.github/workflows/data-qa.yml`, con controles de ficha FR, comparación con títulos ES/EN y escritorio/móvil. **QA técnico SUPERADO y cierre confirmado por Helio (28/10/2026):** [GitHub Actions #40659764245](https://github.com/Helioven/helio-gastro/actions/runs/40659764245) finalizó `SUCCESS` en `catalog-audit` y `visual-qa`. El cierre técnico no supone revisión lingüística nativa ni publicación.
 - Reserva editorial: los textos ES de varias entradas son notas de alérgenos o formatos más breves que el campo EN. Las candidatas FR respetan esas notas sin añadir ingredientes o deducir alérgenos. Validación semántica y lingüística pendiente. No fusionar a `main` ni publicar francés todavía.
+
+
+### Taberna Sociedad de Plateros · San Francisco — francés QA (28/10/2026)
+
+- ID `taberna-plateros-san-francisco`: **46 descripciones ES/EN** identificadas en el catálogo real. Creados cuatro lotes candidatos `translations/fr/batch-042-plateros-san-francisco.json` a `batch-045-plateros-san-francisco.json` (12+12+12+10), con estado `candidate_awaiting_semantic_review`.
+- Las 46 propuestas se cargan únicamente mediante overlay en memoria bajo `?qa_fr=1`. Acumulado experimental: **489 descripciones francesas candidatas en 14 establecimientos**. No se modifica `data/places.json`, precios, formatos, fuentes ni datos gastronómicos originales.
+- Añadida prueba visual `scripts/test-fr-plateros-san-francisco-46.mjs` al workflow de CI para validar explicaciones FR, invariancia ES/EN y navegación de ficha en escritorio/móvil. **Ejecución final y cierre técnico pendientes de comprobar; no afirmar PASS anticipadamente.**
+- Las traducciones mantienen denominaciones tradicionales y reservas sobre preparaciones y guarniciones no especificadas. Sigue pendiente revisión semántica y lingüística nativa, así como títulos, secciones y cobertura completa de interfaz francesa. No fusionar a `main` ni publicar todavía.
