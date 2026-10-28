@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-el-poema-alonso",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 6,
+      "itemIndex": 1,
+      "fr": "Presa de porc ibérique de la vallée de Los Pedroches."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 6,
+      "itemIndex": 2,
+      "fr": "Petites côtelettes d’agneau."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 6,
+      "itemIndex": 3,
+      "fr": "Entrecôte de bœuf."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 7,
+      "itemIndex": 0,
+      "fr": "Tocinillo de cielo, dessert traditionnel préparé à base de jaunes d’œufs."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 7,
+      "itemIndex": 1,
+      "fr": "Gâteau au fromage avec confiture de myrtilles et de fruits rouges."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 7,
+      "itemIndex": 2,
+      "fr": "Gâteau aux trois chocolats."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 7,
+      "itemIndex": 3,
+      "fr": "Brownie au chocolat accompagné de glace à la vanille."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 7,
+      "itemIndex": 4,
+      "fr": "Coulant au chocolat accompagné de glace à la vanille."
+    }
+  ]
+}
