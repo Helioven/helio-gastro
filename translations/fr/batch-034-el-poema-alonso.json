@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-el-poema-alonso",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 0,
+      "itemIndex": 0,
+      "fr": "Salmorejo cordouan accompagné d’œuf dur et de jambon."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 0,
+      "itemIndex": 1,
+      "fr": "Ensaladilla rusa ; la carte ne précise pas ses ingrédients."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 0,
+      "itemIndex": 2,
+      "fr": "Assortiment de légumes grillés."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 0,
+      "itemIndex": 3,
+      "fr": "Champignons cuits à la plancha avec du jambon."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 0,
+      "itemIndex": 4,
+      "fr": "Anchois marinés au vinaigre, accompagnés d’oignon rouge et d’huile d’olive vierge extra."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 1,
+      "itemIndex": 0,
+      "fr": "Salade de tomates et de maquereau."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 1,
+      "itemIndex": 1,
+      "fr": "Salade de produits fumés ; la carte n’en précise pas les ingrédients."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 1,
+      "itemIndex": 2,
+      "fr": "Salade remojón à la morue et à l’orange."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 1,
+      "itemIndex": 3,
+      "fr": "Salade de perdrix ; la carte ne précise pas les autres ingrédients."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 1,
+      "itemIndex": 4,
+      "fr": "Salade caprese ; la carte n’en précise pas la composition."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 2,
+      "itemIndex": 0,
+      "fr": "Œufs brouillés avec pommes de terre et jambon."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 2,
+      "itemIndex": 1,
+      "fr": "Œufs brouillés à la morue et aux crevettes."
+    }
+  ]
+}
