@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-plateros-san-francisco",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 0,
+      "itemIndex": 0,
+      "fr": "Salade composée. Plat figurant à la carte ; la préparation et les accompagnements exacts ne sont pas précisés."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 0,
+      "itemIndex": 1,
+      "fr": "Salade de perdrix marinée en escabèche."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 0,
+      "itemIndex": 2,
+      "fr": "Crème froide cordouane de tomate, de pain, d’huile et d’ail."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 0,
+      "itemIndex": 3,
+      "fr": "Ensaladilla rusa traditionnelle."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 0,
+      "itemIndex": 4,
+      "fr": "Tomate assaisonnée avec ventrèche de thon. Plat figurant à la carte ; la préparation et les accompagnements exacts ne sont pas précisés."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 0,
+      "itemIndex": 5,
+      "fr": "Cœurs de laitue avec ail frit. Plat figurant à la carte ; la préparation et les accompagnements exacts ne sont pas précisés."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 0,
+      "itemIndex": 6,
+      "fr": "Aubergines frites accompagnées de miel de canne, selon la traduction officielle."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 0,
+      "itemIndex": 7,
+      "fr": "Croquettes de queue de bœuf. Plat figurant à la carte ; la préparation et les accompagnements exacts ne sont pas précisés."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 0,
+      "itemIndex": 8,
+      "fr": "Croquettes au jambon. Plat figurant à la carte ; la préparation et les accompagnements exacts ne sont pas précisés."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 0,
+      "itemIndex": 9,
+      "fr": "Artichauts aux anchois. Plat figurant à la carte ; la préparation et les accompagnements exacts ne sont pas précisés."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 1,
+      "itemIndex": 0,
+      "fr": "Jambon ibérique affiné, servi en tranches."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 1,
+      "itemIndex": 1,
+      "fr": "Fromage affiné au lait de brebis."
+    }
+  ]
+}
