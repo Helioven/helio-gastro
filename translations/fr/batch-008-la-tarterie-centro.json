@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "la-tarterie-centro",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 0,
+      "itemIndex": 0,
+      "fr": "Base de biscuits, banane, dulce de leche, crème fouettée et copeaux de chocolat."
+    },
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 0,
+      "itemIndex": 1,
+      "fr": "Brownie au cacao pur biologique issu du commerce équitable, gâteau au fromage et confiture de framboises."
+    },
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 0,
+      "itemIndex": 2,
+      "fr": "Trois couches de génoise à la vanille, crème au caramel salé et crumble."
+    },
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 0,
+      "itemIndex": 3,
+      "fr": "Génoise au cacao pur biologique issu du commerce équitable, à la bière brune, garnie et recouverte de glaçage au fromage frais."
+    },
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 0,
+      "itemIndex": 4,
+      "fr": "Gâteau au fromage avec Baileys et chocolat blanc, base de biscuits et copeaux de chocolat blanc."
+    },
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 0,
+      "itemIndex": 5,
+      "fr": "Gâteau au fromage parfumé à l’amande grâce à l’Amaretto, sur base de biscuits, avec confiture de mangue maison et morceaux d’amande."
+    },
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 0,
+      "itemIndex": 6,
+      "fr": "Biscuits Oreo dans la base, crème au fromage et décoration."
+    },
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 0,
+      "itemIndex": 7,
+      "fr": "Génoise au cacao pur biologique issu du commerce équitable, ganache au chocolat blanc et copeaux de chocolat."
+    },
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 0,
+      "itemIndex": 8,
+      "fr": "Génoise au cacao pur biologique issu du commerce équitable, dulce de leche maison, couverture et copeaux de chocolat."
+    },
+    {
+      "placeId": "la-tarterie-centro",
+      "sectionIndex": 0,
+      "itemIndex": 9,
+      "fr": "Génoise au cacao pur biologique issu du commerce équitable, crème maison au Kinder Bueno, aux noisettes, au chocolat blanc et à la crème."
+    }
+  ]
+}
