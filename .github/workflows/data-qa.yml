@@ -79,6 +79,7 @@ jobs:
             scripts/test-fr-la-taberna-del-rio-38.mjs \
             scripts/test-fr-rafae-38.mjs \
             scripts/test-fr-don-pepe-centro-43.mjs \
+            scripts/test-fr-el-poema-alonso-44.mjs \
             scripts/test-search-regression.mjs \
             scripts/test-filter-regression.mjs \
             scripts/test-comparator-regression.mjs \
