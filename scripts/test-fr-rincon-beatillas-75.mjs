@@ -40,6 +40,6 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1755,height:900}}
 }
 await browser.close();
 const status=results.some(r=>r.issues.length)?'FAIL':'PASS';
-writeFileSync('qa-reports/fr-el-pisto-75.json',JSON.stringify({status,results},null,2)+'\n');
+writeFileSync('qa-reports/fr-rincon-beatillas-75.json',JSON.stringify({status,results},null,2)+'\n');
 console.log('FR BEATILLAS '+JSON.stringify({status,results}));
 if(status==='FAIL')process.exitCode=1;
