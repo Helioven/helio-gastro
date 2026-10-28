@@ -1,8 +1,29 @@
-import {readFileSync} from 'node:fs';
+import {readFileSync,readdirSync} from 'node:fs';
+
 const data=JSON.parse(readFileSync('data/places.json','utf8'));
+const translated=new Map();
+for(const file of readdirSync('translations/fr').filter(name=>/^batch-\d+.*\.json$/.test(name))){
+ const batch=JSON.parse(readFileSync('translations/fr/'+file,'utf8'));
+ for(const item of batch.entries||[]){
+  if(!item.placeId||!Number.isInteger(item.sectionIndex)||!Number.isInteger(item.itemIndex)||!item.fr?.trim())continue;
+  const keys=translated.get(item.placeId)||new Set();
+  keys.add(item.sectionIndex+':'+item.itemIndex);
+  translated.set(item.placeId,keys);
+ }
+}
 const candidates=[];
-for(const p of data){if(['la-montillana','churros-bar-marta'].includes(p.id)||p.name?.includes('Caballo Rojo')||p.hidden)continue;const entries=[];for(const [sectionIndex,s] of (p.menuSections||[]).entries())for(const [itemIndex,item] of (s.items||[]).entries())if(item.es?.trim()&&item.en?.trim())entries.push({sectionIndex,itemIndex,name:item.name,es:item.es,en:item.en});if(entries.length)candidates.push({id:p.id,name:p.name,count:entries.length,entries});}
-candidates.sort((a,b)=>a.count-b.count||a.id.localeCompare(b.id));
-console.log('FR-NEXT-INVENTORY '+JSON.stringify(candidates.map(x=>({id:x.id,name:x.name,count:x.count}))));
-const done=new Set(['la-montillana','churros-bar-marta','cafeteria-bar-la-jineta','la-tarterie-centro','taberna-el-abuelo','taberna-la-viuda','casa-rubio','taberna-el-numero-10']);
-for(const p of candidates.filter(x=>x.id==='rincon-beatillas'))console.log('FR-NEXT-CANDIDATE '+JSON.stringify({id:p.id,name:p.name,count:p.count,entries:p.entries.slice(60)}));
+for(const p of data){
+ if(p.hidden||p.name?.includes('Caballo Rojo'))continue;
+ const entries=[];
+ for(const [sectionIndex,section] of (p.menuSections||[]).entries())
+  for(const [itemIndex,item] of (section.items||[]).entries())
+   if(item.es?.trim()&&item.en?.trim())entries.push({sectionIndex,itemIndex,name:item.name,es:item.es,en:item.en});
+ if(!entries.length)continue;
+ const covered=translated.get(p.id)||new Set();
+ const pending=entries.filter(item=>!covered.has(item.sectionIndex+':'+item.itemIndex));
+ candidates.push({id:p.id,name:p.name,count:entries.length,covered:entries.length-pending.length,pending});
+}
+candidates.sort((a,b)=>a.pending.length-b.pending.length||a.id.localeCompare(b.id));
+console.log('FR-COVERAGE-INVENTORY '+JSON.stringify(candidates.map(({id,name,count,covered,pending})=>({id,name,count,covered,pending:pending.length}))));
+const next=candidates.find(p=>p.pending.length>0);
+console.log('FR-NEXT-CANDIDATE '+JSON.stringify(next?{id:next.id,name:next.name,count:next.count,covered:next.covered,pendingCount:next.pending.length,entries:next.pending.slice(0,12)}:null));
