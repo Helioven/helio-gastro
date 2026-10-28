@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "la-bandera-cafe",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 7,
+      "itemIndex": 4,
+      "fr": "Salade de fruits de mer."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 7,
+      "itemIndex": 5,
+      "fr": "Part de tortilla de patatas (omelette espagnole aux pommes de terre)."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 8,
+      "itemIndex": 0,
+      "fr": "Pain mollete au jambon ibérique et à l’huile d’olive vierge extra."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 8,
+      "itemIndex": 1,
+      "fr": "Pain mollete à la tortilla de patatas."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 8,
+      "itemIndex": 2,
+      "fr": "Pain mollete aux œufs et au jambon."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 8,
+      "itemIndex": 3,
+      "fr": "Pain mollete au fromage affiné."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 8,
+      "itemIndex": 4,
+      "fr": "Pain mollete au bacon et au fromage."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 8,
+      "itemIndex": 5,
+      "fr": "Pain mollete à la tomate et à la melva (thonine)."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 8,
+      "itemIndex": 6,
+      "fr": "Pain mollete au saumon et au fromage frais à tartiner."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 8,
+      "itemIndex": 7,
+      "fr": "Pain mollete à la longe de porc, au jambon et aux poivrons frits."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 9,
+      "itemIndex": 0,
+      "fr": "Croquettes de queue de taureau."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 9,
+      "itemIndex": 1,
+      "fr": "Croquettes de puchero (pot-au-feu espagnol)."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 9,
+      "itemIndex": 2,
+      "fr": "Brochettes ; prix à l’unité."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 9,
+      "itemIndex": 3,
+      "fr": "Flamenquín au poulet."
+    }
+  ]
+}
