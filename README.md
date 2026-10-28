@@ -615,3 +615,12 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 5. Repetir regresión tras cualquier corrección y registrar evidencia, severidad, resultado y cierre de cada incidencia.
 
 **Decisión:** detener aquí la sesión de desarrollo/QA hasta que Helio solicite continuar. No se altera el orden acordado de las siete fases.
+
+
+### Regresión FR — cierre técnico (28/10/2026)
+
+- La ejecución [40645692892](https://github.com/Helioven/helio-gastro/actions/runs/40645692892) finalizó **SUCCESS** en la rama aislada `feature/fr-integration-qa-20261027`.
+- Superados los jobs `catalog-audit` y `visual-qa`. El workflow incluye las pruebas de buscador (`HG-QA-032`), filtros (`HG-QA-033`), comparador (`HG-QA-034`), fichas (`HG-QA-035`) y navegación (`HG-QA-036`), en perfiles escritorio y móvil, tanto modo ES/EN público como `?qa_fr=1`.
+- Incidencia corregida: «Limpiar búsqueda» conservaba selección de comparación y dejaba visible la navegación del comparador. La corrección restaura búsqueda limpia y elimina la selección persistida. El primer run [40645430430](https://github.com/Helioven/helio-gastro/actions/runs/40645430430) falló por este defecto; la repetición final fue satisfactoria.
+- El piloto francés permanece **sin fusionar a `main`**. La validación técnica no equivale a revisión lingüística nativa ni a cobertura integral francesa.
+- **Próximo paso:** traducir por lotes controlados a partir de descripciones ES/EN verificables; cada lote candidato debe revisarse semánticamente y validar integridad, números, formatos, pantallas y regresión antes de integrarse. No completar ingredientes desconocidos ni aplicar automáticamente traducciones.
