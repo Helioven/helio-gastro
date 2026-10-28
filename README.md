@@ -728,3 +728,11 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Overlay exclusivo de `?qa_fr=1`: **605 descripciones FR candidatas / 16 establecimientos / 55 lotes**. El archivo `data/places.json`, los títulos originales, precios y formatos no se modificaron.
 - Prueba `scripts/test-fr-taberna-la-sal-60.mjs` añadida a `.github/workflows/data-qa.yml` para escritorio/móvil y regresión ES/EN/FR; **QA técnico SUPERADO, confirmado por Helio el 28/10/2026:** [GitHub Actions #40664538783](https://github.com/Helioven/helio-gastro/actions/runs/40664538783) terminó `SUCCESS`, con `catalog-audit` y `visual-qa` superados. Cierre técnico de La Sal registrado; no equivale a aprobación semántica o lingüística nativa ni autoriza publicación.
 - Se conservan como pendientes las incertidumbres documentadas en la fuente, en particular dos precios distintos de 13 € y 14 € en el revuelto de aguacate, y las preparaciones o acompañamientos no especificados. La revisión editorial y lingüística nativa sigue pendiente, así como títulos, secciones e interfaz FR completa. No fusionar rama a `main` ni publicar francés sin autorización.
+
+
+### Taberna San Miguel · El Pisto — francés QA (28/10/2026)
+
+- ID verificado `taberna-san-miguel-el-pisto`: 62 descripciones reales con fuentes ES/EN inspeccionadas en `data/places.json`. Seis lotes candidatos `translations/fr/batch-056-el-pisto.json` a `batch-061-el-pisto.json` (12+12+12+12+12+2); estado `candidate_awaiting_semantic_review`.
+- Integración exclusivamente en `?qa_fr=1`; overlay acumulado **667 descripciones FR candidatas / 17 establecimientos / 61 lotes**. No se modifica `data/places.json`, los precios, las denominaciones ni los formatos originales.
+- Añadida prueba `scripts/test-fr-el-pisto-62.mjs` al workflow `data-qa.yml` para desktop/móvil y preservación ES/EN; **CI todavía pendiente de comprobación**. No declarar PASS antes de su ejecución.
+- Se respetan las notas originales de preparaciones no especificadas y la fecha histórica de la referencia al solomillo de gamo (carta 2024). Las propuestas francesas siguen pendientes de revisión semántica y lingüística, y la cobertura de títulos/secciones/interfaz FR sigue incompleta. No publicar ni fusionar a `main` sin autorización editorial.
