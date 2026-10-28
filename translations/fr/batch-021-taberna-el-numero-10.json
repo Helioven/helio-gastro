@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-el-numero-10",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 1,
+      "itemIndex": 5,
+      "fr": "Fromage affiné au lait cru de brebis, proposé en portions de 50 et 100 grammes."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 1,
+      "itemIndex": 6,
+      "fr": "Anchois de Cantabrie servi sur du pain cristal avec du beurre de brebis."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 1,
+      "itemIndex": 7,
+      "fr": "Sardine fumée sur une tartine avec du salmorejo."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 1,
+      "itemIndex": 8,
+      "fr": "Six anchois marinés au vinaigre accompagnés de chips de pommes de terre."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 1,
+      "itemIndex": 9,
+      "fr": "Mojama de thon accompagnée d’amandes frites ; portion indiquée de 50 grammes."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 1,
+      "itemIndex": 10,
+      "fr": "Carpaccio de saumon salé et affiné sur place, accompagné de sauce tartare et de tartines croustillantes de pain cristal."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 2,
+      "itemIndex": 0,
+      "fr": "Cœurs de laitue préparés à la manière d’une salade César ; les autres ingrédients ne sont pas précisés sur la carte."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 2,
+      "itemIndex": 1,
+      "fr": "Asperges grillées avec pesto de pistache et parmesan."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 2,
+      "itemIndex": 2,
+      "fr": "Piments de Padrón frits."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 2,
+      "itemIndex": 3,
+      "fr": "Petits calamars frits accompagnés d’une mayonnaise au kimchi."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 2,
+      "itemIndex": 4,
+      "fr": "Tortillita de camarones, galette croustillante aux petites crevettes, avec guacamole et carpaccio de poulpe."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 3,
+      "itemIndex": 0,
+      "fr": "Double burger de bœuf façon smash avec morceaux de bacon, cheddar, sauce barbecue et frites."
+    }
+  ]
+}
