@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-rafae",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 3,
+      "itemIndex": 1,
+      "fr": "Croquettes de tripes à la cordouane, accompagnées d’une crème de sobrasada."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 3,
+      "itemIndex": 2,
+      "fr": "Épinards à l’andalouse, préparés avec des pois chiches, du vinaigre et du pain."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 3,
+      "itemIndex": 3,
+      "fr": "Patatas bravas accompagnées de mayonnaise au kimchi."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 3,
+      "itemIndex": 4,
+      "fr": "Croquettes maison traditionnelles préparées avec de la viande de pot-au-feu."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 3,
+      "itemIndex": 5,
+      "fr": "Cochon de lait confit à basse température, découpé en morceaux puis frit."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 3,
+      "itemIndex": 6,
+      "fr": "Champignons accompagnés de petits calamars et d’aïoli noir."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 3,
+      "itemIndex": 7,
+      "fr": "Artichauts confits dans de l’huile d’olive vierge extra, avec crème de foie gras et jambon croustillant."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 4,
+      "itemIndex": 0,
+      "fr": "Calamars frits accompagnés de mayonnaise au citron rôti."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 4,
+      "itemIndex": 1,
+      "fr": "Japuta (poisson) marinée dans un adobo maison."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 4,
+      "itemIndex": 2,
+      "fr": "Beignets de morue accompagnés de confiture de poivron."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 5,
+      "itemIndex": 0,
+      "fr": "Œufs brouillés à l’ail, aux asperges, aux champignons et au jambon ibérique."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 5,
+      "itemIndex": 1,
+      "fr": "Pommes de terre confites, accompagnées d’un œuf cassé et de lamelles de jambon."
+    }
+  ]
+}
