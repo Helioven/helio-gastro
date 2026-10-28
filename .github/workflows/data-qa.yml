@@ -32,6 +32,21 @@ jobs:
           node scripts/test-fr-overlay-integrity.mjs
           node scripts/test-fr-pilot-page.mjs
 
+      - name: Show next French translation target in job summary
+        if: success()
+        run: |
+          node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs=require('node:fs');
+          const report=JSON.parse(fs.readFileSync('qa-reports/fr-next-restaurant.json','utf8'));
+          const next=report.next;
+          console.log('## Próximo restaurante pendiente de francés');
+          if(next){
+            console.log('**'+next.name+'** ('+next.id+') — '+next.pendingCount+' descripciones pendientes de '+next.count+'.');
+            console.log('Fuente: catálogo y lotes reales de la rama QA. Traducciones todavía sin preparar.');
+          }else console.log('No quedan descripciones ES/EN sin lote FR según este inventario.');
+          console.log('El detalle original está en el artefacto french-coverage-proposals.');
+          NODE
+
       - name: Upload French proposals (not applied to catalog)
         uses: actions/upload-artifact@v4
         with:
