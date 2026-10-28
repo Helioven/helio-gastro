@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-salinas",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 0,
+      "itemIndex": 0,
+      "fr": "Gazpacho froid à base de tomate et de légumes, servi dans un verre."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 0,
+      "itemIndex": 1,
+      "fr": "Crème froide aux amandes et à l’ail, servie dans un verre avec des raisins secs."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 0,
+      "itemIndex": 2,
+      "fr": "Jambon serrano affiné provenant de la vallée indiquée sur la carte."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 0,
+      "itemIndex": 3,
+      "fr": "Fromage de brebis provenant de la localité indiquée sur la carte ; origine exacte à confirmer."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 0,
+      "itemIndex": 4,
+      "fr": "Picadillo cordouan de légumes frais, servi en salade."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 0,
+      "itemIndex": 5,
+      "fr": "Salade de chou avec ail frit et saumon fumé."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 0,
+      "itemIndex": 6,
+      "fr": "Orange coupée en morceaux avec de l’huile et de la morue, association traditionnelle cordouane."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 0,
+      "itemIndex": 7,
+      "fr": "Melon accompagné de jambon serrano."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 0,
+      "itemIndex": 8,
+      "fr": "Tomates assaisonnées provenant de la Vega de Alcolea, selon la carte."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 0,
+      "itemIndex": 9,
+      "fr": "Crème froide traditionnelle cordouane à base de tomate, de pain, d’huile d’olive et d’ail."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 1,
+      "itemIndex": 0,
+      "fr": "Boulettes de viande servies dans un bouillon de pot-au-feu avec du jambon."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 1,
+      "itemIndex": 1,
+      "fr": "Ragoût de pois chiches aux pieds de porc."
+    }
+  ]
+}
