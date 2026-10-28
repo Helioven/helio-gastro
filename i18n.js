@@ -175,7 +175,7 @@ window.GASTRO_I18N = Object.freeze({
     const select=document.getElementById('language-select');
     if(!select)return;
     if(frenchQaEnabled&&!select.querySelector('option[value="fr"]')){
-      const option=document.createElement('option');option.value='fr';option.textContent='Français (QA)';select.append(option);
+      const option=document.createElement('option');option.value='fr';option.textContent='🇫🇷 Français (QA)';select.append(option);
     }
     try{const saved=localStorage.getItem(KEY);language=isSupportedLanguage(saved)?saved:'es'}catch(e){}
     select.addEventListener('change',()=>applyLanguage(select.value));
