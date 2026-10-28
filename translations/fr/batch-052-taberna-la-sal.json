@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-la-sal",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 0,
+      "itemIndex": 12,
+      "fr": "Torreznos, morceaux de poitrine de porc croustillants ; la carte ne précise pas d’accompagnement."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 0,
+      "itemIndex": 13,
+      "fr": "Crevettes cuisinées à l’ail."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 0,
+      "itemIndex": 14,
+      "fr": "Poulpe préparé à la galicienne."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 1,
+      "itemIndex": 0,
+      "fr": "Cœurs de laitue à l’ail."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 1,
+      "itemIndex": 1,
+      "fr": "Ventrèche de thon servie sur un lit de tomates en dés."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 1,
+      "itemIndex": 2,
+      "fr": "Salade à l’avocat et aux fruits de mer."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 1,
+      "itemIndex": 3,
+      "fr": "Salade au fromage de chèvre en bûche et aux fruits à coque."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 1,
+      "itemIndex": 4,
+      "fr": "Artichauts préparés « al Moriles » ; la carte ne précise pas d’autres ingrédients."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 1,
+      "itemIndex": 5,
+      "fr": "Poivrons rôtis avec brandade de morue et melva, poisson de la famille des thonidés."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 1,
+      "itemIndex": 6,
+      "fr": "Jeunes fèves accompagnées d’un œuf cassé."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 1,
+      "itemIndex": 7,
+      "fr": "Cardons cuits en cassolette avec palourdes et crevettes."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 2,
+      "itemIndex": 0,
+      "fr": "Pommes de terre accompagnées d’œuf et de copeaux de jambon."
+    }
+  ]
+}
