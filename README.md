@@ -694,3 +694,11 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - ID real `taberna-el-poema-alonso`: 44 descripciones ES/EN recuperadas del inventario real; establecimiento distinto de El Poema de Gran Capitán. Cuatro lotes `translations/fr/batch-034-el-poema-alonso.json` a `batch-037-el-poema-alonso.json` (12+12+12+8), estado `candidate_awaiting_semantic_review`.
 - El overlay francés aislado `?qa_fr=1` suma ahora **398 descripciones candidatas / 12 establecimientos**. Catálogo `data/places.json`, precios de plataformas de reparto, formatos y fuentes no modificados; se preservan las notas de ingredientes no especificados.
 - Prueba de regresión `scripts/test-fr-el-poema-alonso-44.mjs` añadida al workflow para ES/EN/FR y escritorio/móvil. **QA técnico SUPERADO y cierre confirmado por Helio (28/10/2026):** [GitHub Actions #40658951373](https://github.com/Helioven/helio-gastro/actions/runs/40658951373) completó `SUCCESS`. El cierre técnico no equivale a revisión lingüística nativa ni a publicación. La revisión semántica y lingüística nativa, títulos/secciones y la interfaz FR completa siguen pendientes. No fusionar la rama QA con `main`.
+
+
+### D'Tapas COVAP Córdoba — francés QA (28/10/2026)
+
+- ID confirmado `dtapas-covap-cordoba`: 45 entradas con campos ES/EN verificadas en el inventario real. Cuatro lotes candidatos `translations/fr/batch-038-dtapas-covap.json` a `batch-041-dtapas-covap.json` (12+12+12+9), `candidate_awaiting_semantic_review`.
+- Overlay QA exclusivamente con `?qa_fr=1`: total acumulado **443 descripciones francesas candidatas / 13 establecimientos**. No se modificó `data/places.json`, ni precios, fuentes, formatos o declaraciones de alérgenos originales.
+- Se añadieron `scripts/test-fr-dtapas-covap-45.mjs` y su ejecución en `.github/workflows/data-qa.yml`, con controles de ficha FR, comparación con títulos ES/EN y escritorio/móvil. **CI de cierre todavía pendiente de verificar**; no declarar PASS antes del resultado.
+- Reserva editorial: los textos ES de varias entradas son notas de alérgenos o formatos más breves que el campo EN. Las candidatas FR respetan esas notas sin añadir ingredientes o deducir alérgenos. Validación semántica y lingüística pendiente. No fusionar a `main` ni publicar francés todavía.
