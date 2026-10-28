@@ -1,6 +1,6 @@
 import {chromium,devices} from 'playwright';
 import {readFileSync,mkdirSync,writeFileSync} from 'node:fs';
-const filenames=['batch-075-rincon-beatillas.json','batch-063-rincon-beatillas.json','batch-064-rincon-beatillas.json','batch-065-rincon-beatillas.json','batch-066-rincon-beatillas.json'];
+const filenames=['batch-062-rincon-beatillas.json','batch-063-rincon-beatillas.json','batch-064-rincon-beatillas.json','batch-065-rincon-beatillas.json','batch-066-rincon-beatillas.json'];
 const expected=filenames.flatMap(f=>JSON.parse(readFileSync('translations/fr/'+f,'utf8')).entries);
 mkdirSync('qa-reports/screenshots',{recursive:true});
 const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
