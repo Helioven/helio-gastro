@@ -85,6 +85,7 @@ jobs:
             scripts/test-fr-taberna-salinas-56.mjs \
             scripts/test-fr-taberna-la-sal-60.mjs \
             scripts/test-fr-el-pisto-62.mjs \
+            scripts/test-fr-rincon-beatillas-75.mjs \
             scripts/test-search-regression.mjs \
             scripts/test-filter-regression.mjs \
             scripts/test-comparator-regression.mjs \
