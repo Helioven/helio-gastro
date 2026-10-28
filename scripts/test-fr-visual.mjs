@@ -45,8 +45,15 @@ await main.goto('http://127.0.0.1:8765/index.html',{waitUntil:'domcontentloaded'
 await main.locator('#language-select').waitFor();
 const normalOptions=await main.locator('#language-select option').evaluateAll(options=>options.map(o=>o.value));
 if(normalOptions.includes('fr'))mainErrors.push('FR leaked into default public selector');
+if(normalOptions.join(',')!=='es,en')mainErrors.push('Unexpected public language options: '+normalOptions.join(','));
+const publicLabels=await main.locator('#language-select option').allTextContents();
+if(JSON.stringify(publicLabels)!==JSON.stringify(['🇪🇸 Español','🇬🇧 English']))mainErrors.push('Public language flags/labels incorrect: '+JSON.stringify(publicLabels));
+
 await main.goto('http://127.0.0.1:8765/index.html?qa_fr=1',{waitUntil:'domcontentloaded'});
 await main.locator('#language-select option[value="fr"]').waitFor({state:'attached'});
+const qaLabels=await main.locator('#language-select option').allTextContents();
+if(JSON.stringify(qaLabels)!==JSON.stringify(['🇪🇸 Español','🇬🇧 English','🇫🇷 Français (QA)']))mainErrors.push('QA language flags/labels incorrect: '+JSON.stringify(qaLabels));
+
 await main.locator('#language-select').selectOption('fr');
 await main.waitForFunction(()=>document.documentElement.lang==='fr'&&window.HelioGastroLanguage?.get()==='fr');
 await main.locator('#language-select').selectOption('en');
