@@ -712,3 +712,11 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Las traducciones mantienen denominaciones tradicionales y reservas sobre preparaciones y guarniciones no especificadas. Sigue pendiente revisión semántica y lingüística nativa, así como títulos, secciones y cobertura completa de interfaz francesa. No fusionar a `main` ni publicar todavía.
 
 - **Incidencia QA real (28/10/2026):** ejecución [#40661926971](https://github.com/Helioven/helio-gastro/actions/runs/40661926971) `FAIL`: `catalog-audit` PASS y `visual-qa` FAIL por `ENOENT` del archivo inexistente `batch-046-plateros-san-francisco.json`, citado por error en `scripts/test-fr-plateros-san-francisco-46.mjs`. El lote real es `batch-045`; corregida la ruta en commit `c9686a2a`. **Reejecución y cierre técnico confirmados por Helio el 28/10/2026:** [GitHub Actions #40662776332](https://github.com/Helioven/helio-gastro/actions/runs/40662776332) finalizó `SUCCESS`; se conserva el registro histórico del fallo y su corrección. No se han cambiado las traducciones ni la carta.
+
+
+### Taberna Salinas — francés QA (28/10/2026)
+
+- ID confirmado `taberna-salinas`: **56 entradas ES/EN** inventariadas; cinco lotes candidatos `translations/fr/batch-046-taberna-salinas.json` a `batch-050-taberna-salinas.json` (12+12+12+12+8), `meta.status=candidate_awaiting_semantic_review`.
+- Overlay experimental visible solo con `?qa_fr=1`: acumulado **545 descripciones francesas candidatas en 15 establecimientos**. Sin cambios en `data/places.json`, platos originales, precios ni formatos.
+- Prueba `scripts/test-fr-taberna-salinas-56.mjs` añadida a CI para navegador escritorio/móvil y comprobación de FR y conservación ES/EN. **Resultado CI pendiente de confirmación**, no declarar cierre técnico anticipado.
+- Se mantienen explícitas las incertidumbres originales sobre la procedencia de algunos productos (`Zuhetos`, `Moltalbán`) y sobre ingredientes/preparaciones no detallados; no reinterpretar ni corregir sin fuente. Revisión semántica y lingüística nativa aún pendiente, igual que títulos, secciones e interfaz FR completa. No fusionar esta rama con `main` ni publicar francés sin autorización.
