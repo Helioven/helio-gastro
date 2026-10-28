@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-san-miguel-el-pisto",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 3,
+      "itemIndex": 3,
+      "fr": "Cochifrito, cochon de lait frit ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 3,
+      "itemIndex": 4,
+      "fr": "Boudin noir à l’oignon frit, d’Espejo ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 3,
+      "itemIndex": 5,
+      "fr": "Filet mignon de porc ibérique au vin oloroso ; environ 200 g."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 4,
+      "itemIndex": 0,
+      "fr": "Longe de bœuf ; préparation et accompagnements non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 4,
+      "itemIndex": 1,
+      "fr": "Presa de porc ibérique ; préparation et accompagnements non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 4,
+      "itemIndex": 2,
+      "fr": "Filet mignon de porc ibérique ; préparation et accompagnements non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 4,
+      "itemIndex": 3,
+      "fr": "Filet de daim grillé ; mention figurant sur la carte de 2024."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 5,
+      "itemIndex": 0,
+      "fr": "Tripes de bœuf maison ; préparation et accompagnements non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 5,
+      "itemIndex": 1,
+      "fr": "Boulettes de viande en bouillon à la manière de grand-mère Loli ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 5,
+      "itemIndex": 2,
+      "fr": "Pieds de porc en sauce ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 5,
+      "itemIndex": 3,
+      "fr": "Joues de porc ibérique au vin vieux ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 5,
+      "itemIndex": 4,
+      "fr": "Ragoût de queue de bœuf ; autres détails non précisés."
+    }
+  ]
+}
