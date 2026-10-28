@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-el-abuelo",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 20,
+      "fr": "Abats à l’ail."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 21,
+      "fr": "Torreznos grillés à la plancha."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 22,
+      "fr": "Criadillas frites (testicules)."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 23,
+      "fr": "Chorizo au vin."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 24,
+      "fr": "Boudin noir frit."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 25,
+      "fr": "Croquettes maison."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 26,
+      "fr": "Filet mignon en sauce."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 27,
+      "fr": "Salmorejo cordobés."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 28,
+      "fr": "Fèves fraîches au jambon."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 29,
+      "fr": "Pisto aux légumes avec œuf."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 30,
+      "fr": "Pomme de terre farcie."
+    }
+  ]
+}
