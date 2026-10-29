@@ -17,7 +17,9 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1365,height:900}}
   await page.locator('#language-select').selectOption('fr');
   await page.evaluate(id=>showPlace(state.places.find(p=>p.id===id),false),id);
   const fr=await page.locator('#detail-content [data-dish-explanation]:visible').allTextContents();
-  if(fr.length!==entries.length||fr.some((value,i)=>value!==entries[i].fr))errors.push('FR visible text count/order mismatch: '+fr.length);
+  if(fr.length!==entries.length)errors.push('FR visible count '+fr.length+'; expected '+entries.length);
+  const mismatches=fr.flatMap((actual,i)=>actual===entries[i]?.fr?[]:[{index:i,section:entries[i]?.sectionIndex,item:entries[i]?.itemIndex,expected:entries[i]?.fr,actual}]);
+  if(mismatches.length)errors.push('FR text/order differences: '+JSON.stringify(mismatches.slice(0,5)));
   const es=[];
   for(const lang of ['es','en']){
    await page.locator('#language-select').selectOption(lang);
