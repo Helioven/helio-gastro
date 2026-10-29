@@ -93,3 +93,10 @@
 - Añadido al cargador experimental `app.js` solo para `?qa_fr=1`, preservando ES/EN y `data/places.json`. El test acumulativo de Don Pepe ya detecta dinámicamente los lotes, por lo que no se cambia su total manualmente.
 - Cobertura propuesta: **59/103** entradas del establecimiento, **44 pendientes**; total experimental esperado: **974** traducciones candidatas en **85** lotes. No equivale a aprobación editorial ni a publicación.
 - **QA del lote 085: aún pendiente de verificación en GitHub Actions** (escritorio/móvil y suites integrales). No marcar PASS antes del resultado.
+
+## CI del lote 085 — evidencia visual (29/10/2026)
+
+- Captura facilitada por Helio: ejecución **#396 FAIL** en commit de creación del lote; **#397 SUCCESS** al incorporar el lote en el cargador QA; **#398 SUCCESS** en la actualización documental posterior.
+- El último estado visible es PASS del workflow; se registra **cierre técnico del lote 085** sobre el estado #398, no aprobación lingüística.
+- Posible causa del FAIL #396: el test dinámico detectaba el nuevo archivo antes de que el cargador lo incluyera, pero **sin los logs no puede confirmarse**. Conservar el FAIL en el historial.
+- Cobertura del establecimiento: 59/103 candidatos; 44 pendientes. Sin cambios en carta original ni publicación de francés.
