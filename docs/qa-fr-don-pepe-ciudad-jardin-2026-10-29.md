@@ -26,3 +26,10 @@
 - Se corrigió el test en el commit `6f238c2a63c002f3b1cd7c301b39d5cb45ab28c5`: compara ES/EN de la vista QA con la vista pública original, en lugar de exigir 103 visibles.
 - **Helio confirmó PASS de la ejecución posterior** el 29/10/2026. Se registra **cierre técnico del lote 081 (12 entradas)** basado en esa comprobación comunicada; no se afirma un ID de ejecución no aportado.
 - Quedan **91 entradas ES/EN pendientes de lote FR** en Don Pepe Ciudad Jardín, según el inventario anterior, sujeto a actualización. La revisión semántica y lingüística de las traducciones sigue pendiente; no equivale a autorización para fusionar a `main` o publicar francés.
+
+## Confirmación de inventario posterior al lote 081 (29/10/2026)
+
+- Helio confirmó **PASS** de GitHub Actions tras el commit `f93fe26fe44b3593ddec87638e4bf514f448a849`, relativo a la actualización del inventario `scripts/inspect-next-fr-restaurant.mjs`.
+- Se registra como **prueba técnica superada según confirmación del responsable**, sin atribuir número de ejecución no aportado.
+- Este PASS no significa que se haya creado el lote 082: siguen pendientes recuperar y cotejar los siguientes textos ES/EN, preparar traducciones candidatas e integrarlas con su QA específico.
+- Se mantienen 12/103 descripciones candidatas para Don Pepe Ciudad Jardín y 91 sin lote; sin cambios en carta original ni en `main`.
