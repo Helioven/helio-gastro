@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "moriles-ribera",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 9,
+      "itemIndex": 6,
+      "fr": "Blanc de poulet à la plancha avec frites."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 10,
+      "itemIndex": 0,
+      "fr": "Assiette composée de longe de porc conservée, jambon serrano, chorizo, boudin noir et pommes de terre."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 10,
+      "itemIndex": 1,
+      "fr": "Assiette composée de flamenquín, aubergines frites, œufs et pommes de terre."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 0,
+      "fr": "Flan accompagné de glace à la vanille."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 1,
+      "fr": "Gachas sucrées traditionnelles aux raisins secs et aux noix."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 2,
+      "fr": "Dessert à l’orange façon Moriles."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 3,
+      "fr": "Crème dessert espagnole avec biscuit María."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 4,
+      "fr": "Pastel cordobés accompagné de glace à la vanille."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 5,
+      "fr": "Cheesecake de Moriles à la pâte de coing."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 6,
+      "fr": "Tocino de cielo, dessert traditionnel aux jaunes d’œufs, accompagné de glace au touron."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 7,
+      "fr": "Torrija fourrée à la crème, avec glace à la vanille."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 8,
+      "fr": "Cœur de mousse à la vanille, arc de framboise et enrobage de chocolat."
+    }
+  ]
+}
