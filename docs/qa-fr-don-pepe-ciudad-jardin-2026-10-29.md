@@ -131,3 +131,11 @@
 - Se registra **cierre técnico de las 12 descripciones candidatas del lote 087**, con 83/103 acumuladas para Don Pepe Ciudad Jardín y 20 entradas ES/EN pendientes de traducción.
 - El PASS técnico no equivale a revisión semántica o lingüística nativa, ni autoriza publicar o fusionar el francés a `main`. No se ha modificado `data/places.json`.
 - Próximo paso: inventario real de las siguientes entradas para el lote 088 y QA incremental.
+
+## Lote 088 — bocadillos y tostadas (29/10/2026)
+
+- Fuente: 12 pares ES/EN aportados por Helio, índices 15:4–15:5 y 16:0–16:9.
+- Candidatas FR creadas en `translations/fr/batch-088-don-pepe-ciudad-jardin.json`, e incluidas en `app.js` exclusivamente con `?qa_fr=1`. Los formatos baguette/tostada se basan en los textos EN del catálogo, sin alterar los títulos ES.
+- Se conservan las marcas/nombres Zas, Tulipán, sobrasada, manteca colorá y Don Pepe. Sin importes ni ingredientes añadidos.
+- Cobertura esperada: **95/103** descripciones candidatas en Don Pepe Ciudad Jardín (8 pendientes); overlay total previsto **1010 candidatas en 88 lotes**.
+- El test visual acumulado obtiene los lotes dinámicamente y ordena las entradas por sección/ítem. **CI del 088 pendiente de verificar**; revisión lingüística francesa todavía pendiente. No modificar `data/places.json` ni fusionar a `main`.
