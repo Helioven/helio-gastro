@@ -783,3 +783,12 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - **Defecto y corrección verificados:** en el lote 086 el test acumulativo comparaba el orden de los archivos frente al orden de las secciones de la carta; tras ordenar por `sectionIndex`/`itemIndex` en `scripts/test-fr-don-pepe-ciudad-jardin-12.mjs` (commit `1c01ef1`), Helio confirmó PASS. El test descubre automáticamente los lotes de Don Pepe, sin un recuento fijo; cubre escritorio, móvil y comparación ES/EN con la versión sin overlay.
 - **Alcance estricto:** los textos FR siguen siendo **candidatos pendientes de revisión semántica y lingüística**, no traducciones editoriales aprobadas. No se han traducido necesariamente títulos, secciones ni toda la interfaz, ni se autoriza publicación. La carta `data/places.json` y la rama pública `main` permanecen sin cambios por estos lotes. El overlay se activa solo con `?qa_fr=1`.
 - **Siguiente paso:** consultar `fr-next-restaurant.json` / inventario del `catalog-audit` actualizado para identificar el próximo establecimiento con cobertura pendiente. No reabrir Don Pepe Ciudad Jardín salvo incidencia documentada ni alterar las prioridades de la hoja de ruta.
+
+
+### Moriles Ribera — lote francés 090 (29/10/2026)
+
+- **Cierre técnico QA:** 12 descripciones francesas candidatas (índices 0:0–0:11), archivo `translations/fr/batch-090-moriles-ribera.json`, integradas exclusivamente en el overlay `?qa_fr=1` de la rama `feature/fr-integration-qa-20261027`.
+- **Pruebas confirmadas:** GitHub Actions #419, #420, #421 y **#422** finalizaron en SUCCESS; la última incluye `scripts/test-fr-moriles-ribera-12.mjs` para escritorio/móvil y contraste ES/EN con la versión sin overlay. Evidencia: https://github.com/Helioven/helio-gastro/actions/runs/40847546785.
+- **Cobertura parcial:** 12 de 214 descripciones iniciales del establecimiento, 202 pendientes. Acumulado de propuestas FR de la rama: 1.030 descripciones en 90 lotes, 22 establecimientos con al menos una propuesta; **solo 21 completos según el inventario previo**.
+- **Alcance:** no se modifica `data/places.json`, los precios, los formatos ni la rama `main`. La revisión semántica y lingüística nativa, títulos, secciones e interfaz francesa general siguen pendientes; PASS técnico no equivale a aprobación editorial ni publicación.
+- **Próximo paso:** lote 091 con las siguientes entradas pendientes según inventario de la rama, verificando índices y textos ES/EN antes de traducir y repitiendo QA/regresión.
