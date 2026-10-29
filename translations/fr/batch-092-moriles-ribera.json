@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "moriles-ribera",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 1,
+      "itemIndex": 12,
+      "fr": "Pommes de terre façon bravas."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 1,
+      "itemIndex": 13,
+      "fr": "Pommes de terre à l’aïoli."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 1,
+      "itemIndex": 14,
+      "fr": "Salmorejo au jambon sec."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 1,
+      "itemIndex": 15,
+      "fr": "Salade froide de fruits de mer."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 1,
+      "itemIndex": 16,
+      "fr": "Tartare de thon."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 1,
+      "itemIndex": 17,
+      "fr": "Tortilla de pommes de terre préparée à la minute."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 1,
+      "itemIndex": 18,
+      "fr": "Tortilla de pommes de terre préparée à la minute, accompagnée de salmorejo et de jambon ibérique."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 1,
+      "itemIndex": 19,
+      "fr": "Tortillita de camarones (beignet traditionnel aux petites crevettes)."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 2,
+      "itemIndex": 0,
+      "fr": "Jambon ibérique de bellota, issu de porcs nourris aux glands."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 2,
+      "itemIndex": 1,
+      "fr": "Chorizo ibérique de bellota, issu de porcs nourris aux glands."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 2,
+      "itemIndex": 2,
+      "fr": "Salchichón ibérique de bellota, issu de porcs nourris aux glands."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 2,
+      "itemIndex": 3,
+      "fr": "Caña de lomo ibérique de bellota (longe de porc séchée, issu de porcs nourris aux glands)."
+    }
+  ]
+}
