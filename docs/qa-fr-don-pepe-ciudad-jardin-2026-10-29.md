@@ -49,3 +49,11 @@
 - #379 corresponde al commit `3a4e0d40a7d8cf41856463369aef252b6debb089` (integración del overlay), mientras #380 incluye la ampliación de la prueba a 24 entradas y #381 registra documentación. **El estado posterior visible es PASS**.
 - El paso y mensaje exactos que provocaron el fallo #379 **no constan en la captura**; no atribuirle una causa ni afirmar que se corrigió un defecto concreto sin logs. Conservar como incidencia histórica pendiente de análisis causal si procede.
 - **QA técnico del estado #381:** PASS conforme a la evidencia visual aportada por Helio. No confundirlo con aprobación semántica/lingüística nativa ni con publicación.
+
+## Lote 083 — integración experimental (29/10/2026)
+
+- Fuente: 12 pares ES/EN de la tabla del inventario entregada por Helio (índices 3:1–3:3, 4:0–4:5, 5:0–5:2).
+- Creadas 12 traducciones candidatas en `translations/fr/batch-083-don-pepe-ciudad-jardin.json`. `S/T` se mantiene literalmente porque no se ha acreditado su significado. Se conservan denominaciones tradicionales de platos y no se modifican ingredientes, formatos ni precios.
+- `app.js` actualizado únicamente en la rama QA para incluir el lote con `?qa_fr=1`. Acumulado **previsto**: 951 descripciones candidatas en 83 lotes; Don Pepe 36/103 (67 pendientes).
+- Prueba existente `scripts/test-fr-don-pepe-ciudad-jardin-12.mjs` ampliada a las 36 traducciones acumuladas en escritorio y móvil, con comparación ES/EN frente a base pública. Informe: `fr-don-pepe-ciudad-jardin-36.json`.
+- **Estado:** implementación completada; CI/regresión del lote 083 todavía sin resultado confirmado. Traducciones pendientes de revisión semántica y lingüística. No fusionar a `main` ni desplegar.
