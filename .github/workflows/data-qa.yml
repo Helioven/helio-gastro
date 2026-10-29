@@ -104,7 +104,7 @@ jobs:
             scripts/test-fr-el-pisto-62.mjs \
             scripts/test-fr-rincon-beatillas-75.mjs \
             scripts/test-fr-la-bandera-84.mjs \
-            scripts/test-fr-la-cazuela-36.mjs \
+            scripts/test-fr-la-cazuela-48.mjs \
             scripts/test-search-regression.mjs \
             scripts/test-filter-regression.mjs \
             scripts/test-comparator-regression.mjs \
