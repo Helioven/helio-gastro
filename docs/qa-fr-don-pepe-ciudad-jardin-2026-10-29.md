@@ -116,3 +116,11 @@
 - Corrección en `scripts/test-fr-don-pepe-ciudad-jardin-12.mjs`, commit `1c01ef1c3c455090bf7a4d2b943751a359d57e56`: ordenar por `sectionIndex` e `itemIndex` antes de comparar.
 - **Helio confirmó PASS de la nueva ejecución** el 29/10/2026. **Lote 086 cerrado técnicamente** (12 nuevas candidatas; 71/103 acumuladas en Don Pepe, 32 pendientes). No se atribuye ID de ejecución no facilitado ni se confunde PASS técnico con aprobación lingüística.
 - Ningún cambio en `data/places.json` ni en `main`. Traducciones francesas aún candidatas y no publicadas.
+
+## Lote 087 — implementación experimental (29/10/2026)
+
+- Fuente: 12 entradas ES/EN aportadas por Helio, índices 12:1–12:4, 13:0–13:2, 14:0, 15:0–15:3.
+- Creado `translations/fr/batch-087-don-pepe-ciudad-jardin.json` (12 candidatas) e incorporado exclusivamente al cargador de `?qa_fr=1`.
+- El menú del día mantiene la advertencia de que cambia a diario y debe verificarse precio y disponibilidad. Las descripciones de bocadillos se traducen tomando como contexto la columna inglesa, sin alterar las etiquetas originales ES.
+- Cobertura candidata prevista Don Pepe **83/103** (20 pendientes), total experimental **998 candidatas en 87 lotes**.
+- El test acumulado de Don Pepe descubre lotes automáticamente y ordena por sección/ítem; no se ha modificado. **Regresión CI del lote 087 pendiente de confirmar**. Revisión semántica/lingüística francesa pendiente; no fusionar con `main`.
