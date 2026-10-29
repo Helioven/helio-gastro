@@ -71,3 +71,10 @@
 - `app.js` integra el lote exclusivamente en `?qa_fr=1`; total esperado del overlay 963 entradas / 84 lotes. Don Pepe: **48/103 candidatas**, 55 pendientes.
 - Prueba automatizada acumulada ampliada a 48 entradas, con comparación ES/EN respecto a interfaz pública en escritorio y móvil; informe `fr-don-pepe-ciudad-jardin-48.json`.
 - **Estado: integración realizada, CI y QA técnico del lote 084 aún pendientes de confirmar.** Revisión semántica y lingüística nativa pendiente. Sin fusión a `main` ni cambios en `data/places.json`.
+
+## Regresión recurrente durante la integración de nuevos lotes (29/10/2026)
+
+- Captura aportada por Helio: #388 PASS, #389 FAIL, #390 PASS y #391 PASS. La ejecución #389 corresponde a integrar el lote 084 mientras el test de navegador seguía esperando 36 descripciones; #390 ya incluía la ampliación a 48. **Hipótesis de causa probable**, no diagnóstico del log: expectativas fijas desincronizadas entre commits consecutivos.
+- Mitigación implementada en commit `95247a0`: el test de Don Pepe descubre automáticamente todos los archivos `batch-*-don-pepe-ciudad-jardin.json` y compara el número visible contra `entries.length`, en vez de mantener la lista y el total manualmente. El informe ahora se guarda con nombre estable `fr-don-pepe-ciudad-jardin-latest.json`.
+- Esta corrección del test no elimina las listas y totales fijos del cargador de `app.js`. En futuros lotes, actualizar el cargador y comprobar en un mismo conjunto de cambios antes de considerar el CI definitivo. Evitar declarar la causa confirmada sin logs.
+- **Estado de la nueva mitigación:** commit creado, ejecución CI aún no verificada. La revisión lingüística permanece pendiente y `main` continúa fuera del alcance.
