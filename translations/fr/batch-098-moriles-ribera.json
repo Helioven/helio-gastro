@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "moriles-ribera",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 18,
+      "fr": "Crevettes blanches de Huelva bouillies."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 19,
+      "fr": "Palourdes en sauce mariniere."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 20,
+      "fr": "Coquinas de Isla Cristina."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 21,
+      "fr": "Pave de morue salee avec pisto de legumes."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 22,
+      "fr": "Pave de morue salee en sauce aux crevettes."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 23,
+      "fr": "Tentacule de poulpe grille."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 24,
+      "fr": "Poulpe a la galicienne, pulpo a feira."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 25,
+      "fr": "Saumon grille a l orange avec petites pommes de terre et jeunes carottes."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 0,
+      "fr": "Chorizo au vin."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 1,
+      "fr": "Chorizo criollo grille."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 2,
+      "fr": "Chorizo frit."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 3,
+      "fr": "Cochifrito cordobes confit, specialite traditionnelle."
+    }
+  ]
+}
