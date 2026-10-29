@@ -108,3 +108,11 @@
 - Cobertura candidata prevista de Don Pepe: **71/103**, 32 pendientes; acumulado experimental previsto **986 traducciones en 86 lotes**.
 - El test dinámico de Don Pepe descubre el archivo nuevo y compara su contenido en escritorio/móvil sin modificar su recuento manual.
 - **Pendiente:** confirmar resultados de GitHub Actions para el estado integrado, revisar semántica y lingüística francesa. No se ha modificado `data/places.json` ni `main`.
+
+## Cierre técnico del lote 086 — confirmado por Helio (29/10/2026)
+
+- Primeras ejecuciones del lote 086: FAIL en `visual-qa`. La prueba mostraba 71 textos franceses visibles, pero la comparación contra la secuencia de los archivos fallaba tanto en escritorio como en móvil.
+- Diagnóstico: las entradas de lotes sucesivos no siempre llegan en el mismo orden que su posición en las secciones de la carta (por ejemplo, `8:10` se incorporó después de entradas de sección 9). El test comparaba el orden de archivos con el de renderizado.
+- Corrección en `scripts/test-fr-don-pepe-ciudad-jardin-12.mjs`, commit `1c01ef1c3c455090bf7a4d2b943751a359d57e56`: ordenar por `sectionIndex` e `itemIndex` antes de comparar.
+- **Helio confirmó PASS de la nueva ejecución** el 29/10/2026. **Lote 086 cerrado técnicamente** (12 nuevas candidatas; 71/103 acumuladas en Don Pepe, 32 pendientes). No se atribuye ID de ejecución no facilitado ni se confunde PASS técnico con aprobación lingüística.
+- Ningún cambio en `data/places.json` ni en `main`. Traducciones francesas aún candidatas y no publicadas.
