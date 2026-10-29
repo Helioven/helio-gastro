@@ -1,6 +1,6 @@
 import {chromium,devices} from 'playwright';
-import {readFileSync,mkdirSync,writeFileSync} from 'node:fs';
-const entries=['batch-081-don-pepe-ciudad-jardin.json','batch-082-don-pepe-ciudad-jardin.json','batch-083-don-pepe-ciudad-jardin.json','batch-084-don-pepe-ciudad-jardin.json'].flatMap(name=>JSON.parse(readFileSync('translations/fr/'+name,'utf8')).entries);
+import {readFileSync,readdirSync,mkdirSync,writeFileSync} from 'node:fs';
+const entries=readdirSync('translations/fr').filter(name=>/^batch-\d+-don-pepe-ciudad-jardin\.json$/.test(name)).sort().flatMap(name=>JSON.parse(readFileSync('translations/fr/'+name,'utf8')).entries);
 const id='cafeteria-don-pepe-ciudad-jardin';
 mkdirSync('qa-reports/screenshots',{recursive:true});
 const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
@@ -17,7 +17,7 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1365,height:900}}
   await page.locator('#language-select').selectOption('fr');
   await page.evaluate(id=>showPlace(state.places.find(p=>p.id===id),false),id);
   const fr=await page.locator('#detail-content [data-dish-explanation]:visible').allTextContents();
-  if(fr.length!==48||fr.some((value,i)=>value!==entries[i].fr))errors.push('FR visible text count/order mismatch: '+fr.length);
+  if(fr.length!==entries.length||fr.some((value,i)=>value!==entries[i].fr))errors.push('FR visible text count/order mismatch: '+fr.length);
   const es=[];
   for(const lang of ['es','en']){
    await page.locator('#language-select').selectOption(lang);
@@ -46,6 +46,6 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1365,height:900}}
 }
 await browser.close();
 const status=results.some(x=>x.errors.length)?'FAIL':'PASS';
-writeFileSync('qa-reports/fr-don-pepe-ciudad-jardin-48.json',JSON.stringify({status,results},null,2)+'\n');
+writeFileSync('qa-reports/fr-don-pepe-ciudad-jardin-latest.json',JSON.stringify({status,results},null,2)+'\n');
 console.log('FR DON PEPE CIUDAD JARDIN '+JSON.stringify({status,results}));
 if(status==='FAIL')process.exitCode=1;
