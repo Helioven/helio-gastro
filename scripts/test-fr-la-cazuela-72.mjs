@@ -1,11 +1,11 @@
 import {chromium,devices} from 'playwright';
 import {readFileSync,mkdirSync,writeFileSync} from 'node:fs';
-const filenames=["batch-073-la-cazuela-esparteria.json","batch-074-la-cazuela-esparteria.json","batch-075-la-cazuela-esparteria.json","batch-076-la-cazuela-esparteria.json","batch-077-la-cazuela-esparteria.json","batch-078-la-cazuela-esparteria.json"];
+const filenames=["batch-073-la-cazuela-esparteria.json","batch-074-la-cazuela-esparteria.json","batch-075-la-cazuela-esparteria.json","batch-076-la-cazuela-esparteria.json","batch-077-la-cazuela-esparteria.json","batch-078-la-cazuela-esparteria.json","batch-079-la-cazuela-esparteria.json"];
 const expected=filenames.flatMap(f=>JSON.parse(readFileSync('translations/fr/'+f,'utf8')).entries);
 mkdirSync('qa-reports/screenshots',{recursive:true});
 const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
 const results=[];
-for(const profile of [{name:'desktop',options:{viewport:{width:1725,height:900}}},{name:'mobile',options:devices['iPhone 13']}]){
+for(const profile of [{name:'desktop',options:{viewport:{width:1845,height:900}}},{name:'mobile',options:devices['iPhone 13']}]){
  const ctx=await browser.newContext(profile.options),page=await ctx.newPage(),issues=[];
  page.on('pageerror',e=>issues.push('JS: '+e.message));
  page.on('console',msg=>{if(msg.type()==='warning'&&msg.text().includes('French QA batch unavailable'))issues.push('French overlay loader: '+msg.text());});
@@ -22,9 +22,9 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1725,height:900}}
   await baseline.evaluate(()=>showPlace(state.places.find(p=>p.id==='la-cazuela-esparteria'),false));
   const originalEnglishTitles=await baseline.locator('#detail-content .menu-dish h4').allTextContents();
   await baseline.close();
-  if(originalDishNames.length<72)issues.push('Visible dish titles fewer than translated descriptions');
+  if(originalDishNames.length<84)issues.push('Visible dish titles fewer than translated descriptions');
   const fr=await page.locator('#detail-content [data-dish-explanation]:visible').allTextContents();
-  if(fr.length!==72)issues.push('French explanations: '+fr.length+' expected 72');
+  if(fr.length!==84)issues.push('French explanations: '+fr.length+' expected 84');
   if(fr.some((text,i)=>text!==expected[i]?.fr))issues.push('French translation mismatch');
   if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1))issues.push('Horizontal overflow');
   await page.screenshot({path:'qa-reports/screenshots/'+profile.name+'-la-cazuela-esparteria-fr.png',fullPage:true});
@@ -41,6 +41,6 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1725,height:900}}
 }
 await browser.close();
 const status=results.some(r=>r.issues.length)?'FAIL':'PASS';
-writeFileSync('qa-reports/fr-la-cazuela-esparteria-72.json',JSON.stringify({status,results},null,2)+'\n');
+writeFileSync('qa-reports/fr-la-cazuela-esparteria-84.json',JSON.stringify({status,results},null,2)+'\n');
 console.log('FR LA CAZUELA '+JSON.stringify({status,results}));
 if(status==='FAIL')process.exitCode=1;
