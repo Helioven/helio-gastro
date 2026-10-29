@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "cafeteria-don-pepe-ciudad-jardin",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 0,
+      "itemIndex": 0,
+      "fr": "Plats mijotés."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 0,
+      "itemIndex": 1,
+      "fr": "Migas camperas (plat traditionnel à base de miettes de pain)."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 0,
+      "itemIndex": 2,
+      "fr": "Soupe de picadillo, bouillon au poulet et au jambon."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 0,
+      "itemIndex": 3,
+      "fr": "Salade composée."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 0,
+      "itemIndex": 4,
+      "fr": "Salade César."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 0,
+      "itemIndex": 5,
+      "fr": "Spaghettis à la bolognaise, à la carbonara ou à la sauce roquefort."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 1,
+      "itemIndex": 0,
+      "fr": "Boulettes de viande en sauce."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 1,
+      "itemIndex": 1,
+      "fr": "Arroz a la cubana, riz à la cubaine accompagné d’un œuf au plat."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 1,
+      "itemIndex": 2,
+      "fr": "Flamenquín."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 1,
+      "itemIndex": 3,
+      "fr": "Filete San Jacobo, escalope panée au jambon et au fromage."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 1,
+      "itemIndex": 4,
+      "fr": "Churrasco de poulet grillé."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 1,
+      "itemIndex": 5,
+      "fr": "Filet de bœuf grillé."
+    }
+  ]
+}
