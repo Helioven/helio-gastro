@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "moriles-ribera",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 28,
+      "fr": "Burger de boeuf Retinta avec jambon iberique, fromage de brebis, pommes de terre en quartiers et piments de Padron."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 8,
+      "itemIndex": 0,
+      "fr": "Rabo de toro, queue de taureau traditionnelle."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 8,
+      "itemIndex": 1,
+      "fr": "Joues de porc iberique au sirop de canne."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 8,
+      "itemIndex": 2,
+      "fr": "Tripes avec pieds de porc et pois chiches."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 8,
+      "itemIndex": 3,
+      "fr": "Veau en sauce."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 8,
+      "itemIndex": 4,
+      "fr": "Longe de porc a la tomate."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 9,
+      "itemIndex": 0,
+      "fr": "Flamenquin au jambon cuit avec frites."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 9,
+      "itemIndex": 1,
+      "fr": "San Jacobo pane au jambon et au fromage avec frites."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 9,
+      "itemIndex": 2,
+      "fr": "Deux oeufs avec frites."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 9,
+      "itemIndex": 3,
+      "fr": "Deux mini burgers de poulet avec frites."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 9,
+      "itemIndex": 4,
+      "fr": "Nuggets de poulet avec frites."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 9,
+      "itemIndex": 5,
+      "fr": "Blanc de poulet pane avec frites."
+    }
+  ]
+}
