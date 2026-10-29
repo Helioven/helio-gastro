@@ -139,3 +139,10 @@
 - Se conservan las marcas/nombres Zas, Tulipán, sobrasada, manteca colorá y Don Pepe. Sin importes ni ingredientes añadidos.
 - Cobertura esperada: **95/103** descripciones candidatas en Don Pepe Ciudad Jardín (8 pendientes); overlay total previsto **1010 candidatas en 88 lotes**.
 - El test visual acumulado obtiene los lotes dinámicamente y ordena las entradas por sección/ítem. **CI del 088 pendiente de verificar**; revisión lingüística francesa todavía pendiente. No modificar `data/places.json` ni fusionar a `main`.
+
+## Cierre técnico del lote 088 — evidencia CI (29/10/2026)
+
+- Captura de GitHub Actions facilitada por Helio: ejecución **#410 FAIL** tras crear inicialmente el fichero candidato; ejecuciones posteriores **#411 PASS** (cargador QA actualizado) y **#412 PASS** (documentación).
+- **Cierre técnico confirmado sobre la ejecución #412**: 12 candidatas nuevas; cobertura acumulada Don Pepe Ciudad Jardín **95/103**, quedan 8 entradas ES/EN pendientes.
+- El fallo intermedio #410 se conserva en el historial; su causa concreta no se considera demostrada sin examinar sus logs. El resultado PASS no equivale a aprobación editorial ni lingüística de las traducciones.
+- Solo rama experimental y `?qa_fr=1`; `data/places.json` y `main` intactos.
