@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "cafeteria-don-pepe-ciudad-jardin",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 3,
+      "itemIndex": 1,
+      "fr": "Flamenquín au jambon."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 3,
+      "itemIndex": 2,
+      "fr": "Aubergines frites au miel."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 3,
+      "itemIndex": 3,
+      "fr": "Salmorejo."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 4,
+      "itemIndex": 0,
+      "fr": "Salmorejo (S/T)."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 4,
+      "itemIndex": 1,
+      "fr": "Ensaladilla rusa, salade de pommes de terre à la russe (S/T)."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 4,
+      "itemIndex": 2,
+      "fr": "Ensaladilla aux crevettes."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 4,
+      "itemIndex": 3,
+      "fr": "Fromage pur au lait de brebis."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 4,
+      "itemIndex": 4,
+      "fr": "Anchois marinés au vinaigre."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 4,
+      "itemIndex": 5,
+      "fr": "Croquettes maison."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 5,
+      "itemIndex": 0,
+      "fr": "Plato nido : chanquetes, pisto et œufs au plat."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 5,
+      "itemIndex": 1,
+      "fr": "Aubergines au miel."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 5,
+      "itemIndex": 2,
+      "fr": "Aubergines frites."
+    }
+  ]
+}
