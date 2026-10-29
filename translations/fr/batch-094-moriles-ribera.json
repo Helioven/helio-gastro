@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "moriles-ribera",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 3,
+      "itemIndex": 2,
+      "fr": "Anchois, fromage de Zuheros et confiture de tomates."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 3,
+      "itemIndex": 3,
+      "fr": "Filet de cerf, fromage grille et oignons caramelises."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 3,
+      "itemIndex": 4,
+      "fr": "Saumon fume."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 3,
+      "itemIndex": 5,
+      "fr": "Saumon fume avec fromage bleu de Los Pedroches."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 3,
+      "itemIndex": 6,
+      "fr": "Sardine fumee et salmorejo."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 3,
+      "itemIndex": 7,
+      "fr": "Tartare de thon."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 4,
+      "itemIndex": 0,
+      "fr": "Risotto aux cepes et autres champignons."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 4,
+      "itemIndex": 1,
+      "fr": "Risotto a la queue de taureau."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 4,
+      "itemIndex": 2,
+      "fr": "Risotto a la morue salee et a la sardine fumee."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 4,
+      "itemIndex": 3,
+      "fr": "Spaghetti carbonara."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 4,
+      "itemIndex": 4,
+      "fr": "Spaghetti bolognaise."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 5,
+      "itemIndex": 0,
+      "fr": "Huevos a la flamenca, oeufs au jambon et au chorizo."
+    }
+  ]
+}
