@@ -33,3 +33,12 @@
 - Se registra como **prueba técnica superada según confirmación del responsable**, sin atribuir número de ejecución no aportado.
 - Este PASS no significa que se haya creado el lote 082: siguen pendientes recuperar y cotejar los siguientes textos ES/EN, preparar traducciones candidatas e integrarlas con su QA específico.
 - Se mantienen 12/103 descripciones candidatas para Don Pepe Ciudad Jardín y 91 sin lote; sin cambios en carta original ni en `main`.
+
+## Lote 082 — preparación e integración QA (29/10/2026)
+
+- **Fuente:** tabla de 12 pares ES/EN (índices 1:6, 1:7, 2:0–2:8 y 3:0) del resumen de inventario de GitHub Actions aportada por Helio.
+- **Implementado:** `translations/fr/batch-082-don-pepe-ciudad-jardin.json` con 12 textos franceses **candidatos**, integrados en el overlay `?qa_fr=1` (sin modificar la carta original).
+- **Acumulado previsto:** 24/103 descripciones de Don Pepe Ciudad Jardín; 79 pendientes. Total experimental previsto: 939 candidatas en 82 lotes, sujeto a validación CI.
+- **Prueba automatizada:** el script histórico `scripts/test-fr-don-pepe-ciudad-jardin-12.mjs` se ha ampliado para comprobar las 24 traducciones y conservación ES/EN en escritorio y móvil. Su nombre de archivo histórico se mantiene para evitar modificar el workflow en esta tanda; el informe emitido es `fr-don-pepe-ciudad-jardin-24.json`.
+- **Control editorial:** `pescadito`, `migas`, `pisto`, `cachopo`, `torreznos` y `gulas` conservan referencia a denominaciones tradicionales; no se han introducido precios, formatos ni ingredientes que no estén respaldados en ES/EN. Revisar especialmente matices de `gulas` y `huevos rotos` en revisión lingüística.
+- **Estado:** implementación en rama QA realizada; **CI y QA técnico del nuevo lote pendientes de confirmar**, al igual que revisión semántica/lingüística nativa. Sin publicación ni fusión a `main`.
