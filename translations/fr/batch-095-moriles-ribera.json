@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "moriles-ribera",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 5,
+      "itemIndex": 1,
+      "fr": "Œufs à la campagne avec pommes de terre et gulas (substitut de civelles)."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 5,
+      "itemIndex": 2,
+      "fr": "Œufs brouillés aux asperges, au saumon fumé et aux crevettes."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 5,
+      "itemIndex": 3,
+      "fr": "Œufs brouillés à la morue salée."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 5,
+      "itemIndex": 4,
+      "fr": "Œufs brouillés aux asperges et au jambon."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 5,
+      "itemIndex": 5,
+      "fr": "Œufs brouillés aux jeunes fèves et au jambon."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 5,
+      "itemIndex": 6,
+      "fr": "Œufs brouillés aux petits pois, aux champignons, à l’oignon et au jambon."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 5,
+      "itemIndex": 7,
+      "fr": "Artichauts à la montillana (façon Montilla)."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 5,
+      "itemIndex": 8,
+      "fr": "Aubergines en beignets au sirop de canne à sucre."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 5,
+      "itemIndex": 9,
+      "fr": "Aubergines au salmorejo et au jambon."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 5,
+      "itemIndex": 10,
+      "fr": "Aubergines frites."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 5,
+      "itemIndex": 11,
+      "fr": "Cèpes à la plancha avec jambon."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 5,
+      "itemIndex": 12,
+      "fr": "Cardons aux palourdes et aux crevettes."
+    }
+  ]
+}
