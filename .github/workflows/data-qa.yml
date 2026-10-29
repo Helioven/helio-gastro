@@ -46,7 +46,7 @@ jobs:
             console.log('| Índice | Plato | Español | Inglés |');
             console.log('|---|---|---|---|');
             for(const item of next.entries.slice(0,12)){
-              const safe=v=>String(v??'').replaceAll('|','\\\\|').replaceAll('\\n',' ');
+              const safe=v=>String(v??'').replaceAll('|','&#124;').replace(/\s+/g,' ').trim();
               console.log('| '+item.sectionIndex+':'+item.itemIndex+' | '+safe(item.name)+' | '+safe(item.es)+' | '+safe(item.en)+' |');
             }
             console.log('Fuente: catálogo y lotes reales de la rama QA. Traducciones todavía sin preparar.');
