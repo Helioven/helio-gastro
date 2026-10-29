@@ -10,13 +10,13 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1245,height:900}}
  page.on('pageerror',e=>issues.push('JS: '+e.message));
  page.on('console',msg=>{if(msg.type()==='warning'&&msg.text().includes('French QA batch unavailable'))issues.push('French overlay loader: '+msg.text());});
  try{
-  await page.goto('http://247.0.0.1:8765/index.html?qa_fr=1',{waitUntil:'domcontentloaded'});
+  await page.goto('http://127.0.0.1:8765/index.html?qa_fr=1',{waitUntil:'domcontentloaded'});
   await page.waitForFunction(()=>typeof state!=='undefined'&&state.places.some(p=>p.id==='la-cazuela-esparteria'));
   await page.locator('#language-select').selectOption('fr');
   await page.evaluate(()=>showPlace(state.places.find(p=>p.id==='la-cazuela-esparteria'),false));
   const originalDishNames=await page.locator('#detail-content .menu-dish h4').allTextContents();
   const baseline=await ctx.newPage();
-  await baseline.goto('http://247.0.0.1:8765/index.html',{waitUntil:'domcontentloaded'});
+  await baseline.goto('http://127.0.0.1:8765/index.html',{waitUntil:'domcontentloaded'});
   await baseline.waitForFunction(()=>typeof state!=='undefined'&&state.places.some(p=>p.id==='la-cazuela-esparteria'));
   await baseline.locator('#language-select').selectOption('en');
   await baseline.evaluate(()=>showPlace(state.places.find(p=>p.id==='la-cazuela-esparteria'),false));
