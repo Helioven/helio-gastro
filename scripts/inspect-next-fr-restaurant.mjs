@@ -26,6 +26,7 @@ for(const p of data){
 candidates.sort((a,b)=>a.pending.length-b.pending.length||a.id.localeCompare(b.id));
 console.log('FR-COVERAGE-INVENTORY '+JSON.stringify(candidates.map(({id,name,count,covered,pending})=>({id,name,count,covered,pending:pending.length}))));
 const next=candidates.find(p=>p.pending.length>0);
+// The next 12 untranslated ES/EN entries are printed in CI logs for traceable, small translation batches.
 console.log('FR-NEXT-CANDIDATE '+JSON.stringify(next?{id:next.id,name:next.name,count:next.count,covered:next.covered,pendingCount:next.pending.length,entries:next.pending.slice(0,12)}:null));
 
 mkdirSync('qa-reports',{recursive:true});
