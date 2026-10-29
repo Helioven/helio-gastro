@@ -799,3 +799,11 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - **Cierre técnico QA:** 12 nuevas traducciones candidatas, índices 1:0–1:11, en `translations/fr/batch-091-moriles-ribera.json`, añadidas al overlay exclusivamente bajo `?qa_fr=1`. Total parcial de Moriles Ribera: **24/214**; 190 descripciones iniciales pendientes.
 - **Evidencia:** Actions **#426 SUCCESS** (commit `a38f43a`), https://github.com/Helioven/helio-gastro/actions/runs/40849605993 . En #424 y #425 `catalog-audit` pasó y `visual-qa` falló porque el cargador aún no incluía el lote; el historial se conserva como regresión intermedia y su corrección mediante la integración del overlay.
 - **Alcance:** candidatas FR, no revisión lingüística nativa ni aprobación editorial; `data/places.json` y `main` intactos. Próximo lote 092: obtener los siguientes índices ES/EN desde el inventario antes de traducir.
+
+
+### Moriles Ribera — lote francés 092 (29/10/2026)
+
+- **QA técnico superado:** 12 descripciones francesas candidatas en `translations/fr/batch-092-moriles-ribera.json`, índices 1:12–1:19 y 2:0–2:3. La integración del overlay experimental se verificó en **GitHub Actions #429 SUCCESS** (commit `1215024`): https://github.com/Helioven/helio-gastro/actions/runs/40850271685.
+- **Trazabilidad de incidencias:** #428 finalizó en FAIL antes de incorporar el nuevo lote al cargador, mientras que la ejecución posterior #429 terminó en SUCCESS. Mantener ambas evidencias; no presentar el fallo intermedio como incidencia abierta sin nueva evidencia.
+- **Progreso Moriles Ribera:** 36/214 descripciones FR candidatas en los lotes 090–092; quedan 178 por preparar. Son propuestas aún pendientes de revisión semántica y lingüística, no francés aprobado para publicación.
+- **Sin alteraciones del catálogo:** `data/places.json`, precios, formatos y `main` no se modificaron. Próximo lote 093: obtener las siguientes entradas del inventario antes de traducir.
