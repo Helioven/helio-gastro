@@ -42,3 +42,10 @@
 - **Prueba automatizada:** el script histórico `scripts/test-fr-don-pepe-ciudad-jardin-12.mjs` se ha ampliado para comprobar las 24 traducciones y conservación ES/EN en escritorio y móvil. Su nombre de archivo histórico se mantiene para evitar modificar el workflow en esta tanda; el informe emitido es `fr-don-pepe-ciudad-jardin-24.json`.
 - **Control editorial:** `pescadito`, `migas`, `pisto`, `cachopo`, `torreznos` y `gulas` conservan referencia a denominaciones tradicionales; no se han introducido precios, formatos ni ingredientes que no estén respaldados en ES/EN. Revisar especialmente matices de `gulas` y `huevos rotos` en revisión lingüística.
 - **Estado:** implementación en rama QA realizada; **CI y QA técnico del nuevo lote pendientes de confirmar**, al igual que revisión semántica/lingüística nativa. Sin publicación ni fusión a `main`.
+
+## Seguimiento de CI del lote 082 — captura de Helio (29/10/2026)
+
+- Helio aportó captura de GitHub Actions con **#378 SUCCESS**, **#379 FAIL**, **#380 SUCCESS** y **#381 SUCCESS** en la rama experimental.
+- #379 corresponde al commit `3a4e0d40a7d8cf41856463369aef252b6debb089` (integración del overlay), mientras #380 incluye la ampliación de la prueba a 24 entradas y #381 registra documentación. **El estado posterior visible es PASS**.
+- El paso y mensaje exactos que provocaron el fallo #379 **no constan en la captura**; no atribuirle una causa ni afirmar que se corrigió un defecto concreto sin logs. Conservar como incidencia histórica pendiente de análisis causal si procede.
+- **QA técnico del estado #381:** PASS conforme a la evidencia visual aportada por Helio. No confundirlo con aprobación semántica/lingüística nativa ni con publicación.
