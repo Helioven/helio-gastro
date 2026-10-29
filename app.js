@@ -1,6 +1,8 @@
 'use strict';
 const state={places:[],filtered:[],selected:new Set(),favorites:new Set(),searched:false,appliedTerm:'',appliedScope:'dish',appliedPortion:'',appliedBudget:null,currentDetailId:null,mode:'comida'};
 const el=id=>document.getElementById(id);
+// Populate only after every French QA batch has passed validation.
+const qaFrenchPlaceIds=new Set();
 const MODE_CONFIG={
  desayuno:{label:'Desayunar',emoji:'☕',budgets:[3,5,7,10],dishes:['Tostadas','Churros','Molletes','Café','Bollería'],portions:[['unidad','Unidad'],['media-tostada','Media tostada'],['tostada-entera','Tostada entera'],['combinado','Desayuno combinado']],placeholder:'Tostadas, churros, molletes…'},
  comida:{label:'Comer',emoji:'🍽️',budgets:[10,15,20,30,50],dishes:['Flamenquín','Salmorejo','Rabo de toro','Croquetas','Mazamorra','Carrillada','Berenjenas','Pisto','Pescados y mariscos','Carnes y asados','Bocadillos y sándwiches','Guisos y cocina tradicional','Verduras y ensaladas','Tapas y raciones','Postres y dulces'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']],placeholder:'Flamenquín, salmorejo, carrillada…'},
@@ -940,7 +942,7 @@ function renderVenueMenuSections(panel,p){
   for(const dish of section.items){
    const entry=document.createElement('section');entry.className='menu-dish';
    const title=document.createElement('h4');title.dataset.keepDishSpanish='';title.textContent=dish.name;entry.append(title);
-   for(const language of ['es','en',...(window.HelioGastroLanguage?.qaFrenchEnabled?.()&&['la-montillana','churros-bar-marta','cafeteria-bar-la-jineta','la-tarterie-centro','taberna-el-abuelo','taberna-la-viuda','casa-rubio','taberna-el-numero-10','la-taberna-del-rio','taberna-rafae','cafeteria-don-pepe-centro','taberna-el-poema-alonso','dtapas-covap-cordoba','taberna-plateros-san-francisco','taberna-salinas','taberna-la-sal','taberna-san-miguel-el-pisto','rincon-beatillas','la-bandera-cafe'].includes(p.id)?['fr']:[])]){const value=language==='fr'?dish.fr:language==='en'?(typeof dish.en==='string'&&dish.en.trim()&&clean(dish.en)!==clean(dish.name)?dish.en:((p.id==='moriles-ribera')?morilesExplanation(dish.name):'')):dish.es;if(typeof value!=='string'||!value.trim()||clean(value)===clean(dish.name))continue;const description=document.createElement('small');description.className='dish-explanation detail-dish-explanation';description.dataset.dishExplanation='';description.dataset.explanationLanguage=language;description.textContent=value;description.hidden=(window.HelioGastroLanguage?.get()||'es')!==language;entry.append(description);}
+   for(const language of ['es','en',...(window.HelioGastroLanguage?.qaFrenchEnabled?.()&&qaFrenchPlaceIds.has(p.id)?['fr']:[])]){const value=language==='fr'?dish.fr:language==='en'?(typeof dish.en==='string'&&dish.en.trim()&&clean(dish.en)!==clean(dish.name)?dish.en:((p.id==='moriles-ribera')?morilesExplanation(dish.name):'')):dish.es;if(typeof value!=='string'||!value.trim()||clean(value)===clean(dish.name))continue;const description=document.createElement('small');description.className='dish-explanation detail-dish-explanation';description.dataset.dishExplanation='';description.dataset.explanationLanguage=language;description.textContent=value;description.hidden=(window.HelioGastroLanguage?.get()||'es')!==language;entry.append(description);}
    for(const price of dish.prices){
     const row=document.createElement('div');row.className='menu-price-row';
     const label=document.createElement('span');label.dataset.venueMenuPriceLabel=price.label||price.portion||'';label.textContent=venueMenuPriceLabel(label.dataset.venueMenuPriceLabel,window.HelioGastroLanguage?.get()==='en');
@@ -1357,11 +1359,12 @@ async function init(){
         const key=entry.placeId+':'+entry.sectionIndex+':'+entry.itemIndex;
         const target=data.find(p=>p.id===entry.placeId);
         const dish=target?.menuSections?.[entry.sectionIndex]?.items?.[entry.itemIndex];
-        if(!['la-montillana','churros-bar-marta','cafeteria-bar-la-jineta','la-tarterie-centro','taberna-el-abuelo','taberna-la-viuda','casa-rubio','taberna-el-numero-10','la-taberna-del-rio','taberna-rafae','cafeteria-don-pepe-centro','taberna-el-poema-alonso','dtapas-covap-cordoba','taberna-plateros-san-francisco','taberna-salinas','taberna-la-sal','taberna-san-miguel-el-pisto','rincon-beatillas','la-bandera-cafe'].includes(entry.placeId)||seen.has(key)||!dish?.es||!dish?.en||!entry.fr?.trim())throw Error('Invalid FR reference '+key);
+        if(!target||seen.has(key)||!dish?.es||!dish?.en||!entry.fr?.trim())throw Error('Invalid FR reference '+key);
         seen.add(key);updates.push([dish,entry.fr]);
       }
       if(updates.length!==826)throw Error('Invalid FR overlay total');
       for(const [dish,fr] of updates)dish.fr=fr;
+      for(const batch of batches)for(const entry of batch.entries)qaFrenchPlaceIds.add(entry.placeId);
     }catch(error){console.warn('French QA batch unavailable:',error.message)}
   }
   state.places=data.filter(place=>place?.hidden!==true).map(normalizePlace).filter(validPlace);
