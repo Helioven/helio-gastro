@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "moriles-ribera",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 4,
+      "fr": "Flamenquín au jambon serrano."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 5,
+      "fr": "Flamenquín au jambon ibérique et au fromage pur brebis."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 6,
+      "fr": "Brochette de filet mignon de porc ibérique avec cèpes, champignons de Paris et fromage bleu."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 7,
+      "fr": "Ris d’agneau de lait grillés à la braise."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 8,
+      "fr": "Rognons d’agneau de lait grillés à la braise."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 9,
+      "fr": "Jarret de porc rôti."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 10,
+      "fr": "Côtelettes d’agneau de lait."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 11,
+      "fr": "Entrecôte de bœuf maturé."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 12,
+      "fr": "Prix publié au kilogramme et non à la portion."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 13,
+      "fr": "Filet de bœuf de race Simmental."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 14,
+      "fr": "Poulet grillé à la braise avec ail et pommes de terre en rondelles."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 15,
+      "fr": "Longe de porc ibérique préparée traditionnellement en orza."
+    }
+  ]
+}
