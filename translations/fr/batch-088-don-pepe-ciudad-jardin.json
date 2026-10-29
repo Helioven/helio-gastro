@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "cafeteria-don-pepe-ciudad-jardin",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 15,
+      "itemIndex": 4,
+      "fr": "Baguette végétale (tomate, laitue, œuf et jambon cuit)."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 15,
+      "itemIndex": 5,
+      "fr": "Baguette à l’omelette nature."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 16,
+      "itemIndex": 0,
+      "fr": "Tartine à l’huile d’olive."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 16,
+      "itemIndex": 1,
+      "fr": "Tartine à l’huile d’olive à l’ail."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 16,
+      "itemIndex": 2,
+      "fr": "Tartine au pâté."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 16,
+      "itemIndex": 3,
+      "fr": "Tartine à la margarine Zas."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 16,
+      "itemIndex": 4,
+      "fr": "Tartine à la margarine Tulipán salée."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 16,
+      "itemIndex": 5,
+      "fr": "Tartine à la tomate et à l’huile d’olive."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 16,
+      "itemIndex": 6,
+      "fr": "Tartine à la crème de jambon cuit."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 16,
+      "itemIndex": 7,
+      "fr": "Tartine à la sobrasada."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 16,
+      "itemIndex": 8,
+      "fr": "Tartine à la manteca colorá maison."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 16,
+      "itemIndex": 9,
+      "fr": "Tartine Don Pepe (tomate et jambon)."
+    }
+  ]
+}
