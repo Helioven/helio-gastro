@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "moriles-ribera",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 0,
+      "itemIndex": 0,
+      "fr": "Salade romaine, tomates cerises, olives noires, croûtons, poulet pané et sauce César."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 0,
+      "itemIndex": 1,
+      "fr": "Laitue, tomate, oignon, poivron, maïs doux, thon et asperges blanches."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 0,
+      "itemIndex": 2,
+      "fr": "Jambon ibérique, fromage pur brebis, tomate rose, laitue romaine et olives noires."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 0,
+      "itemIndex": 3,
+      "fr": "Poivrons rouges et verts grillés accompagnés de ventrèche de thon."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 0,
+      "itemIndex": 4,
+      "fr": "Jeunes pousses mélangées, perdrix marinée à l’escabèche, fruits rouges, pignons de pin, raisins secs, tomates cerises et vinaigrette au Pedro Ximénez."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 0,
+      "itemIndex": 5,
+      "fr": "Anchois, asperges blanches, cœurs de palmier, ananas, tomate rose, maïs doux et sauce cocktail."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 0,
+      "itemIndex": 6,
+      "fr": "Jeunes pousses, tomates cerises, noix, raisins secs, fromage de chèvre et vinaigrette au Pedro Ximénez."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 0,
+      "itemIndex": 7,
+      "fr": "Cœurs de laitue à l’ail."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 0,
+      "itemIndex": 8,
+      "fr": "Cœurs de laitue à l’ail et au saumon."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 0,
+      "itemIndex": 9,
+      "fr": "Cœurs de laitue aux anchois et aux gulas (substitut de civelles) à l’ail."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 0,
+      "itemIndex": 10,
+      "fr": "Ventrèche de thon, tomate rose, concombre, poivrons rouges et verts et oignon."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 0,
+      "itemIndex": 11,
+      "fr": "Tomate et ventrèche de thon."
+    }
+  ]
+}
