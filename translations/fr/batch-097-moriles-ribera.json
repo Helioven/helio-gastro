@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "moriles-ribera",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 6,
+      "fr": "Petits calamars frits."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 7,
+      "fr": "Seiche frite."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 8,
+      "fr": "Poisson « japuta » mariné."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 9,
+      "fr": "Anémones de mer de Chipiona frites."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 10,
+      "fr": "Poisson « rosada » au citron."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 11,
+      "fr": "Assortiment de poissons frits pour deux personnes."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 12,
+      "fr": "Calamar grillé à la braise."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 13,
+      "fr": "Mérou à la plancha."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 14,
+      "fr": "Couteaux de mer à la plancha."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 15,
+      "fr": "Filet de thon saisi rapidement, avec fleur de sel."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 16,
+      "fr": "Espadon à la mode de Cordoue."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 17,
+      "fr": "Crevettes blanches de Huelva à la plancha."
+    }
+  ]
+}
