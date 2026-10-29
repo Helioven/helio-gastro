@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "moriles-ribera",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 16,
+      "fr": "Morceau « abanico » de porc ibérique."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 17,
+      "fr": "Churrasco de porc ibérique accompagné de deux sauces."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 18,
+      "fr": "Morceau « lagarto » de porc ibérique."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 19,
+      "fr": "Morceau « pluma » de porc ibérique."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 20,
+      "fr": "Morceau « presa » de porc ibérique."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 21,
+      "fr": "Morceau « secreto » de porc ibérique."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 22,
+      "fr": "Assortiment grillé de morceaux de porc ibérique et de saucisses, pour 2 personnes."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 23,
+      "fr": "Morceau « tomahawk » de porc ibérique (environ 270 g)."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 24,
+      "fr": "Filet mignon de porc ibérique à la sauce au poivre."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 25,
+      "fr": "Filet mignon de porc ibérique à la sauce au vin Pedro Ximénez."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 26,
+      "fr": "Filet mignon de porc ibérique au fromage bleu de la vallée de Los Pedroches."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 7,
+      "itemIndex": 27,
+      "fr": "Magret de canard mulard à la sauce aux oranges de Palma del Río."
+    }
+  ]
+}
