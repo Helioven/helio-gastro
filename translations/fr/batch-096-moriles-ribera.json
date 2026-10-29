@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "moriles-ribera",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 5,
+      "itemIndex": 13,
+      "fr": "Champignons au jambon et sauce verte."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 5,
+      "itemIndex": 14,
+      "fr": "Legumes grilles avec sauce romesco."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 5,
+      "itemIndex": 15,
+      "fr": "Legumes grilles avec fromage de chevre roti."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 5,
+      "itemIndex": 16,
+      "fr": "Piments de Padron."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 5,
+      "itemIndex": 17,
+      "fr": "Pisto cordobes aux legumes et oeuf."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 5,
+      "itemIndex": 18,
+      "fr": "Champignons grilles avec sauce verte."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 0,
+      "fr": "Poisson nomme arana sur la carte originale."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 1,
+      "fr": "Morue salee frite."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 2,
+      "fr": "Soldaditos de Pavia : beignets de morue salee."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 3,
+      "fr": "Anchois frits."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 4,
+      "fr": "Petits calamars frits."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 6,
+      "itemIndex": 5,
+      "fr": "Chanquetes cristal avec oeufs frits et ail frit."
+    }
+  ]
+}
