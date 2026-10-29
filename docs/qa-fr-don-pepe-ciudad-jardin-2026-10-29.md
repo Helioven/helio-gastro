@@ -85,3 +85,11 @@
 - **Lote 084:** cierre técnico conforme al PASS comunicado; cobertura candidata de Don Pepe: **48/103**, con **55 entradas** pendientes. La comprobación automática no sustituye la revisión semántica ni lingüística nativa.
 - La mejora pendiente del cargador `app.js` (lista y contador de lotes codificados manualmente) sigue abierta; no confundir el ajuste del test con la solución completa de esta dependencia.
 - `data/places.json` y `main` permanecen sin modificación por esta documentación. Próxima etapa: lote 085 con fuentes ES/EN originales y QA incremental.
+
+## Lote 085 — 11 entradas documentadas (29/10/2026)
+
+- Fuente: capturas aportadas por Helio, pares ES/EN de índices `8:3–8:9` y `9:0–9:3`. Hay **11 entradas visibles**, no 12: no se ha supuesto una entrada adicional.
+- Archivo `translations/fr/batch-085-don-pepe-ciudad-jardin.json`: 11 traducciones francesas candidatas (pendientes de revisión semántica y lingüística). Se mantienen las denominaciones `flamenquín`, `cochifrito` y `pisto`; la abreviatura `S/T` no se interpreta sin fuente.
+- Añadido al cargador experimental `app.js` solo para `?qa_fr=1`, preservando ES/EN y `data/places.json`. El test acumulativo de Don Pepe ya detecta dinámicamente los lotes, por lo que no se cambia su total manualmente.
+- Cobertura propuesta: **59/103** entradas del establecimiento, **44 pendientes**; total experimental esperado: **974** traducciones candidatas en **85** lotes. No equivale a aprobación editorial ni a publicación.
+- **QA del lote 085: aún pendiente de verificación en GitHub Actions** (escritorio/móvil y suites integrales). No marcar PASS antes del resultado.
