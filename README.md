@@ -848,3 +848,11 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - **Evidencia final:** GitHub Actions **#447 SUCCESS** sobre commit `5fb09bf`: https://github.com/Helioven/helio-gastro/actions/runs/40854442319. Se mantienen los fallos intermedios como historial de QA, no como fallos abiertos tras esta corrección.
 - **Cobertura parcial:** Moriles Ribera **96/214 descripciones FR candidatas**, 118 pendientes; lotes 090–097. PASS técnico no equivale a revisión lingüística nativa, aprobación editorial ni publicación.
 - Sin cambios en `data/places.json`, importes, formatos o `main`. **Siguiente lote 098:** próximas entradas ES/EN según inventario, con regresión incremental.
+
+
+### Moriles Ribera — lote francés 098 (29/10/2026)
+
+- **Cierre técnico QA:** 12 descripciones francesas candidatas (índices 6:18–6:25 y 7:0–7:3) registradas en `translations/fr/batch-098-moriles-ribera.json`, cargadas únicamente bajo `?qa_fr=1`.
+- **Evidencia final:** GitHub Actions **#450 y #451 SUCCESS**; última ejecución sobre commit `ded582b`: https://github.com/Helioven/helio-gastro/actions/runs/40855232492. La ejecución anterior **#449 FAIL**, previa a integrar el lote en el cargador, permanece documentada como prueba intermedia.
+- **Cobertura parcial:** Moriles Ribera **108/214 descripciones FR candidatas** en lotes 090–098; **106 pendientes**. Se ha superado la mitad del inventario de descripciones, pero la revisión contextual/lingüística, títulos, secciones e interfaz francesa general siguen pendientes; PASS técnico no equivale a aprobación editorial.
+- No se modificaron `data/places.json`, los precios, formatos o `main`. **Siguiente lote 099:** obtener próximas entradas ES/EN desde el inventario y repetir validación y regresión.
