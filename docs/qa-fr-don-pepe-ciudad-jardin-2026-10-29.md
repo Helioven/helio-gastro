@@ -57,3 +57,9 @@
 - `app.js` actualizado únicamente en la rama QA para incluir el lote con `?qa_fr=1`. Acumulado **previsto**: 951 descripciones candidatas en 83 lotes; Don Pepe 36/103 (67 pendientes).
 - Prueba existente `scripts/test-fr-don-pepe-ciudad-jardin-12.mjs` ampliada a las 36 traducciones acumuladas en escritorio y móvil, con comparación ES/EN frente a base pública. Informe: `fr-don-pepe-ciudad-jardin-36.json`.
 - **Estado:** implementación completada; CI/regresión del lote 083 todavía sin resultado confirmado. Traducciones pendientes de revisión semántica y lingüística. No fusionar a `main` ni desplegar.
+
+## Evidencia visual de CI lote 083 (29/10/2026)
+
+- Captura aportada por Helio: #383 SUCCESS (creación de lote), #384 FAIL (integración inicial), #385 SUCCESS (prueba acumulada a 36) y #386 SUCCESS (documentación). Se registra la secuencia sin borrar el fallo intermedio.
+- **Estado técnico del commit #386: PASS mostrado en GitHub Actions**, con QA acumulado. El error exacto de #384 no está documentado en la captura; no atribuir causa ni corregir a ciegas.
+- Cierre técnico provisional del lote 083 sobre el estado #386, sujeto a revisión si los logs revelan una incidencia remanente. No equivale a aprobación semántica/lingüística ni autorización de publicación.
