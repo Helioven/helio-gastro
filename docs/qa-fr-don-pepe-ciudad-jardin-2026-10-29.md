@@ -78,3 +78,10 @@
 - Mitigación implementada en commit `95247a0`: el test de Don Pepe descubre automáticamente todos los archivos `batch-*-don-pepe-ciudad-jardin.json` y compara el número visible contra `entries.length`, en vez de mantener la lista y el total manualmente. El informe ahora se guarda con nombre estable `fr-don-pepe-ciudad-jardin-latest.json`.
 - Esta corrección del test no elimina las listas y totales fijos del cargador de `app.js`. En futuros lotes, actualizar el cargador y comprobar en un mismo conjunto de cambios antes de considerar el CI definitivo. Evitar declarar la causa confirmada sin logs.
 - **Estado de la nueva mitigación:** commit creado, ejecución CI aún no verificada. La revisión lingüística permanece pendiente y `main` continúa fuera del alcance.
+
+## Confirmación de regresión completa (29/10/2026)
+
+- **Helio confirmó PASS completo** de GitHub Actions después de la mitigación del test dinámico de Don Pepe (`95247a0`) y su documentación (`3941323`). No se atribuye ID de ejecución que no se haya facilitado.
+- **Lote 084:** cierre técnico conforme al PASS comunicado; cobertura candidata de Don Pepe: **48/103**, con **55 entradas** pendientes. La comprobación automática no sustituye la revisión semántica ni lingüística nativa.
+- La mejora pendiente del cargador `app.js` (lista y contador de lotes codificados manualmente) sigue abierta; no confundir el ajuste del test con la solución completa de esta dependencia.
+- `data/places.json` y `main` permanecen sin modificación por esta documentación. Próxima etapa: lote 085 con fuentes ES/EN originales y QA incremental.
