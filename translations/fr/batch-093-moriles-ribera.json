@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "moriles-ribera",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 2,
+      "itemIndex": 4,
+      "fr": "Jambon ibérique de bellota et fromage pur brebis."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 2,
+      "itemIndex": 5,
+      "fr": "Assortiment de charcuteries ibériques de bellota et fromage pur brebis."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 2,
+      "itemIndex": 6,
+      "fr": "Mojama de Barbate (thon salé et séché), portions de 110 g, 75 g et 40 g."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 2,
+      "itemIndex": 7,
+      "fr": "Fromage pur brebis."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 2,
+      "itemIndex": 8,
+      "fr": "Fromage de Zuheros."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 2,
+      "itemIndex": 9,
+      "fr": "Fromage grillé au sirop de canne à sucre."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 2,
+      "itemIndex": 10,
+      "fr": "Brie frit et confiture de tomates."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 2,
+      "itemIndex": 11,
+      "fr": "Provolone gratiné."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 2,
+      "itemIndex": 12,
+      "fr": "Assortiment de fromages."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 2,
+      "itemIndex": 13,
+      "fr": "Chicharrones de Cadix, spécialité traditionnelle de porc."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 3,
+      "itemIndex": 0,
+      "fr": "Anchois et fromage bleu de la vallée de Los Pedroches."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 3,
+      "itemIndex": 1,
+      "fr": "Anchois et tomate."
+    }
+  ]
+}
