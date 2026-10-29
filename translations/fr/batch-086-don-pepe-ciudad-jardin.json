@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "cafeteria-don-pepe-ciudad-jardin",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 8,
+      "itemIndex": 10,
+      "fr": "San Jacobo maison."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 9,
+      "itemIndex": 4,
+      "fr": "Anchois frits."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 9,
+      "itemIndex": 5,
+      "fr": "Seiche frite."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 9,
+      "itemIndex": 6,
+      "fr": "Rosada frite."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 10,
+      "itemIndex": 0,
+      "fr": "N° 1 : longe de porc, croquettes, deux œufs, frites et mayonnaise."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 10,
+      "itemIndex": 1,
+      "fr": "N° 2 : morue frite, calamars grillés, salade et mayonnaise."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 11,
+      "itemIndex": 0,
+      "fr": "Entrecôte de bœuf."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 11,
+      "itemIndex": 1,
+      "fr": "Presa de porc ibérique."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 11,
+      "itemIndex": 2,
+      "fr": "Pointes de filet de bœuf."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 11,
+      "itemIndex": 3,
+      "fr": "Brochette de porc (à l’unité)."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 11,
+      "itemIndex": 4,
+      "fr": "Jarret de porc rôti au four."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 12,
+      "itemIndex": 0,
+      "fr": "Natillas (crème dessert)."
+    }
+  ]
+}
