@@ -124,3 +124,10 @@
 - El menú del día mantiene la advertencia de que cambia a diario y debe verificarse precio y disponibilidad. Las descripciones de bocadillos se traducen tomando como contexto la columna inglesa, sin alterar las etiquetas originales ES.
 - Cobertura candidata prevista Don Pepe **83/103** (20 pendientes), total experimental **998 candidatas en 87 lotes**.
 - El test acumulado de Don Pepe descubre lotes automáticamente y ordena por sección/ítem; no se ha modificado. **Regresión CI del lote 087 pendiente de confirmar**. Revisión semántica/lingüística francesa pendiente; no fusionar con `main`.
+
+## Cierre técnico del lote 087 — 29/10/2026
+
+- Helio ha confirmado **PASS** en GitHub Actions tras integrar el lote 087 y actualizar la documentación QA. No se atribuye número de ejecución no facilitado.
+- Se registra **cierre técnico de las 12 descripciones candidatas del lote 087**, con 83/103 acumuladas para Don Pepe Ciudad Jardín y 20 entradas ES/EN pendientes de traducción.
+- El PASS técnico no equivale a revisión semántica o lingüística nativa, ni autoriza publicar o fusionar el francés a `main`. No se ha modificado `data/places.json`.
+- Próximo paso: inventario real de las siguientes entradas para el lote 088 y QA incremental.
