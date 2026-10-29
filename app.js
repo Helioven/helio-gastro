@@ -1352,8 +1352,7 @@ async function init(){
       const responses=await Promise.all(paths.map(name=>fetch('./translations/fr/'+name,{cache:'no-store'})));
       if(responses.some(response=>!response.ok))throw Error('FR QA batch HTTP error');
       const batches=await Promise.all(responses.map(response=>response.json()));
-      const expectedCounts=[15,12,3,10,7,10,12,10,9,9,10,10,11,12,11,11,12,12,12,12,12,13,12,12,14,12,12,12,2,12,12,12,7,12,12,12,8,12,12,12,9,12,12,12,10,12,12,12,12,8,12,12,12,12,12,12,12,12,12,12,2,15,15,15,15,15,14,14,14,14,14,14,12,12,12,12,12,12,12,5,12,12,12,12];
-      if(batches.some((batch,index)=>batch?.entries?.length!==expectedCounts[index]||batch?.meta?.language!=='fr'))throw Error('Invalid FR QA batch size or language');
+      if(batches.some(batch=>!Array.isArray(batch?.entries)||batch.entries.length===0||batch?.meta?.language!=='fr'||batch?.meta?.catalogModified!==false))throw Error('Invalid FR QA batch metadata or entries');
       const seen=new Set(),updates=[];
       for(const entry of batches.flatMap(batch=>batch.entries)){
         const key=entry.placeId+':'+entry.sectionIndex+':'+entry.itemIndex;
@@ -1362,7 +1361,7 @@ async function init(){
         if(!target||seen.has(key)||!dish?.es||!dish?.en||!entry.fr?.trim())throw Error('Invalid FR reference '+key);
         seen.add(key);updates.push([dish,entry.fr]);
       }
-      if(updates.length!==963)throw Error('Invalid FR overlay total');
+      if(!updates.length)throw Error('Empty FR QA overlay');
       for(const [dish,fr] of updates)dish.fr=fr;
       for(const batch of batches)for(const entry of batch.entries)qaFrenchPlaceIds.add(entry.placeId);
     }catch(error){console.warn('French QA batch unavailable:',error.message)}
