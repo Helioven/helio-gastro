@@ -63,3 +63,11 @@
 - Captura aportada por Helio: #383 SUCCESS (creación de lote), #384 FAIL (integración inicial), #385 SUCCESS (prueba acumulada a 36) y #386 SUCCESS (documentación). Se registra la secuencia sin borrar el fallo intermedio.
 - **Estado técnico del commit #386: PASS mostrado en GitHub Actions**, con QA acumulado. El error exacto de #384 no está documentado en la captura; no atribuir causa ni corregir a ciegas.
 - Cierre técnico provisional del lote 083 sobre el estado #386, sujeto a revisión si los logs revelan una incidencia remanente. No equivale a aprobación semántica/lingüística ni autorización de publicación.
+
+## Lote 084 — preparado e integrado en QA (29/10/2026)
+
+- Fuente: tabla ES/EN entregada por Helio, índices 5:3–5:5, 6:0–6:1, 7:0–7:3 y 8:0–8:2 (12 entradas).
+- Archivo `translations/fr/batch-084-don-pepe-ciudad-jardin.json`: traducciones **candidatas**, con denominaciones tradicionales conservadas (patatas bravas, torreznos, salmorejo, gulas) y sin inventar precios ni ingredientes.
+- `app.js` integra el lote exclusivamente en `?qa_fr=1`; total esperado del overlay 963 entradas / 84 lotes. Don Pepe: **48/103 candidatas**, 55 pendientes.
+- Prueba automatizada acumulada ampliada a 48 entradas, con comparación ES/EN respecto a interfaz pública en escritorio y móvil; informe `fr-don-pepe-ciudad-jardin-48.json`.
+- **Estado: integración realizada, CI y QA técnico del lote 084 aún pendientes de confirmar.** Revisión semántica y lingüística nativa pendiente. Sin fusión a `main` ni cambios en `data/places.json`.
