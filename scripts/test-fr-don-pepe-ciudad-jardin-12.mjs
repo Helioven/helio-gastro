@@ -1,6 +1,6 @@
 import {chromium,devices} from 'playwright';
 import {readFileSync,readdirSync,mkdirSync,writeFileSync} from 'node:fs';
-const entries=readdirSync('translations/fr').filter(name=>/^batch-\d+-don-pepe-ciudad-jardin\.json$/.test(name)).sort().flatMap(name=>JSON.parse(readFileSync('translations/fr/'+name,'utf8')).entries);
+const entries=readdirSync('translations/fr').filter(name=>/^batch-\d+-don-pepe-ciudad-jardin\.json$/.test(name)).sort().flatMap(name=>JSON.parse(readFileSync('translations/fr/'+name,'utf8')).entries).sort((a,b)=>a.sectionIndex-b.sectionIndex||a.itemIndex-b.itemIndex);
 const id='cafeteria-don-pepe-ciudad-jardin';
 mkdirSync('qa-reports/screenshots',{recursive:true});
 const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
