@@ -17,25 +17,25 @@
       "placeId": "moriles-ribera",
       "sectionIndex": 3,
       "itemIndex": 3,
-      "fr": "Filet de cerf, fromage grille et oignons caramelises."
+      "fr": "Filet de cerf, fromage grillé et oignons caramélisés."
     },
     {
       "placeId": "moriles-ribera",
       "sectionIndex": 3,
       "itemIndex": 4,
-      "fr": "Saumon fume."
+      "fr": "Saumon fumé."
     },
     {
       "placeId": "moriles-ribera",
       "sectionIndex": 3,
       "itemIndex": 5,
-      "fr": "Saumon fume avec fromage bleu de Los Pedroches."
+      "fr": "Saumon fumé avec fromage bleu de Los Pedroches."
     },
     {
       "placeId": "moriles-ribera",
       "sectionIndex": 3,
       "itemIndex": 6,
-      "fr": "Sardine fumee et salmorejo."
+      "fr": "Sardine fumée et salmorejo."
     },
     {
       "placeId": "moriles-ribera",
@@ -47,19 +47,19 @@
       "placeId": "moriles-ribera",
       "sectionIndex": 4,
       "itemIndex": 0,
-      "fr": "Risotto aux cepes et autres champignons."
+      "fr": "Risotto aux cèpes et autres champignons."
     },
     {
       "placeId": "moriles-ribera",
       "sectionIndex": 4,
       "itemIndex": 1,
-      "fr": "Risotto a la queue de taureau."
+      "fr": "Risotto à la queue de taureau."
     },
     {
       "placeId": "moriles-ribera",
       "sectionIndex": 4,
       "itemIndex": 2,
-      "fr": "Risotto a la morue salee et a la sardine fumee."
+      "fr": "Risotto à la morue salée et à la sardine fumée."
     },
     {
       "placeId": "moriles-ribera",
@@ -77,7 +77,7 @@
       "placeId": "moriles-ribera",
       "sectionIndex": 5,
       "itemIndex": 0,
-      "fr": "Huevos a la flamenca, oeufs au jambon et au chorizo."
+      "fr": "Huevos à la flamenca, oeufs au jambon et au chorizo."
     }
   ]
 }
