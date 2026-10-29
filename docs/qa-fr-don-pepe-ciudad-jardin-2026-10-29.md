@@ -153,3 +153,9 @@
 - Creado `translations/fr/batch-089-don-pepe-ciudad-jardin.json` (8 entradas) e integrado en `app.js` solo bajo `?qa_fr=1`. Preservadas las denominaciones tradicionales `jeringos` y `lazos` con aclaraciones, y los formatos de tostada/sándwich/desayuno.
 - Cobertura candidata prevista de Don Pepe Ciudad Jardín: **103/103**, sin descripciones ES/EN pendientes de traducción en este inventario. Total experimental previsto: **1018 candidatas en 89 lotes**.
 - **CI y regresión visual del lote 089 pendientes de confirmar**. La cobertura del inventario no equivale a aprobación semántica/lingüística ni a publicación. `data/places.json` y `main` se mantienen intactos.
+
+## Cierre técnico del lote 089 — evidencia GitHub Actions (29/10/2026)
+
+- Captura facilitada por Helio: ejecución **#414 FAIL** tras crear las ocho candidatas; **#415 PASS** después de integrarlas en el cargador experimental; **#416 PASS** tras documentarlas. Se conserva el fallo intermedio en la trazabilidad, sin atribuir causa técnica sin sus logs.
+- **Cierre técnico confirmado del lote 089**, basado en la última ejecución visible **#416 PASS**. Don Pepe Ciudad Jardín alcanza **103/103 descripciones candidatas** del inventario, sin entradas ES/EN pendientes de traducir en esta fase.
+- Total experimental previsto: **1018 candidatas en 89 lotes**. El PASS técnico no representa validación semántica o lingüística nativa ni autorización de publicación. Se mantienen intactos `data/places.json` y `main`.
