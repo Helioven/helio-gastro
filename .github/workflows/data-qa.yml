@@ -113,6 +113,7 @@ jobs:
             scripts/test-fr-la-bandera-84.mjs \
             scripts/test-fr-la-cazuela-89.mjs \
             scripts/test-fr-don-pepe-ciudad-jardin-12.mjs \
+            scripts/test-fr-moriles-ribera-12.mjs \
             scripts/test-search-regression.mjs \
             scripts/test-filter-regression.mjs \
             scripts/test-comparator-regression.mjs \
