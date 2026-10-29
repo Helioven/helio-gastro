@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "moriles-ribera",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 1,
+      "itemIndex": 0,
+      "fr": "Anchois marinés au vinaigre."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 1,
+      "itemIndex": 1,
+      "fr": "Croquettes aux cèpes (boletus)."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 1,
+      "itemIndex": 2,
+      "fr": "Croquettes aux épinards et aux pignons de pin."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 1,
+      "itemIndex": 3,
+      "fr": "Croquettes au jambon ibérique."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 1,
+      "itemIndex": 4,
+      "fr": "Croquettes à la queue de taureau."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 1,
+      "itemIndex": 5,
+      "fr": "Assortiment de croquettes."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 1,
+      "itemIndex": 6,
+      "fr": "Salade russe à l’espagnole avec saumon fumé."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 1,
+      "itemIndex": 7,
+      "fr": "Crevettes à l’ail."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 1,
+      "itemIndex": 8,
+      "fr": "Houmous accompagné de bâtonnets de légumes crus."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 1,
+      "itemIndex": 9,
+      "fr": "Mazamorra cordobesa : crème froide d’amandes avec sardines fumées, raisins frais, raisins secs et amandes caramélisées."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 1,
+      "itemIndex": 10,
+      "fr": "Migas cortijeras, spécialité traditionnelle espagnole à base de miettes de pain."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 1,
+      "itemIndex": 11,
+      "fr": "Orange et morue salée."
+    }
+  ]
+}
