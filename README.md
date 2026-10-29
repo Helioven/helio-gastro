@@ -839,3 +839,12 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - **Evidencia:** GitHub Actions **#443 SUCCESS** sobre commit `f6672ca`: https://github.com/Helioven/helio-gastro/actions/runs/40853044439. Las ejecuciones intermedias **#441 y #442 FAIL** precedieron a la integración del lote en el cargador; se mantiene su historial para trazabilidad.
 - **Cobertura parcial:** Moriles Ribera cuenta con **84/214 descripciones FR candidatas** en los lotes 090–096; **130 pendientes**. PASS técnico no implica validación lingüística nativa, aprobación editorial ni publicación.
 - `data/places.json`, precios, formatos y `main` no modificados en este lote. **Siguiente:** lote 097 a partir de los próximos índices ES/EN del inventario y nueva regresión incremental.
+
+
+### Moriles Ribera — lote francés 097 (29/10/2026)
+
+- **Cierre técnico QA:** 12 descripciones francesas candidatas (índices 6:6–6:17) en `translations/fr/batch-097-moriles-ribera.json`, integradas exclusivamente en `?qa_fr=1`.
+- **Incidencia comprobada y corregida:** #445 y #446 FAIL; en #446 `visual-qa` pasó pero `catalog-audit` falló por el número de comensales de la fritura (ES `2 personas`, FR inicial `deux personnes`). Se corrigió a `2 personnes` para conservar el dato numérico; commit `5fb09bf`.
+- **Evidencia final:** GitHub Actions **#447 SUCCESS** sobre commit `5fb09bf`: https://github.com/Helioven/helio-gastro/actions/runs/40854442319. Se mantienen los fallos intermedios como historial de QA, no como fallos abiertos tras esta corrección.
+- **Cobertura parcial:** Moriles Ribera **96/214 descripciones FR candidatas**, 118 pendientes; lotes 090–097. PASS técnico no equivale a revisión lingüística nativa, aprobación editorial ni publicación.
+- Sin cambios en `data/places.json`, importes, formatos o `main`. **Siguiente lote 098:** próximas entradas ES/EN según inventario, con regresión incremental.
