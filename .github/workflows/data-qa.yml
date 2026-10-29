@@ -42,6 +42,13 @@ jobs:
           console.log('## Próximo restaurante pendiente de francés');
           if(next){
             console.log('**'+next.name+'** ('+next.id+') — '+next.pendingCount+' descripciones pendientes de '+next.count+'.');
+            console.log('### Próximas 12 descripciones ES/EN para traducir');
+            console.log('| Índice | Plato | Español | Inglés |');
+            console.log('|---|---|---|---|');
+            for(const item of next.entries.slice(0,12)){
+              const safe=v=>String(v??'').replaceAll('|','\\\\|').replaceAll('\\n',' ');
+              console.log('| '+item.sectionIndex+':'+item.itemIndex+' | '+safe(item.name)+' | '+safe(item.es)+' | '+safe(item.en)+' |');
+            }
             console.log('Fuente: catálogo y lotes reales de la rama QA. Traducciones todavía sin preparar.');
           }else console.log('No quedan descripciones ES/EN sin lote FR según este inventario.');
           console.log('El detalle original está en el artefacto french-coverage-proposals.');
