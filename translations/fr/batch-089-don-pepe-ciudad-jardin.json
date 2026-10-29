@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "cafeteria-don-pepe-ciudad-jardin",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 16,
+      "itemIndex": 10,
+      "fr": "Tartine au jambon cuit."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 16,
+      "itemIndex": 11,
+      "fr": "Sandwich grillé au jambon et au fromage."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 17,
+      "itemIndex": 0,
+      "fr": "Petit-déjeuner spécial n° 1 : café, jus d’orange et demi-tartine classique (huile d’olive, beurre ou pâté)."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 17,
+      "itemIndex": 1,
+      "fr": "Jeringos (gros churros)."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 17,
+      "itemIndex": 2,
+      "fr": "Churros (sur place ou à emporter)."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 17,
+      "itemIndex": 3,
+      "fr": "Lazos (churros en forme de boucle)."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 17,
+      "itemIndex": 4,
+      "fr": "Chocolat chaud."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 17,
+      "itemIndex": 5,
+      "fr": "Pancakes (avec ou sans crème chantilly)."
+    }
+  ]
+}
