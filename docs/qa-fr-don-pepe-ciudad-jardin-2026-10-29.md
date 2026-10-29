@@ -100,3 +100,11 @@
 - El último estado visible es PASS del workflow; se registra **cierre técnico del lote 085** sobre el estado #398, no aprobación lingüística.
 - Posible causa del FAIL #396: el test dinámico detectaba el nuevo archivo antes de que el cargador lo incluyera, pero **sin los logs no puede confirmarse**. Conservar el FAIL en el historial.
 - Cobertura del establecimiento: 59/103 candidatos; 44 pendientes. Sin cambios en carta original ni publicación de francés.
+
+## Lote 086 — reintento de integración (29/10/2026)
+
+- Confirmada la ausencia inicial de `batch-086-don-pepe-ciudad-jardin.json` y creado posteriormente con 12 entradas fuente ES/EN aportadas por Helio (índices 8:10, 9:4–9:6, 10:0–10:1, 11:0–11:4, 12:0).
+- Archivo candidato: `translations/fr/batch-086-don-pepe-ciudad-jardin.json`; integrado en el cargador QA `app.js` exclusivamente con `?qa_fr=1`.
+- Cobertura candidata prevista de Don Pepe: **71/103**, 32 pendientes; acumulado experimental previsto **986 traducciones en 86 lotes**.
+- El test dinámico de Don Pepe descubre el archivo nuevo y compara su contenido en escritorio/móvil sin modificar su recuento manual.
+- **Pendiente:** confirmar resultados de GitHub Actions para el estado integrado, revisar semántica y lingüística francesa. No se ha modificado `data/places.json` ni `main`.
