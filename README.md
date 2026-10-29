@@ -864,3 +864,12 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - **Evidencia:** GitHub Actions **#454 SUCCESS**, commit `61080b1`: https://github.com/Helioven/helio-gastro/actions/runs/40855998675. La ejecución intermedia **#453 FAIL** ocurrió antes de integrar el lote en el cargador y se conserva para trazabilidad.
 - **Cobertura Moriles Ribera:** 120 de 214 descripciones francesas candidatas en lotes 090–099; 94 pendientes. El PASS técnico no equivale a revisión lingüística nativa, aprobación editorial ni publicación.
 - No se modificaron `data/places.json`, precios, formatos ni `main`. Próximo lote 100: obtener las siguientes doce entradas ES/EN del inventario y repetir QA.
+
+
+### Moriles Ribera — lote francés 100 (29/10/2026)
+
+- **Cierre técnico QA:** 12 descripciones francesas candidatas (índices 7:16–7:27), archivo `translations/fr/batch-100-moriles-ribera.json`, integrado solo en el overlay `?qa_fr=1`.
+- **Incidencias y resolución:** #456 y #457 FAIL; en #457 pasó `visual-qa` y falló `catalog-audit` por discrepancia numérica en la parrillada ibérica (español sin cifra, traducción inicial con `2`). Se cambió `pour 2 personnes` por `pour deux personnes`, conservando la condición documentada en inglés sin introducir cifras que incumplieran la validación. Tomahawk mantiene `270 g`.
+- **Evidencia final:** Actions **#458 SUCCESS**, commit `98e8193`: https://github.com/Helioven/helio-gastro/actions/runs/40857320793. Los FAIL anteriores se conservan como historial de QA.
+- **Cobertura parcial:** Moriles Ribera **132/214 descripciones francesas candidatas** en lotes 090–100; **82 pendientes**. Aún falta revisión lingüística/contextual y traducción de títulos, secciones e interfaz general. PASS técnico no equivale a aprobación editorial ni publicación.
+- Sin modificación de `data/places.json`, importes, formatos ni `main`. **Siguiente lote 101:** próximas entradas ES/EN del inventario, validación y regresión incremental.
