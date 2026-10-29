@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "cafeteria-don-pepe-ciudad-jardin",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 12,
+      "itemIndex": 1,
+      "fr": "Flan aux œufs."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 12,
+      "itemIndex": 2,
+      "fr": "Part de gâteau."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 12,
+      "itemIndex": 3,
+      "fr": "Pudding maison."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 12,
+      "itemIndex": 4,
+      "fr": "Fruits de saison."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 13,
+      "itemIndex": 0,
+      "fr": "Petit pain."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 13,
+      "itemIndex": 1,
+      "fr": "Boîte à emporter."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 13,
+      "itemIndex": 2,
+      "fr": "Sac."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 14,
+      "itemIndex": 0,
+      "fr": "Menu du jour : entrée, plat principal, pain, boisson et dessert. L’offre change chaque jour ; vérifier le prix actuel et la disponibilité."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 15,
+      "itemIndex": 0,
+      "fr": "Baguette au bacon."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 15,
+      "itemIndex": 1,
+      "fr": "Baguette au filet de porc."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 15,
+      "itemIndex": 2,
+      "fr": "Baguette au jambon cuit et au fromage."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 15,
+      "itemIndex": 3,
+      "fr": "Baguette au thon."
+    }
+  ]
+}
