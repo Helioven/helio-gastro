@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "cafeteria-don-pepe-ciudad-jardin",
+    "language": "fr",
+    "catalogModified": false,
+    "note": "11 entries visible in the supplied source images; no 12th entry inferred"
+  },
+  "entries": [
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 8,
+      "itemIndex": 3,
+      "fr": "Flamenquín."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 8,
+      "itemIndex": 4,
+      "fr": "Tripes aux pieds de porc."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 8,
+      "itemIndex": 5,
+      "fr": "Joues de porc ibérique."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 8,
+      "itemIndex": 6,
+      "fr": "Cochifrito ibérique (porc de lait frit)."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 8,
+      "itemIndex": 7,
+      "fr": "Lanières de poulet au citron."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 8,
+      "itemIndex": 8,
+      "fr": "Tripes de veau avec pieds (S/T)."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 8,
+      "itemIndex": 9,
+      "fr": "Flamenquín maison au jambon."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 9,
+      "itemIndex": 0,
+      "fr": "Calamars frits."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 9,
+      "itemIndex": 1,
+      "fr": "Calamars grillés."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 9,
+      "itemIndex": 2,
+      "fr": "Morue frite."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 9,
+      "itemIndex": 3,
+      "fr": "Morue au pisto (préparation de légumes à l’espagnole)."
+    }
+  ]
+}
