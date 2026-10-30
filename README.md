@@ -932,3 +932,10 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Se incorpora el script de solo lectura `scripts/inventory-fr-group-menu-notes.mjs` para inventariar condiciones de menús de grupo y campos ES/EN; commit `b6c0003`.
 - **GitHub Actions #527 SUCCESS** sobre `b6c0003`: https://github.com/Helioven/helio-gastro/actions/runs/41027982787.
 - La validación de Actions no implica que el inventario haya sido ejecutado ni que sus resultados estén revisados; queda pendiente ejecutarlo y seleccionar los próximos lotes FR. Sin modificación de `data/places.json`, precios, cartas originales ni `main`.
+
+### Inventario ejecutado de condiciones de menús de grupo — #529 (30/10/2026)
+
+- El workflow de la rama QA ejecuta `scripts/inventory-fr-group-menu-notes.mjs` y publica el archivo `fr-group-menu-notes.json` en el artefacto `group-menu-conditions-inventory` (cambio `e7f07a2`).
+- **GitHub Actions #529 SUCCESS**, commit `e7f07a2`: https://github.com/Helioven/helio-gastro/actions/runs/41028567844. `catalog-audit` y `visual-qa` finalizaron correctamente.
+- Artefacto: https://github.com/Helioven/helio-gastro/actions/runs/41028567844/artifacts/12964413723. El resultado del inventario debe leerse antes de contar condiciones pendientes o traducirlas; el éxito de CI solo valida su ejecución.
+- Sin cambios en cartas originales, `data/places.json`, precios ni `main`. El francés sigue exclusivo de `?qa_fr=1`.
