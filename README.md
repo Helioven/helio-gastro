@@ -926,3 +926,9 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Traducción FR QA contextual del aviso «Vigencia pendiente de confirmar» → «Validité à confirmer» junto a importes de menús oficiales, sin alterar nombres, cantidades ni precios; commit `52e208e`.
 - **GitHub Actions #525 SUCCESS**, comprobado sobre `52e208e`: https://github.com/Helioven/helio-gastro/actions/runs/41027470966.
 - Exclusivo de `?qa_fr=1` en `feature/fr-integration-qa-20261027`. Sin cambios en `data/places.json`, las cartas originales ni `main`. Pendientes inventario de condiciones particulares y QA lingüístico/visual integral.
+
+### Inventario de condiciones FR QA — script de auditoría (30/10/2026)
+
+- Se incorpora el script de solo lectura `scripts/inventory-fr-group-menu-notes.mjs` para inventariar condiciones de menús de grupo y campos ES/EN; commit `b6c0003`.
+- **GitHub Actions #527 SUCCESS** sobre `b6c0003`: https://github.com/Helioven/helio-gastro/actions/runs/41027982787.
+- La validación de Actions no implica que el inventario haya sido ejecutado ni que sus resultados estén revisados; queda pendiente ejecutarlo y seleccionar los próximos lotes FR. Sin modificación de `data/places.json`, precios, cartas originales ni `main`.
