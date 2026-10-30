@@ -969,3 +969,9 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Incorporadas las tres condiciones pendientes de menús de 48 € de Patio Romano en `i18n.js`, preservando diferencias de platos, bebidas, IVA y ausencia de mínimo de comensales especificado; commit `c8b44e6`. Junto al lote previo de 38 €, las cuatro condiciones inventariadas tienen propuesta FR QA.
 - **GitHub Actions #539 SUCCESS**, comprobado sobre `c8b44e6`: https://github.com/Helioven/helio-gastro/actions/runs/41032138961.
 - Sin modificación de `data/places.json`, cartas originales, precios ni `main`. Francés experimental limitado a `?qa_fr=1`; siguen pendientes validación lingüística/editorial y restantes condiciones del inventario.
+
+### QA francés — avisos Casa Rubio y La Piscatoría (#541) (30/10/2026)
+
+- Incorporadas propuestas FR QA para avisos históricos de carta, IVA y alérgenos de Casa Rubio y opciones de pan/suplementos de La Piscatoría, conservando precios y fechas; commit `4f27c34`.
+- **GitHub Actions #541 SUCCESS**, confirmado sobre `4f27c34`: https://github.com/Helioven/helio-gastro/actions/runs/41033004369.
+- Francés restringido a `?qa_fr=1`. Sin cambios en `data/places.json`, cartas originales, precios ni `main`. Pendiente revisión de avisos restantes y QA lingüístico y visual final; PASS técnico no constituye aprobación editorial.
