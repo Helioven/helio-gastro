@@ -1099,6 +1099,54 @@
       "es": "Verduras & Revueltos",
       "fr": "Légumes et œufs brouillés",
       "review": "context_check"
+    },
+    {
+      "es": "Para gozar",
+      "fr": "Pour se régaler",
+      "review": "context_check",
+      "note": "Adaptation descriptive fondée sur les plats de la section; révision éditoriale requise."
+    },
+    {
+      "es": "Curaciones del valle y marinas",
+      "fr": "Salaisons de la vallée et de la mer",
+      "review": "context_check",
+      "note": "Adaptation descriptive fondée sur les plats de la section; révision éditoriale requise."
+    },
+    {
+      "es": "Mantequeando",
+      "fr": "Charcuteries ibériques",
+      "review": "context_check",
+      "note": "Adaptation descriptive fondée sur les plats de la section; révision éditoriale requise."
+    },
+    {
+      "es": "De la Confi del Abuelo",
+      "fr": "Desserts de la maison",
+      "review": "context_check",
+      "note": "Adaptation descriptive fondée sur les plats de la section; révision éditoriale requise."
+    },
+    {
+      "es": "Rodeado de Gitanillas",
+      "fr": "Spécialités traditionnelles",
+      "review": "context_check",
+      "note": "Adaptation descriptive fondée sur les plats de la section; révision éditoriale requise."
+    },
+    {
+      "es": "Cordobesa",
+      "fr": "Spécialités cordouanes",
+      "review": "context_check",
+      "note": "Adaptation descriptive fondée sur les plats de la section; révision éditoriale requise."
+    },
+    {
+      "es": "Muy cordobés",
+      "fr": "Très cordouan",
+      "review": "context_check",
+      "note": "Adaptation descriptive fondée sur les plats de la section; révision éditoriale requise."
+    },
+    {
+      "es": "Molletes de bandera",
+      "fr": "Molletes de la maison",
+      "review": "context_check",
+      "note": "Adaptation descriptive fondée sur les plats de la section; révision éditoriale requise."
     }
   ],
   "gastronomy": [
