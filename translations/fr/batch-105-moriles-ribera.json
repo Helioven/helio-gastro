@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "moriles-ribera",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 12,
+      "itemIndex": 7,
+      "fr": "Cappuccino."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 12,
+      "itemIndex": 8,
+      "fr": "Café viennois."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 12,
+      "itemIndex": 9,
+      "fr": "Café mocaccino."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 12,
+      "itemIndex": 10,
+      "fr": "Café accompagné de glace à la vanille."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 12,
+      "itemIndex": 11,
+      "fr": "Café accompagné de glace au touron."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 12,
+      "itemIndex": 12,
+      "fr": "Carajillo flambé au brandy."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 12,
+      "itemIndex": 13,
+      "fr": "Carajillo flambé au rhum."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 12,
+      "itemIndex": 14,
+      "fr": "Carajillo flambé à la liqueur d’anis."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 12,
+      "itemIndex": 15,
+      "fr": "Carajillo flambé au whisky."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 12,
+      "itemIndex": 16,
+      "fr": "Espresso au Licor 43."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 12,
+      "itemIndex": 17,
+      "fr": "Café au Baileys."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 12,
+      "itemIndex": 18,
+      "fr": "Café irlandais."
+    }
+  ]
+}
