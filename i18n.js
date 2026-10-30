@@ -233,14 +233,14 @@ window.GASTRO_I18N = Object.freeze({
     if(frenchGroupLabels.has(value))return frenchGroupLabels.get(value);
     if(parent.hasAttribute('data-group-menu-heading')){
       // Preserve the original name, monetary amount, guest count and separators.
-      return source.replace(/\\/(?:persona|person)(?=\\s|$)/,'/personne')
-        .replace(/ · (?:mínimo |minimum )(\\d+) (?:comensales|guests)/,' · minimum $1 personnes');
+      return source.replace(/\/(?:persona|person)(?=\s|$)/,'/personne')
+        .replace(/ · (?:mínimo |minimum )(\d+) (?:comensales|guests)/,' · minimum $1 personnes');
     }
     if(parent.hasAttribute('data-group-menu-price'))
       return source.replace('Precio de menú publicado en 2025','Prix du menu publié en 2025')
         .replace('2025 published set-menu price','Prix du menu publié en 2025');
     if(parent.hasAttribute('data-group-menu-label-es')){
-      const m=value.match(/^(?:Menú n\\.º|Set menu no\\.)\\s*(\\d+)$/);
+      const m=value.match(/^(?:Menú n\.º|Set menu no\.)\s*(\d+)$/);
       if(m)return 'Menu n° '+m[1];
       if(value.startsWith('Bebidas incluidas: '))return 'Boissons comprises : '+value.slice('Bebidas incluidas: '.length);
       if(value.startsWith('Drinks included: '))return 'Boissons comprises : '+value.slice('Drinks included: '.length);
