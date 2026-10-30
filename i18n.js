@@ -239,6 +239,9 @@ window.GASTRO_I18N = Object.freeze({
     const inGroup=parent.closest('.beatillas-group-menus')||parent.closest('.menu-dish')||parent.hasAttribute('data-group-menu-heading');
     if(!inGroup)return source;
     const value=normalize(source);
+    // Exact documented validity note on official set-menu price, preserving the amount.
+    if(parent.matches('.menu-dish > strong') && value.endsWith(' · Vigencia pendiente de confirmar'))
+      return source.replace(/ · Vigencia pendiente de confirmar$/, ' · Validité à confirmer');
     if(frenchGroupLabels.has(value))return frenchGroupLabels.get(value);
     if(parent.hasAttribute('data-group-menu-heading')){
       // Preserve the original name, monetary amount, guest count and separators.
