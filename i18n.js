@@ -190,6 +190,19 @@ window.GASTRO_I18N = Object.freeze({
     ['Documentación de fuentes (desplegar)','Documentation des sources (déplier)']
   ]);
   const translateFrenchDetailText=(node,source)=>node.parentElement?.closest('#detail-content')&&!node.parentElement.closest('.menu-dish,[data-venue-menu-section],[data-bilingual-es],[data-source-label-es]')?(frenchDetailLabels.get(normalize(source))||source):source;
+  const frenchDetailNotices=new Map([
+    ['El coste total de comer aquí no está documentado. Los precios de platos no incluyen necesariamente bebida ni extras.',"Le coût total d’un repas ici n’est pas documenté. Les prix des plats n’incluent pas nécessairement les boissons ni les suppléments."],
+    ['Sin fecha registrada','Aucune date enregistrée'],
+    ['Vigencia pendiente de confirmar','Validité à confirmer']
+  ]);
+  const translateFrenchDetailNotice=(node,source)=>{
+    if(!node.parentElement?.closest('#detail-content')||node.parentElement.closest('.menu-dish,[data-venue-menu-section],[data-bilingual-es]'))return source;
+    const raw=normalize(source);
+    if(frenchDetailNotices.has(raw))return frenchDetailNotices.get(raw);
+    if(raw.startsWith('Última consulta: '))return 'Dernière consultation : '+raw.slice('Última consulta: '.length);
+    if(raw.startsWith('Comida completa por persona: '))return 'Repas complet par personne : '+raw.slice('Comida completa por persona: '.length);
+    return source;
+  };
   const frenchSectionHeadings=new Map();
   const translateFrenchHeading=(node,source)=>node.parentElement?.matches('[data-venue-menu-section]')?(frenchSectionHeadings.get(normalize(source))||source):source;
   const normalize=s=>s.trim().replace(/\s+/g,' ');
@@ -203,7 +216,7 @@ window.GASTRO_I18N = Object.freeze({
       const next=match[1]+translateValue(key)+match[3];
       if(node.nodeValue!==next)node.nodeValue=next;
     }else if(language==='fr'){
-      const next=match[1]+translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchSearchText(node,translateFrenchHeading(node,match[2])))))+match[3];
+      const next=match[1]+translateFrenchDetailNotice(node,translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchSearchText(node,translateFrenchHeading(node,match[2]))))))+match[3];
       if(node.nodeValue!==next)node.nodeValue=next;
     }else if(node.nodeValue!==original)node.nodeValue=original;
   }
@@ -268,7 +281,7 @@ window.GASTRO_I18N = Object.freeze({
           const previous=originalNodes.get(node);
           if(previous!==undefined){
             const match=previous.match(/^(\s*)([\s\S]*?)(\s*)$/);
-            const expected=language==='en'?match[1]+translateValue(normalize(match[2]))+match[3]:language==='fr'?match[1]+translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchSearchText(node,translateFrenchHeading(node,match[2])))))+match[3]:previous;
+            const expected=language==='en'?match[1]+translateValue(normalize(match[2]))+match[3]:language==='fr'?match[1]+translateFrenchDetailNotice(node,translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchSearchText(node,translateFrenchHeading(node,match[2]))))))+match[3]:previous;
             if(node.nodeValue===expected)continue;
           }
           originalNodes.delete(node);
