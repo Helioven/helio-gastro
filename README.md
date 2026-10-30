@@ -914,3 +914,9 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Traducciones FR candidatas de condiciones de bebidas incluidas del Rincón de Beatillas, limitadas al modo experimental `?qa_fr=1` y a atributos bilingües documentados. Último commit funcional: `5993b02`.
 - **GitHub Actions #521 SUCCESS**, comprobado en el commit `5993b02`: https://github.com/Helioven/helio-gastro/actions/runs/41026116744.
 - Sin cambios en `data/places.json`, precios, cartas originales ni rama `main`. Permanecen pendientes otras condiciones dinámicas y la revisión lingüística/editorial global; PASS técnico no implica publicación.
+
+### QA francés — encabezados de menús cerrados oficiales (30/10/2026)
+
+- Se incorporaron propuestas FR QA para «Platos a elegir», «Postre a elegir» y «Bebidas incluidas (una a elegir)», junto con sus equivalentes ingleses, en `i18n.js`; commit `952b6d0`.
+- **GitHub Actions #523 SUCCESS**, confirmado sobre `952b6d0`: https://github.com/Helioven/helio-gastro/actions/runs/41026949273.
+- Se conserva la restricción `?qa_fr=1`; sin cambios en cartas originales, precios, `data/places.json` ni `main`. Pendientes: notas y condiciones particulares de menús, inventario de cadenas restantes y QA lingüístico/visual final.
