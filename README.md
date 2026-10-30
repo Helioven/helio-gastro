@@ -951,3 +951,9 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Traducción FR QA de la condición común de seis menús de grupo de La Taberna del Río (mínimo 8 personas, platos compartidos para 4, bebidas incluidas y aviso de alergias con 48 horas); commit `f251019`.
 - **GitHub Actions #533 SUCCESS**, verificado en el commit `f251019`: https://github.com/Helioven/helio-gastro/actions/runs/41029893708.
 - No se modificaron el catálogo, las cartas originales, los precios ni `main`; francés restringido a `?qa_fr=1`. Próximo lote previsto: condiciones verificadas de Bodegas Campos. PASS automatizado no implica aprobación editorial.
+
+### QA francés — condiciones Bodegas Campos (#535) (30/10/2026)
+
+- Incorporadas propuestas FR QA para condiciones documentadas de los menús Los Flamencos, Los Patios y La Bodega de Bodegas Campos, preservando diferencias de bebidas, IVA, inclusiones y exclusiones y el precio adicional publicado de 8 € por copa no prémium; commit `57fc33d`.
+- **GitHub Actions #535 SUCCESS**, verificado sobre `57fc33d`: https://github.com/Helioven/helio-gastro/actions/runs/41030715621.
+- El PASS técnico no implica aprobación lingüística/editorial final. No se modificaron `data/places.json`, cartas, precios ni `main`; francés exclusivamente con `?qa_fr=1`. Próximo trabajo: restantes condiciones verificadas del inventario y QA integral.
