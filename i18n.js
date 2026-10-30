@@ -127,6 +127,8 @@ window.GASTRO_I18N = Object.freeze({
   const frenchQaEnabled=new URLSearchParams(window.location.search).get('qa_fr')==='1';
   const isSupportedLanguage=value=>value==='es'||value==='en'||(frenchQaEnabled&&value==='fr');
   let language='es';
+  const frenchSectionHeadings=new Map();
+  const translateFrenchHeading=(node,source)=>node.parentElement?.closest('[data-venue-menu-section]')?(frenchSectionHeadings.get(source)||source):source;
   const normalize=s=>s.trim().replace(/\s+/g,' ');
   function translateText(node){
     if(!node || !node.parentElement || node.parentElement.closest('script,style,textarea,option[data-keep-original],#language-select,[data-keep-dish-spanish],[data-bilingual-es]'))return;
@@ -137,7 +139,10 @@ window.GASTRO_I18N = Object.freeze({
     if(language==='en'){
       const next=match[1]+translateValue(key)+match[3];
       if(node.nodeValue!==next)node.nodeValue=next;
-    }else if(language==='es' && node.nodeValue!==original)node.nodeValue=original;
+    }else if(language==='fr'){
+      const next=match[1]+translateFrenchHeading(node,key)+match[3];
+      if(node.nodeValue!==next)node.nodeValue=next;
+    }else if(node.nodeValue!==original)node.nodeValue=original;
   }
   function translateElement(root){
     if(!root)return;
@@ -180,6 +185,19 @@ window.GASTRO_I18N = Object.freeze({
     try{const saved=localStorage.getItem(KEY);language=isSupportedLanguage(saved)?saved:'es'}catch(e){}
     select.addEventListener('change',()=>applyLanguage(select.value));
     applyLanguage(language);
+    if(frenchQaEnabled){
+      fetch('./docs/french-glossary-v1.json',{cache:'no-store'})
+        .then(response=>{if(!response.ok)throw Error('FR glossary HTTP '+response.status);return response.json();})
+        .then(glossary=>{
+          if(!Array.isArray(glossary.sections))throw Error('Invalid FR section glossary');
+          for(const entry of glossary.sections){
+            if(typeof entry.es!=='string'||typeof entry.fr!=='string'||!entry.es.trim()||!entry.fr.trim()||frenchSectionHeadings.has(entry.es.trim()))throw Error('Invalid or duplicate FR heading');
+            frenchSectionHeadings.set(entry.es.trim(),entry.fr.trim());
+          }
+          if(language==='fr')translateElement(document.body);
+        })
+        .catch(error=>console.warn('French section glossary unavailable:',error.message));
+    }
     const observer=new MutationObserver(records=>{
       for(const record of records){
         if(record.type==='characterData'){
@@ -187,7 +205,7 @@ window.GASTRO_I18N = Object.freeze({
           const previous=originalNodes.get(node);
           if(previous!==undefined){
             const match=previous.match(/^(\s*)([\s\S]*?)(\s*)$/);
-            const expected=language==='en'?match[1]+translateValue(normalize(match[2]))+match[3]:previous;
+            const expected=language==='en'?match[1]+translateValue(normalize(match[2]))+match[3]:language==='fr'?match[1]+translateFrenchHeading(node,normalize(match[2]))+match[3]:previous;
             if(node.nodeValue===expected)continue;
           }
           originalNodes.delete(node);
