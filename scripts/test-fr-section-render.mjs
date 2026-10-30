@@ -20,6 +20,8 @@ assert.ok(script.includes("if(frenchQaEnabled){"));
 assert.ok(script.includes("node.parentElement?.matches('[data-venue-menu-section]')"),'French headings must match the element itself, not a dish ancestor');
 assert.ok(!script.includes("node.parentElement?.closest('[data-venue-menu-section]')"),'Must never translate dish descendants');
 assert.ok(script.includes("language==='fr'"));
+assert.ok(script.includes('translateFrenchHeading(node,match[2])'),'French must preserve original spacing of non-section titles');
+assert.ok(script.includes('frenchSectionHeadings.get(normalize(source))'),'Only heading lookup may normalize spaces');
 assert.ok(script.includes("language==='en'"));
 assert.ok(script.includes("else if(node.nodeValue!==original)node.nodeValue=original;"),'Spanish restoration must remain supported');
 console.log('FR QA SECTION HEADING CHECK: '+count+'/'+count+' supported; ES/EN branches retained (static checks)');
