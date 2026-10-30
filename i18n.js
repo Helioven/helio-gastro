@@ -245,6 +245,12 @@ window.GASTRO_I18N = Object.freeze({
       return source.replace('Precio de menú publicado en 2025','Prix du menu publié en 2025')
         .replace('2025 published set-menu price','Prix du menu publié en 2025');
     if(parent.hasAttribute('data-group-menu-label-es')){
+      // Beatillas supplies an exact English source for these two documented beverage sets.
+      const beverageEnglish=parent.dataset.groupMenuLabelEn;
+      if(beverageEnglish==='Drinks included: mineral water and two soft drinks')
+        return 'Boissons comprises : eau minérale et deux boissons sans alcool';
+      if(beverageEnglish==='Drinks included: beer, Montilla-Moriles wine, Rioja red wine, mineral water and cava from Bodegas Faustino')
+        return 'Boissons comprises : bière, vin de Montilla-Moriles, vin rouge de Rioja, eau minérale et cava des Bodegas Faustino';
       const m=value.match(/^(?:Menú n\.º|Set menu no\.)\s*(\d+)$/);
       if(m)return 'Menu n° '+m[1];
       if(value.startsWith('Bebidas incluidas: '))return 'Boissons comprises : '+value.slice('Bebidas incluidas: '.length);
