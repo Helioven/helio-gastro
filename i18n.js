@@ -226,6 +226,8 @@ window.GASTRO_I18N = Object.freeze({
   const translateFrenchGroupText=(node,source)=>{
     const parent=node.parentElement;
     if(!parent?.closest('#detail-content'))return source;
+    // Group menu titles are catalog entries: preserve exact Spanish titles across languages.
+    if(parent.matches('[data-group-menu-heading]')||parent.matches('.menu-dish > h4'))return source;
     if(parent.closest('[data-keep-dish-spanish],[data-dish-explanation]'))return source;
     const inGroup=parent.closest('.beatillas-group-menus')||parent.closest('.menu-dish')||parent.hasAttribute('data-group-menu-heading');
     if(!inGroup)return source;
