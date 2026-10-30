@@ -999,3 +999,9 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Ampliada la prueba de navegador en `scripts/test-fr-detail-notices-pilot.mjs` para comprobar en escritorio y móvil que `Français (QA)` no aparece sin `?qa_fr=1`; commit `42e9f69`.
 - **GitHub Actions #552 SUCCESS**, confirmado sobre `42e9f69`: https://github.com/Helioven/helio-gastro/actions/runs/41036314128.
 - Sin cambios en `data/places.json`, cartas originales, precios ni `main`. Continúan pendientes revisión lingüística/editorial integral y auditoría visual; PASS técnico no equivale a autorización de publicación.
+
+### QA francés — selector oculto tras cambio a inglés (#554) (30/10/2026)
+
+- Ampliada la prueba de navegador `scripts/test-fr-detail-notices-pilot.mjs` para verificar que en una visita sin `?qa_fr=1`, el selector de francés sigue ausente después de cambiar de ES a EN, en escritorio y móvil; commit `cf7fe8c`.
+- **GitHub Actions #554 SUCCESS**, confirmado sobre `cf7fe8c`: https://github.com/Helioven/helio-gastro/actions/runs/41037003033.
+- Sin cambios en `data/places.json`, las cartas originales, los precios ni `main`. Continúa pendiente QA lingüístico/editorial y visual integral del francés; éxito automatizado no implica publicación.
