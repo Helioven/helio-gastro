@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "moriles-ribera",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 21,
+      "fr": "Coupe glacée à la crème et aux noix, indiquée sans sucre."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 22,
+      "fr": "Gâteau aux carottes."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 23,
+      "fr": "Dessert aux trois chocolats, gâteau au tiramisu et torrija fourrée à la crème, accompagnée de glace à la vanille."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 24,
+      "fr": "Cheesecake du Moriles à la pâte de coing, pastel cordobés accompagné de glace à la vanille et Arco de la Mezquita."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 25,
+      "fr": "Petite truffe au chocolat."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 12,
+      "itemIndex": 0,
+      "fr": "Café espresso noir."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 12,
+      "itemIndex": 1,
+      "fr": "Café espresso."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 12,
+      "itemIndex": 2,
+      "fr": "Espresso avec un peu de lait."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 12,
+      "itemIndex": 3,
+      "fr": "Café au lait."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 12,
+      "itemIndex": 4,
+      "fr": "Lait avec un trait de café."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 12,
+      "itemIndex": 5,
+      "fr": "Café americano."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 12,
+      "itemIndex": 6,
+      "fr": "Café au lait concentré sucré."
+    }
+  ]
+}
