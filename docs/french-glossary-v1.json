@@ -1074,6 +1074,31 @@
       "es": "Pescaito frito",
       "fr": "Petits poissons frits",
       "review": "context_check"
+    },
+    {
+      "es": "Las especiales",
+      "fr": "Les spécialités",
+      "review": "context_check"
+    },
+    {
+      "es": "Tostas La Jineta",
+      "fr": "Tartines La Jineta",
+      "review": "context_check"
+    },
+    {
+      "es": "Carnes y guisos",
+      "fr": "Viandes et plats mijotés",
+      "review": "context_check"
+    },
+    {
+      "es": "Arroces (mínimo 2 personas; precios por persona)",
+      "fr": "Plats de riz (minimum 2 personnes ; prix par personne)",
+      "review": "context_check"
+    },
+    {
+      "es": "Verduras & Revueltos",
+      "fr": "Légumes et œufs brouillés",
+      "review": "context_check"
     }
   ],
   "gastronomy": [
