@@ -31,7 +31,7 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1385,height:900}}
    await page.locator('#language-select').selectOption(lang);
    const names=await page.locator('#detail-content .menu-dish h4').allTextContents();
    if(names.length!==originalDishNames.length)issues.push(lang+' dish title count '+names.length+' expected '+originalDishNames.length);
-   if(lang==='es'&&names.some((name,i)=>name!==originalDishNames[i]))issues.push('Spanish original dish titles changed');
+   if(lang==='es'&&names.some((name,i)=>name!==originalDishNames[i])){const differences=names.map((name,i)=>({index:i,expected:originalDishNames[i],actual:name})).filter(x=>x.expected!==x.actual);issues.push('Spanish original dish titles changed: '+JSON.stringify(differences.slice(0,5)));}
    if(lang==='en'&&names.some((name,i)=>name!==originalEnglishTitles[i]))issues.push('English dish titles differ from public baseline');
   }
  }catch(e){issues.push(e.message)}
