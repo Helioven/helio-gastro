@@ -322,7 +322,7 @@ window.GASTRO_I18N = Object.freeze({
     if(select && select.value!==language)select.value=language;
     translateElement(document.body);
     for(const element of document.querySelectorAll('[data-bilingual-es]')){
-      const translated=language==='fr'&&element.closest('#detail-content')&&normalize(element.dataset.bilingualEs)===frenchRoldanNotice[0]?frenchRoldanNotice[1]:(language==='en'?element.dataset.bilingualEn:element.dataset.bilingualEs);
+      const translated=language==='fr'&&element.closest('#detail-content')?(normalize(element.dataset.bilingualEs)===frenchRoldanNotice[0]?frenchRoldanNotice[1]:(frenchDetailNotices.get(normalize(element.dataset.bilingualEs))||element.dataset.bilingualEs)):(language==='en'?element.dataset.bilingualEn:element.dataset.bilingualEs);
       if(translated!==undefined && element.textContent!==translated)element.textContent=translated;
     }
     if(typeof window.HelioGastroRefreshExplanations==='function')window.HelioGastroRefreshExplanations();
@@ -368,7 +368,7 @@ window.GASTRO_I18N = Object.freeze({
             else if(node.nodeType===Node.ELEMENT_NODE){
               translateElement(node);
               const bilingual=[...(node.matches?.('[data-bilingual-es]')?[node]:[]),...(node.querySelectorAll?.('[data-bilingual-es]')||[])];
-              for(const element of bilingual){const value=language==='fr'&&element.closest('#detail-content')&&normalize(element.dataset.bilingualEs)===frenchRoldanNotice[0]?frenchRoldanNotice[1]:(language==='en'?element.dataset.bilingualEn:element.dataset.bilingualEs);if(value!==undefined && element.textContent!==value)element.textContent=value;}
+              for(const element of bilingual){const value=language==='fr'&&element.closest('#detail-content')?(normalize(element.dataset.bilingualEs)===frenchRoldanNotice[0]?frenchRoldanNotice[1]:(frenchDetailNotices.get(normalize(element.dataset.bilingualEs))||element.dataset.bilingualEs)):(language==='en'?element.dataset.bilingualEn:element.dataset.bilingualEs);if(value!==undefined && element.textContent!==value)element.textContent=value;}
             }
           }
         }
