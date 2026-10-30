@@ -203,6 +203,50 @@ window.GASTRO_I18N = Object.freeze({
     if(raw.startsWith('Comida completa por persona: '))return 'Repas complet par personne : '+raw.slice('Comida completa por persona: '.length);
     return source;
   };
+  // Scoped QA-only French rendering for group-menu labels and historical terms.
+  // Never translate dish names or mutate source menu records/prices.
+  const frenchGroupLabels=new Map([
+    ['Menús para grupos · precios publicados en 2025','Menus pour groupes · prix publiés en 2025'],
+    ['Group set menus · prices published in 2025','Menus pour groupes · prix publiés en 2025'],
+    ['Para comenzar','Pour commencer'],['To start','Pour commencer'],
+    ['Para continuar','Pour continuer'],['Following courses','Pour continuer'],
+    ['Principal · opciones a elegir','Plat principal · au choix'],['Main course · choose an option','Plat principal · au choix'],
+    ['Postre','Dessert'],['Dessert','Dessert'],['Postre:','Dessert :'],['Dessert:','Dessert :'],
+    ['Aperitivos','Amuse-bouches'],['Appetizers','Amuse-bouches'],
+    ['Platos para compartir','Plats à partager'],['Dishes to share','Plats à partager'],
+    ['Plato a elegir','Plat au choix'],['Choose a main course','Plat au choix'],
+    ['Primer plato','Entrée'],['First course','Entrée'],
+    ['Plato principal','Plat principal'],['Main course','Plat principal'],
+    ['Menú infantil','Menu enfant'],["Children's menu",'Menu enfant'],
+    ['La documentación de 2025 indica una reserva del 20 % y platos compartidos entre cuatro personas, excepto el principal. Confirmar condiciones actuales.','La documentation de 2025 indique un acompte de 20 % et des plats à partager entre quatre personnes, sauf le plat principal. Vérifiez les conditions actuelles.'],
+    ['The 2025 documentation indicates a 20% deposit and dishes shared among four guests, except the main course. Confirm current terms.','La documentation de 2025 indique un acompte de 20 % et des plats à partager entre quatre personnes, sauf le plat principal. Vérifiez les conditions actuelles.'],
+    ['Precios históricos de los menús completos publicados en 2025, no confirmados en 2026. Consultar vigencia, condiciones y precio por comensal directamente con el restaurante. No son precios de platos individuales.','Prix historiques des menus complets publiés en 2025, non confirmés pour 2026. Vérifiez leur validité, les conditions et le prix par personne directement auprès du restaurant. Il ne s’agit pas de prix de plats individuels.'],
+    ['Historical prices for complete set menus published in 2025; not verified for 2026. Confirm current prices, terms and per-person pricing with the restaurant. These are not individual dish prices.','Prix historiques des menus complets publiés en 2025, non confirmés pour 2026. Vérifiez leur validité, les conditions et le prix par personne directement auprès du restaurant. Il ne s’agit pas de prix de plats individuels.']
+  ]);
+  const translateFrenchGroupText=(node,source)=>{
+    const parent=node.parentElement;
+    if(!parent?.closest('#detail-content'))return source;
+    if(parent.closest('[data-keep-dish-spanish],[data-dish-explanation]'))return source;
+    const inGroup=parent.closest('.beatillas-group-menus')||parent.closest('.menu-dish')||parent.hasAttribute('data-group-menu-heading');
+    if(!inGroup)return source;
+    const value=normalize(source);
+    if(frenchGroupLabels.has(value))return frenchGroupLabels.get(value);
+    if(parent.hasAttribute('data-group-menu-heading')){
+      // Preserve the original name, monetary amount, guest count and separators.
+      return source.replace(/\\/(?:persona|person)(?=\\s|$)/,'/personne')
+        .replace(/ · (?:mínimo |minimum )(\\d+) (?:comensales|guests)/,' · minimum $1 personnes');
+    }
+    if(parent.hasAttribute('data-group-menu-price'))
+      return source.replace('Precio de menú publicado en 2025','Prix du menu publié en 2025')
+        .replace('2025 published set-menu price','Prix du menu publié en 2025');
+    if(parent.hasAttribute('data-group-menu-label-es')){
+      const m=value.match(/^(?:Menú n\\.º|Set menu no\\.)\\s*(\\d+)$/);
+      if(m)return 'Menu n° '+m[1];
+      if(value.startsWith('Bebidas incluidas: '))return 'Boissons comprises : '+value.slice('Bebidas incluidas: '.length);
+      if(value.startsWith('Drinks included: '))return 'Boissons comprises : '+value.slice('Drinks included: '.length);
+    }
+    return source;
+  };
   const frenchSectionHeadings=new Map();
   const translateFrenchHeading=(node,source)=>node.parentElement?.matches('[data-venue-menu-section]')?(frenchSectionHeadings.get(normalize(source))||source):source;
   const normalize=s=>s.trim().replace(/\s+/g,' ');
@@ -216,7 +260,7 @@ window.GASTRO_I18N = Object.freeze({
       const next=match[1]+translateValue(key)+match[3];
       if(node.nodeValue!==next)node.nodeValue=next;
     }else if(language==='fr'){
-      const next=match[1]+translateFrenchDetailNotice(node,translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchSearchText(node,translateFrenchHeading(node,match[2]))))))+match[3];
+      const next=match[1]+translateFrenchDetailNotice(node,translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchSearchText(node,translateFrenchGroupText(node,translateFrenchHeading(node,match[2])))))))+match[3];
       if(node.nodeValue!==next)node.nodeValue=next;
     }else if(node.nodeValue!==original)node.nodeValue=original;
   }
@@ -281,7 +325,7 @@ window.GASTRO_I18N = Object.freeze({
           const previous=originalNodes.get(node);
           if(previous!==undefined){
             const match=previous.match(/^(\s*)([\s\S]*?)(\s*)$/);
-            const expected=language==='en'?match[1]+translateValue(normalize(match[2]))+match[3]:language==='fr'?match[1]+translateFrenchDetailNotice(node,translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchSearchText(node,translateFrenchHeading(node,match[2]))))))+match[3]:previous;
+            const expected=language==='en'?match[1]+translateValue(normalize(match[2]))+match[3]:language==='fr'?match[1]+translateFrenchDetailNotice(node,translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchSearchText(node,translateFrenchGroupText(node,translateFrenchHeading(node,match[2])))))))+match[3]:previous;
             if(node.nodeValue===expected)continue;
           }
           originalNodes.delete(node);
