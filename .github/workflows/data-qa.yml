@@ -93,6 +93,7 @@ jobs:
           PY
           status=0
           for suite in \
+            scripts/test-fr-search-ui-pilot.mjs \
             scripts/test-fr-visual.mjs \
             scripts/test-fr-real-detail-27.mjs \
             scripts/test-fr-bar-marta-17.mjs \
