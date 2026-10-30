@@ -191,6 +191,9 @@ window.GASTRO_I18N = Object.freeze({
   ]);
   const translateFrenchDetailText=(node,source)=>node.parentElement?.closest('#detail-content')&&!node.parentElement.closest('.menu-dish,[data-venue-menu-section],[data-bilingual-es],[data-source-label-es]')?(frenchDetailLabels.get(normalize(source))||source):source;
   const frenchDetailNotices=new Map([
+    ["Información sobre la carta: La carta disponible corresponde a octubre de 2025. Los platos y precios mostrados proceden de esa publicación y podrían haber cambiado. Algunos platos pueden haber dejado de estar disponibles. Recomendamos consultar con Casa Rubio para confirmar la carta y los precios actuales.","Informations sur la carte : la carte disponible date d’octobre 2025. Les plats et prix affichés proviennent de cette publication et peuvent avoir changé. Certains plats peuvent ne plus être proposés. Nous recommandons de consulter Casa Rubio pour confirmer la carte et les prix actuels."],
+    ["Carta oficial de octubre de 2025. IVA del 10% incluido. Cesta de pan y picos 2,60 € (histórico). Alérgenos: consultar carta específica del restaurante.","Carte officielle d’octobre 2025. TVA de 10 % comprise. Corbeille de pain et de picos : 2,60 € (prix historique). Allergènes : consulter la carte spécifique du restaurant."],
+    ["Pan a elegir: chapata, pan de lino, bollo o pan sin gluten. Extra clásico +0,50 €; extra especial +2 €.","Pain au choix : ciabatta, pain au lin, petit pain ou pain sans gluten. Supplément classique : +0,50 € ; supplément spécial : +2 €."],
     ['El coste total de comer aquí no está documentado. Los precios de platos no incluyen necesariamente bebida ni extras.',"Le coût total d’un repas ici n’est pas documenté. Les prix des plats n’incluent pas nécessairement les boissons ni les suppléments."],
     ['Sin fecha registrada','Aucune date enregistrée'],
     ['Vigencia pendiente de confirmar','Validité à confirmer']
