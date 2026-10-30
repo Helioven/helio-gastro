@@ -34,6 +34,29 @@ jobs:
           node scripts/test-fr-overlay-integrity.mjs
           node scripts/test-fr-pilot-page.mjs
 
+      - name: Inventory group-menu conditions (read only)
+        run: |
+          mkdir -p qa-reports
+          node scripts/inventory-fr-group-menu-notes.mjs > qa-reports/fr-group-menu-notes.json
+          node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs=require('node:fs');
+          const report=JSON.parse(fs.readFileSync('qa-reports/fr-group-menu-notes.json','utf8'));
+          const entries=report.entries||[];
+          const protectedNames=entries.filter(e=>e.path.endsWith('(protected)'));
+          const translatable=entries.filter(e=>!e.path.endsWith('(protected)'));
+          console.log('## Inventario de condiciones de menús de grupo (FR QA)');
+          console.log('- Entradas totales: **'+entries.length+'**');
+          console.log('- Nombres protegidos: **'+protectedNames.length+'**');
+          console.log('- Textos/condiciones por revisar: **'+translatable.length+'**');
+          console.log('Ver archivo fr-group-menu-notes.json en el artefacto group-menu-conditions-inventory.');
+          NODE
+      - name: Upload group-menu conditions inventory
+        uses: actions/upload-artifact@v4
+        with:
+          name: group-menu-conditions-inventory
+          path: qa-reports/fr-group-menu-notes.json
+          retention-days: 14
+
       - name: Show next French translation target in job summary
         if: success()
         run: |
