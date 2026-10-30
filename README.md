@@ -920,3 +920,9 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Se incorporaron propuestas FR QA para «Platos a elegir», «Postre a elegir» y «Bebidas incluidas (una a elegir)», junto con sus equivalentes ingleses, en `i18n.js`; commit `952b6d0`.
 - **GitHub Actions #523 SUCCESS**, confirmado sobre `952b6d0`: https://github.com/Helioven/helio-gastro/actions/runs/41026949273.
 - Se conserva la restricción `?qa_fr=1`; sin cambios en cartas originales, precios, `data/places.json` ni `main`. Pendientes: notas y condiciones particulares de menús, inventario de cadenas restantes y QA lingüístico/visual final.
+
+### QA francés — aviso de vigencia de menús cerrados (30/10/2026)
+
+- Traducción FR QA contextual del aviso «Vigencia pendiente de confirmar» → «Validité à confirmer» junto a importes de menús oficiales, sin alterar nombres, cantidades ni precios; commit `52e208e`.
+- **GitHub Actions #525 SUCCESS**, comprobado sobre `52e208e`: https://github.com/Helioven/helio-gastro/actions/runs/41027470966.
+- Exclusivo de `?qa_fr=1` en `feature/fr-integration-qa-20261027`. Sin cambios en `data/places.json`, las cartas originales ni `main`. Pendientes inventario de condiciones particulares y QA lingüístico/visual integral.
