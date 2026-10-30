@@ -975,3 +975,9 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Incorporadas propuestas FR QA para avisos históricos de carta, IVA y alérgenos de Casa Rubio y opciones de pan/suplementos de La Piscatoría, conservando precios y fechas; commit `4f27c34`.
 - **GitHub Actions #541 SUCCESS**, confirmado sobre `4f27c34`: https://github.com/Helioven/helio-gastro/actions/runs/41033004369.
 - Francés restringido a `?qa_fr=1`. Sin cambios en `data/places.json`, cartas originales, precios ni `main`. Pendiente revisión de avisos restantes y QA lingüístico y visual final; PASS técnico no constituye aprobación editorial.
+
+### QA francés — aviso bilingüe de Roldán (#544) (30/10/2026)
+
+- Traducción FR QA del aviso de la carta general de Roldán con distinción expresa de la carta y ficha de Roldán Centro. Ajuste de la ruta de presentación de avisos bilingües; commits `6574252` y `be28cae`.
+- **GitHub Actions #544 SUCCESS**, comprobado sobre `be28cae`: https://github.com/Helioven/helio-gastro/actions/runs/41033767377.
+- Sin modificación de `data/places.json`, cartas originales, precios ni `main`; francés exclusivo de `?qa_fr=1`. Restan revisión del inventario y QA lingüístico/visual final; PASS técnico no equivale a aprobación editorial.
