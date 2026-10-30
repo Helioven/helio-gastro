@@ -774,6 +774,66 @@
       "es": "Los guisos de la abuela",
       "fr": "Les plats mijotés de grand-mère",
       "review": "context_check"
+    },
+    {
+      "es": "Comenzamos",
+      "fr": "Pour commencer",
+      "review": "context_check"
+    },
+    {
+      "es": "Risottos y pastas",
+      "fr": "Risottos et pâtes",
+      "review": "context_check"
+    },
+    {
+      "es": "Chocolates y especialidades",
+      "fr": "Chocolats et spécialités",
+      "review": "context_check"
+    },
+    {
+      "es": "Especialidades de chocolate",
+      "fr": "Spécialités au chocolat",
+      "review": "context_check"
+    },
+    {
+      "es": "Bollería y dulces",
+      "fr": "Viennoiseries et douceurs",
+      "review": "context_check"
+    },
+    {
+      "es": "Tostadas · media",
+      "fr": "Demi-tartines grillées",
+      "review": "context_check"
+    },
+    {
+      "es": "Tostadas · enteras",
+      "fr": "Tartines grillées entières",
+      "review": "context_check"
+    },
+    {
+      "es": "Chocolate caliente",
+      "fr": "Chocolat chaud",
+      "review": "context_check"
+    },
+    {
+      "es": "Infusiones",
+      "fr": "Infusions",
+      "review": "context_check"
+    },
+    {
+      "es": "Zumos",
+      "fr": "Jus",
+      "review": "context_check"
+    },
+    {
+      "es": "Primeros platos",
+      "fr": "Entrées",
+      "review": "context_check"
+    },
+    {
+      "es": "Segundos platos",
+      "fr": "Plats principaux",
+      "review": "context_check"
     }
   ],
   "gastronomy": [
