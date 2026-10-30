@@ -127,6 +127,25 @@ window.GASTRO_I18N = Object.freeze({
   const frenchQaEnabled=new URLSearchParams(window.location.search).get('qa_fr')==='1';
   const isSupportedLanguage=value=>value==='es'||value==='en'||(frenchQaEnabled&&value==='fr');
   let language='es';
+  // First French UI pilot: narrowly scoped search controls, QA flag only.
+  const frenchSearchLabels=new Map([
+    ['¿Qué te apetece?','Une petite envie ?'],
+    ['Nombre del establecimiento',"Nom de l’établissement"],
+    ['Plato o especialidad','Plat ou spécialité'],
+    ['PRUEBA UN PLATO TÍPICO','DÉCOUVREZ UNE SPÉCIALITÉ'],
+    ['Presupuesto máximo','Budget maximum'],
+    ['Aplicar presupuesto a','Appliquer le budget à'],
+    ['Un plato de la carta','Un plat à la carte'],
+    ['Comida total por persona','Repas complet par personne'],
+    ['Zona','Quartier'],
+    ['Toda Córdoba','Tout Cordoue'],
+    ['Formato del plato','Format du plat'],
+    ['Tipo de precio','Type de prix'],
+    ['Ordenar','Trier'],
+    ['Buscar establecimientos →','Rechercher des établissements →'],
+    ['Limpiar búsqueda','Effacer la recherche']
+  ]);
+  const translateFrenchSearchText=(node,source)=>node.parentElement?.closest('#search-section')&&!node.parentElement.closest('.dish-suggestions-list')?(frenchSearchLabels.get(normalize(source))||source):source;
   const frenchSectionHeadings=new Map();
   const translateFrenchHeading=(node,source)=>node.parentElement?.matches('[data-venue-menu-section]')?(frenchSectionHeadings.get(normalize(source))||source):source;
   const normalize=s=>s.trim().replace(/\s+/g,' ');
@@ -140,7 +159,7 @@ window.GASTRO_I18N = Object.freeze({
       const next=match[1]+translateValue(key)+match[3];
       if(node.nodeValue!==next)node.nodeValue=next;
     }else if(language==='fr'){
-      const next=match[1]+translateFrenchHeading(node,match[2])+match[3];
+      const next=match[1]+translateFrenchSearchText(node,translateFrenchHeading(node,match[2]))+match[3];
       if(node.nodeValue!==next)node.nodeValue=next;
     }else if(node.nodeValue!==original)node.nodeValue=original;
   }
@@ -205,7 +224,7 @@ window.GASTRO_I18N = Object.freeze({
           const previous=originalNodes.get(node);
           if(previous!==undefined){
             const match=previous.match(/^(\s*)([\s\S]*?)(\s*)$/);
-            const expected=language==='en'?match[1]+translateValue(normalize(match[2]))+match[3]:language==='fr'?match[1]+translateFrenchHeading(node,match[2])+match[3]:previous;
+            const expected=language==='en'?match[1]+translateValue(normalize(match[2]))+match[3]:language==='fr'?match[1]+translateFrenchSearchText(node,translateFrenchHeading(node,match[2]))+match[3]:previous;
             if(node.nodeValue===expected)continue;
           }
           originalNodes.delete(node);
