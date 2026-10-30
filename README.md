@@ -987,3 +987,9 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - **#547 FAILURE** en `visual-qa`: la prueba `scripts/test-fr-detail-notices-pilot.mjs` esperaba el selector `[data-bilingual-es]` en el aviso de Casa Rubio, ausente en el elemento real `.service-notice`; `catalog-audit` pasó. Incidencia en el selector de prueba, no regresión de datos demostrada. https://github.com/Helioven/helio-gastro/actions/runs/41034476549.
 - Selector de prueba corregido en commit `fe6b084` para comprobar `.service-notice`; **#548 SUCCESS** sobre ese commit: https://github.com/Helioven/helio-gastro/actions/runs/41034986214.
 - El cambio previo de renderizado FR QA de avisos bilingües (`658aa44`) se mantiene. Sin cambios en el catálogo, precios, cartas originales ni `main`. La revisión editorial/lingüística general sigue pendiente.
+
+### QA francés — regresión histórica Casa Rubio (#550) (30/10/2026)
+
+- Ampliada la prueba de navegador `scripts/test-fr-detail-notices-pilot.mjs` para verificar cambios FR → ES → FR → EN y preservación de la referencia de octubre de 2025 en los avisos históricos de Casa Rubio; commit `8b7871c`.
+- **GitHub Actions #550 SUCCESS** confirmado sobre `8b7871c`: https://github.com/Helioven/helio-gastro/actions/runs/41035646688.
+- No se modificaron cartas originales, precios, `data/places.json` ni `main`. Francés exclusivo de `?qa_fr=1`. El PASS automatizado no sustituye la revisión lingüística/editorial final.
