@@ -981,3 +981,9 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Traducción FR QA del aviso de la carta general de Roldán con distinción expresa de la carta y ficha de Roldán Centro. Ajuste de la ruta de presentación de avisos bilingües; commits `6574252` y `be28cae`.
 - **GitHub Actions #544 SUCCESS**, comprobado sobre `be28cae`: https://github.com/Helioven/helio-gastro/actions/runs/41033767377.
 - Sin modificación de `data/places.json`, cartas originales, precios ni `main`; francés exclusivo de `?qa_fr=1`. Restan revisión del inventario y QA lingüístico/visual final; PASS técnico no equivale a aprobación editorial.
+
+### QA francés — regresión Casa Rubio (#547 → #548) (30/10/2026)
+
+- **#547 FAILURE** en `visual-qa`: la prueba `scripts/test-fr-detail-notices-pilot.mjs` esperaba el selector `[data-bilingual-es]` en el aviso de Casa Rubio, ausente en el elemento real `.service-notice`; `catalog-audit` pasó. Incidencia en el selector de prueba, no regresión de datos demostrada. https://github.com/Helioven/helio-gastro/actions/runs/41034476549.
+- Selector de prueba corregido en commit `fe6b084` para comprobar `.service-notice`; **#548 SUCCESS** sobre ese commit: https://github.com/Helioven/helio-gastro/actions/runs/41034986214.
+- El cambio previo de renderizado FR QA de avisos bilingües (`658aa44`) se mantiene. Sin cambios en el catálogo, precios, cartas originales ni `main`. La revisión editorial/lingüística general sigue pendiente.
