@@ -158,6 +158,17 @@ window.GASTRO_I18N = Object.freeze({
     ['El límite solo se puede comprobar cuando existe un precio documentado. Las fichas sin precio se muestran como desconocidas, no como ofertas dentro del presupuesto.','Le plafond ne peut être vérifié que si un prix est documenté. Les établissements sans prix sont indiqués comme inconnus et non comme des offres respectant le budget.']
   ]);
   const translateFrenchSearchText=(node,source)=>node.parentElement?.closest('#search-section')&&!node.parentElement.closest('.dish-suggestions-list')?(frenchSearchLabels.get(normalize(source))||source):source;
+  const frenchResultsLabels=new Map([
+    ['Resultados','Résultats'],
+    ['Ver todos los locales que ofrecen este plato →','Voir tous les établissements proposant ce plat →'],
+    ['Ficha del local',"Fiche de l’établissement"],
+    ['Cerrar ficha ×','Fermer la fiche ×'],
+    ['Comparador','Comparateur'],
+    ['Elige hasta tres establecimientos. Para comparar precios, selecciona un mismo formato en el buscador. Las cantidades reales pueden variar entre locales.',"Choisissez jusqu’à trois établissements. Pour comparer les prix, sélectionnez un même format dans la recherche. Les quantités réelles peuvent varier selon l’établissement."],
+    ['Todavía no hay establecimientos seleccionados.','Aucun établissement sélectionné pour le moment.'],
+    ['El límite solo se puede comprobar cuando existe un precio documentado. Las fichas sin precio se muestran como desconocidas, no como ofertas dentro del presupuesto.',"Le plafond ne peut être vérifié que si un prix est documenté. Les établissements sans prix sont signalés comme inconnus, et non comme des offres respectant le budget."]
+  ]);
+  const translateFrenchResultsText=(node,source)=>node.parentElement?.closest('#results-section,#detail-section,#compare-section')&&!node.parentElement.closest('#results,#detail-content,#compare-output')?(frenchResultsLabels.get(normalize(source))||source):source;
   const frenchSectionHeadings=new Map();
   const translateFrenchHeading=(node,source)=>node.parentElement?.matches('[data-venue-menu-section]')?(frenchSectionHeadings.get(normalize(source))||source):source;
   const normalize=s=>s.trim().replace(/\s+/g,' ');
@@ -171,7 +182,7 @@ window.GASTRO_I18N = Object.freeze({
       const next=match[1]+translateValue(key)+match[3];
       if(node.nodeValue!==next)node.nodeValue=next;
     }else if(language==='fr'){
-      const next=match[1]+translateFrenchSearchText(node,translateFrenchHeading(node,match[2]))+match[3];
+      const next=match[1]+translateFrenchResultsText(node,translateFrenchSearchText(node,translateFrenchHeading(node,match[2])))+match[3];
       if(node.nodeValue!==next)node.nodeValue=next;
     }else if(node.nodeValue!==original)node.nodeValue=original;
   }
@@ -236,7 +247,7 @@ window.GASTRO_I18N = Object.freeze({
           const previous=originalNodes.get(node);
           if(previous!==undefined){
             const match=previous.match(/^(\s*)([\s\S]*?)(\s*)$/);
-            const expected=language==='en'?match[1]+translateValue(normalize(match[2]))+match[3]:language==='fr'?match[1]+translateFrenchSearchText(node,translateFrenchHeading(node,match[2]))+match[3]:previous;
+            const expected=language==='en'?match[1]+translateValue(normalize(match[2]))+match[3]:language==='fr'?match[1]+translateFrenchResultsText(node,translateFrenchSearchText(node,translateFrenchHeading(node,match[2])))+match[3]:previous;
             if(node.nodeValue===expected)continue;
           }
           originalNodes.delete(node);
