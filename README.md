@@ -939,3 +939,9 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - **GitHub Actions #529 SUCCESS**, commit `e7f07a2`: https://github.com/Helioven/helio-gastro/actions/runs/41028567844. `catalog-audit` y `visual-qa` finalizaron correctamente.
 - Artefacto: https://github.com/Helioven/helio-gastro/actions/runs/41028567844/artifacts/12964413723. El resultado del inventario debe leerse antes de contar condiciones pendientes o traducirlas; el éxito de CI solo valida su ejecución.
 - Sin cambios en cartas originales, `data/places.json`, precios ni `main`. El francés sigue exclusivo de `?qa_fr=1`.
+
+### QA francés — condiciones Campos y Moriles (#531) (30/10/2026)
+
+- Tres traducciones FR QA candidatas de condiciones documentadas de Bodegas Campos y los menús Moriles; commit `28c5e3b`. Se conserva la fecha histórica 30/11/2024 y la distinción entre vigencia confirmada y pendiente de comprobar.
+- **GitHub Actions #531 SUCCESS** sobre `28c5e3b`: https://github.com/Helioven/helio-gastro/actions/runs/41029301719.
+- No se modificaron `data/places.json`, las cartas, los precios ni `main`. Pendientes restantes condiciones del inventario y QA lingüístico/editorial integral.
