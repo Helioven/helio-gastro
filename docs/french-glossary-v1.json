@@ -1014,6 +1014,66 @@
       "es": "Pescados & Mariscos",
       "fr": "Poissons et fruits de mer",
       "review": "context_check"
+    },
+    {
+      "es": "Desayunos y meriendas · jeringos",
+      "fr": "Petits-déjeuners et goûters · jeringos",
+      "review": "context_check"
+    },
+    {
+      "es": "Encurtidos y laterío",
+      "fr": "Pickles et conserves en boîte",
+      "review": "context_check"
+    },
+    {
+      "es": "Especialidades y carnes elaboradas",
+      "fr": "Spécialités et préparations de viande",
+      "review": "context_check"
+    },
+    {
+      "es": "Primer bocado",
+      "fr": "Première bouchée",
+      "review": "context_check"
+    },
+    {
+      "es": "A fuego lento",
+      "fr": "À feu doux",
+      "review": "context_check"
+    },
+    {
+      "es": "Momento Dulce",
+      "fr": "Pause sucrée",
+      "review": "context_check"
+    },
+    {
+      "es": "Dulces y croissants",
+      "fr": "Douceurs et croissants",
+      "review": "context_check"
+    },
+    {
+      "es": "Para seguir",
+      "fr": "Pour continuer",
+      "review": "context_check"
+    },
+    {
+      "es": "Carnes al corte",
+      "fr": "Viandes vendues au poids",
+      "review": "context_check"
+    },
+    {
+      "es": "Tapeo",
+      "fr": "Tapas à partager",
+      "review": "context_check"
+    },
+    {
+      "es": "Croquetas y empanados",
+      "fr": "Croquettes et préparations panées",
+      "review": "context_check"
+    },
+    {
+      "es": "Pescaito frito",
+      "fr": "Petits poissons frits",
+      "review": "context_check"
     }
   ],
   "gastronomy": [
