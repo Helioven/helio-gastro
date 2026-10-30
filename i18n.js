@@ -207,6 +207,9 @@ window.GASTRO_I18N = Object.freeze({
   // Never translate dish names or mutate source menu records/prices.
   const frenchGroupLabels=new Map([
     ['Menús para grupos · precios publicados en 2025','Menus pour groupes · prix publiés en 2025'],
+    ["Bebidas durante el almuerzo; oferta sujeta a cambios estacionales","Boissons pendant le déjeuner ; l’offre peut varier selon la saison."],
+    ["La lámina indica platos individuales a elegir, postre y una bebida; no especifica inequívocamente cuántos platos individuales incluye. Confirmar condiciones con el local. Precio IVA incluido, vigencia actual sin confirmar.","Le visuel présente des plats individuels au choix, un dessert et une boisson, sans préciser clairement combien de plats individuels sont compris. Vérifiez les conditions auprès du restaurant. TVA comprise ; validité actuelle non confirmée."],
+    ["La imagen inglesa indica validez hasta el 30/11/2024; la española no indica fecha. Vigencia pendiente de confirmar.","Le visuel en anglais indique une validité jusqu’au 30/11/2024 ; le visuel en espagnol ne mentionne aucune date. Validité actuelle à confirmer."],
     ['Group set menus · prices published in 2025','Menus pour groupes · prix publiés en 2025'],
     ['Para comenzar','Pour commencer'],['To start','Pour commencer'],
     ['Para continuar','Pour continuer'],['Following courses','Pour continuer'],
