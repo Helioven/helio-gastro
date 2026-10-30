@@ -24,6 +24,7 @@ jobs:
           node scripts/build-french-plan.mjs
           node scripts/list-french-section-titles.mjs
           node scripts/inspect-fr-heading-context.mjs
+          node scripts/test-fr-section-render.mjs
           node scripts/audit-french-integrity.mjs
           node scripts/preview-french-batch.mjs
           node scripts/validate-french-batch.mjs
