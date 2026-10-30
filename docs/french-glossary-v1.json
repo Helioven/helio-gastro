@@ -834,6 +834,66 @@
       "es": "Segundos platos",
       "fr": "Plats principaux",
       "review": "context_check"
+    },
+    {
+      "es": "Desayunos y meriendas · sándwiches",
+      "fr": "Petits-déjeuners et goûters · sandwichs",
+      "review": "context_check"
+    },
+    {
+      "es": "Desayunos y meriendas · bocadillos",
+      "fr": "Petits-déjeuners et goûters · sandwichs baguette",
+      "review": "context_check"
+    },
+    {
+      "es": "Desayunos y meriendas · croissants",
+      "fr": "Petits-déjeuners et goûters · croissants",
+      "review": "context_check"
+    },
+    {
+      "es": "Desayunos y meriendas · gofres",
+      "fr": "Petits-déjeuners et goûters · gaufres",
+      "review": "context_check"
+    },
+    {
+      "es": "Desayunos y meriendas · tartas",
+      "fr": "Petits-déjeuners et goûters · gâteaux",
+      "review": "context_check"
+    },
+    {
+      "es": "Desayunos combinados",
+      "fr": "Formules petit-déjeuner",
+      "review": "context_check"
+    },
+    {
+      "es": "Otros desayunos",
+      "fr": "Autres petits-déjeuners",
+      "review": "context_check"
+    },
+    {
+      "es": "Sugerencias",
+      "fr": "Suggestions",
+      "review": "context_check"
+    },
+    {
+      "es": "Postres caseros",
+      "fr": "Desserts maison",
+      "review": "context_check"
+    },
+    {
+      "es": "Bocadillos de desayuno",
+      "fr": "Sandwichs du petit-déjeuner",
+      "review": "context_check"
+    },
+    {
+      "es": "Tartas y dulces",
+      "fr": "Gâteaux et douceurs",
+      "review": "context_check"
+    },
+    {
+      "es": "Zumos y batidos",
+      "fr": "Jus et milk-shakes",
+      "review": "context_check"
     }
   ],
   "gastronomy": [
