@@ -169,6 +169,16 @@ window.GASTRO_I18N = Object.freeze({
     ['El límite solo se puede comprobar cuando existe un precio documentado. Las fichas sin precio se muestran como desconocidas, no como ofertas dentro del presupuesto.',"Le plafond ne peut être vérifié que si un prix est documenté. Les établissements sans prix sont signalés comme inconnus, et non comme des offres respectant le budget."]
   ]);
   const translateFrenchResultsText=(node,source)=>node.parentElement?.closest('#results-section,#detail-section,#compare-section')&&!node.parentElement.closest('#results,#detail-content,#compare-output')?(frenchResultsLabels.get(normalize(source))||source):source;
+  const frenchDynamicResults=new Map([
+    ['Consulta especialidades y fuentes en la ficha','Consultez les spécialités et les sources dans la fiche.'],
+    ['Precio del plato pendiente de confirmar','Prix du plat en attente de confirmation'],
+    ['Precio del plato en este formato pendiente de confirmar','Prix du plat dans ce format en attente de confirmation'],
+    ['No podemos confirmar que cumpla el presupuesto indicado.',"Nous ne pouvons pas confirmer que cet établissement respecte le budget indiqué."],
+    ['Ver ficha completa','Voir la fiche complète'],
+    ['✓ Quitar del comparador','✓ Retirer du comparateur'],
+    ['+ Comparar','+ Comparer']
+  ]);
+  const translateFrenchDynamicResult=(node,source)=>node.parentElement?.closest('#results')&&node.parentElement.matches('.result-pending,.note,.detail-button,button')?(frenchDynamicResults.get(normalize(source))||source):source;
   const frenchSectionHeadings=new Map();
   const translateFrenchHeading=(node,source)=>node.parentElement?.matches('[data-venue-menu-section]')?(frenchSectionHeadings.get(normalize(source))||source):source;
   const normalize=s=>s.trim().replace(/\s+/g,' ');
@@ -182,7 +192,7 @@ window.GASTRO_I18N = Object.freeze({
       const next=match[1]+translateValue(key)+match[3];
       if(node.nodeValue!==next)node.nodeValue=next;
     }else if(language==='fr'){
-      const next=match[1]+translateFrenchResultsText(node,translateFrenchSearchText(node,translateFrenchHeading(node,match[2])))+match[3];
+      const next=match[1]+translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchSearchText(node,translateFrenchHeading(node,match[2]))))+match[3];
       if(node.nodeValue!==next)node.nodeValue=next;
     }else if(node.nodeValue!==original)node.nodeValue=original;
   }
@@ -247,7 +257,7 @@ window.GASTRO_I18N = Object.freeze({
           const previous=originalNodes.get(node);
           if(previous!==undefined){
             const match=previous.match(/^(\s*)([\s\S]*?)(\s*)$/);
-            const expected=language==='en'?match[1]+translateValue(normalize(match[2]))+match[3]:language==='fr'?match[1]+translateFrenchResultsText(node,translateFrenchSearchText(node,translateFrenchHeading(node,match[2])))+match[3]:previous;
+            const expected=language==='en'?match[1]+translateValue(normalize(match[2]))+match[3]:language==='fr'?match[1]+translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchSearchText(node,translateFrenchHeading(node,match[2]))))+match[3]:previous;
             if(node.nodeValue===expected)continue;
           }
           originalNodes.delete(node);
