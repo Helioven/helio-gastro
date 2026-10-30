@@ -993,3 +993,9 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Ampliada la prueba de navegador `scripts/test-fr-detail-notices-pilot.mjs` para verificar cambios FR → ES → FR → EN y preservación de la referencia de octubre de 2025 en los avisos históricos de Casa Rubio; commit `8b7871c`.
 - **GitHub Actions #550 SUCCESS** confirmado sobre `8b7871c`: https://github.com/Helioven/helio-gastro/actions/runs/41035646688.
 - No se modificaron cartas originales, precios, `data/places.json` ni `main`. Francés exclusivo de `?qa_fr=1`. El PASS automatizado no sustituye la revisión lingüística/editorial final.
+
+### QA francés — acceso experimental protegido (#552) (30/10/2026)
+
+- Ampliada la prueba de navegador en `scripts/test-fr-detail-notices-pilot.mjs` para comprobar en escritorio y móvil que `Français (QA)` no aparece sin `?qa_fr=1`; commit `42e9f69`.
+- **GitHub Actions #552 SUCCESS**, confirmado sobre `42e9f69`: https://github.com/Helioven/helio-gastro/actions/runs/41036314128.
+- Sin cambios en `data/places.json`, cartas originales, precios ni `main`. Continúan pendientes revisión lingüística/editorial integral y auditoría visual; PASS técnico no equivale a autorización de publicación.
