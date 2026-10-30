@@ -908,3 +908,9 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - **#516 FAIL** por error de sintaxis JavaScript; corregido en `00172cf`. **#517 FAIL** por modificación de títulos originales de menús en La Taberna del Río, Rincón de Beatillas y La Cazuela de la Espartería; corregido excluyendo esos títulos de la traducción en `4a69615`.
 - **#518 SUCCESS** sobre `4a69615`: https://github.com/Helioven/helio-gastro/actions/runs/41025336190. Los fallos anteriores quedan como trazabilidad histórica, no como defectos abiertos de estas pruebas.
 - Pendientes: condiciones variables aún no cubiertas, inventario de cadenas restantes y revisión lingüística/visual final ES/EN/FR. El PASS automatizado no implica aprobación editorial del francés.
+
+### QA francés — bebidas de menús de grupo Beatillas (30/10/2026)
+
+- Traducciones FR candidatas de condiciones de bebidas incluidas del Rincón de Beatillas, limitadas al modo experimental `?qa_fr=1` y a atributos bilingües documentados. Último commit funcional: `5993b02`.
+- **GitHub Actions #521 SUCCESS**, comprobado en el commit `5993b02`: https://github.com/Helioven/helio-gastro/actions/runs/41026116744.
+- Sin cambios en `data/places.json`, precios, cartas originales ni rama `main`. Permanecen pendientes otras condiciones dinámicas y la revisión lingüística/editorial global; PASS técnico no implica publicación.
