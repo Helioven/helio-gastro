@@ -945,3 +945,9 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Tres traducciones FR QA candidatas de condiciones documentadas de Bodegas Campos y los menús Moriles; commit `28c5e3b`. Se conserva la fecha histórica 30/11/2024 y la distinción entre vigencia confirmada y pendiente de comprobar.
 - **GitHub Actions #531 SUCCESS** sobre `28c5e3b`: https://github.com/Helioven/helio-gastro/actions/runs/41029301719.
 - No se modificaron `data/places.json`, las cartas, los precios ni `main`. Pendientes restantes condiciones del inventario y QA lingüístico/editorial integral.
+
+### QA francés — condiciones La Taberna del Río (#533) (30/10/2026)
+
+- Traducción FR QA de la condición común de seis menús de grupo de La Taberna del Río (mínimo 8 personas, platos compartidos para 4, bebidas incluidas y aviso de alergias con 48 horas); commit `f251019`.
+- **GitHub Actions #533 SUCCESS**, verificado en el commit `f251019`: https://github.com/Helioven/helio-gastro/actions/runs/41029893708.
+- No se modificaron el catálogo, las cartas originales, los precios ni `main`; francés restringido a `?qa_fr=1`. Próximo lote previsto: condiciones verificadas de Bodegas Campos. PASS automatizado no implica aprobación editorial.
