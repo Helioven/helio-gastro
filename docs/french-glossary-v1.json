@@ -954,6 +954,66 @@
       "es": "Pescado a la plancha",
       "fr": "Poisson à la plancha",
       "review": "context_check"
+    },
+    {
+      "es": "Del Mediterráneo - Pescados",
+      "fr": "De la Méditerranée – Poissons",
+      "review": "context_check"
+    },
+    {
+      "es": "Opciones sin gluten / para celíacos",
+      "fr": "Options sans gluten / pour personnes cœliaques",
+      "review": "context_check"
+    },
+    {
+      "es": "Carta especial de celíacos",
+      "fr": "Carte spéciale pour personnes cœliaques",
+      "review": "context_check"
+    },
+    {
+      "es": "Café 100 % natural",
+      "fr": "Café 100 % naturel",
+      "review": "context_check"
+    },
+    {
+      "es": "Varios",
+      "fr": "Divers",
+      "review": "context_check"
+    },
+    {
+      "es": "Carnes a la plancha y horno",
+      "fr": "Viandes à la plancha et au four",
+      "review": "context_check"
+    },
+    {
+      "es": "Desayunos y churrería",
+      "fr": "Petits-déjeuners et churros",
+      "review": "context_check"
+    },
+    {
+      "es": "Para empezar bien el día",
+      "fr": "Pour bien commencer la journée",
+      "review": "context_check"
+    },
+    {
+      "es": "Nuestras carnes del Valle de los Pedroches",
+      "fr": "Nos viandes de la vallée de Los Pedroches",
+      "review": "context_check"
+    },
+    {
+      "es": "Desayunos: tostadas y café",
+      "fr": "Petits-déjeuners : tartines grillées et café",
+      "review": "context_check"
+    },
+    {
+      "es": "Verduras y ensaladas",
+      "fr": "Légumes et salades",
+      "review": "context_check"
+    },
+    {
+      "es": "Pescados & Mariscos",
+      "fr": "Poissons et fruits de mer",
+      "review": "context_check"
     }
   ],
   "gastronomy": [
