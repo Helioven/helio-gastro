@@ -963,3 +963,9 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Traducción FR QA de condiciones del menú de 38 € de Patio Romano (entrantes para compartir, bebidas y mínimo de comensales no especificado), commit `559acf2`.
 - **GitHub Actions #537 SUCCESS**, confirmado sobre `559acf2`: https://github.com/Helioven/helio-gastro/actions/runs/41031441225.
 - Quedan tres condiciones de menús de 48 € pendientes de lote FR. No se modificaron precios, cartas originales, `data/places.json` ni `main`. Traducción experimental exclusiva de `?qa_fr=1`. PASS técnico no implica validación lingüística/editorial final.
+
+### QA francés — Patio Romano, condiciones completas (#539) (30/10/2026)
+
+- Incorporadas las tres condiciones pendientes de menús de 48 € de Patio Romano en `i18n.js`, preservando diferencias de platos, bebidas, IVA y ausencia de mínimo de comensales especificado; commit `c8b44e6`. Junto al lote previo de 38 €, las cuatro condiciones inventariadas tienen propuesta FR QA.
+- **GitHub Actions #539 SUCCESS**, comprobado sobre `c8b44e6`: https://github.com/Helioven/helio-gastro/actions/runs/41032138961.
+- Sin modificación de `data/places.json`, cartas originales, precios ni `main`. Francés experimental limitado a `?qa_fr=1`; siguen pendientes validación lingüística/editorial y restantes condiciones del inventario.
