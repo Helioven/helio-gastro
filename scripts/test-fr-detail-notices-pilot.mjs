@@ -17,6 +17,19 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.deepEqual(await page.locator('#detail-content .menu-dish h4').allTextContents(),names);
  await page.locator('#language-select').selectOption('en');
  assert.deepEqual(await page.locator('#detail-content .menu-dish h4').allTextContents(),names);
+ await page.locator('#language-select').selectOption('fr');
+ await page.evaluate(()=>showPlace(state.places.find(p=>p.id==='casa-rubio'),false));
+ const rubio=page.locator('#detail-content [data-bilingual-es]');
+ await assert.doesNotReject(async()=>{await rubio.waitFor();});
+ await page.waitForFunction(()=>document.querySelector('#detail-content [data-bilingual-es]')?.textContent.startsWith('Informations sur la carte :'));
+ const rubioFr=await rubio.textContent();
+ assert.ok(rubioFr.includes('octobre 2025'));
+ await page.locator('#language-select').selectOption('es');
+ assert.ok((await rubio.textContent()).startsWith('Información sobre la carta:'));
+ await page.locator('#language-select').selectOption('en');
+ assert.notEqual(await rubio.textContent(),rubioFr);
+ await page.locator('#language-select').selectOption('fr');
+ await page.waitForFunction(()=>document.querySelector('#detail-content [data-bilingual-es]')?.textContent.startsWith('Informations sur la carte :'));
  await ctx.close();console.log('FR DETAIL NOTICES '+profile.name+' PASS');
 }
 await browser.close();
