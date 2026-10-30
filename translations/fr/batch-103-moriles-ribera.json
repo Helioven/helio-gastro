@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "moriles-ribera",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 9,
+      "fr": "Gâteau au caramel à la fleur de sel."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 10,
+      "fr": "Fondant au chocolat accompagné de glace à la vanille."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 11,
+      "fr": "Dessert aux trois chocolats."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 12,
+      "fr": "Dessert glacé façon Ferrero."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 13,
+      "fr": "Gâteau au chocolat indiqué sans gluten et sans lactose."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 14,
+      "fr": "Gâteau Forêt-Noire."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 15,
+      "fr": "Gâteau au tiramisu."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 16,
+      "fr": "Gâteau à la mousse au chocolat."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 17,
+      "fr": "Gâteau crémeux à la pistache."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 18,
+      "fr": "Dessert au chocolat servi dans une coupe en forme de tulipe."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 19,
+      "fr": "Glace au touron servie dans une coupe en forme de tulipe."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 11,
+      "itemIndex": 20,
+      "fr": "Glace à la vanille de Tahiti aux noix de macadamia."
+    }
+  ]
+}
