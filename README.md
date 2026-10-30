@@ -957,3 +957,9 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Incorporadas propuestas FR QA para condiciones documentadas de los menús Los Flamencos, Los Patios y La Bodega de Bodegas Campos, preservando diferencias de bebidas, IVA, inclusiones y exclusiones y el precio adicional publicado de 8 € por copa no prémium; commit `57fc33d`.
 - **GitHub Actions #535 SUCCESS**, verificado sobre `57fc33d`: https://github.com/Helioven/helio-gastro/actions/runs/41030715621.
 - El PASS técnico no implica aprobación lingüística/editorial final. No se modificaron `data/places.json`, cartas, precios ni `main`; francés exclusivamente con `?qa_fr=1`. Próximo trabajo: restantes condiciones verificadas del inventario y QA integral.
+
+### QA francés — Patio Romano, primer lote (#537) (30/10/2026)
+
+- Traducción FR QA de condiciones del menú de 38 € de Patio Romano (entrantes para compartir, bebidas y mínimo de comensales no especificado), commit `559acf2`.
+- **GitHub Actions #537 SUCCESS**, confirmado sobre `559acf2`: https://github.com/Helioven/helio-gastro/actions/runs/41031441225.
+- Quedan tres condiciones de menús de 48 € pendientes de lote FR. No se modificaron precios, cartas originales, `data/places.json` ni `main`. Traducción experimental exclusiva de `?qa_fr=1`. PASS técnico no implica validación lingüística/editorial final.
