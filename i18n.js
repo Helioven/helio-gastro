@@ -143,7 +143,19 @@ window.GASTRO_I18N = Object.freeze({
     ['Tipo de precio','Type de prix'],
     ['Ordenar','Trier'],
     ['Buscar establecimientos →','Rechercher des établissements →'],
-    ['Limpiar búsqueda','Effacer la recherche']
+    ['Limpiar búsqueda','Effacer la recherche'],
+    ['Cualquier formato (sin equivalencia de tamaños)','Tout format (tailles non comparables)'],
+    ['Unidad','À l’unité'],
+    ['Media ración','Demi-portion'],
+    ['Ración completa','Portion entière'],
+    ['Formato no especificado','Format non précisé'],
+    ['Todos los precios','Tous les prix'],
+    ['Solo precios documentados','Prix documentés uniquement'],
+    ['Documentados o estimados','Prix documentés ou estimés'],
+    ['Mostrar también establecimientos sin precio documentado','Afficher aussi les établissements sans prix documenté'],
+    ['(se identificarán claramente como precio desconocido)','(signalés clairement comme prix inconnus)'],
+    ['Límite aplicado al precio de un plato, no a una comida completa.','Plafond appliqué au prix d’un plat, et non à celui d’un repas complet.'],
+    ['El límite solo se puede comprobar cuando existe un precio documentado. Las fichas sin precio se muestran como desconocidas, no como ofertas dentro del presupuesto.','Le plafond ne peut être vérifié que si un prix est documenté. Les établissements sans prix sont indiqués comme inconnus et non comme des offres respectant le budget.']
   ]);
   const translateFrenchSearchText=(node,source)=>node.parentElement?.closest('#search-section')&&!node.parentElement.closest('.dish-suggestions-list')?(frenchSearchLabels.get(normalize(source))||source):source;
   const frenchSectionHeadings=new Map();
