@@ -894,6 +894,66 @@
       "es": "Zumos y batidos",
       "fr": "Jus et milk-shakes",
       "review": "context_check"
+    },
+    {
+      "es": "Perritos",
+      "fr": "Hot-dogs",
+      "review": "context_check"
+    },
+    {
+      "es": "Cazuelitas",
+      "fr": "Petites cassolettes",
+      "review": "context_check"
+    },
+    {
+      "es": "Salados",
+      "fr": "En-cas salés",
+      "review": "context_check"
+    },
+    {
+      "es": "Churros",
+      "fr": "Churros",
+      "review": "context_check"
+    },
+    {
+      "es": "Cafés",
+      "fr": "Cafés",
+      "review": "context_check"
+    },
+    {
+      "es": "Gildas",
+      "fr": "Gildas",
+      "review": "context_check"
+    },
+    {
+      "es": "Conservas",
+      "fr": "Conserves",
+      "review": "context_check"
+    },
+    {
+      "es": "Aperitivos",
+      "fr": "Apéritifs",
+      "review": "context_check"
+    },
+    {
+      "es": "Hamburguesas",
+      "fr": "Hamburgers",
+      "review": "context_check"
+    },
+    {
+      "es": "Tapas",
+      "fr": "Tapas",
+      "review": "context_check"
+    },
+    {
+      "es": "Marisco",
+      "fr": "Fruits de mer",
+      "review": "context_check"
+    },
+    {
+      "es": "Pescado a la plancha",
+      "fr": "Poisson à la plancha",
+      "review": "context_check"
     }
   ],
   "gastronomy": [
