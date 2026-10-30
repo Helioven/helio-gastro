@@ -23,6 +23,7 @@ jobs:
           node scripts/inspect-next-fr-restaurant.mjs
           node scripts/build-french-plan.mjs
           node scripts/list-french-section-titles.mjs
+          node scripts/inspect-fr-heading-context.mjs
           node scripts/audit-french-integrity.mjs
           node scripts/preview-french-batch.mjs
           node scripts/validate-french-batch.mjs
