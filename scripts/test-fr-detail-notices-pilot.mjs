@@ -30,6 +30,15 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.notEqual(await rubio.textContent(),rubioFr);
  await page.locator('#language-select').selectOption('fr');
  await page.waitForFunction(()=>document.querySelector('#detail-content .service-notice')?.textContent.startsWith('Informations sur la carte :'));
+ // Casa Rubio: protect original prices and historical publication terms on language round-trips.
+ await page.locator('#language-select').selectOption('es');
+ const rubioEs=await rubio.textContent();
+ assert.ok(rubioEs.includes('octubre de 2025'));
+ await page.locator('#language-select').selectOption('fr');
+ await page.waitForFunction(()=>document.querySelector('#detail-content .service-notice')?.textContent.startsWith('Informations sur la carte :'));
+ assert.ok((await rubio.textContent()).includes('octobre 2025'));
+ await page.locator('#language-select').selectOption('en');
+ assert.ok((await rubio.textContent()).length>0);
  await ctx.close();console.log('FR DETAIL NOTICES '+profile.name+' PASS');
 }
 await browser.close();
