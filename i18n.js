@@ -128,7 +128,7 @@ window.GASTRO_I18N = Object.freeze({
   const isSupportedLanguage=value=>value==='es'||value==='en'||(frenchQaEnabled&&value==='fr');
   let language='es';
   const frenchSectionHeadings=new Map();
-  const translateFrenchHeading=(node,source)=>node.parentElement?.closest('[data-venue-menu-section]')?(frenchSectionHeadings.get(source)||source):source;
+  const translateFrenchHeading=(node,source)=>node.parentElement?.matches('[data-venue-menu-section]')?(frenchSectionHeadings.get(source)||source):source;
   const normalize=s=>s.trim().replace(/\s+/g,' ');
   function translateText(node){
     if(!node || !node.parentElement || node.parentElement.closest('script,style,textarea,option[data-keep-original],#language-select,[data-keep-dish-spanish],[data-bilingual-es]'))return;
