@@ -38,6 +38,7 @@ jobs:
         run: |
           mkdir -p qa-reports
           node scripts/inventory-fr-group-menu-notes.mjs > qa-reports/fr-group-menu-notes.json
+          node scripts/test-fr-group-menu-inventory.mjs
           node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
           const fs=require('node:fs');
           const report=JSON.parse(fs.readFileSync('qa-reports/fr-group-menu-notes.json','utf8'));
