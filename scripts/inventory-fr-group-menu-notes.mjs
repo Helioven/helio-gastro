@@ -21,6 +21,23 @@ function extractLiteralMap(name) {
 }
 const exactGroup = extractLiteralMap('frenchGroupLabels');
 const exactNotices = extractLiteralMap('frenchDetailNotices');
+function extractRoldanPair() {
+  const match = source.match(/const frenchRoldanNotice=(\[[^;]+\]);/);
+  if (!match) throw new Error('Roldán FR source pair missing');
+  const pair = runInNewContext(match[1], Object.create(null), { timeout: 1000 });
+  if (!Array.isArray(pair) || pair.length !== 2 || pair.some(s => typeof s !== 'string' || !s.trim()))
+    throw new Error('Invalid Roldán FR source pair');
+  return pair;
+}
+const roldanPair = extractRoldanPair();
+// These four source values are already handled by the scoped group-menu
+// beverage renderer. A candidate here still requires browser QA.
+const dynamicBeverages = new Map([
+  ['Cervezas, vino de Montilla-Moriles, tinto de Rioja, agua mineral y cava de Bodegas Faustino',
+    'Boissons comprises : bière, vin de Montilla-Moriles, vin rouge de Rioja, eau minérale et cava des Bodegas Faustino'],
+  ['Agua mineral y dos refrescos',
+    'Boissons comprises : eau minérale et deux boissons sans alcool']
+]);
 const norm = value => String(value ?? '').trim().replace(/\s+/g, ' ');
 const entries = [];
 function add(place, path, es, en = '') {
@@ -28,10 +45,15 @@ function add(place, path, es, en = '') {
   const protectedField = path.includes('(protected)');
   const spanish = es.trim(), english = typeof en === 'string' ? en.trim() : '';
   const candidate = [spanish, english].find(text => exactGroup.has(norm(text)) || exactNotices.has(norm(text)));
-  const status = protectedField ? 'protected' : candidate ? 'exact_candidate' : 'needs_context_review';
+  const dynamicFr = !protectedField && (
+    (path === 'menuPriceNotice' && norm(spanish) === norm(roldanPair[0]) ? roldanPair[1] : undefined) ??
+    (path.endsWith('.beveragesIncluded') ? dynamicBeverages.get(norm(spanish)) : undefined)
+  );
+  const status = protectedField ? 'protected' : candidate ? 'exact_candidate' : dynamicFr ? 'dynamic_candidate' : 'needs_context_review';
   entries.push({
     placeId: place.id, placeName: place.name, path, es: spanish, en: english,
-    status, ...(candidate ? { proposedFr: exactGroup.get(norm(candidate)) ?? exactNotices.get(norm(candidate)) } : {})
+    status, ...(candidate ? { proposedFr: exactGroup.get(norm(candidate)) ?? exactNotices.get(norm(candidate)) } : {}),
+    ...(dynamicFr && !candidate ? { proposedFr: dynamicFr } : {})
   });
 }
 for (const place of places) {
@@ -51,16 +73,17 @@ for (const place of places) {
     add(place, `menus[${i}].beveragesIncluded`, menu.beveragesIncluded);
   });
 }
-const summary = { protected: 0, exact_candidate: 0, needs_context_review: 0 };
+const summary = { protected: 0, exact_candidate: 0, dynamic_candidate: 0, needs_context_review: 0 };
 for (const entry of entries) summary[entry.status]++;
 const byPlace = Object.values(Object.groupBy(entries, e => e.placeId)).map(group => ({
   placeId: group[0].placeId, placeName: group[0].placeName,
   total: group.length, exactCandidates: group.filter(e => e.status === 'exact_candidate').length,
+  dynamicCandidates: group.filter(e => e.status === 'dynamic_candidate').length,
   needsContextReview: group.filter(e => e.status === 'needs_context_review').length,
   protected: group.filter(e => e.status === 'protected').length
 }));
 console.log(JSON.stringify({
   source: 'data/places.json', frenchSource: 'i18n.js', total: entries.length,
-  warning: 'Exact candidates are literal matches, not verified browser translations. Dynamic rules, context and DOM scope may change coverage; unresolved entries require manual/browser review.',
+  warning: 'Literal and dynamic candidates indicate source coverage, not verified browser translations. Dynamic rules, context and DOM scope may change coverage; unresolved entries require manual/browser review.',
   summary, byPlace, entries
 }, null, 2));
