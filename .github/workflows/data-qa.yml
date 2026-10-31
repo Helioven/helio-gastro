@@ -168,7 +168,8 @@ jobs:
             node "$suite" || status=1
             echo "::endgroup::"
           done
-          echo '::group::French visible text inventory (informational)'\n          node scripts/inventory-fr-visible-text.mjs || status=1
+          echo '::group::French visible text inventory (informational)'
+          node scripts/inventory-fr-visible-text.mjs || status=1
           if [ -f qa-reports/fr-visible-text-triage.json ]; then
             node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
           const fs=require('node:fs');
@@ -182,7 +183,8 @@ jobs:
             console.log('| '+safe(profile.profile)+' | '+safe(finding.view)+' | '+finding.reviewCandidates.length+' | '+safe(finding.reviewCandidates.slice(0,3).map(x=>x.text).join(' / '))+' |');
           console.log('Consultar fr-visible-text-triage.json para todos los candidatos y contrastar en navegador antes de corregir.');
           NODE
-          fi\n          echo '::endgroup::'\n          exit "$status"
+          fi
+          echo '::endgroup::'\n          exit "$status"
       - name: Upload visual QA screenshots and results
         if: always()
         uses: actions/upload-artifact@v4
