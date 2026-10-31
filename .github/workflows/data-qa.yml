@@ -53,6 +53,13 @@ jobs:
           console.log('|---|---:|---:|---:|');
           for(const place of report.byPlace.filter(p=>p.needsContextReview))
             console.log('| '+place.placeName.replaceAll('|','/')+' | '+place.exactCandidates+' | '+place.needsContextReview+' | '+place.protected+' |');
+          console.log('### Primeras 12 condiciones para revisar (sin traducción automática)');
+          console.log('| Establecimiento | Campo | ES (extracto) |');
+          console.log('|---|---|---|');
+          const safe=v=>String(v??'').replaceAll('|','&#124;').replace(/\\s+/g,' ').trim().slice(0,180);
+          for(const entry of entries.filter(e=>e.status==='needs_context_review').slice(0,12))
+            console.log('| '+safe(entry.placeName)+' | '+safe(entry.path)+' | '+safe(entry.es)+' |');
+          console.log('Estado: candidatos a revisión, no ausencias verificadas en el navegador.');
           console.log('Las reglas de traducción dinámicas no están incluidas en las coincidencias literales. Ver artefacto group-menu-conditions-inventory.');
           NODE
       - name: Upload group-menu conditions inventory
