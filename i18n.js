@@ -343,7 +343,16 @@ window.GASTRO_I18N = Object.freeze({
         if(!originals){originals={};originalAttributes.set(element,originals);}
         if(!(attr in originals))originals[attr]=element.getAttribute(attr);
         const source=originals[attr];
-        const translated=language==='en'?translateValue(source):source;
+        const frenchAccessibleLabels={
+          'Navegación rápida':'Navigation rapide',
+          'Momento gastronómico':'Moment du repas',
+          'Especialidades cordobesas para buscar':'Spécialités cordouanes à rechercher',
+          'Resultados':'Résultats',
+          'Ficha del establecimiento':'Fiche de l’établissement',
+          'Cerrar recomendaciones':'Fermer les recommandations',
+          'Mapa del establecimiento':'Carte de l’établissement'
+        };
+        const translated=language==='en'?translateValue(source):language==='fr'?(frenchAccessibleLabels[source]||source):source;
         if(element.getAttribute(attr)!==translated)element.setAttribute(attr,translated);
       }
     }
