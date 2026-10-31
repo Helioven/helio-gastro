@@ -31,11 +31,10 @@ try{
        if(!el.getClientRects().length)return false;
        if(el.closest('.menu-dish,[data-keep-dish-spanish],[data-venue-menu-section],#language-select'))return false;
        return true;
-      }).map(el=>({tag:el.tagName,text:(el.innerText||el.textContent||'').replace(/\\s+/g,' ').trim().slice(0,220)})).filter(x=>x.text);
+      }).map(el=>({tag:el.tagName,text:(el.innerText||el.textContent||'').replace(/\s+/g,' ').trim().slice(0,220)})).filter(x=>x.text);
     });
     // Heuristic triage only: do not classify names, cognates, or dates as errors.
-    const cues=/\\b(?:buscar|búsqueda|precios pendientes|sin fecha|cerrar|selecciona|consulta|ver ficha|fuentes y fecha|comida completa|establecimientos encontrados)\\b/i;
-    findings.push({view:view.id,reviewCandidates:visible.filter(x=>cues.test(x.text)).slice(0,30),visibleElementsChecked:visible.length});
+    findings.push({view:view.id,reviewCandidates:visible.filter(x=>spanishCue.test(x.text)).slice(0,30),visibleElementsChecked:visible.length});
    }
    report.profiles.push({profile:profile.name,errors,findings});
   }finally{await ctx.close();}
