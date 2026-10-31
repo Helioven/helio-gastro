@@ -350,7 +350,9 @@ window.GASTRO_I18N = Object.freeze({
           'Resultados':'Résultats',
           'Ficha del establecimiento':'Fiche de l’établissement',
           'Cerrar recomendaciones':'Fermer les recommandations',
-          'Mapa del establecimiento':'Carte de l’établissement'
+          'Mapa del establecimiento':'Carte de l’établissement',
+          'Ej.: Moriles, Casa Bravo, Plateros…':'Ex. : Moriles, Casa Bravo, Plateros…',
+          'Escribe o elige un plato cordobés…':'Saisissez ou choisissez une spécialité cordouane…'
         };
         const englishAccessibleLabels={
           'Navegación rápida':'Quick navigation',
