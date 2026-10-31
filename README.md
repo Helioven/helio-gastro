@@ -1050,3 +1050,12 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - Revisión del inventario exploratorio `scripts/inventory-fr-visible-text.mjs`: se permitieron como candidatos de revisión las notas y advertencias `.note`/`.service-notice` dentro de tarjetas de menú, que antes quedaban excluidas junto con los títulos de platos. Los nombres tradicionales y los elementos marcados para conservar el español siguen protegidos. Commit `dc97c45`.
 - Se añadieron al detector indicios específicos de español en avisos de precios históricos y vigencia (`precios históricos`, `vigencia pendiente`, `consultar vigencia`) para localizar posibles textos sin traducir, sin declararlos automáticamente defectos. Commit `8e62f02`.
 - **Estado:** cambios de instrumentación guardados; ejecución CI pendiente. La ausencia de candidatos no equivale a aprobación lingüística y las capturas siguen requiriendo inspección manual. Sin modificaciones de `main`, catálogo, cartas o precios.
+
+### Cierre de lote — etiquetas de ubicaciones de Roldán en francés (31/10/2026)
+
+- Se detectó que en el listado de ubicaciones de Roldán persistían los tipos de establecimiento en español: `Panadería:` y `Cafetería:`.
+- Se incorporaron traducciones acotadas a la ficha francesa: `Panadería:` → `Boulangerie :` y `Cafetería:` → `Café :` (`i18n.js`, commit `d6a8237`). Se mantienen intactos los nombres, direcciones y datos originales de cada ubicación.
+- Se amplió `scripts/test-fr-detail-shell-pilot.mjs` para comprobar los rótulos renderizados en francés en escritorio y móvil (commit `d02003d`). **PASS confirmado por el responsable**; no se documenta número de ejecución ni duración porque no se aportaron.
+- La ampliación anterior del inventario de notas y avisos de menús también tuvo **PASS confirmado por el responsable**; sigue siendo un detector exploratorio, no una certificación lingüística.
+- **Siguiente paso:** revisar candidatos reales del inventario y las capturas de fichas antes de nuevas correcciones, manteniendo los nombres gastronómicos originales y la revisión editorial pendiente.
+- **Alcance:** exclusivamente rama `feature/fr-integration-qa-20261027`; sin cambios en `main`, `data/places.json`, cartas ni precios. Francés experimental bajo `?qa_fr=1`.
