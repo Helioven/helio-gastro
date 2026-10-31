@@ -28,7 +28,8 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
 
  await page.waitForFunction(()=>document.querySelector('#search-title')?.textContent==='Une petite envie ?');
  assert.equal(await button.textContent(),'Rechercher des établissements →');
- assert.equal(await page.locator('[data-dish="Flamenquín"]').textContent(),'Flamenquín');
+ await page.waitForFunction(()=>typeof state!=='undefined'&&state.places.length>0);
+ assert.equal(await page.locator('#dish-suggestions-list button').filter({hasText:/^Flamenquín$/}).count(),1,'Flamenquín should remain available after suggestions are rendered');
  await page.locator('#language-select').selectOption('es');
  assert.equal(await favoriteNotice.textContent(),favoriteEs);
  assert.ok((await nav.innerText()).includes('🔎 Buscar'),'Spanish quick navigation not restored');
