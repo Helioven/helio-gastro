@@ -10,6 +10,8 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  for(const [selector,expected] of accessibleLabels)assert.equal(await page.locator(selector).getAttribute('aria-label'),expected,'FR accessible label '+selector);
  const additionalLabels=[['#results-section','Résultats'],['#detail-section','Fiche de l’établissement'],['#close-recommendations','Fermer les recommandations'],['#map-frame','Carte de l’établissement']];
  for(const [selector,expected] of additionalLabels)assert.equal(await page.locator(selector).getAttribute('aria-label')??await page.locator(selector).getAttribute('title'),expected,'FR accessibility attribute '+selector);
+ assert.equal(await page.locator('#place-name').getAttribute('placeholder'),'Ex. : Moriles, Casa Bravo, Plateros…','FR venue placeholder');
+ assert.equal(await page.locator('#dish').getAttribute('placeholder'),'Saisissez ou choisissez une spécialité cordouane…','FR dish placeholder');
  const rec=page.locator('#recommendations-section');
  assert.equal(await page.locator('#recommendations-heading').textContent(),'🍴 Qu’est-ce qui vous ferait plaisir aujourd’hui ?');
  assert.ok((await rec.innerText()).includes('Accès direct'),'French recommendations access label missing');
@@ -39,6 +41,8 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.equal(await page.locator('#close-recommendations').getAttribute('aria-label'),'Cerrar recomendaciones','ES dialog label restoration');
  assert.equal(await page.locator('#map-frame').getAttribute('title'),'Mapa del establecimiento','ES map frame title restoration');
  assert.equal(await page.locator('#quick-nav').getAttribute('aria-label'),'Navegación rápida','ES aria-label must be restored');
+ assert.equal(await page.locator('#place-name').getAttribute('placeholder'),'Ej.: Moriles, Casa Bravo, Plateros…','ES venue placeholder restoration');
+ assert.equal(await page.locator('#dish').getAttribute('placeholder'),'Escribe o elige un plato cordobés…','ES dish placeholder restoration');
  assert.equal(await favoriteNotice.textContent(),favoriteEs);
  assert.ok((await nav.innerText()).includes('🔎 Buscar'),'Spanish quick navigation not restored');
  assert.ok((await hero.innerText()).includes('Encuentra algo rico.'),'Spanish hero not restored');
