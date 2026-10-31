@@ -6,6 +6,7 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  await page.goto('http://127.0.0.1:8765/index.html?qa_fr=1',{waitUntil:'domcontentloaded'});
  const heading=page.locator('#search-title');const button=page.locator('#search-button');
  await page.locator('#language-select').selectOption('fr');
+ assert.equal(await page.locator('#language-select').getAttribute('aria-label'),'Langue','FR language selector accessible label');
  const accessibleLabels=[['#quick-nav','Navigation rapide'],['#service-section .service-selector','Moment du repas'],['.dish-suggestions','Spécialités cordouanes à rechercher']];
  for(const [selector,expected] of accessibleLabels)assert.equal(await page.locator(selector).getAttribute('aria-label'),expected,'FR accessible label '+selector);
  const additionalLabels=[['#results-section','Résultats'],['#detail-section','Fiche de l’établissement'],['#close-recommendations','Fermer les recommandations'],['#map-frame','Carte de l’établissement']];
@@ -41,6 +42,7 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.equal(await page.locator('#close-recommendations').getAttribute('aria-label'),'Cerrar recomendaciones','ES dialog label restoration');
  assert.equal(await page.locator('#map-frame').getAttribute('title'),'Mapa del establecimiento','ES map frame title restoration');
  assert.equal(await page.locator('#quick-nav').getAttribute('aria-label'),'Navegación rápida','ES aria-label must be restored');
+ assert.equal(await page.locator('#language-select').getAttribute('aria-label'),'Language / Idioma','ES language selector label restored');
  assert.equal(await page.locator('#place-name').getAttribute('placeholder'),'Ej.: Moriles, Casa Bravo, Plateros…','ES venue placeholder restoration');
  assert.equal(await page.locator('#dish').getAttribute('placeholder'),'Escribe o elige un plato cordobés…','ES dish placeholder restoration');
  assert.equal(await favoriteNotice.textContent(),favoriteEs);
