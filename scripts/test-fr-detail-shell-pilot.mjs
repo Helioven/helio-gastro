@@ -16,6 +16,10 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  await page.evaluate(()=>{const place=state.places.find(p=>Array.isArray(p.locations)&&p.locations.length);if(!place)throw Error('Roldan directory missing');showPlace(place,false);});
  assert.ok((await page.locator('#detail-content').innerText()).includes('📍 Établissements Roldán à Cordoue'),'FR Roldan heading');
  assert.ok((await page.locator('#detail-content').innerText()).includes('Les boulangeries figurent uniquement comme adresses'),'FR Roldan menu scope');
+ const roldanTypes=page.locator('#detail-content li span[data-bilingual-es]');
+ assert.ok(await roldanTypes.count()>0,'Roldan location type labels present');
+ for(const label of await roldanTypes.allTextContents())assert.ok(['Boulangerie :','Café :'].includes(label.trim()),'FR Roldan location type: '+label);
+
  await page.evaluate(()=>showPlace(state.places.find(p=>p.id==='la-montillana'),false));
  await page.locator('#language-select').selectOption('es');
  assert.ok((await page.locator('#detail-content h3').allTextContents()).includes('Fuentes y fecha'));
