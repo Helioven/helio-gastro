@@ -217,6 +217,9 @@ window.GASTRO_I18N = Object.freeze({
   ]);
   const translateFrenchDynamicResult=(node,source)=>node.parentElement?.closest('#results')&&node.parentElement.matches('.result-pending,.note,.detail-button,button')?(frenchDynamicResults.get(normalize(source))||source):source;
   const frenchDetailLabels=new Map([
+    ['☆ Guardar','☆ Enregistrer'],
+    ['★ Guardado','★ Enregistré'],
+    ['📍 Ver mapa','📍 Voir la carte'],
     ['Abrir en Google Maps ↗','Ouvrir dans Google Maps ↗'],
     ['Carta y especialidades','Carte et spécialités'],
     ['Otras especialidades · precios pendientes','Autres spécialités · prix à confirmer'],
