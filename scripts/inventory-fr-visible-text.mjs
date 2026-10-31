@@ -45,7 +45,8 @@ try{
       }).map(el=>({tag:el.tagName,text:(el.innerText||el.textContent||'').replace(/\s+/g,' ').trim().slice(0,220)})).filter(x=>x.text);
     },view.id);
     // Heuristic triage only: do not classify names, cognates, or dates as errors.
-    findings.push({view:view.id,reviewCandidates:visible.filter(x=>spanishCue.test(x.text)).slice(0,30),visibleElementsChecked:visible.length});
+    const viewport=await page.evaluate(()=>({viewportWidth:window.innerWidth,documentWidth:document.documentElement.scrollWidth}));
+    findings.push({view:view.id,reviewCandidates:visible.filter(x=>spanishCue.test(x.text)).slice(0,30),visibleElementsChecked:visible.length,horizontalOverflow:viewport.documentWidth>viewport.viewportWidth+1,viewport});
    }
    report.profiles.push({profile:profile.name,errors,findings});
   }finally{await ctx.close();}
