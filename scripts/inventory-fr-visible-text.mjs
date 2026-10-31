@@ -56,7 +56,15 @@ try{
         .map(({el,rect})=>({tag:el.tagName,text:(el.innerText||el.textContent||'').replace(/\s+/g,' ').trim().slice(0,100),left:Math.round(rect.left),right:Math.round(rect.right)}));
       return {viewportWidth,documentWidth,overflowingElements};
     });
-    findings.push({view:view.id,reviewCandidates:visible.filter(x=>spanishCue.test(x.text)).slice(0,30),visibleElementsChecked:visible.length,horizontalOverflow:viewport.documentWidth>viewport.viewportWidth+1,viewport});
+    // Keep a visual record of the real FR detail layout for editorial review.
+    // Screenshots are evidence for manual triage, never an automatic translation verdict.
+    let screenshot=null;
+    if(view.id.startsWith('detail-')){
+      mkdirSync('qa-reports/screenshots/fr-detail-triage',{recursive:true});
+      screenshot='qa-reports/screenshots/fr-detail-triage/'+profile.name+'-'+view.id+'.png';
+      await page.locator('#detail-section').screenshot({path:screenshot});
+    }
+    findings.push({view:view.id,reviewCandidates:visible.filter(x=>spanishCue.test(x.text)).slice(0,30),visibleElementsChecked:visible.length,horizontalOverflow:viewport.documentWidth>viewport.viewportWidth+1,viewport,screenshot});
    }
    report.profiles.push({profile:profile.name,errors,findings});
   }finally{await ctx.close();}
