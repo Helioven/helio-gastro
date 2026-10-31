@@ -133,6 +133,7 @@ window.GASTRO_I18N = Object.freeze({
     ['Nombre del establecimiento',"Nom de l’établissement"],
     ['Plato o especialidad','Plat ou spécialité'],
     ['PRUEBA UN PLATO TÍPICO','DÉCOUVREZ UNE SPÉCIALITÉ'],
+    ['Elige un plato y pulsa «Buscar establecimientos» para consultar resultados.','Choisissez un plat, puis cliquez sur « Rechercher des établissements » pour afficher les résultats.'],
     ['Presupuesto máximo','Budget maximum'],
     ['Aplicar presupuesto a','Appliquer le budget à'],
     ['Un plato de la carta','Un plat à la carte'],
