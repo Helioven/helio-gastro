@@ -158,6 +158,13 @@ window.GASTRO_I18N = Object.freeze({
     ['El límite solo se puede comprobar cuando existe un precio documentado. Las fichas sin precio se muestran como desconocidas, no como ofertas dentro del presupuesto.','Le plafond ne peut être vérifié que si un prix est documenté. Les établissements sans prix sont indiqués comme inconnus et non comme des offres respectant le budget.']
   ]);
   const translateFrenchSearchText=(node,source)=>node.parentElement?.closest('#search-section')&&!node.parentElement.closest('.dish-suggestions-list')?(frenchSearchLabels.get(normalize(source))||source):source;
+  const frenchHeroLabels=new Map([
+    ['CÓRDOBA · DÓNDE COMER BIEN','CORDOUE · OÙ BIEN MANGER'],
+    ['Encuentra algo rico.','Trouvez un bon petit plat.'],
+    ['Sin sorpresas en la cuenta.','Sans surprise sur l’addition.'],
+    ['Platos que te apetecen, presupuestos realistas y fuentes que puedes comprobar.','Des plats qui vous font envie, des budgets réalistes et des sources vérifiables.']
+  ]);
+  const translateFrenchHeroText=(node,source)=>node.parentElement?.closest('.hero')?(frenchHeroLabels.get(normalize(source))||source):source;
   const frenchNavLabels=new Map([
     ['🍴 Platos','🍴 Plats'],
     ['🔎 Buscar','🔎 Rechercher'],
@@ -302,7 +309,7 @@ window.GASTRO_I18N = Object.freeze({
       const next=match[1]+translateValue(key)+match[3];
       if(node.nodeValue!==next)node.nodeValue=next;
     }else if(language==='fr'){
-      const next=match[1]+translateFrenchDetailNotice(node,translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchNavText(node,translateFrenchFavoritesNotice(node,translateFrenchSearchText(node,translateFrenchGroupText(node,translateFrenchHeading(node,match[2])))))))))+match[3];
+      const next=match[1]+translateFrenchDetailNotice(node,translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchHeroText(node,translateFrenchNavText(node,translateFrenchFavoritesNotice(node,translateFrenchSearchText(node,translateFrenchGroupText(node,translateFrenchHeading(node,match[2]))))))))))+match[3];
       if(node.nodeValue!==next)node.nodeValue=next;
     }else if(node.nodeValue!==original)node.nodeValue=original;
   }
@@ -367,7 +374,7 @@ window.GASTRO_I18N = Object.freeze({
           const previous=originalNodes.get(node);
           if(previous!==undefined){
             const match=previous.match(/^(\s*)([\s\S]*?)(\s*)$/);
-            const expected=language==='en'?match[1]+translateValue(normalize(match[2]))+match[3]:language==='fr'?match[1]+translateFrenchDetailNotice(node,translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchNavText(node,translateFrenchFavoritesNotice(node,translateFrenchSearchText(node,translateFrenchGroupText(node,translateFrenchHeading(node,match[2])))))))))+match[3]:previous;
+            const expected=language==='en'?match[1]+translateValue(normalize(match[2]))+match[3]:language==='fr'?match[1]+translateFrenchDetailNotice(node,translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchHeroText(node,translateFrenchNavText(node,translateFrenchFavoritesNotice(node,translateFrenchSearchText(node,translateFrenchGroupText(node,translateFrenchHeading(node,match[2]))))))))))+match[3]:previous;
             if(node.nodeValue===expected)continue;
           }
           originalNodes.delete(node);
