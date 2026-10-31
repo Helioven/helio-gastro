@@ -6,6 +6,9 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  await page.goto('http://127.0.0.1:8765/index.html?qa_fr=1',{waitUntil:'domcontentloaded'});
  const heading=page.locator('#search-title');const button=page.locator('#search-button');
  await page.locator('#language-select').selectOption('fr');
+ const hero=page.locator('.hero');
+ assert.ok((await hero.innerText()).includes('Trouvez un bon petit plat.'),'French hero title missing');
+ assert.ok((await hero.innerText()).includes('Sans surprise sur l’addition.'),'French hero subtitle missing');
  const nav=page.locator('#quick-nav');
  assert.ok((await nav.innerText()).includes('🔎 Rechercher'),'French quick navigation search absent');
  assert.ok((await nav.innerText()).includes('★ Favoris'),'French quick navigation favorites absent');
@@ -21,15 +24,18 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  await page.locator('#language-select').selectOption('es');
  assert.equal(await favoriteNotice.textContent(),favoriteEs);
  assert.ok((await nav.innerText()).includes('🔎 Buscar'),'Spanish quick navigation not restored');
+ assert.ok((await hero.innerText()).includes('Encuentra algo rico.'),'Spanish hero not restored');
  assert.equal(await heading.textContent(),'¿Qué te apetece?');
  assert.equal(await button.textContent(),'Buscar establecimientos →');
  await page.locator('#language-select').selectOption('en');
  assert.equal(await favoriteNotice.textContent(),'Saved only in this browser. You can view them without searching again.');
  assert.ok((await nav.innerText()).includes('🔎 Search'),'English quick navigation absent');
+ assert.ok((await hero.innerText()).includes('Find something delicious.'),'English hero missing');
  assert.equal(await button.textContent(),'Find places →');
  await page.locator('#language-select').selectOption('fr');
  assert.equal(await favoriteNotice.textContent(),favoriteFr);
  assert.ok((await nav.innerText()).includes('🔎 Rechercher'),'French quick navigation not restored');
+ assert.ok((await hero.innerText()).includes('Trouvez un bon petit plat.'),'French hero not restored');
  await context.close();console.log('FR SEARCH PILOT '+profile.name+' PASS');
 }
 await browser.close();
