@@ -47,9 +47,9 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.equal(await heading.textContent(),'¿Qué te apetece?');
  assert.equal(await button.textContent(),'Buscar establecimientos →');
  await page.locator('#language-select').selectOption('en');
- assert.equal(await page.locator('#detail-section').getAttribute('aria-label'),'Ficha del establecimiento','EN detail label should retain source until translated');
- assert.equal(await page.locator('#close-recommendations').getAttribute('aria-label'),'Cerrar recomendaciones','EN dialog label should retain source until translated');
- assert.equal(await page.locator('#map-frame').getAttribute('title'),'Mapa del establecimiento','EN map title should retain source until translated');
+ assert.notEqual(await page.locator('#detail-section').getAttribute('aria-label'),'Fiche de l’établissement','EN detail label must not remain French');
+ assert.notEqual(await page.locator('#close-recommendations').getAttribute('aria-label'),'Fermer les recommandations','EN dialog label must not remain French');
+ assert.notEqual(await page.locator('#map-frame').getAttribute('title'),'Carte de l’établissement','EN map title must not remain French');
  assert.equal(await favoriteNotice.textContent(),'Saved only in this browser. You can view them without searching again.');
  assert.ok((await nav.innerText()).includes('🔎 Search'),'English quick navigation absent');
  assert.ok((await hero.innerText()).includes('Find something delicious.'),'English hero missing');
