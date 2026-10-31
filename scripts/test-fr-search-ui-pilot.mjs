@@ -8,6 +8,8 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  await page.locator('#language-select').selectOption('fr');
  const accessibleLabels=[['#quick-nav','Navigation rapide'],['#service-section .service-selector','Moment du repas'],['.dish-suggestions','Spécialités cordouanes à rechercher']];
  for(const [selector,expected] of accessibleLabels)assert.equal(await page.locator(selector).getAttribute('aria-label'),expected,'FR accessible label '+selector);
+ const additionalLabels=[['#results-section','Résultats'],['#detail-section','Fiche de l’établissement'],['#close-recommendations','Fermer les recommandations'],['#map-frame','Carte de l’établissement']];
+ for(const [selector,expected] of additionalLabels)assert.equal(await page.locator(selector).getAttribute('aria-label')??await page.locator(selector).getAttribute('title'),expected,'FR accessibility attribute '+selector);
  const rec=page.locator('#recommendations-section');
  assert.equal(await page.locator('#recommendations-heading').textContent(),'🍴 Qu’est-ce qui vous ferait plaisir aujourd’hui ?');
  assert.ok((await rec.innerText()).includes('Accès direct'),'French recommendations access label missing');
