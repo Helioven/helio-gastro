@@ -6,6 +6,10 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  await page.goto('http://127.0.0.1:8765/index.html?qa_fr=1',{waitUntil:'domcontentloaded'});
  const heading=page.locator('#search-title');const button=page.locator('#search-button');
  await page.locator('#language-select').selectOption('fr');
+ const rec=page.locator('#recommendations-section');
+ assert.equal(await page.locator('#recommendations-heading').textContent(),'🍴 Qu’est-ce qui vous ferait plaisir aujourd’hui ?');
+ assert.ok((await rec.innerText()).includes('Accès direct'),'French recommendations access label missing');
+ assert.ok((await rec.innerText()).includes('Le moins cher n’est pas forcément le meilleur.'),'French price caveat missing');
  const service=page.locator('#service-section');
  assert.equal(await page.locator('#service-heading').textContent(),'Quel repas avez-vous en tête ?');
  assert.deepEqual(await page.locator('#service-section [data-service]').allTextContents(),['☕ Petit-déjeuner','🍽️ Déjeuner','🥐 Goûter','🌙 Dîner']);
@@ -29,6 +33,7 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.equal(await favoriteNotice.textContent(),favoriteEs);
  assert.ok((await nav.innerText()).includes('🔎 Buscar'),'Spanish quick navigation not restored');
  assert.ok((await hero.innerText()).includes('Encuentra algo rico.'),'Spanish hero not restored');
+ assert.equal(await page.locator('#recommendations-heading').textContent(),'🍴 ¿Qué te apetece hoy?');
  assert.deepEqual(await page.locator('#service-section [data-service]').allTextContents(),['☕ Desayunar','🍽️ Comer','🥐 Merendar','🌙 Cenar']);
  assert.equal(await heading.textContent(),'¿Qué te apetece?');
  assert.equal(await button.textContent(),'Buscar establecimientos →');
@@ -36,12 +41,14 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.equal(await favoriteNotice.textContent(),'Saved only in this browser. You can view them without searching again.');
  assert.ok((await nav.innerText()).includes('🔎 Search'),'English quick navigation absent');
  assert.ok((await hero.innerText()).includes('Find something delicious.'),'English hero missing');
+ assert.equal(await page.locator('#recommendations-heading').textContent(),'🍴 What would you like today?');
  assert.deepEqual(await page.locator('#service-section [data-service]').allTextContents(),['☕ Breakfast','🍽️ Lunch','🥐 Afternoon snack','🌙 Dinner']);
  assert.equal(await button.textContent(),'Find places →');
  await page.locator('#language-select').selectOption('fr');
  assert.equal(await favoriteNotice.textContent(),favoriteFr);
  assert.ok((await nav.innerText()).includes('🔎 Rechercher'),'French quick navigation not restored');
  assert.ok((await hero.innerText()).includes('Trouvez un bon petit plat.'),'French hero not restored');
+ assert.equal(await page.locator('#recommendations-heading').textContent(),'🍴 Qu’est-ce qui vous ferait plaisir aujourd’hui ?');
  assert.deepEqual(await page.locator('#service-section [data-service]').allTextContents(),['☕ Petit-déjeuner','🍽️ Déjeuner','🥐 Goûter','🌙 Dîner']);
  await context.close();console.log('FR SEARCH PILOT '+profile.name+' PASS');
 }
