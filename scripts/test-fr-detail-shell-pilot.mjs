@@ -9,8 +9,14 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  await page.evaluate(()=>showPlace(state.places.find(p=>p.id==='la-montillana'),false));
  await page.waitForFunction(()=>[...document.querySelectorAll('#detail-content h3')].some(x=>x.textContent==='Sources et date'));
  assert.ok((await page.locator('#detail-content h3').allTextContents()).includes('Sources et date'));
+ assert.equal(await page.locator('#detail-content .fav-button').textContent(),'☆ Enregistrer','FR detail save button');
+ assert.ok((await page.locator('#detail-content .map-button').allTextContents()).includes('📍 Voir la carte'),'FR detail map button');
  const titles=await page.locator('#detail-content .menu-dish h4').allTextContents();
  assert.ok(titles.length>0);
+ await page.evaluate(()=>{const place=state.places.find(p=>Array.isArray(p.locations)&&p.locations.length);if(!place)throw Error('Roldan directory missing');showPlace(place,false);});
+ assert.ok((await page.locator('#detail-content').innerText()).includes('📍 Établissements Roldán à Cordoue'),'FR Roldan heading');
+ assert.ok((await page.locator('#detail-content').innerText()).includes('Les boulangeries figurent uniquement comme adresses'),'FR Roldan menu scope');
+ await page.evaluate(()=>showPlace(state.places.find(p=>p.id==='la-montillana'),false));
  await page.locator('#language-select').selectOption('es');
  assert.ok((await page.locator('#detail-content h3').allTextContents()).includes('Fuentes y fecha'));
  assert.deepEqual(await page.locator('#detail-content .menu-dish h4').allTextContents(),titles);
