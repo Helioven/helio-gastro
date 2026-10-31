@@ -344,6 +344,7 @@ window.GASTRO_I18N = Object.freeze({
         if(!(attr in originals))originals[attr]=element.getAttribute(attr);
         const source=originals[attr];
         const frenchAccessibleLabels={
+          'Language / Idioma':'Langue',
           'Navegación rápida':'Navigation rapide',
           'Momento gastronómico':'Moment du repas',
           'Especialidades cordobesas para buscar':'Spécialités cordouanes à rechercher',
