@@ -34,15 +34,16 @@ try{
    for(const view of views){
     await view.open();
     await page.waitForTimeout(100);
-    const visible=await page.evaluate(()=>{
-      const root=document.querySelector('#detail-content');
-      const candidates=[...document.querySelectorAll('h1,h2,h3,button,label,.note,.service-notice,#search-section p,#detail-content p')];
+    const visible=await page.evaluate(viewId=>{
+      const selector=viewId.startsWith('detail-')?'#detail-section':viewId==='search'?'#search-section':viewId==='favorites'?'#favorites-section':'body > header, main > section:not(#search-section):not(#results-section):not(#detail-section):not(#favorites-section)';
+      const roots=[...document.querySelectorAll(selector)];
+      const candidates=roots.flatMap(root=>[...root.querySelectorAll('h1,h2,h3,button,label,.note,.service-notice,p')]);
       return candidates.filter(el=>{
        if(!el.getClientRects().length)return false;
        if(el.closest('.menu-dish,[data-keep-dish-spanish],[data-venue-menu-section],#language-select'))return false;
        return true;
       }).map(el=>({tag:el.tagName,text:(el.innerText||el.textContent||'').replace(/\s+/g,' ').trim().slice(0,220)})).filter(x=>x.text);
-    });
+    },view.id);
     // Heuristic triage only: do not classify names, cognates, or dates as errors.
     findings.push({view:view.id,reviewCandidates:visible.filter(x=>spanishCue.test(x.text)).slice(0,30),visibleElementsChecked:visible.length});
    }
