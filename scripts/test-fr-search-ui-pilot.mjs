@@ -15,6 +15,9 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.equal(await page.locator('.dish-suggestions small').textContent(),'Choisissez un plat, puis cliquez sur « Rechercher des établissements » pour afficher les résultats.','FR search instruction');
  assert.equal(await page.locator('#place-name').getAttribute('placeholder'),'Ex. : Moriles, Casa Bravo, Plateros…','FR venue placeholder');
  assert.equal(await page.locator('#dish').getAttribute('placeholder'),'Saisissez ou choisissez une spécialité cordouane…','FR dish placeholder');
+ assert.equal(await page.locator('#budget option[value=""]').textContent(),'Sans limite (afficher les fiches)','FR unlimited budget');
+ assert.equal(await page.locator('#sort option[value="price"]').textContent(),'Prix le plus bas','FR lowest price sort');
+ assert.equal(await page.locator('#sort option[value="verified"]').textContent(),'Vérifiés en premier','FR verified first sort');
  const rec=page.locator('#recommendations-section');
  assert.equal(await page.locator('#recommendations-heading').textContent(),'🍴 Qu’est-ce qui vous ferait plaisir aujourd’hui ?');
  assert.ok((await rec.innerText()).includes('Accès direct'),'French recommendations access label missing');
@@ -47,6 +50,9 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.equal(await page.locator('#language-select').getAttribute('aria-label'),'Language / Idioma','ES language selector label restored');
  assert.equal(await page.locator('.language-label').textContent(),'Language / Idioma','ES visible language selector restored');
  assert.equal(await page.locator('.dish-suggestions small').textContent(),'Elige un plato y pulsa «Buscar establecimientos» para consultar resultados.','ES search instruction restored');
+ assert.equal(await page.locator('#budget option[value=""]').textContent(),'Sin límite (mostrar fichas)','ES unlimited budget restored');
+ assert.equal(await page.locator('#sort option[value="price"]').textContent(),'Menor coste','ES lowest price sort restored');
+ assert.equal(await page.locator('#sort option[value="verified"]').textContent(),'Verificados primero','ES verified sort restored');
  assert.equal(await page.locator('#place-name').getAttribute('placeholder'),'Ej.: Moriles, Casa Bravo, Plateros…','ES venue placeholder restoration');
  assert.equal(await page.locator('#dish').getAttribute('placeholder'),'Escribe o elige un plato cordobés…','ES dish placeholder restoration');
  assert.equal(await favoriteNotice.textContent(),favoriteEs);
