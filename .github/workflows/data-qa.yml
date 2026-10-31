@@ -168,7 +168,7 @@ jobs:
             node "$suite" || status=1
             echo "::endgroup::"
           done
-          exit "$status"
+          echo '::group::French visible text inventory (informational)'\n          node scripts/inventory-fr-visible-text.mjs || status=1\n          echo '::endgroup::'\n          exit "$status"
       - name: Upload visual QA screenshots and results
         if: always()
         uses: actions/upload-artifact@v4
