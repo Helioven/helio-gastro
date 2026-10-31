@@ -5,7 +5,7 @@ import {mkdirSync,writeFileSync} from 'node:fs';
 const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
 const profiles=[{name:'desktop',options:{viewport:{width:1280,height:800}}},{name:'mobile',options:devices['iPhone 13']}];
 const report={kind:'exploratory_not_a_translation_failure',profiles:[]};
-const spanishCue=/\b(?:buscar|búsqueda|precios pendientes|sin fecha|cerrar|selecciona|consulta|ver ficha|fuentes y fecha|comida completa|establecimientos encontrados)\b/i;
+const spanishCue=/\b(?:buscar|búsqueda|precios pendientes|precios históricos|vigencia pendiente|consultar vigencia|sin fecha|cerrar|selecciona|consulta|ver ficha|fuentes y fecha|comida completa|establecimientos encontrados)\b/i;
 if(!spanishCue.test('Cerrar ficha')||!spanishCue.test('Ver ficha')||spanishCue.test('Fermer la fiche'))throw Error('Spanish triage cue self-test failed');
 try{
  for(const profile of profiles){
