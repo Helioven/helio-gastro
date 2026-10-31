@@ -22,7 +22,7 @@ function extractLiteralMap(name) {
 const exactGroup = extractLiteralMap('frenchGroupLabels');
 const exactNotices = extractLiteralMap('frenchDetailNotices');
 function extractRoldanPair() {
-  const match = source.match(/const frenchRoldanNotice=(\[[^;]+\]);/);
+  const match = source.match(/const frenchRoldanNotice=(\[[^\n]+\]);/);
   if (!match) throw new Error('Roldán FR source pair missing');
   const pair = runInNewContext(match[1], Object.create(null), { timeout: 1000 });
   if (!Array.isArray(pair) || pair.length !== 2 || pair.some(s => typeof s !== 'string' || !s.trim()))
