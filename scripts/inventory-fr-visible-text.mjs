@@ -15,10 +15,20 @@ try{
    await page.goto('http://127.0.0.1:8765/index.html?qa_fr=1',{waitUntil:'domcontentloaded'});
    await page.waitForFunction(()=>typeof state!=='undefined'&&state.places.length>0);
    await page.locator('#language-select').selectOption('fr');
-   const views=[{id:'home',open:async()=>{}},
+   const views=[
+     {id:'home',open:async()=>{}},
      {id:'search',open:async()=>page.locator('#search-section').scrollIntoViewIfNeeded()},
      {id:'detail-montillana',open:async()=>page.evaluate(()=>showPlace(state.places.find(p=>p.id==='la-montillana'),false))},
-     {id:'detail-beatillas',open:async()=>page.evaluate(()=>showPlace(state.places.find(p=>p.id==='rincon-beatillas'),false))}
+     {id:'detail-beatillas',open:async()=>page.evaluate(()=>showPlace(state.places.find(p=>p.id==='rincon-beatillas'),false))},
+     {id:'detail-rubio',open:async()=>page.evaluate(()=>showPlace(state.places.find(p=>p.id==='casa-rubio'),false))},
+     {id:'detail-roldan',open:async()=>page.evaluate(()=>{
+       const place=state.places.find(p=>p.menuPriceNotice?.startsWith('Precios publicados en la carta general de Roldán.'));
+       if(!place)throw Error('Roldán notice venue unavailable');
+       showPlace(place,false);
+     })},
+     {id:'favorites',open:async()=>{
+       await page.evaluate(()=>{const section=document.querySelector('#favorites-section');if(!section)throw Error('Favorites section missing');section.scrollIntoView();});
+     }}
    ];
    const findings=[];
    for(const view of views){
