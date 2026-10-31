@@ -27,7 +27,7 @@ try{
        showPlace(place,false);
      })},
      {id:'favorites',open:async()=>{
-       await page.evaluate(()=>{const section=document.querySelector('#favorites-section');if(!section)throw Error('Favorites section missing');section.scrollIntoView();});
+       await page.evaluate(()=>{const section=document.querySelector('#favorite-section');if(!section)throw Error('Favorites section missing');section.scrollIntoView();});
      }}
    ];
    const findings=[];
@@ -35,7 +35,7 @@ try{
     await view.open();
     await page.waitForTimeout(100);
     const visible=await page.evaluate(viewId=>{
-      const selector=viewId.startsWith('detail-')?'#detail-section':viewId==='search'?'#search-section':viewId==='favorites'?'#favorites-section':'body > header, main > section:not(#search-section):not(#results-section):not(#detail-section):not(#favorites-section)';
+      const selector=viewId.startsWith('detail-')?'#detail-section':viewId==='search'?'#search-section':viewId==='favorites'?'#favorite-section' :'main > header, main > .hero, #service-section, #recommendations-section, main > .info';
       const roots=[...document.querySelectorAll(selector)];
       const candidates=roots.flatMap(root=>[...root.querySelectorAll('h1,h2,h3,button,label,.note,.service-notice,p')]);
       return candidates.filter(el=>{
