@@ -35,6 +35,9 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  await page.waitForFunction(()=>typeof state!=='undefined'&&state.places.length>0);
  assert.equal(await page.locator('#dish-suggestions-list button').filter({hasText:/^Flamenquín$/}).count(),1,'Flamenquín should remain available after suggestions are rendered');
  await page.locator('#language-select').selectOption('es');
+ assert.equal(await page.locator('#detail-section').getAttribute('aria-label'),'Ficha del establecimiento','ES detail label restoration');
+ assert.equal(await page.locator('#close-recommendations').getAttribute('aria-label'),'Cerrar recomendaciones','ES dialog label restoration');
+ assert.equal(await page.locator('#map-frame').getAttribute('title'),'Mapa del establecimiento','ES map frame title restoration');
  assert.equal(await page.locator('#quick-nav').getAttribute('aria-label'),'Navegación rápida','ES aria-label must be restored');
  assert.equal(await favoriteNotice.textContent(),favoriteEs);
  assert.ok((await nav.innerText()).includes('🔎 Buscar'),'Spanish quick navigation not restored');
@@ -44,6 +47,9 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.equal(await heading.textContent(),'¿Qué te apetece?');
  assert.equal(await button.textContent(),'Buscar establecimientos →');
  await page.locator('#language-select').selectOption('en');
+ assert.equal(await page.locator('#detail-section').getAttribute('aria-label'),'Ficha del establecimiento','EN detail label should retain source until translated');
+ assert.equal(await page.locator('#close-recommendations').getAttribute('aria-label'),'Cerrar recomendaciones','EN dialog label should retain source until translated');
+ assert.equal(await page.locator('#map-frame').getAttribute('title'),'Mapa del establecimiento','EN map title should retain source until translated');
  assert.equal(await favoriteNotice.textContent(),'Saved only in this browser. You can view them without searching again.');
  assert.ok((await nav.innerText()).includes('🔎 Search'),'English quick navigation absent');
  assert.ok((await hero.innerText()).includes('Find something delicious.'),'English hero missing');
