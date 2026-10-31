@@ -127,6 +127,8 @@ jobs:
               except Exception: time.sleep(1)
           else: raise SystemExit('QA web server unavailable')
           PY
+          mkdir -p qa-reports
+          printf 'suite,result,seconds\n' > qa-reports/visual-qa-timings.csv
           status=0
           for suite in \
             scripts/test-fr-search-ui-pilot.mjs \
@@ -165,11 +167,28 @@ jobs:
             scripts/test-detail-regression.mjs \
             scripts/test-navigation-regression.mjs; do
             echo "::group::Running $suite"
-            node "$suite" || status=1
+            started=$SECONDS
+            if node "$suite"; then
+              result="PASS"
+            else
+              result="FAIL"
+              status=1
+            fi
+            elapsed=$((SECONDS - started))
+            printf '%s,%s,%s\n' "$suite" "$result" "$elapsed" >> qa-reports/visual-qa-timings.csv
+            echo "QA timing: $suite $result ${elapsed}s"
             echo "::endgroup::"
           done
           echo '::group::French visible text inventory (informational)'
-          node scripts/inventory-fr-visible-text.mjs || status=1
+          inventory_started=$SECONDS
+          if node scripts/inventory-fr-visible-text.mjs; then
+            inventory_result="PASS"
+          else
+            inventory_result="FAIL"
+            status=1
+          fi
+          inventory_elapsed=$((SECONDS - inventory_started))
+          printf '%s,%s,%s\n' "scripts/inventory-fr-visible-text.mjs" "$inventory_result" "$inventory_elapsed" >> qa-reports/visual-qa-timings.csv
           if [ -f qa-reports/fr-visible-text-triage.json ]; then
             node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
           const fs=require('node:fs');
@@ -184,7 +203,21 @@ jobs:
           console.log('Consultar fr-visible-text-triage.json para todos los candidatos y contrastar en navegador antes de corregir.');
           NODE
           fi
-          echo '::endgroup::'\n          exit "$status"
+          echo '::endgroup::'
+          node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs=require('node:fs');
+          const csv=fs.readFileSync('qa-reports/visual-qa-timings.csv','utf8').trim().split('\n').slice(1).map(line=>{
+            const [suite,result,seconds]=line.split(',');
+            return {suite,result,seconds:Number(seconds)};
+          }).sort((a,b)=>b.seconds-a.seconds);
+          console.log('## Duración de pruebas visual-qa');
+          console.log('Mediciones por suite (segundos); no diagnostican por sí solas la causa de una demora.');
+          console.log('| Suite | Estado | Segundos |');
+          console.log('|---|---|---:|');
+          for(const row of csv)console.log('| '+row.suite+' | '+row.result+' | '+row.seconds+' |');
+          console.log('Total medido de suites: '+csv.reduce((a,r)=>a+r.seconds,0)+' segundos. Excluye instalación y otros pasos.');
+          NODE
+          exit "$status"
       - name: Upload visual QA screenshots and results
         if: always()
         uses: actions/upload-artifact@v4
