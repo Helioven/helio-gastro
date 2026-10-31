@@ -232,6 +232,8 @@ window.GASTRO_I18N = Object.freeze({
   const translateFrenchDetailText=(node,source)=>node.parentElement?.closest('#detail-content')&&!node.parentElement.closest('.menu-dish,[data-venue-menu-section],[data-bilingual-es],[data-source-label-es]')?(frenchDetailLabels.get(normalize(source))||source):source;
   const frenchRoldanNotice=["Precios publicados en la carta general de Roldán. Pueden variar; la disponibilidad de productos depende de cada local. Roldán Centro tiene carta y ficha propias.","Prix publiés dans la carte générale de Roldán. Ils peuvent varier ; la disponibilité des produits dépend de chaque établissement. Roldán Centro dispose de sa propre carte et de sa propre fiche."];
   const frenchDetailNotices=new Map([
+    ['Panadería:','Boulangerie :'],
+    ['Cafetería:','Café :'],
     ['📍 Establecimientos de Roldán en Córdoba','📍 Établissements Roldán à Cordoue'],
     ['La carta y los precios indicados corresponden a las cafeterías, excepto Centro. Las panaderías se listan solo como ubicaciones; su oferta puede ser diferente.','La carte et les prix indiqués concernent les cafés, à l’exception de Roldán Centro. Les boulangeries figurent uniquement comme adresses ; leur offre peut être différente.'],
     ['📍 Varias ubicaciones en Córdoba (consulta los establecimientos de abajo)','📍 Plusieurs adresses à Cordoue (voir les établissements ci-dessous)'],
