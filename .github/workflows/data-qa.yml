@@ -135,6 +135,7 @@ jobs:
             scripts/test-fr-dynamic-results-pilot.mjs \
             scripts/test-fr-detail-shell-pilot.mjs \
             scripts/test-fr-detail-notices-pilot.mjs \
+            scripts/test-fr-beatillas-roldan-dynamic.mjs \
             scripts/test-fr-visual.mjs \
             scripts/test-fr-real-detail-27.mjs \
             scripts/test-fr-bar-marta-17.mjs \
