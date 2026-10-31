@@ -47,12 +47,13 @@ jobs:
           console.log('- Entradas totales: **'+report.total+'**');
           console.log('- Nombres protegidos: **'+report.summary.protected+'**');
           console.log('- Traducciones literales candidatas (no verificadas en navegador): **'+report.summary.exact_candidate+'**');
-          console.log('- Textos para revisión contextual/dinámica: **'+report.summary.needs_context_review+'**');
+          console.log('- Traducciones dinámicas candidatas (pendientes de QA visual): **'+report.summary.dynamic_candidate+'**');
+          console.log('- Textos para revisión contextual: **'+report.summary.needs_context_review+'**');
           console.log('### Revisión por establecimiento');
-          console.log('| Establecimiento | Candidatas | Revisar | Protegidas |');
-          console.log('|---|---:|---:|---:|');
+          console.log('| Establecimiento | Literales | Dinámicas | Revisar | Protegidas |');
+          console.log('|---|---:|---:|---:|---:|');
           for(const place of report.byPlace.filter(p=>p.needsContextReview))
-            console.log('| '+place.placeName.replaceAll('|','/')+' | '+place.exactCandidates+' | '+place.needsContextReview+' | '+place.protected+' |');
+            console.log('| '+place.placeName.replaceAll('|','/')+' | '+place.exactCandidates+' | '+place.dynamicCandidates+' | '+place.needsContextReview+' | '+place.protected+' |');
           console.log('### Primeras 12 condiciones para revisar (sin traducción automática)');
           console.log('| Establecimiento | Campo | ES (extracto) |');
           console.log('|---|---|---|');
