@@ -390,7 +390,7 @@ window.GASTRO_I18N = Object.freeze({
           const previous=originalNodes.get(node);
           if(previous!==undefined){
             const match=previous.match(/^(\s*)([\s\S]*?)(\s*)$/);
-            const expected=language==='en'?match[1]+translateValue(normalize(match[2]))+match[3]:language==='fr'?match[1]+translateFrenchDetailNotice(node,translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchRecommendationsText(node,translateFrenchServiceText(node,translateFrenchHeroText(node,translateFrenchNavText(node,translateFrenchFavoritesNotice(node,translateFrenchSearchText(node,translateFrenchGroupText(node,translateFrenchHeading(node,match[2])))))))))))+match[3]:previous;
+            const expected=language==='en'?match[1]+translateValue(normalize(match[2]))+match[3]:language==='fr'?match[1]+translateFrenchDetailNotice(node,translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchRecommendationsText(node,translateFrenchServiceText(node,translateFrenchHeroText(node,translateFrenchNavText(node,translateFrenchFavoritesNotice(node,translateFrenchSearchText(node,translateFrenchGroupText(node,translateFrenchHeading(node,match[2]))))))))))))+match[3]:previous;
             if(node.nodeValue===expected)continue;
           }
           originalNodes.delete(node);
