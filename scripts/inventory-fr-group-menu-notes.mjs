@@ -21,7 +21,7 @@ function extractLiteralMap(name) {
 }
 const exactGroup = extractLiteralMap('frenchGroupLabels');
 const exactNotices = extractLiteralMap('frenchDetailNotices');
-const norm = value => String(value ?? '').trim().replace(/\\s+/g, ' ');
+const norm = value => String(value ?? '').trim().replace(/\s+/g, ' ');
 const entries = [];
 function add(place, path, es, en = '') {
   if (typeof es !== 'string' || !es.trim()) return;
