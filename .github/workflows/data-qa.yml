@@ -167,27 +167,29 @@ jobs:
             scripts/test-detail-regression.mjs \
             scripts/test-navigation-regression.mjs; do
             echo "::group::Running $suite"
-            started=$SECONDS
+            started=$(date +%s)
             if node "$suite"; then
               result="PASS"
             else
               result="FAIL"
               status=1
+              echo "::error title=Visual QA failed::Suite $suite exited non-zero; inspect its log above."
             fi
-            elapsed=$((SECONDS - started))
+            elapsed=$(( $(date +%s) - started ))
             printf '%s,%s,%s\n' "$suite" "$result" "$elapsed" >> qa-reports/visual-qa-timings.csv
             echo "QA timing: $suite $result ${elapsed}s"
             echo "::endgroup::"
           done
           echo '::group::French visible text inventory (informational)'
-          inventory_started=$SECONDS
+          inventory_started=$(date +%s)
           if node scripts/inventory-fr-visible-text.mjs; then
             inventory_result="PASS"
           else
             inventory_result="FAIL"
             status=1
+            echo "::error title=FR inventory failed::scripts/inventory-fr-visible-text.mjs exited non-zero."
           fi
-          inventory_elapsed=$((SECONDS - inventory_started))
+          inventory_elapsed=$(( $(date +%s) - inventory_started ))
           printf '%s,%s,%s\n' "scripts/inventory-fr-visible-text.mjs" "$inventory_result" "$inventory_elapsed" >> qa-reports/visual-qa-timings.csv
           if [ -f qa-reports/fr-visible-text-triage.json ]; then
             node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
