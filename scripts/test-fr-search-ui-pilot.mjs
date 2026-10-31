@@ -6,6 +6,8 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  await page.goto('http://127.0.0.1:8765/index.html?qa_fr=1',{waitUntil:'domcontentloaded'});
  const heading=page.locator('#search-title');const button=page.locator('#search-button');
  await page.locator('#language-select').selectOption('fr');
+ const accessibleLabels=[['#quick-nav','Navigation rapide'],['#service-section .service-selector','Moment du repas'],['.dish-suggestions','Spécialités cordouanes à rechercher']];
+ for(const [selector,expected] of accessibleLabels)assert.equal(await page.locator(selector).getAttribute('aria-label'),expected,'FR accessible label '+selector);
  const rec=page.locator('#recommendations-section');
  assert.equal(await page.locator('#recommendations-heading').textContent(),'🍴 Qu’est-ce qui vous ferait plaisir aujourd’hui ?');
  assert.ok((await rec.innerText()).includes('Accès direct'),'French recommendations access label missing');
@@ -31,6 +33,7 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  await page.waitForFunction(()=>typeof state!=='undefined'&&state.places.length>0);
  assert.equal(await page.locator('#dish-suggestions-list button').filter({hasText:/^Flamenquín$/}).count(),1,'Flamenquín should remain available after suggestions are rendered');
  await page.locator('#language-select').selectOption('es');
+ assert.equal(await page.locator('#quick-nav').getAttribute('aria-label'),'Navegación rápida','ES aria-label must be restored');
  assert.equal(await favoriteNotice.textContent(),favoriteEs);
  assert.ok((await nav.innerText()).includes('🔎 Buscar'),'Spanish quick navigation not restored');
  assert.ok((await hero.innerText()).includes('Encuentra algo rico.'),'Spanish hero not restored');
