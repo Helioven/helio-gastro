@@ -15,7 +15,7 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.equal(await page.locator('.dish-suggestions small').textContent(),'Choisissez un plat, puis cliquez sur « Rechercher des établissements » pour afficher les résultats.','FR search instruction');
  assert.equal(await page.locator('#place-name').getAttribute('placeholder'),'Ex. : Moriles, Casa Bravo, Plateros…','FR venue placeholder');
  assert.equal(await page.locator('#dish').getAttribute('placeholder'),'Saisissez ou choisissez une spécialité cordouane…','FR dish placeholder');
- assert.equal(await page.locator('#budget option[value=""]').textContent(),'Sans limite','FR unlimited budget');
+ assert.equal(await page.locator('#budget option[value=""]').textContent(),'Sans limite (afficher les fiches)','FR initial unlimited budget');
  assert.equal(await page.locator('#sort option[value="price"]').textContent(),'Prix le plus bas','FR lowest price sort');
  assert.equal(await page.locator('#sort option[value="verified"]').textContent(),'Vérifiés en premier','FR verified first sort');
  const rec=page.locator('#recommendations-section');
