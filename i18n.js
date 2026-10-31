@@ -141,6 +141,7 @@ window.GASTRO_I18N = Object.freeze({
     ['Zona','Quartier'],
     ['Toda Córdoba','Tout Cordoue'],
     ['Sin límite (mostrar fichas)','Sans limite (afficher les fiches)'],
+    ['Sin límite','Sans limite'],
     ['Menor coste','Prix le plus bas'],
     ['Verificados primero','Vérifiés en premier'],
     ['Formato del plato','Format du plat'],
