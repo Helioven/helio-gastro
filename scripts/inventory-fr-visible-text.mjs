@@ -40,7 +40,9 @@ try{
       const candidates=roots.flatMap(root=>[...root.querySelectorAll('h1,h2,h3,button,label,.note,.service-notice,p')]);
       return candidates.filter(el=>{
        if(!el.getClientRects().length)return false;
-       if(el.closest('.menu-dish,[data-keep-dish-spanish],[data-venue-menu-section],#language-select'))return false;
+       if(el.closest('[data-keep-dish-spanish],#language-select'))return false;
+       // Price/validity notices inside menu cards are UI copy, not protected dish titles.
+       if(el.closest('.menu-dish,[data-venue-menu-section]')&&!el.matches('.service-notice,.note'))return false;
        return true;
       }).map(el=>({tag:el.tagName,text:(el.innerText||el.textContent||'').replace(/\s+/g,' ').trim().slice(0,220)})).filter(x=>x.text);
     },view.id);
