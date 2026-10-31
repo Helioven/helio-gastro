@@ -168,7 +168,21 @@ jobs:
             node "$suite" || status=1
             echo "::endgroup::"
           done
-          echo '::group::French visible text inventory (informational)'\n          node scripts/inventory-fr-visible-text.mjs || status=1\n          echo '::endgroup::'\n          exit "$status"
+          echo '::group::French visible text inventory (informational)'\n          node scripts/inventory-fr-visible-text.mjs || status=1
+          if [ -f qa-reports/fr-visible-text-triage.json ]; then
+            node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs=require('node:fs');
+          const report=JSON.parse(fs.readFileSync('qa-reports/fr-visible-text-triage.json','utf8'));
+          console.log('## Triaje de textos visibles en francés (exploratorio)');
+          console.log('Las coincidencias son candidatas, no errores lingüísticos demostrados.');
+          console.log('| Dispositivo | Vista | Candidatos | Extractos |');
+          console.log('|---|---|---:|---|');
+          const safe=v=>String(v??'').replaceAll('|','&#124;').replace(/\s+/g,' ').slice(0,115);
+          for(const profile of report.profiles)for(const finding of profile.findings)
+            console.log('| '+safe(profile.profile)+' | '+safe(finding.view)+' | '+finding.reviewCandidates.length+' | '+safe(finding.reviewCandidates.slice(0,3).map(x=>x.text).join(' / '))+' |');
+          console.log('Consultar fr-visible-text-triage.json para todos los candidatos y contrastar en navegador antes de corregir.');
+          NODE
+          fi\n          echo '::endgroup::'\n          exit "$status"
       - name: Upload visual QA screenshots and results
         if: always()
         uses: actions/upload-artifact@v4
