@@ -322,7 +322,10 @@ window.GASTRO_I18N = Object.freeze({
     ['Carta oficial PDF · 4 páginas (septiembre de 2025 en la URL; vigencia no garantizada)','Carte officielle PDF · 4 pages (septembre 2025 indiqué dans l’URL ; validité non garantie)'],
     ['Carta y especialidades oficiales','Carte et spécialités présentées sur le site officiel'],
     ['Dirección y contacto oficiales','Adresse et coordonnées officielles'],
-    ['Carta QR del restaurante, sin fecha (PDF aportado por el usuario)','Carte QR du restaurant, non datée (PDF fourni par l’utilisateur)']
+    ['Carta QR del restaurante, sin fecha (PDF aportado por el usuario)','Carte QR du restaurant, non datée (PDF fourni par l’utilisateur)'],
+    ['Ficha y dirección de Don Pepe Centro','Fiche et adresse de Don Pepe Centro'],
+    ['Información orientativa del establecimiento','Informations indicatives sur l’établissement'],
+    ['Carta transcrita de la búsqueda de Google por Helio · origen y vigencia no verificados','Carte transcrite par Helio à partir d’une recherche Google · origine et validité non vérifiées']
   ]);
   const sourceLabelFrench=(element)=>{
     const key=normalize(element.dataset.sourceLabelEs||'');
