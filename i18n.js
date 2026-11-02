@@ -353,7 +353,10 @@ window.GASTRO_I18N = Object.freeze({
     ["Ficha del restaurante con dirección y especialidades","Fiche du restaurant avec adresse et spécialités"],
     ["Ficha con información sobre desayunos","Fiche avec informations sur les petits-déjeuners"],
     ["Carta oficial D'Tapas COVAP Córdoba completa","Carte officielle complète de D'Tapas COVAP Córdoba"],
-    ["Presentación oficial COVAP","Présentation officielle de COVAP"]
+    ["Presentación oficial COVAP","Présentation officielle de COVAP"],
+    ["Carta publicada por el establecimiento en Queresto","Carte publiée par l’établissement sur Queresto"],
+    ["Carta oficial de La Bandera — desayunos, meriendas y comida","Carte officielle de La Bandera — petits-déjeuners, goûters et repas"],
+    ["Carta general y tapas oficiales (PDF facilitados)","Carte générale et carte des tapas officielles (PDF fournis)"]
   ]);
   const sourceLabelFrench=(element)=>{
     const key=normalize(element.dataset.sourceLabelEs||'');
