@@ -318,7 +318,11 @@ window.GASTRO_I18N = Object.freeze({
     ['Información del establecimiento','Informations sur l’établissement'],
     ['Carta del restaurante transcrita por el usuario, con precios publicados','Carte du restaurant transcrite par l’utilisateur, avec prix publiés'],
     ['Cocina y especialidades oficiales','Cuisine et spécialités présentées sur le site officiel'],
-    ['Dirección y contacto oficial','Adresse et coordonnées officielles']
+    ['Dirección y contacto oficial','Adresse et coordonnées officielles'],
+    ['Carta oficial PDF · 4 páginas (septiembre de 2025 en la URL; vigencia no garantizada)','Carte officielle PDF · 4 pages (septembre 2025 indiqué dans l’URL ; validité non garantie)'],
+    ['Carta y especialidades oficiales','Carte et spécialités présentées sur le site officiel'],
+    ['Dirección y contacto oficiales','Adresse et coordonnées officielles'],
+    ['Carta QR del restaurante, sin fecha (PDF aportado por el usuario)','Carte QR du restaurant, non datée (PDF fourni par l’utilisateur)']
   ]);
   const sourceLabelFrench=(element)=>{
     const key=normalize(element.dataset.sourceLabelEs||'');
