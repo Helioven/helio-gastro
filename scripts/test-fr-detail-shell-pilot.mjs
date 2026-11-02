@@ -58,7 +58,9 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  for(const venue of [
   {id:'taberna-plateros-san-francisco',pairs:[['Carta oficial del restaurante','Carte officielle du restaurant']]},
   {id:'taberna-la-viuda',pairs:[['Carta oficial de La Viuda','Carte officielle de La Viuda'],['Web oficial y ubicación','Site officiel et localisation']]},
-  {id:'casa-bravo-1919',pairs:[['Carta oficial con formatos e importes','Carte officielle avec formats de portions et prix']]}
+  {id:'casa-bravo-1919',pairs:[['Carta oficial con formatos e importes','Carte officielle avec formats de portions et prix']]},
+  {id:'sociedad-plateros-maria-auxiliadora',pairs:[['Turismo de Córdoba: especialidades y dirección','Tourisme de Cordoue : spécialités et adresse'],['Información del establecimiento','Informations sur l’établissement'],['Carta del restaurante transcrita por el usuario, con precios publicados','Carte du restaurant transcrite par l’utilisateur, avec prix publiés']]},
+  {id:'taberna-el-numero-10',pairs:[['Cocina y especialidades oficiales','Cuisine et spécialités présentées sur le site officiel'],['Dirección y contacto oficial','Adresse et coordonnées officielles']]}
  ]){
   await page.evaluate(id=>showPlace(state.places.find(p=>p.id===id),false),venue.id);
   const getLinks=()=>page.locator('#detail-content [data-source-label-es]').evaluateAll(nodes=>nodes.map(n=>({original:n.dataset.sourceLabelEs,text:n.textContent.trim(),href:n.getAttribute('href')})));
