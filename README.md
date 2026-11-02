@@ -1059,3 +1059,22 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 - La ampliación anterior del inventario de notas y avisos de menús también tuvo **PASS confirmado por el responsable**; sigue siendo un detector exploratorio, no una certificación lingüística.
 - **Siguiente paso:** revisar candidatos reales del inventario y las capturas de fichas antes de nuevas correcciones, manteniendo los nombres gastronómicos originales y la revisión editorial pendiente.
 - **Alcance:** exclusivamente rama `feature/fr-integration-qa-20261027`; sin cambios en `main`, `data/places.json`, cartas ni precios. Francés experimental bajo `?qa_fr=1`.
+
+
+### Continuidad QA francés — 2 de noviembre de 2026
+
+**Alcance y estado.** Todo este trabajo continúa exclusivamente en `feature/fr-integration-qa-20261027`, con el francés experimental habilitado mediante `?qa_fr=1`; no se ha fusionado a `main`, ni modificado `data/places.json`, cartas, ingredientes o precios. Los PASS de CI son validaciones técnicas, **no una aprobación editorial ni autorización de publicación**.
+
+**Lotes realizados y verificados:**
+
+- Regresión de aviso general de Rincón de Beatillas, con restauración entre FR/ES/EN/FR. Correcciones y prueba culminadas en `d745a0c`; PASS confirmado por el responsable.
+- Formatos de precio: traducción de rótulos simples (`920e921`), prueba (`7d89718`), corrección del orden de traducción dentro de tarjetas (`9eb5b26`) y regresión estabilizada (`132796f`, CI #646 SUCCESS). Se respeta `tapa` y se conservan los nombres gastronómicos.
+- Formatos compuestos, pesos y calificadores de 2024: `d715566` y prueba `cb28906`; CI #647 y #648 SUCCESS.
+- Inventario exploratorio de textos visibles, fuentes y capturas en escritorio/móvil: `e26e2a0`, `4c08b96`; CI #649 y #650 SUCCESS. Las siete etiquetas detectadas inicialmente en cuatro fichas se tradujeron mediante `636d54d` y se cubrieron con prueba `291730e`; CI #651 y #652 SUCCESS, sin candidatos de fuente en esas cuatro fichas en la ejecución #652.
+- Barrido exploratorio del catálogo completo: `2bcb4b2` y `15bd9b0`; CI #653 y #654 SUCCESS. El log de #654 registra **43 fichas inspeccionadas por perfil** (escritorio y móvil), **39 fichas con candidatos** (principalmente etiquetas de fuentes y algunos avisos). No equivale a 39 defectos confirmados: títulos propios y denominaciones originales requieren criterio editorial.
+- Avisos de precios no verificados: Taberna Salinas, El Poema de Gran Capitán y Casa El Pisto, con matices históricos de 2024/2026 y fechas de octubre de 2026. Traducciones `d1585c2`, `84052be`; pruebas `c75eaaa`, `8e3cb96`; CI #655 y #656 SUCCESS. La ejecución #659 falló por una aserción de *placeholder* de búsqueda ajena a El Pisto. Se corrigió el test para admitir ejemplos gastronómicos dinámicos (`8d69f98`), y CI #660 SUCCESS.
+- Primer lote del barrido de etiquetas de fuentes en otras fichas: **10 etiquetas** de Salinas, Bodegas Mezquita, El Poema y otras fichas, preservando fuentes, enlaces, fechas y advertencias (`c836631`); prueba ES/FR y URL en Salinas (`effb2d3`). **CI #661 y #662 SUCCESS** (verificado en GitHub el 2/11/2026). Son los últimos commits de código revisados para este cierre.
+
+**Pruebas y riesgos:** Los controles automáticos abarcan vistas y transiciones específicas, no una revisión lingüística humana exhaustiva. Las capturas del inventario son evidencia para inspección manual. El barrido de 43 fichas es heurístico y sus resultados requieren clasificación. Mantener avisos sobre precios históricos/no confirmados, formatos (tapa, media ración, ración, unidad), cantidades, local exacto y atribuciones de fuente. No publicar cartas parciales ni el francés sin autorización.
+
+**Próximo paso al retomar:** (1) leer este README actualizado y los scripts reales; (2) repetir el barrido de 43 fichas tras `effb2d3` y consultar `FR CATALOG SWEEP` de CI para conocer candidatos restantes; (3) priorizar avisos relevantes y grupos pequeños de etiquetas de fuentes, sin traducciones masivas a ciegas; (4) añadir pruebas de regresión ES/EN/FR y ejecutar CI; (5) documentar resultados y efectuar revisión editorial/visual integral antes de considerar el francés cerrado. El inventario debe interpretarse como un detector, no como aprobación. **No cambiar de fase de hoja de ruta ni fusionar a `main` sin confirmación.**
