@@ -44,6 +44,17 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  await page.waitForFunction(()=>document.querySelector('#qa-fr-portion-fixture')?.textContent==='Demi-portion · prix de la carte 2024');
  assert.equal(await page.locator('#qa-fr-portion-fixture').textContent(),'Demi-portion · prix de la carte 2024');
  await page.locator('#qa-fr-portion-fixture').evaluate(node=>node.remove());
+ // Regression for a source label outside the original four-venue pilot.
+ await page.evaluate(()=>showPlace(state.places.find(p=>p.id==='taberna-salinas'),false));
+ const salinasSource=page.locator('#detail-content [data-source-label-es]').filter({hasText:'Carte officielle de Taberna Salinas (plats et desserts ; sans prix)'});
+ assert.equal(await salinasSource.count(),1,'FR Salinas source link');
+ const salinasHref=await salinasSource.getAttribute('href');
+ await page.locator('#language-select').selectOption('es');
+ assert.ok((await page.locator('#detail-content [data-source-label-es]').allTextContents()).some(v=>v.includes('Carta oficial de Taberna Salinas (platos y postres; sin precios)')),'ES Salinas source restored');
+ await page.locator('#language-select').selectOption('fr');
+ assert.ok((await page.locator('#detail-content [data-source-label-es]').allTextContents()).some(v=>v.includes('Carte officielle de Taberna Salinas (plats et desserts ; sans prix)')),'FR Salinas source restored');
+ assert.equal(await page.locator('#detail-content [data-source-label-es]').first().getAttribute('href'),salinasHref,'Source link unchanged');
+ await page.evaluate(()=>showPlace(state.places.find(p=>p.id==='la-montillana'),false));
  const titles=await page.locator('#detail-content .menu-dish h4').allTextContents();
  assert.ok(titles.length>0);
  await page.evaluate(()=>{const place=state.places.find(p=>Array.isArray(p.locations)&&p.locations.length);if(!place)throw Error('Roldan directory missing');showPlace(place,false);});
