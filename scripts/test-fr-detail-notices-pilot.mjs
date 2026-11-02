@@ -71,6 +71,15 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
    await page.locator('#language-select').selectOption('fr');
    await page.waitForFunction(expected=>document.querySelector('#detail-content')?.textContent.includes(expected),item.fr);
  }
+ // El Pisto: exact 2024 historic warning must remain qualified in FR and restore in ES.
+ await page.evaluate(()=>showPlace(state.places.find(p=>p.id==='taberna-san-miguel-el-pisto'),false));
+ const historicFr='Prix historiques de la carte officielle de 2024, non confirmés pour 2026.';
+ const historicEs='Precios históricos de carta oficial de 2024; no confirmados en 2026.';
+ await page.waitForFunction(expected=>document.querySelector('#detail-content')?.textContent.includes(expected),historicFr);
+ await page.locator('#language-select').selectOption('es');
+ assert.ok((await detail.textContent()).includes(historicEs),'ES 2024 historic warning restored');
+ await page.locator('#language-select').selectOption('fr');
+ await page.waitForFunction(expected=>document.querySelector('#detail-content')?.textContent.includes(expected),historicFr);
  const plain=await ctx.newPage();
  await plain.goto('http://127.0.0.1:8765/index.html',{waitUntil:'domcontentloaded'});
  assert.equal(await plain.locator('#language-select option[value="fr"]').count(),0);
