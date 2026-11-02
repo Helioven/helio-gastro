@@ -30,6 +30,13 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  const frLabelsAfterFixture=await portionRows.allTextContents();
  const prohibited=new Set(['Ración','Media ración','1/2 ración','Unidad','Full portion','Half portion','Single item']);
  for(const label of frLabelsAfterFixture)assert.ok(!prohibited.has(label.trim()),'FR portion label not localized: '+label);
+ // Verify a documented compound label keeps its year and historic-price qualification.
+ await page.locator('#qa-fr-portion-fixture').evaluate(node=>{
+   node.dataset.venueMenuPriceLabel='Media ración · precio de carta 2024';
+   node.textContent='Media ración · precio de carta 2024';
+ });
+ await page.waitForFunction(()=>document.querySelector('#qa-fr-portion-fixture')?.textContent==='Demi-portion · prix de la carte 2024');
+ assert.equal(await page.locator('#qa-fr-portion-fixture').textContent(),'Demi-portion · prix de la carte 2024');
  await page.locator('#qa-fr-portion-fixture').evaluate(node=>node.remove());
  const titles=await page.locator('#detail-content .menu-dish h4').allTextContents();
  assert.ok(titles.length>0);
