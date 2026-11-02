@@ -59,6 +59,18 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  await page.locator('#language-select').selectOption('fr');
  assert.ok((await beatillasGeneral.textContent()).includes('La carte individuelle officielle ne publie pas de prix par plat.'),'FR Beatillas general notice restored');
  assert.ok((await beatillasNotice.textContent()).includes('Prix historiques des menus complets publiés en 2025'),'FR Beatillas notice restored');
+ // Catalog sweep #654: protect key uncertainty notices, preserving their verification dates.
+ for(const item of [
+   {id:'taberna-salinas',fr:'Prix indicatifs affichés sur le menu Google consulté le 24/10/2026',es:'Precios orientativos mostrados en el menú de Google, consultados el 24/10/2026'},
+   {id:'taberna-el-poema-gran-capitan',fr:'Carte partielle indicative établie à partir d’une liste publique fournie le 23/10/2026',es:'Carta parcial orientativa elaborada a partir de un listado público aportado el 23/10/2026'}
+ ]){
+   await page.evaluate(id=>showPlace(state.places.find(p=>p.id===id),false),item.id);
+   await page.waitForFunction(expected=>document.querySelector('#detail-content')?.textContent.includes(expected),item.fr);
+   await page.locator('#language-select').selectOption('es');
+   assert.ok((await detail.textContent()).includes(item.es),'ES original notice '+item.id);
+   await page.locator('#language-select').selectOption('fr');
+   await page.waitForFunction(expected=>document.querySelector('#detail-content')?.textContent.includes(expected),item.fr);
+ }
  const plain=await ctx.newPage();
  await plain.goto('http://127.0.0.1:8765/index.html',{waitUntil:'domcontentloaded'});
  assert.equal(await plain.locator('#language-select option[value="fr"]').count(),0);
