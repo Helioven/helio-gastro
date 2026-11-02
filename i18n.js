@@ -268,8 +268,9 @@ window.GASTRO_I18N = Object.freeze({
     return frenchPortionLabels.get(key)||source;
   };
   const translateFrenchDetailNotice=(node,source)=>{
+    // Price labels are inside menu cards, so handle them before skipping menu content.
+    if(node.parentElement?.matches('[data-venue-menu-price-label]')&&node.parentElement.closest('#detail-content'))return translateFrenchPortionLabel(node,source);
     if(!node.parentElement?.closest('#detail-content')||node.parentElement.closest('.menu-dish,[data-venue-menu-section],[data-bilingual-es]'))return source;
-    source=translateFrenchPortionLabel(node,source);
     const raw=normalize(source);
     if(isBeatillasGeneralNotice(raw))return frenchBeatillasGeneralNotice;
     if(frenchDetailNotices.has(raw))return frenchDetailNotices.get(raw);
