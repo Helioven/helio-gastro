@@ -325,7 +325,10 @@ window.GASTRO_I18N = Object.freeze({
     ['Carta QR del restaurante, sin fecha (PDF aportado por el usuario)','Carte QR du restaurant, non datée (PDF fourni par l’utilisateur)'],
     ['Ficha y dirección de Don Pepe Centro','Fiche et adresse de Don Pepe Centro'],
     ['Información orientativa del establecimiento','Informations indicatives sur l’établissement'],
-    ['Carta transcrita de la búsqueda de Google por Helio · origen y vigencia no verificados','Carte transcrite par Helio à partir d’une recherche Google · origine et validité non vérifiées']
+    ['Carta transcrita de la búsqueda de Google por Helio · origen y vigencia no verificados','Carte transcrite par Helio à partir d’une recherche Google · origine et validité non vérifiées'],
+    ["Carta oficial 2026 (PDF facilitado; comidas y precios),Carte officielle 2026 (PDF fourni ; plats et prix)"],
+    ["Carta oficial de desayunos 2026 (PDF aportado por Helio; sin verificación independiente de vigencia),Carte officielle des petits-déjeuners 2026 (PDF fourni par Helio ; validité non vérifiée de manière indépendante)"],
+    ["Menús oficiales 2025–2026 — Moschea di Cordova y Giudecca di Cordova (web del restaurante; consulta 27/10/2026),Menus officiels 2025–2026 — Moschea di Cordova et Giudecca di Cordova (site du restaurant ; consulté le 27/10/2026)"]
   ]);
   const sourceLabelFrench=(element)=>{
     const key=normalize(element.dataset.sourceLabelEs||'');
