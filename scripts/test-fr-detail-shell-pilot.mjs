@@ -54,6 +54,32 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  await page.locator('#language-select').selectOption('fr');
  assert.ok((await page.locator('#detail-content [data-source-label-es]').allTextContents()).some(v=>v.includes('Carte officielle de Taberna Salinas (plats et desserts ; sans prix)')),'FR Salinas source restored');
  assert.equal(await page.locator('#detail-content [data-source-label-es]').first().getAttribute('href'),salinasHref,'Source link unchanged');
+ // Small follow-up sweep: preserve original labels and source URLs across FR/ES/EN/FR.
+ for(const venue of [
+  {id:'taberna-plateros-san-francisco',pairs:[['Carta oficial del restaurante','Carte officielle du restaurant']]},
+  {id:'taberna-la-viuda',pairs:[['Carta oficial de La Viuda','Carte officielle de La Viuda'],['Web oficial y ubicación','Site officiel et localisation']]},
+  {id:'casa-bravo-1919',pairs:[['Carta oficial con formatos e importes','Carte officielle avec formats de portions et prix']]}
+ ]){
+  await page.evaluate(id=>showPlace(state.places.find(p=>p.id===id),false),venue.id);
+  const getLinks=()=>page.locator('#detail-content [data-source-label-es]').evaluateAll(nodes=>nodes.map(n=>({original:n.dataset.sourceLabelEs,text:n.textContent.trim(),href:n.getAttribute('href')})));
+  const fr=await getLinks();
+  for(const [es,translated] of venue.pairs){
+   const link=fr.find(x=>x.original===es);
+   assert.ok(link,'Missing FR source '+venue.id+' / '+es);
+   assert.equal(link.text,translated+' ↗','FR label '+venue.id);
+   assert.ok(link.href,'Source URL '+venue.id);
+  }
+  await page.locator('#language-select').selectOption('es');
+  const esLinks=await getLinks();
+  for(const [es] of venue.pairs)assert.equal(esLinks.find(x=>x.original===es)?.text,es+' ↗','ES source restored '+venue.id);
+  await page.locator('#language-select').selectOption('en');
+  const enLinks=await getLinks();
+  for(const [es] of venue.pairs)assert.ok(enLinks.find(x=>x.original===es)?.text,'EN source present '+venue.id);
+  await page.locator('#language-select').selectOption('fr');
+  const restored=await getLinks();
+  for(const [es,translated] of venue.pairs)assert.equal(restored.find(x=>x.original===es)?.text,translated+' ↗','FR source restored '+venue.id);
+  assert.deepEqual(restored.map(x=>x.href),fr.map(x=>x.href),'URLs unchanged '+venue.id);
+ }
  await page.evaluate(()=>showPlace(state.places.find(p=>p.id==='la-montillana'),false));
  const titles=await page.locator('#detail-content .menu-dish h4').allTextContents();
  assert.ok(titles.length>0);
