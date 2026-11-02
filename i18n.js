@@ -231,6 +231,9 @@ window.GASTRO_I18N = Object.freeze({
   ]);
   const translateFrenchDetailText=(node,source)=>node.parentElement?.closest('#detail-content')&&!node.parentElement.closest('.menu-dish,[data-venue-menu-section],[data-bilingual-es],[data-source-label-es]')?(frenchDetailLabels.get(normalize(source))||source):source;
   const frenchRoldanNotice=["Precios publicados en la carta general de Roldán. Pueden variar; la disponibilidad de productos depende de cada local. Roldán Centro tiene carta y ficha propias.","Prix publiés dans la carte générale de Roldán. Ils peuvent varier ; la disponibilité des produits dépend de chaque établissement. Roldán Centro dispose de sa propre carte et de sa propre fiche."];
+  // Beatillas: preserve the 2025 historical group-menu caveat when the detail notice is bilingual.
+  const frenchBeatillasGeneralNotice='La carte individuelle officielle ne publie pas de prix par plat. Nous recommandons de confirmer les tarifs auprès du restaurant avant de commander. Les prix publiés pour les menus de groupe correspondent à des menus complets de 2025, et non à des plats individuels ; leur validité actuelle n’est pas confirmée.';
+  const isBeatillasGeneralNotice=value=>value.startsWith('La carta individual oficial no publica precios por plato.')&&value.includes('menús completos de 2025');
   const frenchDetailNotices=new Map([
     ['Panadería:','Boulangerie :'],
     ['Cafetería:','Café :'],
@@ -388,7 +391,7 @@ window.GASTRO_I18N = Object.freeze({
     if(select && select.value!==language)select.value=language;
     translateElement(document.body);
     for(const element of document.querySelectorAll('[data-bilingual-es]')){
-      const translated=language==='fr'&&element.closest('#detail-content')?(normalize(element.dataset.bilingualEs)===frenchRoldanNotice[0]?frenchRoldanNotice[1]:(frenchDetailNotices.get(normalize(element.dataset.bilingualEs))||element.dataset.bilingualEs)):(language==='en'?element.dataset.bilingualEn:element.dataset.bilingualEs);
+      const translated=language==='fr'&&element.closest('#detail-content')?(normalize(element.dataset.bilingualEs)===frenchRoldanNotice[0]?frenchRoldanNotice[1]:(isBeatillasGeneralNotice(normalize(element.dataset.bilingualEs))?frenchBeatillasGeneralNotice:(frenchDetailNotices.get(normalize(element.dataset.bilingualEs))||element.dataset.bilingualEs))):(language==='en'?element.dataset.bilingualEn:element.dataset.bilingualEs);
       if(translated!==undefined && element.textContent!==translated)element.textContent=translated;
     }
     if(typeof window.HelioGastroRefreshExplanations==='function')window.HelioGastroRefreshExplanations();
