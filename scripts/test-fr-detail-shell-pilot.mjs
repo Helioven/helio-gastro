@@ -74,7 +74,10 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
   {id:'casa-pepe-juderia',pairs:[['Official restaurant, bar and dessert menus (PDF provided, May 2026)','Cartes officielles du restaurant, du bar et des desserts (PDF fourni, mai 2026)']]},
   {id:'taberna-san-miguel-el-pisto',pairs:[['Carta oficial Casa El Pisto · edición conmemorativa 1974–2024 · precios históricos (vigencia en 2026 sin verificar)','Carte officielle Casa El Pisto · édition commémorative 1974–2024 · prix historiques (validité en 2026 non vérifiée)'],['Carta general oficial sin importes visibles','Carte générale officielle sans prix visibles'],['Dirección y web oficial','Adresse et site officiel'],['Carta oficial en inglés, edición conmemorativa 2024','Carte officielle en anglais, édition commémorative 2024']]},
   {id:'bar-moriles-original',pairs:[['Ficha del restaurante con dirección y especialidades','Fiche du restaurant avec adresse et spécialités'],['Ficha con información sobre desayunos','Fiche avec informations sur les petits-déjeuners']]},
-  {id:'dtapas-covap-cordoba',pairs:[["Carta oficial D'Tapas COVAP Córdoba completa","Carte officielle complète de D'Tapas COVAP Córdoba"],['Presentación oficial COVAP','Présentation officielle de COVAP']]}
+  {id:'dtapas-covap-cordoba',pairs:[["Carta oficial D'Tapas COVAP Córdoba completa","Carte officielle complète de D'Tapas COVAP Córdoba"],['Presentación oficial COVAP','Présentation officielle de COVAP']]},
+  {id:'cafeteria-bar-la-jineta',pairs:[['Carta publicada por el establecimiento en Queresto','Carte publiée par l’établissement sur Queresto']]},
+  {id:'la-bandera-cafe',pairs:[['Carta oficial de La Bandera — desayunos, meriendas y comida','Carte officielle de La Bandera — petits-déjeuners, goûters et repas']]},
+  {id:'con-acento-braseria',pairs:[['Carta general y tapas oficiales (PDF facilitados)','Carte générale et carte des tapas officielles (PDF fournis)']]}
  ]){
   await page.evaluate(id=>showPlace(state.places.find(p=>p.id===id),false),venue.id);
   const getLinks=()=>page.locator('#detail-content [data-source-label-es]').evaluateAll(nodes=>nodes.map(n=>({original:n.dataset.sourceLabelEs,text:n.textContent.trim(),href:n.getAttribute('href')})));
