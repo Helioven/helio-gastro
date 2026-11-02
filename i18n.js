@@ -317,6 +317,12 @@ window.GASTRO_I18N = Object.freeze({
       const translated=sourceLabelFrench(node.parentElement);
       if(translated)return translated+' ↗';
     }
+    // Historical warnings inside dish cards are UI notices, never dish titles.
+    if(node.parentElement?.closest('#detail-content .menu-dish')&&node.parentElement.matches('.service-notice,.note')&&!node.parentElement.closest('[data-bilingual-es]')){
+      const warning=normalize(source);
+      if(warning==='Precios históricos de carta oficial de 2024; no confirmados en 2026. Consulta posibles cambios directamente con el restaurante.')
+        return frenchDetailNotices.get(warning);
+    }
     // Price labels are inside menu cards, so handle them before skipping menu content.
     if(node.parentElement?.matches('[data-venue-menu-price-label]')&&node.parentElement.closest('#detail-content'))return translateFrenchPortionLabel(node,source);
     if(!node.parentElement?.closest('#detail-content')||node.parentElement.closest('.menu-dish,[data-venue-menu-section],[data-bilingual-es]'))return source;
