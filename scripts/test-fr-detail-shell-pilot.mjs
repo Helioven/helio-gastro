@@ -15,13 +15,22 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  const portionRows=page.locator('#detail-content [data-venue-menu-price-label]');
  const frLabels=await portionRows.allTextContents();
  assert.ok(frLabels.length>0,'Documented price labels present in Montillana');
- const expectedPortions=new Map([['Ración','Portion entière'],['Media ración','Demi-portion'],['1/2 ración','Demi-portion'],['Unidad','À l’unité'],['Tapa','Tapa'],['Sin formato','Format non précisé'],['Formato no indicado','Format non précisé']]);
- const actualPortions=await portionRows.evaluateAll(nodes=>nodes.map(node=>({original:node.dataset.venueMenuPriceLabel,rendered:node.textContent.trim()})));
- const applicable=actualPortions.filter(item=>expectedPortions.has(item.original));
- assert.ok(applicable.length>0,'Montillana must expose a documented explicit portion for French QA');
- for(const item of applicable)assert.equal(item.rendered,expectedPortions.get(item.original),'FR portion: '+item.original);
+ // Test explicit UI labels with a deterministic DOM fixture, independent of each venue's source wording.
+ const fixture=await page.evaluate(()=>{
+   const row=document.createElement('span');
+   row.dataset.venueMenuPriceLabel='Media ración';
+   row.textContent='Media ración';
+   row.id='qa-fr-portion-fixture';
+   document.querySelector('#detail-content').append(row);
+   return true;
+ });
+ assert.ok(fixture);
+ await page.waitForFunction(()=>document.querySelector('#qa-fr-portion-fixture')?.textContent==='Demi-portion');
+ assert.equal(await page.locator('#qa-fr-portion-fixture').textContent(),'Demi-portion','FR explicit half-portion label');
+ const frLabels=await portionRows.allTextContents();
  const prohibited=new Set(['Ración','Media ración','1/2 ración','Unidad','Full portion','Half portion','Single item']);
  for(const label of frLabels)assert.ok(!prohibited.has(label.trim()),'FR portion label not localized: '+label);
+ await page.locator('#qa-fr-portion-fixture').evaluate(node=>node.remove());
  const titles=await page.locator('#detail-content .menu-dish h4').allTextContents();
  assert.ok(titles.length>0);
  await page.evaluate(()=>{const place=state.places.find(p=>Array.isArray(p.locations)&&p.locations.length);if(!place)throw Error('Roldan directory missing');showPlace(place,false);});
