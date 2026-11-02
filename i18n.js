@@ -287,7 +287,33 @@ window.GASTRO_I18N = Object.freeze({
     const key=normalize(source);
     return frenchPortionLabels.get(key)||source;
   };
+  // Explicit source-link presentation labels confirmed by the visual QA inventory (#650).
+  // Source URLs, catalog labels and dates remain unchanged.
+  const frenchSourceLabels=new Map([
+    ['Carta oficial — web del establecimiento','Carte officielle — site de l’établissement'],
+    ['Carta oficial de platos','Carte officielle des plats'],
+    ['Menús oficiales para grupos (precios y condiciones sujetos a consulta)','Menus officiels pour groupes (prix et conditions à confirmer auprès du restaurant)'],
+    ['Official October 2025 menu (PDF provided by the user)','Carte officielle d’octobre 2025 (PDF fourni par l’utilisateur)'],
+    ['Official website and address','Site officiel et adresse'],
+    ['Carta general oficial de desayunos (cafeterías, excepto Centro)','Carte générale officielle des petits-déjeuners (cafés, sauf Centro)'],
+    ['Directorio oficial de establecimientos y direcciones','Répertoire officiel des établissements et adresses']
+  ]);
+  const sourceLabelFrench=(element)=>{
+    const key=normalize(element.dataset.sourceLabelEs||'');
+    return frenchSourceLabels.get(key);
+  };
+  const refreshFrenchSourceLabels=()=>{
+    if(language!=='fr')return;
+    document.querySelectorAll('#detail-content [data-source-label-es]').forEach(element=>{
+      const translated=sourceLabelFrench(element);
+      if(translated && element.textContent!==translated+' ↗')element.textContent=translated+' ↗';
+    });
+  };
   const translateFrenchDetailNotice=(node,source)=>{
+    if(language==='fr'&&node.parentElement?.matches('[data-source-label-es]')&&node.parentElement.closest('#detail-content')){
+      const translated=sourceLabelFrench(node.parentElement);
+      if(translated)return translated+' ↗';
+    }
     // Price labels are inside menu cards, so handle them before skipping menu content.
     if(node.parentElement?.matches('[data-venue-menu-price-label]')&&node.parentElement.closest('#detail-content'))return translateFrenchPortionLabel(node,source);
     if(!node.parentElement?.closest('#detail-content')||node.parentElement.closest('.menu-dish,[data-venue-menu-section],[data-bilingual-es]'))return source;
@@ -438,6 +464,7 @@ window.GASTRO_I18N = Object.freeze({
       if(translated!==undefined && element.textContent!==translated)element.textContent=translated;
     }
     if(typeof window.HelioGastroRefreshExplanations==='function')window.HelioGastroRefreshExplanations();
+    refreshFrenchSourceLabels();
     try{if(language!=='fr')localStorage.setItem(KEY,language)}catch(e){}
   }
   function init(){
