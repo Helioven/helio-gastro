@@ -74,6 +74,31 @@ try{
     }).filter(item=>item.original&&item.original===item.rendered).slice(0,15)):[];
     findings.push({view:view.id,reviewCandidates:visible.filter(x=>spanishCue.test(x.text)).slice(0,30),sourceLabelCandidates,visibleElementsChecked:visible.length,horizontalOverflow:viewport.documentWidth>viewport.viewportWidth+1,viewport,screenshot});
    }
+   // Full-catalog exploratory sweep: metadata only, no extra screenshots or content changes.
+   // Names and traditional dishes are intentionally not assessed as translation failures.
+   const allPlaces=await page.evaluate(()=>state.places.map(p=>({id:p.id,name:p.name})));
+   const catalogFindings=[];
+   for(const place of allPlaces){
+     await page.evaluate(id=>{
+       const venue=state.places.find(p=>p.id===id);
+       if(!venue)throw Error('Missing venue '+id);
+       showPlace(venue,false);
+     },place.id);
+     await page.waitForTimeout(20);
+     const finding=await page.locator('#detail-content').evaluate((root,cueSource)=>{
+       const cue=new RegExp(cueSource,'i');
+       const items=[...root.querySelectorAll('.service-notice,.note,[data-source-label-es]')].filter(el=>el.getClientRects().length);
+       const strings=items.map(el=>(el.innerText||el.textContent||'').trim()).filter(Boolean);
+       const cueMatches=strings.filter(t=>cue.test(t)).slice(0,5);
+       const sourceLabels=[...root.querySelectorAll('[data-source-label-es]')].filter(el=>{
+         const original=(el.dataset.sourceLabelEs||'').trim();
+         return original && (el.textContent||'').replace(/\\s*↗\\s*$/,'').trim()===original;
+       }).map(el=>({original:el.dataset.sourceLabelEs})).slice(0,6);
+       return {cueMatches,sourceLabels};
+     },spanishCue.source);
+     if(finding.cueMatches.length||finding.sourceLabels.length)catalogFindings.push({id:place.id,...finding});
+   }
+   console.log('FR CATALOG SWEEP '+JSON.stringify({profile:profile.name,placesInspected:allPlaces.length,venuesFlagged:catalogFindings.length,findings:catalogFindings.slice(0,30),truncated:catalogFindings.length>30,note:'Heuristic candidates, not verified translation defects'}));
    report.profiles.push({profile:profile.name,errors,findings});
   }finally{await ctx.close();}
  }
