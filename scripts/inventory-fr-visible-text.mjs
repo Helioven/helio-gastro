@@ -75,3 +75,11 @@ try{
 mkdirSync('qa-reports',{recursive:true});
 writeFileSync('qa-reports/fr-visible-text-triage.json',JSON.stringify(report,null,2)+'\n');
 console.log('FR VISIBLE TEXT TRIAGE (nonblocking) '+JSON.stringify(report.profiles.map(p=>({profile:p.profile,errors:p.errors.length,views:p.findings.map(f=>({view:f.view,candidates:f.reviewCandidates.length,horizontalOverflow:f.horizontalOverflow,viewportWidth:f.viewport.viewportWidth,documentWidth:f.viewport.documentWidth}))}))));
+// Emit actionable, bounded evidence in CI logs even when the JSON artifact is unavailable.
+for(const profile of report.profiles){
+ for(const finding of profile.findings){
+  if(!finding.reviewCandidates.length&&!finding.horizontalOverflow&&!finding.viewport.overflowingElements.length)continue;
+  console.log('FR TRIAGE DETAIL '+JSON.stringify({profile:profile.profile,view:finding.view,reviewCandidates:finding.reviewCandidates.slice(0,10),horizontalOverflow:finding.horizontalOverflow,overflowingElements:finding.viewport.overflowingElements.slice(0,10),screenshot:finding.screenshot}));
+ }
+ if(profile.errors.length)console.log('FR TRIAGE PAGE ERRORS '+JSON.stringify({profile:profile.profile,errors:profile.errors.slice(0,10)}));
+}
