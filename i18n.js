@@ -247,8 +247,29 @@ window.GASTRO_I18N = Object.freeze({
     ['Sin fecha registrada','Aucune date enregistrée'],
     ['Vigencia pendiente de confirmar','Validité à confirmer']
   ]);
+  // QA-only: presentation labels, not dish names or catalog values.
+  const frenchPortionLabels=new Map([
+    ['Ración','Portion entière'],
+    ['Media ración','Demi-portion'],
+    ['1/2 ración','Demi-portion'],
+    ['Unidad','À l’unité'],
+    ['Tapa','Tapa'],
+    ['Sin formato','Format non précisé'],
+    ['Formato no indicado','Format non précisé'],
+    ['Full portion','Portion entière'],
+    ['Half portion','Demi-portion'],
+    ['Single item','À l’unité'],
+    ['Portion size unspecified','Format non précisé']
+  ]);
+  const translateFrenchPortionLabel=(node,source)=>{
+    const parent=node.parentElement;
+    if(!parent?.matches('[data-venue-menu-price-label]')||!parent.closest('#detail-content'))return source;
+    const key=normalize(source);
+    return frenchPortionLabels.get(key)||source;
+  };
   const translateFrenchDetailNotice=(node,source)=>{
     if(!node.parentElement?.closest('#detail-content')||node.parentElement.closest('.menu-dish,[data-venue-menu-section],[data-bilingual-es]'))return source;
+    source=translateFrenchPortionLabel(node,source);
     const raw=normalize(source);
     if(isBeatillasGeneralNotice(raw))return frenchBeatillasGeneralNotice;
     if(frenchDetailNotices.has(raw))return frenchDetailNotices.get(raw);
