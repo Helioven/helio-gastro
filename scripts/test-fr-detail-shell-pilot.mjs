@@ -80,7 +80,8 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
   {id:'con-acento-braseria',pairs:[['Carta general y tapas oficiales (PDF facilitados)','Carte générale et carte des tapas officielles (PDF fournis)']]},
   {id:'el-burlaero',pairs:[['Carta oficial de El Burlaero (PDF facilitado; la carta no asigna formatos a todos los precios)','Carte officielle de El Burlaero (PDF fourni ; la carte ne précise pas le format de portion pour tous les prix)']]},
   {id:'taberna-la-sal',pairs:[['Carta publicada en web del restaurante; transcripción facilitada por usuario','Carte publiée sur le site du restaurant ; transcription fournie par l’utilisateur']]},
-  {id:'taberna-museo-manolete',pairs:[['Carta de Taberna Ágora/Museo Manolete (web del establecimiento)','Carte de Taberna Ágora/Museo Manolete (site de l’établissement)']]}
+  {id:'taberna-museo-manolete',pairs:[['Carta de Taberna Ágora/Museo Manolete (web del establecimiento)','Carte de Taberna Ágora/Museo Manolete (site de l’établissement)']]},
+  {id:'agora-mezquita',pairs:[['Información de establecimientos del grupo Ágora (captura aportada por el usuario)','Informations sur les établissements du groupe Ágora (capture fournie par l’utilisateur)'],['Carta individual de Ágora Mezquita y fotografías oficiales aportadas por el usuario','Carte propre à Ágora Mezquita et photographies officielles fournies par l’utilisateur']]}
  ]){
   await page.evaluate(id=>showPlace(state.places.find(p=>p.id===id),false),venue.id);
   const getLinks=()=>page.locator('#detail-content [data-source-label-es]').evaluateAll(nodes=>nodes.map(n=>({original:n.dataset.sourceLabelEs,text:n.textContent.trim(),href:n.getAttribute('href')})));
