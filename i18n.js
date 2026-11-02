@@ -332,7 +332,11 @@ window.GASTRO_I18N = Object.freeze({
     ["Ficha de Turismo de Córdoba","Fiche de l’Office de tourisme de Cordoue"],
     ["Historia y especialidades","Histoire et spécialités"],
     ["Carta oficial de comida y dulces","Carte officielle des plats et pâtisseries"],
-    ["Carta oficial de bebidas y cafés","Carte officielle des boissons et cafés"]
+    ["Carta oficial de bebidas y cafés","Carte officielle des boissons et cafés"],
+    ["Carta y cocina tradicional oficiales","Carte officielle et cuisine traditionnelle"],
+    ["Carta general · capturas facilitadas por el usuario (11 imágenes, octubre 2026)","Carte générale · captures fournies par l’utilisateur (11 images, octobre 2026)"],
+    ["Carta general bilingüe con precios · PDF facilitado por el usuario","Carte générale bilingue avec prix · PDF fourni par l’utilisateur"],
+    ["Menús para grupos 2026 · PDF oficial","Menus pour groupes 2026 · PDF officiel"]
   ]);
   const sourceLabelFrench=(element)=>{
     const key=normalize(element.dataset.sourceLabelEs||'');
