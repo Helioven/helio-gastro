@@ -313,7 +313,12 @@ window.GASTRO_I18N = Object.freeze({
     ['Carta oficial del restaurante','Carte officielle du restaurant'],
     ['Carta oficial de La Viuda','Carte officielle de La Viuda'],
     ['Web oficial y ubicación','Site officiel et localisation'],
-    ['Carta oficial con formatos e importes','Carte officielle avec formats de portions et prix']
+    ['Carta oficial con formatos e importes','Carte officielle avec formats de portions et prix'],
+    ['Turismo de Córdoba: especialidades y dirección','Tourisme de Cordoue : spécialités et adresse'],
+    ['Información del establecimiento','Informations sur l’établissement'],
+    ['Carta del restaurante transcrita por el usuario, con precios publicados','Carte du restaurant transcrite par l’utilisateur, avec prix publiés'],
+    ['Cocina y especialidades oficiales','Cuisine et spécialités présentées sur le site officiel'],
+    ['Dirección y contacto oficial','Adresse et coordonnées officielles']
   ]);
   const sourceLabelFrench=(element)=>{
     const key=normalize(element.dataset.sourceLabelEs||'');
