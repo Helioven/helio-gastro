@@ -356,7 +356,10 @@ window.GASTRO_I18N = Object.freeze({
     ["Presentación oficial COVAP","Présentation officielle de COVAP"],
     ["Carta publicada por el establecimiento en Queresto","Carte publiée par l’établissement sur Queresto"],
     ["Carta oficial de La Bandera — desayunos, meriendas y comida","Carte officielle de La Bandera — petits-déjeuners, goûters et repas"],
-    ["Carta general y tapas oficiales (PDF facilitados)","Carte générale et carte des tapas officielles (PDF fournis)"]
+    ["Carta general y tapas oficiales (PDF facilitados)","Carte générale et carte des tapas officielles (PDF fournis)"],
+    ["Carta oficial de El Burlaero (PDF facilitado; la carta no asigna formatos a todos los precios)","Carte officielle de El Burlaero (PDF fourni ; la carte ne précise pas le format de portion pour tous les prix)"],
+    ["Carta publicada en web del restaurante; transcripción facilitada por usuario","Carte publiée sur le site du restaurant ; transcription fournie par l’utilisateur"],
+    ["Carta de Taberna Ágora/Museo Manolete (web del establecimiento)","Carte de Taberna Ágora/Museo Manolete (site de l’établissement)"]
   ]);
   const sourceLabelFrench=(element)=>{
     const key=normalize(element.dataset.sourceLabelEs||'');
