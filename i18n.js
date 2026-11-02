@@ -345,7 +345,11 @@ window.GASTRO_I18N = Object.freeze({
     ["Menús oficiales","Menus officiels"],
     ["Menú degustación Tradición (66 €/persona, mínimo 2, máximo 4)","Menu dégustation Tradición (66 €/personne, minimum 2, maximum 4)"],
     ["Carta oficial en español e inglés (PDF facilitados por el usuario)","Carte officielle en espagnol et en anglais (PDF fournis par l’utilisateur)"],
-    ["Official restaurant, bar and dessert menus (PDF provided, May 2026)","Cartes officielles du restaurant, du bar et des desserts (PDF fourni, mai 2026)"]
+    ["Official restaurant, bar and dessert menus (PDF provided, May 2026)","Cartes officielles du restaurant, du bar et des desserts (PDF fourni, mai 2026)"],
+    ["Carta oficial Casa El Pisto · edición conmemorativa 1974–2024 · precios históricos (vigencia en 2026 sin verificar)","Carte officielle Casa El Pisto · édition commémorative 1974–2024 · prix historiques (validité en 2026 non vérifiée)"],
+    ["Carta general oficial sin importes visibles","Carte générale officielle sans prix visibles"],
+    ["Dirección y web oficial","Adresse et site officiel"],
+    ["Carta oficial en inglés, edición conmemorativa 2024","Carte officielle en anglais, édition commémorative 2024"]
   ]);
   const sourceLabelFrench=(element)=>{
     const key=normalize(element.dataset.sourceLabelEs||'');
