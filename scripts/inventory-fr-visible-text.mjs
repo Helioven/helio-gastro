@@ -69,7 +69,7 @@ try{
     // Exact source-label comparison is exploratory: proper names and source titles may intentionally remain Spanish.
     const sourceLabelCandidates=view.id.startsWith('detail-')?await page.locator('#detail-content [data-source-label-es]').evaluateAll(nodes=>nodes.map(node=>{
       const original=(node.dataset.sourceLabelEs||'').trim();
-      const rendered=(node.textContent||'').replace(/\\s*↗\\s*$/,'').trim();
+      const rendered=(node.textContent||'').replace(/\s*↗\s*$/,'').trim();
       return {original,rendered};
     }).filter(item=>item.original&&item.original===item.rendered).slice(0,15)):[];
     findings.push({view:view.id,reviewCandidates:visible.filter(x=>spanishCue.test(x.text)).slice(0,30),sourceLabelCandidates,visibleElementsChecked:visible.length,horizontalOverflow:viewport.documentWidth>viewport.viewportWidth+1,viewport,screenshot});
