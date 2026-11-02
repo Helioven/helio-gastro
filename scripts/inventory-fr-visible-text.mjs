@@ -75,6 +75,11 @@ try{
 mkdirSync('qa-reports',{recursive:true});
 writeFileSync('qa-reports/fr-visible-text-triage.json',JSON.stringify(report,null,2)+'\n');
 console.log('FR VISIBLE TEXT TRIAGE (nonblocking) '+JSON.stringify(report.profiles.map(p=>({profile:p.profile,errors:p.errors.length,views:p.findings.map(f=>({view:f.view,candidates:f.reviewCandidates.length,horizontalOverflow:f.horizontalOverflow,viewportWidth:f.viewport.viewportWidth,documentWidth:f.viewport.documentWidth}))}))));
+// Always list the screenshot evidence and whether a profile has outstanding heuristic candidates.
+for(const profile of report.profiles){
+ const candidateTotal=profile.findings.reduce((sum,f)=>sum+f.reviewCandidates.length,0);
+ console.log('FR TRIAGE PROFILE '+JSON.stringify({profile:profile.profile,candidateTotal,viewsInspected:profile.findings.length,screenshots:profile.findings.filter(f=>f.screenshot).map(f=>({view:f.view,path:f.screenshot})),note:'Candidates require human review; zero candidates is not editorial approval'}));
+}
 // Emit actionable, bounded evidence in CI logs even when the JSON artifact is unavailable.
 for(const profile of report.profiles){
  for(const finding of profile.findings){
