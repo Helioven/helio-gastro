@@ -11,6 +11,12 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.ok((await page.locator('#detail-content h3').allTextContents()).includes('Sources et date'));
  assert.equal(await page.locator('#detail-content .fav-button').textContent(),'☆ Enregistrer','FR detail save button');
  assert.ok((await page.locator('#detail-content .map-button').allTextContents()).includes('📍 Voir la carte'),'FR detail map button');
+ // Inspect rendered presentation labels only; dish names must remain unchanged.
+ const portionRows=page.locator('#detail-content [data-venue-menu-price-label]');
+ const frLabels=await portionRows.allTextContents();
+ assert.ok(frLabels.length>0,'Documented price labels present in Montillana');
+ const prohibited=new Set(['Ración','Media ración','1/2 ración','Unidad','Full portion','Half portion','Single item']);
+ for(const label of frLabels)assert.ok(!prohibited.has(label.trim()),'FR portion label not localized: '+label);
  const titles=await page.locator('#detail-content .menu-dish h4').allTextContents();
  assert.ok(titles.length>0);
  await page.evaluate(()=>{const place=state.places.find(p=>Array.isArray(p.locations)&&p.locations.length);if(!place)throw Error('Roldan directory missing');showPlace(place,false);});
