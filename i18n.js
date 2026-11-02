@@ -341,7 +341,11 @@ window.GASTRO_I18N = Object.freeze({
     ["Platos del menú degustación","Plats du menu dégustation"],
     ["Carta digital oficial en inglés (versión independiente; puede diferir de la española)","Carte numérique officielle en anglais (version distincte ; peut différer de la version espagnole)"],
     ["Web oficial y cocina tradicional","Site officiel et cuisine traditionnelle"],
-    ["Menú degustación y platos","Menu dégustation et plats"]
+    ["Menú degustación y platos","Menu dégustation et plats"],
+    ["Menús oficiales","Menus officiels"],
+    ["Menú degustación Tradición (66 €/persona, mínimo 2, máximo 4)","Menu dégustation Tradición (66 €/personne, minimum 2, maximum 4)"],
+    ["Carta oficial en español e inglés (PDF facilitados por el usuario)","Carte officielle en espagnol et en anglais (PDF fournis par l’utilisateur)"],
+    ["Official restaurant, bar and dessert menus (PDF provided, May 2026)","Cartes officielles du restaurant, du bar et des desserts (PDF fourni, mai 2026)"]
   ]);
   const sourceLabelFrench=(element)=>{
     const key=normalize(element.dataset.sourceLabelEs||'');
