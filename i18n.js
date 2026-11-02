@@ -336,7 +336,12 @@ window.GASTRO_I18N = Object.freeze({
     ["Carta y cocina tradicional oficiales","Carte officielle et cuisine traditionnelle"],
     ["Carta general · capturas facilitadas por el usuario (11 imágenes, octubre 2026)","Carte générale · captures fournies par l’utilisateur (11 images, octobre 2026)"],
     ["Carta general bilingüe con precios · PDF facilitado por el usuario","Carte générale bilingue avec prix · PDF fourni par l’utilisateur"],
-    ["Menús para grupos 2026 · PDF oficial","Menus pour groupes 2026 · PDF officiel"]
+    ["Menús para grupos 2026 · PDF oficial","Menus pour groupes 2026 · PDF officiel"],
+    ["Web y cocina oficial","Site officiel et cuisine présentée"],
+    ["Platos del menú degustación","Plats du menu dégustation"],
+    ["Carta digital oficial en inglés (versión independiente; puede diferir de la española)","Carte numérique officielle en anglais (version distincte ; peut différer de la version espagnole)"],
+    ["Web oficial y cocina tradicional","Site officiel et cuisine traditionnelle"],
+    ["Menú degustación y platos","Menu dégustation et plats"]
   ]);
   const sourceLabelFrench=(element)=>{
     const key=normalize(element.dataset.sourceLabelEs||'');
