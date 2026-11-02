@@ -42,8 +42,9 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  // Beatillas: verify the already documented 2025 historical-price notice across languages.
  await page.locator('#language-select').selectOption('fr');
  await page.evaluate(()=>showPlace(state.places.find(p=>p.id==='rincon-beatillas'),false));
- const beatillasGeneral=page.locator('#detail-content > .service-notice').filter({hasText:/carte individuelle officielle|carta individual oficial|individual official menu/i});
- await beatillasGeneral.waitFor();
+ // Keep the same DOM node across translations; a text-filtered locator stops matching after switching languages.
+ const beatillasGeneral=await page.locator('#detail-content > .service-notice').filter({hasText:/carte individuelle officielle|carta individual oficial|individual official menu/i}).elementHandle();
+ assert.ok(beatillasGeneral,'Beatillas general notice element present');
  assert.ok((await beatillasGeneral.textContent()).includes('La carte individuelle officielle ne publie pas de prix par plat.'),'FR Beatillas general notice');
  const beatillasNotice=page.locator('#detail-content .beatillas-group-menus > .service-notice');
  await beatillasNotice.waitFor();
