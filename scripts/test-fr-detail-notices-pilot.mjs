@@ -42,15 +42,21 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  // Beatillas: verify the already documented 2025 historical-price notice across languages.
  await page.locator('#language-select').selectOption('fr');
  await page.evaluate(()=>showPlace(state.places.find(p=>p.id==='rincon-beatillas'),false));
+ const beatillasGeneral=page.locator('#detail-content > .service-notice').filter({hasText:/carte individuelle officielle|carta individual oficial|individual official menu/i});
+ await beatillasGeneral.waitFor();
+ assert.ok((await beatillasGeneral.textContent()).includes('La carte individuelle officielle ne publie pas de prix par plat.'),'FR Beatillas general notice');
  const beatillasNotice=page.locator('#detail-content .beatillas-group-menus > .service-notice');
  await beatillasNotice.waitFor();
  assert.ok((await beatillasNotice.textContent()).includes('Prix historiques des menus complets publiés en 2025'),'FR Beatillas historical menu notice');
  assert.ok((await beatillasNotice.textContent()).includes('non confirmés pour 2026'),'FR Beatillas validity caveat');
  await page.locator('#language-select').selectOption('es');
+ assert.ok((await beatillasGeneral.textContent()).includes('La carta individual oficial no publica precios por plato.'),'ES Beatillas general notice restored');
  assert.ok((await beatillasNotice.textContent()).includes('Precios históricos de los menús completos publicados en 2025'),'ES Beatillas notice restored');
  await page.locator('#language-select').selectOption('en');
+ assert.ok(!(await beatillasGeneral.textContent()).includes('La carte individuelle officielle'),'EN Beatillas general notice not French');
  assert.ok((await beatillasNotice.textContent()).includes('Historical prices for complete set menus published in 2025'),'EN Beatillas notice restored');
  await page.locator('#language-select').selectOption('fr');
+ assert.ok((await beatillasGeneral.textContent()).includes('La carte individuelle officielle ne publie pas de prix par plat.'),'FR Beatillas general notice restored');
  assert.ok((await beatillasNotice.textContent()).includes('Prix historiques des menus complets publiés en 2025'),'FR Beatillas notice restored');
  const plain=await ctx.newPage();
  await plain.goto('http://127.0.0.1:8765/index.html',{waitUntil:'domcontentloaded'});
