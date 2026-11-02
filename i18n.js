@@ -361,7 +361,10 @@ window.GASTRO_I18N = Object.freeze({
     ["Carta publicada en web del restaurante; transcripción facilitada por usuario","Carte publiée sur le site du restaurant ; transcription fournie par l’utilisateur"],
     ["Carta de Taberna Ágora/Museo Manolete (web del establecimiento)","Carte de Taberna Ágora/Museo Manolete (site de l’établissement)"],
     ["Información de establecimientos del grupo Ágora (captura aportada por el usuario)","Informations sur les établissements du groupe Ágora (capture fournie par l’utilisateur)"],
-    ["Carta individual de Ágora Mezquita y fotografías oficiales aportadas por el usuario","Carte propre à Ágora Mezquita et photographies officielles fournies par l’utilisateur"]
+    ["Carta individual de Ágora Mezquita y fotografías oficiales aportadas por el usuario","Carte propre à Ágora Mezquita et photographies officielles fournies par l’utilisateur"],
+    ["Ficha de Churros Bar Marta y horario publicado","Fiche de Churros Bar Marta et horaires publiés"],
+    ["Opiniones con especialidades de desayuno","Avis mentionnant des spécialités de petit-déjeuner"],
+    ["Carta de desayunos y bollería publicada en churrosbarmarta.shop (autoría del sitio sin verificar)","Carte des petits-déjeuners et viennoiseries publiée sur churrosbarmarta.shop (identité de l’éditeur du site non vérifiée)"]
   ]);
   const sourceLabelFrench=(element)=>{
     const key=normalize(element.dataset.sourceLabelEs||'');
