@@ -364,7 +364,11 @@ window.GASTRO_I18N = Object.freeze({
     ["Carta individual de Ágora Mezquita y fotografías oficiales aportadas por el usuario","Carte propre à Ágora Mezquita et photographies officielles fournies par l’utilisateur"],
     ["Ficha de Churros Bar Marta y horario publicado","Fiche de Churros Bar Marta et horaires publiés"],
     ["Opiniones con especialidades de desayuno","Avis mentionnant des spécialités de petit-déjeuner"],
-    ["Carta de desayunos y bollería publicada en churrosbarmarta.shop (autoría del sitio sin verificar)","Carte des petits-déjeuners et viennoiseries publiée sur churrosbarmarta.shop (identité de l’éditeur du site non vérifiée)"]
+    ["Carta de desayunos y bollería publicada en churrosbarmarta.shop (autoría del sitio sin verificar)","Carte des petits-déjeuners et viennoiseries publiée sur churrosbarmarta.shop (identité de l’éditeur du site non vérifiée)"],
+    ["Ficha y dirección de Don Pepe Ciudad Jardín","Fiche et adresse de Don Pepe Ciudad Jardín"],
+    ["Opiniones y especialidades","Avis et spécialités"],
+    ["Web del establecimiento · especialidades de churrería","Site de l’établissement · spécialités de churrería"],
+    ["Carta publicada por usuarios · referencia externa (Restaurant Guru; vigencia no confirmada)","Carte publiée par des utilisateurs · source externe (Restaurant Guru ; validité non confirmée)"]
   ]);
   const sourceLabelFrench=(element)=>{
     const key=normalize(element.dataset.sourceLabelEs||'');
