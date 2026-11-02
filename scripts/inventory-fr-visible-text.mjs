@@ -66,7 +66,13 @@ try{
       screenshot='qa-reports/screenshots/fr-detail-triage/'+profile.name+'-'+view.id+'.png';
       await page.locator('#detail-section').screenshot({path:screenshot});
     }
-    findings.push({view:view.id,reviewCandidates:visible.filter(x=>spanishCue.test(x.text)).slice(0,30),visibleElementsChecked:visible.length,horizontalOverflow:viewport.documentWidth>viewport.viewportWidth+1,viewport,screenshot});
+    // Exact source-label comparison is exploratory: proper names and source titles may intentionally remain Spanish.
+    const sourceLabelCandidates=view.id.startsWith('detail-')?await page.locator('#detail-content [data-source-label-es]').evaluateAll(nodes=>nodes.map(node=>{
+      const original=(node.dataset.sourceLabelEs||'').trim();
+      const rendered=(node.textContent||'').replace(/\\s*↗\\s*$/,'').trim();
+      return {original,rendered};
+    }).filter(item=>item.original&&item.original===item.rendered).slice(0,15)):[];
+    findings.push({view:view.id,reviewCandidates:visible.filter(x=>spanishCue.test(x.text)).slice(0,30),sourceLabelCandidates,visibleElementsChecked:visible.length,horizontalOverflow:viewport.documentWidth>viewport.viewportWidth+1,viewport,screenshot});
    }
    report.profiles.push({profile:profile.name,errors,findings});
   }finally{await ctx.close();}
@@ -83,8 +89,8 @@ for(const profile of report.profiles){
 // Emit actionable, bounded evidence in CI logs even when the JSON artifact is unavailable.
 for(const profile of report.profiles){
  for(const finding of profile.findings){
-  if(!finding.reviewCandidates.length&&!finding.horizontalOverflow&&!finding.viewport.overflowingElements.length)continue;
-  console.log('FR TRIAGE DETAIL '+JSON.stringify({profile:profile.profile,view:finding.view,reviewCandidates:finding.reviewCandidates.slice(0,10),horizontalOverflow:finding.horizontalOverflow,overflowingElements:finding.viewport.overflowingElements.slice(0,10),screenshot:finding.screenshot}));
+  if(!finding.reviewCandidates.length&&!finding.sourceLabelCandidates.length&&!finding.horizontalOverflow&&!finding.viewport.overflowingElements.length)continue;
+  console.log('FR TRIAGE DETAIL '+JSON.stringify({profile:profile.profile,view:finding.view,reviewCandidates:finding.reviewCandidates.slice(0,10),sourceLabelCandidates:finding.sourceLabelCandidates.slice(0,10),horizontalOverflow:finding.horizontalOverflow,overflowingElements:finding.viewport.overflowingElements.slice(0,10),screenshot:finding.screenshot}));
  }
  if(profile.errors.length)console.log('FR TRIAGE PAGE ERRORS '+JSON.stringify({profile:profile.profile,errors:profile.errors.slice(0,10)}));
 }
