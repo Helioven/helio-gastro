@@ -349,7 +349,11 @@ window.GASTRO_I18N = Object.freeze({
     ["Carta oficial Casa El Pisto · edición conmemorativa 1974–2024 · precios históricos (vigencia en 2026 sin verificar)","Carte officielle Casa El Pisto · édition commémorative 1974–2024 · prix historiques (validité en 2026 non vérifiée)"],
     ["Carta general oficial sin importes visibles","Carte générale officielle sans prix visibles"],
     ["Dirección y web oficial","Adresse et site officiel"],
-    ["Carta oficial en inglés, edición conmemorativa 2024","Carte officielle en anglais, édition commémorative 2024"]
+    ["Carta oficial en inglés, edición conmemorativa 2024","Carte officielle en anglais, édition commémorative 2024"],
+    ["Ficha del restaurante con dirección y especialidades","Fiche du restaurant avec adresse et spécialités"],
+    ["Ficha con información sobre desayunos","Fiche avec informations sur les petits-déjeuners"],
+    ["Carta oficial D'Tapas COVAP Córdoba completa","Carte officielle complète de D'Tapas COVAP Córdoba"],
+    ["Presentación oficial COVAP","Présentation officielle de COVAP"]
   ]);
   const sourceLabelFrench=(element)=>{
     const key=normalize(element.dataset.sourceLabelEs||'');
