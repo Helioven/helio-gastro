@@ -299,7 +299,17 @@ window.GASTRO_I18N = Object.freeze({
     ['Official October 2025 menu (PDF provided by the user)','Carte officielle d’octobre 2025 (PDF fourni par l’utilisateur)'],
     ['Official website and address','Site officiel et adresse'],
     ['Carta general oficial de desayunos (cafeterías, excepto Centro)','Carte générale officielle des petits-déjeuners (cafés, sauf Centro)'],
-    ['Directorio oficial de establecimientos y direcciones','Répertoire officiel des établissements et adresses']
+    ['Directorio oficial de establecimientos y direcciones','Répertoire officiel des établissements et adresses'],
+    ['Carta oficial de Taberna Salinas (platos y postres; sin precios)','Carte officielle de Taberna Salinas (plats et desserts ; sans prix)'],
+    ['Carta oficial con precios','Carte officielle avec prix'],
+    ['Ubicación del local','Localisation de l’établissement'],
+    ['Menús y condiciones','Menus et conditions'],
+    ['Just Eat · carta de reparto transcrita el 20/10/2026 (Alonso de Burgos, 2)','Just Eat · carte de livraison transcrite le 20/10/2026 (Alonso de Burgos, 2)'],
+    ['Uber Eats · carta histórica y contraste (vigencia de precios no confirmada)','Uber Eats · carte historique et comparaison (validité des prix non confirmée)'],
+    ['Referencia pública de Gran Capitán (sin carta oficial verificable)','Référence publique de Gran Capitán (sans carte officielle vérifiable)'],
+    ['Dirección y contacto','Adresse et contact'],
+    ['Carta y dirección oficiales','Carte et adresse officielles'],
+    ['Dirección y presentación oficial','Adresse et présentation officielles']
   ]);
   const sourceLabelFrench=(element)=>{
     const key=normalize(element.dataset.sourceLabelEs||'');
