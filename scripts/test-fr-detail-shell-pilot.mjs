@@ -10,6 +10,12 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  await page.waitForFunction(()=>[...document.querySelectorAll('#detail-content h3')].some(x=>x.textContent==='Sources et date'));
  assert.ok((await page.locator('#detail-content h3').allTextContents()).includes('Sources et date'));
  assert.equal(await page.locator('#detail-content .fav-button').textContent(),'☆ Enregistrer','FR detail save button');
+ // The source link's visible label is translated, without changing its href.
+ const sourceLink=page.locator('#detail-content [data-source-label-es]').filter({hasText:'Carte officielle — site de l’établissement'}).first();
+ await sourceLink.waitFor();
+ const sourceHref=await sourceLink.getAttribute('href');
+ assert.ok(sourceHref,'Source must retain a destination');
+
  assert.ok((await page.locator('#detail-content .map-button').allTextContents()).includes('📍 Voir la carte'),'FR detail map button');
  // Inspect rendered presentation labels only; dish names must remain unchanged.
  const portionRows=page.locator('#detail-content [data-venue-menu-price-label]');
@@ -50,9 +56,11 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  await page.evaluate(()=>showPlace(state.places.find(p=>p.id==='la-montillana'),false));
  await page.locator('#language-select').selectOption('es');
  assert.ok((await page.locator('#detail-content h3').allTextContents()).includes('Fuentes y fecha'));
+ assert.ok((await page.locator('#detail-content [data-source-label-es]').allTextContents()).some(x=>x.includes('Carta oficial — web del establecimiento')),'ES source label restored');
  assert.deepEqual(await page.locator('#detail-content .menu-dish h4').allTextContents(),titles);
  await page.locator('#language-select').selectOption('en');
  assert.ok((await page.locator('#detail-content h3').allTextContents()).includes('Sources and date'));
+ assert.equal(await page.locator('#detail-content [data-source-label-es]').first().getAttribute('href'),sourceHref,'Source URL preserved');
  assert.deepEqual(await page.locator('#detail-content .menu-dish h4').allTextContents(),titles);
  await ctx.close();console.log('FR DETAIL SHELL '+profile.name+' PASS');
 }
