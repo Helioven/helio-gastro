@@ -259,7 +259,27 @@ window.GASTRO_I18N = Object.freeze({
     ['Full portion','Portion entière'],
     ['Half portion','Demi-portion'],
     ['Single item','À l’unité'],
-    ['Portion size unspecified','Format non précisé']
+    ['Portion size unspecified','Format non précisé'],
+    ['Media ración · precio de carta 2024','Demi-portion · prix de la carte 2024'],
+    ['Ración · precio de carta 2024','Portion entière · prix de la carte 2024'],
+    ['Unidad · precio de carta 2024','À l’unité · prix de la carte 2024'],
+    ['Half portion · 2024 menu price','Demi-portion · prix de la carte 2024'],
+    ['Full portion · 2024 menu price','Portion entière · prix de la carte 2024'],
+    ['Single item · 2024 menu price','À l’unité · prix de la carte 2024'],
+    ['media 90 g','Demi-portion · 90 g'],
+    ['ración 180 g','Portion entière · 180 g'],
+    ['media 95 g','Demi-portion · 95 g'],
+    ['ración 250 g','Portion entière · 250 g'],
+    ['media 60 g','Demi-portion · 60 g'],
+    ['ración 100 g','Portion entière · 100 g'],
+    ['Half portion · 90 g','Demi-portion · 90 g'],
+    ['Full portion · 180 g','Portion entière · 180 g'],
+    ['Half portion · 95 g','Demi-portion · 95 g'],
+    ['Full portion · 250 g','Portion entière · 250 g'],
+    ['Half portion · 60 g','Demi-portion · 60 g'],
+    ['Full portion · 100 g','Portion entière · 100 g'],
+    ['2 unidades','2 unités'],
+    ['2 pieces','2 unités']
   ]);
   const translateFrenchPortionLabel=(node,source)=>{
     const parent=node.parentElement;
