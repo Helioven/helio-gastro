@@ -92,7 +92,7 @@ try{
        const cueMatches=strings.filter(t=>cue.test(t)).slice(0,5);
        const sourceLabels=[...root.querySelectorAll('[data-source-label-es]')].filter(el=>{
          const original=(el.dataset.sourceLabelEs||'').trim();
-         return original && (el.textContent||'').replace(/\\s*↗\\s*$/,'').trim()===original;
+         return original && (el.textContent||'').replace(/\s*↗\s*$/,'').trim()===original;
        }).map(el=>({original:el.dataset.sourceLabelEs})).slice(0,6);
        return {cueMatches,sourceLabels};
      },spanishCue.source);
