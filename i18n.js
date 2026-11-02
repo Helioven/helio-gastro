@@ -309,7 +309,11 @@ window.GASTRO_I18N = Object.freeze({
     ['Referencia pública de Gran Capitán (sin carta oficial verificable)','Référence publique de Gran Capitán (sans carte officielle vérifiable)'],
     ['Dirección y contacto','Adresse et contact'],
     ['Carta y dirección oficiales','Carte et adresse officielles'],
-    ['Dirección y presentación oficial','Adresse et présentation officielles']
+    ['Dirección y presentación oficial','Adresse et présentation officielles'],
+    ['Carta oficial del restaurante','Carte officielle du restaurant'],
+    ['Carta oficial de La Viuda','Carte officielle de La Viuda'],
+    ['Web oficial y ubicación','Site officiel et localisation'],
+    ['Carta oficial con formatos e importes','Carte officielle avec formats de portions et prix']
   ]);
   const sourceLabelFrench=(element)=>{
     const key=normalize(element.dataset.sourceLabelEs||'');
