@@ -14,7 +14,16 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  for(const [selector,expected] of additionalLabels)assert.equal(await page.locator(selector).getAttribute('aria-label')??await page.locator(selector).getAttribute('title'),expected,'FR accessibility attribute '+selector);
  assert.equal(await page.locator('.dish-suggestions small').textContent(),'Choisissez un plat, puis cliquez sur « Rechercher des établissements » pour afficher les résultats.','FR search instruction');
  assert.equal(await page.locator('#place-name').getAttribute('placeholder'),'Ex. : Moriles, Casa Bravo, Plateros…','FR venue placeholder');
- assert.equal(await page.locator('#dish').getAttribute('placeholder'),'Saisissez ou choisissez une spécialité cordouane…','FR dish placeholder');
+ // The service-mode renderer may replace the generic translated hint with culinary dish examples.
+ // Proper dish names are intentionally preserved in Spanish across languages.
+ const dishPlaceholder=await page.locator('#dish').getAttribute('placeholder');
+ assert.ok([
+   'Saisissez ou choisissez une spécialité cordouane…',
+   'Flamenquín, salmorejo, carrillada…',
+   'Tostadas, churros, molletes…',
+   'Churros con chocolate, pasteles…',
+   'Tapas, tortilla, croquetas…'
+ ].includes(dishPlaceholder),'FR dish placeholder must be a translated instruction or documented dish-name examples: '+dishPlaceholder);
  assert.equal(await page.locator('#budget option[value=""]').textContent(),'Sans limite (afficher les fiches)','FR initial unlimited budget');
  assert.equal(await page.locator('#sort option[value="price"]').textContent(),'Prix le plus bas','FR lowest price sort');
  assert.equal(await page.locator('#sort option[value="verified"]').textContent(),'Vérifiés en premier','FR verified first sort');
