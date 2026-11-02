@@ -233,7 +233,7 @@ window.GASTRO_I18N = Object.freeze({
   const frenchRoldanNotice=["Precios publicados en la carta general de Roldán. Pueden variar; la disponibilidad de productos depende de cada local. Roldán Centro tiene carta y ficha propias.","Prix publiés dans la carte générale de Roldán. Ils peuvent varier ; la disponibilité des produits dépend de chaque établissement. Roldán Centro dispose de sa propre carte et de sa propre fiche."];
   // Beatillas: preserve the 2025 historical group-menu caveat when the detail notice is bilingual.
   const frenchBeatillasGeneralNotice='La carte individuelle officielle ne publie pas de prix par plat. Nous recommandons de confirmer les tarifs auprès du restaurant avant de commander. Les prix publiés pour les menus de groupe correspondent à des menus complets de 2025, et non à des plats individuels ; leur validité actuelle n’est pas confirmée.';
-  const isBeatillasGeneralNotice=value=>value.startsWith('La carta individual oficial no publica precios por plato.')&&value.includes('menús completos de 2025');
+  const isBeatillasGeneralNotice=value=>value.startsWith('La carta individual oficial')&&value.includes('2025');
   const frenchDetailNotices=new Map([
     ['Panadería:','Boulangerie :'],
     ['Cafetería:','Café :'],
@@ -250,6 +250,7 @@ window.GASTRO_I18N = Object.freeze({
   const translateFrenchDetailNotice=(node,source)=>{
     if(!node.parentElement?.closest('#detail-content')||node.parentElement.closest('.menu-dish,[data-venue-menu-section],[data-bilingual-es]'))return source;
     const raw=normalize(source);
+    if(isBeatillasGeneralNotice(raw))return frenchBeatillasGeneralNotice;
     if(frenchDetailNotices.has(raw))return frenchDetailNotices.get(raw);
     if(raw.startsWith('Última consulta: '))return 'Dernière consultation : '+raw.slice('Última consulta: '.length);
     if(raw.startsWith('Comida completa por persona: '))return 'Repas complet par personne : '+raw.slice('Comida completa por persona: '.length);
