@@ -329,6 +329,11 @@ window.GASTRO_I18N = Object.freeze({
     ["Carta oficial 2026 (PDF facilitado; comidas y precios)","Carte officielle 2026 (PDF fourni ; plats et prix)"],
     ["Carta oficial de desayunos 2026 (PDF aportado por Helio; sin verificación independiente de vigencia)","Carte officielle des petits-déjeuners 2026 (PDF fourni par Helio ; validité non vérifiée de manière indépendante)"],
     ["Menús oficiales 2025–2026 — Moschea di Cordova y Giudecca di Cordova (web del restaurante; consulta 27/10/2026)","Menus officiels 2025–2026 — Moschea di Cordova et Giudecca di Cordova (site du restaurant ; consulté le 27/10/2026)"]
+,
+    ["Ficha de Turismo de Córdoba","Fiche de l’Office de tourisme de Cordoue"],
+    ["Historia y especialidades","Histoire et spécialités"],
+    ["Carta oficial de comida y dulces","Carte officielle des plats et pâtisseries"],
+    ["Carta oficial de bebidas y cafés","Carte officielle des boissons et cafés"]
   ]);
   const sourceLabelFrench=(element)=>{
     const key=normalize(element.dataset.sourceLabelEs||'');
