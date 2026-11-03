@@ -104,26 +104,39 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.equal((await tarterieNotice.textContent()).trim(),tarterieFrNotice,'La Tarterie French notice restored');
  assert.equal((await tarterieSource.textContent()).trim(),'Boutique officielle La Tarterie — catalogue et prix par produit ↗','La Tarterie French source restored');
  assert.equal(await tarterieSource.getAttribute('href'),tarterieUrl,'La Tarterie official source URL unchanged');
- // Moriles Casa Fina historical validity qualifier: preserve the actual documented price.
+ // Moriles Casa Fina historical validity qualifier: target the specific set-menu element.
  await page.evaluate(()=>{
   const place=state.places.find(p=>p.id==='moriles-casa-fina');
   if(!place)throw Error('Moriles Casa Fina missing');
   showPlace(place,false);
  });
- const finaAmount=page.locator('#detail-content .menu-dish > strong').filter({hasText:'Validité à confirmer'}).first();
- await finaAmount.waitFor();
- const frenchAmount=(await finaAmount.textContent()).trim();
- assert.ok(frenchAmount.endsWith(' · Validité à confirmer'),'Casa Fina FR unverified price qualifier');
- const pricePrefix=frenchAmount.slice(0,-' · Validité à confirmer'.length);
- assert.ok(pricePrefix.includes('15')&&pricePrefix.includes('95'),'Casa Fina documented 15.95 menu price preserved');
+ const finaMenu=page.locator('#detail-content section.menu-dish').filter({
+  has:page.locator('h3').filter({hasText:'Menú Tapas Cordobesas'})
+ });
+ assert.equal(await finaMenu.count(),1,'Expected exactly one Casa Fina Tapas Cordobesas menu');
+ const finaAmount=finaMenu.locator(':scope > strong');
+ assert.equal(await finaAmount.count(),1,'Expected one documented Casa Fina set-menu amount');
+ const actualAmount=()=>finaAmount.textContent().then(v=>v.trim());
+ const basePrice='15,95'; // From the unchanged catalog's documented set-menu amount.
+ const frExpected=' · Validité à confirmer';
+ const esExpected=' · Vigencia pendiente de confirmar';
+ const frValue=await actualAmount();
+ console.log('FR CASA FINA PRICE '+profile.name+' '+JSON.stringify({language:'fr',actual:frValue}));
+ assert.ok(frValue.includes(basePrice),'Casa Fina FR source amount changed: '+frValue);
+ assert.ok(frValue.endsWith(frExpected),'Casa Fina FR validity qualifier: '+frValue);
+ const amountPrefix=frValue.slice(0,-frExpected.length);
  await page.locator('#language-select').selectOption('es');
- const spanishAmount=(await page.locator('#detail-content .menu-dish > strong').first().textContent()).trim();
- assert.equal(spanishAmount,pricePrefix+' · Vigencia pendiente de confirmar','Casa Fina original Spanish qualifier restored');
+ const esValue=await actualAmount();
+ console.log('FR CASA FINA PRICE '+profile.name+' '+JSON.stringify({language:'es',actual:esValue}));
+ assert.equal(esValue,amountPrefix+esExpected,'Casa Fina original Spanish qualifier restored');
  await page.locator('#language-select').selectOption('en');
- const englishAmount=(await page.locator('#detail-content .menu-dish > strong').first().textContent()).trim();
- assert.ok(englishAmount.startsWith(pricePrefix),'Casa Fina English amount must not change');
+ const enValue=await actualAmount();
+ console.log('FR CASA FINA PRICE '+profile.name+' '+JSON.stringify({language:'en',actual:enValue}));
+ assert.ok(enValue.startsWith(amountPrefix),'Casa Fina English amount changed: '+enValue);
  await page.locator('#language-select').selectOption('fr');
- assert.equal((await page.locator('#detail-content .menu-dish > strong').first().textContent()).trim(),frenchAmount,'Casa Fina FR qualifier restored');
+ const frRestored=await actualAmount();
+ console.log('FR CASA FINA PRICE '+profile.name+' '+JSON.stringify({language:'fr-restored',actual:frRestored}));
+ assert.equal(frRestored,frValue,'Casa Fina FR qualifier not restored');
  const plain=await ctx.newPage();
  await plain.goto('http://127.0.0.1:8765/index.html',{waitUntil:'domcontentloaded'});
  assert.equal(await plain.locator('#language-select option[value="fr"]').count(),0);
