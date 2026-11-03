@@ -499,6 +499,15 @@ window.GASTRO_I18N = Object.freeze({
   const frenchSectionHeadings=new Map();
   const translateFrenchHeading=(node,source)=>node.parentElement?.matches('.language-label')&&normalize(source)==='Language / Idioma'?'Langue':node.parentElement?.matches('[data-venue-menu-section]')?(frenchSectionHeadings.get(normalize(source))||source):source;
   const normalize=s=>s.trim().replace(/\s+/g,' ');
+  // Keep English rendering and the mutation observer's expected value in sync.
+  // Otherwise an internally translated price is mistaken for external content,
+  // and the original Spanish text is lost before the next language switch.
+  const translateEnglishText=(node,source)=>{
+    const key=normalize(source);
+    if(node.parentElement?.matches('.menu-dish > strong')&&node.parentElement.closest('#detail-content')&&key.endsWith(' · Vigencia pendiente de confirmar'))
+      return source.replace(/ · Vigencia pendiente de confirmar$/, ' · Validity not confirmed');
+    return translateValue(key);
+  };
   function translateText(node){
     if(!node || !node.parentElement || node.parentElement.closest('script,style,textarea,option[data-keep-original],#language-select,[data-keep-dish-spanish],[data-bilingual-es]'))return;
     if(!originalNodes.has(node))originalNodes.set(node,node.nodeValue);
@@ -506,12 +515,7 @@ window.GASTRO_I18N = Object.freeze({
     const match=original.match(/^(\s*)([\s\S]*?)(\s*)$/);
     const key=normalize(match[2]);
     if(language==='en'){
-      // Casa Fina's historical set-menu validity note must be in English too.
-      // Restrict the replacement to the price element; leave the catalog amount untouched.
-      const translated=node.parentElement.matches('.menu-dish > strong')&&node.parentElement.closest('#detail-content')&&key.endsWith(' · Vigencia pendiente de confirmar')
-        ?key.replace(/ · Vigencia pendiente de confirmar$/, ' · Validity not confirmed')
-        :translateValue(key);
-      const next=match[1]+translated+match[3];
+      const next=match[1]+translateEnglishText(node,match[2])+match[3];
       if(node.nodeValue!==next)node.nodeValue=next;
     }else if(language==='fr'){
       const next=match[1]+translateFrenchDetailNotice(node,translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchRecommendationsText(node,translateFrenchServiceText(node,translateFrenchHeroText(node,translateFrenchNavText(node,translateFrenchFavoritesNotice(node,translateFrenchSearchText(node,translateFrenchGroupText(node,translateFrenchHeading(node,match[2]))))))))))))+match[3];
@@ -601,7 +605,7 @@ window.GASTRO_I18N = Object.freeze({
           const previous=originalNodes.get(node);
           if(previous!==undefined){
             const match=previous.match(/^(\s*)([\s\S]*?)(\s*)$/);
-            const expected=language==='en'?match[1]+translateValue(normalize(match[2]))+match[3]:language==='fr'?match[1]+translateFrenchDetailNotice(node,translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchRecommendationsText(node,translateFrenchServiceText(node,translateFrenchHeroText(node,translateFrenchNavText(node,translateFrenchFavoritesNotice(node,translateFrenchSearchText(node,translateFrenchGroupText(node,translateFrenchHeading(node,match[2]))))))))))))+match[3]:previous;
+            const expected=language==='en'?match[1]+translateEnglishText(node,match[2])+match[3]:language==='fr'?match[1]+translateFrenchDetailNotice(node,translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchRecommendationsText(node,translateFrenchServiceText(node,translateFrenchHeroText(node,translateFrenchNavText(node,translateFrenchFavoritesNotice(node,translateFrenchSearchText(node,translateFrenchGroupText(node,translateFrenchHeading(node,match[2]))))))))))))+match[3]:previous;
             if(node.nodeValue===expected)continue;
           }
           originalNodes.delete(node);
