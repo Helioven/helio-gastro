@@ -140,6 +140,11 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  const frRestored=await actualAmount();
  console.log('FR CASA FINA PRICE '+profile.name+' '+JSON.stringify({language:'fr-restored',actual:frRestored}));
  assert.equal(frRestored,frValue,'Casa Fina FR qualifier not restored');
+ // An observer must not forget the Spanish source after rendering the English note.
+ await page.locator('#language-select').selectOption('es');
+ assert.equal(await actualAmount(),esValue,'Casa Fina Spanish validity qualifier lost after EN/FR roundtrip');
+ await page.locator('#language-select').selectOption('fr');
+ assert.equal(await actualAmount(),frValue,'Casa Fina French validity qualifier lost on second roundtrip');
  const plain=await ctx.newPage();
  await plain.goto('http://127.0.0.1:8765/index.html',{waitUntil:'domcontentloaded'});
  assert.equal(await plain.locator('#language-select option[value="fr"]').count(),0);
