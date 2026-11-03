@@ -235,6 +235,7 @@ window.GASTRO_I18N = Object.freeze({
   const frenchBeatillasGeneralNotice='La carte individuelle officielle ne publie pas de prix par plat. Nous recommandons de confirmer les tarifs auprès du restaurant avant de commander. Les prix publiés pour les menus de groupe correspondent à des menus complets de 2025, et non à des plats individuels ; leur validité actuelle n’est pas confirmée.';
   const isBeatillasGeneralNotice=value=>value.startsWith('La carta individual oficial')&&value.includes('2025');
   const frenchDetailNotices=new Map([
+    ["Precios de tartas completas o productos salados, NO por porción. Cada rango depende del tamaño y opciones elegidas; consulta el precio exacto en la tienda oficial. Las opciones especiales no garantizan ausencia de alérgenos.","Prix des gâteaux entiers ou des produits salés, et NON à la part. Chaque fourchette dépend de la taille et des options choisies ; vérifiez le prix exact sur la boutique officielle. Les options spéciales ne garantissent pas l’absence d’allergènes."],
     ['Panadería:','Boulangerie :'],
     ['Cafetería:','Café :'],
     ['📍 Establecimientos de Roldán en Córdoba','📍 Établissements Roldán à Cordoue'],
@@ -293,6 +294,7 @@ window.GASTRO_I18N = Object.freeze({
   // Explicit source-link presentation labels confirmed by the visual QA inventory (#650).
   // Source URLs, catalog labels and dates remain unchanged.
   const frenchSourceLabels=new Map([
+    ["Tienda oficial La Tarterie — catálogo y precios por producto","Boutique officielle La Tarterie — catalogue et prix par produit"],
     ['Carta oficial — web del establecimiento','Carte officielle — site de l’établissement'],
     ['Carta oficial de platos','Carte officielle des plats'],
     ['Menús oficiales para grupos (precios y condiciones sujetos a consulta)','Menus officiels pour groupes (prix et conditions à confirmer auprès du restaurant)'],
