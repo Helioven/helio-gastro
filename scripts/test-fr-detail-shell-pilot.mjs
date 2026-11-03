@@ -105,6 +105,25 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
   for(const [es,translated] of venue.pairs)assert.equal(restored.find(x=>x.original===es)?.text,translated+' ↗','FR source restored '+venue.id);
   assert.deepEqual(restored.map(x=>x.href),fr.map(x=>x.href),'URLs unchanged '+venue.id);
  }
+ // Moriles Ribera: inspect actual source labels without assuming editorial translations.
+ await page.evaluate(()=>showPlace(state.places.find(p=>p.id==='moriles-ribera'),false));
+ const riberaLinks=()=>page.locator('#detail-content [data-source-label-es]').evaluateAll(nodes=>nodes.map(n=>({original:n.dataset.sourceLabelEs,text:n.textContent.trim(),href:n.getAttribute('href')})));
+ const riberaFr=await riberaLinks();
+ assert.ok(riberaFr.length>0,'Moriles Ribera source links present');
+ for(const link of riberaFr){assert.ok(link.original,'Moriles Ribera original source label');assert.ok(link.href,'Moriles Ribera source URL');}
+ await page.locator('#language-select').selectOption('es');
+ const riberaEs=await riberaLinks();
+ assert.deepEqual(riberaEs.map(x=>x.href),riberaFr.map(x=>x.href),'Moriles Ribera source URLs FR/ES');
+ for(const link of riberaEs)assert.equal(link.text,link.original+' ↗','Moriles Ribera ES label restored');
+ await page.locator('#language-select').selectOption('en');
+ const riberaEn=await riberaLinks();
+ assert.deepEqual(riberaEn.map(x=>x.href),riberaFr.map(x=>x.href),'Moriles Ribera source URLs FR/EN');
+ for(const link of riberaEn)assert.ok(link.text,'Moriles Ribera EN source label');
+ await page.locator('#language-select').selectOption('fr');
+ const riberaRestored=await riberaLinks();
+ assert.deepEqual(riberaRestored,riberaFr,'Moriles Ribera FR source labels restored');
+ const riberaCandidates=riberaRestored.filter(x=>x.text===x.original+' ↗').map(x=>x.original);
+ console.log('FR MORILES RIBERA SOURCE CANDIDATES '+profile.name+' '+JSON.stringify(riberaCandidates));
  await page.evaluate(()=>showPlace(state.places.find(p=>p.id==='la-montillana'),false));
  const titles=await page.locator('#detail-content .menu-dish h4').allTextContents();
  assert.ok(titles.length>0);
