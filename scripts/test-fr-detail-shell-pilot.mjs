@@ -159,7 +159,11 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
   ['Nuestra cocina (carta española)','Notre cuisine (carte en espagnol)'],
   ['Menú Tapas Cordobesas','Menu « Tapas Cordobesas »'],
   ['Postres','Desserts'],
-  ['Cafés y chocolates','Cafés et chocolats']
+  ['Cafés y chocolates','Cafés et chocolats'],
+  ['Carta inglesa','Carte en anglais'],
+  ['Menús sugeridos','Menus suggérés'],
+  ['Glosario','Glossaire'],
+  ['Menús de eventos','Menus pour événements']
  ];
  for(const [original,translated] of casaFinaTranslations){
   const entry=casaFinaFr.find(x=>x.original===original);
