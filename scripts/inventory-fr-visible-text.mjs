@@ -98,17 +98,28 @@ try{
      },spanishCue.source);
      if(finding.cueMatches.length||finding.sourceLabels.length)catalogFindings.push({id:place.id,...finding});
    }
-   console.log('FR CATALOG SWEEP '+JSON.stringify({profile:profile.name,placesInspected:allPlaces.length,venuesFlagged:catalogFindings.length,findings:catalogFindings.slice(0,30),truncated:catalogFindings.length>30,note:'Heuristic candidates, not verified translation defects'}));
-   // Preserve the complete catalog sweep in the uploaded JSON artifact, not just the first 30 CI log entries.
-   report.profiles.push({profile:profile.name,errors,findings,catalogSweep:{placesInspected:allPlaces.length,venuesFlagged:catalogFindings.length,venues:catalogFindings}});
-   console.log('FR CATALOG SWEEP DETAIL '+JSON.stringify({profile:profile.name,venues:catalogFindings}));
+   // Keep the temporarily closed El Caballo Rojo visible as an explicit documentary exception.
+   // Do not count its historical source references as untranslated ordinary-catalog entries.
+   const exceptionIds=new Set(['el-caballo-rojo']);
+   const ordinaryPlaces=allPlaces.filter(place=>!exceptionIds.has(place.id));
+   const ordinaryFindings=catalogFindings.filter(venue=>!exceptionIds.has(venue.id));
+   const exceptionFindings=catalogFindings.filter(venue=>exceptionIds.has(venue.id));
+   console.log('FR CATALOG SWEEP '+JSON.stringify({profile:profile.name,placesInspected:allPlaces.length,ordinaryPlacesInspected:ordinaryPlaces.length,venuesFlagged:ordinaryFindings.length,findings:ordinaryFindings.slice(0,30),truncated:ordinaryFindings.length>30,exceptionsFlagged:exceptionFindings.length,note:'Heuristic candidates, not verified translation defects'}));
+   // Preserve every finding, including the exception, in the complete JSON artifact.
+   report.profiles.push({profile:profile.name,errors,findings,catalogSweep:{placesInspected:allPlaces.length,ordinaryPlacesInspected:ordinaryPlaces.length,venuesFlagged:ordinaryFindings.length,venues:ordinaryFindings,exceptions:exceptionFindings}});
+   console.log('FR CATALOG SWEEP DETAIL '+JSON.stringify({profile:profile.name,venues:ordinaryFindings,exceptions:exceptionFindings}));
   }finally{await ctx.close();}
  }
 }finally{await browser.close();}
 mkdirSync('qa-reports',{recursive:true});
 writeFileSync('qa-reports/fr-visible-text-triage.json',JSON.stringify(report,null,2)+'\n');
 const catalogRows=new Map();
+const exceptionRows=new Map();
 for(const profile of report.profiles){
+ for(const venue of profile.catalogSweep?.exceptions||[]){
+  if(!exceptionRows.has(venue.id))exceptionRows.set(venue.id,{desktop:null,mobile:null});
+  exceptionRows.get(venue.id)[profile.profile]=venue;
+ }
  for(const venue of profile.catalogSweep?.venues||[]){
   if(!catalogRows.has(venue.id))catalogRows.set(venue.id,{desktop:null,mobile:null});
   catalogRows.get(venue.id)[profile.profile]=venue;
@@ -128,7 +139,15 @@ for(const [id,profiles] of [...catalogRows].sort((a,b)=>a[0].localeCompare(b[0])
  lines.push('| '+mdSafe(id)+' | '+(profiles.desktop?'Candidato':'—')+' | '+(profiles.mobile?'Candidato':'—')+' | '+mdSafe(evidence.slice(0,4).join(' / ')||'Ver informe JSON')+' |');
 }
 if(!catalogRows.size)lines.push('| Ninguno detectado | — | — | Requiere revisión editorial igualmente |');
-lines.push('','Total de fichas con candidatos en algún perfil: **'+catalogRows.size+'**. No confundir con el número de defectos.');
+lines.push('','Total de fichas ordinarias con candidatos en algún perfil: **'+catalogRows.size+'** de **43**. No confundir con el número de defectos.');
+lines.push('','### Excepciones documentales separadas','','El Caballo Rojo se mantiene como excepción por cierre temporal; sus referencias históricas siguen en el JSON y no se consideran traducciones pendientes de fichas ordinarias.','');
+if(exceptionRows.size){
+ for(const [id,profiles] of [...exceptionRows].sort((a,b)=>a[0].localeCompare(b[0]))){
+  const evidence=[...new Set([...(profiles.desktop?.sourceLabels||[]),...(profiles.mobile?.sourceLabels||[])].map(x=>x.original).concat(profiles.desktop?.cueMatches||[],profiles.mobile?.cueMatches||[]))];
+  lines.push('- **'+mdSafe(id)+'**: '+mdSafe(evidence.slice(0,5).join(' / ')||'Consultar JSON para detalles')+'.');
+ }
+}else lines.push('Sin coincidencias heurísticas de excepciones en esta ejecución.');
+lines.push('','Este informe no sustituye la revisión editorial ni visual.');
 const reviewMarkdown=lines.join('\n')+'\n';
 writeFileSync('qa-reports/fr-catalog-sweep-review.md',reviewMarkdown);
 if(process.env.GITHUB_STEP_SUMMARY)appendFileSync(process.env.GITHUB_STEP_SUMMARY,reviewMarkdown);
