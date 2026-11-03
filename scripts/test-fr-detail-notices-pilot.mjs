@@ -135,6 +135,7 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  // English rendering uses an ordinary space before €, whereas es-ES uses NBSP.
  // Normalize only whitespace when comparing the unchanged monetary prefix.
  assert.ok(enValue.replace(/\s+/g,' ').startsWith(amountPrefix.replace(/\s+/g,' ')),'Casa Fina English amount changed: '+enValue);
+ assert.ok(enValue.endsWith(' · Validity not confirmed'),'Casa Fina English qualifier not translated: '+enValue);
  await page.locator('#language-select').selectOption('fr');
  const frRestored=await actualAmount();
  console.log('FR CASA FINA PRICE '+profile.name+' '+JSON.stringify({language:'fr-restored',actual:frRestored}));
@@ -144,6 +145,13 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.equal(await plain.locator('#language-select option[value="fr"]').count(),0);
  await plain.locator('#language-select').selectOption('en');
  assert.equal(await plain.locator('#language-select option[value="fr"]').count(),0);
+ await plain.waitForFunction(()=>typeof state!=='undefined'&&state.places.some(p=>p.id==='moriles-casa-fina'));
+ await plain.evaluate(()=>showPlace(state.places.find(p=>p.id==='moriles-casa-fina'),false));
+ const publicCasaFina=plain.locator('#detail-content section.menu-dish').filter({
+  has:plain.locator('h3[data-set-menu-es="Menú Tapas Cordobesas"]')
+ }).locator(':scope > strong');
+ assert.equal(await publicCasaFina.count(),1,'Casa Fina public English set-menu price not found');
+ assert.ok((await publicCasaFina.textContent()).trim().endsWith(' · Validity not confirmed'),'Casa Fina public English validity qualifier not translated');
  await plain.close();
  await ctx.close();console.log('FR DETAIL NOTICES '+profile.name+' PASS');
 }
