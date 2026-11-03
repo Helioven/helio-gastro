@@ -266,6 +266,26 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  }
  assert.equal(sourceCount,24,'Expected 24 source links across the four sweep venues');
  console.log('FR FOUR VENUE SOURCES CLEAN '+profile.name+' '+sourceCount+'/24');
+ // Full active-catalog source-label regression. El Caballo Rojo is excluded while temporarily closed.
+ const activeSourceIds=await page.evaluate(()=>state.places.filter(p=>p.id!=='el-caballo-rojo').map(p=>p.id));
+ assert.equal(activeSourceIds.length,43,'Expected 43 active/catalogue venues for FR source audit');
+ let activeSourcesChecked=0;
+ for(const venueId of activeSourceIds){
+  await page.evaluate(id=>showPlace(state.places.find(p=>p.id===id),false),venueId);
+  const sourceRows=await page.locator('#detail-content [data-source-label-es]').evaluateAll(nodes=>nodes.map(n=>({
+   original:(n.dataset.sourceLabelEs||'').trim(),
+   text:(n.textContent||'').replace(/\\s*↗\\s*$/,'').trim(),
+   href:n.getAttribute('href')
+  })));
+  for(const item of sourceRows){
+   assert.ok(item.original,'Missing source original label: '+venueId);
+   assert.ok(item.href?.startsWith('https://'),'Missing HTTPS source: '+venueId);
+   assert.notEqual(item.text,item.original,'FR source unchanged: '+venueId+' / '+item.original);
+  }
+  activeSourcesChecked+=sourceRows.length;
+ }
+ assert.equal(activeSourcesChecked,104,'Expected 104 sources across 43 non-exception venues');
+ console.log('FR ACTIVE CATALOG SOURCES '+profile.name+' '+activeSourcesChecked+'/104 PASS (El Caballo Rojo excluded)');
  await page.evaluate(()=>showPlace(state.places.find(p=>p.id==='la-montillana'),false));
  const titles=await page.locator('#detail-content .menu-dish h4').allTextContents();
  assert.ok(titles.length>0);
