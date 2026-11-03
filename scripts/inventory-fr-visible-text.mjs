@@ -1,7 +1,7 @@
 // Exploratory browser inventory: source-language strings still visible in FR QA.
 // Informational only. Some Spanish strings are protected dish/venue names.
 import {chromium,devices} from 'playwright';
-import {mkdirSync,writeFileSync} from 'node:fs';
+import {mkdirSync,writeFileSync,appendFileSync} from 'node:fs';
 const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
 const profiles=[{name:'desktop',options:{viewport:{width:1280,height:800}}},{name:'mobile',options:devices['iPhone 13']}];
 const report={kind:'exploratory_not_a_translation_failure',profiles:[]};
@@ -107,6 +107,32 @@ try{
 }finally{await browser.close();}
 mkdirSync('qa-reports',{recursive:true});
 writeFileSync('qa-reports/fr-visible-text-triage.json',JSON.stringify(report,null,2)+'\n');
+const catalogRows=new Map();
+for(const profile of report.profiles){
+ for(const venue of profile.catalogSweep?.venues||[]){
+  if(!catalogRows.has(venue.id))catalogRows.set(venue.id,{desktop:null,mobile:null});
+  catalogRows.get(venue.id)[profile.profile]=venue;
+ }
+}
+const mdSafe=value=>String(value??'').replace(/\|/g,'\\|').replace(/\r?\n/g,' ');
+const lines=[
+ '## FR CATALOG SWEEP — revisión pendiente',
+ '',
+ '> Detector heurístico: una coincidencia no es un defecto confirmado ni una autorización para traducir.',
+ '',
+ '| Ficha | Escritorio | Móvil | Evidencia para revisar |',
+ '|---|---|---|---|'
+];
+for(const [id,profiles] of [...catalogRows].sort((a,b)=>a[0].localeCompare(b[0]))){
+ const evidence=[...new Set([...(profiles.desktop?.sourceLabels||[]),...(profiles.mobile?.sourceLabels||[])].map(x=>x.original).concat(profiles.desktop?.cueMatches||[],profiles.mobile?.cueMatches||[]))];
+ lines.push('| '+mdSafe(id)+' | '+(profiles.desktop?'Candidato':'—')+' | '+(profiles.mobile?'Candidato':'—')+' | '+mdSafe(evidence.slice(0,4).join(' / ')||'Ver informe JSON')+' |');
+}
+if(!catalogRows.size)lines.push('| Ninguno detectado | — | — | Requiere revisión editorial igualmente |');
+lines.push('','Total de fichas con candidatos en algún perfil: **'+catalogRows.size+'**. No confundir con el número de defectos.');
+const reviewMarkdown=lines.join('\n')+'\n';
+writeFileSync('qa-reports/fr-catalog-sweep-review.md',reviewMarkdown);
+if(process.env.GITHUB_STEP_SUMMARY)appendFileSync(process.env.GITHUB_STEP_SUMMARY,reviewMarkdown);
+console.log('FR CATALOG REVIEW SUMMARY '+JSON.stringify({venues:catalogRows.size,report:'qa-reports/fr-catalog-sweep-review.md'}));
 console.log('FR VISIBLE TEXT TRIAGE (nonblocking) '+JSON.stringify(report.profiles.map(p=>({profile:p.profile,errors:p.errors.length,views:p.findings.map(f=>({view:f.view,candidates:f.reviewCandidates.length,horizontalOverflow:f.horizontalOverflow,viewportWidth:f.viewport.viewportWidth,documentWidth:f.viewport.documentWidth}))}))));
 // Always list the screenshot evidence and whether a profile has outstanding heuristic candidates.
 for(const profile of report.profiles){
