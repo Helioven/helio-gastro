@@ -67,3 +67,26 @@
 **Propuesta lingüística, no defecto confirmado:** el original de fuente `Cafés y chocolates` tiene equivalente inglés `Coffee and hot chocolate`, mientras que la etiqueta FR actual es `Cafés et chocolats`. En francés, `chocolats` puede también designar bombones; considerar `Cafés et chocolats chauds` una vez revisado el contenido original de esa sección. **No cambiar el texto sin aprobación editorial o corroboración de la fuente.**
 
 **Límites:** esta revisión documental no demuestra la corrección semántica de las 15 secciones de platos ni de sus ingredientes, ni acredita inspección visual de la ficha. Ningún estado de traducción se eleva a aprobado. Se mantiene separación estricta de Moriles Ribera y Casa Fina, aunque existan páginas de nombre parecido.
+
+
+## Cuarta muestra: La Tarterie y Pastelerías Roldán Centro
+
+**Método:** cotejo documental del registro real en `data/places.json`, etiquetas FR en `i18n.js` y metadatos de menús. No se han consultado de nuevo las webs comerciales ni examinado las capturas manualmente. No es una certificación visual ni validación de vigencia.
+
+### La Tarterie (`la-tarterie-centro`)
+
+- **Una fuente documental**: tienda oficial; la etiqueta FR propuesta conserva el alcance de `catálogo y precios por producto` como `catalogue et prix par produit`.
+- **28 productos**, repartidos en 25 de `Tartas y dulces` y 3 de `Salados`, con `priceRangeEur` en los 28 registros. Son **rangos mínimo–máximo de producto completo**, sin atribución a un tamaño concreto ni a porciones individuales.
+- `menuPublicNoticeEs` y `menuPublicNoticeEn` distinguen expresamente **tartas completas/productos salados frente a porciones** y alertan de que las variantes especiales no garantizan ausencia de alérgenos.
+- `menuSourceNote` registra transcripción de catálogo/capturas del 23–24/10/2026, alérgenos pendientes, disponibilidad estacional no confirmada, no inclusión en comparador monetario y ausencia de fotografías reutilizadas.
+- **Estado:** metadatos y salvaguardas cotejados en catálogo. No se han validado contra la web actual, ni la equivalencia exacta de todas las descripciones FR de producto.
+
+### Pastelerías Roldán — Centro (`pastelerias-roldan-centro`)
+
+- **Dos fuentes diferentes**: carta de Pastelería Centro (barra/mesa, disponibilidad variable) y carta de desayunos Centro (disponibilidad de tostadas en merienda no confirmada). Las dos etiquetas propuestas FR mantienen estas distinciones.
+- **Dos servicios en el catálogo:** `desayuno` con **54 entradas** de precio en `dishPrices`, y `merienda` con **31 entradas**; los formatos registrados incluyen `unidad`, `media-tostada`, `tostada-entera` y `suplemento` (este último en desayuno). Son números de **registros de precio**, no de platos únicos ni confirmación de disponibilidad actual.
+- El `priceStatus` de Centro figura como `unknown`. No afirmar que todos los precios están vigentes, ni que las tostadas se sirven en merienda, por aparecer en esa sección documental.
+- **Distinción obligatoria:** `pastelerias-roldan-tiendas` es otra ficha con carta general; no mezclar ni extrapolar sus importes a Centro.
+- **Estado:** cotejo de procedencia, formatos y advertencias; pendientes contraste actual de disponibilidad, calidad de todos los textos FR y revisión de capturas.
+
+**Resultado conjunto:** no se ha detectado contradicción de metadatos en los campos cotejados. No se proponen cambios de traducción ni de datos sin evidencia adicional. La revisión editorial/lingüística nativa y la comprobación visual manual siguen pendientes; ninguna de las fichas se considera aprobada para publicación.
