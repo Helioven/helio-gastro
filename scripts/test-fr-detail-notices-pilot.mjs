@@ -104,6 +104,26 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.equal((await tarterieNotice.textContent()).trim(),tarterieFrNotice,'La Tarterie French notice restored');
  assert.equal((await tarterieSource.textContent()).trim(),'Boutique officielle La Tarterie — catalogue et prix par produit ↗','La Tarterie French source restored');
  assert.equal(await tarterieSource.getAttribute('href'),tarterieUrl,'La Tarterie official source URL unchanged');
+ // Moriles Casa Fina historical validity qualifier: preserve the actual documented price.
+ await page.evaluate(()=>{
+  const place=state.places.find(p=>p.id==='moriles-casa-fina');
+  if(!place)throw Error('Moriles Casa Fina missing');
+  showPlace(place,false);
+ });
+ const finaAmount=page.locator('#detail-content .menu-dish > strong').filter({hasText:'Validité à confirmer'}).first();
+ await finaAmount.waitFor();
+ const frenchAmount=(await finaAmount.textContent()).trim();
+ assert.ok(frenchAmount.endsWith(' · Validité à confirmer'),'Casa Fina FR unverified price qualifier');
+ const pricePrefix=frenchAmount.slice(0,-' · Validité à confirmer'.length);
+ assert.ok(pricePrefix.includes('15')&&pricePrefix.includes('95'),'Casa Fina documented 15.95 menu price preserved');
+ await page.locator('#language-select').selectOption('es');
+ const spanishAmount=(await page.locator('#detail-content .menu-dish > strong').first().textContent()).trim();
+ assert.equal(spanishAmount,pricePrefix+' · Vigencia pendiente de confirmar','Casa Fina original Spanish qualifier restored');
+ await page.locator('#language-select').selectOption('en');
+ const englishAmount=(await page.locator('#detail-content .menu-dish > strong').first().textContent()).trim();
+ assert.ok(englishAmount.startsWith(pricePrefix),'Casa Fina English amount must not change');
+ await page.locator('#language-select').selectOption('fr');
+ assert.equal((await page.locator('#detail-content .menu-dish > strong').first().textContent()).trim(),frenchAmount,'Casa Fina FR qualifier restored');
  const plain=await ctx.newPage();
  await plain.goto('http://127.0.0.1:8765/index.html',{waitUntil:'domcontentloaded'});
  assert.equal(await plain.locator('#language-select option[value="fr"]').count(),0);
