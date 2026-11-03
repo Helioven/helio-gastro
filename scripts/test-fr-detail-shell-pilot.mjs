@@ -172,6 +172,29 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.deepEqual(roldanCentroRestored,roldanCentroFr,'Roldán Centro FR labels restored');
  const roldanCentroCandidates=roldanCentroRestored.filter(x=>x.text===x.original+' ↗').map(x=>x.original);
  console.log('FR ROLDAN CENTRO SOURCE CANDIDATES '+profile.name+' '+JSON.stringify(roldanCentroCandidates));
+ // La Tarterie Centro: inspect sources without changing variable product-price notices.
+ await page.evaluate(()=>{
+  const place=state.places.find(p=>p.id==='la-tarterie-centro');
+  if(!place)throw Error('La Tarterie Centro record not found');
+  showPlace(place,false);
+ });
+ const tarterieLinks=()=>page.locator('#detail-content [data-source-label-es]').evaluateAll(nodes=>nodes.map(n=>({original:n.dataset.sourceLabelEs,text:n.textContent.trim(),href:n.getAttribute('href')})));
+ const tarterieFr=await tarterieLinks();
+ assert.ok(tarterieFr.length>0,'La Tarterie sources present');
+ for(const link of tarterieFr){assert.ok(link.original,'La Tarterie original source label');assert.ok(link.href,'La Tarterie source URL');}
+ await page.locator('#language-select').selectOption('es');
+ const tarterieEs=await tarterieLinks();
+ assert.deepEqual(tarterieEs.map(x=>x.href),tarterieFr.map(x=>x.href),'La Tarterie URLs FR/ES');
+ for(const link of tarterieEs)assert.equal(link.text,link.original+' ↗','La Tarterie ES source restored');
+ await page.locator('#language-select').selectOption('en');
+ const tarterieEn=await tarterieLinks();
+ assert.deepEqual(tarterieEn.map(x=>x.href),tarterieFr.map(x=>x.href),'La Tarterie URLs FR/EN');
+ for(const link of tarterieEn)assert.ok(link.text,'La Tarterie EN label');
+ await page.locator('#language-select').selectOption('fr');
+ const tarterieRestored=await tarterieLinks();
+ assert.deepEqual(tarterieRestored,tarterieFr,'La Tarterie FR source restored');
+ const tarterieCandidates=tarterieRestored.filter(x=>x.text===x.original+' ↗').map(x=>x.original);
+ console.log('FR LA TARTERIE SOURCE CANDIDATES '+profile.name+' '+JSON.stringify(tarterieCandidates));
  await page.evaluate(()=>showPlace(state.places.find(p=>p.id==='la-montillana'),false));
  const titles=await page.locator('#detail-content .menu-dish h4').allTextContents();
  assert.ok(titles.length>0);
