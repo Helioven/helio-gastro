@@ -242,6 +242,30 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.deepEqual(tarterieRestored,tarterieFr,'La Tarterie FR source restored');
  const tarterieCandidates=tarterieRestored.filter(x=>x.text===x.original+' ↗').map(x=>x.original);
  console.log('FR LA TARTERIE SOURCE CANDIDATES '+profile.name+' '+JSON.stringify(tarterieCandidates));
+ // Closure check for the four venues flagged in FR CATALOG SWEEP.
+ // The exact translation tests above guard wording and URLs; this guards remaining Spanish labels.
+ const sweepVenueIds=['la-tarterie-centro','moriles-casa-fina','moriles-ribera','pastelerias-roldan-centro'];
+ let sourceCount=0;
+ for(const venueId of sweepVenueIds){
+  await page.evaluate(id=>{
+   const place=state.places.find(p=>p.id===id);
+   if(!place)throw Error('Sweep venue not found '+id);
+   showPlace(place,false);
+  },venueId);
+  const labels=await page.locator('#detail-content [data-source-label-es]').evaluateAll(nodes=>nodes.map(n=>({
+   original:(n.dataset.sourceLabelEs||'').trim(),
+   displayed:(n.textContent||'').replace(/\\s*↗\\s*$/,'').trim(),
+   href:n.getAttribute('href')
+  })));
+  assert.ok(labels.length>0,'No sources for '+venueId);
+  for(const item of labels){
+   assert.ok(item.href,'Source URL missing for '+venueId);
+   assert.notEqual(item.displayed,item.original,'Untranslated French source label for '+venueId+': '+item.original);
+  }
+  sourceCount+=labels.length;
+ }
+ assert.equal(sourceCount,24,'Expected 24 source links across the four sweep venues');
+ console.log('FR FOUR VENUE SOURCES CLEAN '+profile.name+' '+sourceCount+'/24');
  await page.evaluate(()=>showPlace(state.places.find(p=>p.id==='la-montillana'),false));
  const titles=await page.locator('#detail-content .menu-dish h4').allTextContents();
  assert.ok(titles.length>0);
