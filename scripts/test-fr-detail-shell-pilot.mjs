@@ -134,6 +134,18 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  const casaFinaLinks=()=>page.locator('#detail-content [data-source-label-es]').evaluateAll(nodes=>nodes.map(n=>({original:n.dataset.sourceLabelEs,text:n.textContent.trim(),href:n.getAttribute('href')})));
  const casaFinaFr=await casaFinaLinks();
  assert.ok(casaFinaFr.length>0,'Moriles Casa Fina source links present');
+ const casaFinaTranslations=[
+  ['Nuestra cocina (carta española)','Notre cuisine (carte en espagnol)'],
+  ['Menú Tapas Cordobesas','Menu « Tapas Cordobesas »'],
+  ['Postres','Desserts'],
+  ['Cafés y chocolates','Cafés et chocolats']
+ ];
+ for(const [original,translated] of casaFinaTranslations){
+  const entry=casaFinaFr.find(x=>x.original===original);
+  assert.ok(entry,'Moriles Casa Fina source missing: '+original);
+  assert.equal(entry.text,translated+' ↗','Moriles Casa Fina French source: '+original);
+ }
+
  for(const link of casaFinaFr){assert.ok(link.original,'Moriles Casa Fina original source label');assert.ok(link.href,'Moriles Casa Fina source URL');}
  await page.locator('#language-select').selectOption('es');
  const casaFinaEs=await casaFinaLinks();
