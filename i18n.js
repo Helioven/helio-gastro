@@ -294,6 +294,10 @@ window.GASTRO_I18N = Object.freeze({
   // Explicit source-link presentation labels confirmed by the visual QA inventory (#650).
   // Source URLs, catalog labels and dates remain unchanged.
   const frenchSourceLabels=new Map([
+    ["Carta española oficial · carnes (febrero 2026)","Carte officielle en espagnol · viandes (février 2026)"],
+    ["Carta española oficial · guisos, infantil y combinados (febrero 2026)","Carte officielle en espagnol · plats mijotés, plats pour enfants et assiettes composées (février 2026)"],
+    ["Carta española oficial · postres (marzo 2026)","Carte officielle en espagnol · desserts (mars 2026)"],
+    ["Carta inglesa de contraste · archivos 2025 (no mezclar importes)","Carte anglaise de comparaison · archives de 2025 (ne pas mélanger les prix)"],
     ["Carta oficial Pastelería Centro; precios de barra y mesa, disponibilidad variable","Carte officielle de Pastelería Centro ; prix au comptoir et en salle, disponibilité variable"],
     ["Carta oficial desayunos Centro: tostadas y precios; disponibilidad durante merienda sin confirmar","Carte officielle des petits-déjeuners de Centro : tartines et prix ; disponibilité au goûter non confirmée"],
     ["Carta digital oficial de Moriles Ribera (índice)","Carte numérique officielle de Moriles Ribera (index)"],
