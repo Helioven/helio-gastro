@@ -114,7 +114,11 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
   ['Carta digital oficial de Moriles Ribera (índice)','Carte numérique officielle de Moriles Ribera (index)'],
   ['Carta española oficial · ensaladas y entrantes (archivo febrero 2026)','Carte officielle en espagnol · salades et entrées (archive de février 2026)'],
   ['Carta española oficial · ibéricos, tostas, risottos y pastas (febrero 2026)','Carte officielle en espagnol · charcuteries ibériques, tartines, risottos et pâtes (février 2026)'],
-  ['Carta española oficial · revueltos, verduras y pescados (febrero 2026)','Carte officielle en espagnol · œufs brouillés garnis, légumes et poissons (février 2026)']
+  ['Carta española oficial · revueltos, verduras y pescados (febrero 2026)','Carte officielle en espagnol · œufs brouillés garnis, légumes et poissons (février 2026)'],
+  ['Carta española oficial · carnes (febrero 2026)','Carte officielle en espagnol · viandes (février 2026)'],
+  ['Carta española oficial · guisos, infantil y combinados (febrero 2026)','Carte officielle en espagnol · plats mijotés, plats pour enfants et assiettes composées (février 2026)'],
+  ['Carta española oficial · postres (marzo 2026)','Carte officielle en espagnol · desserts (mars 2026)'],
+  ['Carta inglesa de contraste · archivos 2025 (no mezclar importes)','Carte anglaise de comparaison · archives de 2025 (ne pas mélanger les prix)']
  ];
  for(const [original,translated] of riberaTranslations){
   const link=riberaFr.find(x=>x.original===original);
