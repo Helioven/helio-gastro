@@ -90,3 +90,30 @@
 - **Estado:** cotejo de procedencia, formatos y advertencias; pendientes contraste actual de disponibilidad, calidad de todos los textos FR y revisión de capturas.
 
 **Resultado conjunto:** no se ha detectado contradicción de metadatos en los campos cotejados. No se proponen cambios de traducción ni de datos sin evidencia adicional. La revisión editorial/lingüística nativa y la comprobación visual manual siguen pendientes; ninguna de las fichas se considera aprobada para publicación.
+
+## Cierre técnico: aviso de Casa Fina y control visual pendiente
+
+**Evidencia aportada por el responsable:** PASS de GitHub Actions para el commit `fa1dd1c` en la rama QA. Las ejecuciones anteriores #737 (`02eeb49`) y #738 (`b520b50`) fallaron por una regresión de transición entre idiomas, no por una alteración acreditada del catálogo.
+
+**Defecto demostrado por el log #738:** `scripts/test-fr-detail-notices-pilot.mjs` registró `15,95 € · Validity not confirmed` al seleccionar EN, pero mantuvo ese mismo aviso en la vuelta a FR, en lugar de `15,95 € · Validité à confirmer`. La diferencia de espacios antes del símbolo € no era el defecto funcional de este episodio.
+
+**Causa técnica contrastada:** el camino de traducción EN para el importe de un menú especial había cambiado, pero la expectativa en el `MutationObserver` todavía utilizaba `translateValue`, la antigua ruta. El observador interpretaba el texto inglés producido por la propia aplicación como contenido nuevo y perdía la fuente española utilizada para recomponer FR.
+
+**Resolución y prueba:** `1dffc79` centraliza la traducción inglesa del aviso en una función utilizada tanto para renderizar como para calcular la expectativa del observador. `fa1dd1c` comprueba las transiciones sucesivas FR → ES → EN → FR → ES → FR y que el aviso también aparece en inglés en la visita pública. **PASS confirmado por el responsable** para `fa1dd1c`; no proclamar que se han aprobado otros textos o pantallas por este resultado.
+
+### Puerta de salida QA: pendientes abiertos
+
+| Control | Evidencia actual | Estado |
+|---|---|---|
+| Regresión técnica del aviso Casa Fina | Log del fallo #738 y PASS final del responsable | Superado |
+| Barrido heurístico 43 fichas ordinarias | 0 candidatos de texto y 0 candidatos de desbordamiento, según Summary aportado | Superado como inventario, no revisión humana |
+| Muestras documentales (Montillana, Moriles Ribera, Casa Fina, La Tarterie, Roldán Centro) | Cotejos detallados en este archivo | Preliminares |
+| Capturas reales de fichas y flujos ES/EN/FR | Generadas por `visual-qa` en el artefacto `fr-visual-qa-desktop-mobile`, pero no inspeccionadas manualmente en esta sesión | **Pendiente** |
+| Control semántico integral de descripciones, precios y avisos en los tres idiomas | No cubierto completamente por los inventarios heurísticos | **Pendiente** |
+| Excepción documental de El Caballo Rojo | Separada del catálogo ordinario | Pendiente de criterio editorial |
+| Publicación/fusión de francés | Requiere revisión integral y autorización del responsable | **No autorizado** |
+
+**Criterio visual de aceptación pendiente de ejecutar:** revisar capturas reales en escritorio y móvil para portada, buscador, resultados, comparador, favoritos y fichas, prestando atención a truncamientos, legibilidad, avisos, orden de lectura, navegación y diferencias entre idiomas. Para cualquier defecto, registrar vista, resolución, idioma, pasos de reproducción, comportamiento esperado y observado, severidad y evidencia visual. Una captura automatizada generada no equivale a una captura examinada.
+
+**Límites:** ningún cambio de datos o publicación por esta documentación. `main` permanece intacta y FR sigue restringido a `?qa_fr=1`.
+
