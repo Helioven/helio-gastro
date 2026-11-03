@@ -50,3 +50,20 @@
 - Algunas traducciones francesas siguen siendo **propuestas**; haber superado las regresiones de etiquetas y enlaces no acredita su aprobación lingüística.
 
 **Estado de esta muestra:** cotejo documental preliminar de 13/13 etiquetas; **revisión de platos, recetas, ingredientes, cartas externas y capturas visuales pendiente**. No actualizar el estado de aprobación de los lotes FR ni activar el idioma público.
+
+
+## Tercera muestra: Moriles Casa Fina — fuentes y menú especial
+
+**Control ejecutado:** cotejo documental de las **8 fuentes** del registro `moriles-casa-fina`, sus etiquetas ES/EN/FR y enlaces del catálogo, con el mapa `frenchSourceLabels` de `i18n.js`. Inspección de los metadatos de `officialSetMenus`; no se han revisado de nuevo las páginas externas ni todas las descripciones de platos.
+
+| Elemento | Evidencia del repositorio | Estado |
+|---|---|---|
+| Fuentes de Casa Fina | 8 entradas, 8 etiquetas FR diferenciadas; URLs asociadas al dominio de Casa Fina | Cotejo de metadatos realizado |
+| Carta española frente a inglesa | `Nuestra cocina` y `Carta inglesa` tienen enlaces distintos y etiquetas que indican el idioma | Diferenciación mantenida |
+| Menús sugeridos, glosario y eventos | Enlaces separados con etiquetas específicas | Sin mezcla visible de fuentes en el catálogo |
+| Menú `Tapas Cordobesas` | `officialSetMenus`: nombre original, nombre inglés, precio documentado **15,95 €**, 8 opciones de platos y 4 de bebidas | Metadatos comprobados, sin alterar importes |
+| Vigencia | La presentación FR muestra `Validité à confirmer` y la ES recupera `Vigencia pendiente de confirmar`, según regresión `e28e171` con PASS comunicado por el responsable | Regresión técnica superada, vigencia real **no verificada** |
+
+**Propuesta lingüística, no defecto confirmado:** el original de fuente `Cafés y chocolates` tiene equivalente inglés `Coffee and hot chocolate`, mientras que la etiqueta FR actual es `Cafés et chocolats`. En francés, `chocolats` puede también designar bombones; considerar `Cafés et chocolats chauds` una vez revisado el contenido original de esa sección. **No cambiar el texto sin aprobación editorial o corroboración de la fuente.**
+
+**Límites:** esta revisión documental no demuestra la corrección semántica de las 15 secciones de platos ni de sus ingredientes, ni acredita inspección visual de la ficha. Ningún estado de traducción se eleva a aprobado. Se mantiene separación estricta de Moriles Ribera y Casa Fina, aunque existan páginas de nombre parecido.
