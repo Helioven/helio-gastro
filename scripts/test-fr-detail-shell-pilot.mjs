@@ -118,7 +118,12 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
   ['Carta española oficial · carnes (febrero 2026)','Carte officielle en espagnol · viandes (février 2026)'],
   ['Carta española oficial · guisos, infantil y combinados (febrero 2026)','Carte officielle en espagnol · plats mijotés, plats pour enfants et assiettes composées (février 2026)'],
   ['Carta española oficial · postres (marzo 2026)','Carte officielle en espagnol · desserts (mars 2026)'],
-  ['Carta inglesa de contraste · archivos 2025 (no mezclar importes)','Carte anglaise de comparaison · archives de 2025 (ne pas mélanger les prix)']
+  ['Carta inglesa de contraste · archivos 2025 (no mezclar importes)','Carte anglaise de comparaison · archives de 2025 (ne pas mélanger les prix)'],
+  ['Menú especial Tapas Cordobesas · carta oficial','Menu spécial « Tapas Cordobesas » · carte officielle'],
+  ['Postres · carta oficial marzo 2026','Desserts · carte officielle de mars 2026'],
+  ['Cafés, chocolates e infusiones · carta oficial','Cafés, chocolats chauds et infusions · carte officielle'],
+  ['Suggested Menu · menú especial inglés','Suggested Menu · menu spécial en anglais'],
+  ['Glossary · glosario gastronómico oficial inglés','Glossary · glossaire gastronomique officiel en anglais']
  ];
  for(const [original,translated] of riberaTranslations){
   const link=riberaFr.find(x=>x.original===original);
