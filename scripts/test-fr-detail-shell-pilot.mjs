@@ -124,6 +124,30 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.deepEqual(riberaRestored,riberaFr,'Moriles Ribera FR source labels restored');
  const riberaCandidates=riberaRestored.filter(x=>x.text===x.original+' ↗').map(x=>x.original);
  console.log('FR MORILES RIBERA SOURCE CANDIDATES '+profile.name+' '+JSON.stringify(riberaCandidates));
+ // Moriles Casa Fina: isolate this branch's source labels from Moriles Ribera.
+ const casaFinaId='moriles-casa-fina';
+ await page.evaluate(id=>{
+  const place=state.places.find(p=>p.id===id);
+  if(!place)throw Error('Moriles Casa Fina record not found');
+  showPlace(place,false);
+ },casaFinaId);
+ const casaFinaLinks=()=>page.locator('#detail-content [data-source-label-es]').evaluateAll(nodes=>nodes.map(n=>({original:n.dataset.sourceLabelEs,text:n.textContent.trim(),href:n.getAttribute('href')})));
+ const casaFinaFr=await casaFinaLinks();
+ assert.ok(casaFinaFr.length>0,'Moriles Casa Fina source links present');
+ for(const link of casaFinaFr){assert.ok(link.original,'Moriles Casa Fina original source label');assert.ok(link.href,'Moriles Casa Fina source URL');}
+ await page.locator('#language-select').selectOption('es');
+ const casaFinaEs=await casaFinaLinks();
+ assert.deepEqual(casaFinaEs.map(x=>x.href),casaFinaFr.map(x=>x.href),'Moriles Casa Fina source URLs FR/ES');
+ for(const link of casaFinaEs)assert.equal(link.text,link.original+' ↗','Moriles Casa Fina ES label restored');
+ await page.locator('#language-select').selectOption('en');
+ const casaFinaEn=await casaFinaLinks();
+ assert.deepEqual(casaFinaEn.map(x=>x.href),casaFinaFr.map(x=>x.href),'Moriles Casa Fina source URLs FR/EN');
+ for(const link of casaFinaEn)assert.ok(link.text,'Moriles Casa Fina EN source label');
+ await page.locator('#language-select').selectOption('fr');
+ const casaFinaRestored=await casaFinaLinks();
+ assert.deepEqual(casaFinaRestored,casaFinaFr,'Moriles Casa Fina FR labels restored');
+ const casaFinaCandidates=casaFinaRestored.filter(x=>x.text===x.original+' ↗').map(x=>x.original);
+ console.log('FR MORILES CASA FINA SOURCE CANDIDATES '+profile.name+' '+JSON.stringify(casaFinaCandidates));
  await page.evaluate(()=>showPlace(state.places.find(p=>p.id==='la-montillana'),false));
  const titles=await page.locator('#detail-content .menu-dish h4').allTextContents();
  assert.ok(titles.length>0);
