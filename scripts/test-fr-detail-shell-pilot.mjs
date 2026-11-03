@@ -182,6 +182,16 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  const roldanCentroLinks=()=>page.locator('#detail-content [data-source-label-es]').evaluateAll(nodes=>nodes.map(n=>({original:n.dataset.sourceLabelEs,text:n.textContent.trim(),href:n.getAttribute('href')})));
  const roldanCentroFr=await roldanCentroLinks();
  assert.ok(roldanCentroFr.length>0,'Roldán Centro sources present');
+ const roldanCentroTranslations=[
+  ['Carta oficial Pastelería Centro; precios de barra y mesa, disponibilidad variable','Carte officielle de Pastelería Centro ; prix au comptoir et en salle, disponibilité variable'],
+  ['Carta oficial desayunos Centro: tostadas y precios; disponibilidad durante merienda sin confirmar','Carte officielle des petits-déjeuners de Centro : tartines et prix ; disponibilité au goûter non confirmée']
+ ];
+ for(const [original,translated] of roldanCentroTranslations){
+  const source=roldanCentroFr.find(x=>x.original===original);
+  assert.ok(source,'Roldán Centro source missing: '+original);
+  assert.equal(source.text,translated+' ↗','Roldán Centro FR label '+original);
+ }
+
  for(const link of roldanCentroFr){assert.ok(link.original,'Roldán Centro original source label');assert.ok(link.href,'Roldán Centro source URL');}
  await page.locator('#language-select').selectOption('es');
  const roldanCentroEs=await roldanCentroLinks();
