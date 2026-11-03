@@ -28,3 +28,25 @@
 5. Regresión final y autorización expresa antes de activar públicamente el francés o fusionar en `main`.
 
 **Cambios realizados por esta revisión:** solo documentación; no cambios de cartas, precios, ingredientes, `data/places.json`, código de producción ni `main`.
+
+
+## Segunda muestra: Moriles Ribera — fuentes y procedencia
+
+**Tipo de control ejecutado:** cotejo documental **ES/EN/FR de 13 etiquetas de fuentes** con las entradas originales de `data/places.json` y las propuestas visibles de `frenchSourceLabels` en `i18n.js`. No se han inspeccionado los archivos externos de las cartas ni los lotes de descripciones del restaurante en esta ronda.
+
+| Aspecto | Resultado preliminar |
+|---|---|
+| Enlaces de fuentes registrados | **13/13** tienen propuesta de etiqueta francesa en el mapa de presentación |
+| Carta española de febrero de 2026 | Se conserva explícitamente febrero de 2026 en cinco referencias de platos |
+| Postres de marzo de 2026 | Las dos referencias conservan marzo de 2026 |
+| Carta inglesa de contraste de 2025 | La etiqueta FR mantiene el año 2025 y la prohibición de mezclar precios |
+| Menú Tapas Cordobesas | Mantiene la denominación cultural original entre comillas |
+| Enlaces ingleses `Suggested Menu` y `Glossary` | Se conservan los títulos originales, identificados como contenidos en inglés |
+| Importes / ingredientes | **No revisados en esta muestra**; sin alteraciones del catálogo |
+
+**Observaciones editoriales no confirmadas como defectos:**
+- `ibéricos` se presenta como `charcuteries ibériques` en una fuente de febrero de 2026. Es una concreción semántica potencialmente más estrecha que el encabezado original; contrastar con el contenido de la carta y con la nomenclatura del establecimiento antes de retocar.
+- `revueltos` se muestra como `œufs brouillés garnis`, explicación plausible del tipo de plato, pero revisar naturalidad gastronómica y fidelidad con la carta real.
+- Algunas traducciones francesas siguen siendo **propuestas**; haber superado las regresiones de etiquetas y enlaces no acredita su aprobación lingüística.
+
+**Estado de esta muestra:** cotejo documental preliminar de 13/13 etiquetas; **revisión de platos, recetas, ingredientes, cartas externas y capturas visuales pendiente**. No actualizar el estado de aprobación de los lotes FR ni activar el idioma público.
