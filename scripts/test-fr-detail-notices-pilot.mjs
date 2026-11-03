@@ -99,7 +99,7 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  await page.locator('#language-select').selectOption('en');
  const tarterieEnNotice=(await tarterieNotice.textContent()).trim();
  assert.ok(tarterieEnNotice && tarterieEnNotice!==tarterieEsNotice && tarterieEnNotice!==tarterieFrNotice,'La Tarterie original English notice present');
- assert.equal(await tarterieSourceEs.getAttribute('href'),tarterieUrl,'La Tarterie source URL unchanged in English');
+ assert.equal(await page.locator('#detail-content [data-source-label-es="Tienda oficial La Tarterie — catálogo y precios por producto"]').getAttribute('href'),tarterieUrl,'La Tarterie source URL unchanged in English');
  await page.locator('#language-select').selectOption('fr');
  assert.equal((await tarterieNotice.textContent()).trim(),tarterieFrNotice,'La Tarterie French notice restored');
  assert.equal((await tarterieSource.textContent()).trim(),'Boutique officielle La Tarterie — catalogue et prix par produit ↗','La Tarterie French source restored');
