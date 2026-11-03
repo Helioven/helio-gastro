@@ -254,7 +254,7 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
   },venueId);
   const labels=await page.locator('#detail-content [data-source-label-es]').evaluateAll(nodes=>nodes.map(n=>({
    original:(n.dataset.sourceLabelEs||'').trim(),
-   displayed:(n.textContent||'').replace(/\\s*↗\\s*$/,'').trim(),
+   displayed:(n.textContent||'').replace(/\s*↗\s*$/,'').trim(),
    href:n.getAttribute('href')
   })));
   assert.ok(labels.length>0,'No sources for '+venueId);
