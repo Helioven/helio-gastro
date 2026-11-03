@@ -506,7 +506,12 @@ window.GASTRO_I18N = Object.freeze({
     const match=original.match(/^(\s*)([\s\S]*?)(\s*)$/);
     const key=normalize(match[2]);
     if(language==='en'){
-      const next=match[1]+translateValue(key)+match[3];
+      // Casa Fina's historical set-menu validity note must be in English too.
+      // Restrict the replacement to the price element; leave the catalog amount untouched.
+      const translated=node.parentElement.matches('.menu-dish > strong')&&node.parentElement.closest('#detail-content')&&key.endsWith(' · Vigencia pendiente de confirmar')
+        ?key.replace(/ · Vigencia pendiente de confirmar$/, ' · Validity not confirmed')
+        :translateValue(key);
+      const next=match[1]+translated+match[3];
       if(node.nodeValue!==next)node.nodeValue=next;
     }else if(language==='fr'){
       const next=match[1]+translateFrenchDetailNotice(node,translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchRecommendationsText(node,translateFrenchServiceText(node,translateFrenchHeroText(node,translateFrenchNavText(node,translateFrenchFavoritesNotice(node,translateFrenchSearchText(node,translateFrenchGroupText(node,translateFrenchHeading(node,match[2]))))))))))))+match[3];
