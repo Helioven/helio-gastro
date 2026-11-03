@@ -294,6 +294,10 @@ window.GASTRO_I18N = Object.freeze({
   // Explicit source-link presentation labels confirmed by the visual QA inventory (#650).
   // Source URLs, catalog labels and dates remain unchanged.
   const frenchSourceLabels=new Map([
+    ["Nuestra cocina (carta española)","Notre cuisine (carte en espagnol)"],
+    ["Menú Tapas Cordobesas","Menu « Tapas Cordobesas »"],
+    ["Postres","Desserts"],
+    ["Cafés y chocolates","Cafés et chocolats"],
     ["Tienda oficial La Tarterie — catálogo y precios por producto","Boutique officielle La Tarterie — catalogue et prix par produit"],
     ['Carta oficial — web del establecimiento','Carte officielle — site de l’établissement'],
     ['Carta oficial de platos','Carte officielle des plats'],
