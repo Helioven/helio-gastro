@@ -148,6 +148,30 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.deepEqual(casaFinaRestored,casaFinaFr,'Moriles Casa Fina FR labels restored');
  const casaFinaCandidates=casaFinaRestored.filter(x=>x.text===x.original+' ↗').map(x=>x.original);
  console.log('FR MORILES CASA FINA SOURCE CANDIDATES '+profile.name+' '+JSON.stringify(casaFinaCandidates));
+ // Roldán Centro is distinct from the generic Roldán cafeterias directory.
+ const roldanCentroId=await page.evaluate(()=>{
+  const matches=state.places.filter(p=>/rold[aá]n/i.test(p.name||'') && /centro/i.test(p.name||''));
+  if(matches.length!==1)throw Error('Expected one Roldán Centro record, found '+matches.length);
+  return matches[0].id;
+ });
+ await page.evaluate(id=>showPlace(state.places.find(p=>p.id===id),false),roldanCentroId);
+ const roldanCentroLinks=()=>page.locator('#detail-content [data-source-label-es]').evaluateAll(nodes=>nodes.map(n=>({original:n.dataset.sourceLabelEs,text:n.textContent.trim(),href:n.getAttribute('href')})));
+ const roldanCentroFr=await roldanCentroLinks();
+ assert.ok(roldanCentroFr.length>0,'Roldán Centro sources present');
+ for(const link of roldanCentroFr){assert.ok(link.original,'Roldán Centro original source label');assert.ok(link.href,'Roldán Centro source URL');}
+ await page.locator('#language-select').selectOption('es');
+ const roldanCentroEs=await roldanCentroLinks();
+ assert.deepEqual(roldanCentroEs.map(x=>x.href),roldanCentroFr.map(x=>x.href),'Roldán Centro source URLs FR/ES');
+ for(const link of roldanCentroEs)assert.equal(link.text,link.original+' ↗','Roldán Centro ES label restored');
+ await page.locator('#language-select').selectOption('en');
+ const roldanCentroEn=await roldanCentroLinks();
+ assert.deepEqual(roldanCentroEn.map(x=>x.href),roldanCentroFr.map(x=>x.href),'Roldán Centro source URLs FR/EN');
+ for(const link of roldanCentroEn)assert.ok(link.text,'Roldán Centro EN source label');
+ await page.locator('#language-select').selectOption('fr');
+ const roldanCentroRestored=await roldanCentroLinks();
+ assert.deepEqual(roldanCentroRestored,roldanCentroFr,'Roldán Centro FR labels restored');
+ const roldanCentroCandidates=roldanCentroRestored.filter(x=>x.text===x.original+' ↗').map(x=>x.original);
+ console.log('FR ROLDAN CENTRO SOURCE CANDIDATES '+profile.name+' '+JSON.stringify(roldanCentroCandidates));
  await page.evaluate(()=>showPlace(state.places.find(p=>p.id==='la-montillana'),false));
  const titles=await page.locator('#detail-content .menu-dish h4').allTextContents();
  assert.ok(titles.length>0);
