@@ -294,6 +294,11 @@ window.GASTRO_I18N = Object.freeze({
   // Explicit source-link presentation labels confirmed by the visual QA inventory (#650).
   // Source URLs, catalog labels and dates remain unchanged.
   const frenchSourceLabels=new Map([
+    ["Menú especial Tapas Cordobesas · carta oficial","Menu spécial « Tapas Cordobesas » · carte officielle"],
+    ["Postres · carta oficial marzo 2026","Desserts · carte officielle de mars 2026"],
+    ["Cafés, chocolates e infusiones · carta oficial","Cafés, chocolats chauds et infusions · carte officielle"],
+    ["Suggested Menu · menú especial inglés","Suggested Menu · menu spécial en anglais"],
+    ["Glossary · glosario gastronómico oficial inglés","Glossary · glossaire gastronomique officiel en anglais"],
     ["Carta española oficial · carnes (febrero 2026)","Carte officielle en espagnol · viandes (février 2026)"],
     ["Carta española oficial · guisos, infantil y combinados (febrero 2026)","Carte officielle en espagnol · plats mijotés, plats pour enfants et assiettes composées (février 2026)"],
     ["Carta española oficial · postres (marzo 2026)","Carte officielle en espagnol · desserts (mars 2026)"],
