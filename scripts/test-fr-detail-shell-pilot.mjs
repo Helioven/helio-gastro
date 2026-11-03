@@ -274,7 +274,7 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
   await page.evaluate(id=>showPlace(state.places.find(p=>p.id===id),false),venueId);
   const sourceRows=await page.locator('#detail-content [data-source-label-es]').evaluateAll(nodes=>nodes.map(n=>({
    original:(n.dataset.sourceLabelEs||'').trim(),
-   text:(n.textContent||'').replace(/\\s*↗\\s*$/,'').trim(),
+   text:(n.textContent||'').replace(/\s*↗\s*$/,'').trim(),
    href:n.getAttribute('href')
   })));
   for(const item of sourceRows){
