@@ -294,6 +294,10 @@ window.GASTRO_I18N = Object.freeze({
   // Explicit source-link presentation labels confirmed by the visual QA inventory (#650).
   // Source URLs, catalog labels and dates remain unchanged.
   const frenchSourceLabels=new Map([
+    ["Carta digital oficial de Moriles Ribera (índice)","Carte numérique officielle de Moriles Ribera (index)"],
+    ["Carta española oficial · ensaladas y entrantes (archivo febrero 2026)","Carte officielle en espagnol · salades et entrées (archive de février 2026)"],
+    ["Carta española oficial · ibéricos, tostas, risottos y pastas (febrero 2026)","Carte officielle en espagnol · charcuteries ibériques, tartines, risottos et pâtes (février 2026)"],
+    ["Carta española oficial · revueltos, verduras y pescados (febrero 2026)","Carte officielle en espagnol · œufs brouillés garnis, légumes et poissons (février 2026)"],
     ["Nuestra cocina (carta española)","Notre cuisine (carte en espagnol)"],
     ["Menú Tapas Cordobesas","Menu « Tapas Cordobesas »"],
     ["Postres","Desserts"],
