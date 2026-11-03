@@ -132,7 +132,9 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  await page.locator('#language-select').selectOption('en');
  const enValue=await actualAmount();
  console.log('FR CASA FINA PRICE '+profile.name+' '+JSON.stringify({language:'en',actual:enValue}));
- assert.ok(enValue.startsWith(amountPrefix),'Casa Fina English amount changed: '+enValue);
+ // English rendering uses an ordinary space before €, whereas es-ES uses NBSP.
+ // Normalize only whitespace when comparing the unchanged monetary prefix.
+ assert.ok(enValue.replace(/\s+/g,' ').startsWith(amountPrefix.replace(/\s+/g,' ')),'Casa Fina English amount changed: '+enValue);
  await page.locator('#language-select').selectOption('fr');
  const frRestored=await actualAmount();
  console.log('FR CASA FINA PRICE '+profile.name+' '+JSON.stringify({language:'fr-restored',actual:frRestored}));
