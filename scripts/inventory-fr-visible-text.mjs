@@ -89,11 +89,11 @@ try{
        const cue=new RegExp(cueSource,'i');
        const items=[...root.querySelectorAll('.service-notice,.note,[data-source-label-es]')].filter(el=>el.getClientRects().length);
        const strings=items.map(el=>(el.innerText||el.textContent||'').trim()).filter(Boolean);
-       const cueMatches=strings.filter(t=>cue.test(t)).slice(0,5);
+       const cueMatches=strings.filter(t=>cue.test(t));
        const sourceLabels=[...root.querySelectorAll('[data-source-label-es]')].filter(el=>{
          const original=(el.dataset.sourceLabelEs||'').trim();
          return original && (el.textContent||'').replace(/\s*↗\s*$/,'').trim()===original;
-       }).map(el=>({original:el.dataset.sourceLabelEs})).slice(0,6);
+       }).map(el=>({original:el.dataset.sourceLabelEs}));
        return {cueMatches,sourceLabels};
      },spanishCue.source);
      if(finding.cueMatches.length||finding.sourceLabels.length)catalogFindings.push({id:place.id,...finding});
