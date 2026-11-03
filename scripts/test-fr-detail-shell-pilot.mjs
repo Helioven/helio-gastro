@@ -110,6 +110,18 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  const riberaLinks=()=>page.locator('#detail-content [data-source-label-es]').evaluateAll(nodes=>nodes.map(n=>({original:n.dataset.sourceLabelEs,text:n.textContent.trim(),href:n.getAttribute('href')})));
  const riberaFr=await riberaLinks();
  assert.ok(riberaFr.length>0,'Moriles Ribera source links present');
+ const riberaTranslations=[
+  ['Carta digital oficial de Moriles Ribera (índice)','Carte numérique officielle de Moriles Ribera (index)'],
+  ['Carta española oficial · ensaladas y entrantes (archivo febrero 2026)','Carte officielle en espagnol · salades et entrées (archive de février 2026)'],
+  ['Carta española oficial · ibéricos, tostas, risottos y pastas (febrero 2026)','Carte officielle en espagnol · charcuteries ibériques, tartines, risottos et pâtes (février 2026)'],
+  ['Carta española oficial · revueltos, verduras y pescados (febrero 2026)','Carte officielle en espagnol · œufs brouillés garnis, légumes et poissons (février 2026)']
+ ];
+ for(const [original,translated] of riberaTranslations){
+  const link=riberaFr.find(x=>x.original===original);
+  assert.ok(link,'Moriles Ribera source missing: '+original);
+  assert.equal(link.text,translated+' ↗','Moriles Ribera French label: '+original);
+ }
+
  for(const link of riberaFr){assert.ok(link.original,'Moriles Ribera original source label');assert.ok(link.href,'Moriles Ribera source URL');}
  await page.locator('#language-select').selectOption('es');
  const riberaEs=await riberaLinks();
