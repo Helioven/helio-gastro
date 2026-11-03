@@ -99,7 +99,9 @@ try{
      if(finding.cueMatches.length||finding.sourceLabels.length)catalogFindings.push({id:place.id,...finding});
    }
    console.log('FR CATALOG SWEEP '+JSON.stringify({profile:profile.name,placesInspected:allPlaces.length,venuesFlagged:catalogFindings.length,findings:catalogFindings.slice(0,30),truncated:catalogFindings.length>30,note:'Heuristic candidates, not verified translation defects'}));
-   report.profiles.push({profile:profile.name,errors,findings});
+   // Preserve the complete catalog sweep in the uploaded JSON artifact, not just the first 30 CI log entries.
+   report.profiles.push({profile:profile.name,errors,findings,catalogSweep:{placesInspected:allPlaces.length,venuesFlagged:catalogFindings.length,venues:catalogFindings}});
+   console.log('FR CATALOG SWEEP DETAIL '+JSON.stringify({profile:profile.name,venues:catalogFindings}));
   }finally{await ctx.close();}
  }
 }finally{await browser.close();}
