@@ -117,3 +117,37 @@
 
 **Límites:** ningún cambio de datos o publicación por esta documentación. `main` permanece intacta y FR sigue restringido a `?qa_fr=1`.
 
+
+## Inspección visual del artefacto ZIP — 3 de noviembre de 2026
+
+**Fuente efectivamente examinada:** archivo `fr-visual-qa-desktop-mobile (3).zip`, aportado por el responsable y generado por GitHub Actions. Se inspeccionaron su inventario, los informes `fr-visual-qa.json`, `fr-visible-text-triage.json`, `fr-catalog-sweep-review.md`, resultados de regresión y muestras reales de capturas de escritorio/móvil. Las capturas completas se revisaron mediante dimensiones y muestras visuales; **no se afirma lectura minuciosa de cada texto de todas las imágenes**.
+
+**Resultados compatibles con lo confirmado en CI:**
+- `fr-visual-qa.json` comunica `PASS` en los perfiles desktop (1365 × 900) y mobile (390 × 664 CSS px), 15 tarjetas por perfil, idiomas diferenciados, sin errores reportados.
+- `fr-catalog-sweep-review.md`: 0 candidatos heurísticos de texto en 43 fichas ordinarias y 0 candidatos de desbordamiento en el barrido exploratorio; esto no constituye un certificado visual completo.
+- Las muestras de capturas móviles examinadas muestran cabecera, selector de FR QA y navegación sin recorte evidente en la parte superior.
+
+### QA visual: discrepancia entre el tamaño de captura y el viewport
+
+**Evidencia observable, sin causa raíz aún establecida:** de **21 capturas francesas de escritorio** `screenshots/desktop-*-fr.png`, **13 PNG exceden los 1365 px de ancho** del perfil de navegador usado por sus respectivas suites. Ejemplos:
+- `desktop-la-cazuela-esparteria-fr.png`: **1895 px** (+530).
+- `desktop-la-bandera-cafe-fr.png`: **1845 px** (+480).
+- `desktop-rincon-beatillas-fr.png`: **1755 px** (+390).
+- `desktop-taberna-san-miguel-el-pisto-fr.png`: **1625 px** (+260).
+- `desktop-taberna-la-sal-fr.png`: **1605 px** (+240).
+- `desktop-taberna-salinas-fr.png`: **1565 px** (+200).
+- Otras siete capturas francesas de escritorio tienen excesos entre +10 y +100 px.
+
+**Interpretación provisional:** las capturas `fullPage` sugieren contenido/documento extendido horizontalmente, aunque la cabecera principal sigue visible y las imágenes por sí solas no bastan para atribuir el problema a un elemento concreto, ni para afirmar que exista recorte de toda la ficha. Esta evidencia **contrasta con el informe de 0 candidatos** del barrido, que utilizó un perfil de escritorio de 1280 px y un recorrido distinto. No asumir que ambos miden la misma situación.
+
+**Ticket propuesto, pendiente de reproducción instrumental:**
+- **Título:** anchura de PNG `fullPage` superior al viewport en varias fichas FR de escritorio.
+- **Pasos:** abrir `index.html?qa_fr=1` en escritorio a **1365 × 900**, seleccionar FR, abrir La Cazuela de la Espartería; comparar `window.innerWidth`, `document.documentElement.scrollWidth`, `document.body.scrollWidth`, `#detail-section.scrollWidth` y los límites de los elementos visibles con la anchura de la captura `fullPage`. Repetir en La Bandera y Beatillas y después en un perfil de 1280 px y en móvil.
+- **Esperado:** no aparecer desplazamiento horizontal involuntario ni contenido inaccesible; la captura y las mediciones deben permitir explicar cualquier anchura adicional.
+- **Observado:** PNG de La Cazuela de 1895 px frente a viewport nominal de 1365 px; la discrepancia también aparece en otras 12 capturas, aunque el barrido exploratorio declara 0 candidatos.
+- **Severidad/prioridad provisional:** **media / P2 para investigar**, sujeta a confirmar desbordamiento real, interacción y alcance. No corregir CSS a ciegas.
+- **Estado:** evidencia visual inspeccionada; **defecto funcional todavía no reproducido ni confirmado en el DOM**.
+
+**Siguiente control recomendado:** prueba enfocada de geometría y captura con el **mismo viewport y la misma secuencia de acciones** de las suites de las fichas afectadas. Si se reproduce la expansión, localizar el elemento exacto antes de modificar estilos; ejecutar regresión escritorio/móvil/ES/EN/FR después. En paralelo, mantener la revisión de naturalidad de las traducciones y las excepciones editoriales pendientes.
+
+**Ámbito protegido:** no se han cambiado textos, precios, ingredientes, cartas, `data/places.json`, estilos ni `main`. El francés continúa experimental con `?qa_fr=1`.
