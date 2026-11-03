@@ -78,6 +78,7 @@ try{
    // Names and traditional dishes are intentionally not assessed as translation failures.
    const allPlaces=await page.evaluate(()=>state.places.map(p=>({id:p.id,name:p.name})));
    const catalogFindings=[];
+   const layoutFindings=[];
    for(const place of allPlaces){
      await page.evaluate(id=>{
        const venue=state.places.find(p=>p.id===id);
@@ -97,6 +98,26 @@ try{
        return {cueMatches,sourceLabels};
      },spanishCue.source);
      if(finding.cueMatches.length||finding.sourceLabels.length)catalogFindings.push({id:place.id,...finding});
+     // Exploratory layout inspection over the existing catalog traversal.
+     // Keep potential horizontal overflows separate from language candidates.
+     const layout=await page.locator('#detail-section').evaluate(root=>{
+       const viewportWidth=window.innerWidth;
+       const documentWidth=document.documentElement.scrollWidth;
+       const detailWidth=root.scrollWidth;
+       const detailClientWidth=root.clientWidth;
+       const overflow=documentWidth>viewportWidth+1 || detailWidth>detailClientWidth+1;
+       const examples=[...root.querySelectorAll('h1,h2,h3,p,button,a,.service-notice')]
+         .filter(el=>el.getClientRects().length)
+         .map(el=>({el,rect:el.getBoundingClientRect()}))
+         .filter(({rect})=>rect.right>viewportWidth+1 || rect.left < -1)
+         .slice(0,5).map(({el,rect})=>({
+           tag:el.tagName,
+           text:(el.innerText||el.textContent||'').replace(/\s+/g,' ').trim().slice(0,90),
+           left:Math.round(rect.left),right:Math.round(rect.right)
+         }));
+       return {overflow,viewportWidth,documentWidth,detailWidth,detailClientWidth,examples};
+     });
+     if(layout.overflow||layout.examples.length)layoutFindings.push({id:place.id,...layout});
    }
    // Keep the temporarily closed El Caballo Rojo visible as an explicit documentary exception.
    // Do not count its historical source references as untranslated ordinary-catalog entries.
@@ -106,8 +127,9 @@ try{
    const exceptionFindings=catalogFindings.filter(venue=>exceptionIds.has(venue.id));
    console.log('FR CATALOG SWEEP '+JSON.stringify({profile:profile.name,placesInspected:allPlaces.length,ordinaryPlacesInspected:ordinaryPlaces.length,venuesFlagged:ordinaryFindings.length,findings:ordinaryFindings.slice(0,30),truncated:ordinaryFindings.length>30,exceptionsFlagged:exceptionFindings.length,note:'Heuristic candidates, not verified translation defects'}));
    // Preserve every finding, including the exception, in the complete JSON artifact.
-   report.profiles.push({profile:profile.name,errors,findings,catalogSweep:{placesInspected:allPlaces.length,ordinaryPlacesInspected:ordinaryPlaces.length,venuesFlagged:ordinaryFindings.length,venues:ordinaryFindings,exceptions:exceptionFindings}});
+   report.profiles.push({profile:profile.name,errors,findings,catalogSweep:{placesInspected:allPlaces.length,ordinaryPlacesInspected:ordinaryPlaces.length,venuesFlagged:ordinaryFindings.length,venues:ordinaryFindings,exceptions:exceptionFindings},layoutSweep:{placesInspected:allPlaces.length,findings:layoutFindings}});
    console.log('FR CATALOG SWEEP DETAIL '+JSON.stringify({profile:profile.name,venues:ordinaryFindings,exceptions:exceptionFindings}));
+   console.log('FR LAYOUT SWEEP '+JSON.stringify({profile:profile.name,placesInspected:allPlaces.length,candidates:layoutFindings.length,findings:layoutFindings.slice(0,15),truncated:layoutFindings.length>15,note:'Exploratory overflow candidates, not verified defects'}));
   }finally{await ctx.close();}
  }
 }finally{await browser.close();}
@@ -115,7 +137,12 @@ mkdirSync('qa-reports',{recursive:true});
 writeFileSync('qa-reports/fr-visible-text-triage.json',JSON.stringify(report,null,2)+'\n');
 const catalogRows=new Map();
 const exceptionRows=new Map();
+const layoutRows=new Map();
 for(const profile of report.profiles){
+ for(const venue of profile.layoutSweep?.findings||[]){
+  if(!layoutRows.has(venue.id))layoutRows.set(venue.id,{desktop:null,mobile:null});
+  layoutRows.get(venue.id)[profile.profile]=venue;
+ }
  for(const venue of profile.catalogSweep?.exceptions||[]){
   if(!exceptionRows.has(venue.id))exceptionRows.set(venue.id,{desktop:null,mobile:null});
   exceptionRows.get(venue.id)[profile.profile]=venue;
@@ -147,7 +174,14 @@ if(exceptionRows.size){
   lines.push('- **'+mdSafe(id)+'**: '+mdSafe(evidence.slice(0,5).join(' / ')||'Consultar JSON para detalles')+'.');
  }
 }else lines.push('Sin coincidencias heurísticas de excepciones en esta ejecución.');
-lines.push('','Este informe no sustituye la revisión editorial ni visual.');
+lines.push('','### Triaje de desbordamiento horizontal (exploratorio)','','| Ficha | Escritorio | Móvil | Detalle |','|---|---|---|---|');
+for(const [id,profiles] of [...layoutRows].sort((a,b)=>a[0].localeCompare(b[0]))){
+ const evidence=profiles.mobile||profiles.desktop;
+ const detail='viewport '+evidence.viewportWidth+' px; documento '+evidence.documentWidth+' px; detalle '+evidence.detailWidth+'/'+evidence.detailClientWidth+' px';
+ lines.push('| '+mdSafe(id)+' | '+(profiles.desktop?'Revisar':'—')+' | '+(profiles.mobile?'Revisar':'—')+' | '+mdSafe(detail)+' |');
+}
+if(!layoutRows.size)lines.push('| Sin candidatos detectados | — | — | No equivale a auditoría visual completa |');
+lines.push('','Fichas con posibles desbordamientos en algún perfil: **'+layoutRows.size+'**. Requieren inspección manual, no son defectos confirmados.','','Este informe no sustituye la revisión editorial ni visual.');
 const reviewMarkdown=lines.join('\n')+'\n';
 writeFileSync('qa-reports/fr-catalog-sweep-review.md',reviewMarkdown);
 if(process.env.GITHUB_STEP_SUMMARY)appendFileSync(process.env.GITHUB_STEP_SUMMARY,reviewMarkdown);
