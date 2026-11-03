@@ -111,7 +111,7 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
   showPlace(place,false);
  });
  const finaMenu=page.locator('#detail-content section.menu-dish').filter({
-  has:page.locator('h3').filter({hasText:'Menú Tapas Cordobesas'})
+  has:page.locator('h3[data-set-menu-es="Menú Tapas Cordobesas"]')
  });
  assert.equal(await finaMenu.count(),1,'Expected exactly one Casa Fina Tapas Cordobesas menu');
  const finaAmount=finaMenu.locator(':scope > strong');
