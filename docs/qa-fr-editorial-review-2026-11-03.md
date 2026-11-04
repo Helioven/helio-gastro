@@ -326,3 +326,17 @@ Se han abierto las páginas de los **establecimientos concretos** y se han contr
 **Resultado del triaje:** el FAIL anterior de escritorio por espera de cierre de `#map-dialog` queda resuelto según la ejecución comunicada. El script aísla los idiomas entre sí, verifica Escape desde el botón del diálogo padre y espera la limpieza del iframe. La observación relativa a Escape cuando el foco está **dentro del iframe externo de Google Maps** queda fuera de ese alcance y no se declara probada.
 
 **Estado:** incidencia técnica de la suite **CERRADA — PASS comunicado**; no constituye auditoría WCAG, prueba con lector de pantalla, aprobación editorial integral ni permiso de publicación del francés. `main`, aplicación, estilos, traducciones y cartas se mantienen sin cambios.
+
+
+## Revisión editorial conservadora con fuentes disponibles — 04/11/2026
+
+**Comprobación ejecutada:** inspección de la carta pública española `https://www.morilesribera.com/nuestra-cocina`, la inglesa `https://www.morilesribera.com/our-kitchen`, la navegación de Casa Fina `https://morilescasafina.com/nuestra-cocina/`, el mapa de rótulos de `i18n.js` y la descripción de Manolete en `translations/fr/batch-003-la-montillana.json`. **Limitación:** las imágenes de las cartas oficiales no han podido recuperarse para leer sus productos; no se verifican platos concretos ni precios.
+
+| Cuestión | Evidencia del origen | Decisión |
+|---|---|---|
+| Moriles Ribera, `ibéricos` → `charcuteries ibériques` | La web ES identifica imagen `MR 003 (Ibericos-Revueltos-Risottos-Pastas)`, y la web EN imagen `MR 031 (Ibericos) EN`. | **Pendiente**: «charcuteries» podría ser demasiado estrecho para toda la sección; no cambiar sin cotejar la imagen. «Produits ibériques» sería una alternativa neutra por evaluar, no una corrección aprobada. |
+| Moriles Ribera, `revueltos` → `œufs brouillés garnis` | La página EN mantiene `MR 032 (Revueltos) EN` como categoría distinta. | Comprensible, pero verificar platos antes de afirmar que `garnis` es semánticamente exacto. **No hay defecto probado**. |
+| Moriles Casa Fina, `Cafés y chocolates` → `Cafés et chocolats` | Título confirmado en navegación oficial; el documento QA previo recoge traducción inglesa `Coffee and hot chocolate`, no verificación actual del contenido original. | **Pendiente**: `Cafés et chocolats chauds` únicamente si la carta confirma que se trata de bebidas calientes. |
+| La Montillana, Manolete | Lote FR 003, sección 5/entrada 1: `Pâtisserie Manolete fourrée au cabello de ángel (confiture sucrée de courge), accompagnée d’une soupe froide sucrée au vinaigre de Pedro Ximénez.` | Se conservan nombre tradicional e ingrediente explicado; falta valoración de naturalidad por francófono. **Sin defecto confirmado**. |
+
+**Resultado:** cuatro decisiones editoriales documentadas; **cero errores lingüísticos confirmados**, ninguna traducción modificada ni nuevo PASS técnico atribuido a esta revisión. Los siguientes pasos son leer el detalle gráfico oficial, cotejar los productos de cada sede, acordar los cambios editoriales necesarios y probar ES/EN/FR solo si se modifica algo. No reproducir fotografías de terceros en la aplicación sin licencia. No se alteran `main`, CSS, catálogo, recetas, precios, fuentes o lotes FR; francés aún restringido a `?qa_fr=1`.
