@@ -509,3 +509,41 @@ Se han abierto las páginas de los **establecimientos concretos** y se han contr
 **Formatos:** se contrastaron los `prices[].label` reales, incluidos `Ración`, `Media ración`, `Tapa` y excepcionalmente `Precio por kg` en `7:12`. Las traducciones FR de los lotes son descripciones, no equivalencias nuevas de tamaño o importe. No alterar su significado ni extrapolar cantidades.
 
 **Decisión / alcance:** registro documental únicamente. **Sin edición de candidatos FR ni `data/places.json`; sin pruebas CI nuevas.** Francés bajo `?qa_fr=1`, sin autorización para publicación o fusión; `main` no se toca. Siguiente tarea editorial: evaluar primero ortografía `6:25` y significado `7:11`; modificar solo con autorización y realizar regresión ES/EN/FR tras cualquier cambio. Continuar después con lotes Moriles Ribera siguientes que existan.
+
+
+## PASS comunicado y revisión Moriles Ribera, lotes 100–101 — 04/11/2026
+
+**PASS comunicado:** Helio confirma nuevo PASS del tramo previo (lotes 098–099). Es confirmación del responsable, sin convertir los 24 candidatos de ese tramo en traducciones aprobadas ni atribuir al presente control una ejecución CI.
+
+**Método y fuentes:** lectura de `translations/fr/batch-100-moriles-ribera.json` (12 entradas, `7:16–7:27`) y `batch-101-moriles-ribera.json` (12 entradas, `7:28`, `8:0–8:4`, `9:0–9:5`). Contraste individual por índice con los campos `name`, `es`, `en` y formatos de `data/places.json`, ficha exacta `moriles-ribera` de la rama QA, blob `0ffd3de396986d99125752cde7b4c2c52a20b31e`. **24/24 examinadas; acumulado documental 090–101: 144 entradas.** No se verificó la carta gráfica oficial, la vigencia ni precios actuales.
+
+| Índice | Plato | Resultado del cotejo |
+|---|---|---|
+| `7:16` | Abanico Ibérico | `Morceau « abanico » de porc ibérique`: corte tradicional y especie conservados. |
+| `7:17` | Churrasco Ibérico a las dos salsas | `Churrasco de porc ibérique accompagné de deux sauces`: conserva las **dos salsas**; no infiere cuáles son. |
+| `7:18` | Lagarto Ibérico | Conserva `lagarto` como denominación de corte, evitando interpretarlo como reptil. |
+| `7:19` | Pluma Ibérica | Conserva `pluma` y cerdo ibérico. |
+| `7:20` | Presa Ibérica | Conserva `presa` y cerdo ibérico. |
+| `7:21` | Secreto Ibérico | Conserva `secreto` y cerdo ibérico. |
+| `7:22` | Parrillada Ibérica | Selección de cortes de cerdo ibérico y salchichas/embutidos mencionados en EN; mantiene **dos personas**. No extrapolar equivalencia de tamaño con otros platos. |
+| `7:23` | Tomahawk Ibérico (270 g aprox.) | Mantiene tomahawk, cerdo ibérico y **270 g aproximados**, sin alterar cantidad. |
+| `7:24` | Solomillo Ibérico a la Pimienta | Conserva solomillo ibérico y salsa a la pimienta. |
+| `7:25` | Solomillo Ibérico al Pedro Ximénez | Conserva solomillo ibérico y Pedro Ximénez; `sauce au vin` procede del descriptivo EN. |
+| `7:26` | Solomillo Ibérico con Queso Azul del Valle de los Pedroches | Conserva carne, queso azul y Los Pedroches. |
+| `7:27` | Magret de Pato Mulard con salsa de naranja de Palma del Río | Conserva magret, pato mulard, naranja y Palma del Río. |
+| `7:28` | Hamburguesa Moriles | Conserva vaca retinta, jamón ibérico, queso de oveja, patatas gajo y pimientos del Padrón. `jambon ibérique` es coherente, sin especificar tipo de curación no descrito en ES. |
+| `8:0` | Rabo de toro | `Rabo de toro, queue de taureau traditionnelle`: respeta literalmente nombre español; `queue de bœuf` sería habitual en gastronomía francesa, pero podría borrar literalidad de `toro`. **Preferencia terminológica pendiente**, no error demostrado con ES/EN. |
+| `8:1` | Carrillada Ibérica a la miel de caña | `Joues de porc ibérique au sirop de canne`: carne y miel de caña preservadas de forma descriptiva. |
+| `8:2` | Callos con Manitas y Garbanzos | `Tripes avec pieds de porc et pois chiches`: los tres componentes registrados se preservan. |
+| `8:3` | Ternera en salsa | `Veau en sauce`: coincide con ES/EN sin inventar ingredientes de la salsa. |
+| `8:4` | Lomo con Tomate | `Longe de porc à la tomate`: mantiene corte y tomate. |
+| `9:0` | Flamenquín de york con patatas fritas | `Flamenquín au jambon cuit avec frites`: conserva nombre, jamón cocido y patatas fritas. |
+| `9:1` | San Jacobo con patatas fritas | `San Jacobo pané au jambon et au fromage avec frites`: conserva denominación y preparación conforme a EN. |
+| `9:2` | Huevos (dos) con patatas fritas | `Deux œufs avec frites`: **dos** huevos conservados. |
+| `9:3` | Mini hamburguesas (dos) de pollo con patatas fritas | `Deux mini burgers de poulet avec frites`: **dos** miniburgers de pollo conservados. |
+| `9:4` | Nuggets de pollo con patatas fritas | `Nuggets de poulet avec frites`: componentes conservados. |
+| `9:5` | Pechuga de pollo empanada con patatas fritas | `Blanc de poulet pané avec frites`: corte, empanado y acompañamiento conservados. |
+
+**Balance:** sin omisiones demostradas de ingredientes principales, números o formatos entre ES/EN/FR; una observación editorial no concluyente sobre `8:0` (`queue de taureau` frente al uso gastronómico `queue de bœuf`). Los formatos `Ración`, `Media ración` y `Tapa` del catálogo se mantienen como datos de origen; ninguno de estos JSON FR introduce precios nuevos ni conversiones. Estas observaciones **no son aprobación editorial de los textos ni verificación frente a fuentes originales externas**.
+
+**Estado y límites:** registro documental únicamente; traducciones `candidate_awaiting_semantic_review`. No cambiar lotes FR, `data/places.json`, `i18n.js`, HTML, JS ni CSS; sin CI nuevo por esta revisión. Francés limitado a `?qa_fr=1` y no autorizado para publicar. Rama `main` intacta. Continuar con los siguientes lotes reales de Moriles Ribera; resolver cambios editoriales solo tras decisión expresa y regresión ES/EN/FR.
