@@ -469,3 +469,43 @@ Se han abierto las páginas de los **establecimientos concretos** y se han contr
 **Estado:** registro exclusivamente documental, **sin autorización de cambios editoriales**. No se modifican `data/places.json`, los lotes FR, `i18n.js`, la aplicación ni CSS. **No se ha ejecutado CI nuevo** por este control. Los PASS técnicos previos constan como comunicados por Helio y no como aprobación semántica. Francés limitado a `?qa_fr=1`, no publicable; `main` permanece intacta.
 
 **Próximo control:** decidir editorialmente si se acepta la propuesta mínima de `6:15` y si merece la pena refinar las otras observaciones; solo tras aprobación modificar en la rama QA, contrastar ES/EN/FR y probar regresión.
+
+
+## PASS comunicado y revisión documental de Moriles Ribera, lotes 098–099 — 04/11/2026
+
+**PASS comunicado por Helio:** confirmación del tramo anterior (lotes 096–097) y de las comprobaciones existentes. Se registra como confirmación del responsable; **no** como aprobación editorial de los candidatos ni como ejecución de una nueva prueba CI para este tramo.
+
+**Fuentes y alcance:** cotejo directo de las 12 entradas de `translations/fr/batch-098-moriles-ribera.json` (`6:18–6:25`, `7:0–7:3`) y 12 entradas de `batch-099-moriles-ribera.json` (`7:4–7:15`) con `name`, `es`, `en` y `prices[].label` de la ficha `moriles-ribera` en `data/places.json`, mismo blob de la rama QA `0ffd3de396986d99125752cde7b4c2c52a20b31e`. **24/24 descripciones revisadas**; acumulado documental de Moriles Ribera lotes 090–099: **120 entradas**. Revisión del catálogo, **no** inspección de cartas gráficas externas ni validación de vigencia/precios.
+
+| Índice | Plato | Contraste documental ES / EN / FR |
+|---|---|---|
+| `6:18` | Gamba blanca de Huelva cocida | `Crevettes blanches de Huelva bouillies`: conserva procedencia y cocción. |
+| `6:19` | Almejas a la marinera | `Palourdes en sauce marinière`: equivalente descriptivo razonable. |
+| `6:20` | Coquinas de la Isla Cristina | `Coquinas de Isla Cristina`: mantiene denominación tradicional y origen, aunque sin explicación francesa del molusco; **posible mejora de comprensión**, no defecto demostrado. |
+| `6:21` | Taco de Bacalao con Pisto | `Pavé de morue salée avec pisto de légumes`: conserva pescado y pisto; salazón explícita procede de EN, no consta explícitamente en ES. |
+| `6:22` | Taco de Bacalao en salsa de Gambas | `Pavé de morue salée en sauce aux crevettes`: conserva ingredientes; misma reserva sobre salazón. |
+| `6:23` | Pata de Pulpo a la brasa | `Tentacule de poulpe grillé`: conserva tentáculo y cocción general; `grillé` menos preciso que `a la brasa` / `chargrilled`. |
+| `6:24` | Pulpo Feira a la Gallega | `Poulpe à la galicienne, pulpo a feira`: preserva estilo y nombre tradicional. |
+| `6:25` | Salmón plancha a la naranja con patatitas y zanahoria baby | `Saumon grillé a l’orange avec petites pommes de terre et jeunes carottes`: ingredientes principales presentes; **error ortográfico verificable** `a l’orange` por `à l’orange`; `grillé` menos específico que ES `plancha` / EN `griddled`. |
+| `7:0` | Chorizo al vino | `Chorizo au vin`: ingredientes principales preservados; no atribuir variedad de vino. |
+| `7:1` | Chorizo criollo a la brasa | `Chorizo criollo grillé`: preserva origen nominal y cocción general, pero no explicita brasa. |
+| `7:2` | Chorizo frito | `Chorizo frit`: equivalente correcto. |
+| `7:3` | Cochifrito cordobés confitado | `Cochifrito cordobés confit, spécialité traditionnelle`: conserva `cochifrito`, origen y confitado del ES; no añadir técnica de cocción nueva. |
+| `7:4` | Flamenquín de Jamón Serrano | `Flamenquín au jambon serrano`: mantiene nombre tradicional e ingrediente. |
+| `7:5` | Flamenquín de Jamón Ibérico y Queso puro de Oveja | `Flamenquín au jambon ibérique et au fromage pur brebis`: preserva principales ingredientes; se repite el giro poco idiomático `fromage pur brebis` documentado en lotes previos. Candidato: `fromage au lait de brebis`, sin autorización. |
+| `7:6` | Brocheta de Solomillo Ibérico | `Brochette de filet mignon de porc ibérique avec cèpes, champignons de Paris et fromage bleu`: preserva componentes explícitos del EN; `cèpes` puede estrechar `boletus`, pendiente de confirmar tipo de hongo. |
+| `7:7` | Mollejas de Cordero lechal a la brasa | `Ris d’agneau de lait grillés à la braise`: víscera, animal y brasa preservados. |
+| `7:8` | Riñones de Cordero lechal a la brasa | `Rognons d’agneau de lait grillés à la braise`: órganos, animal y brasa preservados. |
+| `7:9` | Codillo asado | `Jarret de porc rôti`: conserva corte y asado. |
+| `7:10` | Chuletitas de cordero lechal | `Côtelettes d’agneau de lait`: conserva corte y animal. |
+| `7:11` | Entrecot de vaca vieja | `Entrecôte de bœuf maturé`: **discrepancia semántica candidata**: `maturé` suele describir maduración de carne, mientras que `vaca vieja` describe la edad del animal; EN `mature beef` también es ambiguo. No corregir sin decidir cómo preservar el dato original. |
+| `7:12` | Chuletón de vaca vieja Frisona | La descripción FR `Prix publié au kilogramme et non à la portion` coincide con la **descripción** ES/EN y el formato real `Precio por kg`. El nombre del plato se conserva en el campo `name` del catálogo; no interpretar la descripción como traducción íntegra del nombre. |
+| `7:13` | Solomillo de vaca Simmental | `Filet de bœuf de race Simmental`: respeta corte y raza. |
+| `7:14` | Churrasco de Pollo a la Brasa con ajitos y patatas panaderas | `Poulet grillé à la braise avec ail et pommes de terre en rondelles`: conserva pollo, brasa, ajo y patatas; describe el corte pero no todo el sentido culinario de `patatas panaderas`, también simplificado en EN. **Mejora cultural/terminológica candidata**. |
+| `7:15` | Lomo Ibérico de orza | `Longe de porc ibérique préparée traditionnellement en orza`: conserva carne ibérica y denominación tradicional `orza` sin presumir ingredientes. |
+
+**Balance y distinción de estados:** 1 defecto ortográfico demostrable frente al francés escrito (`6:25` `a` por `à`); 1 discrepancia semántica candidata de mayor relevancia (`7:11` vaca vieja ≠ necesariamente carne madurada); alternativas editoriales menores en `6:20`, `6:23`, `6:25` (plancha), `7:1`, `7:5`, `7:6`, `7:14`. Ninguna omisión manifiesta de ingrediente principal detectada contra ES/EN del catálogo. No se declara error de fuente original ni validación lingüística nativa.
+
+**Formatos:** se contrastaron los `prices[].label` reales, incluidos `Ración`, `Media ración`, `Tapa` y excepcionalmente `Precio por kg` en `7:12`. Las traducciones FR de los lotes son descripciones, no equivalencias nuevas de tamaño o importe. No alterar su significado ni extrapolar cantidades.
+
+**Decisión / alcance:** registro documental únicamente. **Sin edición de candidatos FR ni `data/places.json`; sin pruebas CI nuevas.** Francés bajo `?qa_fr=1`, sin autorización para publicación o fusión; `main` no se toca. Siguiente tarea editorial: evaluar primero ortografía `6:25` y significado `7:11`; modificar solo con autorización y realizar regresión ES/EN/FR tras cualquier cambio. Continuar después con lotes Moriles Ribera siguientes que existan.
