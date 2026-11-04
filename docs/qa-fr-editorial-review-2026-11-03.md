@@ -547,3 +547,41 @@ Se han abierto las páginas de los **establecimientos concretos** y se han contr
 **Balance:** sin omisiones demostradas de ingredientes principales, números o formatos entre ES/EN/FR; una observación editorial no concluyente sobre `8:0` (`queue de taureau` frente al uso gastronómico `queue de bœuf`). Los formatos `Ración`, `Media ración` y `Tapa` del catálogo se mantienen como datos de origen; ninguno de estos JSON FR introduce precios nuevos ni conversiones. Estas observaciones **no son aprobación editorial de los textos ni verificación frente a fuentes originales externas**.
 
 **Estado y límites:** registro documental únicamente; traducciones `candidate_awaiting_semantic_review`. No cambiar lotes FR, `data/places.json`, `i18n.js`, HTML, JS ni CSS; sin CI nuevo por esta revisión. Francés limitado a `?qa_fr=1` y no autorizado para publicar. Rama `main` intacta. Continuar con los siguientes lotes reales de Moriles Ribera; resolver cambios editoriales solo tras decisión expresa y regresión ES/EN/FR.
+
+
+## PASS comunicado y cotejo documental Moriles Ribera, lotes 102–103 — 04/11/2026
+
+**PASS precedente:** Helio comunica un nuevo PASS después del bloque 100–101. Se registra como **confirmación del responsable**, no como aprobación de sus traducciones ni como un nuevo CI ejecutado para este lote documental.
+
+**Evidencias y método:** lectura de `translations/fr/batch-102-moriles-ribera.json` (12 entradas: `9:6`, `10:0–10:1`, `11:0–11:8`) y `batch-103-moriles-ribera.json` (12 entradas: `11:9–11:20`), cotejadas por índice con el catálogo `data/places.json` de la misma rama, blob `0ffd3de396986d99125752cde7b4c2c52a20b31e`. Comprobados `name`, `es`, `en` y `prices[].label` de cada entrada. **24/24 contrastadas; total documental Moriles Ribera lotes 090–103: 168 entradas.** No se han consultado las imágenes de la carta original ni revalidado precios actuales, ingredientes externos o posibles alérgenos.
+
+| Índice | Plato | Resultado del contraste |
+|---|---|---|
+| `9:6` | Pechuga de pollo plancha con patatas fritas | FR `Blanc de poulet à la plancha avec frites`: conserva corte, técnica y acompañamiento. |
+| `10:0` | Plato Moriles | FR conserva lomo conservado, jamón serrano, chorizo, morcilla y patatas según EN. `longe de porc conservée` puede sonar poco natural, pero evita inventar técnica de conservación. |
+| `10:1` | Plato Ribera | FR conserva flamenquín, berenjenas fritas, huevos y patatas; sin detalles nuevos de preparación. |
+| `11:0` | Flan con helado de vainilla | FR conserva flan y helado de vainilla. |
+| `11:1` | Gachas con pasas y nueces | FR conserva nombre tradicional, carácter dulce según EN, pasas y nueces. |
+| `11:2` | Naranja estilo Moriles | FR conserva naranja y estilo Moriles; no infiere ingredientes adicionales. |
+| `11:3` | Natillas con su galleta María | FR `Crème dessert espagnole avec biscuit María` preserva postre y galleta, aunque podría mantener también `natillas` como nombre cultural. Preferencia editorial. |
+| `11:4` | Pastel Cordobés con helado de vainilla | FR conserva `Pastel cordobés` y helado de vainilla sin inventar relleno. |
+| `11:5` | Tarta de queso del Moriles con membrillo | FR conserva queso, Moriles y membrillo como pasta. |
+| `11:6` | Tocino de cielo con helado de turrón | FR conserva `Tocino de cielo`, yemas según EN y helado de turrón. |
+| `11:7` | Torrija de crema con helado de vainilla | FR conserva `Torrija`, crema según EN y helado. |
+| `11:8` | Arco de la Mezquita | FR conserva mousse de vainilla, arco de frambuesa y cobertura de chocolate como ES/EN; el nombre comercial permanece en `name` del catálogo. |
+| `11:9` | Pastel de Caramelo a la Flor de Sal | FR `fleur de sel` **sí está respaldado literalmente por ES** y es correcto aquí (distinto de la discrepancia `sal de escamas` en `6:15` de lote 097). |
+| `11:10` | Coulant de chocolate con helado de vainilla | FR conserva pastel de chocolate tipo fondant y helado de vainilla. |
+| `11:11` | Tres chocolates | FR conserva tres chocolates. |
+| `11:12` | Iglú de Ferrero | FR `Dessert glacé façon Ferrero` conserva helado y marca/estilo, pero **no expresa la forma o denominación «iglú»**; EN también omite esta noción. Candidato de identidad de plato, no omisión de ingrediente. |
+| `11:13` | Tarta de chocolate (sin gluten y sin lactosa) | FR `Gâteau au chocolat indiqué sans gluten et sans lactose` conserva ambas indicaciones como **declaraciones de la carta**, no certificación analítica o recomendación sobre alérgenos. |
+| `11:14` | Tarta Selva Negra | FR `Gâteau Forêt-Noire` preserva denominación habitual. |
+| `11:15` | Tarta de Tiramisú | FR `Gâteau au tiramisu` conserva categoría y sabor. |
+| `11:16` | Tarta de Mousse de Chocolate | FR conserva tarta y mousse de chocolate. |
+| `11:17` | Tarta Cremosa de Pistacho | FR conserva tarta, cremosidad y pistacho. |
+| `11:18` | Tulipa de muerte por chocolate | FR preserva chocolate y recipiente en forma de tulipa, pero **no traslada el nombre expresivo «muerte por chocolate»**; EN también lo generaliza. Candidato de identidad gastronómica. |
+| `11:19` | Tulipa helada de turrón | FR conserva helado de turrón y copa en forma de tulipa según EN. |
+| `11:20` | Tulipa helada de vainilla de Tahití con nueces de macadamia | FR conserva vainilla de Tahití y macadamia, pero **omite el formato/presentación «tulipa»** del nombre ES; EN también lo omite. Candidato de descripción incompleta, no defecto de formato de precio. |
+
+**Balance:** no se aprecia ingrediente principal inventado u omitido frente a la información registrada. Tres candidatos de conservación de identidad/presentación de postres `11:12`, `11:18`, `11:20`, compartidos en diversa medida con EN; observaciones leves de terminología en `11:3` y `10:0`. **No son errores externos demostrados ni decisiones de corrección.** Los formatos de catálogo son `Ración` para `9:6` y `10:0–10:1`, y `Unidad` para los postres `11:0–11:20`. La forma de tulipa del nombre no cambia el formato de precio `Unidad` del catálogo.
+
+**Decisión:** informe documental únicamente. No hay cambios en lotes FR, ES/EN, `data/places.json`, código ni CSS; **sin nuevo CI** en este control. Los candidatos siguen `candidate_awaiting_semantic_review`; francés experimental bajo `?qa_fr=1`, sin autorización de publicación. `main` intacta. Continuar con los siguientes lotes reales y evaluar ajustes editoriales solo tras consentimiento, seguida de regresión ES/EN/FR.
