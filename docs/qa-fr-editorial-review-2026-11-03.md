@@ -209,3 +209,20 @@ Los siete scripts usan captura de página completa (`fullPage: true`); las anchu
 Helio confirma **PASS de las comprobaciones ejecutadas, con cero fallos reportados**, para el nuevo bloque de inventario exploratorio visual/accesibilidad ES/EN/FR (tres fichas × tres idiomas × dos perfiles, 18 combinaciones) integrado en `visual-qa`.
 
 **Estado:** PASS técnico **comunicado por el responsable**; esta anotación no implica que el asistente haya inspeccionado independientemente el archivo JSON, las 18 capturas o los logs de GitHub Actions. «Cero fallos» corresponde a la confirmación recibida y no se convierte automáticamente en «cero candidatos heurísticos» si no se ha contrastado el informe de triaje. La revisión humana exhaustiva, las pruebas de lector de pantalla, la aprobación editorial/lingüística y la publicación del francés siguen pendientes. Sin cambios de interfaz, CSS, catálogos ni `main`.
+
+
+## Triaje editorial dirigido — 04/11/2026 (fuentes FR)
+
+**Alcance y método:** inspección estática del mapa real de etiquetas de fuentes en `i18n.js`, sin alterar el catálogo ni presumir una validación de las cartas externas. Se conservan las conclusiones preliminares anteriores; este apartado concreta tres candidatos. La confirmación adicional de PASS comunicada por Helio en esta sesión no especifica nuevas muestras lingüísticas aprobadas y **no se usa para cerrar estos candidatos**.
+
+| Establecimiento / expresión española | FR actual comprobado en `i18n.js` | Valoración | Estado |
+|---|---|---|---|
+| Moriles Ribera: `ibéricos` (fuente de febrero 2026) | `charcuteries ibériques` | Traducción plausible para charcutería, pero quizá más estrecha que una sección con platos ibéricos más amplios. Requiere leer la fuente original antes de concretar. | Revisión editorial pendiente, no defecto confirmado |
+| Moriles Ribera: `revueltos` (fuente de febrero 2026) | `œufs brouillés garnis` | Se entiende como huevos revueltos acompañados; validar si ese descriptor refleja los revueltos concretos de la carta. No cambiar automáticamente los nombres de platos. | Revisión editorial pendiente, no defecto confirmado |
+| Moriles Casa Fina: `Cafés y chocolates` | `Cafés et chocolats` | `chocolats` es ambiguo en francés (bebida frente a bombones). `Cafés et chocolats chauds` sería una opción **solo si** la fuente designa bebidas calientes. | Propuesta condicionada a contraste de la fuente |
+
+**Comprobación efectuada:** las tres parejas ES/FR aparecen efectivamente en el mapa de fuentes de la rama QA; no son cadenas inferidas. **No realizado:** lectura de las cartas externas, validación nativa por francófono, examen visual específico de estas etiquetas o ejecución Playwright nueva. La revisión debe mantener denominaciones tradicionales, atribución y fechas.
+
+**Decisión:** ningún cambio en `i18n.js` hasta resolver cada ambigüedad con evidencia documental y criterio editorial. El siguiente lote debe cotejar estas tres expresiones con sus páginas de fuente registradas y valorar si la traducción existente se conserva o se ajusta con regresión ES/EN/FR.
+
+**Integridad:** registro documental solamente; no se cambia `main`, `data/places.json`, precios, ingredientes, formatos, CSS ni los lotes FR. El francés continúa limitado a `?qa_fr=1`.
