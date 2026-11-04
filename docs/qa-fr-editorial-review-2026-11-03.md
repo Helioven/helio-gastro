@@ -685,3 +685,21 @@ Se han abierto las páginas de los **establecimientos concretos** y se han contr
 **Estado al cierre del inventario:** revisión documental ES/EN/FR **terminada para las 214 entradas del catálogo Moriles Ribera**, con observaciones editoriales **abiertas**. Traducciones siguen `candidate_awaiting_semantic_review`; no se han modificado archivos de traducciones, nombres, ingredientes, precios, formatos, `data/places.json`, aplicación, CSS ni `main`. No se ha ejecutado un CI nuevo por esta documentación. Francés solo disponible experimentalmente bajo `?qa_fr=1` y **no autorizado para publicación**.
 
 **Siguiente decisión:** aprobar o descartar explícitamente las correcciones editoriales mínimas con evidencia ES/EN y, donde haga falta, carta oficial; después aplicar ajustes solo en la rama QA y ejecutar regresión ES/EN/FR. Alternativamente, continuar la revisión humana de otro establecimiento sin declarar cerrado el criterio editorial de Moriles Ribera.
+
+
+## PASS comunicado y preparación de decisiones editoriales — Moriles Ribera — 04/11/2026
+
+**Confirmación del responsable:** Helio comunica otro PASS tras el cierre del inventario documental de los 214 platos de Moriles Ribera (lotes 090–107). Se registra como **PASS comunicado**, no como inspección directa de CI ni autorización para editar traducciones; el 100 % de cobertura documental sigue sin equivaler a aprobación lingüística.
+
+**Reverificación de fuentes internas:** consulta del README, este informe y de los lotes FR reales `batch-092`, `batch-097`, `batch-098` y `batch-099` de la rama `feature/fr-integration-qa-20261027`. Las observaciones siguientes ya estaban registradas y aquí se consolidan como decisiones propuestas, no como defectos técnicos nuevos ni cambios implementados.
+
+| Índice / archivo | Valor actual comprobado | Evaluación y propuesta *no aprobada* | Dependencia |
+|---|---|---|---|
+| `6:25` / `batch-098` | `Saumon grillé a l’orange avec petites pommes de terre et jeunes carottes.` | Error ortográfico francés confirmado: preposición `à` requiere acento. Ajuste mínimo sugerido: cambiar únicamente `a l’orange` → `à l’orange`. La equivalencia `grillé` frente a `plancha` es cuestión independiente. | Autorización editorial, prueba FR y regresión ES/EN/FR |
+| `2:3` / `batch-092` | `Caña de lomo ibérique de bellota (longe de porc séchée, issu de porcs nourris aux glands).` | Construcción con concordancia/referente poco clara entre `longe ... séchée` y `issu de porcs`; candidata a reestructurar sin perder `caña de lomo`, `bellota` ni alimentación de bellotas. No cambiar el método de curado sin fuente externa. | Redacción francesa revisada y aprobación |
+| `6:15` / `batch-097` | `Filet de thon saisi rapidement, avec fleur de sel.` | `fleur de sel` es una variedad más específica que ES `sal de escamas` / EN `flaky salt`. Candidata: `Filet de thon saisi rapidement, avec du sel en flocons.` (preservar atún y vuelta y vuelta). **No afecta** al postre `11:9` cuya `flor de sal` sí está en ES. | Decisión editorial de precisión |
+| `7:11` / `batch-099` | `Entrecôte de bœuf maturé.` | `vaca vieja` designa edad del animal; `bœuf maturé` puede transmitir maduración del producto. **No hay reemplazo aprobado**; verificar fuente y elegir formulación que no presuma maduración. | Contraste de origen y elección terminológica |
+
+**Orden de decisión sugerido:** (1) aprobar o rechazar corrección ortográfica inequívoca `6:25`; (2) aprobar redacción gramatical `2:3` y precisión `6:15`; (3) resolver `7:11` tras contrastar la terminología del producto; (4) abordar, en otro control, naturalidad, nombres regionales y descripciones de postres sin mezclarlos con errores demostrables. No alterar automáticamente el inglés ni el español: cotejar ambos cada vez que cambie FR.
+
+**Estado:** **propuestas documentadas, cero modificaciones editoriales autorizadas o ejecutadas, cero nuevas pruebas CI ejecutadas por este análisis**. Los JSON conservan `candidate_awaiting_semantic_review`, francés solo con `?qa_fr=1` y publicación no autorizada. `main` permanece intacta. Antes de editar cualquier candidato pedir decisión expresa del responsable y después realizar regresión y confirmar CI.
