@@ -761,3 +761,19 @@ Se han cotejado las cinco ocurrencias de `fromage pur brebis` en Moriles Ribera,
 **Propuesta no autorizada:** `fromage au lait de brebis` ofrece una construcción francesa natural y es coherente con EN, pero no expresa literalmente `puro`. Confirmar antes si se desea preservar expresamente ese matiz; no atribuir composiciones adicionales al producto. Formatos originales sin cambios: `0:2` ración/media; `2:4` ración/media; `2:5` ración; `2:7` ración/media/tapa; `7:5` ración.
 
 El índice `7:11`, `Entrecôte de bœuf maturé`, permanece sin autorización y sin cambios. Esta actuación es solo documental; no cambia textos FR, ES/EN, datos, precios ni interfaz; no ejecuta CI. Francés sigue experimental bajo `?qa_fr=1`, no publicado, y `main` intacta.
+
+
+## Revisión de pimientos, salsa rosa y croquetas de boletus — 04/11/2026
+
+**Alcance:** continuación de la revisión editorial tras cierre documental de Moriles Ribera. Se revisaron los candidatos FR reales `batch-090-moriles-ribera.json` y `batch-091-moriles-ribera.json`, cotejando las cuatro entradas señaladas con `name`, `es`, `en` y formatos del registro `moriles-ribera` de `data/places.json` de la rama QA, blob `0ffd3de396986d99125752cde7b4c2c52a20b31e`.
+
+| Índice | Original y comparativa | Observación y propuesta, sin autorización |
+|---|---|---|
+| `0:3` / lote 090 | ES `Pimientos rojos y verdes asados con ventresca`; EN `Roasted red and green peppers with tuna belly`; FR `Poivrons rouges et verts grillés accompagnés de ventrèche de thon.` | `grillés` no distingue con la misma claridad el asado documentado frente al grill. **Candidata:** `Poivrons rouges et verts rôtis accompagnés de ventrèche de thon.` No afirmar técnica exacta de horno sin carta original. |
+| `0:5` / lote 090 | ES `Anchoas, espárragos blancos, palmitos, piña, tomate rosa, maíz y salsa rosa`; EN `Anchovies, white asparagus, hearts of palm, pineapple, pink tomato, sweetcorn and pink dressing`; FR `Anchois, asperges blanches, cœurs de palmier, ananas, tomate rose, maïs doux et sauce cocktail.` | `sauce cocktail` puede designar una receta más concreta que la `salsa rosa` del origen. **Candidata:** sustituir únicamente por `sauce rose` para no atribuir ingredientes no identificados. Comprobar naturalidad francesa. |
+| `1:1` / lote 091 | ES `Croquetas de Boletus`; EN `Boletus mushroom croquettes.`; FR `Croquettes aux cèpes (boletus).` | `cèpes` puede restringir el término amplio `boletus` sin respaldo explícito de la fuente. **Candidata:** `Croquettes aux boletus.` o mantener `boletus` como denominación del ingrediente; no asignar especie fúngica sin fuente. |
+| `1:4` / lote 091 | ES `Croquetas de Rabo de Toro`; EN `Oxtail croquettes.`; FR `Croquettes à la queue de taureau.` | Conserva literalmente el nombre tradicional ES; no hay discrepancia demostrada. Sin corrección propuesta. |
+
+**Formatos:** estas cuatro entradas tienen `Ración` y `Media ración` en el catálogo. Los JSON FR son textos descriptivos sin precios nuevos. **Resultado:** cuatro entradas contrastadas; tres candidatos editoriales y una coherencia confirmada contra ES/EN, sin acreditación visual de carta oficial. No hay modificaciones implementadas, ni CI nuevo ejecutado, ni autorización de publicación. La entrada `7:11` (`vaca vieja`) y las cinco entradas `fromage pur brebis` permanecen sin cambio, a la espera de decisión explícita.
+
+**Estado de control:** revisión documental hecha, correcciones propuestas y pendientes de autorización. Francés bajo `?qa_fr=1` y `candidate_awaiting_semantic_review`; `main` intacta.
