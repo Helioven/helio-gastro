@@ -340,3 +340,16 @@ Se han abierto las páginas de los **establecimientos concretos** y se han contr
 | La Montillana, Manolete | Lote FR 003, sección 5/entrada 1: `Pâtisserie Manolete fourrée au cabello de ángel (confiture sucrée de courge), accompagnée d’une soupe froide sucrée au vinaigre de Pedro Ximénez.` | Se conservan nombre tradicional e ingrediente explicado; falta valoración de naturalidad por francófono. **Sin defecto confirmado**. |
 
 **Resultado:** cuatro decisiones editoriales documentadas; **cero errores lingüísticos confirmados**, ninguna traducción modificada ni nuevo PASS técnico atribuido a esta revisión. Los siguientes pasos son leer el detalle gráfico oficial, cotejar los productos de cada sede, acordar los cambios editoriales necesarios y probar ES/EN/FR solo si se modifica algo. No reproducir fotografías de terceros en la aplicación sin licencia. No se alteran `main`, CSS, catálogo, recetas, precios, fuentes o lotes FR; francés aún restringido a `?qa_fr=1`.
+
+
+## PASS comunicado y extracción trilingüe para revisión semántica — 04/11/2026
+
+**PASS del responsable:** Helio confirma **PASS del último bloque de revisión documental conservadora** (Moriles Ribera, Casa Fina y Manolete). Se registra como confirmación del control anterior, **sin transformar** las cuatro cuestiones editoriales pendientes en traducciones aprobadas. No equivale a un examen de los PNG originales ni una aprobación lingüística por un hablante nativo.
+
+**Nuevo control incorporado (aún sin PASS de CI):** `scripts/inventory-fr-moriles-ribera-semantics.mjs` conectado al job `visual-qa` de `.github/workflows/data-qa.yml`.
+
+- Extrae del `state.places` real bajo `?qa_fr=1` las denominaciones y descripciones **ES, EN y FR** de cada entrada de los lotes `translations/fr/batch-*-moriles-ribera.json`, conservando `sectionIndex` e `itemIndex`.
+- Verifica técnicamente que cada entrada tenga los tres textos, corresponda a una posición existente, no se duplique y coincida la traducción francesa del lote con la superposición activa del navegador.
+- Entrega `qa-reports/fr-moriles-ribera-semantic-review.json` como tabla de evidencia con los tres textos y el estado `pending_human_semantic_review` de **cada plato**. Este informe se publicará en el artefacto habitual `fr-visual-qa-desktop-mobile` cuando se ejecute GitHub Actions.
+- **Regla esencial:** PASS del script significaría **alineación estructural de textos**, no que ingredientes, métodos culinarios o términos estén traducidos correctamente. Los casos `ibéricos`/`revueltos` siguen abiertos hasta contrastar el contenido de las cartas originales, igual que `Cafés y chocolates` en Casa Fina.
+- **Estado:** script y CI modificados; **ejecución nueva pendiente de comprobar**. No se han modificado `main`, `app.js`, `i18n.js`, JSON gastronómicos, lotes FR, precios ni estilos. Francés experimental no publicado.
