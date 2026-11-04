@@ -431,3 +431,41 @@ Se han abierto las páginas de los **establecimientos concretos** y se han contr
 **Traspaso:** se añadió al final de `README.md` el bloque «Handoff QA francés — 4 de noviembre de 2026 (estado actualizado)» (commit `693168d`). En él se sintetizan rama exclusiva, pruebas PASS, fallos resueltos, observaciones editoriales pendientes, situación de publicación y próxima tarea. **La siguiente revisión es de `batch-096-moriles-ribera.json` y `batch-097-moriles-ribera.json`**, tomando ES/EN y formatos desde el catálogo real de la misma rama.
 
 **Límites:** el francés sigue solo bajo `?qa_fr=1`; `main` intacta; no se ha aprobado ni modificado ninguna traducción por este traspaso. No confundir automatización estructural con validación editorial o auditoría WCAG.
+
+
+## Revisión trilingüe: Moriles Ribera, lotes 096–097 — 04/11/2026
+
+**Fuentes y método:** revisión documental individual de las 12 entradas de `translations/fr/batch-096-moriles-ribera.json` (índices `5:13–5:18`, `6:0–6:5`) y las 12 de `batch-097-moriles-ribera.json` (`6:6–6:17`), comparando por `sectionIndex:itemIndex` con `name`, `es`, `en` y `prices[].label` de `data/places.json` de esta misma rama, blob `0ffd3de396986d99125752cde7b4c2c52a20b31e`. **24/24 revisadas; acumulado documental 090–097: 96 entradas.** No es inspección de la carta oficial externa ni validación de vigencia de platos o precios. Los lotes continúan marcados `candidate_awaiting_semantic_review`.
+
+| Índice | Plato | Resultado / clasificación |
+|---|---|---|
+| `5:13` | Champiñones con Jamón y Salsa Verde | Conserva ingredientes y salsa; sin discrepancia apreciable. |
+| `5:14` | Parrillada de Verduras con Salsa Romesco | Conserva verduras a la parrilla y romesco. |
+| `5:15` | Parrillada de Verduras con Queso de Cabra Asado | Conserva verduras, queso de cabra y asado. |
+| `5:16` | Pimientos del Padrón | `Piments de Padrón` respeta el nombre de origen. |
+| `5:17` | Pisto Cordobés con Huevo | Conserva pisto y huevo; `aux légumes` explicativo, no error demostrado. |
+| `5:18` | Setas a la plancha con Salsa Verde | `Champignons grillés` resulta menos específico que `a la plancha` / `griddled`; precisión estilística candidata. |
+| `6:0` | Araña | Conserva `araña` sin inventar especie; conforme al prudente EN. |
+| `6:1` | Bacalao Frito | `Morue salée frite` sigue al EN `fried salt cod`; el ES no especifica salazón; sin defecto FR probado. |
+| `6:2` | Soldaditos de Pavía | Conserva nombre cultural y buñuelo de bacalao salado según EN; naturalidad pendiente. |
+| `6:3` | Boquerones Fritos | `Anchois frits` conserva pescado y fritura. |
+| `6:4` | Calamaritos Fritos | `Petits calamars frits` preserva tamaño y fritura. |
+| `6:5` | Chanquetes Cristal con Huevos Fritos y Fritada de Ajitos | Preserva pescado tradicional, huevos fritos y ajo; `ail frit` simplifica `fritada de ajitos`, precisión opcional a evaluar. |
+| `6:6` | Chipirones Fritos | `Petits calamars frits` conserva significado general, pero coincide con la entrada de calamaritos `6:4`; posible pérdida de distinción tradicional. |
+| `6:7` | Choco Frito | `Seiche frite` correcto respecto al catálogo. |
+| `6:8` | Japuta en Adobo | Mantiene `japuta` y marinado, sin atribuir composición del adobo. |
+| `6:9` | Ortiguillas de Chipiona Fritas | Mantiene anémonas, Chipiona y fritura. |
+| `6:10` | Rosada al Limón | Mantiene `rosada` y limón sin inventar especie. |
+| `6:11` | Fritura Variada de Pescaito (2 personas) | Mantiene fritura y **2 personas**; hay ración y media ración en catálogo: no atribuir automáticamente el alcance de dos comensales a ambos formatos. |
+| `6:12` | Calamar a la brasa | `Grillé à la braise` mantiene técnica; leve redundancia estilística. |
+| `6:13` | Mero a la plancha | `Mérou à la plancha` preserva especie y técnica. |
+| `6:14` | Navajas a la plancha | `Couteaux de mer à la plancha` preserva molusco y técnica. |
+| `6:15` | Filete de Atún vuelta y vuelta con sal de escamas | **Discrepancia semántica concreta contra el origen:** FR `fleur de sel` es más específico que ES `sal de escamas` y EN `flaky salt`. Propuesta **no autorizada**: `Filet de thon saisi rapidement, avec du sel en flocons.` |
+| `6:16` | Pez espada a la Cordobesa | Respeta pez espada y preparación regional sin añadir ingredientes. |
+| `6:17` | Gamba blanca de Huelva a la plancha | Preserva especie/variedad, procedencia y plancha. |
+
+**Balance:** una discrepancia de precisión semántica en `6:15` frente al catálogo; cuatro cuestiones no concluyentes de terminología/estilo (`5:18`, `6:5`, `6:6`, `6:12`). Las demás entradas no muestran pérdidas relevantes en el cotejo ES/EN/FR. No equivale a certificación nativa ni a validación frente a imágenes oficiales. Se contrastaron los formatos registrados pero no se alteraron importes, cantidades ni modalidades; los JSON FR de estos lotes solo aportan descripciones.
+
+**Estado:** registro exclusivamente documental, **sin autorización de cambios editoriales**. No se modifican `data/places.json`, los lotes FR, `i18n.js`, la aplicación ni CSS. **No se ha ejecutado CI nuevo** por este control. Los PASS técnicos previos constan como comunicados por Helio y no como aprobación semántica. Francés limitado a `?qa_fr=1`, no publicable; `main` permanece intacta.
+
+**Próximo control:** decidir editorialmente si se acepta la propuesta mínima de `6:15` y si merece la pena refinar las otras observaciones; solo tras aprobación modificar en la rama QA, contrastar ES/EN/FR y probar regresión.
