@@ -202,3 +202,10 @@ Los siete scripts usan captura de página completa (`fullPage: true`); las anchu
 - **Criterio:** un candidato heurístico **no** implica defecto funcional ni incumplimiento WCAG. Verificar visualmente, distinguir contenedores desplazables voluntarios de recortes y documentar la reproducción antes de modificar estilos. La prueba falla si no completa las 18 vistas o si registra errores JS; los candidatos visuales se registran para análisis humano y no bloquean CI automáticamente.
 - **Estado al registrar el cambio:** **prueba añadida y conectada al workflow, ejecución de CI pendiente de verificar**. No se ha realizado revisión manual de las 18 capturas ni pruebas con lector de pantalla. No marcar como superada una auditoría de accesibilidad completa.
 - **Ámbito protegido:** rama `feature/fr-integration-qa-20261027`; sin modificaciones en `main`, `data/places.json`, cartas, precios, traducciones ni CSS. La publicación del francés permanece sin autorizar.
+
+
+### Confirmación del responsable — 04/11/2026
+
+Helio confirma **PASS de las comprobaciones ejecutadas, con cero fallos reportados**, para el nuevo bloque de inventario exploratorio visual/accesibilidad ES/EN/FR (tres fichas × tres idiomas × dos perfiles, 18 combinaciones) integrado en `visual-qa`.
+
+**Estado:** PASS técnico **comunicado por el responsable**; esta anotación no implica que el asistente haya inspeccionado independientemente el archivo JSON, las 18 capturas o los logs de GitHub Actions. «Cero fallos» corresponde a la confirmación recibida y no se convierte automáticamente en «cero candidatos heurísticos» si no se ha contrastado el informe de triaje. La revisión humana exhaustiva, las pruebas de lector de pantalla, la aprobación editorial/lingüística y la publicación del francés siguen pendientes. Sin cambios de interfaz, CSS, catálogos ni `main`.
