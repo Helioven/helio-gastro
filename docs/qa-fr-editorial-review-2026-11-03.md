@@ -258,3 +258,17 @@ Se han abierto las páginas de los **establecimientos concretos** y se han contr
 - **Criterios automatizados:** existen etiquetas y URL de fuentes; se conservan sus pares `data-source-label-es` y `href` en cada transición; los rótulos vuelven a su contenido previo en ES y FR; no hay desbordamiento de documento o ficha por encima de la tolerancia de 2 px ni errores JavaScript. El script guarda `qa-reports/fr-source-venue-triage.json` y capturas de las tres fichas en cada perfil para inspección manual.
 - **Estado de QA:** prueba **implementada/conectada, pendiente de ejecución y comprobación del CI**. Ninguna captura de este lote ha sido inspeccionada visualmente aquí; PASS automatizado futuro no supondrá aprobación editorial ni accesibilidad completa.
 - **Límites protegidos:** sin cambios en CSS, `i18n.js`, fuentes, `data/places.json`, platos, ingredientes, precios, fechas ni rama `main`. El francés continúa experimental bajo `?qa_fr=1`.
+
+
+## Confirmación y siguiente control de teclado — 04/11/2026
+
+**PASS del responsable:** Helio confirma **PASS del lote anterior** `scripts/test-fr-source-venue-triage.mjs` (Moriles Ribera, Moriles Casa Fina y Roldán Centro). Se registra como **PASS comunicado por Helio, sin inspección independiente del artefacto/log de CI en esta anotación**. No implica autorización editorial del francés ni cierre de las tres decisiones semánticas documentadas.
+
+**Siguiente prueba implantada, todavía sin resultado confirmado:** `scripts/test-fr-keyboard-map-dialog.mjs`, incorporada a `.github/workflows/data-qa.yml`.
+
+- **Objeto:** interacción por teclado del diálogo nativo de mapa en la ficha de La Montillana, en español, inglés y francés bajo `?qa_fr=1`.
+- **Perfiles:** escritorio 1365 × 900 e iPhone 13. Total **6 combinaciones** de perfil e idioma.
+- **Pasos automatizados:** enfocar el botón de mapa, activar con **Enter**, verificar apertura y foco dentro del diálogo; pulsar **Tab** tres veces y verificar que el foco permanece dentro; cerrar con **Escape**, comprobar restauración de foco en el botón y retirada del `src` del iframe de mapa al cerrar.
+- **Evidencia prevista:** `qa-reports/fr-keyboard-map-dialog.json` y registro de la suite en `qa-reports/visual-qa-timings.csv`.
+- **Estado actual:** script creado y conectado al workflow, **ejecución y PASS/FAIL pendientes de verificación**. Si falla, conservar pasos y salida antes de corregir; no atribuir automáticamente la causa a CSS o traducción.
+- **Límites:** esta regresión **no** equivale a auditoría WCAG, prueba de lector de pantalla o revisión visual del contenido de la carta. No cambia HTML, CSS, JS de aplicación, datos, traducciones, `main`, ni autoriza despliegue de francés.
