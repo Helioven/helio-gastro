@@ -703,3 +703,20 @@ Se han abierto las páginas de los **establecimientos concretos** y se han contr
 **Orden de decisión sugerido:** (1) aprobar o rechazar corrección ortográfica inequívoca `6:25`; (2) aprobar redacción gramatical `2:3` y precisión `6:15`; (3) resolver `7:11` tras contrastar la terminología del producto; (4) abordar, en otro control, naturalidad, nombres regionales y descripciones de postres sin mezclarlos con errores demostrables. No alterar automáticamente el inglés ni el español: cotejar ambos cada vez que cambie FR.
 
 **Estado:** **propuestas documentadas, cero modificaciones editoriales autorizadas o ejecutadas, cero nuevas pruebas CI ejecutadas por este análisis**. Los JSON conservan `candidate_awaiting_semantic_review`, francés solo con `?qa_fr=1` y publicación no autorizada. `main` permanece intacta. Antes de editar cualquier candidato pedir decisión expresa del responsable y después realizar regresión y confirmar CI.
+
+
+## Aplicación de tres correcciones FR autorizadas — 04/11/2026
+
+**Autorización expresa del responsable:** tras la propuesta documentada en el bloque anterior, Helio autoriza las **tres correcciones puntuales** de Moriles Ribera (acentuación, concordancia de caña de lomo y precisión de sal en escamas). **No** autoriza modificar `7:11` (vaca vieja), aplicar retoques estilísticos adicionales, publicar el francés ni fusionar en `main`.
+
+| Archivo / índice | Antes | Después | Commit |
+|---|---|---|---|
+| `batch-092-moriles-ribera.json` / `2:3` | `Caña de lomo ibérique de bellota (longe de porc séchée, issu de porcs nourris aux glands).` | `Caña de lomo ibérique de bellota (longe de porc séchée provenant de porcs nourris aux glands).` | `0d888cc` |
+| `batch-097-moriles-ribera.json` / `6:15` | `Filet de thon saisi rapidement, avec fleur de sel.` | `Filet de thon saisi rapidement, avec du sel en flocons.` | `a1e7667` |
+| `batch-098-moriles-ribera.json` / `6:25` | `Saumon grillé a l’orange avec petites pommes de terre et jeunes carottes.` | `Saumon grillé à l’orange avec petites pommes de terre et jeunes carottes.` | `99ef0b7` |
+
+**Validación efectivamente realizada:** cada archivo se volvió a leer **desde GitHub, en la rama QA**, después de la escritura. Los tres se pudieron analizar como JSON y se comprobó coincidencia exacta del texto `fr` del índice esperado, 12 entradas por lote y conservación de `meta.status = candidate_awaiting_semantic_review`. En las tres operaciones se sustituyó el `fr` de un único índice conservando las demás entradas en memoria. Se mantienen nombres tradicionales y las distinciones originales: la caña de lomo sigue siendo `de bellota`, el atún continúa `saisi rapidement` con sal en escamas (no `fleur de sel`) y el salmón conserva naranja, patatas y zanahorias. No se cambió `data/places.json`, los textos ES/EN, los precios, los formatos, `i18n.js`, la aplicación o CSS.
+
+**Estado de pruebas:** lectura posterior y comprobaciones estáticas JSON **superadas**; **no** se ha ejecutado ni comprobado aquí un nuevo workflow GitHub Actions, Playwright o regresión visual ES/EN/FR. Su PASS está **pendiente**. El PASS anterior comunicado por Helio no debe atribuirse a estos cambios posteriores.
+
+**Pendiente editorial:** `7:11` (`vaca vieja` frente a `bœuf maturé`) sigue abierto; otras observaciones de naturalidad, denominaciones y posibles discrepancias con la carta original permanecen pendientes. Los lotes siguen siendo candidatos, el francés únicamente experimental bajo `?qa_fr=1` y su publicación sigue sin autorización. **No se ha tocado `main`.**
