@@ -24,7 +24,11 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
    'Churros con chocolate, pasteles…',
    'Tapas, tortilla, croquetas…'
  ].includes(dishPlaceholder),'FR dish placeholder must be a translated instruction or documented dish-name examples: '+dishPlaceholder);
- assert.equal(await page.locator('#budget option[value=""]').textContent(),'Sans limite (afficher les fiches)','FR initial unlimited budget');
+ // app.js rebuilds #budget after startup, replacing the HTML-only long label.
+ // Assert the live service-mode label once the catalogue and budget UI are ready.
+ await page.waitForFunction(()=>typeof state!=='undefined'&&state.places.length>0
+  &&document.querySelector('#budget option[value=""]')?.textContent==='Sans limite');
+ assert.equal(await page.locator('#budget option[value=""]').textContent(),'Sans limite','FR live unlimited budget');
  assert.equal(await page.locator('#sort option[value="price"]').textContent(),'Prix le plus bas','FR lowest price sort');
  assert.equal(await page.locator('#sort option[value="verified"]').textContent(),'Vérifiés en premier','FR verified first sort');
  const rec=page.locator('#recommendations-section');
