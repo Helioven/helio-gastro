@@ -720,3 +720,19 @@ Se han abierto las páginas de los **establecimientos concretos** y se han contr
 **Estado de pruebas:** lectura posterior y comprobaciones estáticas JSON **superadas**; **no** se ha ejecutado ni comprobado aquí un nuevo workflow GitHub Actions, Playwright o regresión visual ES/EN/FR. Su PASS está **pendiente**. El PASS anterior comunicado por Helio no debe atribuirse a estos cambios posteriores.
 
 **Pendiente editorial:** `7:11` (`vaca vieja` frente a `bœuf maturé`) sigue abierto; otras observaciones de naturalidad, denominaciones y posibles discrepancias con la carta original permanecen pendientes. Los lotes siguen siendo candidatos, el francés únicamente experimental bajo `?qa_fr=1` y su publicación sigue sin autorización. **No se ha tocado `main`.**
+
+
+## PASS posterior a las tres correcciones FR y triaje de vaca vieja — 04/11/2026
+
+**PASS confirmado por Helio:** el responsable comunica PASS después de los commits de ajustes autorizados en `batch-092` (`0d888cc`), `batch-097` (`a1e7667`) y `batch-098` (`99ef0b7`), más el registro documental `0fb7f83`. Se clasifica como **PASS comunicado por el responsable posterior a los cambios**, sin afirmar inspección independiente de logs, artefactos o capturas de GitHub Actions.
+
+**Nuevo triaje documental dirigido; no es una nueva prueba de CI:**
+- El catálogo `data/places.json` de la rama QA, ficha exacta `moriles-ribera`, sección `7`, entrada `11`, registra nombre y ES **`Entrecot de vaca vieja`**, EN **`Mature beef entrecôte.`**, formato `Ración`. El lote real `translations/fr/batch-099-moriles-ribera.json` mantiene **`Entrecôte de bœuf maturé.`**, con estado `candidate_awaiting_semantic_review`.
+- La web oficial española `https://www.morilesribera.com/nuestra-cocina` publica la imagen de categoría `MR 005 (Carnes)`; la versión inglesa `https://www.morilesribera.com/our-kitchen` separa las imágenes `MR 036 (Carnes 1) EN` y `MR 037 (Carnes 2) EN`. Se ha confirmado **la existencia de esas fuentes e identificación de la sección**, pero no se ha conseguido recuperar la imagen de carnes española ni leer sus textos directamente. Por tanto no se afirma confirmación del ítem en la imagen actual ni revisión de composición o precio en origen.
+- **Riesgo semántico:** `vaca vieja` describe un animal de mayor edad; `bœuf maturé` en francés podría interpretarse como carne sometida a un proceso de maduración, que no se declara en el texto ES del catálogo. El EN `mature beef` no resuelve por sí solo esta ambigüedad. **Candidato de ajuste**, no prueba de un producto efectivamente madurado.
+- **Alternativa editorial preliminar, NO autorizada:** considerar `Entrecôte de vache âgée.` o una formulación francesa gastronómicamente más natural que exprese edad del animal sin prometer maduración en seco; someter a revisión lingüística y, si es posible, contrastar la imagen original. No introducir raza, días de maduración, marmoleo ni método de crianza.
+- La sección `7:12` (Chuletón de vaca vieja Frisona) tiene un campo de descripción destinado a **precio por kilogramo**, no porción; no intercambiarlo con el entrecot `7:11`, cuyo formato es ración.
+
+**Decisión del bloque:** solo actualización de documentación y registro del PASS comunicado. No se altera `batch-099`, `data/places.json`, ningún texto ES/EN ni interfaz; ninguna prueba nueva ejecutada. Las tres correcciones anteriores siguen aplicadas y no se da por cerrada toda la evaluación editorial de Moriles Ribera. Francés experimental bajo `?qa_fr=1`, no autorizado para publicar; `main` sin tocar.
+
+**Siguiente paso:** decidir expresamente una formulación FR para `7:11` cuando haya evidencia suficiente y criterio editorial; entonces aplicar un ajuste mínimo solo en rama QA y exigir nuevo control ES/EN/FR y confirmación de CI. También queda abierta la revisión nativa de mejoras estilísticas menos prioritarias.
