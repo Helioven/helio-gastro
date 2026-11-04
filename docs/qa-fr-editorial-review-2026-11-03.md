@@ -736,3 +736,18 @@ Se han abierto las páginas de los **establecimientos concretos** y se han contr
 **Decisión del bloque:** solo actualización de documentación y registro del PASS comunicado. No se altera `batch-099`, `data/places.json`, ningún texto ES/EN ni interfaz; ninguna prueba nueva ejecutada. Las tres correcciones anteriores siguen aplicadas y no se da por cerrada toda la evaluación editorial de Moriles Ribera. Francés experimental bajo `?qa_fr=1`, no autorizado para publicar; `main` sin tocar.
 
 **Siguiente paso:** decidir expresamente una formulación FR para `7:11` cuando haya evidencia suficiente y criterio editorial; entonces aplicar un ajuste mínimo solo en rama QA y exigir nuevo control ES/EN/FR y confirmación de CI. También queda abierta la revisión nativa de mejoras estilísticas menos prioritarias.
+
+
+## Contraste terminológico complementario: vaca vieja — 04/11/2026
+
+**Objeto:** continuar el triaje del índice `7:11` de Moriles Ribera, sin cambiar la traducción `batch-099-moriles-ribera.json`. Se han releído README, informe editorial y lote actual de la rama QA.
+
+**Evidencia del catálogo de la rama (ya contrastada en registros anteriores):** ES `Entrecot de vaca vieja`; EN `Mature beef entrecôte.`; FR actual `Entrecôte de bœuf maturé.`, formato `Ración`. No intercambiar con `7:12`, que usa precio por kilogramo.
+
+**Comprobación de fuente externa:** la página oficial `https://www.morilesribera.com/nuestra-cocina` enumera la imagen `MR 005 (Carnes)`, con enlace a `https://www.morilesribera.com/wp-content/uploads/2026/02/MR-005-Carnes-scaled.png`; se intentó abrir la imagen mediante consulta web, pero la recuperación falló (cache miss). **No se ha comprobado visualmente el contenido del producto en esa imagen**, su vigencia ni su precio. No afirmar verificación oficial de la denominación.
+
+**Contraste terminológico externo:** en el vocabulario francés de ganadería, `vache de réforme` abarca vacas retiradas de producción por distintos motivos y edades; no es sinónimo inequívoco de `vaca vieja`. La investigación sobre hembras de reforma distingue expresamente categorías y edades (INRA Productions Animales, 2005: `https://productions-animales.org/article/download/3508/11191`). `bœuf maturé` puede interpretarse como maduración aplicada a la carne, que el texto ES `vaca vieja` no afirma. La documentación externa sirve para distinguir conceptos, **no** para atribuir origen, raza o maduración a este restaurante.
+
+**Propuesta editorial conservadora, todavía NO autorizada:** `Entrecôte de vache âgée.` representa la edad del animal sin añadir tratamiento de maduración. Debe revisarse su naturalidad gastronómica por francófono; no afirmar que es denominación oficial del restaurante. Otras expresiones como `vache de réforme` no se proponen automáticamente por su alcance diferente. El inglés `Mature beef entrecôte` queda sin cambios hasta decisión editorial ES/EN/FR.
+
+**Estado:** contraste externo acotado realizado; lectura de la carta gráfica original **no realizada**; JSON `batch-099` **sin modificar**; **no hay CI ni prueba Playwright nueva**. Francés aún candidato experimental bajo `?qa_fr=1`, sin autorización de publicación; `main` intacta. Si se aprueba corrección, aplicar solo a `7:11` en rama QA y ejecutar regresión lingüística/estructural antes de pedir PASS del workflow.
