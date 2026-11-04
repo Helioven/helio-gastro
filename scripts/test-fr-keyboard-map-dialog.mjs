@@ -50,9 +50,22 @@ try{
        }
       }
      }
-     await page.keyboard.press('Escape');
-     await dialog.waitFor({state:'hidden'});
-     if(!(await trigger.evaluate(el=>document.activeElement===el)))errors.push('Focus not restored to trigger after Escape');
+     // A Tab sequence can land inside Google's cross-origin iframe.
+     // Escape sent there belongs to the embedded page, not the parent dialog.
+     // Test the parent's Escape contract from its own keyboard-focusable close button.
+     const closeButton=page.locator('#close-map');
+     await closeButton.focus();
+     if(!(await closeButton.evaluate(el=>document.activeElement===el))){
+      errors.push('Unable to focus the map dialog close button before Escape');
+     }else{
+      await page.keyboard.press('Escape');
+      try{await dialog.waitFor({state:'hidden',timeout:3000});}
+      catch{errors.push('Escape from close button did not close map dialog');}
+      if(!(await dialog.evaluate(el=>el.open)) &&
+         !(await trigger.evaluate(el=>document.activeElement===el))){
+       errors.push('Focus not restored to trigger after Escape');
+      }
+     }
      // 'close' is dispatched asynchronously; wait for the app's cleanup listener.
      try{
       await page.waitForFunction(()=>!document.querySelector('#map-frame').hasAttribute('src'),null,{timeout:1500});
@@ -60,6 +73,13 @@ try{
       errors.push('Map iframe source retained after closing');
      }
     }catch(e){errors.push('Interrupted: '+e.message);}
+    finally{
+     // Prevent a failed case from keeping the modal open during the next language.
+     await page.evaluate(()=>{
+      const dialog=document.querySelector('#map-dialog');
+      if(dialog?.open)dialog.close();
+     }).catch(()=>{});
+    }
     report.results.push({profile:profile.name,language,status:errors.length?'FAIL':'PASS',errors});
    }
   }finally{await context.close();}
