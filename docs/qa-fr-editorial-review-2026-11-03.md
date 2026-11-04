@@ -659,3 +659,29 @@ Se han abierto las páginas de los **establecimientos concretos** y se han contr
 **Ambigüedad conservada:** en `14:0–14:5`, ES y EN hablan de variedades de chocolate sin describir expresamente la presentación como bebida caliente. No sustituir por `chocolat chaud` sin evidencia de la carta original. En `14:6–14:8`, EN sí explicita `hot chocolate`. Los 22 registros conservan formato `Unidad`, que no demuestra por sí mismo si se trata de bebidas o piezas. No hay omisión o añadido sustancial de ingrediente detectado en el cotejo documental.
 
 **Resultado y límites:** 22 entradas comprobadas; **cero discrepancias semánticas demostradas frente a ES/EN**, una cautela editorial explícita sobre presentación de chocolates, ninguna modificación propuesta como obligatoria. No se han modificado candidatos FR, `data/places.json`, i18n, JS, CSS o HTML. **No se ejecutó nuevo CI por este contraste.** Los lotes permanecen `candidate_awaiting_semantic_review`, francés experimental bajo `?qa_fr=1`, publicación no autorizada y `main` intacta. Revisar siguientes lotes solo si existen; mantener decisión editorial posterior separada de los PASS técnicos.
+
+
+## PASS comunicado y cierre de cobertura documental Moriles Ribera — 04/11/2026
+
+**PASS del responsable:** Helio comunica nuevo PASS tras el control de lotes 106–107. Es confirmación comunicada, no inspección independiente de logs/artefactos ni aprobación editorial de los candidatos.
+
+**Comprobación directa del inventario de la rama:** `translations/fr/` contiene exactamente 18 ficheros `batch-090-moriles-ribera.json` a `batch-107-moriles-ribera.json`. Los supuestos `batch-108-moriles-ribera.json` y `batch-109-moriles-ribera.json` responden 404 y no aparecen en el listado del directorio. Las 15 secciones de `menuSections` en la ficha `moriles-ribera` de `data/places.json` suman **214 entradas** (12+20+14+8+5+19+26+29+5+7+2+26+23+9+9), frente a las **214 descripciones revisadas documentalmente** en lotes 090–107. La cifra de cobertura es del **100 % de las entradas del catálogo registrado**, NO una aprobación semántica completa ni una certificación frente a la carta oficial externa. No hay lotes 108–109 para revisar; no generarlos artificialmente.
+
+**Triaje editorial consolidado (sin autorización para editar):**
+
+| Índice / lote | Hallazgo documentado | Clase / prioridad sugerida |
+|---|---|---|
+| `6:25`, lote 098 | `a l’orange` en lugar de `à l’orange` | Ortografía francesa comprobable; alta |
+| `7:11`, lote 099 | `bœuf maturé` no equivale necesariamente a `vaca vieja` | Ambigüedad semántica relevante; alta, verificar decisión de término y origen |
+| `6:15`, lote 097 | `fleur de sel` es más específico que `sal de escamas` / `flaky salt` | Discrepancia de especificidad; media |
+| `2:3`, lote 092–093 | Construcción `séchée, issu` para caña de lomo | Concordancia/sintaxis candidata; media |
+| `0:2`, `2:4–5`, `2:7`, `7:5` | `fromage pur brebis` frente a queso puro de oveja | Naturalidad terminológica recurrente; editorial |
+| `5:0–1`, `6:5–6`, `11:12`, `11:18`, `11:20` | Huevos, distinción de frituras y preservación de nombres/presentación de postres | Identidad cultural y naturalidad; editorial |
+| Etiquetas `ibéricos` / `revueltos` | Fuente de Moriles Ribera aún no interpretada totalmente a nivel de platos originales | Necesita cotejo visual de la carta oficial, no sustituir por intuición |
+| `14:0–14:5`, lotes 106–107 | No está demostrado que todos los chocolates sean bebidas calientes | Mantener ambigüedad; no completar `chaud` sin fuente |
+
+**Importante:** las etiquetas pendientes de Moriles Casa Fina y Manolete de La Montillana se mantienen fuera del alcance de Moriles Ribera; no mezclar establecimientos. Tampoco confundir la expresión documentada `fleur de sel` en el postre `11:9` con el caso de `6:15`.
+
+**Estado al cierre del inventario:** revisión documental ES/EN/FR **terminada para las 214 entradas del catálogo Moriles Ribera**, con observaciones editoriales **abiertas**. Traducciones siguen `candidate_awaiting_semantic_review`; no se han modificado archivos de traducciones, nombres, ingredientes, precios, formatos, `data/places.json`, aplicación, CSS ni `main`. No se ha ejecutado un CI nuevo por esta documentación. Francés solo disponible experimentalmente bajo `?qa_fr=1` y **no autorizado para publicación**.
+
+**Siguiente decisión:** aprobar o descartar explícitamente las correcciones editoriales mínimas con evidencia ES/EN y, donde haga falta, carta oficial; después aplicar ajustes solo en la rama QA y ejecutar regresión ES/EN/FR. Alternativamente, continuar la revisión humana de otro establecimiento sin declarar cerrado el criterio editorial de Moriles Ribera.
