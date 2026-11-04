@@ -286,3 +286,19 @@ Se han abierto las páginas de los **establecimientos concretos** y se han contr
 **Siguiente acción necesaria:** abrir ejecución **#758** → job fallido → paso `Start static server and run desktop/mobile browser QA`; localizar `FR KEYBOARD MAP DIALOG`, `Visual QA failed`, o las últimas líneas. Si el job falla antes, copiar el nombre del paso y el error exacto. Contrastar también `qa-reports/fr-keyboard-map-dialog.json` si el artefacto existe. Reproducir caso, corregir solo causa confirmada y exigir CI PASS nuevo.
 
 **Estado:** #757 y #758 **FAIL observado en GitHub Actions**, raíz **sin confirmar**; #756 PASS anterior **no certifica** la suite nueva. No tocar `main`, cartas, traducciones o CSS.
+
+
+### Diagnóstico y corrección de la suite de teclado — 04/11/2026
+
+**Evidencia directa de la ejecución fallida aportada por Helio:** `FR KEYBOARD MAP DIALOG` devuelve FAIL en los **seis** perfiles/idiomas ES, EN y FR (escritorio/móvil) con `Tab moved focus outside modal at step 3`; en móvil ES y FR también aparece `Map iframe source retained after closing`. El job informa `Suite scripts/test-fr-keyboard-map-dialog.mjs exited non-zero`.
+
+**Causa del falso negativo de foco reproducida de forma aislada:** en Chromium, el `<dialog>.showModal()` nativo con tres controles enfocados (botón, iframe, enlace) puede colocar `document.activeElement` temporalmente en `BODY` cuando Tab agota el ciclo, y el siguiente Tab vuelve al primer control del modal. El fondo permanece bloqueado por la modalidad nativa. La aserción anterior exigía que el foco estuviera dentro del árbol del diálogo **después de cada Tab**, de modo que interpretaba este paso transitorio como fuga de foco.
+
+**Causa del aviso de iframe:** el código de aplicación elimina el `src` del iframe en el evento `close`; Playwright comprobaba el atributo inmediatamente tras esperar a que el diálogo dejase de estar visible, sin esperar a dicho listener. Es una condición de carrera de la prueba, no prueba de que el iframe siga cargado indefinidamente.
+
+**Corrección restringida** en `scripts/test-fr-keyboard-map-dialog.mjs` (commit `c9c04f8`):
+- Aceptar la transición transitoria a `BODY` **solo si** el modal sigue abierto y el Tab siguiente devuelve el foco a un elemento dentro; seguir fallando si se enfoca un elemento ajeno al modal o no se recupera el foco.
+- Esperar hasta 1,5 segundos a que el evento `close` retire el atributo `src`, manteniendo FAIL si no sucede.
+- Conservar los controles de activación con Enter, apertura, retorno del foco tras Escape y los seis escenarios ES/EN/FR escritorio/móvil.
+
+**Estado:** modificación realizada en rama QA; el comportamiento nativo del navegador se reprodujo en una página mínima separada; **no se declara PASS de la suite real ni del nuevo workflow** hasta ver los resultados de CI. No se ha modificado `app.js`, HTML, CSS, datos, traducciones o `main`.
