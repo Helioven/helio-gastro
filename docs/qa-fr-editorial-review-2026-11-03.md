@@ -169,3 +169,24 @@
 **Resultado:** en estas seis muestras, el PNG no es más ancho que el viewport **real de su suite**. La diferencia con 1365 px no demuestra un desbordamiento. Se corrige, por tanto, la premisa de la incidencia P2 provisional para estas seis capturas; no procede un parche CSS. Los scripts inspeccionados incluyen además una comprobación de `document.documentElement.scrollWidth > innerWidth + 1`, pero **no se han ejecutado nuevamente** ni se infiere un PASS actual.
 
 **Pendiente:** cotejar individualmente las otras siete capturas señaladas con sus scripts y, si queda alguna discrepancia real, reproducirla con el viewport y la secuencia exactos de su propia suite; medir DOM y regiones afectadas antes de decidir una corrección. El barrido de 1280 px sigue siendo una prueba independiente. No se alteraron estilos, interfaz, datos, traducciones ni `main`. Esta actualización es **documental**, no una certificación visual/lingüística ni cierre global de QA. La ejecución de CI disparada por este cambio, en su caso, debe verificarse aparte.
+
+
+### Ampliación de la revisión de anchuras — siete suites restantes (04/11/2026)
+
+Se inspeccionaron en la rama QA los scripts Playwright que producen las **siete capturas adicionales** cuyo exceso respecto a 1365 px se había descrito en el traspaso como situado entre +10 y +100 px. Todas estas suites configuran explícitamente una anchura de escritorio propia, mayor que 1365 px:
+
+| Captura / establecimiento | Script de origen | Viewport desktop declarado | Diferencia frente a 1365 px |
+|---|---|---:|---:|
+| El Nº 10 | `scripts/test-fr-el-numero-10-37.mjs` | 1375 × 900 | +10 px |
+| La Taberna del Río | `scripts/test-fr-la-taberna-del-rio-38.mjs` | 1385 × 900 | +20 px |
+| Taberna Rafaé | `scripts/test-fr-rafae-38.mjs` | 1385 × 900 | +20 px |
+| Don Pepe Centro | `scripts/test-fr-don-pepe-centro-43.mjs` | 1435 × 900 | +70 px |
+| El Poema · Alonso de Burgos | `scripts/test-fr-el-poema-alonso-44.mjs` | 1445 × 900 | +80 px |
+| D'Tapas COVAP | `scripts/test-fr-dtapas-covap-45.mjs` | 1455 × 900 | +90 px |
+| Plateros San Francisco | `scripts/test-fr-plateros-san-francisco-46.mjs` | 1465 × 900 | +100 px |
+
+Los siete scripts usan captura de página completa (`fullPage: true`); las anchuras configuradas explican exactamente el **rango de incrementos** anotado en el informe anterior. Sumados a los seis casos documentados en el apartado precedente, hay **13 suites con viewport desktop superior a 1365 px**, precisamente la cantidad de PNG inicialmente señalados.
+
+**Dictamen de triaje:** se descarta la comparación con un supuesto viewport común de 1365 px como prueba de un defecto P2. La anomalía **de interpretación de tamaños** queda explicada por los scripts; **no existe evidencia suficiente para abrir un defecto de CSS**. Este dictamen no certifica que todos los elementos sean accesibles ni sustituye la inspección de DOM con viewports reales. El ZIP de capturas anterior no está disponible en esta sesión: las dimensiones individuales de estas siete imágenes no se han vuelto a medir, y no se atribuye por ello una nueva ejecución Playwright ni un PASS de navegador.
+
+**Estado del trabajo:** verificación estática de los 13 scripts terminada; registro corregido; ningún cambio de CSS, JS, datos gastronómicos, traducciones ni rama `main`. Continuar con QA visual/lingüístico, accesibilidad y regresión en los perfiles declarados; investigar desbordamientos únicamente ante mediciones DOM o capturas que excedan el viewport **de su propia suite**. CI del commit documental: comprobar por separado, sin presumir PASS.
