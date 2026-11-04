@@ -167,6 +167,7 @@ jobs:
             scripts/test-fr-don-pepe-ciudad-jardin-12.mjs \
             scripts/test-fr-moriles-ribera-12.mjs \
             scripts/inventory-fr-detail-accessibility.mjs \
+            scripts/test-fr-source-venue-triage.mjs \
             scripts/test-search-regression.mjs \
             scripts/test-filter-regression.mjs \
             scripts/test-comparator-regression.mjs \
