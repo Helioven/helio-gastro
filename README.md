@@ -1130,3 +1130,39 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 4. Solicitar/verificar PASS del nuevo CI. Después retomar revisión **visual y lingüística humana** de capturas, avisos, formatos, accesibilidad y muestras restantes; conservar la excepción de El Caballo Rojo y los criterios editoriales pendientes antes de cualquier autorización de publicación.
 
 **Regla de estado:** indicar siempre qué pruebas están propuestas, ejecutadas, PASS o FAIL y cuáles dependen de verificación humana. La prioridad continúa siendo completar y validar cartas, terminar francés QA y después avanzar a auditoría integral según la hoja de ruta existente; no adelantar reseñas o nuevas fases.
+
+
+---
+
+## Handoff QA francés — 4 de noviembre de 2026 (estado actualizado)
+
+> **Referencia actual para continuar trabajo:** este bloque y `docs/qa-fr-editorial-review-2026-11-03.md` actualizan los traspasos históricos anteriores del README. No se deben ejecutar de nuevo tareas marcadas como resueltas sin nueva evidencia.
+
+**Repositorio:** `Helioven/helio-gastro`. **Rama exclusiva de trabajo:** `feature/fr-integration-qa-20261027`. **No modificar/fusionar `main` sin aprobación expresa de Helio.** El francés sigue **experimental** mediante `index.html?qa_fr=1`; no se ha autorizado su publicación.
+
+### Situación verificada y PASS comunicados
+
+- La hoja de ruta sigue siendo: 1) cartas y verificación, 2) francés, 3) QA integral, 4) reseñas, 5) resúmenes de reseñas verificadas, 6) imágenes con derechos, 7) revisión final previa a lanzamiento. No adelantar fases. Según el registro histórico del proyecto, **43 de 44 cartas** se consideran cerradas, con **El Caballo Rojo** como excepción documental; no deducir de ello una aprobación nueva de esa excepción.
+- El triaje inicial de 13 supuestos excesos de anchura de capturas FR resultó ser una comparación errónea de capturas obtenidas con viewports **distintos y mayores de 1365 px**; no aplicar parches CSS por aquella hipótesis.
+- Pruebas añadidas y **PASS confirmados por Helio**: inventario de accesibilidad exploratoria de fichas, triaje de Moriles Ribera/Casa Fina/Roldán Centro, teclado del modal de mapa (ES/EN/FR, escritorio/móvil) y extracción estructural ES/EN/FR de Moriles Ribera. Estos resultados **no** equivalen a certificación WCAG, examen con lector de pantalla o validación editorial nativa.
+- Incidencia del modal: varios FAIL de la propia prueba por el ciclo Tab nativo / iframe externo; resuelta por pruebas de foco en el diálogo padre, aislamiento entre idiomas y espera de limpieza del iframe. **PASS posterior comunicado por Helio**. Escape con foco dentro del Google Maps incrustado queda **fuera del alcance** de esa comprobación.
+- Incidencia posterior de `scripts/test-fr-search-ui-pilot.mjs`: el test esperaba `Sans limite (afficher les fiches)`, pero `app.js` reconstruye dinámicamente el selector con `Sans limite`. Se corrigió únicamente la aserción y su espera, commit `e38d332`; registrado en `20bff2a`. **Helio confirmó PASS posterior**. Sin defecto demostrado de presupuesto ni cambio de la aplicación.
+- Última revisión documental: Moriles Ribera, lotes `batch-090` a `batch-095` (**72 descripciones FR** cotejadas 1:1 contra ES/EN del catálogo). Los bloques más recientes fueron `094`–`095`, documentados en `1746696`: 24 entradas revisadas, sin omisiones evidentes de ingredientes principales en la muestra. **Helio confirma nuevos PASS tras este trabajo**, pero no hay un nuevo test ejecutado por los cambios exclusivamente documentales; registrar la confirmación como conformidad comunicada, **no** como aprobación editorial de los 72 textos.
+
+### Dudas editoriales que no deben corregirse por intuición
+
+- `batch-090`–`091`: `pimientos asados` → `grillés` (valorar `rôtis`); `salsa rosa` → `sauce cocktail` (posible concreción excesiva); `queso puro de oveja` → `fromage pur brebis` (naturalidad).
+- `batch-092`–`093`: `Caña de lomo` tiene una concordancia francesa discutible `séchée, issu`; se repite `fromage pur brebis`; Mojama de Barbate mantiene 110 g, 75 g y 40 g.
+- `batch-094`–`095`: `Huevos à la flamenca, oeufs...` utiliza `oeufs` en vez de `œufs` y resulta redundante; `Œufs à la campagne` es literal; `cèpes` puede ser más específico que `boletus`.
+- Las etiquetas de origen `ibéricos`/`revueltos` de Moriles Ribera, `Cafés y chocolates` de **Moriles Casa Fina** y `Manolete` de La Montillana requieren contraste de imagen oficial o criterio editorial, según cada caso. **No mezclar Moriles Ribera con Moriles Casa Fina ni Roldán Centro con Roldán Tiendas.**
+- Ninguna de estas observaciones es una autorización para alterar `data/places.json`, recetas, ingredientes, precios, denominaciones, formatos o traducciones candidatas. Los lotes FR siguen `candidate_awaiting_semantic_review`.
+
+### Próxima tarea exacta para el nuevo chat
+
+1. Leer el README **actual** y `docs/qa-fr-editorial-review-2026-11-03.md` de **esta rama**; comprobar el estado real, no asumir pendientes de resúmenes anteriores.
+2. Abrir `translations/fr/batch-096-moriles-ribera.json` y `batch-097-moriles-ribera.json`; obtener `data/places.json` de la misma rama, y cotejar por `sectionIndex`/`itemIndex` cada `name`, `es`, `en` y `fr`. Verificar ingredientes, técnicas, denominaciones y formatos; distinguir omisiones/errores semánticos verificables de opciones estilísticas. **Documentar recuento real.**
+3. Registrar resultados en el documento QA con índices, citas cortas y estado de cada observación; **sin modificar textos o precios** hasta acreditar el origen y acordar la decisión editorial.
+4. Si Helio aprueba un cambio de contenido, implementar modificación mínima en la rama QA, revisar repercusiones ES/EN/FR, ejecutar regresión y esperar PASS del CI. Distinguir siempre **propuesta / implementado / PASS comunicado / pendiente**.
+5. Tras Moriles Ribera, continuar la revisión humana/visual del francés en el resto de fichas y los asuntos documentales pendientes. No activar FR público ni fusionar `main` sin autorización explícita.
+
+**Regla de traspaso:** primero verificar el repositorio y las fuentes, después modificar lo necesario y finalmente probar. No llamar PASS a una revisión editorial que no haya sido aprobada ni a una ejecución de CI que no se haya comprobado.
