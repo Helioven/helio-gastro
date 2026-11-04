@@ -391,3 +391,14 @@ Se han abierto las páginas de los **establecimientos concretos** y se han contr
 **Resultado del control:** no se observan omisiones flagrantes de los elementos principales en las 24 entradas cotejadas. Se distingue **una inconsistencia gramatical candidata concreta** (caña de lomo) de las **preferencias terminológicas** (queso de oveja). El origen permite constatar las diferencias entre los idiomas, **no** certificar los ingredientes frente a fuentes externas ni aprobar todo el francés. Ningún texto de producción modificado.
 
 **Próximo lote:** revisar `batch-094-moriles-ribera.json` y `batch-095-moriles-ribera.json` con el mismo método; preparar propuestas pequeñas, someter a criterio editorial y ejecutar regresión ES/EN/FR solo si se autorizan correcciones. Conservar la excepción de El Caballo Rojo y el bloqueo de publicación del francés hasta autorización final. Rama `main`, CSS, datos y traducciones intactos.
+
+
+## Regresión del presupuesto francés en el buscador — 04/11/2026
+
+**FAIL comunicado por Helio:** `scripts/test-fr-search-ui-pilot.mjs:27` falla en `FR initial unlimited budget` con `actual: 'Sans limite'` y `expected: 'Sans limite (afficher les fiches)'`. El error aparece en GitHub Actions y hace fallar `visual-qa`. La confirmación previa de PASS se refería a ejecuciones anteriores, no a esta.
+
+**Causa comprobada en el repositorio:** `index.html` declara inicialmente `<option value="">Sin límite (mostrar fichas)</option>`, pero `app.js`, al ejecutar la configuración del modo de servicio, reconstruye `#budget` con una opción dinámica `Sin límite`. `i18n.js` incluye la traducción de esta versión a `Sans limite`. El propio README registra un incidente histórico análogo en las ejecuciones #618–#620. Por tanto, la prueba estaba validando el texto previo a la reconstrucción, no el estado real estable del control. **No hay evidencia en este log de pérdida de funcionalidad del presupuesto ni de un defecto de datos.**
+
+**Corrección de alcance mínimo:** en `scripts/test-fr-search-ui-pilot.mjs` se espera a que `state.places` esté cargado y a que la opción dinámica de presupuesto figure como `Sans limite`, y entonces se verifica ese valor exacto. Commit `e38d332`. Se conserva la comprobación de restauración ES (`Sin límite`) y el resto del flujo ES/EN/FR. Sin cambios en `app.js`, `index.html`, `i18n.js`, catálogo, lotes FR, CSS ni `main`.
+
+**Estado:** diagnóstico a partir del error real y del código **confirmado**, modificación de test **implementada**, **CI posterior pendiente**. No afirmar PASS hasta recibir evidencia del siguiente run.
