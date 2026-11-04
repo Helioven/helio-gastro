@@ -422,3 +422,12 @@ Se han abierto las páginas de los **establecimientos concretos** y se han contr
 | `5:12` Cardos con Almejas y Gambas | `Cardons aux palourdes et aux crevettes.` | Preserva cardos, almejas y gambas; sin discrepancia detectada respecto al catálogo. |
 
 **Estado:** revisión de la muestra documental **ejecutada**; 1 observación ortotipográfica concreta y 2 candidatos de naturalidad/precisión; **ningún archivo de traducción, catálogo, código de aplicación o CSS modificado**. No hay nueva prueba de CI en este lote documental. Continúa pendiente la validación semántica de los demás lotes, verificación con originales, decisión editorial de correcciones propuestas y autorización de publicación. Próximos lotes sugeridos: `batch-096` y `batch-097`. Rama `main` intacta; FR limitado a `?qa_fr=1`.
+
+
+## Confirmación de PASS y entrega de handoff — 04/11/2026
+
+**Confirmación comunicada por Helio:** nuevos **PASS** después del tramo de revisión documental de Moriles Ribera lotes 094–095 (última anotación en commit `1746696`). Como ese commit solo editó documentación, registrar la confirmación como **conformidad del responsable / CI reportado en verde**, sin atribuir a dichos PASS validación lingüística completa de las 24 entradas ni indicar que se ejecutó una nueva prueba de contenido.
+
+**Traspaso:** se añadió al final de `README.md` el bloque «Handoff QA francés — 4 de noviembre de 2026 (estado actualizado)» (commit `693168d`). En él se sintetizan rama exclusiva, pruebas PASS, fallos resueltos, observaciones editoriales pendientes, situación de publicación y próxima tarea. **La siguiente revisión es de `batch-096-moriles-ribera.json` y `batch-097-moriles-ribera.json`**, tomando ES/EN y formatos desde el catálogo real de la misma rama.
+
+**Límites:** el francés sigue solo bajo `?qa_fr=1`; `main` intacta; no se ha aprobado ni modificado ninguna traducción por este traspaso. No confundir automatización estructural con validación editorial o auditoría WCAG.
