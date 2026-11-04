@@ -317,3 +317,12 @@ Se han abierto las páginas de los **establecimientos concretos** y se han contr
 - Mantener comprobaciones de apertura con Enter, foco inicial, ciclo Tab, restauración del foco y limpieza asíncrona del iframe.
 
 **Alcance exacto:** se comprueba Escape desde el control de cierre del diálogo **padre**, no desde el contenido interactivo de un iframe externo. El comportamiento de Escape con foco dentro de Google Maps requiere otra evaluación específica y no debe interpretarse como cubierto por esta regresión. **Nuevo CI pendiente**: no proclamar PASS hasta revisar el run actualizado. Sin cambios de aplicación, estilos, datos, idiomas ni `main`.
+
+
+### Cierre de incidencia: teclado y diálogo de mapa — 04/11/2026
+
+**Confirmación expresa del responsable:** Helio informa que la ejecución posterior a la corrección `145997f` y documentación `c322313` ha dado **PASS**, sin fallos. Se registra como **PASS confirmado por el responsable** para la regresión `scripts/test-fr-keyboard-map-dialog.mjs`, en los escenarios de escritorio/móvil y ES/EN/FR declarados. No se afirma que el asistente haya inspeccionado directamente los logs o el artefacto de esta ejecución.
+
+**Resultado del triaje:** el FAIL anterior de escritorio por espera de cierre de `#map-dialog` queda resuelto según la ejecución comunicada. El script aísla los idiomas entre sí, verifica Escape desde el botón del diálogo padre y espera la limpieza del iframe. La observación relativa a Escape cuando el foco está **dentro del iframe externo de Google Maps** queda fuera de ese alcance y no se declara probada.
+
+**Estado:** incidencia técnica de la suite **CERRADA — PASS comunicado**; no constituye auditoría WCAG, prueba con lector de pantalla, aprobación editorial integral ni permiso de publicación del francés. `main`, aplicación, estilos, traducciones y cartas se mantienen sin cambios.
