@@ -402,3 +402,23 @@ Se han abierto las páginas de los **establecimientos concretos** y se han contr
 **Corrección de alcance mínimo:** en `scripts/test-fr-search-ui-pilot.mjs` se espera a que `state.places` esté cargado y a que la opción dinámica de presupuesto figure como `Sans limite`, y entonces se verifica ese valor exacto. Commit `e38d332`. Se conserva la comprobación de restauración ES (`Sin límite`) y el resto del flujo ES/EN/FR. Sin cambios en `app.js`, `index.html`, `i18n.js`, catálogo, lotes FR, CSS ni `main`.
 
 **Estado:** diagnóstico a partir del error real y del código **confirmado**, modificación de test **implementada**, **CI posterior pendiente**. No afirmar PASS hasta recibir evidencia del siguiente run.
+
+
+## PASS buscador FR y cotejo de Moriles Ribera, lotes 094–095 — 04/11/2026
+
+**Cierre de incidencia anterior:** Helio confirma **PASS** de GitHub Actions después del ajuste `e38d332` de la aserción de presupuesto en `scripts/test-fr-search-ui-pilot.mjs`. El FAIL por diferencia `Sans limite` / `Sans limite (afficher les fiches)` queda **cerrado por confirmación del responsable**; no se atribuye revisión directa de logs al asistente.
+
+**Revisión nueva realizada:** cotejo individual de las **24 entradas** de `translations/fr/batch-094-moriles-ribera.json` (12) y `batch-095-moriles-ribera.json` (12) con `name`, `es` y `en` del mismo índice de `data/places.json` en la rama QA (blob `0ffd3de396986d99125752cde7b4c2c52a20b31e`). Acumulado documental de Moriles Ribera: **72 entradas revisadas (lotes 090–095)**. No se comprobaron de nuevo las imágenes de la carta oficial ni la vigencia de platos/precios.
+
+**Resultado del contraste ES/EN/FR:** las 24 entradas preservan a primera lectura los principales ingredientes y preparaciones del catálogo registrado: anchoas, queso de Zuheros, ciervo, salmón, sardina, salmorejo, risottos, pastas, huevos, revueltos, alcachofas, berenjenas, boletus y cardos. Ninguna omisión evidente de ingredientes se ha demostrado por este contraste. **Esto no supone revisión francófona nativa ni aprobación editorial.**
+
+| Índice | Descripción actual en FR | Observación y decisión |
+|---|---|---|
+| `5:0` Huevos a la flamenca con Jamón y Chorizo | `Huevos à la flamenca, oeufs au jambon et au chorizo.` | **Observación ortotipográfica verificable:** `oeufs` no utiliza la ligadura francesa habitual `œufs`; además la mezcla `Huevos ... oeufs` resulta redundante. Proponer conservar el nombre tradicional y explicar en francés solo una vez los ingredientes, sin alterar receta. **Pendiente de decisión editorial**, sin modificación. |
+| `5:1` Huevos camperos con Patatas y Gulas | `Œufs à la campagne avec pommes de terre et gulas (substitut de civelles).` | **Revisión de naturalidad:** `à la campagne` es traducción literal de `camperos`; preservar el nombre cultural del plato y considerar una explicación más idiomática, solo con criterio editorial. Se conservan patatas y gulas. |
+| `4:0` Risotto de Boletus y Setas | `Risotto aux cèpes et autres champignons.` | La distinción boletus/setas se conserva con una formulación razonable; `cèpes` puede concretar un grupo de boletus y requiere verificación gastronómica si el origen es genérico. **No afirmar error confirmado**. |
+| `5:2` Revuelto Tierra y Mar | `Œufs brouillés aux asperges, au saumon fumé et aux crevettes.` | Las tres adiciones del original están presentes (espárragos, salmón ahumado y gambas). Concordancia con el catálogo documentada. |
+| `5:6` Revuelto Moriles | `Œufs brouillés aux petits pois, aux champignons, à l’oignon et au jambon.` | Conserva guisantes, setas, cebolla y jamón. Concordancia con el catálogo documentada. |
+| `5:12` Cardos con Almejas y Gambas | `Cardons aux palourdes et aux crevettes.` | Preserva cardos, almejas y gambas; sin discrepancia detectada respecto al catálogo. |
+
+**Estado:** revisión de la muestra documental **ejecutada**; 1 observación ortotipográfica concreta y 2 candidatos de naturalidad/precisión; **ningún archivo de traducción, catálogo, código de aplicación o CSS modificado**. No hay nueva prueba de CI en este lote documental. Continúa pendiente la validación semántica de los demás lotes, verificación con originales, decisión editorial de correcciones propuestas y autorización de publicación. Próximos lotes sugeridos: `batch-096` y `batch-097`. Rama `main` intacta; FR limitado a `?qa_fr=1`.
