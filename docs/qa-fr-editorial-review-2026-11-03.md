@@ -353,3 +353,22 @@ Se han abierto las páginas de los **establecimientos concretos** y se han contr
 - Entrega `qa-reports/fr-moriles-ribera-semantic-review.json` como tabla de evidencia con los tres textos y el estado `pending_human_semantic_review` de **cada plato**. Este informe se publicará en el artefacto habitual `fr-visual-qa-desktop-mobile` cuando se ejecute GitHub Actions.
 - **Regla esencial:** PASS del script significaría **alineación estructural de textos**, no que ingredientes, métodos culinarios o términos estén traducidos correctamente. Los casos `ibéricos`/`revueltos` siguen abiertos hasta contrastar el contenido de las cartas originales, igual que `Cafés y chocolates` en Casa Fina.
 - **Estado:** script y CI modificados; **ejecución nueva pendiente de comprobar**. No se han modificado `main`, `app.js`, `i18n.js`, JSON gastronómicos, lotes FR, precios ni estilos. Francés experimental no publicado.
+
+
+## Revisión trilingüe manual: Moriles Ribera, primeros 24 platos — 04/11/2026
+
+**PASS precedente comunicado por el responsable:** Helio confirma nuevos **PASS del control de alineación ES/EN/FR de Moriles Ribera** incorporado en `scripts/inventory-fr-moriles-ribera-semantics.mjs`. Esta confirmación se atribuye exclusivamente al control técnico anterior; no implica aprobación lingüística humana de todas las entradas ni inspección directa de su último artefacto de CI por el asistente.
+
+**Método de este nuevo lote (revisión ejecutada, sin nuevo CI):** lectura del catálogo original **`data/places.json`** del blob `0ffd3de396986d99125752cde7b4c2c52a20b31e` a través del conector GitHub y cotejo por `sectionIndex` / `itemIndex` con los candidatos franceses `translations/fr/batch-090-moriles-ribera.json` y `batch-091-moriles-ribera.json` de la misma rama. **24/24 entradas examinadas**, 12 por lote; incluye `name`, `es`, `en` y `fr`. Es un cotejo con los textos registrados en el proyecto, **no** una nueva verificación de los platos o ingredientes en la web oficial.
+
+**Resultado observado:** no se aprecian omisiones evidentes de los ingredientes principales en esas 24 traducciones. Se identifican **tres candidatos de mejora**, sin declarar defectos funcionales ni modificar traducciones:
+
+| Índice | Plato | Fuente ES / EN | FR actual | Propuesta bajo revisión |
+|---|---|---|---|---|
+| `0:3` | Pimientos con Ventresca | ES: `Pimientos rojos y verdes asados con ventresca`; EN: `Roasted red and green peppers with tuna belly` | `Poivrons rouges et verts grillés accompagnés de ventrèche de thon.` | `rôtis` reflejaría mejor `asados` / `roasted` frente a `grillés`; no implica cambio de ingrediente |
+| `0:5` | Tropical | ES: `Anchoas, espárragos blancos, palmitos, piña, tomate rosa, maíz y salsa rosa`; EN: `... pink dressing` | `... maïs doux et sauce cocktail.` | `sauce rose` sería más literal y evitaría una equivalencia culinaria no explicitada en el origen; `sauce cocktail` puede ser convencional, por lo que es criterio editorial, no error confirmado |
+| `0:2` | Moriles | ES: `queso puro de oveja`; EN: `sheep's milk cheese` | `fromage pur brebis` | Valorar `fromage au lait de brebis` para naturalidad; no atribuir tipo, maduración o denominación que el origen no registre |
+
+**Control de alcance:** se contrastaron las **24 primeras** entradas de los **dos lotes indicados**, no el resto de Moriles Ribera ni las demás fichas. Los tres pares ES/EN/FR siguen siendo **candidatos**, no correcciones aprobadas. Mantener nombres de platos, fuentes, ingredientes, precios y formatos originales. La revisión por francófono y el cotejo con cartas oficiales siguen pendientes antes de decidir retoques. No se modifica `i18n.js`, lotes FR, datos, CSS, aplicación ni `main`.
+
+**Próxima tarea sugerida:** continuar con los lotes `batch-092` y `batch-093` de Moriles Ribera y aplicar la misma revisión 1:1, registrando cambios de sentido comprobables por separado de preferencias estilísticas. Si se autoriza un cambio editorial, hacerlo mínimo y verificar ES/EN/FR más CI antes de cerrar el caso.
