@@ -372,3 +372,22 @@ Se han abierto las páginas de los **establecimientos concretos** y se han contr
 **Control de alcance:** se contrastaron las **24 primeras** entradas de los **dos lotes indicados**, no el resto de Moriles Ribera ni las demás fichas. Los tres pares ES/EN/FR siguen siendo **candidatos**, no correcciones aprobadas. Mantener nombres de platos, fuentes, ingredientes, precios y formatos originales. La revisión por francófono y el cotejo con cartas oficiales siguen pendientes antes de decidir retoques. No se modifica `i18n.js`, lotes FR, datos, CSS, aplicación ni `main`.
 
 **Próxima tarea sugerida:** continuar con los lotes `batch-092` y `batch-093` de Moriles Ribera y aplicar la misma revisión 1:1, registrando cambios de sentido comprobables por separado de preferencias estilísticas. Si se autoriza un cambio editorial, hacerlo mínimo y verificar ES/EN/FR más CI antes de cerrar el caso.
+
+
+## Revisión trilingüe manual: Moriles Ribera, lotes 092–093 — 04/11/2026
+
+**PASS del responsable para el lote anterior:** Helio confirma nuevamente **PASS** de las comprobaciones anteriores. Registrar como confirmación comunicada, **no** como aprobación editorial de los 24 textos que se examinan en este bloque.
+
+**Evidencia y alcance:** lectura íntegra de `translations/fr/batch-092-moriles-ribera.json` (**12 entradas**) y `batch-093-moriles-ribera.json` (**12 entradas**), cruzadas 1:1 mediante `sectionIndex:itemIndex` con `name`, `es` y `en` de `data/places.json` del repositorio (blob `0ffd3de396986d99125752cde7b4c2c52a20b31e`). **24/24 candidatos FR leídos y contrastados**; acumulado de muestras de Moriles Ribera: **48 candidatos**, lotes 090–093. No se revalidó el contenido de las cartas publicadas por el establecimiento ni la vigencia de precios.
+
+| Índice | Texto fuente y traducción | Evaluación fundamentada |
+|---|---|---|
+| `2:3` | ES `Caña de Lomo Ibérica de Bellota`, EN `Acorn-fed Iberian cured pork loin`; FR `Caña de lomo ibérique de bellota (longe de porc séchée, issu de porcs nourris aux glands).` | **Observación lingüística concreta:** la concordancia `séchée, issu` resulta inconsistente si ambos participios describen `longe` (femenino); revisar sintaxis y terminología para describir con precisión la caña de lomo. No modificar `bellota` ni afirmar un método de curado adicional no documentado. |
+| `2:4`, `2:5`, `2:7` | ES `Queso Puro de Oveja`; EN `sheep's milk cheese`; FR repite `fromage pur brebis`. | **Mejora estilística candidata:** `fromage au lait de brebis` expresa el contenido original con mayor naturalidad, sin sugerir procedencia o tipo nuevos. Afecta a tres entradas y también al caso `0:2` ya documentado en el lote 090. |
+| `2:6` | ES `Formatos 110 g, 75 g y 40 g`, EN `published 110 g, 75 g and 40 g portions`; FR `portions de 110 g, 75 g et 40 g`. | **Correspondencia verificada contra el catálogo:** las tres cantidades se preservan en FR sin cambio numérico. No supone validación de disponibilidad actual. |
+| `1:17`, `1:18`, `1:19` | Tortillas de patata preparadas al momento y tortilla de camarones. | Se conserva la preparación al momento en `1:17` y `1:18`, y la explicación de fritura de camarones en `1:19`. La forma `tortillita` en FR mantiene una denominación tradicional, pero la naturalidad cultural queda bajo revisión humana. |
+| `2:9` | ES `Queso asado a la miel de caña`, EN `Grilled cheese with cane syrup`, FR `Fromage grillé au sirop de canne à sucre`. | Significado coherente con el EN documentado; no introducir ingredientes o formatos. |
+
+**Resultado del control:** no se observan omisiones flagrantes de los elementos principales en las 24 entradas cotejadas. Se distingue **una inconsistencia gramatical candidata concreta** (caña de lomo) de las **preferencias terminológicas** (queso de oveja). El origen permite constatar las diferencias entre los idiomas, **no** certificar los ingredientes frente a fuentes externas ni aprobar todo el francés. Ningún texto de producción modificado.
+
+**Próximo lote:** revisar `batch-094-moriles-ribera.json` y `batch-095-moriles-ribera.json` con el mismo método; preparar propuestas pequeñas, someter a criterio editorial y ejecutar regresión ES/EN/FR solo si se autorizan correcciones. Conservar la excepción de El Caballo Rojo y el bloqueo de publicación del francés hasta autorización final. Rama `main`, CSS, datos y traducciones intactos.
