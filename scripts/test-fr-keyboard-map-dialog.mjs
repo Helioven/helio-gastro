@@ -28,16 +28,37 @@ try{
      if(!(await dialog.evaluate(el=>el.open)))errors.push('Map dialog did not open');
      const inside=await page.evaluate(()=>document.activeElement?.closest('dialog')?.id==='map-dialog');
      if(!inside)errors.push('Focus did not enter map dialog');
-     for(let n=0;n<3;n++){
+     // Chromium can place focus on BODY at the native dialog wrap boundary.
+     // The top-layer modal still makes background content inert; verify wrap recovery
+     // and reject focus on any interactive element outside the dialog.
+     for(let n=0;n<4;n++){
       await page.keyboard.press('Tab');
-      if(!(await page.evaluate(()=>document.activeElement?.closest('dialog')?.id==='map-dialog'))){
-       errors.push('Tab moved focus outside modal at step '+(n+1));break;
+      const focus=await page.evaluate(()=>{
+       const el=document.activeElement;
+       return {tag:el?.tagName||'',id:el?.id||'',
+         inside:!!el?.closest('#map-dialog'),
+         dialogOpen:document.querySelector('#map-dialog').open};
+      });
+      if(!focus.dialogOpen){errors.push('Map dialog closed unexpectedly at Tab '+(n+1));break;}
+      if(!focus.inside){
+       if(focus.tag!=='BODY'){
+        errors.push('Tab moved focus to outside element '+focus.tag+'#'+focus.id+' at step '+(n+1));break;
+       }
+       await page.keyboard.press('Tab');
+       if(!(await page.evaluate(()=>document.activeElement?.closest('#map-dialog')!==null))){
+        errors.push('Focus did not return inside modal after native Tab wrap at step '+(n+1));break;
+       }
       }
      }
      await page.keyboard.press('Escape');
      await dialog.waitFor({state:'hidden'});
      if(!(await trigger.evaluate(el=>document.activeElement===el)))errors.push('Focus not restored to trigger after Escape');
-     if(await page.locator('#map-frame').getAttribute('src'))errors.push('Map iframe source retained after closing');
+     // 'close' is dispatched asynchronously; wait for the app's cleanup listener.
+     try{
+      await page.waitForFunction(()=>!document.querySelector('#map-frame').hasAttribute('src'),null,{timeout:1500});
+     }catch{
+      errors.push('Map iframe source retained after closing');
+     }
     }catch(e){errors.push('Interrupted: '+e.message);}
     report.results.push({profile:profile.name,language,status:errors.length?'FAIL':'PASS',errors});
    }
