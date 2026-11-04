@@ -36,8 +36,8 @@ try{
             const main=document.querySelector('main.shell');
             const rectData=el=>{
               const r=el.getBoundingClientRect();
-              return {tag:el.tagName,selector:el.id?'#'+el.id:el.className&&typeof el.className==='string'?'.'+el.className.trim().split(/\\s+/).join('.'):el.tagName.toLowerCase(),
-                text:(el.innerText||el.textContent||'').replace(/\\s+/g,' ').trim().slice(0,100),
+              return {tag:el.tagName,selector:el.id?'#'+el.id:el.className&&typeof el.className==='string'?'.'+el.className.trim().split(/\s+/).join('.'):el.tagName.toLowerCase(),
+                text:(el.innerText||el.textContent||'').replace(/\s+/g,' ').trim().slice(0,100),
                 left:Math.round(r.left),right:Math.round(r.right),width:Math.round(r.width)};
             };
             const visible=el=>el.getClientRects().length>0 && getComputedStyle(el).visibility!=='hidden';
@@ -75,7 +75,7 @@ try{
     }
   }
 }finally{await browser.close();}
-writeFileSync('qa-reports/fr-detail-accessibility-triage.json',JSON.stringify(report,null,2)+'\\n');
+writeFileSync('qa-reports/fr-detail-accessibility-triage.json',JSON.stringify(report,null,2)+'\n');
 const rows=report.results.filter(item=>item.metrics);
 const totals={views:rows.length,withCandidates:rows.filter(r=>r.candidates).length,
   errors:report.results.filter(r=>r.pageError).length};
