@@ -623,3 +623,39 @@ Se han abierto las páginas de los **establecimientos concretos** y se han contr
 **Balance:** 24/24 entradas cotejadas, sin omisiones principales ni discrepancias semánticas demostradas entre los textos registrados. Observación meramente estilística en `12:0`, sin necesidad de editar. Los 24 artículos conservan `Unidad` como formato de origen; los lotes FR son descripciones sin datos de precio nuevos. No se extrapolan ingredientes de la carta original gráfica, disponibilidad ni composición de bebidas.
 
 **Estado:** revisión documental completada; `candidate_awaiting_semantic_review` sin cambio. Ninguna modificación de lotes FR, ES/EN, `data/places.json`, `i18n.js`, HTML, JS o CSS; ningún CI nuevo ejecutado para esta revisión. Francés experimental bajo `?qa_fr=1`, sin autorización para publicar o fusionar; `main` intacta. Continuar con los lotes siguientes que realmente existan y mantener acumuladas las cuestiones editoriales para decisión expresa.
+
+
+## PASS comunicado y revisión documental Moriles Ribera, lotes 106–107 — 04/11/2026
+
+**Confirmación recibida:** Helio comunica nuevo **PASS** para el tramo precedente (lotes 104–105). Se registra como confirmación del responsable, sin atribuir a este bloque una ejecución nueva de CI ni una aprobación editorial lingüística.
+
+**Alcance real:** lectura de `translations/fr/batch-106-moriles-ribera.json` (**12 entradas**, índices `12:19–12:22` y `13:0–13:7`) y `batch-107-moriles-ribera.json` (**10 entradas**, índices `13:8` y `14:0–14:8`). **22/22 entradas examinadas; acumulado documental Moriles Ribera lotes 090–107: 214 entradas**. Se han comparado `placeId`, `sectionIndex`, `itemIndex`, FR y los campos `name`, `es`, `en`, `prices[].label` de la ficha exacta `moriles-ribera` en `data/places.json` de esta rama (blob `0ffd3de396986d99125752cde7b4c2c52a20b31e`). No se revalidaron cartas gráficas oficiales, precios ni disponibilidad.
+
+| Índice | Plato / bebida | Contraste ES/EN/FR |
+|---|---|---|
+| `12:19` | Café Cubano | `Café à la cubaine` representa el estilo sin inferir receta. |
+| `12:20` | Amaretto Café | `Café à l’amaretto` preserva café y amaretto. |
+| `12:21` | Calypso Café | `Café façon Calypso` conserva denominación/estilo sin inferir ingredientes. |
+| `12:22` | Café Barraquito | `Café barraquito` conserva nombre tradicional. |
+| `13:0` | Menta | `Infusion à la menthe` reproduce el EN `mint infusion`. |
+| `13:1` | Manzanilla | `Infusion à la camomille` desambigua manzanilla como infusión, sin confundir con vino. |
+| `13:2` | Tila | `Infusion de fleurs de tilleul` conserva materia vegetal. |
+| `13:3` | Rooibos Canela y Menta | `Rooibos à la cannelle et à la menthe` conserva ambas adiciones. |
+| `13:4` | Té Blanco con Fresa y Frambuesa | `Thé blanc à la fraise et à la framboise` conserva té y frutas. |
+| `13:5` | Té Rojo Pu-Erh | `Thé pu-erh` preserva variedad, aunque omite el descriptor comercial español `rojo`; no es error demostrado al tratarse de pu-erh correctamente identificado. |
+| `13:6` | Té Verde Gunpowder | `Thé vert Gunpowder` preserva variedad y color. |
+| `13:7` | Té Verde con Hierbabuena | `Thé vert à la menthe verte` traduce hierbabuena como spearmint, conforme al EN. |
+| `13:8` | Té Negro English Breakfast | `Thé noir English Breakfast` preserva variedad. |
+| `14:0` | Chocolate con leche | `Chocolat au lait` reproduce `milk chocolate`, sin atribuir formato de bebida. |
+| `14:1` | Chocolate Blanco | `Chocolat blanc` equivalente. |
+| `14:2` | Chocolate Negro | `Chocolat noir` equivalente. |
+| `14:3` | Chocolate Blanco con Avellanas | `Chocolat blanc aux noisettes` preserva fruto seco. |
+| `14:4` | Chocolate con Leche y Praliné | `Chocolat au lait et au praliné` conserva componentes. |
+| `14:5` | Chocolate Negro con Naranja y Canela | `Chocolat noir à l’orange et à la cannelle` conserva ingredientes. |
+| `14:6` | Chocolate Suizo | `Chocolat chaud noir avec crème fouettée et cannelle` reproduce ES chocolate negro, nata montada y canela; `chaud` está apoyado por el EN. |
+| `14:7` | Chocolate al Turrón | `Chocolat chaud noir avec crème fouettée et glace au touron` preserva ingredientes, temperatura identificada en EN y helado de turrón. |
+| `14:8` | Chocolate a la Vainilla | `Chocolat chaud noir avec crème fouettée et glace à la vanille` preserva ingredientes y temperatura indicada por EN. |
+
+**Ambigüedad conservada:** en `14:0–14:5`, ES y EN hablan de variedades de chocolate sin describir expresamente la presentación como bebida caliente. No sustituir por `chocolat chaud` sin evidencia de la carta original. En `14:6–14:8`, EN sí explicita `hot chocolate`. Los 22 registros conservan formato `Unidad`, que no demuestra por sí mismo si se trata de bebidas o piezas. No hay omisión o añadido sustancial de ingrediente detectado en el cotejo documental.
+
+**Resultado y límites:** 22 entradas comprobadas; **cero discrepancias semánticas demostradas frente a ES/EN**, una cautela editorial explícita sobre presentación de chocolates, ninguna modificación propuesta como obligatoria. No se han modificado candidatos FR, `data/places.json`, i18n, JS, CSS o HTML. **No se ejecutó nuevo CI por este contraste.** Los lotes permanecen `candidate_awaiting_semantic_review`, francés experimental bajo `?qa_fr=1`, publicación no autorizada y `main` intacta. Revisar siguientes lotes solo si existen; mantener decisión editorial posterior separada de los PASS técnicos.
