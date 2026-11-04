@@ -302,3 +302,18 @@ Se han abierto las páginas de los **establecimientos concretos** y se han contr
 - Conservar los controles de activación con Enter, apertura, retorno del foco tras Escape y los seis escenarios ES/EN/FR escritorio/móvil.
 
 **Estado:** modificación realizada en rama QA; el comportamiento nativo del navegador se reprodujo en una página mínima separada; **no se declara PASS de la suite real ni del nuevo workflow** hasta ver los resultados de CI. No se ha modificado `app.js`, HTML, CSS, datos, traducciones o `main`.
+
+
+### Segunda incidencia de teclado y aislamiento de casos — 04/11/2026
+
+**Log real aportado por el responsable, tras el arreglo anterior:** desktop ES/EN/FR **FAIL** por `locator('#map-dialog').waitFor({state:'hidden'})` agotado a los 30 segundos; desktop EN/FR también notifican `Map trigger not focusable`. Mobile ES/EN/FR **PASS** en ese mismo informe. Duración de la suite: 92 s.
+
+**Análisis del código:** el modal contiene un `iframe` de Google Maps. Después de navegar con Tab, el foco puede pasar al documento del iframe, donde `Escape` no está garantizado que alcance al `<dialog>` padre. La prueba enviaba Escape sin situar previamente el foco en un control del documento padre. Cuando la comprobación fallaba, dejaba el diálogo abierto, provocando fallos secundarios de enfoque en las siguientes lenguas del mismo perfil. **Hipótesis razonada por el flujo de la prueba; no hay traza del elemento activo dentro del iframe que confirme la causa con certeza.**
+
+**Cambio de prueba exclusivamente** (`scripts/test-fr-keyboard-map-dialog.mjs`, commit `145997f`):
+- Después de la comprobación de Tab, enfocar explícitamente `#close-map` (botón interno del diálogo padre) y verificar ese foco antes de enviar Escape.
+- Esperar un máximo de 3 segundos a que el modal se cierre, anotando un error específico en vez de agotar el timeout de 30 segundos.
+- En `finally`, cerrar el diálogo si sigue abierto para impedir que un caso fallido contamine los siguientes idiomas; **el FAIL original se conserva**.
+- Mantener comprobaciones de apertura con Enter, foco inicial, ciclo Tab, restauración del foco y limpieza asíncrona del iframe.
+
+**Alcance exacto:** se comprueba Escape desde el control de cierre del diálogo **padre**, no desde el contenido interactivo de un iframe externo. El comportamiento de Escape con foco dentro de Google Maps requiere otra evaluación específica y no debe interpretarse como cubierto por esta regresión. **Nuevo CI pendiente**: no proclamar PASS hasta revisar el run actualizado. Sin cambios de aplicación, estilos, datos, idiomas ni `main`.
