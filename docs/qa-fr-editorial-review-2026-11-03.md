@@ -245,3 +245,16 @@ Se han abierto las páginas de los **establecimientos concretos** y se han contr
 **Alcance real de la comprobación:** se verificó la existencia y separación de categorías y la atribución a las páginas oficiales; no se leyó íntegramente el contenido gráfico de las cartas, ni se contrastó la vigencia de precios, ni se ejecutó una prueba Playwright nueva. No se consideran aprobaciones lingüísticas.
 
 **Siguiente decisión QA:** obtener/leer de forma autorizada las páginas gráficas concretas y, solo ante discrepancia confirmada, efectuar un ajuste mínimo de etiqueta, prueba ES/EN/FR y CI. Por ahora **ningún cambio** en `i18n.js`, datos, CSS o `main`.
+
+
+## QA de fuentes ES/EN/FR — siguiente lote (04/11/2026)
+
+**Confirmación recibida:** Helio comunica un nuevo **PASS** para el lote inmediatamente anterior de contraste documental/QA. Se registra como **PASS comunicado por el responsable**, sin inferir que las tres ambigüedades semánticas estén resueltas ni que exista aprobación editorial nativa de la traducción. No atribuir este PASS a la nueva prueba descrita a continuación.
+
+**Nueva regresión incorporada, aún sin PASS confirmado:** `scripts/test-fr-source-venue-triage.mjs`, conectada al job `visual-qa` de `.github/workflows/data-qa.yml`.
+
+- **Tres fichas independientes:** `moriles-ribera`, `moriles-casa-fina` y `pastelerias-roldan-centro`. Nunca se intercambian sus cartas ni enlaces.
+- **Dos perfiles por ficha:** escritorio 1365 × 900 e iPhone 13; **seis escenarios**. Transiciones ES → FR → EN → FR → ES en `index.html?qa_fr=1`.
+- **Criterios automatizados:** existen etiquetas y URL de fuentes; se conservan sus pares `data-source-label-es` y `href` en cada transición; los rótulos vuelven a su contenido previo en ES y FR; no hay desbordamiento de documento o ficha por encima de la tolerancia de 2 px ni errores JavaScript. El script guarda `qa-reports/fr-source-venue-triage.json` y capturas de las tres fichas en cada perfil para inspección manual.
+- **Estado de QA:** prueba **implementada/conectada, pendiente de ejecución y comprobación del CI**. Ninguna captura de este lote ha sido inspeccionada visualmente aquí; PASS automatizado futuro no supondrá aprobación editorial ni accesibilidad completa.
+- **Límites protegidos:** sin cambios en CSS, `i18n.js`, fuentes, `data/places.json`, platos, ingredientes, precios, fechas ni rama `main`. El francés continúa experimental bajo `?qa_fr=1`.
