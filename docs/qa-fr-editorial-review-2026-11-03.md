@@ -272,3 +272,17 @@ Se han abierto las páginas de los **establecimientos concretos** y se han contr
 - **Evidencia prevista:** `qa-reports/fr-keyboard-map-dialog.json` y registro de la suite en `qa-reports/visual-qa-timings.csv`.
 - **Estado actual:** script creado y conectado al workflow, **ejecución y PASS/FAIL pendientes de verificación**. Si falla, conservar pasos y salida antes de corregir; no atribuir automáticamente la causa a CSS o traducción.
 - **Límites:** esta regresión **no** equivale a auditoría WCAG, prueba de lector de pantalla o revisión visual del contenido de la carta. No cambia HTML, CSS, JS de aplicación, datos, traducciones, `main`, ni autoriza despliegue de francés.
+
+
+## Incidencia CI tras incorporar la prueba de teclado — 04/11/2026
+
+**Evidencia aportada por Helio:** captura del listado de ejecuciones de GitHub Actions `Helio Gastro - data QA`, rama `feature/fr-integration-qa-20261027`:
+- **#756**, commit `ef8f06f` — icono verde / **PASS observado en el listado**. Esta ejecución corresponde a la creación del script, **antes de incorporarlo a la lista de ejecución del workflow**; por tanto, no valida la nueva suite.
+- **#757**, commit `2e6dda3` — icono rojo / **FAIL observado**, primer workflow con `scripts/test-fr-keyboard-map-dialog.mjs` incluido.
+- **#758**, commit `884e425` — icono rojo / **FAIL observado**, actualización documental posterior, con la misma prueba integrada.
+
+**Triaje:** la correlación temporal convierte la nueva prueba del diálogo en **hipótesis prioritaria**, pero **no demuestra** que ese script sea el job o paso fallido ni identifica la causa. No se dispuso de los logs de `visual-qa` ni de `qa-reports/fr-keyboard-map-dialog.json` en esta sesión; el conector GitHub no devolvió ejecuciones para esos SHA mediante su consulta de workflow runs (limitada a otros tipos de disparador). No clasificar como defecto de accesibilidad ni modificar producción o prueba hasta leer evidencia de fallo.
+
+**Siguiente acción necesaria:** abrir ejecución **#758** → job fallido → paso `Start static server and run desktop/mobile browser QA`; localizar `FR KEYBOARD MAP DIALOG`, `Visual QA failed`, o las últimas líneas. Si el job falla antes, copiar el nombre del paso y el error exacto. Contrastar también `qa-reports/fr-keyboard-map-dialog.json` si el artefacto existe. Reproducir caso, corregir solo causa confirmada y exigir CI PASS nuevo.
+
+**Estado:** #757 y #758 **FAIL observado en GitHub Actions**, raíz **sin confirmar**; #756 PASS anterior **no certifica** la suite nueva. No tocar `main`, cartas, traducciones o CSS.
