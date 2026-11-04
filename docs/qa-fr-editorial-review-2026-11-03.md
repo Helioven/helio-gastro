@@ -585,3 +585,41 @@ Se han abierto las páginas de los **establecimientos concretos** y se han contr
 **Balance:** no se aprecia ingrediente principal inventado u omitido frente a la información registrada. Tres candidatos de conservación de identidad/presentación de postres `11:12`, `11:18`, `11:20`, compartidos en diversa medida con EN; observaciones leves de terminología en `11:3` y `10:0`. **No son errores externos demostrados ni decisiones de corrección.** Los formatos de catálogo son `Ración` para `9:6` y `10:0–10:1`, y `Unidad` para los postres `11:0–11:20`. La forma de tulipa del nombre no cambia el formato de precio `Unidad` del catálogo.
 
 **Decisión:** informe documental únicamente. No hay cambios en lotes FR, ES/EN, `data/places.json`, código ni CSS; **sin nuevo CI** en este control. Los candidatos siguen `candidate_awaiting_semantic_review`; francés experimental bajo `?qa_fr=1`, sin autorización de publicación. `main` intacta. Continuar con los siguientes lotes reales y evaluar ajustes editoriales solo tras consentimiento, seguida de regresión ES/EN/FR.
+
+
+## PASS comunicado y revisión documental Moriles Ribera, lotes 104–105 — 04/11/2026
+
+**PASS comunicado:** Helio confirma nuevo PASS tras el tramo 102–103. Se registra como **confirmación del responsable** de controles previos, sin atribuir a esta revisión documental nuevas ejecuciones CI ni aprobación editorial de candidatos FR.
+
+**Alcance y método:** cotejo 1:1 de las 12 entradas de `translations/fr/batch-104-moriles-ribera.json` (`11:21–11:25` y `12:0–12:6`) y las 12 de `batch-105-moriles-ribera.json` (`12:7–12:18`) con `name`, `es`, `en` y `prices[].label` de `data/places.json`, ficha `moriles-ribera`, blob `0ffd3de396986d99125752cde7b4c2c52a20b31e` de la misma rama. **24/24 entradas contrastadas; 192 acumuladas en los lotes 090–105.** No se leyeron imágenes de cartas externas ni se validó vigencia de productos, precios o reclamos nutricionales.
+
+| Índice | Plato / campo | Evaluación de FR frente a ES/EN |
+|---|---|---|
+| `11:21` | Copa Helada de Nata y Nueces (sin azúcar) | `Coupe glacée à la crème et aux noix, indiquée sans sucre`: conserva presentación, nata, nueces y la declaración `sin azúcar` atribuida a la carta. No afirmar certificación nutricional. |
+| `11:22` | Tarta de Zanahoria | `Gâteau aux carottes`: equivalente. |
+| `11:23` | Surtido de postres | Conserva tres chocolates, tarta de tiramisú, torrija de crema y helado de vainilla; `fourrée` sigue la interpretación de EN. |
+| `11:24` | Surtido de postres cordobeses | Conserva tarta de queso Moriles con membrillo, pastel cordobés con helado de vainilla y Arco de la Mezquita. |
+| `11:25` | Trufita de Chocolate | `Petite truffe au chocolat`: conserva chocolate y diminutivo. |
+| `12:0` | Café Solo | `Café espresso noir`: fiel al origen y EN; `espresso noir` ligeramente redundante, solo estilo. |
+| `12:1` | Café Expreso | `Café espresso`: fiel. |
+| `12:2` | Café Cortado | `Espresso avec un peu de lait`: conserva proporción descriptiva sin fijar cantidad. |
+| `12:3` | Café con Leche | `Café au lait`: fiel. |
+| `12:4` | Leche Manchada | `Lait avec un trait de café`: diferencia correctamente la leche manchada del cortado. |
+| `12:5` | Café Americano | `Café americano`: equivalente comprensible. |
+| `12:6` | Café Bombón | `Café au lait concentré sucré`: traduce según EN; el ES nombra el café pero no explicita su composición. No inventar proporciones. |
+| `12:7` | Café Capuchino | `Cappuccino`: denominación habitual. |
+| `12:8` | Café Vienés | `Café viennois`: equivalente. |
+| `12:9` | Café Mocaccino | `Café mocaccino`: denominación conservada, sin inferir ingredientes adicionales. |
+| `12:10` | Café con Helado de Vainilla | `Café accompagné de glace à la vanille`: fiel. |
+| `12:11` | Café con Helado de Turrón | `Café accompagné de glace au touron`: fiel. |
+| `12:12` | Carajillo Flameado de Brandy | `Carajillo flambé au brandy`: conserva nombre, técnica y licor. |
+| `12:13` | Carajillo Flameado de Ron | `Carajillo flambé au rhum`: fiel. |
+| `12:14` | Carajillo Flameado de Anís | `Carajillo flambé à la liqueur d’anis`: sigue el EN y conserva licor y técnica. |
+| `12:15` | Carajillo Flameado de Whisky | `Carajillo flambé au whisky`: fiel. |
+| `12:16` | Expreso 43 | `Espresso au Licor 43`: preserva denominación de licor explicitada en EN. |
+| `12:17` | Café con Baileys | `Café au Baileys`: fiel. |
+| `12:18` | Café Irlandés | `Café irlandais`: equivalente común. |
+
+**Balance:** 24/24 entradas cotejadas, sin omisiones principales ni discrepancias semánticas demostradas entre los textos registrados. Observación meramente estilística en `12:0`, sin necesidad de editar. Los 24 artículos conservan `Unidad` como formato de origen; los lotes FR son descripciones sin datos de precio nuevos. No se extrapolan ingredientes de la carta original gráfica, disponibilidad ni composición de bebidas.
+
+**Estado:** revisión documental completada; `candidate_awaiting_semantic_review` sin cambio. Ninguna modificación de lotes FR, ES/EN, `data/places.json`, `i18n.js`, HTML, JS o CSS; ningún CI nuevo ejecutado para esta revisión. Francés experimental bajo `?qa_fr=1`, sin autorización para publicar o fusionar; `main` intacta. Continuar con los lotes siguientes que realmente existan y mantener acumuladas las cuestiones editoriales para decisión expresa.
