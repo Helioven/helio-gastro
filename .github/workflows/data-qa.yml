@@ -169,6 +169,7 @@ jobs:
             scripts/inventory-fr-detail-accessibility.mjs \
             scripts/test-fr-source-venue-triage.mjs \
             scripts/test-fr-keyboard-map-dialog.mjs \
+            scripts/inventory-fr-moriles-ribera-semantics.mjs \
             scripts/test-search-regression.mjs \
             scripts/test-filter-regression.mjs \
             scripts/test-comparator-regression.mjs \
