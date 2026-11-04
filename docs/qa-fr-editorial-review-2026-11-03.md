@@ -151,3 +151,21 @@
 **Siguiente control recomendado:** prueba enfocada de geometría y captura con el **mismo viewport y la misma secuencia de acciones** de las suites de las fichas afectadas. Si se reproduce la expansión, localizar el elemento exacto antes de modificar estilos; ejecutar regresión escritorio/móvil/ES/EN/FR después. En paralelo, mantener la revisión de naturalidad de las traducciones y las excepciones editoriales pendientes.
 
 **Ámbito protegido:** no se han cambiado textos, precios, ingredientes, cartas, `data/places.json`, estilos ni `main`. El francés continúa experimental con `?qa_fr=1`.
+
+
+## Revisión del diagnóstico de anchuras — 4 de noviembre de 2026
+
+**Verificación estática realizada sobre los scripts reales de la rama QA, sin ejecución de navegador nueva.** El informe del 3/11 comparó las anchuras de 13 capturas francesas con un supuesto viewport común de 1365 px. Ese supuesto no es aplicable a todas las suites: cada prueba de restaurante puede configurar un viewport de escritorio específico.
+
+| Captura FR | Script inspeccionado | Viewport desktop configurado | Anchura PNG observada el 3/11 | Interpretación |
+|---|---|---:|---:|---|
+| La Cazuela de la Espartería | `scripts/test-fr-la-cazuela-89.mjs` | 1895 × 900 | 1895 px | Coincide |
+| La Bandera | `scripts/test-fr-la-bandera-84.mjs` | 1845 × 900 | 1845 px | Coincide |
+| Rincón de las Beatillas | `scripts/test-fr-rincon-beatillas-75.mjs` | 1755 × 900 | 1755 px | Coincide |
+| San Miguel · El Pisto | `scripts/test-fr-el-pisto-62.mjs` | 1625 × 900 | 1625 px | Coincide |
+| Taberna La Sal | `scripts/test-fr-taberna-la-sal-60.mjs` | 1605 × 900 | 1605 px | Coincide |
+| Taberna Salinas | `scripts/test-fr-taberna-salinas-56.mjs` | 1565 × 900 | 1565 px | Coincide |
+
+**Resultado:** en estas seis muestras, el PNG no es más ancho que el viewport **real de su suite**. La diferencia con 1365 px no demuestra un desbordamiento. Se corrige, por tanto, la premisa de la incidencia P2 provisional para estas seis capturas; no procede un parche CSS. Los scripts inspeccionados incluyen además una comprobación de `document.documentElement.scrollWidth > innerWidth + 1`, pero **no se han ejecutado nuevamente** ni se infiere un PASS actual.
+
+**Pendiente:** cotejar individualmente las otras siete capturas señaladas con sus scripts y, si queda alguna discrepancia real, reproducirla con el viewport y la secuencia exactos de su propia suite; medir DOM y regiones afectadas antes de decidir una corrección. El barrido de 1280 px sigue siendo una prueba independiente. No se alteraron estilos, interfaz, datos, traducciones ni `main`. Esta actualización es **documental**, no una certificación visual/lingüística ni cierre global de QA. La ejecución de CI disparada por este cambio, en su caso, debe verificarse aparte.
