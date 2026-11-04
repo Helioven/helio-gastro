@@ -226,3 +226,22 @@ Helio confirma **PASS de las comprobaciones ejecutadas, con cero fallos reportad
 **Decisión:** ningún cambio en `i18n.js` hasta resolver cada ambigüedad con evidencia documental y criterio editorial. El siguiente lote debe cotejar estas tres expresiones con sus páginas de fuente registradas y valorar si la traducción existente se conserva o se ajusta con regresión ES/EN/FR.
 
 **Integridad:** registro documental solamente; no se cambia `main`, `data/places.json`, precios, ingredientes, formatos, CSS ni los lotes FR. El francés continúa limitado a `?qa_fr=1`.
+
+
+## Seguimiento de fuentes y PASS específico — 04/11/2026
+
+**Confirmación del responsable:** Helio comunica un nuevo **PASS para La Cazuela de la Espartería**. Se registra como PASS comunicado para esa ficha; no se extiende a La Bandera, Beatillas ni a una aprobación editorial global, y no se afirma lectura independiente de logs o capturas por esta confirmación.
+
+### Contraste externo acotado de tres etiquetas FR (04/11/2026)
+
+Se han abierto las páginas de los **establecimientos concretos** y se han contrastado los títulos originales visibles. No se reutilizan datos de una sede para otra.
+
+| Etiqueta | Evidencia oficial contrastada | Interpretación / decisión |
+|---|---|---|
+| Moriles Ribera: `ibéricos` → `charcuteries ibériques` | `https://www.morilesribera.com/nuestra-cocina` presenta una imagen de carta rotulada «Ibericos-Revueltos-Risottos-Pastas»; la versión `https://www.morilesribera.com/our-kitchen` distingue «Ibericos» como categoría | **Pendiente de verificación semántica de los platos**: «charcuteries» podría reducir la categoría si incluye elaboraciones no clasificables como charcutería. No editar a ciegas |
+| Moriles Ribera: `revueltos` → `œufs brouillés garnis` | La carta inglesa oficial separa la categoría «Revueltos» y la española la identifica en su imagen de carta | **Sin defecto demostrado**: la interpretación descriptiva parece comprensible, pero falta cotejar elaboraciones concretas de la imagen para aceptar «garnis» |
+| Moriles Casa Fina: `Cafés y chocolates` → `Cafés et chocolats` | El menú de navegación oficial en `https://morilescasafina.com/nuestra-cocina/` muestra literalmente «CAFÉS Y CHOCOLATES». Se intentó abrir `https://www.morilescasafina.com/cafes-y-chocolates`, pero no se pudo recuperar su contenido | **Ambigüedad no resuelta:** no se puede afirmar que todos sean chocolates calientes ni sustituir la etiqueta con seguridad. Mantener la traducción candidata hasta obtener el detalle original |
+
+**Alcance real de la comprobación:** se verificó la existencia y separación de categorías y la atribución a las páginas oficiales; no se leyó íntegramente el contenido gráfico de las cartas, ni se contrastó la vigencia de precios, ni se ejecutó una prueba Playwright nueva. No se consideran aprobaciones lingüísticas.
+
+**Siguiente decisión QA:** obtener/leer de forma autorizada las páginas gráficas concretas y, solo ante discrepancia confirmada, efectuar un ajuste mínimo de etiqueta, prueba ES/EN/FR y CI. Por ahora **ningún cambio** en `i18n.js`, datos, CSS o `main`.
