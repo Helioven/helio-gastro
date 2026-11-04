@@ -190,3 +190,15 @@ Los siete scripts usan captura de página completa (`fullPage: true`); las anchu
 **Dictamen de triaje:** se descarta la comparación con un supuesto viewport común de 1365 px como prueba de un defecto P2. La anomalía **de interpretación de tamaños** queda explicada por los scripts; **no existe evidencia suficiente para abrir un defecto de CSS**. Este dictamen no certifica que todos los elementos sean accesibles ni sustituye la inspección de DOM con viewports reales. El ZIP de capturas anterior no está disponible en esta sesión: las dimensiones individuales de estas siete imágenes no se han vuelto a medir, y no se atribuye por ello una nueva ejecución Playwright ni un PASS de navegador.
 
 **Estado del trabajo:** verificación estática de los 13 scripts terminada; registro corregido; ningún cambio de CSS, JS, datos gastronómicos, traducciones ni rama `main`. Continuar con QA visual/lingüístico, accesibilidad y regresión en los perfiles declarados; investigar desbordamientos únicamente ante mediciones DOM o capturas que excedan el viewport **de su propia suite**. CI del commit documental: comprobar por separado, sin presumir PASS.
+
+
+## Control exploratorio de accesibilidad y presentación FR — 4 de noviembre de 2026
+
+**Objetivo:** tras aclarar la comparación errónea de anchuras, iniciar una inspección visual instrumentada sobre fichas extensas sin alterar CSS ni los datos originales.
+
+- **Nuevo script:** `scripts/inventory-fr-detail-accessibility.mjs` (incorporado al job `visual-qa` en `.github/workflows/data-qa.yml`).
+- **Muestras:** La Cazuela de la Espartería, La Bandera y Rincón de las Beatillas; idiomas ES/EN/FR en escritorio 1365 × 900 e iPhone 13 (18 combinaciones). Se emplea `index.html?qa_fr=1` y `showPlace` como en las suites existentes.
+- **Evidencia prevista:** `qa-reports/fr-detail-accessibility-triage.json` y capturas `qa-reports/screenshots/fr-accessibility-triage/`. Mediciones: ancho de viewport/documento/cuerpo/ficha; elementos interactivos fuera del viewport; posibles controles sin nombre; textos con `overflow:hidden` y ancho recortado; número de enlaces de fuente, idioma HTML y errores de página.
+- **Criterio:** un candidato heurístico **no** implica defecto funcional ni incumplimiento WCAG. Verificar visualmente, distinguir contenedores desplazables voluntarios de recortes y documentar la reproducción antes de modificar estilos. La prueba falla si no completa las 18 vistas o si registra errores JS; los candidatos visuales se registran para análisis humano y no bloquean CI automáticamente.
+- **Estado al registrar el cambio:** **prueba añadida y conectada al workflow, ejecución de CI pendiente de verificar**. No se ha realizado revisión manual de las 18 capturas ni pruebas con lector de pantalla. No marcar como superada una auditoría de accesibilidad completa.
+- **Ámbito protegido:** rama `feature/fr-integration-qa-20261027`; sin modificaciones en `main`, `data/places.json`, cartas, precios, traducciones ni CSS. La publicación del francés permanece sin autorizar.
