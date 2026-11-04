@@ -751,3 +751,13 @@ Se han abierto las páginas de los **establecimientos concretos** y se han contr
 **Propuesta editorial conservadora, todavía NO autorizada:** `Entrecôte de vache âgée.` representa la edad del animal sin añadir tratamiento de maduración. Debe revisarse su naturalidad gastronómica por francófono; no afirmar que es denominación oficial del restaurante. Otras expresiones como `vache de réforme` no se proponen automáticamente por su alcance diferente. El inglés `Mature beef entrecôte` queda sin cambios hasta decisión editorial ES/EN/FR.
 
 **Estado:** contraste externo acotado realizado; lectura de la carta gráfica original **no realizada**; JSON `batch-099` **sin modificar**; **no hay CI ni prueba Playwright nueva**. Francés aún candidato experimental bajo `?qa_fr=1`, sin autorización de publicación; `main` intacta. Si se aprueba corrección, aplicar solo a `7:11` en rama QA y ejecutar regresión lingüística/estructural antes de pedir PASS del workflow.
+
+## Nuevo PASS y triaje del queso de oveja — 04/11/2026
+
+Helio comunica PASS posterior al último contraste documental. Es un **PASS comunicado**; no se ha comprobado una nueva ejecución de CI aquí y no hay aprobación editorial implícita.
+
+Se han cotejado las cinco ocurrencias de `fromage pur brebis` en Moriles Ribera, índices `0:2` (lote 090), `2:4`, `2:5`, `2:7` (lote 093) y `7:5` (lote 099), con sus respectivos nombres y descripciones ES/EN en `data/places.json` de la misma rama. En español aparece `queso puro de oveja`; el inglés emplea `sheep's milk cheese` y el francés actual `fromage pur brebis`.
+
+**Propuesta no autorizada:** `fromage au lait de brebis` ofrece una construcción francesa natural y es coherente con EN, pero no expresa literalmente `puro`. Confirmar antes si se desea preservar expresamente ese matiz; no atribuir composiciones adicionales al producto. Formatos originales sin cambios: `0:2` ración/media; `2:4` ración/media; `2:5` ración; `2:7` ración/media/tapa; `7:5` ración.
+
+El índice `7:11`, `Entrecôte de bœuf maturé`, permanece sin autorización y sin cambios. Esta actuación es solo documental; no cambia textos FR, ES/EN, datos, precios ni interfaz; no ejecuta CI. Francés sigue experimental bajo `?qa_fr=1`, no publicado, y `main` intacta.
