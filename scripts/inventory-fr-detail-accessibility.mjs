@@ -6,6 +6,7 @@ const venues=[
   {id:'la-cazuela-esparteria',label:'La Cazuela'},
   {id:'la-bandera-cafe',label:'La Bandera'},
   {id:'rincon-beatillas',label:'Beatillas'},
+  {id:'moriles-ribera',label:'Moriles Ribera'},
 ];
 const profiles=[
   {name:'desktop-1365',options:{viewport:{width:1365,height:900}}},
@@ -84,4 +85,4 @@ for(const r of rows.filter(r=>r.candidates)){
   console.log('FR DETAIL ACCESSIBILITY CANDIDATE '+JSON.stringify({profile:r.profile,venue:r.venue,language:r.language,
     candidates:r.candidates,metrics:r.metrics}));
 }
-if(totals.views!==18||totals.errors)process.exitCode=1;
+if(totals.views!==24||totals.errors)process.exitCode=1;
