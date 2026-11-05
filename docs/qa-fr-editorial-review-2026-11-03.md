@@ -832,3 +832,14 @@ Helio aportó captura de la lista de GitHub Actions de la rama `feature/fr-integ
 **Validación realmente ejecutada:** tras cada escritura se obtuvo de nuevo el archivo desde la rama QA y se comprobó coincidencia íntegra del contenido, análisis JSON válido, 12 entradas por lote, `meta.status = candidate_awaiting_semantic_review` y `catalogModified = false`; no se alteraron otras entradas no autorizadas. Lectura adicional del lote 099 confirma que `7:11` sigue siendo `Entrecôte de bœuf maturé.`, **pendiente**, no corregido. Se modificaron solo cinco cadenas `fr`, sin alterar ES/EN, datos, precios, formatos, CSS ni `main`.
 
 **Pruebas:** comprobaciones estáticas y relectura GitHub **PASS**. CI / GitHub Actions **sin nueva confirmación** para estos commits al momento de documentar; no atribuirles PASS de ejecuciones anteriores. Tampoco existe aprobación lingüística integral ni permiso de publicar francés. Próximo paso: verificar las ejecuciones de Actions y después proseguir los puntos editoriales abiertos sin repetir 214/214 controles.
+
+
+## PASS comunicados #797–#801 y siguiente triaje del lote 090 — 05/11/2026
+
+**Evidencia CI:** Helio adjuntó una captura de GitHub Actions de la rama `feature/fr-integration-qa-20261027` con marcas verdes SUCCESS en las ejecuciones **Helio Gastro - data QA** #797 (commit `4dfaec8`, triaje previo), #798 (`ea49b6b`, lote 090), #799 (`01b4ec5`, lote 093), #800 (`903f998`, lote 099) y #801 (`467a88b`, documentación). Se registra como **PASS confirmado por captura aportada por el responsable**, no como inspección de logs individuales o auditoría lingüística nativa. No hay autorización de publicación/fusión.
+
+**Continuación editorial: lote 090, candidatos todavía sin modificar.** Relectura actual de `translations/fr/batch-090-moriles-ribera.json` de la rama QA:
+- Índice `0:3`: FR `Poivrons rouges et verts grillés accompagnés de ventrèche de thon.`; ES documentado `Pimientos rojos y verdes asados con ventresca`; EN documentado `Roasted red and green peppers with tuna belly`. **Propuesta pendiente de aprobación:** `Poivrons rouges et verts rôtis accompagnés de ventrèche de thon.` Justificación: `rôtis` evita insinuar necesariamente parrilla/grill; no permite inferir horno concreto.
+- Índice `0:5`: FR contiene `sauce cocktail`; ES documentado `salsa rosa`; EN `pink dressing`. **Propuesta pendiente de aprobación:** cambiar solamente `sauce cocktail` por `sauce rose`, manteniendo los demás ingredientes de la descripción. Justificación: evitar atribuir una receta concreta no documentada; falta confirmación del ingrediente original y revisión nativa de naturalidad.
+
+**Estado actual:** la revisión de estos dos puntos es documental, sin edición de traducciones, pruebas funcionales nuevas ni CI atribuible a las propuestas. `7:11` (vaca vieja) permanece explícitamente pendiente de fuente. No repetir los 214 controles de Moriles Ribera. Francés candidato no publicado; `main` intacta.
