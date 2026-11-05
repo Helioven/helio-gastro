@@ -777,3 +777,21 @@ El índice `7:11`, `Entrecôte de bœuf maturé`, permanece sin autorización y 
 **Formatos:** estas cuatro entradas tienen `Ración` y `Media ración` en el catálogo. Los JSON FR son textos descriptivos sin precios nuevos. **Resultado:** cuatro entradas contrastadas; tres candidatos editoriales y una coherencia confirmada contra ES/EN, sin acreditación visual de carta oficial. No hay modificaciones implementadas, ni CI nuevo ejecutado, ni autorización de publicación. La entrada `7:11` (`vaca vieja`) y las cinco entradas `fromage pur brebis` permanecen sin cambio, a la espera de decisión explícita.
 
 **Estado de control:** revisión documental hecha, correcciones propuestas y pendientes de autorización. Francés bajo `?qa_fr=1` y `candidate_awaiting_semantic_review`; `main` intacta.
+
+
+## Aplicación autorizada de cuatro ajustes FR — 05/11/2026 (Moriles Ribera, lotes 094–095)
+
+**Autorización:** Helio aprobó expresamente las cuatro formulaciones FR propuestas. Alcance limitado a la rama `feature/fr-integration-qa-20261027`, sin publicación ni fusión a `main`.
+
+| Lote / índice | FR anterior | FR nuevo | Commit |
+|---|---|---|---|
+| 094 / `4:0` | `Risotto aux cèpes et autres champignons.` | `Risotto aux boletus et autres champignons.` | `45233f4` |
+| 094 / `5:0` | `Huevos à la flamenca, oeufs au jambon et au chorizo.` | `Huevos a la flamenca (œufs au jambon et au chorizo).` | `45233f4` |
+| 095 / `5:1` | `Œufs à la campagne avec pommes de terre et gulas (substitut de civelles).` | `Huevos camperos aux pommes de terre et aux gulas (substitut de civelles).` | `349a1e7` |
+| 095 / `5:11` | `Cèpes à la plancha avec jambon.` | `Boletus à la plancha avec jambon.` | `349a1e7` |
+
+**Motivación editorial:** conservar los nombres tradicionales de huevos a la flamenca y huevos camperos; eliminar la errata tipográfica `oeufs` y la construcción literal `à la campagne`. Mantener `boletus` sin afirmar una especie concreta que no declara el texto de referencia. Son decisiones aprobadas de traducción, no constatación de especies o ingredientes nuevos en la carta original.
+
+**Comprobaciones ejecutadas y superadas:** ambas escrituras devolvieron commit; cada JSON se volvió a obtener de GitHub desde la rama QA, se analizó y se comparó íntegramente con la versión escrita. Se comprobaron 12 entradas por archivo, `meta.status = candidate_awaiting_semantic_review`, `catalogModified = false`, y la invariancia de índices y campos distintos de los cuatro textos `fr` autorizados. No se editaron ES/EN, `data/places.json`, platos, precios, formatos, CSS ni interfaz.
+
+**Límites:** la lectura JSON y comprobación estática **no equivalen** a ejecución de Playwright o PASS de GitHub Actions, y las fórmulas aprobadas no certifican revisión lingüística nativa completa. Las cuestiones anteriores (vaca vieja, queso puro de oveja, pimientos, salsa rosa, etc.) siguen abiertas y **no han sido alteradas**. Francés experimental bajo `?qa_fr=1`, `main` intacta. Cotejo histórico de 214/214 entradas ya completado: no duplicarlo.
