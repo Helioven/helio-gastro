@@ -101,7 +101,7 @@ const summary=[
   '',
   'Full findings: artifact fr-visual-qa-desktop-mobile / fr-detail-accessibility-triage.json.',
   'A zero count is heuristic evidence only; inspect screenshots and document real reproductions.'
-].join('\\n')+'\\n';
-console.log('FR MORILES VISUAL TRIAGE SUMMARY\\n'+summary);
+].join('\n')+'\n';
+console.log('FR MORILES VISUAL TRIAGE SUMMARY\n'+summary);
 if(process.env.GITHUB_STEP_SUMMARY)appendFileSync(process.env.GITHUB_STEP_SUMMARY,summary);
 if(totals.views!==24||totals.errors)process.exitCode=1;
