@@ -1042,3 +1042,31 @@ Helio comunica **PASS** para las nuevas ejecuciones posteriores a `b1b71e9`, `47
 **Evidencia instrumental relacionada:** el JSON aportado `fr-detail-accessibility-triage.json`, registrado en el bloque anterior, presenta 24/24 escenarios con `candidates: 0`, incluyendo las dos vistas FR de Moriles Ribera, sin controles fuera de pantalla, textos recortados por la heurística ni overflow del documento. Se mantiene el **PASS del inventario automatizado** como resultado separado de la revisión humana.
 
 **Dictamen:** panorama visual sin defectos macroscópicos demostrados; **revisión fina de legibilidad/texto y contraste de postres pendiente de zoom/recortes verificables**. No abrir incidencias ni modificar CSS por intuición. Pendientes editoriales originales (`7:11` vaca vieja, `ibéricos` y `revueltos`) no varían. `main` no tocada, `?qa_fr=1` experimental y 214 entradas de Moriles Ribera ya contrastadas documentalmente.
+
+
+## Triaje manual de etiquetas híbridas en Cartas oficiales — 05/11/2026
+
+**Fuente de evidencia visual:** capturas de escritorio aportadas por Helio del entorno local `index.html?qa_fr=1`, ficha confirmada **Moriles Ribera**. Capturas de postres (índices `11:3`, `11:12`, `11:18`, `11:20`) muestran los textos FR autorizados, nombres ES originales, precios alineados y tarjetas sin recorte apreciable: **PASS visual manual de estas zonas concretas**; sin prueba móvil humana adicional para este detalle ni certificación global.
+
+**Hallazgo nuevo de localización (QA-FR-EDITORIAL, severidad baja/P3 propuesta, no defecto funcional):** el bloque de enlaces bajo `Cartas oficiales` conserva encabezado, aviso documental y algunos enlaces en español, mientras otros textos de fuente se traducen parcialmente. Ejemplos visibles en la captura: `Carte de cocina`, `Cafés, tés y chocolates`, `Carte de cocina en inglés`, `Menú sugerido en inglés`, `Glosario de traducciones`. No supone URLs incorrectas, errores de precios ni contenido gastronómico alterado.
+
+**Reproducción:** desde la rama QA local, abrir `?qa_fr=1`, escoger `Français (QA)`, abrir la ficha **Moriles Ribera**, localizar `Cartas oficiales` y observar textos mixtos. **Esperado:** rótulos de interfaz y avisos documentales en francés natural, conservando denominaciones propias y la información de procedencia/validez sin atribuir nuevos hechos. **Real:** etiquetas mixtas y nota de la carta en español; observación reproducida en captura, no por ejecución instrumental adicional.
+
+**Verificación de causa probable en código:** se leyó `i18n.js` y `app.js` de `feature/fr-integration-qa-20261027`. `i18n.js` contiene `frenchSourceLabels` para `[data-source-label-es]`, pero no incluye los rótulos específicos visibles en `officialMenuLinks`; `app.js` maneja `[data-official-menu-es]`, `[data-official-menu-notice-es]` y `[data-official-menus-heading]` con dos idiomas ES/EN; el tratamiento francés está superpuesto desde `i18n.js`. **No atribuir culpa a los datos de Moriles Ribera ni modificar el catálogo** por esta limitación de presentación.
+
+**Propuestas FR para decisión editorial — aún NO autorizadas ni implementadas:**
+
+| ES visible / nombre base | Presentación FR propuesta |
+|---|---|
+| `Cartas oficiales` | `Cartes officielles` |
+| `Carta de cocina` | `Carte des plats` |
+| `Menú Tapas Cordobesas` | `Menu « Tapas Cordobesas »` (denominación tradicional conservada) |
+| `Postres` | `Desserts` |
+| `Cafés, tés y chocolates` | `Cafés, thés et chocolats` (sin afirmar que todos son calientes) |
+| `Carta de cocina en inglés` | `Carte des plats en anglais` |
+| `Menú sugerido en inglés` | `Menu suggéré en anglais` |
+| `Glosario de traducciones` | `Glossaire des traductions` |
+
+**Aviso español observado y propuesta de traducción conservadora** (no cambia fechas ni validez): `Carta oficial española de 2026 transcrita en 15 apartados. Comprueba los precios con la fuente original; su vigencia puede haber cambiado. Las traducciones al inglés continúan en revisión.` → `Carte officielle espagnole de 2026 transcrite en 15 sections. Vérifiez les prix dans la source d’origine ; leur validité peut avoir changé. Les traductions en anglais sont toujours en cours de révision.`
+
+**Pendientes/criterios:** obtener autorización de Helio de la redacción editorial; aplicar solo a la capa de interfaz FR de la rama QA, preservar ES/EN, enlaces y textos fuente intactos, verificar ida/vuelta de idioma y regresión móvil/escritorio. No desplegar ni fusionar a `main`, no reabrir los 214 controles. Las dudas de fuente `7:11` vaca vieja y etiquetas `ibéricos`/`revueltos` siguen fuera de esta corrección. **No se han escrito nuevos textos de i18n ni ejecutado CI por este triaje documental.**
