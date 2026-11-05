@@ -83,6 +83,17 @@ try{
             }
             if(snapshot.links.length===0)errors.push(lang+': missing source links');
             if(snapshot.links.some(l=>!l.label||!l.href))errors.push(lang+': blank link label or href');
+            if(venue==='moriles-ribera'&&lang==='fr'){
+              const expectedSourceLabels=new Map([
+                ['Carta española oficial · ibéricos, tostas, risottos y pastas (febrero 2026)','Carte officielle en espagnol · Ibériques, fromages et charcuteries, tartines, risottos et pâtes (février 2026) ↗'],
+                ['Carta española oficial · revueltos, verduras y pescados (febrero 2026)','Carte officielle en espagnol · Œufs brouillés et légumes, poissons (février 2026) ↗']
+              ]);
+              for(const [original,expected] of expectedSourceLabels){
+                const links=snapshot.links.filter(link=>link.original===original);
+                if(links.length!==1)errors.push('fr: expected exactly one source label for '+original);
+                else if(links[0].label!==expected)errors.push('fr: incorrect source label for '+original+': '+links[0].label);
+              }
+            }
             if(snapshot.documentWidth>snapshot.viewportWidth+2)errors.push(lang+': document overflow '+snapshot.documentWidth+'/'+snapshot.viewportWidth);
             if(snapshot.detailWidth>snapshot.detailClientWidth+2)errors.push(lang+': detail overflow '+snapshot.detailWidth+'/'+snapshot.detailClientWidth);
           }
