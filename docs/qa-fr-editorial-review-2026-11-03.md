@@ -817,3 +817,18 @@ Helio aportó captura de la lista de GitHub Actions de la rama `feature/fr-integ
 - **Referencias terminológicas externas, no fuentes del restaurante:** INAO Ossau-Iraty: https://inao.gouv.fr/produit/ossau-iraty-13705 usa `pur lait de brebis`; CIHEAM https://om.ciheam.org/ressources/om/pdf/a12/CI910172.pdf emplea `fromage pur lait de brebis`. Estas fuentes avalan la expresión lingüística, no la ficha gastronómica específica de Moriles Ribera.
 
 **Estado:** seis entradas examinadas; una interpretación semántica sensible y cinco mejoras de formulación propuestas. Pendiente de autorización antes de editar, y después requerir comprobación estática, revisión ES/EN/FR y CI. Los cuatro ajustes de lotes 094–095 permanecen aplicados; no repetir los 214 controles ya completados. Francés experimental, no publicar ni fusionar.
+
+
+## Cinco ajustes FR autorizados: queso puro de oveja — 05/11/2026
+
+**Autorización editorial expresa de Helio:** sustituir las cinco ocurrencias de `fromage pur brebis` por `fromage pur lait de brebis`, manteniendo la mayúscula inicial donde corresponda, únicamente en `feature/fr-integration-qa-20261027`. **No autoriza** modificar el entrecot de vaca vieja `7:11`, que queda pendiente de contraste con carta original y revisión de naturalidad lingüística.
+
+| Archivo | Índices modificados | Commit |
+|---|---|---|
+| `batch-090-moriles-ribera.json` | `0:2` | `ea49b6b` |
+| `batch-093-moriles-ribera.json` | `2:4`, `2:5`, `2:7` | `01b4ec5` |
+| `batch-099-moriles-ribera.json` | `7:5` | `903f998` |
+
+**Validación realmente ejecutada:** tras cada escritura se obtuvo de nuevo el archivo desde la rama QA y se comprobó coincidencia íntegra del contenido, análisis JSON válido, 12 entradas por lote, `meta.status = candidate_awaiting_semantic_review` y `catalogModified = false`; no se alteraron otras entradas no autorizadas. Lectura adicional del lote 099 confirma que `7:11` sigue siendo `Entrecôte de bœuf maturé.`, **pendiente**, no corregido. Se modificaron solo cinco cadenas `fr`, sin alterar ES/EN, datos, precios, formatos, CSS ni `main`.
+
+**Pruebas:** comprobaciones estáticas y relectura GitHub **PASS**. CI / GitHub Actions **sin nueva confirmación** para estos commits al momento de documentar; no atribuirles PASS de ejecuciones anteriores. Tampoco existe aprobación lingüística integral ni permiso de publicar francés. Próximo paso: verificar las ejecuciones de Actions y después proseguir los puntos editoriales abiertos sin repetir 214/214 controles.
