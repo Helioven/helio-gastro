@@ -1020,3 +1020,14 @@ Helio comunica **PASS** para las nuevas ejecuciones posteriores a `b1b71e9`, `47
 **Siguiente paso definido:** recuperar **solo** el pequeño artefacto `fr-accessibility-metrics-only` generado por la ejecución con PASS, leer `fr-detail-accessibility-triage.json`, resumir resultados de las 24 combinaciones (Moriles Ribera en ES/EN/FR × escritorio/móvil) y separar alertas heurísticas de defectos observables. Solicitar capturas individuales únicamente para las vistas con hallazgos, si los hubiera. No añadir nuevas suites ni modificar interfaz antes de la clasificación.
 
 **Alcance intacto:** FR experimental `?qa_fr=1`, `main` sin cambios, cartas y precios intactos, y dudas de fuente (vaca vieja, ibéricos/revueltos) aún abiertas. No repetir controles documentales 214/214.
+
+
+## Resultado real del inventario de accesibilidad 24/24 — 05/11/2026
+
+**Evidencia leída:** archivo aportado por Helio `fr-detail-accessibility-triage.json`, generado el `2026-11-05T08:06:35.939Z`, con `kind = exploratory_fr_visual_accessibility_not_a_pass_certificate`. Se pudo leer el contenido JSON completo de la carga de archivo del usuario (24 resultados) pese a que la operación adicional de lectura local por contenedor devolvió `ClientError`. **No se han inspeccionado los PNG ni los logs individualizados del workflow.**
+
+**Resultados del detector (24/24):** cuatro establecimientos (`la-cazuela-esparteria`, `la-bandera-cafe`, `rincon-beatillas`, `moriles-ribera`) × tres idiomas (ES/EN/FR) × dos perfiles (`desktop-1365`, `mobile-iphone13`). Cada resultado declara `candidates: 0`, `outsideControls: []`, `unnamedControls: []`, `clippedText: []`; `viewportWidth = documentWidth = bodyWidth` en las 24 vistas (1365 píxeles en escritorio, 390 píxeles en móvil). `htmlLang` coincide con el idioma de cada resultado. Las seis vistas de Moriles Ribera también declaran cero candidatos; el inventario registra 13 enlaces de fuentes y 24 controles comprobados en cada idioma/perfil.
+
+**Dictamen técnico acotado:** **PASS del inventario exploratorio bajo sus heurísticas** y ningún candidato a defecto de geometría/accesibilidad en las 24 vistas. No es aprobación WCAG, inspección humana de screenshots, prueba de todos los tamaños/dispositivos ni validación lingüística. Los PASS de workflow comunicados por Helio se conservan como evidencia separada; no inferir de ellos la ausencia de defectos visuales. No crear tickets ni cambiar CSS sin defecto reproducible.
+
+**Acciones:** cerrar el triaje de *métricas automáticas* de estas 24 vistas y continuar con la inspección visual/manual de capturas de forma selectiva si se obtiene evidencia. Conservar pendientes por fuente `7:11` vaca vieja y etiquetas `ibéricos`/`revueltos`. No reabrir 214 entradas de Moriles Ribera. `main` intacta; `?qa_fr=1` experimental, sin autorización de lanzamiento.
