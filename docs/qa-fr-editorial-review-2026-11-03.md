@@ -872,3 +872,12 @@ Helio **autorizó expresamente** dos ajustes FR en `translations/fr/batch-090-mo
 - `1:4`, ES `Croquetas de Rabo de Toro`, FR `Croquettes à la queue de taureau.`: no hay discrepancia nueva demostrada en este control; no proponer modificación automática.
 
 **Estado:** ninguna traducción nueva aplicada, ninguna regresión CI nueva ejecutada por este triaje. `7:11` (vaca vieja) permanece pendiente de evidencia original. La rama experimental `?qa_fr=1` y el bloqueo de publicación/fusión a `main` siguen vigentes; no repetir 214 controles concluidos.
+
+
+## Corrección autorizada de croquetas de boletus — 05/11/2026
+
+**Autorización editorial explícita de Helio:** cambiar únicamente el texto francés del índice `1:1` de `translations/fr/batch-091-moriles-ribera.json`, de `Croquettes aux cèpes (boletus).` a `Croquettes aux boletus.`, para evitar atribuir una especie/grupo fúngico más específico que el `boletus` genérico documentado por el catálogo español de Moriles Ribera. **Commit de implementación:** `bdc1bb8`.
+
+**Validación efectivamente realizada:** se leyó el JSON original desde la rama `feature/fr-integration-qa-20261027`, se comprobó coincidencia exacta de la entrada antes de editar y se preservaron las otras 11 entradas y todos los campos no autorizados. Tras el commit se volvió a leer el archivo desde GitHub y se comprobó igualdad íntegra con el contenido escrito, parseo JSON válido, 12 entradas, nueva cadena exacta en `1:1`, `meta.status = candidate_awaiting_semantic_review` y `catalogModified = false`. **PASS estático**. ES/EN, `data/places.json`, precios, formatos, ingredientes y aplicación no se modificaron.
+
+**Pendiente:** no se ha acreditado aún el PASS de GitHub Actions asociado a este commit ni al de documentación; no se ha ejecutado revisión francófona nativa ni prueba visual específica. `7:11` (vaca vieja) permanece pendiente de fuente original, sin edición. Francés experimental bajo `?qa_fr=1`; no publicar ni fusionar en `main`. No repetir los 214 controles documentales completados.
