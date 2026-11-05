@@ -918,3 +918,19 @@ Helio aportó captura de GitHub Actions, workflow `Helio Gastro - data QA`, sobr
 **Otros términos originales:** `ibéricos` → `charcuteries ibériques` y `revueltos` → `œufs brouillés garnis` continúan como dudas documentales sin defecto confirmado; la imagen oficial de carta correspondiente no se ha leído con garantías. No aplicar cambios a `i18n.js` por intuición. `7:11` vaca vieja también sigue pendiente de original.
 
 **Estado de las pruebas:** lectura documental/JSON y comprobación de textos realizadas; ninguna edición de los lotes ni prueba funcional o CI nueva por este análisis. El francés permanece experimental `?qa_fr=1` y `main` intacta. Solicitar decisión editorial antes de cambiar nombres/descripciones y, si se aprueban, aplicar cambios mínimos y regresión ES/EN/FR; el EN también omite aspectos de algunos nombres, pero no existe autorización para editarlo.
+
+
+## Cuatro ajustes FR autorizados de postres — 05/11/2026
+
+**Aprobación expresa de Helio:** conservar denominaciones tradicionales y de presentación en cuatro descripciones francesas de postres de Moriles Ribera; exclusivamente en `feature/fr-integration-qa-20261027`. Correcciones de identidad del plato, no nuevas afirmaciones de ingredientes, técnicas ni tamaños.
+
+| Lote / índice | Antes | Después | Commit |
+|---|---|---|---|
+| 102 / `11:3` | `Crème dessert espagnole avec biscuit María.` | `Natillas (crème dessert espagnole) avec biscuit María.` | `2471342` |
+| 103 / `11:12` | `Dessert glacé façon Ferrero.` | `Iglú de Ferrero (dessert glacé façon Ferrero).` | `dc69b7b` |
+| 103 / `11:18` | `Dessert au chocolat servi dans une coupe en forme de tulipe.` | `Tulipa « Muerte por chocolate » (dessert au chocolat servi dans une coupe en forme de tulipe).` | `dc69b7b` |
+| 103 / `11:20` | `Glace à la vanille de Tahiti aux noix de macadamia.` | `Tulipa glacée à la vanille de Tahiti et aux noix de macadamia.` | `dc69b7b` |
+
+**Controles realmente ejecutados y superados:** antes de cada escritura se releía el archivo real desde GitHub y se contrastaba el texto previo exacto y el índice único. Cada JSON se analizó correctamente; 12 entradas y estado `candidate_awaiting_semantic_review`, `catalogModified = false`, `restaurant = moriles-ribera`. Se compararon todos los campos de las entradas para verificar que solo cambiaban las cuatro cadenas `fr` autorizadas. Después de escribir se recuperó cada archivo nuevamente de GitHub y su contenido coincidió exactamente con el preparado.
+
+**Estado y límites:** PASS **estático/estructural**, no prueba Playwright ni PASS de GitHub Actions todavía confirmado para estos commits. No se han modificado `data/places.json`, ES/EN, ingredientes, precios, formatos de servicio, interfaz, CSS ni `main`. `11:12`, `11:18` y `11:20` pueden requerir revisión posterior de naturalidad por francófono. Las etiquetas `ibéricos`/`revueltos` y `7:11` vaca vieja continúan pendientes de carta original y criterio editorial. No reabrir los 214 controles documentales. Francés experimental bajo `?qa_fr=1`, sin autorización para publicar/fusionar.
