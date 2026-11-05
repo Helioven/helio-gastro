@@ -976,3 +976,14 @@ Helio aportó captura de GitHub Actions, workflow `Helio Gastro - data QA`, sobr
 **Estado real:** relectura de GitHub de los cambios de código y coincidencia íntegra de los archivos guardados **PASS de persistencia**; no se ha descargado aún el ZIP de capturas ni ejecutado Playwright local o verificado nuevo PASS de Actions para este ajuste. El resumen es orientativo: candidatos = posibles anomalías que requieren examen humano, y cero candidatos no garantiza accesibilidad conforme a WCAG. No atribuir ningún defecto a Moriles Ribera hasta contar con métricas/capturas de la ejecución.
 
 **Sin cambios:** `main`, `data/places.json`, textos ES/EN/FR, precios, formatos y CSS. Francés experimental `?qa_fr=1`. Mantener los bloqueos documentales conocidos (vaca vieja, ibéricos/revueltos) y no reabrir 214 entradas.
+
+
+## PASS comunicados y puerta de revisión visual — 05/11/2026
+
+**Resultado comunicado por Helio:** PASS de las nuevas ejecuciones posteriores a `b1b71e9` (resumen de candidatos visuales), `4752ecc` (salto de línea correcto en resumen) y `203dff6` (documentación). Se registra **PASS comunicado por el responsable**, sin número de workflow, examen de logs ni descarga de artefactos; no usarlo para afirmar ausencia de candidatos visuales.
+
+**Revisión de estado efectuada:** la rama QA conserva `scripts/inventory-fr-detail-accessibility.mjs` con 24 escenarios previstos, incluidos los seis de Moriles Ribera; el script vuelca el resumen correspondiente en `GITHUB_STEP_SUMMARY` y el detalle en `qa-reports/fr-detail-accessibility-triage.json` dentro de `fr-visual-qa-desktop-mobile`. Se comprobó que el workflow `.github/workflows/data-qa.yml` ejecuta la suite existente y sube los artefactos con `if: always()`, retención de 14 días. La suite **solo suspende** por vistas incompletas o errores JS; puede registrar candidatos aunque Actions sea SUCCESS.
+
+**Próxima puerta de decisión, todavía pendiente:** leer la tabla `FR visual accessibility — Moriles Ribera (exploratory)` de la ejecución aprobada y el JSON/capturas asociados. Clasificar cada candidato según evidencia: 1) defecto reproducible con pasos, severidad y esperado/real; 2) desplazamiento o formato intencionado; 3) falso positivo heurístico; 4) información insuficiente. No aplicar parches CSS ni declarar cero defectos sin ese contraste. Si no se puede recuperar artefacto desde esta sesión, solicitar captura de la tabla y/o ZIP al responsable; no crear nueva instrumentación redundante.
+
+**Sin cambios de aplicación ni traducciones.** `main` intacta; francés experimental con `?qa_fr=1`. Conservar como pendientes de fuente las decisiones sobre `7:11` vaca vieja y categorías `ibéricos`/`revueltos`. Mantener los 214 controles documentales ya completados.
