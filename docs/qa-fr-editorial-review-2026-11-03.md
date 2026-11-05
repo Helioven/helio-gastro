@@ -1139,3 +1139,20 @@ Helio comunica **PASS** para las nuevas ejecuciones posteriores a `b1b71e9`, `47
 **Siguiente verificación eficiente:** solicitar al responsable captura legible de la *fuente original*, no de la aplicación: lámina `MR 005 (Carnes)` para el entrecot, `MR 003 (Ibericos-Revueltos-Risottos-Pastas)` para las categorías, y contenido de `CAFÉS Y CHOCOLATES` de Casa Fina si es accesible. Recortar solo las zonas pertinentes con encabezados y líneas de plato legibles; conservar enlace y fecha de acceso. Si la imagen no está accesible tampoco desde el navegador del usuario, consignar límite y continuar con revisión francófona sin editar por conjeturas.
 
 **Límites:** no se verificaron ingredientes ni precios nuevos; no se descargaron ni usaron fotografías ajenas para publicarlas en la aplicación. No se ha tocado `main`, CSS, `data/places.json`, lotes FR, `i18n.js` ni otro dato. El francés sigue experimental `?qa_fr=1`. Ningún test funcional nuevo se ejecutó por este contraste documental; CI nuevo de esta nota pendiente.
+
+
+## Tres correcciones autorizadas tras capturas oficiales Moriles Ribera — 05/11/2026
+
+**Autorización:** Helio compartió tres capturas legibles de la carta oficial de Moriles Ribera: lámina `CARNES` (incluye el texto `Entrecot de vaca vieja`); lámina `IBÉRICOS, QUESOS Y EMBUTIDOS`; y lámina `REVUELTOS Y VERDURAS`. A continuación autorizó expresamente tres cambios exclusivos de la traducción FR en la rama `feature/fr-integration-qa-20261027`, sin alterar ES/EN, datos, precios, fuentes, enlaces ni `main`. Las capturas se usaron como evidencia visual de consulta, **no se incorporaron fotografías al repositorio**.
+
+| Ubicación | Antes | Después | Implementación |
+|---|---|---|---|
+| `translations/fr/batch-099-moriles-ribera.json`, `7:11` | `Entrecôte de bœuf maturé.` | `Entrecôte de vache âgée.` | `c348f0a` |
+| `i18n.js`, rótulo FR del enlace oficial de ibéricos | `Carte officielle en espagnol · charcuteries ibériques, tartines, risottos et pâtes (février 2026)` | `Carte officielle en espagnol · Ibériques, fromages et charcuteries, tartines, risottos et pâtes (février 2026)` | `024e574` |
+| `i18n.js`, rótulo FR del enlace oficial de revueltos | `Carte officielle en espagnol · œufs brouillés garnis, légumes et poissons (février 2026)` | `Carte officielle en espagnol · Œufs brouillés et légumes, poissons (février 2026)` | `024e574` |
+
+**Alcance semántico:** el entrecot se describe por la edad de la vaca y deja de atribuir un proceso de maduración no mencionado en la fuente. Los rótulos de fuente francesa se ajustan al alcance de las cabeceras españolas originales, conservando en la misma etiqueta los demás apartados que figuraban en el enlace; en «revueltos» se evita duplicar `légumes`. Esto **no constituye** validación de naturalidad por francófono nativo ni cambia nombres de platos o categorías del catálogo.
+
+**Validaciones realizadas:** recuperación previa de los archivos de la rama QA; confirmación de coincidencia exacta de la traducción anterior en `7:11`; 12 entradas preservadas en el lote, `meta.status = candidate_awaiting_semantic_review`, `catalogModified = false`, otros campos de las entradas sin modificar; los dos fragmentos anteriores del mapa FR se localizaron de forma única; escrituras y relecturas desde GitHub con igualdad íntegra del contenido preparado. **PASS estructural/persistencia**, sin ejecución local Playwright. La suite existente `scripts/test-fr-source-venue-triage.mjs` se amplió con dos aserciones exactas de etiqueta francesa en Moriles Ribera, conservando su regresión de enlaces/idiomas y sus perfiles escritorio/iPhone13; commit `97d1f76`.
+
+**Pendientes:** obtener confirmación de GitHub Actions para los commits de cambio, test y documentación; comprobar la presentación francesa real en una captura local tras actualizar copia QA. La duda «Cafés y chocolates» de Moriles Casa Fina **sigue pendiente de fuente**. La revisión lingüística global y la aprobación final de francés continúan pendientes. **No** se modificaron `data/places.json`, `app.js`, formatos, precios, URLs ni `main`; `?qa_fr=1` permanece experimental.
