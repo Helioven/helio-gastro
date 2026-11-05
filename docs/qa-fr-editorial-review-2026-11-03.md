@@ -1031,3 +1031,14 @@ Helio comunica **PASS** para las nuevas ejecuciones posteriores a `b1b71e9`, `47
 **Dictamen técnico acotado:** **PASS del inventario exploratorio bajo sus heurísticas** y ningún candidato a defecto de geometría/accesibilidad en las 24 vistas. No es aprobación WCAG, inspección humana de screenshots, prueba de todos los tamaños/dispositivos ni validación lingüística. Los PASS de workflow comunicados por Helio se conservan como evidencia separada; no inferir de ellos la ausencia de defectos visuales. No crear tickets ni cambiar CSS sin defecto reproducible.
 
 **Acciones:** cerrar el triaje de *métricas automáticas* de estas 24 vistas y continuar con la inspección visual/manual de capturas de forma selectiva si se obtiene evidencia. Conservar pendientes por fuente `7:11` vaca vieja y etiquetas `ibéricos`/`revueltos`. No reabrir 214 entradas de Moriles Ribera. `main` intacta; `?qa_fr=1` experimental, sin autorización de lanzamiento.
+
+
+## Inspección visual panorámica de Moriles Ribera FR — 05/11/2026
+
+**Evidencia suministrada por Helio:** las capturas originales `desktop-1365-moriles-ribera-fr.png` y `mobile-iphone13-moriles-ribera-fr.png` correspondientes a la ficha completa de Moriles Ribera en francés. Se han visto ambas en la conversación como vistas panorámicas completas. **La inspección detallada de recortes a resolución nativa no ha podido efectuarse:** las operaciones del entorno de imagen/archivo devolvieron `ClientError`. No se han aplicado OCR ni recortes ni se han inspeccionado píxeles en zonas individuales.
+
+**Observación visual cualitativa, de alcance limitado:** se aprecia continuidad vertical de la ficha y estructura de componentes de escritorio y móvil; no se observa una rotura global manifiesta del diseño o un desbordamiento horizontal evidente en las vistas reducidas. Esta observación **no prueba** ausencia de recortes en líneas individuales, legibilidad de todos los textos ni correcta distribución de las cuatro descripciones largas de postres corregidas.
+
+**Evidencia instrumental relacionada:** el JSON aportado `fr-detail-accessibility-triage.json`, registrado en el bloque anterior, presenta 24/24 escenarios con `candidates: 0`, incluyendo las dos vistas FR de Moriles Ribera, sin controles fuera de pantalla, textos recortados por la heurística ni overflow del documento. Se mantiene el **PASS del inventario automatizado** como resultado separado de la revisión humana.
+
+**Dictamen:** panorama visual sin defectos macroscópicos demostrados; **revisión fina de legibilidad/texto y contraste de postres pendiente de zoom/recortes verificables**. No abrir incidencias ni modificar CSS por intuición. Pendientes editoriales originales (`7:11` vaca vieja, `ibéricos` y `revueltos`) no varían. `main` no tocada, `?qa_fr=1` experimental y 214 entradas de Moriles Ribera ya contrastadas documentalmente.
