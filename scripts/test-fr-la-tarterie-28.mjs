@@ -15,6 +15,25 @@ for(const config of [{name:'desktop',options:{viewport:{width:1365,height:900}}}
   const actual=await page.locator('#detail-content [data-dish-explanation]:visible').allTextContents();
   if(actual.length!==28)errors.push('French descriptions: '+actual.length+' instead of 28');
   if(actual.some((t,i)=>t!==entries[i]?.fr))errors.push('French candidate ordering or wording mismatch');
+  const rangeLabel=page.locator('#detail-content [data-venue-menu-note-es="Rango por producto completo"]').first();
+  const productDetails=page.locator('#detail-content [data-venue-menu-note-es^="Tamaños: "]').first();
+  if(await rangeLabel.count()===0||await productDetails.count()===0)errors.push('Missing Tarterie presentation note nodes');
+  else{
+   const originalDetail=await productDetails.getAttribute('data-venue-menu-note-es');
+   if(await rangeLabel.textContent()!=='Fourchette de prix pour le produit entier')errors.push('FR product price-range label');
+   const frDetails=await productDetails.textContent();
+   if(!frDetails.startsWith('Tailles : ')||!frDetails.includes('. Options : '))errors.push('FR sizes/options labels: '+frDetails);
+   if(await productDetails.getAttribute('data-venue-menu-note-es')!==originalDetail)errors.push('Tarterie original sizes/options mutated');
+   await page.locator('#language-select').selectOption('en');
+   if(await rangeLabel.textContent()!=='Whole-product price range')errors.push('EN product range not restored');
+   if(!(await productDetails.textContent()).startsWith('Sizes: '))errors.push('EN sizes/options not restored');
+   await page.locator('#language-select').selectOption('es');
+   if(await rangeLabel.textContent()!=='Rango por producto completo')errors.push('ES range not restored');
+   if(await productDetails.textContent()!==originalDetail)errors.push('ES sizes/options altered');
+   await page.locator('#language-select').selectOption('fr');
+   if(await rangeLabel.textContent()!=='Fourchette de prix pour le produit entier')errors.push('FR range not restored after round-trip');
+  }
+
   if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1))errors.push('Horizontal overflow');
   await page.screenshot({path:'qa-reports/screenshots/'+config.name+'-la-tarterie-fr.png',fullPage:true});
   for(const language of ['es','en']){
