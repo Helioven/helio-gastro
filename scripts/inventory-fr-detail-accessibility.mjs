@@ -1,6 +1,6 @@
 // Exploratory FR QA geometry/accessibility inventory. Findings require human triage.
 import { chromium, devices } from 'playwright';
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { mkdirSync, writeFileSync, appendFileSync } from 'node:fs';
 
 const venues=[
   {id:'la-cazuela-esparteria',label:'La Cazuela'},
@@ -85,4 +85,23 @@ for(const r of rows.filter(r=>r.candidates)){
   console.log('FR DETAIL ACCESSIBILITY CANDIDATE '+JSON.stringify({profile:r.profile,venue:r.venue,language:r.language,
     candidates:r.candidates,metrics:r.metrics}));
 }
+const morilesRows=rows.filter(r=>r.venue==='moriles-ribera');
+const summary=[
+  '## FR visual accessibility — Moriles Ribera (exploratory)',
+  '',
+  'Candidate counts require human review; workflow SUCCESS does not certify zero visual defects.',
+  '',
+  '| Profile | Language | Overflow px | Outside controls | Unnamed controls | Clipped texts | Screenshot |',
+  '|---|---|---:|---:|---:|---:|---|',
+  ...morilesRows.map(r=>{
+    const m=r.metrics;
+    const overflow=Math.max(0,m.documentWidth-m.viewportWidth);
+    return '| '+r.profile+' | '+r.language+' | '+overflow+' | '+m.outsideControls.length+' | '+m.unnamedControls.length+' | '+m.clippedText.length+' | \`'+r.screenshot+'\` |';
+  }),
+  '',
+  'Full findings: artifact fr-visual-qa-desktop-mobile / fr-detail-accessibility-triage.json.',
+  'A zero count is heuristic evidence only; inspect screenshots and document real reproductions.'
+].join('\\n')+'\\n';
+console.log('FR MORILES VISUAL TRIAGE SUMMARY\\n'+summary);
+if(process.env.GITHUB_STEP_SUMMARY)appendFileSync(process.env.GITHUB_STEP_SUMMARY,summary);
 if(totals.views!==24||totals.errors)process.exitCode=1;
