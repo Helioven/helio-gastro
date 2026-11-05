@@ -176,9 +176,11 @@ window.GASTRO_I18N = Object.freeze({
     ['☕ Desayunar','☕ Petit-déjeuner'],
     ['🍽️ Comer','🍽️ Déjeuner'],
     ['🥐 Merendar','🥐 Goûter'],
-    ['🌙 Cenar','🌙 Dîner']
+    ['🌙 Cenar','🌙 Dîner'],
+    ['Puedes explorar las cartas generales existentes; el servicio de comer y su horario siguen pendientes de verificar.','Vous pouvez consulter les cartes générales disponibles ; le service du déjeuner et ses horaires restent à vérifier.'],
+    ['Puedes explorar las cartas generales existentes; el servicio de cenar y su horario siguen pendientes de verificar.','Vous pouvez consulter les cartes générales disponibles ; le service du dîner et ses horaires restent à vérifier.']
   ]);
-  const translateFrenchServiceText=(node,source)=>node.parentElement?.closest('#service-section')?(frenchServiceLabels.get(normalize(source))||source):source;
+  const translateFrenchServiceText=(node,source)=>node.parentElement?.closest('#service-section')||node.parentElement?.id==='service-intro'?(frenchServiceLabels.get(normalize(source))||source):source;
   const frenchHeroLabels=new Map([
     ['CÓRDOBA · DÓNDE COMER BIEN','CORDOUE · OÙ BIEN MANGER'],
     ['Encuentra algo rico.','Trouvez un bon petit plat.'],
