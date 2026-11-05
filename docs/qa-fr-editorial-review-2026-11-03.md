@@ -902,3 +902,19 @@ Helio aportó captura de GitHub Actions, workflow `Helio Gastro - data QA`, sobr
 **Referencia histórica adicional, insuficiente para cerrar:** una transcripción publicada en Scribd de `Carta Ribera 1` incluye `Entrecot de vaca vieja` y `Chuletón de vaca vieja`, pero no constituye comprobación verificable de la imagen oficial vigente de 2026. No se trasladan precios ni otros datos desde esa transcripción.
 
 **Estado del candidato `batch-099`, `7:11`:** el JSON de la rama QA todavía muestra `Entrecôte de bœuf maturé.`; la posible confusión entre edad del animal y proceso de maduración permanece **pendiente de confirmación y criterio editorial**. No se ha modificado `7:11` ni `7:12`, no se ha ejecutado CI por este triaje y no se reabre el cotejo 214/214. Francés candidato no publicado; `main` sin cambios.
+
+
+## Revisión focalizada de postres y etiquetas tradicionales — 05/11/2026
+
+**Alcance:** relectura de informe editorial vigente y archivos reales `translations/fr/batch-102-moriles-ribera.json` y `batch-103-moriles-ribera.json` de la rama QA. Los casos ya figuran en el contraste histórico 214/214 y **no se computan como revisión adicional de entradas**. No se han modificado traducciones ni catálogo.
+
+| Índice / lote | FR actualmente comprobado | Clasificación y propuesta no autorizada |
+|---|---|---|
+| `11:3` / 102, Natillas con su galleta María | `Crème dessert espagnole avec biscuit María.` | Conserva el significado; opcional mantener nombre tradicional `Natillas (crème dessert espagnole) avec biscuit María.`. Solo estilo cultural, no fallo probado. |
+| `11:12` / 103, Iglú de Ferrero | `Dessert glacé façon Ferrero.` | Omite el nombre/imagen comercial «iglú» expresado en ES; propuesta `Iglú de Ferrero (dessert glacé façon Ferrero).` antes de revisión nativa. No inferir forma física adicional ni composición. |
+| `11:18` / 103, Tulipa de muerte por chocolate | `Dessert au chocolat servi dans une coupe en forme de tulipe.` | Preserva la tulipa pero omite el nombre expresivo «muerte por chocolate». Propuesta conservadora `Tulipa « Muerte por chocolate » (dessert au chocolat servi dans une coupe en forme de tulipe).` como denominación original y explicación; naturalidad FR pendiente. |
+| `11:20` / 103, Tulipa helada de vainilla de Tahití con nueces de macadamia | `Glace à la vanille de Tahiti aux noix de macadamia.` | Omite «tulipa» como presentación del nombre ES; propuesta `Tulipa glacée à la vanille de Tahiti et aux noix de macadamia.` a revisión editorial, sin cambiar formato de precio `Unidad`. |
+
+**Otros términos originales:** `ibéricos` → `charcuteries ibériques` y `revueltos` → `œufs brouillés garnis` continúan como dudas documentales sin defecto confirmado; la imagen oficial de carta correspondiente no se ha leído con garantías. No aplicar cambios a `i18n.js` por intuición. `7:11` vaca vieja también sigue pendiente de original.
+
+**Estado de las pruebas:** lectura documental/JSON y comprobación de textos realizadas; ninguna edición de los lotes ni prueba funcional o CI nueva por este análisis. El francés permanece experimental `?qa_fr=1` y `main` intacta. Solicitar decisión editorial antes de cambiar nombres/descripciones y, si se aprueban, aplicar cambios mínimos y regresión ES/EN/FR; el EN también omite aspectos de algunos nombres, pero no existe autorización para editarlo.
