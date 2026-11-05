@@ -30,6 +30,8 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1365,height:900}}
    es.push(texts);
   }
   await page.locator('#language-select').selectOption('fr');
+  const frAfterRoundTrip=await page.locator('#detail-content [data-dish-explanation]:visible').allTextContents();
+  if(JSON.stringify(frAfterRoundTrip)!==JSON.stringify(fr))errors.push('FR descriptions not restored after ES/EN round-trip');
   if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1))errors.push('Horizontal overflow');
   await page.screenshot({path:'qa-reports/screenshots/'+profile.name+'-moriles-ribera-fr.png',fullPage:true});
   const base=await context.newPage();
