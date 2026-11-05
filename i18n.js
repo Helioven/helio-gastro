@@ -526,7 +526,21 @@ window.GASTRO_I18N = Object.freeze({
     return source;
   };
   const frenchSectionHeadings=new Map();
-  const translateFrenchHeading=(node,source)=>node.parentElement?.matches('.language-label')&&normalize(source)==='Language / Idioma'?'Langue':node.parentElement?.matches('[data-venue-menu-section]')?(frenchSectionHeadings.get(normalize(source))||source):source;
+  // Static methodology and footer copy in the opt-in French QA interface.
+  const frenchInfoLabels=new Map([
+    ['🔍 Nuestro criterio','🔍 Notre méthode'],
+    ['Confirmado','Confirmé'],
+    ['significa coste publicado y verificable, con fuente y fecha.','désigne un prix publié et vérifiable, accompagné d’une source et d’une date.'],
+    ['Estimado','Estimé'],
+    ['indica una orientación, nunca el precio de una carta.','donne une estimation indicative, et non un prix figurant sur une carte.'],
+    ['No inventamos reseñas, puntuaciones ni disponibilidad. Si no sabemos algo, lo indicamos.','Nous n’inventons ni avis, ni notes, ni disponibilités. Lorsque nous ne disposons pas d’une information, nous le précisons.'],
+    ['Helio Gastro 3.1.1 · Córdoba · Proyecto piloto para portfolio QA','Helio Gastro 3.1.1 · Córdoba · Projet pilote pour un portfolio QA'],
+    ['Sin publicidad ni afiliación. Datos pendientes de verificación.','Sans publicité ni affiliation. Données en attente de vérification.']
+  ]);
+  const translateFrenchHeading=(node,source)=>{
+    if(node.parentElement?.closest('.panel.info,footer'))return frenchInfoLabels.get(normalize(source))||source;
+    return node.parentElement?.matches('.language-label')&&normalize(source)==='Language / Idioma'?'Langue':node.parentElement?.matches('[data-venue-menu-section]')?(frenchSectionHeadings.get(normalize(source))||source):source;
+  };
   const normalize=s=>s.trim().replace(/\s+/g,' ');
   // Keep English rendering and the mutation observer's expected value in sync.
   // Otherwise an internally translated price is mistaken for external content,
