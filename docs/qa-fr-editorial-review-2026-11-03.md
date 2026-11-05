@@ -1167,3 +1167,12 @@ Helio comunica **PASS** para las nuevas ejecuciones posteriores a `b1b71e9`, `47
 **Corrección mínima ejecutada:** actualizar solo las dos cadenas esperadas en `scripts/test-fr-detail-shell-pilot.mjs` para coincidir con `Carte officielle en espagnol · Ibériques, fromages et charcuteries, tartines, risottos et pâtes (février 2026)` y `Carte officielle en espagnol · Œufs brouillés et légumes, poissons (février 2026)`. **Commit:** `f76d9fc`. Se verificó que cada cadena anterior aparecía exactamente una vez, que solo se reemplazaban ambas expectativas y que el archivo se recuperó idéntico desde GitHub tras la escritura. No se han cambiado las traducciones aprobadas, ni datos, precios, URLs, `main`, `app.js` o CSS.
 
 **Estado de las pruebas:** PASS de lectura/persistencia del test actualizado; **nuevo GitHub Actions pendiente**. Si CI sigue fallando, abrir el job exacto y localizar el nombre del script + mensaje de error para diagnóstico por evidencia. No declarar el defecto resuelto sin PASS del workflow. Francés sigue `?qa_fr=1` candidato, sin publicación.
+
+
+## PASS tras corrección de test antiguo — 05/11/2026
+
+**Confirmación del responsable:** Helio comunica **PASS de GitHub Actions** tras la actualización de las dos expectativas obsoletas en `scripts/test-fr-detail-shell-pilot.mjs` (commit `f76d9fc`) y la documentación del incidente (commit `45b1105`). No se han aportado números de ejecución ni logs en esta confirmación, por lo que registrar **PASS comunicado**, no inspección independiente del job.
+
+**Estado:** el FAIL documentado de las ejecuciones #837–#839 quedó resuelto según la regresión posterior confirmada por Helio; la desincronización objetiva entre expectativas previas y traducciones FR autorizadas quedó corregida. Permanecen en QA las traducciones autorizadas del entrecot de vaca vieja (lote 099, `7:11`) y los rótulos de fuentes `ibéricos` y `revueltos`, sin alterar ES/EN, datos, precios, URLs ni `main`.
+
+**Próxima dependencia editorial:** la categoría `Cafés y chocolates` de **Moriles Casa Fina** sigue sin verificación legible de la carta original; no añadir `chauds` ni alterar el texto francés `Cafés et chocolats` sin esa fuente. Se mantiene pendiente la revisión lingüística nativa y visual humana restante; el francés sigue solo en `?qa_fr=1`. Ningún test o texto de aplicación modificado por este apunte. El CI del propio commit documental queda pendiente de confirmación.
