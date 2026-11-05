@@ -229,6 +229,14 @@ jobs:
           console.log('Total medido de suites: '+csv.reduce((a,r)=>a+r.seconds,0)+' segundos. Excluye instalación y otros pasos.');
           NODE
           exit "$status"
+      - name: Upload FR accessibility metrics only
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fr-accessibility-metrics-only
+          path: qa-reports/fr-detail-accessibility-triage.json
+          if-no-files-found: error
+          retention-days: 14
       - name: Upload visual QA screenshots and results
         if: always()
         uses: actions/upload-artifact@v4
