@@ -1009,3 +1009,14 @@ Helio comunica **PASS** para las nuevas ejecuciones posteriores a `b1b71e9`, `47
 **Validación realizada:** lectura del workflow original, cambio mínimo del YAML, escritura a GitHub y relectura byte a byte de su contenido: PASS de persistencia. **Pendiente:** confirmación del PASS de GitHub Actions de este cambio, descarga del JSON ligero e inspección de sus 24 filas para identificar candidatos; los casos con candidatos requerirán consultar capturas y reproducción. No se ejecutó Playwright local.
 
 **Sin cambios en** `main`, `data/places.json`, textos ES/EN/FR, precios, CSS o interfaz. El francés sigue en `?qa_fr=1`. Mantener pendientes por fuente `7:11` vaca vieja y `ibéricos`/`revueltos`; no repetir el cotejo 214/214.
+
+
+## PASS del artefacto ligero y siguiente control de evidencias — 05/11/2026
+
+**Confirmación de Helio:** PASS de GitHub Actions tras los commits `81bb854` (alta de `fr-accessibility-metrics-only`) y `6617370` (documentación). **Tipo de evidencia:** confirmación del responsable; no se han examinado en esta sesión los pasos internos de CI, el archivo JSON resultante ni las capturas. El PASS técnico no certifica ausencia de hallazgos heurísticos.
+
+**Verificación adicional:** se reintentó consultar Actions y abrir el ZIP original de 416 MB; el acceso a la página produjo `cache miss` y la operación local devolvió `ClientError`. No existe base para declarar PASS de inspección visual ni para crear incidencias CSS.
+
+**Siguiente paso definido:** recuperar **solo** el pequeño artefacto `fr-accessibility-metrics-only` generado por la ejecución con PASS, leer `fr-detail-accessibility-triage.json`, resumir resultados de las 24 combinaciones (Moriles Ribera en ES/EN/FR × escritorio/móvil) y separar alertas heurísticas de defectos observables. Solicitar capturas individuales únicamente para las vistas con hallazgos, si los hubiera. No añadir nuevas suites ni modificar interfaz antes de la clasificación.
+
+**Alcance intacto:** FR experimental `?qa_fr=1`, `main` sin cambios, cartas y precios intactos, y dudas de fuente (vaca vieja, ibéricos/revueltos) aún abiertas. No repetir controles documentales 214/214.
