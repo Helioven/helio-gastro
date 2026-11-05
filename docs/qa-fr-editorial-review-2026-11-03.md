@@ -795,3 +795,14 @@ El índice `7:11`, `Entrecôte de bœuf maturé`, permanece sin autorización y 
 **Comprobaciones ejecutadas y superadas:** ambas escrituras devolvieron commit; cada JSON se volvió a obtener de GitHub desde la rama QA, se analizó y se comparó íntegramente con la versión escrita. Se comprobaron 12 entradas por archivo, `meta.status = candidate_awaiting_semantic_review`, `catalogModified = false`, y la invariancia de índices y campos distintos de los cuatro textos `fr` autorizados. No se editaron ES/EN, `data/places.json`, platos, precios, formatos, CSS ni interfaz.
 
 **Límites:** la lectura JSON y comprobación estática **no equivalen** a ejecución de Playwright o PASS de GitHub Actions, y las fórmulas aprobadas no certifican revisión lingüística nativa completa. Las cuestiones anteriores (vaca vieja, queso puro de oveja, pimientos, salsa rosa, etc.) siguen abiertas y **no han sido alteradas**. Francés experimental bajo `?qa_fr=1`, `main` intacta. Cotejo histórico de 214/214 entradas ya completado: no duplicarlo.
+
+
+### Confirmación de GitHub Actions — 05/11/2026, lotes 094–095
+
+Helio aportó captura de la lista de GitHub Actions de la rama `feature/fr-integration-qa-20261027`, con indicadores verdes de éxito para tres ejecuciones consecutivas del workflow **Helio Gastro - data QA**:
+
+- **#793 — SUCCESS**: `45233f4` (`fix(fr): refine Moriles Ribera editorial wording in batch 094`); duración mostrada 5 min 37 s.
+- **#794 — SUCCESS**: `349a1e7` (`fix(fr): refine Moriles Ribera editorial wording in batch 095`); duración mostrada 5 min 35 s.
+- **#795 — SUCCESS**: `026b3e4` (`docs(qa): record authorized Moriles Ribera FR batch 094-095 corrections`); duración mostrada 4 min 8 s.
+
+**Evidencia y alcance:** PASS **confirmados visualmente por captura aportada por Helio**, no por inspección individual de logs ni de pasos del workflow. No inferir qué suites concretas se ejecutaron solo por el estado agregado. Las comprobaciones estáticas de estructura JSON y relectura de los archivos tras escritura también fueron realizadas y superadas; quedan separadas de esta evidencia CI. Las cuatro propuestas de traducción están autorizadas e implementadas, pero el PASS técnico no equivale a aprobación editorial nativa integral, revisión visual completa ni permiso para publicar francés o fusionar a `main`. Las cuestiones editoriales restantes continúan pendientes.
