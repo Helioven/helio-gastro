@@ -843,3 +843,21 @@ Helio aportó captura de la lista de GitHub Actions de la rama `feature/fr-integ
 - Índice `0:5`: FR contiene `sauce cocktail`; ES documentado `salsa rosa`; EN `pink dressing`. **Propuesta pendiente de aprobación:** cambiar solamente `sauce cocktail` por `sauce rose`, manteniendo los demás ingredientes de la descripción. Justificación: evitar atribuir una receta concreta no documentada; falta confirmación del ingrediente original y revisión nativa de naturalidad.
 
 **Estado actual:** la revisión de estos dos puntos es documental, sin edición de traducciones, pruebas funcionales nuevas ni CI atribuible a las propuestas. `7:11` (vaca vieja) permanece explícitamente pendiente de fuente. No repetir los 214 controles de Moriles Ribera. Francés candidato no publicado; `main` intacta.
+
+
+## Aplicación autorizada de pimientos asados y salsa rosa — 05/11/2026
+
+Helio **autorizó expresamente** dos ajustes FR en `translations/fr/batch-090-moriles-ribera.json` para Moriles Ribera, limitados a `feature/fr-integration-qa-20261027`:
+
+| Índice | FR previo | FR aplicado |
+|---|---|---|
+| `0:3` | `Poivrons rouges et verts grillés accompagnés de ventrèche de thon.` | `Poivrons rouges et verts rôtis accompagnés de ventrèche de thon.` |
+| `0:5` | `Anchois, asperges blanches, cœurs de palmier, ananas, tomate rose, maïs doux et sauce cocktail.` | `Anchois, asperges blanches, cœurs de palmier, ananas, tomate rose, maïs doux et sauce rose.` |
+
+**Commit de implementación:** `45c8812`.
+
+**Motivo:** `rôtis` comunica mejor `asados` sin imponer una técnica concreta; `sauce rose` evita identificar la salsa rosa de origen como una fórmula específica de salsa cóctel no acreditada. Solo se modificaron los dos textos `fr` autorizados; no se alteró el nombre, los ingredientes restantes, formato, precio, ES/EN, `data/places.json`, aplicación, CSS ni `main`.
+
+**Pruebas realmente ejecutadas y superadas:** lectura GitHub previa, coincidencia exacta de las dos cadenas antes del reemplazo, validación estructural del JSON, comparación con el objeto original para descartar modificaciones no autorizadas en otros campos/entradas, relectura de la versión escrita desde GitHub con coincidencia íntegra, conservación de 12 entradas, `meta.status = candidate_awaiting_semantic_review` y `meta.catalogModified = false`.
+
+**Pendientes:** no se ha verificado un nuevo PASS del workflow GitHub Actions para este commit ni para el de documentación; la revisión editorial nativa integral sigue pendiente. `7:11` (vaca vieja) continúa sin autorización y a la espera de carta original. Los 214 controles documentales históricos no se repiten. Francés experimental mediante `?qa_fr=1`, sin publicación/fusión.
