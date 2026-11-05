@@ -41,6 +41,46 @@ try{
                 viewportWidth:window.innerWidth,detailWidth:root.scrollWidth,detailClientWidth:root.clientWidth};
             });
             (observations[lang]??=[]).push(snapshot);
+            if(venue==='moriles-ribera'){
+              const official=await page.evaluate(()=>{
+                const section=document.querySelector('#detail-content .official-menu-resources');
+                return section?{
+                  heading:section.querySelector('[data-official-menus-heading]')?.textContent?.trim(),
+                  notice:section.querySelector('[data-official-menu-notice-es]')?.textContent?.trim(),
+                  links:[...section.querySelectorAll('[data-official-menu-es]')].map(a=>({
+                    es:a.dataset.officialMenuEs,en:a.dataset.officialMenuEn,
+                    label:a.textContent.trim(),href:a.getAttribute('href')
+                  }))
+                }:null;
+              });
+              if(!official){errors.push(lang+': missing official-menu section');}
+              else{
+                const translations=new Map([
+                  ['Carta de cocina','Carte des plats'],
+                  ['Menú Tapas Cordobesas','Menu « Tapas Cordobesas »'],
+                  ['Postres','Desserts'],
+                  ['Cafés, tés y chocolates','Cafés, thés et chocolats'],
+                  ['Carta de cocina en inglés','Carte des plats en anglais'],
+                  ['Menú sugerido en inglés','Menu suggéré en anglais'],
+                  ['Glosario de traducciones','Glossaire des traductions']
+                ]);
+                const frNotice='Carte officielle espagnole de 2026 transcrite en 15 sections. Vérifiez les prix dans la source d’origine ; leur validité peut avoir changé. Les traductions en anglais sont toujours en cours de révision.';
+                const expectedHeading=lang==='fr'?'Cartes officielles':lang==='en'?'Official menus':'Cartas oficiales';
+                if(official.heading!==expectedHeading)errors.push(lang+': official menu heading '+JSON.stringify(official.heading));
+                if(lang==='fr'&&official.notice!==frNotice)errors.push('fr: official menu notice differs');
+                if(official.links.length!==7)errors.push(lang+': expected seven official links; got '+official.links.length);
+                for(const link of official.links){
+                  const expectedLabel=lang==='fr'?translations.get(link.es):lang==='en'?link.en:link.es;
+                  if(!expectedLabel)errors.push(lang+': unexpected official link '+link.es);
+                  else if(link.label!==expectedLabel+' ↗')errors.push(lang+': official menu label '+link.es+' => '+link.label);
+                  if(!/^https:\/\//.test(link.href||''))errors.push(lang+': invalid official link URL '+link.es);
+                }
+                const previous=(observations.es?.[0]||{}).official;
+                if(previous&&JSON.stringify(official.links.map(l=>({es:l.es,en:l.en,href:l.href})))!==JSON.stringify(previous.links.map(l=>({es:l.es,en:l.en,href:l.href}))))
+                  errors.push(lang+': official menu URL or source metadata changed');
+                snapshot.official=official;
+              }
+            }
             if(snapshot.links.length===0)errors.push(lang+': missing source links');
             if(snapshot.links.some(l=>!l.label||!l.href))errors.push(lang+': blank link label or href');
             if(snapshot.documentWidth>snapshot.viewportWidth+2)errors.push(lang+': document overflow '+snapshot.documentWidth+'/'+snapshot.viewportWidth);
