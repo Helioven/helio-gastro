@@ -1094,3 +1094,35 @@ Helio comunica **PASS** para las nuevas ejecuciones posteriores a `b1b71e9`, `47
 **Dictamen:** **PASS visual manual del bloque FR en escritorio**. En la captura no se observan solapamientos, texto truncado ni desbordamiento de botones; la mezcla ES/FR previamente reproducida ya no está visible. Se considera **resuelta la incidencia editorial de etiquetas híbridas para esta vista**. La identidad e integridad de los enlaces y el retorno ES → FR → EN → FR → ES están cubiertos por el test automático con PASS comunicado; no se ha repetido manualmente esa secuencia ni la comprobación de esta modificación en pantalla móvil.
 
 **Sin cambios adicionales de interfaz ni datos:** `main` no modificada y francés experimental `?qa_fr=1`. Las dudas de fuente `7:11` (vaca vieja), `ibéricos` y `revueltos` permanecen abiertas; continúa pendiente la aprobación lingüística general y revisión visual global antes de publicar.
+
+
+## Estado editorial consolidado para cierre de francés QA — 05/11/2026
+
+**Objetivo y prioridad:** consolidar lo confirmado frente a los pendientes reales, sin volver a contar como nuevas revisiones las 214/214 entradas ya cotejadas de Moriles Ribera, y sin interpretar como pendientes los handoffs históricos del README escritos antes de las correcciones del 05/11. Sigue la hoja de ruta original: cartas verificadas → francés → QA integral → reseñas → resúmenes basados en reseñas → imágenes autorizadas → revisión final. En el recuento histórico constan 43/44 cartas cerradas y **El Caballo Rojo** como excepción documental que no se considera cerrada por este trabajo.
+
+### Bloques completados con evidencia
+
+| Bloque | Evidencia verificable | Dictamen acotado |
+|---|---|---|
+| Moriles Ribera, cobertura de candidatos FR | 18 lotes reales 090–107; **214/214** entradas contrastadas documentalmente ES/EN/FR | Cotejo documental completado; no constituye revisión de fuente original de cada plato ni aprobación por francófono |
+| Ajustes autorizados de Moriles Ribera | Registro de commits y relectura de JSON, incluidos pimientos/salsa rosa/boletus, huevo y oveja; postres actuales confirmados de nuevo en lotes 102–103 | Modificaciones editoriales implementadas en rama QA, con PASS CI comunicados por Helio |
+| Cuatro postres `11:3`, `11:12`, `11:18`, `11:20` | Capturas legibles del escritorio local en francés; traducciones coinciden con lotes 102–103 reconsultados | **PASS visual manual de esas cuatro tarjetas en escritorio**; no extrapolar a móvil |
+| Etiquetas de `Cartes officielles` de Moriles Ribera | Encabezado, siete enlaces y aviso FR legibles en captura local; commits `9ffacf9`, `4baacd0`, `4ecaa5b`, regresión ES/FR/EN en CI con PASS comunicado | **Incidencia híbrida cerrada** para vista comprobada; sin modificación de fuentes, URL ni datos |
+| Inventario automatizado de accesibilidad | JSON entregado por Helio generado `2026-11-05T08:06:35.939Z`: 24 escenarios, 0 candidatos, sin overflow de documento o controles fuera de pantalla bajo heurísticas | **PASS del inventario automatizado**, no evaluación WCAG ni prueba visual manual de todas las vistas |
+
+### Pendientes genuinos, separados por dependencia
+
+| ID | Establecimiento / ámbito | Estado | Qué falta antes de decidir |
+|---|---|---|---|
+| FR-ORIG-01 | Moriles Ribera, lote 099, `7:11`, «Entrecot de vaca vieja» | **Bloqueado por fuente**; FR actual reconsultado `Entrecôte de bœuf maturé.` | Leer la carta oficial de carnes de forma legible y aclarar edad del animal frente a maduración; revisar con francófono la formulación antes de pedir aprobación de cambio |
+| FR-ORIG-02 | Moriles Ribera, rótulo `ibéricos` → `charcuteries ibériques` | **Pendiente semántico**, no fallo demostrado | Comprobar platos cubiertos por la sección oficial; `charcuteries` podría restringir alcance |
+| FR-ORIG-03 | Moriles Ribera, rótulo `revueltos` → `œufs brouillés garnis` | **Pendiente semántico**, no fallo demostrado | Comprobar denominaciones originales y correspondencia con los revueltos reales; no cambiar sin fuente |
+| FR-ORIG-04 | Moriles Casa Fina, `Cafés y chocolates` → `Cafés et chocolats` | **Pendiente de fuente**, traducción prudente conservada | Verificar contenido de la carta antes de precisar bebidas calientes; no introducir `chauds` por intuición |
+| FR-STYLE-01 | La Montillana, Manolete, lote 003 `5:1` | **Naturalidad lingüística pendiente**, sin fallo material demostrado | Revisión de un francófono de la explicación del nombre y la referencia a Pedro Ximénez, preservando el texto original |
+| FR-VISUAL-01 | Revisión visual final | **Parcial** | Revisión humana selectiva de vistas móviles restantes, textos extensos y navegación, sin reabrir tests ya completados |
+| FR-NATIVE-01 | Revisión lingüística global | **No aprobada** | Validación semántica/estilística del francés por revisor competente; no equiparar PASS técnico a validación idiomática |
+| FR-SCOPE-01 | Menús históricos y publicación | **Fuera de cierre automático** | Conservar excepción El Caballo Rojo y cualquier restricción de cartas parciales; autorización explícita antes de exponer francés al público o fusionar `main` |
+
+**Orden de resolución aconsejado:** (1) recopilar solo la evidencia oficial faltante para `FR-ORIG-01..04`; (2) someter a revisión francófona las formulaciones en duda y realizar decisión editorial expresa; (3) completar control visual selectivo y regresión ES/EN/FR tras cambios autorizados; (4) preparar una decisión formal de cierre/publicación solamente cuando se cumplan esos criterios. Este orden **no modifica** las fases del proyecto y no autoriza publicación ni cambios de alcance.
+
+**Comprobación de estado efectuada en esta ronda:** lecturas directas desde la rama QA de `README.md`, del informe editorial, de `batch-099`, `batch-102`, `batch-103`, `batch-003-la-montillana` y de `i18n.js`. Los cuatro postres continúan con las formulaciones aprobadas; `7:11` permanece sin cambio. **Ningún texto FR, ES/EN, archivo de datos, enlace, precio o CSS modificado en este consolidado.** Solo documentación. Nuevo CI de este commit **pendiente de confirmar**.
