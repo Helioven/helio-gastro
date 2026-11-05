@@ -39,6 +39,27 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.equal(await page.locator('#service-heading').textContent(),'Quel repas avez-vous en tête ?');
  assert.deepEqual(await page.locator('#service-section [data-service]').allTextContents(),['☕ Petit-déjeuner','🍽️ Déjeuner','🥐 Goûter','🌙 Dîner']);
  assert.ok((await service.innerText()).includes('Les horaires restent à vérifier.'),'French service schedule caveat missing');
+ // General-menu availability warning must track both meal mode and UI language.
+ const intro=page.locator('#service-intro');
+ const frLunch='Vous pouvez consulter les cartes générales disponibles ; le service du déjeuner et ses horaires restent à vérifier.';
+ const frDinner='Vous pouvez consulter les cartes générales disponibles ; le service du dîner et ses horaires restent à vérifier.';
+ await page.locator('[data-service="comida"]').click();
+ await page.waitForFunction(text=>document.querySelector('#service-intro')?.textContent===text,frLunch);
+ await page.locator('[data-service="cena"]').click();
+ await page.waitForFunction(text=>document.querySelector('#service-intro')?.textContent===text,frDinner);
+ await page.locator('#language-select').selectOption('es');
+ assert.equal(await intro.textContent(),'Puedes explorar las cartas generales existentes; el servicio de cenar y su horario siguen pendientes de verificar.','Spanish dinner notice restored');
+ await page.locator('[data-service="comida"]').click();
+ assert.equal(await intro.textContent(),'Puedes explorar las cartas generales existentes; el servicio de comer y su horario siguen pendientes de verificar.','Spanish lunch notice restored');
+ await page.locator('#language-select').selectOption('en');
+ await page.waitForFunction(text=>document.querySelector('#service-intro')?.textContent===text,'You can explore the available general menus; lunch service and opening hours are still unverified.');
+ await page.locator('[data-service="cena"]').click();
+ await page.waitForFunction(text=>document.querySelector('#service-intro')?.textContent===text,'You can explore the available general menus; dinner service and opening hours are still unverified.');
+ await page.locator('#language-select').selectOption('fr');
+ await page.waitForFunction(text=>document.querySelector('#service-intro')?.textContent===text,frDinner);
+ await page.locator('[data-service="comida"]').click();
+ await page.waitForFunction(text=>document.querySelector('#service-intro')?.textContent===text,frLunch);
+
  const hero=page.locator('.hero');
  assert.ok((await hero.innerText()).includes('Trouvez un bon petit plat.'),'French hero title missing');
  assert.ok((await hero.innerText()).includes('Sans surprise sur l’addition.'),'French hero subtitle missing');
