@@ -71,6 +71,16 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  const favoriteFr='Enregistrées uniquement dans ce navigateur. Vous pouvez les consulter sans effectuer une nouvelle recherche.';
  await page.waitForFunction(expected=>document.querySelector('#favorite-notice')?.textContent===expected,favoriteFr);
  assert.equal(await favoriteNotice.textContent(),favoriteFr);
+ const favoriteHeading=page.locator('#favorite-heading'),favoriteCount=page.locator('#favorite-count');
+ const favoriteEmpty=page.locator('#favorite-list .note');
+ const checkFavoritesFr=async()=>{
+   assert.equal(await favoriteHeading.textContent(),'★ Mes tavernes favorites','FR favorites heading');
+   assert.equal(await favoriteCount.textContent(),'0 favori','FR empty favorites count');
+   assert.equal(await favoriteEmpty.textContent(),'Vous n’avez pas encore de tavernes enregistrées. Cliquez sur ☆ dans les résultats ou les fiches.','FR empty favorites copy');
+ };
+ await checkFavoritesFr();
+ assert.equal(await page.locator('#portion option[value=""]').textContent(),'Tout format','FR live portion default');
+ assert.equal(await page.locator('#sort option[value="name"]').textContent(),'Nom','FR name sort');
 
  await page.waitForFunction(()=>document.querySelector('#search-title')?.textContent==='Une petite envie ?');
  assert.equal(await button.textContent(),'Rechercher des établissements →');
@@ -90,6 +100,11 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.equal(await page.locator('#place-name').getAttribute('placeholder'),'Ej.: Moriles, Casa Bravo, Plateros…','ES venue placeholder restoration');
  assert.equal(await page.locator('#dish').getAttribute('placeholder'),'Escribe o elige un plato cordobés…','ES dish placeholder restoration');
  assert.equal(await favoriteNotice.textContent(),favoriteEs);
+ assert.equal(await favoriteHeading.textContent(),'★ Mis tabernas favoritas','ES favorites heading restored');
+ assert.equal(await favoriteCount.textContent(),'0 favoritos','ES favorites count restored');
+ assert.equal(await favoriteEmpty.textContent(),'Aún no tienes tabernas guardadas. Marca ☆ en los resultados o fichas.','ES favorites empty restored');
+ assert.equal(await page.locator('#portion option[value=""]').textContent(),'Cualquier formato','ES default portion restored');
+ assert.equal(await page.locator('#sort option[value="name"]').textContent(),'Nombre','ES name sort restored');
  assert.ok((await nav.innerText()).includes('🔎 Buscar'),'Spanish quick navigation not restored');
  assert.ok((await hero.innerText()).includes('Encuentra algo rico.'),'Spanish hero not restored');
  assert.equal(await page.locator('#recommendations-heading').textContent(),'🍴 ¿Qué te apetece hoy?');
@@ -101,6 +116,11 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.equal(await page.locator('#close-recommendations').getAttribute('aria-label'),'Close recommendations','EN accessibility #close-recommendations');
  assert.equal(await page.locator('#map-frame').getAttribute('title'),'Establishment map','EN accessibility #map-frame');
  assert.equal(await favoriteNotice.textContent(),'Saved only in this browser. You can view them without searching again.');
+ assert.equal(await favoriteHeading.textContent(),'★ My favourite taverns','EN favorites heading restored');
+ assert.equal(await favoriteCount.textContent(),'0 favourites','EN favorites count restored');
+ assert.equal(await favoriteEmpty.textContent(),'No saved taverns yet. Select ☆ in results or details.','EN favorites empty restored');
+ assert.equal(await page.locator('#portion option[value=""]').textContent(),'Any portion','EN default portion restored');
+ assert.equal(await page.locator('#sort option[value="name"]').textContent(),'Name','EN name sort restored');
  assert.ok((await nav.innerText()).includes('🔎 Search'),'English quick navigation absent');
  assert.ok((await hero.innerText()).includes('Find something delicious.'),'English hero missing');
  assert.equal(await page.locator('#recommendations-heading').textContent(),'🍴 What would you like today?');
@@ -112,6 +132,9 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.ok((await hero.innerText()).includes('Trouvez un bon petit plat.'),'French hero not restored');
  assert.equal(await page.locator('#recommendations-heading').textContent(),'🍴 Qu’est-ce qui vous ferait plaisir aujourd’hui ?');
  assert.deepEqual(await page.locator('#service-section [data-service]').allTextContents(),['☕ Petit-déjeuner','🍽️ Déjeuner','🥐 Goûter','🌙 Dîner']);
+ await checkFavoritesFr();
+ assert.equal(await page.locator('#portion option[value=""]').textContent(),'Tout format');
+ assert.equal(await page.locator('#sort option[value="name"]').textContent(),'Nom');
  await context.close();console.log('FR SEARCH PILOT '+profile.name+' PASS');
 }
 await browser.close();
