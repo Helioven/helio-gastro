@@ -142,6 +142,8 @@ window.GASTRO_I18N = Object.freeze({
     ['Toda Córdoba','Tout Cordoue'],
     ['Sin límite (mostrar fichas)','Sans limite (afficher les fiches)'],
     ['Sin límite','Sans limite'],
+    ['Cualquier formato','Tout format'],
+    ['Nombre','Nom'],
     ['Menor coste','Prix le plus bas'],
     ['Verificados primero','Vérifiés en premier'],
     ['Formato del plato','Format du plat'],
@@ -196,7 +198,22 @@ window.GASTRO_I18N = Object.freeze({
   ]);
   const translateFrenchNavText=(node,source)=>node.parentElement?.closest('#quick-nav')?(frenchNavLabels.get(normalize(source))||source):source;
   const frenchFavoritesNotice='Enregistrées uniquement dans ce navigateur. Vous pouvez les consulter sans effectuer une nouvelle recherche.';
-  const translateFrenchFavoritesNotice=(node,source)=>node.parentElement?.id==='favorite-notice'&&normalize(source)==='Guardadas solo en este navegador. Puedes consultarlas sin volver a buscar.'?frenchFavoritesNotice:source;
+  const frenchFavoritesLabels=new Map([
+    ['★ Mis tabernas favoritas','★ Mes tavernes favorites'],
+    ['Aún no tienes tabernas guardadas. Marca ☆ en los resultados o fichas.','Vous n’avez pas encore de tavernes enregistrées. Cliquez sur ☆ dans les résultats ou les fiches.']
+  ]);
+  const translateFrenchFavoritesNotice=(node,source)=>{
+    const parent=node.parentElement;
+    if(!parent?.closest('#favorite-section'))return source;
+    const raw=normalize(source);
+    if(parent.id==='favorite-notice'&&raw==='Guardadas solo en este navegador. Puedes consultarlas sin volver a buscar.')return frenchFavoritesNotice;
+    if(frenchFavoritesLabels.has(raw))return frenchFavoritesLabels.get(raw);
+    if(parent.id==='favorite-count'){
+      const count=raw.match(/^(\d+) favoritos$/);
+      if(count)return count[1]+' '+(count[1]==='0'||count[1]==='1'?'favori':'favoris');
+    }
+    return source;
+  };
   const frenchResultsLabels=new Map([
     ['Resultados','Résultats'],
     ['Ver todos los locales que ofrecen este plato →','Voir tous les établissements proposant ce plat →'],
@@ -445,6 +462,14 @@ window.GASTRO_I18N = Object.freeze({
     // Exact historic-price warning only; no dish names or amounts are translated here.
     if(node.parentElement?.closest('#detail-content')&&normalize(source)==='Precios históricos de carta oficial de 2024; no confirmados en 2026. Consulta posibles cambios directamente con el restaurante.')
       return frenchDetailNotices.get(normalize(source));
+    // Translate La Tarterie's presentation labels, preserving every documented
+    // size, option and price verbatim (no edits to source records).
+    if(node.parentElement?.closest('#detail-content')&&node.parentElement?.hasAttribute('data-venue-menu-note-es')){
+      const original=normalize(node.parentElement.dataset.venueMenuNoteEs);
+      if(original==='Rango por producto completo')return 'Fourchette de prix pour le produit entier';
+      if(original.startsWith('Tamaños: ')&&original.includes('. Opciones: '))
+        return source.replace(/^Tamaños: /,'Tailles : ').replace(/\. Opciones: /,'. Options : ');
+    }
     // Price labels are inside menu cards, so handle them before skipping menu content.
     if(node.parentElement?.matches('[data-venue-menu-price-label]')&&node.parentElement.closest('#detail-content'))return translateFrenchPortionLabel(node,source);
     if(!node.parentElement?.closest('#detail-content')||node.parentElement.closest('.menu-dish,[data-venue-menu-section],[data-bilingual-es]'))return source;
