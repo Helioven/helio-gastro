@@ -881,3 +881,15 @@ Helio **autorizó expresamente** dos ajustes FR en `translations/fr/batch-090-mo
 **Validación efectivamente realizada:** se leyó el JSON original desde la rama `feature/fr-integration-qa-20261027`, se comprobó coincidencia exacta de la entrada antes de editar y se preservaron las otras 11 entradas y todos los campos no autorizados. Tras el commit se volvió a leer el archivo desde GitHub y se comprobó igualdad íntegra con el contenido escrito, parseo JSON válido, 12 entradas, nueva cadena exacta en `1:1`, `meta.status = candidate_awaiting_semantic_review` y `catalogModified = false`. **PASS estático**. ES/EN, `data/places.json`, precios, formatos, ingredientes y aplicación no se modificaron.
 
 **Pendiente:** no se ha acreditado aún el PASS de GitHub Actions asociado a este commit ni al de documentación; no se ha ejecutado revisión francófona nativa ni prueba visual específica. `7:11` (vaca vieja) permanece pendiente de fuente original, sin edición. Francés experimental bajo `?qa_fr=1`; no publicar ni fusionar en `main`. No repetir los 214 controles documentales completados.
+
+
+## Confirmación CI #805–#807 — 05/11/2026
+
+Helio aportó captura de GitHub Actions, workflow `Helio Gastro - data QA`, sobre `feature/fr-integration-qa-20261027`, donde aparecen en verde SUCCESS las siguientes ejecuciones:
+- **#805**, commit `bd04134`: documentación de PASS #802–#804 y triaje de croquetas de boletus.
+- **#806**, commit `bdc1bb8`: traducción FR de croquetas de boletus a `Croquettes aux boletus.` en `batch-091`, índice `1:1`.
+- **#807**, commit `e2ab662`: documentación del cambio autorizado en `batch-091`.
+
+**Naturaleza de la prueba:** PASS del workflow confirmado por captura del responsable; no hay inspección detallada de pasos/logs ni acreditación de revisión lingüística nativa o visual completa. Los PASS estáticos JSON de la implementación ya constan en el apartado anterior.
+
+**Estado para continuar:** queda pendiente `batch-099`, `7:11`, `Entrecôte de bœuf maturé.`, por posible confusión entre edad de la vaca y maduración de carne. No cambiar sin corroborar fuente/carta y decisión editorial. También quedan criterios de estilo menores consignados históricamente (postres, etiquetas originales `ibéricos`/`revueltos`); tratarlos como observaciones, no defectos confirmados. Francés experimental y `main` intacta.
