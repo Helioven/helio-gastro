@@ -861,3 +861,14 @@ Helio **autorizó expresamente** dos ajustes FR en `translations/fr/batch-090-mo
 **Pruebas realmente ejecutadas y superadas:** lectura GitHub previa, coincidencia exacta de las dos cadenas antes del reemplazo, validación estructural del JSON, comparación con el objeto original para descartar modificaciones no autorizadas en otros campos/entradas, relectura de la versión escrita desde GitHub con coincidencia íntegra, conservación de 12 entradas, `meta.status = candidate_awaiting_semantic_review` y `meta.catalogModified = false`.
 
 **Pendientes:** no se ha verificado un nuevo PASS del workflow GitHub Actions para este commit ni para el de documentación; la revisión editorial nativa integral sigue pendiente. `7:11` (vaca vieja) continúa sin autorización y a la espera de carta original. Los 214 controles documentales históricos no se repiten. Francés experimental mediante `?qa_fr=1`, sin publicación/fusión.
+
+
+## PASS #802–#804 y revisión dirigida de croquetas de boletus — 05/11/2026
+
+**Confirmación CI:** Helio facilitó captura de GitHub Actions en `feature/fr-integration-qa-20261027`, workflow `Helio Gastro - data QA`, con tres ejecuciones SUCCESS: **#802** (`39e1510`, documentación de triaje anterior), **#803** (`45c8812`, ajustes de pimientos asados y salsa rosa), **#804** (`444c160`, documentación de esas correcciones). Fuente de evidencia: captura visual del responsable, sin examen de logs de cada job. El PASS técnico de estos commits no equivale a aprobación lingüística integral ni permiso para publicar francés.
+
+**Siguiente triaje: lote 091**, relectura de `translations/fr/batch-091-moriles-ribera.json` en rama QA:
+- `1:1`, ES `Croquetas de Boletus`, EN `Boletus mushroom croquettes.`, FR actual `Croquettes aux cèpes (boletus).`. **Propuesta aún no autorizada:** `Croquettes aux boletus.`, coherente con el criterio editorial ya aprobado en los lotes 094/095 de evitar `cèpes` sin respaldo de especie concreta. Clasificación: mejora de precisión semántica, no defecto funcional demostrado.
+- `1:4`, ES `Croquetas de Rabo de Toro`, FR `Croquettes à la queue de taureau.`: no hay discrepancia nueva demostrada en este control; no proponer modificación automática.
+
+**Estado:** ninguna traducción nueva aplicada, ninguna regresión CI nueva ejecutada por este triaje. `7:11` (vaca vieja) permanece pendiente de evidencia original. La rama experimental `?qa_fr=1` y el bloqueo de publicación/fusión a `main` siguen vigentes; no repetir 214 controles concluidos.
