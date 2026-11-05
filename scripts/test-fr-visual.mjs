@@ -58,8 +58,8 @@ await main.locator('#language-select').selectOption('fr');
 await main.waitForFunction(()=>document.documentElement.lang==='fr'&&window.HelioGastroLanguage?.get()==='fr');
 const readInfo=()=>main.evaluate(()=>({
  title:document.querySelector('.panel.info h2')?.textContent.trim(),
- paragraphs:[...document.querySelectorAll('.panel.info p')].map(p=>p.textContent.replace(/\\s+/g,' ').trim()),
- footer:document.querySelector('footer')?.textContent.replace(/\\s+/g,' ').trim()
+ paragraphs:[...document.querySelectorAll('.panel.info p')].map(p=>p.textContent.replace(/\s+/g,' ').trim()),
+ footer:document.querySelector('footer')?.textContent.replace(/\s+/g,' ').trim()
 }));
 const infoFr=await readInfo();
 if(infoFr.title!=='🔍 Notre méthode'||!infoFr.paragraphs[0]?.includes('Confirmé désigne un prix publié')||!infoFr.paragraphs[0]?.includes('Estimé donne une estimation indicative')||!infoFr.paragraphs[1]?.includes('Nous n’inventons ni avis')||!infoFr.footer?.includes('Projet pilote pour un portfolio QA')||!infoFr.footer?.includes('Sans publicité ni affiliation'))mainErrors.push('FR methodology/footer incomplete: '+JSON.stringify(infoFr));
