@@ -406,7 +406,36 @@ window.GASTRO_I18N = Object.freeze({
       if(translated && element.textContent!==translated+' ↗')element.textContent=translated+' ↗';
     });
   };
+  // Moriles Ribera QA-only official-menu presentation: preserve original ES/EN metadata and URLs.
+  const morilesOfficialMenuFrench=new Map([
+    ['Carta de cocina','Carte des plats'],
+    ['Menú Tapas Cordobesas','Menu « Tapas Cordobesas »'],
+    ['Postres','Desserts'],
+    ['Cafés, tés y chocolates','Cafés, thés et chocolats'],
+    ['Carta de cocina en inglés','Carte des plats en anglais'],
+    ['Menú sugerido en inglés','Menu suggéré en anglais'],
+    ['Glosario de traducciones','Glossaire des traductions']
+  ]);
+  const morilesOfficialMenuNoticeEs='Carta oficial española de 2026 transcrita en 15 apartados. Comprueba los precios con la fuente original; su vigencia puede haber cambiado. Las traducciones al inglés continúan en revisión.';
+  const morilesOfficialMenuNoticeFr='Carte officielle espagnole de 2026 transcrite en 15 sections. Vérifiez les prix dans la source d’origine ; leur validité peut avoir changé. Les traductions en anglais sont toujours en cours de révision.';
+  const translateFrenchMorilesOfficialMenu=(node,source)=>{
+    const element=node.parentElement;
+    if(!element?.closest('.official-menu-resources')||document.querySelector('#detail-title')?.textContent?.trim()!=='Moriles Ribera')return null;
+    if(element.matches('[data-official-menus-heading]'))return 'Cartes officielles';
+    if(element.matches('[data-official-menu-notice-es]')){
+      return normalize(element.dataset.officialMenuNoticeEs||'')===morilesOfficialMenuNoticeEs?morilesOfficialMenuNoticeFr:null;
+    }
+    if(element.matches('[data-official-menu-es]')){
+      const translated=morilesOfficialMenuFrench.get(normalize(element.dataset.officialMenuEs||''));
+      return translated?translated+' ↗':null;
+    }
+    return null;
+  };
   const translateFrenchDetailNotice=(node,source)=>{
+    if(language==='fr'){
+      const officialMenuFrench=translateFrenchMorilesOfficialMenu(node,source);
+      if(officialMenuFrench!==null)return officialMenuFrench;
+    }
     if(language==='fr'&&node.parentElement?.matches('[data-source-label-es]')&&node.parentElement.closest('#detail-content')){
       const translated=sourceLabelFrench(node.parentElement);
       if(translated)return translated+' ↗';
