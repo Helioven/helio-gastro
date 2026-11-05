@@ -987,3 +987,14 @@ Helio aportó captura de GitHub Actions, workflow `Helio Gastro - data QA`, sobr
 **Próxima puerta de decisión, todavía pendiente:** leer la tabla `FR visual accessibility — Moriles Ribera (exploratory)` de la ejecución aprobada y el JSON/capturas asociados. Clasificar cada candidato según evidencia: 1) defecto reproducible con pasos, severidad y esperado/real; 2) desplazamiento o formato intencionado; 3) falso positivo heurístico; 4) información insuficiente. No aplicar parches CSS ni declarar cero defectos sin ese contraste. Si no se puede recuperar artefacto desde esta sesión, solicitar captura de la tabla y/o ZIP al responsable; no crear nueva instrumentación redundante.
 
 **Sin cambios de aplicación ni traducciones.** `main` intacta; francés experimental con `?qa_fr=1`. Conservar como pendientes de fuente las decisiones sobre `7:11` vaca vieja y categorías `ibéricos`/`revueltos`. Mantener los 214 controles documentales ya completados.
+
+
+## Nuevo PASS comunicado y control de artefacto visual — 05/11/2026
+
+Helio comunica **PASS** para las nuevas ejecuciones posteriores a `b1b71e9`, `4752ecc` y `203dff6`, y posteriormente otro **PASS** al continuar la sesión. Se registra como confirmación del responsable, sin atribuir números de ejecución o logs no suministrados ni confundirlo con revisión manual de imágenes.
+
+**Comprobación de la rama:** `.github/workflows/data-qa.yml` mantiene `scripts/inventory-fr-detail-accessibility.mjs` dentro del job visual y sube `qa-reports/` como artefacto `fr-visual-qa-desktop-mobile` (retención: 14 días; upload incluso si falla la prueba). El script genera `fr-detail-accessibility-triage.json` y capturas del perfil móvil y escritorio para La Cazuela, La Bandera, Beatillas y Moriles Ribera, ES/EN/FR (24 combinaciones). Su criterio de fallo sigue limitado a vistas incompletas y errores de JavaScript; los posibles recortes, controles sin nombre o desbordamientos son **candidatos para triaje humano**, aunque Actions marque SUCCESS.
+
+**Límite actual:** no se ha recuperado el ZIP ni leído el JSON ni las capturas de la última ejecución desde esta conversación. Un intento de consultar la página pública del workflow no devolvió su contenido. No corresponde afirmar cero defectos visuales ni aplicar CSS a ciegas. Para continuar la revisión de cierre, inspeccionar el artefacto `fr-visual-qa-desktop-mobile` de la última ejecución aprobada; clasificar cada candidato según pasos, esperado/observado, severidad y evidencia de captura. También revisar manualmente los postres largos de Moriles Ribera en FR y el retorno ES/EN, ya cubierto técnicamente.
+
+**Sin cambios funcionales ni editoriales:** `main` intacta; francés sigue disponible solo bajo `?qa_fr=1`. Persisten los bloqueos de origen sobre vaca vieja, ibéricos y revueltos, sin cambiar textos por intuición. No duplicar los 214 controles completados ni crear suites mientras la evidencia vigente no se haya revisado.
