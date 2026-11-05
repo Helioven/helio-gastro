@@ -998,3 +998,14 @@ Helio comunica **PASS** para las nuevas ejecuciones posteriores a `b1b71e9`, `47
 **Límite actual:** no se ha recuperado el ZIP ni leído el JSON ni las capturas de la última ejecución desde esta conversación. Un intento de consultar la página pública del workflow no devolvió su contenido. No corresponde afirmar cero defectos visuales ni aplicar CSS a ciegas. Para continuar la revisión de cierre, inspeccionar el artefacto `fr-visual-qa-desktop-mobile` de la última ejecución aprobada; clasificar cada candidato según pasos, esperado/observado, severidad y evidencia de captura. También revisar manualmente los postres largos de Moriles Ribera en FR y el retorno ES/EN, ya cubierto técnicamente.
 
 **Sin cambios funcionales ni editoriales:** `main` intacta; francés sigue disponible solo bajo `?qa_fr=1`. Persisten los bloqueos de origen sobre vaca vieja, ibéricos y revueltos, sin cambiar textos por intuición. No duplicar los 214 controles completados ni crear suites mientras la evidencia vigente no se haya revisado.
+
+
+## Artefacto ligero de métricas visuales — 05/11/2026
+
+**Bloqueo al inspeccionar el ZIP real:** Helio aportó `fr-visual-qa-desktop-mobile (4).zip` de **416.061.616 bytes** (aprox. 416 MB decimal). El archivo figura como adjunto de la conversación, pero intentos de lectura mediante herramientas locales y una operación mínima en el contenedor devolvieron error `ClientError`. **No se ha inspeccionado su contenido**, por lo que no se afirma ausencia de anomalías visuales ni resultado de los candidatos del detector.
+
+**Medida incremental de accesibilidad a las evidencias:** en la rama `feature/fr-integration-qa-20261027` se añadió a `.github/workflows/data-qa.yml` un paso `Upload FR accessibility metrics only` con `actions/upload-artifact@v4`, `if: always()`, nombre único `fr-accessibility-metrics-only`, ruta exacta `qa-reports/fr-detail-accessibility-triage.json`, `if-no-files-found: error` y retención 14 días. El archivo JSON se genera ya en la suite de accesibilidad existente; **no hay pruebas nuevas ni reducción/eliminación de capturas**. Se mantiene íntegro el artefacto anterior `fr-visual-qa-desktop-mobile`. Commit `81bb854`.
+
+**Validación realizada:** lectura del workflow original, cambio mínimo del YAML, escritura a GitHub y relectura byte a byte de su contenido: PASS de persistencia. **Pendiente:** confirmación del PASS de GitHub Actions de este cambio, descarga del JSON ligero e inspección de sus 24 filas para identificar candidatos; los casos con candidatos requerirán consultar capturas y reproducción. No se ejecutó Playwright local.
+
+**Sin cambios en** `main`, `data/places.json`, textos ES/EN/FR, precios, CSS o interfaz. El francés sigue en `?qa_fr=1`. Mantener pendientes por fuente `7:11` vaca vieja y `ibéricos`/`revueltos`; no repetir el cotejo 214/214.
