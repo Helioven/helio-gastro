@@ -893,3 +893,12 @@ Helio aportó captura de GitHub Actions, workflow `Helio Gastro - data QA`, sobr
 **Naturaleza de la prueba:** PASS del workflow confirmado por captura del responsable; no hay inspección detallada de pasos/logs ni acreditación de revisión lingüística nativa o visual completa. Los PASS estáticos JSON de la implementación ya constan en el apartado anterior.
 
 **Estado para continuar:** queda pendiente `batch-099`, `7:11`, `Entrecôte de bœuf maturé.`, por posible confusión entre edad de la vaca y maduración de carne. No cambiar sin corroborar fuente/carta y decisión editorial. También quedan criterios de estilo menores consignados históricamente (postres, etiquetas originales `ibéricos`/`revueltos`); tratarlos como observaciones, no defectos confirmados. Francés experimental y `main` intacta.
+
+
+## Intento de verificación de carta original: vaca vieja — 05/11/2026
+
+**Acción documental, sin editar traducciones:** se consultó la página oficial de Moriles Ribera `https://www.morilesribera.com/nuestra-cocina`, que sigue mostrando la imagen `MR 005 (Carnes)` y enlaza a `https://www.morilesribera.com/wp-content/uploads/2026/02/MR-005-Carnes-scaled.png`. La herramienta web no pudo recuperar la imagen (error *cache miss*) y una descarga directa tampoco tuvo éxito. Por tanto **no se ha leído visualmente la carta oficial actual** ni comprobado allí el texto preciso del entrecot.
+
+**Referencia histórica adicional, insuficiente para cerrar:** una transcripción publicada en Scribd de `Carta Ribera 1` incluye `Entrecot de vaca vieja` y `Chuletón de vaca vieja`, pero no constituye comprobación verificable de la imagen oficial vigente de 2026. No se trasladan precios ni otros datos desde esa transcripción.
+
+**Estado del candidato `batch-099`, `7:11`:** el JSON de la rama QA todavía muestra `Entrecôte de bœuf maturé.`; la posible confusión entre edad del animal y proceso de maduración permanece **pendiente de confirmación y criterio editorial**. No se ha modificado `7:11` ni `7:12`, no se ha ejecutado CI por este triaje y no se reabre el cotejo 214/214. Francés candidato no publicado; `main` sin cambios.
