@@ -177,7 +177,8 @@ jobs:
             scripts/test-comparator-regression.mjs \
             scripts/test-detail-regression.mjs \
             scripts/test-navigation-regression.mjs \
-            scripts/test-hidden-venue-regression.mjs; do
+            scripts/test-hidden-venue-regression.mjs \
+            scripts/test-fr-public-release.mjs; do
             echo "::group::Running $suite"
             started=$(date +%s)
             if node "$suite"; then

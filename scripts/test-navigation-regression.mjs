@@ -37,8 +37,8 @@ for(const profile of profiles)for(const mode of modes){
   await page.locator('#clear-search').click();
   if(!(await page.locator('#nav-compare').isHidden()))errors.push('Compare navigation visible after clear');
   if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1))errors.push('Horizontal overflow');
-  if(mode.name==='public'&&await page.locator('#language-select option[value="fr"]').count())errors.push('French exposed publicly');
-  if(mode.name==='qa-fr'&&!(await page.locator('#language-select option[value="fr"]').count()))errors.push('French QA option missing');
+  if(!(await page.locator('#language-select option[value="fr"]').count()))errors.push('French public option missing');
+  if(!(await page.locator('#language-select option[value="fr"]').count()))errors.push('French option missing in QA link');
  }catch(e){errors.push('Interrupted: '+e.message);}
  results.push({profile:profile.name,mode:mode.name,status:errors.length?'FAIL':'PASS',errors});
  if(errors.length)failed=true;

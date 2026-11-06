@@ -124,7 +124,7 @@ window.GASTRO_I18N = Object.freeze({
   }
   const originalNodes=new WeakMap();
   const originalAttributes=new WeakMap();
-  const frenchQaEnabled=new URLSearchParams(window.location.search).get('qa_fr')==='1';
+  const frenchQaEnabled=true; // Public French pilot authorized by owner, 2026-11-06.
   const isSupportedLanguage=value=>value==='es'||value==='en'||(frenchQaEnabled&&value==='fr');
   let language='es';
   // First French UI pilot: narrowly scoped search controls, QA flag only.
@@ -685,13 +685,13 @@ window.GASTRO_I18N = Object.freeze({
     }
     if(typeof window.HelioGastroRefreshExplanations==='function')window.HelioGastroRefreshExplanations();
     refreshFrenchSourceLabels();
-    try{if(language!=='fr')localStorage.setItem(KEY,language)}catch(e){}
+    try{localStorage.setItem(KEY,language)}catch(e){}
   }
   function init(){
     const select=document.getElementById('language-select');
     if(!select)return;
     if(frenchQaEnabled&&!select.querySelector('option[value="fr"]')){
-      const option=document.createElement('option');option.value='fr';option.textContent='🇫🇷 Français (QA)';select.append(option);
+      const option=document.createElement('option');option.value='fr';option.textContent='🇫🇷 Français';select.append(option);
     }
     try{const saved=localStorage.getItem(KEY);language=isSupportedLanguage(saved)?saved:'es'}catch(e){}
     select.addEventListener('change',()=>applyLanguage(select.value));

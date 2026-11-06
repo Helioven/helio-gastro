@@ -62,9 +62,9 @@ for (const profile of profiles) {
         errors.push('Submitted search not restored on reload');
       if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1))
         errors.push('Horizontal overflow');
-      if (mode.name === 'public' && await page.locator('#language-select option[value="fr"]').count())
-        errors.push('Public language selector unexpectedly shows FR');
-      if (mode.name === 'qa-fr' && !(await page.locator('#language-select option[value="fr"]').count()))
+      if (!(await page.locator('#language-select option[value="fr"]').count()))
+        errors.push('French public option missing');
+      if (!(await page.locator('#language-select option[value="fr"]').count()))
         errors.push('French QA language selector is absent');
       results.push({ profile: profile.name, mode: mode.name, status: errors.length ? 'FAIL' : 'PASS', search, morilesCount: names.length, errors });
     } catch (error) {
