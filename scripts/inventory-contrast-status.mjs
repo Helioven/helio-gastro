@@ -19,6 +19,9 @@ for(const profile of profiles){
    if(language==='fr')await page.waitForFunction(()=>!!state.places.find(p=>p.id==='la-montillana')?.menuSections?.[0]?.items?.[0]?.fr,null,{timeout:45000});
    await page.locator('[data-service="merienda"]').click();
    await page.waitForFunction(()=>!!document.querySelector('#service-intro')?.textContent?.trim());
+   // Merienda is tested for its status notice, not as evidence that La Montillana serves snacks.
+   // Search a documented general-menu venue under Comida instead.
+   await page.locator('[data-service="comida"]').click();
    await page.locator('#clear-search').click();
    await page.locator('#place-name').fill('La Montillana');
    await page.locator('#filters').evaluate(form=>form.requestSubmit());
