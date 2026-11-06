@@ -3,6 +3,11 @@ on:
   push:
     branches:
       - feature/fr-integration-qa-20261027
+      - release/fr-public-pilot-20261106
+      - main
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
 jobs:
   catalog-audit:
