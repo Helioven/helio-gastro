@@ -147,9 +147,9 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.equal(await actualAmount(),frValue,'Casa Fina French validity qualifier lost on second roundtrip');
  const plain=await ctx.newPage();
  await plain.goto('http://127.0.0.1:8765/index.html',{waitUntil:'domcontentloaded'});
- assert.equal(await plain.locator('#language-select option[value="fr"]').count(),0);
+ assert.equal(await plain.locator('#language-select option[value="fr"]').count(),1);
  await plain.locator('#language-select').selectOption('en');
- assert.equal(await plain.locator('#language-select option[value="fr"]').count(),0);
+ assert.equal(await plain.locator('#language-select option[value="fr"]').count(),1);
  await plain.waitForFunction(()=>typeof state!=='undefined'&&state.places.some(p=>p.id==='moriles-casa-fina'));
  await plain.evaluate(()=>showPlace(state.places.find(p=>p.id==='moriles-casa-fina'),false));
  const publicCasaFina=plain.locator('#detail-content section.menu-dish').filter({

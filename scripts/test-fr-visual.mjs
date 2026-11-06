@@ -44,10 +44,9 @@ main.on('pageerror',e=>mainErrors.push(e.stack||e.message));
 await main.goto('http://127.0.0.1:8765/index.html',{waitUntil:'domcontentloaded'});
 await main.locator('#language-select').waitFor();
 const normalOptions=await main.locator('#language-select option').evaluateAll(options=>options.map(o=>o.value));
-if(normalOptions.includes('fr'))mainErrors.push('FR leaked into default public selector');
-if(normalOptions.join(',')!=='es,en')mainErrors.push('Unexpected public language options: '+normalOptions.join(','));
+if(normalOptions.join(',')!=='es,en,fr')mainErrors.push('Unexpected public language options: '+normalOptions.join(','));
 const publicLabels=await main.locator('#language-select option').allTextContents();
-if(JSON.stringify(publicLabels)!==JSON.stringify(['🇪🇸 Español','🇬🇧 English']))mainErrors.push('Public language flags/labels incorrect: '+JSON.stringify(publicLabels));
+if(JSON.stringify(publicLabels)!==JSON.stringify(['🇪🇸 Español','🇬🇧 English','🇫🇷 Français']))mainErrors.push('Public language flags/labels incorrect: '+JSON.stringify(publicLabels));
 
 await main.goto('http://127.0.0.1:8765/index.html?qa_fr=1',{waitUntil:'domcontentloaded'});
 await main.locator('#language-select option[value="fr"]').waitFor({state:'attached'});

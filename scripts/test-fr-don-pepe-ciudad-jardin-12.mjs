@@ -35,7 +35,7 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1365,height:900}}
   const base=await context.newPage();
   await base.goto('http://127.0.0.1:8765/index.html',{waitUntil:'domcontentloaded'});
   await base.waitForFunction(id=>typeof state!=='undefined'&&state.places.some(p=>p.id===id),id);
-  if((await base.locator('#language-select option[value="fr"]').count())!==0)errors.push('FR exposed publicly');
+  if((await base.locator('#language-select option[value="fr"]').count())!==1)errors.push('FR public pilot option missing');
   for(const [i,lang] of ['es','en'].entries()){
    await base.locator('#language-select').selectOption(lang);
    await base.evaluate(id=>showPlace(state.places.find(p=>p.id===id),false),id);
