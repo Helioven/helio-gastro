@@ -1321,7 +1321,46 @@ function clearSearch(){
  try{localStorage.removeItem(SEARCH_KEY)}catch{}
  el('dish').focus();
 }
+// Fetch the 107 FR description batches only after FR is chosen on the public site.
+// ?qa_fr=1 retains eager loading so legacy QA scenarios remain deterministic.
+let frenchOverlayPromise=null;
+let frenchOverlayLoaded=false;
+async function ensureFrenchOverlay(data){
+ if(frenchOverlayLoaded)return;
+ if(frenchOverlayPromise)return frenchOverlayPromise;
+ frenchOverlayPromise=(async()=>{
+  const paths=['batch-001-la-montillana.json','batch-002-la-montillana.json','batch-003-la-montillana.json','batch-004-churros-bar-marta.json','batch-005-churros-bar-marta.json','batch-006-cafeteria-bar-la-jineta.json','batch-007-cafeteria-bar-la-jineta.json','batch-008-la-tarterie-centro.json','batch-009-la-tarterie-centro.json','batch-010-la-tarterie-centro.json','batch-011-taberna-el-abuelo.json','batch-012-taberna-el-abuelo.json','batch-013-taberna-el-abuelo.json','batch-014-taberna-la-viuda.json','batch-015-taberna-la-viuda.json','batch-016-taberna-la-viuda.json','batch-017-casa-rubio.json','batch-018-casa-rubio.json','batch-019-casa-rubio.json','batch-020-taberna-el-numero-10.json','batch-021-taberna-el-numero-10.json','batch-022-taberna-el-numero-10.json','batch-023-la-taberna-del-rio.json','batch-024-la-taberna-del-rio.json','batch-025-la-taberna-del-rio.json','batch-026-rafae.json','batch-027-rafae.json','batch-028-rafae.json','batch-029-rafae.json','batch-030-don-pepe-centro.json','batch-031-don-pepe-centro.json','batch-032-don-pepe-centro.json','batch-033-don-pepe-centro.json','batch-034-el-poema-alonso.json','batch-035-el-poema-alonso.json','batch-036-el-poema-alonso.json','batch-037-el-poema-alonso.json','batch-038-dtapas-covap.json','batch-039-dtapas-covap.json','batch-040-dtapas-covap.json','batch-041-dtapas-covap.json','batch-042-plateros-san-francisco.json','batch-043-plateros-san-francisco.json','batch-044-plateros-san-francisco.json','batch-045-plateros-san-francisco.json','batch-046-taberna-salinas.json','batch-047-taberna-salinas.json','batch-048-taberna-salinas.json','batch-049-taberna-salinas.json','batch-050-taberna-salinas.json','batch-051-taberna-la-sal.json','batch-052-taberna-la-sal.json','batch-053-taberna-la-sal.json','batch-054-taberna-la-sal.json','batch-055-taberna-la-sal.json','batch-056-el-pisto.json','batch-057-el-pisto.json','batch-058-el-pisto.json','batch-059-el-pisto.json','batch-060-el-pisto.json','batch-061-el-pisto.json','batch-062-rincon-beatillas.json','batch-063-rincon-beatillas.json','batch-064-rincon-beatillas.json','batch-065-rincon-beatillas.json','batch-066-rincon-beatillas.json','batch-067-la-bandera.json','batch-068-la-bandera.json','batch-069-la-bandera.json','batch-070-la-bandera.json','batch-071-la-bandera.json','batch-072-la-bandera.json','batch-073-la-cazuela-esparteria.json','batch-074-la-cazuela-esparteria.json','batch-075-la-cazuela-esparteria.json','batch-076-la-cazuela-esparteria.json','batch-077-la-cazuela-esparteria.json','batch-078-la-cazuela-esparteria.json','batch-079-la-cazuela-esparteria.json','batch-080-la-cazuela-esparteria.json','batch-081-don-pepe-ciudad-jardin.json','batch-082-don-pepe-ciudad-jardin.json','batch-083-don-pepe-ciudad-jardin.json','batch-084-don-pepe-ciudad-jardin.json','batch-085-don-pepe-ciudad-jardin.json','batch-086-don-pepe-ciudad-jardin.json','batch-087-don-pepe-ciudad-jardin.json','batch-088-don-pepe-ciudad-jardin.json','batch-089-don-pepe-ciudad-jardin.json','batch-090-moriles-ribera.json','batch-091-moriles-ribera.json','batch-092-moriles-ribera.json','batch-093-moriles-ribera.json','batch-094-moriles-ribera.json','batch-095-moriles-ribera.json','batch-096-moriles-ribera.json','batch-097-moriles-ribera.json','batch-098-moriles-ribera.json','batch-099-moriles-ribera.json','batch-100-moriles-ribera.json','batch-101-moriles-ribera.json','batch-102-moriles-ribera.json','batch-103-moriles-ribera.json','batch-104-moriles-ribera.json','batch-105-moriles-ribera.json','batch-106-moriles-ribera.json','batch-107-moriles-ribera.json'];
+  const responses=await Promise.all(paths.map(name=>fetch('./translations/fr/'+name,{cache:'no-store'})));
+  if(responses.some(response=>!response.ok))throw Error('FR QA batch HTTP error');
+  const batches=await Promise.all(responses.map(response=>response.json()));
+  if(batches.some(batch=>!Array.isArray(batch?.entries)||batch.entries.length===0||batch?.meta?.language!=='fr'||batch?.meta?.catalogModified!==false))throw Error('Invalid FR QA batch metadata or entries');
+  const seen=new Set(),updates=[];
+  for(const entry of batches.flatMap(batch=>batch.entries)){
+    const key=entry.placeId+':'+entry.sectionIndex+':'+entry.itemIndex;
+    const target=data.find(p=>p.id===entry.placeId);
+    const dish=target?.menuSections?.[entry.sectionIndex]?.items?.[entry.itemIndex];
+    if(!target||seen.has(key)||!dish?.es||!dish?.en||!entry.fr?.trim())throw Error('Invalid FR reference '+key);
+    seen.add(key);updates.push([dish,entry.fr]);
+  }
+  if(!updates.length)throw Error('Empty FR QA overlay');
+  for(const [dish,fr] of updates)dish.fr=fr;
+  for(const batch of batches)for(const entry of batch.entries)qaFrenchPlaceIds.add(entry.placeId);
+  frenchOverlayLoaded=true;
+ })();
+ try{await frenchOverlayPromise}
+ catch(error){frenchOverlayPromise=null;throw error}
+}
+function onFrenchSelection(){
+ if(window.HelioGastroLanguage?.get()!=='fr'||!state.places.length)return;
+ ensureFrenchOverlay(state.places).then(()=>{
+  if(window.HelioGastroLanguage?.get()!=='fr')return;
+  const p=state.places.find(p=>p.id===state.currentDetailId);
+  if(p&&!el('detail-section').hidden)showPlace(p,false);
+ }).catch(error=>console.warn('French descriptions unavailable:',error.message));
+}
+
 async function init(){
+ el('language-select').addEventListener('change',onFrenchSelection);
  document.querySelectorAll('[data-service]').forEach(btn=>btn.addEventListener('click',()=>updateMealMode(btn.dataset.service)));
  el('filters').addEventListener('submit',filter);
  el('close-recommendations').addEventListener('click',()=>el('recommendation-dialog').close());
@@ -1346,25 +1385,10 @@ async function init(){
   const res=await fetch('./data/places.json',{cache:'no-store'});
   if(!res.ok)throw Error('HTTP '+res.status);
   const data=await res.json();if(!Array.isArray(data))throw Error('Formato inválido');
-  if(window.HelioGastroLanguage?.qaFrenchEnabled?.()){
-    try{
-      const paths=['batch-001-la-montillana.json','batch-002-la-montillana.json','batch-003-la-montillana.json','batch-004-churros-bar-marta.json','batch-005-churros-bar-marta.json','batch-006-cafeteria-bar-la-jineta.json','batch-007-cafeteria-bar-la-jineta.json','batch-008-la-tarterie-centro.json','batch-009-la-tarterie-centro.json','batch-010-la-tarterie-centro.json','batch-011-taberna-el-abuelo.json','batch-012-taberna-el-abuelo.json','batch-013-taberna-el-abuelo.json','batch-014-taberna-la-viuda.json','batch-015-taberna-la-viuda.json','batch-016-taberna-la-viuda.json','batch-017-casa-rubio.json','batch-018-casa-rubio.json','batch-019-casa-rubio.json','batch-020-taberna-el-numero-10.json','batch-021-taberna-el-numero-10.json','batch-022-taberna-el-numero-10.json','batch-023-la-taberna-del-rio.json','batch-024-la-taberna-del-rio.json','batch-025-la-taberna-del-rio.json','batch-026-rafae.json','batch-027-rafae.json','batch-028-rafae.json','batch-029-rafae.json','batch-030-don-pepe-centro.json','batch-031-don-pepe-centro.json','batch-032-don-pepe-centro.json','batch-033-don-pepe-centro.json','batch-034-el-poema-alonso.json','batch-035-el-poema-alonso.json','batch-036-el-poema-alonso.json','batch-037-el-poema-alonso.json','batch-038-dtapas-covap.json','batch-039-dtapas-covap.json','batch-040-dtapas-covap.json','batch-041-dtapas-covap.json','batch-042-plateros-san-francisco.json','batch-043-plateros-san-francisco.json','batch-044-plateros-san-francisco.json','batch-045-plateros-san-francisco.json','batch-046-taberna-salinas.json','batch-047-taberna-salinas.json','batch-048-taberna-salinas.json','batch-049-taberna-salinas.json','batch-050-taberna-salinas.json','batch-051-taberna-la-sal.json','batch-052-taberna-la-sal.json','batch-053-taberna-la-sal.json','batch-054-taberna-la-sal.json','batch-055-taberna-la-sal.json','batch-056-el-pisto.json','batch-057-el-pisto.json','batch-058-el-pisto.json','batch-059-el-pisto.json','batch-060-el-pisto.json','batch-061-el-pisto.json','batch-062-rincon-beatillas.json','batch-063-rincon-beatillas.json','batch-064-rincon-beatillas.json','batch-065-rincon-beatillas.json','batch-066-rincon-beatillas.json','batch-067-la-bandera.json','batch-068-la-bandera.json','batch-069-la-bandera.json','batch-070-la-bandera.json','batch-071-la-bandera.json','batch-072-la-bandera.json','batch-073-la-cazuela-esparteria.json','batch-074-la-cazuela-esparteria.json','batch-075-la-cazuela-esparteria.json','batch-076-la-cazuela-esparteria.json','batch-077-la-cazuela-esparteria.json','batch-078-la-cazuela-esparteria.json','batch-079-la-cazuela-esparteria.json','batch-080-la-cazuela-esparteria.json','batch-081-don-pepe-ciudad-jardin.json','batch-082-don-pepe-ciudad-jardin.json','batch-083-don-pepe-ciudad-jardin.json','batch-084-don-pepe-ciudad-jardin.json','batch-085-don-pepe-ciudad-jardin.json','batch-086-don-pepe-ciudad-jardin.json','batch-087-don-pepe-ciudad-jardin.json','batch-088-don-pepe-ciudad-jardin.json','batch-089-don-pepe-ciudad-jardin.json','batch-090-moriles-ribera.json','batch-091-moriles-ribera.json','batch-092-moriles-ribera.json','batch-093-moriles-ribera.json','batch-094-moriles-ribera.json','batch-095-moriles-ribera.json','batch-096-moriles-ribera.json','batch-097-moriles-ribera.json','batch-098-moriles-ribera.json','batch-099-moriles-ribera.json','batch-100-moriles-ribera.json','batch-101-moriles-ribera.json','batch-102-moriles-ribera.json','batch-103-moriles-ribera.json','batch-104-moriles-ribera.json','batch-105-moriles-ribera.json','batch-106-moriles-ribera.json','batch-107-moriles-ribera.json'];
-      const responses=await Promise.all(paths.map(name=>fetch('./translations/fr/'+name,{cache:'no-store'})));
-      if(responses.some(response=>!response.ok))throw Error('FR QA batch HTTP error');
-      const batches=await Promise.all(responses.map(response=>response.json()));
-      if(batches.some(batch=>!Array.isArray(batch?.entries)||batch.entries.length===0||batch?.meta?.language!=='fr'||batch?.meta?.catalogModified!==false))throw Error('Invalid FR QA batch metadata or entries');
-      const seen=new Set(),updates=[];
-      for(const entry of batches.flatMap(batch=>batch.entries)){
-        const key=entry.placeId+':'+entry.sectionIndex+':'+entry.itemIndex;
-        const target=data.find(p=>p.id===entry.placeId);
-        const dish=target?.menuSections?.[entry.sectionIndex]?.items?.[entry.itemIndex];
-        if(!target||seen.has(key)||!dish?.es||!dish?.en||!entry.fr?.trim())throw Error('Invalid FR reference '+key);
-        seen.add(key);updates.push([dish,entry.fr]);
-      }
-      if(!updates.length)throw Error('Empty FR QA overlay');
-      for(const [dish,fr] of updates)dish.fr=fr;
-      for(const batch of batches)for(const entry of batch.entries)qaFrenchPlaceIds.add(entry.placeId);
-    }catch(error){console.warn('French QA batch unavailable:',error.message)}
+  if(window.HelioGastroLanguage?.qaFrenchEnabled?.()&&
+    (window.HelioGastroLanguage?.get()==='fr'||new URLSearchParams(location.search).get('qa_fr')==='1')){
+   try{await ensureFrenchOverlay(data)}
+   catch(error){console.warn('French descriptions unavailable:',error.message)}
   }
   state.places=data.filter(place=>place?.hidden!==true).map(normalizePlace).filter(validPlace);
   state.favorites=new Set([...loadFavorites()].filter(id=>state.places.some(p=>p.id===id)));
