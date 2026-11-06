@@ -241,6 +241,7 @@ window.GASTRO_I18N = Object.freeze({
   const translateFrenchDynamicResult=(node,source)=>node.parentElement?.closest('#results')&&node.parentElement.matches('.result-pending,.note,.detail-button,button')?(frenchDynamicResults.get(normalize(source))||source):source;
   // Only compare-output content; source data, dishes, amounts and URLs are unchanged.
   const frenchCompareLabels=new Map([
+    ['📍 Ver mapa','📍 Voir la carte'],
     ['Selecciona establecimientos de los resultados para compararlos aquí.','Sélectionnez des établissements dans les résultats pour les comparer ici.'],
     ['Selecciona un plato y un formato concreto para identificar precios comparables entre variantes equivalentes.','Sélectionnez un plat et un format précis pour comparer les prix de variantes équivalentes.'],
     ['Se comparan solo variantes coincidentes y el mismo formato declarado. «Menor precio» requiere al menos dos locales con esa variante. La cantidad real puede variar.','Seules les variantes correspondantes et le même format déclaré sont comparés. Le prix le plus bas nécessite au moins deux établissements proposant cette variante. Les quantités réelles peuvent varier.'],

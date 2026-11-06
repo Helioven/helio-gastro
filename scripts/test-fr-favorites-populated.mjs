@@ -91,6 +91,14 @@ for(const profile of profiles){
       && !text.includes('Platos con precio publicado:')
       && !text.includes('Variante sin categorizar');
    });
+   // The populated comparator has independent map buttons: verify FR and ES/EN round-trip.
+   for(const [lang,expected] of [['fr','📍 Voir la carte'],['es','📍 Ver mapa'],['en','📍 View map'],['fr','📍 Voir la carte']]){
+    await select(lang);
+    await page.waitForFunction(expected=>{
+      const buttons=[...document.querySelectorAll('#compare-output .compare-place .map-button')];
+      return buttons.length===2&&buttons.every(button=>button.textContent.trim()===expected);
+    },expected);
+   }
    await page.locator('#compare-section').screenshot({path:folder+'/'+profile.name+'-comparator-fr.png'});
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+2),
    'Horizontal overflow after favorites/comparator');
