@@ -185,7 +185,8 @@ jobs:
             scripts/test-navigation-regression.mjs \
             scripts/test-hidden-venue-regression.mjs \
             scripts/test-fr-public-release.mjs \
-            scripts/inventory-fr-load-performance.mjs; do
+            scripts/inventory-fr-load-performance.mjs \
+            scripts/inventory-cache-reload.mjs; do
             echo "::group::Running $suite"
             started=$(date +%s)
             if node "$suite"; then
