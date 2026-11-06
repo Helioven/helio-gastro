@@ -2,7 +2,7 @@
 // Diagnostic readings are separate from assertions. No remote network or live venue verification.
 import {chromium,devices} from 'playwright';
 import {mkdirSync,writeFileSync} from 'node:fs';
-const URL='http://127.0.0.1:8765/index.html';
+const PAGE_URL='http://127.0.0.1:8765/index.html';
 const profiles=[{name:'desktop',config:{viewport:{width:1365,height:900}}},{name:'mobile-viewport',config:devices['iPhone 13']}];
 const out={suite:'HG-QA-CACHE-001',status:'PASS',scope:'Local CI HTTP server in Chromium, not deployed GitHub Pages or offline certification',profiles:[]};
 const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
@@ -19,7 +19,7 @@ for(const profile of profiles){
   }
  });
  try{
-  await page.goto(URL,{waitUntil:'domcontentloaded'});
+  await page.goto(PAGE_URL,{waitUntil:'domcontentloaded'});
   await page.waitForFunction(()=>typeof state!=='undefined'&&state.places.length===43,{timeout:45000});
   const clean=await page.evaluate(()=>({lang:document.documentElement.lang,selected:document.querySelector('#language-select').value,
    hidden:!state.places.some(p=>p.id==='el-caballo-rojo'),frResources:performance.getEntriesByType('resource').filter(r=>r.name.includes('/translations/fr/batch-')).length}));
