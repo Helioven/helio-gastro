@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-rafae",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 5,
+      "itemIndex": 2,
+      "fr": "Tortilla de pommes de terre espagnole préparée à la minute."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 5,
+      "itemIndex": 3,
+      "fr": "Tortilla fumée accompagnée de jambon ibérique coupé au couteau."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 6,
+      "itemIndex": 0,
+      "fr": "Flamenquín cordouan : longe de porc panée et frite, farcie au jambon."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 6,
+      "itemIndex": 1,
+      "fr": "Flamenquín de longe de porc panée et frite, farcie à la queue de bœuf maison et au cheddar."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 6,
+      "itemIndex": 2,
+      "fr": "Queue de bœuf mijotée selon la recette traditionnelle cordouane."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 6,
+      "itemIndex": 3,
+      "fr": "Viande de cerf mijotée avec des herbes aromatiques et du vin de Montilla-Moriles."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 6,
+      "itemIndex": 4,
+      "fr": "Boulettes de viande maison à la manière mozarabe, accompagnées de pommes de terre."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 6,
+      "itemIndex": 5,
+      "fr": "Ragoût de tripes préparé à la cordouane."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 7,
+      "itemIndex": 0,
+      "fr": "Bar accompagné d’une émulsion d’épinards, de jambon croustillant, de cardons, de pois chiches et d’une vinaigrette à l’orange."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 7,
+      "itemIndex": 1,
+      "fr": "Morue confite avec sauce à la manière de Rota et parmentier de pommes de terre."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 7,
+      "itemIndex": 2,
+      "fr": "Thon aux oignons accompagné de pommes de terre en rondelles cuites au four."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 8,
+      "itemIndex": 0,
+      "fr": "Poulet grillé accompagné de légumes de saison."
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "la-cazuela-esparteria",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "la-cazuela-esparteria",
+      "sectionIndex": 4,
+      "itemIndex": 12,
+      "fr": "Disponible en demi-portion et en portion, selon la carte."
+    },
+    {
+      "placeId": "la-cazuela-esparteria",
+      "sectionIndex": 4,
+      "itemIndex": 13,
+      "fr": "Disponible en portion, selon la carte."
+    },
+    {
+      "placeId": "la-cazuela-esparteria",
+      "sectionIndex": 4,
+      "itemIndex": 14,
+      "fr": "Disponible en demi-portion et en portion, selon la carte."
+    },
+    {
+      "placeId": "la-cazuela-esparteria",
+      "sectionIndex": 4,
+      "itemIndex": 15,
+      "fr": "Disponible en demi-portion et en portion, selon la carte."
+    },
+    {
+      "placeId": "la-cazuela-esparteria",
+      "sectionIndex": 4,
+      "itemIndex": 16,
+      "fr": "Disponible en demi-portion et en portion, selon la carte."
+    },
+    {
+      "placeId": "la-cazuela-esparteria",
+      "sectionIndex": 4,
+      "itemIndex": 17,
+      "fr": "Disponible en demi-portion et en portion, selon la carte."
+    },
+    {
+      "placeId": "la-cazuela-esparteria",
+      "sectionIndex": 4,
+      "itemIndex": 18,
+      "fr": "Disponible en portion, selon la carte."
+    },
+    {
+      "placeId": "la-cazuela-esparteria",
+      "sectionIndex": 4,
+      "itemIndex": 19,
+      "fr": "Disponible en demi-portion et en portion, selon la carte."
+    },
+    {
+      "placeId": "la-cazuela-esparteria",
+      "sectionIndex": 5,
+      "itemIndex": 0,
+      "fr": "Disponible en demi-portion et en portion, selon la carte."
+    },
+    {
+      "placeId": "la-cazuela-esparteria",
+      "sectionIndex": 5,
+      "itemIndex": 1,
+      "fr": "Disponible en portion, selon la carte."
+    },
+    {
+      "placeId": "la-cazuela-esparteria",
+      "sectionIndex": 5,
+      "itemIndex": 2,
+      "fr": "Disponible en portion, selon la carte."
+    },
+    {
+      "placeId": "la-cazuela-esparteria",
+      "sectionIndex": 5,
+      "itemIndex": 3,
+      "fr": "Disponible en demi-portion et en portion, selon la carte."
+    }
+  ]
+}

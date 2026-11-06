@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "la-bandera-cafe",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 0,
+      "itemIndex": 0,
+      "fr": "Jeringos traditionnels (pâte frite)."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 0,
+      "itemIndex": 1,
+      "fr": "Churros traditionnels frits."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 0,
+      "itemIndex": 2,
+      "fr": "Churritos ; supplément de 0,50 € pour la vente à emporter."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 1,
+      "itemIndex": 0,
+      "fr": "Café expresso."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 1,
+      "itemIndex": 1,
+      "fr": "Café expresso avec un peu de lait."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 1,
+      "itemIndex": 2,
+      "fr": "Café au lait."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 1,
+      "itemIndex": 3,
+      "fr": "Lait avec un trait de café."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 1,
+      "itemIndex": 4,
+      "fr": "Cappuccino."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 1,
+      "itemIndex": 5,
+      "fr": "Café latte macchiato."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 1,
+      "itemIndex": 6,
+      "fr": "Cappuccino brûlée."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 1,
+      "itemIndex": 7,
+      "fr": "Café irlandais."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 2,
+      "itemIndex": 0,
+      "fr": "Chocolat chaud."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 2,
+      "itemIndex": 1,
+      "fr": "Chocolat chaud sans lactose."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 2,
+      "itemIndex": 2,
+      "fr": "Chocolat chaud sans sucre."
+    }
+  ]
+}

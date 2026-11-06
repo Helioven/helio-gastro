@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-la-sal",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 5,
+      "itemIndex": 2,
+      "fr": "Anchois assaisonnés au citron."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 5,
+      "itemIndex": 3,
+      "fr": "Calamars frits."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 5,
+      "itemIndex": 4,
+      "fr": "Morue proposée dans la section des poissons frits."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 5,
+      "itemIndex": 5,
+      "fr": "Petits poissons chanquetitos accompagnés d’œufs au plat."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 5,
+      "itemIndex": 6,
+      "fr": "Seiche sauvage frite."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 6,
+      "itemIndex": 0,
+      "fr": "Seiche sauvage cuite à la plancha."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 6,
+      "itemIndex": 1,
+      "fr": "Morue confite servie sur un lit de boronía de pisto, préparation de légumes mijotés."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 6,
+      "itemIndex": 2,
+      "fr": "Poulpe grillé avec parmentier de pommes de terre et aïoli à l’ail noir."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 6,
+      "itemIndex": 3,
+      "fr": "Morue en sauce maison avec crevettes et palourdes."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 7,
+      "itemIndex": 0,
+      "fr": "Tripes mijotées maison."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 7,
+      "itemIndex": 1,
+      "fr": "Pointes de filet au xérès ; le site décrit une réduction de vin oloroso et du persil."
+    },
+    {
+      "placeId": "taberna-la-sal",
+      "sectionIndex": 7,
+      "itemIndex": 2,
+      "fr": "Queue de bœuf traditionnelle ; la carte ne précise pas l’accompagnement."
+    }
+  ]
+}

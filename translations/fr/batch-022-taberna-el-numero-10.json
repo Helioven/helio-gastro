@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-el-numero-10",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 3,
+      "itemIndex": 1,
+      "fr": "Presa de porc ibérique nourri aux glands avec piments de Padrón ; morceau indiqué de 180 grammes."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 3,
+      "itemIndex": 2,
+      "fr": "Travers de porc de 500 grammes laqués à la sauce barbecue maison."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 3,
+      "itemIndex": 3,
+      "fr": "Ailes de poulet frites deux fois, accompagnées de sauce barbecue coréenne, proposées par six ou douze unités."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 3,
+      "itemIndex": 4,
+      "fr": "Longe de bœuf maturée pendant 40 jours, grillée et accompagnée de pommes de terre ; morceau de 300 grammes."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 3,
+      "itemIndex": 5,
+      "fr": "Sandwich à la queue de bœuf avec son jus de cuisson, beurre de brebis et fines tranches de bajoue de porc."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 3,
+      "itemIndex": 6,
+      "fr": "Queue de bœuf mijotée accompagnée de pommes de terre."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 3,
+      "itemIndex": 7,
+      "fr": "Boulettes de bœuf en sauce avec crème de patate douce, proposées par trois ou six unités."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 3,
+      "itemIndex": 8,
+      "fr": "Flamenquín de longe de porc et de jambon ibérique."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 4,
+      "itemIndex": 0,
+      "fr": "Gâteau aux fromages accompagné de glace à la pistache."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 4,
+      "itemIndex": 1,
+      "fr": "Brownie tiède avec glace à la noisette et toffee au vin Pedro Ximénez."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 4,
+      "itemIndex": 2,
+      "fr": "Dessert au citron et au chocolat blanc ; sa préparation n’est pas précisée sur la carte."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 4,
+      "itemIndex": 3,
+      "fr": "Pastel cordobés traditionnel ; sa garniture n’est pas précisée sur la carte."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 4,
+      "itemIndex": 4,
+      "fr": "Torrija caramélisée accompagnée de glace à la vanille."
+    }
+  ]
+}

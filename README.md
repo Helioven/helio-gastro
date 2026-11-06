@@ -590,6 +590,596 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 **Próximo paso acordado:** **paso 3: regresión de la aplicación principal**, comprobando **buscador, filtros, comparador, fichas y navegación** con y sin `?qa_fr=1`, en escritorio y móvil, comprobando conservación de ES/EN y de precios/formatos. Documentar cada prueba como propuesta/ejecutada/superada/fallida, corregir solo errores confirmados y repetir QA. No desplegar francés público ni ampliar traducciones masivas antes de superar esta etapa. Posteriormente, avanzar por lotes controlados hacia la cobertura francesa integral, siguiendo la hoja de ruta existente.
 
 
+### Pausa de trabajo — regresión global inicial (27/10/2026)
+
+**Estado: primera batería de regresión automatizada SUPERADA en GitHub Actions #55; sesión pausada por decisión de Helio.** Ejecución asociada al commit `18973b9`, rama `feature/fr-integration-qa-20261027`. Evidencia visual aportada por Helio: workflow general en verde. Esta aprobación cubre la batería automatizada actual; no equivale a finalizar la auditoría integral, las traducciones francesas ni el QA exploratorio completo.
+
+**Baterías incorporadas al job `visual-qa`:**
+- `scripts/test-fr-visual.mjs`: piloto francés, selector e integridad visual ES/EN/FR. PASS en la ejecución #51, confirmado por sus registros.
+- `scripts/test-search-regression.mjs` — HG-QA-032: búsqueda manual por plato y nombre, coincidencias, persistencia y controles del selector en escritorio/móvil con y sin modo francés QA. Corregido el propio test por errores de contexto (`clean is not defined`) y normalización de «Moriles»; ejecución #55 en verde.
+- `scripts/test-filter-regression.mjs` — HG-QA-033: presupuestos por plato/comida, precios desconocidos, filtros de formato y precios documentados. PASS observado en #51; se añadió un caso positivo documentado para evitar aprobar únicamente condiciones vacías. Incluido en #55.
+- `scripts/test-comparator-regression.mjs` — HG-QA-034: máximo tres locales, rechazo del cuarto, persistencia tras F5, enlaces de ruta seguros y limpieza al cambiar de servicio. Falló inicialmente en los cuatro escenarios y pasó los cuatro tras corregir el defecto, según informe del artefacto aportado por Helio. Incluido en #55.
+- `scripts/test-detail-regression.mjs` — HG-QA-035: ficha, dirección, fuente HTTPS segura, fecha, integridad de precios al cambiar idioma, condiciones de menú de grupo y cierre. PASS en los cuatro escenarios del informe #51 (La Montillana y La Taberna del Río); incluido en #55.
+
+**Defecto funcional HG-BUG-001 — corregido y validado:** el comparador conservaba tres establecimientos al cambiar de Comer a Desayunar, contra los requisitos. Reproducción inicial: 4/4 combinaciones escritorio/móvil × público/`?qa_fr=1` con selección restante 3. Ajuste mínimo en `app.js`: vaciar `state.selected` solo al cambiar efectivamente de servicio, manteniendo la restauración normal tras F5. Commit `65f752c`. Regresión posterior: 4/4 PASS; selección recuperada tras F5 = 3, tras cambio de servicio = 0. Ningún cambio de cartas o precios.
+
+**Control de calidad de los tests:** los fallos de `clean is not defined` y de la aserción Moriles se localizaron en el script de pruebas, no demostraron fallos de búsqueda en producción. Correcciones `47a2cb6` y `18973b9`. El test de filtros inicialmente ofrecía PASS con casos de presupuesto sin coincidencias; se reforzó con comprobación positiva real (`9c88e9a`). El workflow se modificó para ejecutar las cinco suites aunque alguna falle y preservar informes por separado (`e62194e`). No equiparar el PASS a cobertura exhaustiva de formatos, precios o los 44 establecimientos.
+
+**Evidencia y límites de verificación:** Helio aportó capturas del workflow #51, registros JSON de las cinco suites y captura del workflow #55 en verde (commit `18973b9`). En #51, `catalog-audit` pasó, mientras `visual-qa` falló por HG-QA-032 y HG-QA-034; las demás suites pasaron. La captura de #55 acredita éxito general de la ejecución más reciente, pero los artefactos individuales de #55 no se han contrastado uno por uno en este cierre. Enlaces a ejecución: https://github.com/Helioven/helio-gastro/actions/workflows/data-qa.yml .
+
+**Condiciones al retomar:**
+1. Confirmar rama, commit y estado de CI; descargar y revisar los cinco JSON de #55 si se requiere evidencia granular de cierre.
+2. Continuar fase 3 con exploratorias de navegación, favoritos, recomendaciones y mapas, accesibilidad, casos límite, coherencia semántica y revisión documental de excepciones; evitar duplicar pruebas ya cubiertas.
+3. Mantener el francés solo en modo QA (`?qa_fr=1`) y avanzar en lotes controlados hacia ES/EN/FR completos antes de declarar cerrada la auditoría integral.
+4. No fusionar la rama QA con `main`, no desplegar francés público, no reabrir las 43 cartas cerradas ni modificar datos sin nueva evidencia y autorización expresa. El Caballo Rojo continúa como excepción pendiente de verificar reapertura.
+5. Repetir regresión tras cualquier corrección y registrar evidencia, severidad, resultado y cierre de cada incidencia.
+
+**Decisión:** detener aquí la sesión de desarrollo/QA hasta que Helio solicite continuar. No se altera el orden acordado de las siete fases.
+
+
+### Regresión FR — cierre técnico (28/10/2026)
+
+- La ejecución [40645692892](https://github.com/Helioven/helio-gastro/actions/runs/40645692892) finalizó **SUCCESS** en la rama aislada `feature/fr-integration-qa-20261027`.
+- Superados los jobs `catalog-audit` y `visual-qa`. El workflow incluye las pruebas de buscador (`HG-QA-032`), filtros (`HG-QA-033`), comparador (`HG-QA-034`), fichas (`HG-QA-035`) y navegación (`HG-QA-036`), en perfiles escritorio y móvil, tanto modo ES/EN público como `?qa_fr=1`.
+- Incidencia corregida: «Limpiar búsqueda» conservaba selección de comparación y dejaba visible la navegación del comparador. La corrección restaura búsqueda limpia y elimina la selección persistida. El primer run [40645430430](https://github.com/Helioven/helio-gastro/actions/runs/40645430430) falló por este defecto; la repetición final fue satisfactoria.
+- El piloto francés permanece **sin fusionar a `main`**. La validación técnica no equivale a revisión lingüística nativa ni a cobertura integral francesa.
+- **Próximo paso:** traducir por lotes controlados a partir de descripciones ES/EN verificables; cada lote candidato debe revisarse semánticamente y validar integridad, números, formatos, pantallas y regresión antes de integrarse. No completar ingredientes desconocidos ni aplicar automáticamente traducciones.
+
+
+### Relevo de sesión — avance francés QA al 28/10/2026 (actualización operativa)
+
+**Rama de trabajo:** `feature/fr-integration-qa-20261027`. **No fusionar a `main` ni publicar el francés sin aprobación editorial explícita.** El idioma FR se aplica solo en `?qa_fr=1`, como superposición en memoria; `data/places.json` y sus precios/formato originales no se alteraron. Las traducciones son **candidatas** (`candidate_awaiting_semantic_review`), no traducciones nativas aprobadas. La cifra 198 se refiere exclusivamente a **descripciones de platos**, no a títulos, secciones ni interfaz enteramente traducidos.
+
+**Progreso confirmado: 7 establecimientos / 198 descripciones francesas candidatas**, repartidas en 19 lotes `translations/fr/batch-001-*.json` a `batch-019-*.json`:
+
+| Establecimiento (id) | Lotes | Descripciones FR candidatas |
+| --- | --- | ---: |
+| La Montillana (`la-montillana`) | 001–003 | 30/30 |
+| Churros Bar Marta (`churros-bar-marta`) | 004–005 | 17/17 |
+| Cafetería Bar La Jineta (`cafeteria-bar-la-jineta`) | 006–007 | 22/22 |
+| La Tarterie (`la-tarterie-centro`) | 008–010 | 28/28 |
+| Taberna El Abuelo (`taberna-el-abuelo`) | 011–013 | 31/31 |
+| Taberna La Viuda (`taberna-la-viuda`) | 014–016 | 34/34 |
+| Restaurante Casa Rubio (`casa-rubio`) | 017–019 | 36/36 |
+
+**Último PASS contrastado:** [GitHub Actions #40653024075](https://github.com/Helioven/helio-gastro/actions/runs/40653024075), terminado **SUCCESS**; los dos runs precedentes #40653010033 y #40652999634 también finalizaron con éxito. La suite incluye auditoría de lotes FR, integridad del overlay y pruebas Playwright en escritorio/móvil; último test específico: `scripts/test-fr-casa-rubio-36.mjs`. El PASS automatizado **no** certifica calidad lingüística ni publicación.
+
+**Documentación de cierres técnicos:** `docs/qa-fr-la-montillana-closure-2026-10-28.md`, `docs/qa-fr-churros-bar-marta-closure-2026-10-28.md`, `docs/qa-fr-la-jineta-closure-2026-10-28.md`, `docs/qa-fr-la-tarterie-closure-2026-10-28.md`, `docs/qa-fr-el-abuelo-closure-2026-10-28.md` y `docs/qa-fr-la-viuda-closure-2026-10-28.md`. Para Casa Rubio, `docs/qa-fr-batch-017-casa-rubio-2026-10-28.md` y `docs/qa-fr-batches-018-019-casa-rubio-2026-10-28.md`; **falta crear cierre técnico de Casa Rubio**, tomando como prueba el run #40653024075.
+
+**Siguiente restaurante propuesto:** **Taberna El Número 10** (`taberna-el-numero-10`), con **37 entradas ES/EN** según inventario anterior; verificar de nuevo el contenido real antes de traducir. El script `scripts/inspect-next-fr-restaurant.mjs` acaba apuntando a `casa-rubio` con `entries.slice(12)`. Para obtener los datos siguientes, ajustar filtro a `taberna-el-numero-10` y paginación `slice(0,12)`, hacer commit **solo en la rama QA**, dejar correr `.github/workflows/data-qa.yml`, y leer la línea `FR-NEXT-CANDIDATE` en los logs del job `catalog-audit`. El catálogo original es grande; no deducir platos a partir de nombres ni de memoria.
+
+**Procedimiento de continuidad:** crear lotes JSON con `meta.status='candidate_awaiting_semantic_review'`, `meta.source='data/places.json'`, `meta.language='fr'`, `meta.catalogModified=false`, entradas `{placeId,sectionIndex,itemIndex,fr}`; verificar los lotes vía GitHub Actions. Una vez completadas las descripciones de un restaurante, añadir sus nombres de lote y recuentos a la lista `paths`/`expectedCounts` de `app.js`, incluir su ID en la lista permitida y actualizar total esperado (actual **198**). Añadir una prueba de ficha FR ES/EN escritorio/móvil siguiendo `scripts/test-fr-casa-rubio-36.mjs`, activarla en `.github/workflows/data-qa.yml`, documentar reservas editoriales y **comprobar PASS antes de afirmar cierre**. Mantener preservación de gramajes, unidades, formatos, ingredientes explícitos y advertencias de origen; no inventar disponibilidad o variedades.
+
+**Prioridades y límites del proyecto:** respetar las 43 cartas editoriales ya cerradas, no publicar cartas parciales, mantener excepción de El Caballo Rojo sin verificación de reapertura. Continuar de manera incremental con francés aislado y revisión lingüística pendiente; luego auditoría integral y resto de fases según hoja de ruta, sin alterar prioridades unilateralmente. La próxima conversación puede empezar comprobando este README, creando el cierre de Casa Rubio y recuperando las entradas reales de Taberna El Número 10.
+
+
+### Actualización de relevo — FR QA, Taberna El Nº 10 (28/10/2026)
+
+- Estado vigente: **8 establecimientos / 235 descripciones FR candidatas** en 22 lotes (`batch-001` a `batch-022`). Se añade **Taberna El Nº 10: 37/37**, lotes 020–022. El resumen anterior de 7/198 queda como registro histórico anterior, no estado actual.
+- Cierre técnico: [`docs/qa-fr-el-numero-10-closure-2026-10-28.md`](docs/qa-fr-el-numero-10-closure-2026-10-28.md). Primera ejecución visual [#40653979630](https://github.com/Helioven/helio-gastro/actions/runs/40653979630) FAIL por falta de autorización del restaurante en el renderizado FR; corregido en `app.js` (commit `0930b478`). Repetición [#40654228938](https://github.com/Helioven/helio-gastro/actions/runs/40654228938) **SUCCESS**.
+- Las pruebas técnicas no sustituyen revisión lingüística humana. Traducciones solo en `?qa_fr=1`; no publicar ni fusionar en `main` sin autorización.
+- **Próximo paso:** consultar inventario de entradas ES/EN aún sin lotes FR, elegir establecimiento pendiente y continuar por lotes de 12 con comprobación CI, preservando originales, precios y formatos. No reabrir los ocho establecimientos técnicamente cubiertos salvo defecto real.
+
+
+### Actualización de relevo — FR QA, La Taberna del Río (28/10/2026)
+
+**Estado vigente: 9 establecimientos y 273 descripciones francesas candidatas en 25 lotes** (`batch-001` a `batch-025`). Las cifras anteriores (7/198 y 8/235) son hitos históricos, no el estado actual. **La Taberna del Río** (`la-taberna-del-rio`): **38/38 descripciones** en los lotes 023–025, integradas únicamente en `?qa_fr=1`. La ficha contiene 44 platos, pero solo 38 descripciones ES/EN traducibles identificadas en el inventario.
+
+**Cierre técnico contrastado:** [GitHub Actions #40656146561](https://github.com/Helioven/helio-gastro/actions/runs/40656146561) terminó **SUCCESS** (auditoría y regresión automatizada). Detalle del cierre y de los intentos fallidos previos: [`docs/qa-fr-la-taberna-del-rio-closure-2026-10-28.md`](docs/qa-fr-la-taberna-del-rio-closure-2026-10-28.md). Las incidencias previas procedían de expectativas incorrectas del test sobre el número de títulos y la equivalencia literal ES/EN; no se verificó un defecto de las 38 traducciones FR. Las comprobaciones finales utilizan los títulos visibles y una referencia inglesa sin overlay FR.
+
+**Límites editoriales:** la revisión semántica y lingüística humana sigue pendiente. Estas 273 traducciones son candidatas de **descripciones**, no equivalen a la traducción íntegra de títulos, secciones e interfaz. No fusionar la rama QA con `main` ni publicar el francés sin autorización. `data/places.json`, precios y formatos originales permanecen intactos.
+
+**Próximo paso operativo:** seleccionar el siguiente establecimiento pendiente del inventario real, recuperar sus entradas ES/EN, crear lotes FR revisables, integrar solo en QA y pasar las pruebas de regresión. Entre los siguientes candidatos detectados: Taberna Rafaé (38 descripciones), Cafetería Don Pepe · Centro (43), Taberna El Poema · Alonso de Burgos (44) y D'Tapas COVAP Córdoba (45); verificar datos antes de traducir. Mantener el orden acordado de fases.
+
+
+### Rafaé — traducción francesa QA (28/10/2026)
+
+- Fuente: 38 entradas con descripciones originales `es` y `en` de `taberna-rafae` verificadas por el inspector de la rama QA. No se reabre la carta editorial ES/EN, cerrada el 26/10.
+- Candidatas FR: 38/38 descripciones en los lotes `translations/fr/batch-026-rafae.json` a `batch-029-rafae.json`, en grupos de 12+12+12+2; `meta.status=candidate_awaiting_semantic_review`.
+- Integración exclusivamente experimental en `?qa_fr=1`, mediante overlay en memoria de `app.js`; el catálogo original, precios y formatos no se modifican. Total acumulado de candidatos: 311 descripciones / 10 establecimientos.
+- Se añadió `scripts/test-fr-rafae-38.mjs` a `.github/workflows/data-qa.yml`, con prueba FR y comprobaciones de ES/EN en escritorio y móvil. **QA técnico SUPERADO:** ejecución [#40657184491](https://github.com/Helioven/helio-gastro/actions/runs/40657184491) completada con `SUCCESS` (jobs `catalog-audit` y `visual-qa`), confirmado también por Helio el 28/10/2026. Cierre técnico FR QA de Rafaé autorizado; no equivale a revisión lingüística nativa ni a publicación.
+- Pendientes editoriales: revisión semántica de las traducciones candidatas, revisión lingüística y cobertura de títulos/secciones/interfaz FR. No fusionar a `main` ni publicar francés sin aprobación.
+
+
+### Don Pepe Centro — francés QA (28/10/2026)
+
+- `cafeteria-don-pepe-centro`: 43 entradas de descripciones ES/EN verificadas mediante `scripts/inspect-next-fr-restaurant.mjs`.
+- Cuatro lotes candidatos `translations/fr/batch-030-don-pepe-centro.json` a `batch-033-don-pepe-centro.json` (12+12+12+7), con estado `candidate_awaiting_semantic_review`. Total acumulado del overlay FR QA: **354 descripciones candidatas / 11 establecimientos**.
+- Activación únicamente en `?qa_fr=1`, sin modificar `data/places.json`, ingredientes, formatos ni precios. Prueba visual específica `scripts/test-fr-don-pepe-centro-43.mjs` añadida a `.github/workflows/data-qa.yml` para escritorio y móvil, ES/EN/FR.
+- **Cierre técnico QA confirmado por Helio el 28/10/2026:** [GitHub Actions #40657881675](https://github.com/Helioven/helio-gastro/actions/runs/40657881675) terminó `SUCCESS` (catalog-audit y visual-qa). No implica aprobación lingüística nativa ni publicación; no confundir traducción candidata con revisión nativa ni publicar francés o fusionar la rama a `main` sin aprobación. Revisar contextual y editorialmente los nombres breves y las diferencias entre campos ES/EN (por ejemplo, denominación genérica frente a baguette en algunas entradas).
+
+
+### El Poema · Alonso de Burgos — francés QA (28/10/2026)
+
+- ID real `taberna-el-poema-alonso`: 44 descripciones ES/EN recuperadas del inventario real; establecimiento distinto de El Poema de Gran Capitán. Cuatro lotes `translations/fr/batch-034-el-poema-alonso.json` a `batch-037-el-poema-alonso.json` (12+12+12+8), estado `candidate_awaiting_semantic_review`.
+- El overlay francés aislado `?qa_fr=1` suma ahora **398 descripciones candidatas / 12 establecimientos**. Catálogo `data/places.json`, precios de plataformas de reparto, formatos y fuentes no modificados; se preservan las notas de ingredientes no especificados.
+- Prueba de regresión `scripts/test-fr-el-poema-alonso-44.mjs` añadida al workflow para ES/EN/FR y escritorio/móvil. **QA técnico SUPERADO y cierre confirmado por Helio (28/10/2026):** [GitHub Actions #40658951373](https://github.com/Helioven/helio-gastro/actions/runs/40658951373) completó `SUCCESS`. El cierre técnico no equivale a revisión lingüística nativa ni a publicación. La revisión semántica y lingüística nativa, títulos/secciones y la interfaz FR completa siguen pendientes. No fusionar la rama QA con `main`.
+
+
+### D'Tapas COVAP Córdoba — francés QA (28/10/2026)
+
+- ID confirmado `dtapas-covap-cordoba`: 45 entradas con campos ES/EN verificadas en el inventario real. Cuatro lotes candidatos `translations/fr/batch-038-dtapas-covap.json` a `batch-041-dtapas-covap.json` (12+12+12+9), `candidate_awaiting_semantic_review`.
+- Overlay QA exclusivamente con `?qa_fr=1`: total acumulado **443 descripciones francesas candidatas / 13 establecimientos**. No se modificó `data/places.json`, ni precios, fuentes, formatos o declaraciones de alérgenos originales.
+- Se añadieron `scripts/test-fr-dtapas-covap-45.mjs` y su ejecución en `.github/workflows/data-qa.yml`, con controles de ficha FR, comparación con títulos ES/EN y escritorio/móvil. **QA técnico SUPERADO y cierre confirmado por Helio (28/10/2026):** [GitHub Actions #40659764245](https://github.com/Helioven/helio-gastro/actions/runs/40659764245) finalizó `SUCCESS` en `catalog-audit` y `visual-qa`. El cierre técnico no supone revisión lingüística nativa ni publicación.
+- Reserva editorial: los textos ES de varias entradas son notas de alérgenos o formatos más breves que el campo EN. Las candidatas FR respetan esas notas sin añadir ingredientes o deducir alérgenos. Validación semántica y lingüística pendiente. No fusionar a `main` ni publicar francés todavía.
+
+
+### Taberna Sociedad de Plateros · San Francisco — francés QA (28/10/2026)
+
+- ID `taberna-plateros-san-francisco`: **46 descripciones ES/EN** identificadas en el catálogo real. Creados cuatro lotes candidatos `translations/fr/batch-042-plateros-san-francisco.json` a `batch-045-plateros-san-francisco.json` (12+12+12+10), con estado `candidate_awaiting_semantic_review`.
+- Las 46 propuestas se cargan únicamente mediante overlay en memoria bajo `?qa_fr=1`. Acumulado experimental: **489 descripciones francesas candidatas en 14 establecimientos**. No se modifica `data/places.json`, precios, formatos, fuentes ni datos gastronómicos originales.
+- Añadida prueba visual `scripts/test-fr-plateros-san-francisco-46.mjs` al workflow de CI para validar explicaciones FR, invariancia ES/EN y navegación de ficha en escritorio/móvil. **Ejecución final y cierre técnico pendientes de comprobar; no afirmar PASS anticipadamente.**
+- Las traducciones mantienen denominaciones tradicionales y reservas sobre preparaciones y guarniciones no especificadas. Sigue pendiente revisión semántica y lingüística nativa, así como títulos, secciones y cobertura completa de interfaz francesa. No fusionar a `main` ni publicar todavía.
+
+- **Incidencia QA real (28/10/2026):** ejecución [#40661926971](https://github.com/Helioven/helio-gastro/actions/runs/40661926971) `FAIL`: `catalog-audit` PASS y `visual-qa` FAIL por `ENOENT` del archivo inexistente `batch-046-plateros-san-francisco.json`, citado por error en `scripts/test-fr-plateros-san-francisco-46.mjs`. El lote real es `batch-045`; corregida la ruta en commit `c9686a2a`. **Reejecución y cierre técnico confirmados por Helio el 28/10/2026:** [GitHub Actions #40662776332](https://github.com/Helioven/helio-gastro/actions/runs/40662776332) finalizó `SUCCESS`; se conserva el registro histórico del fallo y su corrección. No se han cambiado las traducciones ni la carta.
+
+
+### Taberna Salinas — francés QA (28/10/2026)
+
+- ID confirmado `taberna-salinas`: **56 entradas ES/EN** inventariadas; cinco lotes candidatos `translations/fr/batch-046-taberna-salinas.json` a `batch-050-taberna-salinas.json` (12+12+12+12+8), `meta.status=candidate_awaiting_semantic_review`.
+- Overlay experimental visible solo con `?qa_fr=1`: acumulado **545 descripciones francesas candidatas en 15 establecimientos**. Sin cambios en `data/places.json`, platos originales, precios ni formatos.
+- Prueba `scripts/test-fr-taberna-salinas-56.mjs` añadida a CI para navegador escritorio/móvil y comprobación de FR y conservación ES/EN. **QA técnico superado y confirmado (28/10/2026):** [GitHub Actions #40663561737](https://github.com/Helioven/helio-gastro/actions/runs/40663561737) terminó `SUCCESS` (jobs `catalog-audit` y `visual-qa`). La advertencia final sobre acciones que usan Node.js 20 y ejecución forzada sobre Node.js 24 es **WARNING no bloqueante**, no fallo de pruebas; registrar actualización de acciones como mantenimiento posterior, sin cambiar las prioridades del proyecto.
+- Se mantienen explícitas las incertidumbres originales sobre la procedencia de algunos productos (`Zuhetos`, `Moltalbán`) y sobre ingredientes/preparaciones no detallados; no reinterpretar ni corregir sin fuente. Revisión semántica y lingüística nativa aún pendiente, igual que títulos, secciones e interfaz FR completa. No fusionar esta rama con `main` ni publicar francés sin autorización.
+
+
+### Taberna La Sal — francés QA (28/10/2026)
+
+- ID real `taberna-la-sal`: 60 descripciones con fuentes ES/EN verificadas en `data/places.json` mediante el inspector del catálogo. Cinco lotes candidatos `translations/fr/batch-051-taberna-la-sal.json` a `batch-055-taberna-la-sal.json` (12+12+12+12+12), con `candidate_awaiting_semantic_review`.
+- Overlay exclusivo de `?qa_fr=1`: **605 descripciones FR candidatas / 16 establecimientos / 55 lotes**. El archivo `data/places.json`, los títulos originales, precios y formatos no se modificaron.
+- Prueba `scripts/test-fr-taberna-la-sal-60.mjs` añadida a `.github/workflows/data-qa.yml` para escritorio/móvil y regresión ES/EN/FR; **QA técnico SUPERADO, confirmado por Helio el 28/10/2026:** [GitHub Actions #40664538783](https://github.com/Helioven/helio-gastro/actions/runs/40664538783) terminó `SUCCESS`, con `catalog-audit` y `visual-qa` superados. Cierre técnico de La Sal registrado; no equivale a aprobación semántica o lingüística nativa ni autoriza publicación.
+- Se conservan como pendientes las incertidumbres documentadas en la fuente, en particular dos precios distintos de 13 € y 14 € en el revuelto de aguacate, y las preparaciones o acompañamientos no especificados. La revisión editorial y lingüística nativa sigue pendiente, así como títulos, secciones e interfaz FR completa. No fusionar rama a `main` ni publicar francés sin autorización.
+
+
+### Taberna San Miguel · El Pisto — francés QA (28/10/2026)
+
+- ID verificado `taberna-san-miguel-el-pisto`: 62 descripciones reales con fuentes ES/EN inspeccionadas en `data/places.json`. Seis lotes candidatos `translations/fr/batch-056-el-pisto.json` a `batch-061-el-pisto.json` (12+12+12+12+12+2); estado `candidate_awaiting_semantic_review`.
+- Integración exclusivamente en `?qa_fr=1`; overlay acumulado **667 descripciones FR candidatas / 17 establecimientos / 61 lotes**. No se modifica `data/places.json`, los precios, las denominaciones ni los formatos originales.
+- Añadida prueba `scripts/test-fr-el-pisto-62.mjs` al workflow `data-qa.yml` para desktop/móvil y preservación ES/EN; **QA técnico SUPERADO (28/10/2026):** [GitHub Actions #40665724021](https://github.com/Helioven/helio-gastro/actions/runs/40665724021) terminó `SUCCESS`, con `catalog-audit` y `visual-qa` superados; Helio confirmó el PASS. El aviso de deprecación de Node.js 20 es no bloqueante. Cierre técnico registrado; no equivale a aprobación lingüística ni a publicación.
+- Se respetan las notas originales de preparaciones no especificadas y la fecha histórica de la referencia al solomillo de gamo (carta 2024). Las propuestas francesas siguen pendientes de revisión semántica y lingüística, y la cobertura de títulos/secciones/interfaz FR sigue incompleta. No publicar ni fusionar a `main` sin autorización editorial.
+
+
+### Taberna Rincón de las Beatillas — francés QA (28/10/2026)
+
+- ID verificado `rincon-beatillas`: **75 entradas ES/EN** recuperadas del inventario real mediante `scripts/inspect-next-fr-restaurant.mjs`. Se han creado los cinco lotes candidatos `translations/fr/batch-062-rincon-beatillas.json` a `batch-066-rincon-beatillas.json` (15+15+15+15+15), con estado `candidate_awaiting_semantic_review`.
+- Integración solo en el overlay experimental `?qa_fr=1`: acumulado **742 descripciones francesas candidatas en 18 establecimientos y 66 lotes**. No se ha modificado `data/places.json`, los precios ni los formatos del catálogo.
+- Prueba específica `scripts/test-fr-rincon-beatillas-75.mjs` incluida en `.github/workflows/data-qa.yml`, con comprobaciones FR y conservación ES/EN en escritorio/móvil. **QA técnico superado y cierre confirmado por Helio el 28/10/2026:** [GitHub Actions #40666623610](https://github.com/Helioven/helio-gastro/actions/runs/40666623610) finalizó `SUCCESS`, con `catalog-audit` y `visual-qa` en PASS. El cierre técnico no equivale a validación lingüística nativa ni autoriza publicar el francés.
+- Se respetan expresiones gastronómicas tradicionales, porciones de 2 personas y 250 g cuando figuran en la fuente, y el aviso de helados sin variedades ni precios disponibles. La revisión semántica y lingüística nativa y la cobertura FR de títulos/secciones/interfaz siguen pendientes. No fusionar a `main` ni publicar francés sin autorización.
+
+
+### La Bandera — traducciones francesas candidatas (28/10/2026)
+
+- A partir de `fr-next-restaurant.json` del artefacto CI #316, se han preparado las **84 descripciones ES/EN de La Bandera** (ID `la-bandera-cafe`) en seis lotes candidatos `batch-067` a `batch-072-la-bandera.json`, de 14 entradas cada uno.
+- Los textos FR están marcados `candidate_awaiting_semantic_review`. Conservan los nombres tradicionales, ingredientes presentes en la fuente y notas sobre suplementos o precios por unidad, sin afirmar ingredientes para preparaciones no detalladas.
+- Se han conectado únicamente al overlay experimental de `?qa_fr=1` y se ha incluido `scripts/test-fr-la-bandera-84.mjs` en `visual-qa` para escritorio/móvil y conservación ES/EN. **QA técnico superado el 28/10/2026:** Helio confirmó la ejecución verde **#329** tras corregir el renderizado FR de esta ficha. El PASS técnico no equivale a revisión lingüística nativa.
+- Cobertura candidata acumulada: **826 descripciones / 19 establecimientos / 72 lotes**. No se modificó `data/places.json`, ni precios, formatos o fuentes. Pendientes revisión semántica, revisión lingüística nativa y traducción de títulos, secciones e interfaz completa. No publicar ni fusionar con `main` sin aprobación.
+
+
+### Cierre de sesión — francés QA, 28/10/2026
+
+- **Estado comprobado al detener el trabajo:** 43/44 fichas cerradas editorialmente (El Caballo Rojo continúa como excepción); **826 descripciones FR candidatas, 19 establecimientos, 72 lotes**. El último lote, **La Bandera (84/84)**, tiene cierre **técnico QA** confirmado visualmente por Helio en GitHub Actions **#329**, commit `a745452`. No interpretar ese PASS como aprobación lingüística ni como francés publicado.
+- **Selector de idiomas:** banderas ES/EN y opción 🇫🇷 Français (QA) solo con `?qa_fr=1`. Pruebas automatizadas del selector PASS en GitHub Actions #310. `main` conserva únicamente ES/EN; ninguna traducción candidata se ha fusionado.
+- **Inventario y continuidad:** `scripts/inspect-next-fr-restaurant.mjs` calcula cobertura a partir del catálogo y los lotes, exporta `qa-reports/fr-next-restaurant.json` como artefacto de CI y muestra el próximo establecimiento en el resumen de `catalog-audit`. La corrección del YAML de subida se verificó en #315; el resumen automatizado pasó en #316. Volver a ejecutar el inventario para elegir el próximo restaurante; no asumir que sigue siendo La Bandera.
+- **Incidencias al integrar La Bandera:** ejecuciones #323–#328 con FAIL de `visual-qa` (el catálogo pasó). Los logs mostraban cero descripciones francesas visibles. Se corrigieron los tamaños esperados de los seis lotes (14 entradas cada uno), el total de 826 y la lista de locales admitidos en el cargador (`f858ea7`). Persistió el defecto porque `app.js` mantenía **otra lista independiente** de locales admitidos en el renderizador. La incorporación de `la-bandera-cafe` a esa segunda lista (`a745452`) permitió el **PASS #329**. No borrar este historial de fallos: evidencia QA de regresión y corrección.
+- **Riesgo técnico detectado:** duplicar listas de IDs permitidos, tamaños de lotes y totales entre carga y renderizado provoca discrepancias y puede ocultar todo el overlay FR. Antes de ampliar mucho más la cobertura, proponer una refactorización pequeña y comprobable para derivar estos valores de una única fuente validada, con pruebas negativas y regresión ES/EN/FR. **Propuesta pendiente, no implementada ni aprobada.**
+- **Pendientes editoriales y QA:** revisión contextual de las propuestas francesas, validación lingüística nativa, títulos y secciones de cartas, traducción integral de interfaz, y auditoría final en tres idiomas. Mantener denominaciones tradicionales, precios, formatos, fuentes y reservas documentales. La cobertura 826 corresponde solo a descripciones candidatas, no a cobertura integral del idioma.
+- **Próximo arranque:** consultar este README y el estado real de la rama; ejecutar inventario, revisar el siguiente restaurante con fuentes ES/EN y continuar en lotes controlados con QA escritorio/móvil y regresión. No reabrir las 43 cartas cerradas sin incidencia; no modificar `data/places.json`, ni fusionar `main` o publicar FR sin autorización expresa.
+
+
+### Cierre técnico de francés QA — La Cazuela de la Espartería (29/10/2026)
+
+- **Cierre técnico autorizado por Helio** tras comprobar la ejecución [GitHub Actions #363](https://github.com/Helioven/helio-gastro/actions/runs/40833949864), con `catalog-audit` y `visual-qa` en **SUCCESS**.
+- ID `la-cazuela-esparteria`: **89 de 89 descripciones francesas candidatas** distribuidas en los lotes `batch-073` a `batch-080`, integradas exclusivamente en el overlay experimental `?qa_fr=1`. Acumulado de la rama: **915 descripciones FR candidatas en 20 establecimientos, 80 lotes**.
+- La prueba `scripts/test-fr-la-cazuela-89.mjs` cubre la visualización acumulada en escritorio y móvil y la conservación de títulos ES/EN; incluida en `.github/workflows/data-qa.yml`. El cierre técnico **no equivale** a revisión semántica o lingüística nativa, traducción de títulos/secciones/interfaz completa ni publicación.
+- No se modificaron `data/places.json`, importes, formatos ni la rama pública `main`. Mantener el control editorial de las 43/44 cartas cerradas y la excepción de El Caballo Rojo.
+- **Mejora ya implementada antes del lote:** se sustituyeron dos listas duplicadas de IDs en `app.js` por la identificación de locales derivada de lotes FR validados; ejecución #331 PASS. Evitar tratarla en futuras sesiones como pendiente. Los contadores y nombres de archivos siguen sujetos a actualización por lote; la eventual automatización completa es una decisión distinta.
+- **Próximo paso:** volver a ejecutar el inventario de cobertura, elegir el siguiente establecimiento pendiente y continuar por lotes con validación y regresión. No fusionar ni publicar el francés sin autorización expresa.
+
+
+### Cierre técnico de francés QA — Don Pepe · Ciudad Jardín (29/10/2026)
+
+- **Establecimiento:** `cafeteria-don-pepe-ciudad-jardin`, distinto de Don Pepe Centro. **103/103 descripciones ES/EN con traducción francesa candidata**, distribuidas en los lotes `batch-081` a `batch-089`. Sin entradas pendientes de traducción inicial de este establecimiento según el inventario usado.
+- **Acumulado experimental actualizado:** **1.018 descripciones candidatas en 89 lotes y 21 establecimientos**; la cifra histórica de 915/80 indicada en el apartado anterior corresponde al cierre previo de La Cazuela, no al estado actual.
+- **Estado QA:** Helio confirmó PASS del último lote con evidencia de GitHub Actions **#415 y #416**; #414 registró un FAIL intermedio anterior a la integración completa. Los lotes 081–088 también se cerraron técnicamente tras sus comprobaciones. Trazabilidad y detalles en `docs/qa-fr-don-pepe-ciudad-jardin-2026-10-29.md`.
+- **Defecto y corrección verificados:** en el lote 086 el test acumulativo comparaba el orden de los archivos frente al orden de las secciones de la carta; tras ordenar por `sectionIndex`/`itemIndex` en `scripts/test-fr-don-pepe-ciudad-jardin-12.mjs` (commit `1c01ef1`), Helio confirmó PASS. El test descubre automáticamente los lotes de Don Pepe, sin un recuento fijo; cubre escritorio, móvil y comparación ES/EN con la versión sin overlay.
+- **Alcance estricto:** los textos FR siguen siendo **candidatos pendientes de revisión semántica y lingüística**, no traducciones editoriales aprobadas. No se han traducido necesariamente títulos, secciones ni toda la interfaz, ni se autoriza publicación. La carta `data/places.json` y la rama pública `main` permanecen sin cambios por estos lotes. El overlay se activa solo con `?qa_fr=1`.
+- **Siguiente paso:** consultar `fr-next-restaurant.json` / inventario del `catalog-audit` actualizado para identificar el próximo establecimiento con cobertura pendiente. No reabrir Don Pepe Ciudad Jardín salvo incidencia documentada ni alterar las prioridades de la hoja de ruta.
+
+
+### Moriles Ribera — lote francés 090 (29/10/2026)
+
+- **Cierre técnico QA:** 12 descripciones francesas candidatas (índices 0:0–0:11), archivo `translations/fr/batch-090-moriles-ribera.json`, integradas exclusivamente en el overlay `?qa_fr=1` de la rama `feature/fr-integration-qa-20261027`.
+- **Pruebas confirmadas:** GitHub Actions #419, #420, #421 y **#422** finalizaron en SUCCESS; la última incluye `scripts/test-fr-moriles-ribera-12.mjs` para escritorio/móvil y contraste ES/EN con la versión sin overlay. Evidencia: https://github.com/Helioven/helio-gastro/actions/runs/40847546785.
+- **Cobertura parcial:** 12 de 214 descripciones iniciales del establecimiento, 202 pendientes. Acumulado de propuestas FR de la rama: 1.030 descripciones en 90 lotes, 22 establecimientos con al menos una propuesta; **solo 21 completos según el inventario previo**.
+- **Alcance:** no se modifica `data/places.json`, los precios, los formatos ni la rama `main`. La revisión semántica y lingüística nativa, títulos, secciones e interfaz francesa general siguen pendientes; PASS técnico no equivale a aprobación editorial ni publicación.
+- **Próximo paso:** lote 091 con las siguientes entradas pendientes según inventario de la rama, verificando índices y textos ES/EN antes de traducir y repitiendo QA/regresión.
+
+
+### Moriles Ribera — lote francés 091 (29/10/2026)
+
+- **Cierre técnico QA:** 12 nuevas traducciones candidatas, índices 1:0–1:11, en `translations/fr/batch-091-moriles-ribera.json`, añadidas al overlay exclusivamente bajo `?qa_fr=1`. Total parcial de Moriles Ribera: **24/214**; 190 descripciones iniciales pendientes.
+- **Evidencia:** Actions **#426 SUCCESS** (commit `a38f43a`), https://github.com/Helioven/helio-gastro/actions/runs/40849605993 . En #424 y #425 `catalog-audit` pasó y `visual-qa` falló porque el cargador aún no incluía el lote; el historial se conserva como regresión intermedia y su corrección mediante la integración del overlay.
+- **Alcance:** candidatas FR, no revisión lingüística nativa ni aprobación editorial; `data/places.json` y `main` intactos. Próximo lote 092: obtener los siguientes índices ES/EN desde el inventario antes de traducir.
+
+
+### Moriles Ribera — lote francés 092 (29/10/2026)
+
+- **QA técnico superado:** 12 descripciones francesas candidatas en `translations/fr/batch-092-moriles-ribera.json`, índices 1:12–1:19 y 2:0–2:3. La integración del overlay experimental se verificó en **GitHub Actions #429 SUCCESS** (commit `1215024`): https://github.com/Helioven/helio-gastro/actions/runs/40850271685.
+- **Trazabilidad de incidencias:** #428 finalizó en FAIL antes de incorporar el nuevo lote al cargador, mientras que la ejecución posterior #429 terminó en SUCCESS. Mantener ambas evidencias; no presentar el fallo intermedio como incidencia abierta sin nueva evidencia.
+- **Progreso Moriles Ribera:** 36/214 descripciones FR candidatas en los lotes 090–092; quedan 178 por preparar. Son propuestas aún pendientes de revisión semántica y lingüística, no francés aprobado para publicación.
+- **Sin alteraciones del catálogo:** `data/places.json`, precios, formatos y `main` no se modificaron. Próximo lote 093: obtener las siguientes entradas del inventario antes de traducir.
+
+
+### Moriles Ribera — lote francés 093 (29/10/2026)
+
+- **Cierre técnico QA:** 12 descripciones FR candidatas (índices 2:4–2:13 y 3:0–3:1), integradas en el overlay experimental `?qa_fr=1` mediante `batch-093-moriles-ribera.json` y actualización del cargador.
+- **Evidencia:** GitHub Actions **#432 SUCCESS**, commit `2cd4110`: https://github.com/Helioven/helio-gastro/actions/runs/40850952163. El run intermedio **#431 FAIL** corresponde al commit de creación del lote antes de incluirlo en el cargador; conservar trazabilidad.
+- **Cobertura Moriles Ribera:** 48 de 214 descripciones FR candidatas preparadas en lotes 090–093; quedan 166. Revisión semántica y lingüística nativa pendientes; no equivale a aprobación editorial ni publicación.
+- **Sin cambios** en `data/places.json`, importes, formatos o `main`. Siguiente lote 094: seleccionar las próximas 12 entradas del inventario y repetir QA incremental.
+
+
+### Moriles Ribera — lote francés 094 (29/10/2026)
+
+- **Cierre técnico QA:** lote `translations/fr/batch-094-moriles-ribera.json` con 12 descripciones FR candidatas (índices 3:2–3:7, 4:0–4:4 y 5:0), integrado solo en `?qa_fr=1`.
+- **Evidencia:** GitHub Actions **#435 y #436 SUCCESS**; última ejecución sobre commit `e91e18e`: https://github.com/Helioven/helio-gastro/actions/runs/40851726115. El run **#434 FAIL** fue intermedio, anterior a incluir el nuevo archivo en el cargador; conservar trazabilidad.
+- **Progreso:** 60 de 214 descripciones FR candidatas preparadas para Moriles Ribera (lotes 090–094); 154 pendientes. PASS técnico no acredita revisión lingüística nativa ni autorización de publicación.
+- `data/places.json`, importes, formatos y `main` sin modificaciones por este lote. **Siguiente:** inventario y lote 095 por índices pendientes, validación y regresión incremental.
+
+
+### Moriles Ribera — lote francés 095 (29/10/2026)
+
+- **Cierre técnico QA:** 12 propuestas francesas del lote `translations/fr/batch-095-moriles-ribera.json` (índices 5:1–5:12), integradas exclusivamente en `?qa_fr=1`.
+- **Evidencia:** Actions **#439 SUCCESS**, commit `2682cdb`: https://github.com/Helioven/helio-gastro/actions/runs/40852324420. La ejecución intermedia **#438 FAIL** se produjo antes de incorporar el lote al cargador; se mantiene la trazabilidad sin considerarla un fallo abierto tras el PASS.
+- **Cobertura parcial:** Moriles Ribera, **72 de 214** descripciones FR candidatas preparadas en lotes 090–095; **142 pendientes**. Siguen pendientes la revisión semántica y lingüística definitiva, títulos, secciones e interfaz francesa general. El PASS automatizado no es aprobación editorial.
+- No se alteraron `data/places.json`, los precios, formatos ni `main`. Próximo lote 096: utilizar las siguientes 12 entradas ES/EN del inventario y repetir la validación y regresión incremental.
+
+
+### Moriles Ribera — lote francés 096 (29/10/2026)
+
+- **Cierre técnico QA:** 12 descripciones francesas candidatas en `translations/fr/batch-096-moriles-ribera.json` (índices 5:13–5:18 y 6:0–6:5), integradas exclusivamente en `?qa_fr=1`.
+- **Evidencia:** GitHub Actions **#443 SUCCESS** sobre commit `f6672ca`: https://github.com/Helioven/helio-gastro/actions/runs/40853044439. Las ejecuciones intermedias **#441 y #442 FAIL** precedieron a la integración del lote en el cargador; se mantiene su historial para trazabilidad.
+- **Cobertura parcial:** Moriles Ribera cuenta con **84/214 descripciones FR candidatas** en los lotes 090–096; **130 pendientes**. PASS técnico no implica validación lingüística nativa, aprobación editorial ni publicación.
+- `data/places.json`, precios, formatos y `main` no modificados en este lote. **Siguiente:** lote 097 a partir de los próximos índices ES/EN del inventario y nueva regresión incremental.
+
+
+### Moriles Ribera — lote francés 097 (29/10/2026)
+
+- **Cierre técnico QA:** 12 descripciones francesas candidatas (índices 6:6–6:17) en `translations/fr/batch-097-moriles-ribera.json`, integradas exclusivamente en `?qa_fr=1`.
+- **Incidencia comprobada y corregida:** #445 y #446 FAIL; en #446 `visual-qa` pasó pero `catalog-audit` falló por el número de comensales de la fritura (ES `2 personas`, FR inicial `deux personnes`). Se corrigió a `2 personnes` para conservar el dato numérico; commit `5fb09bf`.
+- **Evidencia final:** GitHub Actions **#447 SUCCESS** sobre commit `5fb09bf`: https://github.com/Helioven/helio-gastro/actions/runs/40854442319. Se mantienen los fallos intermedios como historial de QA, no como fallos abiertos tras esta corrección.
+- **Cobertura parcial:** Moriles Ribera **96/214 descripciones FR candidatas**, 118 pendientes; lotes 090–097. PASS técnico no equivale a revisión lingüística nativa, aprobación editorial ni publicación.
+- Sin cambios en `data/places.json`, importes, formatos o `main`. **Siguiente lote 098:** próximas entradas ES/EN según inventario, con regresión incremental.
+
+
+### Moriles Ribera — lote francés 098 (29/10/2026)
+
+- **Cierre técnico QA:** 12 descripciones francesas candidatas (índices 6:18–6:25 y 7:0–7:3) registradas en `translations/fr/batch-098-moriles-ribera.json`, cargadas únicamente bajo `?qa_fr=1`.
+- **Evidencia final:** GitHub Actions **#450 y #451 SUCCESS**; última ejecución sobre commit `ded582b`: https://github.com/Helioven/helio-gastro/actions/runs/40855232492. La ejecución anterior **#449 FAIL**, previa a integrar el lote en el cargador, permanece documentada como prueba intermedia.
+- **Cobertura parcial:** Moriles Ribera **108/214 descripciones FR candidatas** en lotes 090–098; **106 pendientes**. Se ha superado la mitad del inventario de descripciones, pero la revisión contextual/lingüística, títulos, secciones e interfaz francesa general siguen pendientes; PASS técnico no equivale a aprobación editorial.
+- No se modificaron `data/places.json`, los precios, formatos o `main`. **Siguiente lote 099:** obtener próximas entradas ES/EN desde el inventario y repetir validación y regresión.
+
+
+### Moriles Ribera — lote francés 099 (29/10/2026)
+
+- **Cierre técnico QA:** 12 traducciones francesas candidatas en `translations/fr/batch-099-moriles-ribera.json` (índices 7:4–7:15), integradas solo en el overlay experimental `?qa_fr=1`.
+- **Evidencia:** GitHub Actions **#454 SUCCESS**, commit `61080b1`: https://github.com/Helioven/helio-gastro/actions/runs/40855998675. La ejecución intermedia **#453 FAIL** ocurrió antes de integrar el lote en el cargador y se conserva para trazabilidad.
+- **Cobertura Moriles Ribera:** 120 de 214 descripciones francesas candidatas en lotes 090–099; 94 pendientes. El PASS técnico no equivale a revisión lingüística nativa, aprobación editorial ni publicación.
+- No se modificaron `data/places.json`, precios, formatos ni `main`. Próximo lote 100: obtener las siguientes doce entradas ES/EN del inventario y repetir QA.
+
+
+### Moriles Ribera — lote francés 100 (29/10/2026)
+
+- **Cierre técnico QA:** 12 descripciones francesas candidatas (índices 7:16–7:27), archivo `translations/fr/batch-100-moriles-ribera.json`, integrado solo en el overlay `?qa_fr=1`.
+- **Incidencias y resolución:** #456 y #457 FAIL; en #457 pasó `visual-qa` y falló `catalog-audit` por discrepancia numérica en la parrillada ibérica (español sin cifra, traducción inicial con `2`). Se cambió `pour 2 personnes` por `pour deux personnes`, conservando la condición documentada en inglés sin introducir cifras que incumplieran la validación. Tomahawk mantiene `270 g`.
+- **Evidencia final:** Actions **#458 SUCCESS**, commit `98e8193`: https://github.com/Helioven/helio-gastro/actions/runs/40857320793. Los FAIL anteriores se conservan como historial de QA.
+- **Cobertura parcial:** Moriles Ribera **132/214 descripciones francesas candidatas** en lotes 090–100; **82 pendientes**. Aún falta revisión lingüística/contextual y traducción de títulos, secciones e interfaz general. PASS técnico no equivale a aprobación editorial ni publicación.
+- Sin modificación de `data/places.json`, importes, formatos ni `main`. **Siguiente lote 101:** próximas entradas ES/EN del inventario, validación y regresión incremental.
+
+
+### Moriles Ribera — lote francés 101 (29/10/2026)
+
+- **Cierre técnico QA:** 12 descripciones francesas candidatas, índices 7:28, 8:0–8:4 y 9:0–9:5, en `translations/fr/batch-101-moriles-ribera.json`, integradas exclusivamente con `?qa_fr=1`.
+- **Evidencia:** GitHub Actions **#462 SUCCESS**, commit `33c9e6e`: https://github.com/Helioven/helio-gastro/actions/runs/40858096077. Las ejecuciones intermedias **#460 y #461 FAIL** precedieron a la incorporación del archivo al cargador; preservar su historial para QA.
+- **Cobertura parcial:** Moriles Ribera **144/214 descripciones candidatas** en lotes 090–101; **70 pendientes**. Sigue pendiente revisión semántica y lingüística nativa, además de títulos, secciones e interfaz general FR. El PASS técnico no equivale a aprobación editorial ni publicación.
+- Sin cambios en `data/places.json`, precios, formatos o `main`. **Siguiente lote 102:** consultar próximas entradas ES/EN del inventario y repetir regresión.
+
+
+### Moriles Ribera — lote francés 102 (29/10/2026)
+
+- **Cierre técnico QA:** 12 descripciones candidatas FR (índices 9:6, 10:0–10:1 y 11:0–11:8) registradas en `translations/fr/batch-102-moriles-ribera.json` e integradas exclusivamente en `?qa_fr=1`.
+- **Evidencia:** GitHub Actions **#465 SUCCESS**, commit `3efe4b9`: https://github.com/Helioven/helio-gastro/actions/runs/40858952620. La ejecución **#464 FAIL** corresponde al estado intermedio previo a incorporar el lote al cargador; se conserva en el historial QA.
+- **Cobertura Moriles Ribera:** **156/214 descripciones francesas candidatas** (lotes 090–102), **58 pendientes**. La validación técnica no equivale a revisión semántica y lingüística definitiva ni autoriza publicar el francés.
+- Sin cambios en `data/places.json`, precios, formatos ni `main`. **Siguiente lote 103:** obtener las doce entradas pendientes del inventario y repetir pruebas/regresión.
+
+
+### Estado de integración francesa — 30 de octubre de 2026 (rama QA)
+
+- **Ámbito:** trabajo exclusivo en `feature/fr-integration-qa-20261027`; el francés solo está disponible mediante `?qa_fr=1` y la opción «Français (QA)». **No publicado** en `main`; sin cambios en `data/places.json`, precios, formatos ni fuentes gastronómicas.
+- **Descripciones de platos:** lotes candidatos `translations/fr/batch-001-*.json` a `batch-107-*.json` incorporados al cargador experimental para los establecimientos cubiertos por el inventario de traducción. Se completó la cola de **214/214 descripciones candidatas de Moriles Ribera** (lotes 090–107). Esta cobertura **no** significa que los 44 establecimientos estén traducidos ni aprobados lingüísticamente.
+- **Encabezados de cartas:** `docs/french-glossary-v1.json` contiene 198 entradas ES→FR de secciones con marca de revisión contextual/editorial; cubre las **314/314 apariciones** de encabezados del catálogo actual. Las propuestas se integraron en el navegador solo en modo FR QA; se conservan las denominaciones originales de los platos. Algunos títulos creativos mantienen pendiente una revisión editorial definitiva.
+- **Interfaz general FR QA, implantación incremental:** 15 textos del buscador; 12 opciones y avisos de filtros/precios; 8 textos de encabezados y mensajes generales de resultados/ficha/comparador; 7 mensajes dinámicos de resultados; 8 etiquetas informativas de ficha; y un lote adicional de avisos de coste total no documentado, consulta y vigencia. Estas cifras describen **propuestas y cadenas integradas en sus ámbitos**, no una auditoría exhaustiva del interfaz completo.
+- **Regresión resuelta:** en las ejecuciones **#486–#488** fallaron la auditoría y/o pruebas visuales durante la integración de encabezados. La auditoría incluía una aserción estática incorrecta sobre la rama española. Las comprobaciones visuales detectaron cambios de espacios (normal frente a inseparable) en los títulos de menús de grupo de **La Taberna del Río** y **La Cazuela de la Espartería** al alternar idiomas. Se restringió la traducción a elementos exactos y se conservó el texto original de los demás nodos; se reforzaron las pruebas. **#494 SUCCESS** fue el primer cierre de esta incidencia, confirmado en la conversación.
+- **Evidencia técnica posterior:** `#497` (buscador), `#500` (filtros), `#502` (resultados/comparador), `#505` (resultados dinámicos), `#508` (fichas) y `#511` (avisos de ficha) se confirmaron PASS durante las revisiones. Última ejecución de la misma rama comprobada al actualizar esta nota: **GitHub Actions #512, SUCCESS**, commit `c8ec87b` — https://github.com/Helioven/helio-gastro/actions/runs/41020645940. Las pruebas de navegador incluyen perfiles de escritorio/móvil y recorridos FR→ES→EN; el PASS automático acredita los casos probados, no una aprobación editorial ni ausencia universal de defectos.
+- **Siguiente trabajo dentro de la fase francesa:** inventariar y traducir con criterio contextual las condiciones de menús de grupo y los textos dinámicos aún visibles en español, ampliar pruebas de cambio de idioma/formatos/importes, y realizar revisión lingüística y visual integral. Antes de cualquier publicación, validar las traducciones frente a las fuentes ES y revisar conjuntamente ES/EN/FR. **No** anticipar comentarios, reseñas ni imágenes mientras esté pendiente esta fase según la hoja de ruta.
+- **Cierre documental del 30/10/2026:** GitHub Actions **#514 SUCCESS** (ejecución completada, comprobada en GitHub; commit probado `b4881d0`) — https://github.com/Helioven/helio-gastro/actions/runs/41021166353. Esta ejecución valida el estado anterior del README y los trabajos de QA vigentes; la presente anotación documental requiere su propia comprobación tras el commit. Se mantienen las tareas pendientes de traducción de menús de grupo, revisión lingüística y pruebas de integración final.
+
+### Menús de grupo — primer lote FR QA y regresión (30/10/2026)
+
+- Se incorporaron propuestas francesas para etiquetas y condiciones de menús de grupo en `i18n.js`, exclusivamente bajo `?qa_fr=1`, sin alterar cartas, precios ni `main`.
+- **#516 FAIL** por error de sintaxis JavaScript; corregido en `00172cf`. **#517 FAIL** por modificación de títulos originales de menús en La Taberna del Río, Rincón de Beatillas y La Cazuela de la Espartería; corregido excluyendo esos títulos de la traducción en `4a69615`.
+- **#518 SUCCESS** sobre `4a69615`: https://github.com/Helioven/helio-gastro/actions/runs/41025336190. Los fallos anteriores quedan como trazabilidad histórica, no como defectos abiertos de estas pruebas.
+- Pendientes: condiciones variables aún no cubiertas, inventario de cadenas restantes y revisión lingüística/visual final ES/EN/FR. El PASS automatizado no implica aprobación editorial del francés.
+
+### QA francés — bebidas de menús de grupo Beatillas (30/10/2026)
+
+- Traducciones FR candidatas de condiciones de bebidas incluidas del Rincón de Beatillas, limitadas al modo experimental `?qa_fr=1` y a atributos bilingües documentados. Último commit funcional: `5993b02`.
+- **GitHub Actions #521 SUCCESS**, comprobado en el commit `5993b02`: https://github.com/Helioven/helio-gastro/actions/runs/41026116744.
+- Sin cambios en `data/places.json`, precios, cartas originales ni rama `main`. Permanecen pendientes otras condiciones dinámicas y la revisión lingüística/editorial global; PASS técnico no implica publicación.
+
+### QA francés — encabezados de menús cerrados oficiales (30/10/2026)
+
+- Se incorporaron propuestas FR QA para «Platos a elegir», «Postre a elegir» y «Bebidas incluidas (una a elegir)», junto con sus equivalentes ingleses, en `i18n.js`; commit `952b6d0`.
+- **GitHub Actions #523 SUCCESS**, confirmado sobre `952b6d0`: https://github.com/Helioven/helio-gastro/actions/runs/41026949273.
+- Se conserva la restricción `?qa_fr=1`; sin cambios en cartas originales, precios, `data/places.json` ni `main`. Pendientes: notas y condiciones particulares de menús, inventario de cadenas restantes y QA lingüístico/visual final.
+
+### QA francés — aviso de vigencia de menús cerrados (30/10/2026)
+
+- Traducción FR QA contextual del aviso «Vigencia pendiente de confirmar» → «Validité à confirmer» junto a importes de menús oficiales, sin alterar nombres, cantidades ni precios; commit `52e208e`.
+- **GitHub Actions #525 SUCCESS**, comprobado sobre `52e208e`: https://github.com/Helioven/helio-gastro/actions/runs/41027470966.
+- Exclusivo de `?qa_fr=1` en `feature/fr-integration-qa-20261027`. Sin cambios en `data/places.json`, las cartas originales ni `main`. Pendientes inventario de condiciones particulares y QA lingüístico/visual integral.
+
+### Inventario de condiciones FR QA — script de auditoría (30/10/2026)
+
+- Se incorpora el script de solo lectura `scripts/inventory-fr-group-menu-notes.mjs` para inventariar condiciones de menús de grupo y campos ES/EN; commit `b6c0003`.
+- **GitHub Actions #527 SUCCESS** sobre `b6c0003`: https://github.com/Helioven/helio-gastro/actions/runs/41027982787.
+- La validación de Actions no implica que el inventario haya sido ejecutado ni que sus resultados estén revisados; queda pendiente ejecutarlo y seleccionar los próximos lotes FR. Sin modificación de `data/places.json`, precios, cartas originales ni `main`.
+
+### Inventario ejecutado de condiciones de menús de grupo — #529 (30/10/2026)
+
+- El workflow de la rama QA ejecuta `scripts/inventory-fr-group-menu-notes.mjs` y publica el archivo `fr-group-menu-notes.json` en el artefacto `group-menu-conditions-inventory` (cambio `e7f07a2`).
+- **GitHub Actions #529 SUCCESS**, commit `e7f07a2`: https://github.com/Helioven/helio-gastro/actions/runs/41028567844. `catalog-audit` y `visual-qa` finalizaron correctamente.
+- Artefacto: https://github.com/Helioven/helio-gastro/actions/runs/41028567844/artifacts/12964413723. El resultado del inventario debe leerse antes de contar condiciones pendientes o traducirlas; el éxito de CI solo valida su ejecución.
+- Sin cambios en cartas originales, `data/places.json`, precios ni `main`. El francés sigue exclusivo de `?qa_fr=1`.
+
+### QA francés — condiciones Campos y Moriles (#531) (30/10/2026)
+
+- Tres traducciones FR QA candidatas de condiciones documentadas de Bodegas Campos y los menús Moriles; commit `28c5e3b`. Se conserva la fecha histórica 30/11/2024 y la distinción entre vigencia confirmada y pendiente de comprobar.
+- **GitHub Actions #531 SUCCESS** sobre `28c5e3b`: https://github.com/Helioven/helio-gastro/actions/runs/41029301719.
+- No se modificaron `data/places.json`, las cartas, los precios ni `main`. Pendientes restantes condiciones del inventario y QA lingüístico/editorial integral.
+
+### QA francés — condiciones La Taberna del Río (#533) (30/10/2026)
+
+- Traducción FR QA de la condición común de seis menús de grupo de La Taberna del Río (mínimo 8 personas, platos compartidos para 4, bebidas incluidas y aviso de alergias con 48 horas); commit `f251019`.
+- **GitHub Actions #533 SUCCESS**, verificado en el commit `f251019`: https://github.com/Helioven/helio-gastro/actions/runs/41029893708.
+- No se modificaron el catálogo, las cartas originales, los precios ni `main`; francés restringido a `?qa_fr=1`. Próximo lote previsto: condiciones verificadas de Bodegas Campos. PASS automatizado no implica aprobación editorial.
+
+### QA francés — condiciones Bodegas Campos (#535) (30/10/2026)
+
+- Incorporadas propuestas FR QA para condiciones documentadas de los menús Los Flamencos, Los Patios y La Bodega de Bodegas Campos, preservando diferencias de bebidas, IVA, inclusiones y exclusiones y el precio adicional publicado de 8 € por copa no prémium; commit `57fc33d`.
+- **GitHub Actions #535 SUCCESS**, verificado sobre `57fc33d`: https://github.com/Helioven/helio-gastro/actions/runs/41030715621.
+- El PASS técnico no implica aprobación lingüística/editorial final. No se modificaron `data/places.json`, cartas, precios ni `main`; francés exclusivamente con `?qa_fr=1`. Próximo trabajo: restantes condiciones verificadas del inventario y QA integral.
+
+### QA francés — Patio Romano, primer lote (#537) (30/10/2026)
+
+- Traducción FR QA de condiciones del menú de 38 € de Patio Romano (entrantes para compartir, bebidas y mínimo de comensales no especificado), commit `559acf2`.
+- **GitHub Actions #537 SUCCESS**, confirmado sobre `559acf2`: https://github.com/Helioven/helio-gastro/actions/runs/41031441225.
+- Quedan tres condiciones de menús de 48 € pendientes de lote FR. No se modificaron precios, cartas originales, `data/places.json` ni `main`. Traducción experimental exclusiva de `?qa_fr=1`. PASS técnico no implica validación lingüística/editorial final.
+
+### QA francés — Patio Romano, condiciones completas (#539) (30/10/2026)
+
+- Incorporadas las tres condiciones pendientes de menús de 48 € de Patio Romano en `i18n.js`, preservando diferencias de platos, bebidas, IVA y ausencia de mínimo de comensales especificado; commit `c8b44e6`. Junto al lote previo de 38 €, las cuatro condiciones inventariadas tienen propuesta FR QA.
+- **GitHub Actions #539 SUCCESS**, comprobado sobre `c8b44e6`: https://github.com/Helioven/helio-gastro/actions/runs/41032138961.
+- Sin modificación de `data/places.json`, cartas originales, precios ni `main`. Francés experimental limitado a `?qa_fr=1`; siguen pendientes validación lingüística/editorial y restantes condiciones del inventario.
+
+### QA francés — avisos Casa Rubio y La Piscatoría (#541) (30/10/2026)
+
+- Incorporadas propuestas FR QA para avisos históricos de carta, IVA y alérgenos de Casa Rubio y opciones de pan/suplementos de La Piscatoría, conservando precios y fechas; commit `4f27c34`.
+- **GitHub Actions #541 SUCCESS**, confirmado sobre `4f27c34`: https://github.com/Helioven/helio-gastro/actions/runs/41033004369.
+- Francés restringido a `?qa_fr=1`. Sin cambios en `data/places.json`, cartas originales, precios ni `main`. Pendiente revisión de avisos restantes y QA lingüístico y visual final; PASS técnico no constituye aprobación editorial.
+
+### QA francés — aviso bilingüe de Roldán (#544) (30/10/2026)
+
+- Traducción FR QA del aviso de la carta general de Roldán con distinción expresa de la carta y ficha de Roldán Centro. Ajuste de la ruta de presentación de avisos bilingües; commits `6574252` y `be28cae`.
+- **GitHub Actions #544 SUCCESS**, comprobado sobre `be28cae`: https://github.com/Helioven/helio-gastro/actions/runs/41033767377.
+- Sin modificación de `data/places.json`, cartas originales, precios ni `main`; francés exclusivo de `?qa_fr=1`. Restan revisión del inventario y QA lingüístico/visual final; PASS técnico no equivale a aprobación editorial.
+
+### QA francés — regresión Casa Rubio (#547 → #548) (30/10/2026)
+
+- **#547 FAILURE** en `visual-qa`: la prueba `scripts/test-fr-detail-notices-pilot.mjs` esperaba el selector `[data-bilingual-es]` en el aviso de Casa Rubio, ausente en el elemento real `.service-notice`; `catalog-audit` pasó. Incidencia en el selector de prueba, no regresión de datos demostrada. https://github.com/Helioven/helio-gastro/actions/runs/41034476549.
+- Selector de prueba corregido en commit `fe6b084` para comprobar `.service-notice`; **#548 SUCCESS** sobre ese commit: https://github.com/Helioven/helio-gastro/actions/runs/41034986214.
+- El cambio previo de renderizado FR QA de avisos bilingües (`658aa44`) se mantiene. Sin cambios en el catálogo, precios, cartas originales ni `main`. La revisión editorial/lingüística general sigue pendiente.
+
+### QA francés — regresión histórica Casa Rubio (#550) (30/10/2026)
+
+- Ampliada la prueba de navegador `scripts/test-fr-detail-notices-pilot.mjs` para verificar cambios FR → ES → FR → EN y preservación de la referencia de octubre de 2025 en los avisos históricos de Casa Rubio; commit `8b7871c`.
+- **GitHub Actions #550 SUCCESS** confirmado sobre `8b7871c`: https://github.com/Helioven/helio-gastro/actions/runs/41035646688.
+- No se modificaron cartas originales, precios, `data/places.json` ni `main`. Francés exclusivo de `?qa_fr=1`. El PASS automatizado no sustituye la revisión lingüística/editorial final.
+
+### QA francés — acceso experimental protegido (#552) (30/10/2026)
+
+- Ampliada la prueba de navegador en `scripts/test-fr-detail-notices-pilot.mjs` para comprobar en escritorio y móvil que `Français (QA)` no aparece sin `?qa_fr=1`; commit `42e9f69`.
+- **GitHub Actions #552 SUCCESS**, confirmado sobre `42e9f69`: https://github.com/Helioven/helio-gastro/actions/runs/41036314128.
+- Sin cambios en `data/places.json`, cartas originales, precios ni `main`. Continúan pendientes revisión lingüística/editorial integral y auditoría visual; PASS técnico no equivale a autorización de publicación.
+
+### QA francés — selector oculto tras cambio a inglés (#554) (30/10/2026)
+
+- Ampliada la prueba de navegador `scripts/test-fr-detail-notices-pilot.mjs` para verificar que en una visita sin `?qa_fr=1`, el selector de francés sigue ausente después de cambiar de ES a EN, en escritorio y móvil; commit `cf7fe8c`.
+- **GitHub Actions #554 SUCCESS**, confirmado sobre `cf7fe8c`: https://github.com/Helioven/helio-gastro/actions/runs/41037003033.
+- Sin cambios en `data/places.json`, las cartas originales, los precios ni `main`. Continúa pendiente QA lingüístico/editorial y visual integral del francés; éxito automatizado no implica publicación.
+
+
+### Seguimiento QA francés — integración, triaje e interfaz (31/10/2026)
+
+- **Inventario de condiciones de menús de grupo**: 48 entradas: 24 nombres protegidos, 19 traducciones literales candidatas, 5 dinámicas candidatas y **0 para revisión contextual**. Estas categorías describen cobertura del inventario, no aprobación editorial. Regresión dinámica de Beatillas/Roldán (escritorio, móvil y cambios de idioma) superada según confirmación del responsable; commits de integración `016daed` y `c0a5c1f`.
+- **Triaje de textos visibles FR**: incorporado `scripts/inventory-fr-visible-text.mjs` e informe `qa-reports/fr-visible-text-triage.json` al workflow. Corregida una expresión regular inicialmente mal escapada y añadida comprobación interna; corregidos posteriormente selectores para aislar pantallas reales. Se registró fallo de workflow **#572** por saltos de línea literales, solucionado en `6c7bdbc`, con PASS posterior confirmado. El triaje es heurístico: sus coincidencias son **candidatos**, no defectos demostrados.
+- El primer triaje mostró el aviso de favoritos en ocho capturas/vistas; traducción FR QA y regresión ES/EN/FR en `637d2e7` (**PASS confirmado**). Tras acotar la inspección por pantalla, el informe mostró únicamente el aviso de **múltiples direcciones de Roldán**, repetido en escritorio y móvil. Traducción FR QA y regresión en `911b1da` (**PASS confirmado**). La ausencia de nuevos candidatos en esas vistas no equivale a una auditoría lingüística completa.
+- **Interfaz general francesa**, siempre limitada a `?qa_fr=1`: navegación rápida (Platos/Buscar/Favoritos/Comparar), `facc14b` (**PASS**); portada/hero, `47b03ac` (**PASS**); selector de momentos gastronómicos y advertencia sobre horarios pendientes de verificar, `85ba39b` (**PASS**); bloque introductorio de recomendaciones, incluyendo advertencia de que menor coste no significa mejor, `fe95ddc` (**PASS**). Las pruebas ampliadas verifican ida y vuelta ES/EN/FR en escritorio y móvil.
+- **Incidencia de rendimiento CI**: la ejecución del cambio `fe95ddc` terminó en **PASS confirmado por el responsable**, pero el trabajo `visual-qa` tardó **más de 30 minutos**. La captura mostraba `Install browser QA dependencies` completado y `Start static server and run desktop/mobile browser QA` activo; no hay causa raíz demostrada. **Pendiente** medir tiempos por suite, investigar bloqueos/esperas de Playwright y optimizar sin reducir cobertura. No describir como prueba fallida.
+- **Límites y pendientes**: no se modificaron `data/places.json`, cartas originales, precios ni la rama `main`. El francés continúa experimental y no autorizado para publicación; pendientes la revisión lingüística/editorial integral, comprobación visual general, auditoría y regresión final. La comprobación de los candidatos del inventario no sustituye estas fases.
+
+
+### Cierre de sesión — diagnóstico y recuperación de visual-qa (#590–#595, 31/10/2026)
+
+- La instrumentación inicial de duración por suite (`4fa4ccb`) mostró en **#590 FAIL** 35 suites y el inventario como FAIL con `0 s`, pese a consumir unos 29 minutos. **No eran mediciones válidas**: se usó `$SECONDS` en el shell del workflow. Sustituido por reloj de pared `date +%s` y añadidas anotaciones de fallos por suite (`bbff877`).
+- El registro de #590 reveló un `locator.selectOption` de Playwright esperando 30 segundos por la opción `fr` ausente. Se detectaron errores de paréntesis en `i18n.js`: correcciones en `b5eaeee` y `e6075a8`. Se añadió al workflow una validación previa de sintaxis con `node --check` (`c57bf79`) para evitar que una sintaxis inválida genere decenas de esperas de navegador. **#593 FAIL** en el control rápido; tras la segunda corrección, el control sintáctico de #594 pasó.
+- **#594 FAIL** en `visual-qa`: `scripts/test-fr-search-ui-pilot.mjs` esperaba `[data-dish="Flamenquín"]` durante 30 segundos; `app.js` reconstruye las sugerencias de platos al cargar, y los nuevos botones no conservan ese atributo. Se corrigió la prueba para esperar el catálogo y comprobar el botón renderizado por texto en `#dish-suggestions-list`, sin modificar la aplicación ni los datos (`b2d6800`).
+- **#595 SUCCESS — PASS confirmado por el responsable**, commit `b2d6800`, duración global **3 min 44 s** según captura de GitHub Actions. El resultado valida el estado de esa ejecución, no el rendimiento sostenido en futuras ejecuciones. Las ejecuciones más antiguas #591 y #592 aún aparecían en curso en la última captura; sus resultados no deben confundirse con el estado del último commit.
+- **Próximos pasos**: revisar la tabla real `Duración de pruebas visual-qa` de #595 para identificar suites lentas y confirmar tiempos distintos de cero; mantener la validación sintáctica temprana. Después retomar revisión de avisos generales, traducciones FR y QA editorial/visual integral según hoja de ruta, sin publicar el francés hasta aprobación.
+- **Alcance preservado**: cambios solo en la rama `feature/fr-integration-qa-20261027`, sin tocar `main`, `data/places.json`, cartas ni precios; francés experimental exclusivamente con `?qa_fr=1`. No se ha realizado aprobación lingüística/editorial definitiva.
+
+### Continuación QA FR — accesibilidad, buscador y recuperación de CI (#595–#620, 31/10/2026)
+
+- **Rendimiento de #595:** 36 suites PASS; total medido por suites **183 s**, frente a **3 min 44 s** de duración global. La suite más lenta fue `test-fr-moriles-ribera-12.mjs` (14 s), seguida de La Cazuela (11 s) y La Bandera (9 s). Es una ejecución concreta, no una garantía de rendimiento sostenido; los tiempos por sí solos no identifican causas.
+- **Inventario visual exploratorio:** incorporada detección de desbordamiento horizontal por vista, anchuras de documento/viewport y hasta diez elementos candidatos fuera de pantalla; ampliada la salida de CI. Cambios `d04494a`, `b716157`, `2cc778d` y corrección del patrón de espacios `f330da0`. El inventario no certifica defectos por sí solo.
+- **Accesibilidad ES/EN/FR:** traducción de etiquetas `aria-label`/`title` para navegación, momento gastronómico, sugerencias, resultados, ficha, recomendaciones y mapa; regresiones en escritorio y móvil. Se completaron las traducciones inglesas y la comprobación de vuelta entre idiomas. Se tradujo también `Language / Idioma` como etiqueta accesible y visible `Langue` en francés. Últimos cambios de esta secuencia: `e88d246`, `e0705e3`; PASS comunicado por el responsable.
+- **Buscador FR:** traducidos los placeholders de nombre de establecimiento y plato, la instrucción de búsqueda manual y las opciones de presupuesto/ordenación; pruebas de ida y vuelta FR → ES. Los lotes anteriores a las opciones de presupuesto tuvieron PASS comunicado por el responsable.
+- **Incidente de regresión de presupuesto (#618–#620):** `app.js` reconstruye dinámicamente `#budget` con `Sin límite`, mientras que la opción inicial del HTML usa `Sin límite (mostrar fichas)`. La prueba introducida esperaba valores incompatibles con esos momentos de renderizado: se observó primero en ES `actual: Sin límite` frente a `expected: Sin límite (mostrar fichas)` y después en FR `actual: Sans limite (afficher les fiches)` frente a `expected: Sans limite`. Se añadió la traducción `Sin límite → Sans limite` (`11dafb6`) y se corrigieron expectativas del test (`03fa60c`, `e4c326c`). **#618 FAIL y #619 FAIL; #620 SUCCESS**, commit `e4c326c`, **3 min 42 s**, según captura del responsable. No atribuir a esos FAIL una regresión del catálogo ni considerar todas las variantes visuales auditadas.
+- **Lección QA:** verificar el DOM efectivo y el instante de actualización antes de fijar aserciones de texto; distinguir contenido estático del HTML y opciones generadas por JavaScript. Evitar parches sucesivos sin leer el `actual/expected` del fallo.
+- **Próximos pasos:** retomar QA lingüístico/editorial y visual real de fichas francesas (móvil y escritorio), revisando informes exploratorios y capturas antes de corregir defectos; completar regresiones y aprobación editorial antes de publicar. No continuar ampliando el selector de presupuesto sin hallazgos nuevos.
+- **Límites:** todo este trabajo sigue en `feature/fr-integration-qa-20261027`; no se modificaron `main`, `data/places.json`, cartas originales ni precios. Francés experimental solo bajo `?qa_fr=1`, sin aprobación para publicación.
+
+### Seguimiento de fichas francesas — QA visual y avisos (#623–#625, 31/10/2026)
+
+- Se incorporaron ocho capturas de La Montillana, Rincón de Beatillas, Casa Rubio y Roldán, para escritorio y móvil, al inventario de QA exploratorio (`86460af`); su ejecución fue **PASS confirmado por el responsable**. Las capturas requieren inspección editorial independiente: el PASS del workflow no certifica la ausencia de textos españoles ni la calidad lingüística.
+- Correcciones de interfaz en la rama experimental: `☆ Guardar` → `☆ Enregistrer`, `★ Guardado` → `★ Enregistré`, `📍 Ver mapa` → `📍 Voir la carte` (`3da44dd`). Se incorporó la traducción francesa del encabezado de ubicaciones y del aviso de alcance de carta de Roldán (`16b45ba`), con cobertura de escritorio/móvil (`c4e5e77`).
+- **Resultados comunicados por el responsable:** **#623 PASS** (3:22), **#624 FAIL** (2:50), **#625 PASS** (2:53, commit `c4e5e77`). El FAIL intermedio no equivale a fallo de la última revisión; no se dispone aquí del log para atribuirle causa concreta.
+- **Beatillas:** el aviso de precios históricos de menús completos (publicados en 2025, sin confirmación para 2026) ya tenía traducción francesa en `i18n.js`. No se duplicó ni se modificaron cifras o condiciones. Se amplió la regresión para comprobar su presencia y la ida y vuelta FR → ES → EN → FR en escritorio y móvil (`f23040f`). **CI de esta ampliación PASS confirmado posteriormente por el responsable**; no considerar resuelta toda la revisión visual/editorial de Beatillas.
+- **Límites:** sin cambios en `main`, `data/places.json`, platos, importes ni disponibilidad. El francés sigue detrás de `?qa_fr=1` y no está autorizado para publicación.
+
+### Inventario FR — avisos de fichas y menús (31/10/2026)
+
+- Revisión del inventario exploratorio `scripts/inventory-fr-visible-text.mjs`: se permitieron como candidatos de revisión las notas y advertencias `.note`/`.service-notice` dentro de tarjetas de menú, que antes quedaban excluidas junto con los títulos de platos. Los nombres tradicionales y los elementos marcados para conservar el español siguen protegidos. Commit `dc97c45`.
+- Se añadieron al detector indicios específicos de español en avisos de precios históricos y vigencia (`precios históricos`, `vigencia pendiente`, `consultar vigencia`) para localizar posibles textos sin traducir, sin declararlos automáticamente defectos. Commit `8e62f02`.
+- **Estado:** cambios de instrumentación guardados; ejecución CI pendiente. La ausencia de candidatos no equivale a aprobación lingüística y las capturas siguen requiriendo inspección manual. Sin modificaciones de `main`, catálogo, cartas o precios.
+
+### Cierre de lote — etiquetas de ubicaciones de Roldán en francés (31/10/2026)
+
+- Se detectó que en el listado de ubicaciones de Roldán persistían los tipos de establecimiento en español: `Panadería:` y `Cafetería:`.
+- Se incorporaron traducciones acotadas a la ficha francesa: `Panadería:` → `Boulangerie :` y `Cafetería:` → `Café :` (`i18n.js`, commit `d6a8237`). Se mantienen intactos los nombres, direcciones y datos originales de cada ubicación.
+- Se amplió `scripts/test-fr-detail-shell-pilot.mjs` para comprobar los rótulos renderizados en francés en escritorio y móvil (commit `d02003d`). **PASS confirmado por el responsable**; no se documenta número de ejecución ni duración porque no se aportaron.
+- La ampliación anterior del inventario de notas y avisos de menús también tuvo **PASS confirmado por el responsable**; sigue siendo un detector exploratorio, no una certificación lingüística.
+- **Siguiente paso:** revisar candidatos reales del inventario y las capturas de fichas antes de nuevas correcciones, manteniendo los nombres gastronómicos originales y la revisión editorial pendiente.
+- **Alcance:** exclusivamente rama `feature/fr-integration-qa-20261027`; sin cambios en `main`, `data/places.json`, cartas ni precios. Francés experimental bajo `?qa_fr=1`.
+
+
+### Continuidad QA francés — 2 de noviembre de 2026
+
+**Alcance y estado.** Todo este trabajo continúa exclusivamente en `feature/fr-integration-qa-20261027`, con el francés experimental habilitado mediante `?qa_fr=1`; no se ha fusionado a `main`, ni modificado `data/places.json`, cartas, ingredientes o precios. Los PASS de CI son validaciones técnicas, **no una aprobación editorial ni autorización de publicación**.
+
+**Lotes realizados y verificados:**
+
+- Regresión de aviso general de Rincón de Beatillas, con restauración entre FR/ES/EN/FR. Correcciones y prueba culminadas en `d745a0c`; PASS confirmado por el responsable.
+- Formatos de precio: traducción de rótulos simples (`920e921`), prueba (`7d89718`), corrección del orden de traducción dentro de tarjetas (`9eb5b26`) y regresión estabilizada (`132796f`, CI #646 SUCCESS). Se respeta `tapa` y se conservan los nombres gastronómicos.
+- Formatos compuestos, pesos y calificadores de 2024: `d715566` y prueba `cb28906`; CI #647 y #648 SUCCESS.
+- Inventario exploratorio de textos visibles, fuentes y capturas en escritorio/móvil: `e26e2a0`, `4c08b96`; CI #649 y #650 SUCCESS. Las siete etiquetas detectadas inicialmente en cuatro fichas se tradujeron mediante `636d54d` y se cubrieron con prueba `291730e`; CI #651 y #652 SUCCESS, sin candidatos de fuente en esas cuatro fichas en la ejecución #652.
+- Barrido exploratorio del catálogo completo: `2bcb4b2` y `15bd9b0`; CI #653 y #654 SUCCESS. El log de #654 registra **43 fichas inspeccionadas por perfil** (escritorio y móvil), **39 fichas con candidatos** (principalmente etiquetas de fuentes y algunos avisos). No equivale a 39 defectos confirmados: títulos propios y denominaciones originales requieren criterio editorial.
+- Avisos de precios no verificados: Taberna Salinas, El Poema de Gran Capitán y Casa El Pisto, con matices históricos de 2024/2026 y fechas de octubre de 2026. Traducciones `d1585c2`, `84052be`; pruebas `c75eaaa`, `8e3cb96`; CI #655 y #656 SUCCESS. La ejecución #659 falló por una aserción de *placeholder* de búsqueda ajena a El Pisto. Se corrigió el test para admitir ejemplos gastronómicos dinámicos (`8d69f98`), y CI #660 SUCCESS.
+- Primer lote del barrido de etiquetas de fuentes en otras fichas: **10 etiquetas** de Salinas, Bodegas Mezquita, El Poema y otras fichas, preservando fuentes, enlaces, fechas y advertencias (`c836631`); prueba ES/FR y URL en Salinas (`effb2d3`). **CI #661 y #662 SUCCESS** (verificado en GitHub el 2/11/2026). Son los últimos commits de código revisados para este cierre.
+
+**Pruebas y riesgos:** Los controles automáticos abarcan vistas y transiciones específicas, no una revisión lingüística humana exhaustiva. Las capturas del inventario son evidencia para inspección manual. El barrido de 43 fichas es heurístico y sus resultados requieren clasificación. Mantener avisos sobre precios históricos/no confirmados, formatos (tapa, media ración, ración, unidad), cantidades, local exacto y atribuciones de fuente. No publicar cartas parciales ni el francés sin autorización.
+
+**Próximo paso al retomar:** (1) leer este README actualizado y los scripts reales; (2) repetir el barrido de 43 fichas tras `effb2d3` y consultar `FR CATALOG SWEEP` de CI para conocer candidatos restantes; (3) priorizar avisos relevantes y grupos pequeños de etiquetas de fuentes, sin traducciones masivas a ciegas; (4) añadir pruebas de regresión ES/EN/FR y ejecutar CI; (5) documentar resultados y efectuar revisión editorial/visual integral antes de considerar el francés cerrado. El inventario debe interpretarse como un detector, no como aprobación. **No cambiar de fase de hoja de ruta ni fusionar a `main` sin confirmación.**
+
+
+### Seguimiento FR CATALOG SWEEP — 2 de noviembre de 2026 (CI #663–#697)
+
+- **Alcance inalterado:** trabajo solo en `feature/fr-integration-qa-20261027`, francés experimental bajo `?qa_fr=1`. No se ha fusionado a `main` ni alterado `data/places.json`, cartas, platos, formatos o precios. PASS técnico no equivale a aprobación editorial.
+- **Inventario heurístico:** 43 fichas inspeccionadas por perfil (escritorio y móvil). Fichas con candidatos: 39 (#654), 32 (#662), 28 (#667), 24 (#675), 20 (#680), 18 (#682), 16 (#684), 15 (#686), 13 (#688), 10 (#690), 7 (#692), 6 (#694) y **5 (#696)**. Los conteos son de posibles textos pendientes, no defectos confirmados.
+- **Lotes de fuentes con regresión SUCCESS:** Plateros San Francisco/La Viuda/Casa Bravo (#665, `4fcfa70`); Sociedad Plateros y El Nº 10 (#667, `40aeef4`); El Nº 10 y El Churrasco (#670, `7b98bc1`); Don Pepe Centro (#672, `ed1b1e5`); Patio Romano (#675, `0b32915`); El Abuelo/La Piscatoria (#678, `f998c73`); La Cazuela/Taberna del Río (#680, `9c9eabf`); Puerta Sevilla/Posada del Caballo Andaluz (#682, `7d1ccef`); Bodegas Campos/Casa Pepe de la Judería (#684, `8620c0d`); Casa El Pisto (#686, `26db4c8`); Bar Moriles Original/D'Tapas COVAP (#688, `c0dcf95`); La Jineta/La Bandera/Con Acento (#690, `179ae0a`); El Burlaero/La Sal/Museo Manolete (#692, `1c65e55`); Ágora Mezquita (#694, `245dfc6`); Churros Bar Marta (#696, `2038cfc`). Las pruebas cubren etiquetas y URL de las fichas seleccionadas, con cambios ES/EN/FR en escritorio y móvil. Los FAIL intermedios #669, #674, #679 y #685 se corrigieron en ejecuciones posteriores SUCCESS; no deben atribuirse al último estado.
+- **Don Pepe Ciudad Jardín:** cuatro etiquetas traducidas en `8a1ad0b`, con **GitHub Actions #697 SUCCESS** verificado. Se mantiene separado de Don Pepe Centro; Restaurant Guru figura como referencia externa publicada por usuarios, con vigencia sin confirmar. **Pendiente** la regresión específica de estas etiquetas (ES/EN/FR, escritorio/móvil y conservación de enlaces): dos intentos de modificar `scripts/test-fr-detail-shell-pilot.mjs` fueron bloqueados y se comprobó que no contiene el caso. #697 PASS no demuestra esa regresión particular.
+- **Candidatos del último barrido verificado (#696, anterior a #697):** Moriles Ribera, Moriles Casa Fina, Don Pepe Ciudad Jardín, Pastelerías Roldán Centro y La Tarterie Centro. No afirmar aún un nuevo conteo posterior a #697. Proteger denominaciones tradicionales y sedes independientes, fechas y procedencia documental, precios de barra/mesa, disponibilidad no confirmada y advertencias sobre rangos de producto y alérgenos.
+- **Continuación:** completar primero el test específico de Don Pepe Ciudad Jardín y su CI; consultar de nuevo `FR CATALOG SWEEP`; resolver los demás candidatos en lotes pequeños con pruebas de regresión y revisión visual/editorial. El detector no acredita calidad lingüística definitiva. No publicar francés ni cambiar de fase sin autorización expresa.
+
+
+### Seguimiento FR QA — 3 de noviembre de 2026 (fuentes, inventario y avisos)
+
+- **Rama y alcance:** actividad exclusivamente en `feature/fr-integration-qa-20261027`. Francés visible solo bajo `?qa_fr=1`. No se han modificado `main`, `data/places.json`, platos, ingredientes, formatos ni precios. Los PASS automatizados **no** suponen aprobación lingüística/editorial ni autorización de publicación.
+- **Inventario de fuentes documentales y presentación francesa:** se completaron lotes pequeños de etiquetas en Don Pepe Ciudad Jardín, Moriles Ribera, Moriles Casa Fina, La Tarterie Centro y Pastelerías Roldán Centro, con pruebas de ida y vuelta ES/EN/FR, enlaces y perfiles de escritorio/móvil. Se amplió el inventario `scripts/inventory-fr-visible-text.mjs` y el resumen de `FR CATALOG SWEEP` en Actions; sus coincidencias son **candidatos heurísticos**, no defectos lingüísticos demostrados. Se añadieron regresiones sobre las **13 etiquetas** de Moriles Ribera (`a9722d5`, **CI #719 SUCCESS confirmado**) y las **8 etiquetas** de Moriles Casa Fina (`c708668`, PASS comunicado por el responsable), además de La Tarterie y Roldán Centro (PASS comunicados).
+- **Cierre del lote de cuatro fichas:** la comprobación de presentación de **24 enlaces de fuentes** de La Tarterie Centro (1), Moriles Casa Fina (8), Moriles Ribera (13) y Pastelerías Roldán Centro (2) se incorporó en `cb4adc4` y ajustó en `0b4a35f`; PASS confirmado por el responsable. El resultado es técnico y específico de las etiquetas/URL, no revisión visual integral.
+- **Regresión de fuentes del catálogo ordinario:** comprobación del mapa de traducciones frente a **44 registros / 107 enlaces**: **104 enlaces de 43 fichas** cuentan con correspondencia francesa; las otras **3 referencias** corresponden a **El Caballo Rojo**, que conserva su excepción de cierre temporal y no se incluyó en la regresión. Se añadió control de navegador para los 43 registros (escritorio y móvil) en `646a29a`, ajustado en `a7b8734`; **PASS confirmado por el responsable**. Este conteo comprueba etiquetas, no todos los textos o la corrección estilística del francés.
+- **Aviso de vigencia de Moriles Casa Fina (15,95 €):** se añadió prueba de preservación del importe y del aviso `Vigencia pendiente de confirmar` / `Validité à confirmer` en `scripts/test-fr-detail-notices-pilot.mjs`. Hubo **FAIL sucesivos** tras `581b89a`, `e03d69b` y `283c4eb`, sin evidencia de alteración del precio de catálogo: primero se usó un selector de texto visible que desaparecía al pasar a inglés; después el log mostró `15,95 €` (espacio inseparable) en FR/ES y `15,95 €` (espacio normal) en EN, que la comparación estricta consideraba distintos. El selector se fijó al atributo estable `data-set-menu-es` y la comparación de importe normaliza únicamente espacios en `e28e171`; **PASS final confirmado por el responsable**. No se han cambiado el precio, la advertencia original ni el renderizado de producción en ese arreglo.
+- **Estado y siguientes controles:** mantener el triaje del `FR CATALOG SWEEP` y examinar las capturas/resultados actuales, los avisos generales, la integridad ES/EN/FR y la experiencia de móvil/escritorio. Revisar separadamente la situación documental de El Caballo Rojo, sin afirmar que sus fuentes estén aprobadas. Siguen pendientes la auditoría lingüística/editorial integral, QA visual y accesibilidad final, regresiones de cierre y autorización expresa antes de publicar o fusionar el francés. No cambiar la hoja de ruta ni las prioridades sin consultar.
+
+
+### Traspaso para próximo chat — QA francés y revisión visual (03/11/2026)
+
+**Punto de continuación recomendado: verificar la discrepancia de anchura en capturas de escritorio antes de cambiar CSS.** Este apartado es un traspaso operativo; consultar también `docs/qa-fr-editorial-review-2026-11-03.md`, que contiene la evidencia visual y el registro de las muestras lingüísticas.
+
+**Repositorio y límites innegociables**
+- Repositorio: `Helioven/helio-gastro`; trabajar **solo** en `feature/fr-integration-qa-20261027`, nunca en `main` sin autorización. Leer primero el README y los archivos reales de la rama.
+- Francés **experimental**, visible únicamente con `index.html?qa_fr=1`. No publicarlo ni fusionar mientras falten aprobación editorial, control visual y regresión final.
+- No modificar `data/places.json`, cartas, platos, ingredientes, precios, formatos, fuentes ni fechas sin evidencia y autorización editorial expresa; mantener separadas las sedes de un mismo negocio.
+- Cambios pequeños y reversibles; CI GitHub Actions PASS confirmado antes de pasar al lote siguiente. No equiparar PASS técnico con aprobación de estilo o publicación.
+
+**Lo completado y confirmado por el responsable**
+- Regresión técnica de **104 etiquetas de enlaces de fuentes en 43 establecimientos ordinarios**; los otros **3 enlaces** corresponden a la excepción documental **El Caballo Rojo** (cierre temporal). El inventario recorre 44 establecimientos, pero informa de 43 ordinarios más la excepción.
+- `FR CATALOG SWEEP` de la ejecución aportada: **0 candidatos heurísticos** de texto en 43 fichas ordinarias; **0 candidatos** de desbordamiento horizontal en los perfiles inventariados; igualmente **0 candidatos** en las vistas home, search, favorites, Montillana, Beatillas, Rubio y Roldán de escritorio/móvil. Estos ceros **no prueban revisión lingüística o visual completa**.
+- Moriles Casa Fina, menú `Menú Tapas Cordobesas` de **15,95 €**: solucionada la fuga de `Vigencia pendiente de confirmar` al inglés (`Validity not confirmed`) y el fallo posterior de retorno al francés (`Validité à confirmer`) debido a rutas discrepantes del `MutationObserver`. Commits de arreglo `1dffc79` y regresión `fa1dd1c`; **PASS confirmado** por el responsable tras FAIL #737/#738. La prueba `scripts/test-fr-detail-notices-pilot.mjs` cubre vueltas sucesivas ES/EN/FR y visita inglesa pública; precio y catálogo intactos.
+- Revisión **documental preliminar, no aprobación final** de La Montillana (30 descripciones), Moriles Ribera (13 etiquetas de fuentes), Moriles Casa Fina (8), La Tarterie (1) y Roldán Centro (2). Observaciones semánticas pendientes constan en `docs/qa-fr-editorial-review-2026-11-03.md`.
+- Último commit de documentación visual previo a este traspaso: **`e72106b`**. No asumir que el nuevo commit de README o cualquier commit posterior tiene PASS si el responsable no lo ha confirmado.
+
+**Evidencia del ZIP de GitHub Actions inspeccionada**
+- Archivo facilitado en la conversación: `fr-visual-qa-desktop-mobile (3).zip`, artefacto `fr-visual-qa-desktop-mobile` del workflow. En un nuevo chat, volver a adjuntarlo si se necesitan sus imágenes; no asumir que estará montado automáticamente.
+- Informe `fr-visual-qa.json` indicaba PASS, perfiles desktop (1365 × 900) y mobile (390 × 664 CSS px) y pruebas de idiomas; se inspeccionaron muestras y dimensiones de capturas, **no cada detalle lingüístico de todas las imágenes**.
+- **Anomalía visual P2 provisional, NO defecto DOM confirmado:** **13 de 21** PNG franceses de escritorio `fullPage` superan la anchura nominal de **1365 px**. Ejemplos: La Cazuela de la Espartería **1895 px**, La Bandera **1845 px**, Rincón de las Beatillas **1755 px**, Taberna San Miguel · El Pisto **1625 px**; la zona principal se ve, pero aparece franja adicional a la derecha. El barrido previo de geometría (1280 px, secuencia distinta) informó 0 candidatos; por tanto, no atribuir causa raíz a CSS ni dar el problema por descartado.
+- Se prepararon imágenes comparativas locales para la conversación anterior (`gastro-visual-top-samples.png`, `gastro-overflow-regions.png`), pero el registro persistente es el documento QA y el ZIP original; los enlaces locales podrían no conservarse entre chats.
+
+**Siguiente tarea precisa (hacer primero)**
+1. Consultar la rama y el documento QA actualizados. Identificar el script Playwright que genera las capturas `desktop-*-fr.png` afectadas y **replicar exactamente su viewport, secuencia de apertura y `fullPage`**. No sustituirlos por la prueba de 1280 px del inventario.
+2. En La Cazuela, La Bandera y Beatillas, medir a **1365 × 900**: `window.innerWidth`, `document.documentElement.scrollWidth`, `document.body.scrollWidth`, `#detail-section.scrollWidth/clientWidth`, los límites `getBoundingClientRect()` de elementos relevantes y el ancho real de la captura. Comparar con escritorio 1280 px y móvil; registrar evidencia en el informe. La inspección debe distinguir expansión real, comportamiento de `fullPage` y elementos intencionadamente desplazables.
+3. Solo si se reproduce un defecto funcional concreto, localizar **el elemento exacto**, proponer/implementar un cambio CSS mínimo y añadir regresión de las vistas afectadas ES/EN/FR en escritorio/móvil. Si no se reproduce, dejar la anomalía clasificada con sus límites y no aplicar parches cosméticos.
+4. Solicitar/verificar PASS del nuevo CI. Después retomar revisión **visual y lingüística humana** de capturas, avisos, formatos, accesibilidad y muestras restantes; conservar la excepción de El Caballo Rojo y los criterios editoriales pendientes antes de cualquier autorización de publicación.
+
+**Regla de estado:** indicar siempre qué pruebas están propuestas, ejecutadas, PASS o FAIL y cuáles dependen de verificación humana. La prioridad continúa siendo completar y validar cartas, terminar francés QA y después avanzar a auditoría integral según la hoja de ruta existente; no adelantar reseñas o nuevas fases.
+
+
+---
+
+## Handoff vigente — QA francés, pausa del 5 de noviembre de 2026
+
+> **Punto de reanudación tras la sesión larga de QA del 05/11/2026.** Este bloque sustituye para el trabajo actual al handoff anterior de ese día y a los traspasos históricos; no reabrir tareas cerradas. Antes de cualquier edición, contrastar este README, [docs/qa-fr-editorial-review-2026-11-03.md](docs/qa-fr-editorial-review-2026-11-03.md), los archivos reales y el último CI de la rama.
+
+**Repositorio:** `Helioven/helio-gastro`. **Única rama autorizada:** `feature/fr-integration-qa-20261027`. **No modificar/fusionar/desplegar/publicar `main` sin autorización expresa de Helio.** El francés continúa experimental solo mediante `index.html?qa_fr=1`; los lotes `translations/fr/` siguen siendo `candidate_awaiting_semantic_review`. La web pública no representa la copia QA.
+
+### Situación consolidada antes de la pausa
+
+- **Hoja de ruta sin cambios:** 1) verificar/completar cartas; 2) cerrar integración francesa; 3) auditoría integral y QA; 4) reseñas/comentarios; 5) resúmenes de reseñas reales; 6) imágenes autorizadas; 7) revisión final.
+- **Cartas:** 43/44 registradas como cerradas. **El Caballo Rojo** sigue como excepción documental; no darla por resuelta.
+- **Moriles Ribera:** cotejo documental de 214/214 entradas en 18 lotes reales FR 090–107 **cerrado**. Correcciones aprobadas aplicadas y regresadas; incluidos `vaca vieja`, `ibéricos`, `revueltos`, postres y rótulos de fuentes. No repetir cotejos ni crear lotes ficticios. Separar siempre Moriles Ribera y Moriles Casa Fina.
+- **Moriles Casa Fina:** `Cafés et chocolats` se mantiene tras cotejo de carta oficial; no añadir `chauds` por estilo. **La Montillana:** descripción de postre Manolete contrastada con carta oficial, sin discrepancia semántica demostrada; naturalidad francófona aún pendiente.
+- **Accesibilidad/visual anterior:** inventario FR de 24 escenarios (4 fichas × 3 idiomas × escritorio/iPhone13) con cero candidatos heurísticos, **no certificado WCAG**. Revisión humana previa de postres y `Cartes officielles` de Moriles Ribera con PASS visual limitado. El aparente exceso de anchura de 13 PNG de escritorio se explicó por viewports propios de sus suites, no por defecto CSS confirmado.
+- **Artefacto de trabajo:** Helio aportó `fr-visual-qa-desktop-mobile (5).zip` (aprox. 400 MB). En la sesión se inventariaron **86 PNG y 33 JSON**, y se inspeccionaron muestras selectivas de escritorio y móvil, no las 86 capturas exhaustivamente. Los informes automáticos indicaban PASS/cero candidatos dentro de su alcance. Reutilizar ese artefacto cuando esté disponible; solicitarlo de nuevo solo si no es accesible. **Las capturas son anteriores a las correcciones de esta sesión** y no acreditan visualmente el último commit.
+
+### Incidencias de internacionalización resueltas en esta sesión
+
+Las cuatro incidencias se confirmaron a partir de muestras visuales y del código real; Helio aprobó expresamente las traducciones propuestas. **Cierre técnico con PASS de CI, no aprobación lingüística nativa ni de publicación.**
+
+| ID | Problema y cambio mínimo en QA | Commits relevantes | Estado |
+|---|---|---|---|
+| `QA-FR-VIS-01` | `Nuestro criterio` y pie seguían en ES; traducciones FR en `i18n.js` y aserciones FR→EN→ES en `scripts/test-fr-visual.mjs` | `0226204`, `8c0b097`, `97bbcf5` | Cerrada técnicamente; Helio confirmó PASS #846–#848 |
+| `QA-FR-VIS-02` | Advertencia dinámica de cartas generales para Comer/Cenar sin FR; dos frases aprobadas y regresión en `scripts/test-fr-search-ui-pilot.mjs` | `ed80d0f`, `9a02450` | Cerrada técnicamente; Helio confirmó PASS #850 |
+| `QA-FR-VIS-03` | Encabezado, contador singular/plural y estado vacío de favoritos sin FR | `0bf8a71`, `e5ea00f` | Cerrada técnicamente; última suite #853 PASS comunicado |
+| `QA-FR-VIS-04` | `Cualquier formato`, `Nombre`, y notas de rango/tamaños/opciones de La Tarterie seguían en ES; traducción de presentación sin alterar tamaños, opciones ni importes | `0bf8a71`, `e5ea00f`, `4904eca` | Cerrada técnicamente; Helio confirmó PASS #853 |
+
+**CI de cierre:** al consultarlo, GitHub Actions mostraba `#849–#853` como `completed/success` en la rama QA. Helio **confirmó expresamente PASS de #853**, correspondiente a `4904eca5de8493f06280f3d74e4fcdb6a02bb79b`, último commit de código/pruebas al preparar este handoff. Distinguir esta verificación de la ejecución nueva que provocará la actualización documental del README: **no presumir su PASS hasta comprobarla**. Los fallos históricos #837–#839 de expectativas antiguas quedaron resueltos previamente: no reabrirlos.
+
+**Archivos modificados en las correcciones:** `i18n.js`, `scripts/test-fr-visual.mjs`, `scripts/test-fr-search-ui-pilot.mjs` y `scripts/test-fr-la-tarterie-28.mjs`. **No se modificaron** `data/places.json`, precios, ingredientes, fuentes, lotes FR, ES/EN ni `main`.
+
+### Pendientes reales al reanudar
+
+1. **Inspección visual humana selectiva restante:** continuar desde las muestras ya vistas del ZIP, centrando escritorio/móvil en regiones no inspeccionadas, textos largos, avisos, favoritos, filtros y navegación. Como las capturas preceden a las correcciones, comprobar específicamente el aspecto final de los textos arreglados con evidencia nueva si se requiere PASS visual post-fix. No inferir defectos por un texto español legítimamente protegido como nombre de plato.
+2. **Revisión lingüística editorial:** contraste selectivo de naturalidad gastronómica y nombres tradicionales, incluyendo Manolete, flamenquín, mazamorra, salmorejo y torrija; seis muestras preliminares de La Montillana revisadas sin contradicción semántica demostrada ni cambios. **No hay validación por francófono competente/nativo acreditada**. Conservar candidatos FR y pedir autorización antes de cualquier texto editorial nuevo.
+3. **Matriz final de regresiones ES/EN/FR:** consolidar ejecuciones de Actions, alcance de pruebas, inspecciones visuales parciales, controles de accesibilidad y limitaciones. No repetir suites ni abrir defectos de CSS sin reproducción.
+4. **Puerta editorial de publicación:** mantener FR desactivado para público; documentar pendientes y resolverlos antes de solicitar autorización expresa. El Caballo Rojo conserva su excepción documental. Solo después proceder a la auditoría integral según hoja de ruta.
+
+### Método obligatorio
+
+**Verificar → proponer con evidencia → aprobación de Helio → cambio mínimo en la rama QA → regresiones y CI → documentación.** Distinguir prueba propuesta, ejecutada, PASS directo, PASS comunicado, revisión visual y validación lingüística. No hacer commits cosméticos, ni alterar `main`, catálogo, importes, ingredientes, formatos o URL sin autorización y fundamento.
+
+**Punto de arranque concreto tras el descanso:** comprobar el PASS del commit documental de este README, después continuar la inspección selectiva visual pendiente y consolidar resultados. No reabrir las incidencias VIS-01 a VIS-04 sin evidencia nueva.
+
+
+---
+
 ## Alcance de publicación Helio Gastro 1.0 — decisión de Helio (27/10/2026)
 
 **Objetivo:** no publicar como producto terminado hasta completar y validar el alcance funcional y visual previsto. Esta sección concreta la hoja de ruta existente; no significa que estas funciones estén ya implementadas ni autoriza desplegarlas automáticamente.
@@ -605,3 +1195,8 @@ Mejoras transversales: indicar fecha de verificación de cada carta y estudiar u
 **Secuencia orientativa:** terminar francés y su regresión → completar horarios documentados → diseñar/implementar fuentes de reseñas, resúmenes y consejo → buzón con moderación → imágenes y pulido visual → QA integral y publicación. Se permiten pruebas de regresión en cada fase. Las rutas gastronómicas personalizadas y el mapa de terrazas con sombra siguen como ideas exploratorias, fuera del alcance comprometido de la 1.0.
 
 **Criterio de cierre:** una función no se considera terminada por existir en código; requiere datos verificables cuando proceda, pruebas suficientes y aprobación visual/funcional de Helio. Si alguna fuente externa impide obtener reseñas u horarios fiables, registrar la limitación y decidir explícitamente una alternativa antes de publicar.
+
+
+## Autorización posterior de piloto FR — 6 de noviembre de 2026
+
+Helio autorizó expresamente activar el francés públicamente e integrarlo en `main`, conservando El Caballo Rojo oculto y las advertencias. Preparar el despliegue y sus regresiones en una rama de release antes de fusionar. Tras publicar el francés, proseguir con la fase 3 de auditoría integral; las mejoras automatizadas posteriores requieren su propia evaluación y autorización de alcance.

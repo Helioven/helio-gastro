@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-el-numero-10",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 0,
+      "itemIndex": 0,
+      "fr": "Salmorejo, crème froide cordouane à base de tomate et de pain, accompagnée de jambon ibérique."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 0,
+      "itemIndex": 1,
+      "fr": "Crème froide de mazamorra avec amandes frites, raisins macérés dans du vin oloroso et pomme acidulée."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 0,
+      "itemIndex": 2,
+      "fr": "Ensaladilla aux crevettes à l’ail, proposée en portions de 100 et 200 grammes."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 0,
+      "itemIndex": 3,
+      "fr": "Oreille de porc frite accompagnée de mayonnaise au paprika."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 0,
+      "itemIndex": 4,
+      "fr": "Patatas bravas avec sauce tomate au chipotle et écume d’aïoli."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 0,
+      "itemIndex": 5,
+      "fr": "Aubergines en beignets frits accompagnées de sirop de canne."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 0,
+      "itemIndex": 6,
+      "fr": "Croquettes crémeuses au puchero et au jambon ibérique, proposées par trois ou six unités."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 1,
+      "itemIndex": 0,
+      "fr": "Jambon ibérique tranché à la demande, proposé en portions de 30 et 60 grammes."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 1,
+      "itemIndex": 1,
+      "fr": "Caña de lomo ibérique de porc nourri aux glands, proposée en portions de 30 et 60 grammes."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 1,
+      "itemIndex": 2,
+      "fr": "Morcilla achorizada, boudin noir de type chorizo, proposée en portions de 30 et 60 grammes."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 1,
+      "itemIndex": 3,
+      "fr": "Cecina de León, viande de bœuf séchée, proposée en portions de 30 et 60 grammes."
+    },
+    {
+      "placeId": "taberna-el-numero-10",
+      "sectionIndex": 1,
+      "itemIndex": 4,
+      "fr": "Fromage bleu Tormentoso de Calaveruela, proposé en portions de 50 et 100 grammes."
+    }
+  ]
+}

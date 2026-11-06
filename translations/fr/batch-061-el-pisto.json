@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-san-miguel-el-pisto",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 7,
+      "itemIndex": 7,
+      "fr": "Pestiños, pâtisseries traditionnelles à base de pâte frite."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 7,
+      "itemIndex": 8,
+      "fr": "Fruits ; sélection non précisée sur la carte."
+    }
+  ]
+}

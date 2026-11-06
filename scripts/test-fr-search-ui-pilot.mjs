@@ -1,0 +1,140 @@
+import assert from 'node:assert/strict';
+import {chromium,devices} from 'playwright';
+const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
+for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}},{name:'mobile',options:devices['iPhone 13']}]){
+ const context=await browser.newContext(profile.options);const page=await context.newPage();
+ await page.goto('http://127.0.0.1:8765/index.html?qa_fr=1',{waitUntil:'domcontentloaded'});
+ const heading=page.locator('#search-title');const button=page.locator('#search-button');
+ await page.locator('#language-select').selectOption('fr');
+ assert.equal(await page.locator('#language-select').getAttribute('aria-label'),'Langue','FR language selector accessible label');
+ assert.equal(await page.locator('.language-label').textContent(),'Langue','FR visible language selector label');
+ const accessibleLabels=[['#quick-nav','Navigation rapide'],['#service-section .service-selector','Moment du repas'],['.dish-suggestions','Spécialités cordouanes à rechercher']];
+ for(const [selector,expected] of accessibleLabels)assert.equal(await page.locator(selector).getAttribute('aria-label'),expected,'FR accessible label '+selector);
+ const additionalLabels=[['#results-section','Résultats'],['#detail-section','Fiche de l’établissement'],['#close-recommendations','Fermer les recommandations'],['#map-frame','Carte de l’établissement']];
+ for(const [selector,expected] of additionalLabels)assert.equal(await page.locator(selector).getAttribute('aria-label')??await page.locator(selector).getAttribute('title'),expected,'FR accessibility attribute '+selector);
+ assert.equal(await page.locator('.dish-suggestions small').textContent(),'Choisissez un plat, puis cliquez sur « Rechercher des établissements » pour afficher les résultats.','FR search instruction');
+ assert.equal(await page.locator('#place-name').getAttribute('placeholder'),'Ex. : Moriles, Casa Bravo, Plateros…','FR venue placeholder');
+ // The service-mode renderer may replace the generic translated hint with culinary dish examples.
+ // Proper dish names are intentionally preserved in Spanish across languages.
+ const dishPlaceholder=await page.locator('#dish').getAttribute('placeholder');
+ assert.ok([
+   'Saisissez ou choisissez une spécialité cordouane…',
+   'Flamenquín, salmorejo, carrillada…',
+   'Tostadas, churros, molletes…',
+   'Churros con chocolate, pasteles…',
+   'Tapas, tortilla, croquetas…'
+ ].includes(dishPlaceholder),'FR dish placeholder must be a translated instruction or documented dish-name examples: '+dishPlaceholder);
+ // app.js rebuilds #budget after startup, replacing the HTML-only long label.
+ // Assert the live service-mode label once the catalogue and budget UI are ready.
+ await page.waitForFunction(()=>typeof state!=='undefined'&&state.places.length>0
+  &&document.querySelector('#budget option[value=""]')?.textContent==='Sans limite');
+ assert.equal(await page.locator('#budget option[value=""]').textContent(),'Sans limite','FR live unlimited budget');
+ assert.equal(await page.locator('#sort option[value="price"]').textContent(),'Prix le plus bas','FR lowest price sort');
+ assert.equal(await page.locator('#sort option[value="verified"]').textContent(),'Vérifiés en premier','FR verified first sort');
+ const rec=page.locator('#recommendations-section');
+ assert.equal(await page.locator('#recommendations-heading').textContent(),'🍴 Qu’est-ce qui vous ferait plaisir aujourd’hui ?');
+ assert.ok((await rec.innerText()).includes('Accès direct'),'French recommendations access label missing');
+ assert.ok((await rec.innerText()).includes('Le moins cher n’est pas forcément le meilleur.'),'French price caveat missing');
+ const service=page.locator('#service-section');
+ assert.equal(await page.locator('#service-heading').textContent(),'Quel repas avez-vous en tête ?');
+ assert.deepEqual(await page.locator('#service-section [data-service]').allTextContents(),['☕ Petit-déjeuner','🍽️ Déjeuner','🥐 Goûter','🌙 Dîner']);
+ assert.ok((await service.innerText()).includes('Les horaires restent à vérifier.'),'French service schedule caveat missing');
+ // General-menu availability warning must track both meal mode and UI language.
+ const intro=page.locator('#service-intro');
+ const frLunch='Vous pouvez consulter les cartes générales disponibles ; le service du déjeuner et ses horaires restent à vérifier.';
+ const frDinner='Vous pouvez consulter les cartes générales disponibles ; le service du dîner et ses horaires restent à vérifier.';
+ await page.locator('[data-service="comida"]').click();
+ await page.waitForFunction(text=>document.querySelector('#service-intro')?.textContent===text,frLunch);
+ await page.locator('[data-service="cena"]').click();
+ await page.waitForFunction(text=>document.querySelector('#service-intro')?.textContent===text,frDinner);
+ await page.locator('#language-select').selectOption('es');
+ assert.equal(await intro.textContent(),'Puedes explorar las cartas generales existentes; el servicio de cenar y su horario siguen pendientes de verificar.','Spanish dinner notice restored');
+ await page.locator('[data-service="comida"]').click();
+ assert.equal(await intro.textContent(),'Puedes explorar las cartas generales existentes; el servicio de comer y su horario siguen pendientes de verificar.','Spanish lunch notice restored');
+ await page.locator('#language-select').selectOption('en');
+ await page.waitForFunction(text=>document.querySelector('#service-intro')?.textContent===text,'You can explore the available general menus; lunch service and opening hours are still unverified.');
+ await page.locator('[data-service="cena"]').click();
+ await page.waitForFunction(text=>document.querySelector('#service-intro')?.textContent===text,'You can explore the available general menus; dinner service and opening hours are still unverified.');
+ await page.locator('#language-select').selectOption('fr');
+ await page.waitForFunction(text=>document.querySelector('#service-intro')?.textContent===text,frDinner);
+ await page.locator('[data-service="comida"]').click();
+ await page.waitForFunction(text=>document.querySelector('#service-intro')?.textContent===text,frLunch);
+
+ const hero=page.locator('.hero');
+ assert.ok((await hero.innerText()).includes('Trouvez un bon petit plat.'),'French hero title missing');
+ assert.ok((await hero.innerText()).includes('Sans surprise sur l’addition.'),'French hero subtitle missing');
+ const nav=page.locator('#quick-nav');
+ assert.ok((await nav.innerText()).includes('🔎 Rechercher'),'French quick navigation search absent');
+ assert.ok((await nav.innerText()).includes('★ Favoris'),'French quick navigation favorites absent');
+ const favoriteNotice=page.locator('#favorite-notice');
+ const favoriteEs='Guardadas solo en este navegador. Puedes consultarlas sin volver a buscar.';
+ const favoriteFr='Enregistrées uniquement dans ce navigateur. Vous pouvez les consulter sans effectuer une nouvelle recherche.';
+ await page.waitForFunction(expected=>document.querySelector('#favorite-notice')?.textContent===expected,favoriteFr);
+ assert.equal(await favoriteNotice.textContent(),favoriteFr);
+ const favoriteHeading=page.locator('#favorite-heading'),favoriteCount=page.locator('#favorite-count');
+ const favoriteEmpty=page.locator('#favorite-list .note');
+ const checkFavoritesFr=async()=>{
+   assert.equal(await favoriteHeading.textContent(),'★ Mes tavernes favorites','FR favorites heading');
+   assert.equal(await favoriteCount.textContent(),'0 favori','FR empty favorites count');
+   assert.equal(await favoriteEmpty.textContent(),'Vous n’avez pas encore de tavernes enregistrées. Cliquez sur ☆ dans les résultats ou les fiches.','FR empty favorites copy');
+ };
+ await checkFavoritesFr();
+ assert.equal(await page.locator('#portion option[value=""]').textContent(),'Tout format','FR live portion default');
+ assert.equal(await page.locator('#sort option[value="name"]').textContent(),'Nom','FR name sort');
+
+ await page.waitForFunction(()=>document.querySelector('#search-title')?.textContent==='Une petite envie ?');
+ assert.equal(await button.textContent(),'Rechercher des établissements →');
+ await page.waitForFunction(()=>typeof state!=='undefined'&&state.places.length>0);
+ assert.equal(await page.locator('#dish-suggestions-list button').filter({hasText:/^Flamenquín$/}).count(),1,'Flamenquín should remain available after suggestions are rendered');
+ await page.locator('#language-select').selectOption('es');
+ assert.equal(await page.locator('#detail-section').getAttribute('aria-label'),'Ficha del establecimiento','ES detail label restoration');
+ assert.equal(await page.locator('#close-recommendations').getAttribute('aria-label'),'Cerrar recomendaciones','ES dialog label restoration');
+ assert.equal(await page.locator('#map-frame').getAttribute('title'),'Mapa del establecimiento','ES map frame title restoration');
+ assert.equal(await page.locator('#quick-nav').getAttribute('aria-label'),'Navegación rápida','ES aria-label must be restored');
+ assert.equal(await page.locator('#language-select').getAttribute('aria-label'),'Language / Idioma','ES language selector label restored');
+ assert.equal(await page.locator('.language-label').textContent(),'Language / Idioma','ES visible language selector restored');
+ assert.equal(await page.locator('.dish-suggestions small').textContent(),'Elige un plato y pulsa «Buscar establecimientos» para consultar resultados.','ES search instruction restored');
+ assert.equal(await page.locator('#budget option[value=""]').textContent(),'Sin límite','ES unlimited budget restored');
+ assert.equal(await page.locator('#sort option[value="price"]').textContent(),'Menor coste','ES lowest price sort restored');
+ assert.equal(await page.locator('#sort option[value="verified"]').textContent(),'Verificados primero','ES verified sort restored');
+ assert.equal(await page.locator('#place-name').getAttribute('placeholder'),'Ej.: Moriles, Casa Bravo, Plateros…','ES venue placeholder restoration');
+ assert.equal(await page.locator('#dish').getAttribute('placeholder'),'Escribe o elige un plato cordobés…','ES dish placeholder restoration');
+ assert.equal(await favoriteNotice.textContent(),favoriteEs);
+ assert.equal(await favoriteHeading.textContent(),'★ Mis tabernas favoritas','ES favorites heading restored');
+ assert.equal(await favoriteCount.textContent(),'0 favoritos','ES favorites count restored');
+ assert.equal(await favoriteEmpty.textContent(),'Aún no tienes tabernas guardadas. Marca ☆ en los resultados o fichas.','ES favorites empty restored');
+ assert.equal(await page.locator('#portion option[value=""]').textContent(),'Cualquier formato','ES default portion restored');
+ assert.equal(await page.locator('#sort option[value="name"]').textContent(),'Nombre','ES name sort restored');
+ assert.ok((await nav.innerText()).includes('🔎 Buscar'),'Spanish quick navigation not restored');
+ assert.ok((await hero.innerText()).includes('Encuentra algo rico.'),'Spanish hero not restored');
+ assert.equal(await page.locator('#recommendations-heading').textContent(),'🍴 ¿Qué te apetece hoy?');
+ assert.deepEqual(await page.locator('#service-section [data-service]').allTextContents(),['☕ Desayunar','🍽️ Comer','🥐 Merendar','🌙 Cenar']);
+ assert.equal(await heading.textContent(),'¿Qué te apetece?');
+ assert.equal(await button.textContent(),'Buscar establecimientos →');
+ await page.locator('#language-select').selectOption('en');
+ assert.equal(await page.locator('#detail-section').getAttribute('aria-label'),'Establishment details','EN accessibility #detail-section');
+ assert.equal(await page.locator('#close-recommendations').getAttribute('aria-label'),'Close recommendations','EN accessibility #close-recommendations');
+ assert.equal(await page.locator('#map-frame').getAttribute('title'),'Establishment map','EN accessibility #map-frame');
+ assert.equal(await favoriteNotice.textContent(),'Saved only in this browser. You can view them without searching again.');
+ assert.equal(await favoriteHeading.textContent(),'★ My favourite taverns','EN favorites heading restored');
+ assert.equal(await favoriteCount.textContent(),'0 favourites','EN favorites count restored');
+ assert.equal(await favoriteEmpty.textContent(),'No saved taverns yet. Select ☆ in results or details.','EN favorites empty restored');
+ assert.equal(await page.locator('#portion option[value=""]').textContent(),'Any portion','EN default portion restored');
+ assert.equal(await page.locator('#sort option[value="name"]').textContent(),'Name','EN name sort restored');
+ assert.ok((await nav.innerText()).includes('🔎 Search'),'English quick navigation absent');
+ assert.ok((await hero.innerText()).includes('Find something delicious.'),'English hero missing');
+ assert.equal(await page.locator('#recommendations-heading').textContent(),'🍴 What would you like today?');
+ assert.deepEqual(await page.locator('#service-section [data-service]').allTextContents(),['☕ Breakfast','🍽️ Lunch','🥐 Afternoon snack','🌙 Dinner']);
+ assert.equal(await button.textContent(),'Find places →');
+ await page.locator('#language-select').selectOption('fr');
+ assert.equal(await favoriteNotice.textContent(),favoriteFr);
+ assert.ok((await nav.innerText()).includes('🔎 Rechercher'),'French quick navigation not restored');
+ assert.ok((await hero.innerText()).includes('Trouvez un bon petit plat.'),'French hero not restored');
+ assert.equal(await page.locator('#recommendations-heading').textContent(),'🍴 Qu’est-ce qui vous ferait plaisir aujourd’hui ?');
+ assert.deepEqual(await page.locator('#service-section [data-service]').allTextContents(),['☕ Petit-déjeuner','🍽️ Déjeuner','🥐 Goûter','🌙 Dîner']);
+ await checkFavoritesFr();
+ assert.equal(await page.locator('#portion option[value=""]').textContent(),'Tout format');
+ assert.equal(await page.locator('#sort option[value="name"]').textContent(),'Nom');
+ await context.close();console.log('FR SEARCH PILOT '+profile.name+' PASS');
+}
+await browser.close();

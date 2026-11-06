@@ -1,0 +1,95 @@
+import { chromium, devices } from 'playwright';
+import { mkdirSync, writeFileSync, readFileSync } from 'node:fs';
+const base='http://127.0.0.1:8765/qa-fr-la-montillana.html';
+const profiles=[
+ {name:'desktop',viewport:{width:1365,height:900},isMobile:false},
+ {name:'mobile',...devices['iPhone 13'],browserName:undefined},
+];
+mkdirSync('qa-reports/screenshots',{recursive:true});
+const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
+const report=[];
+let fail=false;
+for(const profile of profiles){
+ const context=await browser.newContext(profile.name==='mobile'?{...devices['iPhone 13']}:{viewport:profile.viewport});
+ const page=await context.newPage();const faults=[];
+ page.on('pageerror',e=>faults.push('pageerror: '+e.message));
+ page.on('console',msg=>{if(msg.type()==='error')faults.push('console: '+msg.text())});
+ const response=await page.goto(base,{waitUntil:'networkidle'});
+ await page.locator('main#dishes article').first().waitFor({timeout:15000});
+ const count=await page.locator('main#dishes article').count();
+ const texts={};
+ for(const language of ['es','en','fr']){
+   await page.locator('#lang').selectOption(language);
+   const selector=page.locator('main#dishes article p').first();
+   texts[language]=await selector.textContent();
+   if(!texts[language]?.trim())faults.push(language+' first description blank');
+   if(await page.locator('main#dishes article').count()!==15)faults.push(language+' wrong card count');
+   const htmlLang=await page.locator('html').getAttribute('lang');
+   if(htmlLang!==language)faults.push(language+' html lang mismatch: '+htmlLang);
+   const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth+1);
+   if(overflow)faults.push(language+' horizontal viewport overflow');
+   await page.screenshot({path:'qa-reports/screenshots/'+profile.name+'-'+language+'.png',fullPage:true});
+ }
+ if(count!==15)faults.push('initial card count '+count);
+ if(texts.es===texts.fr||texts.en===texts.fr||texts.es===texts.en)faults.push('language descriptions not distinct');
+ if(response.status()!==200)faults.push('HTTP status '+response.status());
+ const result={profile:profile.name,viewport:page.viewportSize(),cards:count,distinctLanguages:new Set(Object.values(texts)).size===3,errors:faults};
+ report.push(result);if(faults.length)fail=true;
+ await context.close();
+}
+
+const mainContext=await browser.newContext({viewport:{width:1280,height:800}});
+const main=await mainContext.newPage();const mainErrors=[];
+main.on('pageerror',e=>mainErrors.push(e.stack||e.message));
+await main.goto('http://127.0.0.1:8765/index.html',{waitUntil:'domcontentloaded'});
+await main.locator('#language-select').waitFor();
+const normalOptions=await main.locator('#language-select option').evaluateAll(options=>options.map(o=>o.value));
+if(normalOptions.join(',')!=='es,en,fr')mainErrors.push('Unexpected public language options: '+normalOptions.join(','));
+const publicLabels=await main.locator('#language-select option').allTextContents();
+if(JSON.stringify(publicLabels)!==JSON.stringify(['🇪🇸 Español','🇬🇧 English','🇫🇷 Français']))mainErrors.push('Public language flags/labels incorrect: '+JSON.stringify(publicLabels));
+
+await main.goto('http://127.0.0.1:8765/index.html?qa_fr=1',{waitUntil:'domcontentloaded'});
+await main.locator('#language-select option[value="fr"]').waitFor({state:'attached'});
+const qaLabels=await main.locator('#language-select option').allTextContents();
+if(JSON.stringify(qaLabels)!==JSON.stringify(['🇪🇸 Español','🇬🇧 English','🇫🇷 Français']))mainErrors.push('QA language flags/labels incorrect: '+JSON.stringify(qaLabels));
+
+await main.locator('#language-select').selectOption('fr');
+await main.waitForFunction(()=>document.documentElement.lang==='fr'&&window.HelioGastroLanguage?.get()==='fr');
+const readInfo=()=>main.evaluate(()=>({
+ title:document.querySelector('.panel.info h2')?.textContent.trim(),
+ paragraphs:[...document.querySelectorAll('.panel.info p')].map(p=>p.textContent.replace(/\s+/g,' ').trim()),
+ footer:document.querySelector('footer')?.textContent.replace(/\s+/g,' ').trim()
+}));
+const infoFr=await readInfo();
+if(infoFr.title!=='🔍 Notre méthode'||!infoFr.paragraphs[0]?.includes('Confirmé désigne un prix publié')||!infoFr.paragraphs[0]?.includes('Estimé donne une estimation indicative')||!infoFr.paragraphs[1]?.includes('Nous n’inventons ni avis')||!infoFr.footer?.includes('Projet pilote pour un portfolio QA')||!infoFr.footer?.includes('Sans publicité ni affiliation'))mainErrors.push('FR methodology/footer incomplete: '+JSON.stringify(infoFr));
+await main.locator('#language-select').selectOption('en');
+await main.waitForFunction(()=>document.documentElement.lang==='en');
+const infoEn=await readInfo();
+if(infoEn.title!=='🔍 Our methodology'||!infoEn.paragraphs[0]?.includes('Confirmed means a published')||!infoEn.footer?.includes('No advertising or affiliate links'))mainErrors.push('EN methodology/footer not restored: '+JSON.stringify(infoEn));
+await main.locator('#language-select').selectOption('es');
+await main.waitForFunction(()=>document.documentElement.lang==='es');
+const infoEs=await readInfo();
+if(infoEs.title!=='🔍 Nuestro criterio'||!infoEs.paragraphs[0]?.includes('Confirmado significa coste publicado')||!infoEs.footer?.includes('Sin publicidad ni afiliación'))mainErrors.push('ES methodology/footer not restored: '+JSON.stringify(infoEs));
+await main.waitForFunction(()=>typeof state!=='undefined' && state.places.some(p=>p.id==='la-montillana'));
+await main.evaluate(()=>showPlace(state.places.find(p=>p.id==='la-montillana'),false));
+const descriptions=async language=>{
+ await main.locator('#language-select').selectOption(language);
+ return main.locator('#detail-content [data-dish-explanation]:visible').allTextContents();
+};
+const esTexts=await descriptions('es');
+const enTexts=await descriptions('en');
+const frTexts=await descriptions('fr');
+const expectedBatch={entries:['batch-001-la-montillana.json','batch-002-la-montillana.json','batch-003-la-montillana.json'].flatMap(name=>JSON.parse(readFileSync('translations/fr/'+name,'utf8')).entries)};
+if(esTexts.length<30||enTexts.length<30||frTexts.length!==30)mainErrors.push('description visibility count ES/EN/FR '+[esTexts.length,enTexts.length,frTexts.length]);
+if(frTexts.length===30&&frTexts.some((t,i)=>t!==expectedBatch.entries[i].fr))mainErrors.push('French descriptions differ from approved candidate ordering');
+await main.locator('#language-select').selectOption('es');
+const esAgain=await main.locator('#detail-content [data-dish-explanation]:visible').allTextContents();
+if(JSON.stringify(esTexts)!==JSON.stringify(esAgain))mainErrors.push('ES descriptions not restored after FR');
+const mainResult={defaultOptions:normalOptions,optInFrench:true,roundTrip:['fr','en','es'],visibleDescriptions:{es:esTexts.length,en:enTexts.length,fr:frTexts.length},errors:mainErrors};
+if(mainErrors.length)fail=true;
+await mainContext.close();
+
+await browser.close();
+writeFileSync('qa-reports/fr-visual-qa.json',JSON.stringify({status:fail?'FAIL':'PASS',profiles:report,mainApp:mainResult},null,2)+'\n');
+console.log('FR VISUAL QA '+JSON.stringify({status:fail?'FAIL':'PASS',profiles:report,mainApp:mainResult}));
+if(fail)process.exitCode=1;

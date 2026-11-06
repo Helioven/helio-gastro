@@ -124,8 +124,501 @@ window.GASTRO_I18N = Object.freeze({
   }
   const originalNodes=new WeakMap();
   const originalAttributes=new WeakMap();
+  const frenchQaEnabled=true; // Public French pilot authorized by owner, 2026-11-06.
+  const isSupportedLanguage=value=>value==='es'||value==='en'||(frenchQaEnabled&&value==='fr');
   let language='es';
+  // First French UI pilot: narrowly scoped search controls, QA flag only.
+  const frenchSearchLabels=new Map([
+    ['¿Qué te apetece?','Une petite envie ?'],
+    ['Nombre del establecimiento',"Nom de l’établissement"],
+    ['Plato o especialidad','Plat ou spécialité'],
+    ['PRUEBA UN PLATO TÍPICO','DÉCOUVREZ UNE SPÉCIALITÉ'],
+    ['Elige un plato y pulsa «Buscar establecimientos» para consultar resultados.','Choisissez un plat, puis cliquez sur « Rechercher des établissements » pour afficher les résultats.'],
+    ['Presupuesto máximo','Budget maximum'],
+    ['Aplicar presupuesto a','Appliquer le budget à'],
+    ['Un plato de la carta','Un plat à la carte'],
+    ['Comida total por persona','Repas complet par personne'],
+    ['Zona','Quartier'],
+    ['Toda Córdoba','Tout Cordoue'],
+    ['Sin límite (mostrar fichas)','Sans limite (afficher les fiches)'],
+    ['Sin límite','Sans limite'],
+    ['Cualquier formato','Tout format'],
+    ['Nombre','Nom'],
+    ['Menor coste','Prix le plus bas'],
+    ['Verificados primero','Vérifiés en premier'],
+    ['Formato del plato','Format du plat'],
+    ['Tipo de precio','Type de prix'],
+    ['Ordenar','Trier'],
+    ['Buscar establecimientos →','Rechercher des établissements →'],
+    ['Limpiar búsqueda','Effacer la recherche'],
+    ['Cualquier formato (sin equivalencia de tamaños)','Tout format (tailles non comparables)'],
+    ['Unidad','À l’unité'],
+    ['Media ración','Demi-portion'],
+    ['Ración completa','Portion entière'],
+    ['Formato no especificado','Format non précisé'],
+    ['Todos los precios','Tous les prix'],
+    ['Solo precios documentados','Prix documentés uniquement'],
+    ['Documentados o estimados','Prix documentés ou estimés'],
+    ['Mostrar también establecimientos sin precio documentado','Afficher aussi les établissements sans prix documenté'],
+    ['(se identificarán claramente como precio desconocido)','(signalés clairement comme prix inconnus)'],
+    ['Límite aplicado al precio de un plato, no a una comida completa.','Plafond appliqué au prix d’un plat, et non à celui d’un repas complet.'],
+    ['El límite solo se puede comprobar cuando existe un precio documentado. Las fichas sin precio se muestran como desconocidas, no como ofertas dentro del presupuesto.','Le plafond ne peut être vérifié que si un prix est documenté. Les établissements sans prix sont indiqués comme inconnus et non comme des offres respectant le budget.']
+  ]);
+  const translateFrenchSearchText=(node,source)=>node.parentElement?.closest('#search-section')&&!node.parentElement.closest('.dish-suggestions-list')?(frenchSearchLabels.get(normalize(source))||source):source;
+  const frenchRecommendationsLabels=new Map([
+    ['🍴 ¿Qué te apetece hoy?','🍴 Qu’est-ce qui vous ferait plaisir aujourd’hui ?'],
+    ['Acceso directo','Accès direct'],
+    ['Elige un plato y descubre directamente opciones documentadas de nuestra base, separadas por variante y formato. Más barato no significa mejor.','Choisissez un plat et découvrez les options documentées dans notre base, classées par variante et par format. Le moins cher n’est pas forcément le meilleur.']
+  ]);
+  const translateFrenchRecommendationsText=(node,source)=>node.parentElement?.closest('#recommendations-section')&&!node.parentElement.closest('#recommendation-dishes')?(frenchRecommendationsLabels.get(normalize(source))||source):source;
+  const frenchServiceLabels=new Map([
+    ['¿Qué plan tienes ?','Quel repas avez-vous en tête ?'],
+    ['¿Qué plan tienes?','Quel repas avez-vous en tête ?'],
+    ['Elige un momento del día para adaptar platos y presupuesto. Los horarios todavía requieren verificación.','Choisissez un moment de la journée pour adapter les plats et le budget. Les horaires restent à vérifier.'],
+    ['☕ Desayunar','☕ Petit-déjeuner'],
+    ['🍽️ Comer','🍽️ Déjeuner'],
+    ['🥐 Merendar','🥐 Goûter'],
+    ['🌙 Cenar','🌙 Dîner'],
+    ['Puedes explorar las cartas generales existentes; el servicio de comer y su horario siguen pendientes de verificar.','Vous pouvez consulter les cartes générales disponibles ; le service du déjeuner et ses horaires restent à vérifier.'],
+    ['Puedes explorar las cartas generales existentes; el servicio de cenar y su horario siguen pendientes de verificar.','Vous pouvez consulter les cartes générales disponibles ; le service du dîner et ses horaires restent à vérifier.']
+  ]);
+  const translateFrenchServiceText=(node,source)=>node.parentElement?.closest('#service-section')||node.parentElement?.id==='service-intro'?(frenchServiceLabels.get(normalize(source))||source):source;
+  const frenchHeroLabels=new Map([
+    ['CÓRDOBA · DÓNDE COMER BIEN','CORDOUE · OÙ BIEN MANGER'],
+    ['Encuentra algo rico.','Trouvez un bon petit plat.'],
+    ['Sin sorpresas en la cuenta.','Sans surprise sur l’addition.'],
+    ['Platos que te apetecen, presupuestos realistas y fuentes que puedes comprobar.','Des plats qui vous font envie, des budgets réalistes et des sources vérifiables.']
+  ]);
+  const translateFrenchHeroText=(node,source)=>node.parentElement?.closest('.hero')?(frenchHeroLabels.get(normalize(source))||source):source;
+  const frenchNavLabels=new Map([
+    ['🍴 Platos','🍴 Plats'],
+    ['🔎 Buscar','🔎 Rechercher'],
+    ['★ Favoritos','★ Favoris'],
+    ['⚖️ Comparar','⚖️ Comparer']
+  ]);
+  const translateFrenchNavText=(node,source)=>node.parentElement?.closest('#quick-nav')?(frenchNavLabels.get(normalize(source))||source):source;
+  const frenchFavoritesNotice='Enregistrées uniquement dans ce navigateur. Vous pouvez les consulter sans effectuer une nouvelle recherche.';
+  const frenchFavoritesLabels=new Map([
+    ['★ Mis tabernas favoritas','★ Mes tavernes favorites'],
+    ['Aún no tienes tabernas guardadas. Marca ☆ en los resultados o fichas.','Vous n’avez pas encore de tavernes enregistrées. Cliquez sur ☆ dans les résultats ou les fiches.'],
+    ['Ver ficha','Voir la fiche'],
+    ['📍 Ver mapa','📍 Voir la carte'],
+    ['☆ Guardar','☆ Enregistrer'],
+    ['★ Guardado','★ Enregistré']
+  ]);
+  const translateFrenchFavoritesNotice=(node,source)=>{
+    const parent=node.parentElement;
+    if(!parent?.closest('#favorite-section'))return source;
+    const raw=normalize(source);
+    if(parent.id==='favorite-notice'&&raw==='Guardadas solo en este navegador. Puedes consultarlas sin volver a buscar.')return frenchFavoritesNotice;
+    if(frenchFavoritesLabels.has(raw))return frenchFavoritesLabels.get(raw);
+    if(parent.id==='favorite-count'){
+      const count=raw.match(/^(\d+) favoritos$/);
+      if(count)return count[1]+' '+(count[1]==='0'||count[1]==='1'?'favori':'favoris');
+    }
+    return source;
+  };
+  const frenchResultsLabels=new Map([
+    ['Resultados','Résultats'],
+    ['Ver todos los locales que ofrecen este plato →','Voir tous les établissements proposant ce plat →'],
+    ['Ficha del local',"Fiche de l’établissement"],
+    ['Cerrar ficha ×','Fermer la fiche ×'],
+    ['Comparador','Comparateur'],
+    ['Elige hasta tres establecimientos. Para comparar precios, selecciona un mismo formato en el buscador. Las cantidades reales pueden variar entre locales.',"Choisissez jusqu’à trois établissements. Pour comparer les prix, sélectionnez un même format dans la recherche. Les quantités réelles peuvent varier selon l’établissement."],
+    ['Todavía no hay establecimientos seleccionados.','Aucun établissement sélectionné pour le moment.'],
+    ['El límite solo se puede comprobar cuando existe un precio documentado. Las fichas sin precio se muestran como desconocidas, no como ofertas dentro del presupuesto.',"Le plafond ne peut être vérifié que si un prix est documenté. Les établissements sans prix sont signalés comme inconnus, et non comme des offres respectant le budget."]
+  ]);
+  const translateFrenchResultsText=(node,source)=>node.parentElement?.closest('#results-section,#detail-section,#compare-section')&&!node.parentElement.closest('#results,#detail-content,#compare-output')?(frenchResultsLabels.get(normalize(source))||source):source;
+  const frenchDynamicResults=new Map([
+    ['Consulta especialidades y fuentes en la ficha','Consultez les spécialités et les sources dans la fiche.'],
+    ['Precio del plato pendiente de confirmar','Prix du plat en attente de confirmation'],
+    ['Precio del plato en este formato pendiente de confirmar','Prix du plat dans ce format en attente de confirmation'],
+    ['No podemos confirmar que cumpla el presupuesto indicado.',"Nous ne pouvons pas confirmer que cet établissement respecte le budget indiqué."],
+    ['Ver ficha completa','Voir la fiche complète'],
+    ['✓ Quitar del comparador','✓ Retirer du comparateur'],
+    ['+ Comparar','+ Comparer']
+  ]);
+  const translateFrenchDynamicResult=(node,source)=>node.parentElement?.closest('#results')&&node.parentElement.matches('.result-pending,.note,.detail-button,button')?(frenchDynamicResults.get(normalize(source))||source):source;
+  // Only compare-output content; source data, dishes, amounts and URLs are unchanged.
+  const frenchCompareLabels=new Map([
+    ['📍 Ver mapa','📍 Voir la carte'],
+    ['Selecciona establecimientos de los resultados para compararlos aquí.','Sélectionnez des établissements dans les résultats pour les comparer ici.'],
+    ['Selecciona un plato y un formato concreto para identificar precios comparables entre variantes equivalentes.','Sélectionnez un plat et un format précis pour comparer les prix de variantes équivalentes.'],
+    ['Se comparan solo variantes coincidentes y el mismo formato declarado. «Menor precio» requiere al menos dos locales con esa variante. La cantidad real puede variar.','Seules les variantes correspondantes et le même format déclaré sont comparés. Le prix le plus bas nécessite au moins deux établissements proposant cette variante. Les quantités réelles peuvent varier.'],
+    ['Platos con precio publicado:','Plats avec prix publié :'],
+    ['No hay precios documentados para este plato en el servicio seleccionado.','Aucun prix documenté pour ce plat dans le service sélectionné.'],
+    ['No hay precios documentados para el servicio seleccionado.','Aucun prix documenté pour le service sélectionné.'],
+    ['Formatos diferentes: no comparamos cantidades ni asumimos tamaños equivalentes.','Formats différents : nous ne comparons pas les quantités et ne présumons pas de tailles équivalentes.'],
+    ['Precio por unidad: no comparable directamente con una ración.','Prix à l’unité : non directement comparable à une portion.']
+  ]);
+  const frenchCompareSuffixes=new Map([
+    ['Formato sin especificar','Format non précisé'],
+    ['Unidad','Unité'],
+    ['Media ración','Demi-portion'],
+    ['Ración completa','Portion entière'],
+    ['Variante sin categorizar','Variante non classée'],
+    ['★ Menor precio comparable','★ Prix comparable le plus bas']
+  ]);
+  const translateFrenchCompareText=(node,source)=>{
+    if(!node.parentElement?.closest('#compare-output'))return source;
+    const raw=normalize(source);
+    if(frenchCompareLabels.has(raw))return frenchCompareLabels.get(raw);
+    const route=raw.match(/^🚶 Ruta a pie entre (\d+) tabernas ↗$/);
+    if(route)return '🚶 Itinéraire à pied entre '+route[1]+' établissements ↗';
+    const foot=raw.match(/^(\d+) fuente\(s\) · Revisado (.+)$/);
+    if(foot)return foot[1]+' sources · Vérifié le '+foot[2];
+    const meal=raw.match(/^Comida completa: (.+)$/);
+    if(meal)return 'Repas complet : '+meal[1];
+    const notice=raw.match(/^Precios publicados para «([\s\S]+)»\. Los formatos pueden ser distintos y no deben compararse como cantidades equivalentes\.$/);
+    if(notice)return 'Prix publiés pour « '+notice[1]+' ». Les formats peuvent différer et ne doivent pas être comparés comme des quantités équivalentes.';
+    if(node.parentElement.matches('li'))
+      return source.replace(/ · (Formato sin especificar|Unidad|Media ración|Ración completa|Variante sin categorizar|★ Menor precio comparable)(?= · |$)/g,
+        (part,label)=>' · '+(frenchCompareSuffixes.get(label)||label));
+    return source;
+  };
+  const frenchDetailLabels=new Map([
+    ['☆ Guardar','☆ Enregistrer'],
+    ['★ Guardado','★ Enregistré'],
+    ['📍 Ver mapa','📍 Voir la carte'],
+    ['Abrir en Google Maps ↗','Ouvrir dans Google Maps ↗'],
+    ['Carta y especialidades','Carte et spécialités'],
+    ['Otras especialidades · precios pendientes','Autres spécialités · prix à confirmer'],
+    ['Aún no tenemos especialidades registradas para este local.',"Aucune spécialité n’est encore enregistrée pour cet établissement."],
+    ['Menús para grupos','Menus pour groupes'],
+    ['Ver PDF oficial del menú','Voir le PDF officiel du menu'],
+    ['Fuentes y fecha','Sources et date'],
+    ['Documentación de fuentes (desplegar)','Documentation des sources (déplier)']
+  ]);
+  const translateFrenchDetailText=(node,source)=>node.parentElement?.closest('#compare-output')?translateFrenchCompareText(node,source):node.parentElement?.closest('#detail-content')&&!node.parentElement.closest('.menu-dish,[data-venue-menu-section],[data-bilingual-es],[data-source-label-es]')?(frenchDetailLabels.get(normalize(source))||source):source;
+  const frenchRoldanNotice=["Precios publicados en la carta general de Roldán. Pueden variar; la disponibilidad de productos depende de cada local. Roldán Centro tiene carta y ficha propias.","Prix publiés dans la carte générale de Roldán. Ils peuvent varier ; la disponibilité des produits dépend de chaque établissement. Roldán Centro dispose de sa propre carte et de sa propre fiche."];
+  // Beatillas: preserve the 2025 historical group-menu caveat when the detail notice is bilingual.
+  const frenchBeatillasGeneralNotice='La carte individuelle officielle ne publie pas de prix par plat. Nous recommandons de confirmer les tarifs auprès du restaurant avant de commander. Les prix publiés pour les menus de groupe correspondent à des menus complets de 2025, et non à des plats individuels ; leur validité actuelle n’est pas confirmée.';
+  const isBeatillasGeneralNotice=value=>value.startsWith('La carta individual oficial')&&value.includes('2025');
+  const frenchDetailNotices=new Map([
+    ["Precios de tartas completas o productos salados, NO por porción. Cada rango depende del tamaño y opciones elegidas; consulta el precio exacto en la tienda oficial. Las opciones especiales no garantizan ausencia de alérgenos.","Prix des gâteaux entiers ou des produits salés, et NON à la part. Chaque fourchette dépend de la taille et des options choisies ; vérifiez le prix exact sur la boutique officielle. Les options spéciales ne garantissent pas l’absence d’allergènes."],
+    ['Panadería:','Boulangerie :'],
+    ['Cafetería:','Café :'],
+    ['📍 Establecimientos de Roldán en Córdoba','📍 Établissements Roldán à Cordoue'],
+    ['La carta y los precios indicados corresponden a las cafeterías, excepto Centro. Las panaderías se listan solo como ubicaciones; su oferta puede ser diferente.','La carte et les prix indiqués concernent les cafés, à l’exception de Roldán Centro. Les boulangeries figurent uniquement comme adresses ; leur offre peut être différente.'],
+    ['📍 Varias ubicaciones en Córdoba (consulta los establecimientos de abajo)','📍 Plusieurs adresses à Cordoue (voir les établissements ci-dessous)'],
+    ["Información sobre la carta: La carta disponible corresponde a octubre de 2025. Los platos y precios mostrados proceden de esa publicación y podrían haber cambiado. Algunos platos pueden haber dejado de estar disponibles. Recomendamos consultar con Casa Rubio para confirmar la carta y los precios actuales.","Informations sur la carte : la carte disponible date d’octobre 2025. Les plats et prix affichés proviennent de cette publication et peuvent avoir changé. Certains plats peuvent ne plus être proposés. Nous recommandons de consulter Casa Rubio pour confirmer la carte et les prix actuels."],
+    ["Carta oficial de octubre de 2025. IVA del 10% incluido. Cesta de pan y picos 2,60 € (histórico). Alérgenos: consultar carta específica del restaurante.","Carte officielle d’octobre 2025. TVA de 10 % comprise. Corbeille de pain et de picos : 2,60 € (prix historique). Allergènes : consulter la carte spécifique du restaurant."],
+    ["Pan a elegir: chapata, pan de lino, bollo o pan sin gluten. Extra clásico +0,50 €; extra especial +2 €.","Pain au choix : ciabatta, pain au lin, petit pain ou pain sans gluten. Supplément classique : +0,50 € ; supplément spécial : +2 €."],
+    ['El coste total de comer aquí no está documentado. Los precios de platos no incluyen necesariamente bebida ni extras.',"Le coût total d’un repas ici n’est pas documenté. Les prix des plats n’incluent pas nécessairement les boissons ni les suppléments."],
+    ['Sin fecha registrada','Aucune date enregistrée'],
+    ['Precios históricos de carta oficial de 2024; no confirmados en 2026. Consulta posibles cambios directamente con el restaurante.','Prix historiques de la carte officielle de 2024, non confirmés pour 2026. Vérifiez les éventuelles modifications directement auprès du restaurant.'],
+    ['Precios orientativos mostrados en el menú de Google, consultados el 24/10/2026; no figuran en la carta oficial de Taberna Salinas. Pueden existir diferencias de precio y formato. Consulta los importes actualizados directamente con el establecimiento antes de pedir. Los alérgenos y las descripciones requieren confirmación del local.','Prix indicatifs affichés sur le menu Google consulté le 24/10/2026 ; ils ne figurent pas sur la carte officielle de Taberna Salinas. Les prix et les formats peuvent différer. Vérifiez les tarifs actuels directement auprès de l’établissement avant de commander. Les allergènes et les descriptions doivent être confirmés par le restaurant.'],
+    ['Carta parcial orientativa elaborada a partir de un listado público aportado el 23/10/2026. No se han podido confirmar los precios, formatos ni la vigencia de todos los platos. Consulta la oferta actual con el establecimiento. Esta información pertenece exclusivamente a Gran Capitán, 29.','Carte partielle indicative établie à partir d’une liste publique fournie le 23/10/2026. Les prix, formats et la validité de tous les plats n’ont pas pu être confirmés. Vérifiez l’offre actuelle directement auprès de l’établissement. Ces informations concernent exclusivement Gran Capitán, 29.'],
+    ['Vigencia pendiente de confirmar','Validité à confirmer']
+  ]);
+  // QA-only: presentation labels, not dish names or catalog values.
+  const frenchPortionLabels=new Map([
+    ['Ración','Portion entière'],
+    ['Media ración','Demi-portion'],
+    ['1/2 ración','Demi-portion'],
+    ['Unidad','À l’unité'],
+    ['Tapa','Tapa'],
+    ['Sin formato','Format non précisé'],
+    ['Formato no indicado','Format non précisé'],
+    ['Full portion','Portion entière'],
+    ['Half portion','Demi-portion'],
+    ['Single item','À l’unité'],
+    ['Portion size unspecified','Format non précisé'],
+    ['Media ración · precio de carta 2024','Demi-portion · prix de la carte 2024'],
+    ['Ración · precio de carta 2024','Portion entière · prix de la carte 2024'],
+    ['Unidad · precio de carta 2024','À l’unité · prix de la carte 2024'],
+    ['Half portion · 2024 menu price','Demi-portion · prix de la carte 2024'],
+    ['Full portion · 2024 menu price','Portion entière · prix de la carte 2024'],
+    ['Single item · 2024 menu price','À l’unité · prix de la carte 2024'],
+    ['media 90 g','Demi-portion · 90 g'],
+    ['ración 180 g','Portion entière · 180 g'],
+    ['media 95 g','Demi-portion · 95 g'],
+    ['ración 250 g','Portion entière · 250 g'],
+    ['media 60 g','Demi-portion · 60 g'],
+    ['ración 100 g','Portion entière · 100 g'],
+    ['Half portion · 90 g','Demi-portion · 90 g'],
+    ['Full portion · 180 g','Portion entière · 180 g'],
+    ['Half portion · 95 g','Demi-portion · 95 g'],
+    ['Full portion · 250 g','Portion entière · 250 g'],
+    ['Half portion · 60 g','Demi-portion · 60 g'],
+    ['Full portion · 100 g','Portion entière · 100 g'],
+    ['2 unidades','2 unités'],
+    ['2 pieces','2 unités']
+  ]);
+  const translateFrenchPortionLabel=(node,source)=>{
+    const parent=node.parentElement;
+    if(!parent?.matches('[data-venue-menu-price-label]')||!parent.closest('#detail-content'))return source;
+    const key=normalize(source);
+    return frenchPortionLabels.get(key)||source;
+  };
+  // Explicit source-link presentation labels confirmed by the visual QA inventory (#650).
+  // Source URLs, catalog labels and dates remain unchanged.
+  const frenchSourceLabels=new Map([
+    ["Carta inglesa","Carte en anglais"],
+    ["Menús sugeridos","Menus suggérés"],
+    ["Glosario","Glossaire"],
+    ["Menús de eventos","Menus pour événements"],
+    ["Menú especial Tapas Cordobesas · carta oficial","Menu spécial « Tapas Cordobesas » · carte officielle"],
+    ["Postres · carta oficial marzo 2026","Desserts · carte officielle de mars 2026"],
+    ["Cafés, chocolates e infusiones · carta oficial","Cafés, chocolats chauds et infusions · carte officielle"],
+    ["Suggested Menu · menú especial inglés","Suggested Menu · menu spécial en anglais"],
+    ["Glossary · glosario gastronómico oficial inglés","Glossary · glossaire gastronomique officiel en anglais"],
+    ["Carta española oficial · carnes (febrero 2026)","Carte officielle en espagnol · viandes (février 2026)"],
+    ["Carta española oficial · guisos, infantil y combinados (febrero 2026)","Carte officielle en espagnol · plats mijotés, plats pour enfants et assiettes composées (février 2026)"],
+    ["Carta española oficial · postres (marzo 2026)","Carte officielle en espagnol · desserts (mars 2026)"],
+    ["Carta inglesa de contraste · archivos 2025 (no mezclar importes)","Carte anglaise de comparaison · archives de 2025 (ne pas mélanger les prix)"],
+    ["Carta oficial Pastelería Centro; precios de barra y mesa, disponibilidad variable","Carte officielle de Pastelería Centro ; prix au comptoir et en salle, disponibilité variable"],
+    ["Carta oficial desayunos Centro: tostadas y precios; disponibilidad durante merienda sin confirmar","Carte officielle des petits-déjeuners de Centro : tartines et prix ; disponibilité au goûter non confirmée"],
+    ["Carta digital oficial de Moriles Ribera (índice)","Carte numérique officielle de Moriles Ribera (index)"],
+    ["Carta española oficial · ensaladas y entrantes (archivo febrero 2026)","Carte officielle en espagnol · salades et entrées (archive de février 2026)"],
+    ["Carta española oficial · ibéricos, tostas, risottos y pastas (febrero 2026)","Carte officielle en espagnol · Ibériques, fromages et charcuteries, tartines, risottos et pâtes (février 2026)"],
+    ["Carta española oficial · revueltos, verduras y pescados (febrero 2026)","Carte officielle en espagnol · Œufs brouillés et légumes, poissons (février 2026)"],
+    ["Nuestra cocina (carta española)","Notre cuisine (carte en espagnol)"],
+    ["Menú Tapas Cordobesas","Menu « Tapas Cordobesas »"],
+    ["Postres","Desserts"],
+    ["Cafés y chocolates","Cafés et chocolats"],
+    ["Tienda oficial La Tarterie — catálogo y precios por producto","Boutique officielle La Tarterie — catalogue et prix par produit"],
+    ['Carta oficial — web del establecimiento','Carte officielle — site de l’établissement'],
+    ['Carta oficial de platos','Carte officielle des plats'],
+    ['Menús oficiales para grupos (precios y condiciones sujetos a consulta)','Menus officiels pour groupes (prix et conditions à confirmer auprès du restaurant)'],
+    ['Official October 2025 menu (PDF provided by the user)','Carte officielle d’octobre 2025 (PDF fourni par l’utilisateur)'],
+    ['Official website and address','Site officiel et adresse'],
+    ['Carta general oficial de desayunos (cafeterías, excepto Centro)','Carte générale officielle des petits-déjeuners (cafés, sauf Centro)'],
+    ['Directorio oficial de establecimientos y direcciones','Répertoire officiel des établissements et adresses'],
+    ['Carta oficial de Taberna Salinas (platos y postres; sin precios)','Carte officielle de Taberna Salinas (plats et desserts ; sans prix)'],
+    ['Carta oficial con precios','Carte officielle avec prix'],
+    ['Ubicación del local','Localisation de l’établissement'],
+    ['Menús y condiciones','Menus et conditions'],
+    ['Just Eat · carta de reparto transcrita el 20/10/2026 (Alonso de Burgos, 2)','Just Eat · carte de livraison transcrite le 20/10/2026 (Alonso de Burgos, 2)'],
+    ['Uber Eats · carta histórica y contraste (vigencia de precios no confirmada)','Uber Eats · carte historique et comparaison (validité des prix non confirmée)'],
+    ['Referencia pública de Gran Capitán (sin carta oficial verificable)','Référence publique de Gran Capitán (sans carte officielle vérifiable)'],
+    ['Dirección y contacto','Adresse et contact'],
+    ['Carta y dirección oficiales','Carte et adresse officielles'],
+    ['Dirección y presentación oficial','Adresse et présentation officielles'],
+    ['Carta oficial del restaurante','Carte officielle du restaurant'],
+    ['Carta oficial de La Viuda','Carte officielle de La Viuda'],
+    ['Web oficial y ubicación','Site officiel et localisation'],
+    ['Carta oficial con formatos e importes','Carte officielle avec formats de portions et prix'],
+    ['Turismo de Córdoba: especialidades y dirección','Tourisme de Cordoue : spécialités et adresse'],
+    ['Información del establecimiento','Informations sur l’établissement'],
+    ['Carta del restaurante transcrita por el usuario, con precios publicados','Carte du restaurant transcrite par l’utilisateur, avec prix publiés'],
+    ['Cocina y especialidades oficiales','Cuisine et spécialités présentées sur le site officiel'],
+    ['Dirección y contacto oficial','Adresse et coordonnées officielles'],
+    ['Carta oficial PDF · 4 páginas (septiembre de 2025 en la URL; vigencia no garantizada)','Carte officielle PDF · 4 pages (septembre 2025 indiqué dans l’URL ; validité non garantie)'],
+    ['Carta y especialidades oficiales','Carte et spécialités présentées sur le site officiel'],
+    ['Dirección y contacto oficiales','Adresse et coordonnées officielles'],
+    ['Carta QR del restaurante, sin fecha (PDF aportado por el usuario)','Carte QR du restaurant, non datée (PDF fourni par l’utilisateur)'],
+    ['Ficha y dirección de Don Pepe Centro','Fiche et adresse de Don Pepe Centro'],
+    ['Información orientativa del establecimiento','Informations indicatives sur l’établissement'],
+    ['Carta transcrita de la búsqueda de Google por Helio · origen y vigencia no verificados','Carte transcrite par Helio à partir d’une recherche Google · origine et validité non vérifiées'],
+    ["Carta oficial 2026 (PDF facilitado; comidas y precios)","Carte officielle 2026 (PDF fourni ; plats et prix)"],
+    ["Carta oficial de desayunos 2026 (PDF aportado por Helio; sin verificación independiente de vigencia)","Carte officielle des petits-déjeuners 2026 (PDF fourni par Helio ; validité non vérifiée de manière indépendante)"],
+    ["Menús oficiales 2025–2026 — Moschea di Cordova y Giudecca di Cordova (web del restaurante; consulta 27/10/2026)","Menus officiels 2025–2026 — Moschea di Cordova et Giudecca di Cordova (site du restaurant ; consulté le 27/10/2026)"],
+    ["Ficha de Turismo de Córdoba","Fiche de l’Office de tourisme de Cordoue"],
+    ["Historia y especialidades","Histoire et spécialités"],
+    ["Carta oficial de comida y dulces","Carte officielle des plats et pâtisseries"],
+    ["Carta oficial de bebidas y cafés","Carte officielle des boissons et cafés"],
+    ["Carta y cocina tradicional oficiales","Carte officielle et cuisine traditionnelle"],
+    ["Carta general · capturas facilitadas por el usuario (11 imágenes, octubre 2026)","Carte générale · captures fournies par l’utilisateur (11 images, octobre 2026)"],
+    ["Carta general bilingüe con precios · PDF facilitado por el usuario","Carte générale bilingue avec prix · PDF fourni par l’utilisateur"],
+    ["Menús para grupos 2026 · PDF oficial","Menus pour groupes 2026 · PDF officiel"],
+    ["Web y cocina oficial","Site officiel et cuisine présentée"],
+    ["Platos del menú degustación","Plats du menu dégustation"],
+    ["Carta digital oficial en inglés (versión independiente; puede diferir de la española)","Carte numérique officielle en anglais (version distincte ; peut différer de la version espagnole)"],
+    ["Web oficial y cocina tradicional","Site officiel et cuisine traditionnelle"],
+    ["Menú degustación y platos","Menu dégustation et plats"],
+    ["Menús oficiales","Menus officiels"],
+    ["Menú degustación Tradición (66 €/persona, mínimo 2, máximo 4)","Menu dégustation Tradición (66 €/personne, minimum 2, maximum 4)"],
+    ["Carta oficial en español e inglés (PDF facilitados por el usuario)","Carte officielle en espagnol et en anglais (PDF fournis par l’utilisateur)"],
+    ["Official restaurant, bar and dessert menus (PDF provided, May 2026)","Cartes officielles du restaurant, du bar et des desserts (PDF fourni, mai 2026)"],
+    ["Carta oficial Casa El Pisto · edición conmemorativa 1974–2024 · precios históricos (vigencia en 2026 sin verificar)","Carte officielle Casa El Pisto · édition commémorative 1974–2024 · prix historiques (validité en 2026 non vérifiée)"],
+    ["Carta general oficial sin importes visibles","Carte générale officielle sans prix visibles"],
+    ["Dirección y web oficial","Adresse et site officiel"],
+    ["Carta oficial en inglés, edición conmemorativa 2024","Carte officielle en anglais, édition commémorative 2024"],
+    ["Ficha del restaurante con dirección y especialidades","Fiche du restaurant avec adresse et spécialités"],
+    ["Ficha con información sobre desayunos","Fiche avec informations sur les petits-déjeuners"],
+    ["Carta oficial D'Tapas COVAP Córdoba completa","Carte officielle complète de D'Tapas COVAP Córdoba"],
+    ["Presentación oficial COVAP","Présentation officielle de COVAP"],
+    ["Carta publicada por el establecimiento en Queresto","Carte publiée par l’établissement sur Queresto"],
+    ["Carta oficial de La Bandera — desayunos, meriendas y comida","Carte officielle de La Bandera — petits-déjeuners, goûters et repas"],
+    ["Carta general y tapas oficiales (PDF facilitados)","Carte générale et carte des tapas officielles (PDF fournis)"],
+    ["Carta oficial de El Burlaero (PDF facilitado; la carta no asigna formatos a todos los precios)","Carte officielle de El Burlaero (PDF fourni ; la carte ne précise pas le format de portion pour tous les prix)"],
+    ["Carta publicada en web del restaurante; transcripción facilitada por usuario","Carte publiée sur le site du restaurant ; transcription fournie par l’utilisateur"],
+    ["Carta de Taberna Ágora/Museo Manolete (web del establecimiento)","Carte de Taberna Ágora/Museo Manolete (site de l’établissement)"],
+    ["Información de establecimientos del grupo Ágora (captura aportada por el usuario)","Informations sur les établissements du groupe Ágora (capture fournie par l’utilisateur)"],
+    ["Carta individual de Ágora Mezquita y fotografías oficiales aportadas por el usuario","Carte propre à Ágora Mezquita et photographies officielles fournies par l’utilisateur"],
+    ["Ficha de Churros Bar Marta y horario publicado","Fiche de Churros Bar Marta et horaires publiés"],
+    ["Opiniones con especialidades de desayuno","Avis mentionnant des spécialités de petit-déjeuner"],
+    ["Carta de desayunos y bollería publicada en churrosbarmarta.shop (autoría del sitio sin verificar)","Carte des petits-déjeuners et viennoiseries publiée sur churrosbarmarta.shop (identité de l’éditeur du site non vérifiée)"],
+    ["Ficha y dirección de Don Pepe Ciudad Jardín","Fiche et adresse de Don Pepe Ciudad Jardín"],
+    ["Opiniones y especialidades","Avis et spécialités"],
+    ["Web del establecimiento · especialidades de churrería","Site de l’établissement · spécialités de churrería"],
+    ["Carta publicada por usuarios · referencia externa (Restaurant Guru; vigencia no confirmada)","Carte publiée par des utilisateurs · source externe (Restaurant Guru ; validité non confirmée)"]
+  ]);
+  const sourceLabelFrench=(element)=>{
+    const key=normalize(element.dataset.sourceLabelEs||'');
+    return frenchSourceLabels.get(key);
+  };
+  const refreshFrenchSourceLabels=()=>{
+    if(language!=='fr')return;
+    document.querySelectorAll('#detail-content [data-source-label-es]').forEach(element=>{
+      const translated=sourceLabelFrench(element);
+      if(translated && element.textContent!==translated+' ↗')element.textContent=translated+' ↗';
+    });
+  };
+  // Moriles Ribera QA-only official-menu presentation: preserve original ES/EN metadata and URLs.
+  const morilesOfficialMenuFrench=new Map([
+    ['Carta de cocina','Carte des plats'],
+    ['Menú Tapas Cordobesas','Menu « Tapas Cordobesas »'],
+    ['Postres','Desserts'],
+    ['Cafés, tés y chocolates','Cafés, thés et chocolats'],
+    ['Carta de cocina en inglés','Carte des plats en anglais'],
+    ['Menú sugerido en inglés','Menu suggéré en anglais'],
+    ['Glosario de traducciones','Glossaire des traductions']
+  ]);
+  const morilesOfficialMenuNoticeEs='Carta oficial española de 2026 transcrita en 15 apartados. Comprueba los precios con la fuente original; su vigencia puede haber cambiado. Las traducciones al inglés continúan en revisión.';
+  const morilesOfficialMenuNoticeFr='Carte officielle espagnole de 2026 transcrite en 15 sections. Vérifiez les prix dans la source d’origine ; leur validité peut avoir changé. Les traductions en anglais sont toujours en cours de révision.';
+  const translateFrenchMorilesOfficialMenu=(node,source)=>{
+    const element=node.parentElement;
+    if(!element?.closest('.official-menu-resources')||document.querySelector('#detail-title')?.textContent?.trim()!=='Moriles Ribera')return null;
+    if(element.matches('[data-official-menus-heading]'))return 'Cartes officielles';
+    if(element.matches('[data-official-menu-notice-es]')){
+      return normalize(element.dataset.officialMenuNoticeEs||'')===morilesOfficialMenuNoticeEs?morilesOfficialMenuNoticeFr:null;
+    }
+    if(element.matches('[data-official-menu-es]')){
+      const translated=morilesOfficialMenuFrench.get(normalize(element.dataset.officialMenuEs||''));
+      return translated?translated+' ↗':null;
+    }
+    return null;
+  };
+  const translateFrenchDetailNotice=(node,source)=>{
+    if(language==='fr'){
+      const officialMenuFrench=translateFrenchMorilesOfficialMenu(node,source);
+      if(officialMenuFrench!==null)return officialMenuFrench;
+    }
+    if(language==='fr'&&node.parentElement?.matches('[data-source-label-es]')&&node.parentElement.closest('#detail-content')){
+      const translated=sourceLabelFrench(node.parentElement);
+      if(translated)return translated+' ↗';
+    }
+    // Exact historic-price warning only; no dish names or amounts are translated here.
+    if(node.parentElement?.closest('#detail-content')&&normalize(source)==='Precios históricos de carta oficial de 2024; no confirmados en 2026. Consulta posibles cambios directamente con el restaurante.')
+      return frenchDetailNotices.get(normalize(source));
+    // Translate La Tarterie's presentation labels, preserving every documented
+    // size, option and price verbatim (no edits to source records).
+    if(node.parentElement?.closest('#detail-content')&&node.parentElement?.hasAttribute('data-venue-menu-note-es')){
+      const original=normalize(node.parentElement.dataset.venueMenuNoteEs);
+      if(original==='Rango por producto completo')return 'Fourchette de prix pour le produit entier';
+      if(original.startsWith('Tamaños: ')&&original.includes('. Opciones: '))
+        return source.replace(/^Tamaños: /,'Tailles : ').replace(/\. Opciones: /,'. Options : ');
+    }
+    // Price labels are inside menu cards, so handle them before skipping menu content.
+    if(node.parentElement?.matches('[data-venue-menu-price-label]')&&node.parentElement.closest('#detail-content'))return translateFrenchPortionLabel(node,source);
+    if(!node.parentElement?.closest('#detail-content')||node.parentElement.closest('.menu-dish,[data-venue-menu-section],[data-bilingual-es]'))return source;
+    const raw=normalize(source);
+    if(isBeatillasGeneralNotice(raw))return frenchBeatillasGeneralNotice;
+    if(frenchDetailNotices.has(raw))return frenchDetailNotices.get(raw);
+    if(raw.startsWith('Última consulta: '))return 'Dernière consultation : '+raw.slice('Última consulta: '.length);
+    if(raw.startsWith('Comida completa por persona: '))return 'Repas complet par personne : '+raw.slice('Comida completa por persona: '.length);
+    return source;
+  };
+  // Scoped QA-only French rendering for group-menu labels and historical terms.
+  // Never translate dish names or mutate source menu records/prices.
+  const frenchGroupLabels=new Map([
+    ['Menús para grupos · precios publicados en 2025','Menus pour groupes · prix publiés en 2025'],
+    ["48 € por persona, IVA incluido. Entrantes para compartir: un plato de cada entrante por cada cuatro personas. Segundo plato individual a elegir y postre individual. Incluye pan, grissini y bebidas según selección publicada (agua mineral, cerveza de barril, refrescos y vinos indicados). No se especifica un mínimo de comensales en la página. Consultar condiciones y disponibilidad con el restaurante.","48 € par personne, TVA comprise. Entrées à partager : une portion de chaque entrée pour quatre personnes. Plat principal individuel au choix et dessert individuel. Pain, grissini et boissons de la sélection publiée compris (eau minérale, bière pression, boissons sans alcool et vins indiqués). La page ne précise pas de nombre minimum de convives. Vérifiez les conditions et la disponibilité auprès du restaurant."],
+    ["48 € por persona (IVA incluido). Entrantes para compartir: un plato de cada entrante por cada cuatro personas. Segundo plato y postre individuales. Incluye pan, café y bebidas durante la comida: agua mineral, cerveza de barril o refrescos; vinos indicados en la fuente. Sin mínimo de comensales especificado en la página. Consultar disponibilidad y condiciones.","48 € par personne (TVA comprise). Entrées à partager : une portion de chaque entrée pour quatre personnes. Plat principal et dessert individuels. Pain, café et boissons pendant le repas compris : eau minérale, bière pression ou boissons sans alcool ; vins indiqués dans la source. Aucun nombre minimum de convives n’est précisé sur la page. Vérifiez la disponibilité et les conditions."],
+    ["48 € por persona (IVA incluido). Entrantes para compartir: un plato de cada entrante por cada cuatro personas. Segundo plato a elegir y postre individual. Incluye pan, café y bebidas durante la comida: agua mineral, cerveza de barril o refrescos; vinos indicados en la fuente. Sin mínimo de comensales especificado en la página. Consultar disponibilidad y condiciones.","48 € par personne (TVA comprise). Entrées à partager : une portion de chaque entrée pour quatre personnes. Plat principal au choix et dessert individuel. Pain, café et boissons pendant le repas compris : eau minérale, bière pression ou boissons sans alcool ; vins indiqués dans la source. Aucun nombre minimum de convives n’est précisé sur la page. Vérifiez la disponibilité et les conditions."],
+    ["38 € por persona, IVA incluido. Entrantes para compartir: un plato de cada entrante por cada cuatro personas. Segundo plato y postre individuales. Incluye pan, grissini y bebidas según selección publicada (agua mineral, cerveza de barril, refrescos y vinos indicados). No se especifica un mínimo de comensales en la página. Consultar condiciones y disponibilidad con el restaurante.","38 € par personne, TVA comprise. Entrées à partager : une portion de chaque entrée pour quatre personnes. Plat principal et dessert individuels. Pain, grissini et boissons de la sélection publiée compris (eau minérale, bière pression, boissons sans alcool et vins indiqués). Aucun minimum de convives n'est précisé sur la page. Vérifiez les conditions et la disponibilité auprès du restaurant."],
+    ["Para recibir: Copa de fino Los Amigos, aceitunas y almendras fritas. Bebidas incluidas durante el almuerzo: Fino Pérez Barquero; blanco Bodegas Campos; tinto Bodegas Campos; cerveza de barril; refrescos; café o infusión. IVA incluido; bebidas incluidas durante el almuerzo, excepto consumiciones en barra y posteriores al servicio; pan de masa madre incluido. Consumiciones fuera del servicio de almuerzo no incluidas. Precio por copa no premium: 8 € (IVA incluido), como precio adicional publicado.","À l’accueil : un verre de fino Los Amigos, des olives et des amandes frites. Boissons comprises pendant le déjeuner : fino Pérez Barquero ; vin blanc Bodegas Campos ; vin rouge Bodegas Campos ; bière pression ; boissons sans alcool ; café ou infusion. TVA comprise ; boissons comprises pendant le déjeuner, hors consommations au bar et après le service ; pain au levain compris. Les consommations en dehors du service du déjeuner ne sont pas comprises. Prix supplémentaire publié pour un verre de boisson non premium : 8 € (TVA comprise)."],
+    ["Para recibir: Copa de fino Los Amigos, aceitunas y almendras fritas. Bebidas incluidas durante el almuerzo: Fino Pérez Barquero; amontillado Pérez Barquero; oloroso Pérez Barquero; blanco Finca La Cañada; tinto Matarromera crianza o Luis Cañas crianza; cerveza de barril; refrescos; café o infusión. IVA incluido; bebidas incluidas durante el almuerzo, excepto consumiciones en barra y posteriores al servicio; pan de masa madre incluido. Consumiciones fuera del servicio de almuerzo no incluidas. Precio por copa no premium: 8 € (IVA incluido), como precio adicional publicado.","À l’accueil : un verre de fino Los Amigos, des olives et des amandes frites. Boissons comprises pendant le déjeuner : fino Pérez Barquero ; amontillado Pérez Barquero ; oloroso Pérez Barquero ; vin blanc Finca La Cañada ; vin rouge Matarromera crianza ou Luis Cañas crianza ; bière pression ; boissons sans alcool ; café ou infusion. TVA comprise ; boissons comprises pendant le déjeuner, hors consommations au bar et après le service ; pain au levain compris. Les consommations en dehors du service du déjeuner ne sont pas comprises. Prix supplémentaire publié pour un verre de boisson non premium : 8 € (TVA comprise)."],
+    ["Mínimo 8 personas. Platos de compartir cada 4 personas. Bebida incluida: refresco, agua, cerveza de barril y vino de la casa, desde el primer plato hasta el comienzo del postre. Comunicar alergias o intolerancias al reservar o con un mínimo de 48 horas de antelación.","Minimum 8 personnes. Plats à partager pour 4 personnes. Boissons comprises : boissons sans alcool, eau, bière pression et vin de la maison, du premier plat jusqu’au début du dessert. Signalez toute allergie ou intolérance lors de la réservation ou au moins 48 heures à l’avance."],
+    ["Bebidas durante el almuerzo; oferta sujeta a cambios estacionales","Boissons pendant le déjeuner ; l’offre peut varier selon la saison."],
+    ["La lámina indica platos individuales a elegir, postre y una bebida; no especifica inequívocamente cuántos platos individuales incluye. Confirmar condiciones con el local. Precio IVA incluido, vigencia actual sin confirmar.","Le visuel présente des plats individuels au choix, un dessert et une boisson, sans préciser clairement combien de plats individuels sont compris. Vérifiez les conditions auprès du restaurant. TVA comprise ; validité actuelle non confirmée."],
+    ["La imagen inglesa indica validez hasta el 30/11/2024; la española no indica fecha. Vigencia pendiente de confirmar.","Le visuel en anglais indique une validité jusqu’au 30/11/2024 ; le visuel en espagnol ne mentionne aucune date. Validité actuelle à confirmer."],
+    ['Group set menus · prices published in 2025','Menus pour groupes · prix publiés en 2025'],
+    ['Para comenzar','Pour commencer'],['To start','Pour commencer'],
+    ['Para continuar','Pour continuer'],['Following courses','Pour continuer'],
+    ['Principal · opciones a elegir','Plat principal · au choix'],['Main course · choose an option','Plat principal · au choix'],
+    ['Postre','Dessert'],['Dessert','Dessert'],['Postre:','Dessert :'],['Dessert:','Dessert :'],
+    ['Aperitivos','Amuse-bouches'],['Appetizers','Amuse-bouches'],
+    ['Platos para compartir','Plats à partager'],['Dishes to share','Plats à partager'],
+    ['Plato a elegir','Plat au choix'],['Choose a main course','Plat au choix'],
+    ['Primer plato','Entrée'],['First course','Entrée'],
+    ['Plato principal','Plat principal'],['Main course','Plat principal'],
+    ['Platos a elegir','Plats au choix'],['Dishes to choose from','Plats au choix'],
+    ['Postre a elegir','Dessert au choix'],['Dessert choices','Dessert au choix'],
+    ['Bebidas incluidas (una a elegir)','Boissons comprises (une au choix)'],
+    ['Included drinks (choose one)','Boissons comprises (une au choix)'],
+    ['Menú infantil','Menu enfant'],["Children's menu",'Menu enfant'],
+    ['Bebidas incluidas: agua mineral y dos refrescos','Boissons comprises : eau minérale et deux boissons sans alcool'],
+    ['Drinks included: mineral water and two soft drinks','Boissons comprises : eau minérale et deux boissons sans alcool'],
+    ['Drinks included: beer, Montilla-Moriles wine, Rioja red wine, mineral water and cava from Bodegas Faustino','Boissons comprises : bière, vin de Montilla-Moriles, vin rouge de Rioja, eau minérale et cava des Bodegas Faustino'],
+    ['La documentación de 2025 indica una reserva del 20 % y platos compartidos entre cuatro personas, excepto el principal. Confirmar condiciones actuales.','La documentation de 2025 indique un acompte de 20 % et des plats à partager entre quatre personnes, sauf le plat principal. Vérifiez les conditions actuelles.'],
+    ['The 2025 documentation indicates a 20% deposit and dishes shared among four guests, except the main course. Confirm current terms.','La documentation de 2025 indique un acompte de 20 % et des plats à partager entre quatre personnes, sauf le plat principal. Vérifiez les conditions actuelles.'],
+    ['Precios históricos de los menús completos publicados en 2025, no confirmados en 2026. Consultar vigencia, condiciones y precio por comensal directamente con el restaurante. No son precios de platos individuales.','Prix historiques des menus complets publiés en 2025, non confirmés pour 2026. Vérifiez leur validité, les conditions et le prix par personne directement auprès du restaurant. Il ne s’agit pas de prix de plats individuels.'],
+    ['Historical prices for complete set menus published in 2025; not verified for 2026. Confirm current prices, terms and per-person pricing with the restaurant. These are not individual dish prices.','Prix historiques des menus complets publiés en 2025, non confirmés pour 2026. Vérifiez leur validité, les conditions et le prix par personne directement auprès du restaurant. Il ne s’agit pas de prix de plats individuels.']
+  ]);
+  const translateFrenchGroupText=(node,source)=>{
+    const parent=node.parentElement;
+    if(!parent?.closest('#detail-content'))return source;
+    // Group menu titles are catalog entries: preserve exact Spanish titles across languages.
+    if(parent.matches('[data-group-menu-heading]')||parent.matches('.menu-dish > h4'))return source;
+    if(parent.closest('[data-keep-dish-spanish],[data-dish-explanation]'))return source;
+    const inGroup=parent.closest('.beatillas-group-menus')||parent.closest('.menu-dish')||parent.hasAttribute('data-group-menu-heading');
+    if(!inGroup)return source;
+    const value=normalize(source);
+    // Exact documented validity note on official set-menu price, preserving the amount.
+    if(parent.matches('.menu-dish > strong') && value.endsWith(' · Vigencia pendiente de confirmar'))
+      return source.replace(/ · Vigencia pendiente de confirmar$/, ' · Validité à confirmer');
+    if(frenchGroupLabels.has(value))return frenchGroupLabels.get(value);
+    if(parent.hasAttribute('data-group-menu-heading')){
+      // Preserve the original name, monetary amount, guest count and separators.
+      return source.replace(/\/(?:persona|person)(?=\s|$)/,'/personne')
+        .replace(/ · (?:mínimo |minimum )(\d+) (?:comensales|guests)/,' · minimum $1 personnes');
+    }
+    if(parent.hasAttribute('data-group-menu-price'))
+      return source.replace('Precio de menú publicado en 2025','Prix du menu publié en 2025')
+        .replace('2025 published set-menu price','Prix du menu publié en 2025');
+    if(parent.hasAttribute('data-group-menu-label-es')){
+      // Beatillas supplies an exact English source for these two documented beverage sets.
+      const beverageEnglish=parent.dataset.groupMenuLabelEn;
+      if(beverageEnglish==='Drinks included: mineral water and two soft drinks')
+        return 'Boissons comprises : eau minérale et deux boissons sans alcool';
+      if(beverageEnglish==='Drinks included: beer, Montilla-Moriles wine, Rioja red wine, mineral water and cava from Bodegas Faustino')
+        return 'Boissons comprises : bière, vin de Montilla-Moriles, vin rouge de Rioja, eau minérale et cava des Bodegas Faustino';
+      const m=value.match(/^(?:Menú n\.º|Set menu no\.)\s*(\d+)$/);
+      if(m)return 'Menu n° '+m[1];
+      if(value.startsWith('Bebidas incluidas: '))return 'Boissons comprises : '+value.slice('Bebidas incluidas: '.length);
+      if(value.startsWith('Drinks included: '))return 'Boissons comprises : '+value.slice('Drinks included: '.length);
+    }
+    return source;
+  };
+  const frenchSectionHeadings=new Map();
+  // Static methodology and footer copy in the opt-in French QA interface.
+  const frenchInfoLabels=new Map([
+    ['🔍 Nuestro criterio','🔍 Notre méthode'],
+    ['Confirmado','Confirmé'],
+    ['significa coste publicado y verificable, con fuente y fecha.','désigne un prix publié et vérifiable, accompagné d’une source et d’une date.'],
+    ['Estimado','Estimé'],
+    ['indica una orientación, nunca el precio de una carta.','donne une estimation indicative, et non un prix figurant sur une carte.'],
+    ['No inventamos reseñas, puntuaciones ni disponibilidad. Si no sabemos algo, lo indicamos.','Nous n’inventons ni avis, ni notes, ni disponibilités. Lorsque nous ne disposons pas d’une information, nous le précisons.'],
+    ['Helio Gastro 3.1.1 · Córdoba · Proyecto piloto para portfolio QA','Helio Gastro 3.1.1 · Córdoba · Projet pilote pour un portfolio QA'],
+    ['Sin publicidad ni afiliación. Datos pendientes de verificación.','Sans publicité ni affiliation. Données en attente de vérification.']
+  ]);
+  const translateFrenchHeading=(node,source)=>{
+    if(node.parentElement?.closest('.panel.info,footer'))return frenchInfoLabels.get(normalize(source))||source;
+    return node.parentElement?.matches('.language-label')&&normalize(source)==='Language / Idioma'?'Langue':node.parentElement?.matches('[data-venue-menu-section]')?(frenchSectionHeadings.get(normalize(source))||source):source;
+  };
   const normalize=s=>s.trim().replace(/\s+/g,' ');
+  // Keep English rendering and the mutation observer's expected value in sync.
+  // Otherwise an internally translated price is mistaken for external content,
+  // and the original Spanish text is lost before the next language switch.
+  const translateEnglishText=(node,source)=>{
+    const key=normalize(source);
+    if(node.parentElement?.matches('.menu-dish > strong')&&node.parentElement.closest('#detail-content')&&key.endsWith(' · Vigencia pendiente de confirmar'))
+      return source.replace(/ · Vigencia pendiente de confirmar$/, ' · Validity not confirmed');
+    return translateValue(key);
+  };
   function translateText(node){
     if(!node || !node.parentElement || node.parentElement.closest('script,style,textarea,option[data-keep-original],#language-select,[data-keep-dish-spanish],[data-bilingual-es]'))return;
     if(!originalNodes.has(node))originalNodes.set(node,node.nodeValue);
@@ -133,9 +626,12 @@ window.GASTRO_I18N = Object.freeze({
     const match=original.match(/^(\s*)([\s\S]*?)(\s*)$/);
     const key=normalize(match[2]);
     if(language==='en'){
-      const next=match[1]+translateValue(key)+match[3];
+      const next=match[1]+translateEnglishText(node,match[2])+match[3];
       if(node.nodeValue!==next)node.nodeValue=next;
-    }else if(language==='es' && node.nodeValue!==original)node.nodeValue=original;
+    }else if(language==='fr'){
+      const next=match[1]+translateFrenchDetailNotice(node,translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchRecommendationsText(node,translateFrenchServiceText(node,translateFrenchHeroText(node,translateFrenchNavText(node,translateFrenchFavoritesNotice(node,translateFrenchSearchText(node,translateFrenchGroupText(node,translateFrenchHeading(node,match[2]))))))))))))+match[3];
+      if(node.nodeValue!==next)node.nodeValue=next;
+    }else if(node.nodeValue!==original)node.nodeValue=original;
   }
   function translateElement(root){
     if(!root)return;
@@ -151,38 +647,76 @@ window.GASTRO_I18N = Object.freeze({
         if(!originals){originals={};originalAttributes.set(element,originals);}
         if(!(attr in originals))originals[attr]=element.getAttribute(attr);
         const source=originals[attr];
-        const translated=language==='en'?translateValue(source):source;
+        const frenchAccessibleLabels={
+          'Language / Idioma':'Langue',
+          'Navegación rápida':'Navigation rapide',
+          'Momento gastronómico':'Moment du repas',
+          'Especialidades cordobesas para buscar':'Spécialités cordouanes à rechercher',
+          'Resultados':'Résultats',
+          'Ficha del establecimiento':'Fiche de l’établissement',
+          'Cerrar recomendaciones':'Fermer les recommandations',
+          'Mapa del establecimiento':'Carte de l’établissement',
+          'Ej.: Moriles, Casa Bravo, Plateros…':'Ex. : Moriles, Casa Bravo, Plateros…',
+          'Escribe o elige un plato cordobés…':'Saisissez ou choisissez une spécialité cordouane…'
+        };
+        const englishAccessibleLabels={
+          'Navegación rápida':'Quick navigation',
+          'Momento gastronómico':'Meal occasion',
+          'Especialidades cordobesas para buscar':'Córdoba specialities to search',
+          'Resultados':'Results',
+          'Ficha del establecimiento':'Establishment details',
+          'Cerrar recomendaciones':'Close recommendations',
+          'Mapa del establecimiento':'Establishment map'
+        };
+        const translated=language==='en'?(englishAccessibleLabels[source]||translateValue(source)):language==='fr'?(frenchAccessibleLabels[source]||source):source;
         if(element.getAttribute(attr)!==translated)element.setAttribute(attr,translated);
       }
     }
   }
   function applyLanguage(next){
-    language=next==='en'?'en':'es';
+    language=isSupportedLanguage(next)?next:'es';
     document.documentElement.lang=language;
     const select=document.getElementById('language-select');
     if(select && select.value!==language)select.value=language;
     translateElement(document.body);
     for(const element of document.querySelectorAll('[data-bilingual-es]')){
-      const translated=language==='en'?element.dataset.bilingualEn:element.dataset.bilingualEs;
+      const translated=language==='fr'&&element.closest('#detail-content')?(normalize(element.dataset.bilingualEs)===frenchRoldanNotice[0]?frenchRoldanNotice[1]:(isBeatillasGeneralNotice(normalize(element.dataset.bilingualEs))?frenchBeatillasGeneralNotice:(frenchDetailNotices.get(normalize(element.dataset.bilingualEs))||element.dataset.bilingualEs))):(language==='en'?element.dataset.bilingualEn:element.dataset.bilingualEs);
       if(translated!==undefined && element.textContent!==translated)element.textContent=translated;
     }
     if(typeof window.HelioGastroRefreshExplanations==='function')window.HelioGastroRefreshExplanations();
+    refreshFrenchSourceLabels();
     try{localStorage.setItem(KEY,language)}catch(e){}
   }
   function init(){
     const select=document.getElementById('language-select');
     if(!select)return;
-    try{language=localStorage.getItem(KEY)==='en'?'en':'es'}catch(e){}
+    if(frenchQaEnabled&&!select.querySelector('option[value="fr"]')){
+      const option=document.createElement('option');option.value='fr';option.textContent='🇫🇷 Français';select.append(option);
+    }
+    try{const saved=localStorage.getItem(KEY);language=isSupportedLanguage(saved)?saved:'es'}catch(e){}
     select.addEventListener('change',()=>applyLanguage(select.value));
     applyLanguage(language);
+    if(frenchQaEnabled){
+      fetch('./docs/french-glossary-v1.json',{cache:'no-store'})
+        .then(response=>{if(!response.ok)throw Error('FR glossary HTTP '+response.status);return response.json();})
+        .then(glossary=>{
+          if(!Array.isArray(glossary.sections))throw Error('Invalid FR section glossary');
+          for(const entry of glossary.sections){
+            if(typeof entry.es!=='string'||typeof entry.fr!=='string'||!entry.es.trim()||!entry.fr.trim()||frenchSectionHeadings.has(entry.es.trim()))throw Error('Invalid or duplicate FR heading');
+            frenchSectionHeadings.set(entry.es.trim(),entry.fr.trim());
+          }
+          if(language==='fr')translateElement(document.body);
+        })
+        .catch(error=>console.warn('French section glossary unavailable:',error.message));
+    }
     const observer=new MutationObserver(records=>{
       for(const record of records){
         if(record.type==='characterData'){
           const node=record.target;
           const previous=originalNodes.get(node);
           if(previous!==undefined){
-            const match=previous.match(/^(\\s*)([\\s\\S]*?)(\\s*)$/);
-            const expected=language==='en'?match[1]+translateValue(normalize(match[2]))+match[3]:previous;
+            const match=previous.match(/^(\s*)([\s\S]*?)(\s*)$/);
+            const expected=language==='en'?match[1]+translateEnglishText(node,match[2])+match[3]:language==='fr'?match[1]+translateFrenchDetailNotice(node,translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchRecommendationsText(node,translateFrenchServiceText(node,translateFrenchHeroText(node,translateFrenchNavText(node,translateFrenchFavoritesNotice(node,translateFrenchSearchText(node,translateFrenchGroupText(node,translateFrenchHeading(node,match[2]))))))))))))+match[3]:previous;
             if(node.nodeValue===expected)continue;
           }
           originalNodes.delete(node);
@@ -193,7 +727,7 @@ window.GASTRO_I18N = Object.freeze({
             else if(node.nodeType===Node.ELEMENT_NODE){
               translateElement(node);
               const bilingual=[...(node.matches?.('[data-bilingual-es]')?[node]:[]),...(node.querySelectorAll?.('[data-bilingual-es]')||[])];
-              for(const element of bilingual){const value=language==='en'?element.dataset.bilingualEn:element.dataset.bilingualEs;if(value!==undefined && element.textContent!==value)element.textContent=value;}
+              for(const element of bilingual){const value=language==='fr'&&element.closest('#detail-content')?(normalize(element.dataset.bilingualEs)===frenchRoldanNotice[0]?frenchRoldanNotice[1]:(frenchDetailNotices.get(normalize(element.dataset.bilingualEs))||element.dataset.bilingualEs)):(language==='en'?element.dataset.bilingualEn:element.dataset.bilingualEs);if(value!==undefined && element.textContent!==value)element.textContent=value;}
             }
           }
         }
@@ -201,7 +735,7 @@ window.GASTRO_I18N = Object.freeze({
     });
     observer.observe(document.body,{childList:true,characterData:true,subtree:true});
   }
-  window.HelioGastroLanguage={set:applyLanguage,get:()=>language};
+  window.HelioGastroLanguage={set:applyLanguage,get:()=>language,qaFrenchEnabled:()=>frenchQaEnabled};
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);
   else init();
 })();

@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "cafeteria-don-pepe-ciudad-jardin",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 1,
+      "itemIndex": 6,
+      "fr": "Blanc de poulet grillé."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 1,
+      "itemIndex": 7,
+      "fr": "Pescadito (petits poissons frits)."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 2,
+      "itemIndex": 0,
+      "fr": "Migas (en saison)."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 2,
+      "itemIndex": 1,
+      "fr": "Paella (mardi, samedi et dimanche)."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 2,
+      "itemIndex": 2,
+      "fr": "Morue au pisto (préparation de légumes à l’espagnole)."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 2,
+      "itemIndex": 3,
+      "fr": "Petits calamars frits ou grillés."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 2,
+      "itemIndex": 4,
+      "fr": "Cachopo au jambon et au fromage, ou au jambon et au fromage de chèvre."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 2,
+      "itemIndex": 5,
+      "fr": "Pommes de terre avec œufs au plat, gulas et petits morceaux d’ail."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 2,
+      "itemIndex": 6,
+      "fr": "Torreznos de Soria (poitrine de porc croustillante)."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 2,
+      "itemIndex": 7,
+      "fr": "Seiche frite de Huelva."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 2,
+      "itemIndex": 8,
+      "fr": "Cœurs de laitue avec ventrèche de thon, gulas et crevettes."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 3,
+      "itemIndex": 0,
+      "fr": "Queue de bœuf mijotée."
+    }
+  ]
+}

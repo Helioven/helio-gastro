@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "cafeteria-don-pepe-ciudad-jardin",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 5,
+      "itemIndex": 3,
+      "fr": "Pommes de terre avec œufs cassés et jambon affiné Gran Reserva Duroc."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 5,
+      "itemIndex": 4,
+      "fr": "Pommes de terre avec œufs cassés, gulas et petites gousses d’ail frites."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 5,
+      "itemIndex": 5,
+      "fr": "Patatas bravas."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 6,
+      "itemIndex": 0,
+      "fr": "Cœurs de laitue avec ventrèche de thon, gulas et crevettes à l’ail."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 6,
+      "itemIndex": 1,
+      "fr": "Salade spéciale (laitue, tomate, poivron, oignon, carotte, thon, maïs et œuf)."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 7,
+      "itemIndex": 0,
+      "fr": "Œufs brouillés à la morue."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 7,
+      "itemIndex": 1,
+      "fr": "Œufs brouillés aux asperges sauvages (trigueros)."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 7,
+      "itemIndex": 2,
+      "fr": "Œufs brouillés aux petites fèves."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 7,
+      "itemIndex": 3,
+      "fr": "Œufs brouillés aux champignons, aux crevettes et au saumon."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 8,
+      "itemIndex": 0,
+      "fr": "Queue de bœuf mijotée."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 8,
+      "itemIndex": 1,
+      "fr": "Torreznos de Soria (poitrine de porc croustillante)."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-ciudad-jardin",
+      "sectionIndex": 8,
+      "itemIndex": 2,
+      "fr": "Salmorejo cordouan."
+    }
+  ]
+}

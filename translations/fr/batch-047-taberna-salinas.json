@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-salinas",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 1,
+      "itemIndex": 2,
+      "fr": "Pisto de légumes à la manière de Tundidores, accompagné d’œufs au plat."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 1,
+      "itemIndex": 3,
+      "fr": "Pommes de terre farcies à la viande ; farce et préparation exactes non précisées."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 1,
+      "itemIndex": 4,
+      "fr": "Longe de porc à la sauce spéciale aux noisettes cordouanes."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 1,
+      "itemIndex": 5,
+      "fr": "Chorizo maison cuit à la poêle."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 1,
+      "itemIndex": 6,
+      "fr": "Boudins noirs maison ; ingrédients et préparation exacts non précisés."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 1,
+      "itemIndex": 7,
+      "fr": "Queue de bœuf braisée à la manière traditionnelle cordouane."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 1,
+      "itemIndex": 8,
+      "fr": "Cochon de lait frit de la vallée, accompagné d’ail frit."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 1,
+      "itemIndex": 9,
+      "fr": "Tripes préparées selon la recette traditionnelle de la maison."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 1,
+      "itemIndex": 10,
+      "fr": "Pieds de porc ; préparation exacte non précisée."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 1,
+      "itemIndex": 11,
+      "fr": "Côtelettes d’agneau ; mode de cuisson et accompagnements non précisés."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 1,
+      "itemIndex": 12,
+      "fr": "Viande mijotée à la tomate, à la manière cordouane."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 1,
+      "itemIndex": 13,
+      "fr": "Joues de porc ibérique préparées à la manière de la taverne."
+    }
+  ]
+}

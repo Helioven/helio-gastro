@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "la-montillana",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 5,
+      "itemIndex": 1,
+      "fr": "Pâtisserie Manolete fourrée au cabello de ángel (confiture sucrée de courge), accompagnée d’une soupe froide sucrée au vinaigre de Pedro Ximénez."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 5,
+      "itemIndex": 2,
+      "fr": "Gâteau au fromage affiné de la Sierra de Córdoba, avec crème Chantilly à la fraise."
+    },
+    {
+      "placeId": "la-montillana",
+      "sectionIndex": 5,
+      "itemIndex": 3,
+      "fr": "Torrija accompagnée d’une crème au chocolat blanc et à la mangue, et d’une glace au dulce de leche merengada."
+    }
+  ]
+}

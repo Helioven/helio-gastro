@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-san-miguel-el-pisto",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 0,
+      "itemIndex": 0,
+      "fr": "Jambon ibérique de bellota. Préparation et accompagnements selon la carte ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 0,
+      "itemIndex": 1,
+      "fr": "Caña de lomo, longe de porc ibérique séchée. Préparation et accompagnements selon la carte ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 0,
+      "itemIndex": 2,
+      "fr": "Salchichón ibérique. Préparation et accompagnements selon la carte ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 0,
+      "itemIndex": 3,
+      "fr": "Chorizo ibérique. Préparation et accompagnements selon la carte ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 0,
+      "itemIndex": 4,
+      "fr": "Fromage de brebis longuement affiné. Préparation et accompagnements selon la carte ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 0,
+      "itemIndex": 5,
+      "fr": "Assortiment de jambon, caña de lomo, salchichón et chorizo ibériques."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 0,
+      "itemIndex": 6,
+      "fr": "Crème froide cordouane à la tomate et au pain, garnie de dés de jambon et d’œuf."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 0,
+      "itemIndex": 7,
+      "fr": "Crème froide traditionnelle cordouane aux amandes et au pain."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 0,
+      "itemIndex": 8,
+      "fr": "Ensaladilla de la maison ; préparation et accompagnements selon la carte, autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 0,
+      "itemIndex": 9,
+      "fr": "Œufs de poisson accompagnés de mayonnaise ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 0,
+      "itemIndex": 10,
+      "fr": "Tomate à la ventrèche de thon (en saison) ; autres détails non précisés."
+    },
+    {
+      "placeId": "taberna-san-miguel-el-pisto",
+      "sectionIndex": 0,
+      "itemIndex": 11,
+      "fr": "Tomate coupée en morceaux avec huile d’olive vierge extra (en saison) ; autres détails non précisés."
+    }
+  ]
+}

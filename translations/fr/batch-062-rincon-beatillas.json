@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "rincon-beatillas",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 0,
+      "itemIndex": 0,
+      "fr": "Salmorejo cordouan."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 0,
+      "itemIndex": 1,
+      "fr": "Aubergines frites."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 0,
+      "itemIndex": 2,
+      "fr": "Ensaladilla rusa."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 0,
+      "itemIndex": 3,
+      "fr": "Croquettes maison."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 0,
+      "itemIndex": 4,
+      "fr": "Salade de fruits de mer."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 0,
+      "itemIndex": 5,
+      "fr": "Anchois marinés au vinaigre."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 0,
+      "itemIndex": 6,
+      "fr": "Anchois frits."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 0,
+      "itemIndex": 7,
+      "fr": "Japuta marinée en adobo puis frite."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 0,
+      "itemIndex": 8,
+      "fr": "Calamars frits."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 0,
+      "itemIndex": 9,
+      "fr": "Seiche frite."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 0,
+      "itemIndex": 10,
+      "fr": "Morue frite."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 0,
+      "itemIndex": 11,
+      "fr": "Œufs de poisson frits avec mayonnaise."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 0,
+      "itemIndex": 12,
+      "fr": "Œufs de poisson à la vinaigrette."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 0,
+      "itemIndex": 13,
+      "fr": "Cuisses de grenouille."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 0,
+      "itemIndex": 14,
+      "fr": "Flamenquín cordouan maison."
+    }
+  ]
+}

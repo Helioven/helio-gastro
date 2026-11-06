@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "churros-bar-marta",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "churros-bar-marta",
+      "sectionIndex": 0,
+      "itemIndex": 0,
+      "fr": "Café et demi-tartine classique à l’huile d’olive ou préparation similaire."
+    },
+    {
+      "placeId": "churros-bar-marta",
+      "sectionIndex": 0,
+      "itemIndex": 1,
+      "fr": "Café et tartine entière classique à l’huile d’olive ou préparation similaire."
+    },
+    {
+      "placeId": "churros-bar-marta",
+      "sectionIndex": 0,
+      "itemIndex": 2,
+      "fr": "Café et demi-tartine spéciale (jambon blanc, jambon blanc et fromage, jambon serrano ou poulet grillé)."
+    },
+    {
+      "placeId": "churros-bar-marta",
+      "sectionIndex": 0,
+      "itemIndex": 3,
+      "fr": "Café et tartine entière spéciale."
+    },
+    {
+      "placeId": "churros-bar-marta",
+      "sectionIndex": 0,
+      "itemIndex": 4,
+      "fr": "Café et demi-portion de churros."
+    },
+    {
+      "placeId": "churros-bar-marta",
+      "sectionIndex": 0,
+      "itemIndex": 5,
+      "fr": "Café et portion entière de churros."
+    },
+    {
+      "placeId": "churros-bar-marta",
+      "sectionIndex": 0,
+      "itemIndex": 6,
+      "fr": "Chocolat chaud et demi-portion de churros."
+    },
+    {
+      "placeId": "churros-bar-marta",
+      "sectionIndex": 0,
+      "itemIndex": 7,
+      "fr": "Chocolat chaud et portion entière de churros."
+    },
+    {
+      "placeId": "churros-bar-marta",
+      "sectionIndex": 0,
+      "itemIndex": 8,
+      "fr": "Jus d’orange, boisson sans alcool ou jus en bouteille, avec demi-tartine classique."
+    },
+    {
+      "placeId": "churros-bar-marta",
+      "sectionIndex": 0,
+      "itemIndex": 9,
+      "fr": "Jus d’orange, boisson sans alcool ou jus en bouteille, avec tartine entière classique."
+    }
+  ]
+}

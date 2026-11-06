@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-plateros-san-francisco",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 4,
+      "itemIndex": 5,
+      "fr": "Queue de bœuf mijotée à feu doux."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 4,
+      "itemIndex": 6,
+      "fr": "Presa de porc ibérique nourri aux glands. Plat figurant à la carte ; la préparation et les accompagnements exacts ne sont pas précisés."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 4,
+      "itemIndex": 7,
+      "fr": "Jarret de porc ; préparation et accompagnements non précisés."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 4,
+      "itemIndex": 8,
+      "fr": "Filet de bœuf cuit à la plancha, selon la traduction figurant sur la carte du restaurant."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 4,
+      "itemIndex": 9,
+      "fr": "Escalope panée farcie au jambon et au fromage."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 4,
+      "itemIndex": 10,
+      "fr": "Plat traditionnel d’abats de poulet, préparé selon la recette de grand-mère."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 4,
+      "itemIndex": 11,
+      "fr": "Pointes de filet mijotées. Plat figurant à la carte ; la préparation et les accompagnements exacts ne sont pas précisés."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 4,
+      "itemIndex": 12,
+      "fr": "Lapin à l’ail. Plat figurant à la carte ; la préparation et les accompagnements exacts ne sont pas précisés."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 4,
+      "itemIndex": 13,
+      "fr": "Joues de porc cuisinées en sauce."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 4,
+      "itemIndex": 14,
+      "fr": "Petites côtelettes d’agneau. Plat figurant à la carte ; la préparation et les accompagnements exacts ne sont pas précisés."
+    }
+  ]
+}

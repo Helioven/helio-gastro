@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-el-poema-alonso",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 4,
+      "itemIndex": 2,
+      "fr": "Pieds de porc ; la carte ne précise pas leur préparation."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 4,
+      "itemIndex": 3,
+      "fr": "Joues de porc ibérique accompagnées de pommes de terre frites."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 4,
+      "itemIndex": 4,
+      "fr": "Artichauts préparés à la manière de Montilla."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 4,
+      "itemIndex": 5,
+      "fr": "Filet de porc accompagné d’une sauce au whisky."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 4,
+      "itemIndex": 6,
+      "fr": "Pointes de filet accompagnées de champignons sauvages et de champignons de Paris."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 4,
+      "itemIndex": 7,
+      "fr": "Queue de bœuf accompagnée de pommes de terre."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 5,
+      "itemIndex": 0,
+      "fr": "Calamars frits."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 5,
+      "itemIndex": 1,
+      "fr": "Morue frite."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 5,
+      "itemIndex": 2,
+      "fr": "Dos de morue accompagné de pisto de légumes."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 5,
+      "itemIndex": 3,
+      "fr": "Poulpe préparé à la galicienne."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 5,
+      "itemIndex": 4,
+      "fr": "Anchois frits."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 6,
+      "itemIndex": 0,
+      "fr": "Pièce de porc grillée."
+    }
+  ]
+}

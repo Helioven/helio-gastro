@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "la-taberna-del-rio",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 1,
+      "itemIndex": 4,
+      "fr": "Flamenquín traditionnel cordouan accompagné de frites."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 1,
+      "itemIndex": 5,
+      "fr": "Ragoût traditionnel de queue de bœuf servi avec des frites."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 2,
+      "itemIndex": 0,
+      "fr": "Croquettes crémeuses préparées avec du puchero andalou."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 2,
+      "itemIndex": 1,
+      "fr": "Patatas bravas avec mojo picón des Canaries et piment árbol moulu."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 2,
+      "itemIndex": 2,
+      "fr": "Houmous accompagné de fromage cottage, de bimi frit et d’une sauce aux cacahuètes et à la noix de coco."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 2,
+      "itemIndex": 3,
+      "fr": "Focaccia avec zaalouk d’aubergine rôtie, artichaut frit et poitrine de porc séchée."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 2,
+      "itemIndex": 4,
+      "fr": "Fromage artisanal grillé façon provolone, avec champignons shiitakés, poivron confit et thym."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 2,
+      "itemIndex": 5,
+      "fr": "Pain brioché garni de queue de bœuf mijotée, de mayonnaise fumée au soja et de relish de cornichons aigres-doux."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 2,
+      "itemIndex": 6,
+      "fr": "Thon rouge saisi façon aburi, accompagné de salmorejo mariné au vinaigre, d’œufs de lingue et de piments piparra."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 2,
+      "itemIndex": 7,
+      "fr": "Fines tranches de poisson-sériole légèrement salé façon sashimi, avec ají amarillo, concombre et citron vert."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 2,
+      "itemIndex": 8,
+      "fr": "Gyozas farcies de ragoût d’agneau, accompagnées de sauce butter masala, crème aigre, coriandre et cacahuètes."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 2,
+      "itemIndex": 9,
+      "fr": "Risotto à la queue de bœuf, au beurre maison et au parmesan."
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "rincon-beatillas",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 0,
+      "itemIndex": 15,
+      "fr": "San Jacobo maison."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 0,
+      "itemIndex": 16,
+      "fr": "Bœuf à la sauce tomate."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 0,
+      "itemIndex": 17,
+      "fr": "Tripes de bœuf maison."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 0,
+      "itemIndex": 18,
+      "fr": "Pieds de porc."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 0,
+      "itemIndex": 19,
+      "fr": "Sanglier à la manière montagnarde."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 0,
+      "itemIndex": 20,
+      "fr": "Viande de cerf en sauce aux asperges."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 0,
+      "itemIndex": 21,
+      "fr": "Cochon de lait frit."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 1,
+      "itemIndex": 0,
+      "fr": "Jambon ibérique de bellota."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 1,
+      "itemIndex": 1,
+      "fr": "Fromage de brebis longuement affiné."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 1,
+      "itemIndex": 2,
+      "fr": "Boudin noir ibérique."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 2,
+      "itemIndex": 0,
+      "fr": "Poivrons rôtis au thon et à l’œuf."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 2,
+      "itemIndex": 1,
+      "fr": "Pisto de légumes avec un œuf au plat."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 2,
+      "itemIndex": 2,
+      "fr": "Fèves tendres au jambon sec."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 2,
+      "itemIndex": 3,
+      "fr": "Artichauts à la manière de Montilla."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 2,
+      "itemIndex": 4,
+      "fr": "Salade traditionnelle (pour 2 personnes)."
+    }
+  ]
+}

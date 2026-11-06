@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-la-viuda",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 3,
+      "itemIndex": 0,
+      "fr": "Rabo de toro cordouan préparé selon la recette de l’ancien Bar Rosales."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 3,
+      "itemIndex": 1,
+      "fr": "Churrasco de porc ibérique nourri aux glands, Pata Negra, disponible uniquement en saison."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 3,
+      "itemIndex": 2,
+      "fr": "Presa de porc ibérique marinée à la sauce soja, au paprika de La Vera et au miel, avec purée de patate douce et sauce à la manteca colorá et à l’ail."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 4,
+      "itemIndex": 0,
+      "fr": "Ensaladilla rusa accompagnée d’un œuf au plat."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 4,
+      "itemIndex": 1,
+      "fr": "Timbale de pommes de terre et d’œufs avec tataki de thon."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 4,
+      "itemIndex": 2,
+      "fr": "Œuf avec pommes de terre doucement cuites, crème de homard et grosse crevette."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 4,
+      "itemIndex": 3,
+      "fr": "Gâteau salé de tagarninas accompagné de gazpachuelo malagueño."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 5,
+      "itemIndex": 0,
+      "fr": "Service de pain et de gressins indiqué sur la carte."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 5,
+      "itemIndex": 1,
+      "fr": "Olives indiquées sur la carte."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 5,
+      "itemIndex": 2,
+      "fr": "Pain supplémentaire indiqué sur la carte."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 5,
+      "itemIndex": 3,
+      "fr": "Récipient jetable indiqué sur la carte."
+    }
+  ]
+}

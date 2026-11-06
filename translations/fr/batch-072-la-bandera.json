@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "la-bandera-cafe",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 9,
+      "itemIndex": 4,
+      "fr": "Flamenquín au porc."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 9,
+      "itemIndex": 5,
+      "fr": "Flamenquín au roquefort."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 9,
+      "itemIndex": 6,
+      "fr": "Dulce de flamenquín (spécialité de la maison ; préparation non précisée)."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 10,
+      "itemIndex": 0,
+      "fr": "Brochette gilda à la sobrasada."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 10,
+      "itemIndex": 1,
+      "fr": "Brochette gilda au saumon."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 10,
+      "itemIndex": 2,
+      "fr": "Brochette gilda au fromage."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 10,
+      "itemIndex": 3,
+      "fr": "Brochette gilda à l’artichaut."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 10,
+      "itemIndex": 4,
+      "fr": "Brochette gilda matrimonio."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 11,
+      "itemIndex": 0,
+      "fr": "Coques."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 11,
+      "itemIndex": 1,
+      "fr": "Couteaux de mer."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 11,
+      "itemIndex": 2,
+      "fr": "Moules."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 12,
+      "itemIndex": 0,
+      "fr": "Gâteau au fromage."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 12,
+      "itemIndex": 1,
+      "fr": "Gâteau à la pistache."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 12,
+      "itemIndex": 2,
+      "fr": "Fondant au chocolat à cœur coulant."
+    }
+  ]
+}

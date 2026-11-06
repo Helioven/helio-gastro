@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-salinas",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 4,
+      "itemIndex": 3,
+      "fr": "Bouchées de glace enrobées de chocolat."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 4,
+      "itemIndex": 4,
+      "fr": "Orange préparée avec du sucre et de la cannelle."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 4,
+      "itemIndex": 5,
+      "fr": "Tocino de cielo, dessert traditionnel aux jaunes d’œufs et au sucre."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 4,
+      "itemIndex": 6,
+      "fr": "Pastel cordobés traditionnel, pâte feuilletée farcie de confiture de courge dite cabello de ángel."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 4,
+      "itemIndex": 7,
+      "fr": "Flan aux œufs maison."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 4,
+      "itemIndex": 8,
+      "fr": "Riz au lait, dessert traditionnel à base de riz cuit dans du lait."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 4,
+      "itemIndex": 9,
+      "fr": "Gâteau au chocolat ; préparation exacte non précisée."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 4,
+      "itemIndex": 10,
+      "fr": "Melon sucré de la provenance indiquée sur la carte ; origine à confirmer."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "moriles-ribera",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 13,
+      "itemIndex": 8,
+      "fr": "Thé noir English Breakfast."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 14,
+      "itemIndex": 0,
+      "fr": "Chocolat au lait."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 14,
+      "itemIndex": 1,
+      "fr": "Chocolat blanc."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 14,
+      "itemIndex": 2,
+      "fr": "Chocolat noir."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 14,
+      "itemIndex": 3,
+      "fr": "Chocolat blanc aux noisettes."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 14,
+      "itemIndex": 4,
+      "fr": "Chocolat au lait et au praliné."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 14,
+      "itemIndex": 5,
+      "fr": "Chocolat noir à l’orange et à la cannelle."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 14,
+      "itemIndex": 6,
+      "fr": "Chocolat chaud noir avec crème fouettée et cannelle."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 14,
+      "itemIndex": 7,
+      "fr": "Chocolat chaud noir avec crème fouettée et glace au touron."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 14,
+      "itemIndex": 8,
+      "fr": "Chocolat chaud noir avec crème fouettée et glace à la vanille."
+    }
+  ]
+}

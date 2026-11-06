@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-la-viuda",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 0,
+      "itemIndex": 0,
+      "fr": "Potage traditionnel de la maison, présenté comme une recette centenaire ; la carte n’en précise pas les ingrédients."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 0,
+      "itemIndex": 1,
+      "fr": "Saucisson de viande de cerf élaboré selon une recette de chasseurs cordouans."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 0,
+      "itemIndex": 2,
+      "fr": "Anchois marinés au vinaigre, à la manière de l’ancien Bar Mezquita."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 0,
+      "itemIndex": 3,
+      "fr": "Salmorejo cordobés, crème froide de tomate et de pain préparée selon la recette familiale de l’établissement."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 0,
+      "itemIndex": 4,
+      "fr": "Gazpacho rouge accompagné de légumes croquants en garniture."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 0,
+      "itemIndex": 5,
+      "fr": "Gazpacho blanc accompagné de raisins et de pomme acidulée."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 0,
+      "itemIndex": 6,
+      "fr": "Mazamorra préparée avec des amandes et des noisettes de Cordoue."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 0,
+      "itemIndex": 7,
+      "fr": "Fromage maison « La Viuda », préparé selon une recette propre à l’établissement ; la variété n’est pas précisée."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 0,
+      "itemIndex": 8,
+      "fr": "Salade de tomates coupées avec mangue de Torrox et glace à l’huile d’olive vierge extra."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 1,
+      "itemIndex": 0,
+      "fr": "Aubergines frites provenant du potager de l’établissement."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 1,
+      "itemIndex": 1,
+      "fr": "Croquettes au jambon et au bouillon de cocido, accompagnées de mayonnaise à la menthe verte."
+    },
+    {
+      "placeId": "taberna-la-viuda",
+      "sectionIndex": 1,
+      "itemIndex": 2,
+      "fr": "Croquettes de patate douce préparées au bain-marie."
+    }
+  ]
+}
