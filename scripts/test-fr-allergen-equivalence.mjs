@@ -23,7 +23,7 @@ const tokens=[
  ['sésamo','sésame']
 ];
 const norm=s=>String(s??'').normalize('NFC').toLocaleLowerCase('es');
-const results={declarations:0,freeFrom:0,ingredientMentions:0,errors:[],nuances:[]};
+const results={declarations:0,freeFrom:0,lactoseOptions:0,ingredientMentions:0,errors:[],nuances:[]};
 for(const p of places)for(const [si,sec] of (p.menuSections||[]).entries())
  for(const [ii,item] of (sec.items||[]).entries()){
   const es=norm(item.es);if(!es)continue;
@@ -42,6 +42,11 @@ for(const p of places)for(const [si,sec] of (p.menuSections||[]).entries())
    }
    if(source.includes('frutos secos'))
     results.nuances.push({key,reason:'frutos secos → fruits à coque: verify scope against original source; peanuts may require separate category'});
+  }else if(es.includes('opciones de leche:')||es.trim()==='sin lactosa'){
+   results.lactoseOptions++;
+   if(!fr.includes('sans lactose'))results.errors.push({key,reason:'Lactose-free option missing'});
+   if(es.includes('opciones de leche:')&&!fr.includes('choix de lait'))
+    results.errors.push({key,reason:'Milk choice presentation lost'});
   }else if(es.includes('sin gluten')||es.includes('sin lactosa')){
    results.freeFrom++;
    if(es.includes('sin gluten')&&!fr.includes('sans gluten'))
@@ -54,6 +59,7 @@ for(const p of places)for(const [si,sec] of (p.menuSections||[]).entries())
  }
 assert.equal(results.declarations,29,'Source declaration inventory changed: review before acceptance');
 assert.equal(results.freeFrom,2,'Source free-from inventory changed: review before acceptance');
+assert.equal(results.lactoseOptions,5,'Source lactose-free options inventory changed: review before acceptance');
 assert.equal(results.ingredientMentions,5,'Ingredient candidate inventory changed: review before acceptance');
 console.log('FR ALLERGEN EQUIVALENCE '+JSON.stringify({status:results.errors.length?'FAIL':'PASS',scope:'ES/FR text equivalence only; NOT allergen safety certification',...results},null,2));
 if(results.errors.length)process.exitCode=1;
