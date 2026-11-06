@@ -28,7 +28,7 @@ for(const profile of profiles){
      '.primary','#clear-search','#service-intro','#results-heading','#count','#coverage-summary',
      '#results article.place h3','#results article.place button'];
     function rgba(s){
-     const m=s.match(/^rgba?\\(\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)(?:\\s*,\\s*([\\d.]+))?\\s*\\)$/);
+     const m=s.match(/^rgba?\(\s*(\d+(?:\.\d+)?)\s*,\s*(\d+(?:\.\d+)?)\s*,\s*(\d+(?:\.\d+)?)(?:\s*,\s*([\d.]+))?\s*\)$/);
      return m?[+m[1],+m[2],+m[3],m[4]===undefined?1:+m[4]]:null;
     }
     const blend=(top,under)=>[0,1,2].map(i=>top[i]*top[3]+under[i]*(1-top[3]));
@@ -58,7 +58,7 @@ for(const profile of profiles){
      }
      const fontSize=parseFloat(cs.fontSize),bold=Number.parseInt(cs.fontWeight,10)>=700;
      const large=fontSize>=24||(fontSize>=18.66&&bold);
-     samples.push({selector,text:node.textContent.trim().replace(/\\s+/g,' ').slice(0,85),
+     samples.push({selector,text:node.textContent.trim().replace(/\s+/g,' ').slice(0,85),
       computedForeground:cs.color,backgroundAnalyzable:!uncertain,
       estimatedContrast:ratio===null?null:Math.round(ratio*100)/100,
       referenceThreshold:large?3:4.5,belowReference:ratio!==null&&ratio<(large?3:4.5),
