@@ -200,7 +200,11 @@ window.GASTRO_I18N = Object.freeze({
   const frenchFavoritesNotice='Enregistrées uniquement dans ce navigateur. Vous pouvez les consulter sans effectuer une nouvelle recherche.';
   const frenchFavoritesLabels=new Map([
     ['★ Mis tabernas favoritas','★ Mes tavernes favorites'],
-    ['Aún no tienes tabernas guardadas. Marca ☆ en los resultados o fichas.','Vous n’avez pas encore de tavernes enregistrées. Cliquez sur ☆ dans les résultats ou les fiches.']
+    ['Aún no tienes tabernas guardadas. Marca ☆ en los resultados o fichas.','Vous n’avez pas encore de tavernes enregistrées. Cliquez sur ☆ dans les résultats ou les fiches.'],
+    ['Ver ficha','Voir la fiche'],
+    ['📍 Ver mapa','📍 Voir la carte'],
+    ['☆ Guardar','☆ Enregistrer'],
+    ['★ Guardado','★ Enregistré']
   ]);
   const translateFrenchFavoritesNotice=(node,source)=>{
     const parent=node.parentElement;
@@ -235,6 +239,42 @@ window.GASTRO_I18N = Object.freeze({
     ['+ Comparar','+ Comparer']
   ]);
   const translateFrenchDynamicResult=(node,source)=>node.parentElement?.closest('#results')&&node.parentElement.matches('.result-pending,.note,.detail-button,button')?(frenchDynamicResults.get(normalize(source))||source):source;
+  // Only compare-output content; source data, dishes, amounts and URLs are unchanged.
+  const frenchCompareLabels=new Map([
+    ['Selecciona establecimientos de los resultados para compararlos aquí.','Sélectionnez des établissements dans les résultats pour les comparer ici.'],
+    ['Selecciona un plato y un formato concreto para identificar precios comparables entre variantes equivalentes.','Sélectionnez un plat et un format précis pour comparer les prix de variantes équivalentes.'],
+    ['Se comparan solo variantes coincidentes y el mismo formato declarado. «Menor precio» requiere al menos dos locales con esa variante. La cantidad real puede variar.','Seules les variantes correspondantes et le même format déclaré sont comparés. Le prix le plus bas nécessite au moins deux établissements proposant cette variante. Les quantités réelles peuvent varier.'],
+    ['Platos con precio publicado:','Plats avec prix publié :'],
+    ['No hay precios documentados para este plato en el servicio seleccionado.','Aucun prix documenté pour ce plat dans le service sélectionné.'],
+    ['No hay precios documentados para el servicio seleccionado.','Aucun prix documenté pour le service sélectionné.'],
+    ['Formatos diferentes: no comparamos cantidades ni asumimos tamaños equivalentes.','Formats différents : nous ne comparons pas les quantités et ne présumons pas de tailles équivalentes.'],
+    ['Precio por unidad: no comparable directamente con una ración.','Prix à l’unité : non directement comparable à une portion.']
+  ]);
+  const frenchCompareSuffixes=new Map([
+    ['Formato sin especificar','Format non précisé'],
+    ['Unidad','Unité'],
+    ['Media ración','Demi-portion'],
+    ['Ración completa','Portion entière'],
+    ['Variante sin categorizar','Variante non classée'],
+    ['★ Menor precio comparable','★ Prix comparable le plus bas']
+  ]);
+  const translateFrenchCompareText=(node,source)=>{
+    if(!node.parentElement?.closest('#compare-output'))return source;
+    const raw=normalize(source);
+    if(frenchCompareLabels.has(raw))return frenchCompareLabels.get(raw);
+    const route=raw.match(/^🚶 Ruta a pie entre (\d+) tabernas ↗$/);
+    if(route)return '🚶 Itinéraire à pied entre '+route[1]+' établissements ↗';
+    const foot=raw.match(/^(\d+) fuente\(s\) · Revisado (.+)$/);
+    if(foot)return foot[1]+' sources · Vérifié le '+foot[2];
+    const meal=raw.match(/^Comida completa: (.+)$/);
+    if(meal)return 'Repas complet : '+meal[1];
+    const notice=raw.match(/^Precios publicados para «([\s\S]+)»\. Los formatos pueden ser distintos y no deben compararse como cantidades equivalentes\.$/);
+    if(notice)return 'Prix publiés pour « '+notice[1]+' ». Les formats peuvent différer et ne doivent pas être comparés comme des quantités équivalentes.';
+    if(node.parentElement.matches('li'))
+      return source.replace(/ · (Formato sin especificar|Unidad|Media ración|Ración completa|Variante sin categorizar|★ Menor precio comparable)(?= · |$)/g,
+        (part,label)=>' · '+(frenchCompareSuffixes.get(label)||label));
+    return source;
+  };
   const frenchDetailLabels=new Map([
     ['☆ Guardar','☆ Enregistrer'],
     ['★ Guardado','★ Enregistré'],
@@ -248,7 +288,7 @@ window.GASTRO_I18N = Object.freeze({
     ['Fuentes y fecha','Sources et date'],
     ['Documentación de fuentes (desplegar)','Documentation des sources (déplier)']
   ]);
-  const translateFrenchDetailText=(node,source)=>node.parentElement?.closest('#detail-content')&&!node.parentElement.closest('.menu-dish,[data-venue-menu-section],[data-bilingual-es],[data-source-label-es]')?(frenchDetailLabels.get(normalize(source))||source):source;
+  const translateFrenchDetailText=(node,source)=>node.parentElement?.closest('#compare-output')?translateFrenchCompareText(node,source):node.parentElement?.closest('#detail-content')&&!node.parentElement.closest('.menu-dish,[data-venue-menu-section],[data-bilingual-es],[data-source-label-es]')?(frenchDetailLabels.get(normalize(source))||source):source;
   const frenchRoldanNotice=["Precios publicados en la carta general de Roldán. Pueden variar; la disponibilidad de productos depende de cada local. Roldán Centro tiene carta y ficha propias.","Prix publiés dans la carte générale de Roldán. Ils peuvent varier ; la disponibilité des produits dépend de chaque établissement. Roldán Centro dispose de sa propre carte et de sa propre fiche."];
   // Beatillas: preserve the 2025 historical group-menu caveat when the detail notice is bilingual.
   const frenchBeatillasGeneralNotice='La carte individuelle officielle ne publie pas de prix par plat. Nous recommandons de confirmer les tarifs auprès du restaurant avant de commander. Les prix publiés pour les menus de groupe correspondent à des menus complets de 2025, et non à des plats individuels ; leur validité actuelle n’est pas confirmée.';

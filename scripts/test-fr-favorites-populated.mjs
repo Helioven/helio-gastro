@@ -48,11 +48,17 @@ for(const profile of profiles){
   await page.locator('#favorite-section').screenshot({path:folder+'/'+profile.name+'-one-fr.png'});
   await cards.nth(1).locator('.fav-button').click();
   await count(2,'2 favoris');
+  await page.waitForFunction(()=>[...document.querySelectorAll('#favorite-list .favorite-entry')].every(row=>
+    [...row.querySelectorAll('button')].map(el=>el.textContent.trim()).join('|')==='Voir la fiche|📍 Voir la carte|★ Enregistré'));
   await page.locator('#favorite-section').screenshot({path:folder+'/'+profile.name+'-two-fr.png'});
   const ids=await page.evaluate(()=>[...state.favorites].sort());
   for(const [lang,label] of [['es','2 favoritos'],['en','2 favourites'],['fr','2 favoris']]){
    await select(lang);
    await count(2,label);
+   const expected=lang==='es'?'Ver ficha|📍 Ver mapa|★ Guardado':
+    lang==='en'?'View details|📍 View map|★ Saved':'Voir la fiche|📍 Voir la carte|★ Enregistré';
+   await page.waitForFunction(expected=>[...document.querySelectorAll('#favorite-list .favorite-entry')].every(row=>
+    [...row.querySelectorAll('button')].map(el=>el.textContent.trim()).join('|')===expected),expected);
   }
   await page.reload({waitUntil:'domcontentloaded'});
   await page.waitForFunction(()=>typeof state!=='undefined'&&state.places.length>=4);
@@ -77,7 +83,15 @@ for(const profile of profiles){
   await page.waitForFunction(()=>document.querySelectorAll('#compare-output .compare-place').length===2);
   assert.equal((await page.locator('#compare-title').textContent()).trim(),'Comparateur');
   assert.equal((await page.locator('#nav-compare-count').textContent()).trim(),'2');
-  await page.locator('#compare-section').screenshot({path:folder+'/'+profile.name+'-comparator-fr.png'});
+  await page.waitForFunction(()=>{
+    const text=document.querySelector('#compare-output')?.innerText||'';
+    return text.includes('Itinéraire à pied entre 2 établissements')
+      && text.includes('Plats avec prix publié :')
+      && !text.includes('Ruta a pie entre')
+      && !text.includes('Platos con precio publicado:')
+      && !text.includes('Variante sin categorizar');
+   });
+   await page.locator('#compare-section').screenshot({path:folder+'/'+profile.name+'-comparator-fr.png'});
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+2),
    'Horizontal overflow after favorites/comparator');
  } catch(e){ errors.push(e.stack||String(e)); }
