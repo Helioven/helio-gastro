@@ -1200,3 +1200,31 @@ Las cuatro incidencias se confirmaron a partir de muestras visuales y del códig
 ## Autorización posterior de piloto FR — 6 de noviembre de 2026
 
 Helio autorizó expresamente activar el francés públicamente e integrarlo en `main`, conservando El Caballo Rojo oculto y las advertencias. Preparar el despliegue y sus regresiones en una rama de release antes de fusionar. Tras publicar el francés, proseguir con la fase 3 de auditoría integral; las mejoras automatizadas posteriores requieren su propia evaluación y autorización de alcance.
+
+
+---
+
+## Estado vigente — Francés público y fase 3 QA integral (06/11/2026)
+
+> Este apartado actualiza los estados técnicos de publicación y pruebas de las secciones históricas de este README. **No cambia la hoja de ruta ni autoriza por sí mismo funcionalidades nuevas.**
+
+### Francés público: integrado y desplegado
+
+- **Autorización expresa de Helio:** activar el francés como idioma público de piloto, conservando los riesgos editoriales documentados y El Caballo Rojo oculto.
+- **PR de publicación [#44](https://github.com/Helioven/helio-gastro/pull/44):** fusionado con `main` en el commit `ccfe52e75f6a30f61e73fa56b2670327c5334bf7`. Se preservaron las decisiones de alcance que solo estaban en `main`.
+- **GitHub Pages [#542](https://github.com/Helioven/helio-gastro/actions/runs/42192390965):** `completed/success`; corresponde al commit `ccfe52e`.
+- **Regresión posterior a la integración [#873](https://github.com/Helioven/helio-gastro/actions/runs/42192391624):** `completed/success`, incluidos los jobs `catalog-audit` y `visual-qa`.
+- El selector público permite **ES/EN/FR**, sin exigir `?qa_fr=1`. El idioma seleccionado persiste tras la recarga; las regresiones de liberación ES/EN/FR finalizaron con PASS antes de fusionar ([#871](https://github.com/Helioven/helio-gastro/actions/runs/42191459707) y [#872](https://github.com/Helioven/helio-gastro/actions/runs/42191467906)).
+- **El Caballo Rojo** continúa con `hidden: true` en el catálogo; la regresión de ocultación cubre búsqueda, resultados, favoritos y comparador, incluidos estados guardados. No se considera resuelta su carta ni se declara 44/44 fichas verificadas.
+- **Alcance editorial:** 107 lotes y 1.232 descripciones FR con integridad técnica comprobada; revisión interna asistida por IA, **no certificación lingüística profesional**, y sin garantía de vigencia de cartas/alérgenos. Se conserva la observación de fuente de la mazamorra de D'Tapas COVAP. Véase [dictamen de piloto](docs/qa-fr-pilot-closure-decision-2026-11-06.md) e [informe de alérgenos](docs/qa-fr-allergen-review-2026-11-06.md). Los informes anteriores describen el estado histórico QA antes de la autorización; no deben interpretarse como prohibición actual de mostrar FR.
+
+### Fase 3: auditoría integral en curso
+
+- **Rama de trabajo:** `audit/integral-qa-20261106`; **PR [#45](https://github.com/Helioven/helio-gastro/pull/45)** abierto en **borrador**, sin fusionar a `main` en el momento de esta actualización.
+- **Nueva prueba HG-QA-EXT-001:** `scripts/audit-external-links.mjs`. Valida en modo solo lectura la sintaxis y HTTPS de URLs de fuentes (`url`), menús (`sourceUrl`) y productos (`productUrl`), incluyendo registros anidados.
+- **[CI #874](https://github.com/Helioven/helio-gastro/actions/runs/42192813470):** `completed/success`. El job `catalog-audit` registró **185 URL revisadas, 54 dominios, 44 establecimientos y 0 incidencias**; la suite `visual-qa` también concluyó correctamente. Esta comprobación **no hace peticiones a sitios externos** y, por tanto, no certifica que las páginas funcionen ni que sus precios y cartas estén vigentes.
+- **Cobertura ya existente:** suites de búsqueda, filtros, comparador, fichas, navegación, favoritos, cambio de idioma, mapa por teclado y ocultación del local excluido. Inventarios visuales y de accesibilidad exploratorios; **no equivalen a certificación WCAG**.
+- **Próximas prioridades QA, propuestas y no ejecutadas:** medir tiempo, cantidad y tamaño de solicitudes de los 107 lotes FR en móvil; revisar comportamiento de caché y recarga; ampliar controles de foco y avisos accesibles; inspeccionar carga de mapas y recursos externos; verificar fuentes y fechas sin asumir datos nuevos.
+- **Límite de alcance:** no se incorporan todavía horarios no verificados, reseñas, buzón, resúmenes ni imágenes. Cualquier automatización funcional adicional debe evaluarse después de las dependencias de QA y recibir aprobación de Helio.
+
+**Siguiente paso operativo:** revisar el PR #45 con su PASS y decidir su integración en `main`; continuar después con una medición reproducible de rendimiento, en una tanda pequeña y reversible. Distinguir siempre prueba propuesta, ejecutada, PASS y revisión humana pendiente.

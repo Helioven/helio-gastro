@@ -22,6 +22,7 @@ jobs:
       - name: Validate catalog (read only)
         run: |
           node scripts/audit-data.mjs
+          node scripts/audit-external-links.mjs
           node scripts/inspect-schema.mjs
           node scripts/audit-exploratory.mjs
           node scripts/audit-french-coverage.mjs
