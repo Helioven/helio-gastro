@@ -172,6 +172,7 @@ jobs:
             scripts/inventory-fr-moriles-ribera-semantics.mjs \
             scripts/test-search-regression.mjs \
             scripts/test-filter-regression.mjs \
+            scripts/test-fr-favorites-populated.mjs \
             scripts/test-comparator-regression.mjs \
             scripts/test-detail-regression.mjs \
             scripts/test-navigation-regression.mjs; do
