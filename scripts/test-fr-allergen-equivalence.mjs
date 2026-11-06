@@ -4,7 +4,7 @@
 import assert from 'node:assert/strict';
 import {readFileSync,readdirSync} from 'node:fs';
 const places=JSON.parse(readFileSync('data/places.json','utf8'));
-const batches=readdirSync('translations/fr').filter(x=>/^batch-\\d+.*\\.json$/.test(x)).sort();
+const batches=readdirSync('translations/fr').filter(x=>/^batch-\d+.*\.json$/.test(x)).sort();
 const translations=new Map();
 for(const file of batches)for(const e of JSON.parse(readFileSync('translations/fr/'+file,'utf8')).entries){
  const key=[e.placeId,e.sectionIndex,e.itemIndex].join('/');
@@ -46,7 +46,7 @@ for(const p of places)for(const [si,sec] of (p.menuSections||[]).entries())
    results.freeFrom++;
    if(es.includes('sin gluten')&&!fr.includes('sans gluten'))
     results.errors.push({key,reason:'Gluten-free claim missing'});
-   if(es.includes('sin lactosa')&&!fr.includes('sans lactose'))
+   if((es.includes('sin lactosa')||/sin gluten (?:y|ni) lactosa/.test(es))&&!fr.includes('lactose'))
     results.errors.push({key,reason:'Lactose-free claim missing'});
    if(es.includes('indicado en carta')&&!fr.includes('indiqué sur la carte'))
     results.errors.push({key,reason:'Source attribution missing for free-from claim'});
