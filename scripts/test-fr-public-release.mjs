@@ -14,6 +14,7 @@ for(const profile of profiles){
   else if(/QA/.test(await option.textContent()))errors.push('French still marked QA');
   await page.locator('#language-select').selectOption('fr');
   await page.waitForFunction(()=>document.documentElement.lang==='fr');
+  await page.waitForFunction(()=>state.places.find(p=>p.id==='la-montillana')?.menuSections?.[0]?.items?.[0]?.fr,null,{timeout:45000});
   const first=await page.evaluate(()=>({lang:document.documentElement.lang,
    desc:state.places.find(p=>p.id==='la-montillana')?.menuSections?.[0]?.items?.[0]?.fr,
    hidden:!state.places.some(p=>p.id==='el-caballo-rojo'),
