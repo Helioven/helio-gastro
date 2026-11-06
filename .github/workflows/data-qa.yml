@@ -26,6 +26,7 @@ jobs:
           node scripts/inspect-fr-heading-context.mjs
           node scripts/test-fr-section-render.mjs
           node scripts/audit-french-integrity.mjs
+          node scripts/test-fr-allergen-equivalence.mjs
           node scripts/preview-french-batch.mjs
           node scripts/validate-french-batch.mjs
           node scripts/test-fr-batch-inventory.mjs
