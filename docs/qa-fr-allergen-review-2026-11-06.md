@@ -39,3 +39,19 @@ En `dtapas-covap-cordoba/4/1` el español dice `Frutos secos (la fuente dice «c
 **La equivalencia textual de las 29 declaraciones de alérgenos y las 7 menciones de restricciones/opciones alimentarias ha superado los controles realizados; no se han identificado modificaciones editoriales necesarias inmediatas.** La observación sobre `frutos secos` queda registrada como riesgo residual pendiente de corroboración de fuente. No se garantiza aptitud de consumo a personas alérgicas.
 
 No se ha alterado `main`, `data/places.json`, `translations/fr`, cartas, ingredientes, alérgenos, cantidades ni precios. El francés sigue experimental bajo `?qa_fr=1`, sujeto a decisión expresa de publicación.
+
+## Contraste terminológico oficial posterior — 06/11/2026
+
+**Pregunta:** ¿es correcta la equivalencia del indicador de alérgenos de D'Tapas COVAP `Frutos secos` → `fruits à coque` en `dtapas-covap-cordoba/4/1`?
+
+**Fuentes externas consultadas:**
+
+1. Reglamento (UE) nº 1169/2011, anexo II, versiones ES y FR en EUR-Lex: `Frutos de cáscara` ↔ `Fruits à coque` (grupo 8), mientras `Cacahuetes` ↔ `Arachides` corresponde al grupo 5. https://eur-lex.europa.eu/legal-content/NL-FR-ES/TXT/?uri=CELEX%3A32011R1169
+2. AESAN, explicación oficial de alérgenos, con cacahuetes y frutos de cáscara como categorías diferenciadas: https://aesan.gob.es/seguridad-alimentaria/informacion-alimentaria/etiquetado-sustancias
+3. Carta del propio establecimiento registrada en `data/places.json`: https://www.ibericoscovap.com/es/dtapas-covap-cordoba-carta/; en la leyenda de alérgenos aparecen *Cacahuetes* y *Frutos Secos: Frutos secos con cáscara, sin cáscara* como categorías distintas. El aviso de trazas del pie también menciona *frutos de cáscara*. La página accesible en esta consulta no incluye una entrada de mazamorra correspondiente al índice del catálogo; **no se debe inferir de ella la atribución vigente al plato**.
+
+**Dictamen de traducción:** **CORRECTA terminológicamente** la traducción `fruits à coque` como denominación oficial de la clase de frutos de cáscara en la carta de COVAP. **No añadir `arachides`**: el original de COVAP distingue cacahuetes por separado. La coletilla `avec coque, sans coque` reproduce la explicación de la leyenda de la fuente, sin constituir una nueva garantía alimentaria.
+
+**Límite de verificación:** queda **pendiente de fuente vigente** confirmar que la declaración histórica `frutos secos, gluten, sulfitos` se atribuye hoy a la *Mazamorra con crema de PX y uvas laminadas* y no a otra elaboración. Es una cuestión de procedencia/vigencia del dato, **no un error de traducción probado**. No cambiar ni eliminar alérgenos sin confirmación; la carta del establecimiento es la referencia que debe consultar cualquier persona con alergias.
+
+**Cambios en aplicación y datos:** ninguno. Se mantiene la excepción de El Caballo Rojo y la condición experimental de francés. Este añadido es solo documental y no acredita PASS de su propio CI hasta comprobarlo.
