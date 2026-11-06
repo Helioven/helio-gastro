@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "rincon-beatillas",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 4,
+      "itemIndex": 4,
+      "fr": "Espadon à la plancha."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 4,
+      "itemIndex": 5,
+      "fr": "Saumon grillé."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 4,
+      "itemIndex": 6,
+      "fr": "Merlu pêché à la ligne."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 4,
+      "itemIndex": 7,
+      "fr": "Sole de la côte."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 4,
+      "itemIndex": 8,
+      "fr": "Calamar pêché à la turlutte et cuit à la plancha."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 4,
+      "itemIndex": 9,
+      "fr": "Assortiment de poissons frits (pour 2 personnes)."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 5,
+      "itemIndex": 0,
+      "fr": "Queue de bœuf braisée."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 5,
+      "itemIndex": 1,
+      "fr": "Jarret de porc rôti."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 5,
+      "itemIndex": 2,
+      "fr": "Filet mignon de porc ibérique de Los Pedroches, accompagné de 2 sauces."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 5,
+      "itemIndex": 3,
+      "fr": "Presa de porc ibérique de Los Pedroches."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 5,
+      "itemIndex": 4,
+      "fr": "Cochon de lait rôti à la manière de Ségovie."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 5,
+      "itemIndex": 5,
+      "fr": "Côte de bœuf maturée (500 g)."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 5,
+      "itemIndex": 6,
+      "fr": "Entrecôte de bœuf maturée."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 5,
+      "itemIndex": 7,
+      "fr": "Filet de bœuf maturé."
+    },
+    {
+      "placeId": "rincon-beatillas",
+      "sectionIndex": 5,
+      "itemIndex": 8,
+      "fr": "Ris d’agneau à l’ail."
+    }
+  ]
+}

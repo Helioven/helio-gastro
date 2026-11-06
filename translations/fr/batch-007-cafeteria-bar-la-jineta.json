@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "cafeteria-bar-la-jineta",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "cafeteria-bar-la-jineta",
+      "sectionIndex": 2,
+      "itemIndex": 3,
+      "fr": "Sandwich aux pinchitos, avec sauce."
+    },
+    {
+      "placeId": "cafeteria-bar-la-jineta",
+      "sectionIndex": 2,
+      "itemIndex": 4,
+      "fr": "Sandwich au lomo de orza, à la tomate et à la laitue."
+    },
+    {
+      "placeId": "cafeteria-bar-la-jineta",
+      "sectionIndex": 3,
+      "itemIndex": 0,
+      "fr": "Tartine au thon, au fromage et aux poivrons del piquillo."
+    },
+    {
+      "placeId": "cafeteria-bar-la-jineta",
+      "sectionIndex": 3,
+      "itemIndex": 1,
+      "fr": "Tartine au jambon blanc et au fromage."
+    },
+    {
+      "placeId": "cafeteria-bar-la-jineta",
+      "sectionIndex": 3,
+      "itemIndex": 2,
+      "fr": "Tartine au kebab de poulet."
+    },
+    {
+      "placeId": "cafeteria-bar-la-jineta",
+      "sectionIndex": 3,
+      "itemIndex": 3,
+      "fr": "Tartine à la sauce barbecue, au bacon et à la viande à la bolognaise."
+    },
+    {
+      "placeId": "cafeteria-bar-la-jineta",
+      "sectionIndex": 4,
+      "itemIndex": 0,
+      "fr": "Petite cassolette de viande à la tomate."
+    },
+    {
+      "placeId": "cafeteria-bar-la-jineta",
+      "sectionIndex": 4,
+      "itemIndex": 1,
+      "fr": "Petite cassolette de viande au Pedro Ximénez."
+    },
+    {
+      "placeId": "cafeteria-bar-la-jineta",
+      "sectionIndex": 4,
+      "itemIndex": 2,
+      "fr": "Petite cassolette d’ensaladilla."
+    },
+    {
+      "placeId": "cafeteria-bar-la-jineta",
+      "sectionIndex": 4,
+      "itemIndex": 3,
+      "fr": "Petite cassolette de poulet à l’ail."
+    },
+    {
+      "placeId": "cafeteria-bar-la-jineta",
+      "sectionIndex": 4,
+      "itemIndex": 4,
+      "fr": "Petite cassolette de salmorejo avec du jambon."
+    },
+    {
+      "placeId": "cafeteria-bar-la-jineta",
+      "sectionIndex": 4,
+      "itemIndex": 5,
+      "fr": "Petite cassolette de chorizo cuit au four."
+    }
+  ]
+}

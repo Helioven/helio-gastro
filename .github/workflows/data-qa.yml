@@ -1,0 +1,249 @@
+name: Helio Gastro - data QA
+on:
+  push:
+    branches:
+      - feature/fr-integration-qa-20261027
+  workflow_dispatch:
+jobs:
+  catalog-audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate catalog (read only)
+        run: |
+          node scripts/audit-data.mjs
+          node scripts/inspect-schema.mjs
+          node scripts/audit-exploratory.mjs
+          node scripts/audit-french-coverage.mjs
+          node scripts/inspect-next-fr-restaurant.mjs
+          node scripts/build-french-plan.mjs
+          node scripts/list-french-section-titles.mjs
+          node scripts/inspect-fr-heading-context.mjs
+          node scripts/test-fr-section-render.mjs
+          node scripts/audit-french-integrity.mjs
+          node scripts/test-fr-allergen-equivalence.mjs
+          node scripts/preview-french-batch.mjs
+          node scripts/validate-french-batch.mjs
+          node scripts/test-fr-batch-inventory.mjs
+          node scripts/print-fr-batch-002-source.mjs
+          node scripts/print-fr-remaining-source.mjs
+          node scripts/test-fr-overlay-integrity.mjs
+          node scripts/test-fr-pilot-page.mjs
+
+      - name: Inventory group-menu conditions (read only)
+        run: |
+          mkdir -p qa-reports
+          node scripts/inventory-fr-group-menu-notes.mjs > qa-reports/fr-group-menu-notes.json
+          node scripts/test-fr-group-menu-inventory.mjs
+          node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs=require('node:fs');
+          const report=JSON.parse(fs.readFileSync('qa-reports/fr-group-menu-notes.json','utf8'));
+          const entries=report.entries||[];
+          console.log('## Inventario de condiciones de menús de grupo (FR QA)');
+          console.log('- Entradas totales: **'+report.total+'**');
+          console.log('- Nombres protegidos: **'+report.summary.protected+'**');
+          console.log('- Traducciones literales candidatas (no verificadas en navegador): **'+report.summary.exact_candidate+'**');
+          console.log('- Traducciones dinámicas candidatas (pendientes de QA visual): **'+report.summary.dynamic_candidate+'**');
+          console.log('- Textos para revisión contextual: **'+report.summary.needs_context_review+'**');
+          console.log('### Revisión por establecimiento');
+          console.log('| Establecimiento | Literales | Dinámicas | Revisar | Protegidas |');
+          console.log('|---|---:|---:|---:|---:|');
+          for(const place of report.byPlace.filter(p=>p.needsContextReview))
+            console.log('| '+place.placeName.replaceAll('|','/')+' | '+place.exactCandidates+' | '+place.dynamicCandidates+' | '+place.needsContextReview+' | '+place.protected+' |');
+          console.log('### Primeras 12 condiciones para revisar (sin traducción automática)');
+          console.log('| Establecimiento | Campo | ES (extracto) |');
+          console.log('|---|---|---|');
+          const safe=v=>String(v??'').replaceAll('|','&#124;').replace(/\\s+/g,' ').trim().slice(0,180);
+          for(const entry of entries.filter(e=>e.status==='needs_context_review').slice(0,12))
+            console.log('| '+safe(entry.placeName)+' | '+safe(entry.path)+' | '+safe(entry.es)+' |');
+          console.log('Estado: candidatos a revisión, no ausencias verificadas en el navegador.');
+          console.log('Las reglas de traducción dinámicas no están incluidas en las coincidencias literales. Ver artefacto group-menu-conditions-inventory.');
+          NODE
+      - name: Upload group-menu conditions inventory
+        uses: actions/upload-artifact@v4
+        with:
+          name: group-menu-conditions-inventory
+          path: qa-reports/fr-group-menu-notes.json
+          retention-days: 14
+
+      - name: Show next French translation target in job summary
+        if: success()
+        run: |
+          node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs=require('node:fs');
+          const report=JSON.parse(fs.readFileSync('qa-reports/fr-next-restaurant.json','utf8'));
+          const next=report.next;
+          console.log('## Próximo restaurante pendiente de francés');
+          if(next){
+            console.log('**'+next.name+'** ('+next.id+') — '+next.pendingCount+' descripciones pendientes de '+next.count+'.');
+            console.log('### Próximas 12 descripciones ES/EN para traducir');
+            console.log('| Índice | Plato | Español | Inglés |');
+            console.log('|---|---|---|---|');
+            for(const item of next.entries.slice(0,12)){
+              const safe=v=>String(v??'').replaceAll('|','&#124;').replace(/\s+/g,' ').trim();
+              console.log('| '+item.sectionIndex+':'+item.itemIndex+' | '+safe(item.name)+' | '+safe(item.es)+' | '+safe(item.en)+' |');
+            }
+            console.log('Fuente: catálogo y lotes reales de la rama QA. Traducciones todavía sin preparar.');
+          }else console.log('No quedan descripciones ES/EN sin lote FR según este inventario.');
+          console.log('El detalle original está en el artefacto french-coverage-proposals.');
+          NODE
+
+      - name: Upload French proposals (not applied to catalog)
+        uses: actions/upload-artifact@v4
+        with:
+          name: french-coverage-proposals
+          path: |
+            qa-reports/fr-coverage-proposals.json
+            qa-reports/fr-next-restaurant.json
+          retention-days: 14
+
+  visual-qa:
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.56.1-noble
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser QA dependencies
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+      - name: Validate JavaScript syntax before browser QA
+        run: |
+          node --check i18n.js
+          node --check app.js
+          node --check scripts/test-fr-search-ui-pilot.mjs
+      - name: Start static server and run desktop/mobile browser QA
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/helio-qa-server.log 2>&1 &
+          python3 - <<'PY'
+          import time,urllib.request
+          for i in range(30):
+              try:
+                  urllib.request.urlopen('http://127.0.0.1:8765/qa-fr-la-montillana.html',timeout=2)
+                  break
+              except Exception: time.sleep(1)
+          else: raise SystemExit('QA web server unavailable')
+          PY
+          mkdir -p qa-reports
+          printf 'suite,result,seconds\n' > qa-reports/visual-qa-timings.csv
+          status=0
+          for suite in \
+            scripts/test-fr-search-ui-pilot.mjs \
+            scripts/test-fr-filter-ui-pilot.mjs \
+            scripts/test-fr-results-ui-pilot.mjs \
+            scripts/test-fr-dynamic-results-pilot.mjs \
+            scripts/test-fr-detail-shell-pilot.mjs \
+            scripts/test-fr-detail-notices-pilot.mjs \
+            scripts/test-fr-beatillas-roldan-dynamic.mjs \
+            scripts/test-fr-visual.mjs \
+            scripts/test-fr-real-detail-27.mjs \
+            scripts/test-fr-bar-marta-17.mjs \
+            scripts/test-fr-la-jineta-22.mjs \
+            scripts/test-fr-la-tarterie-28.mjs \
+            scripts/test-fr-el-abuelo-31.mjs \
+            scripts/test-fr-la-viuda-34.mjs \
+            scripts/test-fr-casa-rubio-36.mjs \
+            scripts/test-fr-el-numero-10-37.mjs \
+            scripts/test-fr-la-taberna-del-rio-38.mjs \
+            scripts/test-fr-rafae-38.mjs \
+            scripts/test-fr-don-pepe-centro-43.mjs \
+            scripts/test-fr-el-poema-alonso-44.mjs \
+            scripts/test-fr-dtapas-covap-45.mjs \
+            scripts/test-fr-plateros-san-francisco-46.mjs \
+            scripts/test-fr-taberna-salinas-56.mjs \
+            scripts/test-fr-taberna-la-sal-60.mjs \
+            scripts/test-fr-el-pisto-62.mjs \
+            scripts/test-fr-rincon-beatillas-75.mjs \
+            scripts/test-fr-la-bandera-84.mjs \
+            scripts/test-fr-la-cazuela-89.mjs \
+            scripts/test-fr-don-pepe-ciudad-jardin-12.mjs \
+            scripts/test-fr-moriles-ribera-12.mjs \
+            scripts/inventory-fr-detail-accessibility.mjs \
+            scripts/test-fr-source-venue-triage.mjs \
+            scripts/test-fr-keyboard-map-dialog.mjs \
+            scripts/inventory-fr-moriles-ribera-semantics.mjs \
+            scripts/test-search-regression.mjs \
+            scripts/test-filter-regression.mjs \
+            scripts/test-fr-favorites-populated.mjs \
+            scripts/test-comparator-regression.mjs \
+            scripts/test-detail-regression.mjs \
+            scripts/test-navigation-regression.mjs \
+            scripts/test-hidden-venue-regression.mjs; do
+            echo "::group::Running $suite"
+            started=$(date +%s)
+            if node "$suite"; then
+              result="PASS"
+            else
+              result="FAIL"
+              status=1
+              echo "::error title=Visual QA failed::Suite $suite exited non-zero; inspect its log above."
+            fi
+            elapsed=$(( $(date +%s) - started ))
+            printf '%s,%s,%s\n' "$suite" "$result" "$elapsed" >> qa-reports/visual-qa-timings.csv
+            echo "QA timing: $suite $result ${elapsed}s"
+            echo "::endgroup::"
+          done
+          echo '::group::French visible text inventory (informational)'
+          inventory_started=$(date +%s)
+          if node scripts/inventory-fr-visible-text.mjs; then
+            inventory_result="PASS"
+          else
+            inventory_result="FAIL"
+            status=1
+            echo "::error title=FR inventory failed::scripts/inventory-fr-visible-text.mjs exited non-zero."
+          fi
+          inventory_elapsed=$(( $(date +%s) - inventory_started ))
+          printf '%s,%s,%s\n' "scripts/inventory-fr-visible-text.mjs" "$inventory_result" "$inventory_elapsed" >> qa-reports/visual-qa-timings.csv
+          if [ -f qa-reports/fr-visible-text-triage.json ]; then
+            node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs=require('node:fs');
+          const report=JSON.parse(fs.readFileSync('qa-reports/fr-visible-text-triage.json','utf8'));
+          console.log('## Triaje de textos visibles en francés (exploratorio)');
+          console.log('Las coincidencias son candidatas, no errores lingüísticos demostrados.');
+          console.log('| Dispositivo | Vista | Candidatos | Extractos |');
+          console.log('|---|---|---:|---|');
+          const safe=v=>String(v??'').replaceAll('|','&#124;').replace(/\s+/g,' ').slice(0,115);
+          for(const profile of report.profiles)for(const finding of profile.findings)
+            console.log('| '+safe(profile.profile)+' | '+safe(finding.view)+' | '+finding.reviewCandidates.length+' | '+safe(finding.reviewCandidates.slice(0,3).map(x=>x.text).join(' / '))+' |');
+          console.log('Consultar fr-visible-text-triage.json para todos los candidatos y contrastar en navegador antes de corregir.');
+          NODE
+          fi
+          echo '::endgroup::'
+          node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs=require('node:fs');
+          const csv=fs.readFileSync('qa-reports/visual-qa-timings.csv','utf8').trim().split('\n').slice(1).map(line=>{
+            const [suite,result,seconds]=line.split(',');
+            return {suite,result,seconds:Number(seconds)};
+          }).sort((a,b)=>b.seconds-a.seconds);
+          console.log('## Duración de pruebas visual-qa');
+          console.log('Mediciones por suite (segundos); no diagnostican por sí solas la causa de una demora.');
+          console.log('| Suite | Estado | Segundos |');
+          console.log('|---|---|---:|');
+          for(const row of csv)console.log('| '+row.suite+' | '+row.result+' | '+row.seconds+' |');
+          console.log('Total medido de suites: '+csv.reduce((a,r)=>a+r.seconds,0)+' segundos. Excluye instalación y otros pasos.');
+          NODE
+          exit "$status"
+      - name: Upload FR accessibility metrics only
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fr-accessibility-metrics-only
+          path: qa-reports/fr-detail-accessibility-triage.json
+          if-no-files-found: error
+          retention-days: 14
+      - name: Upload visual QA screenshots and results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fr-visual-qa-desktop-mobile
+          path: qa-reports/
+          retention-days: 14

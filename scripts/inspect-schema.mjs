@@ -1,0 +1,10 @@
+import {readFileSync} from 'node:fs';
+const p=JSON.parse(readFileSync('data/places.json','utf8'));
+const keys=o=>Object.keys(o||{});
+const freq=(arr)=>Object.entries(arr.reduce((a,k)=>(a[k]=(a[k]||0)+1,a),{})).sort((a,b)=>b[1]-a[1]);
+const menus=p.flatMap(x=>x.menus||[]);
+const sections=menus.flatMap(x=>x.menuSections||[]).concat(p.flatMap(x=>x.menuSections||[]));
+const items=sections.flatMap(x=>x.items||[]);
+const prices=menus.flatMap(x=>x.dishPrices||[]).concat(p.flatMap(x=>x.dishPrices||[]));
+const sample=(arr)=>arr.length?{keys:keys(arr[0]),example:JSON.stringify(arr[0]).slice(0,650)}:null;
+console.log(JSON.stringify({counts:{places:p.length,menus:menus.length,sections:sections.length,items:items.length,prices:prices.length},placeKeys:freq(p.flatMap(keys)),menuKeys:freq(menus.flatMap(keys)),sectionKeys:freq(sections.flatMap(keys)),itemKeys:freq(items.flatMap(keys)),priceKeys:freq(prices.flatMap(keys)),examples:{place:sample(p),menu:sample(menus),section:sample(sections),item:sample(items),price:sample(prices)}},null,2));

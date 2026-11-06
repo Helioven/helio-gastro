@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "casa-rubio",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 0,
+      "itemIndex": 0,
+      "fr": "Jambon 100 % ibérique tranché à la demande, proposé en portions de 60 ou 100 grammes."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 0,
+      "itemIndex": 1,
+      "fr": "Fromage affiné de brebis de Cordoue, proposé en portions de 100 ou 150 grammes."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 0,
+      "itemIndex": 2,
+      "fr": "Assortiment de jambon ibérique et de fromage de brebis, proposé en portions de 90 ou 160 grammes."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 0,
+      "itemIndex": 3,
+      "fr": "Salmorejo cordobés accompagné de jambon et d’œuf."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 0,
+      "itemIndex": 4,
+      "fr": "Mazamorra accompagnée de pomme verte et de raisins secs au vin Pedro Ximénez."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 0,
+      "itemIndex": 5,
+      "fr": "Ensaladilla au thon avec carpaccio de poulpe et paprika, proposée en portions de 200 ou 300 grammes."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 0,
+      "itemIndex": 6,
+      "fr": "Pommes de terre bravas à la manière de Casa Rubio, avec mousse d’aïoli."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 0,
+      "itemIndex": 7,
+      "fr": "Oreille de porc frite, marinée en adobo et accompagnée de sauce brava ; portion indiquée de 150 grammes."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 0,
+      "itemIndex": 8,
+      "fr": "Beignets d’aubergine accompagnés de sirop de canne."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 0,
+      "itemIndex": 9,
+      "fr": "Croquettes de puchero et de jambon ibérique, servies par six ou neuf unités."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 0,
+      "itemIndex": 10,
+      "fr": "Flamenquín cordobés accompagné de poudre de parmesan et de pommes de terre."
+    },
+    {
+      "placeId": "casa-rubio",
+      "sectionIndex": 1,
+      "itemIndex": 0,
+      "fr": "Salade de légumes de saison."
+    }
+  ]
+}

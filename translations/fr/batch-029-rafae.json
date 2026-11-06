@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-rafae",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 8,
+      "itemIndex": 1,
+      "fr": "Échine de porc ibérique cuite lentement, accompagnée de pommes de terre, de poivrons et d’une réduction de son jus."
+    },
+    {
+      "placeId": "taberna-rafae",
+      "sectionIndex": 8,
+      "itemIndex": 2,
+      "fr": "Filet de veau fumé accompagné de demi-glace, de purée de pommes de terre façon Robuchon, d’un croustillant de pistache et de légumes."
+    }
+  ]
+}

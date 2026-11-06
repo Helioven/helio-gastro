@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-el-poema-alonso",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 2,
+      "itemIndex": 2,
+      "fr": "Œufs brouillés aux jeunes fèves, au jambon et au foie gras."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 3,
+      "itemIndex": 0,
+      "fr": "Patatas bravas ; la carte ne précise pas les ingrédients de la sauce."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 3,
+      "itemIndex": 1,
+      "fr": "Pommes de terre accompagnées de fromage roquefort."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 3,
+      "itemIndex": 2,
+      "fr": "Aubergines à la manière califale en tempura, avec miel de canne et sésame."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 3,
+      "itemIndex": 3,
+      "fr": "Flamenquín farci au jambon."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 3,
+      "itemIndex": 4,
+      "fr": "Flamenquín farci au jambon et au fromage."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 3,
+      "itemIndex": 5,
+      "fr": "Croquettes à la queue de bœuf."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 3,
+      "itemIndex": 6,
+      "fr": "Croquettes de merlu."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 3,
+      "itemIndex": 7,
+      "fr": "Croquettes de pringá, préparation traditionnelle de viandes issues du pot-au-feu."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 3,
+      "itemIndex": 8,
+      "fr": "Cochifrito de porc ibérique de la vallée de Los Pedroches."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 4,
+      "itemIndex": 0,
+      "fr": "Tripes accompagnées de pommes de terre frites."
+    },
+    {
+      "placeId": "taberna-el-poema-alonso",
+      "sectionIndex": 4,
+      "itemIndex": 1,
+      "fr": "Pisto de légumes accompagné d’œufs au plat."
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-plateros-san-francisco",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 3,
+      "itemIndex": 4,
+      "fr": "Petites galettes fines et croustillantes aux crevettes, frites."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 3,
+      "itemIndex": 5,
+      "fr": "Crevettes enrobées de pâte à frire. Plat figurant à la carte ; la préparation et les accompagnements exacts ne sont pas précisés."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 3,
+      "itemIndex": 6,
+      "fr": "Crevettes frites. Plat figurant à la carte ; la préparation et les accompagnements exacts ne sont pas précisés."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 3,
+      "itemIndex": 7,
+      "fr": "Poisson mariné dans un adobo."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 3,
+      "itemIndex": 8,
+      "fr": "Seiche cuite à la plancha."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 3,
+      "itemIndex": 9,
+      "fr": "Seiche frite."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 3,
+      "itemIndex": 10,
+      "fr": "Moules à la vapeur. Plat figurant à la carte ; la préparation et les accompagnements exacts ne sont pas précisés."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 4,
+      "itemIndex": 0,
+      "fr": "Viande à la tomate. Plat figurant à la carte ; la préparation et les accompagnements exacts ne sont pas précisés."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 4,
+      "itemIndex": 1,
+      "fr": "Ragoût de tripes de veau."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 4,
+      "itemIndex": 2,
+      "fr": "Rouleau de viande et de jambon pané et frit, spécialité cordouane appelée flamenquín."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 4,
+      "itemIndex": 3,
+      "fr": "Poulet pané. Plat figurant à la carte ; la préparation et les accompagnements exacts ne sont pas précisés."
+    },
+    {
+      "placeId": "taberna-plateros-san-francisco",
+      "sectionIndex": 4,
+      "itemIndex": 4,
+      "fr": "Poulet cuit à la plancha. Plat figurant à la carte ; la préparation et les accompagnements exacts ne sont pas précisés."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "cafeteria-don-pepe-centro",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 7,
+      "itemIndex": 1,
+      "fr": "Bacon."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 7,
+      "itemIndex": 2,
+      "fr": "Jambon."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 8,
+      "itemIndex": 0,
+      "fr": "Churros (demi-portion, portion entière ou à emporter)."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 8,
+      "itemIndex": 1,
+      "fr": "Jeringos artisanaux, churros épais (demi-portion, portion entière ou à emporter)."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 8,
+      "itemIndex": 2,
+      "fr": "Sandwich chaud au jambon et au fromage."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 8,
+      "itemIndex": 3,
+      "fr": "Pepeburger."
+    },
+    {
+      "placeId": "cafeteria-don-pepe-centro",
+      "sectionIndex": 8,
+      "itemIndex": 4,
+      "fr": "Pepe Hot Dog."
+    }
+  ]
+}

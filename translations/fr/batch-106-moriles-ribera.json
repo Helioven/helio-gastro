@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "moriles-ribera",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 12,
+      "itemIndex": 19,
+      "fr": "Café à la cubaine."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 12,
+      "itemIndex": 20,
+      "fr": "Café à l’amaretto."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 12,
+      "itemIndex": 21,
+      "fr": "Café façon Calypso."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 12,
+      "itemIndex": 22,
+      "fr": "Café barraquito."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 13,
+      "itemIndex": 0,
+      "fr": "Infusion à la menthe."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 13,
+      "itemIndex": 1,
+      "fr": "Infusion à la camomille."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 13,
+      "itemIndex": 2,
+      "fr": "Infusion de fleurs de tilleul."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 13,
+      "itemIndex": 3,
+      "fr": "Rooibos à la cannelle et à la menthe."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 13,
+      "itemIndex": 4,
+      "fr": "Thé blanc à la fraise et à la framboise."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 13,
+      "itemIndex": 5,
+      "fr": "Thé pu-erh."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 13,
+      "itemIndex": 6,
+      "fr": "Thé vert Gunpowder."
+    },
+    {
+      "placeId": "moriles-ribera",
+      "sectionIndex": 13,
+      "itemIndex": 7,
+      "fr": "Thé vert à la menthe verte."
+    }
+  ]
+}

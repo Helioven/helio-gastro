@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "dtapas-covap-cordoba",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 6,
+      "itemIndex": 10,
+      "fr": "Pommes de terre frites maison. Allergènes déclarés : œuf, produits laitiers, gluten et sulfites."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 6,
+      "itemIndex": 11,
+      "fr": "Allergènes déclarés : sésame et sulfites."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 6,
+      "itemIndex": 12,
+      "fr": "Allergènes déclarés : produits laitiers, soja, gluten et sulfites."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 7,
+      "itemIndex": 0,
+      "fr": "Allergènes déclarés : soja, gluten et céleri."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 8,
+      "itemIndex": 0,
+      "fr": "Allergènes déclarés : produits laitiers."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 8,
+      "itemIndex": 1,
+      "fr": "Allergènes déclarés : œuf, produits laitiers, gluten et sulfites."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 8,
+      "itemIndex": 2,
+      "fr": "Allergènes déclarés : produits laitiers, gluten et sulfites."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 9,
+      "itemIndex": 0,
+      "fr": "Allergènes déclarés : œuf, produits laitiers et gluten."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 9,
+      "itemIndex": 1,
+      "fr": "Allergènes déclarés : œuf, produits laitiers et gluten."
+    }
+  ]
+}

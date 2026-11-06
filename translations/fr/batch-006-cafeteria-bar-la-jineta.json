@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "cafeteria-bar-la-jineta",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "cafeteria-bar-la-jineta",
+      "sectionIndex": 0,
+      "itemIndex": 0,
+      "fr": "Huile, tomate, pâté, beurre, confiture ou miel."
+    },
+    {
+      "placeId": "cafeteria-bar-la-jineta",
+      "sectionIndex": 0,
+      "itemIndex": 1,
+      "fr": "Crème de jambon blanc, guacamole, fromage Philadelphia ou zurrapa de lomo."
+    },
+    {
+      "placeId": "cafeteria-bar-la-jineta",
+      "sectionIndex": 0,
+      "itemIndex": 2,
+      "fr": "Deux ingrédients au choix parmi tomate, jambon, jambon blanc, guacamole, beurre, miel, confiture ou fromage Philadelphia."
+    },
+    {
+      "placeId": "cafeteria-bar-la-jineta",
+      "sectionIndex": 0,
+      "itemIndex": 3,
+      "fr": "Beurre, jambon blanc et fromage."
+    },
+    {
+      "placeId": "cafeteria-bar-la-jineta",
+      "sectionIndex": 0,
+      "itemIndex": 4,
+      "fr": "Café noir, prix à l’unité selon la carte."
+    },
+    {
+      "placeId": "cafeteria-bar-la-jineta",
+      "sectionIndex": 1,
+      "itemIndex": 0,
+      "fr": "Hot-dog accompagné de sauce."
+    },
+    {
+      "placeId": "cafeteria-bar-la-jineta",
+      "sectionIndex": 1,
+      "itemIndex": 1,
+      "fr": "Hot-dog avec bacon et sauce."
+    },
+    {
+      "placeId": "cafeteria-bar-la-jineta",
+      "sectionIndex": 2,
+      "itemIndex": 0,
+      "fr": "Sandwich à l’huile, à la tomate et au jambon."
+    },
+    {
+      "placeId": "cafeteria-bar-la-jineta",
+      "sectionIndex": 2,
+      "itemIndex": 1,
+      "fr": "Sandwich à l’omelette espagnole et à la mayonnaise."
+    },
+    {
+      "placeId": "cafeteria-bar-la-jineta",
+      "sectionIndex": 2,
+      "itemIndex": 2,
+      "fr": "Sandwich au bacon, à la laitue et à la sauce barbecue."
+    }
+  ]
+}

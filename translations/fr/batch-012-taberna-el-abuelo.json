@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-el-abuelo",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 10,
+      "fr": "Fromage."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 11,
+      "fr": "Ensaladilla rusa (salade de pommes de terre à l’espagnole)."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 12,
+      "fr": "Tomate avec ventrèche de thon."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 13,
+      "fr": "Moules cuites à l’eau."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 14,
+      "fr": "Crevettes cuites à l’eau."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 15,
+      "fr": "Dinde marinée en adobo."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 16,
+      "fr": "Longe de porc marinée en adobo."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 17,
+      "fr": "Flamenquín au jambon."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 18,
+      "fr": "Langue mijotée."
+    },
+    {
+      "placeId": "taberna-el-abuelo",
+      "sectionIndex": 0,
+      "itemIndex": 19,
+      "fr": "Tripes de veau."
+    }
+  ]
+}

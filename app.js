@@ -1,6 +1,8 @@
 'use strict';
 const state={places:[],filtered:[],selected:new Set(),favorites:new Set(),searched:false,appliedTerm:'',appliedScope:'dish',appliedPortion:'',appliedBudget:null,currentDetailId:null,mode:'comida'};
 const el=id=>document.getElementById(id);
+// Populate only after every French QA batch has passed validation.
+const qaFrenchPlaceIds=new Set();
 const MODE_CONFIG={
  desayuno:{label:'Desayunar',emoji:'☕',budgets:[3,5,7,10],dishes:['Tostadas','Churros','Molletes','Café','Bollería'],portions:[['unidad','Unidad'],['media-tostada','Media tostada'],['tostada-entera','Tostada entera'],['combinado','Desayuno combinado']],placeholder:'Tostadas, churros, molletes…'},
  comida:{label:'Comer',emoji:'🍽️',budgets:[10,15,20,30,50],dishes:['Flamenquín','Salmorejo','Rabo de toro','Croquetas','Mazamorra','Carrillada','Berenjenas','Pisto','Pescados y mariscos','Carnes y asados','Bocadillos y sándwiches','Guisos y cocina tradicional','Verduras y ensaladas','Tapas y raciones','Postres y dulces'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']],placeholder:'Flamenquín, salmorejo, carrillada…'},
@@ -373,6 +375,7 @@ function venueMenuPriceLabel(source,english){
 }
 function refreshDishExplanations(){
  const english=window.HelioGastroLanguage?.get()==='en';
+ const activeLanguage=window.HelioGastroLanguage?.get()||'es';
  document.querySelectorAll('[data-set-menu-es]').forEach(node=>{node.textContent=english?node.dataset.setMenuEn:node.dataset.setMenuEs;});
  document.querySelectorAll('[data-source-label-es]').forEach(node=>{node.textContent=(english?node.dataset.sourceLabelEn:node.dataset.sourceLabelEs)+' ↗';});
  document.querySelectorAll('[data-source-audit-title]').forEach(node=>{node.textContent=english?'Source documentation (expand)':'Documentación de fuentes (desplegar)';});
@@ -380,7 +383,7 @@ function refreshDishExplanations(){
  document.querySelectorAll('[data-official-menu-notice-es]').forEach(node=>{node.textContent=english?node.dataset.officialMenuNoticeEn:node.dataset.officialMenuNoticeEs;});
  document.querySelectorAll('[data-official-menu-es]').forEach(node=>{node.textContent=(english?node.dataset.officialMenuEn:node.dataset.officialMenuEs)+' ↗';});
  document.querySelectorAll('[data-specialties-es]').forEach(node=>{node.textContent=english?node.dataset.specialtiesEn:node.dataset.specialtiesEs;});
- document.querySelectorAll('[data-dish-explanation]').forEach(node=>{node.hidden=node.dataset.explanationLanguage?node.dataset.explanationLanguage!==(english?'en':'es'):!english;});
+ document.querySelectorAll('[data-dish-explanation]').forEach(node=>{node.hidden=node.dataset.explanationLanguage?node.dataset.explanationLanguage!==activeLanguage:!english;});
  document.querySelectorAll('[data-venue-menu-section]').forEach(node=>{node.textContent=english?(node.dataset.venueMenuSectionEn||VENUE_MENU_SECTION_EN[node.dataset.venueMenuSection]||node.dataset.venueMenuSection):node.dataset.venueMenuSection;});
  document.querySelectorAll('[data-venue-menu-price-label]').forEach(node=>{node.textContent=venueMenuPriceLabel(node.dataset.venueMenuPriceLabel,english);});
  document.querySelectorAll('[data-venue-menu-note-es]').forEach(node=>{node.textContent=english?node.dataset.venueMenuNoteEn:node.dataset.venueMenuNoteEs;});
@@ -409,6 +412,8 @@ function servicePrices(p){return serviceMenus(p).flatMap(m=>m.dishPrices)}
 function serviceKnown(p){return p.menus.some(m=>m.service===state.mode)}
 function updateMealMode(mode,{reset=true}={}){
  if(!Object.hasOwn(MODE_CONFIG,mode))return;
+ // Reset comparisons only on a genuine user-facing service switch, not on startup/restore.
+ if(reset && state.mode!==mode)state.selected.clear();
  state.mode=mode;
  try{localStorage.setItem(MODE_KEY,mode)}catch{}
  const cfg=MODE_CONFIG[mode];
@@ -937,7 +942,7 @@ function renderVenueMenuSections(panel,p){
   for(const dish of section.items){
    const entry=document.createElement('section');entry.className='menu-dish';
    const title=document.createElement('h4');title.dataset.keepDishSpanish='';title.textContent=dish.name;entry.append(title);
-   for(const language of ['es','en']){const value=language==='en'?(typeof dish.en==='string'&&dish.en.trim()&&clean(dish.en)!==clean(dish.name)?dish.en:((p.id==='moriles-ribera')?morilesExplanation(dish.name):'')):dish.es;if(typeof value!=='string'||!value.trim()||clean(value)===clean(dish.name))continue;const description=document.createElement('small');description.className='dish-explanation detail-dish-explanation';description.dataset.dishExplanation='';description.dataset.explanationLanguage=language;description.textContent=value;description.hidden=(window.HelioGastroLanguage?.get()||'es')!==language;entry.append(description);}
+   for(const language of ['es','en',...(window.HelioGastroLanguage?.qaFrenchEnabled?.()&&qaFrenchPlaceIds.has(p.id)?['fr']:[])]){const value=language==='fr'?dish.fr:language==='en'?(typeof dish.en==='string'&&dish.en.trim()&&clean(dish.en)!==clean(dish.name)?dish.en:((p.id==='moriles-ribera')?morilesExplanation(dish.name):'')):dish.es;if(typeof value!=='string'||!value.trim()||clean(value)===clean(dish.name))continue;const description=document.createElement('small');description.className='dish-explanation detail-dish-explanation';description.dataset.dishExplanation='';description.dataset.explanationLanguage=language;description.textContent=value;description.hidden=(window.HelioGastroLanguage?.get()||'es')!==language;entry.append(description);}
    for(const price of dish.prices){
     const row=document.createElement('div');row.className='menu-price-row';
     const label=document.createElement('span');label.dataset.venueMenuPriceLabel=price.label||price.portion||'';label.textContent=venueMenuPriceLabel(label.dataset.venueMenuPriceLabel,window.HelioGastroLanguage?.get()==='en');
@@ -1298,7 +1303,8 @@ function clearSearch(){
  updateMealMode(state.mode,{reset:false});
  el('portion').disabled=false;
  state.filtered=[];
- state.searched=state.selected.size>0;
+ state.selected.clear();
+ state.searched=false;
  updateQuickNav();
  state.appliedTerm='';
  state.appliedScope='dish';
@@ -1312,7 +1318,7 @@ function clearSearch(){
  el('show-offering').hidden=true;
  el('budget-explain').textContent='Límite aplicado al precio de un plato, no a una comida completa.';
  compare();
- if(state.selected.size)saveSearch();else try{localStorage.removeItem(SEARCH_KEY)}catch{}
+ try{localStorage.removeItem(SEARCH_KEY)}catch{}
  el('dish').focus();
 }
 async function init(){
@@ -1340,6 +1346,26 @@ async function init(){
   const res=await fetch('./data/places.json',{cache:'no-store'});
   if(!res.ok)throw Error('HTTP '+res.status);
   const data=await res.json();if(!Array.isArray(data))throw Error('Formato inválido');
+  if(window.HelioGastroLanguage?.qaFrenchEnabled?.()){
+    try{
+      const paths=['batch-001-la-montillana.json','batch-002-la-montillana.json','batch-003-la-montillana.json','batch-004-churros-bar-marta.json','batch-005-churros-bar-marta.json','batch-006-cafeteria-bar-la-jineta.json','batch-007-cafeteria-bar-la-jineta.json','batch-008-la-tarterie-centro.json','batch-009-la-tarterie-centro.json','batch-010-la-tarterie-centro.json','batch-011-taberna-el-abuelo.json','batch-012-taberna-el-abuelo.json','batch-013-taberna-el-abuelo.json','batch-014-taberna-la-viuda.json','batch-015-taberna-la-viuda.json','batch-016-taberna-la-viuda.json','batch-017-casa-rubio.json','batch-018-casa-rubio.json','batch-019-casa-rubio.json','batch-020-taberna-el-numero-10.json','batch-021-taberna-el-numero-10.json','batch-022-taberna-el-numero-10.json','batch-023-la-taberna-del-rio.json','batch-024-la-taberna-del-rio.json','batch-025-la-taberna-del-rio.json','batch-026-rafae.json','batch-027-rafae.json','batch-028-rafae.json','batch-029-rafae.json','batch-030-don-pepe-centro.json','batch-031-don-pepe-centro.json','batch-032-don-pepe-centro.json','batch-033-don-pepe-centro.json','batch-034-el-poema-alonso.json','batch-035-el-poema-alonso.json','batch-036-el-poema-alonso.json','batch-037-el-poema-alonso.json','batch-038-dtapas-covap.json','batch-039-dtapas-covap.json','batch-040-dtapas-covap.json','batch-041-dtapas-covap.json','batch-042-plateros-san-francisco.json','batch-043-plateros-san-francisco.json','batch-044-plateros-san-francisco.json','batch-045-plateros-san-francisco.json','batch-046-taberna-salinas.json','batch-047-taberna-salinas.json','batch-048-taberna-salinas.json','batch-049-taberna-salinas.json','batch-050-taberna-salinas.json','batch-051-taberna-la-sal.json','batch-052-taberna-la-sal.json','batch-053-taberna-la-sal.json','batch-054-taberna-la-sal.json','batch-055-taberna-la-sal.json','batch-056-el-pisto.json','batch-057-el-pisto.json','batch-058-el-pisto.json','batch-059-el-pisto.json','batch-060-el-pisto.json','batch-061-el-pisto.json','batch-062-rincon-beatillas.json','batch-063-rincon-beatillas.json','batch-064-rincon-beatillas.json','batch-065-rincon-beatillas.json','batch-066-rincon-beatillas.json','batch-067-la-bandera.json','batch-068-la-bandera.json','batch-069-la-bandera.json','batch-070-la-bandera.json','batch-071-la-bandera.json','batch-072-la-bandera.json','batch-073-la-cazuela-esparteria.json','batch-074-la-cazuela-esparteria.json','batch-075-la-cazuela-esparteria.json','batch-076-la-cazuela-esparteria.json','batch-077-la-cazuela-esparteria.json','batch-078-la-cazuela-esparteria.json','batch-079-la-cazuela-esparteria.json','batch-080-la-cazuela-esparteria.json','batch-081-don-pepe-ciudad-jardin.json','batch-082-don-pepe-ciudad-jardin.json','batch-083-don-pepe-ciudad-jardin.json','batch-084-don-pepe-ciudad-jardin.json','batch-085-don-pepe-ciudad-jardin.json','batch-086-don-pepe-ciudad-jardin.json','batch-087-don-pepe-ciudad-jardin.json','batch-088-don-pepe-ciudad-jardin.json','batch-089-don-pepe-ciudad-jardin.json','batch-090-moriles-ribera.json','batch-091-moriles-ribera.json','batch-092-moriles-ribera.json','batch-093-moriles-ribera.json','batch-094-moriles-ribera.json','batch-095-moriles-ribera.json','batch-096-moriles-ribera.json','batch-097-moriles-ribera.json','batch-098-moriles-ribera.json','batch-099-moriles-ribera.json','batch-100-moriles-ribera.json','batch-101-moriles-ribera.json','batch-102-moriles-ribera.json','batch-103-moriles-ribera.json','batch-104-moriles-ribera.json','batch-105-moriles-ribera.json','batch-106-moriles-ribera.json','batch-107-moriles-ribera.json'];
+      const responses=await Promise.all(paths.map(name=>fetch('./translations/fr/'+name,{cache:'no-store'})));
+      if(responses.some(response=>!response.ok))throw Error('FR QA batch HTTP error');
+      const batches=await Promise.all(responses.map(response=>response.json()));
+      if(batches.some(batch=>!Array.isArray(batch?.entries)||batch.entries.length===0||batch?.meta?.language!=='fr'||batch?.meta?.catalogModified!==false))throw Error('Invalid FR QA batch metadata or entries');
+      const seen=new Set(),updates=[];
+      for(const entry of batches.flatMap(batch=>batch.entries)){
+        const key=entry.placeId+':'+entry.sectionIndex+':'+entry.itemIndex;
+        const target=data.find(p=>p.id===entry.placeId);
+        const dish=target?.menuSections?.[entry.sectionIndex]?.items?.[entry.itemIndex];
+        if(!target||seen.has(key)||!dish?.es||!dish?.en||!entry.fr?.trim())throw Error('Invalid FR reference '+key);
+        seen.add(key);updates.push([dish,entry.fr]);
+      }
+      if(!updates.length)throw Error('Empty FR QA overlay');
+      for(const [dish,fr] of updates)dish.fr=fr;
+      for(const batch of batches)for(const entry of batch.entries)qaFrenchPlaceIds.add(entry.placeId);
+    }catch(error){console.warn('French QA batch unavailable:',error.message)}
+  }
   state.places=data.filter(place=>place?.hidden!==true).map(normalizePlace).filter(validPlace);
   state.favorites=new Set([...loadFavorites()].filter(id=>state.places.some(p=>p.id===id)));
   renderFavorites();

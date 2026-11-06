@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "dtapas-covap-cordoba",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 0,
+      "itemIndex": 0,
+      "fr": "Choix de lait : vache, brebis, chèvre ou sans lactose."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 0,
+      "itemIndex": 1,
+      "fr": "Choix de lait : vache, brebis, chèvre ou sans lactose."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 0,
+      "itemIndex": 3,
+      "fr": "Choix de lait : vache, brebis, chèvre ou sans lactose."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 0,
+      "itemIndex": 4,
+      "fr": "Choix de lait : vache, brebis, chèvre ou sans lactose."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 2,
+      "itemIndex": 0,
+      "fr": "Demi-portion de 60 g ; portion entière d’environ 90 g."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 2,
+      "itemIndex": 6,
+      "fr": "Demi-portion de 60 g ; portion entière d’environ 90 g."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 2,
+      "itemIndex": 7,
+      "fr": "Demi-portion de 60 g ; portion entière d’environ 90 g."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 2,
+      "itemIndex": 8,
+      "fr": "Demi-portion de 60 g ; portion entière d’environ 90 g."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 3,
+      "itemIndex": 2,
+      "fr": "Allergènes déclarés : produits laitiers."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 3,
+      "itemIndex": 3,
+      "fr": "Allergènes déclarés : œuf, produits laitiers."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 3,
+      "itemIndex": 4,
+      "fr": "Allergènes déclarés : œuf, produits laitiers."
+    },
+    {
+      "placeId": "dtapas-covap-cordoba",
+      "sectionIndex": 3,
+      "itemIndex": 5,
+      "fr": "Allergènes déclarés : produits laitiers, gluten."
+    }
+  ]
+}

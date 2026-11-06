@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "taberna-salinas",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 2,
+      "itemIndex": 12,
+      "fr": "Flamenquín cordouan au jambon, roulé et pané."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 3,
+      "itemIndex": 0,
+      "fr": "Morue enrobée de pâte à frire puis frite."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 3,
+      "itemIndex": 1,
+      "fr": "Poisson mariné en adobo à la cordouane, japuta ou rosada selon la carte."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 3,
+      "itemIndex": 2,
+      "fr": "Anchois marinés au vinaigre."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 3,
+      "itemIndex": 3,
+      "fr": "Anchois marinés puis frits."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 3,
+      "itemIndex": 4,
+      "fr": "Calamars proposés frits ou cuits à la plancha."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 3,
+      "itemIndex": 5,
+      "fr": "Crevettes enrobées de pâte à frire puis frites."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 3,
+      "itemIndex": 6,
+      "fr": "Sole cuite à la plancha, préparée à la manière de la maison."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 3,
+      "itemIndex": 7,
+      "fr": "Petits morceaux de sole frits."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 4,
+      "itemIndex": 0,
+      "fr": "Crème aux œufs traditionnelle à la cordouane."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 4,
+      "itemIndex": 1,
+      "fr": "Gâteau au fromage ; style et accompagnements non précisés."
+    },
+    {
+      "placeId": "taberna-salinas",
+      "sectionIndex": 4,
+      "itemIndex": 2,
+      "fr": "Jus d’orange naturel fraîchement pressé."
+    }
+  ]
+}

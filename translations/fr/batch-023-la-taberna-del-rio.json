@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "la-taberna-del-rio",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 0,
+      "itemIndex": 0,
+      "fr": "Tartine garnie d’un anchois de Cantabrie, de pâté de piment piparra et d’huile d’olive vierge extra."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 0,
+      "itemIndex": 1,
+      "fr": "Assortiment de morcón ibérique, de mortadelle de Bologne et de sobrasada des Pedroches, accompagné de pain à l’huile d’olive."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 0,
+      "itemIndex": 2,
+      "fr": "Sélection de fromages espagnols affinés bénéficiant d’une appellation d’origine protégée, avec bâtonnets de maïs faits maison."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 0,
+      "itemIndex": 3,
+      "fr": "Anchois marinés au vinaigre accompagnés de crème d’avocat et de fenouil mariné."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 0,
+      "itemIndex": 4,
+      "fr": "Ensaladilla au thon avec mayonnaise préparée à l’huile d’olive vierge extra."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 0,
+      "itemIndex": 5,
+      "fr": "Salade de tomates cerises confites, chermoula à la marocaine et maquereau à l’huile d’olive vierge extra."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 0,
+      "itemIndex": 6,
+      "fr": "Cœurs de laitue avec vinaigre de coing de Priego, fromage de chèvre payoya, blanc de poulet rôti et croûtons."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 0,
+      "itemIndex": 7,
+      "fr": "Tartare de salchichón ibérique avec chips de pommes de terre, crème aigre au citron vert et crackers regañás à la tomate et à l’origan."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 1,
+      "itemIndex": 0,
+      "fr": "Salmorejo, crème froide cordouane de tomate et de pain, accompagné d’épaule de porc ibérique séchée et d’œuf fermier."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 1,
+      "itemIndex": 1,
+      "fr": "Mazamorra à la pistache avec confiture de figues sèches au vin Pedro Ximénez et caramel salé."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 1,
+      "itemIndex": 2,
+      "fr": "Aubergines frites accompagnées de miel de Montoro et de fromage de chèvre de Zuheros."
+    },
+    {
+      "placeId": "la-taberna-del-rio",
+      "sectionIndex": 1,
+      "itemIndex": 3,
+      "fr": "Pommes de terre surmontées d’œufs au plat et d’épaule de porc ibérique séchée."
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "status": "candidate_awaiting_semantic_review",
+    "source": "data/places.json",
+    "restaurant": "la-bandera-cafe",
+    "language": "fr",
+    "catalogModified": false
+  },
+  "entries": [
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 2,
+      "itemIndex": 3,
+      "fr": "Chocolat chaud préparé avec de l’eau."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 2,
+      "itemIndex": 4,
+      "fr": "Chocolat chaud au lait végétal."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 3,
+      "itemIndex": 0,
+      "fr": "Jus d’orange fraîchement pressé."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 3,
+      "itemIndex": 1,
+      "fr": "Jus d’ananas."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 3,
+      "itemIndex": 2,
+      "fr": "Jus de pêche."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 3,
+      "itemIndex": 3,
+      "fr": "Jus de tomate."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 3,
+      "itemIndex": 4,
+      "fr": "Milk-shake au chocolat."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 3,
+      "itemIndex": 5,
+      "fr": "Milk-shake à la vanille."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 3,
+      "itemIndex": 6,
+      "fr": "Milk-shake à la fraise."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 4,
+      "itemIndex": 0,
+      "fr": "Toast à l’huile d’olive vierge extra."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 4,
+      "itemIndex": 1,
+      "fr": "Toast à l’huile d’olive et à la tomate."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 4,
+      "itemIndex": 2,
+      "fr": "Toast au beurre Lorenzana."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 4,
+      "itemIndex": 3,
+      "fr": "Toast au beurre et à la confiture."
+    },
+    {
+      "placeId": "la-bandera-cafe",
+      "sectionIndex": 4,
+      "itemIndex": 4,
+      "fr": "Toast au pâté ibérique."
+    }
+  ]
+}
