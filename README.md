@@ -2,6 +2,8 @@
 
 Aplicación estática y mobile-first de búsqueda gastronómica en Córdoba. Proyecto de Helio Software Studios.
 
+> **Estado actualizado (06/11/2026):** francés público ES/EN/FR y fase 3 de QA integral en marcha. Las PR [#44–#50](https://github.com/Helioven/helio-gastro/pulls?q=is%3Apr+is%3Amerged) están integradas en `main`. La cobertura automática incluye enlaces, rendimiento de carga FR, caché/recargas, navegación accesible y avisos dinámicos. **El contraste visual sigue pendiente de revisión real.** Consulta [Estado vigente y continuación](#estado-vigente-fase-3-qa-integral--6-de-noviembre-de-2026) al final de este documento.
+
 ## Incluye
 - Buscador por plato, presupuesto por persona, zona y fiabilidad del precio.
 - Comparador de hasta 3 establecimientos.
@@ -1228,3 +1230,39 @@ Helio autorizó expresamente activar el francés públicamente e integrarlo en `
 - **Límite de alcance:** no se incorporan todavía horarios no verificados, reseñas, buzón, resúmenes ni imágenes. Cualquier automatización funcional adicional debe evaluarse después de las dependencias de QA y recibir aprobación de Helio.
 
 **Siguiente paso operativo:** revisar el PR #45 con su PASS y decidir su integración en `main`; continuar después con una medición reproducible de rendimiento, en una tanda pequeña y reversible. Distinguir siempre prueba propuesta, ejecutada, PASS y revisión humana pendiente.
+
+
+---
+
+## Estado vigente: fase 3 QA integral — 6 de noviembre de 2026
+
+> Este bloque tiene prioridad sobre las referencias históricas a tareas pendientes de las secciones anteriores. Mantener las decisiones editoriales de alcance de la versión 1.0: no ampliar fases ni publicar datos parciales sin autorización.
+
+### Estado de publicación y ramas
+
+- **Francés público ES/EN/FR:** autorizado por Helio e integrado en `main` mediante [PR #44](https://github.com/Helioven/helio-gastro/pull/44); permanece la carga diferida de los 107 lotes de descripciones FR al seleccionar francés ([PR #47](https://github.com/Helioven/helio-gastro/pull/47)).
+- **GitHub Pages:** [#547](https://github.com/Helioven/helio-gastro/actions/runs/42203305110) finalizó **PASS** para la versión anterior; tras la fusión de la PR #50, el despliegue [#548](https://github.com/Helioven/helio-gastro/actions) y la regresión de `main` #889 se activaron. **Comprobar su conclusión real en Actions**; no se considera completado el despliegue de la última integración mientras esté en curso.
+- **Última fusión de alcance QA:** [PR #50](https://github.com/Helioven/helio-gastro/pull/50), **fusionada** en `main` en `cc93989fe359ef9eca93c0215d0fc47547ef0602`. Su rama de trabajo ya no es la fuente de verdad.
+- **Catálogo:** 44 registros; **El Caballo Rojo** permanece `hidden: true`, de modo que 43 son visibles en la aplicación. No dar por verificadas todas las cartas ni inferir precios, ingredientes, alérgenos u horarios no documentados. Los 107 lotes FR y las 1.232 descripciones no equivalen a certificación lingüística profesional ni a vigencia de la fuente.
+
+### Auditorías incorporadas y evidencia CI
+
+| Entrega | Alcance probado | Evidencia |
+|---|---|---|
+| [PR #45](https://github.com/Helioven/helio-gastro/pull/45) · HG-QA-EXT-001 | Auditoría sintáctica de 185 URL HTTPS, 54 dominios, sin errores estructurales. **No comprueba enlaces vivos ni cartas actuales.** | [#874 PASS](https://github.com/Helioven/helio-gastro/actions/runs/42192813470) y [#876 PASS en segundo intento](https://github.com/Helioven/helio-gastro/actions/runs/42193878959); timeout intermitente en un test de filtro FR en el primer intento de #876 |
+| [PR #46](https://github.com/Helioven/helio-gastro/pull/46) · HG-QA-PERF-001 | Línea base local: 107 solicitudes FR y 263.904 bytes de transferencia incluso en español; mediciones en escritorio y viewport móvil simulado. | [#878 PASS](https://github.com/Helioven/helio-gastro/actions/runs/42196222946) |
+| [PR #47](https://github.com/Helioven/helio-gastro/pull/47) · carga diferida | **0** solicitudes de lotes FR en ES y EN, **107** tras elegir FR, sin descargas adicionales al volver a FR en la misma página; idioma persistente. | [#880 PASS](https://github.com/Helioven/helio-gastro/actions/runs/42198601384), [#881 PASS](https://github.com/Helioven/helio-gastro/actions/runs/42199574671) |
+| [PR #48](https://github.com/Helioven/helio-gastro/pull/48) · HG-QA-CACHE-001 | Recargas ES/EN/FR, favoritos, modo de servicio, exclusión del local oculto e inventario informativo de cabeceras de caché; **sin modo offline certificado**. | #882 FAIL por variable `URL` que ocultaba el constructor nativo; corregida, [#883 PASS](https://github.com/Helioven/helio-gastro/actions/runs/42200960658) |
+| [PR #49](https://github.com/Helioven/helio-gastro/pull/49) · HG-QA-A11Y-001 | Teclado, envío con Enter, foco de resultados y fichas, retorno de foco, etiquetas y regiones semánticas ES/EN/FR en escritorio/móvil simulado. | [#885 PASS](https://github.com/Helioven/helio-gastro/actions/runs/42202315846), [#886 PASS](https://github.com/Helioven/helio-gastro/actions/runs/42203305436) |
+| [PR #50](https://github.com/Helioven/helio-gastro/pull/50) · HG-QA-A11Y-002 | Inventario de posibles contrastes y avisos dinámicos ES/EN/FR. #887 FAIL por exigir una búsqueda de La Montillana en modo Merienda; el test se corrigió para comprobar el aviso de Merienda y buscar el local bajo Comida. | [#888 PASS](https://github.com/Helioven/helio-gastro/actions/runs/42204755067) |
+
+**Limitación crítica de la última auditoría:** en el CI #888 se evaluaron **14 selectores por perfil e idioma**, pero los **14 quedaron clasificados como no medibles** en cada una de las seis combinaciones (escritorio/móvil × ES/EN/FR), por fondos con degradados/transparencias y límites del algoritmo. El resultado PASS **solo certifica las aserciones estructurales del test**, **no** que el contraste sea conforme, ni que existan cero defectos de contraste. No afirmar certificación WCAG.
+
+### Siguiente sesión: prioridades y criterios de aceptación
+
+1. **Comprobar primero GitHub Actions:** estado exacto de regresión `main` #889 y Pages #548 tras fusionar PR #50. Corregir cualquier fallo real antes de avanzar.
+2. **Auditoría de contraste con evidencia útil:** revisar `qa-reports/contrast-status-inventory.json` de #888, capturas y CSS. Refinar el cálculo para colores opacos sobre fondos sólidos sin declarar conformidad donde haya degradados/transparencia. Añadir comprobaciones manuales dirigidas de texto normal, texto pequeño, botones y estados de foco en móvil y escritorio, ES/EN/FR. Registrar defectos reproducibles y prioridad; corregir solo los confirmados.
+3. **Avisos dinámicos y lectores de pantalla:** diseñar prueba manual con NVDA/VoiceOver para búsquedas, favoritos, errores y comparador; evitar confundir presencia de `aria-live` con anuncio audible confirmado.
+4. **Regresión y documentación:** ejecutar CI completo tras cada cambio, documentar PASS/FAIL/pendiente, actualizar README y conservar El Caballo Rojo oculto; no modificar cartas, precios, traducciones, reseñas ni imágenes sin respaldo y autorización.
+
+**Límites vigentes:** la PWA tiene un manifiesto, pero no se ha comprobado soporte offline mediante service worker; no añadir caché persistente para cartas/precios sin política de caducidad y validación. La fase 3 sigue **en curso**, no constituye lanzamiento final aprobado.
