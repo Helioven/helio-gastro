@@ -1196,7 +1196,12 @@ function recommendationEntries(term){
 // Exact normalized recommendation names map to generic, shared illustrations, never venue photos.
 const DISH_ILLUSTRATIONS=Object.freeze({
  'flamenquin':'flamenquin.webp', 'salmorejo':'salmorejo.webp', 'rabo de toro':'rabo-de-toro.webp',
- 'berenjenas':'berenjenas-con-miel.webp', 'mazamorra':'mazamorra.webp'
+ 'berenjenas':'berenjenas-con-miel.webp', 'mazamorra':'mazamorra.webp',
+ 'croquetas':'croquetas.webp', 'tortilla':'tortilla-de-patatas.webp', 'tortilla de patatas':'tortilla-de-patatas.webp',
+ 'boquerones fritos':'boquerones-fritos.webp', 'huevos rotos':'huevos-rotos.webp',
+ 'hamburguesa':'hamburguesa.webp', 'pizza':'pizza.webp', 'cachopo':'cachopo.webp',
+ 'ensaladilla':'ensaladilla-rusa.webp', 'ensaladilla rusa':'ensaladilla-rusa.webp',
+ 'nachos':'nachos.webp', 'tarta de queso':'tarta-de-queso.webp'
 });
 const illustrativeImageLabel=language=>({es:'Imagen ilustrativa',en:'Illustrative image',fr:'Image illustrative'}[language]||'Imagen ilustrativa');
 function createDishVisual(imageUrl){
