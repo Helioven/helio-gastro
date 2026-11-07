@@ -1272,50 +1272,50 @@ Helio autorizó expresamente activar el francés públicamente e integrarlo en `
 
 ## Handoff vigente — renovación visual ManoloLabs y QA (7 de noviembre de 2026)
 
-> **Fuente de verdad para reanudar la nueva fase visual.** Este apartado documenta el trabajo realizado en la rama \`feature/manololabs-visual-20261107\` y complementa —no sustituye— la fase 3 de QA integral descrita arriba. **No implica lanzamiento público ni aprobación para fusionar en \`main\`.** Revisar GitHub Actions y el HEAD real antes de continuar.
+> **Fuente de verdad para reanudar la nueva fase visual.** Este apartado documenta el trabajo realizado en la rama `feature/manololabs-visual-20261107` y complementa —no sustituye— la fase 3 de QA integral descrita arriba. **No implica lanzamiento público ni aprobación para fusionar en `main`.** Revisar GitHub Actions y el HEAD real antes de continuar.
 
 ### Repositorio, alcance y control de versiones
 
-- **Repositorio:** \`Helioven/helio-gastro\`. **Rama exclusiva de la renovación:** \`feature/manololabs-visual-20261107\`; \`main\` se mantiene sin estos cambios hasta autorización expresa de Helio.
-- El primer agente Codex trabajó primero sobre una copia local del repositorio. Como la autenticación de Git desde Codex falla con \`Cannot prompt because user interactivity has been disabled\`, las subidas se realizan manualmente con **GitHub Desktop → Push origin**; no repetir intentos automáticos de credenciales ni compartir tokens.
+- **Repositorio:** `Helioven/helio-gastro`. **Rama exclusiva de la renovación:** `feature/manololabs-visual-20261107`; `main` se mantiene sin estos cambios hasta autorización expresa de Helio.
+- El primer agente Codex trabajó primero sobre una copia local del repositorio. Como la autenticación de Git desde Codex falla con `Cannot prompt because user interactivity has been disabled`, las subidas se realizan manualmente con **GitHub Desktop → Push origin**; no repetir intentos automáticos de credenciales ni compartir tokens.
 - **Commits clave:**
-  - \`9ca9037\`: prototipo de nueva presentación visual (portada/tarjetas, espacio para imágenes y firma discreta).
-  - \`e3b4b74\`: piloto de cinco especialidades, imágenes ilustrativas y prueba de integración.
-  - \`57862da\`: segunda tanda de ilustraciones y ampliación del mapeo de recursos.
-  - \`1f4c603\`: sustitución final aprobada de \`boquerones-fritos.webp\` y \`huevos-rotos.webp\`, sin cambiar las otras trece imágenes.
-  - \`e39b1b0\`: corrección de contadores dinámicos en francés, prueba \`scripts/test-recommendation-count-i18n.mjs\` e integración en workflow.
-- Mantener fuera de commits los informes locales generados en \`qa-reports/\`, salvo petición expresa.
+  - `9ca9037`: prototipo de nueva presentación visual (portada/tarjetas, espacio para imágenes y firma discreta).
+  - `e3b4b74`: piloto de cinco especialidades, imágenes ilustrativas y prueba de integración.
+  - `57862da`: segunda tanda de ilustraciones y ampliación del mapeo de recursos.
+  - `1f4c603`: sustitución final aprobada de `boquerones-fritos.webp` y `huevos-rotos.webp`, sin cambiar las otras trece imágenes.
+  - `e39b1b0`: corrección de contadores dinámicos en francés, prueba `scripts/test-recommendation-count-i18n.mjs` e integración en workflow.
+- Mantener fuera de commits los informes locales generados en `qa-reports/`, salvo petición expresa.
 
 ### Nueva interfaz e ilustraciones aprobadas
 
 - Estilo de interfaz: **azul marino y acentos cálidos** de ManoloLabs, tarjetas con zona visual, etiqueta **«Imagen ilustrativa»** localizada en ES/EN/FR, carga diferida, reutilización por plato normalizado y marcador abstracto de respaldo cuando no hay imagen o falla su carga.
 - Las ilustraciones son **representaciones generales generadas**, **no fotos de comida ofrecida por restaurantes concretos**. No inferir ingredientes, raciones, disponibilidad ni precios a partir de ellas.
-- **15 imágenes aprobadas visualmente por Helio**, en \`assets/dishes/\`, formato WebP: **flamenquín cordobés, salmorejo, rabo de toro, berenjenas con miel, mazamorra, croquetas, tortilla de patatas, boquerones fritos, huevos rotos con jamón, hamburguesa, pizza, cachopo, ensaladilla rusa, nachos y tarta de queso**. Consultar \`assets/dishes/README.md\` para el mapeo y la ampliación.
+- **15 imágenes aprobadas visualmente por Helio**, en `assets/dishes/`, formato WebP: **flamenquín cordobés, salmorejo, rabo de toro, berenjenas con miel, mazamorra, croquetas, tortilla de patatas, boquerones fritos, huevos rotos con jamón, hamburguesa, pizza, cachopo, ensaladilla rusa, nachos y tarta de queso**. Consultar `assets/dishes/README.md` para el mapeo y la ampliación.
 - Las versiones definitivas del flamenquín (largo y artesanal, patatas fritas, lechuga y tomate), berenjenas en bastones con miel, boquerones (fritura fina, piel plateada visible y limón) y huevos rotos (patatas en bastones, yema mezclada y jamón en trocitos) fueron aprobadas tras varias iteraciones de revisión visual. **No regenerarlas ni reemplazarlas sin una nueva aprobación.**
 - **Solo 7 de las 15 imágenes aparecen hoy en accesos generales existentes:** seis en «Comer» —flamenquín, salmorejo, rabo de toro, croquetas, mazamorra, berenjenas— y tortilla en «Cenar». Las otras ocho —boquerones, huevos rotos, hamburguesa, pizza, cachopo, ensaladilla rusa, nachos y tarta de queso— **están disponibles como assets**, pero no tienen tarjeta general visible; no inventar platos o asociaciones con restaurantes para forzar su aparición. Las categorías generales restantes conservan marcadores abstractos.
 
 ### Evidencia y límites de QA
 
-- [GitHub Actions #891](https://github.com/Helioven/helio-gastro/actions/runs/42369802251): \`completed/success\` para \`9ca9037\`, **no** para las ampliaciones posteriores.
-- [GitHub Actions #894](https://github.com/Helioven/helio-gastro/actions/runs/42376874403): \`completed/success\` para \`1f4c603\`, con la tanda final de las 15 ilustraciones.
-- **Corrección FR \`e39b1b0\`:** al preparar este handoff, la ejecución manual **#895** estaba **en curso**; **comprobar su conclusión** en [Actions](https://github.com/Helioven/helio-gastro/actions) y no dar PASS hasta confirmarla. El CI previo #894 **no valida** esta corrección posterior.
+- [GitHub Actions #891](https://github.com/Helioven/helio-gastro/actions/runs/42369802251): `completed/success` para `9ca9037`, **no** para las ampliaciones posteriores.
+- [GitHub Actions #894](https://github.com/Helioven/helio-gastro/actions/runs/42376874403): `completed/success` para `1f4c603`, con la tanda final de las 15 ilustraciones.
+- **Corrección FR `e39b1b0`:** al preparar este handoff, la ejecución manual **#895** estaba **en curso**; **comprobar su conclusión** en [Actions](https://github.com/Helioven/helio-gastro/actions) y no dar PASS hasta confirmarla. El CI previo #894 **no valida** esta corrección posterior.
 - El agente reportó PASS **local** de contadores ES/EN/FR (singular, cero, cambios sin recarga, recarga y cambio de momento gastronómico), regresiones de búsqueda y resultados FR, ilustraciones, sintaxis y catálogo. Esto **no sustituye** el CI oficial.
 - En la inspección visual se probaron recorridos de portada, tarjetas, resultados, favoritos, comparador, ficha y pie en **360×800, 390×844, 768×1024 y 1365×900**; no se detectó desbordamiento global en esos recorridos. Algunas capturas de tableta/escritorio se obtuvieron redimensionando una sesión cargada; no equivalen a validación exhaustiva por dispositivo.
-- **Incidencia detectada:** en francés, la etiqueta de imagen sí traducía pero los contadores de tarjetas seguían en español. La corrección de \`e39b1b0\` distingue \`répertoriés\` y \`vérifiés\` sin alterar cifras y añade prueba de regresión; **pendiente corroborar CI #895**.
+- **Incidencia detectada:** en francés, la etiqueta de imagen sí traducía pero los contadores de tarjetas seguían en español. La corrección de `e39b1b0` distingue `répertoriés` y `vérifiés` sin alterar cifras y añade prueba de regresión; **pendiente corroborar CI #895**.
 - **Todavía pendientes:** revisión visual humana exhaustiva de tarjetas (especialmente encuadre ajustado del flamenquín), fichas y comparadores largos, dispositivos reales, contraste con mediciones válidas, lector de pantalla y estados no inspeccionados. Un PASS automático no equivale a certificación WCAG ni a aprobación editorial completa.
 
 ### Identidad ManoloLabs by Helio aprobada conceptualmente
 
-- Marca seleccionada: **ManoloLabs by Helio**, lema **«Ideas humanas · Tecnología inteligente»**. Paleta: azul marino \`#0B2545\`, naranja \`#FF8A00\`, amarillo \`#FFC857\`, azul \`#3B82F6\`, blanco cálido \`#F5F5F4\`; tipografía de referencia Poppins/Montserrat.
+- Marca seleccionada: **ManoloLabs by Helio**, lema **«Ideas humanas · Tecnología inteligente»**. Paleta: azul marino `#0B2545`, naranja `#FF8A00`, amarillo `#FFC857`, azul `#3B82F6`, blanco cálido `#F5F5F4`; tipografía de referencia Poppins/Montserrat.
 - **Mascota oficial actual:** robot 3D blanco y metálico con **dos antenas**, gafas oscuras cuadradas, bigote marrón, acentos luminosos azules y **M azul luminosa en el pecho**. El modelo antiguo del cartel tiene una sola antena y **no debe reutilizarse**; las imágenes oficiales de referencia están en la conversación con Helio y **deben proporcionarse al agente** para integrarlas. Los accesorios (gorro, taza, etc.) no son rasgos permanentes.
 - El pie ya muestra una firma discreta «ManoloLabs by Helio», pero la cabecera aún contiene **«HELIO SOFTWARE STUDIOS»**. **Pendiente** actualizar logotipo, cabecera y variantes/favicons de forma coherente, manteniendo **Helio Gastro** como nombre de la aplicación. No afirmar que esta integración visual esté acabada.
 
 ### Próximos pasos acordados, sin autorización automática para ejecutarlos
 
-1. **Cerrar CI de \`e39b1b0\` (#895)** y anotar PASS/FAIL real; si falla, investigar y reparar únicamente la incidencia demostrada en la rama.
+1. **Cerrar CI de `e39b1b0` (#895)** y anotar PASS/FAIL real; si falla, investigar y reparar únicamente la incidencia demostrada en la rama.
 2. **Revisión visual selectiva final** en móvil/escritorio de los contadores FR, tarjetas e imagen del flamenquín; no modificar datos a ciegas.
 3. **Preparar propuesta de identidad ManoloLabs** con las referencias oficiales del Manolo de dos antenas; exigir aprobación visual de Helio antes de integrar. No reemplazar Helio Gastro como título.
 4. **Evaluar uso visible de las ocho ilustraciones sin tarjeta** y mejora de marcadores de categorías, sin inventar platos ni ofertas de locales. Considerar la legibilidad del comparador largo, especialmente en móvil.
 5. Mantener pendientes para fases posteriores **horarios con fuente**, **reseñas autorizadas y «El Consejo de Manolo»** (hasta 100–200 reseñas cuando sea legalmente posible, sin extracción masiva no autorizada de Google), buzón moderado y auditoría integral final. No inventar puntuaciones ni testimonios ni mezclar resúmenes editoriales con valoraciones de terceros.
 
-**Regla de continuidad:** leer este handoff y el README previo, verificar HEAD y CI, proponer un cambio de alcance limitado, **obtener aprobación de Helio**, aplicar en rama de trabajo, pasar pruebas, documentar y **no fusionar/desplegar \`main\` sin autorización expresa**.
+**Regla de continuidad:** leer este handoff y el README previo, verificar HEAD y CI, proponer un cambio de alcance limitado, **obtener aprobación de Helio**, aplicar en rama de trabajo, pasar pruebas, documentar y **no fusionar/desplegar `main` sin autorización expresa**.
