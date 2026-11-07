@@ -55,7 +55,7 @@ window.GASTRO_I18N = Object.freeze({
     [/^(\d+) precio\(s\) de carta documentado\(s\) · Ver ficha para detalles$/,m=>m[1]+' documented menu prices · View details'],
     [/^Desde (.+) · (.+)$/,m=>'From '+m[1]+' · '+translateValue(m[2])],
     [/^Especialidades: (.+)$/,m=>'Specialities: '+m[1]],
-    [/^🍴 Plato encontrado: (.+)$/,m=>'🍴 Dish found: '+m[1]],
+    [/^🍴 Platos encontrados$/,()=> '🍴 Matching dishes'],
     [/^Coste de comida por persona: (.+)$/,m=>'Meal cost per person: '+m[1]],
     [/^Comida completa por persona: (.+)$/,m=>'Full meal per person: '+m[1]],
     [/^Comida completa: (.+)$/,m=>'Full meal: '+m[1]],
@@ -240,6 +240,7 @@ window.GASTRO_I18N = Object.freeze({
   ]);
   const translateFrenchResultsText=(node,source)=>node.parentElement?.closest('#results-section,#detail-section,#compare-section')&&!node.parentElement.closest('#results,#detail-content,#compare-output')?(frenchResultsLabels.get(normalize(source))||source):source;
   const frenchDynamicResults=new Map([
+    ['🍴 Platos encontrados','🍴 Plats correspondants'],
     ['Consulta especialidades y fuentes en la ficha','Consultez les spécialités et les sources dans la fiche.'],
     ['Precio del plato pendiente de confirmar','Prix du plat en attente de confirmation'],
     ['Precio del plato en este formato pendiente de confirmar','Prix du plat dans ce format en attente de confirmation'],
@@ -248,7 +249,7 @@ window.GASTRO_I18N = Object.freeze({
     ['✓ Quitar del comparador','✓ Retirer du comparateur'],
     ['+ Comparar','+ Comparer']
   ]);
-  const translateFrenchDynamicResult=(node,source)=>node.parentElement?.closest('#results')&&node.parentElement.matches('.result-pending,.note,.detail-button,button')?(frenchDynamicResults.get(normalize(source))||source):source;
+  const translateFrenchDynamicResult=(node,source)=>node.parentElement?.closest('#results')&&node.parentElement.matches('.result-pending,.note,.detail-button,.matching-dishes-label,button')?(frenchDynamicResults.get(normalize(source))||source):source;
   // Only compare-output content; source data, dishes, amounts and URLs are unchanged.
   const frenchCompareLabels=new Map([
     ['📍 Ver mapa','📍 Voir la carte'],

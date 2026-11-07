@@ -692,8 +692,23 @@ function draw(){
   const serviceNote=document.createElement('p');serviceNote.className='service-notice';serviceNote.textContent=serviceKnown(p)?'Carta específica registrada · horario pendiente de confirmar':'Carta general · servicio y horarios sin verificar';card.append(serviceNote);
   if(state.appliedTerm){
    const matches=p.dishes.filter(d=>clean(d).includes(state.appliedTerm));
-   const matched=document.createElement('p');matched.className='matching-dishes';
-   matched.textContent=matches.length?'🍴 Plato encontrado: '+matches.join(' · '):'Coincidencia con el nombre del local';
+   const matched=document.createElement(matches.length?'div':'p');
+   matched.className='matching-dishes';
+   if(matches.length){
+    const heading=document.createElement('strong');
+    heading.className='matching-dishes-label';
+    heading.textContent='🍴 Platos encontrados';
+    const dishList=document.createElement('ul');
+    for(const dish of matches){
+     const item=document.createElement('li');
+     item.dataset.keepDishSpanish='';
+     item.textContent=dish;
+     dishList.append(item);
+    }
+    matched.append(heading,dishList);
+   }else{
+    matched.textContent='Coincidencia con el nombre del local';
+   }
    card.append(matched);
   } else {
    const dishes=document.createElement('p');
@@ -1157,6 +1172,11 @@ function filter(event,restoring=false){
  more.hidden=!dish || !(coverage.unpriced>0 && (max!==null || kind!==''));
  if(dish){
   coverageBox.textContent='En nuestra base actual: '+coverage.total+' local(es) con «'+el('dish').value.trim()+'» registrado(s); '+coverage.priced+' con precio de ese plato documentado y '+coverage.unpriced+' sin precio. Esto NO representa todos los bares de Córdoba.';
+ }
+ const illustration=DISH_ILLUSTRATIONS[dish];
+ el('result-dish-visual').replaceChildren();
+ if(state.filtered.length && Object.hasOwn(DISH_ILLUSTRATIONS,dish)){
+  el('result-dish-visual').append(createDishVisual('./assets/dishes/'+illustration));
  }
  draw();compare();updateQuickNav();
  if(!restoring){saveSearch();el('results-section').scrollIntoView({behavior:'auto',block:'start'});el('results-heading').focus({preventScroll:true});}

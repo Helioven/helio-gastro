@@ -30,7 +30,7 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 .include-unknown{display:flex;align-items:flex-start;gap:10px;background:#193951;border:1px solid #52738c;border-radius:11px;padding:11px 13px;color:#f9e2c0;font-size:13px}.include-unknown input{width:19px;height:19px;min-width:19px;margin:2px 0 0;accent-color:#ffcc84}.include-unknown small{display:block;color:#bed5e4;font-size:11px;font-weight:400}.price-unknown{background:#3d3440;color:#ffe4c5!important;border-left:3px solid #f0b679;border-radius:5px;padding:8px 10px}
 
 /* 1.4: focus visible after explicit search */
-#results-heading:focus{outline:none}#results-section{scroll-margin-top:12px}
+#results-heading:focus{outline:none}
 
 /* 1.5: puerta de búsqueda real; la vista no enseña resultados hasta ejecutar la búsqueda */
 #results-section[hidden],#compare-section[hidden]{display:none!important}
@@ -46,6 +46,8 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 /* 1.8: Agrupacion por verificabilidad y plato protagonista */
 .result-group-title{font-size:15px;color:#ffddac;border-bottom:1px solid #557792;padding:13px 0 8px;margin:10px 0 7px}
 .matching-dishes{background:rgba(255,205,133,.08);padding:9px 11px;border-left:3px solid #ffd090;border-radius:6px;font-weight:650;color:#ffe6ba!important}
+.matching-dishes ul{margin:5px 0 0;padding-inline-start:19px;font-size:13px;font-weight:400;line-height:1.45}
+.matching-dishes li + li{margin-top:4px}
 
 /* 2.0: filtro de formato de ración */
 #portion:disabled{opacity:.45;cursor:not-allowed}
@@ -115,7 +117,7 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 .quick-nav a:hover,.quick-nav a:focus-visible{background:#2b607f}
 .quick-nav a[hidden]{display:none!important}
 .quick-nav span{color:#ffdaa1;font-variant-numeric:tabular-nums}
-#recommendations-section,#search-section,#favorite-section,#compare-section{scroll-margin-top:85px}
+#recommendations-section,#search-section,#favorite-section,#compare-section,#results-section{scroll-margin-top:85px}
 @media(max-width:560px){.quick-nav{margin:8px -2px 0;padding:7px 5px;gap:5px}.quick-nav a{padding:8px 9px;font-size:12px;min-height:42px}}
 
 /* 3.0: Selector de momento gastronómico y avisos de disponibilidad prudentes */
@@ -190,12 +192,31 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 .dish-visual::after{width:8px;height:8px;left:18px;top:18px;background:#ff8a00;box-shadow:15px 0 #ffc857,30px 0 #3b82f6}
 .dish-visual:has(img)::before,.dish-visual:has(img)::after{display:none}
 .dish-visual img{display:block;width:100%;height:100%;object-fit:cover}
-.recommendation-tile .dish-visual-label{position:absolute;right:7px;bottom:7px;padding:3px 7px;border-radius:5px;background:#0b2545;color:#fff;font-size:10px;line-height:1.3;font-weight:700}
+.dish-visual .dish-visual-label{position:absolute;right:7px;bottom:7px;padding:3px 7px;border-radius:5px;background:#0b2545;color:#fff;font-size:10px;line-height:1.3;font-weight:700}
 .dish-visual:has(img){height:155px;background:#0b2545}
 .studio-signature{display:block;margin-top:14px;color:#f5f5f4;font-weight:750;letter-spacing:.04em}.studio-signature span{color:#ffc857;font-weight:500}
 @media(max-width:720px){.recommendation-dishes{grid-template-columns:repeat(2,minmax(0,1fr))}.dish-visual{height:100px}}
 @media(max-width:360px){.recommendation-dishes{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.recommendation-tile strong,.recommendation-tile>span:not(.dish-visual),.recommendation-tile .dish-explanation{margin-left:10px;margin-right:10px}.dish-visual{height:84px}}
 @media(max-width:720px){.dish-visual:has(img){height:clamp(120px,34vw,170px)}}
+
+.result-context:has(.dish-visual){
+ display:grid;
+ grid-template-columns:minmax(0,1fr) clamp(108px,20vw,128px);
+ align-items:start;
+ gap:8px;
+ margin-bottom:6px;
+}
+.result-context:has(.dish-visual) .coverage-summary{margin:0;padding:8px 10px;line-height:1.4}
+.result-context:has(.dish-visual) ~ #results > .result-group-title:first-child{margin-top:0;padding-top:5px}
+#result-dish-visual .dish-visual{
+ height:auto;
+ aspect-ratio:4 / 3;
+ margin:0;
+ border-radius:10px;
+}
+@media(max-width:560px){
+ .compare-place li + li{margin-top:6px}
+}
 
 /* ManoloLabs: a typographic signature, subordinate to the product name. */
 .brand-copy{min-width:0}
