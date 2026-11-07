@@ -170,7 +170,17 @@ window.GASTRO_I18N = Object.freeze({
     ['Acceso directo','Accès direct'],
     ['Elige un plato y descubre directamente opciones documentadas de nuestra base, separadas por variante y formato. Más barato no significa mejor.','Choisissez un plat et découvrez les options documentées dans notre base, classées par variante et par format. Le moins cher n’est pas forcément le meilleur.']
   ]);
-  const translateFrenchRecommendationsText=(node,source)=>node.parentElement?.closest('#recommendations-section')&&!node.parentElement.closest('#recommendation-dishes')?(frenchRecommendationsLabels.get(normalize(source))||source):source;
+  const translateFrenchRecommendationsText=(node,source)=>{
+    if(node.parentElement?.matches('#recommendation-dishes .recommendation-tile > span:not(.dish-visual)')){
+      const match=normalize(source).match(/^(\d+) locales (registrados|verificados) · (\d+) con precio$/);
+      if(match){
+        const singular=Number(match[1])===1;
+        const status=match[2]==='verificados'?(singular?'vérifié':'vérifiés'):(singular?'répertorié':'répertoriés');
+        return match[1]+' '+(singular?'établissement':'établissements')+' '+status+' · '+match[3]+' avec prix';
+      }
+    }
+    return node.parentElement?.closest('#recommendations-section')&&!node.parentElement.closest('#recommendation-dishes')?(frenchRecommendationsLabels.get(normalize(source))||source):source;
+  };
   const frenchServiceLabels=new Map([
     ['¿Qué plan tienes ?','Quel repas avez-vous en tête ?'],
     ['¿Qué plan tienes?','Quel repas avez-vous en tête ?'],
