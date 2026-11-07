@@ -173,6 +173,28 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 #recommendation-results .recommendation-place-actions button{padding:9px 13px;border-radius:8px}
 @media(max-width:480px){#recommendation-results .recommendation-place{padding:12px}#recommendation-results .recommendation-place-items li{gap:5px 9px}#recommendation-results .recommendation-place-items li strong{font-size:.95rem}}
 
+/* Visual prototype: the decorative media area can later hold approved dish art. */
+.hero{position:relative;overflow:hidden;padding:clamp(28px,5vw,52px);border-color:#54718a;background:#0b2545;box-shadow:0 18px 42px #0003}
+.hero::after{content:"";position:absolute;right:-55px;top:-110px;width:270px;height:270px;border:1px solid #ffc85755;border-radius:50%;box-shadow:0 0 0 35px #ff8a0012,0 0 0 70px #ffc8570b;pointer-events:none}
+.hero h2,.hero p{position:relative;z-index:1;max-width:650px}.hero h2{font-size:clamp(30px,5.3vw,48px);letter-spacing:-.035em;line-height:1.12}.hero em{color:#ffc857}.hero .eyebrow{color:#ffc857}
+#recommendations-section{padding:clamp(16px,3vw,25px)}
+.recommendation-dishes{grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.recommendation-tile{display:flex;gap:6px;overflow:hidden;min-width:0;min-height:0;padding:0 0 16px;border:1px solid #547995;border-radius:16px;background:#153652;color:#f5f5f4;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.recommendation-tile:hover{transform:translateY(-3px);border-color:#ffc857;box-shadow:0 10px 22px #0004}
+.recommendation-tile:focus-visible{outline:3px solid #ffc857;outline-offset:3px}
+.recommendation-tile strong,.recommendation-tile>span:not(.dish-visual),.recommendation-tile .dish-explanation{margin-left:14px;margin-right:14px}
+.recommendation-tile strong{font-size:15px;line-height:1.3}.recommendation-tile>span:not(.dish-visual){font-size:12px;line-height:1.4;color:#d1e2ee}
+.dish-visual{position:relative;display:block;align-self:stretch;width:100%;height:110px;margin:0 0 8px;background:linear-gradient(135deg,#264f6e,#0b2545);overflow:hidden}
+.dish-visual::before,.dish-visual::after{content:"";position:absolute;border-radius:50%;pointer-events:none}
+.dish-visual::before{width:120px;height:120px;right:12%;top:12px;border:1px solid #ffc85780;box-shadow:0 0 0 13px #ffc85712,0 0 0 27px #ff8a000e}
+.dish-visual::after{width:8px;height:8px;left:18px;top:18px;background:#ff8a00;box-shadow:15px 0 #ffc857,30px 0 #3b82f6}
+.dish-visual:has(img)::before,.dish-visual:has(img)::after{display:none}
+.dish-visual img{display:block;width:100%;height:100%;object-fit:cover}
+.recommendation-tile .dish-visual-label{position:absolute;right:7px;bottom:7px;padding:3px 7px;border-radius:5px;background:#0b2545;color:#fff;font-size:10px;line-height:1.3;font-weight:700}
+.studio-signature{display:block;margin-top:14px;color:#f5f5f4;font-weight:750;letter-spacing:.04em}.studio-signature span{color:#ffc857;font-weight:500}
+@media(max-width:720px){.recommendation-dishes{grid-template-columns:repeat(2,minmax(0,1fr))}.dish-visual{height:100px}}
+@media(max-width:360px){.recommendation-dishes{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.recommendation-tile strong,.recommendation-tile>span:not(.dish-visual),.recommendation-tile .dish-explanation{margin-left:10px;margin-right:10px}.dish-visual{height:84px}}
+
 /* A single documented price needs no empty format column. */
 .menu-price-row.price-only-row{justify-content:flex-end;padding:3px 0}
 .menu-price-row.price-only-row span:empty{display:none}

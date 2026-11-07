@@ -1192,19 +1192,30 @@ function recommendationEntries(term){
  const priced=matches.flatMap(p=>servicePrices(p).filter(item=>recommendationDishMatches(item.dish,term)).map(item=>({p,item,portion:portionOf(item),variant:variantOf(item)})));
  return {matches,priced};
 }
+// A dish image must be supplied explicitly; no venue or dish photo is inferred.
+function createDishVisual(imageUrl){
+ const visual=document.createElement('span');visual.className='dish-visual';
+ if(!imageUrl){visual.setAttribute('aria-hidden','true');return visual}
+ const image=document.createElement('img');image.src=imageUrl;image.alt='';image.loading='lazy';
+ const badge=document.createElement('span');badge.className='dish-visual-label';
+ const language=window.HelioGastroLanguage?.get();
+ badge.textContent=language==='fr'?'Image illustrative':language==='en'?'Illustrative image':'Imagen ilustrativa';
+ visual.append(image,badge);return visual;
+}
 function renderRecommendations(){
  const deck=el('recommendation-dishes');deck.replaceChildren();
  for(const name of MODE_CONFIG[state.mode].dishes){
   const dish={name,icon:dishIcon(name)};
   const term=clean(dish.name),data=recommendationEntries(term);
   const btn=document.createElement('button');btn.type='button';btn.className='recommendation-tile';
+  const visual=createDishVisual();
   const label=document.createElement('strong');label.textContent=dish.icon+' '+dish.name;
   const count=document.createElement('span');
   count.textContent=state.mode==='desayuno'||state.mode==='merienda'
    ?(data.matches.length?data.matches.length+' locales verificados · '+new Set(data.priced.map(x=>x.p.id)).size+' con precio':'⏳ Pendiente de incorporar cartas verificadas')
    :data.matches.length+' locales registrados · '+new Set(data.priced.map(x=>x.p.id)).size+' con precio';
   const description=document.createElement('small');description.className='dish-explanation';description.dataset.dishExplanation='';description.textContent=dishExplanation(dish.name);description.hidden=window.HelioGastroLanguage?.get()!=='en';
-  btn.append(label,description,count);btn.addEventListener('click',()=>showRecommendations(dish.name));deck.append(btn);
+  btn.append(visual,label,description,count);btn.addEventListener('click',()=>showRecommendations(dish.name));deck.append(btn);
  }
 }
 function recommendationCompareButton(p,dishName){
