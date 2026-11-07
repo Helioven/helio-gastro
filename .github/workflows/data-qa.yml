@@ -178,6 +178,7 @@ jobs:
             scripts/test-fr-keyboard-map-dialog.mjs \
             scripts/inventory-fr-moriles-ribera-semantics.mjs \
             scripts/test-search-regression.mjs \
+            scripts/test-dish-illustrations.mjs \
             scripts/test-filter-regression.mjs \
             scripts/test-fr-favorites-populated.mjs \
             scripts/test-comparator-regression.mjs \

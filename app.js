@@ -376,6 +376,7 @@ function venueMenuPriceLabel(source,english){
 function refreshDishExplanations(){
  const english=window.HelioGastroLanguage?.get()==='en';
  const activeLanguage=window.HelioGastroLanguage?.get()||'es';
+ document.querySelectorAll('.dish-visual-label').forEach(node=>{node.textContent=illustrativeImageLabel(activeLanguage)});
  document.querySelectorAll('[data-set-menu-es]').forEach(node=>{node.textContent=english?node.dataset.setMenuEn:node.dataset.setMenuEs;});
  document.querySelectorAll('[data-source-label-es]').forEach(node=>{node.textContent=(english?node.dataset.sourceLabelEn:node.dataset.sourceLabelEs)+' ↗';});
  document.querySelectorAll('[data-source-audit-title]').forEach(node=>{node.textContent=english?'Source documentation (expand)':'Documentación de fuentes (desplegar)';});
@@ -1192,14 +1193,19 @@ function recommendationEntries(term){
  const priced=matches.flatMap(p=>servicePrices(p).filter(item=>recommendationDishMatches(item.dish,term)).map(item=>({p,item,portion:portionOf(item),variant:variantOf(item)})));
  return {matches,priced};
 }
-// A dish image must be supplied explicitly; no venue or dish photo is inferred.
+// Exact normalized recommendation names map to generic, shared illustrations, never venue photos.
+const DISH_ILLUSTRATIONS=Object.freeze({
+ 'flamenquin':'flamenquin.webp', 'salmorejo':'salmorejo.webp', 'rabo de toro':'rabo-de-toro.webp',
+ 'berenjenas':'berenjenas-con-miel.webp', 'mazamorra':'mazamorra.webp'
+});
+const illustrativeImageLabel=language=>({es:'Imagen ilustrativa',en:'Illustrative image',fr:'Image illustrative'}[language]||'Imagen ilustrativa');
 function createDishVisual(imageUrl){
  const visual=document.createElement('span');visual.className='dish-visual';
  if(!imageUrl){visual.setAttribute('aria-hidden','true');return visual}
- const image=document.createElement('img');image.src=imageUrl;image.alt='';image.loading='lazy';
- const badge=document.createElement('span');badge.className='dish-visual-label';
- const language=window.HelioGastroLanguage?.get();
- badge.textContent=language==='fr'?'Image illustrative':language==='en'?'Illustrative image':'Imagen ilustrativa';
+ const image=document.createElement('img');image.src=imageUrl;image.alt='';image.loading='lazy';image.decoding='async';
+ const badge=document.createElement('span');badge.className='dish-visual-label';badge.dataset.keepDishSpanish='';
+ badge.textContent=illustrativeImageLabel(window.HelioGastroLanguage?.get());
+ image.addEventListener('error',()=>{visual.replaceChildren();visual.setAttribute('aria-hidden','true')},{once:true});
  visual.append(image,badge);return visual;
 }
 function renderRecommendations(){
@@ -1208,7 +1214,8 @@ function renderRecommendations(){
   const dish={name,icon:dishIcon(name)};
   const term=clean(dish.name),data=recommendationEntries(term);
   const btn=document.createElement('button');btn.type='button';btn.className='recommendation-tile';
-  const visual=createDishVisual();
+  const illustration=DISH_ILLUSTRATIONS[term];
+  const visual=createDishVisual(illustration?'./assets/dishes/'+illustration:undefined);
   const label=document.createElement('strong');label.textContent=dish.icon+' '+dish.name;
   const count=document.createElement('span');
   count.textContent=state.mode==='desayuno'||state.mode==='merienda'
