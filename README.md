@@ -1338,9 +1338,9 @@ Helio autorizó expresamente activar el francés públicamente e integrarlo en `
 
 ### 0. Situación comprobada y controles de continuidad
 
-- Repositorio: \`Helioven/helio-gastro\`; rama exclusiva de trabajo visual: \`feature/manololabs-visual-20261107\`. **\`main\` permanece protegida de cambios no autorizados**: no hacer merge ni desplegar sin aprobación expresa.
-- **Branding integrado y confirmado en remoto:** commit \`c44afdd00cad661023abf9c7062a31965b62638d\` — \`feat(brand): integrate approved Manolo mascot and favicon\`; [CI #896 PASS](https://github.com/Helioven/helio-gastro/actions/runs/42390590855), correspondiente específicamente a ese commit. Cabecera: cabeza de Manolo; pie: busto y firma; favicon; error 404 de favicon corregido. No interpretar ese PASS como validación de trabajo posterior.
-- **Ilustraciones aprobadas:** 15 WebP en \`assets/dishes/\`, con etiqueta localizada «Imagen ilustrativa» (ES/EN/FR). Son conceptos generales, NO fotografías de platos servidos por un local.
+- Repositorio: `Helioven/helio-gastro`; rama exclusiva de trabajo visual: `feature/manololabs-visual-20261107`. **`main` permanece protegida de cambios no autorizados**: no hacer merge ni desplegar sin aprobación expresa.
+- **Branding integrado y confirmado en remoto:** commit `c44afdd00cad661023abf9c7062a31965b62638d` — `feat(brand): integrate approved Manolo mascot and favicon`; [CI #896 PASS](https://github.com/Helioven/helio-gastro/actions/runs/42390590855), correspondiente específicamente a ese commit. Cabecera: cabeza de Manolo; pie: busto y firma; favicon; error 404 de favicon corregido. No interpretar ese PASS como validación de trabajo posterior.
+- **Ilustraciones aprobadas:** 15 WebP en `assets/dishes/`, con etiqueta localizada «Imagen ilustrativa» (ES/EN/FR). Son conceptos generales, NO fotografías de platos servidos por un local.
 - **Trabajo posterior reportado por Codex y revisado visualmente por Helio/Manolo, pendiente de constatar en remoto:** uso de las otras ocho imágenes en resúmenes de búsquedas por nombre exacto normalizado (ya no quedan recursos sin uso en el prototipo), una sola imagen por búsqueda, carga diferida y fallback; reducción de huecos verticales; presentación en lista de coincidencias múltiples (caso pizza/Patio Romano), mejor espaciado del comparador móvil y corrección de desplazamiento bajo navegación fija. Capturas y QA local reportados PASS a 360×800 y 1365×900 en ES/EN/FR. **El usuario aprobó realizar el commit de esa fase**, pero no hay confirmación aquí de su hash ni de un CI oficial nuevo: comprobar el HEAD, git status y Actions antes de darla por cerrada.
 - Conservar las 15 imágenes, especialmente las variantes expresamente aprobadas de flamenquín, berenjenas con miel, boquerones fritos y huevos rotos. No regenerar o sustituir sin aprobación.
 
@@ -1363,7 +1363,7 @@ Helio autorizó expresamente activar el francés públicamente e integrarlo en `
 2. Evaluar una ampliación **gradual** de la biblioteca (orientativamente 40–60 conceptos, **no cuota obligatoria**), según cobertura real, utilidad y revisión visual. Distinguir especialidades representativas y conceptos generales; los ambiguos permanecen solo texto.
 3. Preparar un sistema explícito de asociación nombre normalizado → imagen aprobada, sin coincidencias laxas ni falsos positivos. Mantener etiqueta **«Imagen ilustrativa»** en ES/EN/FR, texto alternativo y marcador de respaldo.
 4. **No llenar ahora cada carta de fotos**: diseñar los recursos, mapeo y criterios editoriales, dejando la integración visual final para el rediseño profesional. Las cartas extensas deben seguir siendo rápidas, legibles y fáciles de recorrer.
-5. WebP optimizado, \`loading=lazy\`, tamaños responsivos, comprobación de peso de red, CLS y móviles modestos; no descargar imágenes de platos que el usuario no ve.
+5. WebP optimizado, `loading=lazy`, tamaños responsivos, comprobación de peso de red, CLS y móviles modestos; no descargar imágenes de platos que el usuario no ve.
 6. Criterio de aprobación: muestra reducida de platos/menús, QA de coincidencias y revisión humana antes de escalar.
 
 ### 3. Prioridad C — Buzón privado de sugerencias conectado al email
@@ -1398,14 +1398,14 @@ Helio autorizó expresamente activar el francés públicamente e integrarlo en `
 
 1. Revisar cambios en rama, pruebas automáticas y casos manuales en **móvil real y escritorio**, ES/EN/FR, incluyendo formularios, teclado, lector de pantalla, imágenes rotas, rendimiento en redes lentas, privacidad, caché y datos.
 2. Corregir defectos demostrados; documentar CI con **hash concreto** y distinguir PASS local, PASS oficial y evaluación visual/editorial humana. Un CI verde **no equivale** a certificación WCAG ni a veracidad de cartas.
-3. Solo con autorización explícita: preparar PR, revisar diff, fusionar en \`main\`, verificar despliegue y versión pública. Conservar procedimiento de recuperación/rollback.
+3. Solo con autorización explícita: preparar PR, revisar diff, fusionar en `main`, verificar despliegue y versión pública. Conservar procedimiento de recuperación/rollback.
 4. Después, **Manolo Meteo v1.7**: propuesta de renovación visual y funciones adicionales por definir, misma marca ManoloLabs, QA de PWA/datos meteorológicos sin prometer capacidades no comprobadas.
 5. Lanzamiento conjunto **Helio Gastro + Manolo Meteo en LinkedIn**, con capturas reales, demo y repositorios; mostrar el trabajo auténtico de Helio: definición de requisitos, dirección de agentes IA, QA manual, validación de datos, correcciones y entrega. Recordar de forma profesional que busca empleo remoto QA, Data QA, operaciones digitales e iGaming. No atribuirse labores técnicas que no haya realizado.
 
 ### Reglas obligatorias para el agente y próxima sesión
 
-- **Antes de actuar:** \`git status\`, HEAD local/remoto, rama, README y CI. Verificar si hay commits locales pendientes; no reescribir ni borrar trabajo no subido.
+- **Antes de actuar:** `git status`, HEAD local/remoto, rama, README y CI. Verificar si hay commits locales pendientes; no reescribir ni borrar trabajo no subido.
 - **Prioridad inmediata:** cerrar con commit/push/CI la fase visual de las 15 ilustraciones **solo si el estado real lo confirma**; a continuación, **investigar reseñas** y presentar opciones viables con fuentes, restricciones y costes **sin programar extracción masiva**.
-- Usar ramas/commits pequeños y reversibles, sin tocar \`main\`, sin despliegue ni gasto sin permiso. QA y capturas antes de dar una fase por buena.
+- Usar ramas/commits pequeños y reversibles, sin tocar `main`, sin despliegue ni gasto sin permiso. QA y capturas antes de dar una fase por buena.
 - **Este plan describe decisiones y prioridades, no concede permiso para ejecutar todas las fases automáticamente.** Pedir aprobación en puntos de decisión; en trabajos acotados aprobados, avanzar sin interrumpir cada minuto.
-- Mantener una sección de **estado vivo** por fase: \`Pendiente / Investigación / Prototipo / QA local / CI / Aprobado / Publicado\`; fecha, commit/PR, evidencia y bloqueantes. Actualizar el README tras cada entrega, sin borrar evidencias históricas.
+- Mantener una sección de **estado vivo** por fase: `Pendiente / Investigación / Prototipo / QA local / CI / Aprobado / Publicado`; fecha, commit/PR, evidencia y bloqueantes. Actualizar el README tras cada entrega, sin borrar evidencias históricas.
