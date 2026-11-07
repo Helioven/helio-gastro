@@ -1319,3 +1319,10 @@ Helio autorizó expresamente activar el francés públicamente e integrarlo en `
 5. Mantener pendientes para fases posteriores **horarios con fuente**, **reseñas autorizadas y «El Consejo de Manolo»** (hasta 100–200 reseñas cuando sea legalmente posible, sin extracción masiva no autorizada de Google), buzón moderado y auditoría integral final. No inventar puntuaciones ni testimonios ni mezclar resúmenes editoriales con valoraciones de terceros.
 
 **Regla de continuidad:** leer este handoff y el README previo, verificar HEAD y CI, proponer un cambio de alcance limitado, **obtener aprobación de Helio**, aplicar en rama de trabajo, pasar pruebas, documentar y **no fusionar/desplegar `main` sin autorización expresa**.
+
+### Integración de Manolo aprobada — 7 de noviembre de 2026
+
+- Helio Gastro conserva el título principal. La cabecera muestra la cabeza de Manolo con sus dos antenas y el pie incorpora el busto junto a **ManoloLabs by Helio** e **Ideas humanas · Tecnología inteligente**. Los tres recursos optimizados están en `assets/brand/`.
+- El 404 de `test-fr-visual.mjs` correspondía a `/favicon.ico`. La aplicación y la página de QA declaran ahora el favicon PNG. Se comprobó su legibilidad a 16 × 16 px en una simulación de pestaña con fondos claro y oscuro.
+- **QA local PASS** para `test-fr-visual.mjs`, `test-recommendation-count-i18n.mjs` y `test-dish-illustrations.mjs`. También se comprobaron la carga de los recursos, las capturas a 360 × 800 y 1365 × 900 y la ausencia de desbordamiento en ES/EN/FR.
+- **CI de marca pendiente** de la subida de la rama y de una ejecución manual del workflow. El [CI #895](https://github.com/Helioven/helio-gastro/actions/runs/42380436709) sí terminó correctamente para `e39b1b0`, la corrección anterior de contadores en francés.
