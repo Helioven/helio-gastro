@@ -1334,3 +1334,86 @@ Helio autorizó expresamente activar el francés públicamente e integrarlo en `
 - El resumen y la ilustración ocupan menos espacio vertical. El primer encabezado queda a 6 px del resumen en la búsqueda de pizza probada. Los platos encontrados se muestran en una lista con encabezado en ES/EN/FR, conservando el texto, el orden y el bloque de precio publicado.
 - **QA local PASS** en búsqueda, filtros, comparador, ilustraciones, contadores ES/EN/FR y flujo básico de accesibilidad. En Chromium local se comprobaron las ocho búsquedas a 360 × 800 y 1365 × 900, las etiquetas, el marcador al bloquear la imagen y la ausencia de desbordamiento en los recorridos comprobados. Pizza no se solicitó al cargar la portada y su WebP mide 81 152 bytes. No se midieron tiempos de carga en redes móviles ni se probó con un lector de pantalla.
 - En la revisión previa al commit también pasó `test-fr-visual.mjs`. Se comprobó que los siete platos del caso de pizza mantienen texto y orden al alternar ES/EN/FR, y que los 15 archivos WebP aprobados permanecen intactos. El CI oficial de esta ampliación se comprobará sobre el SHA del commit tras la subida de la rama y la ejecución manual del workflow.
+
+
+---
+
+## PLAN DE BATALLA — Cierre de Helio Gastro (7 de noviembre de 2026)
+
+> **Documento operativo prioritario para la siguiente sesión de Codex.** Leer junto al handoff de la fase visual y al historial de QA anterior. Distinguir siempre entre **aprobado**, **implementado localmente**, **confirmado en GitHub** y **desplegado**; la planificación no constituye autorización de merge ni de publicación.
+>
+> **Estrategia de Helio:** terminar primero **contenido y funcionalidades**, después realizar **un rediseño profesional integral**, luego QA final y lanzamiento. No migrar prematuramente ni rehacer pantallas varias veces. Objetivo posterior: renovar Manolo Meteo y **presentar ambos proyectos juntos en LinkedIn** como portfolio de QA, verificación de datos y trabajo con IA, recordando la búsqueda activa de empleo.
+
+### 0. Situación comprobada y controles de continuidad
+
+- Repositorio: `Helioven/helio-gastro`; rama exclusiva de trabajo visual: `feature/manololabs-visual-20261107`. **`main` permanece protegida de cambios no autorizados**: no hacer merge ni desplegar sin aprobación expresa.
+- **Branding integrado y confirmado en remoto:** commit `c44afdd00cad661023abf9c7062a31965b62638d` — `feat(brand): integrate approved Manolo mascot and favicon`; [CI #896 PASS](https://github.com/Helioven/helio-gastro/actions/runs/42390590855), correspondiente específicamente a ese commit. Cabecera: cabeza de Manolo; pie: busto y firma; favicon; error 404 de favicon corregido. No interpretar ese PASS como validación de trabajo posterior.
+- **Ilustraciones aprobadas:** 15 WebP en `assets/dishes/`, con etiqueta localizada «Imagen ilustrativa» (ES/EN/FR). Son conceptos generales, NO fotografías de platos servidos por un local.
+- **Trabajo posterior reportado por Codex y revisado visualmente por Helio/Manolo, pendiente de constatar en remoto:** uso de las otras ocho imágenes en resúmenes de búsquedas por nombre exacto normalizado (ya no quedan recursos sin uso en el prototipo), una sola imagen por búsqueda, carga diferida y fallback; reducción de huecos verticales; presentación en lista de coincidencias múltiples (caso pizza/Patio Romano), mejor espaciado del comparador móvil y corrección de desplazamiento bajo navegación fija. Capturas y QA local reportados PASS a 360×800 y 1365×900 en ES/EN/FR. **El usuario aprobó realizar el commit de esa fase**, pero no hay confirmación aquí de su hash ni de un CI oficial nuevo: comprobar el HEAD, git status y Actions antes de darla por cerrada.
+- Conservar las 15 imágenes, especialmente las variantes expresamente aprobadas de flamenquín, berenjenas con miel, boquerones fritos y huevos rotos. No regenerar o sustituir sin aprobación.
+
+### 1. Prioridad A — Consejo de Manolo basado en reseñas reales
+
+**Objetivo:** reemplazar el comentario genérico basado en la puntuación y el comentario redundante de Manolo por **una única síntesis original, útil, distendida e imparcial**. Puede destacar virtudes y críticas recurrentes con humor, pero nunca inventar defectos, testimonios, cifras ni reseñas.
+
+1. **Primero investigar viabilidad de datos y licencias**, antes de programar el sistema: Google Maps muestra reseñas públicas, pero ser públicas no autoriza a extraerlas masivamente ni a publicar derivados. La API estándar de Places solo expone una muestra pequeña (habitualmente hasta cinco reseñas); verificar documentación, términos y alternativas vigentes. Evaluar otras fuentes con licencia, acuerdos, datos autorizados o reseñas propias de usuarios.
+2. Meta ideal: **muestreo de 100–200 reseñas por local si existe acceso permitido y muestra suficiente**. Nunca declarar 100/200 si se han analizado menos ni simular datos. Documentar fuente, fecha, tamaño, método de selección, sesgos posibles y criterio de suficiencia. No confundir **media de la muestra** con **valoración global de la plataforma**.
+3. Analizar patrones reales: calidad y especialidades, atención, precio/valor, ambiente, accesibilidad y esperas. Ponderar recurrencia y actualidad si está justificado; no sobrerrepresentar opiniones aisladas ni acusaciones no corroboradas.
+4. Salida única «**El Consejo de Manolo**», tono castellano natural, original y divertido, **con rigor**. Distinguir hechos y opiniones. Añadir trazabilidad/aviso metodológico sin mostrar texto de terceros cuando no esté autorizado. Evitar sesgos reputacionales.
+5. Construir **piloto de tres locales** solo cuando las fuentes y el tratamiento sean lícitos; revisión editorial humana y QA. Si no existen permisos o muestra fiable, mostrar «Sin datos suficientes» o aplazar la función, **no fabricar comentarios**.
+6. Decisión pendiente: arquitectura concreta de captura, almacenamiento/caducidad, actualización y coste. Considerar requisitos de protección de datos y condiciones de atribución.
+
+### 2. Prioridad B — Biblioteca reutilizable de ilustraciones para las cartas
+
+**No** generar una imagen por cada plato ni añadir cientos de recursos por inercia. Primero analizar el catálogo existente y obtener un inventario de **conceptos gastronómicos frecuentes y no ambiguos**.
+
+1. Reutilizar las 15 ilustraciones actuales donde el concepto coincida fielmente con el nombre **documentado** del plato. Para un plato de restaurante específico, no insinuar presentación, ingredientes, alérgenos, precio o disponibilidad no comprobados.
+2. Evaluar una ampliación **gradual** de la biblioteca (orientativamente 40–60 conceptos, **no cuota obligatoria**), según cobertura real, utilidad y revisión visual. Distinguir especialidades representativas y conceptos generales; los ambiguos permanecen solo texto.
+3. Preparar un sistema explícito de asociación nombre normalizado → imagen aprobada, sin coincidencias laxas ni falsos positivos. Mantener etiqueta **«Imagen ilustrativa»** en ES/EN/FR, texto alternativo y marcador de respaldo.
+4. **No llenar ahora cada carta de fotos**: diseñar los recursos, mapeo y criterios editoriales, dejando la integración visual final para el rediseño profesional. Las cartas extensas deben seguir siendo rápidas, legibles y fáciles de recorrer.
+5. WebP optimizado, `loading=lazy`, tamaños responsivos, comprobación de peso de red, CLS y móviles modestos; no descargar imágenes de platos que el usuario no ve.
+6. Criterio de aprobación: muestra reducida de platos/menús, QA de coincidencias y revisión humana antes de escalar.
+
+### 3. Prioridad C — Buzón privado de sugerencias conectado al email
+
+**Objetivo:** formulario para visitantes, dirigido al correo de Helio **sin exponer la dirección personal** en HTML, JavaScript, repositorio ni respuesta de la aplicación.
+
+- Campos: tipo (sugerencia, restaurante nuevo, dato/carta incorrecta, error técnico, otros), mensaje obligatorio, email del remitente **opcional** para respuesta; recoger lo mínimo.
+- Investigar y comparar pasarelas para sitios estáticos, por ejemplo **Formspree** y **Web3Forms**, verificando **precios, límites actuales, privacidad, antispam y comportamiento real** antes de elegir. Ninguna suscripción de pago sin evaluación ni autorización.
+- Usar intermediario/form ID público cuando proceda; **nunca** incrustar email del propietario, tokens secretos o credenciales en frontend. Considerar honeypot, límites, moderación, protección antiabuso y confirmaciones sin revelar datos sensibles.
+- Interfaz ES/EN/FR, accesibilidad, errores/red desconectada y prevención de duplicados. Aviso de privacidad claro (finalidad, conservación, encargado y derechos); revisión RGPD antes de activar.
+- Primero prototipo/sandbox, después configuración privada y **prueba real controlada** con aprobación. No prometer envío funcional si la pasarela aún no está conectada.
+
+### 4. Prioridad D — Contenido, consistencia editorial y cierre funcional
+
+- Revisar cartas y enlaces con fuentes fechadas; **no inventar ni actualizar precios/ingredientes/horarios por conjetura**, y no publicar información sin validar.
+- Respetar las decisiones editoriales del README: locales ocultos, cartas parciales, borradores y separaciones por modalidad. No reactivar **El Caballo Rojo** ni fusionar cartas parciales sin autorización.
+- Regresión de búsquedas, filtros por momento (desayuno, comida, merienda, cena), resultados, precios documentados, comparador, favoritos, ficha, mapas, navegación, ES/EN/FR y móviles; documentar lo probado y lo pendiente.
+- No añadir extras indefinidamente. Cerrar cada fase con aceptación explícita y backlog pequeño.
+
+### 5. Prioridad E — Rediseño profesional integral (DESPUÉS del contenido)
+
+**Meta:** dejar de parecer una plantilla y ofrecer una experiencia gastronómica con personalidad propia, moderna y móvil primero, sin perder rendimiento ni la identidad ManoloLabs.
+
+- **Elegir primero dirección visual** con **dos propuestas** de portada y una ficha de restaurante, en móvil y escritorio, para aprobación. Idea: portada con buscador protagonista, navegación natural, jerarquía limpia, tarjetas más legibles, menos cajas rígidas y párrafos densos, imágenes donde aporten valor.
+- Respetar nombre **Helio Gastro** como producto, firma **ManoloLabs by Helio**, lema «Ideas humanas · Tecnología inteligente» y mascota oficial **de DOS antenas** (gafas oscuras cuadradas, bigote marrón, detalles azules, M luminosa); mantener los recursos oficiales aprobados, icono de cabeza en cabecera y busto en pie.
+- Conservar inicialmente HTML/CSS/JS: **no migrar a React ni a otro framework por apariencia**. Solo proponer migración si aparece una necesidad técnica demostrada, con costes y plan de regresión.
+- Decisión abierta para el diseño de las cartas: ¿aspecto de app de pedidos con miniaturas y precios, o carta tradicional refinada? Resolverla mediante prototipos, no imponiendo una estética sin consulta.
+- Integrar en esta fase el tratamiento definitivo de imágenes en cartas, Consejo de Manolo y buzón, evitando rehacerlos varias veces.
+- Diseño responsivo, contraste, navegación con teclado, lector de pantalla, velocidad de carga, estados vacíos y largos listados. No reducir la usabilidad por perseguir estética.
+
+### 6. Prioridad F — QA integral, publicación y portfolio
+
+1. Revisar cambios en rama, pruebas automáticas y casos manuales en **móvil real y escritorio**, ES/EN/FR, incluyendo formularios, teclado, lector de pantalla, imágenes rotas, rendimiento en redes lentas, privacidad, caché y datos.
+2. Corregir defectos demostrados; documentar CI con **hash concreto** y distinguir PASS local, PASS oficial y evaluación visual/editorial humana. Un CI verde **no equivale** a certificación WCAG ni a veracidad de cartas.
+3. Solo con autorización explícita: preparar PR, revisar diff, fusionar en `main`, verificar despliegue y versión pública. Conservar procedimiento de recuperación/rollback.
+4. Después, **Manolo Meteo v1.7**: propuesta de renovación visual y funciones adicionales por definir, misma marca ManoloLabs, QA de PWA/datos meteorológicos sin prometer capacidades no comprobadas.
+5. Lanzamiento conjunto **Helio Gastro + Manolo Meteo en LinkedIn**, con capturas reales, demo y repositorios; mostrar el trabajo auténtico de Helio: definición de requisitos, dirección de agentes IA, QA manual, validación de datos, correcciones y entrega. Recordar de forma profesional que busca empleo remoto QA, Data QA, operaciones digitales e iGaming. No atribuirse labores técnicas que no haya realizado.
+
+### Reglas obligatorias para el agente y próxima sesión
+
+- **Antes de actuar:** `git status`, HEAD local/remoto, rama, README y CI. Verificar si hay commits locales pendientes; no reescribir ni borrar trabajo no subido.
+- **Prioridad inmediata:** cerrar con commit/push/CI la fase visual de las 15 ilustraciones **solo si el estado real lo confirma**; a continuación, **investigar reseñas** y presentar opciones viables con fuentes, restricciones y costes **sin programar extracción masiva**.
+- Usar ramas/commits pequeños y reversibles, sin tocar `main`, sin despliegue ni gasto sin permiso. QA y capturas antes de dar una fase por buena.
+- **Este plan describe decisiones y prioridades, no concede permiso para ejecutar todas las fases automáticamente.** Pedir aprobación en puntos de decisión; en trabajos acotados aprobados, avanzar sin interrumpir cada minuto.
+- Mantener una sección de **estado vivo** por fase: `Pendiente / Investigación / Prototipo / QA local / CI / Aprobado / Publicado`; fecha, commit/PR, evidencia y bloqueantes. Actualizar el README tras cada entrega, sin borrar evidencias históricas.
