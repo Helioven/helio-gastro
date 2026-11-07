@@ -1,5 +1,7 @@
 # Helio Gastro 1.0 — piloto
 
+> **CONTINUACIÓN PRIORITARIA (07/11/2026):** el [handoff operativo para el domingo 8 de noviembre](#handoff-operativo-para-el-domingo-8-de-noviembre-de-2026--consejo-de-manolo) resume el estado de Git, el motor de «El Consejo de Manolo» y el siguiente encargo a Codex. El trabajo de reseñas sigue **solo en QA, sin datos reales ni despliegue**. La identidad vigente del proyecto es **ManoloLabs by Helio**.
+
 Aplicación estática y mobile-first de búsqueda gastronómica en Córdoba. Proyecto de Helio Software Studios.
 
 > **Estado actualizado (06/11/2026):** francés público ES/EN/FR y fase 3 de QA integral en marcha. Las PR [#44–#50](https://github.com/Helioven/helio-gastro/pulls?q=is%3Apr+is%3Amerged) están integradas en `main`. La cobertura automática incluye enlaces, rendimiento de carga FR, caché/recargas, navegación accesible y avisos dinámicos. **El contraste visual sigue pendiente de revisión real.** Consulta [Estado vigente y continuación](#estado-vigente-fase-3-qa-integral--6-de-noviembre-de-2026) al final de este documento.
@@ -1451,3 +1453,64 @@ Helio autorizó expresamente activar el francés públicamente e integrarlo en `
 - **Siguiente paso recomendado:** sin tocar código de producción, elaborar **matriz de viabilidad de proveedores** y esquema de datos/UX para una prueba de «Consejo de Manolo» con un conjunto de reseñas **ficticias etiquetadas como datos de prueba** y/o datos originales con permiso. Esa maqueta no debe publicar testimonios inventados como reales.
 - Preguntas de negocio pendientes: ¿merece la pena un proveedor de pago si Terra concede el permiso y hay datos suficientes? ¿Se lanzará inicialmente el Consejo como nota editorial de carta, o se ocultará hasta tener reseñas legítimas? Resolución corresponde a Helio.
 - Mantener prioridad posterior: biblioteca de ilustraciones para cartas → buzón privado → completar contenido → rediseño profesional → QA final → lanzar Gastro/Meteo y presentación conjunta.
+
+
+---
+
+## Handoff operativo para el domingo 8 de noviembre de 2026 — Consejo de Manolo
+
+> **Documento de continuidad prioritario, escrito el sábado 7 de noviembre.** Resumen de lo completado hoy, evidencias y siguiente tarea. Complementa el [Plan de Batalla](#plan-de-batalla--cierre-de-helio-gastro-7-de-noviembre-de-2026) y la [investigación de licencias](#investigación-de-reseñas--consejo-de-manolo-7-de-noviembre-de-2026), sin borrar el historial. La tarea siguiente se prepara para mañana; **no se ha ejecutado**.
+
+### A. Resumen del avance de hoy: qué está hecho
+
+**Helio Gastro — rama de desarrollo**
+
+- Identidad de marca seleccionada: **ManoloLabs by Helio**, lema «Ideas humanas · Tecnología inteligente», producto «Helio Gastro». Mascota base Manolo, robot 3D metálico blanco con **dos antenas**, gafas oscuras cuadradas, bigote marrón, acentos azules y «M» luminosa. En cabecera cabeza del robot, en pie busto y firma; favicon arreglado. La variante antigua de una sola antena NO sustituye esta identidad.
+- Ilustraciones generales: **15 WebP aprobados** en `assets/dishes/`, sin imágenes atribuidas falsamente a locales. Siete accesos generales originales y otras ocho ilustraciones visibles al buscar su plato compatible; resumen de búsqueda compacto, imagen única etiquetada «Imagen ilustrativa», listas legibles de platos coincidentes, comparador móvil y foco de resultados mejorados. ES/EN/FR y fallbacks mantenidos.
+- Último PASS de GitHub Actions verificado en la rama de desarrollo: **[#897](https://github.com/Helioven/helio-gastro/actions/runs/42395115356), `success`, commit `d52872a2812a9dc3e850d9978cc9ece822f90a46`**. Este PASS corresponde a las ilustraciones/resultados, NO a los cambios experimentales posteriores.
+- Se creó el Plan de Batalla para **terminar contenido y funcionalidades ANTES del rediseño profesional integral**. Se investigaron restricciones de fuentes de reseñas. No existe permiso ni proveedor contratado para analizar 100–200 opiniones de restaurantes cordobeses; no usar scraping ni inferir una licencia de datos públicos. Tripadvisor Terra queda como posibilidad comercial no verificada, junto a eventuales opiniones propias de usuarios.
+
+**«El Consejo de Manolo» — prototipo independiente en rama `poc/consejo-manolo-qa`**
+
+- **HG-REV-POC-001:** maqueta responsive en ES/EN/FR con tres restaurantes y opiniones ficticios, respectivamente **4, 4 y 0 opiniones**, advertencia «DATOS FICTICIOS — SOLO PROTOTIPO». Sin publicar opiniones ni crear fichas reales de esos establecimientos.
+- **HG-REV-POC-002:** variante **Manolo Chef** aprobada por Helio: gorro de cocina blanco con **M AZUL**, antenas, bigote, gafas y delantal «Manolo Chef». PNG original conservado; WebP transparente optimizado de **384 × 384** para la maqueta. No reemplaza logotipo general de ManoloLabs.
+- Prototipo y mascota guardados en rama aislada, primer commit **`068dbb41565e239d5abfd10f796ad1515b86933b`** (`feat(qa): finalize approved Manolo Chef prototype`), publicado y comprobado en GitHub. Archivos en `poc/consejo-manolo/`: HTML de demostración, fixtures, JS de render, test Playwright, PNG y WebP.
+- **HG-REV-ENGINE-001:** motor experimental construido posteriormente **a partir de anotaciones estructuradas de opiniones ficticias**; NO entiende todavía reseñas libres mediante IA. Arquitectura separa anotaciones/fuente → agregación determinista y referencias a IDs → redacción ES/EN/FR por reglas/plantillas → vista. Deduplica por ID, cuenta cada aspecto como máximo una vez por opinión, distingue polaridad y contradicciones, identifica menciones aisladas y puede **abstenerse**. Desplegable «Ver referencias de evidencia» para auditar cada afirmación.
+- Casos: **El Faro de Menta** (4 opiniones: guiso y atención 3 favorables cada uno; 1 espera aislada); **La Brújula de Nuez** (4: terraza 3 favorables; ruido 2 críticos; ritmo de servicio 1 favorable y 2 críticos, ahora mostrado UNA vez como contradictorio); **La Tetera Orbital** (0: abstención). Son **solo fixtures inventados**; no extrapolar cifras a restaurantes reales.
+- Umbrales **exclusivamente de QA**: 4 opiniones únicas para activar ejemplos y al menos 2 del mismo signo para declarar recurrencia. **NO son un criterio de publicación**. Pendientes permisos, muestra válida, sesgos, antigüedad, cobertura y revisión humana.
+- Se hizo una iteración editorial: mejor agrupación de opiniones contrapuestas y consejos más naturales, sin inventar hechos. Helio aprobó el enfoque. **QA local reportado por Codex: PASS** en 11 pruebas unitarias (duplicados, falta de derechos, datos incompletos, ambigüedad, trazabilidad y otros), además de Playwright en **360 × 800 y 1365 × 900**, ES/EN/FR, teclado, evidencias, ancho; fixtures fuera de la app pública. **No afirmar CI oficial para este motor**.
+
+### B. Estado de Git al cerrar esta sesión — NO perder cambios
+
+- **Remoto de desarrollo** `feature/manololabs-visual-20261107`: commit `9d025278c1aa1ea59477ddc254b6061cab29363a` antes de este documento. Se actualiza su **README solamente** con este handoff. No tocar `main`; aún no se ha autorizado el rediseño ni el lanzamiento.
+- **Remoto del prototipo** `poc/consejo-manolo-qa`: confirmado en `068dbb41565e239d5abfd10f796ad1515b86933b` al redactar esta nota. **Codex informa de otro commit LOCAL, `c1610679fdb6b271abe15f52d3a707348c697c9c`, pendiente de Push origin**. Este incluye el motor y sus ajustes finales, con 11 pruebas unitarias y el README de QA, según el informe del agente. **No darlo por publicado ni CI-validado hasta comprobar la subida**.
+- **Hay además un borrador sin commit de `README.md` en la copia local de la rama de desarrollo**, reportado por Codex y visto en GitHub Desktop. Se solapa con los bloques `HG-REV-POC-001` y `HG-REV-POC-002` de la rama de QA. **Conservarlo** al sincronizar, conciliar en una sola sección (evitar duplicados). Esta actualización del README remoto puede requerir integrar cambios antes de Push; nunca usar force push ni descartar el borrador.
+- **No asumir que la copia de GitHub Desktop activa es la copia QA**. El prototipo se gestiona en un worktree independiente. Comprobar arriba `Current repository` / `Current branch` antes de cualquier operación.
+
+### C. Secuencia exacta de reanudación (mañana, domingo 8/11)
+
+1. **Git primero:** abrir GitHub Desktop en el worktree de QA `poc/consejo-manolo-qa`, verificar el commit local `c1610679`, pulsar **Push origin** y confirmar en GitHub que el HEAD de esa rama es `c1610679…`. Si cambió el remoto, `Fetch origin` e integrar sin force push. Revisar si la rama QA tiene workflow aplicable; **11 pruebas locales PASS no equivalen a CI oficial**.
+2. **Proteger documentación:** en la copia de desarrollo, guardar/respaldar el README local pendiente, hacer Fetch, integrar este nuevo handoff del README remoto y reconciliar su bloque de POC/engine, sin duplicar secciones ni borrar el Plan de Batalla. No hacer merge de todo el POC a `main`.
+3. **Ajuste editorial no bloqueante:** cambiar la frase potencialmente engañosa «2 a favor y 0 críticos» por «2 temas positivos recurrentes y 0 temas negativos recurrentes», o equivalente por idioma, **sin ocultar la mención crítica aislada de espera**. Añadir test. Verificar que las frases humorísticas no exageran ni contradicen evidencia.
+4. **Siguiente desarrollo: `HG-REV-AI-001` — extracción asistida de aspectos desde opiniones en lenguaje natural de QA**. Preparar primero diseño/criterios y después un piloto **aislado y sin costes**. Ningún scraping, reseñas reales de terceros, claves de API, modelos de pago ni despliegue sin autorización.
+5. **Probar y revisar antes de cerrar**: entregar tabla de errores, etiquetas propuestas por el extractor, referencias a la frase origen, casos ambiguos/abstención, métricas de precisión/recall sobre una muestra manualmente etiquetada y diferencias entre determinismo y posible LLM. Solo después decidir si se avanza a un modelo de lenguaje real.
+6. Mantener resto del itinerario: conseguir fuente de reseñas **autorizada por escrito** (si existe) → ampliar gradualmente biblioteca de imágenes de platos para cartas (sin una imagen por plato indiscriminadamente) → buzón privado conectado a email sin exponer dirección → completar contenido y fuentes → **rediseño profesional de la app** → QA integral y lanzamiento → actualizar Manolo Meteo y presentar ambos proyectos juntos en LinkedIn.
+
+### D. Especificación breve para el siguiente agente: HG-REV-AI-001
+
+**Meta concreta:** convertir texto de prueba libre en **propuestas de anotación** de tema y polaridad, con `opinionId`, cita/referencia a un fragmento de la opinión ficticia y un estado de confianza o abstención. **Nunca** producir directamente afirmaciones publicables desde el texto bruto.
+
+- **Contrato:** opinión original ficticia → extractor propuesto → lista `{ opinionId, aspect, sentiment, evidenceSpan, status }` → validación y revisión editorial → motor determinista existente → resumen. Conservar fuente, licencia, trazabilidad, recuentos y separación de responsabilidades. Los recuentos pertenecen al motor, no a la IA generativa.
+- **Dataset de evaluación:** construir un conjunto pequeño y revisable de **20–50 opiniones ficticias adicionales**, etiquetadas manualmente como verdad de referencia, que cubra servicio, espera, calidad, raciones, ruido, precio, accesibilidad y casos neutros. Incluir negaciones («no tardaron»), sarcasmo/ironía, frases con sentimientos mixtos, errores ortográficos, referencias vagas, dos menciones del mismo tema, duplicados y contenido ambiguo. Idiomas ES/EN/FR o diseñar explícitamente cobertura y límites por idioma antes de afirmarla.
+- **Método:** comparar una línea base transparente basada en reglas/lexicón con opción posterior de IA/LLM **solo si aporta mejora demostrable**. No vender «IA que entiende reseñas» si depende de palabras clave o anotaciones manuales. Los modelos de lenguaje pueden equivocarse y deben someterse a evaluación reproducible y revisión humana.
+- **Criterios de aceptación:** ninguna evidencia inventada, `evidenceSpan` verificable dentro del texto, ningún recuento inflado por repeticiones, abstención para negaciones ambiguas/ironía no resoluble, ausencia de datos personales, controles de publicación que bloqueen fixtures, licencias ausentes y revisión no aprobada. Informar **errores reales, falsos positivos y falsos negativos**, no solo tests PASS.
+- **QA/documentación:** scripts y capturas de prototipo en rama `poc/consejo-manolo-qa`, control de regresiones del motor (11 tests existentes), casos nuevos y ES/EN/FR; lista de riesgos y deuda. Proponer cambios primero para aprobación. **No commit, merge, despliegue ni gasto sin autorización específica** del siguiente alcance.
+
+### E. Decisiones que no deben perderse
+
+- **Regla de Manolo:** «Si no hay pruebas, no hay consejo». No afirmar una valoración general de un negocio a partir de cuatro opiniones; no inventar reseñas, menciones, ingredientes, tiempos ni porcentajes.
+- Diferenciar **CI aprobado de desarrollo** (#897), **PASS de QA local del motor** y **revisión humana**. No confundirlos.
+- No atribuir a Google/Yelp/Tripadvisor datos o licencias no obtenidos; la investigación de Terra es exploratoria. La funcionalidad pública de reseñas está **pendiente**, aunque el POC esté avanzado.
+- El estilo definitivo de interfaz se decide **después de acabar contenido y funciones**, con dos propuestas visuales para elegir, sin migrar por inercia a React ni sustituir la identidad aprobada.
+- Los logos principales usan Manolo normal; **Manolo Chef** con M azul solo para el Consejo. PNG original y WebP optimizado se conservan en la rama experimental.
+- Al cerrar cada fase: actualizar README, informar fecha + rama + hash + pruebas efectivas + pendientes y guardar la documentación en la rama correspondiente sin reescribir la historia.
