@@ -1514,3 +1514,10 @@ Helio autorizó expresamente activar el francés públicamente e integrarlo en `
 - El estilo definitivo de interfaz se decide **después de acabar contenido y funciones**, con dos propuestas visuales para elegir, sin migrar por inercia a React ni sustituir la identidad aprobada.
 - Los logos principales usan Manolo normal; **Manolo Chef** con M azul solo para el Consejo. PNG original y WebP optimizado se conservan en la rama experimental.
 - Al cerrar cada fase: actualizar README, informar fecha + rama + hash + pruebas efectivas + pendientes y guardar la documentación en la rama correspondiente sin reescribir la historia.
+
+### Cierre local de la ampliación de ilustraciones
+
+- Rama `feature/manololabs-visual-20261107` sincronizada por avance directo a `baf436c`. Se conserva el Plan de Batalla y se recuperan debajo las decisiones complementarias del borrador local sobre el Consejo.
+- Biblioteca de 17 ilustraciones. Se añaden `assets/dishes/carrillada-con-patatas.webp` y `assets/dishes/pisto-cordobes.webp` a 640 × 480 px a partir de los PNG aprobados. Las 15 ilustraciones anteriores son idénticas a las de `1f4c603`.
+- `app.js` muestra estas dos imágenes en el resumen de resultados con denominaciones normalizadas exactas y solo cuando todos los resultados visibles son compatibles. `index.html` actualiza la versión del script. Ver asociaciones en `assets/dishes/README.md`.
+- QA local PASS en sintaxis JS, auditoría de 44 establecimientos (0 errores y 0 avisos), búsqueda, filtros, comparador, accesibilidad básica, contadores de recomendaciones e ilustraciones. En Chrome con Playwright se verificaron móvil emulado y escritorio, carga de los WebP, etiquetas ES/EN/FR, coincidencias compatibles y exclusión de variantes. Regresiones repetidas tras la aprobación visual de Helio, con el mismo resultado. CI oficial pendiente.

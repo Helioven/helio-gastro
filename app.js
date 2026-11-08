@@ -1173,9 +1173,9 @@ function filter(event,restoring=false){
  if(dish){
   coverageBox.textContent='En nuestra base actual: '+coverage.total+' local(es) con «'+el('dish').value.trim()+'» registrado(s); '+coverage.priced+' con precio de ese plato documentado y '+coverage.unpriced+' sin precio. Esto NO representa todos los bares de Córdoba.';
  }
- const illustration=DISH_ILLUSTRATIONS[dish];
+ const illustration=resultDishIllustration(dish,state.filtered);
  el('result-dish-visual').replaceChildren();
- if(state.filtered.length && Object.hasOwn(DISH_ILLUSTRATIONS,dish)){
+ if(illustration){
   el('result-dish-visual').append(createDishVisual('./assets/dishes/'+illustration));
  }
  draw();compare();updateQuickNav();
@@ -1224,6 +1224,22 @@ const DISH_ILLUSTRATIONS=Object.freeze({
  'nachos':'nachos.webp', 'tarta de queso':'tarta-de-queso.webp'
 });
 const illustrativeImageLabel=language=>({es:'Imagen ilustrativa',en:'Illustrative image',fr:'Image illustrative'}[language]||'Imagen ilustrativa');
+const EXACT_RESULT_ILLUSTRATIONS=Object.freeze({
+ 'carrillada iberica con patatas fritas':'carrillada-con-patatas.webp',
+ 'pisto cordobes':'pisto-cordobes.webp'
+});
+function resultDishIllustration(term,places){
+ if(!places.length)return;
+ if(!Object.hasOwn(EXACT_RESULT_ILLUSTRATIONS,term)){
+  return Object.hasOwn(DISH_ILLUSTRATIONS,term)?DISH_ILLUSTRATIONS[term]:undefined;
+ }
+ const allMatchesAreExact=places.every(place=>{
+  const names=[...serviceDishes(place),...servicePrices(place).map(price=>price.dish)];
+  const matches=names.map(clean).filter(name=>name.includes(term));
+  return matches.length>0&&matches.every(name=>name===term);
+ });
+ if(allMatchesAreExact)return EXACT_RESULT_ILLUSTRATIONS[term];
+}
 function createDishVisual(imageUrl){
  const visual=document.createElement('span');visual.className='dish-visual';
  if(!imageUrl){visual.setAttribute('aria-hidden','true');return visual}
