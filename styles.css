@@ -292,15 +292,15 @@ body{background:#f9f4eb}
 .manolo-guide summary::-webkit-details-marker{display:none}
 .manolo-guide summary::after{content:"";width:8px;height:8px;margin-left:auto;margin-right:5px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg)}
 .manolo-guide[open] summary::after{transform:rotate(225deg)}
-.manolo-guide img{width:48px;height:48px;object-fit:contain}
+.manolo-guide img{width:56px;height:56px;object-fit:contain}
 .manolo-guide>p{margin:6px 0 10px;color:#475a6d;font-size:.9rem}
 .manolo-guide-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding-bottom:8px}
 .manolo-guide-options button{display:flex;align-items:flex-start;gap:8px;padding:10px;text-align:start;background:#fffdf8;border:1px solid #a99782;border-radius:10px;color:#0b2545;cursor:pointer;font:inherit}
-.manolo-guide-options button:hover{background:#f2e5d3}
-.manolo-guide-options button span span,.manolo-guide-options small{display:block;margin-top:3px;color:#475a6d;font-size:.85rem;line-height:1.35}
+@media(hover:hover){.manolo-guide-options button:hover{background:#f2e5d3}}
+.manolo-guide-options button span span{display:block;margin-top:3px;color:#475a6d;font-size:.85rem;line-height:1.35}
 .manolo-guide-icon{flex:none;font-weight:700}
 .manolo-guide :focus-visible{outline:2px solid #0b2545;outline-offset:2px}
-@media(max-width:540px){.manolo-guide-options{grid-template-columns:1fr}}
+@media(max-width:540px){.manolo-guide-options{grid-template-columns:1fr}.manolo-guide img{width:48px;height:48px}}
 #quick-categories p{font-size:.8rem;font-weight:700;color:#475a6d;margin:0 0 4px}
 .category-actions{display:flex;flex-wrap:wrap;gap:6px}
 .category-actions button{background:#fffdf8;color:#0b2545;border:1px solid #80705d;border-radius:999px;min-height:44px;padding:5px 10px;font:600 .82rem system-ui;cursor:pointer}

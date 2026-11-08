@@ -416,6 +416,7 @@ function updateMealMode(mode,{reset=true}={}){
  // Reset comparisons only on a genuine user-facing service switch, not on startup/restore.
  if(reset && state.mode!==mode)state.selected.clear();
  state.mode=mode;
+ el('manolo-traditional-note').hidden=true;
  try{localStorage.setItem(MODE_KEY,mode)}catch{}
  const cfg=MODE_CONFIG[mode];
  for(const btn of document.querySelectorAll('[data-service]')){
@@ -1517,9 +1518,21 @@ function manoloCompareTarget(){
 
 function openManoloAction(action){
  let target='recommendations-heading';
- if(action==='traditional'&&['desayuno','merienda'].includes(state.mode))updateMealMode('comida');
+ const switchToLunch=action==='traditional'&&['desayuno','merienda'].includes(state.mode);
+ if(switchToLunch)updateMealMode('comida');
+ el('manolo-traditional-note').hidden=!switchToLunch;
+ el('manolo-budget-note').hidden=action!=='budget';
+ const compareNote=el('manolo-compare-note');
+ compareNote.hidden=true;
  if(action==='budget')target='price-scope';
- if(action==='compare')target=manoloCompareTarget();
+ if(action==='compare'){
+  target=manoloCompareTarget();
+  if(target!=='compare-title'){
+   const destination=target==='results-heading'?el('results'):el('filters');
+   destination.before(compareNote);
+   compareNote.hidden=false;
+  }
+ }
  const quickCategory=action==='discover'&&el('quick-categories').querySelector('button');
  const node=quickCategory||el(target);
  node.focus({preventScroll:true});
@@ -1527,6 +1540,12 @@ function openManoloAction(action){
 }
 
 async function init(){
+ const guide=document.querySelector('.manolo-guide');
+ const summary=guide.querySelector('summary');
+ const syncGuideState=()=>summary.setAttribute('aria-expanded',String(guide.open));
+ guide.open=matchMedia('(min-width: 541px)').matches;
+ syncGuideState();
+ guide.addEventListener('toggle',syncGuideState);
  document.querySelectorAll('[data-manolo-action]').forEach(button=>{
   button.addEventListener('click',()=>openManoloAction(button.dataset.manoloAction));
  });
