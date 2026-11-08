@@ -1587,3 +1587,43 @@ Manolo mantiene una identidad visual reconocible aunque adopte distintos papeles
 ### Revisión futura del nombre de Helio Gastro
 
 Queda pendiente estudiar si un cambio de nombre reforzaría la relación de Helio Gastro con ManoloLabs y el papel de Manolo como personaje central. Hasta que se tome una decisión, se conservan el nombre actual, los enlaces, los identificadores técnicos y el lema «Descubre Córdoba a bocados».
+
+
+## Estado de cierre — 8 de noviembre de 2026 (sin lanzamiento)
+
+> **Estado operativo vigente:** desarrollo y validación interna. **No se autoriza todavía la integración en `main`, la publicación ni el anuncio público.** Esta sección actualiza los estados de «CI pendiente» que puedan aparecer en notas históricas anteriores; aquellas notas se conservan como registro de cada fase.
+
+### Versión candidata validada
+
+- Rama de trabajo: `codex/helio-gastro-rediseno`; commit validado: `f55eb6b`.
+- GitHub Actions oficial: **PASS** en los dos jobs, `catalog-audit` y `visual-qa`, para ese mismo SHA. [Ejecución 42503739673](https://github.com/Helioven/helio-gastro/actions/runs/42503739673).
+- La comparación realizada antes del cierre encontró `main` en `4d4ee3f`, ancestro de `f55eb6b`: 29 commits exclusivos de la rama de trabajo, ninguno exclusivo de `main`, sin conflictos previstos en ese momento. **Volver a comprobar ambos SHA antes de integrar.**
+- Catálogo: 44 registros, 43 visibles; El Caballo Rojo permanece oculto. `data/places.json` era idéntico en ambas ramas durante la revisión.
+- Incluye rediseño híbrido, 17 ilustraciones aprobadas, marca ManoloLabs, panel «Manolo te orienta» V1.1, piloto de horarios, mejoras de formatos, traducciones ES/EN/FR, accesibilidad y pruebas.
+- El experimento de motor de opiniones y los escenarios ficticios de su POC **no** forman parte de la integración prevista.
+
+### «Manolo te orienta» — comportamiento acordado
+
+Panel de ayuda guiada, sin reseñas inventadas ni recomendaciones basadas en supuesta experiencia personal. Saludo: «¿Con hambre y sin ideas? ¡Para eso estoy yo!». Opciones:
+
+1. «No sé qué comer» — «Descubre platos y encuentra dónde probarlos».
+2. «Quiero algo típico» — «Explora los sabores tradicionales de Córdoba».
+3. «Busco algo económico» — «Encuentra platos que se ajusten a tu presupuesto».
+4. «Quiero comparar» — «Compara precios de un mismo plato».
+
+Por defecto, panel cerrado en móvil y abierto en escritorio. Se reutiliza Manolo Chef y se respeta la información documentada del catálogo.
+
+### Decisiones y trabajo pendiente antes del lanzamiento
+
+1. **Nombre de la aplicación:** estudiar y elegir el nombre definitivo, sin cambiar todavía enlaces ni identificadores técnicos.
+2. **Identidad ManoloLabs:** decidir el lema entre los candidatos documentados y revisar la coherencia visual y editorial de la marca.
+3. **Experiencia final:** aplicar los ajustes acordados y revisar cómo queda la aplicación en móvil y escritorio, incluidos los primeros pasos de un visitante.
+4. **Validación:** repetir las comprobaciones pertinentes sobre el SHA final tras los cambios; revisar datos, traducciones, accesibilidad y navegación.
+5. **Publicación:** confirmar la fuente vigente de GitHub Pages en [Settings → Pages](https://github.com/Helioven/helio-gastro/settings/pages). El README documenta publicación desde `main`/`(root)` y el último despliegue confirmado procedía de `main`, pero la consulta de configuración de Pages devolvió 404; **no se debe asumir que fusionar es inocuo**.
+6. **Autorización expresa:** solo cuando Helio haya visto el resultado y esté satisfecho, decidir si se abre PR, se fusiona y se publica. No hacer push a `main`, merge, despliegue ni anuncio público por iniciativa propia.
+
+### Integración futura y reversión
+
+Cuando se autorice el lanzamiento: comprobar nuevamente los SHA remotos, abrir PR a `main`, esperar los checks oficiales, fusionar únicamente con aprobación y verificar el despliegue del nuevo SHA. Si hubiera una regresión, preparar una reversión del commit de merge mediante PR y comprobar que Pages publica la versión restaurada. Publicar **no impide** continuar desarrollando nuevas versiones mediante ramas separadas.
+
+**Próxima sesión:** retomar nombre, lema e identidad; aplicar cambios; inspeccionar el resultado; decidir sobre lanzamiento **solo después** de la validación y la aprobación explícita.
