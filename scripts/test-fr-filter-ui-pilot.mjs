@@ -9,7 +9,11 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.equal(await page.locator('#price-kind option[value="estimated"]').textContent(),'Prix documentés ou estimés');
  assert.equal(await page.locator('#portion option[value="media"]').textContent(),'Demi-portion');
  assert.equal(await page.locator('#budget-explain').textContent(),'Plafond appliqué au prix d’un plat, et non à celui d’un repas complet.');
- assert.equal(await page.locator('[data-dish="Flamenquín"]').textContent(),'Flamenquín');
+ await page.waitForFunction(()=>state.places.length>0);
+ const flamenquin=page.locator('#dish-suggestions-list').getByRole('button',{name:'Flamenquín',exact:true});
+ await flamenquin.click();
+ assert.equal(await page.locator('#dish').inputValue(),'Flamenquín');
+ assert.equal(await page.locator('#results-section').isHidden(),true,'A dish suggestion must not submit the search');
  await page.locator('#language-select').selectOption('es');
  assert.equal(await page.locator('#price-kind option[value="confirmed"]').textContent(),'Solo precios documentados');
  assert.equal(await page.locator('#budget-explain').textContent(),'Límite aplicado al precio de un plato, no a una comida completa.');

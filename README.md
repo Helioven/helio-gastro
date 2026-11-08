@@ -1544,3 +1544,10 @@ Helio autorizó expresamente activar el francés públicamente e integrarlo en `
 - QA del piloto en `scripts/test-venue-hours.mjs`. Con Playwright instalado y servidor local en el puerto 8765, ejecutar `node scripts/test-venue-hours.mjs`. Se puede pasar un directorio existente como primer argumento para guardar capturas. La excepción fechada de prueba se inyecta exclusivamente en QA.
 - QA local PASS en el piloto y la regresión híbrida a 360 × 800 y 1365 × 900 en ES/EN/FR, diez suites de regresión adicionales y auditoría de 44 registros sin errores ni avisos. CI oficial y revisión humana pendientes.
 - Accesibilidad de fuentes en Bodegas Campos. Contacto y Reservas tienen nombres visibles y accesibles distintos en ES/EN/FR. Se conservan las dos URL, las evidencias y la discrepancia sin resolver. La prueba del piloto comprueba los nombres por rol de enlace y el orden del foco con Tab en móvil y escritorio.
+
+### Corrección del QA francés del buscador (#898)
+
+- La prueba del buscador francés aún esperaba la instrucción y los títulos anteriores al rediseño híbrido. Ahora comprueba una instrucción francesa de búsqueda válida o los ejemplos documentados del campo por servicio, y comprueba los títulos aprobados en ES/EN/FR. El texto de producto se conserva.
+- La prueba de ida y vuelta detectó que el observador de traducción podía guardar un texto híbrido traducido como si fuera el original. El observador y el renderizado comparten ahora el mismo cálculo de traducción, preservando el texto fuente para el cambio de idioma.
+- La prueba de filtros espera a que se cargue el catálogo y localiza «Flamenquín» por su nombre accesible. También comprueba que elegir una sugerencia rellena el campo sin ejecutar la búsqueda.
+- QA local PASS en sintaxis, buscador y filtros FR, resultados FR y traducción dinámica, contadores, búsqueda general, rediseño híbrido, horarios, accesibilidad y francés público. Nueva ejecución del workflow oficial pendiente de publicación.

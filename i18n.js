@@ -699,25 +699,19 @@ window.GASTRO_I18N = Object.freeze({
     "Image illustrative"
   ]
 }));
+  function translatedNodeValue(node,original){
+    if(language==='es')return original;
+    const match=original.match(/^(\s*)([\s\S]*?)(\s*)$/);
+    const hybrid=hybridLabels.get(match[2]);
+    if(hybrid)return match[1]+hybrid[language==='en'?0:1]+match[3];
+    if(language==='en')return match[1]+translateEnglishText(node,match[2])+match[3];
+    return match[1]+translateFrenchDetailNotice(node,translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchRecommendationsText(node,translateFrenchServiceText(node,translateFrenchHeroText(node,translateFrenchNavText(node,translateFrenchFavoritesNotice(node,translateFrenchSearchText(node,translateFrenchGroupText(node,translateFrenchHeading(node,match[2]))))))))))))+match[3];
+  }
   function translateText(node){
     if(!node || !node.parentElement || node.parentElement.closest('script,style,textarea,option[data-keep-original],#language-select,[data-keep-dish-spanish],[data-bilingual-es],[data-hours-localized]'))return;
     if(!originalNodes.has(node))originalNodes.set(node,node.nodeValue);
-    const original=originalNodes.get(node);
-    const match=original.match(/^(\s*)([\s\S]*?)(\s*)$/);
-    const key=normalize(match[2]);
-    const hybrid=hybridLabels.get(match[2]);
-    if(hybrid&&language!=='es'){
-      const next=match[1]+hybrid[language==='en'?0:1]+match[3];
-      if(node.nodeValue!==next)node.nodeValue=next;
-      return;
-    }
-    if(language==='en'){
-      const next=match[1]+translateEnglishText(node,match[2])+match[3];
-      if(node.nodeValue!==next)node.nodeValue=next;
-    }else if(language==='fr'){
-      const next=match[1]+translateFrenchDetailNotice(node,translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchRecommendationsText(node,translateFrenchServiceText(node,translateFrenchHeroText(node,translateFrenchNavText(node,translateFrenchFavoritesNotice(node,translateFrenchSearchText(node,translateFrenchGroupText(node,translateFrenchHeading(node,match[2]))))))))))))+match[3];
-      if(node.nodeValue!==next)node.nodeValue=next;
-    }else if(node.nodeValue!==original)node.nodeValue=original;
+    const next=translatedNodeValue(node,originalNodes.get(node));
+    if(node.nodeValue!==next)node.nodeValue=next;
   }
   function translateElement(root){
     if(!root)return;
@@ -801,11 +795,7 @@ window.GASTRO_I18N = Object.freeze({
         if(record.type==='characterData'){
           const node=record.target;
           const previous=originalNodes.get(node);
-          if(previous!==undefined){
-            const match=previous.match(/^(\s*)([\s\S]*?)(\s*)$/);
-            const expected=language==='en'?match[1]+translateEnglishText(node,match[2])+match[3]:language==='fr'?match[1]+translateFrenchDetailNotice(node,translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchRecommendationsText(node,translateFrenchServiceText(node,translateFrenchHeroText(node,translateFrenchNavText(node,translateFrenchFavoritesNotice(node,translateFrenchSearchText(node,translateFrenchGroupText(node,translateFrenchHeading(node,match[2]))))))))))))+match[3]:previous;
-            if(node.nodeValue===expected)continue;
-          }
+          if(previous!==undefined&&node.nodeValue===translatedNodeValue(node,previous))continue;
           originalNodes.delete(node);
           translateText(node);
         }else{
