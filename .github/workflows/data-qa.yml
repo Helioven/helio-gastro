@@ -190,6 +190,7 @@ jobs:
             scripts/inventory-fr-load-performance.mjs \
             scripts/inventory-cache-reload.mjs \
             scripts/test-accessibility-flow.mjs \
+            scripts/test-manolo-guide.mjs \
             scripts/inventory-contrast-status.mjs; do
             echo "::group::Running $suite"
             started=$(date +%s)

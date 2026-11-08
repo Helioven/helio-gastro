@@ -686,10 +686,14 @@ function renderFavorites(){
 }
 const SEARCH_KEY='helio-gastro-search-v1';
 const SEARCH_FIELDS=['place-name','dish','budget','price-scope','portion','area','include-unknown','price-kind','sort'];
-function saveSearch(){
- if(!state.searched)return;
+function searchFormValues(){
  const form={};
  for(const id of SEARCH_FIELDS){const node=el(id);form[id]=node.type==='checkbox'?node.checked:node.value}
+ return form;
+}
+function saveSearch(){
+ if(!state.searched)return;
+ const form=searchFormValues();
  try{localStorage.setItem(SEARCH_KEY,JSON.stringify({form,selected:[...state.selected],mode:state.mode}))}catch{}
 }
 function restoreSearch(){
@@ -1216,9 +1220,11 @@ function getDishCoverage(term, area, nameQuery='') {
  const priced=matches.filter(p=>servicePrices(p).some(d=>!term||searchDishMatches(d.dish,term)));
  return {total:matches.length, priced:priced.length, unpriced:matches.length-priced.length};
 }
+let appliedSearch=null;
 function filter(event,restoring=false){
  if(event)event.preventDefault();
  el('direct-dish').value=el('dish').value;
+ appliedSearch={mode:state.mode,form:searchFormValues()};
  const dish=clean(el('dish').value.trim()),nameQuery=clean(el('place-name').value.trim()),max=el('budget').value?Number(el('budget').value):null;
  state.appliedTerm=dish;state.appliedBudget=max;state.appliedScope=el('price-scope').value;state.appliedPortion=state.appliedScope==='dish'?el('portion').value:'';state.searched=true;
  el('results-section').hidden=false;
@@ -1497,7 +1503,33 @@ function onFrenchSelection(){
  }).catch(error=>console.warn('French descriptions unavailable:',error.message));
 }
 
+function manoloCompareTarget(){
+ const form=searchFormValues();
+ if(!clean(form.dish.trim()))return 'dish';
+ if(form['price-scope']!=='dish')return 'price-scope';
+ if(!form.portion||form.portion==='desconocida')return 'portion';
+ const matches=state.searched&&appliedSearch?.mode===state.mode&&
+  SEARCH_FIELDS.every(id=>form[id]===appliedSearch.form[id]);
+ if(!matches)return 'search-button';
+ const matchingSelection=state.filtered.some(place=>state.selected.has(place.id));
+ return matchingSelection?'compare-title':'results-heading';
+}
+
+function openManoloAction(action){
+ let target='recommendations-heading';
+ if(action==='traditional'&&['desayuno','merienda'].includes(state.mode))updateMealMode('comida');
+ if(action==='budget')target='price-scope';
+ if(action==='compare')target=manoloCompareTarget();
+ const quickCategory=action==='discover'&&el('quick-categories').querySelector('button');
+ const node=quickCategory||el(target);
+ node.focus({preventScroll:true});
+ node.scrollIntoView({block:'center'});
+}
+
 async function init(){
+ document.querySelectorAll('[data-manolo-action]').forEach(button=>{
+  button.addEventListener('click',()=>openManoloAction(button.dataset.manoloAction));
+ });
  el('language-select').addEventListener('change',onFrenchSelection);
  document.querySelectorAll('[data-service]').forEach(btn=>btn.addEventListener('click',()=>updateMealMode(btn.dataset.service)));
  el('filters').addEventListener('submit',filter);

@@ -631,6 +631,18 @@ window.GASTRO_I18N = Object.freeze({
     return translateValue(key);
   };
   const hybridLabels = new Map(Object.entries({
+  "¿No sabes por dónde empezar? Elige una opción y te ayudo a explorar Córdoba a bocados": ["Not sure where to start? Pick an option and I’ll help you explore Córdoba one bite at a time","Vous ne savez pas par où commencer ? Choisissez une option et je vous aide à découvrir Cordoue une bouchée à la fois"],
+  "No sé qué comer": ["I don’t know what to eat","Je ne sais pas quoi manger"],
+  "Descubre platos disponibles en nuestras cartas.": ["Explore dishes listed on the menus.","Découvrez les plats qui figurent sur les cartes."],
+  "Quiero algo típico": ["I want something local","Je veux goûter une spécialité locale"],
+  "Explora especialidades de Córdoba.": ["Explore specialities from Córdoba.","Explorez les spécialités de Cordoue."],
+  "Sabores de Córdoba se abre en el momento de comida si estás explorando desayunos o meriendas.": ["If you’re exploring breakfast or afternoon snacks, Flavours of Córdoba opens in lunch mode.","Si vous explorez les petits-déjeuners ou les goûters, Saveurs de Cordoue s’ouvre en mode déjeuner."],
+  "Busco algo económico": ["I’m looking for something affordable","Je cherche une option économique"],
+  "Encuentra opciones según tu presupuesto.": ["Find options for your budget.","Trouvez des options adaptées à votre budget."],
+  "Elige un límite por plato o por persona. Los precios desconocidos no cuentan como opciones dentro del límite.": ["Set a limit per dish or per person. Unknown prices do not count as options within your budget.","Fixez une limite par plat ou par personne. Les prix inconnus ne comptent pas comme des options dans votre budget."],
+  "Quiero comparar": ["I want to compare","Je veux comparer"],
+  "Compara precios documentados de un mismo plato.": ["Compare documented prices for the same dish.","Comparez les prix documentés pour un même plat."],
+  "Elige un plato y un formato documentado. Si falta el precio en ese formato, consulta la carta.": ["Choose a dish and a documented portion size. If the price for that size is missing, check the menu.","Choisissez un plat et un format de portion documenté. Si le prix de ce format manque, consultez la carte."],
   "Fuentes de la carta": ["Menu sources", "Sources de la carte"],
   "Cómo interpretar precios y disponibilidad": ["Understanding prices and availability", "Comprendre les prix et la disponibilité"],
   "Secciones de la carta": ["Menu sections", "Sections de la carte"],
