@@ -1551,3 +1551,8 @@ Helio autorizó expresamente activar el francés públicamente e integrarlo en `
 - La prueba de ida y vuelta detectó que el observador de traducción podía guardar un texto híbrido traducido como si fuera el original. El observador y el renderizado comparten ahora el mismo cálculo de traducción, preservando el texto fuente para el cambio de idioma.
 - La prueba de filtros espera a que se cargue el catálogo y localiza «Flamenquín» por su nombre accesible. También comprueba que elegir una sugerencia rellena el campo sin ejecutar la búsqueda.
 - QA local PASS en sintaxis, buscador y filtros FR, resultados FR y traducción dinámica, contadores, búsqueda general, rediseño híbrido, horarios, accesibilidad y francés público. Nueva ejecución del workflow oficial pendiente de publicación.
+
+### Corrección de la prueba de restauración de idioma
+
+- `test-fr-section-render.mjs` buscaba una sentencia literal eliminada al unificar el traductor en `26f185d`. La prueba mantiene la cobertura de 314 encabezados y ahora ejecuta el traductor real en Node para comprobar el ciclo ES → FR → ES → EN → ES, incluido el observador de mutaciones y la conservación de los nombres de plato.
+- QA local PASS en los 21 scripts y los dos bloques de resumen del job `catalog-audit`. El ciclo de idiomas también pasó en Chromium a 360 × 800 y 1365 × 900, con la portada y la carta de La Montillana abiertas. El CI oficial del nuevo commit queda pendiente de publicación.
