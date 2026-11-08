@@ -494,7 +494,11 @@ function validPlace(p){
 function dishPrices(p){return(Array.isArray(p.dishPrices)?p.dishPrices:[]).filter(d=>typeof d.dish==='string'&&Number.isFinite(d.eur)&&d.eur>=0)}
 const PORTIONS={unidad:'Unidad',tapa:'Tapa',media:'Media ración',racion:'Ración completa','media-tostada':'Media tostada','tostada-entera':'Tostada entera',combinado:'Combinado',desconocida:'Formato sin especificar'};
 function portionOf(item){
- if(PORTIONS[item.portion])return item.portion;
+ const declared=clean(item.portion).trim();
+ if(Object.hasOwn(PORTIONS,declared))return declared;
+ const aliases={'media racion':'media','1/2 racion':'media','racion entera':'racion','racion completa':'racion','media tostada':'media-tostada','tostada entera':'tostada-entera'};
+ if(Object.hasOwn(aliases,declared))return aliases[declared];
+ if(declared)return 'desconocida';
  const name=clean(item.dish);
  if(/\bmedia(?:\s+racion)?\b/.test(name))return 'media';
  if(/\btapa\b/.test(name))return 'tapa';
