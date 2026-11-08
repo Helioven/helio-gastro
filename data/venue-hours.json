@@ -395,11 +395,13 @@
       "sources": {
         "contact": {
           "url": "https://bodegascampos.com/contacto/",
+          "labelKey": "contactPage",
           "checkedOn": "2026-11-08",
           "evidence": "Contacto, sede Córdoba: lunes a domingo, 13:30–16:00 y 20:00–23:00."
         },
         "bookings": {
           "url": "https://bodegascampos.com/reserva-en-bodegas-campos/",
+          "labelKey": "reservationsPage",
           "checkedOn": "2026-11-08",
           "evidence": "Reservas Córdoba: lun. 13:30–16:00; mar.–jue. 13:30–16:00 y 20:00–22:30; vie.–sáb. 13:00–16:30 y 20:00–23:00; dom. 13:00–16:30."
         }

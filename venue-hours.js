@@ -1,12 +1,12 @@
 (() => {
  const labels={
-  es:{title:'Horarios',opening:'Apertura del local',kitchen:'Servicio de cocina',breakfast:'Desayuno',lunch:'Comida',dinner:'Cena',more:'Desayuno, comida, cena y excepciones',exceptions:'Excepciones',unknown:'Horario sin confirmar.',conflict:'Las fuentes oficiales discrepan. Confirma el horario con el local.',closed:'Cerrado',next:'del día siguiente',partial:'{start} · cierre sin precisar',sources:'Fuentes y fecha de comprobación',source:'Web oficial',note:'Horarios publicados sujetos a cambios.',none:'Sin excepciones documentadas.'},
-  en:{title:'Hours',opening:'Venue opening hours',kitchen:'Kitchen service hours',breakfast:'Breakfast',lunch:'Lunch',dinner:'Dinner',more:'Breakfast, lunch, dinner and exceptions',exceptions:'Exceptions',unknown:'Hours unconfirmed.',conflict:'Official sources disagree. Check the hours with the venue.',closed:'Closed',next:'the next day',partial:'{start} · closing time unspecified',sources:'Sources and date checked',source:'Official website',note:'Published hours may change.',none:'No exceptions documented.'},
-  fr:{title:'Horaires',opening:'Ouverture de l’établissement',kitchen:'Service de cuisine',breakfast:'Petit-déjeuner',lunch:'Déjeuner',dinner:'Dîner',more:'Petit-déjeuner, déjeuner, dîner et exceptions',exceptions:'Exceptions',unknown:'Horaires à confirmer.',conflict:'Les sources officielles divergent. Confirmez les horaires auprès de l’établissement.',closed:'Fermé',next:'le lendemain',partial:'{start} · fermeture non précisée',sources:'Sources et date de vérification',source:'Site officiel',note:'Les horaires publiés peuvent changer.',none:'Aucune exception documentée.'}
+  es:{title:'Horarios',opening:'Apertura del local',kitchen:'Servicio de cocina',breakfast:'Desayuno',lunch:'Comida',dinner:'Cena',more:'Desayuno, comida, cena y excepciones',exceptions:'Excepciones',unknown:'Horario sin confirmar.',conflict:'Las fuentes oficiales discrepan. Confirma el horario con el local.',closed:'Cerrado',next:'del día siguiente',partial:'{start} · cierre sin precisar',sources:'Fuentes y fecha de comprobación',source:'Web oficial',contactPage:'Bodegas Campos: Contacto',reservationsPage:'Bodegas Campos: Reservas',note:'Horarios publicados sujetos a cambios.',none:'Sin excepciones documentadas.'},
+  en:{title:'Hours',opening:'Venue opening hours',kitchen:'Kitchen service hours',breakfast:'Breakfast',lunch:'Lunch',dinner:'Dinner',more:'Breakfast, lunch, dinner and exceptions',exceptions:'Exceptions',unknown:'Hours unconfirmed.',conflict:'Official sources disagree. Check the hours with the venue.',closed:'Closed',next:'the next day',partial:'{start} · closing time unspecified',sources:'Sources and date checked',source:'Official website',contactPage:'Bodegas Campos: Contact',reservationsPage:'Bodegas Campos: Reservations',note:'Published hours may change.',none:'No exceptions documented.'},
+  fr:{title:'Horaires',opening:'Ouverture de l’établissement',kitchen:'Service de cuisine',breakfast:'Petit-déjeuner',lunch:'Déjeuner',dinner:'Dîner',more:'Petit-déjeuner, déjeuner, dîner et exceptions',exceptions:'Exceptions',unknown:'Horaires à confirmer.',conflict:'Les sources officielles divergent. Confirmez les horaires auprès de l’établissement.',closed:'Fermé',next:'le lendemain',partial:'{start} · fermeture non précisée',sources:'Sources et date de vérification',source:'Site officiel',contactPage:'Bodegas Campos : Contact',reservationsPage:'Bodegas Campos : Réservations',note:'Les horaires publiés peuvent changer.',none:'Aucune exception documentée.'}
  };
  let pending,current;
  function data(){
-  pending??=fetch('./data/venue-hours.json?v=1').then(response=>{
+  pending??=fetch('./data/venue-hours.json?v=2').then(response=>{
    if(!response.ok)throw Error('HTTP '+response.status);
    return response.json();
   }).then(payload=>{
@@ -72,7 +72,7 @@
   for(const [id,source] of Object.entries(record.sources)){
    const contexts=scopes.filter(scope=>record.schedules[scope].sourceIds.includes(id)).map(scope=>t[scope]);
    const item=node('li');
-   const link=node('a',t.source+' · '+dayList.format(contexts));
+   const link=node('a',(t[source.labelKey]||t.source)+' · '+dayList.format(contexts));
    link.href=source.url;
    item.append(link,document.createTextNode(' · '+localDate(source.checkedOn)));
    list.append(item);

@@ -75,6 +75,19 @@ try {
       await open('Bodegas Campos');
       assert.ok((await panel.textContent()).includes(conflict));
       assert.doesNotMatch(await panel.textContent(), /13:30|20:00/);
+      const names = {
+        es: ['Bodegas Campos: Contacto · Apertura del local', 'Bodegas Campos: Reservas · Apertura del local'],
+        en: ['Bodegas Campos: Contact · Venue opening hours', 'Bodegas Campos: Reservations · Venue opening hours'],
+        fr: ['Bodegas Campos : Contact · Ouverture de l’établissement', 'Bodegas Campos : Réservations · Ouverture de l’établissement']
+      }[lang];
+      const urls = Object.values(pilot.records['bodegas-campos'].sources).map(source => source.url);
+      await panel.locator('summary').last().press('Enter');
+      for (const [index, name] of names.entries()) {
+        const link = panel.getByRole('link', { name, exact: true });
+        assert.equal(await link.getAttribute('href'), urls[index]);
+        await page.keyboard.press('Tab');
+        assert.equal(await link.evaluate(node => node === document.activeElement), true);
+      }
       await open('Patio Romano', false);
     }
     assert.deepEqual(errors, []);
