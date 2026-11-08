@@ -83,6 +83,9 @@ try {
       assert.equal(await page.evaluate(() => document.activeElement.id), 'venue-section-taberna-la-manuela-6');
       await page.locator('.menu-index-return').nth(6).press('Enter');
       assert.equal(await page.evaluate(() => document.activeElement.id), 'venue-section-index');
+      await page.locator('.venue-sources-jump').press('Enter');
+      assert.equal(await page.evaluate(() => document.activeElement.id), 'venue-sources');
+      assert.ok(await page.locator('#quick-nav').evaluate(nav => nav.scrollWidth <= nav.clientWidth));
       assert.deepEqual(errors, []);
       await page.close();
       console.log(profile + ' ' + language + ' PASS');

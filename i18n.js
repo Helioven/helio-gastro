@@ -631,6 +631,7 @@ window.GASTRO_I18N = Object.freeze({
     return translateValue(key);
   };
   const hybridLabels = new Map(Object.entries({
+  "Fuentes de la carta": ["Menu sources", "Sources de la carte"],
   "Cómo interpretar precios y disponibilidad": ["Understanding prices and availability", "Comprendre les prix et la disponibilité"],
   "Secciones de la carta": ["Menu sections", "Sections de la carte"],
   "Ir a sección": ["Go to section", "Aller à une section"],

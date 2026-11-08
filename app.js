@@ -779,7 +779,7 @@ function draw(){
    const main=document.createElement('p');main.className='result-main-price';
    main.textContent='Desde '+fmt(cheapest.eur)+' · '+(state.appliedPortion&&state.appliedPortion!=='desconocida'?localizedPortion(state.appliedPortion):'Precio de plato publicado');
    if(portionOf(cheapest)==='desconocida')markUnknownFormat(main,'result-format-note');
-   card.append(main);
+   card.insertBefore(main,card.querySelector('.matching-dishes'));
   }else{
    const pending=document.createElement('p');pending.className='result-pending';
    pending.textContent='Precio del plato'+(state.appliedPortion?' en este formato':'')+' pendiente de confirmar';
@@ -1044,6 +1044,15 @@ function showPlace(p,scroll=true){
  const panel=el('detail-content');panel.replaceChildren();
  const title=document.createElement('h2');title.id='detail-title';title.tabIndex=-1;title.textContent=p.name;panel.append(title,favoriteButton(p));
  const address=document.createElement('p');if(p.addressEn){address.dataset.bilingualEs='📍 '+p.address;address.dataset.bilingualEn='📍 '+p.addressEn;}address.textContent='📍 '+p.address;panel.append(address);
+ const sourcesLink=document.createElement('a');
+ sourcesLink.className='venue-sources-jump';sourcesLink.href='#venue-sources';sourcesLink.textContent='Fuentes de la carta';
+ sourcesLink.addEventListener('click',event=>{
+  event.preventDefault();
+  const target=el('venue-sources');
+  target.scrollIntoView({block:'start'});
+  target.focus({preventScroll:true});
+ });
+ panel.append(sourcesLink);
  window.HelioGastroVenueHours?.attach(panel,p.id);
  if(p.openingHoursNote){
   const hours=document.createElement('p');hours.className='service-notice';
@@ -1146,7 +1155,7 @@ function showPlace(p,scroll=true){
    panel.append(card);
   }
  }
- const sources=document.createElement('h3');sources.textContent='Fuentes y fecha';panel.append(sources);
+ const sources=document.createElement('h3');sources.id='venue-sources';sources.tabIndex=-1;sources.textContent='Fuentes y fecha';panel.append(sources);
  const checked=document.createElement('p');checked.textContent='Última consulta: '+(p.checkedAt||'Sin fecha registrada');panel.append(checked);
  if(Array.isArray(p.officialMenuLinks)&&p.officialMenuLinks.length){
   const details=document.createElement('details');details.className='source-details';

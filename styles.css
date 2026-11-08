@@ -355,3 +355,33 @@ body{background:#f9f4eb}
 .venue-hours summary{cursor:pointer;min-height:44px;padding:9px 0;font-weight:700}
 .venue-hours .note{margin:6px 0}
 @media(max-width:560px){.venue-hours-grid{grid-template-columns:minmax(0,1fr)}}
+/* Keep the reading and action surfaces consistent with the hybrid ficha. */
+.quick-nav span{color:#793616}
+#results-section .result-main-price{font-size:16px!important;margin:8px 0;font-weight:800}
+#venue-sources{scroll-margin-top:165px}
+#detail-content .venue-sources-jump{display:inline-flex;align-items:center;min-height:44px;margin:0 8px 7px 0;font-weight:700;text-underline-offset:3px}
+#compare-section,#recommendation-dialog,#map-dialog{background:#fffdf8;color:#0b2545;border-color:#d4c6b4;--muted:#475a6d;--line:#bcae9e}
+#compare-section .chip,#compare-section .compare-place p{color:#475a6d}
+#compare-section .compare-place,#compare-section .empty{background:#f5ecdf;border-color:#d4c6b4;color:#0b2545}
+#compare-section .compare-place ul{color:#0b2545}
+#compare-section .best-comparable{color:#59331e;background:#f4e1c9}
+#recommendation-dialog .recommendation-dialog-head,#map-dialog .map-dialog-head{background:#fffdf8;border-color:#d4c6b4}
+#recommendation-dialog h2,#recommendation-dialog h3,#map-dialog h2{color:#0b2545}
+#recommendation-dialog #recommendation-results .recommendation-place,#recommendation-dialog .recommendation-row,#recommendation-dialog .service-notice{background:#f5ecdf;border-color:#d4c6b4;color:#0b2545}
+#recommendation-dialog #recommendation-results .recommendation-place li,#recommendation-dialog .portion-tag{border-color:#cbb9a5;color:#0b2545}
+#recommendation-dialog .recommendation-place strong,#recommendation-dialog .dish-explanation{color:#475a6d}
+#compare-section .map-route-link,#map-dialog .map-route-link{background:#0b2545;border-color:#0b2545;color:white}
+#compare-section :focus-visible,#recommendation-dialog :focus-visible,#map-dialog :focus-visible{outline-color:#9c411e}
+@media(max-width:560px){
+ .shell>header{align-items:center;gap:8px}
+ .shell>header .header-controls{gap:2px;min-width:0;grid-template-columns:auto}
+ .shell>header .version{display:none}
+ .shell>header .manolo-logo{width:48px;height:48px}
+ .shell>header #language-select{min-width:0;max-width:100%;font-size:13px}
+ .quick-nav{gap:3px;padding:5px 4px;overflow:visible}
+ .quick-nav a{flex:1 1 0;min-width:0;min-height:44px;padding:3px 2px;gap:2px;font-size:11px;white-space:normal;text-align:center;overflow-wrap:anywhere}
+ .hybrid-hero{margin-top:12px;padding-top:7px}
+}
+#recommendation-dialog #recommendation-results .recommendation-place h4{color:#0b2545}
+#recommendation-dialog .recommendation-place-actions button,#recommendation-dialog .recommendation-row button{background:#fffdf8;color:#0b2545;border:1px solid #80705d}
+#recommendation-dialog .recommendation-place-actions button:hover,#recommendation-dialog .recommendation-row button:hover{background:#f0e5d5}
