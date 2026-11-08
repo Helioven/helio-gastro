@@ -260,3 +260,40 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 .manolo-footer{display:flex;align-items:center;justify-content:center;gap:7px;text-align:left;padding-top:10px}
 .manolo-footer img{display:block;width:64px;height:64px;object-fit:contain;flex:none}
 @media(max-width:360px){.manolo-logo{width:54px;height:54px}.manolo-footer img{width:58px;height:58px}}
+/* Hybrid landing, with the existing search and navigation entry points. */
+body{background:#f9f4eb}
+.shell{max-width:1226px}
+.shell>header,.shell>footer{color:#0b2545}
+.shell>header .brand h1{font-weight:800;letter-spacing:0}
+.shell>header .brand h1 strong,.shell>header .brand-signature,.shell>header .brand-signature small{color:#0b2545}
+.shell>header .brand-signature span{color:#9c411e}
+.shell>header .version,.shell>header label{color:#475a6d}
+.shell>header .version{border-color:#80705d}
+.shell>header .manolo-logo{background:transparent;border:0}
+.shell>header select,.quick-nav{color-scheme:light;background:#fffdf8;color:#0b2545;border-color:#bcae9e}
+.quick-nav a{background:transparent;color:#0b2545;border-color:#bcae9e}
+.quick-nav a:hover,.quick-nav a:focus-visible{color:#0b2545;background:#f0e5d5}
+.hybrid-hero{display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,1fr);gap:clamp(18px,4vw,56px);align-items:center;padding:12px 0;background:transparent;border:0;box-shadow:none;color:#0b2545;overflow:visible}
+.hybrid-hero::after{display:none}
+.hybrid-hero h2{font:700 clamp(2rem,5.2vw,4.2rem)/1.03 Georgia,serif;letter-spacing:-.035em;margin:12px 0}
+.hybrid-hero .eyebrow{color:#9c411e;margin:0}
+.hybrid-hero .hybrid-lede{color:#475a6d;margin:0 0 15px}
+.hybrid-hero-art{position:relative;margin:0;width:min(100%,520px);justify-self:center;overflow:hidden;border-radius:18px}
+.hybrid-hero-art img{display:block;width:100%;height:auto}
+.hybrid-hero-art figcaption{position:absolute;bottom:8px;left:8px;background:#0b2545;color:white;padding:3px 7px;border-radius:5px;font-size:12px}
+#direct-search,.manolo-guide{background:#fffdf8;border:1px solid #d4c6b4;border-radius:15px;padding:12px}
+.direct-search-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:end}
+#direct-search label,#direct-search input{color:#0b2545}
+#direct-search input{color-scheme:light;background:white;border-color:#80705d;min-width:0}
+#direct-search input::placeholder{color:#475a6d}
+#direct-search .primary{background:#0b2545;color:white}
+.manolo-guide{display:grid;grid-template-columns:minmax(0,1fr) 62px;align-items:center;gap:8px;margin-top:10px;border-top:2px solid #3b82f6}
+.manolo-guide p:last-child{color:#475a6d;font-size:.9rem}
+.manolo-guide img{width:100%;height:auto}
+#quick-categories p{font-size:.8rem;font-weight:700;color:#475a6d;margin:0 0 4px}
+.category-actions{display:flex;flex-wrap:wrap;gap:6px}
+.category-actions button{background:#fffdf8;color:#0b2545;border:1px solid #80705d;border-radius:999px;min-height:44px;padding:5px 10px;font:600 .82rem system-ui;cursor:pointer}
+.hybrid-hero :focus-visible,.quick-nav a:focus-visible{outline:3px solid #9c411e;outline-offset:2px}
+.shell>footer .brand-signature,.shell>footer .brand-signature small,.shell>footer .studio-tagline{color:#0b2545}
+.shell>footer .brand-signature span{color:#9c411e}
+@media(max-width:720px){.hybrid-hero{grid-template-columns:minmax(0,1fr);gap:15px}.hybrid-hero-art{width:100%}}

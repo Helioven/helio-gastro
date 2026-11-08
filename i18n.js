@@ -630,12 +630,80 @@ window.GASTRO_I18N = Object.freeze({
       return source.replace(/ · Vigencia pendiente de confirmar$/, ' · Validity not confirmed');
     return translateValue(key);
   };
+  const hybridLabels = new Map(Object.entries({
+  "CÓRDOBA · GUÍA GASTRONÓMICA": [
+    "CÓRDOBA · FOOD GUIDE",
+    "CORDOUE · GUIDE GASTRONOMIQUE"
+  ],
+  "Descubre Córdoba a bocados": [
+    "Discover Córdoba one bite at a time",
+    "Découvrez Cordoue une bouchée à la fois"
+  ],
+  "Descubre qué comer en Córdoba, consulta precios de carta y encuentra dónde disfrutarlo": [
+    "Discover what to eat in Córdoba, check menu prices and find where to enjoy it",
+    "Découvrez quoi manger à Cordoue, consultez les prix à la carte et trouvez où en profiter"
+  ],
+  "Catálogo general": [
+    "General catalogue",
+    "Catalogue général"
+  ],
+  "Escribe un plato o especialidad…": [
+    "Type a dish or speciality…",
+    "Saisissez un plat ou une spécialité…"
+  ],
+  "Buscar": [
+    "Search",
+    "Rechercher"
+  ],
+  "Categorías rápidas": [
+    "Quick categories",
+    "Catégories rapides"
+  ],
+  "Pizzas": [
+    "Pizzas",
+    "Pizzas"
+  ],
+  "Hamburguesas": [
+    "Burgers",
+    "Burgers"
+  ],
+  "Tartas de queso": [
+    "Cheesecakes",
+    "Gâteaux au fromage"
+  ],
+  "Manolo te orienta": [
+    "Manolo’s search tips",
+    "Les astuces de Manolo"
+  ],
+  "Busca un plato o ajusta los filtros para encontrar un local.": [
+    "Search for a dish or adjust the filters to find a venue.",
+    "Recherchez un plat ou ajustez les filtres pour trouver un établissement."
+  ],
+  "Sabores de Córdoba": [
+    "Flavours of Córdoba",
+    "Saveurs de Cordoue"
+  ],
+  "Ideas para tu momento": [
+    "Ideas for your meal",
+    "Des idées pour votre repas"
+  ],
+  "Imagen ilustrativa": [
+    "Illustrative image",
+    "Image illustrative"
+  ]
+}));
   function translateText(node){
     if(!node || !node.parentElement || node.parentElement.closest('script,style,textarea,option[data-keep-original],#language-select,[data-keep-dish-spanish],[data-bilingual-es]'))return;
     if(!originalNodes.has(node))originalNodes.set(node,node.nodeValue);
     const original=originalNodes.get(node);
     const match=original.match(/^(\s*)([\s\S]*?)(\s*)$/);
     const key=normalize(match[2]);
+    const hybrid=hybridLabels.get(match[2]);
+    if(hybrid&&language!=='es'){
+      const next=match[1]+hybrid[language==='en'?0:1]+match[3];
+      if(node.nodeValue!==next)node.nodeValue=next;
+      return;
+    }
     if(language==='en'){
       const next=match[1]+translateEnglishText(node,match[2])+match[3];
       if(node.nodeValue!==next)node.nodeValue=next;
@@ -679,7 +747,8 @@ window.GASTRO_I18N = Object.freeze({
           'Cerrar recomendaciones':'Close recommendations',
           'Mapa del establecimiento':'Establishment map'
         };
-        const translated=language==='en'?(englishAccessibleLabels[source]||translateValue(source)):language==='fr'?(frenchAccessibleLabels[source]||source):source;
+        const hybrid=hybridLabels.get(source);
+        const translated=language==='en'?(hybrid?.[0]||englishAccessibleLabels[source]||translateValue(source)):language==='fr'?(hybrid?.[1]||frenchAccessibleLabels[source]||source):source;
         if(element.getAttribute(attr)!==translated)element.setAttribute(attr,translated);
       }
     }

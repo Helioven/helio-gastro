@@ -1422,6 +1422,11 @@ async function init(){
  el('language-select').addEventListener('change',onFrenchSelection);
  document.querySelectorAll('[data-service]').forEach(btn=>btn.addEventListener('click',()=>updateMealMode(btn.dataset.service)));
  el('filters').addEventListener('submit',filter);
+ el('direct-search').addEventListener('submit',event=>{
+  event.preventDefault();
+  el('dish').value=el('direct-dish').value;
+  el('filters').requestSubmit();
+ });
  el('close-recommendations').addEventListener('click',()=>el('recommendation-dialog').close());
  el('close-map').addEventListener('click',closeMap);
  el('map-dialog').addEventListener('close',()=>el('map-frame').removeAttribute('src'));
