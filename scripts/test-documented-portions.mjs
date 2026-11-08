@@ -15,6 +15,7 @@ try {
   assert.deepEqual(formats, [[6.9, 'media'], [9.9, 'racion']]);
   assert.deepEqual(await page.evaluate(() => ['Ración', '1/2 ración', 'Unidad', 'Tapa', 'precio único', 'Formato no indicado']
    .map(portion => portionOf({ dish: 'Ejemplo', portion }))), ['racion', 'media', 'unidad', 'tapa', 'desconocida', 'desconocida']);
+  assert.equal(await page.evaluate(() => portionOf({ dish: 'Ración de rodaballo', portion: 'precio único' })), 'racion');
   await page.locator('.recommendation-tile').filter({ hasText: /salmorejo/i }).first().click();
   const venue = page.locator('.recommendation-place').filter({ hasText: 'La Montillana' });
   assert.deepEqual(await venue.locator('.portion-tag').allTextContents(), ['Media ración', 'Ración completa']);

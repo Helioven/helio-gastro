@@ -813,6 +813,7 @@ window.GASTRO_I18N = Object.freeze({
   };
   function translateJourneyText(node,source){
     const parent=node.parentElement;
+    if(!parent)return null;
     const key=normalize(source), fr=language==='fr', index=fr?1:0;
     if(parent.closest('#recommendation-dialog,#results-section,#map-dialog')){
       if(Object.hasOwn(journeyLabels,key))return journeyLabels[key][index];

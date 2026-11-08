@@ -1556,3 +1556,9 @@ Helio autorizó expresamente activar el francés públicamente e integrarlo en `
 
 - `test-fr-section-render.mjs` buscaba una sentencia literal eliminada al unificar el traductor en `26f185d`. La prueba mantiene la cobertura de 314 encabezados y ahora ejecuta el traductor real en Node para comprobar el ciclo ES → FR → ES → EN → ES, incluido el observador de mutaciones y la conservación de los nombres de plato.
 - QA local PASS en los 21 scripts y los dos bloques de resumen del job `catalog-audit`. El ciclo de idiomas también pasó en Chromium a 360 × 800 y 1365 × 900, con la portada y la carta de La Montillana abiertas. El CI oficial del nuevo commit queda pendiente de publicación.
+
+### Correcciones previas a publicación
+
+- Los formatos explícitos de carta se normalizan antes de filtrar y comparar. La regresión de La Montillana comprueba que Media ración y Solo precios documentados devuelven el salmorejo a 6,90 €. Los formatos ambiguos siguen sin asignarse cuando tampoco se especifican en el nombre del plato.
+- Los recorridos de búsqueda y descubrimiento cubren sus textos dinámicos en ES/EN/FR. El traductor ignora nodos separados del DOM y conserva la ficha al cambiar de idioma si su capa francesa ya está cargada.
+- La cabecera y navegación móviles dejan visibles los cuatro controles, se adelanta el primer precio y se puede saltar a las fuentes de carta con teclado. Comparador y diálogos usan la paleta híbrida. El catálogo y los recursos visuales permanecen intactos.

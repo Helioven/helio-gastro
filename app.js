@@ -498,7 +498,7 @@ function portionOf(item){
  if(Object.hasOwn(PORTIONS,declared))return declared;
  const aliases={'media racion':'media','1/2 racion':'media','racion entera':'racion','racion completa':'racion','media tostada':'media-tostada','tostada entera':'tostada-entera'};
  if(Object.hasOwn(aliases,declared))return aliases[declared];
- if(declared)return 'desconocida';
+ if(declared&&declared!=='precio unico')return 'desconocida';
  const name=clean(item.dish);
  if(/\bmedia(?:\s+racion)?\b/.test(name))return 'media';
  if(/\btapa\b/.test(name))return 'tapa';
@@ -1489,7 +1489,7 @@ async function ensureFrenchOverlay(data){
  catch(error){frenchOverlayPromise=null;throw error}
 }
 function onFrenchSelection(){
- if(window.HelioGastroLanguage?.get()!=='fr'||!state.places.length)return;
+ if(window.HelioGastroLanguage?.get()!=='fr'||!state.places.length||frenchOverlayLoaded)return;
  ensureFrenchOverlay(state.places).then(()=>{
   if(window.HelioGastroLanguage?.get()!=='fr')return;
   const p=state.places.find(p=>p.id===state.currentDetailId);
