@@ -699,11 +699,158 @@ window.GASTRO_I18N = Object.freeze({
     "Image illustrative"
   ]
 }));
+  const journeyLabels={
+  "Cerrar ×": [
+    "Close ×",
+    "Fermer ×"
+  ],
+  "Recomendaciones": [
+    "Recommendations",
+    "Recommandations"
+  ],
+  "Comparación informativa por variante y formato. Un precio menor no implica mejor calidad ni la misma cantidad.": [
+    "Informational comparison by variation and portion. A lower price does not imply better quality or the same quantity.",
+    "Comparaison indicative par variante et par format. Un prix plus bas ne garantit ni une meilleure qualité ni la même quantité."
+  ],
+  "Los precios pueden cambiar. Confirma la carta actual con el establecimiento.": [
+    "Prices may change. Check the current menu with the establishment.",
+    "Les prix peuvent changer. Vérifiez la carte actuelle auprès de l’établissement."
+  ],
+  "Los platos proceden de cartas generales. No se ha confirmado que estén disponibles específicamente para comer ni a una hora determinada.": [
+    "Dishes come from general menus. Availability at lunchtime or any particular time is not confirmed.",
+    "Les plats proviennent des cartes générales. Leur disponibilité au déjeuner ou à une heure précise reste à confirmer."
+  ],
+  "Los platos proceden de cartas generales. No se ha confirmado que estén disponibles específicamente para cenar ni a una hora determinada.": [
+    "Dishes come from general menus. Availability at dinner or any particular time is not confirmed.",
+    "Les plats proviennent des cartes générales. Leur disponibilité au dîner ou à une heure précise reste à confirmer."
+  ],
+  "Precios documentados por establecimiento": [
+    "Documented prices by establishment",
+    "Prix documentés par établissement"
+  ],
+  "También ofrecen el plato · precio pendiente": [
+    "Also list this dish · price pending",
+    "Proposent aussi ce plat · prix à confirmer"
+  ],
+  "Ver ficha": [
+    "View details",
+    "Voir la fiche"
+  ],
+  "📍 Ver mapa": [
+    "📍 View map",
+    "📍 Voir la carte"
+  ],
+  "☆ Guardar": [
+    "☆ Save",
+    "☆ Enregistrer"
+  ],
+  "★ Guardado": [
+    "★ Saved",
+    "★ Enregistré"
+  ],
+  "+ Comparar": [
+    "+ Compare",
+    "+ Comparer"
+  ],
+  "✓ Quitar del comparador": [
+    "✓ Remove from comparison",
+    "✓ Retirer du comparateur"
+  ],
+  "Mapa de Google Maps cargado al abrir esta ventana. Confirma la dirección antes de desplazarte.": [
+    "Google Maps loads when you open this window. Check the address before travelling.",
+    "Google Maps se charge à l’ouverture de cette fenêtre. Vérifiez l’adresse avant de vous déplacer."
+  ],
+  "Abrir en Google Maps ↗": [
+    "Open in Google Maps ↗",
+    "Ouvrir dans Google Maps ↗"
+  ],
+  "Establecimientos encontrados": [
+    "Places found",
+    "Établissements trouvés"
+  ],
+  "✓ Con precio documentado": [
+    "✓ With documented prices",
+    "✓ Avec prix documenté"
+  ],
+  "✓ Con precio documentado dentro del presupuesto": [
+    "✓ With documented prices within budget",
+    "✓ Avec prix documenté dans le budget"
+  ],
+  "También ofrecen el plato · Precio pendiente de confirmar": [
+    "Also list this dish · price pending",
+    "Proposent aussi ce plat · prix à confirmer"
+  ],
+  "Precio superior al presupuesto": [
+    "Price above budget",
+    "Prix supérieur au budget"
+  ],
+  "Carta general · servicio y horarios sin verificar": [
+    "General menu · service and hours unverified",
+    "Carte générale · service et horaires non vérifiés"
+  ],
+  "Carta específica registrada · horario pendiente de confirmar": [
+    "Service menu listed · hours unconfirmed",
+    "Carte du service répertoriée · horaires à confirmer"
+  ],
+  "Se muestran cartas generales para explorar opciones. No confirman que el local sirva este plato a la hora elegida.": [
+    "General menus are shown to explore options. They do not confirm that the venue serves this dish at the selected time.",
+    "Les cartes générales permettent d’explorer les options. Elles ne confirment pas que le plat soit servi à l’heure choisie."
+  ]
+};
+  const frenchPortions={'Unidad':'Unité','Tapa':'Tapa','Media ración':'Demi-portion','Ración completa':'Portion entière','Media tostada':'Demi-tartine','Tostada entera':'Tartine entière','Combinado':'Formule','Formato sin especificar':'Format non précisé'};
+  const compareVariants={
+    'Otro flamenquín':['Other flamenquín','Autre flamenquín'],
+    'Flamenquín tradicional / jamón':['Traditional flamenquín / ham','Flamenquín traditionnel / jambon'],
+    'Flamenquín de rabo de toro':['Oxtail flamenquín','Flamenquín à la queue de bœuf'],
+    'Croquetas de rabo de toro':['Oxtail croquettes','Croquettes à la queue de bœuf'],
+    'Croquetas de jamón y cocido':['Ham and stew croquettes','Croquettes au jambon et au pot-au-feu'],
+    'Croquetas de jamón y puchero':['Ham and puchero croquettes','Croquettes au jambon et au puchero'],
+    'Croquetas de jamón':['Ham croquettes','Croquettes au jambon'],
+    'Croquetas de salmón':['Salmon croquettes','Croquettes au saumon'],
+    'Croquetas de boniato':['Sweet potato croquettes','Croquettes à la patate douce'],
+    'Otras croquetas':['Other croquettes','Autres croquettes']
+  };
+  function translateJourneyText(node,source){
+    const parent=node.parentElement;
+    const key=normalize(source), fr=language==='fr', index=fr?1:0;
+    if(parent.closest('#recommendation-dialog,#results-section,#map-dialog')){
+      if(Object.hasOwn(journeyLabels,key))return journeyLabels[key][index];
+    }
+    if(parent.closest('#recommendation-dialog')){
+      const dish=key.match(/^Opciones de (.+)$/);
+      if(dish)return (fr?'Options pour ':'Options for ')+dish[1];
+      const counts=key.match(/^(\d+) locales en nuestra base; (\d+) con precios publicados\. No es un ranking de calidad ni una lista completa de Córdoba\.$/);
+      if(counts)return fr?counts[1]+' établissements dans notre base, dont '+counts[2]+' avec des prix publiés. Ce n’est ni un classement de qualité ni une liste exhaustive de Cordoue.':
+        counts[1]+' places in our database; '+counts[2]+' with published prices. This is not a quality ranking or a complete list of Córdoba.';
+      if(fr&&parent.matches('.portion-tag')&&Object.hasOwn(frenchPortions,key))return frenchPortions[key];
+    }
+    if(fr&&parent.id==='coverage-summary'){
+      const counts=key.match(/^En nuestra base actual: (\d+) local\(es\) con «(.+)» registrado\(s\); (\d+) con precio de ese plato documentado y (\d+) sin precio\. Esto NO representa todos los bares de Córdoba\.$/);
+      if(counts)return 'Dans notre base : '+counts[1]+' établissements proposent « '+counts[2]+' » ; '+counts[3]+' avec un prix documenté et '+counts[4]+' sans prix. Cette liste ne couvre pas tous les établissements de Cordoue.';
+    }
+    if(fr&&parent.matches('.result-main-price')){
+      const price=key.match(/^Desde (.+) · (.+)$/);
+      if(price)return 'À partir de '+price[1]+' · '+(price[2]==='Precio de plato publicado'?'Prix du plat publié':(frenchPortions[price[2]]||price[2]));
+    }
+    if(parent.matches('li')&&parent.closest('#compare-output')){
+      const translated=fr?translateFrenchCompareText(node,source):source;
+      const parts=translated.split(' · ');
+      const position=parts.length-(parts.at(-1).startsWith('★ ')?2:1);
+      if(position>0&&Object.hasOwn(compareVariants,parts[position])){
+        parts[position]=compareVariants[parts[position]][index];
+        return parts.join(' · ');
+      }
+      if(translated!==source)return translated;
+    }
+    return null;
+  }
   function translatedNodeValue(node,original){
     if(language==='es')return original;
     const match=original.match(/^(\s*)([\s\S]*?)(\s*)$/);
     const hybrid=hybridLabels.get(match[2]);
     if(hybrid)return match[1]+hybrid[language==='en'?0:1]+match[3];
+    const journey=translateJourneyText(node,match[2]);
+    if(journey!==null)return match[1]+journey+match[3];
     if(language==='en')return match[1]+translateEnglishText(node,match[2])+match[3];
     return match[1]+translateFrenchDetailNotice(node,translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchRecommendationsText(node,translateFrenchServiceText(node,translateFrenchHeroText(node,translateFrenchNavText(node,translateFrenchFavoritesNotice(node,translateFrenchSearchText(node,translateFrenchGroupText(node,translateFrenchHeading(node,match[2]))))))))))))+match[3];
   }
