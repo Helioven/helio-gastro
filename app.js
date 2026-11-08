@@ -1040,6 +1040,7 @@ function showPlace(p,scroll=true){
  const panel=el('detail-content');panel.replaceChildren();
  const title=document.createElement('h2');title.id='detail-title';title.tabIndex=-1;title.textContent=p.name;panel.append(title,favoriteButton(p));
  const address=document.createElement('p');if(p.addressEn){address.dataset.bilingualEs='📍 '+p.address;address.dataset.bilingualEn='📍 '+p.addressEn;}address.textContent='📍 '+p.address;panel.append(address);
+ window.HelioGastroVenueHours?.attach(panel,p.id);
  if(p.openingHoursNote){
   const hours=document.createElement('p');hours.className='service-notice';
   if(p.openingHoursNoteEn){hours.dataset.bilingualEs='🕒 '+p.openingHoursNote;hours.dataset.bilingualEn='🕒 '+p.openingHoursNoteEn;}hours.textContent='🕒 '+p.openingHoursNote;panel.append(hours);

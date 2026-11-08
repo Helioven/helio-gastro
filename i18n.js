@@ -700,7 +700,7 @@ window.GASTRO_I18N = Object.freeze({
   ]
 }));
   function translateText(node){
-    if(!node || !node.parentElement || node.parentElement.closest('script,style,textarea,option[data-keep-original],#language-select,[data-keep-dish-spanish],[data-bilingual-es]'))return;
+    if(!node || !node.parentElement || node.parentElement.closest('script,style,textarea,option[data-keep-original],#language-select,[data-keep-dish-spanish],[data-bilingual-es],[data-hours-localized]'))return;
     if(!originalNodes.has(node))originalNodes.set(node,node.nodeValue);
     const original=originalNodes.get(node);
     const match=original.match(/^(\s*)([\s\S]*?)(\s*)$/);

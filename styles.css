@@ -341,3 +341,17 @@ body{background:#f9f4eb}
 .result-method{margin:0 0 9px;color:#475a6d}
 .result-method summary{cursor:pointer;min-height:44px;padding-block:9px;font-weight:700;color:#0b2545}
 .result-method .note{margin:5px 0}
+/* Pilot schedules are separate from catalogue prices and service filters. */
+.venue-hours{margin:16px 0;padding:14px;background:#fffdf8;border:1px solid #d4c6b4;border-radius:14px}
+#detail-content .venue-hours h3{margin:0 0 10px}
+.venue-hours-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.venue-hours-card{background:#f5ecdf;border-top:3px solid #9c411e;border-radius:8px;padding:10px;min-width:0}
+.venue-hours-card+.venue-hours-card{border-color:#0b2545}
+.venue-hours h4{margin:0 0 4px}
+.venue-hours dl{margin:0}
+.venue-hours dt{font-weight:700}
+.venue-hours dd{margin:0 0 5px}
+.venue-hours details{border-top:1px solid #d4c6b4;margin-top:8px}
+.venue-hours summary{cursor:pointer;min-height:44px;padding:9px 0;font-weight:700}
+.venue-hours .note{margin:6px 0}
+@media(max-width:560px){.venue-hours-grid{grid-template-columns:minmax(0,1fr)}}

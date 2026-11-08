@@ -1,0 +1,455 @@
+{
+  "schemaVersion": 1,
+  "timeZone": "Europe/Madrid",
+  "records": {
+    "agora-mezquita": {
+      "sources": {
+        "contact": {
+          "url": "https://www.agoramezquita.com/contacto/",
+          "checkedOn": "2026-11-08",
+          "evidence": "Horario de apertura: lunes–jueves 12:30–24:00; viernes–domingo 12:30–01:00."
+        },
+        "bookings": {
+          "url": "https://www.agoramezquita.com/reservas-agora-mezquita/",
+          "checkedOn": "2026-11-08",
+          "evidence": "Cocina siempre abierta desde la apertura hasta el cierre."
+        }
+      },
+      "discrepancies": [
+        {
+          "scope": "opening",
+          "status": "resolvedForPilot",
+          "sourceIds": [
+            "contact",
+            "bookings"
+          ],
+          "evidence": "El campo publishedHours conserva la captura 12:30–00:00 todos los días. Contacto y Reservas coinciden en el cierre a la 01:00 de viernes a domingo."
+        }
+      ],
+      "schedules": {
+        "opening": {
+          "status": "published",
+          "sourceIds": [
+            "contact"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "12:30",
+                  "end": "00:00",
+                  "endDayOffset": 1
+                }
+              ]
+            },
+            {
+              "days": [
+                5,
+                6,
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "12:30",
+                  "end": "01:00",
+                  "endDayOffset": 1
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "published",
+          "sourceIds": [
+            "bookings",
+            "contact"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "12:30",
+                  "end": "00:00",
+                  "endDayOffset": 1
+                }
+              ]
+            },
+            {
+              "days": [
+                5,
+                6,
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "12:30",
+                  "end": "01:00",
+                  "endDayOffset": 1
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "la-montillana": {
+      "sources": {
+        "official": {
+          "url": "https://tabernalamontillana.com/",
+          "checkedOn": "2026-11-08",
+          "evidence": "Lunes a jueves: «de 13:00 h. a 18:00h. y de 20:00 h. a cierre». Viernes a domingo: «de 13:00 h. a cierre»."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "published",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "status": "partial",
+              "intervals": [
+                {
+                  "start": "13:00",
+                  "end": "18:00",
+                  "endDayOffset": 0
+                },
+                {
+                  "start": "20:00",
+                  "end": null,
+                  "endDayOffset": null
+                }
+              ]
+            },
+            {
+              "days": [
+                5,
+                6,
+                7
+              ],
+              "status": "partial",
+              "intervals": [
+                {
+                  "start": "13:00",
+                  "end": null,
+                  "endDayOffset": null
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "taberna-salinas": {
+      "sources": {
+        "official": {
+          "url": "https://www.tabernasalinas.com/contacto/",
+          "checkedOn": "2026-11-08",
+          "evidence": "Apertura lun.–vie. 12:30–16:00 y 20:00–23:30; sáb. 12:30–16:00; «Domingo: cerrado»."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "published",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "12:30",
+                  "end": "16:00",
+                  "endDayOffset": 0
+                },
+                {
+                  "start": "20:00",
+                  "end": "23:30",
+                  "endDayOffset": 0
+                }
+              ]
+            },
+            {
+              "days": [
+                6
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "12:30",
+                  "end": "16:00",
+                  "endDayOffset": 0
+                }
+              ]
+            },
+            {
+              "days": [
+                7
+              ],
+              "status": "closed",
+              "intervals": []
+            }
+          ],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "casa-bravo-1919": {
+      "sources": {
+        "bookings": {
+          "url": "https://casabravo1919.es/reservas-agora-casa-bravo/",
+          "checkedOn": "2026-11-08",
+          "evidence": "Abierto todos los días, 12:00–00:00. «Cocina siempre abierta desde la apertura hasta el cierre»."
+        }
+      },
+      "discrepancies": [
+        {
+          "scope": "opening",
+          "status": "resolvedForPilot",
+          "sourceIds": [
+            "bookings"
+          ],
+          "evidence": "La captura en publishedHours indica 12:30. La página oficial de reservas indica apertura a las 12:00 todos los días."
+        }
+      ],
+      "schedules": {
+        "opening": {
+          "status": "published",
+          "sourceIds": [
+            "bookings"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "12:00",
+                  "end": "00:00",
+                  "endDayOffset": 1
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "published",
+          "sourceIds": [
+            "bookings"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "12:00",
+                  "end": "00:00",
+                  "endDayOffset": 1
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "bodegas-campos": {
+      "sources": {
+        "contact": {
+          "url": "https://bodegascampos.com/contacto/",
+          "checkedOn": "2026-11-08",
+          "evidence": "Contacto, sede Córdoba: lunes a domingo, 13:30–16:00 y 20:00–23:00."
+        },
+        "bookings": {
+          "url": "https://bodegascampos.com/reserva-en-bodegas-campos/",
+          "checkedOn": "2026-11-08",
+          "evidence": "Reservas Córdoba: lun. 13:30–16:00; mar.–jue. 13:30–16:00 y 20:00–22:30; vie.–sáb. 13:00–16:30 y 20:00–23:00; dom. 13:00–16:30."
+        }
+      },
+      "discrepancies": [
+        {
+          "scope": "opening",
+          "status": "unresolved",
+          "sourceIds": [
+            "contact",
+            "bookings"
+          ],
+          "evidence": "La web oficial ofrece un horario uniforme en Contacto y otro por día en Reservas. La diferencia puede ser de alcance. Confirmar apertura, servicio de sala y cocina antes de asignar intervalos."
+        }
+      ],
+      "schedules": {
+        "opening": {
+          "status": "conflict",
+          "sourceIds": [
+            "contact",
+            "bookings"
+          ],
+          "week": [],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    }
+  }
+}
