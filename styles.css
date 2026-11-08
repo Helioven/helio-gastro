@@ -297,3 +297,27 @@ body{background:#f9f4eb}
 .shell>footer .brand-signature,.shell>footer .brand-signature small,.shell>footer .studio-tagline{color:#0b2545}
 .shell>footer .brand-signature span{color:#9c411e}
 @media(max-width:720px){.hybrid-hero{grid-template-columns:minmax(0,1fr);gap:15px}.hybrid-hero-art{width:100%}}
+
+/* Keep the real form and result list together without changing their controls. */
+.search-layout:has(#results-section:not([hidden])){display:grid;grid-template-columns:minmax(240px,270px) minmax(0,1fr);gap:22px;align-items:start}
+.search-layout #search-section,.search-layout #results-section{min-width:0;background:#fffdf8;border-color:#d4c6b4;color:#0b2545;box-shadow:none;--muted:#475a6d;--line:#bcae9e;color-scheme:light}
+#search-section label,#results-section .place p,#results-section .chip{color:#475a6d}
+#search-section input,#search-section select{background:white;border-color:#80705d;color:#0b2545}
+#search-section input::placeholder{color:#475a6d}
+#search-section .primary{background:#0b2545;color:white}
+#search-section .include-unknown,#search-section #budget-explain,#results-section .coverage-summary,#results-section .matching-dishes{background:#f5ecdf;color:#4b3225!important;border-color:#9c411e}
+#search-section .include-unknown small,#search-section .dish-suggestions small,#search-section .dish-suggestions-label,#results-section .result-group-title{color:#70442e}
+#search-section .dish-suggestions-list button,#search-section .clear-search-button,#results-section button{background:#fffdf8;border-color:#80705d;color:#0b2545}
+#search-section .dish-suggestions-list button:hover,#search-section .clear-search-button:hover,#results-section button:hover{background:#f2e5d3}
+#results-section .place{background:transparent;border:0;border-bottom:1px solid #d4c6b4;border-radius:0;padding:12px 0}
+#results-section .place a{color:#0b2545}
+#results-section .result-main-price,#results-section .result-pending{color:#0b2545!important}
+#results-section .empty{background:#f5ecdf;color:#475a6d;border-color:#bcae9e}
+#results-section h2{font-family:Georgia,serif}
+#results-section .adjust-filters{display:none}
+.search-layout:has(#results-section:not([hidden])) #search-section .two{grid-template-columns:minmax(0,1fr)}
+.search-layout :focus-visible{outline-color:#9c411e}
+@media(max-width:720px){
+ .search-layout:has(#results-section:not([hidden])){display:block}
+ #results-section .adjust-filters{display:inline-flex;align-items:center;min-height:44px;color:#0b2545;font-weight:700}
+}

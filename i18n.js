@@ -631,6 +631,7 @@ window.GASTRO_I18N = Object.freeze({
     return translateValue(key);
   };
   const hybridLabels = new Map(Object.entries({
+  "Ajustar filtros": ["Adjust filters", "Ajuster les filtres"],
   "CÓRDOBA · GUÍA GASTRONÓMICA": [
     "CÓRDOBA · FOOD GUIDE",
     "CORDOUE · GUIDE GASTRONOMIQUE"

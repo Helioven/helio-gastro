@@ -444,7 +444,10 @@ function updateMealMode(mode,{reset=true}={}){
  const dishSuggestions=el('dish-suggestions-list');dishSuggestions.replaceChildren();
  for(const dish of cfg.dishes){const btn=document.createElement('button');btn.type='button';btn.textContent=dish;btn.addEventListener('click',()=>{el('dish').value=dish;el('dish').focus()});dishSuggestions.append(btn)}
  renderRecommendations();
+ renderQuickCategories();
+ el('recommendations-heading').textContent=mode==='comida'||mode==='cena'?'Sabores de Córdoba':'Ideas para tu momento';
  if(reset){
+  el('direct-dish').value='';
   el('dish').value='';el('place-name').value='';
   state.searched=state.selected.size>0;state.filtered=[];state.currentDetailId=null;
   el('results-section').hidden=true;el('compare-section').hidden=state.selected.size===0;el('detail-section').hidden=true;
@@ -499,7 +502,35 @@ function portionOf(item){
  if(/\bracion\b/.test(name))return 'racion';
  return 'desconocida';
 }
-function relevantPrices(p,term,portion=''){return dishPrices(p).filter(d=>(!term||clean(d.dish).includes(term))&&(!portion||portionOf(d)===portion))}
+const QUICK_CATEGORIES=[
+ {term:'Pizza',label:'Pizzas',pattern:/^pizzas?\b/},
+ {term:'Hamburguesa',label:'Hamburguesas',pattern:/^(?:mini\s*)?hamburguesas?\b/},
+ {term:'Tarta de queso',label:'Tartas de queso',pattern:/^tartas? de queso\b/}
+];
+function searchDishMatches(name,term){
+ const category=QUICK_CATEGORIES.find(entry=>clean(entry.term)===term);
+ return category?category.pattern.test(clean(name).trim()):clean(name).includes(term);
+}
+function placeMatchesDish(p,term){
+ return !term||serviceDishes(p).some(name=>searchDishMatches(name,term))||servicePrices(p).some(item=>searchDishMatches(item.dish,term));
+}
+function renderQuickCategories(){
+ const section=el('quick-categories'),actions=section.querySelector('.category-actions');
+ actions.replaceChildren();
+ for(const category of QUICK_CATEGORIES){
+  if(!state.places.some(p=>placeMatchesDish(p,clean(category.term))))continue;
+  const button=document.createElement('button');
+  button.type='button';
+  button.textContent=category.label;
+  button.addEventListener('click',()=>{
+   el('direct-dish').value=category.term;
+   el('direct-search').requestSubmit();
+  });
+  actions.append(button);
+ }
+ section.hidden=!actions.childElementCount;
+}
+function relevantPrices(p,term,portion=''){return dishPrices(p).filter(d=>(!term||searchDishMatches(d.dish,term))&&(!portion||portionOf(d)===portion))}
 function lowestPrice(p,scope,term,portion=''){
  if(scope==='meal')return Number.isFinite(p.mealCostEur)?p.mealCostEur:null;
  const arr=relevantPrices(p,term,portion);return arr.length?Math.min(...arr.map(x=>x.eur)):null;
@@ -657,6 +688,7 @@ function restoreSearch(){
   if(typeof saved==='string'&&[...node.options].some(opt=>opt.value===saved))node.value=saved;
  }
  el('portion').disabled=el('price-scope').value==='meal';
+ el('direct-dish').value=el('dish').value;
  state.selected=new Set((Array.isArray(snapshot.selected)?snapshot.selected:[])
   .filter(id=>typeof id==='string'&&state.places.some(p=>p.id===id)).slice(0,3));
  filter(null,true);
@@ -691,7 +723,7 @@ function draw(){
   const details=document.createElement('p');details.textContent='📍 '+p.area;card.append(details);
   const serviceNote=document.createElement('p');serviceNote.className='service-notice';serviceNote.textContent=serviceKnown(p)?'Carta específica registrada · horario pendiente de confirmar':'Carta general · servicio y horarios sin verificar';card.append(serviceNote);
   if(state.appliedTerm){
-   const matches=p.dishes.filter(d=>clean(d).includes(state.appliedTerm));
+   const matches=p.dishes.filter(d=>searchDishMatches(d,state.appliedTerm));
    const matched=document.createElement(matches.length?'div':'p');
    matched.className='matching-dishes';
    if(matches.length){
@@ -1135,12 +1167,13 @@ function compare(){
  }
 }
 function getDishCoverage(term, area, nameQuery='') {
- const matches=state.places.filter(p=>serviceMenus(p).length>0&&(!nameQuery||clean(p.name).includes(nameQuery))&&(!term||clean(serviceDishes(p).join(' ')+' '+servicePrices(p).map(d=>d.dish).join(' ')).includes(term))&&(!area||p.area===area));
- const priced=matches.filter(p=>servicePrices(p).some(d=>!term||clean(d.dish).includes(term)));
+ const matches=state.places.filter(p=>serviceMenus(p).length>0&&(!nameQuery||clean(p.name).includes(nameQuery))&&placeMatchesDish(p,term)&&(!area||p.area===area));
+ const priced=matches.filter(p=>servicePrices(p).some(d=>!term||searchDishMatches(d.dish,term)));
  return {total:matches.length, priced:priced.length, unpriced:matches.length-priced.length};
 }
 function filter(event,restoring=false){
  if(event)event.preventDefault();
+ el('direct-dish').value=el('dish').value;
  const dish=clean(el('dish').value.trim()),nameQuery=clean(el('place-name').value.trim()),max=el('budget').value?Number(el('budget').value):null;
  state.appliedTerm=dish;state.appliedBudget=max;state.appliedScope=el('price-scope').value;state.appliedPortion=state.appliedScope==='dish'?el('portion').value:'';state.searched=true;
  el('results-section').hidden=false;
@@ -1151,7 +1184,7 @@ function filter(event,restoring=false){
  state.filtered=state.places.filter(p=>{
   if(!serviceMenus(p).length)return false;
   if(nameQuery&&!clean(p.name).includes(nameQuery)&&!(p.id==='la-piscatoria'&&['picastoria','piscatoria','la picastoria'].includes(nameQuery)))return false;
-  if(dish&&!clean(serviceDishes(p).join(' ')+' '+servicePrices(p).map(d=>d.dish).join(' ')).includes(dish))return false;
+  if(!placeMatchesDish(p,dish))return false;
   if(area&&p.area!==area)return false;
   const price=lowestPrice(p,scope,dish,state.appliedPortion);
   if(max!==null&&(price>max||(price===null&&!includeUnknown)))return false;
@@ -1358,6 +1391,7 @@ function showRecommendations(dishName){
 }
 
 function clearSearch(){
+ el('direct-dish').value='';
  el('filters').reset();
  updateMealMode(state.mode,{reset:false});
  el('portion').disabled=false;
