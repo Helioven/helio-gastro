@@ -321,3 +321,23 @@ body{background:#f9f4eb}
  .search-layout:has(#results-section:not([hidden])){display:block}
  #results-section .adjust-filters{display:inline-flex;align-items:center;min-height:44px;color:#0b2545;font-weight:700}
 }
+.format-marker{margin-inline-start:.24em;color:inherit;font-weight:800}
+.format-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.format-note{border-inline-start:3px solid #9c411e;padding-inline-start:9px}
+#detail-section{background:#fffdf8;border-color:#d4c6b4;box-shadow:none;color:#0b2545;--muted:#475a6d;--line:#bcae9e}
+#detail-section .detail-sticky-head{background:#fffdf8;border-color:#d4c6b4}
+#detail-sticky-name,#detail-section .eyebrow,#detail-content h3,#detail-content .menu-dish h4{color:#0b2545}
+#detail-content h3{font-family:Georgia,serif;font-size:1.25rem}
+#detail-content .menu-dish,#detail-content .service-notice,#detail-content .official-menu-resources .detail-source{background:#f5ecdf;border-color:#d4c6b4;color:#0b2545}
+#detail-content .official-menu-resources .detail-source:hover,#detail-content .official-menu-resources .detail-source:focus-visible{background:#eedbc4}
+#detail-content a,#detail-content .menu-price-row,#detail-content .menu-price-row strong,#detail-content .menu-unpriced,#detail-content .menu-unpriced-title,#detail-content .dish-explanation{color:#0b2545}
+#detail-content .menu-price-row{border-color:#d4c6b4}
+.venue-section-nav{padding:12px;border:1px solid #d4c6b4;border-radius:12px;scroll-margin-top:155px}
+.venue-section-nav-title{color:#0b2545}
+.venue-section-nav-button{background:#fffdf8;border-color:#80705d;color:#0b2545;min-height:44px}
+.venue-section-nav-button:hover,.venue-section-nav-button:focus-visible{background:#f5ecdf}
+.menu-index-return{margin-top:8px}
+#detail-section :focus-visible{outline-color:#9c411e}
+.result-method{margin:0 0 9px;color:#475a6d}
+.result-method summary{cursor:pointer;min-height:44px;padding-block:9px;font-weight:700;color:#0b2545}
+.result-method .note{margin:5px 0}

@@ -572,13 +572,13 @@ function localizedPortion(value){
  return es; // Translation is applied by the language layer, enabling reliable EN → ES.
 }
 function variantLabel(item){const key=variantOf(item);return VARIANT_NAMES[key]||'Variante sin categorizar'}
-function priceDescriptor(item){
+function priceDescriptor(item,{compact=false}={}){
  const format=portionOf(item);
  const dishHasFormat=/\b(media(?:\s+racion)?|racion|tapa|unidad)\b/.test(clean(item.dish));
- return item.dish+' — '+fmt(item.eur)+(dishHasFormat?'':' · '+localizedPortion(format));
+ return item.dish+' — '+fmt(item.eur)+(dishHasFormat||(compact&&format==='desconocida')?'':' · '+localizedPortion(format));
 }
 function comparableHighlights(items,term,portion){
- if(!term||!portion)return new Set();
+ if(!term||!portion||portion==='desconocida')return new Set();
  const groups=new Map();
  for(const p of items){
   for(const item of relevantPrices(p,term,portion)){
@@ -594,6 +594,18 @@ function comparableHighlights(items,term,portion){
   for(const x of group)if(x.price===cheapest)highlights.add(x.id+'|'+x.dish+'|'+x.price);
  }
  return highlights;
+}
+function markUnknownFormat(element,noteId){
+ element.setAttribute('aria-describedby',noteId);
+ const mark=document.createElement('sup');mark.className='format-marker';mark.setAttribute('aria-hidden','true');mark.textContent='*';
+ const text=document.createElement('span');text.className='format-sr';text.textContent='Formato sin especificar';
+ element.append(mark,text);
+}
+function unknownFormatNote(id){
+ const note=document.createElement('p');
+ note.id=id;note.className='note format-note';
+ note.textContent='El asterisco indica un precio publicado sin formato de ración documentado. Estos importes no sirven para comparar raciones.';
+ return note;
 }
 function placeMapUrl(p){
  return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(p.name+', '+p.address);
@@ -761,7 +773,8 @@ function draw(){
   }else if(chosen.length){
    const cheapest=[...chosen].sort((a,b)=>a.eur-b.eur)[0];
    const main=document.createElement('p');main.className='result-main-price';
-   main.textContent='Desde '+fmt(cheapest.eur)+' · '+(state.appliedPortion?localizedPortion(state.appliedPortion):'Precio de plato publicado');
+   main.textContent='Desde '+fmt(cheapest.eur)+' · '+(state.appliedPortion&&state.appliedPortion!=='desconocida'?localizedPortion(state.appliedPortion):'Precio de plato publicado');
+   if(portionOf(cheapest)==='desconocida')markUnknownFormat(main,'result-format-note');
    card.append(main);
   }else{
    const pending=document.createElement('p');pending.className='result-pending';
@@ -786,6 +799,7 @@ function draw(){
    draw();compare();saveSearch();updateQuickNav();
   });card.append(button,favoriteButton(p));list.append(card);
  }
+ if(list.querySelector('.format-marker'))list.prepend(unknownFormatNote('result-format-note'));
 }
 function menuDishName(item){
  const name=item.dish.replace(/\s*\((?:media(?:\s+ración)?|ración|tapa|unidad|media)\)\s*$/i,'').trim();
@@ -968,9 +982,9 @@ function renderVenueMenuSections(panel,p){
   panel.append(notice);
  }
  // Índice de secciones: navegación local sin ocultar platos ni modificar datos.
- const sectionNavId=p.id==='bar-moriles-original'||p.id==='moriles-casa-fina';
+ const sectionNavId=p.menuSections.length>1&&p.menuSections.every(section=>section.title?.trim()&&section.items?.length);
  if(sectionNavId){
-  const nav=document.createElement('nav');nav.className='venue-section-nav';nav.setAttribute('aria-label','Secciones de la carta');
+  const nav=document.createElement('nav');nav.className='venue-section-nav';nav.id='venue-section-index';nav.tabIndex=-1;nav.setAttribute('aria-label','Secciones de la carta');
   const navTitle=document.createElement('p');navTitle.className='venue-section-nav-title';navTitle.textContent='Ir a sección';nav.append(navTitle);
   const buttons=document.createElement('div');buttons.className='venue-section-nav-buttons';
   p.menuSections.forEach((section,index)=>{
@@ -978,7 +992,7 @@ function renderVenueMenuSections(panel,p){
    button.dataset.venueMenuSection=section.title;
    button.dataset.venueMenuSectionEn=section.titleEn||VENUE_MENU_SECTION_EN[section.title]||section.title;
    button.textContent=window.HelioGastroLanguage?.get()==='en'?button.dataset.venueMenuSectionEn:section.title;
-   button.addEventListener('click',()=>{const target=el('venue-section-'+p.id+'-'+index);if(target){target.scrollIntoView({behavior:'smooth',block:'start'});target.focus({preventScroll:true});}});
+   button.addEventListener('click',()=>{const target=el('venue-section-'+p.id+'-'+index);if(target){target.scrollIntoView({block:'start'});target.focus({preventScroll:true});}});
    buttons.append(button);
   });
   nav.append(buttons);panel.append(nav);
@@ -995,7 +1009,12 @@ function renderVenueMenuSections(panel,p){
     const row=document.createElement('div');row.className='menu-price-row';
     const label=document.createElement('span');label.dataset.venueMenuPriceLabel=price.label||price.portion||'';label.textContent=venueMenuPriceLabel(label.dataset.venueMenuPriceLabel,window.HelioGastroLanguage?.get()==='en');
     const amount=document.createElement('strong');amount.textContent=fmt(price.eur);
-    if(label.dataset.venueMenuPriceLabel==='precio indicado')row.append(amount);else row.append(label,amount);entry.append(row);
+    const formatLabel=clean(label.dataset.venueMenuPriceLabel).trim();
+    if(['','precio indicado','precio unico','formato sin especificar','formato no especificado'].includes(formatLabel)){
+     if(formatLabel==='precio unico')row.append(label);
+     markUnknownFormat(amount,'detail-format-note');row.append(amount);
+    }else row.append(label,amount);
+    entry.append(row);
    }
    if(dish.priceRangeEur && Number.isFinite(dish.priceRangeEur.min) && Number.isFinite(dish.priceRangeEur.max)){
     const range=document.createElement('div');range.className='menu-price-row';
@@ -1007,6 +1026,11 @@ function renderVenueMenuSections(panel,p){
    list.append(entry);
   }
   panel.append(list);
+  if(sectionNavId){
+   const back=document.createElement('button');back.type='button';back.className='venue-section-nav-button menu-index-return';back.textContent='Volver al índice';
+   back.addEventListener('click',()=>{const index=el('venue-section-index');index.scrollIntoView({block:'start'});index.focus({preventScroll:true});});
+   panel.append(back);
+  }
   if(section.note){const foot=document.createElement('p');foot.className='note';foot.dataset.venueMenuNoteEs=section.note;foot.dataset.venueMenuNoteEn=section.noteEn||section.note;foot.textContent=window.HelioGastroLanguage?.get()==='en'?foot.dataset.venueMenuNoteEn:foot.dataset.venueMenuNoteEs;panel.append(foot);}
  }
 }
@@ -1074,7 +1098,10 @@ function showPlace(p,scroll=true){
     const amount=document.createElement('strong');amount.textContent=fmt(price.eur);
     if(p.id==='la-piscatoria'&&group.prices.length===1&&portionOf(price)==='unidad')portion.textContent='';
     if(p.id==='la-piscatoria'&&!portion.textContent)row.classList.add('price-only-row');
-    row.append(portion,amount);entry.append(row);
+    if(portionOf(price)==='desconocida'){
+     markUnknownFormat(amount,'detail-format-note');row.append(amount);
+    }else row.append(portion,amount);
+    entry.append(row);
    }
    list.append(entry);
    if(p.id==='la-piscatoria'&&clean(group.label)==='tostada gratinada'&&Array.isArray(p.menuNotes)&&p.menuNotes.length){
@@ -1092,6 +1119,8 @@ function showPlace(p,scroll=true){
   const msg=document.createElement('p');msg.className='note';msg.textContent='Aún no tenemos especialidades registradas para este local.';panel.append(msg);
  }
  }
+ const firstUnknown=panel.querySelector('.menu-groups:has(.format-marker)');
+ if(firstUnknown)firstUnknown.before(unknownFormatNote('detail-format-note'));
  if(Number.isFinite(p.mealCostEur)){const total=document.createElement('p');total.textContent='Comida completa por persona: '+fmt(p.mealCostEur);panel.append(total)}
  else{const caveat=document.createElement('p');caveat.className='note';caveat.textContent='El coste total de comer aquí no está documentado. Los precios de platos no incluyen necesariamente bebida ni extras.';panel.append(caveat)}
  if(Array.isArray(p.groupMenus)&&p.groupMenus.length){
@@ -1133,7 +1162,7 @@ function compare(){
  if(!items.length){panel.className='empty';panel.textContent='Selecciona establecimientos de los resultados para compararlos aquí.';return}
  panel.className='';
  const term=state.appliedTerm;
- const pricesOnly=state.appliedScope==='dish'&&!!state.appliedPortion;
+ const pricesOnly=state.appliedScope==='dish'&&!!state.appliedPortion&&state.appliedPortion!=='desconocida';
  const highlights=pricesOnly?comparableHighlights(items,term,state.appliedPortion):new Set();
  const advisory=document.createElement('p');advisory.className='note';
  advisory.textContent=pricesOnly?'Se comparan solo variantes coincidentes y el mismo formato declarado. «Menor precio» requiere al menos dos locales con esa variante. La cantidad real puede variar.':term?'Precios publicados para «'+(el('dish').value.trim()&&clean(el('dish').value.trim())===term?el('dish').value.trim():term)+'». Los formatos pueden ser distintos y no deben compararse como cantidades equivalentes.':'Selecciona un plato y un formato concreto para identificar precios comparables entre variantes equivalentes.';
@@ -1149,7 +1178,8 @@ function compare(){
   for(const item of prices){
    const li=document.createElement('li');
    const winning=highlights.has(p.id+'|'+item.dish+'|'+item.eur);
-   li.textContent=priceDescriptor(item)+' · '+variantLabel(item)+(winning?' · ★ Menor precio comparable':'');
+   li.textContent=priceDescriptor(item,{compact:true})+' · '+variantLabel(item)+(winning?' · ★ Menor precio comparable':'');
+   if(portionOf(item)==='desconocida')markUnknownFormat(li,'compare-format-note');
    if(winning)li.className='best-comparable';
    ul.append(li);
   }
@@ -1165,6 +1195,7 @@ function compare(){
   const foot=document.createElement('p');foot.textContent=p.sources.length+' fuente(s) · Revisado '+(p.checkedAt||'sin fecha');box.append(foot);
   panel.append(box);
  }
+ if(panel.querySelector('.format-marker'))advisory.after(unknownFormatNote('compare-format-note'));
 }
 function getDishCoverage(term, area, nameQuery='') {
  const matches=state.places.filter(p=>serviceMenus(p).length>0&&(!nameQuery||clean(p.name).includes(nameQuery))&&placeMatchesDish(p,term)&&(!area||p.area===area));

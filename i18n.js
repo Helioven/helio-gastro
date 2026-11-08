@@ -631,6 +631,12 @@ window.GASTRO_I18N = Object.freeze({
     return translateValue(key);
   };
   const hybridLabels = new Map(Object.entries({
+  "Cómo interpretar precios y disponibilidad": ["Understanding prices and availability", "Comprendre les prix et la disponibilité"],
+  "Secciones de la carta": ["Menu sections", "Sections de la carte"],
+  "Ir a sección": ["Go to section", "Aller à une section"],
+  "Volver al índice": ["Back to menu index", "Retour au sommaire"],
+  "Formato sin especificar": ["Portion size not specified", "Format non précisé"],
+  "El asterisco indica un precio publicado sin formato de ración documentado. Estos importes no sirven para comparar raciones.": ["An asterisk marks a published price with no documented portion size. Do not use these prices to compare portions.", "Un astérisque signale un prix publié sans format de portion documenté. Ces prix ne permettent pas de comparer les portions."],
   "Ajustar filtros": ["Adjust filters", "Ajuster les filtres"],
   "CÓRDOBA · GUÍA GASTRONÓMICA": [
     "CÓRDOBA · FOOD GUIDE",
