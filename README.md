@@ -1562,3 +1562,28 @@ Helio autorizó expresamente activar el francés públicamente e integrarlo en `
 - Los formatos explícitos de carta se normalizan antes de filtrar y comparar. La regresión de La Montillana comprueba que Media ración y Solo precios documentados devuelven el salmorejo a 6,90 €. Los formatos ambiguos siguen sin asignarse cuando tampoco se especifican en el nombre del plato.
 - Los recorridos de búsqueda y descubrimiento cubren sus textos dinámicos en ES/EN/FR. El traductor ignora nodos separados del DOM y conserva la ficha al cambiar de idioma si su capa francesa ya está cargada.
 - La cabecera y navegación móviles dejan visibles los cuatro controles, se adelanta el primer precio y se puede saltar a las fuentes de carta con teclado. Comparador y diálogos usan la paleta híbrida. El catálogo y los recursos visuales permanecen intactos.
+
+## Identidad de ManoloLabs — ideas pendientes
+
+ManoloLabs by Helio es la identidad común de los proyectos desarrollados por Helio. Manolo es su mascota y protagonista visual. Es un robot 3D blanco y metálico con dos antenas, gafas oscuras cuadradas, bigote marrón, detalles azules y una M luminosa azul en el pecho. Su personalidad es divertida, cercana y útil. El humor acompaña a la funcionalidad y nunca la sustituye.
+
+### Lemas candidatos
+
+La elección del lema sigue pendiente.
+
+- «Tecnología útil, con un toque de humor».
+- «Aplicaciones útiles, con un toque de humor».
+- «Ideas útiles, con un toque de humor».
+
+### Identidad compartida
+
+Manolo mantiene una identidad visual reconocible aunque adopte distintos papeles en cada proyecto.
+
+- **Helio Gastro** — Manolo Chef, orientador gastronómico.
+- **Manolo Meteo** — Consejos meteorológicos.
+- **Kanji Trainer** — Posible acompañante del aprendizaje.
+- **Manolo & Paca** — Humor y entretenimiento.
+
+### Revisión futura del nombre de Helio Gastro
+
+Queda pendiente estudiar si un cambio de nombre reforzaría la relación de Helio Gastro con ManoloLabs y el papel de Manolo como personaje central. Hasta que se tome una decisión, se conservan el nombre actual, los enlaces, los identificadores técnicos y el lema «Descubre Córdoba a bocados».
