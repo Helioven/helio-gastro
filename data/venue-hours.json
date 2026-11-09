@@ -396,13 +396,13 @@
         "contact": {
           "url": "https://bodegascampos.com/contacto/",
           "labelKey": "contactPage",
-          "checkedOn": "2026-11-08",
+          "checkedOn": "2026-11-09",
           "evidence": "Contacto, sede Córdoba: lunes a domingo, 13:30–16:00 y 20:00–23:00."
         },
         "bookings": {
           "url": "https://bodegascampos.com/reserva-en-bodegas-campos/",
           "labelKey": "reservationsPage",
-          "checkedOn": "2026-11-08",
+          "checkedOn": "2026-11-09",
           "evidence": "Reservas Córdoba: lun. 13:30–16:00; mar.–jue. 13:30–16:00 y 20:00–22:30; vie.–sáb. 13:00–16:30 y 20:00–23:00; dom. 13:00–16:30."
         }
       },
@@ -414,7 +414,7 @@
             "contact",
             "bookings"
           ],
-          "evidence": "La web oficial ofrece un horario uniforme en Contacto y otro por día en Reservas. La diferencia puede ser de alcance. Confirmar apertura, servicio de sala y cocina antes de asignar intervalos."
+          "evidence": "La web oficial ofrece un horario uniforme en Contacto y otro por día en Reservas. La diferencia puede ser de alcance. Confirmar apertura, servicio de sala y cocina antes de asignar intervalos. Revisión 2026-11-09. Contacto y Reservas se refieren a Lineros, 32. Reservas muestra sus tramos junto al botón de reserva sin indicar si son turnos reservables o apertura del local. Ninguna página los identifica como horario de cocina."
         }
       ],
       "schedules": {
@@ -635,7 +635,7 @@
           "sourceIds": [
             "official"
           ],
-          "evidence": "El horario nocturno comienza a las 20:00 en un bloque y a las 19:30 en otro. Confirmar el tramo con el local antes de publicar la semana."
+          "evidence": "El horario nocturno comienza a las 20:00 en un bloque y a las 19:30 en otro. Confirmar el tramo con el local antes de publicar la semana. Revisión 2026-11-09. Los dos bloques siguen visibles y se titulan Horario local; no se distinguen por servicio ni muestran fechas que permitan dar prioridad a uno."
         }
       ],
       "schedules": {
@@ -986,6 +986,18 @@
           "labelKey": "englishPage",
           "checkedOn": "2026-11-09",
           "evidence": "La versión inglesa indica 12:30–23:30 todos los días y cocina continua, sin publicar horas de última comanda."
+        },
+        "officialFr": {
+          "url": "https://www.bodegasmezquita.com/fr/caves-mezquita-cespedes-manger-a-cordoue/",
+          "labelKey": "frenchPage",
+          "checkedOn": "2026-11-09",
+          "evidence": "Versión francesa de Céspedes: 12:30–16:30 y 20:00–23:30. No coincide con la apertura continua de las fichas española e inglesa."
+        },
+        "kitchenArticle": {
+          "url": "https://www.bodegasmezquita.com/comer-cerca-de-la-mezquita-de-cordoba/",
+          "labelKey": "articleSource",
+          "checkedOn": "2026-11-09",
+          "evidence": "Artículo oficial que describe cocina continua de 12:30 a 23:30 en Céspedes, sin detalle semanal. La última comanda de la ficha de la sede no equivale al cierre de cocina."
         }
       },
       "discrepancies": [
@@ -994,9 +1006,10 @@
           "status": "unresolved",
           "sourceIds": [
             "officialEs",
-            "officialEn"
+            "officialEn",
+            "officialFr"
           ],
-          "evidence": "Las versiones oficiales difieren en el cierre de viernes y sábado. Las vísperas figuran en la versión española sin fechas concretas. La última comanda no equivale al cierre de cocina."
+          "evidence": "Las versiones oficiales difieren en el cierre de viernes y sábado. Las vísperas figuran en la versión española sin fechas concretas. La última comanda no equivale al cierre de cocina. Revisión 2026-11-09. Se mantiene la diferencia ES/EN y se añade la versión francesa con horario partido. Una entrada del blog oficial menciona cocina continua de 12:30 a 23:30, pero la ficha española publica última comanda a las 23:00 de domingo a jueves. Se conserva la distinción entre última comanda y cierre, sin asignar un intervalo de cocina a toda la semana."
         }
       ],
       "schedules": {
@@ -1004,14 +1017,17 @@
           "status": "conflict",
           "sourceIds": [
             "officialEs",
-            "officialEn"
+            "officialEn",
+            "officialFr"
           ],
           "week": [],
           "exceptions": []
         },
         "kitchen": {
           "status": "unknown",
-          "sourceIds": [],
+          "sourceIds": [
+            "kitchenArticle"
+          ],
           "week": [],
           "exceptions": []
         },
@@ -1903,7 +1919,7 @@
             "contact",
             "speciality"
           ],
-          "evidence": "Las páginas oficiales de la misma sede difieren en el horario de mediodía y en los tramos nocturnos, incluido el domingo. Coinciden en el cierre de lunes y martes."
+          "evidence": "Las páginas oficiales de la misma sede difieren en el horario de mediodía y en los tramos nocturnos, incluido el domingo. Coinciden en el cierre de lunes y martes. Revisión 2026-11-09. Inicio, Contacto y Especialidad siguen publicando horarios distintos para la misma dirección. No hay indicación suficiente de que correspondan a apertura, reservas o cocina distintas."
         }
       ],
       "schedules": {
@@ -1974,6 +1990,959 @@
                 {
                   "start": "12:30",
                   "end": "00:00",
+                  "endDayOffset": 1
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "taberna-el-poema-alonso": {
+      "sources": {
+        "municipal": {
+          "url": "https://www.turismodecordoba.org/el-poema",
+          "labelKey": "municipalSource",
+          "checkedOn": "2026-11-09",
+          "evidence": "La ficha municipal identifica Alonso de Burgos, 2, sin horario semanal. Los directorios consultados ofrecen aperturas y cierres distintos para esta dirección; no se halló una publicación vigente del local que los confirme."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "unknown",
+          "sourceIds": [
+            "municipal"
+          ],
+          "week": [],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "taberna-el-poema-gran-capitan": {
+      "sources": {
+        "reference": {
+          "url": "https://es.restaurantguru.com/El-Poema-Tabern-Cordoba-Andalusia",
+          "labelKey": "referenceSource",
+          "checkedOn": "2026-11-09",
+          "evidence": "Ficha de terceros de Gran Capitán, 29. La búsqueda de una página del local no aportó un horario verificable para esta sede. No se traslada el horario de Alonso de Burgos ni se usan franjas de mapas como confirmación."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "unknown",
+          "sourceIds": [
+            "reference"
+          ],
+          "week": [],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "taberna-rafae": {
+      "sources": {
+        "official": {
+          "url": "https://tabernarafae.com/contacto/",
+          "checkedOn": "2026-11-09",
+          "evidence": "Calle Deanes, 2. Contacto indica apertura todos los días, sin horas. Las reservas y la oferta de cena con flamenco no acreditan el horario habitual del local o de cocina."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "unknown",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "taberna-san-miguel-el-pisto": {
+      "sources": {
+        "official": {
+          "url": "https://www.casaelpisto.com/contacto/",
+          "checkedOn": "2026-11-09",
+          "evidence": "Contacto del local de Plaza de San Miguel, 1, sin intervalos. La segunda web del local, tabernacordoba.es, tampoco permitió confirmar horarios semanales ni de cocina."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "unknown",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "sociedad-plateros-maria-auxiliadora": {
+      "sources": {
+        "municipal": {
+          "url": "https://www.turismodecordoba.org/sociedad-de-plateros-maria-auxiliadora",
+          "labelKey": "municipalSource",
+          "checkedOn": "2026-11-09",
+          "evidence": "Ficha municipal de María Auxiliadora, 25, sin horarios semanales. Las páginas oficiales de esta sede no ofrecieron información de horarios verificable durante la consulta. No se usa el horario de San Francisco."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "unknown",
+          "sourceIds": [
+            "municipal"
+          ],
+          "week": [],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "el-churrasco": {
+      "sources": {
+        "official": {
+          "url": "https://elchurrasco.com/",
+          "checkedOn": "2026-11-09",
+          "evidence": "El sitio muestra mantenimiento. Una versión indexada anterior de la web de Romero, 16, mostraba 13:00–16:00 y dos inicios nocturnos, 20:00 y 20:30 según el día. No se pudo corroborar su vigencia en la web accesible."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "unknown",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "taberna-el-abuelo": {
+      "sources": {
+        "municipal": {
+          "url": "https://www.turismodecordoba.org/el-abuelo",
+          "labelKey": "municipalSource",
+          "checkedOn": "2026-11-09",
+          "evidence": "Ficha municipal de la taberna de Cruz Conde, 3. La consulta no permitió confirmar horas de apertura o de cocina con una fuente del local."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "unknown",
+          "sourceIds": [
+            "municipal"
+          ],
+          "week": [],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "bar-moriles-original": {
+      "sources": {
+        "official": {
+          "url": "https://www.barmoriles.com/",
+          "checkedOn": "2026-11-09",
+          "evidence": "Antonio Maura, 21. Horario del local diario 07:00–02:00; viernes, sábados y vísperas de festivo hasta las 03:00. El horario de recogida es distinto y no se atribuye a cocina. La fuente no enumera fechas de vísperas."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "published",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                2,
+                3,
+                4,
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "07:00",
+                  "end": "02:00",
+                  "endDayOffset": 1
+                }
+              ]
+            },
+            {
+              "days": [
+                5,
+                6
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "07:00",
+                  "end": "03:00",
+                  "endDayOffset": 1
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "churros-bar-marta": {
+      "sources": {
+        "reference": {
+          "url": "https://www.guiarepsol.com/es/fichas/solete/churros-bar-marta-326428/",
+          "labelKey": "referenceSource",
+          "checkedOn": "2026-11-09",
+          "evidence": "La ficha de Cruz Conde, 32, identifica el perfil social del local, pero no permite verificar una semana de apertura. Los directorios consultados discrepan sobre lunes, sábados y horas de cierre."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "unknown",
+          "sourceIds": [
+            "reference"
+          ],
+          "week": [],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "cafeteria-don-pepe-centro": {
+      "sources": {
+        "reference": {
+          "url": "https://www.cylex.es/cordoba/cafeteria-don-pepe-12244747.html",
+          "labelKey": "referenceSource",
+          "checkedOn": "2026-11-09",
+          "evidence": "Directorio de Diego de León, 6. Publica turnos de mañana y tarde, mientras que la ficha de Waze consultada solo recoge mañanas. No se halló un horario del propio local para esta sede."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "unknown",
+          "sourceIds": [
+            "reference"
+          ],
+          "week": [],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "cafeteria-don-pepe-ciudad-jardin": {
+      "sources": {
+        "reference": {
+          "url": "https://www.cylex.es/cordoba/cafeteria-don-pepe-12106491.html",
+          "labelKey": "referenceSource",
+          "checkedOn": "2026-11-09",
+          "evidence": "Directorio de Antonio Maura, 35. La web del local enlazada, churreriadonpepe.com, no aportó un horario verificable durante la consulta. No se trasladan datos de Diego de León."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "unknown",
+          "sourceIds": [
+            "reference"
+          ],
+          "week": [],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "dtapas-covap-cordoba": {
+      "sources": {
+        "official": {
+          "url": "https://www.ibericoscovap.com/es/dtapas-covap-cordoba/",
+          "checkedOn": "2026-11-09",
+          "evidence": "Cruz Conde, 12. La página de D’Tapas no indica intervalos. La nota de inauguración de COVAP anuncia desayuno, almuerzo y cena de lunes a sábado sin horas. Los horarios de Tienda física Córdoba corresponden al comercio y quedan fuera."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "unknown",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "cafeteria-bar-la-jineta": {
+      "sources": {
+        "menu": {
+          "url": "https://queresto.com/barlajineta/info",
+          "labelKey": "menuSource",
+          "checkedOn": "2026-11-09",
+          "evidence": "Ficha de información en la carta digital del local de Los Olivos, 1. Lunes 07:30–12:00; martes a jueves 07:30–16:00; viernes 07:30–24:00; sábado y domingo 09:00–18:00. No identifica franjas de cocina."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "published",
+          "sourceIds": [
+            "menu"
+          ],
+          "week": [
+            {
+              "days": [
+                1
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "07:30",
+                  "end": "12:00",
+                  "endDayOffset": 0
+                }
+              ]
+            },
+            {
+              "days": [
+                2,
+                3,
+                4
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "07:30",
+                  "end": "16:00",
+                  "endDayOffset": 0
+                }
+              ]
+            },
+            {
+              "days": [
+                5
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "07:30",
+                  "end": "00:00",
+                  "endDayOffset": 1
+                }
+              ]
+            },
+            {
+              "days": [
+                6,
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "09:00",
+                  "end": "18:00",
+                  "endDayOffset": 0
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "pastelerias-roldan-centro": {
+      "sources": {
+        "official": {
+          "url": "https://pasteleriasroldan.com/pages/localizacion",
+          "checkedOn": "2026-11-09",
+          "evidence": "Ficha de Calle Concepción, 18. Lunes a viernes 07:30–21:30; sábado 08:00–21:30; domingo y festivos 08:00–21:00. No publica fechas concretas de festivos ni franjas de desayuno."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "published",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "07:30",
+                  "end": "21:30",
+                  "endDayOffset": 0
+                }
+              ]
+            },
+            {
+              "days": [
+                6
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "08:00",
+                  "end": "21:30",
+                  "endDayOffset": 0
+                }
+              ]
+            },
+            {
+              "days": [
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "08:00",
+                  "end": "21:00",
+                  "endDayOffset": 0
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "pastelerias-roldan-tiendas": {
+      "sources": {
+        "official": {
+          "url": "https://pasteleriasroldan.com/pages/localizacion",
+          "checkedOn": "2026-11-09",
+          "evidence": "El catálogo agrupa 13 cafeterías y 3 panaderías como ubicaciones. El localizador oficial distingue horarios por dirección. No hay horario común documentado aplicable a todas las sedes de esta ficha."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "unknown",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "patio-romano": {
+      "sources": {
+        "official": {
+          "url": "https://patioromano.com/reservas/",
+          "checkedOn": "2026-11-09",
+          "evidence": "Restaurante de Calle Deanes, 11. La web diferencia las horas acordadas de reserva para sala y cocina, pero no confirma un horario semanal de apertura ni tramos de cocina."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "unknown",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "el-burlaero": {
+      "sources": {
+        "official": {
+          "url": "https://restauranteelburlaero.com/?page_id=9",
+          "checkedOn": "2026-11-09",
+          "evidence": "El contacto oficial no publica horas de apertura ni de cocina. Los horarios que aparecen en directorios o reservas no se confirmaron como horarios del local."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "unknown",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "taberna-la-sal": {
+      "sources": {
+        "official": {
+          "url": "https://tabernalasal.eatbu.com/?lang=es",
+          "labelKey": "hostedSource",
+          "checkedOn": "2026-11-09",
+          "evidence": "La página del negocio identifica Av. Llanos del Pretorio, 1, teléfono 957 400 682 y horario diario 08:00–00:30. El teléfono coincide con su web de cartas. Algunos directorios muestran horarios distintos, sin corroboración del local. No se detallan tramos de desayuno ni de cocina."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "published",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "08:00",
+                  "end": "00:30",
                   "endDayOffset": 1
                 }
               ]

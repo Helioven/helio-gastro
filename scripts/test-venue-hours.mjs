@@ -7,9 +7,10 @@ const pilot = JSON.parse(readFileSync('data/venue-hours.json', 'utf8'));
 const catalog = JSON.parse(readFileSync('data/places.json', 'utf8'));
 assert.equal(pilot.timeZone, 'Europe/Madrid');
 assert.equal(pilot.schemaVersion, 1);
-assert.equal(Object.keys(pilot.records).length, 25);
+assert.equal(Object.keys(pilot.records).length, 43);
 assert.equal(catalog.length, 44);
 assert.equal(catalog.filter(place => !place.hidden).length, 43);
+assert.deepEqual(Object.keys(pilot.records).sort(), catalog.filter(place => !place.hidden).map(place => place.id).sort());
 assert.equal(catalog.find(place => place.id === 'el-caballo-rojo').hidden, true);
 const scopes = ['opening', 'kitchen', 'breakfast', 'lunch', 'dinner'];
 const week = [1, 2, 3, 4, 5, 6, 7];
@@ -65,13 +66,12 @@ try {
     await page.goto('http://127.0.0.1:8765/index.html');
     await page.waitForFunction(() => state.places.length > 30);
     const panel = page.locator('.venue-hours');
-    const open = async (place, present = true) => {
+    const open = async place => {
       await page.locator('#place-name').fill(place);
       await page.locator('#search-button').click();
       const card = page.locator('#results article').filter({ hasText: place }).first();
       await card.locator('.detail-button').click();
-      if (present) await panel.waitFor();
-      else await panel.waitFor({ state: 'detached' });
+      await panel.waitFor();
     };
     for (const [lang, title, nextDay, partial, closed, conflict, unknown] of [
       ['es','Horarios','del día siguiente','cierre sin precisar','Cerrado','Las fuentes oficiales discrepan','Horario sin confirmar'],
@@ -182,17 +182,49 @@ try {
           assert.doesNotMatch(await cards.nth(0).textContent(), /23:30|00:00/);
           await panel.locator('summary').last().press('Enter');
           const links = panel.getByRole('link');
-          assert.equal(await links.count(), 2);
-          assert.notEqual(await links.nth(0).innerText(), await links.nth(1).innerText());
-          assert.equal(await links.nth(0).getAttribute('href'), 'https://www.bodegasmezquita.com/cespedes/');
-          assert.equal(await links.nth(1).getAttribute('href'), 'https://www.bodegasmezquita.com/en/cespedes/');
+          const sources = Object.values(pilot.records['bodegas-mezquita-cespedes'].sources);
+          assert.equal(await links.count(), 4);
+          assert.equal(new Set(await links.allTextContents()).size, sources.length);
+          for (const [index, source] of sources.entries()) {
+            assert.equal(await links.nth(index).getAttribute('href'), source.url);
+          }
         }
       }
-      await open('Patio Romano', false);
+      const lastBatch = [
+        ['taberna-el-poema-alonso'], ['taberna-el-poema-gran-capitan'], ['taberna-rafae'],
+        ['taberna-san-miguel-el-pisto'], ['sociedad-plateros-maria-auxiliadora'], ['el-churrasco'],
+        ['taberna-el-abuelo'], ['bar-moriles-original', '07:00–03:00 ' + nextDay],
+        ['churros-bar-marta', unknown, 'desayuno'], ['cafeteria-don-pepe-centro', unknown, 'desayuno'],
+        ['cafeteria-don-pepe-ciudad-jardin', unknown, 'desayuno'], ['dtapas-covap-cordoba'],
+        ['cafeteria-bar-la-jineta', '07:30–00:00 ' + nextDay],
+        ['pastelerias-roldan-centro', '07:30–21:30', 'desayuno'],
+        ['pastelerias-roldan-tiendas', unknown, 'desayuno'], ['patio-romano'], ['el-burlaero'],
+        ['taberna-la-sal', '08:00–00:30 ' + nextDay]
+      ];
+      for (const [id, opening = unknown, mode = 'comida'] of lastBatch) {
+        const venue = catalog.find(place => place.id === id);
+        const service = page.locator('[data-service="' + mode + '"]');
+        if (await service.getAttribute('aria-pressed') !== 'true') await service.click();
+        await open(venue.name);
+        assert.equal(await page.evaluate(() => state.currentDetailId), id);
+        assert.equal(await panel.locator('h3').textContent(), title);
+        const cards = panel.locator('.venue-hours-card');
+        assert.ok((await cards.nth(0).textContent()).includes(opening), id);
+        assert.ok((await cards.nth(1).textContent()).includes(unknown), id);
+        assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), id);
+        const links = panel.locator('a');
+        const sources = Object.values(pilot.records[id].sources);
+        assert.equal(await links.count(), sources.length);
+        assert.equal(await links.first().getAttribute('href'), sources[0].url);
+        if (sources[0].labelKey === 'referenceSource') {
+          const label = {es:'Directorio consultado',en:'Directory consulted',fr:'Annuaire consulté'}[lang];
+          assert.ok((await links.first().textContent()).startsWith(label), id);
+        }
+      }
     }
     assert.deepEqual(errors, []);
     await page.close();
-    console.log(profile + ' PASS · 25 venues and ES/EN/FR');
+    console.log(profile + ' PASS · 43 venues and ES/EN/FR');
   }
 
   const page = await browser.newPage();
