@@ -1262,6 +1262,750 @@
           "exceptions": []
         }
       }
+    },
+    "taberna-gongora": {
+      "sources": {
+        "official": {
+          "url": "https://tabernagongora.com/",
+          "checkedOn": "2026-11-09",
+          "evidence": "Lunes y miércoles a sábado, 13:00–16:00 y 20:00–23:30. Cierre semanal martes y domingo. Sin tramos de cocina publicados."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "published",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                3,
+                4,
+                5,
+                6
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "13:00",
+                  "end": "16:00",
+                  "endDayOffset": 0
+                },
+                {
+                  "start": "20:00",
+                  "end": "23:30",
+                  "endDayOffset": 0
+                }
+              ]
+            },
+            {
+              "days": [
+                2,
+                7
+              ],
+              "status": "closed",
+              "intervals": []
+            }
+          ],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "taberna-plateros-san-francisco": {
+      "sources": {
+        "official": {
+          "url": "https://tabernaplateros.com/",
+          "checkedOn": "2026-11-09",
+          "evidence": "Calle San Francisco, 6. Cierra el lunes. Martes a sábado 11:00–16:00 y desde las 20:00 hasta cierre sin hora publicada. Domingo 11:30–17:00."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "published",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [
+            {
+              "days": [
+                1
+              ],
+              "status": "closed",
+              "intervals": []
+            },
+            {
+              "days": [
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "status": "partial",
+              "intervals": [
+                {
+                  "start": "11:00",
+                  "end": "16:00",
+                  "endDayOffset": 0
+                },
+                {
+                  "start": "20:00",
+                  "end": null,
+                  "endDayOffset": null
+                }
+              ]
+            },
+            {
+              "days": [
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "11:30",
+                  "end": "17:00",
+                  "endDayOffset": 0
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "rincon-beatillas": {
+      "sources": {
+        "official": {
+          "url": "https://tabernabeatillas.com/contacto/",
+          "checkedOn": "2026-11-09",
+          "evidence": "La página de la Plaza de las Beatillas indica cierre todo el lunes y domingo por la tarde desde las 16:00. No concreta la hora de apertura del domingo ni otros intervalos."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "published",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [
+            {
+              "days": [
+                1
+              ],
+              "status": "closed",
+              "intervals": []
+            },
+            {
+              "days": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "status": "unknown",
+              "intervals": []
+            }
+          ],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "moriles-ribera": {
+      "sources": {
+        "official": {
+          "url": "https://www.morilesribera.com/",
+          "checkedOn": "2026-11-09",
+          "evidence": "Paseo de la Ribera, 6. Domingo a jueves 12:00–02:00; viernes, sábado y festivos 12:00–03:00. La web indica cocina abierta todo el día, sin publicar sus horas de inicio o cierre. No identifica festivos por fecha."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "published",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                2,
+                3,
+                4,
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "12:00",
+                  "end": "02:00",
+                  "endDayOffset": 1
+                }
+              ]
+            },
+            {
+              "days": [
+                5,
+                6
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "12:00",
+                  "end": "03:00",
+                  "endDayOffset": 1
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "moriles-casa-fina": {
+      "sources": {
+        "official": {
+          "url": "https://morilescasafina.com/",
+          "checkedOn": "2026-11-09",
+          "evidence": "Paseo de la Ribera, 12. Domingo a jueves 12:00–02:00; viernes, sábado y festivos 12:00–03:00. La web indica cocina abierta todo el día, sin publicar sus horas de inicio o cierre. No identifica festivos por fecha."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "published",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                2,
+                3,
+                4,
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "12:00",
+                  "end": "02:00",
+                  "endDayOffset": 1
+                }
+              ]
+            },
+            {
+              "days": [
+                5,
+                6
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "12:00",
+                  "end": "03:00",
+                  "endDayOffset": 1
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "la-piscatoria": {
+      "sources": {
+        "official": {
+          "url": "https://lapiscatoriacordoba.com/carta",
+          "checkedOn": "2026-11-09",
+          "evidence": "Calle Cardenal González, 6. Horario general diario 09:00–21:00. La carta no asigna horas a cocina ni a cada servicio."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "published",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "09:00",
+                  "end": "21:00",
+                  "endDayOffset": 0
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "la-tarterie-centro": {
+      "sources": {
+        "official": {
+          "url": "https://la-tarterie.es/contacto/",
+          "checkedOn": "2026-11-09",
+          "evidence": "Calle Claudio Marcelo, 13. Martes a viernes 08:30–20:30; sábado y domingo 10:00–20:30. Lunes omitido, sin confirmación de cierre."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "published",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [
+            {
+              "days": [
+                1
+              ],
+              "status": "unknown",
+              "intervals": []
+            },
+            {
+              "days": [
+                2,
+                3,
+                4,
+                5
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "08:30",
+                  "end": "20:30",
+                  "endDayOffset": 0
+                }
+              ]
+            },
+            {
+              "days": [
+                6,
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "10:00",
+                  "end": "20:30",
+                  "endDayOffset": 0
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "la-bandera-cafe": {
+      "sources": {
+        "official": {
+          "url": "https://labanderacafe.com/",
+          "checkedOn": "2026-11-09",
+          "evidence": "Av. Al-Nasir, 3-1. Lunes a viernes 07:30–13:30 y 17:00–21:00; sábado y domingo 08:00–14:30 y 17:00–21:30. La web menciona desayunos y meriendas sin asignarles intervalos."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "published",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "07:30",
+                  "end": "13:30",
+                  "endDayOffset": 0
+                },
+                {
+                  "start": "17:00",
+                  "end": "21:00",
+                  "endDayOffset": 0
+                }
+              ]
+            },
+            {
+              "days": [
+                6,
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "08:00",
+                  "end": "14:30",
+                  "endDayOffset": 0
+                },
+                {
+                  "start": "17:00",
+                  "end": "21:30",
+                  "endDayOffset": 0
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "con-acento-braseria": {
+      "sources": {
+        "homepage": {
+          "url": "https://www.conacentoparrilla.com/",
+          "labelKey": "homepageSource",
+          "checkedOn": "2026-11-09",
+          "evidence": "Av. Al-Nasir, 13. Miércoles y jueves 12:30–17:00 y 20:00–24:00; viernes y sábado 12:30–18:00 y 20:00–00:30; domingo 12:30–18:00. Lunes y martes cerrado."
+        },
+        "contact": {
+          "url": "https://www.conacentoparrilla.com/contacto/",
+          "labelKey": "contactSource",
+          "checkedOn": "2026-11-09",
+          "evidence": "Av. Al-Nasir, 13. Miércoles a viernes 13:00–16:30 y 20:00–23:30, con cierre a las 24:00 viernes y sábado por la noche; sábado y domingo de 13:00–17:00 al mediodía. Lunes y martes cerrado."
+        },
+        "speciality": {
+          "url": "https://www.conacentoparrilla.com/mejor-atun-rojo-cordoba/",
+          "labelKey": "specialitySource",
+          "checkedOn": "2026-11-09",
+          "evidence": "La página de especialidad indica 20:30 como inicio de la noche de miércoles a domingo, incluida una franja el domingo hasta las 24:00 que no consta en Inicio ni Contacto."
+        }
+      },
+      "discrepancies": [
+        {
+          "scope": "opening",
+          "status": "unresolved",
+          "sourceIds": [
+            "homepage",
+            "contact",
+            "speciality"
+          ],
+          "evidence": "Las páginas oficiales de la misma sede difieren en el horario de mediodía y en los tramos nocturnos, incluido el domingo. Coinciden en el cierre de lunes y martes."
+        }
+      ],
+      "schedules": {
+        "opening": {
+          "status": "conflict",
+          "sourceIds": [
+            "homepage",
+            "contact",
+            "speciality"
+          ],
+          "week": [],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "taberna-museo-manolete": {
+      "sources": {
+        "official": {
+          "url": "https://www.tabernaagoramuseomanolete.com/",
+          "checkedOn": "2026-11-09",
+          "evidence": "Sede Puerta de Almodóvar, 6. Apertura diaria 12:30–24:00. Sin horario separado de cocina."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "published",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "12:30",
+                  "end": "00:00",
+                  "endDayOffset": 1
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
     }
   }
 }

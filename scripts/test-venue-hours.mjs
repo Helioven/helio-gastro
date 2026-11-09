@@ -7,7 +7,7 @@ const pilot = JSON.parse(readFileSync('data/venue-hours.json', 'utf8'));
 const catalog = JSON.parse(readFileSync('data/places.json', 'utf8'));
 assert.equal(pilot.timeZone, 'Europe/Madrid');
 assert.equal(pilot.schemaVersion, 1);
-assert.equal(Object.keys(pilot.records).length, 15);
+assert.equal(Object.keys(pilot.records).length, 25);
 assert.equal(catalog.length, 44);
 assert.equal(catalog.filter(place => !place.hidden).length, 43);
 assert.equal(catalog.find(place => place.id === 'el-caballo-rojo').hidden, true);
@@ -130,9 +130,20 @@ try {
         ['La Taberna del Río', '13:00–00:00 ' + nextDay],
         ['Bodegas Mezquita Céspedes', conflict],
         ['Taberna El Nº 10', '20:00–00:00 ' + nextDay, '20:00–00:00 ' + nextDay],
-        ['Taberna La Manuela', '12:00–23:00', '12:00–23:00']
+        ['Taberna La Manuela', '12:00–23:00', '12:00–23:00'],
+        ['Taberna Góngora', '13:00–16:00 · 20:00–23:30'],
+        ['Plateros · San Francisco', '20:00 · ' + partial],
+        ['Rincón de las Beatillas', closed],
+        ['Moriles Ribera', '12:00–03:00 ' + nextDay],
+        ['Moriles Casa Fina', '12:00–02:00 ' + nextDay],
+        ['La Piscatoria', '09:00–21:00'],
+        ['La Tarterie', '08:30–20:30'],
+        ['La Bandera', '07:30–13:30 · 17:00–21:00'],
+        ['Con Acento Brasería', conflict],
+        ['Taberna Museo Manolete', '12:30–00:00 ' + nextDay]
       ];
       for (const [venue, opening, kitchen = unknown] of additions) {
+        if (venue === 'La Tarterie') await page.locator('[data-service="merienda"]').click();
         await open(venue);
         const cards = panel.locator('.venue-hours-card');
         assert.equal(await panel.locator('h3').textContent(), title);
@@ -144,6 +155,27 @@ try {
           assert.match(await cards.nth(3).innerText(), /13:00–16:00/);
           assert.match(await cards.nth(4).innerText(), /19:30–23:00.*19:30–23:30/s);
         }
+        if (['Taberna Góngora', 'Plateros · San Francisco'].includes(venue)) {
+          assert.ok((await cards.nth(0).textContent()).includes(closed), venue);
+        }
+        if (['Rincón de las Beatillas', 'La Tarterie'].includes(venue)) {
+          assert.ok((await cards.nth(0).textContent()).includes(unknown), venue);
+        }
+        if (venue === 'Con Acento Brasería') {
+          assert.doesNotMatch(await cards.nth(0).textContent(), /12:30|13:00|00:30/);
+          await panel.locator('summary').last().press('Enter');
+          const links = panel.getByRole('link');
+          assert.equal(await links.count(), 3);
+          assert.equal(new Set(await links.allTextContents()).size, 3);
+          const sources = Object.values(pilot.records['con-acento-braseria'].sources);
+          for (const [index, source] of sources.entries()) {
+            const link = links.nth(index);
+            assert.equal(await link.getAttribute('href'), source.url);
+            await page.keyboard.press('Tab');
+            assert.ok(await link.evaluate(node => node === document.activeElement));
+          }
+        }
+        if (venue === 'La Tarterie') await page.locator('[data-service="comida"]').click();
         if (venue === 'Casa Rubio') assert.doesNotMatch(await cards.nth(0).textContent(), /19:30|20:00/);
         if (venue === 'Taberna El Nº 10') assert.ok((await cards.nth(0).textContent()).includes(unknown));
         if (venue === 'Bodegas Mezquita Céspedes') {
@@ -160,7 +192,7 @@ try {
     }
     assert.deepEqual(errors, []);
     await page.close();
-    console.log(profile + ' PASS · 15 venues and ES/EN/FR');
+    console.log(profile + ' PASS · 25 venues and ES/EN/FR');
   }
 
   const page = await browser.newPage();
