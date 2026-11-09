@@ -428,6 +428,8 @@ button:disabled{opacity:.62;cursor:not-allowed;box-shadow:none}
 #recommendations-section .dish-visual:has(img){width:calc(100% - 16px);margin:8px 8px 3px;border-radius:11px;box-shadow:0 2px 4px #43260d32}
 #recommendations-section .dish-visual:has(img)::before{display:block;inset:0;width:auto;height:auto;border:0;border-radius:inherit;box-shadow:inset 0 0 0 1px #fff5,inset 0 -4px 9px #21140730;z-index:1}
 #recommendations-section .dish-visual-label{z-index:2}
+#recommendations-section .category-visual:has(img){height:auto;aspect-ratio:4/3}
+#recommendations-section .category-visual-wide:has(img){aspect-ratio:16/9}
 @media(max-width:560px){
  .quick-nav a:not([hidden]){gap:3px}
  .quick-nav .ui-icon{width:14px;height:14px}

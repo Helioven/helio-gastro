@@ -18,3 +18,9 @@ Las imágenes se cargan de forma diferida. Si un archivo falla, la tarjeta recup
 | Pisto cordobés | `pisto-cordobes.webp` | La Cazuela de la Espartería |
 
 Las búsquedas genéricas y las que mezclan variantes, como pisto con huevo, se quedan sin estas dos imágenes. Se reutilizan las etiquetas ES/EN/FR y la carga diferida del componente de resultados.
+
+## Ilustraciones de categoría en «Sabores de Córdoba»
+
+`CARD_ILLUSTRATIONS` se consulta exclusivamente al renderizar las tarjetas de comida y cena. Añade las ocho escenas de categoría y reutiliza los WebP aprobados de Carrillada y Pisto como ejemplos visuales. Las asociaciones de búsqueda de `DISH_ILLUSTRATIONS` y `EXACT_RESULT_ILLUSTRATIONS` conservan su alcance.
+
+Las escenas de categoría son WebP de 640 × 480 px con carga diferida. En las tarjetas se presentan en 4:3, salvo Bocadillos y sándwiches, que usa un marco 16:9. Sus textos alternativos y la etiqueta «Imagen ilustrativa» se actualizan en ES/EN/FR. Las escenas representan el concepto y no describen la receta o la presentación de un establecimiento.

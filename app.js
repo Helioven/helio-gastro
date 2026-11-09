@@ -377,6 +377,10 @@ function refreshDishExplanations(){
  const english=window.HelioGastroLanguage?.get()==='en';
  const activeLanguage=window.HelioGastroLanguage?.get()||'es';
  document.querySelectorAll('.dish-visual-label').forEach(node=>{node.textContent=illustrativeImageLabel(activeLanguage)});
+ document.querySelectorAll('[data-card-illustration]').forEach(image=>{
+  const alt=CARD_ILLUSTRATIONS[image.dataset.cardIllustration].alt;
+  image.alt=alt[activeLanguage]||alt.es;
+ });
  document.querySelectorAll('[data-set-menu-es]').forEach(node=>{node.textContent=english?node.dataset.setMenuEn:node.dataset.setMenuEs;});
  document.querySelectorAll('[data-source-label-es]').forEach(node=>{node.textContent=(english?node.dataset.sourceLabelEn:node.dataset.sourceLabelEs)+' ↗';});
  document.querySelectorAll('[data-source-audit-title]').forEach(node=>{node.textContent=english?'Source documentation (expand)':'Documentación de fuentes (desplegar)';});
@@ -1315,6 +1319,19 @@ const DISH_ILLUSTRATIONS=Object.freeze({
  'ensaladilla':'ensaladilla-rusa.webp', 'ensaladilla rusa':'ensaladilla-rusa.webp',
  'nachos':'nachos.webp', 'tarta de queso':'tarta-de-queso.webp'
 });
+// Estas asociaciones se usan solo en tarjetas, nunca en los resultados de búsqueda.
+const CARD_ILLUSTRATIONS=Object.freeze({
+ "carrillada": {file:"carrillada-con-patatas.webp", alt:{"es":"Carrillada en salsa con patatas fritas","en":"Braised cheek in sauce with fries","fr":"Joue braisée en sauce avec des frites"}},
+ "pisto": {file:"pisto-cordobes.webp", alt:{"es":"Pisto de verduras en un plato de cerámica","en":"Vegetable pisto on a ceramic plate","fr":"Pisto de légumes dans une assiette en céramique"}},
+ "pescados y mariscos": {file:"pescados-y-mariscos.webp", alt:{"es":"Pescado a la plancha con limón, gambas al ajillo y mejillones","en":"Grilled fish with lemon, garlic prawns and mussels","fr":"Poisson grillé au citron, crevettes à l’ail et moules"}},
+ "carnes y asados": {file:"carnes-y-asados.webp", alt:{"es":"Ternera, pollo y costillas con sus guarniciones","en":"Roast beef, chicken and ribs with side dishes","fr":"Bœuf rôti, poulet et travers avec leurs accompagnements"}},
+ "bocadillos y sandwiches": {file:"bocadillos-y-sandwiches.webp", alt:{"es":"Bocadillos de jamón y de lomo y un sándwich mixto","en":"Serrano ham and pork loin rolls and a toasted ham and cheese sandwich","fr":"Sandwichs au jambon serrano et au filet de porc, et croque jambon-fromage"}},
+ "guisos y cocina tradicional": {file:"guisos-y-cocina-tradicional.webp", alt:{"es":"Potaje de garbanzos, lentejas y guiso de patatas con carne","en":"Chickpea stew, lentils and potato and meat stew","fr":"Ragoût de pois chiches, lentilles et ragoût de pommes de terre à la viande"}},
+ "verduras y ensaladas": {file:"verduras-y-ensaladas.webp", alt:{"es":"Ensalada fresca, verduras a la plancha y espárragos","en":"Fresh salad, grilled vegetables and asparagus","fr":"Salade fraîche, légumes grillés et asperges"}},
+ "tapas y raciones": {file:"tapas-y-raciones.webp", alt:{"es":"Croquetas, tortilla y patatas bravas para compartir","en":"Croquettes, Spanish omelette and patatas bravas to share","fr":"Croquettes, tortilla et patatas bravas à partager"}},
+ "postres y dulces": {file:"postres-y-dulces.webp", alt:{"es":"Flan, crema caramelizada y pastel de hojaldre","en":"Flan, caramelised custard and puff pastry","fr":"Flan, crème caramélisée et gâteau feuilleté"}},
+ "tapas": {file:"tapas.webp", alt:{"es":"Tres gildas, ensaladilla rusa y champiñones en platillos separados","en":"Three gildas, Russian salad and mushrooms in separate dishes","fr":"Trois gildas, salade russe et champignons dans des coupelles séparées"}}
+});
 const illustrativeImageLabel=language=>({es:'Imagen ilustrativa',en:'Illustrative image',fr:'Image illustrative'}[language]||'Imagen ilustrativa');
 const EXACT_RESULT_ILLUSTRATIONS=Object.freeze({
  'carrillada iberica con patatas fritas':'carrillada-con-patatas.webp',
@@ -1346,8 +1363,16 @@ function renderRecommendations(){
  for(const name of MODE_CONFIG[state.mode].dishes){
   const term=clean(name),data=recommendationEntries(term);
   const btn=document.createElement('button');btn.type='button';btn.className='recommendation-tile';
-  const illustration=DISH_ILLUSTRATIONS[term];
+  const category=CARD_ILLUSTRATIONS[term];
+  const illustration=category?.file||DISH_ILLUSTRATIONS[term];
   const visual=createDishVisual(illustration?'./assets/dishes/'+illustration:undefined);
+  if(category){
+   visual.classList.add('category-visual');
+   if(term==='bocadillos y sandwiches')visual.classList.add('category-visual-wide');
+   const image=visual.querySelector('img');
+   image.dataset.cardIllustration=term;
+   image.alt=category.alt[window.HelioGastroLanguage?.get()]||category.alt.es;
+  }
   const label=document.createElement('strong');
   if(illustration)label.textContent=name;else setIconLabel(label,'dish',name);
   const count=document.createElement('span');
