@@ -31,6 +31,12 @@ try {
     await page.goto('http://127.0.0.1:8765/index.html', { waitUntil: 'domcontentloaded' });
     await page.waitForFunction(() => typeof state !== 'undefined' && state.places.length > 0);
     const cards = page.locator('.recommendation-tile');
+    const tapas = cards.filter({has:page.locator('img[data-card-illustration="tapas"]')});
+    const tapasCounts = {
+      es:'13 locales registrados · 13 con precio',
+      en:'13 places listed · 13 with prices',
+      fr:'13 établissements répertoriés · 13 avec prix'
+    };
     for (const [mode, names] of expectedCards) {
       await page.locator('[data-service="'+mode+'"]').click();
       const expected = names.split(' ').map(name => './assets/dishes/'+name+'.webp');
@@ -40,6 +46,8 @@ try {
       await images.evaluateAll(nodes => Promise.all(nodes.map(image => image.decode())));
       for (const [language, label] of [['es','Imagen ilustrativa'],['en','Illustrative image'],['fr','Image illustrative']]) {
         await page.locator('#language-select').selectOption(language);
+        assert.equal(await tapas.count(),mode==='cena'?1:0);
+        if(mode==='cena')assert.equal(await tapas.locator(':scope > span:not(.dish-visual)').textContent(),tapasCounts[language]);
         assert.deepEqual(await cards.locator('.dish-visual-label').allTextContents(), Array(expected.length).fill(label));
         const alts = await cards.locator('[data-card-illustration]').evaluateAll((nodes, language) =>
           nodes.map(image => [image.alt, CARD_ILLUSTRATIONS[image.dataset.cardIllustration].alt[language]]), language);
@@ -80,9 +88,29 @@ try {
       await search(dish,place);
       assert.equal(await resultImage.count(),0,`Asociación inesperada para ${dish} / ${place}`);
     }
+    await page.locator('[data-service="cena"]').click();
+    await tapas.click();
+    assert.equal(await page.locator('#recommendation-results .recommendation-place').count(),13);
+    const conAcento = page.locator('#recommendation-results .recommendation-place').filter({hasText:'Con Acento'});
+    assert.equal(await conAcento.locator('li').count(),7,'The documented tapas menu should be included');
+    await page.keyboard.press('Escape');
+
+    await page.evaluate(() => {
+      const place = state.places[0];
+      state.places = [normalizePlace({...place, menus:[
+        {service:'comida', dishes:['Tapa de tortilla'], dishPrices:[]},
+        {service:'cena', dishes:['Croquetas'], dishPrices:[{dish:'Croquetas',eur:9,portion:'racion'}]},
+        {service:'tapas', dishes:['Gilda'], dishPrices:[{dish:'Gilda',eur:3}]}
+      ]})];
+    });
+    await page.locator('[data-service="comida"]').click();
+    assert.deepEqual(await page.evaluate(() => [tapasEntries().matches.length,tapasEntries().priced.length]),[1,0]);
+    await page.locator('[data-service="cena"]').click();
+    assert.equal(await tapas.count(),0,'A full portion and an out-of-context menu must not create a tapas card');
+    assert.equal(await cards.filter({has:page.locator('img[data-card-illustration="tapas y raciones"]')}).count(),1);
     await page.close();
   }
-  console.log('PASS: 17 distinct cards, exact result rules, ES/EN/FR and responsive framing');
+  console.log('PASS: 17 distinct cards, tapas evidence and empty state, exact result rules, ES/EN/FR and responsive framing');
 } finally {
   await browser.close();
 }

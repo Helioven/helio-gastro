@@ -475,7 +475,10 @@ function normalizePlace(raw){
   &&m.dishes.every(d=>typeof d==='string')
   &&m.dishPrices.every(item=>item&&typeof item.dish==='string'
    &&Number.isFinite(item.eur)&&item.eur>=0))
-  .map(m=>({...m,service:Object.hasOwn(SERVICE_TYPES,m.service)?m.service:'general'}));
+  .map(m=>({...m,
+   tapasSection:/^tapas(?: frias| calientes)?$/.test(clean(m.service).trim()),
+   service:Object.hasOwn(SERVICE_TYPES,m.service)?m.service:'general'
+  }));
  const allDishes=[...new Set(safeMenus.flatMap(m=>m.dishes))];
  const allPrices=safeMenus.filter(m=>!(raw.id==='rincon-beatillas' && m.menuCourses)).flatMap(m=>m.dishPrices.map(price=>({...price,service:m.service})));
  // Los menús cerrados de grupo no representan precios individuales comparables.
@@ -1304,7 +1307,27 @@ function recommendationDishMatches(dish,term){
  if(term==='tartas')return /\btarta(?:s)?\b/.test(value);
  return value.includes(term);
 }
+function tapasEntries(){
+ const matches=[],priced=[];
+ const namedTapa=name=>/^(?:tapa de |tapa$|tapas$)|\(tapa\)$/.test(clean(name).trim());
+ for(const p of state.places){
+  let listed=false;
+  for(const menu of serviceMenus(p)){
+   if(menu.dishes.some(name=>menu.tapasSection||namedTapa(name)))listed=true;
+   for(const item of menu.dishPrices){
+    const format=clean(item.portion).trim();
+    // El formato explícito prevalece sobre el nombre del plato o de la sección.
+    const isTapa=format?/^tapa(?: \(\d+ uds?\.\))?$/.test(format):menu.tapasSection||namedTapa(item.dish);
+    if(isTapa)priced.push({p,item,portion:'tapa',variant:variantOf(item)});
+    listed||=isTapa;
+   }
+  }
+  if(listed)matches.push(p);
+ }
+ return {matches,priced};
+}
 function recommendationEntries(term){
+ if(term==='tapas')return tapasEntries();
  const matches=state.places.filter(p=>serviceDishes(p).some(d=>recommendationDishMatches(d,term))||servicePrices(p).some(d=>recommendationDishMatches(d.dish,term)));
  const priced=matches.flatMap(p=>servicePrices(p).filter(item=>recommendationDishMatches(item.dish,term)).map(item=>({p,item,portion:portionOf(item),variant:variantOf(item)})));
  return {matches,priced};
@@ -1362,6 +1385,7 @@ function renderRecommendations(){
  const deck=el('recommendation-dishes');deck.replaceChildren();
  for(const name of MODE_CONFIG[state.mode].dishes){
   const term=clean(name),data=recommendationEntries(term);
+  if(term==='tapas'&&!data.matches.length)continue;
   const btn=document.createElement('button');btn.type='button';btn.className='recommendation-tile';
   const category=CARD_ILLUSTRATIONS[term];
   const illustration=category?.file||DISH_ILLUSTRATIONS[term];
