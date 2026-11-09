@@ -93,7 +93,50 @@ try {
     assert.equal(await page.locator('#recommendation-results .recommendation-place').count(),13);
     const conAcento = page.locator('#recommendation-results .recommendation-place').filter({hasText:'Con Acento'});
     assert.equal(await conAcento.locator('li').count(),7,'The documented tapas menu should be included');
+    assert.equal(await conAcento.locator('h5').textContent(),'Tapas sin clasificación de temperatura');
+    const compareButtons = page.locator('#recommendation-results [data-compare-place-id]');
+    await compareButtons.nth(0).click();
+    await compareButtons.nth(1).click();
     await page.keyboard.press('Escape');
+    const compare = page.locator('#compare-output');
+    for(const [language,prompt] of [
+      ['es','Elige un plato concreto para comparar sus precios.'],
+      ['fr','Choisissez un plat précis pour comparer ses prix.'],
+      ['en','Choose a specific dish to compare its prices.'],
+      ['es','Elige un plato concreto para comparar sus precios.']
+    ]){
+      await page.locator('#language-select').selectOption(language);
+      assert.equal(await compare.getByRole('status').textContent(),prompt);
+      assert.equal(await compare.locator('li:visible').count(),0);
+      assert.equal(await compare.locator('#compare-tapa-format').isDisabled(),true);
+      assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
+    }
+    await page.evaluate(() => {
+      state.places = state.places.filter(place=>state.selected.has(place.id)).map((place,index)=>normalizePlace({...place,menus:[
+        {service:'Tapas frías',dishes:['Tapa de tortilla'],dishPrices:[
+          {dish:'Tapa de tortilla',eur:4+index,portion:'tapa'},
+          {dish:'Tapa de tortilla',eur:8+index,portion:index?'tapa (3 uds.)':'tapa (2 uds.)'}
+        ]},
+        {service:'Tapas calientes',dishes:['Albóndigas'],dishPrices:[{dish:'Albóndigas',eur:7,portion:'tapa'}]},
+        {service:'general',dishes:['Ensaladilla'],dishPrices:[{dish:'Ensaladilla',eur:6,portion:'tapa'}]}
+      ]}));
+      compare();
+    });
+    await tapas.click();
+    for(const [language,headings] of [
+      ['fr',['Tapas froides','Tapas chaudes','Tapas sans température documentée']],
+      ['en',['Cold tapas','Hot tapas','Tapas with no documented temperature']],
+      ['es',['Tapas frías','Tapas calientes','Tapas sin clasificación de temperatura']]
+    ]){
+      await page.evaluate(language=>window.HelioGastroLanguage.set(language),language);
+      assert.deepEqual(await page.locator('.recommendation-place').first().locator('h5').allTextContents(),headings);
+    }
+    await page.keyboard.press('Escape');
+    await compare.locator('#compare-tapa-dish').selectOption('tapa de tortilla');
+    assert.deepEqual(await compare.locator('#compare-tapa-format option').evaluateAll(options=>options.map(option=>option.value)),['','tapa']);
+    assert.equal(await compare.locator('li:visible').count(),0);
+    await compare.locator('#compare-tapa-format').selectOption('tapa');
+    assert.deepEqual((await compare.locator('li:visible').allTextContents()).map(value=>Number.parseInt(value,10)),[4,5]);
 
     await page.evaluate(() => {
       const place = state.places[0];

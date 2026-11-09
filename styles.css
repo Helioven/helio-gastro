@@ -157,6 +157,8 @@ input::placeholder{color:#90adc5}input:focus-visible,select:focus-visible,button
 .recommendation-place{border:1px solid #527c98;border-radius:12px;padding:14px;margin:12px 0;background:rgba(255,255,255,.035)}
 .recommendation-place h4{margin:0 0 10px}
 .recommendation-place-items{list-style:none;padding:0;margin:0}
+.tapas-compare-controls{display:grid;gap:6px;max-width:100%;margin-bottom:12px}
+.tapas-compare-controls select{width:100%;min-width:0}
 .recommendation-place-items li{display:flex;align-items:center;flex-wrap:wrap;gap:8px;padding:9px 0;border-top:1px solid rgba(160,195,215,.2)}
 .recommendation-place-items li span:first-child{flex:1 1 190px}
 .recommendation-place-items li strong{margin-left:auto;white-space:nowrap}

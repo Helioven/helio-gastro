@@ -477,6 +477,7 @@ function normalizePlace(raw){
    &&Number.isFinite(item.eur)&&item.eur>=0))
   .map(m=>({...m,
    tapasSection:/^tapas(?: frias| calientes)?$/.test(clean(m.service).trim()),
+   tapasTemperature:documentedTapaTemperature(m.service),
    service:Object.hasOwn(SERVICE_TYPES,m.service)?m.service:'general'
   }));
  const allDishes=[...new Set(safeMenus.flatMap(m=>m.dishes))];
@@ -1200,6 +1201,7 @@ function compare(){
  if(!items.length){panel.className='empty';panel.textContent='Selecciona establecimientos de los resultados para compararlos aquí.';return}
  panel.className='';
  const term=state.appliedTerm;
+ if(term==='tapas'){renderTapasComparison(panel,items);return}
  const pricesOnly=state.appliedScope==='dish'&&!!state.appliedPortion&&state.appliedPortion!=='desconocida';
  const highlights=pricesOnly?comparableHighlights(items,term,state.appliedPortion):new Set();
  const advisory=document.createElement('p');advisory.className='note';
@@ -1235,6 +1237,62 @@ function compare(){
   panel.append(box);
  }
  if(panel.querySelector('.format-marker'))advisory.after(unknownFormatNote('compare-format-note'));
+}
+function renderTapasComparison(panel,places){
+ const entries=tapasEntries().priced.filter(entry=>state.selected.has(entry.p.id));
+ const dishKey=entry=>clean(entry.item.dish).replace(/\s*\(tapa\)\s*$/,'').trim();
+ const choices=new Map(entries.map(entry=>[dishKey(entry),entry.item.dish]));
+ const controls=document.createElement('div');controls.className='tapas-compare-controls';
+ const dish=document.createElement('select');dish.id='compare-tapa-dish';
+ const format=document.createElement('select');format.id='compare-tapa-format';
+ function addControl(select,text){
+  const label=document.createElement('label');label.htmlFor=select.id;label.textContent=text;
+  controls.append(label,select);
+ }
+ function addOption(select,value,text,original=false){
+  const option=document.createElement('option');option.value=value;option.textContent=text;
+  if(original)option.dataset.keepOriginal='';
+  select.append(option);
+ }
+ addControl(dish,'Plato concreto');
+ addOption(dish,'','Elige un plato');
+ for(const [key,name] of [...choices].sort((a,b)=>a[1].localeCompare(b[1],'es')))addOption(dish,key,name,true);
+ addControl(format,'Formato documentado');
+ panel.append(controls);
+ const route=routeButton(places);if(route)panel.append(route);
+ const status=document.createElement('p');status.className='note';status.setAttribute('role','status');panel.append(status);
+ const outputs=new Map();
+ for(const place of places){
+  const box=document.createElement('div');box.className='compare-place';
+  const title=document.createElement('h3');title.textContent=place.name;
+  const list=document.createElement('ul');list.hidden=true;
+  box.append(title,mapButton(place),list);panel.append(box);outputs.set(place.id,list);
+ }
+ function updatePrices(){
+  const matching=dish.value&&format.value?entries.filter(entry=>dishKey(entry)===dish.value&&entry.format===format.value):[];
+  const comparable=new Set(matching.map(entry=>entry.p.id)).size>=2;
+  status.textContent=!dish.value?'Elige un plato concreto para comparar sus precios.':format.disabled?'El plato no tiene un formato equivalente documentado en al menos dos locales seleccionados.':!comparable?'Elige un formato documentado común a dos locales.':'Se muestran precios del mismo plato y formato documentado. La cantidad real puede variar.';
+  for(const [id,list] of outputs){
+   list.replaceChildren();
+   for(const entry of comparable?matching.filter(entry=>entry.p.id===id):[]){
+    const line=document.createElement('li');line.textContent=fmt(entry.item.eur);list.append(line);
+   }
+   list.hidden=!list.childElementCount;
+  }
+ }
+ function updateFormats(){
+  format.replaceChildren();addOption(format,'','Elige un formato');
+  const formats=new Map();
+  for(const entry of entries.filter(entry=>dishKey(entry)===dish.value)){
+   if(!formats.has(entry.format))formats.set(entry.format,new Set());
+   formats.get(entry.format).add(entry.p.id);
+  }
+  for(const [key,ids] of formats)if(ids.size>=2)addOption(format,key,key==='tapa'?'Tapa':key,key!=='tapa');
+  format.disabled=format.options.length===1;updatePrices();
+ }
+ dish.addEventListener('change',updateFormats);
+ format.addEventListener('change',updatePrices);
+ updateFormats();
 }
 function getDishCoverage(term, area, nameQuery='') {
  const matches=state.places.filter(p=>serviceMenus(p).length>0&&(!nameQuery||clean(p.name).includes(nameQuery))&&placeMatchesDish(p,term)&&(!area||p.area===area));
@@ -1307,6 +1365,12 @@ function recommendationDishMatches(dish,term){
  if(term==='tartas')return /\btarta(?:s)?\b/.test(value);
  return value.includes(term);
 }
+function documentedTapaTemperature(section){
+ const title=clean(section).trim();
+ if(title==='tapas frias')return 'cold';
+ if(title==='tapas calientes')return 'hot';
+ return '';
+}
 function tapasEntries(){
  const matches=[],priced=[];
  const namedTapa=name=>/^(?:tapa de |tapa$|tapas$)|\(tapa\)$/.test(clean(name).trim());
@@ -1318,7 +1382,10 @@ function tapasEntries(){
     const format=clean(item.portion).trim();
     // El formato explícito prevalece sobre el nombre del plato o de la sección.
     const isTapa=format?/^tapa(?: \(\d+ uds?\.\))?$/.test(format):menu.tapasSection||namedTapa(item.dish);
-    if(isTapa)priced.push({p,item,portion:'tapa',variant:variantOf(item)});
+    if(isTapa)priced.push({
+     p,item,portion:'tapa',variant:variantOf(item),temperature:menu.tapasTemperature,
+     format:format||'tapa'
+    });
     listed||=isTapa;
    }
   }
@@ -1472,17 +1539,27 @@ function showRecommendations(dishName){
   for(const {place,items} of byPlace.values()){
    const card=document.createElement('section');card.className='recommendation-place';
    const title=document.createElement('h4');title.textContent=place.name;card.append(title);
-   const list=document.createElement('ul');list.className='recommendation-place-items';
-   for(const entry of items.sort((a,b)=>a.item.eur-b.item.eur)){
+   const sections=term==='tapas'
+    ?[['cold','Tapas frías'],['hot','Tapas calientes'],['','Tapas sin clasificación de temperatura']]
+    :[[undefined,'']];
+   for(const [temperature,sectionLabel] of sections){
+    const sectionItems=items.filter(entry=>entry.temperature===temperature);
+    if(!sectionItems.length)continue;
+    if(sectionLabel){
+     const heading=document.createElement('h5');heading.textContent=sectionLabel;card.append(heading);
+    }
+    const list=document.createElement('ul');list.className='recommendation-place-items';
+    for(const entry of sectionItems.sort((a,b)=>a.item.eur-b.item.eur)){
     const line=document.createElement('li');
     const label=document.createElement('span');label.dataset.keepDishSpanish='';label.textContent=entry.item.dish;
     const explanation=detailDishExplanation(entry.item.dish)||dishExplanation(entry.item.dish);
     if(explanation){const info=document.createElement('small');info.className='dish-explanation detail-dish-explanation';info.dataset.dishExplanation='';info.textContent=explanation;info.hidden=window.HelioGastroLanguage?.get()!=='en';label.append(document.createElement('br'),info);}
     const format=document.createElement('small');format.className='portion-tag';format.textContent=localizedPortion(entry.portion);
     const price=document.createElement('strong');price.textContent=fmt(entry.item.eur);
-    line.append(label,format,price);list.append(line);
+     line.append(label,format,price);list.append(line);
+    }
+    card.append(list);
    }
-   card.append(list);
    const actions=document.createElement('div');actions.className='recommendation-place-actions';
    const more=document.createElement('button');more.type='button';setIconLabel(more,'arrow','Ver ficha');more.addEventListener('click',()=>openRecommendationPlace(place));
    actions.append(more,mapButton(place),recommendationCompareButton(place,dishName));card.append(actions);panel.append(card);

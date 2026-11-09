@@ -738,6 +738,17 @@ window.GASTRO_I18N = Object.freeze({
   ]
 }));
   const journeyLabels={
+    'Tapas frías':['Cold tapas','Tapas froides'],
+    'Tapas calientes':['Hot tapas','Tapas chaudes'],
+    'Tapas sin clasificación de temperatura':['Tapas with no documented temperature','Tapas sans température documentée'],
+    'Plato concreto':['Specific dish','Plat précis'],
+    'Elige un plato':['Choose a dish','Choisissez un plat'],
+    'Formato documentado':['Documented portion size','Format documenté'],
+    'Elige un formato':['Choose a portion size','Choisissez un format'],
+    'Elige un plato concreto para comparar sus precios.':['Choose a specific dish to compare its prices.','Choisissez un plat précis pour comparer ses prix.'],
+    'El plato no tiene un formato equivalente documentado en al menos dos locales seleccionados.':['This dish has no equivalent portion size documented at two or more selected places.','Aucun format équivalent n’est documenté pour ce plat dans au moins deux établissements sélectionnés.'],
+    'Elige un formato documentado común a dos locales.':['Choose a documented portion size shared by two places.','Choisissez un format documenté commun à deux établissements.'],
+    'Se muestran precios del mismo plato y formato documentado. La cantidad real puede variar.':['Prices are for the same dish and documented portion size. Actual quantities may vary.','Les prix concernent le même plat et le même format documenté. La quantité réelle peut varier.'],
   "Cerrar ×": [
     "Close ×",
     "Fermer ×"
@@ -852,7 +863,7 @@ window.GASTRO_I18N = Object.freeze({
     const parent=node.parentElement;
     if(!parent)return null;
     const key=normalize(source), fr=language==='fr', index=fr?1:0;
-    if(parent.closest('#recommendation-dialog,#results-section,#map-dialog')){
+    if(parent.closest('#recommendation-dialog,#results-section,#map-dialog,.tapas-compare-controls,#compare-output [role=status]')){
       if(Object.hasOwn(journeyLabels,key))return journeyLabels[key][index];
     }
     if(parent.closest('#recommendation-dialog')){

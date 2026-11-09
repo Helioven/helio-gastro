@@ -57,19 +57,20 @@ await main.locator('#language-select').selectOption('fr');
 await main.waitForFunction(()=>document.documentElement.lang==='fr'&&window.HelioGastroLanguage?.get()==='fr');
 const readInfo=()=>main.evaluate(()=>({
  title:document.querySelector('.panel.info h2')?.textContent.trim(),
+ decorativeIcon:!!document.querySelector('.panel.info h2 > svg[aria-hidden="true"][focusable="false"] use'),
  paragraphs:[...document.querySelectorAll('.panel.info p')].map(p=>p.textContent.replace(/\s+/g,' ').trim()),
  footer:document.querySelector('footer')?.textContent.replace(/\s+/g,' ').trim()
 }));
 const infoFr=await readInfo();
-if(infoFr.title!=='🔍 Notre méthode'||!infoFr.paragraphs[0]?.includes('Confirmé désigne un prix publié')||!infoFr.paragraphs[0]?.includes('Estimé donne une estimation indicative')||!infoFr.paragraphs[1]?.includes('Nous n’inventons ni avis')||!infoFr.footer?.includes('Projet pilote pour un portfolio QA')||!infoFr.footer?.includes('Sans publicité ni affiliation'))mainErrors.push('FR methodology/footer incomplete: '+JSON.stringify(infoFr));
+if(infoFr.title!=='Notre méthode'||!infoFr.decorativeIcon||!infoFr.paragraphs[0]?.includes('Confirmé désigne un prix publié')||!infoFr.paragraphs[0]?.includes('Estimé donne une estimation indicative')||!infoFr.paragraphs[1]?.includes('Nous n’inventons ni avis')||!infoFr.footer?.includes('Projet pilote pour un portfolio QA')||!infoFr.footer?.includes('Sans publicité ni affiliation'))mainErrors.push('FR methodology/footer incomplete: '+JSON.stringify(infoFr));
 await main.locator('#language-select').selectOption('en');
 await main.waitForFunction(()=>document.documentElement.lang==='en');
 const infoEn=await readInfo();
-if(infoEn.title!=='🔍 Our methodology'||!infoEn.paragraphs[0]?.includes('Confirmed means a published')||!infoEn.footer?.includes('No advertising or affiliate links'))mainErrors.push('EN methodology/footer not restored: '+JSON.stringify(infoEn));
+if(infoEn.title!=='Our methodology'||!infoEn.decorativeIcon||!infoEn.paragraphs[0]?.includes('Confirmed means a published')||!infoEn.footer?.includes('No advertising or affiliate links'))mainErrors.push('EN methodology/footer not restored: '+JSON.stringify(infoEn));
 await main.locator('#language-select').selectOption('es');
 await main.waitForFunction(()=>document.documentElement.lang==='es');
 const infoEs=await readInfo();
-if(infoEs.title!=='🔍 Nuestro criterio'||!infoEs.paragraphs[0]?.includes('Confirmado significa coste publicado')||!infoEs.footer?.includes('Sin publicidad ni afiliación'))mainErrors.push('ES methodology/footer not restored: '+JSON.stringify(infoEs));
+if(infoEs.title!=='Nuestro criterio'||!infoEs.decorativeIcon||!infoEs.paragraphs[0]?.includes('Confirmado significa coste publicado')||!infoEs.footer?.includes('Sin publicidad ni afiliación'))mainErrors.push('ES methodology/footer not restored: '+JSON.stringify(infoEs));
 await main.waitForFunction(()=>typeof state!=='undefined' && state.places.some(p=>p.id==='la-montillana'));
 await main.evaluate(()=>showPlace(state.places.find(p=>p.id==='la-montillana'),false));
 const descriptions=async language=>{
