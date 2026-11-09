@@ -6,7 +6,14 @@ import { chromium } from 'playwright';
 const pilot = JSON.parse(readFileSync('data/venue-hours.json', 'utf8'));
 const catalog = JSON.parse(readFileSync('data/places.json', 'utf8'));
 assert.equal(pilot.timeZone, 'Europe/Madrid');
-assert.equal(Object.keys(pilot.records).length, 5);
+assert.equal(pilot.schemaVersion, 1);
+assert.equal(Object.keys(pilot.records).length, 15);
+assert.equal(catalog.length, 44);
+assert.equal(catalog.filter(place => !place.hidden).length, 43);
+assert.equal(catalog.find(place => place.id === 'el-caballo-rojo').hidden, true);
+const scopes = ['opening', 'kitchen', 'breakfast', 'lunch', 'dinner'];
+const week = [1, 2, 3, 4, 5, 6, 7];
+const time = /^(?:[01]\d|2[0-3]):[0-5]\d$/;
 for (const [id, record] of Object.entries(pilot.records)) {
   assert.ok(catalog.some(place => place.id === id && !place.hidden));
   for (const source of Object.values(record.sources)) {
@@ -14,11 +21,36 @@ for (const [id, record] of Object.entries(pilot.records)) {
     assert.match(source.checkedOn, /^\d{4}-\d{2}-\d{2}$/);
     assert.ok(source.evidence.trim());
   }
-  for (const schedule of Object.values(record.schedules)) {
+  assert.deepEqual(Object.keys(record.schedules), scopes);
+  for (const entry of record.discrepancies) {
+    assert.ok(scopes.includes(entry.scope));
+    assert.ok(entry.sourceIds.length && entry.sourceIds.every(key => Object.hasOwn(record.sources, key)));
+  }
+  for (const [scope, schedule] of Object.entries(record.schedules)) {
+    assert.ok(['published', 'unknown', 'conflict'].includes(schedule.status));
+    if (schedule.status !== 'unknown') assert.ok(schedule.sourceIds.length);
+    if (schedule.status === 'conflict') {
+      assert.ok(record.discrepancies.some(entry => entry.scope === scope && entry.status === 'unresolved'));
+    }
+    for (const rule of [...schedule.week, ...schedule.exceptions]) {
+      assert.ok(['scheduled', 'partial', 'closed', 'unknown'].includes(rule.status));
+      assert.equal(rule.intervals.length > 0, ['scheduled', 'partial'].includes(rule.status));
+      for (const {start, end, endDayOffset} of rule.intervals) {
+        assert.match(start, time);
+        if (end === null) {
+          assert.equal(rule.status, 'partial');
+          assert.equal(endDayOffset, null);
+        } else {
+          assert.match(end, time);
+          assert.notEqual(start, end);
+          assert.equal(endDayOffset, Number(end < start));
+        }
+      }
+    }
     assert.ok(schedule.sourceIds.every(key => Object.hasOwn(record.sources, key)));
     const days = schedule.week.flatMap(rule => rule.days);
     assert.equal(new Set(days).size, days.length);
-    if (schedule.status === 'published') assert.deepEqual([...days].sort(), [1,2,3,4,5,6,7]);
+    if (schedule.status === 'published') assert.deepEqual([...days].sort(), week);
     else assert.equal(days.length, 0);
   }
 }
@@ -88,11 +120,47 @@ try {
         await page.keyboard.press('Tab');
         assert.equal(await link.evaluate(node => node === document.activeElement), true);
       }
+      const additions = [
+        ['Taberna La Viuda', '13:00–16:30 · 20:00–23:30'],
+        ['Casa Pepe de la Judería', unknown],
+        ['Casa Rubio', conflict],
+        ['Puerta Sevilla', '13:00–16:30 · 20:00–23:30'],
+        ['Posada del Caballo Andaluz', '20:00–00:00 ' + nextDay],
+        ['La Cazuela de la Espartería', '20:30–00:30 ' + nextDay],
+        ['La Taberna del Río', '13:00–00:00 ' + nextDay],
+        ['Bodegas Mezquita Céspedes', conflict],
+        ['Taberna El Nº 10', '20:00–00:00 ' + nextDay, '20:00–00:00 ' + nextDay],
+        ['Taberna La Manuela', '12:00–23:00', '12:00–23:00']
+      ];
+      for (const [venue, opening, kitchen = unknown] of additions) {
+        await open(venue);
+        const cards = panel.locator('.venue-hours-card');
+        assert.equal(await panel.locator('h3').textContent(), title);
+        assert.ok((await cards.nth(0).textContent()).includes(opening), venue + ' opening');
+        assert.ok((await cards.nth(1).textContent()).includes(kitchen), venue + ' kitchen');
+        assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), venue);
+        if (venue === 'Casa Pepe de la Judería') {
+          await panel.locator('summary').first().press('Enter');
+          assert.match(await cards.nth(3).innerText(), /13:00–16:00/);
+          assert.match(await cards.nth(4).innerText(), /19:30–23:00.*19:30–23:30/s);
+        }
+        if (venue === 'Casa Rubio') assert.doesNotMatch(await cards.nth(0).textContent(), /19:30|20:00/);
+        if (venue === 'Taberna El Nº 10') assert.ok((await cards.nth(0).textContent()).includes(unknown));
+        if (venue === 'Bodegas Mezquita Céspedes') {
+          assert.doesNotMatch(await cards.nth(0).textContent(), /23:30|00:00/);
+          await panel.locator('summary').last().press('Enter');
+          const links = panel.getByRole('link');
+          assert.equal(await links.count(), 2);
+          assert.notEqual(await links.nth(0).innerText(), await links.nth(1).innerText());
+          assert.equal(await links.nth(0).getAttribute('href'), 'https://www.bodegasmezquita.com/cespedes/');
+          assert.equal(await links.nth(1).getAttribute('href'), 'https://www.bodegasmezquita.com/en/cespedes/');
+        }
+      }
       await open('Patio Romano', false);
     }
     assert.deepEqual(errors, []);
     await page.close();
-    console.log(profile + ' PASS · five venues and ES/EN/FR');
+    console.log(profile + ' PASS · 15 venues and ES/EN/FR');
   }
 
   const page = await browser.newPage();

@@ -452,6 +452,816 @@
           "exceptions": []
         }
       }
+    },
+    "taberna-la-viuda": {
+      "sources": {
+        "official": {
+          "url": "https://gruporosalescordoba.com/taberna-la-viuda/",
+          "checkedOn": "2026-11-09",
+          "evidence": "Horario del local, todos los días: 13:00–16:30 y 20:00–23:30. Sin horario separado de cocina."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "published",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "13:00",
+                  "end": "16:30",
+                  "endDayOffset": 0
+                },
+                {
+                  "start": "20:00",
+                  "end": "23:30",
+                  "endDayOffset": 0
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "casa-pepe-juderia": {
+      "sources": {
+        "official": {
+          "url": "https://restaurantecasapepedelajuderia.com/",
+          "checkedOn": "2026-11-09",
+          "evidence": "Horario del servicio de comidas: 13:00–16:00 a diario. Cenas: 19:30–23:00 de domingo a jueves; 19:30–23:30 viernes y sábado. No se distingue la apertura general."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "published",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "13:00",
+                  "end": "16:00",
+                  "endDayOffset": 0
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "published",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                2,
+                3,
+                4,
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "19:30",
+                  "end": "23:00",
+                  "endDayOffset": 0
+                }
+              ]
+            },
+            {
+              "days": [
+                5,
+                6
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "19:30",
+                  "end": "23:30",
+                  "endDayOffset": 0
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        }
+      }
+    },
+    "casa-rubio": {
+      "sources": {
+        "official": {
+          "url": "https://restaurantecasarubiocordoba.com/",
+          "checkedOn": "2026-11-09",
+          "evidence": "Dos bloques «Horario local» en la misma página. Ambos indican cierre martes y miércoles y tramo 13:00–16:00 los demás días. El primer bloque indica 20:00–23:00 lun., jue. y dom., y 20:00–23:30 vie. y sáb.; el segundo indica 19:30–23:00 / 23:30."
+        }
+      },
+      "discrepancies": [
+        {
+          "scope": "opening",
+          "status": "unresolved",
+          "sourceIds": [
+            "official"
+          ],
+          "evidence": "El horario nocturno comienza a las 20:00 en un bloque y a las 19:30 en otro. Confirmar el tramo con el local antes de publicar la semana."
+        }
+      ],
+      "schedules": {
+        "opening": {
+          "status": "conflict",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "restaurante-puerta-sevilla": {
+      "sources": {
+        "official": {
+          "url": "https://gruporosalescordoba.com/restaurante-puerta-sevilla/",
+          "checkedOn": "2026-11-09",
+          "evidence": "Horario del local todos los días: 13:00–16:30 y 20:00–23:30. Sin horario separado de cocina."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "published",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "13:00",
+                  "end": "16:30",
+                  "endDayOffset": 0
+                },
+                {
+                  "start": "20:00",
+                  "end": "23:30",
+                  "endDayOffset": 0
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "posada-caballo-andaluz": {
+      "sources": {
+        "official": {
+          "url": "https://gruporosalescordoba.com/la-posada-del-caballo-andaluz/",
+          "checkedOn": "2026-11-09",
+          "evidence": "Horario del local todos los días: 12:30–16:00 y 20:00–24:00."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "published",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "12:30",
+                  "end": "16:00",
+                  "endDayOffset": 0
+                },
+                {
+                  "start": "20:00",
+                  "end": "00:00",
+                  "endDayOffset": 1
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "la-cazuela-esparteria": {
+      "sources": {
+        "official": {
+          "url": "https://lacazueladelaesparteria.es/contacto/",
+          "checkedOn": "2026-11-09",
+          "evidence": "Lun.–vie. 12:30–16:15 y 19:30–24:00; sáb. 12:30–16:30 y 20:30–00:30 del día siguiente; dom. 13:00–16:30, sin apertura nocturna. Para festivos, la web pide consultar al local."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "published",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "12:30",
+                  "end": "16:15",
+                  "endDayOffset": 0
+                },
+                {
+                  "start": "19:30",
+                  "end": "00:00",
+                  "endDayOffset": 1
+                }
+              ]
+            },
+            {
+              "days": [
+                6
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "12:30",
+                  "end": "16:30",
+                  "endDayOffset": 0
+                },
+                {
+                  "start": "20:30",
+                  "end": "00:30",
+                  "endDayOffset": 1
+                }
+              ]
+            },
+            {
+              "days": [
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "13:00",
+                  "end": "16:30",
+                  "endDayOffset": 0
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "la-taberna-del-rio": {
+      "sources": {
+        "official": {
+          "url": "https://www.latabernadelrio.com/",
+          "checkedOn": "2026-11-09",
+          "evidence": "Horario general todos los días: 13:00–24:00. No se especifica la última comanda ni el cierre de cocina."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "published",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "13:00",
+                  "end": "00:00",
+                  "endDayOffset": 1
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "bodegas-mezquita-cespedes": {
+      "sources": {
+        "officialEs": {
+          "url": "https://www.bodegasmezquita.com/cespedes/",
+          "labelKey": "spanishPage",
+          "checkedOn": "2026-11-09",
+          "evidence": "Dom.–jue. 12:30–23:30, última comanda a las 23:00. Vie., sáb. y vísperas de festivo 12:30–24:00, última comanda a las 23:30. La página indica cocina continua."
+        },
+        "officialEn": {
+          "url": "https://www.bodegasmezquita.com/en/cespedes/",
+          "labelKey": "englishPage",
+          "checkedOn": "2026-11-09",
+          "evidence": "La versión inglesa indica 12:30–23:30 todos los días y cocina continua, sin publicar horas de última comanda."
+        }
+      },
+      "discrepancies": [
+        {
+          "scope": "opening",
+          "status": "unresolved",
+          "sourceIds": [
+            "officialEs",
+            "officialEn"
+          ],
+          "evidence": "Las versiones oficiales difieren en el cierre de viernes y sábado. Las vísperas figuran en la versión española sin fechas concretas. La última comanda no equivale al cierre de cocina."
+        }
+      ],
+      "schedules": {
+        "opening": {
+          "status": "conflict",
+          "sourceIds": [
+            "officialEs",
+            "officialEn"
+          ],
+          "week": [],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "taberna-el-numero-10": {
+      "sources": {
+        "official": {
+          "url": "https://tabernaelnumero10cordoba.com/",
+          "checkedOn": "2026-11-09",
+          "evidence": "Mié., jue. y dom.: 12:30–16:30 y 19:30–23:30; vie. y sáb.: 12:30–16:30 y 20:00–24:00. La web confirma cocina durante toda la apertura. No especifica lunes ni martes."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "published",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                2
+              ],
+              "status": "unknown",
+              "intervals": []
+            },
+            {
+              "days": [
+                3,
+                4,
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "12:30",
+                  "end": "16:30",
+                  "endDayOffset": 0
+                },
+                {
+                  "start": "19:30",
+                  "end": "23:30",
+                  "endDayOffset": 0
+                }
+              ]
+            },
+            {
+              "days": [
+                5,
+                6
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "12:30",
+                  "end": "16:30",
+                  "endDayOffset": 0
+                },
+                {
+                  "start": "20:00",
+                  "end": "00:00",
+                  "endDayOffset": 1
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "published",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                2
+              ],
+              "status": "unknown",
+              "intervals": []
+            },
+            {
+              "days": [
+                3,
+                4,
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "12:30",
+                  "end": "16:30",
+                  "endDayOffset": 0
+                },
+                {
+                  "start": "19:30",
+                  "end": "23:30",
+                  "endDayOffset": 0
+                }
+              ]
+            },
+            {
+              "days": [
+                5,
+                6
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "12:30",
+                  "end": "16:30",
+                  "endDayOffset": 0
+                },
+                {
+                  "start": "20:00",
+                  "end": "00:00",
+                  "endDayOffset": 1
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
+    },
+    "taberna-la-manuela": {
+      "sources": {
+        "official": {
+          "url": "https://tabernalamanuelacordoba.es/",
+          "checkedOn": "2026-11-09",
+          "evidence": "Apertura diaria 12:00–23:00. La web confirma cocina sin interrupción en ese mismo tramo todos los días."
+        }
+      },
+      "discrepancies": [],
+      "schedules": {
+        "opening": {
+          "status": "published",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "12:00",
+                  "end": "23:00",
+                  "endDayOffset": 0
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "kitchen": {
+          "status": "published",
+          "sourceIds": [
+            "official"
+          ],
+          "week": [
+            {
+              "days": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "status": "scheduled",
+              "intervals": [
+                {
+                  "start": "12:00",
+                  "end": "23:00",
+                  "endDayOffset": 0
+                }
+              ]
+            }
+          ],
+          "exceptions": []
+        },
+        "breakfast": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "lunch": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        },
+        "dinner": {
+          "status": "unknown",
+          "sourceIds": [],
+          "week": [],
+          "exceptions": []
+        }
+      }
     }
   }
 }
