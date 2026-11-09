@@ -8,7 +8,9 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  await page.locator('#search-button').click();
  await page.waitForSelector('#results .detail-button');
  assert.equal(await page.locator('#results .detail-button').first().textContent(),'Voir la fiche complète');
- assert.equal(await page.locator('#results button').filter({hasText:'+ Comparer'}).count()>0,true);
+ const compare=page.locator('#results').getByRole('button',{name:'Comparer',exact:true}).first();
+ assert.equal(await compare.getAttribute('aria-pressed'),'false');
+ assert.equal(await compare.locator('use').getAttribute('href'),'./assets/ui/icons.svg#scale');
  await page.locator('#language-select').selectOption('es');
  assert.equal(await page.locator('#results .detail-button').first().textContent(),'Ver ficha completa');
  await page.locator('#language-select').selectOption('en');

@@ -69,7 +69,7 @@ window.GASTRO_I18N = Object.freeze({
   dynamicRules.unshift(
     [/^(.* · )Formato sin especificar( · .*)?$/,m=>m[1]+'Portion size not specified'+(m[2]||'')],
     [/^(\d+) favoritos$/,m=>m[1]+(m[1]==='1'?' favourite':' favourites')],
-    [/^🚶 Ruta a pie entre (\d+) tabernas ↗$/,m=>'🚶 Walking route between '+m[1]+' taverns ↗'],
+    [/^Ruta a pie entre (\d+) tabernas$/,m=>'Walking route between '+m[1]+' taverns'],
     [/^(\d+) fuente\(s\) · Revisado (.+)$/,m=>m[1]+' sources · Checked '+m[2]],
     [/^Desde (.+) · Precio de plato publicado$/,m=>'From '+m[1]+' · Published dish price'],
     [/^(\d+) locales registrados · (\d+) con precio$/,m=>m[1]+' places listed · '+m[2]+' with prices'],
@@ -268,14 +268,14 @@ window.GASTRO_I18N = Object.freeze({
     ['Media ración','Demi-portion'],
     ['Ración completa','Portion entière'],
     ['Variante sin categorizar','Variante non classée'],
-    ['★ Menor precio comparable','★ Prix comparable le plus bas']
+    ['Menor precio comparable','Prix comparable le plus bas']
   ]);
   const translateFrenchCompareText=(node,source)=>{
     if(!node.parentElement?.closest('#compare-output'))return source;
     const raw=normalize(source);
     if(frenchCompareLabels.has(raw))return frenchCompareLabels.get(raw);
-    const route=raw.match(/^🚶 Ruta a pie entre (\d+) tabernas ↗$/);
-    if(route)return '🚶 Itinéraire à pied entre '+route[1]+' établissements ↗';
+    const route=raw.match(/^Ruta a pie entre (\d+) tabernas$/);
+    if(route)return 'Itinéraire à pied entre '+route[1]+' établissements';
     const foot=raw.match(/^(\d+) fuente\(s\) · Revisado (.+)$/);
     if(foot)return foot[1]+' sources · Vérifié le '+foot[2];
     const meal=raw.match(/^Comida completa: (.+)$/);
@@ -283,7 +283,7 @@ window.GASTRO_I18N = Object.freeze({
     const notice=raw.match(/^Precios publicados para «([\s\S]+)»\. Los formatos pueden ser distintos y no deben compararse como cantidades equivalentes\.$/);
     if(notice)return 'Prix publiés pour « '+notice[1]+' ». Les formats peuvent différer et ne doivent pas être comparés comme des quantités équivalentes.';
     if(node.parentElement.matches('li'))
-      return source.replace(/ · (Formato sin especificar|Unidad|Media ración|Ración completa|Variante sin categorizar|★ Menor precio comparable)(?= · |$)/g,
+      return source.replace(/ · (Formato sin especificar|Unidad|Media ración|Ración completa|Variante sin categorizar|Menor precio comparable)(?= · |$)/g,
         (part,label)=>' · '+(frenchCompareSuffixes.get(label)||label));
     return source;
   };
@@ -631,6 +631,31 @@ window.GASTRO_I18N = Object.freeze({
     return translateValue(key);
   };
   const hybridLabels = new Map(Object.entries({
+  "Establecimientos de Roldán en Córdoba": ["Roldán locations in Córdoba","Établissements Roldán à Cordoue"],
+  "Varias ubicaciones en Córdoba (consulta los establecimientos de abajo)": ["Several locations in Córdoba (see venues below)","Plusieurs adresses à Cordoue (voir les établissements ci-dessous)"],
+  "Platos": ["Dishes","Plats"],
+  "Favoritos": ["Favourites","Favoris"],
+  "Comparar": ["Compare","Comparer"],
+  "Desayunar": ["Breakfast","Petit-déjeuner"],
+  "Comer": ["Lunch","Déjeuner"],
+  "Merendar": ["Afternoon snack","Goûter"],
+  "Cenar": ["Dinner","Dîner"],
+  "Buscar establecimientos": ["Find places","Rechercher des établissements"],
+  "Ver todos los locales que ofrecen este plato": ["See all places serving this dish","Voir tous les établissements proposant ce plat"],
+  "Mis tabernas favoritas": ["My favourite taverns","Mes tavernes favorites"],
+  "Cerrar ficha": ["Close details","Fermer la fiche"],
+  "Cerrar": ["Close","Fermer"],
+  "Nuestro criterio": ["Our methodology","Notre méthode"],
+  "Abrir en Google Maps": ["Open in Google Maps","Ouvrir dans Google Maps"],
+  "Ver mapa": ["View map","Voir la carte"],
+  "Guardar": ["Save","Enregistrer"],
+  "Guardado": ["Saved","Enregistré"],
+  "Quitar del comparador": ["Remove from comparison","Retirer du comparateur"],
+  "Platos encontrados": ["Matching dishes","Plats correspondants"],
+  "Con precio documentado": ["With documented prices","Avec prix documenté"],
+  "Con precio documentado dentro del presupuesto": ["With documented prices within budget","Avec prix documenté dans le budget"],
+  "Pendiente de incorporar cartas verificadas": ["Verified menus coming soon","Cartes vérifiées à venir"],
+  "Aún no tienes tabernas guardadas. Pulsa Guardar en los resultados o fichas.": ["No saved taverns yet. Select Save in results or details.","Vous n’avez pas encore de tavernes enregistrées. Sélectionnez Enregistrer dans les résultats ou les fiches."],
   "¿Con hambre y sin ideas? ¡Para eso estoy yo!": ["Hungry and out of ideas? That’s what I’m here for!","Vous avez faim et manquez d’idées ? Je suis là pour ça !"],
   "No sé qué comer": ["I don’t know what to eat","Je ne sais pas quoi manger"],
   "Descubre platos y encuentra dónde probarlos.": ["Discover dishes and find where to try them.","Découvrez des plats et où les déguster."],
@@ -849,7 +874,7 @@ window.GASTRO_I18N = Object.freeze({
     if(parent.matches('li')&&parent.closest('#compare-output')){
       const translated=fr?translateFrenchCompareText(node,source):source;
       const parts=translated.split(' · ');
-      const position=parts.length-(parts.at(-1).startsWith('★ ')?2:1);
+      const position=parts.length-(parent.classList.contains('best-comparable')?2:1);
       if(position>0&&Object.hasOwn(compareVariants,parts[position])){
         parts[position]=compareVariants[parts[position]][index];
         return parts.join(' · ');
@@ -922,7 +947,7 @@ window.GASTRO_I18N = Object.freeze({
     if(select && select.value!==language)select.value=language;
     translateElement(document.body);
     for(const element of document.querySelectorAll('[data-bilingual-es]')){
-      const translated=language==='fr'&&element.closest('#detail-content')?(normalize(element.dataset.bilingualEs)===frenchRoldanNotice[0]?frenchRoldanNotice[1]:(isBeatillasGeneralNotice(normalize(element.dataset.bilingualEs))?frenchBeatillasGeneralNotice:(frenchDetailNotices.get(normalize(element.dataset.bilingualEs))||element.dataset.bilingualEs))):(language==='en'?element.dataset.bilingualEn:element.dataset.bilingualEs);
+      const translated=language==='fr'&&element.closest('#detail-content')?(normalize(element.dataset.bilingualEs)===frenchRoldanNotice[0]?frenchRoldanNotice[1]:(isBeatillasGeneralNotice(normalize(element.dataset.bilingualEs))?frenchBeatillasGeneralNotice:(hybridLabels.get(element.dataset.bilingualEs)?.[1]||frenchDetailNotices.get(normalize(element.dataset.bilingualEs))||element.dataset.bilingualEs))):(language==='en'?element.dataset.bilingualEn:element.dataset.bilingualEs);
       if(translated!==undefined && element.textContent!==translated)element.textContent=translated;
     }
     if(typeof window.HelioGastroRefreshExplanations==='function')window.HelioGastroRefreshExplanations();
@@ -965,7 +990,7 @@ window.GASTRO_I18N = Object.freeze({
             else if(node.nodeType===Node.ELEMENT_NODE){
               translateElement(node);
               const bilingual=[...(node.matches?.('[data-bilingual-es]')?[node]:[]),...(node.querySelectorAll?.('[data-bilingual-es]')||[])];
-              for(const element of bilingual){const value=language==='fr'&&element.closest('#detail-content')?(normalize(element.dataset.bilingualEs)===frenchRoldanNotice[0]?frenchRoldanNotice[1]:(frenchDetailNotices.get(normalize(element.dataset.bilingualEs))||element.dataset.bilingualEs)):(language==='en'?element.dataset.bilingualEn:element.dataset.bilingualEs);if(value!==undefined && element.textContent!==value)element.textContent=value;}
+              for(const element of bilingual){const value=language==='fr'&&element.closest('#detail-content')?(normalize(element.dataset.bilingualEs)===frenchRoldanNotice[0]?frenchRoldanNotice[1]:(hybridLabels.get(element.dataset.bilingualEs)?.[1]||frenchDetailNotices.get(normalize(element.dataset.bilingualEs))||element.dataset.bilingualEs)):(language==='en'?element.dataset.bilingualEn:element.dataset.bilingualEs);if(value!==undefined && element.textContent!==value)element.textContent=value;}
             }
           }
         }

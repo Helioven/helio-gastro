@@ -4,10 +4,10 @@ const el=id=>document.getElementById(id);
 // Populate only after every French QA batch has passed validation.
 const qaFrenchPlaceIds=new Set();
 const MODE_CONFIG={
- desayuno:{label:'Desayunar',emoji:'☕',budgets:[3,5,7,10],dishes:['Tostadas','Churros','Molletes','Café','Bollería'],portions:[['unidad','Unidad'],['media-tostada','Media tostada'],['tostada-entera','Tostada entera'],['combinado','Desayuno combinado']],placeholder:'Tostadas, churros, molletes…'},
- comida:{label:'Comer',emoji:'🍽️',budgets:[10,15,20,30,50],dishes:['Flamenquín','Salmorejo','Rabo de toro','Croquetas','Mazamorra','Carrillada','Berenjenas','Pisto','Pescados y mariscos','Carnes y asados','Bocadillos y sándwiches','Guisos y cocina tradicional','Verduras y ensaladas','Tapas y raciones','Postres y dulces'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']],placeholder:'Flamenquín, salmorejo, carrillada…'},
- merienda:{label:'Merendar',emoji:'🥐',budgets:[3,5,8,12],dishes:['Churros','Chocolate','Pasteles','Tartas','Tostadas','Bollería','Café'],portions:[['unidad','Unidad'],['racion','Ración'],['combinado','Merienda combinada']],placeholder:'Churros con chocolate, pasteles…'},
- cena:{label:'Cenar',emoji:'🌙',budgets:[10,15,20,30,50],dishes:['Tapas','Flamenquín','Croquetas','Tortilla','Rabo de toro','Salmorejo','Pescados y mariscos','Carnes y asados','Bocadillos y sándwiches','Guisos y cocina tradicional','Verduras y ensaladas','Tapas y raciones','Postres y dulces'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']],placeholder:'Tapas, tortilla, croquetas…'}
+ desayuno:{label:'Desayunar',budgets:[3,5,7,10],dishes:['Tostadas','Churros','Molletes','Café','Bollería'],portions:[['unidad','Unidad'],['media-tostada','Media tostada'],['tostada-entera','Tostada entera'],['combinado','Desayuno combinado']],placeholder:'Tostadas, churros, molletes…'},
+ comida:{label:'Comer',budgets:[10,15,20,30,50],dishes:['Flamenquín','Salmorejo','Rabo de toro','Croquetas','Mazamorra','Carrillada','Berenjenas','Pisto','Pescados y mariscos','Carnes y asados','Bocadillos y sándwiches','Guisos y cocina tradicional','Verduras y ensaladas','Tapas y raciones','Postres y dulces'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']],placeholder:'Flamenquín, salmorejo, carrillada…'},
+ merienda:{label:'Merendar',budgets:[3,5,8,12],dishes:['Churros','Chocolate','Pasteles','Tartas','Tostadas','Bollería','Café'],portions:[['unidad','Unidad'],['racion','Ración'],['combinado','Merienda combinada']],placeholder:'Churros con chocolate, pasteles…'},
+ cena:{label:'Cenar',budgets:[10,15,20,30,50],dishes:['Tapas','Flamenquín','Croquetas','Tortilla','Rabo de toro','Salmorejo','Pescados y mariscos','Carnes y asados','Bocadillos y sándwiches','Guisos y cocina tradicional','Verduras y ensaladas','Tapas y raciones','Postres y dulces'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']],placeholder:'Tapas, tortilla, croquetas…'}
 };
 
 // Explanations are general cultural guidance, not claims about individual menus.
@@ -395,13 +395,6 @@ function refreshDishExplanations(){
  document.querySelectorAll('[data-group-menu-dessert]').forEach(node=>{if(node.firstChild?.nodeType===Node.TEXT_NODE)node.firstChild.textContent=english?'Dessert: ':'Postre: ';});
  const help=el('portion-help');if(help)help.hidden=!english;
 }
-const DISH_ICONS={
- flamenquin:'🥩',salmorejo:'🥣','rabo de toro':'🍲',croquetas:'🍘',
- mazamorra:'🥣',carrillada:'🍖',berenjenas:'🍆',pisto:'🍳',
- tostadas:'🥖',churros:'🍩',molletes:'🥪',cafe:'☕',
- chocolate:'🍫',pasteles:'🧁',tartas:'🍰',tapas:'🍢',tortilla:'🍳'
-};
-function dishIcon(name){return DISH_ICONS[clean(name)]||'🍴'}
 const MODE_KEY='helio-gastro-meal-mode-v1';
 function serviceMenus(p){
  const specific=p.menus.filter(m=>m.service===state.mode);
@@ -622,9 +615,26 @@ function routeMapUrl(places){
  const waypoints=addresses.slice(1,-1).map(encodeURIComponent).join('%7C');
  return 'https://www.google.com/maps/dir/?api=1&origin='+origin+'&destination='+destination+(waypoints?'&waypoints='+waypoints:'')+'&travelmode=walking';
 }
+function uiIcon(name){
+ const namespace='http://www.w3.org/2000/svg';
+ const svg=document.createElementNS(namespace,'svg'),use=document.createElementNS(namespace,'use');
+ svg.setAttribute('class','ui-icon');
+ svg.setAttribute('aria-hidden','true');
+ svg.setAttribute('focusable','false');
+ use.setAttribute('href','./assets/ui/icons.svg#'+name);
+ svg.append(use);
+ return svg;
+}
+function setIconLabel(node,icon,label){
+ node.replaceChildren(uiIcon(icon),label);
+}
+function setCompareButton(button,selected){
+ setIconLabel(button,selected?'minus':'scale',selected?'Quitar del comparador':'Comparar');
+ button.setAttribute('aria-pressed',String(selected));
+}
 function mapButton(p){
  const button=document.createElement('button');button.type='button';button.className='map-button';
- button.textContent='📍 Ver mapa';button.addEventListener('click',()=>showMap(p));return button;
+ setIconLabel(button,'pin','Ver mapa');button.addEventListener('click',()=>showMap(p));return button;
 }
 function showMap(p){
  const dialog=el('map-dialog'),frame=el('map-frame');
@@ -645,7 +655,7 @@ function routeButton(places){
  if(!href)return null;
  const link=document.createElement('a');link.className='map-route-link';link.href=href;
  link.target='_blank';link.rel='noopener noreferrer';
- link.textContent='🚶 Ruta a pie entre '+places.length+' tabernas ↗';
+ setIconLabel(link,'route','Ruta a pie entre '+places.length+' tabernas');
  return link;
 }
 
@@ -668,8 +678,9 @@ function toggleFavorite(id){
 }
 function favoriteButton(p){
  const btn=document.createElement('button');btn.type='button';btn.className='fav-button';
- btn.textContent=(state.favorites.has(p.id)?'★ Guardado':'☆ Guardar');
- btn.setAttribute('aria-pressed',String(state.favorites.has(p.id)));
+ const saved=state.favorites.has(p.id);
+ setIconLabel(btn,'bookmark',saved?'Guardado':'Guardar');
+ btn.setAttribute('aria-pressed',String(saved));
  btn.addEventListener('click',()=>toggleFavorite(p.id));
  return btn;
 }
@@ -677,11 +688,11 @@ function renderFavorites(){
  const list=el('favorite-list');list.replaceChildren();
  const selected=state.places.filter(p=>state.favorites.has(p.id));
  el('favorite-count').textContent=selected.length+' favoritos';
- if(!selected.length){const msg=document.createElement('p');msg.className='note';msg.textContent='Aún no tienes tabernas guardadas. Marca ☆ en los resultados o fichas.';list.append(msg);return}
+ if(!selected.length){const msg=document.createElement('p');msg.className='note';msg.textContent='Aún no tienes tabernas guardadas. Pulsa Guardar en los resultados o fichas.';list.append(msg);return}
  for(const p of selected){
   const row=document.createElement('div');row.className='favorite-entry';
   const name=document.createElement('strong');name.textContent=p.name;
-  const open=document.createElement('button');open.type='button';open.textContent='Ver ficha';open.addEventListener('click',()=>showPlace(p));
+  const open=document.createElement('button');open.type='button';setIconLabel(open,'arrow','Ver ficha');open.addEventListener('click',()=>showPlace(p));
   row.append(name,open,mapButton(p),favoriteButton(p));list.append(row);
  }
 }
@@ -735,13 +746,13 @@ function draw(){
   const group=state.appliedTerm?groupFor(p):'all';
   if(group!==previousGroup){
    const heading=document.createElement('h3');heading.className='result-group-title';
-   heading.textContent=!state.appliedTerm?'Establecimientos encontrados':group==='verified'?'✓ Con precio documentado'+(state.appliedBudget!==null?' dentro del presupuesto':''):
+   heading.textContent=!state.appliedTerm?'Establecimientos encontrados':group==='verified'?'Con precio documentado'+(state.appliedBudget!==null?' dentro del presupuesto':''):
      group==='unknown'?'También ofrecen el plato · Precio pendiente de confirmar':'Precio superior al presupuesto';
    list.append(heading);previousGroup=group;
   }
   const card=document.createElement('article');card.className='place';
   const title=document.createElement('h3');title.textContent=p.name;card.append(title);
-  const details=document.createElement('p');details.textContent='📍 '+p.area;card.append(details);
+  const details=document.createElement('p');setIconLabel(details,'pin',p.area);card.append(details);
   const serviceNote=document.createElement('p');serviceNote.className='service-notice';serviceNote.textContent=serviceKnown(p)?'Carta específica registrada · horario pendiente de confirmar':'Carta general · servicio y horarios sin verificar';card.append(serviceNote);
   if(state.appliedTerm){
    const matches=p.dishes.filter(d=>searchDishMatches(d,state.appliedTerm));
@@ -750,7 +761,7 @@ function draw(){
    if(matches.length){
     const heading=document.createElement('strong');
     heading.className='matching-dishes-label';
-    heading.textContent='🍴 Platos encontrados';
+    setIconLabel(heading,'cutlery','Platos encontrados');
     const dishList=document.createElement('ul');
     for(const dish of matches){
      const item=document.createElement('li');
@@ -798,9 +809,8 @@ function draw(){
    const meal=document.createElement('p');meal.textContent='Coste de comida por persona: '+fmt(p.mealCostEur);card.append(meal);
   }
   const detailButton=document.createElement('button');detailButton.type='button';detailButton.className='detail-button';
-  detailButton.textContent='Ver ficha completa';detailButton.addEventListener('click',()=>showPlace(p));card.append(detailButton,mapButton(p));
-  const button=document.createElement('button');button.type='button';button.textContent=state.selected.has(p.id)?'✓ Quitar del comparador':'+ Comparar';
-  button.setAttribute('aria-pressed',String(state.selected.has(p.id)));
+  setIconLabel(detailButton,'arrow','Ver ficha completa');detailButton.addEventListener('click',()=>showPlace(p));card.append(detailButton,mapButton(p));
+  const button=document.createElement('button');button.type='button';setCompareButton(button,state.selected.has(p.id));
   button.addEventListener('click',()=>{
    if(state.selected.has(p.id))state.selected.delete(p.id);
    else if(state.selected.size<3)state.selected.add(p.id);
@@ -1036,7 +1046,7 @@ function renderVenueMenuSections(panel,p){
   }
   panel.append(list);
   if(sectionNavId){
-   const back=document.createElement('button');back.type='button';back.className='venue-section-nav-button menu-index-return';back.textContent='Volver al índice';
+   const back=document.createElement('button');back.type='button';back.className='venue-section-nav-button menu-index-return';setIconLabel(back,'back','Volver al índice');
    back.addEventListener('click',()=>{const index=el('venue-section-index');index.scrollIntoView({block:'start'});index.focus({preventScroll:true});});
    panel.append(back);
   }
@@ -1048,9 +1058,11 @@ function showPlace(p,scroll=true){
  el('detail-sticky-name').textContent=p.name;
  const panel=el('detail-content');panel.replaceChildren();
  const title=document.createElement('h2');title.id='detail-title';title.tabIndex=-1;title.textContent=p.name;panel.append(title,favoriteButton(p));
- const address=document.createElement('p');if(p.addressEn){address.dataset.bilingualEs='📍 '+p.address;address.dataset.bilingualEn='📍 '+p.addressEn;}address.textContent='📍 '+p.address;panel.append(address);
+ const address=document.createElement('p'),addressText=document.createElement('span');
+ if(p.addressEn){addressText.dataset.bilingualEs=p.address;addressText.dataset.bilingualEn=p.addressEn;}
+ addressText.textContent=p.address;address.append(uiIcon('pin'),addressText);panel.append(address);
  const sourcesLink=document.createElement('a');
- sourcesLink.className='venue-sources-jump';sourcesLink.href='#venue-sources';sourcesLink.textContent='Fuentes de la carta';
+ sourcesLink.className='venue-sources-jump';sourcesLink.href='#venue-sources';setIconLabel(sourcesLink,'menu','Fuentes de la carta');
  sourcesLink.addEventListener('click',event=>{
   event.preventDefault();
   const target=el('venue-sources');
@@ -1065,7 +1077,7 @@ function showPlace(p,scroll=true){
  }
 
  if(Array.isArray(p.locations)&&p.locations.length){
-  const heading=document.createElement('h3');heading.dataset.bilingualEs='📍 Establecimientos de Roldán en Córdoba';heading.dataset.bilingualEn='📍 Roldán locations in Córdoba';heading.textContent=heading.dataset.bilingualEs;panel.append(heading);
+  const heading=document.createElement('h3');setIconLabel(heading,'pin','Establecimientos de Roldán en Córdoba');panel.append(heading);
   const note=document.createElement('p');note.className='service-notice';note.dataset.bilingualEs='La carta y los precios indicados corresponden a las cafeterías, excepto Centro. Las panaderías se listan solo como ubicaciones; su oferta puede ser diferente.';note.dataset.bilingualEn='The menu and prices shown apply to the cafés, except Centro. Bakeries are listed as locations only; their selection may differ.';note.textContent=note.dataset.bilingualEs;panel.append(note);
   const list=document.createElement('ul');
   for(const place of p.locations){
@@ -1077,7 +1089,7 @@ function showPlace(p,scroll=true){
   panel.append(list);
  }else{
   panel.append(mapButton(p));
-  const map=document.createElement('a');map.href=placeMapUrl(p);map.target='_blank';map.rel='noopener noreferrer';map.textContent='Abrir en Google Maps ↗';panel.append(map);
+  const map=document.createElement('a');map.href=placeMapUrl(p);map.target='_blank';map.rel='noopener noreferrer';setIconLabel(map,'external','Abrir en Google Maps');panel.append(map);
  }
  if(p.menuPriceNotice){const notice=document.createElement('p');notice.className='service-notice';if(p.menuPriceNoticeEn){notice.dataset.bilingualEs=p.menuPriceNotice;notice.dataset.bilingualEn=p.menuPriceNoticeEn;}notice.textContent=p.menuPriceNotice;panel.append(notice);}
  if(Array.isArray(p.officialSetMenus)&&p.officialSetMenus.length){
@@ -1197,7 +1209,8 @@ function compare(){
   for(const item of prices){
    const li=document.createElement('li');
    const winning=highlights.has(p.id+'|'+item.dish+'|'+item.eur);
-   li.textContent=priceDescriptor(item,{compact:true})+' · '+variantLabel(item)+(winning?' · ★ Menor precio comparable':'');
+   const label=priceDescriptor(item,{compact:true})+' · '+variantLabel(item)+(winning?' · Menor precio comparable':'');
+   if(winning)setIconLabel(li,'check',label);else li.textContent=label;
    if(portionOf(item)==='desconocida')markUnknownFormat(li,'compare-format-note');
    if(winning)li.className='best-comparable';
    ul.append(li);
@@ -1266,12 +1279,6 @@ function filter(event,restoring=false){
  draw();compare();updateQuickNav();
  if(!restoring){saveSearch();el('results-section').scrollIntoView({behavior:'auto',block:'start'});el('results-heading').focus({preventScroll:true});}
 }
-const QUICK_DISHES=[
- {name:'Flamenquín',icon:'🥩'}, {name:'Croquetas',icon:'🍘'},
- {name:'Salmorejo',icon:'🥣'}, {name:'Rabo de toro',icon:'🍲'},
- {name:'Mazamorra',icon:'🥣'}, {name:'Carrillada',icon:'🍖'},
- {name:'Berenjenas',icon:'🍆'}, {name:'Pisto',icon:'🍳'}
-];
 const FOOD_CATEGORY_PATTERNS={
  'pescados y mariscos':/atun|bacalao|chipiron|rosada|sardina|anchoa|boqueron|salmon|merluza|gamba|langostino|pulpo|calamar|mejillon|pez espada|rape|lubina|dorada/,
  'carnes y asados':/solomillo|pluma iberica|cordero|lomo de vaca|chuleton|entrecot|costilla|asado|cochinillo|secreto iberico|presa iberica|codillo|parrilla/,
@@ -1337,18 +1344,18 @@ function createDishVisual(imageUrl){
 function renderRecommendations(){
  const deck=el('recommendation-dishes');deck.replaceChildren();
  for(const name of MODE_CONFIG[state.mode].dishes){
-  const dish={name,icon:dishIcon(name)};
-  const term=clean(dish.name),data=recommendationEntries(term);
+  const term=clean(name),data=recommendationEntries(term);
   const btn=document.createElement('button');btn.type='button';btn.className='recommendation-tile';
   const illustration=DISH_ILLUSTRATIONS[term];
   const visual=createDishVisual(illustration?'./assets/dishes/'+illustration:undefined);
-  const label=document.createElement('strong');label.textContent=dish.icon+' '+dish.name;
+  const label=document.createElement('strong');
+  if(illustration)label.textContent=name;else setIconLabel(label,'dish',name);
   const count=document.createElement('span');
   count.textContent=state.mode==='desayuno'||state.mode==='merienda'
-   ?(data.matches.length?data.matches.length+' locales verificados · '+new Set(data.priced.map(x=>x.p.id)).size+' con precio':'⏳ Pendiente de incorporar cartas verificadas')
+   ?(data.matches.length?data.matches.length+' locales verificados · '+new Set(data.priced.map(x=>x.p.id)).size+' con precio':'Pendiente de incorporar cartas verificadas')
    :data.matches.length+' locales registrados · '+new Set(data.priced.map(x=>x.p.id)).size+' con precio';
-  const description=document.createElement('small');description.className='dish-explanation';description.dataset.dishExplanation='';description.textContent=dishExplanation(dish.name);description.hidden=window.HelioGastroLanguage?.get()!=='en';
-  btn.append(visual,label,description,count);btn.addEventListener('click',()=>showRecommendations(dish.name));deck.append(btn);
+  const description=document.createElement('small');description.className='dish-explanation';description.dataset.dishExplanation='';description.textContent=dishExplanation(name);description.hidden=window.HelioGastroLanguage?.get()!=='en';
+  btn.append(visual,label,description,count);btn.addEventListener('click',()=>showRecommendations(name));deck.append(btn);
  }
 }
 function recommendationCompareButton(p,dishName){
@@ -1357,8 +1364,7 @@ function recommendationCompareButton(p,dishName){
  button.dataset.comparePlaceId=p.id;
  const refresh=()=>{
   const selected=state.selected.has(p.id);
-  button.textContent=selected?'✓ Quitar del comparador':'+ Comparar';
-  button.setAttribute('aria-pressed',String(selected));
+  setCompareButton(button,selected);
  };
  refresh();
  button.addEventListener('click',()=>{
@@ -1374,8 +1380,7 @@ function recommendationCompareButton(p,dishName){
   compare();updateQuickNav();saveSearch();
   document.querySelectorAll('#recommendation-results [data-compare-place-id]').forEach(node=>{
    const selected=state.selected.has(node.dataset.comparePlaceId);
-   node.textContent=selected?'✓ Quitar del comparador':'+ Comparar';
-   node.setAttribute('aria-pressed',String(selected));
+   setCompareButton(node,selected);
   });
   if(!el('results-section').hidden)draw();
  });
@@ -1430,14 +1435,14 @@ function showRecommendations(dishName){
    }
    card.append(list);
    const actions=document.createElement('div');actions.className='recommendation-place-actions';
-   const more=document.createElement('button');more.type='button';more.textContent='Ver ficha';more.addEventListener('click',()=>openRecommendationPlace(place));
+   const more=document.createElement('button');more.type='button';setIconLabel(more,'arrow','Ver ficha');more.addEventListener('click',()=>openRecommendationPlace(place));
    actions.append(more,mapButton(place),recommendationCompareButton(place,dishName));card.append(actions);panel.append(card);
   }
  }
  const known=new Set(data.priced.map(x=>x.p.id)),unknown=data.matches.filter(p=>!known.has(p.id));
  if(unknown.length){
   const heading=document.createElement('h3');heading.textContent='También ofrecen el plato · precio pendiente';panel.append(heading);
-  for(const p of unknown){const row=document.createElement('div');row.className='recommendation-row';const name=document.createElement('span');name.textContent=p.name;const btn=document.createElement('button');btn.type='button';btn.textContent='Ver ficha';btn.addEventListener('click',()=>openRecommendationPlace(p));row.append(name,btn,mapButton(p),recommendationCompareButton(p,dishName));panel.append(row)}
+  for(const p of unknown){const row=document.createElement('div');row.className='recommendation-row';const name=document.createElement('span');name.textContent=p.name;const btn=document.createElement('button');btn.type='button';setIconLabel(btn,'arrow','Ver ficha');btn.addEventListener('click',()=>openRecommendationPlace(p));row.append(name,btn,mapButton(p),recommendationCompareButton(p,dishName));panel.append(row)}
  }
  el('recommendation-dialog').showModal();
 }

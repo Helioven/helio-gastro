@@ -7,7 +7,8 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  await page.locator('#language-select').selectOption('fr');
  assert.equal(await page.locator('#results-heading').textContent(),'Résultats');
  assert.equal(await page.locator('#compare-title').textContent(),'Comparateur');
- assert.equal(await page.locator('#close-detail').textContent(),'Fermer la fiche ×');
+ assert.equal(await page.locator('#close-detail').textContent(),'Fermer la fiche');
+ assert.equal(await page.locator('#close-detail use').getAttribute('href'),'./assets/ui/icons.svg#close');
  assert.equal(await page.locator('#compare-output').textContent(),'Todavía no hay establecimientos seleccionados.');
  await page.locator('#language-select').selectOption('es');
  assert.equal(await page.locator('#results-heading').textContent(),'Resultados');

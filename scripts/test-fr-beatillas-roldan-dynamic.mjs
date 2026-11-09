@@ -39,8 +39,8 @@ try {
       const roldan = await page.evaluate(() => state.places.find(p => p.name?.includes('Pastelerías Roldán') && p.menuPriceNotice?.startsWith('Precios publicados en la carta general de Roldán.'))?.id);
       assert.ok(roldan, 'Roldán other cafeterias record missing');
       await page.evaluate(id => showPlace(state.places.find(p => p.id === id), false), roldan);
-      const addressEs='📍 Varias ubicaciones en Córdoba (consulta los establecimientos de abajo)';
-      const addressFr='📍 Plusieurs adresses à Cordoue (voir les établissements ci-dessous)';
+      const addressEs='Varias ubicaciones en Córdoba (consulta los establecimientos de abajo)';
+      const addressFr='Plusieurs adresses à Cordoue (voir les établissements ci-dessous)';
       const addressText=()=>page.locator('#detail-content').innerText();
       await page.waitForFunction(expected=>document.querySelector('#detail-content')?.innerText.includes(expected),addressFr);
       assert.ok((await addressText()).includes(addressFr),'Roldán multiple addresses note not translated to French');

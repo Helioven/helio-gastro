@@ -396,3 +396,39 @@ body{background:#f9f4eb}
 #recommendation-dialog #recommendation-results .recommendation-place h4{color:#0b2545}
 #recommendation-dialog .recommendation-place-actions button,#recommendation-dialog .recommendation-row button{background:#fffdf8;color:#0b2545;border:1px solid #80705d}
 #recommendation-dialog .recommendation-place-actions button:hover,#recommendation-dialog .recommendation-row button:hover{background:#f0e5d5}
+/* HG-UI-ICONS-002 — one visual language for actions and decorative glyphs. */
+.ui-icon{display:inline-block;inline-size:1.15em;block-size:1.15em;flex:none;vertical-align:-.19em;margin-inline-end:.36em;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+button .ui-icon,.quick-nav .ui-icon{pointer-events:none}
+button:not(.recommendation-tile),.quick-nav a,.map-route-link{min-height:44px;border-radius:10px}
+:where(button,.quick-nav a,.map-route-link):focus-visible{outline:3px solid #9c411e;outline-offset:3px}
+#service-section button:focus-visible{outline-color:#ffc857}
+:where(button,.quick-nav a,.map-route-link):active:not(:disabled){box-shadow:inset 0 1px 2px #0b254533}
+button:disabled{opacity:.62;cursor:not-allowed;box-shadow:none}
+.quick-nav a:not([hidden]){display:flex;align-items:center;justify-content:center;align-content:center;gap:4px;flex-wrap:wrap;min-width:0;line-height:1.18}
+.quick-nav .ui-icon{margin:0}
+.quick-nav #nav-compare-count{margin-inline-start:1px}
+.service-selector button{background:#fffdf8;color:#0b2545;border-color:#9e8d78;font-weight:750}
+.service-selector button[aria-pressed='true']{background:#e2eaf2;color:#0b2545;border-color:#0b2545;box-shadow:inset 0 0 0 1px #0b2545}
+.manolo-guide-options button>.ui-icon{margin:2px 0 0;width:18px;height:18px}
+:is(#results-section,#detail-section,#favorite-section,#compare-section,#recommendation-dialog,#map-dialog) button{background:#fffdf8;color:#0b2545;border:1px solid #9e8d78;border-radius:10px;min-height:44px;box-shadow:0 1px 1px #33200e12}
+:is(#results-section,#detail-section,#favorite-section,#compare-section,#recommendation-dialog,#map-dialog) button[aria-pressed='true']{background:#e2eaf2;color:#0b2545;border-color:#0b2545;box-shadow:inset 0 0 0 1px #0b2545}
+:is(#results-section,#detail-section) button.detail-button:not([id^="close-"]){background:#0b2545;color:#fff;border-color:#0b2545}
+:is(#results-section,#detail-section,#favorite-section,#compare-section,#recommendation-dialog,#map-dialog) button:disabled{opacity:.62;box-shadow:none}
+@media(hover:hover){
+ .service-selector button:not([aria-pressed='true']):hover,
+ :is(#results-section,#detail-section,#favorite-section,#compare-section,#recommendation-dialog,#map-dialog) button:not(:disabled):not([aria-pressed='true']):hover{background:#efe5d7;color:#0b2545}
+ :is(#results-section,#detail-section) button.detail-button:not([id^="close-"]):hover{background:#173b64;color:#fff}
+}
+.venue-hours summary,.result-method summary{display:flex;align-items:center;justify-content:space-between;gap:10px;list-style:none}
+.venue-hours summary::-webkit-details-marker,.result-method summary::-webkit-details-marker{display:none}
+.venue-hours summary::after,.result-method summary::after{content:"";flex:none;inline-size:7px;block-size:7px;margin-inline:3px;border-inline-end:2px solid currentColor;border-block-end:2px solid currentColor;transform:rotate(45deg)}
+.venue-hours details[open]>summary::after,.result-method[open]>summary::after{transform:rotate(225deg)}
+.venue-hours summary .ui-icon{margin-inline-end:.3em}
+#results-section .place button{margin:3px 6px 3px 0}
+#recommendations-section .dish-visual:has(img){width:calc(100% - 16px);margin:8px 8px 3px;border-radius:11px;box-shadow:0 2px 4px #43260d32}
+#recommendations-section .dish-visual:has(img)::before{display:block;inset:0;width:auto;height:auto;border:0;border-radius:inherit;box-shadow:inset 0 0 0 1px #fff5,inset 0 -4px 9px #21140730;z-index:1}
+#recommendations-section .dish-visual-label{z-index:2}
+@media(max-width:560px){
+ .quick-nav a:not([hidden]){gap:3px}
+ .quick-nav .ui-icon{width:14px;height:14px}
+}

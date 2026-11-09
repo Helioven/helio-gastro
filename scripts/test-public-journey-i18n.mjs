@@ -11,9 +11,9 @@ try {
   await page.locator('#direct-search .primary').click();
   const first = page.locator('#results article').first();
   for (const [lang, coverage, price, map, save] of [
-   ['fr', /^Dans notre base : \d+ établissements/, /^À partir de.*Prix du plat publié/, '📍 Voir la carte', '☆ Enregistrer'],
-   ['en', /^In our current database:/, /^From.*Published dish price/, '📍 View map', '☆ Save'],
-   ['es', /^En nuestra base actual:/, /^Desde.*Precio de plato publicado/, '📍 Ver mapa', '☆ Guardar']
+   ['fr', /^Dans notre base : \d+ établissements/, /^À partir de.*Prix du plat publié/, 'Voir la carte', 'Enregistrer'],
+   ['en', /^In our current database:/, /^From.*Published dish price/, 'View map', 'Save'],
+   ['es', /^En nuestra base actual:/, /^Desde.*Precio de plato publicado/, 'Ver mapa', 'Guardar']
   ]) {
    await page.locator('#language-select').selectOption(lang);
    assert.match(await page.locator('#coverage-summary').textContent(), coverage);
@@ -24,9 +24,9 @@ try {
   await page.locator('.recommendation-tile').filter({ hasText: /salmorejo/i }).first().click();
   const dialog = page.locator('#recommendation-dialog');
   for (const [lang, title, close, notice, portions] of [
-   ['fr', 'Options pour salmorejo', 'Fermer ×', /Ce n’est ni un classement/, ['Demi-portion', 'Portion entière']],
-   ['en', 'Options for salmorejo', 'Close ×', /not a quality ranking/, ['Half portion', 'Full portion']],
-   ['es', 'Opciones de salmorejo', 'Cerrar ×', /No es un ranking/, ['Media ración', 'Ración completa']]
+   ['fr', 'Options pour salmorejo', 'Fermer', /Ce n’est ni un classement/, ['Demi-portion', 'Portion entière']],
+   ['en', 'Options for salmorejo', 'Close', /not a quality ranking/, ['Half portion', 'Full portion']],
+   ['es', 'Opciones de salmorejo', 'Cerrar', /No es un ranking/, ['Media ración', 'Ración completa']]
   ]) {
    await page.evaluate(lang => window.HelioGastroLanguage.set(lang), lang);
    assert.equal(await dialog.locator('h2').textContent(), title);
