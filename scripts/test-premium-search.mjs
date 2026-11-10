@@ -72,16 +72,35 @@ try {
     assert.equal(await quick.locator('[aria-pressed="true"]').count(), 0);
 
     const guide = page.locator('.manolo-guide');
-    if (!await guide.evaluate(el => el.open)) await guide.locator('summary').press('Enter');
-    assert.equal(await guide.locator('summary').getAttribute('aria-expanded'), 'true');
     await summary.press('Enter');
+    assert.equal(await advanced.evaluate(el => el.open), false);
+    const guideSummary = guide.locator('summary');
+    if (!await guide.evaluate(el => el.open)) await guideSummary.press('Enter');
+    assert.equal(await guideSummary.getAttribute('aria-expanded'), 'true');
     const action = guide.locator('[data-manolo-action="budget"]');
     assert.equal(await guide.locator('.manolo-action-arrow[aria-hidden="true"]').count(), 4);
     assert.equal(await action.evaluate(el => getComputedStyle(el).transitionDuration), '0s');
-    // Tab from the guide summary through Discover and Traditional to Budget.
-    await guide.locator('summary').press('Tab');
-    await page.keyboard.press('Tab');
-    await page.keyboard.press('Tab');
+    await guideSummary.focus();
+    assert.ok(await guideSummary.evaluate(el => document.activeElement === el),
+      `${width}px: keyboard traversal must start at the guide summary`);
+    const expectedActions = ['discover', 'traditional', 'budget'];
+    const tabPath = [];
+    for (const expectedAction of expectedActions) {
+      await page.keyboard.press('Tab');
+      const focused = await page.evaluate(() => {
+        const el = document.activeElement;
+        return {
+          tag: el.tagName,
+          id: el.id || null,
+          action: el.getAttribute('data-manolo-action'),
+          text: (el.innerText || '').trim().replace(/\s+/g, ' ').slice(0, 120)
+        };
+      });
+      tabPath.push(focused);
+      assert.equal(focused.action, expectedAction,
+        `${width}px: unexpected Tab path ${JSON.stringify(tabPath)}`);
+    }
+    console.log(`${width}px Tab path: ${JSON.stringify(tabPath)}`);
     const focusIndicator = await action.evaluate(el => ({
       focused: document.activeElement === el,
       focusVisible: el.matches(':focus-visible'),
@@ -92,7 +111,7 @@ try {
     assert.equal(focusIndicator.focusVisible, true, 'The budget action must match :focus-visible');
     assert.equal(focusIndicator.outlineStyle, 'solid', 'The focus outline must be solid');
     assert.ok(focusIndicator.outlineWidth > 0, 'The focus outline must have a visible width');
-    await action.press('Enter');
+    await page.keyboard.press('Enter');
     assert.equal(await advanced.evaluate(el => el.open), true);
     assert.equal(await page.evaluate(() => document.activeElement.id), 'price-scope');
     assert.equal(await page.evaluate(() => getComputedStyle(document.querySelector('.quick-nav')).position),
