@@ -76,7 +76,8 @@ try {
     assert.equal(await advanced.evaluate(el => el.open), false);
     const guideSummary = guide.locator('summary');
     if (!await guide.evaluate(el => el.open)) await guideSummary.press('Enter');
-    assert.equal(await guideSummary.getAttribute('aria-expanded'), 'true');
+    // The native open state changes before toggle synchronizes aria-expanded.
+    await page.locator('.manolo-guide[open] > summary[aria-expanded="true"]').waitFor({ state: 'visible' });
     const action = guide.locator('[data-manolo-action="budget"]');
     assert.equal(await guide.locator('.manolo-action-arrow[aria-hidden="true"]').count(), 4);
     assert.equal(await action.evaluate(el => getComputedStyle(el).transitionDuration), '0s');
