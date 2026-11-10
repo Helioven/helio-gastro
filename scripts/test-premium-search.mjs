@@ -78,8 +78,20 @@ try {
     const action = guide.locator('[data-manolo-action="budget"]');
     assert.equal(await guide.locator('.manolo-action-arrow[aria-hidden="true"]').count(), 4);
     assert.equal(await action.evaluate(el => getComputedStyle(el).transitionDuration), '0s');
-    await action.focus();
-    assert.equal(await action.evaluate(el => el.matches(':focus-visible') && getComputedStyle(el).outlineStyle === 'solid'), true);
+    // Tab from the guide summary through Discover and Traditional to Budget.
+    await guide.locator('summary').press('Tab');
+    await page.keyboard.press('Tab');
+    await page.keyboard.press('Tab');
+    const focusIndicator = await action.evaluate(el => ({
+      focused: document.activeElement === el,
+      focusVisible: el.matches(':focus-visible'),
+      outlineStyle: getComputedStyle(el).outlineStyle,
+      outlineWidth: parseFloat(getComputedStyle(el).outlineWidth)
+    }));
+    assert.equal(focusIndicator.focused, true, 'Tab must reach the budget action');
+    assert.equal(focusIndicator.focusVisible, true, 'The budget action must match :focus-visible');
+    assert.equal(focusIndicator.outlineStyle, 'solid', 'The focus outline must be solid');
+    assert.ok(focusIndicator.outlineWidth > 0, 'The focus outline must have a visible width');
     await action.press('Enter');
     assert.equal(await advanced.evaluate(el => el.open), true);
     assert.equal(await page.evaluate(() => document.activeElement.id), 'price-scope');
