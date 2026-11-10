@@ -757,6 +757,10 @@ window.GASTRO_I18N = Object.freeze({
   ]
 }));
   const journeyLabels={
+    "No hay establecimientos que coincidan con los filtros seleccionados. Los horarios y servicios de las cartas generales siguen sin verificar.": [
+      "No places match your filters. Opening hours and services for general menus remain unverified.",
+      "Aucun établissement ne correspond aux filtres sélectionnés. Les horaires et les services des cartes générales restent à vérifier."
+    ],
     'Tapas frías':['Cold tapas','Tapas froides'],
     'Tapas calientes':['Hot tapas','Tapas chaudes'],
     'Tapas sin clasificación de temperatura':['Tapas with no documented temperature','Tapas sans température documentée'],
@@ -882,6 +886,10 @@ window.GASTRO_I18N = Object.freeze({
     const parent=node.parentElement;
     if(!parent)return null;
     const key=normalize(source), fr=language==='fr', index=fr?1:0;
+    if(fr&&parent.id==='count'){
+      const count=key.match(/^(\d+) lugar(?:es)?$/);
+      if(count)return count[1]+(Number(count[1])<2?' établissement':' établissements');
+    }
     if(parent.closest('#recommendation-dialog,#results-section,#map-dialog,.tapas-compare-controls,#compare-output [role=status]')){
       if(Object.hasOwn(journeyLabels,key))return journeyLabels[key][index];
     }

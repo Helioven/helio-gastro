@@ -22,10 +22,11 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1245,height:900}}
   await baseline.evaluate(()=>showPlace(state.places.find(p=>p.id==='la-cazuela-esparteria'),false));
   const originalEnglishTitles=await baseline.locator('#detail-content .menu-dish h4').allTextContents();
   await baseline.close();
-  if(originalDishNames.length<24)issues.push('Visible dish titles fewer than translated descriptions');
+  if(originalDishNames.length<expected.length)issues.push('Visible dish titles fewer than translated descriptions');
   const fr=await page.locator('#detail-content [data-dish-explanation]:visible').allTextContents();
-  if(fr.length!==24)issues.push('French explanations: '+fr.length+' expected 24');
-  if(fr.some((text,i)=>text!==expected[i]?.fr))issues.push('French translation mismatch');
+  // This milestone checks its published prefix; subsequent batches may append descriptions.
+  if(fr.length<expected.length)issues.push('French explanations: '+fr.length+' expected at least '+expected.length);
+  if(expected.some((entry,i)=>entry.fr!==fr[i]))issues.push('French translation mismatch');
   if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1))issues.push('Horizontal overflow');
   await page.screenshot({path:'qa-reports/screenshots/'+profile.name+'-la-cazuela-esparteria-fr.png',fullPage:true});
   for(const lang of ['es','en']){
