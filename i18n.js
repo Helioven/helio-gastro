@@ -636,6 +636,7 @@ window.GASTRO_I18N = Object.freeze({
   "Desayunos": ["Breakfast","Petit-déjeuner"],
   "Mapa": ["Map","Carte"],
   "Sugerencias": ["Suggestions","Suggestions"],
+  "Comparador": ["Comparison","Comparateur"],
   "Navegación principal": ["Main navigation","Navigation principale"],
   "Accesos rápidos": ["Quick links","Accès rapides"],
   "Córdoba se descubre": ["Discover Córdoba","Découvrez Cordoue"],
