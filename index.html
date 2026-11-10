@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#10243c"><meta name="description" content="Helio Gastro: cocina cordobesa con precios y fuentes transparentes.">
-<title>Helio Gastro · Córdoba</title><link rel="stylesheet" href="./styles.css?v=3.2.50"><link rel="manifest" href="./manifest.webmanifest"><link rel="icon" type="image/png" sizes="32x32" href="./assets/brand/favicon-manolo.png"></head>
+<title>Helio Gastro · Córdoba</title><link rel="stylesheet" href="./styles.css?v=3.2.51"><link rel="manifest" href="./manifest.webmanifest"><link rel="icon" type="image/png" sizes="32x32" href="./assets/brand/favicon-manolo.png"></head>
 <body><main class="shell">
 <header><div class="brand"><span class="logo manolo-logo" aria-hidden="true"><img src="./assets/brand/manolo-cabeza.webp" alt="" width="192" height="192"></span><div class="brand-copy"><div class="brand-signature">Manolo<span>Labs</span> <small>by Helio</small></div><h1>HELIO <strong>GASTRO</strong></h1></div></div><div class="header-controls"><label for="language-select" class="language-label">Language / Idioma</label><select id="language-select" aria-label="Language / Idioma"><option value="es">🇪🇸 Español</option><option value="en">🇬🇧 English</option></select><span class="version">Piloto 3.1.1</span></div></header>
 <nav id="quick-nav" class="quick-nav" aria-label="Navegación rápida">
@@ -45,10 +45,10 @@
 <section id="search-section" class="panel" tabindex="-1" aria-labelledby="search-title"><div class="section-title"><h2 id="search-title">¿Qué te apetece?</h2><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#search"></use></svg></div>
 <p id="manolo-compare-note" class="note manolo-action-note" role="status" hidden>Compara solo precios documentados de un mismo formato. Si falta el precio en ese formato, consulta la carta.</p>
 <form id="filters">
-<label>Nombre del establecimiento<input id="place-name" type="search" placeholder="Ej.: Moriles, Casa Bravo, Plateros…" autocomplete="off"></label>
-<label>Plato o especialidad<input id="dish" type="search" placeholder="Escribe un plato o especialidad…" autocomplete="off"></label>
-<div class="dish-suggestions" role="group" aria-label="Especialidades cordobesas para buscar">
-  <span class="dish-suggestions-label">PRUEBA UN PLATO TÍPICO</span>
+<label>Nombre del establecimiento<input id="place-name" type="search" placeholder="Ej.: Moriles" autocomplete="off"></label>
+<label>Plato o especialidad<input id="dish" type="search" placeholder="Escribe un plato" autocomplete="off"></label>
+<details class="dish-suggestions" id="quick-dishes" role="group" aria-label="Especialidades cordobesas para buscar">
+  <summary><span class="dish-suggestions-label">PRUEBA UN PLATO TÍPICO</span></summary>
   <div id="dish-suggestions-list" class="dish-suggestions-list">
     <button type="button" data-dish="Flamenquín">Flamenquín</button>
     <button type="button" data-dish="Salmorejo">Salmorejo</button>
@@ -62,12 +62,18 @@
     <button type="button" data-dish="Codillo">Codillo</button>
   </div>
   <small>Elige un plato y pulsa «Buscar establecimientos» para consultar resultados.</small>
-</div>
-<div class="two"><label>Aplicar presupuesto a<select id="price-scope"><option value="dish" selected>Un plato de la carta</option><option value="meal">Comida total por persona</option></select></label><label><span id="budget-label">Presupuesto máximo</span><select id="budget"><option value="" selected>Sin límite (mostrar fichas)</option><option value="10">10 €</option><option value="15">15 €</option><option value="20">20 €</option><option value="30">30 €</option><option value="50">50 €</option></select></label><label>Zona<select id="area"><option value="">Toda Córdoba</option></select></label></div>
+</details>
+<label><span id="budget-label">Presupuesto máximo</span><select id="budget"><option value="" selected>Sin límite (mostrar fichas)</option><option value="10">10 €</option><option value="15">15 €</option><option value="20">20 €</option><option value="30">30 €</option><option value="50">50 €</option></select></label>
+<details id="advanced-filters">
+<summary><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#filter"></use></svg><span>Más filtros</span><span id="advanced-filter-status" class="filter-status" role="status" hidden>Filtros activos</span></summary>
+<div class="advanced-filter-fields">
+<div class="two"><label>Aplicar presupuesto a<select id="price-scope"><option value="dish" selected>Un plato de la carta</option><option value="meal">Comida total por persona</option></select></label><label>Zona<select id="area"><option value="">Toda Córdoba</option></select></label></div>
 <label>Formato del plato<select id="portion"><option value="">Cualquier formato (sin equivalencia de tamaños)</option><option value="unidad">Unidad</option><option value="tapa">Tapa</option><option value="media">Media ración</option><option value="racion">Ración completa</option><option value="desconocida">Formato no especificado</option></select><small id="portion-help" class="portion-help" hidden><strong>Understanding portions:</strong> <em>Tapa</em> is a small serving; <em>media ración</em> is a half portion; <em>ración</em> is a full portion. Actual sizes vary by venue.</small></label>
 <label class="include-unknown"><input id="include-unknown" type="checkbox" checked><span>Mostrar también establecimientos sin precio documentado <small>(se identificarán claramente como precio desconocido)</small></span></label>
+<div class="two"><label>Tipo de precio<select id="price-kind"><option value="">Todos los precios</option><option value="confirmed">Solo precios documentados</option><option value="estimated">Documentados o estimados</option></select></label><label>Ordenar<select id="sort"><option value="name">Nombre</option><option value="price">Menor coste</option><option value="verified">Verificados primero</option></select></label></div>
+</div></details>
 <p id="manolo-budget-note" class="note manolo-action-note" role="status" hidden>Elige un límite por plato o por persona. Los precios desconocidos no cuentan como opciones dentro del límite.</p>
-<p id="budget-explain" class="note">Límite aplicado al precio de un plato, no a una comida completa.</p><div class="two"><label>Tipo de precio<select id="price-kind"><option value="">Todos los precios</option><option value="confirmed">Solo precios documentados</option><option value="estimated">Documentados o estimados</option></select></label><label>Ordenar<select id="sort"><option value="name">Nombre</option><option value="price">Menor coste</option><option value="verified">Verificados primero</option></select></label></div>
+<p id="budget-explain" class="note">Límite aplicado al precio de un plato, no a una comida completa.</p>
 <div class="search-actions"><button id="search-button" class="primary" type="submit"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#search"></use></svg>Buscar establecimientos</button><button id="clear-search" type="button" class="clear-search-button"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#close"></use></svg>Limpiar búsqueda</button></div></form></section>
 <section id="results-section" class="panel" aria-label="Resultados" hidden><a class="adjust-filters" href="#search-section"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#filter"></use></svg>Ajustar filtros</a><div class="section-title"><h2 id="results-heading" tabindex="-1">Resultados</h2><span id="count" class="chip">0 lugares</span></div><details class="result-method"><summary>Cómo interpretar precios y disponibilidad</summary><p id="service-results-note" class="note"></p><p class="note">El límite solo se puede comprobar cuando existe un precio documentado. Las fichas sin precio se muestran como desconocidas, no como ofertas dentro del presupuesto.</p></details><div class="result-context"><div id="coverage-summary" class="coverage-summary" role="status" aria-live="polite" hidden></div><div id="result-dish-visual"></div></div><button id="show-offering" type="button" class="show-offering" hidden><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#arrow"></use></svg>Ver todos los locales que ofrecen este plato</button><div id="results" aria-live="polite"></div></section>
 </div>
@@ -94,4 +100,4 @@
  <iframe id="map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa del establecimiento"></iframe>
  <a id="open-external-map" class="map-route-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#external"></use></svg>Abrir en Google Maps</a>
  </dialog>
-<script src="./i18n.js?v=3.2.71" defer></script><script src="./venue-hours.js?v=5" defer></script><script src="./app.js?v=3.2.95" defer></script></body></html>
+<script src="./i18n.js?v=3.2.72" defer></script><script src="./venue-hours.js?v=5" defer></script><script src="./app.js?v=3.2.96" defer></script></body></html>

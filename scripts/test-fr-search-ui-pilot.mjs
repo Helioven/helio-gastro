@@ -13,18 +13,12 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  const additionalLabels=[['#results-section','Résultats'],['#detail-section','Fiche de l’établissement'],['#close-recommendations','Fermer les recommandations'],['#map-frame','Carte de l’établissement']];
  for(const [selector,expected] of additionalLabels)assert.equal(await page.locator(selector).getAttribute('aria-label')??await page.locator(selector).getAttribute('title'),expected,'FR accessibility attribute '+selector);
  assert.equal(await page.locator('.dish-suggestions small').textContent(),'Choisissez un plat, puis cliquez sur « Rechercher des établissements » pour afficher les résultats.','FR search instruction');
- assert.equal(await page.locator('#place-name').getAttribute('placeholder'),'Ex. : Moriles, Casa Bravo, Plateros…','FR venue placeholder');
- // The live search field can use a French instruction or the active service’s dish names.
+ assert.equal(await page.locator('#place-name').getAttribute('placeholder'),'Ex. : Moriles','FR venue placeholder');
+ // Both search fields must expose a French instruction.
  const frenchDishInstruction=/^(?:saisissez|entrez|choisissez)(?: ou (?:saisissez|entrez|choisissez))? (?:un plat(?: ou une spécialité)?|une spécialité(?: cordouane)?)[. …]*$/iu;
- const dishExamples=[
-   'Flamenquín, salmorejo, carrillada…',
-   'Tostadas, churros, molletes…',
-   'Churros con chocolate, pasteles…',
-   'Tapas, tortilla, croquetas…'
- ];
  const dishPlaceholder=await page.locator('#dish').getAttribute('placeholder');
- assert.ok(frenchDishInstruction.test(dishPlaceholder?.trim()??'')||dishExamples.includes(dishPlaceholder),
-   'FR dish placeholder must be a translated instruction or documented dish-name examples: '+dishPlaceholder);
+ assert.ok(frenchDishInstruction.test(dishPlaceholder?.trim()??''),
+   'FR dish placeholder must be a translated instruction: '+dishPlaceholder);
  assert.match(await page.locator('#direct-dish').getAttribute('placeholder')??'',frenchDishInstruction,
    'FR direct search must retain a translated instruction');
  // app.js rebuilds #budget after startup, replacing the HTML-only long label.
@@ -100,8 +94,8 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.equal(await page.locator('#budget option[value=""]').textContent(),'Sin límite','ES unlimited budget restored');
  assert.equal(await page.locator('#sort option[value="price"]').textContent(),'Menor coste','ES lowest price sort restored');
  assert.equal(await page.locator('#sort option[value="verified"]').textContent(),'Verificados primero','ES verified sort restored');
- assert.equal(await page.locator('#place-name').getAttribute('placeholder'),'Ej.: Moriles, Casa Bravo, Plateros…','ES venue placeholder restoration');
- assert.equal(await page.locator('#dish').getAttribute('placeholder'),'Escribe un plato o especialidad…','ES dish placeholder restoration');
+ assert.equal(await page.locator('#place-name').getAttribute('placeholder'),'Ej.: Moriles','ES venue placeholder restoration');
+ assert.equal(await page.locator('#dish').getAttribute('placeholder'),'Escribe un plato','ES dish placeholder restoration');
  assert.equal(await favoriteNotice.textContent(),favoriteEs);
  assert.equal(await favoriteHeading.textContent(),'Mis tabernas favoritas','ES favorites heading restored');
  assert.equal(await favoriteCount.textContent(),'0 favoritos','ES favorites count restored');

@@ -72,6 +72,7 @@ try {
       await page.locator('#close-detail').click();
       assert.equal(await page.evaluate(() => document.activeElement.id), 'results-heading');
       await page.locator('#place-name').fill('La Manuela');
+      await page.locator('#advanced-filters > summary').click();
       await page.locator('#portion').selectOption('');
       await page.locator('#search-button').click();
       await result.locator('button.detail-button').first().click();

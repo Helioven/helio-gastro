@@ -4,10 +4,10 @@ const el=id=>document.getElementById(id);
 // Populate only after every French QA batch has passed validation.
 const qaFrenchPlaceIds=new Set();
 const MODE_CONFIG={
- desayuno:{label:'Desayunar',budgets:[3,5,7,10],dishes:['Tostadas','Churros','Molletes','Café','Bollería'],portions:[['unidad','Unidad'],['media-tostada','Media tostada'],['tostada-entera','Tostada entera'],['combinado','Desayuno combinado']],placeholder:'Tostadas, churros, molletes…'},
- comida:{label:'Comer',budgets:[10,15,20,30,50],dishes:['Flamenquín','Salmorejo','Rabo de toro','Croquetas','Mazamorra','Carrillada','Berenjenas','Pisto','Pescados y mariscos','Carnes y asados','Bocadillos y sándwiches','Guisos y cocina tradicional','Verduras y ensaladas','Tapas y raciones','Postres y dulces'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']],placeholder:'Flamenquín, salmorejo, carrillada…'},
- merienda:{label:'Merendar',budgets:[3,5,8,12],dishes:['Churros','Chocolate','Pasteles','Tartas','Tostadas','Bollería','Café'],portions:[['unidad','Unidad'],['racion','Ración'],['combinado','Merienda combinada']],placeholder:'Churros con chocolate, pasteles…'},
- cena:{label:'Cenar',budgets:[10,15,20,30,50],dishes:['Tapas','Flamenquín','Croquetas','Tortilla','Rabo de toro','Salmorejo','Pescados y mariscos','Carnes y asados','Bocadillos y sándwiches','Guisos y cocina tradicional','Verduras y ensaladas','Tapas y raciones','Postres y dulces'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']],placeholder:'Tapas, tortilla, croquetas…'}
+ desayuno:{label:'Desayunar',budgets:[3,5,7,10],dishes:['Tostadas','Churros','Molletes','Café','Bollería'],portions:[['unidad','Unidad'],['media-tostada','Media tostada'],['tostada-entera','Tostada entera'],['combinado','Desayuno combinado']]},
+ comida:{label:'Comer',budgets:[10,15,20,30,50],dishes:['Flamenquín','Salmorejo','Rabo de toro','Croquetas','Mazamorra','Carrillada','Berenjenas','Pisto','Pescados y mariscos','Carnes y asados','Bocadillos y sándwiches','Guisos y cocina tradicional','Verduras y ensaladas','Tapas y raciones','Postres y dulces'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']]},
+ merienda:{label:'Merendar',budgets:[3,5,8,12],dishes:['Churros','Chocolate','Pasteles','Tartas','Tostadas','Bollería','Café'],portions:[['unidad','Unidad'],['racion','Ración'],['combinado','Merienda combinada']]},
+ cena:{label:'Cenar',budgets:[10,15,20,30,50],dishes:['Tapas','Flamenquín','Croquetas','Tortilla','Rabo de toro','Salmorejo','Pescados y mariscos','Carnes y asados','Bocadillos y sándwiches','Guisos y cocina tradicional','Verduras y ensaladas','Tapas y raciones','Postres y dulces'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']]}
 };
 
 // Explanations are general cultural guidance, not claims about individual menus.
@@ -428,7 +428,7 @@ function updateMealMode(mode,{reset=true}={}){
  for(const [value,label] of cfg.portions){const opt=document.createElement('option');opt.value=value;opt.textContent=label;portion.append(opt)}
  portion.value=cfg.portions.some(([v])=>v===oldPortion)?oldPortion:'';
  portion.disabled=el('price-scope').value==='meal';
- el('dish').placeholder=cfg.placeholder;
+ syncAdvancedFilters();
  el('budget-label').textContent=mode==='desayuno'?'Presupuesto de desayuno':mode==='merienda'?'Presupuesto de merienda':'Presupuesto máximo';
  const documented=state.places.filter(p=>p.menus.some(m=>m.service===mode)).length;
  const serviceMessage=documented
@@ -706,6 +706,13 @@ function renderFavorites(){
 }
 const SEARCH_KEY='helio-gastro-search-v1';
 const SEARCH_FIELDS=['place-name','dish','budget','price-scope','portion','area','include-unknown','price-kind','sort'];
+function syncAdvancedFilters(){
+ const status=el('advanced-filter-status');
+ if(!status)return;
+ status.hidden=!(el('price-scope').value==='meal'||el('area').value||
+  (!el('portion').disabled&&el('portion').value)||!el('include-unknown').checked||
+  el('price-kind').value||el('sort').value!=='name');
+}
 function searchFormValues(){
  const form={};
  for(const id of SEARCH_FIELDS){const node=el(id);form[id]=node.type==='checkbox'?node.checked:node.value}
@@ -1302,6 +1309,7 @@ function getDishCoverage(term, area, nameQuery='') {
 let appliedSearch=null;
 function filter(event,restoring=false){
  if(event)event.preventDefault();
+ syncAdvancedFilters();
  el('direct-dish').value=el('dish').value;
  appliedSearch={mode:state.mode,form:searchFormValues()};
  const dish=clean(el('dish').value.trim()),nameQuery=clean(el('place-name').value.trim()),max=el('budget').value?Number(el('budget').value):null;
@@ -1666,11 +1674,15 @@ function openManoloAction(action){
  }
  const quickCategory=action==='discover'&&el('quick-categories').querySelector('button');
  const node=quickCategory||el(target);
+ const advanced=node.closest('#advanced-filters');
+ if(advanced)advanced.open=true;
  node.focus({preventScroll:true});
  node.scrollIntoView({block:'center'});
 }
 
 async function init(){
+ const quickDishes=el('quick-dishes');
+ if(quickDishes)quickDishes.open=matchMedia('(min-width: 561px)').matches;
  const guide=document.querySelector('.manolo-guide');
  const summary=guide.querySelector('summary');
  const syncGuideState=()=>summary.setAttribute('aria-expanded',String(guide.open));
@@ -1694,7 +1706,14 @@ async function init(){
  el('map-dialog').addEventListener('click',event=>{if(event.target===el('map-dialog'))closeMap()});
  el('clear-search').addEventListener('click',clearSearch);
  el('close-detail').addEventListener('click',()=>{el('detail-section').hidden=true;el('results-heading').focus();});
- el('price-scope').addEventListener('change',()=>{el('portion').disabled=el('price-scope').value==='meal';});
+ el('price-scope').addEventListener('change',()=>{
+  const perPerson=el('price-scope').value==='meal';
+  el('portion').disabled=perPerson;
+  el('budget-explain').textContent=perPerson?
+   'Presupuesto aplicado al coste total por persona. Los locales sin coste documentado pueden mostrarse, pero no se consideran dentro del límite.':
+   'Límite aplicado al precio de un plato, no a una comida completa.';
+ });
+ el('advanced-filters')?.addEventListener('change',syncAdvancedFilters);
  el('show-offering').addEventListener('click',()=>{
   el('budget').value='';
   el('price-kind').value='';

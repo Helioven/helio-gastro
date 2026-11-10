@@ -10,6 +10,7 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.equal(await page.locator('#portion option[value="media"]').textContent(),'Demi-portion');
  assert.equal(await page.locator('#budget-explain').textContent(),'Plafond appliqué au prix d’un plat, et non à celui d’un repas complet.');
  await page.waitForFunction(()=>state.places.length>0);
+ if(!await page.locator('#quick-dishes').evaluate(details=>details.open))await page.locator('#quick-dishes > summary').click();
  const flamenquin=page.locator('#dish-suggestions-list').getByRole('button',{name:'Flamenquín',exact:true});
  await flamenquin.click();
  assert.equal(await page.locator('#dish').inputValue(),'Flamenquín');

@@ -22,6 +22,7 @@ try {
   await page.locator('#close-recommendations').click();
   await page.locator('#place-name').fill('La Montillana');
   await page.locator('#dish').fill('Salmorejo');
+  await page.locator('#advanced-filters > summary').click();
   await page.locator('#portion').selectOption('media');
   await page.locator('#price-kind').selectOption('confirmed');
   await page.locator('#search-button').click();

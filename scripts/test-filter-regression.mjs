@@ -17,6 +17,7 @@ for(const profile of profiles)for(const mode of modes){
   await page.locator('#language-select').selectOption('es');
   await page.locator('[data-service="comida"]').click();
   await page.locator('#clear-search').click();
+  await page.locator('#advanced-filters > summary').click();
   await page.locator('#dish').fill('Flamenquín');
   await page.locator('#portion').selectOption('media');
   await page.locator('#budget').selectOption('10');

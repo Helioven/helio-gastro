@@ -436,3 +436,74 @@ button:disabled{opacity:.62;cursor:not-allowed;box-shadow:none}
  .quick-nav a:not([hidden]){gap:3px}
  .quick-nav .ui-icon{width:14px;height:14px}
 }
+
+/* Premium search and guide surfaces */
+.manolo-guide,#search-section{
+ --premium-navy:#102c4c;--premium-blue:#28618a;--premium-copper:#e3a665;
+ --premium-cream:#f7f0e5;--premium-white:#fff;
+}
+.manolo-guide{
+ background:linear-gradient(145deg,#edf6fc 0%,#dcecf7 72%,#f3eadf 100%);
+ border:1px solid #a7c3d8;border-top:3px solid var(--premium-blue);
+ border-radius:18px;padding:8px 14px 12px;box-shadow:0 8px 24px #102c4c16;
+}
+.manolo-guide summary{gap:12px;color:var(--premium-navy);font-size:1.2rem;min-height:52px}
+.manolo-guide img{width:72px;height:72px;flex:none;filter:drop-shadow(0 3px 4px #102c4c26)}
+.manolo-guide>p{margin:2px 0 12px;color:var(--premium-navy)}
+.manolo-guide-options{gap:10px;padding-bottom:0}
+.manolo-guide-options button{
+ min-width:0;min-height:56px;padding:10px 11px;gap:9px;
+ background:var(--premium-white);border:1px solid #a7bdce;border-radius:12px;
+ color:var(--premium-navy);box-shadow:0 2px 5px #102c4c12;
+}
+.manolo-guide-options button>.ui-icon{color:var(--premium-blue)}
+.manolo-guide-options button:active{border-color:#995d2f;box-shadow:inset 0 1px 3px #102c4c26}
+@media(hover:hover){.manolo-guide-options button:hover{background:#f8fbfe;border-color:var(--premium-blue)}}
+.manolo-guide :focus-visible,#search-section :focus-visible{outline:3px solid #8a4b21;outline-offset:2px}
+.search-layout #search-section{
+ background:linear-gradient(145deg,#fffaf3,var(--premium-cream));
+ color:var(--premium-navy);border:1px solid #cbb69e;border-top:3px solid var(--premium-copper);
+ border-radius:18px;box-shadow:0 8px 24px #102c4c14;
+}
+#search-section .section-title{gap:12px;margin-bottom:14px}
+#search-section .section-title h2{font-family:Georgia,serif;font-size:clamp(1.42rem,2.4vw,1.9rem);line-height:1.15}
+#search-section .section-title>.ui-icon{color:var(--premium-blue);flex:none}
+#search-section #filters,#search-section .advanced-filter-fields{display:grid;gap:12px;min-width:0}
+#search-section .advanced-filter-fields{padding:12px 0 3px}
+#search-section label{min-width:0}
+#search-section :is(input:not([type=checkbox]),select){
+ min-width:0;width:100%;min-height:44px;border-color:#8e8070;border-radius:10px;color:var(--premium-navy);
+}
+#search-section :is(input,select):focus-visible{border-color:var(--premium-blue)}
+#search-section .dish-suggestions,#advanced-filters{display:block;margin:0;border-block:1px solid #d8c9b8}
+#search-section :is(#quick-dishes,#advanced-filters)>summary{
+ display:flex;flex-wrap:wrap;align-items:center;gap:6px;min-height:44px;
+ cursor:pointer;color:var(--premium-navy);font-weight:750;list-style:none;
+}
+#search-section details>summary::-webkit-details-marker{display:none}
+#search-section :is(#quick-dishes,#advanced-filters)>summary::after{
+ content:"";width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;
+ transform:rotate(45deg);margin-inline-start:auto;margin-inline-end:5px;
+}
+#search-section :is(#quick-dishes,#advanced-filters)[open]>summary::after{transform:rotate(225deg)}
+#search-section .filter-status{background:#e1edf6;color:var(--premium-navy);border-radius:999px;padding:3px 7px;font-size:.72rem}
+#search-section .dish-suggestions-list{padding:4px 0 6px}
+#search-section .dish-suggestions-list button{
+ min-height:44px;border-radius:999px;border-color:#9baebb;color:var(--premium-navy);background:var(--premium-white);
+}
+#search-section .dish-suggestions-list button:hover{background:#e4eff7}
+#search-section .dish-suggestions small{display:block;padding-bottom:10px}
+#search-section #budget-explain{margin:0}
+#search-section .primary{
+ background:linear-gradient(145deg,var(--premium-blue),var(--premium-navy) 72%);
+ border:1px solid var(--premium-navy);color:var(--premium-white);box-shadow:0 3px 8px #102c4c26;
+}
+#search-section .primary:hover{background:#19446a}
+@media(max-width:560px){
+ .quick-nav{position:static}
+ #recommendations-section,#search-section,#favorite-section,#compare-section,#results-section,#service-section{scroll-margin-top:12px}
+ .manolo-guide img{width:54px;height:54px}
+ .manolo-guide summary{font-size:1.08rem}
+ .search-layout #search-section{padding:14px}
+ #search-section #filters,#search-section .advanced-filter-fields{gap:9px}
+}

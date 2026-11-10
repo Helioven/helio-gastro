@@ -631,6 +631,10 @@ window.GASTRO_I18N = Object.freeze({
     return translateValue(key);
   };
   const hybridLabels = new Map(Object.entries({
+  "Más filtros": ["More filters","Plus de filtres"],
+  "Filtros activos": ["Active filters","Filtres actifs"],
+  "Ej.: Moriles": ["E.g. Moriles","Ex. : Moriles"],
+  "Escribe un plato": ["Enter a dish","Saisissez un plat"],
   "Establecimientos de Roldán en Córdoba": ["Roldán locations in Córdoba","Établissements Roldán à Cordoue"],
   "Varias ubicaciones en Córdoba (consulta los establecimientos de abajo)": ["Several locations in Córdoba (see venues below)","Plusieurs adresses à Cordoue (voir les établissements ci-dessous)"],
   "Platos": ["Dishes","Plats"],
