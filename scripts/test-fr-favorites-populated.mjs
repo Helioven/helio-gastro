@@ -49,14 +49,14 @@ for(const profile of profiles){
   await cards.nth(1).locator('.fav-button').click();
   await count(2,'2 favoris');
   await page.waitForFunction(()=>[...document.querySelectorAll('#favorite-list .favorite-entry')].every(row=>
-    [...row.querySelectorAll('button')].map(el=>el.textContent.trim()).join('|')==='Voir la fiche|📍 Voir la carte|★ Enregistré'));
+    [...row.querySelectorAll('button')].map(el=>el.textContent.trim()).join('|')==='Voir la fiche|Voir la carte|Enregistré'));
   await page.locator('#favorite-section').screenshot({path:folder+'/'+profile.name+'-two-fr.png'});
   const ids=await page.evaluate(()=>[...state.favorites].sort());
   for(const [lang,label] of [['es','2 favoritos'],['en','2 favourites'],['fr','2 favoris']]){
    await select(lang);
    await count(2,label);
-   const expected=lang==='es'?'Ver ficha|📍 Ver mapa|★ Guardado':
-    lang==='en'?'View details|📍 View map|★ Saved':'Voir la fiche|📍 Voir la carte|★ Enregistré';
+   const expected=lang==='es'?'Ver ficha|Ver mapa|Guardado':
+    lang==='en'?'View details|View map|Saved':'Voir la fiche|Voir la carte|Enregistré';
    await page.waitForFunction(expected=>[...document.querySelectorAll('#favorite-list .favorite-entry')].every(row=>
     [...row.querySelectorAll('button')].map(el=>el.textContent.trim()).join('|')===expected),expected);
   }
@@ -92,7 +92,7 @@ for(const profile of profiles){
       && !text.includes('Variante sin categorizar');
    });
    // The populated comparator has independent map buttons: verify FR and ES/EN round-trip.
-   for(const [lang,expected] of [['fr','📍 Voir la carte'],['es','📍 Ver mapa'],['en','📍 View map'],['fr','📍 Voir la carte']]){
+   for(const [lang,expected] of [['fr','Voir la carte'],['es','Ver mapa'],['en','View map'],['fr','Voir la carte']]){
     await select(lang);
     await page.waitForFunction(expected=>{
       const buttons=[...document.querySelectorAll('#compare-output .compare-place .map-button')];

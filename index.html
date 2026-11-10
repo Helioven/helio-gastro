@@ -1,29 +1,84 @@
 <!doctype html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#10243c"><meta name="description" content="Helio Gastro: cocina cordobesa con precios y fuentes transparentes.">
-<title>Helio Gastro · Córdoba</title><link rel="stylesheet" href="./styles.css?v=3.2.33"><link rel="manifest" href="./manifest.webmanifest"></head>
-<body><main class="shell">
-<header><div class="brand"><span class="logo">🍽️</span><div><div class="eyebrow">HELIO SOFTWARE STUDIOS</div><h1>HELIO <strong>GASTRO</strong></h1></div></div><div class="header-controls"><label for="language-select" class="language-label">Language / Idioma</label><select id="language-select" aria-label="Language / Idioma"><option value="es">🇪🇸 Español</option><option value="en">🇬🇧 English</option></select><span class="version">Piloto 3.1.1</span></div></header>
+<meta name="theme-color" content="#102c4c"><meta name="description" content="PlatoRadar: guía gastronómica de Córdoba con platos, precios de carta y fuentes documentadas.">
+<title>PlatoRadar · Córdoba</title><link rel="stylesheet" href="./styles.css?v=3.2.55"><link rel="manifest" href="./manifest.webmanifest"><link rel="icon" type="image/png" sizes="32x32" href="./assets/brand/favicon-manolo.png"></head>
+<body><header class="radar-header" id="inicio">
+  <a class="radar-brand" href="#inicio">
+    <span class="radar-desk"><img src="./assets/brand/platoradar-manolo-header.webp" alt="PlatoRadar by ManoloLabs" width="1086" height="362"></span>
+  </a>
+  <nav class="radar-nav" aria-label="Navegación principal">
+    <a href="#inicio" class="radar-home"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#home"></use></svg><span>Inicio</span></a>
+    <a href="#search-section"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#search"></use></svg><span>Buscar</span></a>
+    <a href="#compare-section" data-radar-compare><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#scale"></use></svg><span>Comparador</span></a>
+    <a href="#favorite-section"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#bookmark"></use></svg><span>Favoritos</span></a>
+    <a href="#guide-section"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#info"></use></svg><span>Guía</span></a>
+  </nav>
+  <div class="radar-language"><label for="language-select" class="language-label">Language / Idioma</label><select id="language-select" aria-label="Language / Idioma"><option value="es">🇪🇸 Español</option><option value="en">🇬🇧 English</option></select></div>
+</header>
+<main>
+  <section class="hero radar-hero" aria-labelledby="hybrid-title">
+    <img class="radar-panorama" src="./assets/brand/cordoba-panoramica.webp" alt="" width="1680" height="560" fetchpriority="high">
+    <div class="radar-hero-copy">
+      <h1 id="hybrid-title"><span>Córdoba se descubre</span> <em>a bocados.</em></h1>
+      <p class="hybrid-lede">Encuentra sus sabores, compara platos y descubre dónde disfrutar de su gastronomía.</p>
+      <a class="radar-cta" href="#search-section"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#search"></use></svg><span>Explorar sabores</span><svg class="ui-icon radar-arrow" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#arrow"></use></svg></a>
+    </div>
+  </section>
+  <div class="radar-welcome">
+    <nav class="radar-shortcuts" aria-label="Accesos rápidos">
+    <button type="button" data-radar-service="desayuno"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#cup"></use></svg><span>Desayunos</span><svg class="ui-icon radar-arrow" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#arrow"></use></svg></button>
+    <button type="button" data-radar-service="comida"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#cutlery"></use></svg><span>Comer</span><svg class="ui-icon radar-arrow" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#arrow"></use></svg></button>
+    <button type="button" data-radar-service="cena"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#cloche"></use></svg><span>Cenar</span><svg class="ui-icon radar-arrow" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#arrow"></use></svg></button>
+    <button type="button" id="radar-map"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#pin"></use></svg><span>Mapa</span><svg class="ui-icon radar-arrow" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#arrow"></use></svg></button>
+    <a href="#compare-section" data-radar-compare><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#scale"></use></svg><span>Comparador</span><svg class="ui-icon radar-arrow" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#arrow"></use></svg></a>
+    <a href="#recommendations-section"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#star"></use></svg><span>Sugerencias</span><svg class="ui-icon radar-arrow" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#arrow"></use></svg></a>
+    </nav>
+    <section class="radar-orientation" aria-labelledby="radar-orientation-title">
+      <img src="./assets/brand/manolo-chef.webp" alt="" width="384" height="384">
+      <div><h2 id="radar-orientation-title">Manolo te orienta</h2><p>¿Con hambre y sin ideas? ¡Para eso estoy yo!</p></div>
+      <button class="radar-cta radar-cta-warm" type="button" id="radar-orient" aria-controls="manolo-orientation"><span>Quiero orientación</span><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#arrow"></use></svg></button>
+    </section>
+  </div>
+  <div class="shell radar-content">
 <nav id="quick-nav" class="quick-nav" aria-label="Navegación rápida">
- <a href="#recommendations-section">🍴 Platos</a>
- <a href="#search-section">🔎 Buscar</a>
- <a href="#favorite-section">★ Favoritos</a>
- <a id="nav-compare" href="#compare-section" hidden>⚖️ Comparar <span id="nav-compare-count">0</span></a>
+ <a href="#recommendations-section"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#dish"></use></svg>Platos</a>
+ <a href="#search-section"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#search"></use></svg>Buscar</a>
+ <a href="#favorite-section"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#bookmark"></use></svg>Favoritos</a>
+ <a id="nav-compare" href="#compare-section" hidden><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#scale"></use></svg>Comparar <span id="nav-compare-count">0</span></a>
 </nav>
-<section class="hero"><p class="eyebrow">CÓRDOBA · DÓNDE COMER BIEN</p><h2>Encuentra algo rico.<br><em>Sin sorpresas en la cuenta.</em></h2><p>Platos que te apetecen, presupuestos realistas y fuentes que puedes comprobar.</p></section>
-<section id="service-section" class="panel" aria-labelledby="service-heading"><h2 id="service-heading">¿Qué plan tienes?</h2><p class="note">Elige un momento del día para adaptar platos y presupuesto. Los horarios todavía requieren verificación.</p><div class="service-selector" role="group" aria-label="Momento gastronómico"><button type="button" data-service="desayuno" aria-pressed="false">☕ Desayunar</button><button type="button" data-service="comida" aria-pressed="true">🍽️ Comer</button><button type="button" data-service="merienda" aria-pressed="false">🥐 Merendar</button><button type="button" data-service="cena" aria-pressed="false">🌙 Cenar</button></div><p id="service-intro" class="service-intro" role="status"></p></section>
+<div class="radar-tools">
+<form id="direct-search" aria-label="Catálogo general">
+   <p class="eyebrow">Catálogo general</p>
+   <div class="direct-search-row"><label>Plato o especialidad<input id="direct-dish" type="search" placeholder="Escribe un plato o especialidad…" autocomplete="off"></label><button class="primary"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#search"></use></svg>Buscar</button></div>
+   <div id="quick-categories" hidden><p>Categorías rápidas</p><div class="category-actions"></div></div>
+  </form>
+<details class="manolo-guide" id="manolo-orientation">
+  <summary aria-expanded="false"><img src="./assets/brand/manolo-chef.webp" alt="" width="384" height="384"><strong>Manolo te orienta</strong></summary>
+  <p>¿Con hambre y sin ideas? ¡Para eso estoy yo!</p>
+  <div class="manolo-guide-options">
+   <button type="button" data-manolo-action="discover" aria-labelledby="manolo-discover-title" aria-describedby="manolo-discover-description"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#dish"></use></svg><span><strong id="manolo-discover-title">No sé qué comer</strong><span id="manolo-discover-description">Descubre platos y encuentra dónde probarlos.</span></span><svg class="ui-icon manolo-action-arrow" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#arrow"></use></svg></button>
+   <button type="button" data-manolo-action="traditional" aria-labelledby="manolo-traditional-title" aria-describedby="manolo-traditional-description"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#pin"></use></svg><span><strong id="manolo-traditional-title">Quiero algo típico</strong><span id="manolo-traditional-description">Explora los sabores tradicionales de Córdoba.</span></span><svg class="ui-icon manolo-action-arrow" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#arrow"></use></svg></button>
+   <button type="button" data-manolo-action="budget" aria-labelledby="manolo-budget-title" aria-describedby="manolo-budget-description"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#wallet"></use></svg><span><strong id="manolo-budget-title">Busco algo económico</strong><span id="manolo-budget-description">Encuentra platos que se ajusten a tu presupuesto.</span></span><svg class="ui-icon manolo-action-arrow" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#arrow"></use></svg></button>
+   <button type="button" data-manolo-action="compare" aria-labelledby="manolo-compare-title" aria-describedby="manolo-compare-description"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#scale"></use></svg><span><strong id="manolo-compare-title">Quiero comparar</strong><span id="manolo-compare-description">Compara precios de un mismo plato.</span></span><svg class="ui-icon manolo-action-arrow" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#arrow"></use></svg></button>
+  </div>
+ </details>
+</div>
+<section id="service-section" class="panel" aria-labelledby="service-heading"><h2 id="service-heading">¿Qué plan tienes?</h2><p class="note">Elige un momento del día para adaptar platos y presupuesto. Los horarios todavía requieren verificación.</p><div class="service-selector" role="group" aria-label="Momento gastronómico"><button type="button" data-service="desayuno" aria-pressed="false"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#cup"></use></svg>Desayunar</button><button type="button" data-service="comida" aria-pressed="true"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#cutlery"></use></svg>Comer</button><button type="button" data-service="merienda" aria-pressed="false"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#snack"></use></svg>Merendar</button><button type="button" data-service="cena" aria-pressed="false"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#moon"></use></svg>Cenar</button></div><p id="service-intro" class="service-intro" role="status"></p></section>
 <section id="recommendations-section" class="panel" aria-labelledby="recommendations-heading">
-<div class="section-title"><h2 id="recommendations-heading">🍴 ¿Qué te apetece hoy?</h2><span class="chip">Acceso directo</span></div>
+<div class="section-title"><h2 id="recommendations-heading" tabindex="-1">Sabores de Córdoba</h2><span class="chip">Acceso directo</span></div>
 <p class="note">Elige un plato y descubre directamente opciones documentadas de nuestra base, separadas por variante y formato. Más barato no significa mejor.</p>
+<p id="manolo-traditional-note" class="note manolo-action-note" role="status" hidden>Has pasado al momento de comida para explorar Sabores de Córdoba.</p>
 <div id="recommendation-dishes" class="recommendation-dishes"></div>
 
 </section>
-<section id="search-section" class="panel" aria-labelledby="search-title"><div class="section-title"><h2 id="search-title">¿Qué te apetece?</h2><span>🔎</span></div>
+<div class="search-layout">
+<section id="search-section" class="panel" tabindex="-1" aria-labelledby="search-title"><div class="section-title"><h2 id="search-title">¿Qué te apetece?</h2><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#search"></use></svg></div>
+<p id="manolo-compare-note" class="note manolo-action-note" role="status" hidden>Compara solo precios documentados de un mismo formato. Si falta el precio en ese formato, consulta la carta.</p>
 <form id="filters">
-<label>Nombre del establecimiento<input id="place-name" type="search" placeholder="Ej.: Moriles, Casa Bravo, Plateros…" autocomplete="off"></label>
-<label>Plato o especialidad<input id="dish" type="search" placeholder="Escribe o elige un plato cordobés…" autocomplete="off"></label>
-<div class="dish-suggestions" role="group" aria-label="Especialidades cordobesas para buscar">
-  <span class="dish-suggestions-label">PRUEBA UN PLATO TÍPICO</span>
+<label>Nombre del establecimiento<input id="place-name" type="search" placeholder="Ej.: Moriles" autocomplete="off"></label>
+<label>Plato o especialidad<input id="dish" type="search" placeholder="Escribe un plato" autocomplete="off"></label>
+<details class="dish-suggestions" id="quick-dishes" role="group" aria-label="Especialidades cordobesas para buscar">
+  <summary><span class="dish-suggestions-label">PRUEBA UN PLATO TÍPICO</span></summary>
   <div id="dish-suggestions-list" class="dish-suggestions-list">
     <button type="button" data-dish="Flamenquín">Flamenquín</button>
     <button type="button" data-dish="Salmorejo">Salmorejo</button>
@@ -37,23 +92,31 @@
     <button type="button" data-dish="Codillo">Codillo</button>
   </div>
   <small>Elige un plato y pulsa «Buscar establecimientos» para consultar resultados.</small>
-</div>
-<div class="two"><label>Aplicar presupuesto a<select id="price-scope"><option value="dish" selected>Un plato de la carta</option><option value="meal">Comida total por persona</option></select></label><label><span id="budget-label">Presupuesto máximo</span><select id="budget"><option value="" selected>Sin límite (mostrar fichas)</option><option value="10">10 €</option><option value="15">15 €</option><option value="20">20 €</option><option value="30">30 €</option><option value="50">50 €</option></select></label><label>Zona<select id="area"><option value="">Toda Córdoba</option></select></label></div>
+</details>
+<label><span id="budget-label">Presupuesto máximo</span><select id="budget"><option value="" selected>Sin límite (mostrar fichas)</option><option value="10">10 €</option><option value="15">15 €</option><option value="20">20 €</option><option value="30">30 €</option><option value="50">50 €</option></select></label>
+<details id="advanced-filters">
+<summary><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#filter"></use></svg><span>Más filtros</span><span id="advanced-filter-status" class="filter-status" role="status" hidden>Filtros activos</span></summary>
+<div class="advanced-filter-fields">
+<div class="two"><label>Aplicar presupuesto a<select id="price-scope"><option value="dish" selected>Un plato de la carta</option><option value="meal">Comida total por persona</option></select></label><label>Zona<select id="area"><option value="">Toda Córdoba</option></select></label></div>
 <label>Formato del plato<select id="portion"><option value="">Cualquier formato (sin equivalencia de tamaños)</option><option value="unidad">Unidad</option><option value="tapa">Tapa</option><option value="media">Media ración</option><option value="racion">Ración completa</option><option value="desconocida">Formato no especificado</option></select><small id="portion-help" class="portion-help" hidden><strong>Understanding portions:</strong> <em>Tapa</em> is a small serving; <em>media ración</em> is a half portion; <em>ración</em> is a full portion. Actual sizes vary by venue.</small></label>
 <label class="include-unknown"><input id="include-unknown" type="checkbox" checked><span>Mostrar también establecimientos sin precio documentado <small>(se identificarán claramente como precio desconocido)</small></span></label>
-<p id="budget-explain" class="note">Límite aplicado al precio de un plato, no a una comida completa.</p><div class="two"><label>Tipo de precio<select id="price-kind"><option value="">Todos los precios</option><option value="confirmed">Solo precios documentados</option><option value="estimated">Documentados o estimados</option></select></label><label>Ordenar<select id="sort"><option value="name">Nombre</option><option value="price">Menor coste</option><option value="verified">Verificados primero</option></select></label></div>
-<div class="search-actions"><button id="search-button" class="primary" type="submit">Buscar establecimientos →</button><button id="clear-search" type="button" class="clear-search-button">Limpiar búsqueda</button></div></form></section>
-<section id="favorite-section" class="panel" aria-labelledby="favorite-heading"><div class="section-title"><h2 id="favorite-heading">★ Mis tabernas favoritas</h2><span id="favorite-count" class="chip">0 favoritos</span></div><p id="favorite-notice" class="note">Guardadas solo en este navegador. Puedes consultarlas sin volver a buscar.</p><div id="favorite-list"></div></section>
-<section id="results-section" class="panel" aria-label="Resultados" hidden><p id="service-results-note" class="note"></p><div class="section-title"><h2 id="results-heading" tabindex="-1">Resultados</h2><span id="count" class="chip">0 lugares</span></div><p class="note">El límite solo se puede comprobar cuando existe un precio documentado. Las fichas sin precio se muestran como desconocidas, no como ofertas dentro del presupuesto.</p><div id="coverage-summary" class="coverage-summary" role="status" aria-live="polite" hidden></div><button id="show-offering" type="button" class="show-offering" hidden>Ver todos los locales que ofrecen este plato →</button><div id="results" aria-live="polite"></div></section>
-<section id="detail-section" class="panel" aria-label="Ficha del establecimiento" hidden><div class="section-title detail-sticky-head"><div class="detail-sticky-label"><span class="eyebrow">Ficha del local</span><strong id="detail-sticky-name"></strong></div><button id="close-detail" type="button" class="detail-button">Cerrar ficha ×</button></div><div id="detail-content"></div></section>
-<section id="compare-section" class="panel" aria-labelledby="compare-title" hidden><div class="section-title"><h2 id="compare-title">Comparador</h2><span class="chip" id="compare-count">0 / 3</span></div><p class="note">Elige hasta tres establecimientos. Para comparar precios, selecciona un mismo formato en el buscador. Las cantidades reales pueden variar entre locales.</p><div id="compare-output" class="empty" aria-live="polite">Todavía no hay establecimientos seleccionados.</div></section>
-<section class="panel info"><h2>🔍 Nuestro criterio</h2><p><b>Confirmado</b> significa coste publicado y verificable, con fuente y fecha. <b>Estimado</b> indica una orientación, nunca el precio de una carta.</p><p>No inventamos reseñas, puntuaciones ni disponibilidad. Si no sabemos algo, lo indicamos.</p></section>
-<footer>Helio Gastro 3.1.1 · Córdoba · Proyecto piloto para portfolio QA<br>Sin publicidad ni afiliación. Datos pendientes de verificación.</footer>
-</main>
+<div class="two"><label>Tipo de precio<select id="price-kind"><option value="">Todos los precios</option><option value="confirmed">Solo precios documentados</option><option value="estimated">Documentados o estimados</option></select></label><label>Ordenar<select id="sort"><option value="name">Nombre</option><option value="price">Menor coste</option><option value="verified">Verificados primero</option></select></label></div>
+</div></details>
+<p id="manolo-budget-note" class="note manolo-action-note" role="status" hidden>Elige un límite por plato o por persona. Los precios desconocidos no cuentan como opciones dentro del límite.</p>
+<p id="budget-explain" class="note" hidden>Límite aplicado al precio de un plato, no a una comida completa.</p>
+<div class="search-actions"><button id="search-button" class="primary" type="submit"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#search"></use></svg>Buscar establecimientos</button><button id="clear-search" type="button" class="clear-search-button"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#close"></use></svg>Limpiar búsqueda</button></div></form></section>
+<section id="results-section" class="panel" aria-label="Resultados" hidden><a class="adjust-filters" href="#search-section"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#filter"></use></svg>Ajustar filtros</a><div class="section-title"><h2 id="results-heading" tabindex="-1">Resultados</h2><span id="count" class="chip">0 lugares</span></div><details class="result-method"><summary>Cómo interpretar precios y disponibilidad</summary><p id="service-results-note" class="note"></p><p class="note">El límite solo se puede comprobar cuando existe un precio documentado. Las fichas sin precio se muestran como desconocidas, no como ofertas dentro del presupuesto.</p></details><p id="radar-map-note" class="note" role="status" hidden>Elige un establecimiento y pulsa «Ver mapa» para consultar su ubicación.</p><div class="result-context"><div id="coverage-summary" class="coverage-summary" role="status" aria-live="polite" hidden></div><div id="result-dish-visual"></div></div><button id="show-offering" type="button" class="show-offering" hidden><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#arrow"></use></svg>Ver todos los locales que ofrecen este plato</button><div id="results" aria-live="polite"></div></section>
+</div>
+<section id="favorite-section" class="panel" aria-labelledby="favorite-heading"><div class="section-title"><h2 id="favorite-heading"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#bookmark"></use></svg>Mis tabernas favoritas</h2><span id="favorite-count" class="chip">0 favoritos</span></div><p id="favorite-notice" class="note">Guardadas solo en este navegador. Puedes consultarlas sin volver a buscar.</p><div id="favorite-list"></div></section>
+<section id="detail-section" class="panel" aria-label="Ficha del establecimiento" hidden><div class="section-title detail-sticky-head"><div class="detail-sticky-label"><span class="eyebrow">Ficha del local</span><strong id="detail-sticky-name"></strong></div><button id="close-detail" type="button" class="detail-button"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#close"></use></svg>Cerrar ficha</button></div><div id="detail-content"></div></section>
+<section id="compare-section" class="panel" aria-labelledby="compare-title" hidden><div class="section-title"><h2 id="compare-title" tabindex="-1">Comparador</h2><span class="chip" id="compare-count">0 / 3</span></div><p class="note">Elige hasta tres establecimientos. Para comparar precios, selecciona un mismo formato en el buscador. Las cantidades reales pueden variar entre locales.</p><div id="compare-output" class="empty" aria-live="polite">Todavía no hay establecimientos seleccionados.</div></section>
+<section class="panel info" id="guide-section" tabindex="-1"><h2><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#search"></use></svg>Nuestro criterio</h2><p><b>Confirmado</b> significa coste publicado y verificable, con fuente y fecha. <b>Estimado</b> indica una orientación, nunca el precio de una carta.</p><p>No inventamos reseñas, puntuaciones ni disponibilidad. Si no sabemos algo, lo indicamos.</p></section>
+<footer>PlatoRadar 3.1.1 · Córdoba · Proyecto piloto para portfolio QA<br>Sin publicidad ni afiliación. Datos pendientes de verificación.<div class="studio-signature manolo-footer"><img src="./assets/brand/manolo-busto.webp" alt="" width="256" height="256" loading="lazy"><div class="manolo-footer-copy"><div class="brand-signature">Manolo<span>Labs</span> <small>by Helio</small></div><p class="studio-tagline" lang="es">Ideas humanas · Tecnología inteligente</p></div></div></footer>
+</div></main>
 <dialog id="recommendation-dialog" aria-labelledby="recommendation-title" aria-describedby="recommendation-description">
  <div class="recommendation-dialog-head">
   <h2 id="recommendation-title" tabindex="-1">Recomendaciones</h2>
-  <button id="close-recommendations" type="button" class="detail-button" aria-label="Cerrar recomendaciones">Cerrar ×</button>
+  <button id="close-recommendations" type="button" class="detail-button" aria-label="Cerrar recomendaciones"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#close"></use></svg>Cerrar</button>
  </div>
  <div class="recommendation-dialog-body">
  <p id="recommendation-description" class="note">Comparación informativa por variante y formato. Un precio menor no implica mejor calidad ni la misma cantidad.</p>
@@ -61,10 +124,10 @@
  </div>
 </dialog>
 <dialog id="map-dialog" aria-labelledby="map-title" aria-describedby="map-address">
- <div class="map-dialog-head"><h2 id="map-title">Ubicación</h2><button id="close-map" type="button" class="detail-button">Cerrar ×</button></div>
+ <div class="map-dialog-head"><h2 id="map-title">Ubicación</h2><button id="close-map" type="button" class="detail-button"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#close"></use></svg>Cerrar</button></div>
  <p id="map-address"></p>
  <p class="note">Mapa de Google Maps cargado al abrir esta ventana. Confirma la dirección antes de desplazarte.</p>
  <iframe id="map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa del establecimiento"></iframe>
- <a id="open-external-map" class="map-route-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/">Abrir en Google Maps ↗</a>
+ <a id="open-external-map" class="map-route-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="./assets/ui/icons.svg#external"></use></svg>Abrir en Google Maps</a>
  </dialog>
-<script src="./i18n.js?v=3.2.58" defer></script><script src="./app.js?v=3.2.77" defer></script></body></html>
+<script src="./i18n.js?v=3.2.75" defer></script><script src="./venue-hours.js?v=5" defer></script><script src="./app.js?v=3.2.98" defer></script></body></html>

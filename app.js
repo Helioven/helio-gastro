@@ -4,10 +4,10 @@ const el=id=>document.getElementById(id);
 // Populate only after every French QA batch has passed validation.
 const qaFrenchPlaceIds=new Set();
 const MODE_CONFIG={
- desayuno:{label:'Desayunar',emoji:'☕',budgets:[3,5,7,10],dishes:['Tostadas','Churros','Molletes','Café','Bollería'],portions:[['unidad','Unidad'],['media-tostada','Media tostada'],['tostada-entera','Tostada entera'],['combinado','Desayuno combinado']],placeholder:'Tostadas, churros, molletes…'},
- comida:{label:'Comer',emoji:'🍽️',budgets:[10,15,20,30,50],dishes:['Flamenquín','Salmorejo','Rabo de toro','Croquetas','Mazamorra','Carrillada','Berenjenas','Pisto','Pescados y mariscos','Carnes y asados','Bocadillos y sándwiches','Guisos y cocina tradicional','Verduras y ensaladas','Tapas y raciones','Postres y dulces'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']],placeholder:'Flamenquín, salmorejo, carrillada…'},
- merienda:{label:'Merendar',emoji:'🥐',budgets:[3,5,8,12],dishes:['Churros','Chocolate','Pasteles','Tartas','Tostadas','Bollería','Café'],portions:[['unidad','Unidad'],['racion','Ración'],['combinado','Merienda combinada']],placeholder:'Churros con chocolate, pasteles…'},
- cena:{label:'Cenar',emoji:'🌙',budgets:[10,15,20,30,50],dishes:['Tapas','Flamenquín','Croquetas','Tortilla','Rabo de toro','Salmorejo','Pescados y mariscos','Carnes y asados','Bocadillos y sándwiches','Guisos y cocina tradicional','Verduras y ensaladas','Tapas y raciones','Postres y dulces'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']],placeholder:'Tapas, tortilla, croquetas…'}
+ desayuno:{label:'Desayunar',budgets:[3,5,7,10],dishes:['Tostadas','Churros','Molletes','Café','Bollería'],portions:[['unidad','Unidad'],['media-tostada','Media tostada'],['tostada-entera','Tostada entera'],['combinado','Desayuno combinado']]},
+ comida:{label:'Comer',budgets:[10,15,20,30,50],dishes:['Flamenquín','Salmorejo','Rabo de toro','Croquetas','Mazamorra','Carrillada','Berenjenas','Pisto','Pescados y mariscos','Carnes y asados','Bocadillos y sándwiches','Guisos y cocina tradicional','Verduras y ensaladas','Tapas y raciones','Postres y dulces'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']]},
+ merienda:{label:'Merendar',budgets:[3,5,8,12],dishes:['Churros','Chocolate','Pasteles','Tartas','Tostadas','Bollería','Café'],portions:[['unidad','Unidad'],['racion','Ración'],['combinado','Merienda combinada']]},
+ cena:{label:'Cenar',budgets:[10,15,20,30,50],dishes:['Tapas','Flamenquín','Croquetas','Tortilla','Rabo de toro','Salmorejo','Pescados y mariscos','Carnes y asados','Bocadillos y sándwiches','Guisos y cocina tradicional','Verduras y ensaladas','Tapas y raciones','Postres y dulces'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']]}
 };
 
 // Explanations are general cultural guidance, not claims about individual menus.
@@ -376,6 +376,11 @@ function venueMenuPriceLabel(source,english){
 function refreshDishExplanations(){
  const english=window.HelioGastroLanguage?.get()==='en';
  const activeLanguage=window.HelioGastroLanguage?.get()||'es';
+ document.querySelectorAll('.dish-visual-label').forEach(node=>{node.textContent=illustrativeImageLabel(activeLanguage)});
+ document.querySelectorAll('[data-card-illustration]').forEach(image=>{
+  const alt=CARD_ILLUSTRATIONS[image.dataset.cardIllustration].alt;
+  image.alt=alt[activeLanguage]||alt.es;
+ });
  document.querySelectorAll('[data-set-menu-es]').forEach(node=>{node.textContent=english?node.dataset.setMenuEn:node.dataset.setMenuEs;});
  document.querySelectorAll('[data-source-label-es]').forEach(node=>{node.textContent=(english?node.dataset.sourceLabelEn:node.dataset.sourceLabelEs)+' ↗';});
  document.querySelectorAll('[data-source-audit-title]').forEach(node=>{node.textContent=english?'Source documentation (expand)':'Documentación de fuentes (desplegar)';});
@@ -394,13 +399,6 @@ function refreshDishExplanations(){
  document.querySelectorAll('[data-group-menu-dessert]').forEach(node=>{if(node.firstChild?.nodeType===Node.TEXT_NODE)node.firstChild.textContent=english?'Dessert: ':'Postre: ';});
  const help=el('portion-help');if(help)help.hidden=!english;
 }
-const DISH_ICONS={
- flamenquin:'🥩',salmorejo:'🥣','rabo de toro':'🍲',croquetas:'🍘',
- mazamorra:'🥣',carrillada:'🍖',berenjenas:'🍆',pisto:'🍳',
- tostadas:'🥖',churros:'🍩',molletes:'🥪',cafe:'☕',
- chocolate:'🍫',pasteles:'🧁',tartas:'🍰',tapas:'🍢',tortilla:'🍳'
-};
-function dishIcon(name){return DISH_ICONS[clean(name)]||'🍴'}
 const MODE_KEY='helio-gastro-meal-mode-v1';
 function serviceMenus(p){
  const specific=p.menus.filter(m=>m.service===state.mode);
@@ -415,6 +413,7 @@ function updateMealMode(mode,{reset=true}={}){
  // Reset comparisons only on a genuine user-facing service switch, not on startup/restore.
  if(reset && state.mode!==mode)state.selected.clear();
  state.mode=mode;
+ el('manolo-traditional-note').hidden=true;
  try{localStorage.setItem(MODE_KEY,mode)}catch{}
  const cfg=MODE_CONFIG[mode];
  for(const btn of document.querySelectorAll('[data-service]')){
@@ -429,7 +428,7 @@ function updateMealMode(mode,{reset=true}={}){
  for(const [value,label] of cfg.portions){const opt=document.createElement('option');opt.value=value;opt.textContent=label;portion.append(opt)}
  portion.value=cfg.portions.some(([v])=>v===oldPortion)?oldPortion:'';
  portion.disabled=el('price-scope').value==='meal';
- el('dish').placeholder=cfg.placeholder;
+ syncAdvancedFilters();
  el('budget-label').textContent=mode==='desayuno'?'Presupuesto de desayuno':mode==='merienda'?'Presupuesto de merienda':'Presupuesto máximo';
  const documented=state.places.filter(p=>p.menus.some(m=>m.service===mode)).length;
  const serviceMessage=documented
@@ -441,9 +440,15 @@ function updateMealMode(mode,{reset=true}={}){
   ?serviceMessage
   :'Se muestran cartas generales para explorar opciones. No confirman que el local sirva este plato a la hora elegida.';
  const dishSuggestions=el('dish-suggestions-list');dishSuggestions.replaceChildren();
- for(const dish of cfg.dishes){const btn=document.createElement('button');btn.type='button';btn.textContent=dish;btn.addEventListener('click',()=>{el('dish').value=dish;el('dish').focus()});dishSuggestions.append(btn)}
+ for(const dish of cfg.dishes){
+  const button=document.createElement('button');button.type='button';button.textContent=dish;button.dataset.dish=dish;
+  dishSuggestions.append(button);
+ }
  renderRecommendations();
+ renderQuickCategories();
+ el('recommendations-heading').textContent=mode==='comida'||mode==='cena'?'Sabores de Córdoba':'Ideas para tu momento';
  if(reset){
+  el('direct-dish').value='';
   el('dish').value='';el('place-name').value='';
   state.searched=state.selected.size>0;state.filtered=[];state.currentDetailId=null;
   el('results-section').hidden=true;el('compare-section').hidden=state.selected.size===0;el('detail-section').hidden=true;
@@ -452,6 +457,8 @@ function updateMealMode(mode,{reset=true}={}){
   updateQuickNav();
   try{localStorage.removeItem(SEARCH_KEY)}catch{}
  }
+ syncDishSuggestions();
+ syncBudgetNotice();
 }
 
 const fmt=n=>typeof n==='number'?new Intl.NumberFormat('es-ES',{style:'currency',currency:'EUR'}).format(n):'No disponible';
@@ -473,7 +480,11 @@ function normalizePlace(raw){
   &&m.dishes.every(d=>typeof d==='string')
   &&m.dishPrices.every(item=>item&&typeof item.dish==='string'
    &&Number.isFinite(item.eur)&&item.eur>=0))
-  .map(m=>({...m,service:Object.hasOwn(SERVICE_TYPES,m.service)?m.service:'general'}));
+  .map(m=>({...m,
+   tapasSection:/^tapas(?: frias| calientes)?$/.test(clean(m.service).trim()),
+   tapasTemperature:documentedTapaTemperature(m.service),
+   service:Object.hasOwn(SERVICE_TYPES,m.service)?m.service:'general'
+  }));
  const allDishes=[...new Set(safeMenus.flatMap(m=>m.dishes))];
  const allPrices=safeMenus.filter(m=>!(raw.id==='rincon-beatillas' && m.menuCourses)).flatMap(m=>m.dishPrices.map(price=>({...price,service:m.service})));
  // Los menús cerrados de grupo no representan precios individuales comparables.
@@ -490,7 +501,11 @@ function validPlace(p){
 function dishPrices(p){return(Array.isArray(p.dishPrices)?p.dishPrices:[]).filter(d=>typeof d.dish==='string'&&Number.isFinite(d.eur)&&d.eur>=0)}
 const PORTIONS={unidad:'Unidad',tapa:'Tapa',media:'Media ración',racion:'Ración completa','media-tostada':'Media tostada','tostada-entera':'Tostada entera',combinado:'Combinado',desconocida:'Formato sin especificar'};
 function portionOf(item){
- if(PORTIONS[item.portion])return item.portion;
+ const declared=clean(item.portion).trim();
+ if(Object.hasOwn(PORTIONS,declared))return declared;
+ const aliases={'media racion':'media','1/2 racion':'media','racion entera':'racion','racion completa':'racion','media tostada':'media-tostada','tostada entera':'tostada-entera'};
+ if(Object.hasOwn(aliases,declared))return aliases[declared];
+ if(declared&&declared!=='precio unico')return 'desconocida';
  const name=clean(item.dish);
  if(/\bmedia(?:\s+racion)?\b/.test(name))return 'media';
  if(/\btapa\b/.test(name))return 'tapa';
@@ -498,7 +513,35 @@ function portionOf(item){
  if(/\bracion\b/.test(name))return 'racion';
  return 'desconocida';
 }
-function relevantPrices(p,term,portion=''){return dishPrices(p).filter(d=>(!term||clean(d.dish).includes(term))&&(!portion||portionOf(d)===portion))}
+const QUICK_CATEGORIES=[
+ {term:'Pizza',label:'Pizzas',pattern:/^pizzas?\b/},
+ {term:'Hamburguesa',label:'Hamburguesas',pattern:/^(?:mini\s*)?hamburguesas?\b/},
+ {term:'Tarta de queso',label:'Tartas de queso',pattern:/^tartas? de queso\b/}
+];
+function searchDishMatches(name,term){
+ const category=QUICK_CATEGORIES.find(entry=>clean(entry.term)===term);
+ return category?category.pattern.test(clean(name).trim()):clean(name).includes(term);
+}
+function placeMatchesDish(p,term){
+ return !term||serviceDishes(p).some(name=>searchDishMatches(name,term))||servicePrices(p).some(item=>searchDishMatches(item.dish,term));
+}
+function renderQuickCategories(){
+ const section=el('quick-categories'),actions=section.querySelector('.category-actions');
+ actions.replaceChildren();
+ for(const category of QUICK_CATEGORIES){
+  if(!state.places.some(p=>placeMatchesDish(p,clean(category.term))))continue;
+  const button=document.createElement('button');
+  button.type='button';
+  button.textContent=category.label;
+  button.addEventListener('click',()=>{
+   el('direct-dish').value=category.term;
+   el('direct-search').requestSubmit();
+  });
+  actions.append(button);
+ }
+ section.hidden=!actions.childElementCount;
+}
+function relevantPrices(p,term,portion=''){return dishPrices(p).filter(d=>(!term||searchDishMatches(d.dish,term))&&(!portion||portionOf(d)===portion))}
 function lowestPrice(p,scope,term,portion=''){
  if(scope==='meal')return Number.isFinite(p.mealCostEur)?p.mealCostEur:null;
  const arr=relevantPrices(p,term,portion);return arr.length?Math.min(...arr.map(x=>x.eur)):null;
@@ -540,13 +583,13 @@ function localizedPortion(value){
  return es; // Translation is applied by the language layer, enabling reliable EN → ES.
 }
 function variantLabel(item){const key=variantOf(item);return VARIANT_NAMES[key]||'Variante sin categorizar'}
-function priceDescriptor(item){
+function priceDescriptor(item,{compact=false}={}){
  const format=portionOf(item);
  const dishHasFormat=/\b(media(?:\s+racion)?|racion|tapa|unidad)\b/.test(clean(item.dish));
- return item.dish+' — '+fmt(item.eur)+(dishHasFormat?'':' · '+localizedPortion(format));
+ return item.dish+' — '+fmt(item.eur)+(dishHasFormat||(compact&&format==='desconocida')?'':' · '+localizedPortion(format));
 }
 function comparableHighlights(items,term,portion){
- if(!term||!portion)return new Set();
+ if(!term||!portion||portion==='desconocida')return new Set();
  const groups=new Map();
  for(const p of items){
   for(const item of relevantPrices(p,term,portion)){
@@ -563,6 +606,18 @@ function comparableHighlights(items,term,portion){
  }
  return highlights;
 }
+function markUnknownFormat(element,noteId){
+ element.setAttribute('aria-describedby',noteId);
+ const mark=document.createElement('sup');mark.className='format-marker';mark.setAttribute('aria-hidden','true');mark.textContent='*';
+ const text=document.createElement('span');text.className='format-sr';text.textContent='Formato sin especificar';
+ element.append(mark,text);
+}
+function unknownFormatNote(id){
+ const note=document.createElement('p');
+ note.id=id;note.className='note format-note';
+ note.textContent='El asterisco indica un precio publicado sin formato de ración documentado. Estos importes no sirven para comparar raciones.';
+ return note;
+}
 function placeMapUrl(p){
  return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(p.name+', '+p.address);
 }
@@ -573,9 +628,26 @@ function routeMapUrl(places){
  const waypoints=addresses.slice(1,-1).map(encodeURIComponent).join('%7C');
  return 'https://www.google.com/maps/dir/?api=1&origin='+origin+'&destination='+destination+(waypoints?'&waypoints='+waypoints:'')+'&travelmode=walking';
 }
+function uiIcon(name){
+ const namespace='http://www.w3.org/2000/svg';
+ const svg=document.createElementNS(namespace,'svg'),use=document.createElementNS(namespace,'use');
+ svg.setAttribute('class','ui-icon');
+ svg.setAttribute('aria-hidden','true');
+ svg.setAttribute('focusable','false');
+ use.setAttribute('href','./assets/ui/icons.svg#'+name);
+ svg.append(use);
+ return svg;
+}
+function setIconLabel(node,icon,label){
+ node.replaceChildren(uiIcon(icon),label);
+}
+function setCompareButton(button,selected){
+ setIconLabel(button,selected?'minus':'scale',selected?'Quitar del comparador':'Comparar');
+ button.setAttribute('aria-pressed',String(selected));
+}
 function mapButton(p){
  const button=document.createElement('button');button.type='button';button.className='map-button';
- button.textContent='📍 Ver mapa';button.addEventListener('click',()=>showMap(p));return button;
+ setIconLabel(button,'pin','Ver mapa');button.addEventListener('click',()=>showMap(p));return button;
 }
 function showMap(p){
  const dialog=el('map-dialog'),frame=el('map-frame');
@@ -596,7 +668,7 @@ function routeButton(places){
  if(!href)return null;
  const link=document.createElement('a');link.className='map-route-link';link.href=href;
  link.target='_blank';link.rel='noopener noreferrer';
- link.textContent='🚶 Ruta a pie entre '+places.length+' tabernas ↗';
+ setIconLabel(link,'route','Ruta a pie entre '+places.length+' tabernas');
  return link;
 }
 
@@ -619,8 +691,9 @@ function toggleFavorite(id){
 }
 function favoriteButton(p){
  const btn=document.createElement('button');btn.type='button';btn.className='fav-button';
- btn.textContent=(state.favorites.has(p.id)?'★ Guardado':'☆ Guardar');
- btn.setAttribute('aria-pressed',String(state.favorites.has(p.id)));
+ const saved=state.favorites.has(p.id);
+ setIconLabel(btn,'bookmark',saved?'Guardado':'Guardar');
+ btn.setAttribute('aria-pressed',String(saved));
  btn.addEventListener('click',()=>toggleFavorite(p.id));
  return btn;
 }
@@ -628,20 +701,43 @@ function renderFavorites(){
  const list=el('favorite-list');list.replaceChildren();
  const selected=state.places.filter(p=>state.favorites.has(p.id));
  el('favorite-count').textContent=selected.length+' favoritos';
- if(!selected.length){const msg=document.createElement('p');msg.className='note';msg.textContent='Aún no tienes tabernas guardadas. Marca ☆ en los resultados o fichas.';list.append(msg);return}
+ if(!selected.length){const msg=document.createElement('p');msg.className='note';msg.textContent='Aún no tienes tabernas guardadas. Pulsa Guardar en los resultados o fichas.';list.append(msg);return}
  for(const p of selected){
   const row=document.createElement('div');row.className='favorite-entry';
   const name=document.createElement('strong');name.textContent=p.name;
-  const open=document.createElement('button');open.type='button';open.textContent='Ver ficha';open.addEventListener('click',()=>showPlace(p));
+  const open=document.createElement('button');open.type='button';setIconLabel(open,'arrow','Ver ficha');open.addEventListener('click',()=>showPlace(p));
   row.append(name,open,mapButton(p),favoriteButton(p));list.append(row);
  }
 }
 const SEARCH_KEY='helio-gastro-search-v1';
 const SEARCH_FIELDS=['place-name','dish','budget','price-scope','portion','area','include-unknown','price-kind','sort'];
-function saveSearch(){
- if(!state.searched)return;
+function syncAdvancedFilters(){
+ const status=el('advanced-filter-status');
+ if(!status)return;
+ status.hidden=!(el('price-scope').value==='meal'||el('area').value||
+  (!el('portion').disabled&&el('portion').value)||!el('include-unknown').checked||
+  el('price-kind').value||el('sort').value!=='name');
+}
+function syncDishSuggestions(){
+ const dish=clean(el('dish').value.trim());
+ for(const button of el('dish-suggestions-list').querySelectorAll('button[data-dish]')){
+  button.setAttribute('aria-pressed',String(clean(button.dataset.dish)===dish));
+ }
+}
+function syncBudgetNotice(){
+ const budget=el('budget'),limited=budget.value!=='';
+ el('budget-explain').hidden=!limited;
+ if(limited)budget.setAttribute('aria-describedby','budget-explain');
+ else budget.removeAttribute('aria-describedby');
+}
+function searchFormValues(){
  const form={};
  for(const id of SEARCH_FIELDS){const node=el(id);form[id]=node.type==='checkbox'?node.checked:node.value}
+ return form;
+}
+function saveSearch(){
+ if(!state.searched)return;
+ const form=searchFormValues();
  try{localStorage.setItem(SEARCH_KEY,JSON.stringify({form,selected:[...state.selected],mode:state.mode}))}catch{}
 }
 function restoreSearch(){
@@ -656,6 +752,7 @@ function restoreSearch(){
   if(typeof saved==='string'&&[...node.options].some(opt=>opt.value===saved))node.value=saved;
  }
  el('portion').disabled=el('price-scope').value==='meal';
+ el('direct-dish').value=el('dish').value;
  state.selected=new Set((Array.isArray(snapshot.selected)?snapshot.selected:[])
   .filter(id=>typeof id==='string'&&state.places.some(p=>p.id===id)).slice(0,3));
  filter(null,true);
@@ -681,18 +778,33 @@ function draw(){
   const group=state.appliedTerm?groupFor(p):'all';
   if(group!==previousGroup){
    const heading=document.createElement('h3');heading.className='result-group-title';
-   heading.textContent=!state.appliedTerm?'Establecimientos encontrados':group==='verified'?'✓ Con precio documentado'+(state.appliedBudget!==null?' dentro del presupuesto':''):
+   heading.textContent=!state.appliedTerm?'Establecimientos encontrados':group==='verified'?'Con precio documentado'+(state.appliedBudget!==null?' dentro del presupuesto':''):
      group==='unknown'?'También ofrecen el plato · Precio pendiente de confirmar':'Precio superior al presupuesto';
    list.append(heading);previousGroup=group;
   }
   const card=document.createElement('article');card.className='place';
   const title=document.createElement('h3');title.textContent=p.name;card.append(title);
-  const details=document.createElement('p');details.textContent='📍 '+p.area;card.append(details);
+  const details=document.createElement('p');setIconLabel(details,'pin',p.area);card.append(details);
   const serviceNote=document.createElement('p');serviceNote.className='service-notice';serviceNote.textContent=serviceKnown(p)?'Carta específica registrada · horario pendiente de confirmar':'Carta general · servicio y horarios sin verificar';card.append(serviceNote);
   if(state.appliedTerm){
-   const matches=p.dishes.filter(d=>clean(d).includes(state.appliedTerm));
-   const matched=document.createElement('p');matched.className='matching-dishes';
-   matched.textContent=matches.length?'🍴 Plato encontrado: '+matches.join(' · '):'Coincidencia con el nombre del local';
+   const matches=p.dishes.filter(d=>searchDishMatches(d,state.appliedTerm));
+   const matched=document.createElement(matches.length?'div':'p');
+   matched.className='matching-dishes';
+   if(matches.length){
+    const heading=document.createElement('strong');
+    heading.className='matching-dishes-label';
+    setIconLabel(heading,'cutlery','Platos encontrados');
+    const dishList=document.createElement('ul');
+    for(const dish of matches){
+     const item=document.createElement('li');
+     item.dataset.keepDishSpanish='';
+     item.textContent=dish;
+     dishList.append(item);
+    }
+    matched.append(heading,dishList);
+   }else{
+    matched.textContent='Coincidencia con el nombre del local';
+   }
    card.append(matched);
   } else {
    const dishes=document.createElement('p');
@@ -713,8 +825,9 @@ function draw(){
   }else if(chosen.length){
    const cheapest=[...chosen].sort((a,b)=>a.eur-b.eur)[0];
    const main=document.createElement('p');main.className='result-main-price';
-   main.textContent='Desde '+fmt(cheapest.eur)+' · '+(state.appliedPortion?localizedPortion(state.appliedPortion):'Precio de plato publicado');
-   card.append(main);
+   main.textContent='Desde '+fmt(cheapest.eur)+' · '+(state.appliedPortion&&state.appliedPortion!=='desconocida'?localizedPortion(state.appliedPortion):'Precio de plato publicado');
+   if(portionOf(cheapest)==='desconocida')markUnknownFormat(main,'result-format-note');
+   card.insertBefore(main,card.querySelector('.matching-dishes'));
   }else{
    const pending=document.createElement('p');pending.className='result-pending';
    pending.textContent='Precio del plato'+(state.appliedPortion?' en este formato':'')+' pendiente de confirmar';
@@ -728,9 +841,8 @@ function draw(){
    const meal=document.createElement('p');meal.textContent='Coste de comida por persona: '+fmt(p.mealCostEur);card.append(meal);
   }
   const detailButton=document.createElement('button');detailButton.type='button';detailButton.className='detail-button';
-  detailButton.textContent='Ver ficha completa';detailButton.addEventListener('click',()=>showPlace(p));card.append(detailButton,mapButton(p));
-  const button=document.createElement('button');button.type='button';button.textContent=state.selected.has(p.id)?'✓ Quitar del comparador':'+ Comparar';
-  button.setAttribute('aria-pressed',String(state.selected.has(p.id)));
+  setIconLabel(detailButton,'arrow','Ver ficha completa');detailButton.addEventListener('click',()=>showPlace(p));card.append(detailButton,mapButton(p));
+  const button=document.createElement('button');button.type='button';setCompareButton(button,state.selected.has(p.id));
   button.addEventListener('click',()=>{
    if(state.selected.has(p.id))state.selected.delete(p.id);
    else if(state.selected.size<3)state.selected.add(p.id);
@@ -738,6 +850,7 @@ function draw(){
    draw();compare();saveSearch();updateQuickNav();
   });card.append(button,favoriteButton(p));list.append(card);
  }
+ if(list.querySelector('.format-marker'))list.prepend(unknownFormatNote('result-format-note'));
 }
 function menuDishName(item){
  const name=item.dish.replace(/\s*\((?:media(?:\s+ración)?|ración|tapa|unidad|media)\)\s*$/i,'').trim();
@@ -920,9 +1033,9 @@ function renderVenueMenuSections(panel,p){
   panel.append(notice);
  }
  // Índice de secciones: navegación local sin ocultar platos ni modificar datos.
- const sectionNavId=p.id==='bar-moriles-original'||p.id==='moriles-casa-fina';
+ const sectionNavId=p.menuSections.length>1&&p.menuSections.every(section=>section.title?.trim()&&section.items?.length);
  if(sectionNavId){
-  const nav=document.createElement('nav');nav.className='venue-section-nav';nav.setAttribute('aria-label','Secciones de la carta');
+  const nav=document.createElement('nav');nav.className='venue-section-nav';nav.id='venue-section-index';nav.tabIndex=-1;nav.setAttribute('aria-label','Secciones de la carta');
   const navTitle=document.createElement('p');navTitle.className='venue-section-nav-title';navTitle.textContent='Ir a sección';nav.append(navTitle);
   const buttons=document.createElement('div');buttons.className='venue-section-nav-buttons';
   p.menuSections.forEach((section,index)=>{
@@ -930,7 +1043,7 @@ function renderVenueMenuSections(panel,p){
    button.dataset.venueMenuSection=section.title;
    button.dataset.venueMenuSectionEn=section.titleEn||VENUE_MENU_SECTION_EN[section.title]||section.title;
    button.textContent=window.HelioGastroLanguage?.get()==='en'?button.dataset.venueMenuSectionEn:section.title;
-   button.addEventListener('click',()=>{const target=el('venue-section-'+p.id+'-'+index);if(target){target.scrollIntoView({behavior:'smooth',block:'start'});target.focus({preventScroll:true});}});
+   button.addEventListener('click',()=>{const target=el('venue-section-'+p.id+'-'+index);if(target){target.scrollIntoView({block:'start'});target.focus({preventScroll:true});}});
    buttons.append(button);
   });
   nav.append(buttons);panel.append(nav);
@@ -947,7 +1060,12 @@ function renderVenueMenuSections(panel,p){
     const row=document.createElement('div');row.className='menu-price-row';
     const label=document.createElement('span');label.dataset.venueMenuPriceLabel=price.label||price.portion||'';label.textContent=venueMenuPriceLabel(label.dataset.venueMenuPriceLabel,window.HelioGastroLanguage?.get()==='en');
     const amount=document.createElement('strong');amount.textContent=fmt(price.eur);
-    if(label.dataset.venueMenuPriceLabel==='precio indicado')row.append(amount);else row.append(label,amount);entry.append(row);
+    const formatLabel=clean(label.dataset.venueMenuPriceLabel).trim();
+    if(['','precio indicado','precio unico','formato sin especificar','formato no especificado'].includes(formatLabel)){
+     if(formatLabel==='precio unico')row.append(label);
+     markUnknownFormat(amount,'detail-format-note');row.append(amount);
+    }else row.append(label,amount);
+    entry.append(row);
    }
    if(dish.priceRangeEur && Number.isFinite(dish.priceRangeEur.min) && Number.isFinite(dish.priceRangeEur.max)){
     const range=document.createElement('div');range.className='menu-price-row';
@@ -959,6 +1077,11 @@ function renderVenueMenuSections(panel,p){
    list.append(entry);
   }
   panel.append(list);
+  if(sectionNavId){
+   const back=document.createElement('button');back.type='button';back.className='venue-section-nav-button menu-index-return';setIconLabel(back,'back','Volver al índice');
+   back.addEventListener('click',()=>{const index=el('venue-section-index');index.scrollIntoView({block:'start'});index.focus({preventScroll:true});});
+   panel.append(back);
+  }
   if(section.note){const foot=document.createElement('p');foot.className='note';foot.dataset.venueMenuNoteEs=section.note;foot.dataset.venueMenuNoteEn=section.noteEn||section.note;foot.textContent=window.HelioGastroLanguage?.get()==='en'?foot.dataset.venueMenuNoteEn:foot.dataset.venueMenuNoteEs;panel.append(foot);}
  }
 }
@@ -967,14 +1090,26 @@ function showPlace(p,scroll=true){
  el('detail-sticky-name').textContent=p.name;
  const panel=el('detail-content');panel.replaceChildren();
  const title=document.createElement('h2');title.id='detail-title';title.tabIndex=-1;title.textContent=p.name;panel.append(title,favoriteButton(p));
- const address=document.createElement('p');if(p.addressEn){address.dataset.bilingualEs='📍 '+p.address;address.dataset.bilingualEn='📍 '+p.addressEn;}address.textContent='📍 '+p.address;panel.append(address);
+ const address=document.createElement('p'),addressText=document.createElement('span');
+ if(p.addressEn){addressText.dataset.bilingualEs=p.address;addressText.dataset.bilingualEn=p.addressEn;}
+ addressText.textContent=p.address;address.append(uiIcon('pin'),addressText);panel.append(address);
+ const sourcesLink=document.createElement('a');
+ sourcesLink.className='venue-sources-jump';sourcesLink.href='#venue-sources';setIconLabel(sourcesLink,'menu','Fuentes de la carta');
+ sourcesLink.addEventListener('click',event=>{
+  event.preventDefault();
+  const target=el('venue-sources');
+  target.scrollIntoView({block:'start'});
+  target.focus({preventScroll:true});
+ });
+ panel.append(sourcesLink);
+ window.HelioGastroVenueHours?.attach(panel,p.id);
  if(p.openingHoursNote){
   const hours=document.createElement('p');hours.className='service-notice';
   if(p.openingHoursNoteEn){hours.dataset.bilingualEs='🕒 '+p.openingHoursNote;hours.dataset.bilingualEn='🕒 '+p.openingHoursNoteEn;}hours.textContent='🕒 '+p.openingHoursNote;panel.append(hours);
  }
 
  if(Array.isArray(p.locations)&&p.locations.length){
-  const heading=document.createElement('h3');heading.dataset.bilingualEs='📍 Establecimientos de Roldán en Córdoba';heading.dataset.bilingualEn='📍 Roldán locations in Córdoba';heading.textContent=heading.dataset.bilingualEs;panel.append(heading);
+  const heading=document.createElement('h3');setIconLabel(heading,'pin','Establecimientos de Roldán en Córdoba');panel.append(heading);
   const note=document.createElement('p');note.className='service-notice';note.dataset.bilingualEs='La carta y los precios indicados corresponden a las cafeterías, excepto Centro. Las panaderías se listan solo como ubicaciones; su oferta puede ser diferente.';note.dataset.bilingualEn='The menu and prices shown apply to the cafés, except Centro. Bakeries are listed as locations only; their selection may differ.';note.textContent=note.dataset.bilingualEs;panel.append(note);
   const list=document.createElement('ul');
   for(const place of p.locations){
@@ -986,7 +1121,7 @@ function showPlace(p,scroll=true){
   panel.append(list);
  }else{
   panel.append(mapButton(p));
-  const map=document.createElement('a');map.href=placeMapUrl(p);map.target='_blank';map.rel='noopener noreferrer';map.textContent='Abrir en Google Maps ↗';panel.append(map);
+  const map=document.createElement('a');map.href=placeMapUrl(p);map.target='_blank';map.rel='noopener noreferrer';setIconLabel(map,'external','Abrir en Google Maps');panel.append(map);
  }
  if(p.menuPriceNotice){const notice=document.createElement('p');notice.className='service-notice';if(p.menuPriceNoticeEn){notice.dataset.bilingualEs=p.menuPriceNotice;notice.dataset.bilingualEn=p.menuPriceNoticeEn;}notice.textContent=p.menuPriceNotice;panel.append(notice);}
  if(Array.isArray(p.officialSetMenus)&&p.officialSetMenus.length){
@@ -1026,7 +1161,10 @@ function showPlace(p,scroll=true){
     const amount=document.createElement('strong');amount.textContent=fmt(price.eur);
     if(p.id==='la-piscatoria'&&group.prices.length===1&&portionOf(price)==='unidad')portion.textContent='';
     if(p.id==='la-piscatoria'&&!portion.textContent)row.classList.add('price-only-row');
-    row.append(portion,amount);entry.append(row);
+    if(portionOf(price)==='desconocida'){
+     markUnknownFormat(amount,'detail-format-note');row.append(amount);
+    }else row.append(portion,amount);
+    entry.append(row);
    }
    list.append(entry);
    if(p.id==='la-piscatoria'&&clean(group.label)==='tostada gratinada'&&Array.isArray(p.menuNotes)&&p.menuNotes.length){
@@ -1044,6 +1182,8 @@ function showPlace(p,scroll=true){
   const msg=document.createElement('p');msg.className='note';msg.textContent='Aún no tenemos especialidades registradas para este local.';panel.append(msg);
  }
  }
+ const firstUnknown=panel.querySelector('.menu-groups:has(.format-marker)');
+ if(firstUnknown)firstUnknown.before(unknownFormatNote('detail-format-note'));
  if(Number.isFinite(p.mealCostEur)){const total=document.createElement('p');total.textContent='Comida completa por persona: '+fmt(p.mealCostEur);panel.append(total)}
  else{const caveat=document.createElement('p');caveat.className='note';caveat.textContent='El coste total de comer aquí no está documentado. Los precios de platos no incluyen necesariamente bebida ni extras.';panel.append(caveat)}
  if(Array.isArray(p.groupMenus)&&p.groupMenus.length){
@@ -1064,7 +1204,7 @@ function showPlace(p,scroll=true){
    panel.append(card);
   }
  }
- const sources=document.createElement('h3');sources.textContent='Fuentes y fecha';panel.append(sources);
+ const sources=document.createElement('h3');sources.id='venue-sources';sources.tabIndex=-1;sources.textContent='Fuentes y fecha';panel.append(sources);
  const checked=document.createElement('p');checked.textContent='Última consulta: '+(p.checkedAt||'Sin fecha registrada');panel.append(checked);
  if(Array.isArray(p.officialMenuLinks)&&p.officialMenuLinks.length){
   const details=document.createElement('details');details.className='source-details';
@@ -1085,7 +1225,8 @@ function compare(){
  if(!items.length){panel.className='empty';panel.textContent='Selecciona establecimientos de los resultados para compararlos aquí.';return}
  panel.className='';
  const term=state.appliedTerm;
- const pricesOnly=state.appliedScope==='dish'&&!!state.appliedPortion;
+ if(term==='tapas'){renderTapasComparison(panel,items);return}
+ const pricesOnly=state.appliedScope==='dish'&&!!state.appliedPortion&&state.appliedPortion!=='desconocida';
  const highlights=pricesOnly?comparableHighlights(items,term,state.appliedPortion):new Set();
  const advisory=document.createElement('p');advisory.className='note';
  advisory.textContent=pricesOnly?'Se comparan solo variantes coincidentes y el mismo formato declarado. «Menor precio» requiere al menos dos locales con esa variante. La cantidad real puede variar.':term?'Precios publicados para «'+(el('dish').value.trim()&&clean(el('dish').value.trim())===term?el('dish').value.trim():term)+'». Los formatos pueden ser distintos y no deben compararse como cantidades equivalentes.':'Selecciona un plato y un formato concreto para identificar precios comparables entre variantes equivalentes.';
@@ -1101,7 +1242,9 @@ function compare(){
   for(const item of prices){
    const li=document.createElement('li');
    const winning=highlights.has(p.id+'|'+item.dish+'|'+item.eur);
-   li.textContent=priceDescriptor(item)+' · '+variantLabel(item)+(winning?' · ★ Menor precio comparable':'');
+   const label=priceDescriptor(item,{compact:true})+' · '+variantLabel(item)+(winning?' · Menor precio comparable':'');
+   if(winning)setIconLabel(li,'check',label);else li.textContent=label;
+   if(portionOf(item)==='desconocida')markUnknownFormat(li,'compare-format-note');
    if(winning)li.className='best-comparable';
    ul.append(li);
   }
@@ -1117,14 +1260,78 @@ function compare(){
   const foot=document.createElement('p');foot.textContent=p.sources.length+' fuente(s) · Revisado '+(p.checkedAt||'sin fecha');box.append(foot);
   panel.append(box);
  }
+ if(panel.querySelector('.format-marker'))advisory.after(unknownFormatNote('compare-format-note'));
+}
+function renderTapasComparison(panel,places){
+ const entries=tapasEntries().priced.filter(entry=>state.selected.has(entry.p.id));
+ const dishKey=entry=>clean(entry.item.dish).replace(/\s*\(tapa\)\s*$/,'').trim();
+ const choices=new Map(entries.map(entry=>[dishKey(entry),entry.item.dish]));
+ const controls=document.createElement('div');controls.className='tapas-compare-controls';
+ const dish=document.createElement('select');dish.id='compare-tapa-dish';
+ const format=document.createElement('select');format.id='compare-tapa-format';
+ function addControl(select,text){
+  const label=document.createElement('label');label.htmlFor=select.id;label.textContent=text;
+  controls.append(label,select);
+ }
+ function addOption(select,value,text,original=false){
+  const option=document.createElement('option');option.value=value;option.textContent=text;
+  if(original)option.dataset.keepOriginal='';
+  select.append(option);
+ }
+ addControl(dish,'Plato concreto');
+ addOption(dish,'','Elige un plato');
+ for(const [key,name] of [...choices].sort((a,b)=>a[1].localeCompare(b[1],'es')))addOption(dish,key,name,true);
+ addControl(format,'Formato documentado');
+ panel.append(controls);
+ const route=routeButton(places);if(route)panel.append(route);
+ const status=document.createElement('p');status.className='note';status.setAttribute('role','status');panel.append(status);
+ const outputs=new Map();
+ for(const place of places){
+  const box=document.createElement('div');box.className='compare-place';
+  const title=document.createElement('h3');title.textContent=place.name;
+  const list=document.createElement('ul');list.hidden=true;
+  box.append(title,mapButton(place),list);panel.append(box);outputs.set(place.id,list);
+ }
+ function updatePrices(){
+  const matching=dish.value&&format.value?entries.filter(entry=>dishKey(entry)===dish.value&&entry.format===format.value):[];
+  const comparable=new Set(matching.map(entry=>entry.p.id)).size>=2;
+  status.textContent=!dish.value?'Elige un plato concreto para comparar sus precios.':format.disabled?'El plato no tiene un formato equivalente documentado en al menos dos locales seleccionados.':!comparable?'Elige un formato documentado común a dos locales.':'Se muestran precios del mismo plato y formato documentado. La cantidad real puede variar.';
+  for(const [id,list] of outputs){
+   list.replaceChildren();
+   for(const entry of comparable?matching.filter(entry=>entry.p.id===id):[]){
+    const line=document.createElement('li');line.textContent=fmt(entry.item.eur);list.append(line);
+   }
+   list.hidden=!list.childElementCount;
+  }
+ }
+ function updateFormats(){
+  format.replaceChildren();addOption(format,'','Elige un formato');
+  const formats=new Map();
+  for(const entry of entries.filter(entry=>dishKey(entry)===dish.value)){
+   if(!formats.has(entry.format))formats.set(entry.format,new Set());
+   formats.get(entry.format).add(entry.p.id);
+  }
+  for(const [key,ids] of formats)if(ids.size>=2)addOption(format,key,key==='tapa'?'Tapa':key,key!=='tapa');
+  format.disabled=format.options.length===1;updatePrices();
+ }
+ dish.addEventListener('change',updateFormats);
+ format.addEventListener('change',updatePrices);
+ updateFormats();
 }
 function getDishCoverage(term, area, nameQuery='') {
- const matches=state.places.filter(p=>serviceMenus(p).length>0&&(!nameQuery||clean(p.name).includes(nameQuery))&&(!term||clean(serviceDishes(p).join(' ')+' '+servicePrices(p).map(d=>d.dish).join(' ')).includes(term))&&(!area||p.area===area));
- const priced=matches.filter(p=>servicePrices(p).some(d=>!term||clean(d.dish).includes(term)));
+ const matches=state.places.filter(p=>serviceMenus(p).length>0&&(!nameQuery||clean(p.name).includes(nameQuery))&&placeMatchesDish(p,term)&&(!area||p.area===area));
+ const priced=matches.filter(p=>servicePrices(p).some(d=>!term||searchDishMatches(d.dish,term)));
  return {total:matches.length, priced:priced.length, unpriced:matches.length-priced.length};
 }
+let appliedSearch=null;
 function filter(event,restoring=false){
  if(event)event.preventDefault();
+ const mapNote=el('radar-map-note');if(mapNote)mapNote.hidden=true;
+ syncAdvancedFilters();
+ syncDishSuggestions();
+ syncBudgetNotice();
+ el('direct-dish').value=el('dish').value;
+ appliedSearch={mode:state.mode,form:searchFormValues()};
  const dish=clean(el('dish').value.trim()),nameQuery=clean(el('place-name').value.trim()),max=el('budget').value?Number(el('budget').value):null;
  state.appliedTerm=dish;state.appliedBudget=max;state.appliedScope=el('price-scope').value;state.appliedPortion=state.appliedScope==='dish'?el('portion').value:'';state.searched=true;
  el('results-section').hidden=false;
@@ -1135,7 +1342,7 @@ function filter(event,restoring=false){
  state.filtered=state.places.filter(p=>{
   if(!serviceMenus(p).length)return false;
   if(nameQuery&&!clean(p.name).includes(nameQuery)&&!(p.id==='la-piscatoria'&&['picastoria','piscatoria','la picastoria'].includes(nameQuery)))return false;
-  if(dish&&!clean(serviceDishes(p).join(' ')+' '+servicePrices(p).map(d=>d.dish).join(' ')).includes(dish))return false;
+  if(!placeMatchesDish(p,dish))return false;
   if(area&&p.area!==area)return false;
   const price=lowestPrice(p,scope,dish,state.appliedPortion);
   if(max!==null&&(price>max||(price===null&&!includeUnknown)))return false;
@@ -1157,15 +1364,14 @@ function filter(event,restoring=false){
  if(dish){
   coverageBox.textContent='En nuestra base actual: '+coverage.total+' local(es) con «'+el('dish').value.trim()+'» registrado(s); '+coverage.priced+' con precio de ese plato documentado y '+coverage.unpriced+' sin precio. Esto NO representa todos los bares de Córdoba.';
  }
+ const illustration=resultDishIllustration(dish,state.filtered);
+ el('result-dish-visual').replaceChildren();
+ if(illustration){
+  el('result-dish-visual').append(createDishVisual('./assets/dishes/'+illustration));
+ }
  draw();compare();updateQuickNav();
  if(!restoring){saveSearch();el('results-section').scrollIntoView({behavior:'auto',block:'start'});el('results-heading').focus({preventScroll:true});}
 }
-const QUICK_DISHES=[
- {name:'Flamenquín',icon:'🥩'}, {name:'Croquetas',icon:'🍘'},
- {name:'Salmorejo',icon:'🥣'}, {name:'Rabo de toro',icon:'🍲'},
- {name:'Mazamorra',icon:'🥣'}, {name:'Carrillada',icon:'🍖'},
- {name:'Berenjenas',icon:'🍆'}, {name:'Pisto',icon:'🍳'}
-];
 const FOOD_CATEGORY_PATTERNS={
  'pescados y mariscos':/atun|bacalao|chipiron|rosada|sardina|anchoa|boqueron|salmon|merluza|gamba|langostino|pulpo|calamar|mejillon|pez espada|rape|lubina|dorada/,
  'carnes y asados':/solomillo|pluma iberica|cordero|lomo de vaca|chuleton|entrecot|costilla|asado|cochinillo|secreto iberico|presa iberica|codillo|parrilla/,
@@ -1187,24 +1393,113 @@ function recommendationDishMatches(dish,term){
  if(term==='tartas')return /\btarta(?:s)?\b/.test(value);
  return value.includes(term);
 }
+function documentedTapaTemperature(section){
+ const title=clean(section).trim();
+ if(title==='tapas frias')return 'cold';
+ if(title==='tapas calientes')return 'hot';
+ return '';
+}
+function tapasEntries(){
+ const matches=[],priced=[];
+ const namedTapa=name=>/^(?:tapa de |tapa$|tapas$)|\(tapa\)$/.test(clean(name).trim());
+ for(const p of state.places){
+  let listed=false;
+  for(const menu of serviceMenus(p)){
+   if(menu.dishes.some(name=>menu.tapasSection||namedTapa(name)))listed=true;
+   for(const item of menu.dishPrices){
+    const format=clean(item.portion).trim();
+    // El formato explícito prevalece sobre el nombre del plato o de la sección.
+    const isTapa=format?/^tapa(?: \(\d+ uds?\.\))?$/.test(format):menu.tapasSection||namedTapa(item.dish);
+    if(isTapa)priced.push({
+     p,item,portion:'tapa',variant:variantOf(item),temperature:menu.tapasTemperature,
+     format:format||'tapa'
+    });
+    listed||=isTapa;
+   }
+  }
+  if(listed)matches.push(p);
+ }
+ return {matches,priced};
+}
 function recommendationEntries(term){
+ if(term==='tapas')return tapasEntries();
  const matches=state.places.filter(p=>serviceDishes(p).some(d=>recommendationDishMatches(d,term))||servicePrices(p).some(d=>recommendationDishMatches(d.dish,term)));
  const priced=matches.flatMap(p=>servicePrices(p).filter(item=>recommendationDishMatches(item.dish,term)).map(item=>({p,item,portion:portionOf(item),variant:variantOf(item)})));
  return {matches,priced};
 }
+// Exact normalized recommendation names map to generic, shared illustrations, never venue photos.
+const DISH_ILLUSTRATIONS=Object.freeze({
+ 'flamenquin':'flamenquin.webp', 'salmorejo':'salmorejo.webp', 'rabo de toro':'rabo-de-toro.webp',
+ 'berenjenas':'berenjenas-con-miel.webp', 'mazamorra':'mazamorra.webp',
+ 'croquetas':'croquetas.webp', 'tortilla':'tortilla-de-patatas.webp', 'tortilla de patatas':'tortilla-de-patatas.webp',
+ 'boquerones fritos':'boquerones-fritos.webp', 'huevos rotos':'huevos-rotos.webp',
+ 'hamburguesa':'hamburguesa.webp', 'pizza':'pizza.webp', 'cachopo':'cachopo.webp',
+ 'ensaladilla':'ensaladilla-rusa.webp', 'ensaladilla rusa':'ensaladilla-rusa.webp',
+ 'nachos':'nachos.webp', 'tarta de queso':'tarta-de-queso.webp'
+});
+// Estas asociaciones se usan solo en tarjetas, nunca en los resultados de búsqueda.
+const CARD_ILLUSTRATIONS=Object.freeze({
+ "carrillada": {file:"carrillada-con-patatas.webp", alt:{"es":"Carrillada en salsa con patatas fritas","en":"Braised cheek in sauce with fries","fr":"Joue braisée en sauce avec des frites"}},
+ "pisto": {file:"pisto-cordobes.webp", alt:{"es":"Pisto de verduras en un plato de cerámica","en":"Vegetable pisto on a ceramic plate","fr":"Pisto de légumes dans une assiette en céramique"}},
+ "pescados y mariscos": {file:"pescados-y-mariscos.webp", alt:{"es":"Pescado a la plancha con limón, gambas al ajillo y mejillones","en":"Grilled fish with lemon, garlic prawns and mussels","fr":"Poisson grillé au citron, crevettes à l’ail et moules"}},
+ "carnes y asados": {file:"carnes-y-asados.webp", alt:{"es":"Ternera, pollo y costillas con sus guarniciones","en":"Roast beef, chicken and ribs with side dishes","fr":"Bœuf rôti, poulet et travers avec leurs accompagnements"}},
+ "bocadillos y sandwiches": {file:"bocadillos-y-sandwiches.webp", alt:{"es":"Bocadillos de jamón y de lomo y un sándwich mixto","en":"Serrano ham and pork loin rolls and a toasted ham and cheese sandwich","fr":"Sandwichs au jambon serrano et au filet de porc, et croque jambon-fromage"}},
+ "guisos y cocina tradicional": {file:"guisos-y-cocina-tradicional.webp", alt:{"es":"Potaje de garbanzos, lentejas y guiso de patatas con carne","en":"Chickpea stew, lentils and potato and meat stew","fr":"Ragoût de pois chiches, lentilles et ragoût de pommes de terre à la viande"}},
+ "verduras y ensaladas": {file:"verduras-y-ensaladas.webp", alt:{"es":"Ensalada fresca, verduras a la plancha y espárragos","en":"Fresh salad, grilled vegetables and asparagus","fr":"Salade fraîche, légumes grillés et asperges"}},
+ "tapas y raciones": {file:"tapas-y-raciones.webp", alt:{"es":"Croquetas, tortilla y patatas bravas para compartir","en":"Croquettes, Spanish omelette and patatas bravas to share","fr":"Croquettes, tortilla et patatas bravas à partager"}},
+ "postres y dulces": {file:"postres-y-dulces.webp", alt:{"es":"Flan, crema caramelizada y pastel de hojaldre","en":"Flan, caramelised custard and puff pastry","fr":"Flan, crème caramélisée et gâteau feuilleté"}},
+ "tapas": {file:"tapas.webp", alt:{"es":"Tres gildas, ensaladilla rusa y champiñones en platillos separados","en":"Three gildas, Russian salad and mushrooms in separate dishes","fr":"Trois gildas, salade russe et champignons dans des coupelles séparées"}}
+});
+const illustrativeImageLabel=language=>({es:'Imagen ilustrativa',en:'Illustrative image',fr:'Image illustrative'}[language]||'Imagen ilustrativa');
+const EXACT_RESULT_ILLUSTRATIONS=Object.freeze({
+ 'carrillada iberica con patatas fritas':'carrillada-con-patatas.webp',
+ 'pisto cordobes':'pisto-cordobes.webp'
+});
+function resultDishIllustration(term,places){
+ if(!places.length)return;
+ if(!Object.hasOwn(EXACT_RESULT_ILLUSTRATIONS,term)){
+  return Object.hasOwn(DISH_ILLUSTRATIONS,term)?DISH_ILLUSTRATIONS[term]:undefined;
+ }
+ const allMatchesAreExact=places.every(place=>{
+  const names=[...serviceDishes(place),...servicePrices(place).map(price=>price.dish)];
+  const matches=names.map(clean).filter(name=>name.includes(term));
+  return matches.length>0&&matches.every(name=>name===term);
+ });
+ if(allMatchesAreExact)return EXACT_RESULT_ILLUSTRATIONS[term];
+}
+function createDishVisual(imageUrl){
+ const visual=document.createElement('span');visual.className='dish-visual';
+ if(!imageUrl){visual.setAttribute('aria-hidden','true');return visual}
+ const image=document.createElement('img');image.src=imageUrl;image.alt='';image.loading='lazy';image.decoding='async';
+ const badge=document.createElement('span');badge.className='dish-visual-label';badge.dataset.keepDishSpanish='';
+ badge.textContent=illustrativeImageLabel(window.HelioGastroLanguage?.get());
+ image.addEventListener('error',()=>{visual.replaceChildren();visual.setAttribute('aria-hidden','true')},{once:true});
+ visual.append(image,badge);return visual;
+}
 function renderRecommendations(){
  const deck=el('recommendation-dishes');deck.replaceChildren();
  for(const name of MODE_CONFIG[state.mode].dishes){
-  const dish={name,icon:dishIcon(name)};
-  const term=clean(dish.name),data=recommendationEntries(term);
+  const term=clean(name),data=recommendationEntries(term);
+  if(term==='tapas'&&!data.matches.length)continue;
   const btn=document.createElement('button');btn.type='button';btn.className='recommendation-tile';
-  const label=document.createElement('strong');label.textContent=dish.icon+' '+dish.name;
+  const category=CARD_ILLUSTRATIONS[term];
+  const illustration=category?.file||DISH_ILLUSTRATIONS[term];
+  const visual=createDishVisual(illustration?'./assets/dishes/'+illustration:undefined);
+  if(category){
+   visual.classList.add('category-visual');
+   if(term==='bocadillos y sandwiches')visual.classList.add('category-visual-wide');
+   const image=visual.querySelector('img');
+   image.dataset.cardIllustration=term;
+   image.alt=category.alt[window.HelioGastroLanguage?.get()]||category.alt.es;
+  }
+  const label=document.createElement('strong');
+  if(illustration)label.textContent=name;else setIconLabel(label,'dish',name);
   const count=document.createElement('span');
   count.textContent=state.mode==='desayuno'||state.mode==='merienda'
-   ?(data.matches.length?data.matches.length+' locales verificados · '+new Set(data.priced.map(x=>x.p.id)).size+' con precio':'⏳ Pendiente de incorporar cartas verificadas')
+   ?(data.matches.length?data.matches.length+' locales verificados · '+new Set(data.priced.map(x=>x.p.id)).size+' con precio':'Pendiente de incorporar cartas verificadas')
    :data.matches.length+' locales registrados · '+new Set(data.priced.map(x=>x.p.id)).size+' con precio';
-  const description=document.createElement('small');description.className='dish-explanation';description.dataset.dishExplanation='';description.textContent=dishExplanation(dish.name);description.hidden=window.HelioGastroLanguage?.get()!=='en';
-  btn.append(label,description,count);btn.addEventListener('click',()=>showRecommendations(dish.name));deck.append(btn);
+  const description=document.createElement('small');description.className='dish-explanation';description.dataset.dishExplanation='';description.textContent=dishExplanation(name);description.hidden=window.HelioGastroLanguage?.get()!=='en';
+  btn.append(visual,label,description,count);btn.addEventListener('click',()=>showRecommendations(name));deck.append(btn);
  }
 }
 function recommendationCompareButton(p,dishName){
@@ -1213,8 +1508,7 @@ function recommendationCompareButton(p,dishName){
  button.dataset.comparePlaceId=p.id;
  const refresh=()=>{
   const selected=state.selected.has(p.id);
-  button.textContent=selected?'✓ Quitar del comparador':'+ Comparar';
-  button.setAttribute('aria-pressed',String(selected));
+  setCompareButton(button,selected);
  };
  refresh();
  button.addEventListener('click',()=>{
@@ -1230,8 +1524,7 @@ function recommendationCompareButton(p,dishName){
   compare();updateQuickNav();saveSearch();
   document.querySelectorAll('#recommendation-results [data-compare-place-id]').forEach(node=>{
    const selected=state.selected.has(node.dataset.comparePlaceId);
-   node.textContent=selected?'✓ Quitar del comparador':'+ Comparar';
-   node.setAttribute('aria-pressed',String(selected));
+   setCompareButton(node,selected);
   });
   if(!el('results-section').hidden)draw();
  });
@@ -1274,31 +1567,42 @@ function showRecommendations(dishName){
   for(const {place,items} of byPlace.values()){
    const card=document.createElement('section');card.className='recommendation-place';
    const title=document.createElement('h4');title.textContent=place.name;card.append(title);
-   const list=document.createElement('ul');list.className='recommendation-place-items';
-   for(const entry of items.sort((a,b)=>a.item.eur-b.item.eur)){
+   const sections=term==='tapas'
+    ?[['cold','Tapas frías'],['hot','Tapas calientes'],['','Tapas sin clasificación de temperatura']]
+    :[[undefined,'']];
+   for(const [temperature,sectionLabel] of sections){
+    const sectionItems=items.filter(entry=>entry.temperature===temperature);
+    if(!sectionItems.length)continue;
+    if(sectionLabel){
+     const heading=document.createElement('h5');heading.textContent=sectionLabel;card.append(heading);
+    }
+    const list=document.createElement('ul');list.className='recommendation-place-items';
+    for(const entry of sectionItems.sort((a,b)=>a.item.eur-b.item.eur)){
     const line=document.createElement('li');
     const label=document.createElement('span');label.dataset.keepDishSpanish='';label.textContent=entry.item.dish;
     const explanation=detailDishExplanation(entry.item.dish)||dishExplanation(entry.item.dish);
     if(explanation){const info=document.createElement('small');info.className='dish-explanation detail-dish-explanation';info.dataset.dishExplanation='';info.textContent=explanation;info.hidden=window.HelioGastroLanguage?.get()!=='en';label.append(document.createElement('br'),info);}
     const format=document.createElement('small');format.className='portion-tag';format.textContent=localizedPortion(entry.portion);
     const price=document.createElement('strong');price.textContent=fmt(entry.item.eur);
-    line.append(label,format,price);list.append(line);
+     line.append(label,format,price);list.append(line);
+    }
+    card.append(list);
    }
-   card.append(list);
    const actions=document.createElement('div');actions.className='recommendation-place-actions';
-   const more=document.createElement('button');more.type='button';more.textContent='Ver ficha';more.addEventListener('click',()=>openRecommendationPlace(place));
+   const more=document.createElement('button');more.type='button';setIconLabel(more,'arrow','Ver ficha');more.addEventListener('click',()=>openRecommendationPlace(place));
    actions.append(more,mapButton(place),recommendationCompareButton(place,dishName));card.append(actions);panel.append(card);
   }
  }
  const known=new Set(data.priced.map(x=>x.p.id)),unknown=data.matches.filter(p=>!known.has(p.id));
  if(unknown.length){
   const heading=document.createElement('h3');heading.textContent='También ofrecen el plato · precio pendiente';panel.append(heading);
-  for(const p of unknown){const row=document.createElement('div');row.className='recommendation-row';const name=document.createElement('span');name.textContent=p.name;const btn=document.createElement('button');btn.type='button';btn.textContent='Ver ficha';btn.addEventListener('click',()=>openRecommendationPlace(p));row.append(name,btn,mapButton(p),recommendationCompareButton(p,dishName));panel.append(row)}
+  for(const p of unknown){const row=document.createElement('div');row.className='recommendation-row';const name=document.createElement('span');name.textContent=p.name;const btn=document.createElement('button');btn.type='button';setIconLabel(btn,'arrow','Ver ficha');btn.addEventListener('click',()=>openRecommendationPlace(p));row.append(name,btn,mapButton(p),recommendationCompareButton(p,dishName));panel.append(row)}
  }
  el('recommendation-dialog').showModal();
 }
 
 function clearSearch(){
+ el('direct-dish').value='';
  el('filters').reset();
  updateMealMode(state.mode,{reset:false});
  el('portion').disabled=false;
@@ -1351,7 +1655,7 @@ async function ensureFrenchOverlay(data){
  catch(error){frenchOverlayPromise=null;throw error}
 }
 function onFrenchSelection(){
- if(window.HelioGastroLanguage?.get()!=='fr'||!state.places.length)return;
+ if(window.HelioGastroLanguage?.get()!=='fr'||!state.places.length||frenchOverlayLoaded)return;
  ensureFrenchOverlay(state.places).then(()=>{
   if(window.HelioGastroLanguage?.get()!=='fr')return;
   const p=state.places.find(p=>p.id===state.currentDetailId);
@@ -1359,28 +1663,130 @@ function onFrenchSelection(){
  }).catch(error=>console.warn('French descriptions unavailable:',error.message));
 }
 
+function manoloCompareTarget(){
+ const form=searchFormValues();
+ if(!clean(form.dish.trim()))return 'dish';
+ if(form['price-scope']!=='dish')return 'price-scope';
+ if(!form.portion||form.portion==='desconocida')return 'portion';
+ const matches=state.searched&&appliedSearch?.mode===state.mode&&
+  SEARCH_FIELDS.every(id=>form[id]===appliedSearch.form[id]);
+ if(!matches)return 'search-button';
+ const matchingSelection=state.filtered.some(place=>state.selected.has(place.id));
+ return matchingSelection?'compare-title':'results-heading';
+}
+
+function openManoloAction(action){
+ let target='recommendations-heading';
+ const switchToLunch=action==='traditional'&&['desayuno','merienda'].includes(state.mode);
+ if(switchToLunch)updateMealMode('comida');
+ el('manolo-traditional-note').hidden=!switchToLunch;
+ el('manolo-budget-note').hidden=action!=='budget';
+ const compareNote=el('manolo-compare-note');
+ compareNote.hidden=true;
+ if(action==='budget')target='price-scope';
+ if(action==='compare'){
+  target=manoloCompareTarget();
+  if(target!=='compare-title'){
+   const destination=target==='results-heading'?el('results'):el('filters');
+   destination.before(compareNote);
+   compareNote.hidden=false;
+  }
+ }
+ const quickCategory=action==='discover'&&el('quick-categories').querySelector('button');
+ const node=quickCategory||el(target);
+ const advanced=node.closest('#advanced-filters');
+ if(advanced)advanced.open=true;
+ node.focus({preventScroll:true});
+ node.scrollIntoView({block:'center'});
+}
+
+function initRadarHome(guide){
+ const orient=el('radar-orient');
+ if(!orient)return;
+ const focus=id=>{
+  const target=el(id);
+  target.focus({preventScroll:true});
+  target.scrollIntoView({block:'start'});
+ };
+ for(const button of document.querySelectorAll('[data-radar-service]')){
+  button.addEventListener('click',()=>{
+   if(state.mode!==button.dataset.radarService)updateMealMode(button.dataset.radarService);
+   focus('dish');
+  });
+ }
+ for(const link of document.querySelectorAll('[data-radar-compare]')){
+  link.addEventListener('click',event=>{
+   event.preventDefault();
+   el('compare-section').hidden=false;
+   compare();
+   focus('compare-title');
+  });
+ }
+ orient.addEventListener('click',()=>{
+  guide.open=true;
+  guide.querySelector('summary').focus({preventScroll:true});
+  guide.scrollIntoView({block:'center'});
+ });
+ el('radar-map').addEventListener('click',()=>{
+  if(el('results-section').hidden)el('filters').requestSubmit();
+  const maps=el('results').querySelectorAll('.map-button');
+  if(maps.length===1){maps[0].click();return}
+  if(maps.length){
+   el('radar-map-note').hidden=false;
+   focus('results-heading');
+  }else focus('dish');
+ });
+}
 async function init(){
+ const quickDishes=el('quick-dishes');
+ if(quickDishes)quickDishes.open=matchMedia('(min-width: 561px)').matches;
+ const guide=document.querySelector('.manolo-guide');
+ const summary=guide.querySelector('summary');
+ const syncGuideState=()=>summary.setAttribute('aria-expanded',String(guide.open));
+ guide.open=matchMedia('(min-width: 541px)').matches;
+ syncGuideState();
+ guide.addEventListener('toggle',syncGuideState);
+ initRadarHome(guide);
+ document.querySelectorAll('[data-manolo-action]').forEach(button=>{
+  button.addEventListener('click',()=>openManoloAction(button.dataset.manoloAction));
+ });
  el('language-select').addEventListener('change',onFrenchSelection);
  document.querySelectorAll('[data-service]').forEach(btn=>btn.addEventListener('click',()=>updateMealMode(btn.dataset.service)));
  el('filters').addEventListener('submit',filter);
+ el('direct-search').addEventListener('submit',event=>{
+  event.preventDefault();
+  el('dish').value=el('direct-dish').value;
+  el('filters').requestSubmit();
+ });
  el('close-recommendations').addEventListener('click',()=>el('recommendation-dialog').close());
  el('close-map').addEventListener('click',closeMap);
  el('map-dialog').addEventListener('close',()=>el('map-frame').removeAttribute('src'));
  el('map-dialog').addEventListener('click',event=>{if(event.target===el('map-dialog'))closeMap()});
  el('clear-search').addEventListener('click',clearSearch);
  el('close-detail').addEventListener('click',()=>{el('detail-section').hidden=true;el('results-heading').focus();});
- el('price-scope').addEventListener('change',()=>{el('portion').disabled=el('price-scope').value==='meal';});
+ el('price-scope').addEventListener('change',()=>{
+  const perPerson=el('price-scope').value==='meal';
+  el('portion').disabled=perPerson;
+  el('budget-explain').textContent=perPerson?
+   'Presupuesto aplicado al coste total por persona. Los locales sin coste documentado pueden mostrarse, pero no se consideran dentro del límite.':
+   'Límite aplicado al precio de un plato, no a una comida completa.';
+ });
+ el('advanced-filters')?.addEventListener('change',syncAdvancedFilters);
  el('show-offering').addEventListener('click',()=>{
   el('budget').value='';
   el('price-kind').value='';
   el('include-unknown').checked=true;
   el('filters').requestSubmit();
  });
- document.querySelectorAll('[data-dish]').forEach(button=>button.addEventListener('click',()=>{
+ el('dish').addEventListener('input',syncDishSuggestions);
+ el('budget').addEventListener('change',syncBudgetNotice);
+ el('dish-suggestions-list').addEventListener('click',event=>{
+  const button=event.target.closest('button[data-dish]');
+  if(!button)return;
   el('dish').value=button.dataset.dish;
+  syncDishSuggestions();
   el('dish').focus();
-  // Elegir un plato solo prepara el formulario, nunca ejecuta una búsqueda.
- }));
+ });
  try{
   const res=await fetch('./data/places.json',{cache:'no-store'});
   if(!res.ok)throw Error('HTTP '+res.status);

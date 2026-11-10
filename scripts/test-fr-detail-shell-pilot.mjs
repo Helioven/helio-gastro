@@ -9,14 +9,14 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  await page.evaluate(()=>showPlace(state.places.find(p=>p.id==='la-montillana'),false));
  await page.waitForFunction(()=>[...document.querySelectorAll('#detail-content h3')].some(x=>x.textContent==='Sources et date'));
  assert.ok((await page.locator('#detail-content h3').allTextContents()).includes('Sources et date'));
- assert.equal(await page.locator('#detail-content .fav-button').textContent(),'☆ Enregistrer','FR detail save button');
+ assert.equal(await page.locator('#detail-content .fav-button').textContent(),'Enregistrer','FR detail save button');
  // The source link's visible label is translated, without changing its href.
  const sourceLink=page.locator('#detail-content [data-source-label-es]').filter({hasText:'Carte officielle — site de l’établissement'}).first();
  await sourceLink.waitFor();
  const sourceHref=await sourceLink.getAttribute('href');
  assert.ok(sourceHref,'Source must retain a destination');
 
- assert.ok((await page.locator('#detail-content .map-button').allTextContents()).includes('📍 Voir la carte'),'FR detail map button');
+ assert.ok((await page.locator('#detail-content .map-button').allTextContents()).includes('Voir la carte'),'FR detail map button');
  // Inspect rendered presentation labels only; dish names must remain unchanged.
  const portionRows=page.locator('#detail-content [data-venue-menu-price-label]');
  const frLabels=await portionRows.allTextContents();
@@ -290,7 +290,7 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  const titles=await page.locator('#detail-content .menu-dish h4').allTextContents();
  assert.ok(titles.length>0);
  await page.evaluate(()=>{const place=state.places.find(p=>Array.isArray(p.locations)&&p.locations.length);if(!place)throw Error('Roldan directory missing');showPlace(place,false);});
- assert.ok((await page.locator('#detail-content').innerText()).includes('📍 Établissements Roldán à Cordoue'),'FR Roldan heading');
+ assert.ok((await page.locator('#detail-content').innerText()).includes('Établissements Roldán à Cordoue'),'FR Roldan heading');
  assert.ok((await page.locator('#detail-content').innerText()).includes('Les boulangeries figurent uniquement comme adresses'),'FR Roldan menu scope');
  const roldanTypes=page.locator('#detail-content li span[data-bilingual-es]');
  assert.ok(await roldanTypes.count()>0,'Roldan location type labels present');

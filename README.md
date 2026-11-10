@@ -1,5 +1,7 @@
 # Helio Gastro 1.0 — piloto
 
+> **CONTINUACIÓN PRIORITARIA (07/11/2026):** el [handoff operativo para el domingo 8 de noviembre](#handoff-operativo-para-el-domingo-8-de-noviembre-de-2026--consejo-de-manolo) resume el estado de Git, el motor de «El Consejo de Manolo» y el siguiente encargo a Codex. El trabajo de reseñas sigue **solo en QA, sin datos reales ni despliegue**. La identidad vigente del proyecto es **ManoloLabs by Helio**.
+
 Aplicación estática y mobile-first de búsqueda gastronómica en Córdoba. Proyecto de Helio Software Studios.
 
 > **Estado actualizado (06/11/2026):** francés público ES/EN/FR y fase 3 de QA integral en marcha. Las PR [#44–#50](https://github.com/Helioven/helio-gastro/pulls?q=is%3Apr+is%3Amerged) están integradas en `main`. La cobertura automática incluye enlaces, rendimiento de carga FR, caché/recargas, navegación accesible y avisos dinámicos. **El contraste visual sigue pendiente de revisión real.** Consulta [Estado vigente y continuación](#estado-vigente-fase-3-qa-integral--6-de-noviembre-de-2026) al final de este documento.
@@ -1266,3 +1268,431 @@ Helio autorizó expresamente activar el francés públicamente e integrarlo en `
 4. **Regresión y documentación:** ejecutar CI completo tras cada cambio, documentar PASS/FAIL/pendiente, actualizar README y conservar El Caballo Rojo oculto; no modificar cartas, precios, traducciones, reseñas ni imágenes sin respaldo y autorización.
 
 **Límites vigentes:** la PWA tiene un manifiesto, pero no se ha comprobado soporte offline mediante service worker; no añadir caché persistente para cartas/precios sin política de caducidad y validación. La fase 3 sigue **en curso**, no constituye lanzamiento final aprobado.
+
+
+---
+
+## Handoff vigente — renovación visual ManoloLabs y QA (7 de noviembre de 2026)
+
+> **Fuente de verdad para reanudar la nueva fase visual.** Este apartado documenta el trabajo realizado en la rama `feature/manololabs-visual-20261107` y complementa —no sustituye— la fase 3 de QA integral descrita arriba. **No implica lanzamiento público ni aprobación para fusionar en `main`.** Revisar GitHub Actions y el HEAD real antes de continuar.
+
+### Repositorio, alcance y control de versiones
+
+- **Repositorio:** `Helioven/helio-gastro`. **Rama exclusiva de la renovación:** `feature/manololabs-visual-20261107`; `main` se mantiene sin estos cambios hasta autorización expresa de Helio.
+- El primer agente Codex trabajó primero sobre una copia local del repositorio. Como la autenticación de Git desde Codex falla con `Cannot prompt because user interactivity has been disabled`, las subidas se realizan manualmente con **GitHub Desktop → Push origin**; no repetir intentos automáticos de credenciales ni compartir tokens.
+- **Commits clave:**
+  - `9ca9037`: prototipo de nueva presentación visual (portada/tarjetas, espacio para imágenes y firma discreta).
+  - `e3b4b74`: piloto de cinco especialidades, imágenes ilustrativas y prueba de integración.
+  - `57862da`: segunda tanda de ilustraciones y ampliación del mapeo de recursos.
+  - `1f4c603`: sustitución final aprobada de `boquerones-fritos.webp` y `huevos-rotos.webp`, sin cambiar las otras trece imágenes.
+  - `e39b1b0`: corrección de contadores dinámicos en francés, prueba `scripts/test-recommendation-count-i18n.mjs` e integración en workflow.
+- Mantener fuera de commits los informes locales generados en `qa-reports/`, salvo petición expresa.
+
+### Nueva interfaz e ilustraciones aprobadas
+
+- Estilo de interfaz: **azul marino y acentos cálidos** de ManoloLabs, tarjetas con zona visual, etiqueta **«Imagen ilustrativa»** localizada en ES/EN/FR, carga diferida, reutilización por plato normalizado y marcador abstracto de respaldo cuando no hay imagen o falla su carga.
+- Las ilustraciones son **representaciones generales generadas**, **no fotos de comida ofrecida por restaurantes concretos**. No inferir ingredientes, raciones, disponibilidad ni precios a partir de ellas.
+- **15 imágenes aprobadas visualmente por Helio**, en `assets/dishes/`, formato WebP: **flamenquín cordobés, salmorejo, rabo de toro, berenjenas con miel, mazamorra, croquetas, tortilla de patatas, boquerones fritos, huevos rotos con jamón, hamburguesa, pizza, cachopo, ensaladilla rusa, nachos y tarta de queso**. Consultar `assets/dishes/README.md` para el mapeo y la ampliación.
+- Las versiones definitivas del flamenquín (largo y artesanal, patatas fritas, lechuga y tomate), berenjenas en bastones con miel, boquerones (fritura fina, piel plateada visible y limón) y huevos rotos (patatas en bastones, yema mezclada y jamón en trocitos) fueron aprobadas tras varias iteraciones de revisión visual. **No regenerarlas ni reemplazarlas sin una nueva aprobación.**
+- **Solo 7 de las 15 imágenes aparecen hoy en accesos generales existentes:** seis en «Comer» —flamenquín, salmorejo, rabo de toro, croquetas, mazamorra, berenjenas— y tortilla en «Cenar». Las otras ocho —boquerones, huevos rotos, hamburguesa, pizza, cachopo, ensaladilla rusa, nachos y tarta de queso— **están disponibles como assets**, pero no tienen tarjeta general visible; no inventar platos o asociaciones con restaurantes para forzar su aparición. Las categorías generales restantes conservan marcadores abstractos.
+
+### Evidencia y límites de QA
+
+- [GitHub Actions #891](https://github.com/Helioven/helio-gastro/actions/runs/42369802251): `completed/success` para `9ca9037`, **no** para las ampliaciones posteriores.
+- [GitHub Actions #894](https://github.com/Helioven/helio-gastro/actions/runs/42376874403): `completed/success` para `1f4c603`, con la tanda final de las 15 ilustraciones.
+- **Corrección FR `e39b1b0`:** al preparar este handoff, la ejecución manual **#895** estaba **en curso**; **comprobar su conclusión** en [Actions](https://github.com/Helioven/helio-gastro/actions) y no dar PASS hasta confirmarla. El CI previo #894 **no valida** esta corrección posterior.
+- El agente reportó PASS **local** de contadores ES/EN/FR (singular, cero, cambios sin recarga, recarga y cambio de momento gastronómico), regresiones de búsqueda y resultados FR, ilustraciones, sintaxis y catálogo. Esto **no sustituye** el CI oficial.
+- En la inspección visual se probaron recorridos de portada, tarjetas, resultados, favoritos, comparador, ficha y pie en **360×800, 390×844, 768×1024 y 1365×900**; no se detectó desbordamiento global en esos recorridos. Algunas capturas de tableta/escritorio se obtuvieron redimensionando una sesión cargada; no equivalen a validación exhaustiva por dispositivo.
+- **Incidencia detectada:** en francés, la etiqueta de imagen sí traducía pero los contadores de tarjetas seguían en español. La corrección de `e39b1b0` distingue `répertoriés` y `vérifiés` sin alterar cifras y añade prueba de regresión; **pendiente corroborar CI #895**.
+- **Todavía pendientes:** revisión visual humana exhaustiva de tarjetas (especialmente encuadre ajustado del flamenquín), fichas y comparadores largos, dispositivos reales, contraste con mediciones válidas, lector de pantalla y estados no inspeccionados. Un PASS automático no equivale a certificación WCAG ni a aprobación editorial completa.
+
+### Identidad ManoloLabs by Helio aprobada conceptualmente
+
+- Marca seleccionada: **ManoloLabs by Helio**, lema **«Ideas humanas · Tecnología inteligente»**. Paleta: azul marino `#0B2545`, naranja `#FF8A00`, amarillo `#FFC857`, azul `#3B82F6`, blanco cálido `#F5F5F4`; tipografía de referencia Poppins/Montserrat.
+- **Mascota oficial actual:** robot 3D blanco y metálico con **dos antenas**, gafas oscuras cuadradas, bigote marrón, acentos luminosos azules y **M azul luminosa en el pecho**. El modelo antiguo del cartel tiene una sola antena y **no debe reutilizarse**; las imágenes oficiales de referencia están en la conversación con Helio y **deben proporcionarse al agente** para integrarlas. Los accesorios (gorro, taza, etc.) no son rasgos permanentes.
+- El pie ya muestra una firma discreta «ManoloLabs by Helio», pero la cabecera aún contiene **«HELIO SOFTWARE STUDIOS»**. **Pendiente** actualizar logotipo, cabecera y variantes/favicons de forma coherente, manteniendo **Helio Gastro** como nombre de la aplicación. No afirmar que esta integración visual esté acabada.
+
+### Próximos pasos acordados, sin autorización automática para ejecutarlos
+
+1. **Cerrar CI de `e39b1b0` (#895)** y anotar PASS/FAIL real; si falla, investigar y reparar únicamente la incidencia demostrada en la rama.
+2. **Revisión visual selectiva final** en móvil/escritorio de los contadores FR, tarjetas e imagen del flamenquín; no modificar datos a ciegas.
+3. **Preparar propuesta de identidad ManoloLabs** con las referencias oficiales del Manolo de dos antenas; exigir aprobación visual de Helio antes de integrar. No reemplazar Helio Gastro como título.
+4. **Evaluar uso visible de las ocho ilustraciones sin tarjeta** y mejora de marcadores de categorías, sin inventar platos ni ofertas de locales. Considerar la legibilidad del comparador largo, especialmente en móvil.
+5. Mantener pendientes para fases posteriores **horarios con fuente**, **reseñas autorizadas y «El Consejo de Manolo»** (hasta 100–200 reseñas cuando sea legalmente posible, sin extracción masiva no autorizada de Google), buzón moderado y auditoría integral final. No inventar puntuaciones ni testimonios ni mezclar resúmenes editoriales con valoraciones de terceros.
+
+**Regla de continuidad:** leer este handoff y el README previo, verificar HEAD y CI, proponer un cambio de alcance limitado, **obtener aprobación de Helio**, aplicar en rama de trabajo, pasar pruebas, documentar y **no fusionar/desplegar `main` sin autorización expresa**.
+
+### Integración de Manolo aprobada — 7 de noviembre de 2026
+
+- Helio Gastro conserva el título principal. La cabecera muestra la cabeza de Manolo con sus dos antenas y el pie incorpora el busto junto a **ManoloLabs by Helio** e **Ideas humanas · Tecnología inteligente**. Los tres recursos optimizados están en `assets/brand/`.
+- El 404 de `test-fr-visual.mjs` correspondía a `/favicon.ico`. La aplicación y la página de QA declaran ahora el favicon PNG. Se comprobó su legibilidad a 16 × 16 px en una simulación de pestaña con fondos claro y oscuro.
+- **QA local PASS** para `test-fr-visual.mjs`, `test-recommendation-count-i18n.mjs` y `test-dish-illustrations.mjs`. También se comprobaron la carga de los recursos, las capturas a 360 × 800 y 1365 × 900 y la ausencia de desbordamiento en ES/EN/FR.
+- **CI de marca PASS** en [GitHub Actions #896](https://github.com/Helioven/helio-gastro/actions/runs/42390590855), para `c44afdd` en `feature/manololabs-visual-20261107`. El [CI #895](https://github.com/Helioven/helio-gastro/actions/runs/42380436709) también terminó correctamente para `e39b1b0`, la corrección anterior de contadores en francés.
+
+### Ampliación visual de resultados — aprobada el 7 de noviembre de 2026
+
+- Una búsqueda con resultados y un nombre normalizado del mapa de ilustraciones muestra un único WebP junto al resumen general. Así se pueden ver también los ocho recursos que carecen de tarjeta propia: boquerones fritos, huevos rotos, hamburguesa, pizza, cachopo, ensaladilla rusa, nachos y tarta de queso. La etiqueta se traduce en ES/EN/FR. La ilustración se mantiene separada de las fichas de locales y reutiliza la carga diferida y el marcador de respaldo.
+- Los resultados se desplazan por debajo de la navegación fija y las entradas de precios del comparador móvil tienen más separación.
+- El resumen y la ilustración ocupan menos espacio vertical. El primer encabezado queda a 6 px del resumen en la búsqueda de pizza probada. Los platos encontrados se muestran en una lista con encabezado en ES/EN/FR, conservando el texto, el orden y el bloque de precio publicado.
+- **QA local PASS** en búsqueda, filtros, comparador, ilustraciones, contadores ES/EN/FR y flujo básico de accesibilidad. En Chromium local se comprobaron las ocho búsquedas a 360 × 800 y 1365 × 900, las etiquetas, el marcador al bloquear la imagen y la ausencia de desbordamiento en los recorridos comprobados. Pizza no se solicitó al cargar la portada y su WebP mide 81 152 bytes. No se midieron tiempos de carga en redes móviles ni se probó con un lector de pantalla.
+- En la revisión previa al commit también pasó `test-fr-visual.mjs`. Se comprobó que los siete platos del caso de pizza mantienen texto y orden al alternar ES/EN/FR, y que los 15 archivos WebP aprobados permanecen intactos. El CI oficial de esta ampliación se comprobará sobre el SHA del commit tras la subida de la rama y la ejecución manual del workflow.
+
+
+---
+
+## PLAN DE BATALLA — Cierre de Helio Gastro (7 de noviembre de 2026)
+
+> **Documento operativo prioritario para la siguiente sesión de Codex.** Leer junto al handoff de la fase visual y al historial de QA anterior. Distinguir siempre entre **aprobado**, **implementado localmente**, **confirmado en GitHub** y **desplegado**; la planificación no constituye autorización de merge ni de publicación.
+>
+> **Estrategia de Helio:** terminar primero **contenido y funcionalidades**, después realizar **un rediseño profesional integral**, luego QA final y lanzamiento. No migrar prematuramente ni rehacer pantallas varias veces. Objetivo posterior: renovar Manolo Meteo y **presentar ambos proyectos juntos en LinkedIn** como portfolio de QA, verificación de datos y trabajo con IA, recordando la búsqueda activa de empleo.
+
+### 0. Situación comprobada y controles de continuidad
+
+- Repositorio: `Helioven/helio-gastro`; rama exclusiva de trabajo visual: `feature/manololabs-visual-20261107`. **`main` permanece protegida de cambios no autorizados**: no hacer merge ni desplegar sin aprobación expresa.
+- **Branding integrado y confirmado en remoto:** commit `c44afdd00cad661023abf9c7062a31965b62638d` — `feat(brand): integrate approved Manolo mascot and favicon`; [CI #896 PASS](https://github.com/Helioven/helio-gastro/actions/runs/42390590855), correspondiente específicamente a ese commit. Cabecera: cabeza de Manolo; pie: busto y firma; favicon; error 404 de favicon corregido. No interpretar ese PASS como validación de trabajo posterior.
+- **Ilustraciones aprobadas:** 15 WebP en `assets/dishes/`, con etiqueta localizada «Imagen ilustrativa» (ES/EN/FR). Son conceptos generales, NO fotografías de platos servidos por un local.
+- **Trabajo posterior reportado por Codex y revisado visualmente por Helio/Manolo, pendiente de constatar en remoto:** uso de las otras ocho imágenes en resúmenes de búsquedas por nombre exacto normalizado (ya no quedan recursos sin uso en el prototipo), una sola imagen por búsqueda, carga diferida y fallback; reducción de huecos verticales; presentación en lista de coincidencias múltiples (caso pizza/Patio Romano), mejor espaciado del comparador móvil y corrección de desplazamiento bajo navegación fija. Capturas y QA local reportados PASS a 360×800 y 1365×900 en ES/EN/FR. **El usuario aprobó realizar el commit de esa fase**, pero no hay confirmación aquí de su hash ni de un CI oficial nuevo: comprobar el HEAD, git status y Actions antes de darla por cerrada.
+- Conservar las 15 imágenes, especialmente las variantes expresamente aprobadas de flamenquín, berenjenas con miel, boquerones fritos y huevos rotos. No regenerar o sustituir sin aprobación.
+
+### 1. Prioridad A — Consejo de Manolo basado en reseñas reales
+
+**Objetivo:** reemplazar el comentario genérico basado en la puntuación y el comentario redundante de Manolo por **una única síntesis original, útil, distendida e imparcial**. Puede destacar virtudes y críticas recurrentes con humor, pero nunca inventar defectos, testimonios, cifras ni reseñas.
+
+1. **Primero investigar viabilidad de datos y licencias**, antes de programar el sistema: Google Maps muestra reseñas públicas, pero ser públicas no autoriza a extraerlas masivamente ni a publicar derivados. La API estándar de Places solo expone una muestra pequeña (habitualmente hasta cinco reseñas); verificar documentación, términos y alternativas vigentes. Evaluar otras fuentes con licencia, acuerdos, datos autorizados o reseñas propias de usuarios.
+2. Meta ideal: **muestreo de 100–200 reseñas por local si existe acceso permitido y muestra suficiente**. Nunca declarar 100/200 si se han analizado menos ni simular datos. Documentar fuente, fecha, tamaño, método de selección, sesgos posibles y criterio de suficiencia. No confundir **media de la muestra** con **valoración global de la plataforma**.
+3. Analizar patrones reales: calidad y especialidades, atención, precio/valor, ambiente, accesibilidad y esperas. Ponderar recurrencia y actualidad si está justificado; no sobrerrepresentar opiniones aisladas ni acusaciones no corroboradas.
+4. Salida única «**El Consejo de Manolo**», tono castellano natural, original y divertido, **con rigor**. Distinguir hechos y opiniones. Añadir trazabilidad/aviso metodológico sin mostrar texto de terceros cuando no esté autorizado. Evitar sesgos reputacionales.
+5. Construir **piloto de tres locales** solo cuando las fuentes y el tratamiento sean lícitos; revisión editorial humana y QA. Si no existen permisos o muestra fiable, mostrar «Sin datos suficientes» o aplazar la función, **no fabricar comentarios**.
+6. Decisión pendiente: arquitectura concreta de captura, almacenamiento/caducidad, actualización y coste. Considerar requisitos de protección de datos y condiciones de atribución.
+
+### 2. Prioridad B — Biblioteca reutilizable de ilustraciones para las cartas
+
+**No** generar una imagen por cada plato ni añadir cientos de recursos por inercia. Primero analizar el catálogo existente y obtener un inventario de **conceptos gastronómicos frecuentes y no ambiguos**.
+
+1. Reutilizar las 15 ilustraciones actuales donde el concepto coincida fielmente con el nombre **documentado** del plato. Para un plato de restaurante específico, no insinuar presentación, ingredientes, alérgenos, precio o disponibilidad no comprobados.
+2. Evaluar una ampliación **gradual** de la biblioteca (orientativamente 40–60 conceptos, **no cuota obligatoria**), según cobertura real, utilidad y revisión visual. Distinguir especialidades representativas y conceptos generales; los ambiguos permanecen solo texto.
+3. Preparar un sistema explícito de asociación nombre normalizado → imagen aprobada, sin coincidencias laxas ni falsos positivos. Mantener etiqueta **«Imagen ilustrativa»** en ES/EN/FR, texto alternativo y marcador de respaldo.
+4. **No llenar ahora cada carta de fotos**: diseñar los recursos, mapeo y criterios editoriales, dejando la integración visual final para el rediseño profesional. Las cartas extensas deben seguir siendo rápidas, legibles y fáciles de recorrer.
+5. WebP optimizado, `loading=lazy`, tamaños responsivos, comprobación de peso de red, CLS y móviles modestos; no descargar imágenes de platos que el usuario no ve.
+6. Criterio de aprobación: muestra reducida de platos/menús, QA de coincidencias y revisión humana antes de escalar.
+
+### 3. Prioridad C — Buzón privado de sugerencias conectado al email
+
+**Objetivo:** formulario para visitantes, dirigido al correo de Helio **sin exponer la dirección personal** en HTML, JavaScript, repositorio ni respuesta de la aplicación.
+
+- Campos: tipo (sugerencia, restaurante nuevo, dato/carta incorrecta, error técnico, otros), mensaje obligatorio, email del remitente **opcional** para respuesta; recoger lo mínimo.
+- Investigar y comparar pasarelas para sitios estáticos, por ejemplo **Formspree** y **Web3Forms**, verificando **precios, límites actuales, privacidad, antispam y comportamiento real** antes de elegir. Ninguna suscripción de pago sin evaluación ni autorización.
+- Usar intermediario/form ID público cuando proceda; **nunca** incrustar email del propietario, tokens secretos o credenciales en frontend. Considerar honeypot, límites, moderación, protección antiabuso y confirmaciones sin revelar datos sensibles.
+- Interfaz ES/EN/FR, accesibilidad, errores/red desconectada y prevención de duplicados. Aviso de privacidad claro (finalidad, conservación, encargado y derechos); revisión RGPD antes de activar.
+- Primero prototipo/sandbox, después configuración privada y **prueba real controlada** con aprobación. No prometer envío funcional si la pasarela aún no está conectada.
+
+### 4. Prioridad D — Contenido, consistencia editorial y cierre funcional
+
+- Revisar cartas y enlaces con fuentes fechadas; **no inventar ni actualizar precios/ingredientes/horarios por conjetura**, y no publicar información sin validar.
+- Respetar las decisiones editoriales del README: locales ocultos, cartas parciales, borradores y separaciones por modalidad. No reactivar **El Caballo Rojo** ni fusionar cartas parciales sin autorización.
+- Regresión de búsquedas, filtros por momento (desayuno, comida, merienda, cena), resultados, precios documentados, comparador, favoritos, ficha, mapas, navegación, ES/EN/FR y móviles; documentar lo probado y lo pendiente.
+- No añadir extras indefinidamente. Cerrar cada fase con aceptación explícita y backlog pequeño.
+
+### 5. Prioridad E — Rediseño profesional integral (DESPUÉS del contenido)
+
+**Meta:** dejar de parecer una plantilla y ofrecer una experiencia gastronómica con personalidad propia, moderna y móvil primero, sin perder rendimiento ni la identidad ManoloLabs.
+
+- **Elegir primero dirección visual** con **dos propuestas** de portada y una ficha de restaurante, en móvil y escritorio, para aprobación. Idea: portada con buscador protagonista, navegación natural, jerarquía limpia, tarjetas más legibles, menos cajas rígidas y párrafos densos, imágenes donde aporten valor.
+- Respetar nombre **Helio Gastro** como producto, firma **ManoloLabs by Helio**, lema «Ideas humanas · Tecnología inteligente» y mascota oficial **de DOS antenas** (gafas oscuras cuadradas, bigote marrón, detalles azules, M luminosa); mantener los recursos oficiales aprobados, icono de cabeza en cabecera y busto en pie.
+- Conservar inicialmente HTML/CSS/JS: **no migrar a React ni a otro framework por apariencia**. Solo proponer migración si aparece una necesidad técnica demostrada, con costes y plan de regresión.
+- Decisión abierta para el diseño de las cartas: ¿aspecto de app de pedidos con miniaturas y precios, o carta tradicional refinada? Resolverla mediante prototipos, no imponiendo una estética sin consulta.
+- Integrar en esta fase el tratamiento definitivo de imágenes en cartas, Consejo de Manolo y buzón, evitando rehacerlos varias veces.
+- Diseño responsivo, contraste, navegación con teclado, lector de pantalla, velocidad de carga, estados vacíos y largos listados. No reducir la usabilidad por perseguir estética.
+
+### 6. Prioridad F — QA integral, publicación y portfolio
+
+1. Revisar cambios en rama, pruebas automáticas y casos manuales en **móvil real y escritorio**, ES/EN/FR, incluyendo formularios, teclado, lector de pantalla, imágenes rotas, rendimiento en redes lentas, privacidad, caché y datos.
+2. Corregir defectos demostrados; documentar CI con **hash concreto** y distinguir PASS local, PASS oficial y evaluación visual/editorial humana. Un CI verde **no equivale** a certificación WCAG ni a veracidad de cartas.
+3. Solo con autorización explícita: preparar PR, revisar diff, fusionar en `main`, verificar despliegue y versión pública. Conservar procedimiento de recuperación/rollback.
+4. Después, **Manolo Meteo v1.7**: propuesta de renovación visual y funciones adicionales por definir, misma marca ManoloLabs, QA de PWA/datos meteorológicos sin prometer capacidades no comprobadas.
+5. Lanzamiento conjunto **Helio Gastro + Manolo Meteo en LinkedIn**, con capturas reales, demo y repositorios; mostrar el trabajo auténtico de Helio: definición de requisitos, dirección de agentes IA, QA manual, validación de datos, correcciones y entrega. Recordar de forma profesional que busca empleo remoto QA, Data QA, operaciones digitales e iGaming. No atribuirse labores técnicas que no haya realizado.
+
+### Reglas obligatorias para el agente y próxima sesión
+
+- **Antes de actuar:** `git status`, HEAD local/remoto, rama, README y CI. Verificar si hay commits locales pendientes; no reescribir ni borrar trabajo no subido.
+- **Prioridad inmediata:** cerrar con commit/push/CI la fase visual de las 15 ilustraciones **solo si el estado real lo confirma**; a continuación, **investigar reseñas** y presentar opciones viables con fuentes, restricciones y costes **sin programar extracción masiva**.
+- Usar ramas/commits pequeños y reversibles, sin tocar `main`, sin despliegue ni gasto sin permiso. QA y capturas antes de dar una fase por buena.
+- **Este plan describe decisiones y prioridades, no concede permiso para ejecutar todas las fases automáticamente.** Pedir aprobación en puntos de decisión; en trabajos acotados aprobados, avanzar sin interrumpir cada minuto.
+- Mantener una sección de **estado vivo** por fase: `Pendiente / Investigación / Prototipo / QA local / CI / Aprobado / Publicado`; fecha, commit/PR, evidencia y bloqueantes. Actualizar el README tras cada entrega, sin borrar evidencias históricas.
+
+
+---
+
+## INVESTIGACIÓN DE RESEÑAS — Consejo de Manolo (7 de noviembre de 2026)
+
+> **Estado: INVESTIGACIÓN CONCLUIDA EN PRIMERA PASADA; NO APROBADO PARA IMPLEMENTACIÓN.** Fuentes oficiales verificadas el 07/11/2026. Antes de contratar, importar, resumir o publicar opiniones, comprobar términos y coberturas contractuales vigentes. Esta nota no es asesoramiento jurídico ni concede derecho de reutilización de contenido de terceros.
+
+### Hallazgos verificados y limitaciones
+
+1. **Google Places API (New):** `reviews` devuelve **máximo 5 reseñas por lugar**; `rating` y `userRatingCount` son datos agregados distintos de las reseñas. Solicitar `reviews` o `reviewSummary` activa una categoría de facturación más elevada (Enterprise + Atmosphere). No existe una paginación pública documentada para recuperar 100–200 reseñas de cualquier negocio. Fuente: https://developers.google.com/maps/documentation/places/web-service/place-details
+2. **Términos para proyectos vinculados a facturación EEE:** se prohíben expresamente la extracción/scraping, el almacenamiento no autorizado de reseñas y la creación de contenido a partir de Google Maps Content, salvo excepciones específicas. **No** usar Playwright, Selenium, SerpAPI, scraping manual industrializado ni terceros que extraigan Google Maps como atajo para generar el Consejo de Manolo. Fuente actual: https://cloud.google.com/terms/maps-platform/eea (sec. 3.3.2); guía API: https://developers.google.com/maps/documentation/places/web-service/policies
+3. **Resúmenes de reseñas generados por Google:** Google `reviewSummary` exige mostrar el texto completo sin modificarlo, avisos y enlaces/atribuciones. La documentación de disponibilidad regional **no incluye España** en sus regiones de apoyo publicadas para estos resúmenes. En consecuencia, no sirve actualmente como base fiable para una voz propia y humorística de Manolo en Córdoba. Fuentes: https://developers.google.com/maps/documentation/places/web-service/review-summaries ; https://developers.google.com/maps/documentation/places/web-service/policies
+4. **Yelp Places/Fusion Reviews:** endpoint público de producto devuelve hasta **3 extractos** por negocio y exige permisos de plan Enhanced o Premium. No satisface 100–200. Fuente: https://docs.developer.yelp.com/reference/v3_business_reviews
+5. **Tripadvisor Content API (legado):** la documentación histórica exponía hasta **5 reseñas recientes por local**, pero **está deprecada**; no seleccionar una integración nueva contra esa API. Fuentes: https://tripadvisor-content-api.readme.io/reference/overview ; https://tripadvisor-content-api.readme.io/reference/getlocationreviews
+6. **Tripadvisor Terra (API actual):** **opción comercial que merece investigación**. Dispone de `GET /api/locations/{id}/reviews`, con paginación sobre un **conjunto contratado**: N reseñas recientes o reseñas de los últimos M meses, según paquete y acuerdo. NO significa acceso ilimitado ni que 100–200 estén incluidos. La plataforma tiene niveles Discover/Growth/Scale/Innovate y permisos por endpoint. **Precio exacto, disponibilidad de restaurantes cordobeses, tamaño del pool, almacenamiento, resumen transformativo con IA y atribución/redistribución deben confirmarse por escrito con Tripadvisor antes de iniciar.** Fuentes: https://docs.terra.tripadvisor.com/reference/locationreviewsget ; https://docs.terra.tripadvisor.com/docs/overview ; https://docs.terra.tripadvisor.com/docs/rate-limits
+7. **Google Business Profile API:** devuelve reseñas paginadas de ubicaciones **verificadas y administradas con autorización OAuth**, no es una vía para consultar las reseñas completas de restaurantes de terceros sin control. El acceso del negocio tampoco debe interpretarse como una licencia automática de explotación derivada; revisar condiciones aplicables. Fuente: https://developers.google.com/my-business/reference/rest/v4/accounts.locations.reviews/list
+8. **Reseñas originales enviadas directamente a Helio Gastro:** posible vía autónoma y sostenible a futuro, con formulario específico, condiciones de licencia/permiso claros para síntesis editorial, moderación, controles contra spam, rectificación/supresión y política RGPD. Al inicio no habrá una muestra suficiente para generalizaciones: mostrar cantidad exacta y «Datos insuficientes» cuando corresponda. Referencia sobre transparencia de recogida de datos: https://www.aepd.es/derechos-y-deberes/conoce-tus-derechos/derecho-de-informacion
+
+### Recomendación funcional y económica
+
+- **No** desarrollar aún extracción automática de opiniones de Google/Yelp/Tripadvisor. Ninguna de sus opciones públicas simples probadas proporciona 100–200 reseñas por restaurante con derecho claro a crear resúmenes propios.
+- **Pista principal a evaluar:** solicitar información comercial/licencia de **Tripadvisor Terra** sobre un **piloto de 3 locales concretos de Córdoba** y permiso explícito para generar y publicar resúmenes originales asistidos por IA, volumen 100–200 por establecimiento, costes, actualización y avisos. **No hay contrato, precio ni acceso verificado** al 07/11/2026. No comprometer gasto.
+- **Plan independiente viable:** investigar un futuro sistema de reseñas originales de usuarios de Helio Gastro, separado del buzón de sugerencias (que sirve para avisar al administrador y no equivale a opinión publicable). Recoger solo lo imprescindible y moderar con criterios publicados. En una PWA estática requerirá almacenamiento/backend o proveedor adecuado; diseñar y aprobar antes de programar.
+- **Plan de contingencia para el lanzamiento:** mantener «El Consejo de Manolo» **sin resumen basado en opiniones** cuando falte fuente o muestra autorizada. Puede existir por separado una **nota editorial sobre el menú y datos documentados** (claramente rotulada como orientación sobre carta, no como reseñas, ni experiencia vivida, ni valoración de terceros). No fingir patrones ni asignar una nota media propia no respaldada.
+- **No confundir**: valoración global de Google/Tripadvisor ≠ puntuación de un muestreo ≠ análisis de texto de 100–200 opiniones. Siempre fuente, periodo, n real, criterios, revisión humana y fecha; jamás claims genéricos «todos opinan», «los clientes destacan» sin evidencia.
+- **Criterios de go/no-go:** fuente/licencia por escrito que permita los usos concretos; cobertura real de ≥3 locales; disponibilidad de 100–200 **si realmente existe** (o transparencia al reducir n), presupuesto aceptado, seguridad/RGPD, proceso de actualización, análisis de sesgos y prueba editorial. Si falla, no se publica la función como «reseñas sintetizadas».
+
+### Estado CI y próximo encargo a Codex
+
+- Fase de las 15 ilustraciones y lectura de resultados **cerrada en desarrollo**, con [GitHub Actions #897 PASS](https://github.com/Helioven/helio-gastro/actions/runs/42395115356) para commit **`d52872a2812a9dc3e850d9978cc9ece822f90a46`** (verificado externamente). Este PASS **no** valida commits de solo documentación posteriores ni significa merge a `main` o despliegue.
+- **Siguiente paso recomendado:** sin tocar código de producción, elaborar **matriz de viabilidad de proveedores** y esquema de datos/UX para una prueba de «Consejo de Manolo» con un conjunto de reseñas **ficticias etiquetadas como datos de prueba** y/o datos originales con permiso. Esa maqueta no debe publicar testimonios inventados como reales.
+- Preguntas de negocio pendientes: ¿merece la pena un proveedor de pago si Terra concede el permiso y hay datos suficientes? ¿Se lanzará inicialmente el Consejo como nota editorial de carta, o se ocultará hasta tener reseñas legítimas? Resolución corresponde a Helio.
+- Mantener prioridad posterior: biblioteca de ilustraciones para cartas → buzón privado → completar contenido → rediseño profesional → QA final → lanzar Gastro/Meteo y presentación conjunta.
+
+
+---
+
+## Handoff operativo para el domingo 8 de noviembre de 2026 — Consejo de Manolo
+
+> **Documento de continuidad prioritario, escrito el sábado 7 de noviembre.** Resumen de lo completado hoy, evidencias y siguiente tarea. Complementa el [Plan de Batalla](#plan-de-batalla--cierre-de-helio-gastro-7-de-noviembre-de-2026) y la [investigación de licencias](#investigación-de-reseñas--consejo-de-manolo-7-de-noviembre-de-2026), sin borrar el historial. La tarea siguiente se prepara para mañana; **no se ha ejecutado**.
+
+### A. Resumen del avance de hoy: qué está hecho
+
+**Helio Gastro — rama de desarrollo**
+
+- Identidad de marca seleccionada: **ManoloLabs by Helio**, lema «Ideas humanas · Tecnología inteligente», producto «Helio Gastro». Mascota base Manolo, robot 3D metálico blanco con **dos antenas**, gafas oscuras cuadradas, bigote marrón, acentos azules y «M» luminosa. En cabecera cabeza del robot, en pie busto y firma; favicon arreglado. La variante antigua de una sola antena NO sustituye esta identidad.
+- Ilustraciones generales: **15 WebP aprobados** en `assets/dishes/`, sin imágenes atribuidas falsamente a locales. Siete accesos generales originales y otras ocho ilustraciones visibles al buscar su plato compatible; resumen de búsqueda compacto, imagen única etiquetada «Imagen ilustrativa», listas legibles de platos coincidentes, comparador móvil y foco de resultados mejorados. ES/EN/FR y fallbacks mantenidos.
+- Último PASS de GitHub Actions verificado en la rama de desarrollo: **[#897](https://github.com/Helioven/helio-gastro/actions/runs/42395115356), `success`, commit `d52872a2812a9dc3e850d9978cc9ece822f90a46`**. Este PASS corresponde a las ilustraciones/resultados, NO a los cambios experimentales posteriores.
+- Se creó el Plan de Batalla para **terminar contenido y funcionalidades ANTES del rediseño profesional integral**. Se investigaron restricciones de fuentes de reseñas. No existe permiso ni proveedor contratado para analizar 100–200 opiniones de restaurantes cordobeses; no usar scraping ni inferir una licencia de datos públicos. Tripadvisor Terra queda como posibilidad comercial no verificada, junto a eventuales opiniones propias de usuarios.
+
+**«El Consejo de Manolo» — prototipo independiente en rama `poc/consejo-manolo-qa`**
+
+- **HG-REV-POC-001:** maqueta responsive en ES/EN/FR con tres restaurantes y opiniones ficticios, respectivamente **4, 4 y 0 opiniones**, advertencia «DATOS FICTICIOS — SOLO PROTOTIPO». Sin publicar opiniones ni crear fichas reales de esos establecimientos.
+- **HG-REV-POC-002:** variante **Manolo Chef** aprobada por Helio: gorro de cocina blanco con **M AZUL**, antenas, bigote, gafas y delantal «Manolo Chef». PNG original conservado; WebP transparente optimizado de **384 × 384** para la maqueta. No reemplaza logotipo general de ManoloLabs.
+- Prototipo y mascota guardados en rama aislada, primer commit **`068dbb41565e239d5abfd10f796ad1515b86933b`** (`feat(qa): finalize approved Manolo Chef prototype`), publicado y comprobado en GitHub. Archivos en `poc/consejo-manolo/`: HTML de demostración, fixtures, JS de render, test Playwright, PNG y WebP.
+- **HG-REV-ENGINE-001:** motor experimental construido posteriormente **a partir de anotaciones estructuradas de opiniones ficticias**; NO entiende todavía reseñas libres mediante IA. Arquitectura separa anotaciones/fuente → agregación determinista y referencias a IDs → redacción ES/EN/FR por reglas/plantillas → vista. Deduplica por ID, cuenta cada aspecto como máximo una vez por opinión, distingue polaridad y contradicciones, identifica menciones aisladas y puede **abstenerse**. Desplegable «Ver referencias de evidencia» para auditar cada afirmación.
+- Casos: **El Faro de Menta** (4 opiniones: guiso y atención 3 favorables cada uno; 1 espera aislada); **La Brújula de Nuez** (4: terraza 3 favorables; ruido 2 críticos; ritmo de servicio 1 favorable y 2 críticos, ahora mostrado UNA vez como contradictorio); **La Tetera Orbital** (0: abstención). Son **solo fixtures inventados**; no extrapolar cifras a restaurantes reales.
+- Umbrales **exclusivamente de QA**: 4 opiniones únicas para activar ejemplos y al menos 2 del mismo signo para declarar recurrencia. **NO son un criterio de publicación**. Pendientes permisos, muestra válida, sesgos, antigüedad, cobertura y revisión humana.
+- Se hizo una iteración editorial: mejor agrupación de opiniones contrapuestas y consejos más naturales, sin inventar hechos. Helio aprobó el enfoque. **QA local reportado por Codex: PASS** en 11 pruebas unitarias (duplicados, falta de derechos, datos incompletos, ambigüedad, trazabilidad y otros), además de Playwright en **360 × 800 y 1365 × 900**, ES/EN/FR, teclado, evidencias, ancho; fixtures fuera de la app pública. **No afirmar CI oficial para este motor**.
+
+### B. Estado de Git al cerrar esta sesión — NO perder cambios
+
+- **Remoto de desarrollo** `feature/manololabs-visual-20261107`: commit `9d025278c1aa1ea59477ddc254b6061cab29363a` antes de este documento. Se actualiza su **README solamente** con este handoff. No tocar `main`; aún no se ha autorizado el rediseño ni el lanzamiento.
+- **Remoto del prototipo** `poc/consejo-manolo-qa`: confirmado en `068dbb41565e239d5abfd10f796ad1515b86933b` al redactar esta nota. **Codex informa de otro commit LOCAL, `c1610679fdb6b271abe15f52d3a707348c697c9c`, pendiente de Push origin**. Este incluye el motor y sus ajustes finales, con 11 pruebas unitarias y el README de QA, según el informe del agente. **No darlo por publicado ni CI-validado hasta comprobar la subida**.
+- **Hay además un borrador sin commit de `README.md` en la copia local de la rama de desarrollo**, reportado por Codex y visto en GitHub Desktop. Se solapa con los bloques `HG-REV-POC-001` y `HG-REV-POC-002` de la rama de QA. **Conservarlo** al sincronizar, conciliar en una sola sección (evitar duplicados). Esta actualización del README remoto puede requerir integrar cambios antes de Push; nunca usar force push ni descartar el borrador.
+- **No asumir que la copia de GitHub Desktop activa es la copia QA**. El prototipo se gestiona en un worktree independiente. Comprobar arriba `Current repository` / `Current branch` antes de cualquier operación.
+
+### C. Secuencia exacta de reanudación (mañana, domingo 8/11)
+
+1. **Git primero:** abrir GitHub Desktop en el worktree de QA `poc/consejo-manolo-qa`, verificar el commit local `c1610679`, pulsar **Push origin** y confirmar en GitHub que el HEAD de esa rama es `c1610679…`. Si cambió el remoto, `Fetch origin` e integrar sin force push. Revisar si la rama QA tiene workflow aplicable; **11 pruebas locales PASS no equivalen a CI oficial**.
+2. **Proteger documentación:** en la copia de desarrollo, guardar/respaldar el README local pendiente, hacer Fetch, integrar este nuevo handoff del README remoto y reconciliar su bloque de POC/engine, sin duplicar secciones ni borrar el Plan de Batalla. No hacer merge de todo el POC a `main`.
+3. **Ajuste editorial no bloqueante:** cambiar la frase potencialmente engañosa «2 a favor y 0 críticos» por «2 temas positivos recurrentes y 0 temas negativos recurrentes», o equivalente por idioma, **sin ocultar la mención crítica aislada de espera**. Añadir test. Verificar que las frases humorísticas no exageran ni contradicen evidencia.
+4. **Siguiente desarrollo: `HG-REV-AI-001` — extracción asistida de aspectos desde opiniones en lenguaje natural de QA**. Preparar primero diseño/criterios y después un piloto **aislado y sin costes**. Ningún scraping, reseñas reales de terceros, claves de API, modelos de pago ni despliegue sin autorización.
+5. **Probar y revisar antes de cerrar**: entregar tabla de errores, etiquetas propuestas por el extractor, referencias a la frase origen, casos ambiguos/abstención, métricas de precisión/recall sobre una muestra manualmente etiquetada y diferencias entre determinismo y posible LLM. Solo después decidir si se avanza a un modelo de lenguaje real.
+6. Mantener resto del itinerario: conseguir fuente de reseñas **autorizada por escrito** (si existe) → ampliar gradualmente biblioteca de imágenes de platos para cartas (sin una imagen por plato indiscriminadamente) → buzón privado conectado a email sin exponer dirección → completar contenido y fuentes → **rediseño profesional de la app** → QA integral y lanzamiento → actualizar Manolo Meteo y presentar ambos proyectos juntos en LinkedIn.
+
+### D. Especificación breve para el siguiente agente: HG-REV-AI-001
+
+**Meta concreta:** convertir texto de prueba libre en **propuestas de anotación** de tema y polaridad, con `opinionId`, cita/referencia a un fragmento de la opinión ficticia y un estado de confianza o abstención. **Nunca** producir directamente afirmaciones publicables desde el texto bruto.
+
+- **Contrato:** opinión original ficticia → extractor propuesto → lista `{ opinionId, aspect, sentiment, evidenceSpan, status }` → validación y revisión editorial → motor determinista existente → resumen. Conservar fuente, licencia, trazabilidad, recuentos y separación de responsabilidades. Los recuentos pertenecen al motor, no a la IA generativa.
+- **Dataset de evaluación:** construir un conjunto pequeño y revisable de **20–50 opiniones ficticias adicionales**, etiquetadas manualmente como verdad de referencia, que cubra servicio, espera, calidad, raciones, ruido, precio, accesibilidad y casos neutros. Incluir negaciones («no tardaron»), sarcasmo/ironía, frases con sentimientos mixtos, errores ortográficos, referencias vagas, dos menciones del mismo tema, duplicados y contenido ambiguo. Idiomas ES/EN/FR o diseñar explícitamente cobertura y límites por idioma antes de afirmarla.
+- **Método:** comparar una línea base transparente basada en reglas/lexicón con opción posterior de IA/LLM **solo si aporta mejora demostrable**. No vender «IA que entiende reseñas» si depende de palabras clave o anotaciones manuales. Los modelos de lenguaje pueden equivocarse y deben someterse a evaluación reproducible y revisión humana.
+- **Criterios de aceptación:** ninguna evidencia inventada, `evidenceSpan` verificable dentro del texto, ningún recuento inflado por repeticiones, abstención para negaciones ambiguas/ironía no resoluble, ausencia de datos personales, controles de publicación que bloqueen fixtures, licencias ausentes y revisión no aprobada. Informar **errores reales, falsos positivos y falsos negativos**, no solo tests PASS.
+- **QA/documentación:** scripts y capturas de prototipo en rama `poc/consejo-manolo-qa`, control de regresiones del motor (11 tests existentes), casos nuevos y ES/EN/FR; lista de riesgos y deuda. Proponer cambios primero para aprobación. **No commit, merge, despliegue ni gasto sin autorización específica** del siguiente alcance.
+
+### E. Decisiones que no deben perderse
+
+- **Regla de Manolo:** «Si no hay pruebas, no hay consejo». No afirmar una valoración general de un negocio a partir de cuatro opiniones; no inventar reseñas, menciones, ingredientes, tiempos ni porcentajes.
+- Diferenciar **CI aprobado de desarrollo** (#897), **PASS de QA local del motor** y **revisión humana**. No confundirlos.
+- No atribuir a Google/Yelp/Tripadvisor datos o licencias no obtenidos; la investigación de Terra es exploratoria. La funcionalidad pública de reseñas está **pendiente**, aunque el POC esté avanzado.
+- El estilo definitivo de interfaz se decide **después de acabar contenido y funciones**, con dos propuestas visuales para elegir, sin migrar por inercia a React ni sustituir la identidad aprobada.
+- Los logos principales usan Manolo normal; **Manolo Chef** con M azul solo para el Consejo. PNG original y WebP optimizado se conservan en la rama experimental.
+- Al cerrar cada fase: actualizar README, informar fecha + rama + hash + pruebas efectivas + pendientes y guardar la documentación en la rama correspondiente sin reescribir la historia.
+
+### Cierre local de la ampliación de ilustraciones
+
+- Rama `feature/manololabs-visual-20261107` sincronizada por avance directo a `baf436c`. Se conserva el Plan de Batalla y se recuperan debajo las decisiones complementarias del borrador local sobre el Consejo.
+- Biblioteca de 17 ilustraciones. Se añaden `assets/dishes/carrillada-con-patatas.webp` y `assets/dishes/pisto-cordobes.webp` a 640 × 480 px a partir de los PNG aprobados. Las 15 ilustraciones anteriores son idénticas a las de `1f4c603`.
+- `app.js` muestra estas dos imágenes en el resumen de resultados con denominaciones normalizadas exactas y solo cuando todos los resultados visibles son compatibles. `index.html` actualiza la versión del script. Ver asociaciones en `assets/dishes/README.md`.
+- QA local PASS en sintaxis JS, auditoría de 44 establecimientos (0 errores y 0 avisos), búsqueda, filtros, comparador, accesibilidad básica, contadores de recomendaciones e ilustraciones. En Chrome con Playwright se verificaron móvil emulado y escritorio, carga de los WebP, etiquetas ES/EN/FR, coincidencias compatibles y exclusión de variantes. Regresiones repetidas tras la aprobación visual de Helio, con el mismo resultado. CI oficial pendiente.
+### Integración gradual del rediseño híbrido
+
+- Rama separada `codex/helio-gastro-rediseno`, desde `c16e6f0`. La rama visual conserva su borrador local del Consejo. El prototipo del Consejo y el buzón permanecen en sus entornos de QA.
+- Portada en `6b2431e`. Cabecera y portada crema, lema y descripción aprobados, flamenquín ilustrativo y orientación breve de Manolo. La búsqueda directa envía el formulario existente, con los filtros de la sesión.
+- Resultados y categorías en `c96ee93`. Pizzas, hamburguesas y tartas de queso consultan los nombres de plato y los precios del catálogo activo. La coincidencia de esas tres consultas exactas admite singular y plural, e incluye minihamburguesas. Excluye los extras de hamburguesa. Las categorías solo aparecen cuando el momento gastronómico activo tiene coincidencias. En escritorio, los filtros y los resultados se muestran en columnas. En móvil, «Ajustar filtros» vuelve al mismo formulario.
+- Fichas y formatos. Se añade índice con foco de teclado cuando la carta ya contiene varias secciones documentadas. Se conserva el renderizador actual, incluidas cartas sin secciones, fuentes y avisos. Un asterisco remite a un aviso por vista cuando falta el formato de un precio publicado. El comparador no destaca un precio mínimo si el formato es desconocido.
+- Se conservaron el catálogo, las traducciones de datos, las 17 ilustraciones y los recursos de marca.
+
+**Reproducir el QA local**
+
+1. Usar un checkout de `c16e6f0` para la línea base y el HEAD de la rama de integración para la comparación. Arrancar un servidor estático desde la raíz del checkout en `127.0.0.1:8765`.
+2. Ejecutar `node scripts/audit-data.mjs`, `node --check app.js` y `node --check i18n.js`. Ejecutar con Playwright las suites `test-search-regression`, `test-filter-regression`, `test-comparator-regression`, `test-detail-regression`, `test-navigation-regression`, `test-accessibility-flow`, `test-recommendation-count-i18n`, `test-dish-illustrations`, `test-fr-favorites-populated` y `test-fr-visual`, todas en `scripts/` con extensión `.mjs`.
+3. En la rama de integración, ejecutar `node scripts/test-hybrid-redesign.mjs`. Para guardar capturas, pasar como primer argumento un directorio existente fuera del checkout. La prueba usa el catálogo real y comprueba ES/EN/FR a 360 × 800 y 1365 × 900, el foco y la persistencia de búsqueda.
+4. En esta sesión, el runner local reutilizó Chrome y Playwright de la máquina con un servidor separado en el puerto 8766. Los informes se conservaron fuera del repositorio. El workflow oficial, la revisión humana, el lector de pantalla y el rendimiento en móvil físico siguen pendientes.
+### Piloto de horarios de apertura y cocina
+
+- Datos aislados en `data/venue-hours.json` (esquema 1, zona Europe/Madrid). Solo se muestran en las cinco fichas incluidas. El catálogo, la búsqueda por momento y los precios mantienen su estructura previa.
+- Cada horario distingue `published`, `unknown` y `conflict`. Una regla semanal agrupa días ISO de 1 a 7, con estado `scheduled`, `partial`, `closed` o `unknown`. Las reglas admiten varios intervalos y `endDayOffset: 1` para los que terminan al día siguiente. Un cierre sin hora exacta lleva `end: null`. Las excepciones se registran con fecha local, estado, intervalos y referencia a la fuente.
+- Consulta de fuentes oficiales del 8 de noviembre de 2026. Ágora Mezquita y Casa Bravo documentan cocina continua durante toda la apertura. La Montillana y Salinas solo aportan apertura. Las dos páginas oficiales de Bodegas Campos discrepan en horarios o alcance. Se conservan ambas evidencias y la ficha no publica intervalos para ese local. Ninguno de los cinco tiene tramos separados de desayuno, comida o cena ni excepciones fechadas comprobadas en las fuentes consultadas.
+- La carga se realiza al abrir una ficha y se reutiliza durante la sesión. La interfaz está en ES/EN/FR y muestra fuentes y fecha. No evalúa estados en tiempo real. Si falla la carga del archivo, la ficha habitual sigue disponible.
+- QA del piloto en `scripts/test-venue-hours.mjs`. Con Playwright instalado y servidor local en el puerto 8765, ejecutar `node scripts/test-venue-hours.mjs`. Se puede pasar un directorio existente como primer argumento para guardar capturas. La excepción fechada de prueba se inyecta exclusivamente en QA.
+- QA local PASS en el piloto y la regresión híbrida a 360 × 800 y 1365 × 900 en ES/EN/FR, diez suites de regresión adicionales y auditoría de 44 registros sin errores ni avisos. CI oficial y revisión humana pendientes.
+- Accesibilidad de fuentes en Bodegas Campos. Contacto y Reservas tienen nombres visibles y accesibles distintos en ES/EN/FR. Se conservan las dos URL, las evidencias y la discrepancia sin resolver. La prueba del piloto comprueba los nombres por rol de enlace y el orden del foco con Tab en móvil y escritorio.
+
+### Corrección del QA francés del buscador (#898)
+
+- La prueba del buscador francés aún esperaba la instrucción y los títulos anteriores al rediseño híbrido. Ahora comprueba una instrucción francesa de búsqueda válida o los ejemplos documentados del campo por servicio, y comprueba los títulos aprobados en ES/EN/FR. El texto de producto se conserva.
+- La prueba de ida y vuelta detectó que el observador de traducción podía guardar un texto híbrido traducido como si fuera el original. El observador y el renderizado comparten ahora el mismo cálculo de traducción, preservando el texto fuente para el cambio de idioma.
+- La prueba de filtros espera a que se cargue el catálogo y localiza «Flamenquín» por su nombre accesible. También comprueba que elegir una sugerencia rellena el campo sin ejecutar la búsqueda.
+- QA local PASS en sintaxis, buscador y filtros FR, resultados FR y traducción dinámica, contadores, búsqueda general, rediseño híbrido, horarios, accesibilidad y francés público. Nueva ejecución del workflow oficial pendiente de publicación.
+
+### Corrección de la prueba de restauración de idioma
+
+- `test-fr-section-render.mjs` buscaba una sentencia literal eliminada al unificar el traductor en `26f185d`. La prueba mantiene la cobertura de 314 encabezados y ahora ejecuta el traductor real en Node para comprobar el ciclo ES → FR → ES → EN → ES, incluido el observador de mutaciones y la conservación de los nombres de plato.
+- QA local PASS en los 21 scripts y los dos bloques de resumen del job `catalog-audit`. El ciclo de idiomas también pasó en Chromium a 360 × 800 y 1365 × 900, con la portada y la carta de La Montillana abiertas. El CI oficial del nuevo commit queda pendiente de publicación.
+
+### Correcciones previas a publicación
+
+- Los formatos explícitos de carta se normalizan antes de filtrar y comparar. La regresión de La Montillana comprueba que Media ración y Solo precios documentados devuelven el salmorejo a 6,90 €. Los formatos ambiguos siguen sin asignarse cuando tampoco se especifican en el nombre del plato.
+- Los recorridos de búsqueda y descubrimiento cubren sus textos dinámicos en ES/EN/FR. El traductor ignora nodos separados del DOM y conserva la ficha al cambiar de idioma si su capa francesa ya está cargada.
+- La cabecera y navegación móviles dejan visibles los cuatro controles, se adelanta el primer precio y se puede saltar a las fuentes de carta con teclado. Comparador y diálogos usan la paleta híbrida. El catálogo y los recursos visuales permanecen intactos.
+
+## Identidad de ManoloLabs — ideas pendientes
+
+ManoloLabs by Helio es la identidad común de los proyectos desarrollados por Helio. Manolo es su mascota y protagonista visual. Es un robot 3D blanco y metálico con dos antenas, gafas oscuras cuadradas, bigote marrón, detalles azules y una M luminosa azul en el pecho. Su personalidad es divertida, cercana y útil. El humor acompaña a la funcionalidad y nunca la sustituye.
+
+### Lemas candidatos
+
+La elección del lema sigue pendiente.
+
+- «Tecnología útil, con un toque de humor».
+- «Aplicaciones útiles, con un toque de humor».
+- «Ideas útiles, con un toque de humor».
+
+### Identidad compartida
+
+Manolo mantiene una identidad visual reconocible aunque adopte distintos papeles en cada proyecto.
+
+- **Helio Gastro** — Manolo Chef, orientador gastronómico.
+- **Manolo Meteo** — Consejos meteorológicos.
+- **Kanji Trainer** — Posible acompañante del aprendizaje.
+- **Manolo & Paca** — Humor y entretenimiento.
+
+### Revisión futura del nombre de Helio Gastro
+
+Queda pendiente estudiar si un cambio de nombre reforzaría la relación de Helio Gastro con ManoloLabs y el papel de Manolo como personaje central. Hasta que se tome una decisión, se conservan el nombre actual, los enlaces, los identificadores técnicos y el lema «Descubre Córdoba a bocados».
+
+
+## Estado de cierre — 8 de noviembre de 2026 (sin lanzamiento)
+
+> **Estado operativo vigente:** desarrollo y validación interna. **No se autoriza todavía la integración en `main`, la publicación ni el anuncio público.** Esta sección actualiza los estados de «CI pendiente» que puedan aparecer en notas históricas anteriores; aquellas notas se conservan como registro de cada fase.
+
+### Versión candidata validada
+
+- Rama de trabajo: `codex/helio-gastro-rediseno`; commit validado: `f55eb6b`.
+- GitHub Actions oficial: **PASS** en los dos jobs, `catalog-audit` y `visual-qa`, para ese mismo SHA. [Ejecución 42503739673](https://github.com/Helioven/helio-gastro/actions/runs/42503739673).
+- La comparación realizada antes del cierre encontró `main` en `4d4ee3f`, ancestro de `f55eb6b`: 29 commits exclusivos de la rama de trabajo, ninguno exclusivo de `main`, sin conflictos previstos en ese momento. **Volver a comprobar ambos SHA antes de integrar.**
+- Catálogo: 44 registros, 43 visibles; El Caballo Rojo permanece oculto. `data/places.json` era idéntico en ambas ramas durante la revisión.
+- Incluye rediseño híbrido, 17 ilustraciones aprobadas, marca ManoloLabs, panel «Manolo te orienta» V1.1, piloto de horarios, mejoras de formatos, traducciones ES/EN/FR, accesibilidad y pruebas.
+- El experimento de motor de opiniones y los escenarios ficticios de su POC **no** forman parte de la integración prevista.
+
+### «Manolo te orienta» — comportamiento acordado
+
+Panel de ayuda guiada, sin reseñas inventadas ni recomendaciones basadas en supuesta experiencia personal. Saludo: «¿Con hambre y sin ideas? ¡Para eso estoy yo!». Opciones:
+
+1. «No sé qué comer» — «Descubre platos y encuentra dónde probarlos».
+2. «Quiero algo típico» — «Explora los sabores tradicionales de Córdoba».
+3. «Busco algo económico» — «Encuentra platos que se ajusten a tu presupuesto».
+4. «Quiero comparar» — «Compara precios de un mismo plato».
+
+Por defecto, panel cerrado en móvil y abierto en escritorio. Se reutiliza Manolo Chef y se respeta la información documentada del catálogo.
+
+### Decisiones y trabajo pendiente antes del lanzamiento
+
+1. **Nombre de la aplicación:** estudiar y elegir el nombre definitivo, sin cambiar todavía enlaces ni identificadores técnicos.
+2. **Identidad ManoloLabs:** decidir el lema entre los candidatos documentados y revisar la coherencia visual y editorial de la marca.
+3. **Experiencia final:** aplicar los ajustes acordados y revisar cómo queda la aplicación en móvil y escritorio, incluidos los primeros pasos de un visitante.
+4. **Validación:** repetir las comprobaciones pertinentes sobre el SHA final tras los cambios; revisar datos, traducciones, accesibilidad y navegación.
+5. **Publicación:** confirmar la fuente vigente de GitHub Pages en [Settings → Pages](https://github.com/Helioven/helio-gastro/settings/pages). El README documenta publicación desde `main`/`(root)` y el último despliegue confirmado procedía de `main`, pero la consulta de configuración de Pages devolvió 404; **no se debe asumir que fusionar es inocuo**.
+6. **Autorización expresa:** solo cuando Helio haya visto el resultado y esté satisfecho, decidir si se abre PR, se fusiona y se publica. No hacer push a `main`, merge, despliegue ni anuncio público por iniciativa propia.
+
+### Integración futura y reversión
+
+Cuando se autorice el lanzamiento: comprobar nuevamente los SHA remotos, abrir PR a `main`, esperar los checks oficiales, fusionar únicamente con aprobación y verificar el despliegue del nuevo SHA. Si hubiera una regresión, preparar una reversión del commit de merge mediante PR y comprobar que Pages publica la versión restaurada. Publicar **no impide** continuar desarrollando nuevas versiones mediante ramas separadas.
+
+**Próxima sesión:** retomar nombre, lema e identidad; aplicar cambios; inspeccionar el resultado; decidir sobre lanzamiento **solo después** de la validación y la aprobación explícita.
+
+## HG-HOURS-002 — Primera ampliación de horarios (9 de noviembre de 2026)
+
+- Rama local `codex/hg-hours-002`, basada en `9c51b9a` de `codex/helio-gastro-rediseno`. Diez fichas nuevas elevan la cobertura a **15 de 43 locales visibles**. Once tienen apertura publicada total o parcial, tres tienen discrepancias y una solo tiene tramos de servicio de comidas y cenas publicados. Los cinco registros originales y `data/places.json` permanecen intactos.
+- `data/venue-hours.json` conserva las fuentes y evidencias comprobadas el 9 de noviembre. Casa Rubio presenta dos inicios nocturnos distintos en la misma página. Las versiones española e inglesa de Bodegas Mezquita Céspedes discrepan en el cierre de viernes y sábado. Ambos casos se muestran como conflicto. En Casa Pepe, los tramos de comida y cena se registran por separado. Taberna El Nº 10 deja lunes y martes sin confirmar. Las vísperas y festivos sin fecha y horario confirmados se documentan en la evidencia.
+- `scripts/test-venue-hours.mjs` valida el esquema, los identificadores, los 15 registros en ES/EN/FR a 360 × 800 y 1365 × 900, y la visualización de una excepción sintética aislada en QA. La suite está incluida en `visual-qa`. Auditoría local del catálogo con 44 registros, 0 errores y 0 avisos. PASS local también en las regresiones de búsqueda, filtros, comparador y accesibilidad básica. CI oficial de la tanda pendiente.
+- Siguiente tanda. Revisar los **28 locales visibles sin ficha de horarios**, priorizando fuentes oficiales específicas para cada sede. Confirmar por separado las discrepancias ya registradas y mantener como desconocidos los tramos sin respaldo.
+
+## HG-HOURS-003 — Segunda ampliación de horarios (9 de noviembre de 2026)
+
+- Base remota `codex/hg-hours-002` en `7103129`, con PASS de `catalog-audit` y `visual-qa` en la [ejecución oficial](https://github.com/Helioven/helio-gastro/actions/runs/42579519654). La rama `codex/hg-hours-003` añade diez registros y conserva los quince anteriores.
+- Cobertura de **25 de 43 locales visibles**. Hay 20 aperturas publicadas (15 completas y cinco parciales), cuatro en conflicto y una sin confirmar. Cuatro fichas tienen intervalos de cocina publicados, tres completos y uno parcial. Se mantienen los 44 registros del catálogo y El Caballo Rojo oculto.
+- En Con Acento Parrilla, tres páginas oficiales de la misma sede publican intervalos distintos. La ficha muestra el conflicto y enlaces con nombres distintos en ES/EN/FR. En ambas sedes Moriles, la cocina continua y el horario de festivos quedan en la evidencia. Las fuentes no fijan un cierre de cocina ni fechas concretas para las excepciones. En Beatillas consta el cierre semanal, pero faltan intervalos completos. Plateros San Francisco conserva el cierre nocturno sin precisar y La Tarterie deja el lunes sin confirmar.
+- PASS local de horarios en las 25 fichas en ES/EN/FR a 360 × 800 y 1365 × 900, incluida una excepción fechada sintética aislada en QA. PASS local de búsqueda, filtros, comparador y accesibilidad básica. La auditoría local del catálogo devuelve 44 registros, 0 errores y 0 avisos. CI oficial de esta tanda pendiente.
+- Siguiente paso. Revisar los **18 locales visibles sin ficha** por sede y confirmar los conflictos pendientes antes de publicar intervalos. Mantener separados apertura, cocina y servicios, con fecha y fuente en cada revisión.
+
+## HG-HOURS-004 — Cierre de investigación de horarios
+
+- 9 de noviembre de 2026. Rama `codex/hg-hours-004` sobre `cd7af2bc7f5cfab9cadac4cff9ad85e1991d5daa` de `codex/hg-hours-003`. Base remota comprobada con PASS de `catalog-audit` y `visual-qa` en la [ejecución oficial](https://github.com/Helioven/helio-gastro/actions/runs/42580951778).
+- Los **43 locales visibles** tienen ficha documental en `data/venue-hours.json`. Apertura completa en 19, parcial en 5, desconocida en 15 y conflictiva en 4. Hay cuatro fichas con tramos de cocina publicados (tres completos y uno parcial) y una con comida y cena documentadas por separado. El catálogo conserva 44 registros y El Caballo Rojo sigue oculto.
+- Esta tanda verifica apertura de Moriles · Ciudad Jardín, La Jineta, Roldán · Centro y La Sal. Las 14 fichas restantes conservan la fuente consultada y el motivo de la incertidumbre. El grupo Roldán mantiene horarios sin confirmar para la ficha colectiva porque el localizador distingue horarios por sede. La apertura de El Churrasco queda pendiente de confirmación tras detectar su web en mantenimiento. Las reglas genéricas de festivos quedan en la evidencia si no hay fechas publicadas.
+- Continúan en conflicto Bodegas Campos, Casa Rubio, Bodegas Mezquita Céspedes y Con Acento Brasería. Se conservan las evidencias anteriores y se registran los hallazgos de la revisión. En Céspedes se añaden la página francesa y el artículo oficial sobre cocina continua, sin tratar la última comanda como cierre.
+- QA local PASS en las 43 fichas en ES/EN/FR a 360 × 800 y 1365 × 900, incluidas regresiones de búsqueda, filtros, comparador, navegación y accesibilidad básica. Auditoría del catálogo con 44 registros, 0 errores y 0 avisos. La excepción fechada probada es sintética y permanece en QA.
+- Siguiente paso. Ejecutar el CI oficial para el commit de cierre cuando la rama se suba. Para mejorar los datos, pedir confirmación al establecimiento de los cuatro conflictos y buscar horarios explícitos para las fichas parciales o desconocidas.
+
+## HG-UI-ICONS-002 — Realismo minimalista
+
+- Rama `codex/hg-ui-icons-002` sobre `0f2441e0e264119fb62c2f49448f110b15c33dce`, base HG-HOURS-004 con [CI oficial en verde](https://github.com/Helioven/helio-gastro/actions/runs/42582655137).
+- `assets/ui/icons.svg` reúne los SVG originales de la maqueta B y variantes para cerrar, quitar, enlazar, volver y trazar una ruta. Los iconos son decorativos para tecnologías de asistencia. Las etiquetas traducibles y los estados de los controles se conservan por separado. El sprite se sirve localmente, sin dependencia de una biblioteca externa.
+- Navegación, momentos, buscador, Manolo, resultados, fichas, favoritos, comparador y mapa comparten tratamiento visual. Los desplegables de horarios y de resultados conservan `details` y `summary`. «Sabores de Córdoba» usa un marco con relieve discreto sobre las imágenes existentes. La etiqueta de imagen ilustrativa se mantiene en ES/EN/FR.
+- Los 44 registros del catálogo, las 43 fichas de horarios, las 17 ilustraciones y los recursos oficiales de marca se conservan byte a byte. El Caballo Rojo permanece oculto.
+- QA local PASS en Chromium a 360 × 800 y 1365 × 900, en ES/EN/FR. Se verificaron renderizado SVG, teclado, foco, contraste de texto de los controles principales y objetivos de 44 px. Pasaron las regresiones de búsqueda, filtros, fichas, favoritos, comparador, mapas, navegación, Manolo, horarios, ilustraciones e idiomas. Auditoría del catálogo con 44 registros, 0 errores y 0 avisos.
+- `scripts/test-ui-icons.mjs` forma parte de `visual-qa`. Las capturas antes/después se guardan fuera del repositorio. El CI de esta rama y la revisión de Helio quedan pendientes antes de integrar.
+
+## HG-QA-FIX-001 — Metodología y comparación de tapas
+
+- 9 de noviembre de 2026. Rama `codex/hg-images-001` sobre `241f5e201377752d2570b1e4aee858bea0182a51`. La [ejecución #906 del SHA base](https://github.com/Helioven/helio-gastro/actions/runs/42594076916) pasó `catalog-audit` y falló en `visual-qa` por la expectativa del emoji en `test-fr-visual.mjs`.
+- La prueba de metodología verifica los encabezados ES/EN/FR, el SVG decorativo, el contenido y la restauración del idioma. En Cena → Tapas, el comparador exige elegir un plato y un formato documentado común a dos locales antes de mostrar precios. Sabores de Córdoba muestra tapas frías o calientes solo cuando la sección documentada lo indica. Las 194 filas con precio de los 13 locales quedan sin clasificación de temperatura con la evidencia actual.
+- QA local PASS en las 73 comprobaciones del workflow tras reintentos, con casos específicos en ES/EN/FR a 360 × 800 y 1365 × 900. En paralelo, Salinas y El Pisto agotaron el tiempo de captura móvil y La Sal superó el límite del ejecutor. Las tres suites pasaron al repetirse por separado. Auditoría con 44 registros, 0 errores y 0 avisos. Se mantienen 43 locales visibles, El Caballo Rojo oculto y los datos, las imágenes, los horarios y sus fuentes.
+- CI oficial del commit de cierre pendiente de verificación en `catalog-audit` y `visual-qa`. La validación de esta rama es independiente de la autorización de lanzamiento.
+
+## HG-QA-CACHE-002 — Validación de imágenes durante la recarga
+
+- 9 de noviembre de 2026. Rama `codex/hg-images-001`, base `b40783be49bc5036b9a733b173c59b8d357073f4`. El [CI de la base](https://github.com/Helioven/helio-gastro/actions/runs/42656080857) pasó `catalog-audit` y falló en `visual-qa` exclusivamente en `inventory-cache-reload.mjs`, con dos abortos de imágenes en escritorio.
+- El inventario identifica las peticiones por documento y solo acepta `net::ERR_ABORTED` de una imagen que estaba pendiente en el documento saliente cuando comenzó la recarga. Para aceptarla exige una petición completada con HTTP 200 para la misma URL en el documento siguiente y comprueba que la imagen se decodifica y se renderiza. El informe separa `benignCancellations` de `networkFailures`.
+- Siguen siendo fallos los abortos de la vista activa, los errores de red sin recuperación comprobada, los HTTP 4xx/5xx locales, los errores de JavaScript y las imágenes esperadas que faltan o no se decodifican. Un control provoca una cancelación saliente y comprueba su recuperación. Otros tres simulan un 404, un aborto en el documento restaurado y un WebP inválido con HTTP 200.
+- QA local PASS en tres repeticiones de escritorio y móvil y en la ejecución de la batería completa. El control saliente registró la misma URL en los documentos 1 y 2, con HTTP 200 y decodificación y renderizado verificados en el segundo. Los tres controles negativos detectaron el fallo esperado. Las 73 comprobaciones del workflow pasaron tras repetir por separado dos suites que agotaron el tiempo local, `test-fr-detail-shell-pilot.mjs` y `test-fr-source-venue-triage.mjs`.
+- CI oficial del commit `6e497b1` ([ejecución #42662844377](https://github.com/Helioven/helio-gastro/actions/runs/42662844377)): `catalog-audit` PASS y `visual-qa` FAIL por un timeout en `test-venue-hours.mjs`, no en `inventory-cache-reload.mjs`. La prueba de recarga pasó en escritorio y móvil, incluidos sus controles negativos. Las comprobaciones locales se ejecutaron en una copia temporal con Chrome y servidor estático local; el control de cancelación fue inducido para verificar la regla de clasificación.
+
+## HG-QA-HOURS-006 — Robustez y diagnóstico del test de horarios
+
+- 9 de noviembre de 2026. Rama `codex/hg-images-001` sobre `6e497b18ec4e10629dda13f19fd132d8932cf755`. El [CI de la base](https://github.com/Helioven/helio-gastro/actions/runs/42662844377) pasó `catalog-audit` y falló únicamente en `test-venue-hours.mjs` por un timeout al pulsar el botón de Bodegas Mezquita Céspedes. El diagnóstico local anterior no reprodujo ese timeout.
+- La prueba exige una única tarjeta con el encabezado exacto del establecimiento. Comprueba por separado el clic normal, la identidad de la ficha y la visibilidad del panel de horarios. Al fallar conserva el FAIL y registra idioma, viewport, establecimiento, fase y recepción del evento de clic. Guarda el JSON, la captura y la traza de acciones en `qa-reports/`.
+- Los controles negativos provocan una intercepción real del puntero y bloquean el manejador de apertura por separado. El primero falla antes de recibir el clic. El segundo recibe el clic, pero falla al comprobar la ficha.
+- QA local PASS en ES/EN/FR a 360 × 800 y 1365 × 900, con 18 aperturas repetidas de Céspedes y los dos controles negativos. Un fallo inducido confirmó la creación de la traza ZIP, la captura PNG y el informe JSON. Las 73 comprobaciones del workflow pasaron en el primer intento de la batería completa, con Chrome y el servidor local en una copia temporal.
+- **CI oficial PASS** del commit `653b17b9c892e502e5228b1c75ad788ffe61a8ab`: [`catalog-audit` y `visual-qa` en verde, ejecución #42668708415](https://github.com/Helioven/helio-gastro/actions/runs/42668708415). El cambio mejora la detección y el diagnóstico del fallo; la causa del timeout intermitente original sigue sin confirmarse. Esta validación no implica merge a `main` ni autorización de despliegue.
+
+## HG-UI-PREMIUM-003 — Portada PlatoRadar
+
+- La portada local adopta PlatoRadar by ManoloLabs y el lema «Córdoba se descubre a bocados.». Los identificadores de persistencia y las rutas se mantienen. La panorámica es una ilustración generada a partir de la referencia aprobada, guardada como WebP independiente de 1680 × 560. La cabecera usa el busto oficial con dos adornos SVG, y el panel conserva el Manolo Chef aprobado.
+- Mapa reutiliza los mapas por establecimiento desde los resultados. Si hay un único resultado abre su mapa. Sugerencias lleva a la selección gastronómica existente. El buzón sigue siendo un prototipo de QA y requiere autorización aparte para activarse. El comparador y la orientación conservan sus componentes existentes.
+- QA local con Chromium en escritorio, tableta y móvil. La prueba de portada verifica navegación, accesos, ES/EN/FR y el mapa mediante una respuesta de prueba para el iframe externo. Pasaron además 14 regresiones seleccionadas, incluida la auditoría del catálogo. CI oficial pendiente.
+
+## HG-QA-FINAL-006 — Resultados vacíos y pruebas históricas
+
+- 10 de noviembre de 2026. Rama `codex/hg-premium-fase-1`, base `051cef7ced133ab16e8b3efb2270cfa3904ba7f6`. Se reprodujo una búsqueda sin coincidencias en francés con el contador y el aviso en español. La traducción se aplica al contador de resultados y al aviso de búsqueda sin coincidencias. La regresión verifica 0, 1 y 32 resultados en ES/EN/FR sin cambiar la búsqueda.
+- Las seis pruebas históricas `test-fr-la-cazuela-{12,24,36,48,60,72}.mjs` cubren los prefijos de 12, 24, 36, 48, 60 y 84 descripciones. El nombre histórico `72` se conserva y su conjunto incluye el lote 079, por lo que valida 84. Cada prueba exige todos los textos de sus lotes en el mismo orden y permite los lotes posteriores. `test-fr-la-cazuela-89.mjs` sigue comprobando las 89 descripciones completas. El catálogo y los lotes de traducción se mantienen.
+- QA local PASS en 84 comprobaciones, con 75 del workflow y 9 pruebas adicionales. Pasaron las seis pruebas históricas y la de 89 descripciones. Se repitieron la prueba de resultados tras corregir el singular francés y El Poema Alonso tras un timeout del ejecutor. Sintaxis PASS en 87 archivos. El estado vacío francés se revisó visualmente a 320 × 700.
+- CI oficial de la corrección pendiente en el SHA que la contiene.

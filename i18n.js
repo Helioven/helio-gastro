@@ -55,7 +55,7 @@ window.GASTRO_I18N = Object.freeze({
     [/^(\d+) precio\(s\) de carta documentado\(s\) · Ver ficha para detalles$/,m=>m[1]+' documented menu prices · View details'],
     [/^Desde (.+) · (.+)$/,m=>'From '+m[1]+' · '+translateValue(m[2])],
     [/^Especialidades: (.+)$/,m=>'Specialities: '+m[1]],
-    [/^🍴 Plato encontrado: (.+)$/,m=>'🍴 Dish found: '+m[1]],
+    [/^🍴 Platos encontrados$/,()=> '🍴 Matching dishes'],
     [/^Coste de comida por persona: (.+)$/,m=>'Meal cost per person: '+m[1]],
     [/^Comida completa por persona: (.+)$/,m=>'Full meal per person: '+m[1]],
     [/^Comida completa: (.+)$/,m=>'Full meal: '+m[1]],
@@ -69,7 +69,7 @@ window.GASTRO_I18N = Object.freeze({
   dynamicRules.unshift(
     [/^(.* · )Formato sin especificar( · .*)?$/,m=>m[1]+'Portion size not specified'+(m[2]||'')],
     [/^(\d+) favoritos$/,m=>m[1]+(m[1]==='1'?' favourite':' favourites')],
-    [/^🚶 Ruta a pie entre (\d+) tabernas ↗$/,m=>'🚶 Walking route between '+m[1]+' taverns ↗'],
+    [/^Ruta a pie entre (\d+) tabernas$/,m=>'Walking route between '+m[1]+' taverns'],
     [/^(\d+) fuente\(s\) · Revisado (.+)$/,m=>m[1]+' sources · Checked '+m[2]],
     [/^Desde (.+) · Precio de plato publicado$/,m=>'From '+m[1]+' · Published dish price'],
     [/^(\d+) locales registrados · (\d+) con precio$/,m=>m[1]+' places listed · '+m[2]+' with prices'],
@@ -170,7 +170,17 @@ window.GASTRO_I18N = Object.freeze({
     ['Acceso directo','Accès direct'],
     ['Elige un plato y descubre directamente opciones documentadas de nuestra base, separadas por variante y formato. Más barato no significa mejor.','Choisissez un plat et découvrez les options documentées dans notre base, classées par variante et par format. Le moins cher n’est pas forcément le meilleur.']
   ]);
-  const translateFrenchRecommendationsText=(node,source)=>node.parentElement?.closest('#recommendations-section')&&!node.parentElement.closest('#recommendation-dishes')?(frenchRecommendationsLabels.get(normalize(source))||source):source;
+  const translateFrenchRecommendationsText=(node,source)=>{
+    if(node.parentElement?.matches('#recommendation-dishes .recommendation-tile > span:not(.dish-visual)')){
+      const match=normalize(source).match(/^(\d+) locales (registrados|verificados) · (\d+) con precio$/);
+      if(match){
+        const singular=Number(match[1])===1;
+        const status=match[2]==='verificados'?(singular?'vérifié':'vérifiés'):(singular?'répertorié':'répertoriés');
+        return match[1]+' '+(singular?'établissement':'établissements')+' '+status+' · '+match[3]+' avec prix';
+      }
+    }
+    return node.parentElement?.closest('#recommendations-section')&&!node.parentElement.closest('#recommendation-dishes')?(frenchRecommendationsLabels.get(normalize(source))||source):source;
+  };
   const frenchServiceLabels=new Map([
     ['¿Qué plan tienes ?','Quel repas avez-vous en tête ?'],
     ['¿Qué plan tienes?','Quel repas avez-vous en tête ?'],
@@ -230,6 +240,7 @@ window.GASTRO_I18N = Object.freeze({
   ]);
   const translateFrenchResultsText=(node,source)=>node.parentElement?.closest('#results-section,#detail-section,#compare-section')&&!node.parentElement.closest('#results,#detail-content,#compare-output')?(frenchResultsLabels.get(normalize(source))||source):source;
   const frenchDynamicResults=new Map([
+    ['🍴 Platos encontrados','🍴 Plats correspondants'],
     ['Consulta especialidades y fuentes en la ficha','Consultez les spécialités et les sources dans la fiche.'],
     ['Precio del plato pendiente de confirmar','Prix du plat en attente de confirmation'],
     ['Precio del plato en este formato pendiente de confirmar','Prix du plat dans ce format en attente de confirmation'],
@@ -238,7 +249,7 @@ window.GASTRO_I18N = Object.freeze({
     ['✓ Quitar del comparador','✓ Retirer du comparateur'],
     ['+ Comparar','+ Comparer']
   ]);
-  const translateFrenchDynamicResult=(node,source)=>node.parentElement?.closest('#results')&&node.parentElement.matches('.result-pending,.note,.detail-button,button')?(frenchDynamicResults.get(normalize(source))||source):source;
+  const translateFrenchDynamicResult=(node,source)=>node.parentElement?.closest('#results')&&node.parentElement.matches('.result-pending,.note,.detail-button,.matching-dishes-label,button')?(frenchDynamicResults.get(normalize(source))||source):source;
   // Only compare-output content; source data, dishes, amounts and URLs are unchanged.
   const frenchCompareLabels=new Map([
     ['📍 Ver mapa','📍 Voir la carte'],
@@ -257,14 +268,14 @@ window.GASTRO_I18N = Object.freeze({
     ['Media ración','Demi-portion'],
     ['Ración completa','Portion entière'],
     ['Variante sin categorizar','Variante non classée'],
-    ['★ Menor precio comparable','★ Prix comparable le plus bas']
+    ['Menor precio comparable','Prix comparable le plus bas']
   ]);
   const translateFrenchCompareText=(node,source)=>{
     if(!node.parentElement?.closest('#compare-output'))return source;
     const raw=normalize(source);
     if(frenchCompareLabels.has(raw))return frenchCompareLabels.get(raw);
-    const route=raw.match(/^🚶 Ruta a pie entre (\d+) tabernas ↗$/);
-    if(route)return '🚶 Itinéraire à pied entre '+route[1]+' établissements ↗';
+    const route=raw.match(/^Ruta a pie entre (\d+) tabernas$/);
+    if(route)return 'Itinéraire à pied entre '+route[1]+' établissements';
     const foot=raw.match(/^(\d+) fuente\(s\) · Revisado (.+)$/);
     if(foot)return foot[1]+' sources · Vérifié le '+foot[2];
     const meal=raw.match(/^Comida completa: (.+)$/);
@@ -272,7 +283,7 @@ window.GASTRO_I18N = Object.freeze({
     const notice=raw.match(/^Precios publicados para «([\s\S]+)»\. Los formatos pueden ser distintos y no deben compararse como cantidades equivalentes\.$/);
     if(notice)return 'Prix publiés pour « '+notice[1]+' ». Les formats peuvent différer et ne doivent pas être comparés comme des quantités équivalentes.';
     if(node.parentElement.matches('li'))
-      return source.replace(/ · (Formato sin especificar|Unidad|Media ración|Ración completa|Variante sin categorizar|★ Menor precio comparable)(?= · |$)/g,
+      return source.replace(/ · (Formato sin especificar|Unidad|Media ración|Ración completa|Variante sin categorizar|Menor precio comparable)(?= · |$)/g,
         (part,label)=>' · '+(frenchCompareSuffixes.get(label)||label));
     return source;
   };
@@ -619,19 +630,312 @@ window.GASTRO_I18N = Object.freeze({
       return source.replace(/ · Vigencia pendiente de confirmar$/, ' · Validity not confirmed');
     return translateValue(key);
   };
-  function translateText(node){
-    if(!node || !node.parentElement || node.parentElement.closest('script,style,textarea,option[data-keep-original],#language-select,[data-keep-dish-spanish],[data-bilingual-es]'))return;
-    if(!originalNodes.has(node))originalNodes.set(node,node.nodeValue);
-    const original=originalNodes.get(node);
+  const hybridLabels = new Map(Object.entries({
+  "Inicio": ["Home","Accueil"],
+  "Guía": ["Guide","Guide"],
+  "Desayunos": ["Breakfast","Petit-déjeuner"],
+  "Mapa": ["Map","Carte"],
+  "Sugerencias": ["Suggestions","Suggestions"],
+  "Comparador": ["Comparison","Comparateur"],
+  "Navegación principal": ["Main navigation","Navigation principale"],
+  "Accesos rápidos": ["Quick links","Accès rapides"],
+  "Córdoba se descubre": ["Discover Córdoba","Découvrez Cordoue"],
+  "a bocados.": ["one bite at a time.","une bouchée à la fois."],
+  "Encuentra sus sabores, compara platos y descubre dónde disfrutar de su gastronomía.": ["Explore its flavours, compare dishes and find where to enjoy them.","Explorez ses saveurs, comparez les plats et trouvez où les déguster."],
+  "Explorar sabores": ["Explore flavours","Explorer les saveurs"],
+  "Quiero orientación": ["Help me choose","Aidez-moi à choisir"],
+  "Elige un establecimiento y pulsa «Ver mapa» para consultar su ubicación.": ["Choose a place and select View map to see its location.","Choisissez un établissement et sélectionnez Voir la carte pour le localiser."],
+  "PlatoRadar 3.1.1 · Córdoba · Proyecto piloto para portfolio QA": ["PlatoRadar 3.1.1 · Córdoba · QA portfolio pilot project","PlatoRadar 3.1.1 · Córdoba · Projet pilote pour un portfolio QA"],
+  "Más filtros": ["More filters","Plus de filtres"],
+  "Filtros activos": ["Active filters","Filtres actifs"],
+  "Ej.: Moriles": ["E.g. Moriles","Ex. : Moriles"],
+  "Escribe un plato": ["Enter a dish","Saisissez un plat"],
+  "Establecimientos de Roldán en Córdoba": ["Roldán locations in Córdoba","Établissements Roldán à Cordoue"],
+  "Varias ubicaciones en Córdoba (consulta los establecimientos de abajo)": ["Several locations in Córdoba (see venues below)","Plusieurs adresses à Cordoue (voir les établissements ci-dessous)"],
+  "Platos": ["Dishes","Plats"],
+  "Favoritos": ["Favourites","Favoris"],
+  "Comparar": ["Compare","Comparer"],
+  "Desayunar": ["Breakfast","Petit-déjeuner"],
+  "Comer": ["Lunch","Déjeuner"],
+  "Merendar": ["Afternoon snack","Goûter"],
+  "Cenar": ["Dinner","Dîner"],
+  "Buscar establecimientos": ["Find places","Rechercher des établissements"],
+  "Ver todos los locales que ofrecen este plato": ["See all places serving this dish","Voir tous les établissements proposant ce plat"],
+  "Mis tabernas favoritas": ["My favourite taverns","Mes tavernes favorites"],
+  "Cerrar ficha": ["Close details","Fermer la fiche"],
+  "Cerrar": ["Close","Fermer"],
+  "Nuestro criterio": ["Our methodology","Notre méthode"],
+  "Abrir en Google Maps": ["Open in Google Maps","Ouvrir dans Google Maps"],
+  "Ver mapa": ["View map","Voir la carte"],
+  "Guardar": ["Save","Enregistrer"],
+  "Guardado": ["Saved","Enregistré"],
+  "Quitar del comparador": ["Remove from comparison","Retirer du comparateur"],
+  "Platos encontrados": ["Matching dishes","Plats correspondants"],
+  "Con precio documentado": ["With documented prices","Avec prix documenté"],
+  "Con precio documentado dentro del presupuesto": ["With documented prices within budget","Avec prix documenté dans le budget"],
+  "Pendiente de incorporar cartas verificadas": ["Verified menus coming soon","Cartes vérifiées à venir"],
+  "Aún no tienes tabernas guardadas. Pulsa Guardar en los resultados o fichas.": ["No saved taverns yet. Select Save in results or details.","Vous n’avez pas encore de tavernes enregistrées. Sélectionnez Enregistrer dans les résultats ou les fiches."],
+  "¿Con hambre y sin ideas? ¡Para eso estoy yo!": ["Hungry and out of ideas? That’s what I’m here for!","Vous avez faim et manquez d’idées ? Je suis là pour ça !"],
+  "No sé qué comer": ["I don’t know what to eat","Je ne sais pas quoi manger"],
+  "Descubre platos y encuentra dónde probarlos.": ["Discover dishes and find where to try them.","Découvrez des plats et où les déguster."],
+  "Quiero algo típico": ["I want something local","Je veux goûter une spécialité locale"],
+  "Explora los sabores tradicionales de Córdoba.": ["Explore the traditional flavours of Córdoba.","Explorez les saveurs traditionnelles de Cordoue."],
+  "Has pasado al momento de comida para explorar Sabores de Córdoba.": ["You’ve switched to lunch to explore Flavours of Córdoba.","Vous êtes passé au déjeuner pour explorer les Saveurs de Cordoue."],
+  "Busco algo económico": ["I’m looking for something affordable","Je cherche une option économique"],
+  "Encuentra platos que se ajusten a tu presupuesto.": ["Find dishes that fit your budget.","Trouvez des plats adaptés à votre budget."],
+  "Elige un límite por plato o por persona. Los precios desconocidos no cuentan como opciones dentro del límite.": ["Set a limit per dish or per person. Unknown prices do not count as options within your budget.","Fixez une limite par plat ou par personne. Les prix inconnus ne comptent pas comme des options dans votre budget."],
+  "Quiero comparar": ["I want to compare","Je veux comparer"],
+  "Compara precios de un mismo plato.": ["Compare prices for the same dish.","Comparez les prix d’un même plat."],
+  "Compara solo precios documentados de un mismo formato. Si falta el precio en ese formato, consulta la carta.": ["Compare only documented prices for the same portion size. If a price for that size is missing, check the menu.","Comparez uniquement les prix documentés pour un même format. Si le prix de ce format manque, consultez la carte."],
+  "Fuentes de la carta": ["Menu sources", "Sources de la carte"],
+  "Cómo interpretar precios y disponibilidad": ["Understanding prices and availability", "Comprendre les prix et la disponibilité"],
+  "Secciones de la carta": ["Menu sections", "Sections de la carte"],
+  "Ir a sección": ["Go to section", "Aller à une section"],
+  "Volver al índice": ["Back to menu index", "Retour au sommaire"],
+  "Formato sin especificar": ["Portion size not specified", "Format non précisé"],
+  "El asterisco indica un precio publicado sin formato de ración documentado. Estos importes no sirven para comparar raciones.": ["An asterisk marks a published price with no documented portion size. Do not use these prices to compare portions.", "Un astérisque signale un prix publié sans format de portion documenté. Ces prix ne permettent pas de comparer les portions."],
+  "Ajustar filtros": ["Adjust filters", "Ajuster les filtres"],
+  "CÓRDOBA · GUÍA GASTRONÓMICA": [
+    "CÓRDOBA · FOOD GUIDE",
+    "CORDOUE · GUIDE GASTRONOMIQUE"
+  ],
+  "Descubre Córdoba a bocados": [
+    "Discover Córdoba one bite at a time",
+    "Découvrez Cordoue une bouchée à la fois"
+  ],
+  "Descubre qué comer en Córdoba, consulta precios de carta y encuentra dónde disfrutarlo": [
+    "Discover what to eat in Córdoba, check menu prices and find where to enjoy it",
+    "Découvrez quoi manger à Cordoue, consultez les prix à la carte et trouvez où en profiter"
+  ],
+  "Catálogo general": [
+    "General catalogue",
+    "Catalogue général"
+  ],
+  "Escribe un plato o especialidad…": [
+    "Type a dish or speciality…",
+    "Saisissez un plat ou une spécialité…"
+  ],
+  "Buscar": [
+    "Search",
+    "Rechercher"
+  ],
+  "Categorías rápidas": [
+    "Quick categories",
+    "Catégories rapides"
+  ],
+  "Pizzas": [
+    "Pizzas",
+    "Pizzas"
+  ],
+  "Hamburguesas": [
+    "Burgers",
+    "Burgers"
+  ],
+  "Tartas de queso": [
+    "Cheesecakes",
+    "Gâteaux au fromage"
+  ],
+  "Manolo te orienta": [
+    "Manolo’s search tips",
+    "Les astuces de Manolo"
+  ],
+  "Busca un plato o ajusta los filtros para encontrar un local.": [
+    "Search for a dish or adjust the filters to find a venue.",
+    "Recherchez un plat ou ajustez les filtres pour trouver un établissement."
+  ],
+  "Sabores de Córdoba": [
+    "Flavours of Córdoba",
+    "Saveurs de Cordoue"
+  ],
+  "Ideas para tu momento": [
+    "Ideas for your meal",
+    "Des idées pour votre repas"
+  ],
+  "Imagen ilustrativa": [
+    "Illustrative image",
+    "Image illustrative"
+  ]
+}));
+  const journeyLabels={
+    "No hay establecimientos que coincidan con los filtros seleccionados. Los horarios y servicios de las cartas generales siguen sin verificar.": [
+      "No places match your filters. Opening hours and services for general menus remain unverified.",
+      "Aucun établissement ne correspond aux filtres sélectionnés. Les horaires et les services des cartes générales restent à vérifier."
+    ],
+    'Tapas frías':['Cold tapas','Tapas froides'],
+    'Tapas calientes':['Hot tapas','Tapas chaudes'],
+    'Tapas sin clasificación de temperatura':['Tapas with no documented temperature','Tapas sans température documentée'],
+    'Plato concreto':['Specific dish','Plat précis'],
+    'Elige un plato':['Choose a dish','Choisissez un plat'],
+    'Formato documentado':['Documented portion size','Format documenté'],
+    'Elige un formato':['Choose a portion size','Choisissez un format'],
+    'Elige un plato concreto para comparar sus precios.':['Choose a specific dish to compare its prices.','Choisissez un plat précis pour comparer ses prix.'],
+    'El plato no tiene un formato equivalente documentado en al menos dos locales seleccionados.':['This dish has no equivalent portion size documented at two or more selected places.','Aucun format équivalent n’est documenté pour ce plat dans au moins deux établissements sélectionnés.'],
+    'Elige un formato documentado común a dos locales.':['Choose a documented portion size shared by two places.','Choisissez un format documenté commun à deux établissements.'],
+    'Se muestran precios del mismo plato y formato documentado. La cantidad real puede variar.':['Prices are for the same dish and documented portion size. Actual quantities may vary.','Les prix concernent le même plat et le même format documenté. La quantité réelle peut varier.'],
+  "Cerrar ×": [
+    "Close ×",
+    "Fermer ×"
+  ],
+  "Recomendaciones": [
+    "Recommendations",
+    "Recommandations"
+  ],
+  "Comparación informativa por variante y formato. Un precio menor no implica mejor calidad ni la misma cantidad.": [
+    "Informational comparison by variation and portion. A lower price does not imply better quality or the same quantity.",
+    "Comparaison indicative par variante et par format. Un prix plus bas ne garantit ni une meilleure qualité ni la même quantité."
+  ],
+  "Los precios pueden cambiar. Confirma la carta actual con el establecimiento.": [
+    "Prices may change. Check the current menu with the establishment.",
+    "Les prix peuvent changer. Vérifiez la carte actuelle auprès de l’établissement."
+  ],
+  "Los platos proceden de cartas generales. No se ha confirmado que estén disponibles específicamente para comer ni a una hora determinada.": [
+    "Dishes come from general menus. Availability at lunchtime or any particular time is not confirmed.",
+    "Les plats proviennent des cartes générales. Leur disponibilité au déjeuner ou à une heure précise reste à confirmer."
+  ],
+  "Los platos proceden de cartas generales. No se ha confirmado que estén disponibles específicamente para cenar ni a una hora determinada.": [
+    "Dishes come from general menus. Availability at dinner or any particular time is not confirmed.",
+    "Les plats proviennent des cartes générales. Leur disponibilité au dîner ou à une heure précise reste à confirmer."
+  ],
+  "Precios documentados por establecimiento": [
+    "Documented prices by establishment",
+    "Prix documentés par établissement"
+  ],
+  "También ofrecen el plato · precio pendiente": [
+    "Also list this dish · price pending",
+    "Proposent aussi ce plat · prix à confirmer"
+  ],
+  "Ver ficha": [
+    "View details",
+    "Voir la fiche"
+  ],
+  "📍 Ver mapa": [
+    "📍 View map",
+    "📍 Voir la carte"
+  ],
+  "☆ Guardar": [
+    "☆ Save",
+    "☆ Enregistrer"
+  ],
+  "★ Guardado": [
+    "★ Saved",
+    "★ Enregistré"
+  ],
+  "+ Comparar": [
+    "+ Compare",
+    "+ Comparer"
+  ],
+  "✓ Quitar del comparador": [
+    "✓ Remove from comparison",
+    "✓ Retirer du comparateur"
+  ],
+  "Mapa de Google Maps cargado al abrir esta ventana. Confirma la dirección antes de desplazarte.": [
+    "Google Maps loads when you open this window. Check the address before travelling.",
+    "Google Maps se charge à l’ouverture de cette fenêtre. Vérifiez l’adresse avant de vous déplacer."
+  ],
+  "Abrir en Google Maps ↗": [
+    "Open in Google Maps ↗",
+    "Ouvrir dans Google Maps ↗"
+  ],
+  "Establecimientos encontrados": [
+    "Places found",
+    "Établissements trouvés"
+  ],
+  "✓ Con precio documentado": [
+    "✓ With documented prices",
+    "✓ Avec prix documenté"
+  ],
+  "✓ Con precio documentado dentro del presupuesto": [
+    "✓ With documented prices within budget",
+    "✓ Avec prix documenté dans le budget"
+  ],
+  "También ofrecen el plato · Precio pendiente de confirmar": [
+    "Also list this dish · price pending",
+    "Proposent aussi ce plat · prix à confirmer"
+  ],
+  "Precio superior al presupuesto": [
+    "Price above budget",
+    "Prix supérieur au budget"
+  ],
+  "Carta general · servicio y horarios sin verificar": [
+    "General menu · service and hours unverified",
+    "Carte générale · service et horaires non vérifiés"
+  ],
+  "Carta específica registrada · horario pendiente de confirmar": [
+    "Service menu listed · hours unconfirmed",
+    "Carte du service répertoriée · horaires à confirmer"
+  ],
+  "Se muestran cartas generales para explorar opciones. No confirman que el local sirva este plato a la hora elegida.": [
+    "General menus are shown to explore options. They do not confirm that the venue serves this dish at the selected time.",
+    "Les cartes générales permettent d’explorer les options. Elles ne confirment pas que le plat soit servi à l’heure choisie."
+  ]
+};
+  const frenchPortions={'Unidad':'Unité','Tapa':'Tapa','Media ración':'Demi-portion','Ración completa':'Portion entière','Media tostada':'Demi-tartine','Tostada entera':'Tartine entière','Combinado':'Formule','Formato sin especificar':'Format non précisé'};
+  const compareVariants={
+    'Otro flamenquín':['Other flamenquín','Autre flamenquín'],
+    'Flamenquín tradicional / jamón':['Traditional flamenquín / ham','Flamenquín traditionnel / jambon'],
+    'Flamenquín de rabo de toro':['Oxtail flamenquín','Flamenquín à la queue de bœuf'],
+    'Croquetas de rabo de toro':['Oxtail croquettes','Croquettes à la queue de bœuf'],
+    'Croquetas de jamón y cocido':['Ham and stew croquettes','Croquettes au jambon et au pot-au-feu'],
+    'Croquetas de jamón y puchero':['Ham and puchero croquettes','Croquettes au jambon et au puchero'],
+    'Croquetas de jamón':['Ham croquettes','Croquettes au jambon'],
+    'Croquetas de salmón':['Salmon croquettes','Croquettes au saumon'],
+    'Croquetas de boniato':['Sweet potato croquettes','Croquettes à la patate douce'],
+    'Otras croquetas':['Other croquettes','Autres croquettes']
+  };
+  function translateJourneyText(node,source){
+    const parent=node.parentElement;
+    if(!parent)return null;
+    const key=normalize(source), fr=language==='fr', index=fr?1:0;
+    if(fr&&parent.id==='count'){
+      const count=key.match(/^(\d+) lugar(?:es)?$/);
+      if(count)return count[1]+(Number(count[1])<2?' établissement':' établissements');
+    }
+    if(parent.closest('#recommendation-dialog,#results-section,#map-dialog,.tapas-compare-controls,#compare-output [role=status]')){
+      if(Object.hasOwn(journeyLabels,key))return journeyLabels[key][index];
+    }
+    if(parent.closest('#recommendation-dialog')){
+      const dish=key.match(/^Opciones de (.+)$/);
+      if(dish)return (fr?'Options pour ':'Options for ')+dish[1];
+      const counts=key.match(/^(\d+) locales en nuestra base; (\d+) con precios publicados\. No es un ranking de calidad ni una lista completa de Córdoba\.$/);
+      if(counts)return fr?counts[1]+' établissements dans notre base, dont '+counts[2]+' avec des prix publiés. Ce n’est ni un classement de qualité ni une liste exhaustive de Cordoue.':
+        counts[1]+' places in our database; '+counts[2]+' with published prices. This is not a quality ranking or a complete list of Córdoba.';
+      if(fr&&parent.matches('.portion-tag')&&Object.hasOwn(frenchPortions,key))return frenchPortions[key];
+    }
+    if(fr&&parent.id==='coverage-summary'){
+      const counts=key.match(/^En nuestra base actual: (\d+) local\(es\) con «(.+)» registrado\(s\); (\d+) con precio de ese plato documentado y (\d+) sin precio\. Esto NO representa todos los bares de Córdoba\.$/);
+      if(counts)return 'Dans notre base : '+counts[1]+' établissements proposent « '+counts[2]+' » ; '+counts[3]+' avec un prix documenté et '+counts[4]+' sans prix. Cette liste ne couvre pas tous les établissements de Cordoue.';
+    }
+    if(fr&&parent.matches('.result-main-price')){
+      const price=key.match(/^Desde (.+) · (.+)$/);
+      if(price)return 'À partir de '+price[1]+' · '+(price[2]==='Precio de plato publicado'?'Prix du plat publié':(frenchPortions[price[2]]||price[2]));
+    }
+    if(parent.matches('li')&&parent.closest('#compare-output')){
+      const translated=fr?translateFrenchCompareText(node,source):source;
+      const parts=translated.split(' · ');
+      const position=parts.length-(parent.classList.contains('best-comparable')?2:1);
+      if(position>0&&Object.hasOwn(compareVariants,parts[position])){
+        parts[position]=compareVariants[parts[position]][index];
+        return parts.join(' · ');
+      }
+      if(translated!==source)return translated;
+    }
+    return null;
+  }
+  function translatedNodeValue(node,original){
+    if(language==='es')return original;
     const match=original.match(/^(\s*)([\s\S]*?)(\s*)$/);
-    const key=normalize(match[2]);
-    if(language==='en'){
-      const next=match[1]+translateEnglishText(node,match[2])+match[3];
-      if(node.nodeValue!==next)node.nodeValue=next;
-    }else if(language==='fr'){
-      const next=match[1]+translateFrenchDetailNotice(node,translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchRecommendationsText(node,translateFrenchServiceText(node,translateFrenchHeroText(node,translateFrenchNavText(node,translateFrenchFavoritesNotice(node,translateFrenchSearchText(node,translateFrenchGroupText(node,translateFrenchHeading(node,match[2]))))))))))))+match[3];
-      if(node.nodeValue!==next)node.nodeValue=next;
-    }else if(node.nodeValue!==original)node.nodeValue=original;
+    const hybrid=hybridLabels.get(match[2]);
+    if(hybrid)return match[1]+hybrid[language==='en'?0:1]+match[3];
+    const journey=translateJourneyText(node,match[2]);
+    if(journey!==null)return match[1]+journey+match[3];
+    if(language==='en')return match[1]+translateEnglishText(node,match[2])+match[3];
+    return match[1]+translateFrenchDetailNotice(node,translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchRecommendationsText(node,translateFrenchServiceText(node,translateFrenchHeroText(node,translateFrenchNavText(node,translateFrenchFavoritesNotice(node,translateFrenchSearchText(node,translateFrenchGroupText(node,translateFrenchHeading(node,match[2]))))))))))))+match[3];
+  }
+  function translateText(node){
+    if(!node || !node.parentElement || node.parentElement.closest('script,style,textarea,option[data-keep-original],#language-select,[data-keep-dish-spanish],[data-bilingual-es],[data-hours-localized]'))return;
+    if(!originalNodes.has(node))originalNodes.set(node,node.nodeValue);
+    const next=translatedNodeValue(node,originalNodes.get(node));
+    if(node.nodeValue!==next)node.nodeValue=next;
   }
   function translateElement(root){
     if(!root)return;
@@ -668,7 +972,8 @@ window.GASTRO_I18N = Object.freeze({
           'Cerrar recomendaciones':'Close recommendations',
           'Mapa del establecimiento':'Establishment map'
         };
-        const translated=language==='en'?(englishAccessibleLabels[source]||translateValue(source)):language==='fr'?(frenchAccessibleLabels[source]||source):source;
+        const hybrid=hybridLabels.get(source);
+        const translated=language==='en'?(hybrid?.[0]||englishAccessibleLabels[source]||translateValue(source)):language==='fr'?(hybrid?.[1]||frenchAccessibleLabels[source]||source):source;
         if(element.getAttribute(attr)!==translated)element.setAttribute(attr,translated);
       }
     }
@@ -676,11 +981,12 @@ window.GASTRO_I18N = Object.freeze({
   function applyLanguage(next){
     language=isSupportedLanguage(next)?next:'es';
     document.documentElement.lang=language;
+    if(document.querySelector('.radar-header'))document.title=language==='fr'?'PlatoRadar · Cordoue':'PlatoRadar · Córdoba';
     const select=document.getElementById('language-select');
     if(select && select.value!==language)select.value=language;
     translateElement(document.body);
     for(const element of document.querySelectorAll('[data-bilingual-es]')){
-      const translated=language==='fr'&&element.closest('#detail-content')?(normalize(element.dataset.bilingualEs)===frenchRoldanNotice[0]?frenchRoldanNotice[1]:(isBeatillasGeneralNotice(normalize(element.dataset.bilingualEs))?frenchBeatillasGeneralNotice:(frenchDetailNotices.get(normalize(element.dataset.bilingualEs))||element.dataset.bilingualEs))):(language==='en'?element.dataset.bilingualEn:element.dataset.bilingualEs);
+      const translated=language==='fr'&&element.closest('#detail-content')?(normalize(element.dataset.bilingualEs)===frenchRoldanNotice[0]?frenchRoldanNotice[1]:(isBeatillasGeneralNotice(normalize(element.dataset.bilingualEs))?frenchBeatillasGeneralNotice:(hybridLabels.get(element.dataset.bilingualEs)?.[1]||frenchDetailNotices.get(normalize(element.dataset.bilingualEs))||element.dataset.bilingualEs))):(language==='en'?element.dataset.bilingualEn:element.dataset.bilingualEs);
       if(translated!==undefined && element.textContent!==translated)element.textContent=translated;
     }
     if(typeof window.HelioGastroRefreshExplanations==='function')window.HelioGastroRefreshExplanations();
@@ -714,11 +1020,7 @@ window.GASTRO_I18N = Object.freeze({
         if(record.type==='characterData'){
           const node=record.target;
           const previous=originalNodes.get(node);
-          if(previous!==undefined){
-            const match=previous.match(/^(\s*)([\s\S]*?)(\s*)$/);
-            const expected=language==='en'?match[1]+translateEnglishText(node,match[2])+match[3]:language==='fr'?match[1]+translateFrenchDetailNotice(node,translateFrenchDetailText(node,translateFrenchDynamicResult(node,translateFrenchResultsText(node,translateFrenchRecommendationsText(node,translateFrenchServiceText(node,translateFrenchHeroText(node,translateFrenchNavText(node,translateFrenchFavoritesNotice(node,translateFrenchSearchText(node,translateFrenchGroupText(node,translateFrenchHeading(node,match[2]))))))))))))+match[3]:previous;
-            if(node.nodeValue===expected)continue;
-          }
+          if(previous!==undefined&&node.nodeValue===translatedNodeValue(node,previous))continue;
           originalNodes.delete(node);
           translateText(node);
         }else{
@@ -727,7 +1029,7 @@ window.GASTRO_I18N = Object.freeze({
             else if(node.nodeType===Node.ELEMENT_NODE){
               translateElement(node);
               const bilingual=[...(node.matches?.('[data-bilingual-es]')?[node]:[]),...(node.querySelectorAll?.('[data-bilingual-es]')||[])];
-              for(const element of bilingual){const value=language==='fr'&&element.closest('#detail-content')?(normalize(element.dataset.bilingualEs)===frenchRoldanNotice[0]?frenchRoldanNotice[1]:(frenchDetailNotices.get(normalize(element.dataset.bilingualEs))||element.dataset.bilingualEs)):(language==='en'?element.dataset.bilingualEn:element.dataset.bilingualEs);if(value!==undefined && element.textContent!==value)element.textContent=value;}
+              for(const element of bilingual){const value=language==='fr'&&element.closest('#detail-content')?(normalize(element.dataset.bilingualEs)===frenchRoldanNotice[0]?frenchRoldanNotice[1]:(hybridLabels.get(element.dataset.bilingualEs)?.[1]||frenchDetailNotices.get(normalize(element.dataset.bilingualEs))||element.dataset.bilingualEs)):(language==='en'?element.dataset.bilingualEn:element.dataset.bilingualEs);if(value!==undefined && element.textContent!==value)element.textContent=value;}
             }
           }
         }
