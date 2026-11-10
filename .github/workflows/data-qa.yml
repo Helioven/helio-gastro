@@ -192,6 +192,7 @@ jobs:
             scripts/test-accessibility-flow.mjs \
             scripts/test-manolo-guide.mjs \
             scripts/test-venue-hours.mjs \
+            scripts/test-platoradar-home.mjs \
             scripts/test-premium-search.mjs \
             scripts/test-ui-icons.mjs \
             scripts/inventory-contrast-status.mjs; do

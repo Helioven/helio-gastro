@@ -631,6 +631,20 @@ window.GASTRO_I18N = Object.freeze({
     return translateValue(key);
   };
   const hybridLabels = new Map(Object.entries({
+  "Inicio": ["Home","Accueil"],
+  "Guía": ["Guide","Guide"],
+  "Desayunos": ["Breakfast","Petit-déjeuner"],
+  "Mapa": ["Map","Carte"],
+  "Sugerencias": ["Suggestions","Suggestions"],
+  "Navegación principal": ["Main navigation","Navigation principale"],
+  "Accesos rápidos": ["Quick links","Accès rapides"],
+  "Córdoba se descubre": ["Discover Córdoba","Découvrez Cordoue"],
+  "a bocados.": ["one bite at a time.","une bouchée à la fois."],
+  "Encuentra sus sabores, compara platos y descubre dónde disfrutar de su gastronomía.": ["Explore its flavours, compare dishes and find where to enjoy them.","Explorez ses saveurs, comparez les plats et trouvez où les déguster."],
+  "Explorar sabores": ["Explore flavours","Explorer les saveurs"],
+  "Quiero orientación": ["Help me choose","Aidez-moi à choisir"],
+  "Elige un establecimiento y pulsa «Ver mapa» para consultar su ubicación.": ["Choose a place and select View map to see its location.","Choisissez un établissement et sélectionnez Voir la carte pour le localiser."],
+  "PlatoRadar 3.1.1 · Córdoba · Proyecto piloto para portfolio QA": ["PlatoRadar 3.1.1 · Córdoba · QA portfolio pilot project","PlatoRadar 3.1.1 · Córdoba · Projet pilote pour un portfolio QA"],
   "Más filtros": ["More filters","Plus de filtres"],
   "Filtros activos": ["Active filters","Filtres actifs"],
   "Ej.: Moriles": ["E.g. Moriles","Ex. : Moriles"],
@@ -958,6 +972,7 @@ window.GASTRO_I18N = Object.freeze({
   function applyLanguage(next){
     language=isSupportedLanguage(next)?next:'es';
     document.documentElement.lang=language;
+    if(document.querySelector('.radar-header'))document.title=language==='fr'?'PlatoRadar · Cordoue':'PlatoRadar · Córdoba';
     const select=document.getElementById('language-select');
     if(select && select.value!==language)select.value=language;
     translateElement(document.body);

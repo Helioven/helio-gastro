@@ -5,9 +5,9 @@ import { chromium } from 'playwright';
 const browser = await chromium.launch({ headless: true });
 const base = 'http://127.0.0.1:8765/index.html';
 const labels = {
-  es: ['Descubre Córdoba a bocados', 'Pizzas', 'Hamburguesas', 'Tartas de queso', 'El asterisco'],
-  en: ['Discover Córdoba one bite at a time', 'Pizzas', 'Burgers', 'Cheesecakes', 'An asterisk'],
-  fr: ['Découvrez Cordoue une bouchée à la fois', 'Pizzas', 'Burgers', 'Gâteaux au fromage', 'Un astérisque']
+  es: ['Córdoba se descubre a bocados.', 'Pizzas', 'Hamburguesas', 'Tartas de queso', 'El asterisco'],
+  en: ['Discover Córdoba one bite at a time.', 'Pizzas', 'Burgers', 'Cheesecakes', 'An asterisk'],
+  fr: ['Découvrez Cordoue une bouchée à la fois.', 'Pizzas', 'Burgers', 'Gâteaux au fromage', 'Un astérisque']
 };
 const categoryPatterns = [
   /^pizzas?\b/i, /^(?:mini\s*)?hamburguesas?\b/i, /^tartas? de queso\b/i

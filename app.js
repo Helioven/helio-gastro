@@ -1326,6 +1326,7 @@ function getDishCoverage(term, area, nameQuery='') {
 let appliedSearch=null;
 function filter(event,restoring=false){
  if(event)event.preventDefault();
+ const mapNote=el('radar-map-note');if(mapNote)mapNote.hidden=true;
  syncAdvancedFilters();
  syncDishSuggestions();
  syncBudgetNotice();
@@ -1699,6 +1700,43 @@ function openManoloAction(action){
  node.scrollIntoView({block:'center'});
 }
 
+function initRadarHome(guide){
+ const orient=el('radar-orient');
+ if(!orient)return;
+ const focus=id=>{
+  const target=el(id);
+  target.focus({preventScroll:true});
+  target.scrollIntoView({block:'start'});
+ };
+ for(const button of document.querySelectorAll('[data-radar-service]')){
+  button.addEventListener('click',()=>{
+   if(state.mode!==button.dataset.radarService)updateMealMode(button.dataset.radarService);
+   focus('dish');
+  });
+ }
+ for(const link of document.querySelectorAll('[data-radar-compare]')){
+  link.addEventListener('click',event=>{
+   event.preventDefault();
+   el('compare-section').hidden=false;
+   compare();
+   focus('compare-title');
+  });
+ }
+ orient.addEventListener('click',()=>{
+  guide.open=true;
+  guide.querySelector('summary').focus({preventScroll:true});
+  guide.scrollIntoView({block:'center'});
+ });
+ el('radar-map').addEventListener('click',()=>{
+  if(el('results-section').hidden)el('filters').requestSubmit();
+  const maps=el('results').querySelectorAll('.map-button');
+  if(maps.length===1){maps[0].click();return}
+  if(maps.length){
+   el('radar-map-note').hidden=false;
+   focus('results-heading');
+  }else focus('dish');
+ });
+}
 async function init(){
  const quickDishes=el('quick-dishes');
  if(quickDishes)quickDishes.open=matchMedia('(min-width: 561px)').matches;
@@ -1708,6 +1746,7 @@ async function init(){
  guide.open=matchMedia('(min-width: 541px)').matches;
  syncGuideState();
  guide.addEventListener('toggle',syncGuideState);
+ initRadarHome(guide);
  document.querySelectorAll('[data-manolo-action]').forEach(button=>{
   button.addEventListener('click',()=>openManoloAction(button.dataset.manoloAction));
  });

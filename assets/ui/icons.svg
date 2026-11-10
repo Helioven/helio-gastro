@@ -18,4 +18,9 @@
   <symbol id="route" viewBox="0 0 24 24"><circle cx="6" cy="17" r="2"/><circle cx="18" cy="7" r="2"/><path d="M8 17h8a3 3 0 0 0 0-6H8a2 2 0 0 1 0-4h8"/></symbol>
   <symbol id="menu" viewBox="0 0 24 24"><path d="M6 4h12v16H6zM9 8h6m-6 4h6m-6 4h4"/></symbol>
   <symbol id="back" viewBox="0 0 24 24"><path d="M20 12H5m6 6-6-6 6-6"/></symbol>
+  <symbol id="home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7M5 9v12h5v-6h4v6h5V9"/></symbol>
+  <symbol id="info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v.5"/></symbol>
+  <symbol id="star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.8 6.4.9-4.6 4.5 1.1 6.4-5.7-3-5.7 3 1.1-6.4-4.6-4.5 6.4-.9z"/></symbol>
+  <symbol id="cloche" viewBox="0 0 24 24"><path d="M3 17a9 9 0 0 1 18 0M2 18h20m-18 2h16M12 8V5m-2 0h4"/></symbol>
+  <symbol id="laptop" viewBox="0 0 24 24"><path d="M5 5h14v11H5zm0 11-3 3h20l-3-3"/></symbol>
 </svg>

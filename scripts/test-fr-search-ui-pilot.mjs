@@ -58,8 +58,8 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  await page.waitForFunction(text=>document.querySelector('#service-intro')?.textContent===text,frLunch);
 
  const hero=page.locator('.hero');
- assert.equal(await hero.locator('h2').textContent(),'Découvrez Cordoue une bouchée à la fois','French hero title');
- assert.equal(await hero.locator('.hybrid-lede').textContent(),'Découvrez quoi manger à Cordoue, consultez les prix à la carte et trouvez où en profiter','French hero description');
+ assert.equal(await hero.locator('h1').textContent(),'Découvrez Cordoue une bouchée à la fois.','French hero title');
+ assert.equal(await hero.locator('.hybrid-lede').textContent(),'Explorez ses saveurs, comparez les plats et trouvez où les déguster.','French hero description');
  const nav=page.locator('#quick-nav');
  assert.ok(await nav.getByRole('link',{name:'Rechercher',exact:true}).isVisible(),'French quick navigation search absent');
  assert.ok(await nav.getByRole('link',{name:'Favoris',exact:true}).isVisible(),'French quick navigation favorites absent');
@@ -103,7 +103,7 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.equal(await page.locator('#portion option[value=""]').textContent(),'Cualquier formato','ES default portion restored');
  assert.equal(await page.locator('#sort option[value="name"]').textContent(),'Nombre','ES name sort restored');
  assert.ok(await nav.getByRole('link',{name:'Buscar',exact:true}).isVisible(),'Spanish quick navigation not restored');
- assert.equal(await hero.locator('h2').textContent(),'Descubre Córdoba a bocados','Spanish hero restored');
+ assert.equal(await hero.locator('h1').textContent(),'Córdoba se descubre a bocados.','Spanish hero restored');
  assert.equal(await page.locator('#recommendations-heading').textContent(),'Sabores de Córdoba');
  assert.deepEqual(await page.locator('#service-section [data-service]').allTextContents(),['Desayunar','Comer','Merendar','Cenar']);
  assert.equal(await heading.textContent(),'¿Qué te apetece?');
@@ -119,14 +119,14 @@ for(const profile of [{name:'desktop',options:{viewport:{width:1280,height:800}}
  assert.equal(await page.locator('#portion option[value=""]').textContent(),'Any portion','EN default portion restored');
  assert.equal(await page.locator('#sort option[value="name"]').textContent(),'Name','EN name sort restored');
  assert.ok(await nav.getByRole('link',{name:'Search',exact:true}).isVisible(),'English quick navigation absent');
- assert.equal(await hero.locator('h2').textContent(),'Discover Córdoba one bite at a time','English hero title');
+ assert.equal(await hero.locator('h1').textContent(),'Discover Córdoba one bite at a time.','English hero title');
  assert.equal(await page.locator('#recommendations-heading').textContent(),'Flavours of Córdoba');
  assert.deepEqual(await page.locator('#service-section [data-service]').allTextContents(),['Breakfast','Lunch','Afternoon snack','Dinner']);
  assert.equal(await button.textContent(),'Find places');
  await page.locator('#language-select').selectOption('fr');
  assert.equal(await favoriteNotice.textContent(),favoriteFr);
  assert.ok(await nav.getByRole('link',{name:'Rechercher',exact:true}).isVisible(),'French quick navigation not restored');
- assert.equal(await hero.locator('h2').textContent(),'Découvrez Cordoue une bouchée à la fois','French hero restored');
+ assert.equal(await hero.locator('h1').textContent(),'Découvrez Cordoue une bouchée à la fois.','French hero restored');
  assert.equal(await page.locator('#recommendations-heading').textContent(),'Saveurs de Cordoue');
  assert.deepEqual(await page.locator('#service-section [data-service]').allTextContents(),['Petit-déjeuner','Déjeuner','Goûter','Dîner']);
  await checkFavoritesFr();
