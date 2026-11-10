@@ -17,11 +17,27 @@ try {
     assert.equal(await page.locator('#portion').isVisible(), false);
     assert.equal(await active.isVisible(), false);
 
+    const budget = page.locator('#budget');
+    const notice = page.locator('#budget-explain');
+    assert.equal(await notice.isVisible(), false);
+    assert.equal(await budget.getAttribute('aria-describedby'), null);
+    if (!await quick.evaluate(el => el.open)) await quick.locator('summary').press('Enter');
+    const salmorejo = quick.locator('button[data-dish="Salmorejo"]');
+    await salmorejo.press('Space');
+    assert.equal(await salmorejo.getAttribute('aria-pressed'), 'true');
+    assert.equal(await page.locator('#dish').inputValue(), 'Salmorejo');
+    assert.equal(await page.locator('#results-section').isHidden(), true);
+    await page.locator('#dish').fill('Flamenquin');
+    assert.equal(await salmorejo.getAttribute('aria-pressed'), 'false');
+    assert.equal(await quick.locator('[aria-pressed="true"]').count(), 1);
+
     await summary.press('Enter');
     await page.locator('#portion').selectOption('media');
     await page.locator('#price-kind').selectOption('confirmed');
     await page.locator('#sort').selectOption('price');
-    await page.locator('#budget').selectOption('10');
+    await budget.selectOption('10');
+    assert.equal(await notice.isVisible(), true);
+    assert.equal(await budget.getAttribute('aria-describedby'), 'budget-explain');
     await page.locator('#dish').fill('Salmorejo');
     await summary.press('Space');
     assert.equal(await advanced.evaluate(el => el.open), false);
@@ -32,6 +48,8 @@ try {
     await page.reload();
     await page.waitForFunction(() => state.searched && state.places.length === 43);
     assert.deepEqual(await page.evaluate(() => state.filtered.map(place => place.id)), places);
+    assert.equal(await notice.isVisible(), true);
+    assert.equal(await salmorejo.getAttribute('aria-pressed'), 'true');
     assert.equal(await advanced.evaluate(el => el.open), false);
     assert.equal(await active.isVisible(), true);
     for (const [language, title, status] of [
@@ -50,16 +68,55 @@ try {
     assert.equal(await page.locator('#sort').inputValue(), 'price');
     await page.locator('#clear-search').click();
     assert.equal(await active.isVisible(), false);
+    assert.equal(await notice.isVisible(), false);
+    assert.equal(await quick.locator('[aria-pressed="true"]').count(), 0);
 
     const guide = page.locator('.manolo-guide');
     if (!await guide.evaluate(el => el.open)) await guide.locator('summary').press('Enter');
     assert.equal(await guide.locator('summary').getAttribute('aria-expanded'), 'true');
     await summary.press('Enter');
-    await guide.locator('[data-manolo-action="budget"]').press('Enter');
+    const action = guide.locator('[data-manolo-action="budget"]');
+    assert.equal(await guide.locator('.manolo-action-arrow[aria-hidden="true"]').count(), 4);
+    assert.equal(await action.evaluate(el => getComputedStyle(el).transitionDuration), '0s');
+    await action.focus();
+    assert.equal(await action.evaluate(el => el.matches(':focus-visible') && getComputedStyle(el).outlineStyle === 'solid'), true);
+    await action.press('Enter');
     assert.equal(await advanced.evaluate(el => el.open), true);
     assert.equal(await page.evaluate(() => document.activeElement.id), 'price-scope');
     assert.equal(await page.evaluate(() => getComputedStyle(document.querySelector('.quick-nav')).position),
       width === 360 ? 'static' : 'sticky');
+    if (width === 1365) {
+      await page.emulateMedia({ reducedMotion: 'no-preference' });
+      await action.hover();
+      assert.match(await action.evaluate(el => getComputedStyle(el).transitionDuration), /0\.17s/);
+      const translationY = async expected => {
+        await page.waitForFunction(y => {
+          const card = document.querySelector('[data-manolo-action="budget"]');
+          return new DOMMatrix(getComputedStyle(card).transform).m42 === y;
+        }, expected);
+      };
+      await translationY(-2);
+      await page.mouse.down();
+      try { await translationY(1); }
+      finally { await page.mouse.up(); }
+      await page.emulateMedia({ reducedMotion: 'reduce' });
+      assert.equal(await action.evaluate(el => getComputedStyle(el).transform), 'none');
+    }
+    for (const name of ['discover', 'traditional', 'budget', 'compare']) {
+      const card = guide.locator('[data-manolo-action="' + name + '"]');
+      const box = await card.boundingBox();
+      await card.click({ position: { x: box.width - 5, y: Math.floor(box.height / 2) } });
+      const focus = await page.evaluate(() => ({
+        id: document.activeElement.id, quick: !!document.activeElement.closest('#quick-categories')
+      }));
+      if (name === 'discover') assert.equal(focus.quick, true);
+      else assert.equal(focus.id, { traditional: 'recommendations-heading', budget: 'price-scope', compare: 'dish' }[name]);
+    }
+    await budget.selectOption('10');
+    await page.locator('#price-scope').selectOption('meal');
+    assert.match(await notice.textContent(), /coste total por persona/);
+    await budget.selectOption('');
+    assert.equal(await notice.isVisible(), false);
     await page.close();
     console.log(width + ' PASS');
   }

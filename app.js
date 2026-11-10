@@ -440,7 +440,10 @@ function updateMealMode(mode,{reset=true}={}){
   ?serviceMessage
   :'Se muestran cartas generales para explorar opciones. No confirman que el local sirva este plato a la hora elegida.';
  const dishSuggestions=el('dish-suggestions-list');dishSuggestions.replaceChildren();
- for(const dish of cfg.dishes){const btn=document.createElement('button');btn.type='button';btn.textContent=dish;btn.addEventListener('click',()=>{el('dish').value=dish;el('dish').focus()});dishSuggestions.append(btn)}
+ for(const dish of cfg.dishes){
+  const button=document.createElement('button');button.type='button';button.textContent=dish;button.dataset.dish=dish;
+  dishSuggestions.append(button);
+ }
  renderRecommendations();
  renderQuickCategories();
  el('recommendations-heading').textContent=mode==='comida'||mode==='cena'?'Sabores de Córdoba':'Ideas para tu momento';
@@ -454,6 +457,8 @@ function updateMealMode(mode,{reset=true}={}){
   updateQuickNav();
   try{localStorage.removeItem(SEARCH_KEY)}catch{}
  }
+ syncDishSuggestions();
+ syncBudgetNotice();
 }
 
 const fmt=n=>typeof n==='number'?new Intl.NumberFormat('es-ES',{style:'currency',currency:'EUR'}).format(n):'No disponible';
@@ -712,6 +717,18 @@ function syncAdvancedFilters(){
  status.hidden=!(el('price-scope').value==='meal'||el('area').value||
   (!el('portion').disabled&&el('portion').value)||!el('include-unknown').checked||
   el('price-kind').value||el('sort').value!=='name');
+}
+function syncDishSuggestions(){
+ const dish=clean(el('dish').value.trim());
+ for(const button of el('dish-suggestions-list').querySelectorAll('button[data-dish]')){
+  button.setAttribute('aria-pressed',String(clean(button.dataset.dish)===dish));
+ }
+}
+function syncBudgetNotice(){
+ const budget=el('budget'),limited=budget.value!=='';
+ el('budget-explain').hidden=!limited;
+ if(limited)budget.setAttribute('aria-describedby','budget-explain');
+ else budget.removeAttribute('aria-describedby');
 }
 function searchFormValues(){
  const form={};
@@ -1310,6 +1327,8 @@ let appliedSearch=null;
 function filter(event,restoring=false){
  if(event)event.preventDefault();
  syncAdvancedFilters();
+ syncDishSuggestions();
+ syncBudgetNotice();
  el('direct-dish').value=el('dish').value;
  appliedSearch={mode:state.mode,form:searchFormValues()};
  const dish=clean(el('dish').value.trim()),nameQuery=clean(el('place-name').value.trim()),max=el('budget').value?Number(el('budget').value):null;
@@ -1720,11 +1739,15 @@ async function init(){
   el('include-unknown').checked=true;
   el('filters').requestSubmit();
  });
- document.querySelectorAll('[data-dish]').forEach(button=>button.addEventListener('click',()=>{
+ el('dish').addEventListener('input',syncDishSuggestions);
+ el('budget').addEventListener('change',syncBudgetNotice);
+ el('dish-suggestions-list').addEventListener('click',event=>{
+  const button=event.target.closest('button[data-dish]');
+  if(!button)return;
   el('dish').value=button.dataset.dish;
+  syncDishSuggestions();
   el('dish').focus();
-  // Elegir un plato solo prepara el formulario, nunca ejecuta una búsqueda.
- }));
+ });
  try{
   const res=await fetch('./data/places.json',{cache:'no-store'});
   if(!res.ok)throw Error('HTTP '+res.status);

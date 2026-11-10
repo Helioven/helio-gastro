@@ -15,8 +15,8 @@ try {
   await page.goto('http://127.0.0.1:8765/index.html');
   await page.waitForFunction(() => state.places.length === 43);
   const checkWidth = async () => assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
-  const checkIcon = async node => {
-   const svg = node.locator('svg.ui-icon');
+  const checkIcon = async (node, selector = 'svg.ui-icon') => {
+   const svg = node.locator(selector);
    await svg.waitFor();
    assert.equal(await svg.getAttribute('aria-hidden'), 'true');
    assert.equal(await svg.getAttribute('focusable'), 'false');
@@ -39,7 +39,11 @@ try {
   assert.equal(await page.locator('#nav-compare').isVisible(), false);
   const guide = page.locator('.manolo-guide');
   if (!await guide.evaluate(node => node.open)) await guide.locator('summary').press('Enter');
-  for (const option of await guide.locator('[data-manolo-action]').all()) await checkIcon(option);
+  for (const option of await guide.locator('[data-manolo-action]').all()) {
+   await checkIcon(option, 'svg.ui-icon:not(.manolo-action-arrow)');
+   await checkIcon(option, 'svg.manolo-action-arrow');
+   assert.match(await option.locator('.manolo-action-arrow use').getAttribute('href'), /#arrow$/);
+  }
   await page.locator('#dish').fill('Flamenquín');
   await page.locator('#search-button').press('Enter');
   const card = page.locator('#results article').first();
