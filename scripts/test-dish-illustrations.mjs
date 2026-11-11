@@ -17,7 +17,8 @@ const filenames = ['flamenquin', 'salmorejo', 'rabo-de-toro', 'berenjenas-con-mi
   'croquetas', 'tortilla-de-patatas', 'boquerones-fritos', 'huevos-rotos', 'hamburguesa',
   'pizza', 'cachopo', 'ensaladilla-rusa', 'nachos', 'tarta-de-queso', 'carrillada-con-patatas', 'pisto-cordobes',
   'pescados-y-mariscos','carnes-y-asados','bocadillos-y-sandwiches','guisos-y-cocina-tradicional',
-  'verduras-y-ensaladas','tapas-y-raciones','postres-y-dulces','tapas'];
+  'verduras-y-ensaladas','tapas-y-raciones','postres-y-dulces','tapas',
+  'tostadas','churros','molletes','cafe','chocolate-a-la-taza','pasteles','bolleria','tartas'];
 for (const name of filenames) {
   const bytes = readFileSync(`assets/dishes/${name}.webp`);
   assert.equal(bytes.toString('ascii', 0, 4), 'RIFF');
@@ -33,9 +34,9 @@ try {
     const cards = page.locator('.recommendation-tile');
     const tapas = cards.filter({has:page.locator('img[data-card-illustration="tapas"]')});
     const tapasCounts = {
-      es:'13 locales registrados · 13 con precio',
-      en:'13 places listed · 13 with prices',
-      fr:'13 établissements répertoriés · 13 avec prix'
+      es:'13 locales registrados · 13 con precio registrado',
+      en:'13 places listed · 13 with a recorded price',
+      fr:'13 établissements répertoriés · 13 avec un prix renseigné'
     };
     for (const [mode, names] of expectedCards) {
       await page.locator('[data-service="'+mode+'"]').click();

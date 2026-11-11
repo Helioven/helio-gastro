@@ -50,8 +50,7 @@ window.GASTRO_I18N = Object.freeze({
 
     [/^(\d+) favoritos$/,m=>m[1]+' favourites'],
     [/^(\d+) (lugar|lugares)$/,m=>m[1]+(m[1]==='1'?' place':' places')],
-    [/^(\d+) locales registrados · (\d+) con precio$/,m=>m[1]+' places listed · '+m[2]+' with prices'],
-    [/^(\d+) locales verificados · (\d+) con precio$/,m=>m[1]+' verified places · '+m[2]+' with prices'],
+    [/^(\d+) (?:local registrado|locales registrados) · (\d+) con precio registrado$/,m=>m[1]+(m[1]==='1'?' place listed':' places listed')+' · '+m[2]+' with a recorded price'],
     [/^(\d+) precio\(s\) de carta documentado\(s\) · Ver ficha para detalles$/,m=>m[1]+' documented menu prices · View details'],
     [/^Desde (.+) · (.+)$/,m=>'From '+m[1]+' · '+translateValue(m[2])],
     [/^Especialidades: (.+)$/,m=>'Specialities: '+m[1]],
@@ -72,8 +71,6 @@ window.GASTRO_I18N = Object.freeze({
     [/^Ruta a pie entre (\d+) tabernas$/,m=>'Walking route between '+m[1]+' taverns'],
     [/^(\d+) fuente\(s\) · Revisado (.+)$/,m=>m[1]+' sources · Checked '+m[2]],
     [/^Desde (.+) · Precio de plato publicado$/,m=>'From '+m[1]+' · Published dish price'],
-    [/^(\d+) locales registrados · (\d+) con precio$/,m=>m[1]+' places listed · '+m[2]+' with prices'],
-    [/^(\d+) locales verificados · (\d+) con precio$/,m=>m[1]+' verified places · '+m[2]+' with prices']
   );
   dynamicRules.unshift(
     [/^Tenemos (\d+) locales con especialidades registradas para este servicio\. Los precios y horarios concretos siguen pendientes de confirmar\.$/,m=>'We have '+m[1]+' places with specialities recorded for this service. Exact prices and opening hours still need confirmation.'],
@@ -172,11 +169,10 @@ window.GASTRO_I18N = Object.freeze({
   ]);
   const translateFrenchRecommendationsText=(node,source)=>{
     if(node.parentElement?.matches('#recommendation-dishes .recommendation-tile > span:not(.dish-visual)')){
-      const match=normalize(source).match(/^(\d+) locales (registrados|verificados) · (\d+) con precio$/);
+      const match=normalize(source).match(/^(\d+) (?:local registrado|locales registrados) · (\d+) con precio registrado$/);
       if(match){
         const singular=Number(match[1])===1;
-        const status=match[2]==='verificados'?(singular?'vérifié':'vérifiés'):(singular?'répertorié':'répertoriés');
-        return match[1]+' '+(singular?'établissement':'établissements')+' '+status+' · '+match[3]+' avec prix';
+        return match[1]+(singular?' établissement répertorié':' établissements répertoriés')+' · '+match[2]+' avec un prix renseigné';
       }
     }
     return node.parentElement?.closest('#recommendations-section')&&!node.parentElement.closest('#recommendation-dishes')?(frenchRecommendationsLabels.get(normalize(source))||source):source;
@@ -192,7 +188,13 @@ window.GASTRO_I18N = Object.freeze({
     ['Puedes explorar las cartas generales existentes; el servicio de comer y su horario siguen pendientes de verificar.','Vous pouvez consulter les cartes générales disponibles ; le service du déjeuner et ses horaires restent à vérifier.'],
     ['Puedes explorar las cartas generales existentes; el servicio de cenar y su horario siguen pendientes de verificar.','Vous pouvez consulter les cartes générales disponibles ; le service du dîner et ses horaires restent à vérifier.']
   ]);
-  const translateFrenchServiceText=(node,source)=>node.parentElement?.closest('#service-section')||node.parentElement?.id==='service-intro'?(frenchServiceLabels.get(normalize(source))||source):source;
+  const translateFrenchServiceText=(node,source)=>{
+    const parent=node.parentElement;
+    if(!parent?.closest('#service-section')&&parent?.id!=='service-results-note')return source;
+    const match=source.match(/^Tenemos (\d+) locales con especialidades registradas para este servicio\. Los precios y horarios concretos siguen pendientes de confirmar\.$/);
+    if(match)return match[1]+(match[1]==='1'?' établissement répertorie':' établissements répertorient')+' des spécialités pour ce service. Les prix et les horaires restent à confirmer.';
+    return frenchServiceLabels.get(normalize(source))||source;
+  };
   const frenchHeroLabels=new Map([
     ['CÓRDOBA · DÓNDE COMER BIEN','CORDOUE · OÙ BIEN MANGER'],
     ['Encuentra algo rico.','Trouvez un bon petit plat.'],

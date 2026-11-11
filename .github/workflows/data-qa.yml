@@ -189,6 +189,7 @@ jobs:
             scripts/test-fr-public-release.mjs \
             scripts/inventory-fr-load-performance.mjs \
             scripts/inventory-cache-reload.mjs \
+            scripts/test-fr-overlay-recovery.mjs \
             scripts/test-accessibility-flow.mjs \
             scripts/test-manolo-guide.mjs \
             scripts/test-venue-hours.mjs \
