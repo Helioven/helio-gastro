@@ -6,7 +6,7 @@ const qaFrenchPlaceIds=new Set();
 const MODE_CONFIG={
  desayuno:{label:'Desayunar',budgets:[3,5,7,10],dishes:['Tostadas','Churros','Molletes','Café','Bollería'],portions:[['unidad','Unidad'],['media-tostada','Media tostada'],['tostada-entera','Tostada entera'],['combinado','Desayuno combinado']]},
  comida:{label:'Comer',budgets:[10,15,20,30,50],dishes:['Flamenquín','Salmorejo','Rabo de toro','Croquetas','Mazamorra','Carrillada','Berenjenas','Pisto','Pescados y mariscos','Carnes y asados','Bocadillos y sándwiches','Guisos y cocina tradicional','Verduras y ensaladas','Tapas y raciones','Postres y dulces'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']]},
- merienda:{label:'Merendar',budgets:[3,5,8,12],dishes:['Churros','Chocolate','Pasteles','Tartas','Tostadas','Bollería','Café'],portions:[['unidad','Unidad'],['racion','Ración'],['combinado','Merienda combinada']]},
+ merienda:{label:'Merendar',budgets:[3,5,8,12],dishes:['Churros','Chocolate','Pasteles','Tartas','Tostadas','Bollería','Café','Molletes'],portions:[['unidad','Unidad'],['racion','Ración'],['combinado','Merienda combinada']]},
  cena:{label:'Cenar',budgets:[10,15,20,30,50],dishes:['Tapas','Flamenquín','Croquetas','Tortilla','Rabo de toro','Salmorejo','Pescados y mariscos','Carnes y asados','Bocadillos y sándwiches','Guisos y cocina tradicional','Verduras y ensaladas','Tapas y raciones','Postres y dulces'],portions:[['unidad','Unidad'],['tapa','Tapa'],['media','Media ración'],['racion','Ración completa']]}
 };
 
@@ -400,14 +400,19 @@ function refreshDishExplanations(){
  const help=el('portion-help');if(help)help.hidden=!english;
 }
 const MODE_KEY='helio-gastro-meal-mode-v1';
+function specificServiceMenus(p,mode){
+ const menus=p.menus.filter(m=>m.service===mode);
+ if(p.sharedMolletes&&(mode==='desayuno'||mode==='merienda'))menus.push(p.sharedMolletes);
+ return menus;
+}
 function serviceMenus(p){
- const specific=p.menus.filter(m=>m.service===state.mode);
+ const specific=specificServiceMenus(p,state.mode);
  // La carta general sirve solo para explorar platos, no confirma el servicio ni horario.
  return specific.length?specific:(state.mode==='comida'||state.mode==='cena'?p.menus.filter(m=>m.service==='general'):[]);
 }
 function serviceDishes(p){return serviceMenus(p).flatMap(m=>m.dishes)}
 function servicePrices(p){return serviceMenus(p).flatMap(m=>m.dishPrices)}
-function serviceKnown(p){return p.menus.some(m=>m.service===state.mode)}
+function serviceKnown(p){return specificServiceMenus(p,state.mode).length>0}
 function updateMealMode(mode,{reset=true}={}){
  if(!Object.hasOwn(MODE_CONFIG,mode))return;
  // Reset comparisons only on a genuine user-facing service switch, not on startup/restore.
@@ -430,7 +435,7 @@ function updateMealMode(mode,{reset=true}={}){
  portion.disabled=el('price-scope').value==='meal';
  syncAdvancedFilters();
  el('budget-label').textContent=mode==='desayuno'?'Presupuesto de desayuno':mode==='merienda'?'Presupuesto de merienda':'Presupuesto máximo';
- const documented=state.places.filter(p=>p.menus.some(m=>m.service===mode)).length;
+ const documented=state.places.filter(p=>specificServiceMenus(p,mode).length>0).length;
  const serviceMessage=documented
   ?'Tenemos '+documented+' locales con especialidades registradas para este servicio. Los precios y horarios concretos siguen pendientes de confirmar.'
   :'Estamos preparando cartas de '+cfg.label.toLowerCase()+'. Todavía no hay locales con especialidades documentadas para este servicio.';
@@ -485,12 +490,19 @@ function normalizePlace(raw){
    tapasTemperature:documentedTapaTemperature(m.service),
    service:Object.hasOwn(SERVICE_TYPES,m.service)?m.service:'general'
   }));
+ // Share only the two entries transcribed under this venue's breakfast/snack heading.
+ const source=raw.id==='bar-moriles-original'&&sourceMenus.find(m=>m?.service==='Desayunos y meriendas · tostadas');
+ const documentedMolletes=new Set(['Mollete de Antequera','Mollete rústico cordobés']);
+ const sharedMolletes=source?.dishes&&source?.dishPrices?{
+  dishes:source.dishes.filter(dish=>documentedMolletes.has(dish)),
+  dishPrices:source.dishPrices.filter(item=>documentedMolletes.has(item.dish))
+ }:null;
  const allDishes=[...new Set(safeMenus.flatMap(m=>m.dishes))];
  const allPrices=safeMenus.filter(m=>!(raw.id==='rincon-beatillas' && m.menuCourses)).flatMap(m=>m.dishPrices.map(price=>({...price,service:m.service})));
  // Los menús cerrados de grupo no representan precios individuales comparables.
  // No convertir la procedencia editorial en una afirmación de precio confirmado.
  const priceStatus=['confirmed','estimated','unknown'].includes(raw.priceStatus)?raw.priceStatus:'unknown';
- return {...raw,sourcePriceStatus:raw.priceStatus,priceStatus,menus:safeMenus,groupMenuRecords:raw.id==='rincon-beatillas'?sourceMenus.filter(m=>m.menuCourses&&Number.isFinite(m.price)):[],dishes:allDishes,dishPrices:allPrices};
+ return {...raw,sourcePriceStatus:raw.priceStatus,priceStatus,menus:safeMenus,sharedMolletes:sharedMolletes?.dishes.length?sharedMolletes:null,groupMenuRecords:raw.id==='rincon-beatillas'?sourceMenus.filter(m=>m.menuCourses&&Number.isFinite(m.price)):[],dishes:allDishes,dishPrices:allPrices};
 }
 
 function validPlace(p){
@@ -518,7 +530,9 @@ const QUICK_CATEGORIES=[
  {term:'Hamburguesa',label:'Hamburguesas',pattern:/^(?:mini\s*)?hamburguesas?\b/},
  {term:'Tarta de queso',label:'Tartas de queso',pattern:/^tartas? de queso\b/}
 ];
+function isMolleteQuery(term){return /^molletes?$/.test(term)}
 function searchDishMatches(name,term){
+ if(isMolleteQuery(term))return /\bmolletes?\b/.test(clean(name));
  const category=QUICK_CATEGORIES.find(entry=>clean(entry.term)===term);
  return category?category.pattern.test(clean(name).trim()):clean(name).includes(term);
 }
@@ -1382,6 +1396,7 @@ const FOOD_CATEGORY_PATTERNS={
  'postres y dulces':/tarta|brownie|torrija|pastel|helado|tocino de cielo|flan|gofre|tortita|cookie|dulce|bolleria/
 };
 function recommendationDishMatches(dish,term){
+ if(isMolleteQuery(term))return searchDishMatches(dish,term);
  if(FOOD_CATEGORY_PATTERNS[term])return FOOD_CATEGORY_PATTERNS[term].test(clean(dish));
  const value=clean(dish);
  // Las categorías de acceso rápido admiten singular/plural, pero no coincidencias
@@ -1439,6 +1454,14 @@ const DISH_ILLUSTRATIONS=Object.freeze({
 });
 // Estas asociaciones se usan solo en tarjetas, nunca en los resultados de búsqueda.
 const CARD_ILLUSTRATIONS=Object.freeze({
+ "bolleria": {file:"bolleria.webp", alt:{es:"Surtido con croissant, palmera y rosquilla",en:"Assortment with a croissant, palmier and doughnut",fr:"Assortiment avec croissant, palmier et beignet"}},
+ "tartas": {file:"tartas.webp", alt:{es:"Porción de bizcocho con fresas y crema",en:"Slice of sponge cake with strawberries and cream",fr:"Part de génoise aux fraises et à la crème"}},
+ "tostadas": {file:"tostadas.webp", alt:{es:"Pan rústico tostado con tomate y aceite de oliva",en:"Rustic toast with tomato and olive oil",fr:"Pain rustique grillé à la tomate et à l’huile d’olive"}},
+ "churros": {file:"churros.webp", alt:{es:"Churros gruesos y curvos junto a una taza de chocolate",en:"Thick curved churros beside a cup of chocolate",fr:"Churros épais et recourbés à côté d’une tasse de chocolat"}},
+ "molletes": {file:"molletes.webp", alt:{es:"Panecillos ovalados abiertos con tomate y aceite",en:"Split oval bread rolls with tomato and olive oil",fr:"Petits pains ovales ouverts à la tomate et à l’huile d’olive"}},
+ "cafe": {file:"cafe.webp", alt:{es:"Café con leche en una taza de cerámica",en:"Coffee with milk in a ceramic cup",fr:"Café au lait dans une tasse en céramique"}},
+ "chocolate": {file:"chocolate-a-la-taza.webp", alt:{es:"Chocolate caliente espeso en taza",en:"A cup of thick hot chocolate",fr:"Une tasse de chocolat chaud épais"}},
+ "pasteles": {file:"pasteles.webp", alt:{es:"Surtido de pasteles de crema, chocolate y fruta",en:"Assorted cream, chocolate and fruit pastries",fr:"Assortiment de pâtisseries à la crème, au chocolat et aux fruits"}},
  "carrillada": {file:"carrillada-con-patatas.webp", alt:{"es":"Carrillada en salsa con patatas fritas","en":"Braised cheek in sauce with fries","fr":"Joue braisée en sauce avec des frites"}},
  "pisto": {file:"pisto-cordobes.webp", alt:{"es":"Pisto de verduras en un plato de cerámica","en":"Vegetable pisto on a ceramic plate","fr":"Pisto de légumes dans une assiette en céramique"}},
  "pescados y mariscos": {file:"pescados-y-mariscos.webp", alt:{"es":"Pescado a la plancha con limón, gambas al ajillo y mejillones","en":"Grilled fish with lemon, garlic prawns and mussels","fr":"Poisson grillé au citron, crevettes à l’ail et moules"}},
@@ -1484,7 +1507,7 @@ function renderRecommendations(){
   const btn=document.createElement('button');btn.type='button';btn.className='recommendation-tile';
   const category=CARD_ILLUSTRATIONS[term];
   const illustration=category?.file||DISH_ILLUSTRATIONS[term];
-  const visual=createDishVisual(illustration?'./assets/dishes/'+illustration:undefined);
+  const visual=illustration?createDishVisual('./assets/dishes/'+illustration):null;
   if(category){
    visual.classList.add('category-visual');
    if(term==='bocadillos y sandwiches')visual.classList.add('category-visual-wide');
@@ -1493,13 +1516,14 @@ function renderRecommendations(){
    image.alt=category.alt[window.HelioGastroLanguage?.get()]||category.alt.es;
   }
   const label=document.createElement('strong');
-  if(illustration)label.textContent=name;else setIconLabel(label,'dish',name);
+  if(illustration)label.textContent=name;else setIconLabel(label,'cutlery',name);
   const count=document.createElement('span');
-  count.textContent=state.mode==='desayuno'||state.mode==='merienda'
-   ?(data.matches.length?data.matches.length+' locales verificados · '+new Set(data.priced.map(x=>x.p.id)).size+' con precio':'Pendiente de incorporar cartas verificadas')
-   :data.matches.length+' locales registrados · '+new Set(data.priced.map(x=>x.p.id)).size+' con precio';
+  const total=data.matches.length;
+  const priced=new Set(data.priced.map(x=>x.p.id)).size;
+  count.textContent=total+(total===1?' local registrado':' locales registrados')+' · '+priced+' con precio registrado';
   const description=document.createElement('small');description.className='dish-explanation';description.dataset.dishExplanation='';description.textContent=dishExplanation(name);description.hidden=window.HelioGastroLanguage?.get()!=='en';
-  btn.append(visual,label,description,count);btn.addEventListener('click',()=>showRecommendations(name));deck.append(btn);
+  if(visual)btn.append(visual);
+  btn.append(label,description,count);btn.addEventListener('click',()=>showRecommendations(name));deck.append(btn);
  }
 }
 function recommendationCompareButton(p,dishName){
@@ -1546,11 +1570,11 @@ function showRecommendations(dishName){
     ?'Hay '+data.matches.length+' '+(data.matches.length===1?'local':'locales')+' con esta especialidad registrada para el servicio. '+(pricedPlaceCount?pricedPlaceCount+' '+(pricedPlaceCount===1?'local tiene':'locales tienen')+' precios documentados; ':'Precios pendientes de confirmar; ')+'horarios concretos pendientes de verificar.'
     :'Todavía no tenemos esta especialidad documentada para el servicio seleccionado.')
   :'Los platos proceden de cartas generales. No se ha confirmado que estén disponibles específicamente para '+MODE_CONFIG[state.mode].label.toLowerCase()+' ni a una hora determinada.';panel.append(context);
- const intro=document.createElement('p');intro.className='note';
- intro.textContent=(state.mode==='desayuno'||state.mode==='merienda')&&!data.matches.length
-  ?'Todavía no disponemos de cartas verificadas para este servicio. No significa que las cafeterías o restaurantes estén cerrados o no lo sirvan.'
-  :data.matches.length+' locales en nuestra base; '+new Set(data.priced.map(x=>x.p.id)).size+' con precios publicados. No es un ranking de calidad ni una lista completa de Córdoba.';
- panel.append(intro);
+ if(data.matches.length){
+  const intro=document.createElement('p');intro.className='note';
+  intro.textContent=data.matches.length+' locales en nuestra base; '+pricedPlaceCount+' con precios publicados. No es un ranking de calidad ni una lista completa de Córdoba.';
+  panel.append(intro);
+ }
  const groups=new Map();
  for(const entry of data.priced){
   const key=entry.variant+'|'+entry.portion;
@@ -1629,14 +1653,30 @@ function clearSearch(){
 // ?qa_fr=1 retains eager loading so legacy QA scenarios remain deterministic.
 let frenchOverlayPromise=null;
 let frenchOverlayLoaded=false;
+async function fetchFrenchBatch(name){
+ const url='./translations/fr/'+name;
+ for(let attempt=0;attempt<2;attempt++){
+  let response;
+  try{
+   response=await fetch(url,{cache:'no-store'});
+  }catch(error){
+   if(attempt===0)continue;
+   throw error;
+  }
+  if(!response.ok){
+   await response.body?.cancel();
+   if(response.status===503&&attempt===0)continue;
+   throw Error('FR QA batch HTTP '+response.status+' '+name);
+  }
+  return response.json();
+ }
+}
 async function ensureFrenchOverlay(data){
  if(frenchOverlayLoaded)return;
  if(frenchOverlayPromise)return frenchOverlayPromise;
  frenchOverlayPromise=(async()=>{
   const paths=['batch-001-la-montillana.json','batch-002-la-montillana.json','batch-003-la-montillana.json','batch-004-churros-bar-marta.json','batch-005-churros-bar-marta.json','batch-006-cafeteria-bar-la-jineta.json','batch-007-cafeteria-bar-la-jineta.json','batch-008-la-tarterie-centro.json','batch-009-la-tarterie-centro.json','batch-010-la-tarterie-centro.json','batch-011-taberna-el-abuelo.json','batch-012-taberna-el-abuelo.json','batch-013-taberna-el-abuelo.json','batch-014-taberna-la-viuda.json','batch-015-taberna-la-viuda.json','batch-016-taberna-la-viuda.json','batch-017-casa-rubio.json','batch-018-casa-rubio.json','batch-019-casa-rubio.json','batch-020-taberna-el-numero-10.json','batch-021-taberna-el-numero-10.json','batch-022-taberna-el-numero-10.json','batch-023-la-taberna-del-rio.json','batch-024-la-taberna-del-rio.json','batch-025-la-taberna-del-rio.json','batch-026-rafae.json','batch-027-rafae.json','batch-028-rafae.json','batch-029-rafae.json','batch-030-don-pepe-centro.json','batch-031-don-pepe-centro.json','batch-032-don-pepe-centro.json','batch-033-don-pepe-centro.json','batch-034-el-poema-alonso.json','batch-035-el-poema-alonso.json','batch-036-el-poema-alonso.json','batch-037-el-poema-alonso.json','batch-038-dtapas-covap.json','batch-039-dtapas-covap.json','batch-040-dtapas-covap.json','batch-041-dtapas-covap.json','batch-042-plateros-san-francisco.json','batch-043-plateros-san-francisco.json','batch-044-plateros-san-francisco.json','batch-045-plateros-san-francisco.json','batch-046-taberna-salinas.json','batch-047-taberna-salinas.json','batch-048-taberna-salinas.json','batch-049-taberna-salinas.json','batch-050-taberna-salinas.json','batch-051-taberna-la-sal.json','batch-052-taberna-la-sal.json','batch-053-taberna-la-sal.json','batch-054-taberna-la-sal.json','batch-055-taberna-la-sal.json','batch-056-el-pisto.json','batch-057-el-pisto.json','batch-058-el-pisto.json','batch-059-el-pisto.json','batch-060-el-pisto.json','batch-061-el-pisto.json','batch-062-rincon-beatillas.json','batch-063-rincon-beatillas.json','batch-064-rincon-beatillas.json','batch-065-rincon-beatillas.json','batch-066-rincon-beatillas.json','batch-067-la-bandera.json','batch-068-la-bandera.json','batch-069-la-bandera.json','batch-070-la-bandera.json','batch-071-la-bandera.json','batch-072-la-bandera.json','batch-073-la-cazuela-esparteria.json','batch-074-la-cazuela-esparteria.json','batch-075-la-cazuela-esparteria.json','batch-076-la-cazuela-esparteria.json','batch-077-la-cazuela-esparteria.json','batch-078-la-cazuela-esparteria.json','batch-079-la-cazuela-esparteria.json','batch-080-la-cazuela-esparteria.json','batch-081-don-pepe-ciudad-jardin.json','batch-082-don-pepe-ciudad-jardin.json','batch-083-don-pepe-ciudad-jardin.json','batch-084-don-pepe-ciudad-jardin.json','batch-085-don-pepe-ciudad-jardin.json','batch-086-don-pepe-ciudad-jardin.json','batch-087-don-pepe-ciudad-jardin.json','batch-088-don-pepe-ciudad-jardin.json','batch-089-don-pepe-ciudad-jardin.json','batch-090-moriles-ribera.json','batch-091-moriles-ribera.json','batch-092-moriles-ribera.json','batch-093-moriles-ribera.json','batch-094-moriles-ribera.json','batch-095-moriles-ribera.json','batch-096-moriles-ribera.json','batch-097-moriles-ribera.json','batch-098-moriles-ribera.json','batch-099-moriles-ribera.json','batch-100-moriles-ribera.json','batch-101-moriles-ribera.json','batch-102-moriles-ribera.json','batch-103-moriles-ribera.json','batch-104-moriles-ribera.json','batch-105-moriles-ribera.json','batch-106-moriles-ribera.json','batch-107-moriles-ribera.json'];
-  const responses=await Promise.all(paths.map(name=>fetch('./translations/fr/'+name,{cache:'no-store'})));
-  if(responses.some(response=>!response.ok))throw Error('FR QA batch HTTP error');
-  const batches=await Promise.all(responses.map(response=>response.json()));
+  const batches=await Promise.all(paths.map(fetchFrenchBatch));
   if(batches.some(batch=>!Array.isArray(batch?.entries)||batch.entries.length===0||batch?.meta?.language!=='fr'||batch?.meta?.catalogModified!==false))throw Error('Invalid FR QA batch metadata or entries');
   const seen=new Set(),updates=[];
   for(const entry of batches.flatMap(batch=>batch.entries)){

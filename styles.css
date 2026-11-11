@@ -427,6 +427,8 @@ button:disabled{opacity:.62;cursor:not-allowed;box-shadow:none}
 .venue-hours details[open]>summary::after,.result-method[open]>summary::after{transform:rotate(225deg)}
 .venue-hours summary .ui-icon{margin-inline-end:.3em}
 #results-section .place button{margin:3px 6px 3px 0}
+#recommendations-section .dish-visual:not(:has(img)){display:none}
+#recommendations-section .recommendation-tile:not(:has(img)){align-self:start;padding-top:14px}
 #recommendations-section .dish-visual:has(img){width:calc(100% - 16px);margin:8px 8px 3px;border-radius:11px;box-shadow:0 2px 4px #43260d32}
 #recommendations-section .dish-visual:has(img)::before{display:block;inset:0;width:auto;height:auto;border:0;border-radius:inherit;box-shadow:inset 0 0 0 1px #fff5,inset 0 -4px 9px #21140730;z-index:1}
 #recommendations-section .dish-visual-label{z-index:2}
@@ -608,8 +610,8 @@ button:disabled{opacity:.62;cursor:not-allowed;box-shadow:none}
  .radar-shortcuts .ui-icon{width:30px;height:30px}
  .radar-shortcuts :is(a,button)>.ui-icon:not(.radar-arrow){padding:3px}
  .radar-shortcuts .radar-arrow{width:14px;height:14px;inset:auto 5px 4px auto}
- .radar-orientation{grid-template-columns:65px minmax(0,1fr);gap:7px 10px;padding:9px 10px;margin-top:12px}
- .radar-orientation img{width:65px;height:65px}
+ .radar-orientation{grid-template-columns:74px minmax(0,1fr);gap:7px 10px;padding:9px 10px;margin-top:12px}
+ .radar-orientation img{width:74px;height:74px}
  .radar-orientation .radar-cta{grid-column:1/-1;justify-self:stretch}
  .radar-tools{grid-template-columns:minmax(0,1fr)}
  #guide-section,#dish{scroll-margin-top:14px}

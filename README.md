@@ -1696,3 +1696,62 @@ Cuando se autorice el lanzamiento: comprobar nuevamente los SHA remotos, abrir P
 - Las seis pruebas históricas `test-fr-la-cazuela-{12,24,36,48,60,72}.mjs` cubren los prefijos de 12, 24, 36, 48, 60 y 84 descripciones. El nombre histórico `72` se conserva y su conjunto incluye el lote 079, por lo que valida 84. Cada prueba exige todos los textos de sus lotes en el mismo orden y permite los lotes posteriores. `test-fr-la-cazuela-89.mjs` sigue comprobando las 89 descripciones completas. El catálogo y los lotes de traducción se mantienen.
 - QA local PASS en 84 comprobaciones, con 75 del workflow y 9 pruebas adicionales. Pasaron las seis pruebas históricas y la de 89 descripciones. Se repitieron la prueba de resultados tras corregir el singular francés y El Poema Alonso tras un timeout del ejecutor. Sintaxis PASS en 87 archivos. El estado vacío francés se revisó visualmente a 320 × 700.
 - CI oficial de la corrección pendiente en el SHA que la contiene.
+
+## HG-PROD-HOTFIX-004 — Ilustraciones y recuentos de PlatoRadar
+
+- Las tarjetas de desayuno y merienda usan ocho WebP aprobados con etiquetas y textos alternativos en ES/EN/FR. Si falta una imagen, la tarjeta conserva el texto y la acción sin mostrar un marco vacío.
+- Los recuentos distinguen locales registrados y locales con precio registrado. La carta transcrita de Moriles Ciudad Jardín respalda Mollete de Antequera y Mollete rústico cordobés en desayuno y merienda. Ambas variantes cuentan como un único local y sus importes no acreditan vigencia.
+- Situación observada el 10 de noviembre de 2026. El cargador valida y aplica los 107 lotes como un conjunto. Con los 107 lotes disponibles, La Montillana se traduce y el flujo de accesibilidad pasa. Al simular HTTP 503 en el lote 107 de Moriles Ribera, el cargador descarta el conjunto y La Montillana queda sin traducción. Esta prueba demuestra la dependencia entre lotes, pero no confirma la causa del timeout original. El cargador y la comprobación de accesibilidad se conservaron en aquella fase. La revisión técnica del 11 de noviembre documenta la recuperación incorporada después.
+
+## Pendientes antes del cierre y publicación
+
+### Estado actual
+
+- HG-PROD-HOTFIX-001/002/003 están implementados localmente en `codex/hg-prod-hotfix-001`, sobre la base `f986627`.
+- El hotfix integra ocho ilustraciones gastronómicas y corrige los recuentos de locales y precios registrados y la clasificación de los molletes de Moriles Ciudad Jardín en desayuno y merienda.
+- Los cambios siguen sin commit, push, merge ni despliegue.
+
+### Validación pendiente
+
+- El timeout histórico de 30 segundos al esperar `DOMContentLoaded` en escritorio sigue sin causa confirmada. El 11 de noviembre la prueba de recarga pasó en el diagnóstico inicial, en las pruebas afectadas y en la batería completa, con sus controles de cancelación, HTTP 404 y WebP inválido.
+- Las suites pendientes del balance del 10 de noviembre tienen PASS local en el balance del 11 de noviembre. Recuentos e iconos necesitaron reintento en la batería completa. Rendimiento francés y búsqueda premium pasaron a la primera.
+- Balance del 11 de noviembre de 2026, 85/85 PASS local, con 69 a la primera y 16 tras un reintento. FAIL finales 0. El flujo de accesibilidad de La Montillana en ES/EN/FR pasó a la primera. Las limitaciones del entorno y el CI pendiente se detallan más abajo.
+- El cargador francés valida y aplica los 107 lotes como un conjunto. Un HTTP 503 simulado en el lote 107 de Moriles Ribera impidió aplicar las traducciones, incluida la de La Montillana. La causa del timeout original sigue sin confirmar.
+- Ejecutar `catalog-audit` y `visual-qa` en GitHub Actions sobre el SHA exacto del futuro commit. La validación oficial de estos cambios continúa pendiente.
+
+### Unificación definitiva de Manolo
+
+- Usar como modelo maestro el Manolo original de la cabecera, cuyo diseño ya está aprobado. «Manolo te orienta» debe mostrar exactamente el mismo robot y conservar cabeza, gafas, antenas, bigote, expresión, cuerpo, proporciones y detalles luminosos.
+- Añadir únicamente el gorro de cocinero y el mandil, sin reinterpretar al personaje. Mantener intactos la cabecera y el diseño aprobado de la página.
+- Sustituir la ilustración del cocinero solo después de que el usuario apruebe visualmente la imagen definitiva.
+
+### Cierre final
+
+1. Validar la imagen definitiva de Manolo y completar las comprobaciones técnicas pendientes.
+2. Crear el commit y hacer push de la rama únicamente tras recibir autorización.
+3. Verificar el CI del SHA exacto, preparar la PR y solicitar autorización antes del merge y del despliegue.
+4. Comprobar la web publicada y dar por cerrada esta versión de PlatoRadar.
+5. Continuar con Manolo Meteo.
+
+
+## Revisión técnica del cierre — 11 de noviembre de 2026
+
+- Rama local `codex/hg-prod-hotfix-001`, base `f986627fbef8a2c6544607495b7975523631abda`. Las ocho imágenes, sus asociaciones y los molletes de Moriles conservan su aprobación. Los dos molletes y cuatro importes cuentan una sola ficha en desayuno y merienda. Catálogo de 44 registros, 43 visibles y El Caballo Rojo oculto.
+- Recarga de escritorio. El diagnóstico registró los eventos DOMContentLoaded y las peticiones pendientes, y pasó con el test existente. La prueba específica y la batería completa también pasaron. Durante la batería, la prueba de recuentos agotó una espera de recarga y pasó en el reintento. No se ha demostrado una causa funcional ni una causa exclusivamente ambiental para los timeouts históricos. Se conservan las esperas, los controles negativos y las aserciones.
+- Traducción francesa. Cada lote se descarga y decodifica antes de esperar al conjunto. El cargador permite como máximo dos intentos por lote ante un error de red o HTTP 503. Un error HTTP persistente o un JSON inválido sigue rechazando la carga. La validación completa precede a cualquier aplicación de traducciones. Tras un rechazo se libera la promesa para permitir un nuevo intento. Los 107 lotes siguen sujetos a validación conjunta.
+- `scripts/test-fr-overlay-recovery.mjs` verifica un 503 transitorio, un 503 persistente y un JSON inválido a 1365 y 360 px. Comprueba el límite de intentos, las llamadas concurrentes, la ausencia de aplicación parcial, la recuperación posterior y la conservación de los datos ES/EN. Los seis escenarios pasaron a la primera. La nueva prueba queda incluida en el workflow oficial.
+- Antes de la regresión completa pasaron las pruebas afectadas de imágenes, recuentos y recarga. Sintaxis PASS en 88 archivos. La batería ejecutó 76 comprobaciones del workflow y 9 adicionales, con 85/85 PASS. Pasaron a la primera catálogo, ilustraciones, búsqueda, filtros, comparador, recarga, recuperación francesa, accesibilidad, horarios, portada, búsqueda premium, rendimiento francés y contraste.
+- Necesitaron un reintento las suites `test-recommendation-count-i18n`, `test-fr-beatillas-roldan-dynamic`, `test-fr-bar-marta-17`, `test-fr-la-tarterie-28`, `test-fr-el-numero-10-37`, `test-fr-plateros-san-francisco-46`, `test-fr-taberna-salinas-56`, `test-fr-taberna-la-sal-60`, `test-fr-rincon-beatillas-75`, `test-fr-don-pepe-ciudad-jardin-12`, `test-fr-source-venue-triage`, `test-fr-favorites-populated`, `test-manolo-guide`, `test-ui-icons`, `test-fr-la-cazuela-24` y `test-fr-la-cazuela-72`. Sus primeras ejecuciones agotaron esperas. Los registros de ambos intentos se conservan fuera de los archivos de aplicación.
+- Entorno local Windows, Node.js 24 y Playwright 1.56.1 con Chromium 141. Las pruebas se ejecutaron en serie sobre una copia temporal, con puerto 8799 y servidor estático local que comprime los recursos de texto. Los cambios temporales de puerto y diagnóstico no forman parte de las pruebas del repositorio. La validación oficial pendiente usa Ubuntu, Node.js 22 y el servidor Python del workflow.
+- Para reproducir los controles de recuperación en el entorno del workflow, servir la raíz en 127.0.0.1:8765 y ejecutar `node scripts/test-fr-overlay-recovery.mjs`. Después ejecutar las suites enumeradas en `.github/workflows/data-qa.yml`. Los controles no consultan proveedores ni fuentes externas.
+- No ejecutados en esta revisión, CI oficial del futuro commit, lectores de pantalla y dispositivos físicos. Quedan pendientes la aprobación de la unificación visual de Manolo, la autorización de commit y sincronización y la validación del SHA exacto en GitHub Actions antes de plantear la publicación.
+
+
+## Recursos visuales aprobados de Manolo
+
+- Maestro de cabecera aprobado: copia local `platoradar-manolo-maestro-aprobado.png` fuera del repositorio, conservado íntegro con la marca PlatoRadar by ManoloLabs.
+- Variante cocinero aprobada: copia local `manolo-chef-aprobado.png` fuera del repositorio, PNG transparente con gorro blanco y mandil azul. Conservar como referencia para futuras adaptaciones de Manolo Meteo y otros proyectos, previa aprobación específica.
+- Recursos anteriores conservados como `assets/brand/platoradar-manolo-header-original-b5c0ad9.webp` y `assets/brand/manolo-chef-original-b5c0ad9.webp`.
+- Versiones WebP para la web: `assets/brand/platoradar-cabecera-aprobada-v2.webp` y `assets/brand/manolo-chef-aprobado-v2.webp`; esta última conserva transparencia. Los PNG maestros se conservan fuera del repositorio y no forman parte de la publicación.
+
+- Validación local del cierre visual: las 76 comprobaciones ejecutables del workflow terminaron con 67 PASS iniciales, 9 PASS tras reintento y 0 FAIL finales; las seis pruebas históricas de La Cazuela pasaron a la primera. Sintaxis: 88 archivos, 0 errores. Ejecución en copia aislada Windows con Node 24, Playwright 1.62.1 y Chrome local; las rutas de Chromium se ajustaron únicamente en la copia. El primer servidor local restableció conexiones de lotes franceses; los nueve reintentos pasaron con un servidor local alternativo. Antes de esta batería se interrumpió otra exploración tras dos esperas agotadas; ambas suites pasaron en la batería final. CI oficial pendiente en el SHA del commit.
