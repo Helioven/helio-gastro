@@ -610,8 +610,8 @@ button:disabled{opacity:.62;cursor:not-allowed;box-shadow:none}
  .radar-shortcuts .ui-icon{width:30px;height:30px}
  .radar-shortcuts :is(a,button)>.ui-icon:not(.radar-arrow){padding:3px}
  .radar-shortcuts .radar-arrow{width:14px;height:14px;inset:auto 5px 4px auto}
- .radar-orientation{grid-template-columns:65px minmax(0,1fr);gap:7px 10px;padding:9px 10px;margin-top:12px}
- .radar-orientation img{width:65px;height:65px}
+ .radar-orientation{grid-template-columns:74px minmax(0,1fr);gap:7px 10px;padding:9px 10px;margin-top:12px}
+ .radar-orientation img{width:74px;height:74px}
  .radar-orientation .radar-cta{grid-column:1/-1;justify-self:stretch}
  .radar-tools{grid-template-columns:minmax(0,1fr)}
  #guide-section,#dish{scroll-margin-top:14px}

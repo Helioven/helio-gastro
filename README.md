@@ -1745,3 +1745,13 @@ Cuando se autorice el lanzamiento: comprobar nuevamente los SHA remotos, abrir P
 - Entorno local Windows, Node.js 24 y Playwright 1.56.1 con Chromium 141. Las pruebas se ejecutaron en serie sobre una copia temporal, con puerto 8799 y servidor estático local que comprime los recursos de texto. Los cambios temporales de puerto y diagnóstico no forman parte de las pruebas del repositorio. La validación oficial pendiente usa Ubuntu, Node.js 22 y el servidor Python del workflow.
 - Para reproducir los controles de recuperación en el entorno del workflow, servir la raíz en 127.0.0.1:8765 y ejecutar `node scripts/test-fr-overlay-recovery.mjs`. Después ejecutar las suites enumeradas en `.github/workflows/data-qa.yml`. Los controles no consultan proveedores ni fuentes externas.
 - No ejecutados en esta revisión, CI oficial del futuro commit, lectores de pantalla y dispositivos físicos. Quedan pendientes la aprobación de la unificación visual de Manolo, la autorización de commit y sincronización y la validación del SHA exacto en GitHub Actions antes de plantear la publicación.
+
+
+## Recursos visuales aprobados de Manolo
+
+- Maestro de cabecera aprobado: copia local `platoradar-manolo-maestro-aprobado.png` fuera del repositorio, conservado íntegro con la marca PlatoRadar by ManoloLabs.
+- Variante cocinero aprobada: copia local `manolo-chef-aprobado.png` fuera del repositorio, PNG transparente con gorro blanco y mandil azul. Conservar como referencia para futuras adaptaciones de Manolo Meteo y otros proyectos, previa aprobación específica.
+- Recursos anteriores conservados como `assets/brand/platoradar-manolo-header-original-b5c0ad9.webp` y `assets/brand/manolo-chef-original-b5c0ad9.webp`.
+- Versiones WebP para la web: `assets/brand/platoradar-cabecera-aprobada-v2.webp` y `assets/brand/manolo-chef-aprobado-v2.webp`; esta última conserva transparencia. Los PNG maestros se conservan fuera del repositorio y no forman parte de la publicación.
+
+- Validación local del cierre visual: las 76 comprobaciones ejecutables del workflow terminaron con 67 PASS iniciales, 9 PASS tras reintento y 0 FAIL finales; las seis pruebas históricas de La Cazuela pasaron a la primera. Sintaxis: 88 archivos, 0 errores. Ejecución en copia aislada Windows con Node 24, Playwright 1.62.1 y Chrome local; las rutas de Chromium se ajustaron únicamente en la copia. El primer servidor local restableció conexiones de lotes franceses; los nueve reintentos pasaron con un servidor local alternativo. Antes de esta batería se interrumpió otra exploración tras dos esperas agotadas; ambas suites pasaron en la batería final. CI oficial pendiente en el SHA del commit.
